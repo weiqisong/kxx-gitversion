@@ -277,25 +277,25 @@ country_event = {
 				SRI = {
 				is_ai = no
 				}
-				SRI = {
-					annex_country = { target = ITA transfer_troops = yes }	
-					add_political_power = -100
-					add_popularity = {
-						ideology = radical_socialist
-						popularity = 0.05
-					}
-					add_popularity = {
-						ideology = social_democrat
-						popularity = 0.05
-					}
+				
+			}
+			SRI = {
+				annex_country = { target = ITA transfer_troops = yes }	
+				add_political_power = -100
+				add_popularity = {
+					ideology = radical_socialist
+					popularity = 0.05
 				}
-				ITA = {
-					every_unit_leader = {	
-					set_nationality = SRI
-				}
+				add_popularity = {
+					ideology = social_democrat
+					popularity = 0.05
 				}
 			}
-			
+			ITA = {
+				every_unit_leader = {	
+				set_nationality = SRI
+			}
+			}
 		}
 		hidden_effect = {
 			

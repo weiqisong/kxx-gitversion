@@ -9613,9 +9613,7 @@ focus = FRA_garden_city_movement
 		prerequisite = {
 			focus = FRA_economic_intergation
 		}
-		available = {
-			has_country_flag = PANEUROPE
-		}
+		
 		mutually_exclusive = {
 			focus = FRA_fruit_of_cooperation
 		}
@@ -9662,9 +9660,7 @@ focus = FRA_garden_city_movement
 		prerequisite = {
 			focus = FRA_economic_intergation
 		}
-		available = {
-			has_country_flag = PANEUROPE
-		}
+		
 		mutually_exclusive = {
 			focus = FRA_ode_of_joy
 		}
