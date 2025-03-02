@@ -1,0 +1,85 @@
+ideas = {
+	
+	head_of_government = { ### Head of Government ###
+		GRE_Nicolas_Kitsikis_hog_tot = {
+			allowed = { original_tag = GRE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Amadeo_Bordiga_hog_tot"
+			}
+			traits = {
+				head_of_government
+				totalist
+				hog_political_protege
+			}
+		}
+		
+	}
+	person_of_influence = { ### Person of Influence ###
+		## Foreign Minister ##
+		GRE_Angelos_Sikelianos_for_tot = {
+			allowed = { original_tag = GRE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Onorato_Damen_for_tot"
+			}
+			traits = {
+				foreign_minister
+				totalist
+				for_biased_intellectual
+			}
+		}
+		
+		GRE_Patroklos_Karantinos_eco_tot = {
+			allowed = { original_tag = GRE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Bruno_Fortichiari_eco_tot"
+			}
+			traits = {
+				economy_minister
+				totalist
+				eco_administrative_genius
+			}
+		}
+		
+		GRE_Yanis_Kordatos_sec_tot = {
+			allowed = {
+				original_tag = GRE
+			}
+			traits = {
+				security_minister
+				totalist
+				sec_man_of_the_people
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Bruno_Maffi_sec_tot"
+			}
+		}
+	}
+}

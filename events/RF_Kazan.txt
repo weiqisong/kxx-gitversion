@@ -1,0 +1,514 @@
+####################################
+#		Kazan - Khardbass		   #
+####################################
+
+add_namespace = ore
+
+country_event = {
+	id = ore.1
+	title = ore.1.t
+	desc = ore.1.d
+	picture = GFX_spy
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ore.1.a
+	}
+}
+country_event = {  
+	id = ore.2
+	title = ore.2.t
+	desc = ore.2.d
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	#option = {
+	#	name = ore.2.a
+	#	ai_chance = {
+	#		factor = 5
+	#		modifier = {
+	#			factor = 1000
+	#			OR = {
+	#				has_game_rule = {
+	#					rule = ORE_ai_route
+	#					option = ORE_DUTOV_KOLCHAK
+	#				}
+	#			}
+	#		}
+	#	}
+	#	custom_effect_tooltip = "ORE_DUTOV_WILL_SURVIVE"
+	#	country_event = {
+	#		id = ore.6
+	#	}
+	#}
+	option = {
+		name = ore.2.b
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 1000
+				OR = {
+					has_game_rule = {
+						rule = ORE_ai_route
+						option = ORE_EUR
+					}
+					has_game_rule = {
+						rule = ORE_ai_route
+						option = ORE_RASPUTIN
+					}
+					has_game_rule = {
+						rule = ORE_ai_route
+						option = ORE_SAVINKOV
+					}
+				}
+			}
+		}
+		custom_effect_tooltip = "ORE_DUTOV_RIPBOZO"
+		country_event = {
+			id = ore.7
+		}
+	}
+}
+country_event = {  
+	id = ore.3
+	title = ore.3.t
+	desc = ore.3.d
+	picture = GFX_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ore.3.a
+	}
+}
+country_event = {
+	id = ore.4
+	title = ore.4.t
+	desc = ore.4.d
+	picture = GFX_coup
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ore.4.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1000
+				has_game_rule = {
+					rule = ORE_ai_route
+					option = ORE_SAVINKOV
+				}
+			}
+		}
+		set_country_flag = ORE_savinkov
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = ORE_pale_horse
+	}
+	
+	option = {
+		name = ore.4.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1000
+				has_game_rule = {
+					rule = ORE_ai_route
+					option = ORE_EUR
+				}
+			}
+		}
+		set_country_flag = ORE_eurasianists
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = Orenburg_eurasian_ideocracy
+	}
+
+	option = {
+		name = ore.4.c
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1000
+				has_game_rule = {
+					rule = ORE_ai_route
+					option = ORE_RASPUTIN
+				}
+			}
+		}
+		set_country_flag = ORE_rasputin_conspiracy
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = ORE_rasputins_conspiracy
+	}
+	
+}
+country_event = {
+	id = ore.5
+	title = ore.5.t
+	desc = ore.5.d
+	picture = GFX_address_the_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+	name = ore.5.a
+	ai_chance = {
+	factor = 40
+	}
+	}
+}
+country_event = {
+	id = ore.6
+	title = ore.6.t
+	desc = ore.6.d
+	picture = GFX_address_the_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ore.6.a
+		ai_chance = {
+			factor = 40
+		}
+		set_country_flag = ORE_dutovlives
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+country_event = {
+	id = ore.7
+	title = ore.7.t
+	desc = ore.7.d
+	picture = GFX_address_the_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ore.7.a
+		ai_chance = {
+			factor = 60
+		}
+		kill_country_leader = yes
+		promote_character = ORE_ivan_akulinin
+		set_country_flag = ORE_dutovdies
+		country_event = {
+			days = 1
+			id = ore.4
+		}
+	}
+}
+country_event = {
+	id = ore.8
+	title = ore.8.t
+	desc = ore.8.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ore.8.a
+		add_ideas = ORE_olga
+	}
+}
+
+country_event = {
+	id = ore.9
+	title = ore.9.t
+	desc = ore.9.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ore.9.a
+	}
+}
+
+country_event = {
+	id = ore.10
+	title = ore.10.t
+	desc = ore.10.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ore.10.a
+	}
+}
+
+country_event = {
+	id = ore.11
+	title = ore.11.t
+	desc = ore.11.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ore.11.a
+	}
+}
+
+country_event = {
+	id = ore.12
+	title = ore.12.t
+	desc = ore.12.d
+	picture = GFX_address_the_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ore.12.a
+		ai_chance = {
+			factor = 100
+		}
+		ORE = {
+			every_unit_leader = {
+				set_nationality = DKB
+			}
+		}
+		DKB = { 
+			
+			annex_country = {
+				target = ORE
+				transfer_troops = yes
+			}
+			every_state = {
+				limit = {
+					is_owned_by = ORE
+				}
+				add_core_of = DKB
+			}
+			change_tag_from = ORE
+		}
+	}
+	option = {
+		name = ore.12.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = { #kavkaz decision
+	id = ore.13
+	title = ore.13.t
+	desc = ore.13.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ore.13.a
+		set_country_flag = ORE_join_kavkaz_tt
+		ai_chance = {
+			factor = 10
+		}
+	}
+	option = {
+		name = ore.13.b
+		set_country_flag = ORE_invade_kavkaz_tt
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = { #zhelto decision
+	id = ore.14
+	title = ore.14.t
+	desc = ore.14.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ore.14.a
+		trigger = {
+			OR = {
+				country_exists = PSL
+				ZHR = {
+					exists = yes
+					OR = {
+						has_country_leader = { character = ZHR_maria_spiridonova }
+						has_country_leader = { character = ZHR_fyodor_dan }
+						has_country_leader = { character = ZHR_nikolai_avksentiev }
+					}
+				}
+			}
+		}
+		if ={
+			limit ={
+				PSL = {
+					is_ai = no
+				}
+			}
+			PSL = {
+				ORE = {
+					PREV_annex_CURRENT_warlord = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ORE = {
+					is_ai = no
+				}
+			}
+			ORE = {
+				PSL = {
+					PREV_annex_CURRENT_warlord = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ORE = {
+					is_ai = yes
+				}
+				PSL = {
+					is_ai = yes
+				}
+			}
+			PSL = {
+				ORE = {
+					PREV_annex_CURRENT_warlord = yes
+				}
+			}
+		}
+		
+		set_country_flag = ORE_join_zhelto_tt
+		if ={
+			limit ={
+				ZHR = {
+					is_ai = no
+				}
+			}
+			ZHR = {
+				ORE = {
+					PREV_annex_CURRENT_warlord = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ORE = {
+					is_ai = no
+				}
+			}
+			ORE = {
+				ZHR = {
+					PREV_annex_CURRENT_warlord = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ORE = {
+					is_ai = yes
+				}
+				ZHR = {
+					is_ai = yes
+				}
+			}
+			ZHR = {
+				ORE = {
+					PREV_annex_CURRENT_warlord = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = ore.14.b
+		trigger = {
+			ZHR = {
+				NOT = {
+					has_country_leader = {
+						character = ZHR_maria_spiridonova
+						ruling_only  = yes
+					}
+					has_country_leader = {
+						character = ZHR_fyodor_dan
+						ruling_only  = yes
+					}
+					has_country_leader = {
+						character = ZHR_nikolai_avksentiev
+						ruling_only  = yes
+					}
+				}
+			}
+		}
+		set_country_flag = ORE_invade_zhelto_tt
+		unlock_decision_tooltip = Unification_invade_zhr_socialist
+	}
+}
+
+country_event = { #savinkov executions
+	id = ore.15
+	title = ore.15.t
+	desc = ore.15.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ore.15.a
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = { #savinkov executions pt2
+	id = ore.16
+	title = ore.16.t
+	desc = ore.16.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ore.16.a
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = { #savinkov initiation
+	id = ore.17
+	title = ore.17.t
+	desc = ore.17.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ore.17.a
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = { #savinkov terrorism
+	id = ore.18
+	title = ore.18.t
+	desc = ore.18.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ore.18.a
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = { #savinkov speech in moscow
+	id = ore.19
+	title = ore.19.t
+	desc = ore.19.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ore.19.a
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+

@@ -1,0 +1,1200 @@
+shared_focus = {
+		id = ROS_Red_Don
+		icon = GFX_align_soviet
+		cost = 1
+		x = 0
+		y = 0
+		allow_branch = {
+			has_country_flag = ROS_claim_reuni_socialist
+		}
+		offset = {
+			x = 80
+			y = 0
+			trigger = {
+				tag = WHR
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_socialist_government = yes
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = unlock_focuses
+			
+		}
+	}
+
+	shared_focus = {
+		id = ROS_Confront_The_Bear
+		icon = GFX_focus_attack_RUS
+		cost = 3
+		relative_position_id = ROS_Red_Don
+		x = 0
+		y = 1
+		available = {
+			is_neighbor_of = RUS
+			has_socialist_government = yes
+			is_subject = no
+		}
+		prerequisite = {
+			focus = ROS_Red_Don
+		}
+		bypass = {
+			has_socialist_government = yes
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 2
+				RUS = {
+					has_war = yes
+				}
+			}
+			modifier = {
+				factor = 4
+				RUS = {
+					surrender_progress > 0.1
+				}
+			}
+		}
+		completion_reward = {
+			for_each_scope_loop = {
+				array = RUS.RUS_starting_states_array
+				add_claim_by = ROOT
+			}
+			create_wargoal = {
+				target = RUS
+				type = annex_everything
+			}	
+		}
+	}
+	shared_focus = {
+		id = ROS_Rise_The_Resistance
+		icon = GFX_goal_agrarian_socialism
+		cost = 2
+		relative_position_id = ROS_Red_Don
+		x = -1
+		y = 2
+		available = {
+			has_war_with = RUS
+			has_socialist_government = yes
+		}
+		prerequisite = {
+			focus = ROS_Confront_The_Bear
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			division_template = {
+				name = "Krasnaya Gvardiya"
+				division_names_group = SOV_GAR_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 195 }
+				create_unit = {
+					division = "division_template = \"Krasnaya Gvardiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "division_template = \"Krasnaya Gvardiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "division_template = \"Krasnaya Gvardiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 219 }
+				create_unit = {
+					division = "division_template = \"Krasnaya Gvardiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "division_template = \"Krasnaya Gvardiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "division_template = \"Krasnaya Gvardiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			division_template = {
+				name = "Gorodskaya Militsiya"
+				division_names_group = SOV_GAR_01
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+					militia = { x = 1 y = 0 }
+					militia = { x = 1 y = 1 }
+					militia = { x = 1 y = 2 }
+					militia = { x = 2 y = 0 }
+					militia = { x = 2 y = 1 }
+					militia = { x = 2 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 195 }
+				create_unit = {
+					division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 219 }
+				create_unit = {
+					division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 242 }
+				create_unit = {
+					division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 246 }
+				create_unit = {
+					division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 247 }
+				create_unit = {
+					division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 223 }
+				create_unit = {
+					division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 222 }
+				create_unit = {
+					division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 224 }
+				create_unit = {
+					division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 220 }
+				create_unit = {
+					division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 248 }
+				create_unit = {
+					division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 252 }
+				create_unit = {
+					division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = ROS_Socialist_Propaganda
+		icon = GFX_ITA_syndicalist_unite
+		cost = 2
+		relative_position_id = ROS_Red_Don
+		x = 1
+		y = 2
+		available = {
+			has_war_with = RUS
+			has_socialist_government = yes 
+		}
+		prerequisite = {
+			focus = ROS_Confront_The_Bear
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			RUS = {
+				add_timed_idea = {
+					idea = DKB_soc_prop_in_russia
+					days = 180
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = ROS_Aftermath_Of_Civil_War
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 3
+		relative_position_id = ROS_Red_Don
+		x = 0
+		y = 3
+		available = {
+			NOT = { country_exists = RUS }
+			195 = { is_owned_and_controlled_by = ROOT }
+			219 = { is_owned_and_controlled_by = ROOT }
+			has_socialist_government = yes
+		}
+		prerequisite = {
+			focus = ROS_Confront_The_Bear
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			set_global_flag = ROS_unified
+			if = {
+				limit = {
+					has_cosmetic_tag = ZHR_uni_accelerationism
+				}
+				
+			}
+			else_if = {
+				limit = {
+					has_cosmetic_tag = BLR_SR
+				}
+
+			}
+			else = {
+				set_cosmetic_tag = DKB_soviet_union
+			}
+			
+			RUS_enable_integration = yes
+			ROOT = { save_global_event_target_as = soviet_russia }
+			for_each_scope_loop = {
+				array = RUS.RUS_starting_states_array
+				remove_claim_by = ROOT
+				add_core_of = ROOT
+			}
+			
+		}
+	}
+	shared_focus = {
+		id = ROS_Deal_With_Opposition
+		icon = GFX_goal_purge_opposition
+		cost = 3
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = -5
+		y = 1
+		available = {
+			has_socialist_government = yes
+		}
+		prerequisite = {
+			focus = ROS_Aftermath_Of_Civil_War
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			 
+			 
+			country_event = {
+				id = dkb.67
+				days = 1
+			}
+		}
+	}
+	shared_focus = {
+		id = ROS_Fate_Of_Socialist_Parties
+		icon = GFX_RUS_Ban_Socialists_vns
+		cost = 3
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = -5
+		y = 3
+		available = {
+			has_socialist_government = yes
+		}
+		prerequisite = {
+			focus = ROS_Deal_With_Opposition
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			 
+			 
+			country_event = {
+				id = dkb.68
+				days = 1
+			}
+		}
+	}
+	shared_focus = {
+		id = ROS_Voluntary_Collectivization
+		text = RUS_Voluntary_Collectivisation
+		icon = GFX_goal_agricultural_aid
+		cost = 4
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = -8
+		y = 2
+		available = {
+			NOT = {
+				has_government = totalist
+			}
+			
+		}
+		prerequisite = {
+			focus = ROS_Deal_With_Opposition
+		}
+		mutually_exclusive = {
+			focus = ROS_Mass_Collectivization
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+			add_ideas = DKB_economic_radsoc
+			
+		}
+	}
+	shared_focus = {
+		id = ROS_Mass_Collectivization
+		text = RUS_Mass_Collectivisation
+		icon = GFX_goal_OTT_Land_Reform
+		cost = 4
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = -6
+		y = 2
+		available = {
+			has_government = totalist
+		}
+		prerequisite = {
+			focus = ROS_Deal_With_Opposition
+		}
+		mutually_exclusive = {
+			focus = ROS_Voluntary_Collectivization
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = DKB_economic_totalist
+			
+		}
+	}
+	shared_focus = {
+		id = ROS_Fight_Bureaucratisation
+		text = RUS_Cut_Red_Tape
+		icon = GFX_SOV_decentralize_the_congress
+		cost = 4
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = -4
+		y = 2
+		available = {
+			NOT = {
+				has_government = totalist
+			}
+		}
+		prerequisite = {
+			focus = ROS_Deal_With_Opposition
+		}
+		mutually_exclusive = {
+			focus = ROS_Bureaucratic_Centralism
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+			
+			add_ideas = DKB_economic_radsoc_2
+			
+		}
+	}
+	shared_focus = {
+		id = ROS_Bureaucratic_Centralism
+		text = RUS_Bureaucratic_Centralism
+		icon = GFX_SOV_centralize_state
+		cost = 4
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = -2
+		y = 2
+		available = {
+			has_government = totalist
+		}
+		prerequisite = {
+			focus = ROS_Deal_With_Opposition
+		}
+		mutually_exclusive = {
+			focus = ROS_Fight_Bureaucratisation
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+			
+			add_ideas = DKB_economic_totalist_2
+			
+		}
+	}
+	shared_focus = {
+		id = ROS_Trade_Unions_Issue
+		text = RUS_Control_Trade_Unions
+		icon = GFX_GBR_fate_of_unions
+		cost = 4
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = -3
+		y = 3
+		available = {
+			has_socialist_government = yes
+		}
+		prerequisite = {
+			focus = ROS_Fight_Bureaucratisation
+			focus = ROS_Bureaucratic_Centralism
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			 
+			country_event = {
+				id = dkb.69
+				days = 1
+			}
+		}
+	}
+	shared_focus = {
+		id = ROS_Separation_Of_Powers
+		text = RUS_Separation_Of_Powers
+		icon = GFX_goal_constitutional_guarantees
+		cost = 4
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = -8
+		y = 4
+		available = {
+			has_socialist_government = yes
+		}
+		prerequisite = {
+			focus = ROS_Voluntary_Collectivization
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+			swap_ideas = {
+				remove_idea = DKB_economic_radsoc
+				add_idea = DKB_economic_radsoc_1
+			}
+			
+		}
+	}
+	shared_focus = {
+		id = ROS_Labour_Camps
+		text = RUS_Labour_Camps
+		icon = GFX_goal_social_reforms
+		cost = 4
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = -6
+		y = 4
+		available = {
+			has_socialist_government = yes
+		}
+		prerequisite = {
+			focus = ROS_Mass_Collectivization
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+			 
+			
+				swap_ideas = {
+					remove_idea = DKB_economic_totalist
+					add_idea = DKB_economic_totalist_1
+				}
+			
+		}
+	}
+	shared_focus = {
+		id = ROS_Cement_The_Regime
+		icon = GFX_DKB_cement_regime
+		cost = 4
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = -5
+		y = 5
+		available = {
+			has_socialist_government = yes
+		}
+		prerequisite = {
+			focus = ROS_Separation_Of_Powers
+			focus = ROS_Labour_Camps
+		}
+		prerequisite = {
+			focus = ROS_Fate_Of_Socialist_Parties
+		}
+		prerequisite = {
+			focus = ROS_Trade_Unions_Issue
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			 add_stability = 0.1
+			 increase_ruling_party_popularity_by_10 = yes
+		}
+	}
+	shared_focus = {
+		id = ROS_Economic_Integration
+		icon = GFX_SOV_socialist_market
+		cost = 3
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = 0
+		y = 1
+		available = {
+			has_socialist_government = yes
+		}
+		prerequisite = {
+			focus = ROS_Aftermath_Of_Civil_War
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			 
+			 
+			add_timed_idea = {
+				idea = DKB_integration
+				days = 730
+			}
+		}
+	}
+	shared_focus = {
+		id = ROS_Expand_The_Plan
+		icon = GFX_socialist_constitution
+		cost = 4
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = ROS_Economic_Integration
+		}
+		available = {
+		
+			has_socialist_government = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			 
+			 
+			modify_timed_idea = {
+				idea = DKB_integration
+				days = -275
+			}
+		}
+	}
+	shared_focus = {
+		id = ROS_Industrialize_The_Motherland
+		icon = GFX_goal_manage_industries
+		cost = 6
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = -1
+		y = 3
+		prerequisite = {
+			focus = ROS_Expand_The_Plan
+		}
+		available = {
+			has_socialist_government = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			 
+			unlock_decision_category_tooltip = RUS_Economy_decisions
+						hidden_effect = {
+		activate_targeted_decision = { target = 651 decision = RUS_Develop_Civilian_Industry_In_State } #Ufa
+		activate_targeted_decision = { target = 248 decision = RUS_Develop_Civilian_Industry_In_State } #Yaroslavl
+		activate_targeted_decision = { target = 252 decision = RUS_Develop_Civilian_Industry_In_State } #Nizhny Novgorod
+		activate_targeted_decision = { target = 250 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+		activate_targeted_decision = { target = 224 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+				activate_targeted_decision = { target = 249 decision = RUS_Develop_Military_Industry_In_State } #Kazan
+		activate_targeted_decision = { target = 398 decision = RUS_Develop_Military_Industry_In_State } #Perm
+		activate_targeted_decision = { target = 217 decision = RUS_Develop_Military_Industry_In_State } #Tsaritsyn
+		activate_targeted_decision = { target = 247 decision = RUS_Develop_Military_Industry_In_State } #Tver
+				activate_targeted_decision = { target = 566 decision = RUS_Develop_Civilian_Industry_In_State } #Irkutsk
+		activate_targeted_decision = { target = 217 decision = RUS_Develop_Civilian_Industry_In_State } #Tsaritsyn
+		activate_targeted_decision = { target = 252 decision = RUS_Develop_Civilian_Industry_In_State } #Nizhny Novgorod
+				activate_targeted_decision = { target = 220 decision = RUS_Develop_Civilian_Industry_In_State } #Kursk
+		activate_targeted_decision = { target = 398 decision = RUS_Develop_Civilian_Industry_In_State } #Perm
+		activate_targeted_decision = { target = 247 decision = RUS_Develop_Military_Industry_In_State } #Tver
+				activate_targeted_decision = { target = 250 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+		activate_targeted_decision = { target = 257 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+		activate_targeted_decision = { target = 224 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+		activate_targeted_decision = { target = 222 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+			} 
+		}
+	}
+	shared_focus = {
+		id = ROS_GOELRO
+		text = RUS_GOELRO
+		icon = GFX_goal_Schelle
+		cost = 4
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = 1
+		y = 3
+		prerequisite = {
+			focus = ROS_Expand_The_Plan
+		}
+		available = {
+			has_socialist_government = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			 
+			 
+			
+				
+				add_ideas = DKB_gosplan_7
+			
+		}
+	}
+	shared_focus = {
+		id = ROS_Resource_Prospection
+		text = RUS_ec_mutual8
+		icon = GFX_goal_generic_coal_mining
+		cost = 4
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = -2
+		y = 4
+		available = {
+			has_socialist_government = yes
+		}
+		prerequisite = {
+			focus = ROS_Industrialize_The_Motherland
+		}
+		prerequisite = {
+			focus = ROS_GOELRO
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			 
+			 
+			every_owned_state = {
+				display_individual_scopes = yes
+				random_select_amount = 3
+				limit = {
+					is_core_of = ROOT
+					is_valid_state_for_development = yes
+					free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = fuel_silo level = 1 }
+			}
+			every_owned_state = {
+				display_individual_scopes = yes
+				random_select_amount = 2
+				limit = {
+					has_resources_amount = { resource = steel amount > 0 }
+					is_core_of = ROOT
+					is_valid_state_for_development = yes
+					free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 }
+				add_resource = { type = steel amount = 5 }
+			}
+			custom_effect_tooltip = tooltip_white_line
+			unlock_decision_category_tooltip = RUS_Resource_decisions 
+		}
+	}
+	shared_focus = {
+		id = ROS_Ural_Tractor_Plants
+		text = RUS_Ural_Tractor_Plants
+		icon = GFX_goal_generic_heavy_armour_russian
+		cost = 4
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = 0
+		y = 4
+		available = {
+			has_socialist_government = yes
+		}
+		prerequisite = {
+			focus = ROS_Industrialize_The_Motherland
+		}
+		prerequisite = {
+			focus = ROS_GOELRO
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			 
+			 
+			swap_ideas = {
+				remove_idea = DKB_gosplan_7
+				add_idea = DKB_gosplan_8
+			}
+		}
+	}
+	shared_focus = {
+		id = ROS_Expand_The_Transsiberian
+		text = RUS_Expand_The_Railway_Network
+		icon = GFX_goal_generic_railroad
+		cost = 8
+		available = {
+			561 = { is_owned_and_controlled_by = ROOT } # Amur
+			563 = { is_owned_and_controlled_by = ROOT } # Chita
+			564 = { is_owned_and_controlled_by = ROOT } # Verkhneudinsk
+			566 = { is_owned_and_controlled_by = ROOT } # Irkutsk
+			567 = { is_owned_and_controlled_by = ROOT } # Bratsk
+			568 = { is_owned_and_controlled_by = ROOT } # Krasnoyarsk
+			569 = { is_owned_and_controlled_by = ROOT } # Shcheglovsk
+			657 = { is_owned_and_controlled_by = ROOT } # Blagoveshchensk
+			has_socialist_government = yes
+		}
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = 2
+		y = 4
+		prerequisite = {
+			focus = ROS_Industrialize_The_Motherland
+		}
+		prerequisite = {
+			focus = ROS_GOELRO
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			every_owned_state = {
+				tooltip = RUS_all_states_with_less_than_three_infra
+				limit = {
+					is_siberia = yes
+					is_controlled_by = ROOT
+					infrastructure < 3
+				}
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+			add_tech_bonus = {
+				name = DKB_Expansion_Of_Railways 
+				bonus = 0.5
+				uses = 1
+				category = train_tech
+			}
+			activate_targeted_decision = { target = 653 decision = RUS_Expand_Transsiberian_railways_EKB_OMSK }
+			activate_targeted_decision = { target = 571 decision = RUS_Expand_Transsiberian_railways_OMSK_KRASNOYARSK }
+			activate_targeted_decision = { target = 563 decision = RUS_Expand_Transsiberian_railways_KRASNOYARSK_CHITA }
+			activate_targeted_decision = { target = 408 decision = RUS_Expand_Transsiberian_railways_CHITA_VLADI }
+		}
+	}
+	shared_focus = {
+		id = ROS_Cement_The_Economy
+		icon = GFX_DKB_cement_economy
+		cost = 4
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = 0
+		y = 5
+		available = {
+			has_socialist_government = yes
+		}
+		prerequisite = {
+			focus = ROS_Ural_Tractor_Plants
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+			remove_ideas = DKB_integration
+		}
+	}
+	shared_focus = {
+		id = ROS_Fate_Of_Russian_Army
+		icon = GFX_DKB_ban_rus_army
+		cost = 4
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = 4
+		y = 1
+		available = {
+			has_socialist_government = yes
+		}
+		prerequisite = {
+			focus = ROS_Aftermath_Of_Civil_War
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+			country_event = {
+				id = dkb.70
+				days = 2
+			}
+		}
+	}
+	shared_focus = {
+		id = ROS_Main_Military_Council
+		icon = GFX_DKB_glavvoyensovet
+		cost = 4
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = 3
+		y = 2
+		available = {
+			has_socialist_government = yes
+		}
+		prerequisite = {
+			focus = ROS_Fate_Of_Russian_Army
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			 
+			 
+			country_event = {
+				id = dkb.71
+				days = 2
+			}
+		}
+	}
+	shared_focus = {
+		id = ROS_Increase_Military_Budget
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 4
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = 3
+		y = 3
+		available = {
+			has_socialist_government = yes
+		}
+		prerequisite = {
+			focus = ROS_Main_Military_Council
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			 
+			add_ideas = DKB_military_budget_increased
+		}
+	}
+	shared_focus = {
+		id = ROS_Centralised_Command
+		text = RUS_Centralised_Command
+		icon = GFX_goal_officers
+		cost = 4
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = 5
+		y = 2
+		prerequisite = {
+			focus = ROS_Fate_Of_Russian_Army
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+				has_government = totalist
+			
+		}
+		mutually_exclusive = {
+			focus = ROS_Decentralised_Structure
+		}
+		completion_reward = {
+	
+			
+
+				add_ideas = DKB_red_army_3
+			
+		}
+	}
+	shared_focus = {
+		id = ROS_Decentralised_Structure
+		text = RUS_Decentralised_Structure
+		icon = GFX_goal_planning_bonus
+		cost = 4
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = 7
+		y = 2
+		prerequisite = {
+			focus = ROS_Fate_Of_Russian_Army
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+				has_government = totalist
+			}
+		}
+		mutually_exclusive = {
+			focus = ROS_Centralised_Command
+		}
+		completion_reward = {
+			 
+			add_ideas = DKB_red_guard_3
+			
+		}
+	}
+	shared_focus = {
+		id = ROS_Reorganize_Armament
+		text = RUS_Reorganise_Armament_Production
+		icon = GFX_focus_focus_fra_maquis
+		cost = 4
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = 6
+		y = 3
+		available = {
+			has_socialist_government = yes
+		}
+		prerequisite = {
+			focus = ROS_Centralised_Command
+			focus = ROS_Decentralised_Structure
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			 
+			 
+			add_tech_bonus = {
+				name = RUS_Reorganise_Armament_Production
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+			add_ideas = RVA_armament_production_1
+		}
+	}
+	shared_focus = {
+		id = ROS_The_Peoples_Logistics_Corps
+		text = RUS_The_Peoples_Logistics_Corps
+		icon = GFX_goal_generic_war_in_the_plate
+		relative_position_id = ROS_Reorganize_Armament
+		x = -1
+		y = 1
+		cost = 5
+		available = {
+			has_socialist_government = yes
+		}
+		prerequisite = {
+			focus = ROS_Reorganize_Armament
+		}
+		prerequisite = {
+			focus = ROS_Centralised_Command
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus RUS_The_Peoples_Logistics_Corps"
+			
+				swap_ideas = {
+					remove_idea = RVA_armament_production_1
+					add_idea = RVA_armament_production_2
+				}
+			
+		}
+		search_filters = { FOCUS_FILTER_ARMY }
+	}
+
+	shared_focus = {
+		id = ROS_Local_Workshops
+		text = RUS_Local_Workshops
+		icon = GFX_goal_syndicalist_workers
+		relative_position_id = ROS_Reorganize_Armament
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			has_socialist_government = yes
+		}
+		prerequisite = {
+			focus = ROS_Reorganize_Armament
+		}
+		prerequisite = {
+			focus = ROS_Decentralised_Structure
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus RUS_Local_Workshops"
+			swap_ideas = {
+				remove_idea = RVA_armament_production_1
+				add_idea = RVA_armament_production_3
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY }
+	}
+	shared_focus = {
+		id = ROS_Cement_The_Army
+		icon = GFX_DKB_cement_army
+		relative_position_id = ROS_Reorganize_Armament
+		x = -2
+		y = 2
+		cost = 4
+		available = {
+			has_socialist_government = yes
+		}
+		prerequisite = {
+			focus = ROS_The_Peoples_Logistics_Corps
+			focus = ROS_Local_Workshops
+		}
+		prerequisite = {
+			focus = ROS_Increase_Military_Budget
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+		completion_reward = {
+			 add_command_power = 50
+			 army_experience = 50
+			 
+		}
+		search_filters = { FOCUS_FILTER_ARMY }
+	}
+	shared_focus = {
+		id = ROS_Invite_Russian_Communists
+		icon = GFX_SOV_militia
+		cost = 3
+		relative_position_id = ROS_Reorganize_Armament
+		x = 0
+		y = 2
+		available = {
+			NOT = { country_exists = RUS }
+			195 = { is_owned_and_controlled_by = ROOT }
+			219 = { is_owned_and_controlled_by = ROOT }
+			has_socialist_government = yes
+		}
+		prerequisite = {
+			focus = ROS_The_Peoples_Logistics_Corps
+			focus = DKB_Local_Workshops
+		}
+		prerequisite = {
+			focus = ROS_Increase_Military_Budget
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			country_event = {
+				id = dkb.23
+				days = 1
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = ROS_Into_The_Future
+		icon = GFX_DKB_diplomacy
+		cost = 3
+		relative_position_id = ROS_Aftermath_Of_Civil_War
+		x = 0
+		y = 6
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_socialist_government = yes
+		}
+		prerequisite = {
+			focus = ROS_Cement_The_Economy
+		}
+		prerequisite = {
+			focus = ROS_Cement_The_Army
+		}
+		prerequisite = {
+			focus = ROS_Cement_The_Regime
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	

@@ -1,0 +1,102 @@
+### Rhineland Ideas ###
+
+ideas = {
+	country = {
+		FRA_The_France_of_Iron_and_Blood = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_The_France_of_Iron_and_Blood" }
+			name = FRA_The_France_of_Iron_and_Blood
+			picture = NFA_france_aux_francais
+			allowed = { always = no }
+			modifier = {
+			political_power_gain = 0.2
+			stability_factor = 0.1
+			war_support_factor = 0.1
+			totalist_drift = 0.03
+			authoritarian_democrat_drift = 0.01
+			resistance_target = -0.2
+			pocket_penalty = -0.1
+			}
+		}
+		FRA_The_France_of_Iron_and_Blood2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_The_France_of_Iron_and_Blood2" }
+			name = FRA_The_France_of_Iron_and_Blood2
+			picture = NFA_france_aux_francais
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.2
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				totalist_drift = 0.03
+				authoritarian_democrat_drift = 0.01
+				resistance_target = -0.2
+				pocket_penalty = -0.1
+				war_stability_factor = 0.2
+				required_garrison_factor = -0.1
+				attrition = -0.1
+				supply_consumption_factor = -0.1
+			}
+		}
+		FRA_Revolutionary_syndicalism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_Revolutionary_syndicalism"}
+			picture = FRA_corporate_syndie_idea
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.2
+			}
+		}
+		FRA_Estates_General = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_Estates_General"}
+			picture = NFA_fraternal_france
+			modifier = {
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		FRA_Estates_General2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_Estates_General2"}
+			picture = NFA_fraternal_france
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				line_change_production_efficiency_factor = 0.2
+				industrial_capacity_factory = 0.2
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+			}
+		}
+		FRA_Civil_and_military_organizations = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_Civil_and_military_organizations"}
+			picture = GEN_army_doctrine_off
+			modifier = {
+				conscription_factor = 0.2
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				training_time_army_factor = -0.2
+			}
+		}
+		FRA_Civil_and_military_organizations2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_Civil_and_military_organizations2"}
+			picture = GEN_army_doctrine_off
+			modifier = {
+				conscription_factor = 0.2
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				training_time_army_factor = -0.2
+				command_power_gain = 0.1
+				max_command_power = 150
+				command_power_gain_mult = 0.15
+				max_command_power_mult = 0.15
+	
+
+			}
+		}
+	}
+}

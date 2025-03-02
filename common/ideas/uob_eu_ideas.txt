@@ -1,0 +1,1073 @@
+ideas = {
+	country = {
+
+		#kxx额外扩展
+		 UOB_Real_Syndicalist = {
+      allowed = {
+        always = yes
+      }
+      name = UOB_Real_Syndicalist
+      picture = SOV_soviet_syndicalism_idea
+      modifier = {
+	totalist_acceptance = -50
+        syndicalist_acceptance = +50       
+        radical_socialist_acceptance = +50
+	social_democrat_acceptance = -50
+        syndicalist_drift = +0.01
+	radical_socialist_drift = +0.01
+	drift_defence_factor = 0.2
+        industrial_capacity_factory = 0.05
+        local_resources_factor = +0.1
+        consumer_goods_factor = 0.05
+        stability_factor = 0.05
+        war_support_factor = 0.05
+        surrender_limit = 0.05
+        
+                  }
+       }
+
+     UOB_Back_to_globe = {
+      allowed = {
+        always = yes
+      }
+      name = UOB_Back_to_globe
+      picture = PB_FRA_Armandist_Revolution
+      modifier = {
+			send_volunteer_size = 2
+			mobilization_speed = 0.05
+			conscription_factor = 0.05
+                        planning_speed = 0.1
+                  }
+       }
+
+  UOB_Small_anarcho_Community = {
+  name = UOB_Small_anarcho_Community
+  picture = SOV_anarchism
+  modifier = {
+       political_power_gain = 0.1
+        radical_socialist_acceptance = 100
+        radical_socialist_drift = 0.05
+        weekly_manpower = 2500
+            }
+  }
+
+UOB_syndical_economy_with_plan = {
+  name = UOB_syndical_economy_with_plan
+  picture = SOV_soviet_syndicalist_split_balance
+  modifier = {
+       global_building_slots_factor = 0.05
+        production_speed_buildings_factor = 0.03
+        production_factory_max_efficiency_factor = 0.05
+        consumer_goods_factor = -0.05
+
+            }
+}
+
+
+UOB_artillery_idea = {
+  name = UOB_artillery_idea
+  picture = GRU_massestwo
+  modifier = {
+       army_artillery_attack_factor = 0.05
+			 army_artillery_defence_factor = 0.05
+
+       artillery = {
+					build_cost_ic = -0.05
+                  }
+            }
+}
+
+
+UOB_Tank_idea = {
+  name = UOB_Tank_idea
+  picture = GRU_panzerstwo
+  modifier = {
+      army_armor_attack_factor = 0.03
+			army_armor_defence_factor = 0.03
+			army_armor_speed_factor = 0.03
+			mechanized_attack_factor = 0.06
+			mechanized_defence_factor = 0.06
+       artillery = {
+					build_cost_ic = -0.05
+            }
+  }
+   }
+
+UOB_international_brigade = {
+  name = UOB_international_brigade
+  picture = generic_syndicalist_manpower
+  modifier = {
+        conscription = 0.01
+				military_leader_cost_factor = -0.50 
+				acclimatization_hot_climate_gain_factor = 0.1 
+				acclimatization_cold_climate_gain_factor = 0.1 
+				man_power_weekly = 1000
+				breakthrough_factor = 0.05
+				recon_factor = 0.05
+				land_reinforce_rate = 0.05
+
+            }
+  }
+
+  UOB_Cultural_Pluralism_IDEAS = {
+      modifier = {
+        political_power_factor = 0.08
+        man_power_weekly = 1000
+        encryption_factor = -0.02
+        decryption_factor = 0.05
+        defensive_war_stability_factor = 0.10
+      }
+      picture = Restore_Press_Freedoms
+    }
+  
+  	
+    UOB_viva_liberty = {
+			picture = WHR_theology_of_liberation
+			modifier = {
+				political_power_gain = -0.1
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+				command_power_gain = 0.15
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				local_resources_factor = 0.15
+			}
+		}
+
+UOB_INTER_workers = {
+			picture = SOV_workers
+			modifier = {
+				political_power_gain = 0.01
+				stability_factor = 0.1
+				research_speed_factor = 0.15
+				attrition = -0.1
+				line_change_production_efficiency_factor = 0.15
+        research_speed_factor = 0.1
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				conscription = 0.03
+				conscription_factor = 0.2
+				local_building_slots_factor = 0.1
+			}
+		}
+
+  UOB_FEMALE_SOLDIER = {
+			picture = GRU_FEMALE_SOLDIER
+			modifier = {
+				conscription_factor = 0.35
+				consumer_goods_factor = 0.05
+        special_forces_cap = 0.1
+        recon_factor = 0.15
+        max_command_power = 15
+			}
+		}
+
+    UOB_public_healthcare = {
+      modifier = {
+        monthly_population = 0.10
+        production_factory_efficiency_gain_factor = 0.04
+        land_reinforce_rate = 0.03
+        army_defence_factor = 0.1
+        winter_attrition_factor = -0.1
+				out_of_supply_factor = -0.05
+      }
+      picture = National_Healthcare_System
+    }
+
+    UOB_MOVIES = {
+      picture = SOV_soyuzmultfilm
+      modifier = {
+        political_power_gain = 0.03
+        stability_weekly = 0.005
+        war_support_weekly = 0.01
+        encryption = 1
+        decryption = 1
+        subversive_activites_upkeep = -0.2
+        resistance_damage_to_garrison = -0.05
+        required_garrison_factor = -0.1
+      }
+    }
+
+    	UOB_the_way_should_be = {
+			picture = CSA_way_it_will_be
+        modifier = {
+				conscription_factor = 0.04
+        research_speed_factor = 0.08
+				production_factory_efficiency_gain_factor = 0.1
+				local_resources = 0.1
+				party_popularity_stability_factor = 0.05
+				consumer_goods_factor = -0.1
+				production_factory_max_efficiency_factor = 0.15
+				offensive_war_stability_factor = 0.05
+				production_lack_of_resource_penalty_factor = -0.05
+				training_time_army_factor = -0.1
+				surrender_limit = 0.1
+			}
+		}
+
+    UOB_oppose_all_dictators_idea = {
+			picture = FRA_idea_revenge
+			modifier = {
+				army_attack_against_major_factor = 0.15
+				army_defence_against_major_factor = 0.15
+				justify_war_goal_time = -0.2
+			}
+		}
+
+    UOB_social_liberation = {
+			picture = ARZ_racial_unity_arizona
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = -0.1
+				radical_socialist_drift = 0.01
+				syndicalist_drift = 0.03
+				local_building_slots_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_dockyard_factor = 0.1
+				production_speed_bunker_factor = 0.1
+				production_speed_infrastructure_factor = 0.15
+				conscription = 0.03
+				conscription_factor = 0.12
+			}
+
+			
+		}
+
+SYN_INARM_IDEA = {
+			picture = generic_syndicalist_militia
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+
+SYN_admirality = {
+			picture = liberty_ships_focus
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				submarine = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				destroyer = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+			modifier = {
+				naval_doctrine_cost_factor = -0.1
+				naval_hit_chance = 0.1
+				navy_max_range_factor = 0.25
+				naval_speed_factor = 0.15
+			}
+		}
+
+    UOB_collective_security_idea = { 
+			picture = generic_syndicalist_militia
+			modifier = {
+				army_morale_factor = 0.10
+				planning_speed = 0.05
+				special_forces_cap = 0.1
+				army_attack_speed_factor = 0.1
+				supply_consumption_factor = -0.05
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+			}
+		}
+
+    UOB_Together_with_ENG_idea = { 
+			picture = ALB_rejuvenation_classes
+			modifier = {
+			  political_power_gain = 0.1
+				stability_factor = 0.1
+				syndicalist_drift = 0.02
+				research_speed_factor = 0.15
+				compliance_starting_value = 0.25
+				compliance_growth = 0.25
+				required_garrison_factor = -0.25
+				attrition = -0.25
+				conscription = 0.03
+				conscription_factor = 0.2
+				local_building_slots_factor = 0.2
+			}
+      equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					defense = 0.1
+					soft_attack = 0.1
+					hard_attack = 0.1
+					instant = yes
+				}
+				
+				artillery_equipment = {
+					build_cost_ic = -0.1
+					reliability = 0.1
+					breakthrough = 0.1
+					soft_attack = 0.1
+					hard_attack = 0.1
+					instant = yes
+				}
+			}
+	}
+
+		SYN_Socialist_economic_integration_idea = {
+			picture = gru_red_trade
+			modifier = {
+				faction_trade_opinion_factor = 0.5
+				local_resources_factor = 0.1
+				opinion_gain_monthly_same_ideology_factor = 0.2
+				lend_lease_tension = -0.5
+			}
+		}
+
+		UOB_Special_forces_idea = {
+			picture = KSV_for_the_soldier_idea
+			modifier = {
+				special_forces_attack_factor = 0.1
+				special_forces_defence_factor = 0.1
+				special_forces_breakthrough_factor = 0.10
+				special_forces_cap = 0.15
+				special_forces_min = 10
+				special_forces_no_supply_grace = 4
+				org_loss_when_moving = -0.1
+			}
+		}
+
+		UOB_paratroops_idea = {
+			picture = KSV_for_the_soldier_idea
+			modifier = {
+				special_forces_attack_factor = 0.1
+				special_forces_defence_factor = 0.1
+				special_forces_breakthrough_factor = 0.10
+				special_forces_cap = 0.2
+				special_forces_min = 15
+				special_forces_no_supply_grace = 4
+				org_loss_when_moving = -0.15
+				modifier_army_sub_unit_paratrooper_attack_factor = 0.10
+				modifier_army_sub_unit_paratrooper_defence_factor = 0.10
+				modifier_army_sub_unit_paratrooper_max_org_factor = 0.10
+				extra_paratrooper_supply_grace = 0.05
+			}
+		}
+
+		UOB_liberation_from_sky_idea = {
+			picture = generic_air_bonus
+			modifier = {
+				SRI_cda_air_accidents_factor = -0.1
+				air_superiority_efficiency = 0.15
+				army_bonus_air_superiority_factor = 0.10
+				naval_torpedo_hit_chance_factor = 0.1
+				air_bombing_targetting = 0.1
+				air_range_factor = 0.1
+			}
+		}
+
+		UOB_navy_industry_idea = {
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				
+			}
+		 modifier = {
+				production_speed_naval_base_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				industrial_capacity_dockyard = 0.15
+			}
+			equipment_bonus = {
+				submarine = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				destroyer = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				capital_ship = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+		}
+
+	UOB_motorised_idea= {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea DEN_idea_motorised_military" }
+			picture = FRA_motorized_focus
+			modifier = {
+				motorized_attack_factor = 0.1
+				motorized_breakthrough_factor = 0.05
+				army_speed_factor = 0.05
+			}
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+
+		#kxx扩展
+		ENG_crusade_for_europe = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_crusade_for_europe"}
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_morale = 10
+				army_org = 15
+				local_non_core_manpower = 0.05
+				
+			}
+			picture = EUR_crusade
+		}
+		ENG_achieved_dream = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_achieved_dream"}
+			modifier = {
+				stability_factor = 0.1
+
+			}
+			picture = EUR_eurodream
+		}
+		ENG_building_europa = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_building_europa"}
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.10
+				global_building_slots_factor = 0.10
+				production_speed_buildings_factor = 0.10
+
+			}
+			picture = EUR_eurobuild
+		}
+
+		ENG_national_socialism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_national_socialism"}
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+
+			}
+			picture = GFX_idea_ENG_maximist
+		}
+
+		ENG_new_marx = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_new_marx"}
+			modifier = {
+				totalist_drift = 0.5
+				stability_weekly = 0.0005
+			}
+			picture = EUR_mosleymarx
+		}
+
+		ENG_new_nation = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_new_nation"}
+			modifier = {
+				stability_factor = 0.1
+
+			}
+			picture = SOV_proletarian_religion_idea
+		}
+
+		ENG_great_trial = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_great_trial"}
+			modifier = {
+				stability_factor = -0.35
+				war_support_factor = -0.35
+				totalist_drift = 1
+				weekly_manpower = -1500
+				army_attack_factor = -0.20
+				army_defence_factor = -0.20
+
+			}
+			picture = EUR_trial
+		}
+
+		ENG_centre_of_civilization = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_centre_of_civilization"}
+			targeted_modifier = {
+				tag = USA 
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			targeted_modifier = {
+				tag = CSA  
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			targeted_modifier = {
+				tag = COR 
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			targeted_modifier = {
+				tag = WCC 
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			targeted_modifier = {
+				tag = BBR 
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			targeted_modifier = {
+				tag = CAL 
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			targeted_modifier = {
+				tag = CAN 
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			targeted_modifier = {
+				tag = ALA  
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			targeted_modifier = {
+				tag = QUE 
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			targeted_modifier = {
+				tag = TEX 
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			targeted_modifier = {
+				tag = TXS 
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			picture = EUR_shinybritain
+		}
+		#####MEGASTRUCTURES
+		ENG_atlantropa = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_atlantropa"}
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				consumer_goods_factor = -0.10
+				acclimatization_hot_climate_gain_factor = 0.15
+
+			}
+			picture = EUR_atlandam
+		}
+		
+		ENG_highway = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_highway"}
+			modifier = {
+				supply_factor = 0.15
+				attrition = -0.1
+				supply_node_range = 0.15
+				army_speed_factor = 0.25
+				
+			}
+			picture = EUR_highway
+		}
+		
+		ENG_tucbuilding = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_tucbuilding"}
+			modifier = {
+				surrender_limit = 0.1
+				totalist_drift = 0.03
+				army_core_defence_factor = 0.1
+				
+				
+			}
+			picture = EUR_tucbuilding
+		}
+		#######################################################################################SRI
+		SRI_volkshierarchy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_volkshierarchy"}
+			modifier = {
+				consumer_goods_factor = -0.05
+				global_building_slots_factor = 0.15
+			}
+			picture = SRI_italianhierarchy
+		}
+		
+		SRI_market_socialism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_volkshierarchy"}
+			modifier = {
+				consumer_goods_factor = -0.15
+				global_building_slots_factor = 0.25
+				compliance_growth = 0.15
+				party_popularity_stability_factor = 0.3
+				
+			}
+			picture = SRI_italianmarketsocialism
+		}
+		
+		SRI_national_corporatism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_volkshierarchy"}
+			modifier = {
+				consumer_goods_factor = -0.25
+				global_building_slots_factor = 0.25
+				compliance_growth = -0.05
+				party_popularity_stability_factor = 0.3
+			}
+			picture = SRI_italiancorporatism
+		}
+		
+		SRI_mussolini_aeterna = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_mussolini_aeterna"}
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+			picture = SRI_eternalmusso
+		}
+		
+		SRI_bianchi_aeterna = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_bianchi_aeterna"}
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.2
+				drift_defence_factor = 0.3
+			}
+			picture = SRI_eternalbianchi
+		}
+		SRI_orthodox_mussolinism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_orthodox_mussolinism"}
+			modifier = {
+				political_power_factor = 0.15
+				party_popularity_stability_factor = 0.15
+			}
+			picture = SRI_mussolinism
+		}
+		SRI_new_thesis = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_new_thesis"}
+			modifier = {
+				defensive_war_stability_factor = 0.5
+				army_morale_factor = 0.3
+				surrender_limit = 0.25
+			}
+			picture = SRI_bianchism
+		}
+		
+		SRI_italian_reforge = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_italian_reforge"}
+			modifier = {
+				monthly_population = -0.25
+				stability_weekly = -0.025
+				totalist_drift = 1
+				resistance_activity = 0.5
+				enemy_operative_detection_chance_factor = 1
+				conscription_factor = -0.3
+			}
+			picture = SRI_italyreforge
+		}
+		
+		SRI_peasant_vanguard = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_peasant_vanguard"}
+			modifier = {
+				monthly_population = 0.15
+				stability_factor = 0.15
+			}
+			picture = SRI_peasantvanguard
+		}
+		
+		SRI_revolutionary_spirit = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_revolutionary_spirit"}
+			modifier = {
+				stability_factor = 0.25
+				war_support_factor = 0.25
+			}
+			picture = SRI_revspirit
+		}
+		
+		SRI_catholic_socialism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_catholic_socialism"}
+			modifier = {
+				political_power_factor = 0.15
+				drift_defence_factor = 0.3
+				resistance_activity = -0.15
+			}
+			picture = SRI_christiansocialism
+		}
+		#############################GALITSIA
+		GAL_wesele = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GAL_wesele"}
+			modifier = {
+				political_power_factor = -0.15
+				resistance_activity = 0.15
+				stability_factor = -0.25
+				offence = -0.15
+				defence = -0.15
+			}
+			picture = EUR_tucbuilding
+		}
+		
+		GAL_united_in_revolution = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GAL_united_in_revolution"}
+			modifier = {
+				political_power_factor = 0.05
+				resistance_activity = -0.25
+				stability_factor = 0.05
+			}
+			picture = EUR_tucbuilding
+		}
+		
+		GAL_exist_by_revolution = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GAL_exist_by_revolution"}
+			modifier = {
+				political_power_factor = 0.25
+				stability_factor = 0.25
+				war_support_factor = 0.25
+				offence = 0.25
+				defence = 0.25
+			}
+			picture = EUR_tucbuilding
+		}
+		
+		GAL_step_towards_socialism  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GAL_step_towards_socialism"}
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.15
+				war_support_factor = -0.1
+				consumer_goods_factor = -0.25
+				global_building_slots_factor = 0.3
+				
+			}
+			picture = EUR_tucbuilding
+		}
+		
+		####COF
+		FRA_organic_socialism  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_organic_socialism"}
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.15
+				war_support_factor = 0.1
+				
+			}
+			picture = FRA_frenchhierarchy
+		}
+		
+		FRA_one_way_for_france  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_one_way_for_france"}
+			modifier = {
+				drift_defence_factor = 1
+			}
+			picture = FRA_onefrenchway
+		}
+		
+		FRA_order_in_society  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_order_in_society"}
+			modifier = {
+				defensive_war_stability_factor = 0.25
+				resistance_growth_on_our_occupied_states = 0.15
+				conscription_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_org_factor = 0.15
+				
+			}
+			picture = FRA_orderinsociety
+		}
+		
+		FRA_ideal_frenchman  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_ideal_frenchman"}
+			modifier = {
+				monthly_population  = 0.1
+				surrender_limit = 0.15
+				conscription_factor = 0.1
+				army_morale_factor = 0.3
+				army_org_factor = 0.3
+				
+			}
+			picture = FRA_frenchchad
+		}
+		
+		FRA_one_doctrine_one_rule = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_one_doctrine_one_rule"}
+			modifier = {
+				drift_defence_factor = 0.3
+			}
+			picture = FRA_onedoctrine
+		}
+		FRA_vanguards_in_power = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_vanguards_in_power"}
+            picture = FRA_vanguards
+            modifier = {
+                production_speed_arms_factory_factor = 0.15
+                political_power_gain = 0.15
+                stability_factor = 0.05
+            }
+        }
+	FRA_union_loyalty = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty"}
+            allowed = { always = no }
+            removal_cost = -1
+            picture = FRA_union_loyalty
+            modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.05
+                
+            }
+		}
+        FRA_union_loyalty3 = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty3"}
+            allowed = { always = no }
+            removal_cost = -1
+            picture = FRA_union_loyalty
+            modifier = {
+				production_factory_max_efficiency_factor = 0.10
+				production_speed_buildings_factor = 0.10
+			    production_factory_efficiency_gain_factor = 0.10
+				production_factory_start_efficiency_factor = 0.10
+                
+            }
+		}
+        FRA_camps = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_camps"}
+            allowed = { always = no }
+            removal_cost = -1
+            picture = FRA_camp_idea
+            modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.05
+				political_power_gain = 0.08
+                
+            }
+		}
+        FRA_cultnew = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_cult"}
+            allowed = { always = no }
+            removal_cost = -1
+            picture = FRA_deat_cultnew
+            modifier = {
+			    stability_factor = 0.10
+				political_power_gain = 0.25
+				army_morale_factor = 0.05
+				land_reinforce_rate = 0.05
+				army_speed_factor = 0.03
+                
+            }
+		}
+		FRA_cpai3 = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_cpai3"}
+            allowed = { always = no }
+            removal_cost = -1
+            picture = FRA_cpai_idea
+            modifier = {
+				decryption_factor = 0.10
+				encryption_factor = 0.10
+				special_forces_cap = 0.05
+                
+            }
+		}
+        FRA_cpai4 = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_cpai4"}
+            allowed = { always = no }
+            removal_cost = -1
+            picture = FRA_cpai_idea
+            modifier = {
+				decryption_factor = 0.15
+				encryption_factor = 0.15
+				stability_factor = 0.05
+				political_power_gain = 0.10
+				special_forces_cap = 0.10
+                
+            }
+		}
+
+	
+		#################################EGYPT NASSER
+		EGY_new_arabi = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_new_arabi"}
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.15
+			}
+			picture = EGY_newarabs
+		}
+		
+		EGY_crackdown_on_religion = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_crackdown_on_religion"}
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = 0.3
+				totalist_drift = 0.15
+				national_populist_drift = 0.15
+				
+			}
+			picture = EGY_quranburning
+		}
+		
+		EGY_arab_socialism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_arab_socialism"}
+			modifier = {
+				stability_factor = 0.15
+				radical_socialist_drift = 0.15
+				local_resources_factor = 0.3
+				consumer_goods_factor = -0.05
+				global_building_slots_factor = 0.15
+			}
+			picture = EGY_arabsocialism
+		}
+		
+		EGY_arab_socialism_based = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_arab_socialism"}
+			modifier = {
+				stability_factor = 0.20
+				radical_socialist_drift = 0.30
+				local_resources_factor = 0.35
+				consumer_goods_factor = -0.1
+				global_building_slots_factor = 0.20
+			}
+			picture = EGY_arabsocialism
+		}
+		
+		EGY_academical_golden_age = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_academical_golden_age"}
+			modifier = {
+				research_speed_factor = 0.15
+				political_power_gain = 0.2
+				radical_socialist_drift = 0.1
+			}
+			picture = EGY_bigbrain
+		}
+		
+		EGY_suez_broken_administration = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_suez_broken_administration"}
+			modifier = {
+				offence = -1
+				defence = -1
+			}
+			picture = MEX_revolutionary_army
+		}
+		
+		EGY_anti_colonialism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_anti_colonialism"}
+			modifier = {
+				compliance_growth = 0.5
+				stability_factor = 0.1
+				non_core_manpower = 0.3
+			}
+			picture = EGY_anticolonialism
+		}
+		
+		EGY_leaders_of_arab_world = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_leaders_of_arab_world"}
+			modifier = {
+				offence = 0.15
+				defence = 0.15
+				stability_factor = 0.1
+				radical_socialist_drift = 0.5
+				surrender_limit = 0.2
+			}
+			picture = EGY_aDrabmasters
+		}
+		##############EGYPT NAGUIB
+		EGY_pragmatic_methods = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_pragmatic_methods"}
+			modifier = {
+				drift_defence_factor = 0.3
+				faction_trade_opinion_factor = 0.5
+				consumer_goods_factor = -0.05
+				
+			}
+			picture = EGY_trade
+		}
+		
+		EGY_naguib_military = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_naguib_military"}
+			modifier = {
+				send_volunteer_factor = 0.3
+				heat_attrition_factor = -0.15
+				conscription_factor = 0.2
+				army_org_factor = 0.3
+			}
+			picture = EGY_egyptianarmy
+		}
+		EGY_conservatism_naguib = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_conservatism_naguib"}
+			modifier = {
+				stability_factor = 0.3
+				political_power_gain = 0.3
+				radical_socialist_drift = -0.5
+				syndicalist_drift = -0.5
+				totalist_drift = -0.5
+				research_speed_factor = -0.1
+			}
+			picture = EGY_conservatism
+		}
+		###########GYPT CENTRE
+		EGY_mixed_economy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_mixed_economy"}
+			modifier = {
+				drift_defence_factor = 0.15
+				faction_trade_opinion_factor = 0.15
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.1
+				global_building_slots_factor = 0.05
+			}
+			picture = EGY_mixedeconomy
+		}
+		EGY_centrist_army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_centrist_army"}
+			modifier = {
+				send_volunteer_factor = 0.15
+				heat_attrition_factor = -0.15
+				conscription_factor = 0.1
+				army_org_factor = 0.15
+				army_morale_factor = 0.1
+				
+			}
+			picture = EGY_egyptianarmy
+		}
+		EGY_freedom_of_speech = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_freedom_of_speech"}
+			modifier = {
+				party_popularity_stability_factor = 0.3
+				offensive_war_stability_factor = -0.15
+				political_power_factor = 0.15
+				stability_weekly = 0.01
+				
+			}
+			picture = EGY_freedomofspeech
+		}
+		EGY_benelovent_republic = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_benelovent_republic"}
+			modifier = {
+				stability_factor = 0.15
+				
+			}
+			picture = EGY_liberty
+		}
+		EGY_secularism_in_public = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_secularism_in_public"}
+			modifier = {
+				stability_factor = -0.05
+				
+				
+			}
+			picture = EGY_secularism
+		}
+	}
+	
+	
+}

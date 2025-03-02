@@ -1,0 +1,20 @@
+spriteTypes = {	
+	
+	SpriteType = {
+	name = "GFX_idea_ISR_Avraham_Stern_hog_npo"
+	texturefile = "gfx/interface/ministers/ISR/ISR_Avraham_Stern.png"			
+	}
+	SpriteType = {
+	name = "GFX_idea_ISR_Nathan_Yellin_Mor_eco_pau"
+	texturefile = "gfx/interface/ministers/ISR/ISR_Nathan_Yellin_Mor.png"			
+	}
+	SpriteType = {
+	name = "GFX_idea_ISR_Ya_akov_Meridor_for_pau"
+	texturefile = "gfx/interface/ministers/ISR/ISR_Ya_akov_Meridor.png"			
+	}
+	SpriteType = {
+	name = "GFX_idea_ISR_Eliyahu_Giladi_sec_npo"
+	texturefile = "gfx/interface/ministers/ISR/ISR_Eliyahu_Giladi.png"			
+	}
+
+}

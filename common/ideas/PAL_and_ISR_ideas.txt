@@ -1,0 +1,51 @@
+### Rhineland Ideas ###
+
+ideas = {
+	country = {
+		PAL_Bloated_administrative_system = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Bloated_administrative_system" }
+			name = 臃肿的行政体系
+			picture = generic_destruction
+			allowed = { always = no }
+			modifier = {
+			political_power_factor = -0.1
+			production_speed_buildings_factor = -0.1
+			stability_factor = -0.05
+			industrial_capacity_factory = -0.05
+			}
+		}
+		PAL_Kemalist_continued = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Kemalist_continued" }
+			name = 凯末尔主义延续
+			picture = TUR_ottoman_hegemony
+			allowed = { always = no }
+			modifier = {
+			social_conservative_drift = 0.05
+			local_resources_factor = 0.05
+			consumer_goods_factor = -0.1
+			}
+		}
+		PAL_Verana_Zionist_Union = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Verana_Zionist_Union" }
+			name = 维拉那-犹太复国联盟
+			picture = COR_safeguard_jewish_communities
+			allowed = { always = no }
+			modifier = {
+			political_power_gain = 0.05
+			war_support_factor = 0.1
+			research_speed_factor = 0.05
+			}
+		}
+		PAL_Dependent_on_the_Ottoman_economy_with_the_nobility = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Dependent_on_the_Ottoman_economy_with_the_nobility" }
+			name = 依附奥斯曼与贵族的经济
+			picture = OTT_Horrors_of_the_Weltkrieg_idea_icon
+			allowed = { always = no }
+			modifier = {
+			production_factory_max_efficiency_factor = 0.05		
+			line_change_production_efficiency_factor = -0.1
+			production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+	}
+}

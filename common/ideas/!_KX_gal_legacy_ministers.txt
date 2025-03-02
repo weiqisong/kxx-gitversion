@@ -1,0 +1,486 @@
+ideas = {	
+	head_of_government = { ### Head of Government ###
+				GAL_Tomasz_Dabal_hog_rso = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Tomasz_Dabal_hog_rso"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_anti_establishment_maverick
+			}
+		}
+	
+		GAL_Ignacy_Daszynski_hog_sde = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Ignacy_Daszynski_hog_sde"
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_ambitious_union_boss
+			}
+		}
+
+		GAL_Kazimierz_Puzak_hog_sde = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Kazimierz_Puzak_hog_sde"
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_liberal_socialist
+			}
+		}
+
+		GAL_Jakub_Bojko_hog_sli = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Jakub_Bojko_hog_sli"
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_spiritual_leader
+			}
+		}
+
+		GAL_Adam_Heydel_hog_mli = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Adam_Heydel_hog_mli"
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_corporate_suit
+			}
+		}
+
+		GAL_Hieronim_Tarnowski_hog_sco = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Hieronim_Tarnowski_hog_sco"
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_respected_war_hero
+			}
+		}
+
+		GAL_Andrzej_Lubomirski_hog_pau = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Andrzej_Lubomirski_hog_pau"
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_the_grand_old_man
+			}
+		}
+
+	}
+
+	person_of_influence = { ### Person of Influence ###
+		## Foreign Minister ##
+				GAL_Andrzej_Huszno_for_rso = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Andrzej_Huszno_for_rso"
+			}
+			traits = {
+				foreign_minister
+				radical_socialist
+				for_ideological_crusader
+			}
+		}
+
+		GAL_Herman_Lieberman_for_sde = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Herman_Lieberman_for_sde"
+			}
+			traits = {
+				foreign_minister
+				social_democrat
+				for_ideological_crusader
+			}
+		}
+
+		GAL_Adam_Krezel_for_sli = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Adam_Krezel_for_sli"
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_apologetic_clerk
+			}
+		}
+
+		GAL_Maksymilian_Fingerchut_for_mli = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Maksymilian_Fingerchut_for_mli"
+			}
+			traits = {
+				foreign_minister
+				market_liberal
+				for_biased_intellectual
+			}
+		}
+
+		GAL_Jan_Hupka_for_sco = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Jan_Hupka_for_sco"
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_biased_intellectual
+			}
+		}
+
+		GAL_Roman_Longchamps_Berier_for_pau = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Roman_Longchamps_Berier_for_ade"
+			}
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_iron_fisted_brute
+			}
+		}
+
+
+		## Economy Minister ##
+		GAL_Franciszek_Krempa_eco_rso = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Franciszek_Krempa_eco_rso"
+			}
+			traits = {
+				economy_minister
+				radical_socialist
+				eco_reformer
+			}
+		}
+
+		GAL_Jedrzej_Moraczewski_eco_sde = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Jedrzej_Moraczewski_eco_sde"
+			}
+			traits = {
+				economy_minister
+				social_democrat
+				eco_planned_economy_proponent
+			}
+		}
+
+		GAL_Andrzej_Kedzior_eco_sli = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Andrzej_Kedzior_eco_sli"
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_shipping_baron
+			}
+		}
+
+				GAL_Ferdynand_Zweig_eco_mli = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Ferdynand_Zweig_eco_mli"
+			}
+			traits = {
+				economy_minister
+				market_liberal
+				eco_laissez_faire_capitalist
+			}
+		}
+
+		GAL_Wladyslaw_Leopold_Jaworski_eco_sco = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Wladyslaw_Leopold_Jaworski_eco_sco"
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_administrative_genius
+			}
+		}
+
+				GAL_Jan_Nepomucen_Potocki_eco_pau = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Jan_Nepomucen_Potocki_eco_pau"
+			}
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_oil_baron
+			}
+		}
+
+
+		## Security Minister ##
+		GAL_Antoni_Kurowski_sec_rso = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Antoni_Kurowski_sec_rso"
+			}
+			traits = {
+				security_minister
+				radical_socialist
+				sec_compassionate_gentleman
+			}
+		}
+
+		GAL_Tadeusz_Reger_sec_sde = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Tadeusz_Reger_sec_sde"
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_man_of_the_people
+			}
+		}
+
+		GAL_Wladyslaw_Kiernik_sec_sli = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Wladyslaw_Kiernik_sec_sli"
+			}
+			traits = {
+				security_minister
+				social_liberal
+				sec_silent_lawyer
+			}
+		}
+
+		GAL_Natan_Loewenstein_sec_mli = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Natan_Loewenstein_sec_mli"
+			}
+			traits = {
+				security_minister
+				market_liberal
+				sec_silent_lawyer
+			}
+		}
+
+		GAL_Aleksander_Skrzynski_sec_sco = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Aleksander_Skrzynski_sec_sco"
+			}
+			traits = {
+				security_minister
+				social_conservative
+				sec_crime_fighter
+			}
+		}
+
+		GAL_Leon_Pininski_sec_pau = {
+			allowed = { original_tag = GAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GAL_Leon_Pininski_sec_pau"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_prince_of_terror
+			}
+		}
+	}
+}

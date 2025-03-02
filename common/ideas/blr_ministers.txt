@@ -1,0 +1,217 @@
+ideas = {
+	
+	head_of_government = { ### Head of Government ###
+		WHR_Fabijan_Akincyc_hog_npo = {
+			allowed = { original_tag = WHR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea WHR_Fabijan_Akincyc_hog_npo"
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_naive_optimist
+			}
+		}
+		WHR_janka_kupala_hog_tot = {
+			allowed = { original_tag = WHR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Amadeo_Bordiga_hog_tot"
+			}
+			traits = {
+				head_of_government
+				totalist
+				hog_naive_optimist
+			}
+		}
+		WHR_leanard_zajac_hog_tot = {
+			allowed = {
+				original_tag = WHR
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Amadeo_Bordiga_hog_tot"
+			}
+			traits = {
+				head_of_government
+				totalist
+				hog_ambitious_union_boss
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+		}
+	}
+	person_of_influence = { ### Person of Influence ###
+		## Foreign Minister ##
+		WHR_Uladzislau_Kazlouski_for_npo = {
+			allowed = { original_tag = WHR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea WHR_Uladzislau_Kazlouski_for_npo"
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				for_biased_intellectual
+			}
+		}
+		WHR_larysa_hienijus_for_tot = {
+			allowed = { original_tag = WHR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Onorato_Damen_for_tot"
+			}
+			traits = {
+				foreign_minister
+				totalist
+				for_apologetic_clerk
+			}
+		}
+		WHR_tomasz_hryb_for_tot = {
+			allowed = {
+				original_tag = WHR
+			}
+			traits = {
+				foreign_minister
+				totalist
+				for_general_staffer
+			}
+			available = {
+				has_completed_focus = BLR_pale_horse
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Onorato_Damen_for_tot"
+			}
+		}
+		WHR_Ivan_Jermacenka_eco_npo = {
+			allowed = { original_tag = WHR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea WHR_Ivan_Jermacenka_eco_npo"
+			}
+			traits = {
+				economy_minister
+				national_populist
+				eco_corrupt_kleptocrat
+			}
+		}
+		WHR_dzmitryj_pryshchepau_eco_tot = {
+			allowed = { original_tag = WHR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Bruno_Fortichiari_eco_tot"
+			}
+			traits = {
+				economy_minister
+				totalist
+				eco_planned_economy_proponent
+			}
+		}
+		WHR_sciapan_niekraszewicz_eco_tot = {
+			allowed = {
+				original_tag = WHR
+			}
+			traits = {
+				economy_minister
+				totalist
+				eco_administrative_genius
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Bruno_Fortichiari_eco_tot"
+			}
+		}
+		WHR_vasiliy_korzh_sec_tot = {
+			allowed = { original_tag = WHR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Bruno_Maffi_sec_tot"
+			}
+			traits = {
+				security_minister
+				totalist
+				sec_crime_fighter
+			}
+		}
+		WHR_fabian_szantyr_sec_tot = {
+			allowed = {
+				original_tag = WHR
+			}
+			traits = {
+				security_minister
+				totalist
+				sec_secret_police_chief
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Bruno_Maffi_sec_tot"
+			}
+		}
+	}
+}

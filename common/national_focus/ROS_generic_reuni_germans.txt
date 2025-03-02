@@ -1,0 +1,2086 @@
+
+
+#German puppet stuff
+
+shared_focus = {
+	id =ROS_preparing_to_invade_shit
+	icon = GFX_goal_BUL_raze_russia
+	cost = 2
+	allow_branch = {
+		has_country_flag = ROS_claim_reuni_germans
+	}
+	offset = {
+		x = 80
+		y = 0
+		trigger = {
+			tag = WHR
+		}
+	}
+	prerequisite = {
+		focus = ROS_our_rule_secured
+	}
+	prerequisite = {
+		focus = ROS_form_the_RONA
+	}
+	prerequisite = {
+		focus = ROS_begin_germanisation
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id =ROS_the_foreigners_coup
+	x = 0
+	y = 4
+	completion_reward = {
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = RUS
+		}
+		for_each_scope_loop = {
+			array = RUS.RUS_starting_states_array
+			add_claim_by = ROOT
+		}
+	}
+}
+
+shared_focus = {
+	id = ROS_the_second_battle_on_ice
+	icon = GFX_focus_rus_teutonic
+	cost = 2
+	bypass = {
+		RUS = {
+		exists = no
+		}
+	}
+	available = {
+		has_war_with = RUS
+	}
+	prerequisite = {
+		focus = ROS_preparing_to_invade_shit
+		
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_preparing_to_invade_shit
+	x = 0
+	y = 1
+	completion_reward = {
+	add_timed_idea = {
+	idea = DKB_battle_on_ice
+	days = 150
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_Endsieg
+	icon = GFX_goal_GER_For_Germany
+	cost = 2
+	available = {
+		if = {
+			limit = {
+				soviets_exist = yes
+				TRM = { has_country_flag = SOV_restored_in_transamur }
+			}
+			NOT = { country_exists = RUS }
+		}
+		else = {
+			NOT = {
+				country_exists = RUS
+			}
+		}
+		195 = { is_owned_and_controlled_by = ROOT }
+		219 = { is_owned_and_controlled_by = ROOT }
+		
+	}
+	prerequisite = {
+		focus = ROS_the_second_battle_on_ice
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_preparing_to_invade_shit
+	x = 0
+	y = 2
+	completion_reward = {
+		RUS_enable_integration = yes
+			
+		add_ideas = {
+			DKB_russian_reistance
+			DKB_admin_strain
+			DKB_economic_hell
+		}
+
+		
+		
+		hidden_effect = {
+			set_party_name = { 
+				ideology = social_liberal
+				long_name = DKB_non_simps_long
+				name = DKB_non_simps
+			}
+			set_party_name = { 
+				ideology = market_liberal
+				long_name = DKB_non_simps_long
+				name = DKB_non_simps
+			}
+			set_party_name = { 
+				ideology = syndicalist
+				long_name = DKB_resistance_r_long
+				name = DKB_resistance_r
+			}
+			set_party_name = { 
+				ideology = radical_socialist
+				long_name = DKB_mother_anarchy_long
+				name = DKB_mother_anarchy
+			}
+			set_party_name = { 
+				ideology = social_conservative
+				long_name = DKB_resistance_m_long
+				name = DKB_resistance_m
+			}
+			create_country_leader = {
+				name = "Stepan Petrichenko"
+				picture = "gfx/leaders/SOV/Stepan_Petrichenko.png"
+				expire = "1.1.1"
+				ideology = radical_socialist_subtype
+				traits = {}
+			}
+			create_country_leader = {
+				name = "Vasily Chuikov"
+				picture = "gfx/leaders/RUS/Portrait_RUS_Vasily_Chuikov.png"
+				expire = "1.1.1"
+				ideology = syndicalist_subtype
+				traits = {}
+			}
+			create_country_leader = {
+				name = "Sergei Markov"
+				picture = "gfx/leaders/RUS/Portrait_RUS_Sergei_Markov.png"
+				expire = "1.1.1"
+				ideology = social_conservative_subtype
+				traits = {}
+			}
+			create_country_leader = {
+				name = "Vasily Maklakov"
+				picture = "gfx/leaders/RUS/Portrait_RUS_Vasily_Maklakov.png"
+				expire = "1.1.1"
+				ideology = market_liberal_subtype
+				traits = {}
+			}
+			create_country_leader = {
+				name = "Vasily Maklakov"
+				picture = "gfx/leaders/RUS/Portrait_RUS_Vasily_Maklakov.png"
+				expire = "1.1.1"
+				ideology = social_liberal_subtype
+				traits = {}
+			}
+		}
+	}
+}
+shared_focus = {
+	id =ROS_the_victorian_claim
+	icon = GFX_goal_POL_german_king
+	cost = 2
+	mutually_exclusive = {
+		focus = ROS_the_reichskommissariat
+	}
+	prerequisite = {
+		focus = ROS_Endsieg
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		NOT = {
+			has_authoritarian_government = yes
+		}
+		
+	}
+	relative_position_id =ROS_Endsieg
+	x = -7
+	y = 1
+	completion_reward = {
+	add_political_power = 150
+	set_cosmetic_tag = DKB_tsar_willy
+	}
+}
+
+shared_focus = {
+	id =ROS_Use_the_Cossacks
+	icon = GFX_MNR_Terek_Cossacks
+	cost = 4
+	prerequisite = {
+		focus = ROS_the_victorian_claim
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = 2
+	y = 1
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_russian_reistance
+	add_idea = DKB_russian_reistance_1
+	}
+	}
+}
+
+
+shared_focus = {
+	id =ROS_Begin_Creating_the_New_Nobility
+	icon = GFX_HUN_noblesse_oblige
+	cost = 4
+	prerequisite = {
+		focus = ROS_the_victorian_claim
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = 0
+	y = 1
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_admin_strain 
+	add_idea = DKB_admin_strain_1
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_Destory_the_KONR
+	icon = GFX_goal_NEE_Stamp_out_Republicanism
+	cost = 4
+	prerequisite = {
+		focus = ROS_the_victorian_claim
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = -2
+	y = 1
+	completion_reward = {
+	add_political_power = 150
+	}
+}
+
+shared_focus = {
+	id =ROS_Look_For_Allies
+	icon = GFX_goal_generic_plotting
+	cost = 4
+	prerequisite = {
+		focus = ROS_Begin_Creating_the_New_Nobility
+	}
+	prerequisite = {
+		focus = ROS_Destory_the_KONR
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = -1
+	y = 2
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_admin_strain_1 
+	add_idea = DKB_admin_strain_2
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_The_Rightful_Tsar
+	icon = GFX_goal_POR_royal_edicts
+	cost = 4
+	prerequisite = {
+		focus = ROS_Use_the_Cossacks
+	}
+	prerequisite = {
+		focus = ROS_Begin_Creating_the_New_Nobility
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = 1
+	y = 2
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_russian_reistance_1
+	add_idea = DKB_russian_reistance_2
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_The_Coronation
+	icon = GFX_MAF_meet_with_the_kaiser
+	cost = 4
+	prerequisite = {
+		focus = ROS_Look_For_Allies
+	}
+	prerequisite = {
+		focus = ROS_The_Rightful_Tsar
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = 0
+	y = 3
+	completion_reward = {
+		add_country_leader_trait = new_tsar
+	}
+}
+shared_focus = {
+	id =ROS_The_Cossack_Guard
+	icon = GFX_TRM_Expand_Cossack_Rights
+	cost = 4
+	prerequisite = {
+		focus = ROS_The_Coronation
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = 0
+	y = 4
+	completion_reward = {
+	custom_effect_tooltip = DKB_Cossack_Guard
+	hidden_effect = {
+	218 = {
+	create_unit = {
+		division = "name = \"1st Kosakenwache\" division_template = \"Spetsotryad Kazakov\" start_experience_factor = 1 start_equipment_factor = 1"
+		owner = ROOT
+		}
+		create_unit = {
+		division = "name = \"2nd Kosakenwache\" division_template = \"Spetsotryad Kazakov\" start_experience_factor = 1 start_equipment_factor = 1"
+		owner = ROOT
+		}
+		create_unit = {
+		division = "name = \"3rd Kosakenwache\" division_template = \"Spetsotryad Kazakov\" start_experience_factor = 1 start_equipment_factor = 1"
+		owner = ROOT
+		}
+	}
+	}
+}
+}
+
+shared_focus = {
+	id =ROS_All_Power_to_the_Junkers
+	icon = GFX_goal_AOG_Prussian_Eagle_Conquers_Heavens
+	cost = 4
+	prerequisite = {
+		focus = ROS_The_Coronation
+	}
+	available = {
+		NOT = { has_completed_focus = DKB_A_Russian_Reichstag }
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = 4
+	y = 4
+	completion_reward = {
+	country_event = germans.20
+	}
+}
+
+shared_focus = {
+	id =ROS_Seize_Land_for_Junkers
+	icon = GFX_goal_generic_castle
+	cost = 4
+	prerequisite = {
+		focus = ROS_All_Power_to_the_Junkers
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = 3
+	y = 5
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_admin_strain_2
+	add_idea = DKB_admin_strain_3
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_The_New_Russian_Noblity
+	icon = GFX_GER_subsidies_for_junker_companies-32713
+	cost = 4
+	prerequisite = {
+		focus = ROS_Seize_Land_for_Junkers
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = 3
+	y = 6
+	completion_reward = {
+	add_ideas = DKB_New_Nobles
+	}
+}
+
+shared_focus = {
+	id =ROS_Send_in_the_Heer
+	icon = GFX_goal_German_Staff
+	cost = 4
+	prerequisite = {
+		focus = ROS_All_Power_to_the_Junkers
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = 5
+	y = 5
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_russian_reistance_2
+	add_idea = DKB_russian_reistance_3
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_An_Eternal_Martial_Law
+	icon = GFX_goal_generic_martial_law
+	cost = 4
+	prerequisite = {
+		focus = ROS_Send_in_the_Heer
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = 5
+	y = 6
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_russian_reistance_3
+	add_idea = DKB_russian_reistance_4
+	}
+	add_stability = 0.05
+	}
+}
+shared_focus = {
+	id =ROS_The_Figurehead_Zar
+	icon = GFX_GER_the_kaiser__our_figurehead-32761
+	cost = 4
+	prerequisite = {
+		focus = ROS_The_New_Russian_Noblity
+	}
+	
+	prerequisite = {
+		focus = ROS_An_Eternal_Martial_Law
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = 4
+	y = 7
+	completion_reward = {
+	add_ideas = DKB_Figurehead_Emperor
+	add_political_power = 75
+	}
+}
+
+shared_focus = {
+	id =ROS_Dictatorship_of_the_Junkers
+	icon = GFX_goal_authority
+	cost = 4
+	prerequisite = {
+		focus = ROS_The_Figurehead_Zar
+	}
+	
+	
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = 4
+	y = 8
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_Figurehead_Emperor
+	add_idea =  DKB_Junker_Dictarorship
+	}
+	remove_ideas = DKB_russian_reistance_4
+	remove_ideas = DKB_admin_strain_3
+	}
+}
+
+shared_focus = {
+	id =ROS_A_Russian_Reichstag 
+	icon = GFX_goal_Reichstag
+	cost = 4
+	prerequisite = {
+		focus = ROS_The_Coronation
+	}
+	available = {
+		NOT = { has_completed_focus = DKB_All_Power_to_the_Junkers }
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = -4
+	y = 4
+	completion_reward = {
+	country_event = germans.19
+	}
+}
+
+shared_focus = {
+	id =ROS_Restore_The_Police
+	icon = GFX_goal_enlist_the_police
+	cost = 4
+	prerequisite = {
+		focus = ROS_A_Russian_Reichstag
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = -3
+	y = 5
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_russian_reistance_2
+	add_idea = DKB_russian_reistance_3
+	}
+	add_stability = 0.10
+	}
+}
+
+shared_focus = {
+	id =ROS_The_Federal_Model
+	icon = GFX_goal_generic_parliament
+	cost = 4
+	prerequisite = {
+		focus = ROS_A_Russian_Reichstag
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = -5
+	y = 5
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_admin_strain_2
+	add_idea = DKB_admin_strain_3
+	}
+	add_ideas = DKB_Federal_Monarchy
+	}
+}
+
+shared_focus = {
+	id =ROS_Reassure_the_people
+	icon = GFX_TTR_Reassure_Nobility
+	cost = 4
+	prerequisite = {
+		focus = ROS_The_Federal_Model
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = -5
+	y = 6
+	completion_reward = {
+	add_stability = 0.15
+	}
+}
+
+shared_focus = {
+	id =ROS_A_Proper_Legal_System
+	icon = GFX_goal_generic_stable_government
+	cost = 4
+	prerequisite = {
+		focus = ROS_Restore_The_Police
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = -3
+	y = 6
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_russian_reistance_3
+	add_idea = DKB_russian_reistance_4
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_Abdication
+	icon = GFX_RUS_question_of_monarchy
+	cost = 4
+	prerequisite = {
+		focus = ROS_A_Proper_Legal_System
+	}
+	prerequisite = {
+		focus = ROS_Reassure_the_people
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = -4
+	y = 7
+	completion_reward = {
+	add_country_leader_trait = tsar_of_all_rus
+	}
+}
+
+shared_focus = {
+	id =ROS_True_Prussian_Constitutionalism
+	icon = GFX_goal_WAB_Prussian_Constitutionalism
+	cost = 4
+	prerequisite = {
+		focus = ROS_Abdication
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = -4
+	y = 8
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_Federal_Monarchy
+	add_idea = DKB_Prussian_Constitutionalism
+	}
+	remove_ideas = DKB_russian_reistance_4
+	remove_ideas = DKB_admin_strain_3
+	}
+}
+shared_focus = {
+	id =ROS_Promote_german_settlement
+	icon = GFX_settlers
+	cost = 4
+	prerequisite = {
+		focus = ROS_A_Russian_Reichstag
+		focus = ROS_All_Power_to_the_Junkers
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = 1
+	y = 5
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_new_patriot_idea
+	add_idea = DKB_abwick_idea
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_Import_German_Culture 
+	icon = GFX_BAT_germanisation
+	cost = 4
+	prerequisite = {
+		focus = ROS_Promote_german_settlement
+
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = 1
+	y = 6
+	completion_reward = {
+	add_political_power = 150
+	224 = {
+	add_manpower = 523784
+	add_extra_state_shared_building_slots = 3
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_Invite_German_Companies
+	icon = GFX_goal_generic_foreign_investments
+	cost = 4
+	prerequisite = {
+		focus = ROS_A_Russian_Reichstag
+		focus = ROS_All_Power_to_the_Junkers
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = -1
+	y = 5
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_economic_hell
+	add_idea = DKB_economic_hell_1
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_Integration_within_Mitteleuropa
+	icon = GFX_goal_GER_mitteleuropa
+	cost = 4
+	prerequisite = {
+		focus = ROS_Invite_German_Companies
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = -1
+	y = 6
+	completion_reward = {
+	unlock_decision_category_tooltip = RUS_Economy_decisions 
+			hidden_effect = {
+	activate_targeted_decision = { target = 651 decision = RUS_Develop_Civilian_Industry_In_State } #Ufa
+	activate_targeted_decision = { target = 248 decision = RUS_Develop_Civilian_Industry_In_State } #Yaroslavl
+	activate_targeted_decision = { target = 252 decision = RUS_Develop_Civilian_Industry_In_State } #Nizhny Novgorod
+	activate_targeted_decision = { target = 250 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+	activate_targeted_decision = { target = 224 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+			activate_targeted_decision = { target = 249 decision = RUS_Develop_Military_Industry_In_State } #Kazan
+	activate_targeted_decision = { target = 398 decision = RUS_Develop_Military_Industry_In_State } #Perm
+	activate_targeted_decision = { target = 217 decision = RUS_Develop_Military_Industry_In_State } #Tsaritsyn
+	activate_targeted_decision = { target = 247 decision = RUS_Develop_Military_Industry_In_State } #Tver
+			activate_targeted_decision = { target = 566 decision = RUS_Develop_Civilian_Industry_In_State } #Irkutsk
+	activate_targeted_decision = { target = 217 decision = RUS_Develop_Civilian_Industry_In_State } #Tsaritsyn
+	activate_targeted_decision = { target = 252 decision = RUS_Develop_Civilian_Industry_In_State } #Nizhny Novgorod
+			activate_targeted_decision = { target = 220 decision = RUS_Develop_Civilian_Industry_In_State } #Kursk
+	activate_targeted_decision = { target = 398 decision = RUS_Develop_Civilian_Industry_In_State } #Perm
+	activate_targeted_decision = { target = 247 decision = RUS_Develop_Military_Industry_In_State } #Tver
+			activate_targeted_decision = { target = 250 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+	activate_targeted_decision = { target = 257 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+	activate_targeted_decision = { target = 224 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+	activate_targeted_decision = { target = 222 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+		} 
+	swap_ideas = {
+	remove_idea = DKB_economic_hell_1
+	add_idea = DKB_economic_hell_2
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_German_Inspired_institutions
+	icon = GFX_MAF_german_law_in_nordrhodesien
+	cost = 4
+	prerequisite = {
+		focus = ROS_Integration_within_Mitteleuropa
+	}
+	prerequisite = {
+		focus = ROS_Import_German_Culture
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = 0
+	y = 7
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_economic_hell_2
+	add_idea = DKB_economic_hell_3
+	}
+	add_ideas = OTT_german_institutions_idea
+	add_research_slot = 1
+	}
+}
+
+shared_focus = {
+	id =ROS_Reforged_In_Blood_and_Iron
+	icon = GFX_germanprimacy
+	cost = 4
+	prerequisite = {
+		focus = ROS_German_Inspired_institutions
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = 0
+	y = 8
+	completion_reward = {
+	remove_ideas = DKB_economic_hell_3
+	custom_effect_tooltip = DKB_will_gain_cores_on_all_Russian_land_ger
+	hidden_effect = {
+		every_owned_state = {
+			limit = {
+				is_core_of = RUS
+			}
+			add_core_of = ROOT
+		}
+		}
+	}
+}
+
+shared_focus = {
+	id =ROS_The_Grand_Conference
+	icon = GFX_RUS_eastern_europe
+	cost = 4
+	prerequisite = {
+		focus = ROS_Reforged_In_Blood_and_Iron
+	}
+	prerequisite = {
+		focus = ROS_Dictatorship_of_the_Junkers
+		focus = ROS_True_Prussian_Constitutionalism
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_victorian_claim
+	x = 0
+	y = 9
+	completion_reward = {
+	country_event = dkbfor.52
+	}
+}
+
+#rekom path
+shared_focus = {
+	id =ROS_the_reichskommissariat
+	icon = GFX_GER_restructure_the_oberste_heeresleitung-32626
+	cost = 2
+	prerequisite = {
+		focus = ROS_Endsieg
+	}
+	mutually_exclusive = {
+		focus = ROS_the_victorian_claim
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		has_authoritarian_government = yes
+	}
+	relative_position_id =ROS_Endsieg
+	x = 7
+	y = 1
+	completion_reward = {
+		set_cosmetic_tag = DKB_auto_rekom
+		set_capital = { state = 219 }
+	
+	}
+}
+
+shared_focus = {
+	id =ROS_ask_berlin_for_help
+	icon = GFX_goal_GER_colonial_administration
+	cost = 4
+	prerequisite = {
+		focus = ROS_begin_fighting_resistance
+	}
+	
+	prerequisite = {
+		focus = ROS_bolster_the_ostlegionen
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = -1
+	y = 2
+	completion_reward = {
+	
+	swap_ideas = {
+			remove_idea = DKB_admin_strain_1
+			add_idea = DKB_admin_strain_2 
+		}
+	hidden_effect = { 
+	country_event = {
+		id = germans.21
+		days = 7
+		}
+	remove_ideas_with_trait = foreign_minister
+	add_ideas = DKB_Weizsacker_for_mli
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_reorganize_the_KNOR
+	icon = GFX_DKB_konr
+	cost = 4
+	prerequisite = {
+		focus = ROS_the_reichskommissariat
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = 2
+	y = 1
+	completion_reward = {
+	country_event = germans.8
+	swap_ideas = {
+			remove_idea = DKB_russian_reistance
+			add_idea = DKB_russian_reistance_1
+		}
+	}
+	}
+
+
+shared_focus = {
+	id =ROS_begin_fighting_resistance
+	icon = GFX_goal_generic_parliament
+	cost = 4
+	prerequisite = {
+		focus = ROS_the_reichskommissariat
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = -2
+	y = 1
+	completion_reward = {
+		set_province_name = { id = 3529 name = "Wolgaburg"}
+		swap_ideas = {
+			remove_idea = DKB_admin_strain
+			add_idea = DKB_admin_strain_1
+		}
+		remove_ideas_with_trait = economy_minister
+		add_ideas = DKB_Konrad_Hoffmann_eco_sde
+		hidden_effect = {
+			every_controlled_state = { rename_state_effect = yes }
+			create_country_leader = {
+				name = "Konrad Hoffmann"
+				picture = "gfx/leaders/DKB/Portrait_Konrad_Hoffmann.png"
+				expire = "1.1.1"
+				ideology = social_democrat_subtype
+				traits = {}
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.02
+			}
+			set_party_name = { 
+				ideology = social_democrat
+				long_name = DKB_social_democrat_volga_long
+				name = DKB_social_democrat_volga
+			}
+		}
+		
+	}
+}
+
+
+shared_focus = {
+	id =ROS_establish_the_tobolsk_autonomy 
+	icon = GFX_goal_collaborate_local_elites2
+	cost = 4
+	prerequisite = {
+		focus = ROS_reorganize_the_KNOR
+	}
+	prerequisite = {
+		focus = ROS_bolster_the_ostlegionen
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = 1
+	y = 2
+	completion_reward = {
+	add_political_power = 150
+	580 = {
+	add_compliance = 50
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_bolster_the_ostlegionen
+	icon = GFX_goal_generic_paramilitary
+	cost = 4
+	prerequisite = {
+		focus = ROS_the_reichskommissariat
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = 0
+	y = 1
+	completion_reward = {
+	add_manpower = 15000
+	add_stability = 0.10
+	}
+}
+
+shared_focus = {
+	id =ROS_regin_in_the_SB
+	icon = GFX_goal_SER_union_war_preparations
+	cost = 4
+	prerequisite = {
+		focus = ROS_establish_the_tobolsk_autonomy
+	}
+	prerequisite = {
+		focus = ROS_ask_berlin_for_help
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = 0
+	y = 3
+	completion_reward = {
+		add_manpower = 10000
+		add_command_power = 50
+	}
+}
+#pannwitz
+shared_focus = {
+	id =ROS_Von_Pannwitz_Holds_on
+	icon = GFX_GER_establish_a_stronger_government-32518
+	cost = 4
+	mutually_exclusive = {
+		focus = ROS_Von_Leebs_Coup
+	}
+	available = {
+		has_government = paternal_autocrat
+	 }
+	prerequisite = {
+		focus = ROS_regin_in_the_SB
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = -3
+	y = 4
+	completion_reward = {
+	add_stability = 0.1
+	}
+}
+
+shared_focus = {
+	id =ROS_Hunt_down_the_partisans
+	icon = GFX_ITA_fight
+	cost = 4
+	 
+	prerequisite = {
+		focus = ROS_Von_Pannwitz_Holds_on
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = -3
+	y = 5
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_russian_reistance_1
+	add_idea = DKB_russian_reistance_2
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_Ensure_Law_and_order
+	icon = GFX_prussianpolicemen
+	cost = 4
+	 
+	prerequisite = {
+		focus = ROS_Hunt_down_the_partisans
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = -3
+	y = 6
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_russian_reistance_2
+	add_idea = DKB_russian_reistance_3
+	
+	}
+	add_political_power = 65
+	add_stability = 0.10
+	}
+	}
+
+shared_focus = {
+	id =ROS_the_new_Ostdeutsches_Heer
+	icon = GFX_goal_generic_trial
+	cost = 4
+	 
+	prerequisite = {
+		focus = ROS_Von_Pannwitz_Holds_on
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = -5
+	y = 5
+	completion_reward = {
+	country_event = germans.16
+	}
+}
+
+shared_focus = {
+	id =ROS_reform_the_sb
+	icon = GFX_goal_HOL_ban_paramilitary
+	cost = 4
+	 
+	prerequisite = {
+		focus = ROS_Von_Pannwitz_Holds_on
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = -5
+	y = 6
+	completion_reward = {
+	add_ideas = DKB_Reformed_SB
+	}
+}
+
+
+
+shared_focus = {
+	id =ROS_Stability_restored
+	icon = GFX_MAF_german_law_in_nordrhodesien
+	cost = 4
+	 
+	prerequisite = {
+		focus = ROS_Ensure_Law_and_order
+	}
+	prerequisite = {
+		focus = ROS_reform_the_sb
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = -4
+	y = 7
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_russian_reistance_3
+	add_idea = DKB_russian_reistance_4
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_establish_the_Abwicklungsbehorde
+	icon = GFX_MAF_german_settlement_committee
+	cost = 4
+	 
+	prerequisite = {
+		focus = ROS_Von_Pannwitz_Holds_on
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = -7
+	y = 5
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_new_patriot_idea
+	add_idea = DKB_abwick_idea
+	}
+	
+	swap_ideas = {
+	remove_idea = DKB_admin_strain_2
+	add_idea = DKB_admin_strain_3
+	}
+	
+	}
+}
+shared_focus = {
+	id =ROS_New_Ostdeutsch_Villages
+	icon = GFX_goal_LEP_subsidize_villages
+	cost = 4
+	 
+	prerequisite = {
+		focus = ROS_establish_the_Abwicklungsbehorde
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = -7
+	y = 6
+	completion_reward = {
+	218 = {
+	add_manpower = 12354
+	add_extra_state_shared_building_slots = 1
+	}
+	224 = {
+	add_manpower = 523784
+	add_extra_state_shared_building_slots = 3
+	}
+	880 = {
+	add_manpower = 45645
+	add_extra_state_shared_building_slots = 2
+	}
+	
+	}
+}
+
+shared_focus = {
+	id =ROS_Save_the_Cossack
+	icon = GFX_MNR_Cossacks
+	cost = 4
+	 
+	prerequisite = {
+		focus = ROS_New_Ostdeutsch_Villages
+	}
+	
+	prerequisite = {
+		focus = ROS_reform_the_sb
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = -6
+	y = 7
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_cossack_collabs
+	add_idea = DKB_cossack_legacy_ger
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_integration_of_russia
+	icon = GFX_goal_align_russia
+	cost = 7
+	 
+	prerequisite = {
+		focus = ROS_Save_the_Cossack
+	}
+	
+	prerequisite = {
+		focus = ROS_Stability_restored
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = -5
+	y = 8
+	completion_reward = {
+	custom_effect_tooltip = DKB_will_gain_cores_on_all_Russian_land_ger
+	remove_ideas = DKB_admin_strain_3
+	remove_ideas = DKB_russian_reistance_4
+	hidden_effect = {
+		every_owned_state = {
+			limit = {
+				is_core_of = RUS
+			}
+			add_core_of = ROOT
+		}
+		}
+	}
+}
+
+
+
+
+shared_focus = {
+	id =ROS_the_new_status_quo
+	icon = GFX_germanprimacy
+	cost = 4
+	 
+	prerequisite = {
+		focus = ROS_integration_of_russia
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = -5
+	y = 9
+	completion_reward = {
+	add_political_power = 150
+	add_stability = 0.15
+	}
+}
+#leeb gaming
+shared_focus = {
+	id =ROS_Von_Leebs_Coup
+	icon = GFX_goal_Sturmtruppen
+	mutually_exclusive = {
+		focus = ROS_Von_Pannwitz_Holds_on
+	}
+	 available = {
+		has_government = national_populist
+	 }
+	cost = 4
+	prerequisite = {
+		focus = ROS_regin_in_the_SB
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = 3
+	y = 4
+	completion_reward = {
+		add_war_support = 0.1
+	}
+}
+
+shared_focus = {
+	id =ROS_Crush_the_Paritsans
+	icon = GFX_CAL_destroy_parasites
+	 
+	cost = 4
+	prerequisite = {
+		focus = ROS_Von_Leebs_Coup
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = 3
+	y = 5
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_russian_reistance_1
+	add_idea = DKB_russian_reistance_2
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_Fear_and_Terror
+	icon = GFX_goal_GER_Stable_Germany
+	 
+	cost = 4
+	prerequisite = {
+		focus = ROS_Crush_the_Paritsans
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = 3
+	y = 6
+	completion_reward = {
+	add_stability = 0.10
+	swap_ideas = {
+	remove_idea = DKB_russian_reistance_2
+	add_idea = DKB_russian_reistance_3
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_Expand_the_SB
+	icon = GFX_GER_empower_the_verdeckte_reichspolizei-32617
+	 
+	cost = 4
+	prerequisite = {
+		focus = ROS_Von_Leebs_Coup
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = 5
+	y = 5
+	completion_reward = {
+	add_ideas = DKB_Sicherheitsbrigaden_idea
+	}
+}
+
+shared_focus = {
+	id =ROS_A_Loyal_Heer
+	icon = GFX_goal_GER_Central_Culture
+	 
+	cost = 4
+	prerequisite = {
+		focus = ROS_Expand_the_SB
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = 5
+	y = 6
+	completion_reward = {
+	remove_ideas = DKB_cossack_collabs
+	add_political_power = 150
+	add_stability = 0.10
+	set_party_name = { 
+	ideology = national_populist
+	long_name = DKB_national_populist_leeb_post_coup_long
+	name = DKB_national_populist_leeb_post_coup
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_Labor_Camps
+	icon = GFX_goal_GER_Boot_Socialists
+	 
+	cost = 4
+	prerequisite = {
+		focus = ROS_A_Loyal_Heer
+	}
+	prerequisite = {
+		focus = ROS_Fear_and_Terror
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = 4
+	y = 7
+	completion_reward = {
+	add_political_power = 150
+	swap_ideas = {
+	remove_idea = DKB_russian_reistance_3
+	add_idea = DKB_russian_reistance_4
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_Drag_Nach_Osten 
+	icon = GFX_BAT_germanisation
+	 
+	cost = 4
+	prerequisite = {
+		focus = ROS_Von_Leebs_Coup
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = 7
+	y = 5
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = DKB_new_patriot_idea
+	add_idea = DKB_Lebensraum
+	}
+	
+	swap_ideas = {
+	remove_idea = DKB_admin_strain_2
+	add_idea = DKB_admin_strain_3
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_the_Siberian_Plan
+	icon = GFX_goal_MON_drive_out_russians
+	
+	cost = 4
+	prerequisite = {
+		focus = ROS_Drag_Nach_Osten }
+	ai_will_do = { factor = 10 }
+	relative_position_id =ROS_the_reichskommissariat
+	x = 7
+	y = 6
+	completion_reward = {
+		set_province_name = { id = 6380 name = "Moskau"}
+		set_province_name = { id = 6174 name = "Sankt-Petersburg"}
+		219 = { add_manpower = -1053 }
+		653 = { add_manpower = 1053 }
+		195 = { add_manpower = -1456 }
+		570 = { add_manpower = 1456 }
+		hidden_effect = {
+			219 = { set_state_flag = renamed_state_moskau }
+			195 = { set_state_flag = renamed_state_sankt_petersburg }
+			every_controlled_state = { rename_state_effect = yes }
+		}
+	}
+}
+
+shared_focus = {
+	id =ROS_Establish_the_Siberian_Autonomy
+	icon = GFX_YAK_Siberia
+	 
+	cost = 4
+	prerequisite = {
+		focus = ROS_the_Siberian_Plan
+	}
+	prerequisite = {
+		focus = ROS_A_Loyal_Heer
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = 6
+	y = 7
+	completion_reward = {
+		custom_effect_tooltip = DKB_Siberian_Auto
+		hidden_effect = {
+		SIB = {
+			create_country_leader = {
+				name = "Bronislav Kaminski"
+				picture = "gfx/leaders/RUS/Portrait_RUS_Bronislav_Kaminski.png"
+				expire = "1.1.1"
+				ideology = national_populist_subtype
+				traits = {}
+			}
+			set_party_name = { 
+			ideology = national_populist
+			long_name = DKB_national_populist_kaminski_long
+			name = DKB_national_populist_kaminski
+			}
+			set_politics = {
+				ruling_party = national_populist
+					elections_allowed = no
+				}
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.3
+				}
+			
+			add_state_core = 580
+			add_state_core = 653
+			add_state_core = 403
+			add_state_core = 1200
+			add_state_core = 581
+			add_state_core = 573
+			add_state_core = 1195
+			add_state_core = 577
+			add_state_core = 1201
+			add_state_core = 572
+			add_state_core = 582
+			add_state_core = 571
+			add_state_core = 578
+			add_state_core = 40
+			add_state_core = 570
+			add_state_core = 569
+			add_state_core = 568
+			add_state_core = 576
+			add_state_core = 567
+			add_state_core = 566
+			add_state_core = 516
+			add_state_core = 544
+			add_state_core = 1202
+			add_state_core = 583
+			add_state_core = 575
+			add_state_core = 644
+			add_state_core = 588
+			add_state_core = 811
+			add_state_core = 1293
+			add_state_core = 654
+			set_cosmetic_tag = SIB_auto
+			set_capital = { state = 580 }
+		}
+		every_owned_state = {
+			limit = {
+				OR = {
+					state = 653
+					state = 403
+					state = 1200
+					state = 573
+					state = 1195
+					state = 577
+					state = 1201
+					state = 572
+					state = 582
+					state = 571
+					state = 578
+					state = 40
+					state = 570
+					state = 569
+					state = 568
+					state = 576
+					state = 567
+					state = 566
+					state = 516
+					state = 544
+					state = 1202
+					state = 583
+					state = 575
+					state = 644
+					state = 588
+					state = 580
+					state = 581
+				}
+			}
+			SIB = { transfer_state = PREV }
+		}		
+		ROOT = {
+				set_autonomy = {
+					target = SIB
+					autonomy_state = kr_occupied_puppet
+				}
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id =ROS_A_Meeting_with_the_Kaiser
+	icon = GFX_BAT_army_focus
+	 
+	cost = 7
+	prerequisite = {
+		focus = ROS_Labor_Camps
+	}
+	prerequisite = {
+		focus = ROS_Establish_the_Siberian_Autonomy
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = 5
+	y = 8
+	completion_reward = {
+	custom_effect_tooltip = DKB_core_all_russian_land_west_of_ural
+	country_event = belarus.52
+	remove_ideas = DKB_russian_reistance_4
+	remove_ideas = DKB_admin_strain_3
+	hidden_effect = {
+		every_owned_state = {
+			limit = {
+				is_core_of = RUS
+				NOT = { is_core_of = SIB }
+				NOT = { is_core_of = ALO }
+				NOT = { is_core_of = UZB }
+				NOT = { is_core_of = TRK }
+			}
+			add_core_of = ROOT
+		}
+		add_state_core = 406
+		}
+	}
+	
+	}
+
+shared_focus = {
+	id =ROS_Prepare_For_the_Long_Game
+	icon = GFX_GER_influence_the_reichstag-32516
+	 
+	cost = 4
+	prerequisite = {
+		focus = ROS_A_Meeting_with_the_Kaiser
+	}
+	mutually_exclusive = {
+		focus = ROS_We_Are_Coming_Home
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = 4
+	y = 9
+	completion_reward = {
+	add_political_power = 150
+	}
+}
+
+shared_focus = {
+	id =ROS_We_Are_Coming_Home
+	icon = GFX_goal_attack_germany
+	 
+	cost = 4
+	mutually_exclusive = {
+		focus = ROS_Prepare_For_the_Long_Game
+	}
+	prerequisite = {
+		focus = ROS_A_Meeting_with_the_Kaiser
+	}
+	available = {
+		has_country_flag = ROS_RETALIATION
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = 6
+	y = 9
+	completion_reward = {
+		leave_faction = yes
+		create_wargoal = {
+		type = puppet_wargoal_focus
+		target = GER
+	}
+	set_cosmetic_tag = WHR_GERMAN_REICH
+	every_state = {
+		limit = {
+			is_core_of = GER
+		}
+		add_core_of = ROOT
+	}
+	every_state = {
+		limit = {
+			is_core_of = AUS
+		}
+		add_core_of = ROOT
+	}
+	every_state = {
+		limit = {
+			is_core_of = CZE
+		}
+		add_core_of = ROOT
+	}
+	every_state = {
+		limit = {
+			is_core_of = BEL
+		}
+		add_core_of = ROOT
+	}
+	every_state = {
+		limit = {
+			is_core_of = HOL
+		}
+		add_core_of = ROOT
+	}
+	every_state = {
+		limit = {
+			is_core_of = FLN
+		}
+		add_core_of = ROOT
+	}
+	every_state = {
+		limit = {
+			is_core_of = WLL
+		}
+		add_core_of = ROOT
+	}
+	every_state = {
+		limit = {
+			is_core_of = SWI
+		}
+		add_core_of = ROOT
+	}
+	every_state = {
+		limit = {
+			is_core_of = GAL
+		}
+		add_core_of = ROOT
+	}
+	GER = { 
+	set_autonomy = {
+	target = ROOT
+	autonomy_state = autonomy_free
+	}
+	
+	
+	}
+	}
+}
+
+shared_focus = {
+	id =ROS_Wirtschaftsreformplan
+	icon = GFX_MAF_ostafrikanischer_kaisersfabrikkomplex
+	cost = 4
+	prerequisite = {
+		focus = ROS_Von_Leebs_Coup
+		focus = ROS_Von_Pannwitz_Holds_on
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id =ROS_the_reichskommissariat
+	x = 0
+	y = 5
+	completion_reward = {
+	unlock_decision_category_tooltip = RUS_Economy_decisions 
+			hidden_effect = {
+	activate_targeted_decision = { target = 651 decision = RUS_Develop_Civilian_Industry_In_State } #Ufa
+	activate_targeted_decision = { target = 248 decision = RUS_Develop_Civilian_Industry_In_State } #Yaroslavl
+	activate_targeted_decision = { target = 252 decision = RUS_Develop_Civilian_Industry_In_State } #Nizhny Novgorod
+	activate_targeted_decision = { target = 250 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+	activate_targeted_decision = { target = 224 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+			activate_targeted_decision = { target = 249 decision = RUS_Develop_Military_Industry_In_State } #Kazan
+	activate_targeted_decision = { target = 398 decision = RUS_Develop_Military_Industry_In_State } #Perm
+	activate_targeted_decision = { target = 217 decision = RUS_Develop_Military_Industry_In_State } #Tsaritsyn
+	activate_targeted_decision = { target = 247 decision = RUS_Develop_Military_Industry_In_State } #Tver
+			activate_targeted_decision = { target = 566 decision = RUS_Develop_Civilian_Industry_In_State } #Irkutsk
+	activate_targeted_decision = { target = 217 decision = RUS_Develop_Civilian_Industry_In_State } #Tsaritsyn
+	activate_targeted_decision = { target = 252 decision = RUS_Develop_Civilian_Industry_In_State } #Nizhny Novgorod
+			activate_targeted_decision = { target = 220 decision = RUS_Develop_Civilian_Industry_In_State } #Kursk
+	activate_targeted_decision = { target = 398 decision = RUS_Develop_Civilian_Industry_In_State } #Perm
+	activate_targeted_decision = { target = 247 decision = RUS_Develop_Military_Industry_In_State } #Tver
+			activate_targeted_decision = { target = 250 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+	activate_targeted_decision = { target = 257 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+	activate_targeted_decision = { target = 224 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+	activate_targeted_decision = { target = 222 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+		} 
+	swap_ideas = {
+	remove_idea = DKB_economic_hell
+	add_idea = DKB_economic_hell_1
+	}
+	add_tech_bonus = {
+		name = UZB_Expand_The_Economy
+		bonus = 1
+		uses = 2
+		category = industry
+	}
+}
+}
+
+shared_focus = {
+	id =ROS_fate_of_unions_ger
+	icon = GFX_TRM_Fate_Of_Unions
+	cost = 4
+	prerequisite = {
+		focus = ROS_Wirtschaftsreformplan }
+	ai_will_do = {
+		factor = 10
+	}
+	
+	relative_position_id =ROS_the_reichskommissariat
+	x = -1
+	y = 6
+	completion_reward = {
+	country_event = germans.14
+	}
+}
+
+shared_focus = {
+	id =ROS_Encourage_Entrepreneurship_Ger
+	icon = GFX_GER_use_the_wealth_of_the_junkers-32619
+	cost = 4
+	prerequisite = {
+		focus = ROS_fate_of_unions_ger }
+	ai_will_do = {
+		factor = 10
+	}
+	mutually_exclusive = {
+		focus = ROS_Invite_Krupp
+	}
+	relative_position_id =ROS_the_reichskommissariat
+	x = -1
+	y = 7
+	completion_reward = {
+		add_two_random_civilian_factories = yes
+		add_two_random_civilian_factories = yes
+		swap_ideas = {
+			remove_idea = DKB_economic_hell_1
+			add_idea = DKB_economic_hell_2
+		}
+	}
+}
+
+shared_focus = {
+	id =ROS_An_aviation_industry
+	icon = GFX_goal_Deutsche_Luftstreitkrafte
+	cost = 4
+	prerequisite = {
+		focus = ROS_Encourage_Entrepreneurship_Ger }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id =ROS_the_reichskommissariat
+	x = -2
+	y = 8
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = light_air
+		}
+		add_two_random_military_factories = yes
+		hidden_effect = { country_event = germans.25 }
+	}
+}
+shared_focus = {
+	id =ROS_Fate_of_Russian_Industries
+	icon = GFX_goal_generic_takeover_industries
+	cost = 4
+	prerequisite = {
+		focus = ROS_Wirtschaftsreformplan }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id =ROS_the_reichskommissariat
+	x = 1
+	y = 6
+	completion_reward = { country_event = germans.15 }
+}
+
+shared_focus = {
+	id =ROS_Invite_Krupp
+	icon = GFX_goal_LEP_krupp_industial
+	cost = 4
+	prerequisite = {
+		focus = ROS_Fate_of_Russian_Industries }
+	ai_will_do = { factor = 10 }
+	mutually_exclusive = { focus = DKB_Encourage_Entrepreneurship_Ger }
+	relative_position_id =ROS_the_reichskommissariat
+	x = 1
+	y = 7
+	completion_reward = {
+		401 = {
+			add_building_construction = {
+				type = industrial_complex 
+				level = 3
+				instant_build = yes
+			}		
+			add_extra_state_shared_building_slots = 3
+			add_resource = {
+				type = steel
+				amount = 56
+			}
+		}
+		swap_ideas = {
+			remove_idea = DKB_economic_hell_1
+			add_idea = DKB_economic_hell_2
+		}
+	}
+}
+
+shared_focus = {
+	id =ROS_Krupp_Military_Plants
+	icon = GFX_goal_Krupp_Artillery
+	cost = 4
+	prerequisite = {
+		focus = ROS_Invite_Krupp }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id =ROS_the_reichskommissariat
+	x = 2
+	y = 8
+	completion_reward = {
+		add_two_random_military_factories = yes
+		add_one_random_military_factory = yes
+	}
+}
+shared_focus = {
+	id =ROS_Establish_a_German_University
+	icon = GFX_goal_OTT_school_science
+	cost = 4
+	prerequisite = {
+		focus = ROS_Encourage_Entrepreneurship_Ger
+		focus = ROS_Invite_Krupp
+	}
+	ai_will_do = { factor = 10 }
+	relative_position_id =ROS_the_reichskommissariat
+	x = 0
+	y = 8
+	completion_reward = {
+		add_research_slot = 1
+		swap_ideas = {
+			remove_idea = DKB_economic_hell_2
+			add_idea = DKB_economic_hell_3
+		}
+		add_ideas = OTT_german_institutions_idea
+	}
+}
+
+shared_focus = {
+	id =ROS_Create_The_Ostdeutsche_Reichsbank
+	icon = GFX_goal_Empower_the_Reichsbank
+	cost = 4
+	prerequisite = {
+		focus = ROS_Establish_a_German_University
+	}
+	ai_will_do = {
+		factor = 10
+	}
+
+	relative_position_id =ROS_the_reichskommissariat
+	x = 0
+	y = 9
+	completion_reward = { remove_ideas = DKB_economic_hell_3 }
+}
+
+
+
+	

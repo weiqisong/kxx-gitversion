@@ -1,0 +1,25 @@
+leader_traits = {
+	RUS_integral_socialist = {
+		sprite = 13
+		random = no
+		army_morale_factor = 0.1
+		totalist_drift = 0.02
+	}
+	KR_socialist_maximalist_sic_2 = { #Ustinov
+		sprite = 13
+		random = no
+		army_attack_factor = 0.1
+		war_support_factor = 0.1
+	}
+	new_tsar = { 
+		random = no
+		political_power_cost = -0.15
+		stability_factor = 0.1
+	}
+	tsar_of_all_rus = { 
+		random = no
+		resistance_target = -0.15
+		consumer_goods_factor = -0.1
+
+	}
+}

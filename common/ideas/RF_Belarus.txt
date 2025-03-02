@@ -1,0 +1,812 @@
+ideas = {
+	country = {
+		WHR_transhumanism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = CSA_reinforced_weapons
+			modifier = {
+				army_strength_factor = 0.25
+				conscription = 0.05
+				conscription_factor = 0.25
+			
+			}
+		}
+		WHR_forced_education = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = radical_education
+			modifier = {
+				research_speed_factor = 0.25
+				local_resources_factor = 0.25
+				production_resource_need_factor = -0.25
+			}
+		}
+		WHR_solar_laser_satelite = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = SKM_red_sun
+			modifier = {
+				army_attack_factor = 0.25
+				breakthrough_factor = 0.25
+				army_attack_speed_factor = 0.3
+
+			}
+		}
+		WHR_heliobiology = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = federal_education_administration
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.2
+					defense = 0.1
+					breakthrough = 0.1
+					hardness = 0.1
+					soft_attack = 0.1
+					hard_attack = 0.1
+					ap_attack = 0.1
+
+					instant = yes
+				}
+				
+				artillery_equipment = {
+					build_cost_ic = -0.15
+					defense = 0.1
+					breakthrough = 0.1
+					hardness = 0.1
+					soft_attack = 0.1
+					hard_attack = 0.1
+					ap_attack = 0.1
+					instant = yes
+				}
+				armor= {
+					build_cost_ic = -0.1
+					defense = 0.1
+					breakthrough = 0.1
+					hardness = 0.1
+					soft_attack = 0.1
+					hard_attack = 0.1
+					ap_attack = 0.1
+					instant = yes
+				}
+			
+			}
+		
+		
+		}
+		WHR_air_deionized = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = GEN_air_experience
+			modifier = {
+				experience_loss_factor = -0.15
+				consumer_goods_factor = -0.2
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		WHR_sunlight_electricity_life = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = generic_lightbulb
+			modifier = {
+				monthly_population = 0.5
+				industrial_capacity_factory = 0.1
+				acclimatization_hot_climate_gain_factor = 0.5
+			}
+		}
+		WHR_national_collective = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = collectivist_primacy_2
+			modifier = {
+				conscription = 0.025
+				conscription_factor = 0.25
+				weekly_manpower = 1000
+			}
+		}
+		WHR_surrounded_by_enemy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = CRM_russian_ukrainian_autonomy
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = POL
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = RUS
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = UKR
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+			}
+		}
+		WHR_ultranationalism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = generic_ultranationalism
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		WHR_nationalist_doctrine2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = generic_personality_cult
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				totalist_drift = 0.025
+				national_populist_drift = 0.05
+				org_loss_when_moving = -0.1
+				experience_loss_factor = -0.15
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				army_artillery_attack_factor = 0.1
+				army_artillery_defence_factor = 0.1
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				command_power_gain = 0.1
+				max_command_power = 100
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+			
+			}
+		}
+		WHR_nationalist_doctrine1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = generic_personality_cult
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				totalist_drift = 0.025
+				national_populist_drift = 0.05
+				org_loss_when_moving = -0.1
+				experience_loss_factor = -0.15
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				army_artillery_attack_factor = 0.1
+				army_artillery_defence_factor = 0.1
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
+
+			}
+		}
+		WHR_nationalist_doctrine = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = generic_personality_cult
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				totalist_drift = 0.025
+				national_populist_drift = 0.05
+				org_loss_when_moving = -0.1
+				experience_loss_factor = -0.15
+
+
+			}
+		}
+		WHR_syndicalist_doctrine2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = generic_syndicalist_revolution
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				totalist_drift = 0.05
+				national_populist_drift = 0.025
+				global_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
+				monthly_population = 0.5
+				production_resource_need_factor = -0.1
+				local_resources_factor = 0.1
+			}
+		}
+		WHR_syndicalist_doctrine1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = generic_syndicalist_revolution
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				totalist_drift = 0.05
+				national_populist_drift = 0.025
+				global_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+
+			}
+		}
+		WHR_syndicalist_doctrine = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = generic_syndicalist_revolution
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				totalist_drift = 0.05
+				national_populist_drift = 0.025
+				global_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+
+			}
+		}
+		WHR_populist_policy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = authority_caesar
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		WHR_populist_policy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = authority_caesar
+			modifier = {
+				political_power_gain = 0.15
+				stability = 0.1
+				totalist_drift = 0.05
+				national_populist_drift = 0.05
+			}
+		}
+		WHR_fortify_bunkers = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = ALB_bunker
+			modifier = {
+				production_speed_bunker_factor = 0.25
+				dig_in_speed_factor = 0.1
+				max_dig_in_factor = 0.15
+				army_strength_factor = 0.1
+				army_defence_factor = 0.15
+			}
+		}
+		WHR_millitarism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = ZAM_german_army_idea
+			modifier = {
+				conscription = 0.1
+				stability_factor = -0.15
+			}
+		}
+		WHR_invite_german_company = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = GRE_german_ownership
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+
+			}
+		}
+		WHR_power_to_the_locals = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = local_support
+			modifier = {
+				global_building_slots_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				paternal_autocrat_drift = 0.05
+				social_conservative_drift = 0.02
+				authoritarian_democrat_drift = 0.02
+			}
+		}
+		WHR_begin_germanization = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = GER_colonial_government
+			modifier = {
+				weekly_manpower = 100
+				industrial_capacity_factory = 0.1
+				line_change_production_efficiency_factor = 0.1
+				national_populist_drift = 0.02
+			}
+		}
+		WHR_loyal_rada = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = GER_central
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				compliance_growth = 0.01
+
+			}
+		}
+		WHR_millitary_rule = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = advisors_germany
+			modifier = {
+				stability_weekly = 0.002
+				resistance_target = -0.1
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+		WHR_monbol_land = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = generic_agrarian_reform
+			modifier = {
+				global_building_slots_factor = 0.2
+				local_resources_factor = 0.2
+			}
+		}
+
+		WHR_monbol_planning = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_central_planning_idea"}
+			picture = state_economy
+			modifier = {
+				consumer_goods_factor = -0.2
+				production_speed_buildings_factor = 0.2
+			}
+		}
+
+		WHR_monbol_cops = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_bolshevik_police"}
+			picture = generic_pp_unity_bonus
+			modifier = {
+				encryption_factor = 0.2
+				occupation_cost = -0.2
+				resistance_target = -0.2
+				army_attack_factor = 0.1
+			}
+		}
+		WHR_litvinism = {
+			
+			modifier = {
+				justify_war_goal_time = -0.5
+			}
+			picture = WHR_identity
+		}
+		WHR_monsoc = {
+			
+			modifier = {
+				political_power_factor = 0.25
+				stability_factor = -0.1
+				war_support_factor = 0.1
+				totalist_drift = 0.02
+			}
+			picture = WHR_identity
+		}
+		WHR_monsoc_authdem = {
+			
+			modifier = {
+				political_power_factor = 0.25
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				authoritarian_democrat_drift = 0.02
+			}
+			picture = WHR_identity
+		}
+		WHR_monsoc_socdem = {
+			
+			modifier = {
+				political_power_factor = 0.25
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				authoritarian_democrat_drift = 0.02
+			}
+			picture = WHR_identity
+		}
+		WHR_monsoc_radsoc = {
+			
+			modifier = {
+				political_power_factor = 0.25
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				radical_socialist_drift = 0.02
+			}
+			picture = WHR_identity
+		}
+		WHR_monsoc_tot = {
+			
+			modifier = {
+				political_power_factor = 0.25
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				totalist_drift = 0.02
+			}
+			picture = WHR_identity
+		}
+		WHR_paternal_socialism = {
+			
+			modifier = {
+				conscription = 0.03
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_max_efficiency_factor = 0.2
+				authoritarian_democrat_drift = 0.02
+			}
+			picture = WHR_identity
+		}
+		WHR_benvolent_dictatorship = {
+			
+			modifier = {
+				stability_weekly = 0.01
+				authoritarian_democrat_drift = 0.02
+				monthly_population = 0.5
+			}
+			picture = WHR_identity
+		}
+		WHR_moderate_revolution = {
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				social_democrat_drift = 0.02
+				army_morale_factor = 0.2
+				army_org_factor = 0.2
+			}
+			picture = WHR_identity
+		}
+		WHR_liberal_socialism = {
+			
+			modifier = {
+				industrial_capacity_factory = 0.2
+				production_factory_start_efficiency_factor = 0.2
+				conscription_factor = 0.25
+				conscription = 0.01
+			}
+			picture = WHR_identity
+		}
+		WHR_national_unity = {
+			
+			modifier = {
+				political_power_cost = -0.2
+				army_infantry_attack_factor = 0.1
+				conscription = 0.02
+			}
+			picture = WHR_identity
+		}
+		WHR_wake_the_people = {
+			
+			modifier = {
+				weekly_manpower = 1000
+				research_speed_factor = 0.2
+				conscription_factor = 0.15
+			}
+			picture = WHR_identity
+		}
+		WHR_worker_and_peasant_government = {
+			
+			modifier = {
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				radical_socialist_drift = 0.02
+			}
+			picture = WHR_identity
+		}
+		WHR_ideas_of_mladossi = {
+			
+			modifier = {
+				totalist_drift = 0.02
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				supply_consumption_factor = -0.1
+
+			}
+			picture = WHR_identity
+		}
+		WHR_proletariat_unity = {
+			
+			modifier = {
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+
+			}
+			picture = WHR_identity
+		}
+		WHR_peoples_army = {
+			
+			modifier = {
+				army_infantry_attack_factor = 0.15
+				army_infantry_defence_factor = 0.15
+				army_attack_speed_tooltip = 0.25
+				conscription_factor = 0.5
+			}
+			picture = WHR_identity
+		}
+		BLR_welfare_state = {
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+			picture = BLR_icon_welfare_state
+		}
+		BLR_human_rights_court = {
+			
+			modifier = {
+				resistance_target = -0.1
+				stability_weekly = 0.01
+			}
+			picture = BLR_icon_human_rights_court
+		}
+		BLR_deregulation = {
+			
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.1
+				conversion_cost_mil_to_civ_factor = -0.1
+			}
+			picture = BLR_icon_deregulation
+		}
+		BLR_patriotic_education = {
+			
+			modifier = {
+				conscription_factor = 0.1
+			}
+			picture = BLR_icon_patriotic_education
+		}
+		BLR_free_press = {
+			
+			modifier = {
+				political_power_factor = 0.1
+				drift_defence_factor = -0.15
+			}
+			picture = BLR_icon_free_press
+		}
+
+		BLR_empire_of_five_races = {
+			
+			modifier = {
+				conscription_factor = 0.2
+				resistance_target = -0.15
+			}
+			picture = BLR_icon_five_races
+		}
+
+		BLR_rcap = {
+			
+			modifier = {
+				totalist_drift = 0.1
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+			picture = BLR_icon_rcap
+		}
+		BLR_agrsoc = {
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				stability_factor = 0.05	
+			}
+			picture = BLR_icon_agrarian_socialism
+		}
+		BLR_socialist_black_market = {
+			industrial_capacity_factory = 0.1
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.2 instant = yes
+					reliability = -0.05
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.2 instant = yes
+					reliability = -0.05
+				}
+			}
+			modifier = {
+				trade_opinion_factor = 0.1
+			}
+			picture = BLR_icon_socialist_black_market
+		}
+		BLR_united_again = {
+			
+			modifier = {
+				conscription = 0.02
+			}
+			picture = BLR_icon_united_partisants
+		}
+		BLR_alliance_with_black_cat = {
+			
+			modifier = {
+				army_defence_factor = 0.15
+				army_attack_factor = 0.07
+				conscription_factor = 0.1
+			}
+			picture = BLR_icon_alliance_black_cat
+		}
+
+		BLR_purge_on_atamans_clique = {
+			
+			modifier = {
+				paternal_autocrat_drift = -0.1
+				stability_factor = -0.05
+			}
+			picture = BLR_icon_purge_on_clique
+		}
+		BLR_black_cat_paramilitary = {
+			
+			modifier = {
+				conscription = 0.025
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					reliability = 0.02
+				}
+			}
+			picture = BLR_icon_black_cat_paramilitary
+		}
+		BLR_ethnic_nationalism = {
+			
+			modifier = {
+				political_power_factor = 0.4
+				stability_factor = -0.05
+			}
+			picture = BLR_icon_ethnic_nationalism
+		}
+		BLR_ethnic_nationalism_1 = {
+			
+			modifier = {
+				political_power_factor = 0.4
+				stability_factor = -0.15
+				resistance_target = -0.15
+			}
+			picture = BLR_icon_ethnic_nationalism
+		}
+		BLR_karycnievy_teror = {
+			
+			modifier = {
+				resistance_target = -0.05
+			}
+			picture = BLR_icon_karycnievy_teror
+		}
+		BLR_national_economics = {
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+				consumer_goods_factor = -0.07
+			}
+			picture = BLR_icon_national_economics
+		}
+		BLR_reactionary_beacon = {
+			
+			modifier = {
+				national_populist_drift = 0.1
+				research_speed_factor = -0.05
+			}
+			picture = BLR_icon_reactionary_beacon
+		}
+		BLR_reactionary_beacon_1 = {
+			
+			modifier = {
+				national_populist_drift = 0.1
+				research_speed_factor = -0.05
+				attrition = -0.05
+			}
+			picture = BLR_icon_reactionary_beacon
+		}
+		BLR_hermits = {
+			
+			modifier = {
+				army_core_defence_factor = 0.15
+				political_power_factor = 0.2
+			}
+			picture = BLR_icon_hermit_kingdom
+		}
+
+		BLR_synchronization = {
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				political_power_factor = 0.25
+				resistance_target = -0.1
+			}
+			picture = BLR_icon_synchronization
+		}
+		BLR_teachings_of_new_messiah = {
+			
+			modifier = {
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				political_power_factor = 0.3
+				resistance_target = -0.1
+				conscription_factor = 0.05
+			}
+			picture = BLR_icon_teachings_of_modern_messiah
+		}
+		BLR_teachings_of_new_messiah_1 = {
+			
+			modifier = {
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.25
+				political_power_factor = 0.3
+				resistance_target = -0.1
+				conscription = 0.03
+				army_core_defence_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+			picture = BLR_icon_teachings_of_modern_messiah
+		}
+		BLR_new_education = {
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+			picture = BLR_icon_new_byelorussian_education
+		}
+		BLR_new_education_1 = {
+			
+			modifier = {
+				research_speed_factor = 0.05
+				totalist_drift = 0.07
+			}
+			picture = BLR_icon_new_byelorussian_education
+		}
+		BLR_new_education_2 = {
+			
+			modifier = {
+				research_speed_factor = 0.1
+				totalist_drift = 0.07
+				license_purchase_cost = -0.2
+			}
+			picture = BLR_icon_new_byelorussian_education
+		}
+		BLR_new_culture = {
+			
+			modifier = {
+				attrition = -0.05
+				conversion_cost_mil_to_civ_factor = -0.1
+				conversion_cost_civ_to_mil_factor = -0.1
+			}
+			picture = BLR_icon_new_byelorussian_culture
+		}
+		BLR_new_culture_1 = {
+			
+			modifier = {
+				attrition = -0.1
+				conversion_cost_mil_to_civ_factor = -0.1
+				conversion_cost_civ_to_mil_factor = -0.1
+				totalist_drift = 0.07
+				political_power_factor = 0.1
+			}
+			picture = BLR_icon_new_byelorussian_culture
+		}
+		BLR_brotherhood_of_elohim = {
+			
+			modifier = {
+				conscription = 0.04
+				consumer_goods_factor = -0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					reliability = 0.1
+					build_cost_ic = -0.1
+				}
+			}
+			picture = BLR_icon_brotherhood_of_elohim
+		}
+	}
+
+	
+}

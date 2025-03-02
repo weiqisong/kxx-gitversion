@@ -1,0 +1,21 @@
+spriteTypes = {	
+
+	SpriteType = {
+	name = "GFX_idea_GRE_Nicolas_Kitsikis_hog_tot"
+	texturefile = "gfx/interface/ministers/GRE/GFX_idea_GRE_Nicolas_Kitsikis_ECM.png"			
+	}
+	SpriteType = {
+	name = "GFX_idea_GRE_Angelos_Sikelianos_for_tot"
+	texturefile = "gfx/interface/ministers/GRE/GFX_idea_GRE_Angelos_Sikelianos_HOG.png"			
+	}
+	SpriteType = {
+	name = "GFX_idea_GRE_Patroklos_Karantinos_eco_tot"
+	texturefile = "gfx/interface/ministers/GRE/GFX_idea_GRE_Patroklos_Karantinos_FAM.png"			
+	}
+	SpriteType = {
+	name = "GFX_idea_GRE_Yanis_Kordatos_sec_tot"
+	texturefile = "gfx/interface/ministers/GRE/GFX_idea_GRE_Yanis_Kordatos_IAM.png"			
+	}
+	
+
+}

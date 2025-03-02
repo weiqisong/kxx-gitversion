@@ -1,0 +1,840 @@
+focus_tree = {
+    id = WHR_King_focus_tree
+    country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = WHR
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 1800 y = 1600 }
+#Lastouski
+
+focus = {
+	id = BLR_the_warrior_of_kryvia
+	icon = GFX_BLR_the_warrior_of_kryvia
+	cost = 5
+	x = 15
+	y = 0
+	
+	available = {
+		has_country_flag = BLR_lastouski
+	}
+	completion_reward = {
+		add_ideas = council_republic
+		add_popularity = {
+			ideology = reactionism
+			popularity = 0.25
+		}
+		add_popularity = {
+			ideology = popular_socialism
+			popularity = 0.25
+		}
+		add_political_power = 100
+		add_war_support = 0.1
+		add_stability = -0.15
+		unlock_decision_category_tooltip = BLR_lastouski_cat
+		remove_ideas = {
+			BLR_monoparty_of_belarus
+		}
+	}
+}
+
+focus = {
+	id = BLR_dare_to_think_speak_and_act
+	icon = GFX_BLR_dare_to_think_speak_and_act
+	cost = 5
+	x = 5
+	y = 1
+	completion_reward = {
+		add_political_power = 50
+		add_stability = 0.05
+		add_war_support = -0.05
+		add_tech_bonus = {
+			bonus = 0.3
+			uses = 2
+			category = industry
+		}
+	}
+	relative_position_id = BLR_the_warrior_of_kryvia
+	prerequisite = { focus = BLR_the_warrior_of_kryvia }
+}
+
+focus = {
+	id = BLR_by_the_cross_of_euphrosyne
+	icon = GFX_BLR_by_the_cross_of_euphrosyne
+	cost = 5
+	x = -5
+	y = 1
+	completion_reward = {
+		add_ideas = {
+			BLR_blessing
+		}
+	}
+	relative_position_id = BLR_the_warrior_of_kryvia
+	prerequisite = { focus = BLR_the_warrior_of_kryvia }
+}
+
+focus = {
+	id = BLR_facing_a_golden_century
+	icon = GFX_BLR_facing_a_golden_century
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+		set_politics = {
+			ruling_party = reactionism 
+			elections_allowed = yes
+		}
+		add_war_support = 0.05
+		add_political_power = -50
+		add_ideas = {
+			BLR_blood
+		}
+	}
+	relative_position_id = BLR_by_the_cross_of_euphrosyne
+	prerequisite = { focus = BLR_by_the_cross_of_euphrosyne }
+	mutually_exclusive = { focus = BLR_towards_a_bright_future }
+}
+
+focus = {
+	id = BLR_towards_a_bright_future
+	icon = GFX_BLR_towards_a_bright_future
+	cost = 5
+	x = -1
+	y = 1
+	completion_reward = {
+		add_political_power = 100
+		add_ideas = {
+			BLR_sickle
+		}
+	}
+	relative_position_id = BLR_by_the_cross_of_euphrosyne
+	prerequisite = { focus = BLR_by_the_cross_of_euphrosyne }
+	mutually_exclusive = { focus = BLR_facing_a_golden_century }
+}
+
+focus = {
+	id = BLR_not_russian_nor_polish
+	icon = GFX_BLR_not_russian_nor_polish
+	cost = 5
+	x = 0
+	y = 2
+	completion_reward = {
+		add_opinion_modifier = {
+			target = POL 
+			modifier = small_decrease
+		}
+		add_resource = {
+			type = oil
+			amount = 5
+			state = 206
+		}
+		add_resource = {
+			type = aluminium
+			amount = 5
+			state = 206
+		}
+		POL = {
+			set_country_flag = POL_no_flooding
+		}
+	}
+	relative_position_id = BLR_by_the_cross_of_euphrosyne
+	prerequisite = { focus = BLR_by_the_cross_of_euphrosyne }
+}
+
+focus = {
+	id = BLR_peasant_hearts
+	icon = GFX_BLR_peasant_hearts
+	cost = 5
+	x = -1
+	y = 1
+	completion_reward = {
+		country_event = belarus.22
+		94 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		1299 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		swap_ideas = {
+			remove_idea = BLR_sickle
+			add_idea = BLR_sickle_1
+		}
+	}
+	relative_position_id = BLR_towards_a_bright_future
+	prerequisite = { focus = BLR_towards_a_bright_future }
+}
+
+focus = {
+	id = BLR_nephilimic_might
+	icon = GFX_BLR_nephilimic_might
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = BLR_blood
+			add_idea = BLR_blood_1
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = infantry_weapons
+		}
+		1299 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = BLR_facing_a_golden_century
+	prerequisite = { focus = BLR_facing_a_golden_century }
+}
+
+focus = {
+	id = BLR_class_and_nation
+	icon = GFX_BLR_class_and_nation
+	cost = 5
+	x = -1
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = BLR_sickle_1
+			add_idea = BLR_sickle_2
+		}
+	}
+	relative_position_id = BLR_peasant_hearts
+	prerequisite = { focus = BLR_peasant_hearts }
+}
+
+focus = {
+	id = BLR_nation_over_class
+	icon = GFX_BLR_nation_over_class
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = BLR_blood_1
+			add_idea = BLR_blood_2
+		}
+		add_manpower = -2300
+		add_popularity = {
+			ideology = anarchism
+			popularity = -0.25
+		}
+		add_popularity = {
+			ideology = popular_socialism
+			popularity = -0.25
+		}
+		add_popularity = {
+			ideology = revisionist_socialism
+			popularity = -0.25
+		}
+		add_popularity = {
+			ideology = vanguard_socialism
+			popularity = -0.25
+		}
+		add_popularity = {
+			ideology = progressivism
+			popularity = -0.25
+		}
+	}
+	relative_position_id = BLR_nephilimic_might
+	prerequisite = { focus = BLR_nephilimic_might }
+}
+
+focus = {
+	id = BLR_republic_of_simple_minds
+	icon = GFX_BLR_republic_of_simple_minds
+	cost = 5
+	x = -1
+	y = 1
+	completion_reward = {
+		hidden_effect = {
+			load_oob = BLR_minds
+		}
+		swap_ideas = {
+			remove_idea = BLR_sickle_2
+			add_idea = BLR_sickle_3
+		}
+	}
+	relative_position_id = BLR_class_and_nation
+	prerequisite = { focus = BLR_class_and_nation }
+}
+
+focus = {
+	id = BLR_commonwealth_of_eden
+	icon = GFX_BLR_commonwealth_of_eden
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+		custom_effect_tooltip = BLR_black_cat_tt
+		hidden_effect = {
+			load_oob = BLR_blackcat
+		}
+		swap_ideas = {
+			remove_idea = BLR_blood_2
+			add_idea = BLR_blood_3
+		}
+	}
+	relative_position_id = BLR_nation_over_class
+	prerequisite = { focus = BLR_nation_over_class }
+}
+
+focus = {
+	id = BLR_legacy_of_brest
+	icon = GFX_BLR_legacy_of_brest
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		add_stability = 0.1
+		add_political_power = 50
+		swap_ideas = {
+			remove_idea = BLR_blessing
+			add_idea = BLR_blessing_1
+		}
+	}
+	relative_position_id = BLR_not_russian_nor_polish
+	prerequisite = { focus = BLR_not_russian_nor_polish }
+}
+
+focus = {
+	id = BLR_belarus_forward
+	icon = GFX_BLR_belarus_forward
+	cost = 5
+	x = 0
+	y = 2
+	completion_reward = {
+		add_research_slot = 1
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = industry
+		}
+		remove_ideas = {
+			BLR_stillborn_identity
+		}
+	}
+	relative_position_id = BLR_legacy_of_brest
+	prerequisite = { focus = BLR_legacy_of_brest }
+}
+
+focus = {
+	id = BLR_our_hope_in_pahonia
+	icon = GFX_BLR_our_hope_in_pahonia
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+		add_state_core = 242
+		add_state_core = 243
+		swap_ideas = {
+			remove_idea = BLR_sickle_3
+			add_idea = BLR_sickle_4
+		}
+	}
+	available = {
+		has_completed_focus = BLR_republic_of_simple_minds
+	}
+	relative_position_id = BLR_class_and_nation
+	prerequisite = { focus = BLR_class_and_nation }
+	prerequisite = {
+		focus = BLR_legacy_of_brest
+	}
+}
+
+focus = {
+	id = BLR_hymn_of_kryvich_pride
+	icon = GFX_BLR_hymn_of_kryvich_pride
+	cost = 5
+	x = -2
+	y = 1
+	available = {
+		has_completed_focus = BLR_commonwealth_of_eden
+	}
+	completion_reward = {
+		country_event = belarus.21
+		swap_ideas = {
+			remove_idea = BLR_blood_3
+			add_idea = BLR_blood_4
+		}
+		every_state = {
+			limit = {
+				OR = {
+					state = 722
+					state = 213
+					state = 147
+					state = 215
+					state = 216
+					state = 208
+					state = 209
+					state = 263
+					state = 246
+					state = 242
+					state = 243
+					state = 205
+					state = 219
+					state = 223
+					state = 254
+					state = 252
+					state = 351
+					state = 248
+					state = 253
+					state = 247
+					state = 264
+					state = 244
+					state = 214
+					state = 260
+					state = 257
+					state = 255
+					state = 239
+				}
+			}
+			add_claim_by = BLR
+		}
+	}
+	relative_position_id = BLR_nation_over_class
+	prerequisite = { focus = BLR_nation_over_class }
+	prerequisite = {
+		focus = BLR_legacy_of_brest
+	}
+}
+
+focus = {
+	id = BLR_our_right_to_sea
+	icon = GFX_BLR_our_right_to_sea
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = LIT 
+					is_core_of = EST 
+					is_core_of = LAT
+				}
+			}
+			add_claim_by = BLR
+		}
+		LIT = {
+			country_event = {
+				id = belarus.9
+				days = 3
+			}
+		}
+		hidden_effect = {
+			set_cosmetic_tag = BLR_lastouski_tag
+		}
+	}
+	relative_position_id = BLR_republic_of_simple_minds
+	prerequisite = { focus = BLR_republic_of_simple_minds }
+	prerequisite = { focus = BLR_our_hope_in_pahonia }
+}
+
+focus = {
+	id = BLR_our_ancient_claims
+	icon = GFX_BLR_our_ancient_claims
+	cost = 5
+	x = -1
+	y = 1
+	available = {
+		owns_state = 219
+	}
+	completion_reward = {
+		hidden_effect = {
+			set_cosmetic_tag = BLR_lastouski_tag
+		}
+		add_political_power = 100
+		add_stability = 0.10
+	}
+	relative_position_id = BLR_commonwealth_of_eden
+	prerequisite = { focus = BLR_commonwealth_of_eden }
+	prerequisite = { focus = BLR_hymn_of_kryvich_pride }
+}
+
+focus = {
+	id = BLR_long_march_to_modernity
+	icon = GFX_BLR_long_march_to_modernity
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+		add_ideas = {
+			decentralised_planning
+			high_armament_level
+		}
+	}
+	relative_position_id = BLR_dare_to_think_speak_and_act
+	prerequisite = { focus = BLR_dare_to_think_speak_and_act }
+}
+
+focus = {
+	id = BLR_crusade_for_integrationism
+	icon = GFX_BLR_crusade_for_integrationism
+	cost = 5
+	x = 3
+	y = 1
+	completion_reward = {
+		add_stability = 0.05
+		add_political_power = 50
+		add_manpower = 15000
+		add_ideas = {
+			extensive_conscription
+		}
+	}
+	relative_position_id = BLR_dare_to_think_speak_and_act
+	prerequisite = { focus = BLR_dare_to_think_speak_and_act }
+}
+
+focus = {
+	id = BLR_belarus_the_just
+	icon = GFX_BLR_belarus_the_just
+	cost = 5
+	x = -2
+	y = 1
+	completion_reward = {
+		custom_effect_tooltip = BLR_belarus_the_just_tt
+		add_ideas = {
+			semi_industrialised
+		}
+	}
+	relative_position_id = BLR_dare_to_think_speak_and_act
+	prerequisite = { focus = BLR_dare_to_think_speak_and_act }
+}
+
+focus = {
+	id = BLR_let_the_hundred_flowers_bloom
+	icon = GFX_BLR_let_the_hundred_flowers_bloom
+	cost = 5
+	x = -1
+	y = 1
+	completion_reward = {
+		add_ideas = {
+			BLR_let_the_hundred_flowers_bloom_idea
+		}
+	}
+	relative_position_id = BLR_belarus_the_just
+	prerequisite = { focus = BLR_belarus_the_just }
+}
+
+focus = {
+	id = BLR_let_the_thousand_landlords_perish
+	icon = GFX_BLR_let_the_thousand_landlords_perish
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+		country_event = belarus.20
+		add_stability = -0.1
+		206 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+		remove_ideas = {
+			BLR_holdout_bygone_era
+		}
+		206 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = BLR_belarus_the_just
+	prerequisite = { focus = BLR_belarus_the_just }
+}
+
+focus = {
+	id = BLR_war_against_swamps
+	icon = GFX_BLR_war_against_swamps
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+		unlock_decision_category_tooltip = BLR_swamp_cat
+	}
+	relative_position_id = BLR_long_march_to_modernity
+	prerequisite = { focus = BLR_long_march_to_modernity }
+	prerequisite = { focus = BLR_crusade_for_integrationism }
+}
+
+focus = {
+	id = BLR_flood_of_mob_fury
+	icon = GFX_BLR_flood_of_mob_fury
+	cost = 5
+	x = 0
+	y = 4
+	completion_reward = {
+		army_experience = 20
+		add_command_power = 50
+		add_ideas = {
+			BLR_flood_of_mob_fury_idea
+		}
+	}
+	relative_position_id = BLR_dare_to_think_speak_and_act
+	prerequisite = { focus = BLR_dare_to_think_speak_and_act }
+}
+
+focus = {
+	id = BLR_our_little_piece_of_autarky
+	icon = GFX_BLR_our_little_piece_of_autarky
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		add_resource = {
+			type = oil
+			amount = 15
+			state = 206
+		}
+		add_resource = {
+			type = rubber
+			amount = 10
+			state = 206
+		}
+		1299 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = BLR_flood_of_mob_fury
+	prerequisite = { focus = BLR_flood_of_mob_fury }
+}
+
+focus = {
+	id = BLR_sarabande_of_arcadia_and_polis
+	icon = GFX_BLR_sarabande_of_arcadia_and_polis
+	cost = 2
+	x = 0
+	y = 3
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = BLR_flood_of_mob_fury_idea
+			add_idea = BLR_flood_of_mob_fury_idea_1
+		}
+	}
+	relative_position_id = BLR_war_against_swamps
+	prerequisite = { focus = BLR_war_against_swamps }
+	prerequisite = { focus = BLR_flood_of_mob_fury }
+}
+
+
+
+
+	focus = {
+		id = WHR_allies
+		icon = GFX_focus_SOV_international_union_of_soviet_republics
+
+		x = -4
+		y = 13
+		cost = 2
+
+		
+		available = {
+			NOT = {
+				has_global_flag = WHR_GER_DOW
+				has_global_flag = WHR_RUS_SPHERE
+				is_subject = yes
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_allies"
+			add_war_support = 0.02
+			custom_effect_tooltip = WHR_can_seek_allies
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+	}
+    focus = {
+		id = WHR_intermarium
+		icon = GFX_goal_POL_ZPP
+		relative_position_id = WHR_allies
+		x = 0
+		y = 1
+		cost = 2
+
+		prerequisite = {
+			focus = WHR_allies
+		}
+		available = {
+			POL = {
+				has_socialist_government = yes
+			}
+			UKR = {
+				has_socialist_government = yes
+			}
+			NOT = {
+				has_global_flag = WHR_GER_DOW
+				has_global_flag = WHR_RUS_SPHERE
+				WHR_bpsr_in_power = yes
+				is_subject_of = RUS
+				has_war_with = POL
+				has_war_with = UKR
+				is_in_faction_with = FRA
+				is_in_faction_with = SOV
+				is_in_faction = yes
+				is_subject = yes
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_intermarium"
+			UKR = {
+				country_event = {
+					id = whiteruthenia.51
+					days = 1
+				}
+			}
+		}
+	}
+    focus = {
+		id = WHR_internationale
+		icon = GFX_goal_FRA_international_insurrection
+		relative_position_id = WHR_allies
+		x = 1
+		y = 2
+		cost = 2
+
+		prerequisite = {
+			focus = WHR_allies
+		}
+		available = {
+			country_exists = FRA
+			NOT = {
+				has_global_flag = WHR_GER_DOW
+				has_global_flag = WHR_RUS_SPHERE
+				is_subject_of = RUS
+				is_in_faction_with = SOV
+				is_in_faction_with = UKR
+				is_in_faction = yes
+				is_subject = yes
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		mutually_exclusive = {
+			focus = WHR_russian_alliance
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_internationale"
+			FRA = {
+				country_event = {
+					id = whiteruthenia.48
+					days = 1
+				}
+			}
+		}
+	}
+    focus = {
+		id = WHR_russian_alliance
+		icon = GFX_align_soviet
+		relative_position_id = WHR_allies
+		x = -1
+		y = 2
+		cost = 2
+
+		prerequisite = {
+			focus = WHR_allies
+		}
+		bypass = {
+
+		}
+		available = {
+			soviets_exist = yes
+			is_in_faction = no
+			is_subject = no
+			has_country_flag = WHR_Monbol
+			RUS = { is_faction_leader = yes }
+		}
+		mutually_exclusive = {
+			focus = WHR_internationale
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_russian_alliance"
+			RUS = {
+				country_event = {
+					id = whiteruthenia.48
+					days = 1
+				}
+			}
+		}
+	}
+  
+    focus = {
+		id = WHR_reichspact
+		icon = GFX_BAT_germanisation
+		relative_position_id = WHR_allies
+		x = -3
+		y = 2
+		cost = 2
+
+		prerequisite = {
+			focus = WHR_allies
+		}
+		available = {
+			country_exists = GER
+			has_country_flag = WHR_Monbol
+			NOT = {
+				is_in_faction = yes
+				is_subject = yes
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_internationale"
+			GER = {
+				add_to_faction = WHR
+			}
+		}
+	}
+
+}

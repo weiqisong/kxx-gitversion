@@ -1,0 +1,24 @@
+spriteTypes = {	
+
+	SpriteType = {
+	name = "GFX_The_Death_of_the_Eagle"
+	texturefile = "gfx/interface/decision/The_Death_of_the_Eagle.png"			
+	}
+	SpriteType = {
+	name = "GFX_The_last_empire_of_the_Phoenicians"
+	texturefile = "gfx/interface/decision/The_last_empire_of_the_Phoenicians.png"			
+	}
+	SpriteType = {
+	name = "GFX_decision_Lebanon_Mountain_Counter_Revolution"
+	texturefile = "gfx/interface/decision/Lebanon_Mountain_Counter_Revolution.png"			
+	}
+	SpriteType = {
+	name = "GFX_A_clear_proof_of_the_bifurcation_of_the_riverbank"
+	texturefile = "gfx/interface/decision/A_clear_proof_of_the_bifurcation_of_the_riverbank.png"			
+	}
+	SpriteType = {
+	name = "GFX_Pan_Islamic_Map"
+	texturefile = "gfx/interface/decision/Pan_Islamic_Map.png"			
+	}
+
+}

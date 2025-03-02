@@ -1,0 +1,1765 @@
+##############
+# Commune of France
+##############
+ideas = {
+
+	country = {
+		###起始精神###
+		FRA_rural_religious_question = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = FRA_rural_religious_question
+			modifier = {
+				political_power_cost = 0.15
+				stability_factor = -0.1
+			}
+		}
+		FRA_divided_defenders = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_divided_defenders"}
+			allowed = { always = no }
+			picture = FRA_divided_defenders
+			modifier = {
+				land_doctrine_cost_factor = 0.25
+				army_morale_factor = 0.1
+				army_org_factor = -0.2
+				planning_speed = -0.35				
+			}
+		}
+		FRA_les_grand_travaux = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_les_grand_travaux"}
+			allowed = { always = no }
+			picture = FRA_les_grand_travaux
+			modifier = {
+				industrial_capacity_factory = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				consumer_goods_factor = 0.07
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		FRA_tempered_revanchism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_tempered_revanchism"}
+			allowed = { always = no }
+			picture = FRA_tempered_revanchism
+			modifier = {
+				war_support_factor = -0.2
+				mobilization_speed = -0.2
+				conscription_factor = -0.1
+				army_core_defence_factor = 0.12
+			}
+		}
+		
+		###第一次选举-工团派###
+		FRA_syndicalist_leadership_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_syndicalist_leadership_idea"}
+			modifier = {
+				civilian_intel_factor = 0.1
+				war_support_factor = 0.03
+				decryption_power = 0.03
+				research_sharing_per_country_bonus = 0.05
+				boost_ideology_mission_factor = 0.15
+				boost_resistance_factor = 0.1
+				forced_surrender_limit = 0.03
+				weekly_manpower	= 45
+				mobilization_speed = 0.05
+				faction_trade_opinion_factor = 0.2
+				send_volunteers_tension	= -0.1
+			}
+			picture = FRA_phalanstere
+		}
+		FRA_syndicalist_leadership_faure_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_syndicalist_leadership_faure_idea"}
+			modifier = {
+				civilian_intel_factor = 0.1
+				war_support_factor = 0.05
+				decryption_power = 0.03
+				boost_ideology_mission_factor = 0.2
+				boost_resistance_factor = 0.1
+				research_sharing_per_country_bonus = 0.05
+				forced_surrender_limit = 0.05
+				weekly_manpower	= 65
+				mobilization_speed = 0.05
+				faction_trade_opinion_factor = 0.2
+				send_volunteers_tension	= -0.2
+				send_volunteer_size	= 1
+				resistance_growth_on_our_occupied_states = 0.1
+			}
+			picture = FRA_phalanstere
+		}
+		FRA_syndicalist_leadership_monatte_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_syndicalist_leadership_faure_idea"}
+			modifier = {
+				civilian_intel_factor = 0.15
+				war_support_factor = 0.05
+				decryption_power = 0.05
+				research_sharing_per_country_bonus = 0.08
+				boost_ideology_mission_factor = 0.2
+				boost_resistance_factor = 0.1
+				forced_surrender_limit = 0.05
+				weekly_manpower	= 55
+				mobilization_speed = 0.1
+				faction_trade_opinion_factor = 0.3
+				send_volunteers_tension	= -0.3
+				send_volunteer_size	= 2
+			}
+			picture = FRA_phalanstere
+		}
+		FRA_communal_economy_1_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_communal_economy_1_idea"}
+			modifier = {
+				consumer_goods_factor = 0.05
+				offensive_war_stability_factor = -0.2
+				max_command_power = -10
+				local_resources_factor = 0.03
+				industry_free_repair_factor	= 0.03
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_communal_economy_2_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_communal_economy_2_idea"}
+			modifier = {
+				consumer_goods_factor = 0.02
+				offensive_war_stability_factor = -0.1
+				max_command_power = -5
+				local_resources_factor = 0.05
+				industry_free_repair_factor	= 0.05
+				global_building_slots = 1
+				production_lack_of_resource_penalty_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_communal_economy_3_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_communal_economy_3_idea"}
+			modifier = {
+				local_resources_factor = 0.12
+				industry_free_repair_factor	= 0.1
+				global_building_slots = 1
+				production_lack_of_resource_penalty_factor = -0.15
+				production_factory_max_efficiency_factor = 0.1
+				conscription_factor	= 0.02
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_communal_economy_4_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_communal_economy_4_idea"}
+			modifier = {
+				local_resources_factor = 0.15
+				consumer_goods_factor = -0.08
+				industry_free_repair_factor	= 0.1
+				global_building_slots = 2
+				production_lack_of_resource_penalty_factor = -0.2
+				production_factory_max_efficiency_factor = 0.12
+				conscription_factor	= 0.05
+				forced_surrender_limit = 0.03
+				monthly_population = 0.1
+				min_export = 0.1
+				stability_weekly = 0.01
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_radical_support_1_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_radical_support_1_idea"}
+			modifier = {
+				stability_factor = -0.12
+				consumer_goods_factor = -0.03
+				recruitable_population_factor = 0.02
+				local_manpower = 0.01
+				party_popularity_stability_factor = 0.05
+				drift_defence_factor = 0.2
+				army_core_defence_factor = 0.02
+				encryption_factor = 0.03
+				army_org_factor = -0.1
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_radical_support_2_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_radical_support_2_idea"}
+			modifier = {
+				stability_factor = -0.08
+				consumer_goods_factor = -0.05
+				recruitable_population_factor = 0.05
+				local_manpower = 0.04
+				party_popularity_stability_factor = 0.15
+				drift_defence_factor = 0.25
+				encryption_factor = 0.05
+				army_core_defence_factor = 0.05
+				army_org_factor = -0.05
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_radical_support_3_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_radical_support_3_idea"}
+			modifier = {
+				stability_factor = -0.02
+				consumer_goods_factor = -0.05
+				recruitable_population_factor = 0.06
+				local_manpower = 0.05
+				party_popularity_stability_factor = 0.2
+				drift_defence_factor = 0.3
+				encryption_factor = 0.06
+				army_core_defence_factor = 0.05
+				army_org_factor = -0.02
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_peoples_columns_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_peoples_columns_idea"}
+			modifier = {
+				war_support_weekly = 0.01
+				supply_consumption_factor = -0.1
+				recruitable_population_factor = 0.02
+				non_core_manpower = 0.05
+				encryption_factor = 0.05
+				army_core_attack_factor	= 0.05
+				army_core_defence_factor = 0.05
+				org_loss_when_moving = -0.1
+				out_of_supply_factor = -0.1
+				minimum_training_level = -3
+				planning_speed = -0.1
+			}
+			picture = generic_syndicalist_medal
+		}
+		
+		###第一次选举-工会派###
+		FRA_union_economy_1_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_union_economy_1_idea"}
+			modifier = {
+				production_speed_buildings_factor = 0.03
+				production_factory_start_efficiency_factor = 0.03
+				production_factory_max_efficiency_factor = -0.05
+				line_change_production_efficiency_factor = 0.05
+				consumer_goods_factor = 0.05
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_union_economy_2_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_union_economy_2_idea"}
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory	= 0.03
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = -0.02
+				line_change_production_efficiency_factor = 0.08
+				consumer_goods_factor = 0.04
+				decryption_factor = 0.03
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_union_economy_3_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_union_economy_3_idea"}
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory	= 0.05
+				production_factory_start_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.08
+				local_supplies = 0.05
+				consumer_goods_factor = 0.02
+				decryption_factor = 0.03
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_union_economy_4_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_union_economy_4_idea"}
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory	= 0.05
+				production_factory_start_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.1
+				local_supplies = 0.08
+				monthly_population = 0.02
+				consumer_goods_factor = -0.03
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_labour_notes_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_labour_notes_idea"}
+			modifier = {
+				drift_defence_factor = -0.1
+				political_power_cost = -10
+				party_popularity_stability_factor = 0.05
+				conversion_cost_civ_to_mil_factor = -0.10
+				production_factory_efficiency_gain_factor = 0.03
+				production_factory_start_efficiency_factor = 0.05
+				industrial_capacity_factory	= 0.02
+				base_fuel_gain = 0.03
+				production_speed_buildings_factor = 0.05
+			}
+			picture = generic_loans
+		}
+		FRA_cost_value_vouchers_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_cost_value_vouchers_idea"}
+			modifier = {
+				conversion_cost_civ_to_mil_factor = 0.05
+				conversion_cost_mil_to_civ_factor = -0.05
+				production_lack_of_resource_penalty_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_factor = -0.05
+				research_speed_factor = 0.03
+				production_speed_industrial_complex_factor = 0.1
+				line_change_production_efficiency_factor = 0.15
+				production_cost_max_convoy = -1
+				max_fuel_building = 0.05
+				local_supplies = 0.05
+			}
+			picture = give_money
+		}
+		FRA_cgt_empowerment_1_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_cgt_empowerment_1_idea"}
+			modifier = {
+				political_power_gain = 0.01
+				recruitable_population = 0.02
+				war_stability_factor = 0.05
+				command_power_gain = 0.01
+				mobilization_speed = 0.03
+				encryption_factor = 0.03
+			}
+			picture = orthodox_syndicalism
+		}
+		FRA_cgt_empowerment_2_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_cgt_empowerment_2_idea"}
+			modifier = {
+				political_power_gain = 0.05
+				recruitable_population = 0.03
+				party_popularity_stability_factor = 0.1
+				war_stability_factor = 0.1
+				command_power_gain = 0.02
+				mobilization_speed = 0.05
+				encryption_factor = 0.05
+			}
+			picture = orthodox_syndicalism
+		}
+		FRA_cgt_empowerment_3_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_cgt_empowerment_3_idea"}
+					modifier = {
+				political_power_gain = 0.08
+				recruitable_population = 0.05
+				party_popularity_stability_factor = 0.2
+				war_stability_factor = 0.15
+				military_leader_cost_factor	= -0.1
+				command_power_gain = 0.05
+				mobilization_speed = 0.1
+				army_morale	= 0.1
+				encryption_factor = 0.05
+				global_building_slots = 1
+				stability_weekly = 0.01
+			}
+			picture = orthodox_syndicalism
+		}
+		FRA_union_education = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_union_education"}
+			modifier = {
+				research_speed_factor = 0.05
+				industrial_capacity_factory	= 0.02
+				industrial_capacity_dockyard = 0.02
+				production_factory_max_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				industry_air_damage_factor = -0.1
+				refit_speed = -2
+				repair_speed_factor = 0.03
+				max_fuel_building = 0.03
+			}
+			picture = radical_education
+		}
+		###第一次选举-无政府###
+		FRA_coop_economy_1_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_coop_economy_1_idea"}
+			modifier = {
+				consumer_goods_factor = -0.02
+				conversion_cost_mil_to_civ_factor = -0.05
+				conversion_cost_civ_to_mil_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.03
+				production_factory_start_efficiency_factor = -0.03
+				production_factory_max_efficiency_factor = 0.03
+				line_change_production_efficiency_factor = -0.05
+				min_export = 0.05
+			}
+			picture = coop_clubs
+		}
+		FRA_coop_economy_2_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_coop_economy_2_idea"}
+			modifier = {
+				consumer_goods_factor = -0.04
+				stability_weekly = 0.01
+				conversion_cost_mil_to_civ_factor = -0.05
+				conversion_cost_civ_to_mil_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.03
+				production_factory_start_efficiency_factor = -0.01
+				production_factory_max_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = -0.05
+				min_export = 0.05
+			}
+			picture = coop_clubs
+		}
+		FRA_coop_economy_3_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_coop_economy_3_idea"}
+			modifier = {
+				consumer_goods_factor = -0.06
+				stability_weekly = 0.02
+				local_supplies = 0.03
+				conversion_cost_mil_to_civ_factor = -0.1
+				conversion_cost_civ_to_mil_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.07
+				production_factory_start_efficiency_factor = 0.02
+				production_factory_max_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = -0.05
+				min_export = 0.03
+			}
+			picture = coop_clubs
+		}
+		FRA_coop_economy_4_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_coop_economy_4_idea"}
+			modifier = {
+				consumer_goods_factor = -0.08
+				stability_weekly = 0.02
+				local_resources_factor = 0.05
+				research_speed_factor = 0.04
+				local_supplies = 0.05
+				conversion_cost_mil_to_civ_factor = -0.15
+				production_speed_industrial_complex_factor = 0.08
+				production_factory_efficiency_gain_factor = 0.07
+				production_factory_start_efficiency_factor = 0.02
+				production_factory_max_efficiency_factor = 0.1
+				min_export = 0.02
+			}
+			picture = coop_clubs
+		}
+		FRA_coop_economy_5_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_coop_economy_4_idea"}
+			modifier = {
+				consumer_goods_factor = -0.12
+				stability_weekly = 0.02
+				local_resources_factor = 0.08
+				research_speed_factor = 0.06
+				local_supplies = 0.08
+				conversion_cost_mil_to_civ_factor = -0.2
+				production_speed_industrial_complex_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.12
+				min_export = 0.02
+			}
+			picture = coop_clubs
+		}
+		FRA_producerism_1_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_producerism_1_idea"}
+			modifier = {
+				research_speed_factor = 0.03
+				encryption_factor = 0.03
+				industry_repair_factor = 0.03
+				max_fuel_building = 0.03
+				supply_consumption_factor = -0.03
+				unit_upkeep_attrition_factor = -0.03
+				production_lack_of_resource_penalty_factor = 0.05
+				special_forces_out_of_supply_factor = -0.05
+			}
+			picture = generic_syndicalist_worker
+		}
+		FRA_producerism_2_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_producerism_2_idea"}
+			modifier = {
+				research_speed_factor = 0.03
+				encryption_factor = 0.05
+				army_artillery_attack_factor = 0.02
+				industry_repair_factor = 0.03
+				supply_consumption_factor = -0.03
+				max_fuel_building = 0.03
+				air_accidents_factor = -0.05
+				industry_air_damage_factor = -0.03
+				army_bonus_air_superiority_factor = 0.03
+				production_lack_of_resource_penalty_factor = 0.03
+				special_forces_out_of_supply_factor = -0.05
+			}
+			picture = generic_syndicalist_worker
+		}
+		FRA_producerism_3_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_producerism_3_idea"}
+			modifier = {
+				research_speed_factor = 0.05
+				encryption_factor = 0.05
+				army_artillery_attack_factor = 0.02
+				industry_repair_factor = 0.05
+				supply_consumption_factor = -0.05
+				max_fuel_building = 0.05
+				air_accidents_factor = -0.05
+				industry_air_damage_factor = -0.05
+				army_bonus_air_superiority_factor = 0.05
+				special_forces_out_of_supply_factor = -0.08
+			}
+			picture = generic_syndicalist_worker
+		}
+		FRA_syndicate_of_production_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_syndicate_of_production_idea"}
+			modifier = {
+				stability_weekly = 0.01
+				local_resources_factor = 0.05
+				supply_consumption_factor = -0.05
+				line_change_production_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				fuel_gain_factor = 0.1
+				local_resources	= 0.05
+				army_leader_start_logistics_level = 1
+			}
+			picture = Production-for-use
+		}
+		FRA_syndicate_of_consumption_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_syndicate_of_consumption_idea"}
+			modifier = {
+				drift_defence_factor = 0.1
+				consumer_goods_factor = -0.05
+				monthly_population = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				conversion_cost_mil_to_civ_factor = -0.05
+				conversion_cost_civ_to_mil_factor = 0.05
+				local_manpower = 0.02
+			}
+			picture = department_of_production
+		}
+		FRA_reorganized_syndicates_idea_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_syndicate_of_consumption_idea"}
+			modifier = {
+				production_factory_start_efficiency_factor = 0.03
+				production_factory_max_efficiency_factor = 0.03
+				line_change_production_efficiency_factor = 0.03
+				industrial_capacity_factory = 0.02
+				production_resource_need_factor = -0.03
+				consumer_goods_expected_value = -0.03
+			
+			}
+			picture = centralised_syndicalism
+		}
+		FRA_reorganized_syndicates_idea_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_syndicate_of_consumption_idea"}
+			modifier = {
+				production_factory_start_efficiency_factor = 0.03
+				production_factory_max_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.08
+				production_speed_arms_factory_factor = 0.12
+				production_speed_industrial_complex_factor = 0.12
+				global_building_slots_factor = 0.1
+				local_resources_factor = 0.03
+				production_resource_need_factor = -0.03
+				consumer_goods_expected_value = -0.05
+			
+			}
+			picture = centralised_syndicalism
+		}
+		FRA_reorganized_syndicates_idea_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_syndicate_of_consumption_idea"}
+			modifier = {
+				production_factory_start_efficiency_factor = 0.08
+				production_factory_max_efficiency_factor = 0.08
+				line_change_production_efficiency_factor = 0.08
+				industrial_capacity_factory = 0.08
+				production_speed_arms_factory_factor = 0.12
+				production_speed_industrial_complex_factor = 0.12
+				global_building_slots_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				trade_opinion_factor = 0.5
+				local_resources_factor = 0.05
+				production_resource_need_factor = -0.08
+				consumer_goods_expected_value = -0.05
+			
+			}
+			picture = centralised_syndicalism
+		}
+		FRA_party_democracy_1_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_syndicate_of_consumption_idea"}
+			modifier = {
+				political_power_cost = -0.05
+				stability_factor = -0.15
+				war_support_factor = 0.05
+				party_popularity_stability_factor = 0.1
+				research_speed_factor = 0.02
+				consumer_goods_factor = -0.15
+				reassignment_duration_factor = -0.2
+
+			}
+			picture = syndicalist_democracy
+		}
+		FRA_party_democracy_2_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_syndicate_of_consumption_idea"}
+			modifier = {
+				political_power_cost = -0.05
+				stability_factor = -0.2
+				stability_weekly = 0.01
+				war_support_factor = 0.05
+				defensive_war_stability_factor = 0.1
+				offensive_war_stability_factor = 0.1
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				party_popularity_stability_factor = 0.1
+				research_speed_factor = 0.02
+				consumer_goods_factor = -0.15
+				compliance_growth = 0.05
+				monthly_population = 0.1
+				conversion_cost_civ_to_mil_factor = -0.2
+				conversion_cost_mil_to_civ_factor = -0.2
+				reassignment_duration_factor = -0.2
+
+			}
+			picture = syndicalist_democracy
+		}
+		FRA_party_democracy_3_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_syndicate_of_consumption_idea"}
+			modifier = {
+				political_power_cost = -0.1
+				stability_factor = -0.2
+				stability_weekly = 0.01
+				war_support_factor = 0.1
+				defensive_war_stability_factor = 0.1
+				offensive_war_stability_factor = 0.1
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				party_popularity_stability_factor = 0.1
+				research_speed_factor = 0.05
+				consumer_goods_factor = -0.15
+				compliance_growth = 0.05
+				monthly_population = 0.35
+				conversion_cost_civ_to_mil_factor = -0.2
+				conversion_cost_mil_to_civ_factor = -0.2
+				reassignment_duration_factor = -0.2
+				army_core_attack_factor = 0.03
+				army_core_defence_factor = 0.03
+				army_leader_start_level = 1 
+				resistance_target_on_our_occupied_states = 0.1
+			}
+			picture = syndicalist_democracy
+		}
+		FRA_party_democracy_4_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_syndicate_of_consumption_idea"}
+			modifier = {
+				political_power_gain = 0.1
+				political_power_cost = -0.1
+				stability_factor = -0.2
+				stability_weekly = 0.01
+				war_support_factor = 0.1
+				defensive_war_stability_factor = 0.1
+				offensive_war_stability_factor = 0.1
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				party_popularity_stability_factor = 0.1
+				research_speed_factor = 0.05
+				consumer_goods_factor = -0.15
+				compliance_growth = 0.05
+				monthly_population = 0.35
+				conversion_cost_civ_to_mil_factor = -0.2
+				conversion_cost_mil_to_civ_factor = -0.2
+				reassignment_duration_factor = -0.2
+				army_core_attack_factor = 0.03
+				army_core_defence_factor = 0.03
+				army_leader_start_level = 1 
+				resistance_target_on_our_occupied_states = 0.1
+				max_command_power = 150
+				conscription_factor = 0.05
+				recon_factor = 0.05
+				production_speed_buildings_factor = 0.05
+
+			}
+			picture = syndicalist_democracy
+		}
+		FRA_workers_and_peasant_militia_1_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_syndicate_of_consumption_idea"}
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+				dig_in_speed_factor = 0.08
+				max_dig_in_factor = 0.1
+				army_strength_factor = 0.08
+				equipment_capture_factor = 0.05
+
+			}
+			picture = industrial_army
+		}
+		FRA_workers_and_peasant_militia_2_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_syndicate_of_consumption_idea"}
+			modifier = {
+				army_infantry_attack_factor = 0.08
+				army_infantry_defence_factor = 0.08
+				dig_in_speed_factor = 0.08
+				max_dig_in_factor = 0.1
+				army_strength_factor = 0.08
+				equipment_capture_factor = 0.05
+				conscription = 0.015
+				org_loss_at_low_org_factor = -0.2
+				army_attack_speed_factor = 0.04
+				org_loss_when_moving = -0.1
+				army_bonus_air_superiority_factor = 0.05
+				cas_damage_reduction = 0.05
+				initiative_factor = 0.02
+
+			}
+			picture = industrial_army
+		}
+		FRA_workers_and_peasant_militia_3_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_syndicate_of_consumption_idea"}
+			modifier = {
+				army_infantry_attack_factor = 0.08
+				army_infantry_defence_factor = 0.08
+				dig_in_speed_factor = 0.08
+				max_dig_in_factor = 0.1
+				army_strength_factor = 0.08
+				equipment_capture_factor = 0.05
+				conscription = 0.015
+				org_loss_at_low_org_factor = -0.2
+				army_attack_speed_factor = 0.04
+				org_loss_when_moving = -0.1
+				army_bonus_air_superiority_factor = 0.05
+				cas_damage_reduction = 0.05
+				initiative_factor = 0.02
+				experience_gain_factor = 0.05
+				army_speed_factor = 0.06
+				mobilization_speed = 0.1
+				command_power_gain_mult = 0.15
+				max_command_power_mult = 0.15
+				experience_loss_factor = 0.1
+				experience_gain_factor = 0.1
+			}
+			picture = industrial_army
+		}
+		FRA_a_single_school = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_syndicate_of_consumption_idea"}
+			modifier = {
+				research_speed_factor = 0.1
+    			drift_defence_factor = 0.5
+				army_chief_cost_factor = -0.2
+				navy_chief_cost_factor = -0.2
+				air_chief_cost_factor = -0.2
+				mobilization_laws_cost_factor = -0.2
+				trade_laws_cost_factor  = -0.2
+				weekly_manpower = 50
+ 			   experience_gain_army_factor = 0.025
+   
+			}
+			picture = radical_education
+		}
+		
+		###Jacobins###
+		FRA_humanite_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_humanite_idea"}
+			modifier = {
+				totalist_drift = 0.01
+				drift_defence_factor = 0.1
+				army_core_defence_factor = 0.01
+				opinion_gain_monthly_same_ideology = 0.1
+				guarantee_cost = -5
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_humanite_idea_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_humanite_idea_2"}
+			modifier = {
+				totalist_drift = 0.02
+				drift_defence_factor = 0.1
+				army_core_defence_factor = 0.03
+				opinion_gain_monthly_same_ideology = 0.2
+				guarantee_cost = -15
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_jacobin_dominance_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_dominance_idea"}
+			modifier = {
+				max_command_power = 20
+				political_power_gain = 0.05
+				stability_weekly = -0.01
+				party_popularity_stability_factor = 0.1
+				command_power_gain = 0.01
+				mobilization_speed = 0.05
+				puppet_cost_factor = -0.1
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_jacobin_red_dominance_1_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_red_dominance_1_idea"}
+			modifier = {
+				max_command_power = 20
+				political_power_gain = 0.07
+				stability_weekly = -0.01
+				party_popularity_stability_factor = 0.2
+				command_power_gain = 0.01
+				mobilization_speed = 0.1
+				puppet_cost_factor = -0.3
+				recruitable_population = 0.02
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_jacobin_red_dominance_2_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_red_dominance_2_idea"}
+			modifier = {
+				max_command_power = 35
+				political_power_gain = 0.1
+				party_popularity_stability_factor = 0.4
+				command_power_gain = 0.02
+				mobilization_speed = 0.2
+				puppet_cost_factor = -0.3
+				opinion_gain_monthly_same_ideology = 0.01
+				recruitable_population = 0.02
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_jacobin_red_dominance_3_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_red_dominance_3_idea"}
+			modifier = {
+				max_command_power = 50
+				political_power_gain = 0.15
+				party_popularity_stability_factor = 0.4
+				command_power_gain = 0.03
+				mobilization_speed = 0.2
+				puppet_cost_factor = -0.3
+				opinion_gain_monthly_same_ideology = 0.01
+				recruitable_population = 0.03
+				stability_weekly = 0.01
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_jacobin_red_dominance_4_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_red_dominance_4_idea"}
+			modifier = {
+				max_command_power = 75
+				political_power_gain = 0.2
+				party_popularity_stability_factor = 0.5
+				command_power_gain = 0.04
+				mobilization_speed = 0.25
+				puppet_cost_factor = -0.3
+				opinion_gain_monthly_same_ideology = 0.01
+				recruitable_population = 0.04
+				stability_weekly = 0.02
+				production_speed_buildings_factor = 0.1
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_jacobin_red_dominance_5_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_red_dominance_5_idea"}
+			modifier = {
+				max_command_power = 75
+				political_power_gain = 0.3
+				party_popularity_stability_factor = 0.6
+				command_power_gain = 0.05
+				mobilization_speed = 0.3
+				puppet_cost_factor = -0.3
+				opinion_gain_monthly_same_ideology = 0.01
+				recruitable_population = 0.05
+				stability_weekly = 0.04
+				production_speed_buildings_factor = 0.1
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_jacobin_red_dominance_6_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_red_dominance_5_idea"}
+			modifier = {
+				max_command_power = 80
+				political_power_gain = 0.3
+				party_popularity_stability_factor = 0.6
+				command_power_gain = 0.06
+				mobilization_speed = 0.4
+				puppet_cost_factor = -0.5
+				opinion_gain_monthly_same_ideology = 0.02
+				recruitable_population = 0.08
+				stability_weekly = 0.04
+				production_speed_buildings_factor = 0.15
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_communist_enlightenment_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_communist_enlightenment_idea"}
+			modifier = {
+				research_speed_factor = 0.05
+				encryption_factor = 0.05
+				industry_repair_factor = 0.05
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_red_centralization_1_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_red_centralization_1_idea"}
+			modifier = {
+				decryption_factor = 0.05
+				political_power_cost = -10
+				stability_weekly = 0.01
+				civilian_intel_factor = 0.1
+				boost_ideology_mission_factor = 0.1
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_state_agriculture_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_state_agriculture_idea"}
+			modifier = {
+				monthly_population = 0.05
+				war_stability_factor = 0.05
+				local_resources = 0.08
+				production_lack_of_resource_penalty_factor = -0.05
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_communal_front_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_communal_front_idea"}
+			modifier = {
+				state_production_speed_arms_factory_factor = 0.05
+				local_manpower = 0.05
+				local_resources = 0.08
+				production_lack_of_resource_penalty_factor = -0.05
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_pure_marxism_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_pure_marxism_idea"}
+			modifier = {
+				max_command_power = 20
+				political_power_gain = 0.05
+				stability_weekly = -0.01
+				party_popularity_stability_factor = 0.2
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_pure_marxism_2_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_pure_marxism_2_idea"}
+			modifier = {
+				max_command_power = 20
+				political_power_gain = 0.05
+				stability_weekly = -0.01
+				party_popularity_stability_factor = 0.2
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_jacobin_national_dominance_1_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_national_dominance_1_idea"}
+			modifier = {
+				max_command_power = 25
+				political_power_gain = 0.07
+				stability_weekly = -0.01
+				party_popularity_stability_factor = 0.2
+				command_power_gain = 0.01
+				mobilization_speed = 0.06
+				local_manpower = 0.03
+				puppet_cost_factor = -0.1
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_jacobin_national_dominance_2_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_national_dominance_2_idea"}
+			modifier = {
+				max_command_power = 45
+				political_power_gain = 0.08
+				party_popularity_stability_factor = 0.2
+				command_power_gain = 0.03
+				mobilization_speed = 0.1
+				local_manpower = 0.04
+				line_change_production_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				puppet_cost_factor = -0.1
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_jacobin_national_dominance_3_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_national_dominance_3_idea"}
+			modifier = {
+				max_command_power = 75
+				encryption_factor = 0.05
+				political_power_gain = 0.1
+				party_popularity_stability_factor = 0.2
+				command_power_gain = 0.1
+				mobilization_speed = 0.2
+				local_manpower = 0.05
+				line_change_production_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				puppet_cost_factor = -0.15
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_jacobin_national_dominance_4_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_national_dominance_4_idea"}
+			modifier = {
+				max_command_power = 90
+				encryption_factor = 0.08
+				political_power_gain = 0.13
+				party_popularity_stability_factor = 0.3
+				command_power_gain = 0.12
+				mobilization_speed = 0.4
+				local_manpower = 0.1
+				line_change_production_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.08
+				puppet_cost_factor = -0.2
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_jacobin_national_dominance_5_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_national_dominance_4_idea"}
+			modifier = {
+				max_command_power = 110
+				encryption_factor = 0.08
+				political_power_gain = 0.15
+				party_popularity_stability_factor = 0.3
+				command_power_gain = 0.15
+				mobilization_speed = 0.5
+				local_manpower = 0.12
+				line_change_production_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.08
+				puppet_cost_factor = -0.2
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_jacobin_national_dominance_6_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_national_dominance_4_idea"}
+			modifier = {
+				max_command_power = 120
+				encryption_factor = 0.1
+				political_power_gain = 0.15
+				party_popularity_stability_factor = 0.3
+				command_power_gain = 0.15
+				mobilization_speed = 0.6
+				local_manpower = 0.15
+				line_change_production_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				puppet_cost_factor = -0.3
+				war_support_weekly = 0.01
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_forced_labor_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_forced_labor_idea"}
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.1
+				production_speed_buildings_factor = 0.05
+				local_resources	= 0.05
+				repair_speed_factor = 0.05
+				fuel_gain_from_states = 0.01
+				monthly_population = -0.05
+				research_speed_factor = -0.01
+				local_manpower = -0.01
+				resistance_damage_to_garrison = 0.1
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_red_purge_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_forced_labor_idea"}
+			modifier = {
+			monthly_population = -1.45
+			stability_factor = -0.1
+			research_speed_factor = -0.05
+			political_power_cost = 10
+			political_power_gain = 0.1
+			}
+			picture = generic_syndicalist_medal
+		}
+		
+		### Army Ideas ###
+		FRA_revolutionary_militias_1 = { #From focus FRA_marshal_resignation
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_revolutionary_militias_1"}
+			allowed = { always = no }
+			name = FRA_revolutionary_militias
+			picture = HOL_unionized_military
+			modifier = {
+				army_org_factor = -0.05
+				planning_speed = -0.05	
+			}
+		}
+		FRA_revolutionary_militias_2 = { #From focus FRA_revolutionary_leadership
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_revolutionary_militias_2"}
+			allowed = { always = no }
+			name = FRA_revolutionary_militias
+			picture = HOL_unionized_military			
+			modifier = {
+				planning_speed = 0.02
+				experience_gain_army = 0.05
+			}
+		}
+		FRA_revolutionary_militias_3 = { #From focus FRA_decentralized_support_network
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_revolutionary_militias_3"}
+			allowed = { always = no }
+			name = FRA_revolutionary_militias
+			picture = HOL_unionized_military
+			modifier = {
+				army_org_factor = -0.05
+				planning_speed = -0.05	
+				experience_loss_factor = -0.15
+				supply_consumption_factor = -0.1
+				out_of_supply_factor = -0.1
+			}
+		}
+		FRA_revolutionary_militias_4 = { #From focus FRA_defenders_of_the_commune
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_revolutionary_militias_3"}
+			allowed = { always = no }
+			name = FRA_revolutionary_militias
+			picture = HOL_unionized_military
+			modifier = {
+				army_org_factor = -0.05
+				planning_speed = -0.05	
+				army_core_defence_factor = 0.1
+			}
+		}
+		FRA_revolutionary_militias_5 = { #From focus FRA_decentralized_support_network + FRA_revolutionary_leadership
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_revolutionary_militias_3"}
+			allowed = { always = no }
+			name = FRA_revolutionary_militias
+			picture = HOL_unionized_military
+			modifier = {
+				planning_speed = 0.02
+				experience_gain_army = 0.05
+				experience_loss_factor = -0.15
+				supply_consumption_factor = -0.1
+				out_of_supply_factor = -0.1
+			}
+		}
+		FRA_revolutionary_militias_6 = { #From focus FRA_decentralized_support_network + FRA_defenders_of_the_commune
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_revolutionary_militias_3"}
+			allowed = { always = no }
+			name = FRA_revolutionary_militias
+			picture = HOL_unionized_military
+			modifier = {
+				army_org_factor = -0.05
+				planning_speed = -0.05	
+				experience_loss_factor = -0.15
+				supply_consumption_factor = -0.1
+				out_of_supply_factor = -0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		FRA_revolutionary_militias_7 = { #From focus FRA_revolutionary_leadership + FRA_defenders_of_the_commune
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_revolutionary_militias_3"}
+			allowed = { always = no }
+			name = FRA_revolutionary_militias
+			picture = HOL_unionized_military
+			modifier = {
+				planning_speed = 0.02
+				experience_gain_army = 0.05
+				army_core_defence_factor = 0.1
+			}
+		}
+		FRA_revolutionary_militias_8 = { #all
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_revolutionary_militias_3"}
+			allowed = { always = no }
+			name = FRA_revolutionary_militias
+			picture = HOL_unionized_military
+			modifier = {
+				planning_speed = 0.02
+				experience_gain_army = 0.05
+				experience_loss_factor = -0.15
+				supply_consumption_factor = -0.1
+				out_of_supply_factor = -0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		FRA_makhno_military_plan_1 = { #From focus FRA_makhnos_military_plan
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_makhno_military_plan_1"}
+			allowed = { always = no }
+			name = FRA_makhno_military_plan
+			picture = union_military
+			modifier = {
+				army_morale_factor = 0.1
+				modifier_army_sub_unit_militia_attack_factor = 0.02
+				modifier_army_sub_unit_militia_defence_factor = 0.02
+			}
+		}
+		FRA_makhno_military_plan_2 = { #From focus FRA_peoples_call_to_arms
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_makhno_military_plan_1"}
+			allowed = { always = no }
+			name = FRA_makhno_military_plan
+			picture = union_military
+			modifier = {
+				army_morale_factor = 0.1
+				modifier_army_sub_unit_militia_attack_factor = 0.02
+				modifier_army_sub_unit_militia_defence_factor = 0.02
+				conscription_factor = 0.1
+			}
+		}
+		FRA_makhno_military_plan_3 = { #From focus FRA_revolutionary_guerrilla_tactics
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_makhno_military_plan_3"}
+			allowed = { always = no }
+			name = FRA_makhno_military_plan
+			picture = union_military
+			modifier = {
+				army_morale_factor = 0.1
+				modifier_army_sub_unit_militia_attack_factor = 0.02
+				modifier_army_sub_unit_militia_defence_factor = 0.02
+				conscription_factor = 0.1
+				equipment_capture_factor = 0.07
+				org_loss_when_moving = -0.05
+				pocket_penalty = -0.1
+			}
+		}
+		FRA_makhno_military_plan_4 = { #From focus FRA_revolutionary_ethos
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_makhno_military_plan_4"}
+			allowed = { always = no }
+			name = FRA_makhno_military_plan
+			picture = union_military
+			modifier = {
+				army_morale_factor = 0.15
+				modifier_army_sub_unit_militia_attack_factor = 0.1
+				modifier_army_sub_unit_militia_defence_factor = 0.1
+				conscription_factor = 0.1
+				war_support_factor = 0.15
+				initiative_factor = 0.04
+			}
+		}
+		FRA_makhno_military_plan_5 = { #From focus FRA_revolutionary_ethos + FRA_revolutionary_guerrilla_tactics
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_makhno_military_plan_5"}
+			allowed = { always = no }
+			name = FRA_makhno_military_plan
+			picture = union_military
+			modifier = {
+				army_morale_factor = 0.15
+				modifier_army_sub_unit_militia_attack_factor = 0.1
+				modifier_army_sub_unit_militia_defence_factor = 0.1
+				conscription_factor = 0.1
+				war_support_factor = 0.15
+				initiative_factor = 0.04
+				equipment_capture_factor = 0.07
+				org_loss_when_moving = -0.05
+				pocket_penalty = -0.1
+			}
+		}
+		FRA_mass_conscription_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_mass_conscription_idea"}
+			allowed = { always = no }
+			modifier = {
+				conscription = 0.03
+			}
+			picture = NFA_heavy_conscript
+		}
+
+		FRA_tanguy_military_plan_1 = { #From focus FRA_tanguys_military_plan
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_tanguy_military_plan_1"}
+			allowed = { always = no }
+			name = FRA_tanguy_military_plan
+			picture = republican_military
+			modifier = {
+				army_morale_factor = 0.05
+				army_strength_factor = 0.02				
+				army_artillery_attack_factor = 0.02
+				army_artillery_defence_factor = 0.02
+			}
+		}
+		FRA_tanguy_military_plan_2 = { #From focus FRA_reign_of_fire
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_tanguy_military_plan_2"}
+			allowed = { always = no }
+			name = FRA_tanguy_military_plan
+			picture = republican_military
+			modifier = {
+				army_morale_factor = 0.05
+				army_strength_factor = 0.02				
+				army_artillery_attack_factor = 0.02
+				army_artillery_defence_factor = 0.02				
+			}
+			equipment_bonus = {
+				artillery_equipment = {
+					build_cost_ic = -0.1 
+					instant = yes
+				}
+			}
+		}
+		FRA_tanguy_military_plan_3 = { #From focus FRA_artillery_schools
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_tanguy_military_plan_3"}
+			allowed = { always = no }
+			name = FRA_tanguy_military_plan
+			picture = republican_military
+			modifier = {
+				army_morale_factor = 0.05
+				army_strength_factor = 0.02				
+				army_artillery_attack_factor = 0.05
+				army_artillery_defence_factor = 0.05
+				unit_artillery_brigade_design_cost_factor = -0.05
+				experience_gain_artillery_combat_factor = 0.15
+				terrain_penalty_reduction = 0.05				
+			}
+			research_bonus = {
+				artillery = 0.1
+			}
+			equipment_bonus = {
+				artillery_equipment = {
+					build_cost_ic = -0.1 
+					instant = yes
+				}
+			}
+		}
+		FRA_tanguy_military_plan_4 = { #From focus FRA_heavy_artillery_corps
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_tanguy_military_plan_3"}
+			allowed = { always = no }
+			name = FRA_tanguy_military_plan
+			picture = republican_military
+			modifier = {
+				army_morale_factor = 0.05
+				army_strength_factor = 0.02				
+				army_artillery_attack_factor = 0.05
+				army_artillery_defence_factor = 0.05
+				experience_gain_artillery_combat_factor = 0.15
+				terrain_penalty_reduction = 0.05				
+				breakthrough_factor = 0.1
+			}
+			research_bonus = {
+				artillery = 0.1
+			}
+			equipment_bonus = {
+				artillery_equipment = {
+					build_cost_ic = -0.1 
+					soft_attack = 0.05
+					hard_attack = 0.1
+					instant = yes					
+				}
+			}
+		}
+		FRA_empower_rifleman_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_empower_rifleman_idea"}
+			allowed = { always = no }
+			picture = UoB_militia_idea
+			modifier = {
+				modifier_army_sub_unit_elite_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_elite_infantry_defence_factor = 0.05
+				modifier_army_sub_unit_elite_infantry_speed_factor = 0.05
+				modifier_army_sub_unit_elite_infantry_max_org_factor = 0.05
+			}
+		}
+		FRA_standardized_equipment_production = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_standardized_equipment_production"}
+			allowed = { always = no }
+			picture = HUN_secret_rearmament
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 
+					instant = yes
+				}
+			}
+		}
+		FRA_military_prod_coops = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_military_prod_coops"}
+			allowed = { always = no }
+			picture = HUN_secret_rearmament
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15 
+					instant = yes
+				}
+			}
+			modifier = {
+				industrial_capacity_factory = 0.06
+				production_factory_max_efficiency_factor = 0.03
+			}
+		}
+		FRA_revolutionary_army_1 = { #From focus FRA_reinforce_the_arf_command
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_revolutionary_army_1"}
+			allowed = { always = no }
+			name = FRA_revolutionary_army
+			picture = advisors_france
+			modifier = {
+				army_morale_factor = -0.05
+				army_org_factor = -0.03
+				planning_speed = -0.03				
+			}
+		}
+		FRA_revolutionary_army_2 = { #From focus FRA_centralized_high_command
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_revolutionary_army_2"}
+			allowed = { always = no }
+			name = FRA_revolutionary_army
+			picture = advisors_france
+			modifier = {
+				army_morale_factor = -0.05
+				army_org_factor = 0.03
+				planning_speed = 0.07
+				max_planning = 0.1
+			}
+		}
+		FRA_revolutionary_army_3 = { #From focus FRA_peoples_logistic_corps
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_revolutionary_army_3"}
+			allowed = { always = no }
+			name = FRA_revolutionary_army
+			picture = advisors_france
+			modifier = {
+				army_morale_factor = -0.05
+				army_org_factor = 0.03
+				planning_speed = 0.07
+				max_planning = 0.1
+				supply_consumption_factor = -0.1
+				army_fuel_consumption_factor = -0.1
+			}
+		}
+		FRA_revolutionary_army_4 = { #From focus FRA_mission_type
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_revolutionary_army_4"}
+			allowed = { always = no }
+			name = FRA_revolutionary_army
+			picture = advisors_france
+			modifier = {
+				army_morale_factor = -0.05
+				army_org_factor = 0.03
+				planning_speed = 0.12
+				max_planning = 0.1
+				initiative_factor = 0.1
+			}
+		}
+		FRA_revolutionary_army_5 = { #From focus FRA_mission_type + FRA_peoples_logistic_corps
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_revolutionary_army_4"}
+			allowed = { always = no }
+			name = FRA_revolutionary_army
+			picture = advisors_france
+			modifier = {
+				army_morale_factor = -0.05
+				army_org_factor = 0.03
+				planning_speed = 0.12
+				max_planning = 0.1
+				initiative_factor = 0.1
+				supply_consumption_factor = -0.1
+				army_fuel_consumption_factor = -0.1
+			}
+		}
+		FRA_billotte_military_plan_1 = { #From focus FRA_billottes_reform_plan
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_billotte_military_plan_1"}
+			allowed = { always = no }
+			name = FRA_billotte_military_plan
+			picture = generic_acquire_tanks
+			modifier = {
+				army_strength_factor = 0.07				
+				breakthrough_factor = 0.05	
+			}
+		}
+		FRA_billotte_military_plan_2 = { #From focus FRA_principe_concentration
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_billotte_military_plan_2"}
+			allowed = { always = no }
+			name = FRA_billotte_military_plan
+			picture = generic_acquire_tanks
+			modifier = {
+				army_strength_factor = 0.07				
+				breakthrough_factor = 0.08
+				coordination_bonus = 0.05
+			}
+		}
+		FRA_billotte_military_plan_3 = { #From focus FRA_mechanized_infantry_corps
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_billotte_military_plan_3"}
+			allowed = { always = no }
+			name = FRA_billotte_military_plan
+			picture = generic_acquire_tanks
+			modifier = {
+				army_strength_factor = 0.07				
+				breakthrough_factor = 0.05
+				mechanized_attack_factor = 0.05
+				mechanized_defence_factor = 0.05
+			}
+		}
+		FRA_billotte_military_plan_4 = { #From focus FRA_mechanized_infantry_corps + FRA_principe_concentration
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_billotte_military_plan_4"}
+			allowed = { always = no }
+			name = FRA_billotte_military_plan
+			picture = generic_acquire_tanks
+			modifier = {
+				army_strength_factor = 0.07				
+				breakthrough_factor = 0.08
+				coordination_bonus = 0.05
+				mechanized_attack_factor = 0.05
+				mechanized_defence_factor = 0.05
+			}
+		}
+		FRA_billotte_military_plan_5 = { #From focus FRA_fast_army
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_billotte_military_plan_5"}
+			allowed = { always = no }
+			name = FRA_billotte_military_plan
+			picture = generic_acquire_tanks
+			modifier = {
+				army_strength_factor = 0.07		
+				army_speed_factor = 0.10				
+				breakthrough_factor = 0.08
+				coordination_bonus = 0.05
+				mechanized_attack_factor = 0.05
+				mechanized_defence_factor = 0.05
+			}
+		}
+		FRA_billotte_military_plan_6 = { #From focus FRA_tank_research
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_billotte_military_plan_6"}
+			allowed = { always = no }
+			name = FRA_billotte_military_plan
+			picture = generic_acquire_tanks
+			modifier = {
+				army_strength_factor = 0.07		
+				army_speed_factor = 0.10				
+				breakthrough_factor = 0.08
+				coordination_bonus = 0.05
+				mechanized_attack_factor = 0.05
+				mechanized_defence_factor = 0.05
+			}
+			research_bonus = {
+				armor = 0.1
+			}
+		}
+		FRA_billotte_military_plan_7 = { #From focus FRA_tank_research + FRA_fast_army
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_billotte_military_plan_7"}
+			allowed = { always = no }
+			name = FRA_billotte_military_plan
+			picture = generic_acquire_tanks
+			modifier = {
+				army_strength_factor = 0.07		
+				army_speed_factor = 0.10				
+				breakthrough_factor = 0.08
+				coordination_bonus = 0.05
+				mechanized_attack_factor = 0.05
+				mechanized_defence_factor = 0.05
+			}
+			research_bonus = {
+				armor = 0.1
+			}
+		}
+		FRA_billotte_military_plan_8 = { #From focus FRA_tank_assembly_line
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_billotte_military_plan_8"}
+			allowed = { always = no }
+			name = FRA_billotte_military_plan
+			picture = generic_acquire_tanks
+			modifier = {
+				army_strength_factor = 0.07		
+				army_speed_factor = 0.10				
+				breakthrough_factor = 0.08
+				coordination_bonus = 0.05
+				mechanized_attack_factor = 0.05
+				mechanized_defence_factor = 0.05
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.1
+					reliability = -0.05
+					soft_attack = -0.05
+					instant = yes
+				}
+			}
+		}
+		FRA_billotte_military_plan_9 = { #From focus FRA_tank_quality_line
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_billotte_military_plan_9"}
+			allowed = { always = no }
+			name = FRA_billotte_military_plan
+			picture = generic_acquire_tanks
+			modifier = {
+				army_strength_factor = 0.07		
+				army_speed_factor = 0.10				
+				breakthrough_factor = 0.08
+				coordination_bonus = 0.05
+				mechanized_attack_factor = 0.05
+				mechanized_defence_factor = 0.05
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = 0.1
+					reliability = 0.05
+					soft_attack = 0.05
+					instant = yes
+				}
+			}			
+		}
+		FRA_billotte_military_plan_10 = { #From focus FRA_red_storm
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_billotte_military_plan_10"}
+			allowed = { always = no }
+			name = FRA_billotte_military_plan
+			picture = generic_acquire_tanks
+			modifier = {
+				army_strength_factor = 0.07		
+				army_speed_factor = 0.10				
+				breakthrough_factor = 0.08
+				coordination_bonus = 0.05
+				mechanized_attack_factor = 0.05
+				mechanized_defence_factor = 0.05
+				army_armor_attack_factor = 0.08
+				army_armor_defence_factor = 0.08
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = 0.1
+					reliability = 0.05
+					soft_attack = 0.05
+					instant = yes
+				}
+			}			
+		}
+		FRA_billotte_military_plan_11 = { #From focus FRA_red_storm
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_billotte_military_plan_11"}
+			allowed = { always = no }
+			name = FRA_billotte_military_plan
+			picture = generic_acquire_tanks
+			modifier = {
+				army_strength_factor = 0.07		
+				army_speed_factor = 0.10				
+				breakthrough_factor = 0.08
+				coordination_bonus = 0.05
+				mechanized_attack_factor = 0.05
+				mechanized_defence_factor = 0.05
+				army_armor_attack_factor = 0.08
+				army_armor_defence_factor = 0.08
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.1
+					reliability = -0.05
+					soft_attack = -0.05
+					instant = yes
+				}
+			}
+		}
+		FRA_gamelin_military_plan_1 = { #From focus FRA_gamelins_reform_plan
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_gamelin_military_plan_1"}
+			allowed = { always = no }
+			name = FRA_gamelin_military_plan
+			picture = generic_acquire_tanks
+			modifier = {
+				army_defence_factor = 0.1			
+				dig_in_speed_factor = 0.2
+			}
+		}
+		FRA_gamelin_military_plan_2 = { #From focus FRA_military_academy
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_gamelin_military_plan_2"}
+			allowed = { always = no }
+			name = FRA_gamelin_military_plan
+			picture = generic_acquire_tanks
+			modifier = {
+				army_defence_factor = 0.1			
+				dig_in_speed_factor = 0.2
+				max_planning = 0.05
+				planning_speed = 0.07
+				experience_gain_army = 0.07
+				terrain_penalty_reduction = 0.05
+			}
+		}
+		FRA_gamelin_military_plan_3 = { #From focus FRA_command_and_control_centers
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_gamelin_military_plan_3"}
+			allowed = { always = no }
+			name = FRA_gamelin_military_plan
+			picture = generic_acquire_tanks
+			modifier = {
+				army_defence_factor = 0.1			
+				dig_in_speed_factor = 0.2
+				max_planning = 0.05
+				planning_speed = 0.07
+				experience_gain_army = 0.07
+				terrain_penalty_reduction = 0.05
+				coordination_bonus = 0.05
+				army_org_regain = 0.05
+			}
+		}
+		FRA_gamelin_military_plan_4 = { #From focus FRA_frontline_recon
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_gamelin_military_plan_4"}
+			allowed = { always = no }
+			name = FRA_gamelin_military_plan
+			picture = generic_acquire_tanks
+			modifier = {
+				army_defence_factor = 0.1			
+				dig_in_speed_factor = 0.2
+				max_planning = 0.05
+				planning_speed = 0.07
+				experience_gain_army = 0.07
+				terrain_penalty_reduction = 0.05
+				recon_factor = 0.05
+				recon_factor_while_entrenched = 0.05
+			}
+		}
+		FRA_gamelin_military_plan_5 = { #From focus FRA_frontline_recon + FRA_command_and_control_centers
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_gamelin_military_plan_5"}
+			allowed = { always = no }
+			name = FRA_gamelin_military_plan
+			picture = generic_acquire_tanks
+			modifier = {
+				army_defence_factor = 0.1			
+				dig_in_speed_factor = 0.2
+				max_planning = 0.05
+				planning_speed = 0.07
+				experience_gain_army = 0.07
+				terrain_penalty_reduction = 0.05
+				recon_factor = 0.05
+				recon_factor_while_entrenched = 0.05
+				coordination_bonus = 0.05
+				army_org_regain = 0.05
+			}
+		}
+		FRA_gamelin_military_plan_6 = { #From focus FRA_civil_military_cooperation
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_gamelin_military_plan_6"}
+			allowed = { always = no }
+			name = FRA_gamelin_military_plan
+			picture = generic_acquire_tanks
+			modifier = {
+				army_defence_factor = 0.1			
+				dig_in_speed_factor = 0.2
+				max_planning = 0.05
+				planning_speed = 0.07
+				experience_gain_army = 0.07
+				terrain_penalty_reduction = 0.05
+				recon_factor = 0.05
+				recon_factor_while_entrenched = 0.05
+				coordination_bonus = 0.05
+				army_org_regain = 0.05
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+			}
+		}
+		FRA_gamelin_military_plan_7 = { #From FRA_civilian_defense_corps
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_gamelin_military_plan_5"}
+			allowed = { always = no }
+			name = FRA_gamelin_military_plan
+			picture = generic_acquire_tanks
+			modifier = {
+				army_defence_factor = 0.1			
+				dig_in_speed_factor = 0.2
+				max_planning = 0.05
+				planning_speed = 0.07
+				experience_gain_army = 0.07
+				terrain_penalty_reduction = 0.05
+				recon_factor = 0.05
+				recon_factor_while_entrenched = 0.05
+				coordination_bonus = 0.05
+				army_org_regain = 0.05
+				army_core_defence_factor = 0.07
+				conscription_factor = 0.05
+			}
+		}
+		FRA_gamelin_military_plan_8 = { #From focus FRA_sentinels_of_vigil
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_gamelin_military_plan_8"}
+			allowed = { always = no }
+			name = FRA_gamelin_military_plan
+			picture = generic_acquire_tanks
+			modifier = {
+				army_defence_factor = 0.1			
+				dig_in_speed_factor = 0.2
+				max_planning = 0.05
+				planning_speed = 0.07
+				experience_gain_army = 0.07
+				terrain_penalty_reduction = 0.05
+				recon_factor = 0.05
+				recon_factor_while_entrenched = 0.05
+				coordination_bonus = 0.05
+				army_org_regain = 0.05
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+				war_support_factor = 0.1
+				land_night_attack = 0.05
+			}
+		}
+		FRA_gamelin_military_plan_9 = { #From FRA_civilian_defense_corps
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_gamelin_military_plan_9"}
+			allowed = { always = no }
+			name = FRA_gamelin_military_plan
+			picture = generic_acquire_tanks
+			modifier = {
+				army_defence_factor = 0.1			
+				dig_in_speed_factor = 0.2
+				max_planning = 0.05
+				planning_speed = 0.07
+				experience_gain_army = 0.07
+				terrain_penalty_reduction = 0.05
+				recon_factor = 0.05
+				recon_factor_while_entrenched = 0.05
+				coordination_bonus = 0.05
+				army_org_regain = 0.05
+				army_core_defence_factor = 0.07
+				conscription_factor = 0.05
+				war_support_factor = 0.1
+				land_night_attack = 0.05
+			}
+		}
+		FRA_armament_production = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_armament_production"}
+			allowed = { always = no }
+			picture = HUN_secret_rearmament
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 
+					instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.1 
+					instant = yes
+				}
+			}
+		}
+	}
+}
