@@ -19018,7 +19018,7 @@ focus = FRA_garden_city_movement
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_establish_the_corporates"
-			custom_effect_tooltip = FRA_bucard_tooltip
+			
 			FRA = {
 				country_event = comfrance.949
 			}
