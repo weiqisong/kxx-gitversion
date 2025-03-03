@@ -22,7 +22,7 @@ country_event = { #Election
 
 	option = { #Soc Dem
 		ai_chance = {
-			factor = 30
+			base = 30
 			modifier = {
 				factor = 0
 				OR = {
@@ -58,7 +58,7 @@ country_event = { #Election
 	}
 	option = { #Soc Lib
 		ai_chance = {
-			factor = 30
+			base = 30
 			modifier = {
 				factor = 0
 				OR = {
@@ -94,7 +94,7 @@ country_event = { #Election
 	}
 	option = { #Soc Con
 		ai_chance = {
-			factor = 30
+			base = 30
 			modifier = {
 				factor = 0
 				OR = {
@@ -130,7 +130,7 @@ country_event = { #Election
 	}
 	option = { #Mar Lib
 		ai_chance = {
-			factor = 10
+			base = 10
 			modifier = {
 				factor = 0
 				OR = {
@@ -174,7 +174,6 @@ country_event = { #Election 2
 	picture = GFX_report_event_BEL_Parliament2 #Election picture necessary
 
 	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	trigger = {
@@ -193,7 +192,7 @@ country_event = { #Election 2
 
 	option = { #Soc Dem
 		ai_chance = {
-			factor = 30
+			base = 30
 			modifier = {
 				factor = 0
 				OR = {
@@ -229,7 +228,7 @@ country_event = { #Election 2
 	}
 	option = { #Soc Lib
 		ai_chance = {
-			factor = 30
+			base = 30
 			modifier = {
 				factor = 0
 				OR = {
@@ -265,7 +264,7 @@ country_event = { #Election 2
 	}
 	option = { #Soc Con
 		ai_chance = {
-			factor = 30
+			base = 30
 			modifier = {
 				factor = 0
 				OR = {
@@ -301,7 +300,7 @@ country_event = { #Election 2
 	}
 	option = { #Mar Lib
 		ai_chance = {
-			factor = 10
+			base = 10
 			modifier = {
 				factor = 0
 				OR = {

@@ -53,8 +53,8 @@ LEC_secure_tianjin_luxun = {
 		timeout_effect = {
 		
 			if = {
-			limit = {
-			check_variable = { control_tianjin > 75 }
+				limit = {
+					check_variable = { control_tianjin > 75 }
 			}
 			
 			
@@ -66,9 +66,9 @@ LEC_secure_tianjin_luxun = {
 			
 			
 			
-			else = {
-			limit = {
-			check_variable = { control_tianjin < 75 }
+			else_if = {
+				limit = {
+				check_variable = { control_tianjin < 75 }
 			}
 			
 			
@@ -76,7 +76,7 @@ LEC_secure_tianjin_luxun = {
 				set_demilitarized_zone = no
 					}
 				QIE = {
-				set_state_owner = 609
+					set_state_owner = 609
 				}
 				set_country_flag = tianjin_revolution_failled
 				

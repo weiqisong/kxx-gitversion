@@ -5,7 +5,7 @@ country_event = {
 
 		id = zhude_yunnan.1
 		title = "确保权力"
-		desc = 随着朱德巩固了自己的权力，他终于有机会在云南实现自己的抱负了。
+		desc = "随着朱德巩固了自己的权力，他终于有机会在云南实现自己的抱负了。"
 		picture = "-"
 		trigger = {
 		tag = YUN
@@ -40,7 +40,7 @@ country_event = {
 
 		id = zhude_yunnan.2
 		title = "云南选举"
-		desc = 选举结果出炉，领导人是.....
+		desc = "选举结果出炉，领导人是....."
 		picture = "-"
 
 		fire_only_once = yes
@@ -336,6 +336,6 @@ country_event = {
 			long_name = "Worker's Party of China/Worker's Party of Korea"
 			name = "WPC/WPK"
 		}
-		}
 	}
 }
+

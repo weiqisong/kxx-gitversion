@@ -6103,8 +6103,8 @@ country_event = { #Japan Demands Our Submission
 		name = japan_new_event.75.a
 		ai_chance = { base = 100 }
 		JAP = {
-		set_country_flag = JAP_Chose_A_Faction
-		puppet = {
+			set_country_flag = JAP_Chose_A_Faction
+			puppet = {
 				target = ROOT
 				end_wars = yes
 			}
@@ -6116,9 +6116,9 @@ country_event = { #Japan Demands Our Submission
 		ai_chance = { base = 100 }
 		
 		country_event = japan_new_event.81
-		}
 	}
 }
+
 
 country_event = { #Refusal But Alliance?
 	id = japan_new_event.76
@@ -8730,21 +8730,21 @@ country_event = { #Revenge of the Zaibatsu
 country_event = { #Taiwan Slips Through Our Fingers
 	id = japan_new_event.137
 	immediate = {log = "[GetDateText]: [Root.GetName]: event japan_new_event.137"}
-	title = 台湾叛乱
-	desc = 消息传来，我们的台湾殖民地的叛乱成功了。在镇压台湾原住民失败后，台湾殖民驻军在乌舍叛乱中被镇压。现在，随着殖民政府撤退到大陆，我们现在必须决定如何应对这种情况。
+	title = "台湾叛乱"
+	desc = "消息传来，我们的台湾殖民地的叛乱成功了。在镇压台湾原住民失败后，台湾殖民驻军在乌舍叛乱中被镇压。现在，随着殖民政府撤退到大陆，我们现在必须决定如何应对这种情况。"
 	picture = "GFX_japan_foreign_minister_2"
 	
 	is_triggered_only = yes
 	option = { #
-		name = 别管他们，我们以后会粉碎他们
+		name = "别管他们，我们以后会粉碎他们"
 		ai_chance = { base = 100 }
-		add_stability = = -0.05
+		add_stability = -0.05
 		add_war_support = -0.1
 		
 	}
 	
 	option = { #
-		name = 马上镇压叛乱
+		name = "马上镇压叛乱"
 		ai_chance = { base = 100 }
 		trigger = {
 		is_ai = no
@@ -8761,19 +8761,19 @@ country_event = { #Taiwan Slips Through Our Fingers
 country_event = { #Charlie Chaplin Visits Japan
 	id = japan_new_event.138
 	immediate = {log = "[GetDateText]: [Root.GetName]: event japan_new_event.138"}
-	title = 查理·卓别林访问日本
-	desc = 1936 年 5 月 14 日，著名演员查理·卓别林抵达日本度假 3 周的消息传来，人们涌向东京码头。当他走下船时，飞机从低空飞过，抛出“欢迎小册子”。除了他的兄弟，卓别林还由他的长期助手河野虎一陪同日本，他在日本长大，然后定居在南加州，并于 1916 年遇到了这位喜剧演员。尽管日本人对此持欢迎态度，但政治动荡的阴影仍然笼罩着日本，但这个问题可以通过派遣一个快速的安全小组到卓别林身边来解决。
+	title = "查理·卓别林访问日本"
+	desc = "1936 年 5 月 14 日，著名演员查理·卓别林抵达日本度假 3 周的消息传来，人们涌向东京码头。当他走下船时，飞机从低空飞过，抛出“欢迎小册子”。除了他的兄弟，卓别林还由他的长期助手河野虎一陪同日本，他在日本长大，然后定居在南加州，并于 1916 年遇到了这位喜剧演员。尽管日本人对此持欢迎态度，但政治动荡的阴影仍然笼罩着日本，但这个问题可以通过派遣一个快速的安全小组到卓别林身边来解决。"
 	picture = "GFX_chaplin_visits_japan"
 	
 	is_triggered_only = yes
 	option = { #May He Enjoy His Stay
-		name = 愿他享受在日本的时光
+		name = "愿他享受在日本的时光"
 		ai_chance = { base = 100 }
 		
 	}
 	
 	option = { #Encourage Him to Stay a Bit Long
-		name = 鼓励他多待一会儿
+		name = "鼓励他多待一会儿"
 		ai_chance = { base = 100 }
 		set_country_flag = JAP_chaplin_stay_longer
 	}
@@ -8782,13 +8782,13 @@ country_event = { #Charlie Chaplin Visits Japan
 country_event = { #Death of Charli Chaplin
 	id = japan_new_event.139
 	immediate = {log = "[GetDateText]: [Root.GetName]: event japan_new_event.139"}
-	title = 卓别林之死
-	desc = 随着查理·卓别林在被激进军官枪杀后被宣布死亡，悲伤的消息传遍了全世界。在选择延长逗留时间后，查理·卓别林将进行全国巡回演出，甚至会见了包括总理在内的一些政客。尽管就在最近，一个名为“血腥联盟”的激进组织发动了一场针对政府的政变。可悲的是，查理卓别林也会成为目标。原因是因为血盟想让美国对日本宣战，尽管美国不会对此采取行动。全世界数以百万计的人现在正在哀悼失去这样一位伟大的演员。
+	title = "卓别林之死"
+	desc = "随着查理·卓别林在被激进军官枪杀后被宣布死亡，悲伤的消息传遍了全世界。在选择延长逗留时间后，查理·卓别林将进行全国巡回演出，甚至会见了包括总理在内的一些政客。尽管就在最近，一个名为“血腥联盟”的激进组织发动了一场针对政府的政变。可悲的是，查理卓别林也会成为目标。原因是因为血盟想让美国对日本宣战，尽管美国不会对此采取行动。全世界数以百万计的人现在正在哀悼失去这样一位伟大的演员。"
 	picture = "GFX_chaplin_visits_japan"
 	
 	is_triggered_only = yes
 	option = { #
-		name = 多么悲惨，他会被怀念的......
+		name = "多么悲惨，他会被怀念的......"
 		ai_chance = { base = 100 }
 		add_manpower = -1
 	}
@@ -8827,8 +8827,8 @@ country_event = { #Shumei Translates the Quran
 country_event = { #Missing Weapon Shipments From Factories
 	id = japan_new_event.142
 	immediate = {log = "[GetDateText]: [Root.GetName]: event japan_new_event.142"}
-	title = 工厂缺少武器运输
-	desc = 自从我们开始将宰拔公司国有化计划以来，已经过去了100多天，这引起了日本财阀的愤怒，尽管由于我们的警察和军队，他们无能为力，紧紧地束缚着他们。但这种束缚似乎是徒劳的，因为最近似乎有大量武器库存来自日本财阀的工厂。这引起了人们对日本财阀的怀疑。政府现在面临着一个决定，是调查这些怀疑，还是照常进行。
+	title = "工厂缺少武器运输"
+	desc = "自从我们开始将宰拔公司国有化计划以来，已经过去了100多天，这引起了日本财阀的愤怒，尽管由于我们的警察和军队，他们无能为力，紧紧地束缚着他们。但这种束缚似乎是徒劳的，因为最近似乎有大量武器库存来自日本财阀的工厂。这引起了人们对日本财阀的怀疑。政府现在面临着一个决定，是调查这些怀疑，还是照常进行。"
 	picture = "GFX_zaibatsu_image"
 	
 	is_triggered_only = yes

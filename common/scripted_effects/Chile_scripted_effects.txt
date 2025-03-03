@@ -13,12 +13,12 @@ CHL_will_enter_into_civil_war = {
 		}
 	else_if = {
 		 limit = {
-		 check_variable = national_Populist > 0.59	
-		 }
+			national_Populist > 0.59	
+		}
 
 		CHL = {
-		country_event = chl.60	
-		    }
+			country_event = chl.60	
+		}
 	 
 	}
 }

@@ -18,14 +18,11 @@ country_event = {
 			picture = "gfx/leaders/GER/Portrait_Germany_Franz_von_Papen.jpg"
 			expire = "1965.1.1"
 			ideology = prussian_constitutionalism_subtype
-			traits = {
-				}
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				long_name = GERBACK_authoritarian_democrat_two_party
-				name = GERBACK_authoritarian_democrat_two_party_long
-			}
+		}
+		set_party_name = {
+			ideology = authoritarian_democrat
+			long_name = GERBACK_authoritarian_democrat_two_party
+			name = GERBACK_authoritarian_democrat_two_party_long
 		}
 	}
 }

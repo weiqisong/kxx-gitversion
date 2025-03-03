@@ -36,14 +36,12 @@ SQI_denounce_the_warlords = {
 				
 				
 				CNH = { load_oob = "CNH_revolution_units"
-			}
+			}		
+	}
+	remove_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
 		
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
-			
-			
-			
-		}
+		
 		
 	}
 }
@@ -83,14 +81,12 @@ SQI_denounce_the_conessions = {
 				
 				
 				CNH = { load_oob = "CNH_revolution_units"
-			}
+			}		
+	}
+	remove_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
 		
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
-			
-			
-			
-		}
+		
 		
 	}
 }
@@ -149,12 +145,11 @@ SQI_denounce_the_warlords_2 = {
 				CNH = { load_oob = "CNH_revolution_units"
 			}
 		
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
-			
-			
-			
-		}
+	}
+	remove_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
+		
+		
 		
 	}
 }
@@ -199,16 +194,13 @@ SQI_denounce_the_conessions_2 = {
 				}
 			
 				}
-				
-				
-				
+
+	}
+
+	remove_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
 		
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
-			
-			
-			
-		}
+		
 		
 	}
 }
@@ -261,15 +253,13 @@ SQI_final_goal = {
 			
 				}
 				
-				
-				
 		
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
-			
-			
-			
-		}
+	}
+
+	remove_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
+		
+		
 		
 	}
 }
@@ -319,14 +309,11 @@ SQI_destruction_japanese_state = {
 					id = shandong.473
 					days = 2
 				}
-				
-			
 		
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
-			
-			
-		}
+	}
+	remove_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
+		
 		
 	}
 }

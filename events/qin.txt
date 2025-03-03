@@ -63,8 +63,8 @@ country_event = {
 	
 	option = {
 		name = qin.1.a
-		ai_will_do = {
-			factor = 1 
+		ai_chance = {
+			base = 1 
 		}
 		create_corps_commander = { #Auto-Generated
 			name = "赢苏"
@@ -80,8 +80,8 @@ country_event = {
 	}
 	option = {
 		name = qin.1.b
-		ai_will_do = {
-			factor = 1
+		ai_chance = {
+			base = 1
 		}
 		set_country_flag = qin_bing_bian
 	}
@@ -235,14 +235,14 @@ country_event = {
 	option = {
 		name = qin.90.a
 		set_capital = { state = 799 }
-		ai_will_do = {
-			factor = 10
+		ai_chance = {
+			base = 10
 		}
 	}
 	option = {
 		name = qin.90.b
-		ai_will_do = {
-			factor = 1
+		ai_chance = {
+			base = 1
 		}
 	}
 }

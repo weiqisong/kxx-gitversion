@@ -24,9 +24,9 @@ ROM_National_Reconstruction_Commission = {
 			}
 			limit={
 				free_building_slots={
-					building=arms_factory
-					size>0
-					include_locked=yes
+					building = arms_factory
+					size > 0
+					include_locked = yes
 				}
 			}
 			add_building_construction={
@@ -61,10 +61,10 @@ ROM_National_Reconstruction_Commission = {
 			prioritize={
 			}
 			limit={
-				free_building_slots={
-					building=industrial_complex
-					size>0
-					include_locked=yes
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
 				}
 			}
 			add_building_construction={
@@ -99,9 +99,9 @@ ROM_National_Reconstruction_Commission = {
 			prioritize={
 			}
 			limit={
-				free_building_slots={
-					building=arms_factory
-					size>0
+				free_building_slots = {
+					building = arms_factory
+					size > 0
 					include_locked=yes
 				}
 			}
@@ -139,7 +139,7 @@ ROM_National_Reconstruction_Commission = {
 			limit={
 				free_building_slots={
 					building=industrial_complex
-					size>0
+					size > 0
 					include_locked=yes
 				}
 			}
@@ -177,7 +177,7 @@ ROM_National_Reconstruction_Commission = {
 			limit={
 				free_building_slots={
 					building=arms_factory
-					size>0
+					size>  0
 					include_locked=yes
 				}
 			}
@@ -215,7 +215,7 @@ ROM_National_Reconstruction_Commission = {
 			limit={
 				free_building_slots={
 					building=industrial_complex
-					size>0
+					size > 0
 					include_locked=yes
 				}
 			}

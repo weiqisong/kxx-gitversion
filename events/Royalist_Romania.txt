@@ -170,7 +170,7 @@ country_event = {
 	
 	option = {
 		name = royalist.800.b #no
-		ai_chance = { factor = 0 }
+		ai_chance = { base = 0 }
 	}
 }
 
@@ -563,7 +563,7 @@ country_event = {
 #		add_political_power = -50
 #		add_war_support = -0.05
 #
-#		ai_chance = { factor = 25 }
+#		ai_chance = { base = 25 }
 #
 #	}
 #
@@ -574,7 +574,7 @@ country_event = {
 #
 #		RRM_increase_chaos_by_1 = yes
 #
-#		ai_chance = { factor = 50 }
+#		ai_chance = { base = 50 }
 #	}
 #
 #	option = {
@@ -582,7 +582,7 @@ country_event = {
 #
 #		RRM_increase_chaos_by_2 = yes
 #
-#		ai_chance = { factor = 25 }
+#		ai_chance = { base = 25 }
 #	}
 #}
 
@@ -658,7 +658,7 @@ country_event = {
 
 		add_popularity = { ideology = social_conservative popularity = 0.2 }
 
-		ai_chance = { factor = 40 }
+		ai_chance = { base = 40 }
 	}
 
 	option = {
@@ -700,7 +700,7 @@ country_event = {
 
 		add_popularity = { ideology = market_liberal popularity = 0.2 }
 
-		ai_chance = { factor = 40 }
+		ai_chance = { base = 40 }
 	}
 
 	option = {
@@ -749,7 +749,7 @@ country_event = {
 
 		add_popularity = { ideology = social_conservative popularity = 0.1 }
 
-		ai_chance = { factor = 10 }
+		ai_chance = { base = 10 }
 	}
 
 	option = {
@@ -798,7 +798,7 @@ country_event = {
 
 		add_popularity = { ideology = market_liberal popularity = 0.1 }
 
-		ai_chance = { factor = 10 }
+		ai_chance = { base = 10 }
 	}
 }
 
@@ -833,7 +833,7 @@ country_event = {
 
 		add_popularity = { ideology = social_conservative popularity = 0.2 }
 
-		ai_chance = { factor = 40 }
+		ai_chance = { base = 40 }
 	}
 
 	option = {
@@ -866,7 +866,7 @@ country_event = {
 
 		add_popularity = { ideology = market_liberal popularity = 0.2 }
 
-		ai_chance = { factor = 40 }
+		ai_chance = { base = 40 }
 	}
 	
 	option = {
@@ -899,7 +899,7 @@ country_event = {
 
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.25 }
 
-		ai_chance = { factor = 20 }
+		ai_chance = { base = 20 }
 	}
 	
 	option = {
@@ -920,7 +920,7 @@ country_event = {
 		
 		add_popularity = { ideology = social_liberal popularity = 0.35 }
 
-		ai_chance = { factor = 25 }
+		ai_chance = { base = 25 }
 	}
 }
 
@@ -955,7 +955,7 @@ country_event = {
 
 		add_popularity = { ideology = social_conservative popularity = 0.2 }
 
-		ai_chance = { factor = 25 }
+		ai_chance = { base = 25 }
 	}
 
 	option = {
@@ -976,7 +976,7 @@ country_event = {
 		
 		add_popularity = { ideology = market_liberal popularity = 0.2 }
 
-		ai_chance = { factor = 25 }
+		ai_chance = { base = 25 }
 	}
 	
 	option = {
@@ -997,7 +997,7 @@ country_event = {
 		
 		add_popularity = { ideology = social_liberal popularity = 0.35 }
 
-		ai_chance = { factor = 25 }
+		ai_chance = { base = 25 }
 	}
 	
 	option = {
@@ -1030,7 +1030,7 @@ country_event = {
 
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.20 }
 
-		ai_chance = { factor = 25 }
+		ai_chance = { base = 25 }
 	}
 }
 
@@ -1046,7 +1046,7 @@ country_event = {
 		name = royalist.22.a # Pass Act
 		add_ideas = RRM_balancing_act_idea
 
-		ai_chance = { factor = 80 }
+		ai_chance = { base = 80 }
 	}
 
 	option = {
@@ -1054,7 +1054,7 @@ country_event = {
 		
 		add_political_power = -50
 
-		ai_chance = { factor = 20 }
+		ai_chance = { base = 20 }
 	}
 }
 
@@ -1123,7 +1123,7 @@ country_event = {
 		traits = { }
 	}
 
-		ai_chance = { factor = 100 }
+		ai_chance = { base = 100 }
 	}
 }
 
@@ -1140,7 +1140,7 @@ country_event = {
 		add_political_power = 100
 		add_ideas = RRM_new_constitution_idea
 
-		ai_chance = { factor = 90 }
+		ai_chance = { base = 90 }
 	}
 
 	option = {
@@ -1149,7 +1149,7 @@ country_event = {
 		add_political_power = -50
 		add_stability = -0.1
 
-		ai_chance = { factor = 10 }
+		ai_chance = { base = 10 }
 	}
 }
 
@@ -1177,7 +1177,7 @@ country_event = {
 		remove_ideas_with_trait = security_minister
 		add_ideas = RRM_Ion_Mihalache_sec_sli
 
-		ai_chance = { factor = 100 }
+		ai_chance = { base = 100 }
 	}
 }
 
@@ -1205,7 +1205,7 @@ country_event = {
 		remove_ideas_with_trait = security_minister
 		add_ideas = RRM_Armand_Calinescu_sec_sli
 
-		ai_chance = { factor = 100 }
+		ai_chance = { base = 100 }
 	}
 }
 
@@ -1233,7 +1233,7 @@ country_event = {
 		remove_ideas_with_trait = security_minister
 		add_ideas = RRM_Vasile_Goldis_sec_sli
 
-		ai_chance = { factor = 100 }
+		ai_chance = { base = 100 }
 	}
 }
 
@@ -1259,7 +1259,7 @@ country_event = {
 		remove_ideas_with_trait = security_minister
 		add_ideas = RRM_David_Popescu_sec_pau
 
-		ai_chance = { factor = 100 }
+		ai_chance = { base = 100 }
 	}
 }
 
@@ -1286,7 +1286,7 @@ country_event = {
 		remove_ideas_with_trait = security_minister
 		add_ideas = RRM_Istrate_Micescu_sec_sco
 
-		ai_chance = { factor = 100 }
+		ai_chance = { base = 100 }
 	}
 }
 
@@ -1403,7 +1403,7 @@ country_event = {
 			elections_allowed = no
 		}
 
-		ai_chance = { factor = 25 }
+		ai_chance = { base = 25 }
 	}
 	
 	option = {
@@ -1411,7 +1411,7 @@ country_event = {
 		
 		add_popularity = { ideology = national_populist popularity = 0.05 }
 		
-		ai_chance = { factor = 25 }
+		ai_chance = { base = 25 }
 	}
 }
  

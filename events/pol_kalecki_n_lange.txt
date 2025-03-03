@@ -158,12 +158,15 @@ country_event = {
 			}			
 		}		
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 	}
 	
 	option = {
 		name = polsoc.4.b
+		ai_chance = {
+			base = 50
+		}
 		complete_national_focus = KX_PL_SOC_Lange_Triumphant
 		set_country_flag = pl_lange_rules
 		add_popularity = {
@@ -218,10 +221,6 @@ country_event = {
 				}
 			}			
 		}		
-		}
-		ai_chance = {
-			factor = 50
-		}
 	}
 }
 
@@ -242,7 +241,7 @@ country_event = {
 		add_stability = -0.10
 		add_ideas = SOC_POL_housing_issue_1
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
 	}
 }
@@ -265,7 +264,7 @@ country_event = {
 			set_country_flag = soc_pol_unitary
 		}
 		ai_chance = {
-			factor = 40
+			base = 40
 		}
 	}
 	option = {
@@ -276,7 +275,7 @@ country_event = {
 			set_cosmetic_tag = POL_soc_fed	
 		}		
 		ai_chance = {
-			factor = 60
+			base = 60
 		}
 	}	
 }
@@ -325,13 +324,13 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 80
+			base = 80
 		}		
 	}
 	option = {
 		name = polsoc.7.b		
 		ai_chance = {
-			factor = 20
+			base = 20
 		}
 	}	
 }
