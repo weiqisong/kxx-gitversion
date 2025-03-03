@@ -279,7 +279,7 @@ ideologies = {
 			syn_mayakovskyism_subtype = { can_be_randomly_selected = no } #马雅可夫斯基主义
 			syn_yamakawaism_subtype = { can_be_randomly_selected = no } #山川主义
 			syn_anarcho_communism_subtype = {can_be_randomly_selected = no} #无政府共产主义
-			polish_natsynd = {can_be_randomly_selected = no} #蓝色工团主义
+			polish_natsynd = {can_be_randomly_selected = no color = { 0 93 149 } } #蓝色工团主义
 			aboriginal_garveyism_subtype = {can_be_randomly_selected = no} #原住民加维主义
 			syn_gandhism_subtype = {can_be_randomly_selected = no} #甘地主义
 			syn_volkisch_communitarianism_subtype = {can_be_randomly_selected = no} #人民社群主义
