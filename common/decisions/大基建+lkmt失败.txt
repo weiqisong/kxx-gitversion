@@ -2216,17 +2216,13 @@ PRC_reconstruction_plan = {
 		days_remove = 90
 		fire_only_once = no
 		
-		allowed = {
-		}
-		available = {
-		}
+
 		visible = {
 			tag = prc #保证了不会出现
 			has_completed_focus = PRC_dianqihua
 			has_completed_focus = PRC_establish_the_welfare_system
 		}
-		ai_will_do = {
-		}
+
 		state_target = yes
 		modifier = {
 		}

@@ -179,7 +179,7 @@ country_event = { # SMEPD SPLIT
 	option = { # Thaly kick Pieck
 		name = rotermorgen.80.a
 		ai_chance = {
-			factor = 50
+			base = 50
 			modifier = {
 				factor = 0
 				has_game_rule = {
@@ -1116,7 +1116,7 @@ country_event = { #
 				    add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 
 					create_country_leader = {
-						name = 亚历山大·叶戈罗夫
+						name = "亚历山大·叶戈罗夫"
 						desc = ""
 						picture = "gfx/leaders/RUS/Portrait_SOV_Aleksandr_Yegorov.png"
 						expire = "1.1.1"

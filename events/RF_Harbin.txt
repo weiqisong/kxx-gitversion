@@ -296,7 +296,7 @@ country_event = {
 	
 	option = { 
 		name = HAR.1.a
-		ai_chance = { factor = 40 }
+		ai_chance = { base = 40 }
 		set_country_flag = HAR_milyukov_wins
 		set_politics = {ruling_party = liberalism }		
 		mark_focus_tree_layout_dirty = yes
@@ -304,7 +304,7 @@ country_event = {
 
 	option = {
 		name = HAR.1.b
-		ai_chance = { factor = 30 }
+		ai_chance = { base = 30 }
 		set_country_flag = HAR_myakotin_wins
 		set_politics = {ruling_party = progressivism }
 		set_country_flag = soc_dems_are_socialists
@@ -313,7 +313,7 @@ country_event = {
 
 	option = {
 		name = HAR.1.c
-		ai_chance = { factor = 20 }
+		ai_chance = { base = 20 }
 		set_politics = { ruling_party = reactionism }
 		set_country_flag = HAR_zaborovsky_wins
 		mark_focus_tree_layout_dirty = yes
@@ -321,7 +321,7 @@ country_event = {
 
 	option = {
 		name = HAR.1.d
-		ai_chance = { factor = 10 }
+		ai_chance = { base = 10 }
 		set_country_flag = HAR_fajda_wins
 		set_politics = { ruling_party = accelerationism }
 		mark_focus_tree_layout_dirty = yes
@@ -339,7 +339,7 @@ country_event = {
 	
 	option = { 
 		name = HAR.2.a
-		ai_chance = { factor = 5 }
+		ai_chance = { base = 5 }
 		set_politics = {ruling_party = liberalism }	
 		set_country_flag = HAR_milyukov_wins
 		mark_focus_tree_layout_dirty = yes
@@ -351,7 +351,7 @@ country_event = {
 
 	option = {
 		name = HAR.2.b
-		ai_chance = { factor = 35 }
+		ai_chance = { base = 35 }
 		set_politics = {ruling_party = progressivism }
 		set_country_flag = soc_dems_are_socialists
 		set_country_flag = HAR_myakotin_wins
@@ -360,7 +360,7 @@ country_event = {
 
 	option = {
 		name = HAR.2.c
-		ai_chance = { factor = 30 }
+		ai_chance = { base = 30 }
 		set_politics = { ruling_party = reactionism }
 		set_country_flag = HAR_zaborovsky_wins
 		mark_focus_tree_layout_dirty = yes
@@ -368,7 +368,7 @@ country_event = {
 
 	option = {
 		name = HAR.2.d
-		ai_chance = { factor = 20 }
+		ai_chance = { base = 20 }
 		set_politics = { ruling_party = accelerationism }
 		set_country_flag = HAR_fajda_wins
 		mark_focus_tree_layout_dirty = yes

@@ -51,13 +51,13 @@ country_event = { #Knock knock...its the ERC
 	option = {
 		name = uob.2003.b
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
 	}
 	option = {
-		name = “或许我们该转向另一个方向....”
+		name = "或许我们该转向另一个方向...."
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 		set_country_flag = ERC_Accepteds
 		country_event = {
@@ -331,7 +331,7 @@ country_event = { ##Mosley rip bozo you wont be missed
 		option = {##arrest
 			name = uob.2010.b
 			ai_chance = {
-				factor = 50
+				base = 50
 			}
 			add_manpower = -4
 			add_war_support = 0.03

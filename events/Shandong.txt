@@ -134,7 +134,7 @@ country_event = {#
 	id = shandong.472
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "暗杀熊希龄"
-	desc = 突发事件！熊希龄在烟台被人刺杀，如今在医院急救....
+	desc = "突发事件！熊希龄在烟台被人刺杀，如今在医院急救...."
 	picture = GFX_rus_black_tsar_event
 
 	fire_only_once = yes

@@ -25,7 +25,7 @@ SIL_National_Reconstruction_Commission = {
 			limit={
 				free_building_slots={
 					building=arms_factory
-					size>0
+					size > 0
 					include_locked=yes
 				}
 			}

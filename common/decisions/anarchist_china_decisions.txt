@@ -68,24 +68,18 @@ GXC_formalize_anarchist_association_parties = {
 		cancel_if_not_visible = yes
 	
 
-		complete_effect = {
-		
-		
-			custom_effect_tooltip = anarchist_strength_tt
-			hidden_effect = {
-			modify_country_flag = {
-					flag = guangxi_anarchist_revolution
-					value = 2
-				}
+	complete_effect = {
+		custom_effect_tooltip = anarchist_strength_tt
+		hidden_effect = {
+		modify_country_flag = {
+				flag = guangxi_anarchist_revolution
+				value = 2
 			}
-		
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
-			
-			
-			
 		}
-		
+	}
+	remove_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
+
 	}
 }
 
@@ -114,28 +108,26 @@ GXC_coerce_military = {
 		cancel_if_not_visible = yes
 		
 
-		complete_effect = {
+	complete_effect = {
 		add_political_power = -20
 		add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -500
-				producer = GXC
-			}
-			
-			custom_effect_tooltip = anarchist_strength_tt
-			hidden_effect {
-			modify_country_flag = {
-					flag = guangxi_anarchist_revolution
-					value = 5
-				}
-			}
-		
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
-			
-			
-			
+			type = infantry_equipment
+			amount = -500
+			producer = GXC
 		}
+		
+		custom_effect_tooltip = anarchist_strength_tt
+		hidden_effect = {
+		modify_country_flag = {
+				flag = guangxi_anarchist_revolution
+				value = 5
+			}
+		}
+	}
+	remove_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
+		
+		
 		
 	}
 }
@@ -212,24 +204,18 @@ GXC_propaganda_in_uni = {
 		cancel_if_not_visible = yes
 		
 
-		complete_effect = {
-		
-			
-			custom_effect_tooltip = anarchist_strength_tt
-			hidden_effect {
-			modify_country_flag = {
-					flag = guangxi_anarchist_revolution
-					value = 6
-				}
+	complete_effect = {
+		custom_effect_tooltip = anarchist_strength_tt
+		hidden_effect = {
+		modify_country_flag = {
+				flag = guangxi_anarchist_revolution
+				value = 6
 			}
-		
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
-			
-			
-			
 		}
-		
+	}
+	remove_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
+
 	}
 }
 
@@ -265,19 +251,19 @@ GXC_breach_gov = {
 		
 			
 			custom_effect_tooltip = anarchist_strength_tt
-			hidden_effect {
+			hidden_effect =  {
 			modify_country_flag = {
 					flag = guangxi_anarchist_revolution
 					value = 7
 				}
 			}
 		
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
-			
-			
-			
-		}
+	}
+
+	remove_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
+		
+		
 		
 	}
 }
@@ -288,14 +274,14 @@ GXC_help_merchant = {
 		available = {
 			has_country_flag = { 
 			flag = guangxi_anarchist_revolution
-			value = < 10
+			value  < 10
 		}
 		}
 		
 		visible = {
 			has_country_flag = { 
 			flag = guangxi_anarchist_revolution
-			value = < 10
+			value  < 10
 		}
 		}
 		
@@ -311,19 +297,18 @@ GXC_help_merchant = {
 		add_political_power = -20
 			
 			custom_effect_tooltip = anarchist_strength_tt
-			hidden_effect {
+			hidden_effect = {
 			modify_country_flag = {
 					flag = guangxi_anarchist_revolution
 					value = 2
 				}
-			}
+			}		
+	}
+
+	remove_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
 		
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
-			
-			
-			
-		}
+		
 		
 	}
 }
@@ -358,19 +343,19 @@ GXC_student_march = {
 		
 			
 			custom_effect_tooltip = anarchist_strength_tt
-			hidden_effect {
+			hidden_effect = {
 			modify_country_flag = {
 					flag = guangxi_anarchist_revolution
 					value = 8
 				}
 			}
 		
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
-			
-			
-			
-		}
+	}
+
+	remove_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
+		
+		
 		
 	}
 }
@@ -404,19 +389,19 @@ GXC_revolution_time = {
 		
 			
 			custom_effect_tooltip = anarchist_gain_power_tt
-			hidden_effect {
+			hidden_effect = {
 			modify_country_flag = {
 					flag = guangxi_anarchist_revolution
 					value = 10
 				}
 			}
 		
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
-			
-			
-			
-		}
+	}
+
+	remove_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
+		
+		
 		
 	}
 }
@@ -448,7 +433,7 @@ GXC_expand_support_shifu = {
 		
 			
 			custom_effect_tooltip = SHI_ANA_tt
-			hidden_effect {
+			hidden_effect = {
 				add_to_variable = { SHI_ANA = 1 }
 			}
 		}
@@ -485,7 +470,7 @@ GXC_expand_support_yuanpai = {
 		
 			
 			custom_effect_tooltip = CAI_ANA_tt
-			hidden_effect {
+			hidden_effect = {
 				add_to_variable = { CAI_ANA = 1 }
 			}
 		}
@@ -522,7 +507,7 @@ GXC_expand_support_ba_jin = {
 		
 			
 			custom_effect_tooltip = JIN_ANA_tt
-			hidden_effect {
+			hidden_effect = {
 				add_to_variable = { JIN_ANA = 1 }
 			}
 		}

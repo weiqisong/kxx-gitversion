@@ -68,17 +68,12 @@ CNH_destroy_the_league = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision CHI_dec_2nd_northern_expedition target: [From.GetName]"
-			
-				
-				
-			
+		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_dec_2nd_northern_expedition target: [From.GetName]"
 			
 			
 		}
-		
-	}
 }
 
 

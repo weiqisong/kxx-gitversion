@@ -25,15 +25,13 @@ QIE_five_year_plan_mission = {
 			log = "[GetDateText]: [Root.GetName]: Decision timeout JAP_fading_sun_mission"
 			add_stability = -0.5
 			add_political_power = -100
-
+		}
 		cancel_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision cancelled JAP_fading_sun_mission"
 			add_stability = 0.25
 			add_political_power = 50
 			set_country_flag = QIE_five_year_plan_done
 		}
-	}
-
 }
 
 
