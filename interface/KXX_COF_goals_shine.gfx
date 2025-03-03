@@ -4809,10 +4809,10 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_goal_FRA_based_valois_lives_shine"
-		texturefile = "gfx/interface/goals/CHL_protestas_crushear.png"
+		texturefile = "gfx/interface/goals/FRA_based_valois_lives.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/CHL_protestas_crushear.png"
+			animationmaskfile = "gfx/interface/goals/FRA_based_valois_lives.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -4824,7 +4824,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/CHL_protestas_crushear.png"
+			animationmaskfile = "gfx/interface/goals/FRA_based_valois_lives.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -4839,10 +4839,10 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_goal_FRA_fonctions_tripartites_shine"
-		texturefile = "gfx/interface/goals/CHL_protestas_crushear.png"
+		texturefile = "gfx/interface/goals/FRA_fonctions_tripartites.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/CHL_protestas_crushear.png"
+			animationmaskfile = "gfx/interface/goals/FRA_fonctions_tripartites.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -4854,7 +4854,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/CHL_protestas_crushear.png"
+			animationmaskfile = "gfx/interface/goals/FRA_fonctions_tripartites.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -4869,10 +4869,10 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_goal_BEL_neosocialist_belgium_shine"
-		texturefile = "gfx/interface/goals/CHL_protestas_crushear.png"
+		texturefile = "gfx/interface/goals/BEL_neosocialist_belgium.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/CHL_protestas_crushear.png"
+			animationmaskfile = "gfx/interface/goals/BEL_neosocialist_belgium.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -4884,7 +4884,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/CHL_protestas_crushear.png"
+			animationmaskfile = "gfx/interface/goals/BEL_neosocialist_belgium.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

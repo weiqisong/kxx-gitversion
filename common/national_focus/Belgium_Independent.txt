@@ -1269,7 +1269,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_expand_ISJW
-		icon = GFX_goal_CSA_technocratic_subjugation
+		icon = GFX_goal_generic_red_guard
 		
 		ai_will_do = {
 			factor = 100
