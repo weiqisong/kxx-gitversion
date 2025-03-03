@@ -31,10 +31,6 @@ country_event = {
 			ideology = social_democrat
 			popularity = 0.01
 		}
-		hidden_effect = {
-		    PRC_li_jishen = { set_nationality = PLA }
-		    PRC_cheng_qian = { set_nationality = PLA }
-        }
 	}
 }
 
@@ -637,8 +633,6 @@ country_event = {
 					limit = { is_character = CHI_zhang_fakui }
 					set_nationality = XXA
 			}
-			PRC_xue_yue = { set_nationality = PLA }
-            PRC_zhang_fakui = { set_nationality = PLA }
         }
 		set_country_flag = PRC_has_called_back_Xue_Zhang
 		custom_effect_tooltip = PRC_new_general_tt_Xue_Yue

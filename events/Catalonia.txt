@@ -488,7 +488,7 @@ country_event = {
 		}
 	}
 }
-	country_event = { #PosLib Gang
+country_event = { #PosLib Gang
 	id = CAT.23
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.148" }
 	title = CAT.23.t
@@ -515,11 +515,10 @@ country_event = {
 			ideology = social_conservative
 			long_name = CAT_social_conservative_party_alt_long
 			name = CAT_social_conservative_party_alt
-							}
-						}
-					}
-				}
-			}
+		}
+	}
+}
+
 country_event = { 
 	id = CAT.24
 	title = CAT.24.t 

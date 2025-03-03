@@ -32,9 +32,8 @@ country_event = {
 			NOT = { has_government = radical_socialist }
 		}
 		hidden_effect = {
-		country_event = Afroempireflag.1
-			}
-			
+			country_event = Afroempireflag.1
+		}	
 	}
 	
 	option = { #赤色
@@ -48,7 +47,7 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = Alaariflag.1
-				}
+		}
 	}
 
 	option = { 
@@ -68,29 +67,29 @@ country_event = {
 	option = {  
 		name = xinguojia.2.a
 		hidden_effect = {
-		set_cosmetic_tag= FORM_ALP
-			}
+			set_cosmetic_tag= FORM_ALP
+		}
 	}
 
 	option = {  
 		name = xinguojia.2.b
 		hidden_effect = {
-		set_cosmetic_tag= FORM_ALP_1
-			}
+			set_cosmetic_tag= FORM_ALP_1
+		}
 	}
 
 	option = {  
 		name = xinguojia.2.c
 		hidden_effect = {
-		set_cosmetic_tag= FORM_ALP_2
-			}
+			set_cosmetic_tag= FORM_ALP_2
+		}
 	}
 
 	option = {  
 		name = xinguojia.2.e
 		hidden_effect = {
-		set_cosmetic_tag= FORM_ALP_3
-			}
+			set_cosmetic_tag= FORM_ALP_3
+		}
 	}
 
 	option = {  
@@ -99,8 +98,8 @@ country_event = {
 			has_government = national_populist
 		}
 		hidden_effect = {
-		set_cosmetic_tag= FORM_ALP_natpop1
-			}
+			set_cosmetic_tag= FORM_ALP_natpop1
+		}
 	}
 
 
@@ -110,14 +109,13 @@ country_event = {
 			has_government = national_populist
 		}
 		hidden_effect = {
-		set_cosmetic_tag= FORM_ALP_natpop2
-			}
+			set_cosmetic_tag= FORM_ALP_natpop2
+		}
 	}
 
 	option = {  
 		name = xinguojia.2.h
 		set_cosmetic_tag= FORM_ALP_empire
-			
 	}
 }
 
@@ -133,15 +131,15 @@ country_event = {
 	option = { #现实提案
 		name = xinguojia.3.a
 		hidden_effect = {
-		country_event = euflagpicker.4
-			}
+			country_event = euflagpicker.4
+		}
 	}
 
 	option = { #虚拟提案
 		name = xinguojia.3.b
 		hidden_effect = {
-		country_event = euflagpicker.18
-			}
+			country_event = euflagpicker.18
+		}
 			
 	}
 
@@ -158,7 +156,7 @@ country_event = {
 		}		
 		hidden_effect = {
 			country_event = euflagpicker.50
-				}		
+		}	
 	}
 }
 
@@ -174,22 +172,22 @@ country_event = {
 	option = { #游戏中存在
 		name = xinguojia.4.a
 		hidden_effect = {
-		country_event = Deutschinkx.1
-			}
+			country_event = Deutschinkx.1
+		}
 	}
 
 	option = { #现实中提案
 		name = xinguojia.4.b
 		hidden_effect = {
-		country_event = SchwarzRotGold.1
-			}			
+			country_event = SchwarzRotGold.1
+		}			
 	}
 
 	option = { #网友的智慧
 		name = xinguojia.4.c	
 		hidden_effect = {
-		country_event = GDEvirtualflag.1
-			}			
+			country_event = GDEvirtualflag.1
+		}			
 	}	
 
 	option = { #走咯
@@ -210,43 +208,42 @@ country_event = {
 	option = { # 
 		name = xinguojia.917.a
 		hidden_effect = {
-		set_cosmetic_tag= FORM_TRN_JPN1
-			}
+			set_cosmetic_tag= FORM_TRN_JPN1
+		}
 	}
 
 	option = { # 
 		name = xinguojia.917.b
 		hidden_effect = {
-		set_cosmetic_tag= FORM_TRN_JPN2
-			}
+			set_cosmetic_tag= FORM_TRN_JPN2
+		}
 			
 	}
 	option = { # 
 		name = xinguojia.917.c
 		hidden_effect = {
-		set_cosmetic_tag= FORM_TRN_JPN3
-			}
+			set_cosmetic_tag= FORM_TRN_JPN3
+		}
 			
 	}
 	option = { # 
 		name = xinguojia.917.e
 		hidden_effect = {
-		set_cosmetic_tag= FORM_TRN_JPN4
-			}
+			set_cosmetic_tag= FORM_TRN_JPN4
+		}
 			
 	}
 	option = { # 
 		name = xinguojia.917.f
 		hidden_effect = {
-		set_cosmetic_tag= FORM_TRN_JPN5
-			}
+			set_cosmetic_tag= FORM_TRN_JPN5
+		}
 			
 	}
 	option = { # 
 		name = xinguojia.917.g
 		hidden_effect = {
-		set_cosmetic_tag= FORM_TRN_JPN6
-			}
-			
+			set_cosmetic_tag= FORM_TRN_JPN6
+		}
 	}
 }

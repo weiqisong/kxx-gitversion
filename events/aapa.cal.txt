@@ -40,7 +40,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 		name = pacificstates.6106.a
 		hidden_effect = {
@@ -52,7 +52,7 @@ country_event = {
 	}
 	option = {
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 		name = pacificstates.6106.b
 		hidden_effect = {
@@ -72,7 +72,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 		name = pacificstates.6107.a
 		JAP = {
@@ -86,7 +86,7 @@ country_event = {
 	}
 	option = {
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 		name = pacificstates.6107.b
 		complete_national_focus = CAL_partners_in_prosperity
@@ -114,7 +114,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
 		name = pacificstates.6109.a
 	}
@@ -128,14 +128,14 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 		name = pacificstates.6110.a
 		complete_national_focus = CAL_pan-pacificism
 	}
 	option = {
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 		name = pacificstates.6110.b
 		complete_national_focus = CAL_end
@@ -150,7 +150,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
 		name = pacificstates.6111.a
 	}
@@ -161,7 +161,7 @@ country_event = {#Flag Picker
 	desc = pacificstates.6112.d
 	
 	picture = GFX_CAL_report_flag_blessing_Event
-	fire_only_once = no
+	
 	is_triggered_only = yes
 	option = { #I am happy with this
 		name = pacificstates.6112.a
@@ -217,21 +217,21 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		ai_chance = {
-			factor = 35
+			base = 35
 		}
 		name = pacificstates.6115.a
 		complete_national_focus = CAL_reformers_vic
 	}
 	option = {
 		ai_chance = {
-			factor = 35
+			base = 35
 		}
 		name = pacificstates.6115.b
 		complete_national_focus = CAL_monarchist_vic
 	}
 	option = {
 		ai_chance = {
-			factor = 30
+			base = 30
 		}
 		name = pacificstates.6115.c
 		complete_national_focus = CAL_kwantung_vic
@@ -243,7 +243,6 @@ country_event = {#Flag Picker
 	desc = pacificstates.6116.d
 	
 	picture = GFX_CAL_report_flag_japan_Event
-	fire_only_once = no
 	is_triggered_only = yes
 	option = { #I am happy with this
 		name = pacificstates.6116.a
@@ -268,7 +267,7 @@ country_event = {#General
 	desc = pacificstates.6117.d
 	
 	picture = GFX_CAL_general_Event
-	fire_only_once = no
+	
 	is_triggered_only = yes
 	option = { #I am happy with this
 		name = pacificstates.6117.a

@@ -17,21 +17,21 @@ country_event = {
 	option = { 
 		name = bosnia_independence.1.b
 		BOS = {
-		transfer_state = 1142
-		transfer_state = 1141
-		transfer_state = 1143
-		transfer_state = 104
-		transfer_state = 1145
-		change_tag_from = CRO
+			transfer_state = 1142
+			transfer_state = 1141
+			transfer_state = 1143
+			transfer_state = 104
+			transfer_state = 1145
+			change_tag_from = CRO
 		}
 		BOS = {
-		get_current_government_type = yes
+			get_current_government_type = yes
 		}
 		AUS = {
-		puppet = BOS
+			puppet = BOS
 		}
 		BOS = {
-		restore_previous_government_type = yes
+			restore_previous_government_type = yes
 		}
 	}
 }
@@ -134,8 +134,8 @@ country_event = {
 
 	option = { 
 		name = bosnia_independence.7.a
-		ai_will_do = {
-			factor = 0
+		ai_chance = {
+			base = 0
 		}
 		set_country_flag = The_election_is_over
 		set_country_flag = Republican_National_Union_victory
@@ -155,8 +155,8 @@ country_event = {
 	}
 	option = { 
 		name = bosnia_independence.7.b
-		ai_will_do = {
-			factor = 100
+		ai_chance = {
+			base = 100
 		}
 		set_country_flag = The_election_is_over
 		set_country_flag = Social_Democratic_Labour_Party_victory
@@ -175,8 +175,8 @@ country_event = {
 	}
 	option = { 
 		name = bosnia_independence.7.c
-		ai_will_do = {
-			factor = 100
+		ai_chance = {
+			base = 100
 		}
 		set_country_flag = The_election_is_over
 		set_country_flag = national_party_victory
@@ -195,8 +195,8 @@ country_event = {
 	}
 	option = { 
 		name = bosnia_independence.7.e
-		ai_will_do = {
-			factor = 100
+		ai_chance = {
+			base = 100
 		}
 		set_country_flag = The_election_is_over
 		set_country_flag = liberal_party_victory
@@ -215,8 +215,8 @@ country_event = {
 	}
 	option = { 
 		name = bosnia_independence.7.f
-		ai_will_do = {
-			factor = 0
+		ai_chance = {
+			base = 0
 		}
 		set_politics = {
 			ruling_party = paternal_autocrat
@@ -336,8 +336,8 @@ country_event = {
 	option = { 
 		name = bosnia_independence.11.a
 		set_country_flag = USTA_win_war
-		ai_will_do = {
-			factor = 0
+		ai_chance = {
+			base = 0
 		}
 		set_politics = {
 			ruling_party = paternal_autocrat

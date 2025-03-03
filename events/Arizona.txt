@@ -19,7 +19,7 @@ country_event = { #Revolt Intro
 	option = { #We will prevail, regardless of the circumstances
 		name = arizona.1.a
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
 		
 	}
@@ -39,7 +39,7 @@ country_event = { # Mexico failed lmao
 	option = { #Get Fucked
 		name = arizona.2.a
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
 		add_political_power = 100
 		set_country_flag = ARZ_war_over
@@ -60,7 +60,7 @@ country_event = { # State of the Govt
 	option = { #Call for Elections
 		name = arizona.3.a
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 		hidden_effect = {
 			country_event = {
@@ -73,7 +73,7 @@ country_event = { # State of the Govt
 	option = { #Extend State of Emergency
 		name = arizona.3.b
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 		hidden_effect = {
 			country_event = {
@@ -344,7 +344,7 @@ country_event = { #Auth Goldwater flavor
 	option = { #We will prevail, regardless of the circumstances
 		name = arizona.9.a
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
 		
 	}
@@ -363,7 +363,7 @@ country_event = { #Najvo flavor
 	option = { #We will prevail, regardless of the circumstances
 		name = arizona.10.a
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
 		
 	}
@@ -383,10 +383,10 @@ country_event = { #Old Gun
 	option = { #We will prevail, regardless of the circumstances
 		name = arizona.11.a
 		add_equipment_to_stockpile = {
-				type = artillery_equipment_1
-				amount = 1
-				producer = USA
-			}
+			type = artillery_equipment_1
+			amount = 1
+			producer = USA
+		}
 		
 	}
 	option = { #We will prevail, regardless of the circumstances

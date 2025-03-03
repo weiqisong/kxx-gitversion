@@ -28,8 +28,6 @@ country_event = {
 		name = sprd.1.b
 		add_stability = -0.30
 		SPR = { country_event = { id = sprd.1163 days = 1 }}
-			}
-		}
 	}
 }
 
@@ -4916,8 +4914,6 @@ country_event = { #Autonomous Communities
 		}
 	option = { #flavor
 		name = sprd.107.b
-			}
-		}
 	}
 }
 country_event = { #A Stable Spain
@@ -4934,8 +4930,6 @@ country_event = { #A Stable Spain
 		}
 	option = { #flavor
 		name = sprd.108.b
-			}
-		}
 	}
 }
 country_event = {
@@ -5138,10 +5132,9 @@ country_event = { #Franco's Speech
 			popularity = 0.05
 		}
 		add_stability = 0.1
-			}
-		}
 	}
 }
+
 country_event = { #Franco's Speech
 	id = sprd.112
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.105" }
@@ -5418,12 +5411,11 @@ country_event = { #Spain goes to shit
 			country_event = {
 				id = sprd.117
 				days = 30
-					}
-				}
 			}
 		}
 	}
 }
+
 country_event = { #
 	id = sprd.114
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.105" }
@@ -5459,9 +5451,6 @@ country_event = { #
 			add_war_support = 0.15
 			remove_ideas = SPR_struggle_for_castilian_survival
 			add_state_core = 172
-				}
-			}
-		}
 	}
 	country_event = { #
 	id = sprd.115
@@ -5504,9 +5493,7 @@ country_event = { #
 			add_state_core = 165
 			add_state_core = 167
 			add_state_core = 177
-			}
-		}
-	}
+}
 	country_event = { #
 	id = sprd.116
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.105" }
@@ -5544,13 +5531,12 @@ country_event = { #
 		ai_chance = {
 			base = 0
 		}
-			add_war_support = 0.15
-			remove_ideas = SPR_struggle_for_castilian_survival
-			add_state_core = 171			
-				}
-			}
-		}
+		add_war_support = 0.15
+		remove_ideas = SPR_struggle_for_castilian_survival
+		add_state_core = 171			
 	}
+}
+
 	country_event = { #
 	id = sprd.117
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.105" }
@@ -5730,31 +5716,22 @@ country_event = { #King Flees, Junta Proclaimed, yay, OTL reference
 					}
 				}
 			}
-	option = { #oh no
-		name = sprd.118.h
-			set_politics = {
-			ruling_party = paternal_autocrat
-		}
-			create_country_leader = {
-			name = "José Antonio Primo de Rivera"
-			picture = "gfx/leaders/SPR/Portrait_SPR_Jose_Antonie.png"
-			expire = "1.1.1"
-			ideology = pataut_oligarchy_subtype	
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
+		option = { #oh no
+			name = sprd.118.h
+				set_politics = {
+					ruling_party = paternal_autocrat
+				}
+				create_country_leader = {
+					name = "José Antonio Primo de Rivera"
+					picture = "gfx/leaders/SPR/Portrait_SPR_Jose_Antonie.png"
+					expire = "1.1.1"
+					ideology = pataut_oligarchy_subtype	
 				}
 			}
 		}
 	}
+}
+
 country_event = { #Junta Counter-coup
 	id = sprd.119
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.118" }
@@ -5852,17 +5829,9 @@ country_event = { #Junta Counter-coup
 			picture = "gfx/leaders/CAR/Portrait_CAR_Antonio_Ortega.png"
 			expire = "1.1.1"
 			ideology = radsoc_red_junta_subtype
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
 		}
 	}
+}
 	country_event = { #radsoc ideology pick
 	id = sprd.120
 	title = sprd.120.t
@@ -5887,10 +5856,9 @@ country_event = { #Junta Counter-coup
 		base = 50
 		}
 		country_event = sprd.119
-			}
-		}
 	}
 }
+
 country_event = { #radsoc ideology pick
 	id = sprd.121
 	title = sprd.121.t
@@ -5945,8 +5913,6 @@ country_event = { #AP subid swapper
 	option = { #oh no
 		name = sprd.123.c
 		set_country_leader_ideology = maurism_subtype
-			}
-		}
 	}
 }
 country_event = { #radsoc ideology pick
@@ -6031,10 +5997,9 @@ country_event = { #radsoc ideology pick
 		name = sprd.128.b
 		add_stability = 0.03
 		add_war_support = 0.03
-			}
-		}
 	}
 }
+
 country_event = { #radsoc ideology pick
 	id = sprd.129
 	title = sprd.129.t
@@ -6057,10 +6022,9 @@ country_event = { #radsoc ideology pick
 		name = sprd.129.b
 		add_stability = -0.05
 		increase_ruling_party_popularity_by_7 = yes
-			}
-		}
 	}
 }
+
 country_event = { #PNE subid swapper
 	id = sprd.130
 	title = sprd.130.t
@@ -6090,10 +6054,9 @@ country_event = { #PNE subid swapper
 	option = { #oh no
 		name = sprd.130.e
 		set_country_leader_ideology = pataut_hispanism_subtype
-			}
-		}
 	}
 }
+
 country_event = { #King and PNE yap
 	id = sprd.131
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.104" }
@@ -6141,12 +6104,9 @@ country_event = { #King and Pestana yap
 		name = sprd.132.e
 		increase_ruling_party_popularity_by_3 = yes
 		add_political_power = -25
-						}
-					}
-				}
-			}
-		}
 	}
+}
+
 	country_event = { #King and PNE yap
 	id = sprd.133
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.104" }
@@ -6228,15 +6188,10 @@ country_event = { #King and Pestana yap
 				add_popularity = {
 				ideology = social_democrat
 				popularity = -0.05
-									}
-								}
-							}
-						}
-					}
-				}
-			}
 		}
 	}
+}
+
 country_event = { #King and Pestana yap
 	id = sprd.137
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.135" }
@@ -6285,10 +6240,9 @@ country_event = { #King and Pestana yap
 		}
 		name = sprd.138.b
 		add_political_power = 20
-				}
-			}
-		}
 	}
+}
+
 country_event = { #shit I forgor to delete
 	id = sprd.139
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.104" }
@@ -6488,13 +6442,10 @@ country_event = { #Kill Portugal or nah
 			ideology = syndicalist
 			long_name = SPR_syndicalist_party_alt_long
 			name = SPR_syndicalist_party_alt
-							}
-						}
-					}
-				}
-			}
 		}
 	}
+}
+
 	country_event = { #republicanism dies with a thunderous applause
 	id = sprd.149
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.148" }
@@ -6529,15 +6480,9 @@ country_event = { #Kill Portugal or nah
 			ideology = social_conservative
 			long_name = SPR_social_conservative_party_alt_long
 			name = SPR_social_conservative_party_alt
-									}
-								}								
-							}
-						}
-					}
-				}
-			}
-		}
 	}
+}								
+
 	country_event = { #Pablism
 	id = sprd.150
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.104" }
@@ -6731,10 +6676,9 @@ country_event = { #Kill Portugal or nah
 		name = sprd.158.c
 		add_stability = 0.1
 		add_political_power = 100
-			}
-		}
 	}
 }
+
 	country_event = { #PSOE subid swapper
 	id = sprd.159
 	title = sprd.159.t
@@ -6759,10 +6703,9 @@ country_event = { #Kill Portugal or nah
 	option = { #oh no
 		name = sprd.159.c
 		set_country_leader_ideology = radsoc_revisionist_marxism_subtype 
-			}
-		}
 	}
 }
+
 	country_event = { #IE remembers
 	id = sprd.160
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.104" }
@@ -6919,10 +6862,9 @@ country_event = { #Kill Portugal or nah
 	option = { #oh no
 		name = sprd.166.f
 		set_country_leader_ideology = georgism_subtype
-			}
-		}
 	}
 }
+
 	country_event = { #Big coalition
 	id = sprd.167
 	title = sprd.167.t
@@ -6981,31 +6923,27 @@ country_event = { #Kill Portugal or nah
 	
 	option = { #oh no
 		name = sprd.170.a
-				add_political_power = -30
-				add_socdem_to_coalition
-				}
-				add_marlib_to_coalition
-				}
-				add_soccon_to_coalition
-				add_popularity = {
-				ideology = social_liberal
-				popularity = 0.05
-				}
-			}
+		add_political_power = -30
+		add_socdem_to_coalition = yes
+		add_marlib_to_coalition = yes
+		add_soccon_to_coalition = yes
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.05
+		}
+	}		
 	option = { #oh no
 		name = sprd.170.b
-				add_political_power = 30
-				add_socdem_to_coalition
-				}
-				add_soccon_to_coalition
-				add_popularity = {
-				ideology = social_liberal
-				popularity = 0.07
-					}
-				}
-			}
+		add_political_power = 30
+		add_socdem_to_coalition = yes
+		add_soccon_to_coalition = yes
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.07
 		}
 	}
+}
+
 	country_event = { #Radical Entente is back, ebin
 	id = sprd.171
 	title = sprd.171.t
@@ -7024,7 +6962,6 @@ country_event = { #Kill Portugal or nah
 				add_political_power = 30
 			}
 		}
-	}
 	country_event = { #Burn the church, roundhouse kick the church, dip church in feathers and tar
 	id = sprd.172
 	title = sprd.172.t
@@ -7101,10 +7038,9 @@ country_event = { #Kill Portugal or nah
 	option = { #oh no
 		name = sprd.175.e
 		set_country_leader_ideology = national_socialism_subtype
-			}
 		}
 	}
-}
+
 	country_event = { #Start kicking Lerroux
 	id = sprd.176
 	title = sprd.176.t
@@ -7159,11 +7095,10 @@ country_event = { #Kill Portugal or nah
 	option = { #oh no
 		name = sprd.178.c
 		add_political_power = 40
-			}
 		}
 	}
-}	
-	country_event = { #Fuck the church
+
+country_event = { #Fuck the church
 	id = sprd.179
 	title = sprd.179.t
 	desc = sprd.179.d
@@ -7177,14 +7112,13 @@ country_event = { #Kill Portugal or nah
 		add_stability = 0.05
 		add_political_power = -100
 	}
-		option = { #oh no
+	option = { #oh no
 		name = sprd.179.b
 		add_stability = -0.1
 		add_political_power = 150
-			}
-		}
 	}
 }
+
 	country_event = { #Kerenskyism
 	id = sprd.180
 	title = sprd.180.t
@@ -7248,10 +7182,9 @@ country_event = { #Kill Portugal or nah
 	option = { #oh no
 		name = sprd.182.f
 		set_country_leader_ideology = soccon_maurism_subtype
-			}
-		}
 	}
 }
+
 	country_event = { #No spicy politics allowed
 	id = sprd.183
 	title = sprd.183.t
@@ -7279,15 +7212,10 @@ country_event = { #Kill Portugal or nah
 					add_popularity = {
 					ideology = syndicalist
 					popularity = -0.15
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}		
+		}
+	}
+}
+
 	country_event = { #Conservatism is such an interesting ideology with so much variety
 	id = sprd.184
 	title = sprd.184.t
@@ -7400,11 +7328,10 @@ country_event = { #Kill Portugal or nah
 					add_popularity = {
 					ideology = authoritarian_democrat
 					popularity = 0.1
-						}
-					}
-				}
-			}
 		}
+	}
+}
+
 	country_event = { #Stable Ship
 	id = sprd.190
 	title = sprd.190.t
@@ -7509,12 +7436,9 @@ country_event = { #Kill Portugal or nah
 	option = { #oh no
 		name = sprd.195.c
 		set_country_leader_ideology = marlib_classical_liberalism_subtype
-						}
-					}
-				}
-			}
 		}
-}
+	}
+
 	country_event = { #Black Monday is joever
 	id = sprd.196
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.195" }
@@ -7550,13 +7474,10 @@ country_event = { #Kill Portugal or nah
 		add_popularity = {
 			ideology = market_liberal
 			popularity = 0.02
-							}
-						}
-					}
-				}
-			}
 		}
+	}
 }
+
 	country_event = { #Black Monday is joever
 	id = sprd.197
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.195" }
@@ -7694,13 +7615,10 @@ country_event = { #Kill Portugal or nah
 					add_popularity = {
 					ideology = authoritarian_democrat
 					popularity = 0.02
-								}
-							}
-						}
-					}
-				}
-			}
 		}
+	}
+}
+
 	country_event = { #Stable Ship
 	id = sprd.204
 	title = sprd.204.t
@@ -7885,17 +7803,15 @@ country_event = {#
 	option = { #Yes.
 		name = sprd.284.a
 		add_political_power = 20
-		increase_ruling_party_popularity_by_3
-		}
+		increase_ruling_party_popularity_by_3 = yes
 			set_party_name = { 
 			ideology = paternal_autocrat
 			long_name = SPR_paternal_autocrat_party_alt_long
 			name = SPR_paternal_autocrat_party_alt
-					}
-				}
-			}
 		}
 	}
+}	
+
 country_event = { #Black Monday is joever
 	id = sprd.1100
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1169" }
@@ -7936,10 +7852,9 @@ country_event = { #
 		name = sprd.1101.b
 		add_stability = 0.05
 		add_political_power = 50
-				}
-			}
-		}
+	}
 }
+
 country_event = {# Italy Alliance
 	id = sprd.1104
 	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.248"}
@@ -8050,10 +7965,9 @@ country_event = {#
 		option = { #oh no
 		name = sprd.1107.b
 		add_stability = 0.06
-				}
-			}
 		}
 	}
+
 	country_event = { #Morocco Conquest
 	id = sprd.1108
 	title = sprd.1108.t
@@ -8090,10 +8004,9 @@ country_event = {#
 		option = { #oh no
 		name = sprd.1108.b
 		add_stability = 0.06
-				}
-			}
-		}
 	}
+}
+
 country_event = { #Franco-Spain's True Colonies
 	id = sprd.1109
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1169" }
@@ -8182,10 +8095,9 @@ country_event = { #Black Monday is joever
 			460 = { add_core_of = SPR }
 			459 = { add_core_of = SPR }
 			805 = { add_core_of = SPR }
-				}
-			}
-		}
+	}
 }
+
 	country_event = { #Morocco Conquest
 	id = sprd.1111
 	title = sprd.1111.t
@@ -8216,10 +8128,8 @@ country_event = { #Black Monday is joever
 		option = { #oh no
 		name = sprd.1111.b
 		add_stability = 0.06
-				}
-			}
-		}
 	}
+}
 	country_event = { #Italian Conquest
 	id = sprd.1112
 	title = sprd.1112.t
@@ -8251,10 +8161,9 @@ country_event = { #Black Monday is joever
 	option = { #oh no
 		name = sprd.1112.c
 		SIC = { country_event = { id = sprd.1104 days = 1 } }
-				}
-			}
-		}
 	}
+}
+
 country_event = { #Faction Decision
 	id = sprd.1113
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1113" }
@@ -8278,10 +8187,9 @@ country_event = { #Faction Decision
 		option = { #No fun
 		name = sprd.1113.c 
 		add_political_power = 50
-				}
-			}
-		}
+	}
 }
+
 	country_event = { #Belgium conquest
 	id = sprd.1114
 	title = sprd.1114.t
@@ -8314,10 +8222,9 @@ country_event = { #Faction Decision
 		option = { #oh no
 		name = sprd.1114.b
 		add_stability = 0.06
-				}
-			}
-		}
 	}
+}
+
 country_event = { #Black Monday is joever
 	id = sprd.1132
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1169" }
@@ -8380,10 +8287,9 @@ country_event = { #Black Monday is joever
 	option = { #oh no
 		name = sprd.1133.b
 		POR = { country_event = { id = sprd.1134 days = 1 } }
-				}
-			}
-		}
 	}
+}
+
 country_event = {# Tuga Explosion
 	id = sprd.1134
 	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.248"}
@@ -8529,13 +8435,10 @@ country_event = { #Black Monday is joever
 			every_state = {
 			limit = { is_core_of = MOR }
 			add_core_of = SPR
-						}
-					}
-				}
 			}
 		}
 	}
-}
+
 country_event = {
 	id = sprd.1143
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.30" }
@@ -8598,10 +8501,9 @@ country_event = { #Profiteering
 	option = { #flavor
 		name = sprd.1150.b
 		add_ideas = SPR_reichspakt_trade
-			}
-		}
 	}
 }
+
 country_event = { #Black Monday is joever
 	id = sprd.1151
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1169" }
@@ -8627,10 +8529,9 @@ country_event = { #Black Monday is joever
 	option = { #oh no
 		name = sprd.1151.b
 		set_country_leader_ideology = popularism_subtype
-				}
-			}
-		}
+	}
 }
+
 country_event = { #Black Monday is joever
 	id = sprd.1153
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1169" }
@@ -8656,10 +8557,9 @@ country_event = { #Black Monday is joever
 	option = { #oh no
 		name = sprd.1153.b
 		set_country_leader_ideology = neoborbonismo_subtype
-				}
-			}
-		}
+	}
 }
+
 country_event = { #Black Monday is joever
 	id = sprd.1154
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1169" }
@@ -8685,10 +8585,9 @@ country_event = { #Black Monday is joever
 	option = { #oh no
 		name = sprd.1154.b
 		set_country_leader_ideology = authdem_gaullism_subtype
-				}
-			}
 		}
-}
+	}
+
 country_event = { #Black Monday is joever
 	id = sprd.1155
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1169" }
@@ -8714,10 +8613,9 @@ country_event = { #Black Monday is joever
 	option = { #oh no
 		name = sprd.1155.b
 		set_country_leader_ideology = concretismo_subtype
-				}
-			}
-		}
+	}
 }
+
 country_event = { #Regionalism event
 	id = sprd.1156
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
@@ -8734,10 +8632,9 @@ country_event = { #Regionalism event
 	option = { #flavor
 		name = sprd.1156.b
 		SPR = { country_event = { id = sprd.1157 days = 1 }}
-			}
-		}
 	}
 }
+
 country_event = { #Regionalism event
 	id = sprd.1157
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
@@ -8764,14 +8661,9 @@ country_event = { #Regionalism event
 	option = { #flavor
 		name = sprd.1157.f
 		SPR = { country_event = { id = sprd.1162 days = 1 }}
-							}
-						}
-					}
-				}
-			}
-		}
 	}
 }
+
 country_event = { #Regionalism event
 	id = sprd.1158
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
@@ -8787,10 +8679,9 @@ country_event = { #Regionalism event
 	option = { #flavor
 		name = sprd.1158.b
 		SPR = { country_event = { id = sprd.1157 days = 1 }}
-			}
-		}
 	}
 }
+
 country_event = { #Regionalism event
 	id = sprd.1159
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
@@ -8806,10 +8697,9 @@ country_event = { #Regionalism event
 	option = { #flavor
 		name = sprd.1159.b
 		SPR = { country_event = { id = sprd.1157 days = 1 }}
-			}
-		}
 	}
 }
+
 country_event = { #Black Monday is joever
 	id = sprd.1160
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1169" }
@@ -8834,13 +8724,10 @@ country_event = { #Black Monday is joever
 		AUS = {
 			transfer_state = 699
 			AUS = { add_state_claim = 699 }
-							}
-						}
-					}
-				}
-			}
 		}
+	}
 }
+
 country_event = { #Regionalism event
 	id = sprd.1161
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
@@ -8856,10 +8743,9 @@ country_event = { #Regionalism event
 	option = { #flavor
 		name = sprd.1161.b
 		SPR = { country_event = { id = sprd.1157 days = 1 }}
-			}
-		}
 	}
 }
+
 country_event = { #Reworked starting events
 	id = sprd.1162
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
@@ -8875,10 +8761,9 @@ country_event = { #Reworked starting events
 	option = { #flavor
 		name = sprd.1162.b
 		SPR = { country_event = { id = sprd.1157 days = 1 }}
-			}
-		}
 	}
 }
+
 country_event = { #Reworked starting events
 	id = sprd.1163
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
@@ -8894,10 +8779,9 @@ country_event = { #Reworked starting events
 	option = { #flavor
 		name = sprd.1163.b
 		SPR = { country_event = { id = sprd.1164 days = 1 }}
-			}
-		}
 	}
 }
+
 country_event = { #Reworked starting events
 	id = sprd.1164
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
@@ -8913,10 +8797,9 @@ country_event = { #Reworked starting events
 	option = { #flavor
 		name = sprd.1164.b
 		SPR = { country_event = { id = sprd.1165 days = 1 }}
-			}
-		}
 	}
 }
+
 country_event = { #Reworked starting events
 	id = sprd.1165
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }

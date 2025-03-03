@@ -58,7 +58,7 @@ country_event = {
 	option = {
 		name = bor.3.a 
 		ai_chance = {
-			factor = 100
+			base = 100
 			
 		}
 		
@@ -98,7 +98,7 @@ country_event = {
 	option = {
 		name = bor.3.b 
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 		add_political_power = -100
 		
@@ -115,7 +115,7 @@ country_event = {
 		name = bor.4.a
 		ai_chance = {
 			
-			factor = 0 
+			base = 0 
 			
 		}
 		every_country = {

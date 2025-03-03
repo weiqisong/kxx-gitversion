@@ -4064,7 +4064,7 @@ country_event = {
 		}
 		set_cosmetic_tag = LEB_shia4
 	}
-	}
+
 	option = {
 		name = LEB.147.b
 	}
@@ -4096,15 +4096,15 @@ country_event = {
 			add_ideas = TUR_LEB_war
 		}
 		hidden_effect = {
-				country_event = { id = LEB.201 #overseas industry
-					days = 2
-				}
-				country_event = { id = LEB.202 #white peace
+			country_event = { 
+				id = LEB.201 #overseas industry
+				days = 2
+			}
+			country_event = { 
+				id = LEB.202 #white peace
 				days = 60
 			}
 		}
-	
-	
 	}
 	
 }

@@ -13,12 +13,11 @@ add_namespace = cambodia_civilwar
 
 country_event = {
 
-		id = cambodia_civilwar.0
-		title = "濒临崩溃"
-		desc = cambodia_revolution.0.desc
-		picture = "-"
+	id = cambodia_civilwar.0
+	title = "濒临崩溃"
+	desc = cambodia_revolution.0.desc
 
-		immediate = {
+	immediate = {
 		hidden_effect = {
 		set_variable = {
 				var = cam_issarak
@@ -26,31 +25,27 @@ country_event = {
 				tooltip = issarak_forces_increase_their_strength_tt
 			}
 		}
-		}
+	}
 
-		is_triggered_only = yes
+	is_triggered_only = yes
 		
 
-		option = {
+	option = {
 		name = "柬埔寨将流血！"
 		complete_national_focus = CAM_new_state_of_independence
 		set_country_flag = cambodian_civilwar
 		activate_mission = CAM_issarak_offensives
 		add_to_variable = {
-				var = cam_issarak
-				value = 5
-				tooltip = issarak_forces_increase_their_strength_tt
-			}
-		add_ideas = {
-		CAM_champa_revolts
-		CAM_economic_woes_0
+			var = cam_issarak
+			value = 5
+			tooltip = issarak_forces_increase_their_strength_tt
 		}
-		} 
-		
-		
-
-
-	}
+		add_ideas = {
+			CAM_champa_revolts
+			CAM_economic_woes_0
+		}
+	} 
+}
 	
 	country_event = {
 
@@ -191,7 +186,10 @@ country_event = {
 		set_politics = { ruling_party = paternal_autocrat }
 		set_country_leader_ideology = pataut_popular_patriotism_subtype
 		set_country_leader_name = { ideology = paternal_autocrat name = "西哈努克" }
-		set_country_leader_portrait = { ideology = paternal_autocratt portrait = "gfx/leaders/CAM/Portrait_Cambodia_Norodom_Sihanouk.png" }
+		set_country_leader_portrait = { 
+			ideology = paternal_autocrat_subtype
+			portrait = "gfx/leaders/CAM/Portrait_Cambodia_Norodom_Sihanouk.png" 
+		}
 		set_variable = {
 				var = cam_capital_defence
 				value = 10
@@ -199,10 +197,6 @@ country_event = {
 			}
 			}
 		} 
-		
-		
-
-
 	}
 	
 	
@@ -211,7 +205,6 @@ country_event = {
 		id = cambodia.1
 		title = "共和党与军方之间的权力斗争"
 		desc = cambodia.1.desc
-		picture = "-"
 
 		fire_only_once = yes
 
@@ -219,24 +212,20 @@ country_event = {
 		
 
 		option = {
-		name = "斗争开始"
-		set_variable = { 
-		var = CAM_REP 
-		value = 0 
+			name = "斗争开始"
+			set_variable = { 
+			var = CAM_REP 
+			value = 0 
 		}
 		set_variable = { 
-		var = CAM_MIL
-		value = 0 
+			var = CAM_MIL
+			value = 0 
 		}
-		set_variable = { 
-		var = CAM_MON
-		value = 0 
-		}
+			set_variable = { 
+				var = CAM_MON
+				value = 0 
+			}
 		} 
-		
-		
-
-
 	}
 	
 	country_event = {
@@ -340,7 +329,6 @@ country_event = {
 		id = cambodia_power.1
 		title = "军队问题"
 		desc = cambodia_power.1.desc
-		picture = "-"
 
 		fire_only_once = yes
 
@@ -700,8 +688,6 @@ country_event = {
 		desc = cambodia_revolution.0.desc
 		picture = "-"
 
-		fire_only_once = no
-
 		is_triggered_only = yes
 		
 
@@ -722,13 +708,6 @@ country_event = {
 		days = 3
 		}
 		}
-		
-		
-		
-		
-		
-		
-
 
 	}
 	
@@ -750,8 +729,8 @@ country_event = {
 		option = {
 		name = "包围他们"
 		add_to_variable = {
-		name = CAM_REV
-		value = 1
+			var = CAM_REV
+			value = 1
 		}
 		
 		country_event = {
@@ -763,8 +742,8 @@ country_event = {
 		name = "坚守我们的阵地"
 		
 		add_to_variable = {
-		name = CAM_ANTICOM
-		value = 1
+			var = CAM_ANTICOM
+			value = 1
 		}
 		country_event = {
 		id = cambodia_revolution.2
@@ -797,8 +776,8 @@ country_event = {
 		option = {
 		name = "集中力量向东强攻"
 		add_to_variable = {
-		name = CAM_REV
-		value = 1
+			var = CAM_REV
+			value = 1
 		}
 		
 		country_event = {
@@ -810,8 +789,8 @@ country_event = {
 		name = "集中力量向西攻击"
 		
 		add_to_variable = {
-		name = CAM_ANTICOM
-		value = 1
+			var = CAM_ANTICOM
+			value = 1
 		}
 		country_event = {
 		id = cambodia_revolution.3
@@ -844,8 +823,8 @@ country_event = {
 		option = {
 		name = "设置死亡陷阱"
 		add_to_variable = {
-		name = CAM_REV
-		value = 1
+			var = CAM_REV
+			value = 1
 		}
 		
 		country_event = {
@@ -857,8 +836,8 @@ country_event = {
 		name = "立即冲锋！"
 		
 		add_to_variable = {
-		name = CAM_ANTICOM
-		value = 1
+			var = CAM_ANTICOM
+			value = 1
 		}
 		country_event = {
 		id = cambodia_revolution.4
@@ -1162,10 +1141,10 @@ country_event = {
 		
 		option = {
 		trigger = {
-		has_country_leader = {
-		name "乔帕娜莉"
-		ruling_only = yes
-		}
+			has_country_leader = {
+				name = "乔帕娜莉"
+				ruling_only = yes
+			}
 		}
 		name = "将革命扩展到亚洲"
 		every_state = {
@@ -1184,10 +1163,10 @@ country_event = {
 		
 		option = {
 		trigger = {
-		has_country_leader = {
-		name "乔帕娜莉"
-		ruling_only = yes
-		}
+			has_country_leader = {
+				name = "乔帕娜莉"
+				ruling_only = yes
+			}
 		}
 		name = "将革命扩展到世界"
 		every_state = {
@@ -1204,10 +1183,10 @@ country_event = {
 		
 		option = {
 		trigger = {
-		has_country_leader = {
-		name "朗诺"
-		ruling_only = yes
-		}
+			has_country_leader = {
+		 		name = "朗诺"
+				ruling_only = yes
+			}
 		}
 		name = "整个南亚都是柬埔寨的！"
 		every_state = {

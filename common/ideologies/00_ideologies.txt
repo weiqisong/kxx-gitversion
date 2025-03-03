@@ -457,6 +457,8 @@ ideologies = {
 			radsoc_islamism_subtype = {can_be_randomly_selected = no} #伊斯兰主义（阿尔及利亚拓展）
 			radsoc_arab_socialism = {can_be_randomly_selected = no} #阿拉伯社会主义
 			radsoc_paternal_socialism_subtype = {can_be_randomly_selected = no} #家长制社会主义
+
+			radsoc_sansepolcrismo = {can_be_randomly_selected = no} #圣墓主义
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_RADICAL_SOCIALIST_1"

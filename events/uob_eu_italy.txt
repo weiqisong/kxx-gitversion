@@ -83,8 +83,6 @@ country_event = { #new duce
 			picture = "gfx/leaders/ITA/Portrait_ITA_Galeazzo_Ciano.png"
 			expire = "1965.1.1"
 			ideology = tot_sansepolcrismo
-			traits = {
-			}
 		}
 	}
 	
@@ -96,8 +94,6 @@ country_event = { #new duce
 			picture = "gfx/leaders/SRI/Portrait_SRI_Michele_Bianchi.png"
 			expire = "1965.1.1"
 			ideology = tot_sansepolcrismo
-			traits = {
-			}
 		}
 	}
 	
@@ -109,8 +105,6 @@ country_event = { #new duce
 			picture = "gfx/leaders/SRI/Portrait_SRI_Edmondo_Rossoni.png"
 			expire = "1965.1.1"
 			ideology = tot_sansepolcrismo
-			traits = {
-			}
 		}
 	}
 
@@ -143,8 +137,6 @@ country_event = { #CIANO formation of ANI
 			picture = "gfx/leaders/ITA/Portrait_ITA_Galeazzo_Ciano.png"
 			expire = "1965.1.1"
 			ideology = right_syndicalism_subtype
-			traits = {
-			}
 		}
 	}
 	
@@ -166,9 +158,7 @@ country_event = { #Balbomania in the SRI
 			elections_allowed = no
 			last_election = "1935.12.17"
 			election_frequency = 48
-			
 		}
-		
 	}
 	
 }
@@ -210,8 +200,6 @@ country_event = { #Allying with the moderates
 			picture = "gfx/leaders/ITA/Portrait_ITA_Galeazzo_Ciano.png"
 			expire = "1965.1.1"
 			ideology = market_socialist_subtype
-			traits = {
-			}
 		}
 		create_country_leader = {
 			name = "加莱阿佐·齐亚诺"
@@ -219,10 +207,7 @@ country_event = { #Allying with the moderates
 			picture = "gfx/leaders/ITA/Portrait_ITA_Galeazzo_Ciano.png"
 			expire = "1965.1.1"
 			ideology = socdem_humanistic_capitalism_subtype
-			traits = {
-			}
 		}
-		
 	}
 	
 }
@@ -246,7 +231,6 @@ country_event = { #Allying with the moderates
 			
 		}
 		set_country_leader_ideology = radsoc_sansepolcrismo
-		
 	}
 	option = {
 		name = "齐亚诺站在市场社会主义者一边"
@@ -309,8 +293,6 @@ country_event = { #syndieallyship
 			picture = "gfx/leaders/SRI/Portrait_SRI_Edmondo_Rossoni.png"
 			expire = "1965.1.1"
 			ideology = radsoc_sansepolcrismo
-			traits = {
-			}
 		}
 		
 	}
@@ -329,8 +311,6 @@ country_event = { #syndieallyship
 			picture = "gfx/leaders/SRI/Portrait_SRI_Edmondo_Rossoni.png"
 			expire = "1965.1.1"
 			ideology = agrarian_syndicalism_subtype
-			traits = {
-			}
 		}
 		
 	}
@@ -349,8 +329,6 @@ country_event = { #syndieallyship
 			picture = "gfx/leaders/SRI/Portrait_SRI_Edmondo_Rossoni.png"
 			expire = "1965.1.1"
 			ideology = socdem_agrarianism_subtype
-			traits = {
-			}
 		}
 	}
 	
@@ -373,7 +351,6 @@ country_event = { #syndieallyship
 			elections_allowed = no
 			last_election = "1935.12.17"
 			election_frequency = 48
-			
 		}
 		create_country_leader = {
 			name = "埃德蒙多·罗索尼"
@@ -381,8 +358,6 @@ country_event = { #syndieallyship
 			picture = "gfx/leaders/SRI/Portrait_SRI_Edmondo_Rossoni.png"
 			expire = "1965.1.1"
 			ideology = fascism_subtype
-			traits = {
-			}
 		}
 		
 	}
@@ -401,8 +376,6 @@ country_event = { #syndieallyship
 			picture = "gfx/leaders/SRI/Portrait_SRI_Edmondo_Rossoni.png"
 			expire = "1965.1.1"
 			ideology = socdem_fascism_subtype
-			traits = {
-			}
 		}
 		
 	}
@@ -524,86 +497,86 @@ country_event = { #new duce
 		country_event = uob_eu_italy.3
 	}
 }
-	country_event = { 
-		id = uob_eu_italy.12
-		immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_italy.12" }
-		title = uob_eu_italy.12.t
-		desc = uob_eu_italy.12.d
-		picture = GFX_report_event_SRI_Socialist_Liberty
-	
-		is_triggered_only = yes
-	
-		option = {
-			ai_chance = {
-				factor = 0
-			}
-			name = uob_eu_italy.12.a
-			every_country = {
-				limit = {
-					is_in_europe = yes
-				}
-				SRI = {
-					create_wargoal = {
-						target = PREV
-						type = annex_everything
-					}
-				}
-			}
-			
-			
-			every_state = {
-				limit = {
-					is_on_continent = europe
-				}
-				SRI = { 
-					add_state_core = PREV 
-				}
-			}
-			set_cosmetic_tag = AUS_EUF
+country_event = { 
+	id = uob_eu_italy.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_italy.12" }
+	title = uob_eu_italy.12.t
+	desc = uob_eu_italy.12.d
+	picture = GFX_report_event_SRI_Socialist_Liberty
+
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = {
+			factor = 0
 		}
-		option = {
-			name = uob_eu_italy.12.b
+		name = uob_eu_italy.12.a
+		every_country = {
+			limit = {
+				is_in_europe = yes
+			}
+			SRI = {
+				create_wargoal = {
+					target = PREV
+					type = annex_everything
+				}
+			}
 		}
+		
+		
+		every_state = {
+			limit = {
+				is_on_continent = europe
+			}
+			SRI = { 
+				add_state_core = PREV 
+			}
+		}
+		set_cosmetic_tag = AUS_EUF
 	}
-	country_event = { 
-		id = uob_eu_italy.13
-		immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_italy.12" }
-		title = uob_eu_italy.12.t
-		desc = uob_eu_italy.12.d
-		picture = GFX_report_event_SRI_Socialist_Liberty
-	
-		is_triggered_only = yes
-	
-		option = {
-			ai_chance = {
-				factor = 0
-			}
-			name = uob_eu_italy.12.a
-			every_country = {
-				limit = {
-					is_in_europe = yes
-				}
-				ITA = {
-					create_wargoal = {
-						target = PREV
-						type = annex_everything
-					}
-				}
-			}
-			
-			
-			every_state = {
-				limit = {
-					is_on_continent = europe
-				}
-				ITA = { 
-					add_state_core = PREV 
-				}
-			}
-			set_cosmetic_tag = AUS_EUF
-		}
-		option = {
-			name = uob_eu_italy.12.b
-		}
+	option = {
+		name = uob_eu_italy.12.b
 	}
+}
+country_event = { 
+	id = uob_eu_italy.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_italy.12" }
+	title = uob_eu_italy.12.t
+	desc = uob_eu_italy.12.d
+	picture = GFX_report_event_SRI_Socialist_Liberty
+
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = {
+			factor = 0
+		}
+		name = uob_eu_italy.12.a
+		every_country = {
+			limit = {
+				is_in_europe = yes
+			}
+			ITA = {
+				create_wargoal = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}
+		
+		
+		every_state = {
+			limit = {
+				is_on_continent = europe
+			}
+			ITA = { 
+				add_state_core = PREV 
+			}
+		}
+		set_cosmetic_tag = AUS_EUF
+	}
+	option = {
+		name = uob_eu_italy.12.b
+	}
+}
 
