@@ -13,7 +13,7 @@ country_event = { #  anglosphere
     option = { #nein
         name = austral.2000.a
         ai_chance = {
-            factor = 100
+            base = 100
         }
         
     }
@@ -21,7 +21,7 @@ country_event = { #  anglosphere
     option = { #yes
         name = austral.2000.b
         ai_chance = {
-            factor = 0
+            base = 0
         }
         every_state = {
             limit = {
@@ -219,7 +219,7 @@ picture = GFX_report_event_AST_aborigine
     option = { 
         name = austral.2001.a
         ai_chance = {
-            factor = 20
+            base = 20
         }
      
        add_political_power = 25
@@ -247,7 +247,7 @@ picture = GFX_report_event_AST_aborigine
     option = { 
         name = austral.2002.a
         ai_chance = {
-            factor = 20
+            base = 20
         }
 	add_popularity = {
 		ideology = authoritarian_democrat
@@ -295,7 +295,7 @@ picture = GFX_report_event_ARM_propaganda_socialist
     option = { 
         name = austral.2004.a
         ai_chance = {
-            factor = 20
+            base = 20
         }
 	add_popularity = {
 		ideology = radical_socialist 
@@ -321,7 +321,7 @@ picture = GFX_event_NFA_communard_spies
     option = { 
         name = austral.2005.a
         ai_chance = {
-            factor = 20
+            base = 20
         }
 	add_popularity = {
 		ideology = totalist
@@ -346,7 +346,7 @@ picture = GFX_report_event_generic_workers
     option = { 
         name = austral.2006.a
         ai_chance = {
-            factor = 20
+            base = 20
         }
 	add_popularity = {
 		ideology = syndicalist 
@@ -372,7 +372,7 @@ country_event = { #introduction event ACTU
     option = {
         name = austral.2007.a
         ai_chance = {
-            factor = 20
+            base = 20
         }
 	add_popularity = {
 		ideology = social_democrat
@@ -393,35 +393,35 @@ picture = GFX_report_event_generic_riot2
     option = { 
         name = austral.2008.a
         ai_chance = {
-            factor = 20
+            base = 20
         }
 	country_event = { id = austral.2009 days = 7 }
     }
     option = { 
         name = austral.2008.b
         ai_chance = {
-            factor = 20
+            base = 20
         }
 	country_event = { id = austral.2010 days = 7 }
     }
     option = { 
         name = austral.2008.c
         ai_chance = {
-            factor = 20
+            base = 20
         }
 	country_event = { id = austral.2011 days = 7 }
     }
     option = { 
         name = austral.2008.f
         ai_chance = {
-            factor = 20
+            base = 20
         }
 	country_event = { id = austral.2012 days = 7 }
     }
 	option = { 
         name = austral.2008.e
         ai_chance = {
-            factor = 20
+            base = 20
         }
 	complete_national_focus = AST_AAPA
     }
@@ -440,7 +440,7 @@ picture = GFX_report_event_AST_riot1
     option = { 
         name = austral.2009.a
         ai_chance = {
-            factor = 20
+            base = 20
         }
 	complete_national_focus = AST_SLP_victory
     }
@@ -458,7 +458,7 @@ picture = GFX_report_event_AST_crowd3
     option = { 
         name = austral.2010.a
         ai_chance = {
-            factor = 20
+            base = 20
         }
 	complete_national_focus = AST_ACTU
     }
@@ -476,7 +476,7 @@ picture = GFX_report_event_AST_laborsplit
     option = { 
         name = austral.2011.a
         ai_chance = {
-            factor = 20
+            base = 20
         }
 	complete_national_focus = AST_australasian_iww
     }
@@ -494,7 +494,7 @@ picture = GFX_report_event_AST_totalists
     option = { 
         name = austral.2012.a
         ai_chance = {
-            factor = 20
+            base = 20
         }
 	complete_national_focus = AST_CPA_victory
     }
@@ -506,27 +506,27 @@ country_event = { #golden miles
     title = austral.2013.t
     desc = austral.2013.d
 
-picture = GFX_report_event_AST_paterson
+    picture = GFX_report_event_AST_paterson
     is_triggered_only = yes
 
     option = { 
         name = austral.2013.a
         ai_chance = {
-            factor = 20
+            base = 20
         }
     }
-option = { 
+    option = { 
         name = austral.2013.b
         ai_chance = {
-            factor = 20
+            base = 20
         }
-	create_country_leader = {# Fred Paterson
-				name = "Fred Paterson"
-				desc = "POLITICS_Fred_Paterson_DESC"
-				picture = "gfx/leaders/AST/Portrait_AST_Fred_Paterson.png"
-				expire = "1965.1.1"
-				ideology = popcom_subtype 
-			}
+	    create_country_leader = {# Fred Paterson
+            name = "Fred Paterson"
+            desc = "POLITICS_Fred_Paterson_DESC"
+            picture = "gfx/leaders/AST/Portrait_AST_Fred_Paterson.png"
+            expire = "1965.1.1"
+            ideology = popcom_subtype 
+        }
     }
 }
 
@@ -547,7 +547,7 @@ country_event = { # Rum corps develop in the army
     option = { 
         name = austral.2014.a
         ai_chance = {
-            factor = 20
+            base = 20
         }
 	country_event = { id = austral.2015 days = 7 }
     }
@@ -565,14 +565,14 @@ picture = GFX_report_event_AST_blamey
     option = { 
         name = austral.2015.a
         ai_chance = {
-            factor = 20
+            base = 20
         }
 	country_event = { id = austral.2016 days = 7 }
     }
     option = { 
         name = austral.2015.b
         ai_chance = {
-            factor = 20
+            base = 20
         }
     }
 }
@@ -589,7 +589,7 @@ picture = GFX_report_event_AST_army1
     option = { 
         name = austral.2016.a
         ai_chance = {
-            factor = 20
+            base = 20
         }
 	complete_national_focus = AST_second_rum_rebellion
     }
@@ -624,8 +624,6 @@ country_event = { # cpa flag choice
     desc = austral.2017.d
 
 	picture = GFX_AST_report_flag_slp_Event
-
-	fire_only_once = no
 
 	is_triggered_only = yes
 

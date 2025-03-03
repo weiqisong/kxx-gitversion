@@ -18,14 +18,14 @@ country_event = {
 
 	option = { 
 		name = ChinKX.1.a
-		ai_will_do = {
-			factor = 100
+		ai_chance = {
+			base = 100
 		}
 	}
 	option = { 
 		name = ChinKX.1.b
-		ai_will_do = {
-			factor = 0
+		ai_chance = {
+			base = 0
 		}
 		KXX = {
 		transfer_state = 299

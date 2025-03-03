@@ -213,7 +213,7 @@ country_event = {
 	option = {
 		name = sil.9.a
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
 		CAN = {
 			add_to_faction = SIL
@@ -222,7 +222,7 @@ country_event = {
 	option = {
 		name = sil.9.b
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 	}
 }
@@ -610,17 +610,17 @@ country_event = {
 		add_manpower = -10000
 		add_political_power = -40
 		HES = {
-		country_event = hes.3
+			country_event = hes.3
 		}
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
 	}
 	option = { 
 		name = hes.1.b
 		add_political_power = 20
 		HES = {
-		country_event = hes.4
+			country_event = hes.4
 		}
 	}
 }
@@ -645,14 +645,14 @@ country_event = {
 		country_event = hes.3
 		}
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
 	}
 	option = { 
 		name = hes.2.b
 		add_political_power = 20
 		HES = {
-		country_event = hes.4
+			country_event = hes.4
 		}
 	}
 }
@@ -700,7 +700,7 @@ country_event = {
 	option = {
 		name = hes.5.a
 		HES = {
-		country_event = hes.6
+			country_event = hes.6
 		}
 	}
 }
@@ -716,7 +716,7 @@ country_event = {
 		name = hes.6.a
 		white_peace = WGR
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
 	}
 	option = {
@@ -734,7 +734,7 @@ country_event = {
 	option = {
 		name = hes.8.a
 		ai_chance = {
-			factor = 10
+			base = 10
 		}
 		random_owned_controlled_state = {
 			create_unit = {
@@ -774,7 +774,7 @@ country_event = {
 	option = {
 		name = hes.8.b
 		ai_chance = {
-			factor = 90
+			base = 90
 		}
 		add_political_power = 120
 		add_stability = 0.15
@@ -890,9 +890,7 @@ country_event = {
 			infantry = { x = 2 y = 1 }
 			infantry = { x = 2 y = 2 }
 			}
-			support = {
-			}
-			}
+		}
 		random_owned_controlled_state = {
 				create_unit = {
 					division = "name = \"帝国莱茵军团\" division_template = \"帝国莱茵军团\" start_experience_factor = 1 start_equipment_factor = 1"
@@ -946,9 +944,7 @@ country_event = {
 			infantry = { x = 2 y = 1 }
 			infantry = { x = 2 y = 2 }
 			}
-			support = {
-			}
-			}
+		}
 		random_owned_controlled_state = {
 				create_unit = {
 					division = "name = \"帝国莱茵军团\" division_template = \"帝国莱茵军团\" start_experience_factor = 1 start_equipment_factor = 1"
@@ -995,16 +991,14 @@ country_event = {
 			name = "帝国莱茵军团"
 			division_names_group = HES_NRARMY_00
 			regiments = {
-			infantry = { x = 0 y = 0 }
-			infantry = { x = 0 y = 1 }
-			infantry = { x = 0 y = 2 }
-			infantry = { x = 1 y = 0 }
-			infantry = { x = 1 y = 1 }
-			infantry = { x = 1 y = 2 }
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
 			}
-			support = {
-			}
-			}
+		}
 		random_owned_controlled_state = {
 				create_unit = {
 					division = "name = \"帝国莱茵军团\" division_template = \"帝国莱茵军团\" start_experience_factor = 1 start_equipment_factor = 1"
@@ -1150,18 +1144,18 @@ country_event = {
     is_triggered_only = yes
 
 	option = {
-		ai_will_do={
+		ai_chance={
 			factor=0
 		}
 		name = pop_po_war.1.a
 		declare_war_on = { target = POL type = annex_everything }
 		POL = {
-		transfer_state = 86
-		set_global_flag = DDR_the_pop_po_war
+			transfer_state = 86
+			set_global_flag = DDR_the_pop_po_war
 		}
 	}
 	option = { 
-		ai_will_do={
+		ai_chance={
 			factor=100
 		}
 		name = pop_po_war.1.b
@@ -1169,8 +1163,8 @@ country_event = {
 		86 = { set_demilitarized_zone = yes }
 		67 = { set_demilitarized_zone = yes }
 		POL = {
-		transfer_state = 86
-		country_event = pop_po_war.2
+			transfer_state = 86
+			country_event = pop_po_war.2
 		}
 	}
 }
@@ -1182,7 +1176,7 @@ country_event = {
     is_triggered_only = yes
 
 	option = {
-		ai_will_do={
+		ai_chance={
 			factor=50
 		}	
 		name = pop_po_war.2.a
@@ -1195,7 +1189,7 @@ country_event = {
 		}
 	}
 	option = { 
-		ai_will_do={
+		ai_chance={
 			factor=50
 		}
 		name = pop_po_war.2.b
@@ -1234,7 +1228,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		ai_will_do={
+		ai_chance={
 			factor=100
 		}
 		name = pop_po_war.4.a
@@ -1246,7 +1240,7 @@ country_event = {
 		white_peace = POL
 	}
 	option = { 
-		ai_will_do={
+		ai_chance={
 			factor=0
 		}
 		name = pop_po_war.4.b
@@ -1262,7 +1256,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = { 
-		ai_will_do={
+		ai_chance={
 			factor=100
 		}
 		name = pop_po_war.5.a
@@ -1282,7 +1276,7 @@ country_event = {
 		}
 	}
 	option = {
-		ai_will_do={
+		ai_chance={
 			factor=0
 		}
 		name = pop_po_war.5.b
@@ -1299,7 +1293,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = { 
-		ai_will_do={
+		ai_chance={
 			factor=1000
 		}
 		name = pop_po_war.6.a
@@ -1331,7 +1325,7 @@ country_event = {
 		}
 	}
 	option = {
-		ai_will_do={
+		ai_chance={
 			factor=0
 		}
 		name = pop_po_war.6.b
@@ -1364,7 +1358,7 @@ country_event = {
 		}
 	}
 	option = {
-		ai_will_do={
+		ai_chance={
 			factor=0
 		}
 		name = pop_po_war.6.c
@@ -1397,7 +1391,7 @@ country_event = {
 		}
 	}
 	option = {
-		ai_will_do={
+		ai_chance={
 			factor=0
 		}
 		name = pop_po_war.6.e
@@ -1430,7 +1424,7 @@ country_event = {
 		}
 	}
 	option = {
-		ai_will_do={
+		ai_chance={
 			factor=0
 		}
 		name = pop_po_war.6.f

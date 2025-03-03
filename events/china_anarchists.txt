@@ -126,9 +126,9 @@ country_event = { #Nomination of the Republican Candidate
 	name = "万岁!"
 	
 	remove_ideas = {
-	GXC_factionalism
-	GXC_divided_military
-	GXC_backwards_guangxi
+		GXC_factionalism
+		GXC_divided_military
+		GXC_backwards_guangxi
 	
 	}
 	load_focus_tree = anarchist-guangxi

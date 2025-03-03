@@ -61,7 +61,7 @@ country_event = {
 		option = {
 			name = "阮海清获胜"
 			set_politics = { ruling_party = authoritarian_democrat }
-			set_country_leader_ideology = patau_chiangism_subtype
+			set_country_leader_ideology = pataut_chiangism_subtype
 			create_country_leader = {
 				name = "阮海清"
 				picture = "gfx/leaders/VNQ/Portrait_VNQ_Nguyen_Hai_Than.png"
@@ -148,7 +148,10 @@ country_event = {
 		set_politics = { ruling_party = totalist }
 		add_popularity = { ideology = totalist popularity = 0.4 }
 		set_country_leader_name = { ideology = totalist name = "阮松三" }
-		set_country_leader_portrait = { ideology = totalist portrait = "gfx/leaders/VNQ/Portrait_VNQ_Nguyen_Tuong_Tam.png" }
+		set_country_leader_portrait = { 
+			ideology = totalist 
+			portrait = "gfx/leaders/VNQ/Portrait_VNQ_Nguyen_Tuong_Tam.png" 
+		}
 		set_country_leader_ideology = tot_tridemism_subtype
 		set_party_name = {	ideology = totalist long_name = "Viet Nam Quoc Dan Dang(Vietnamese National Bureau of Investigation and Statistics)"	name = "VNQDD(VNBIS)" }	
 		} 

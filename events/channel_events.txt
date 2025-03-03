@@ -625,22 +625,25 @@ country_event = { # Counteroffer
                factor = 800
          }
 		JER = {
-transfer_state = 1315
+			transfer_state = 1315
 		}
-1315 = {
-add_core_of = JER
-}
-if = {
-1312 = is_owned_by =  JER
-
-	1312 = {
-add_core_of = CAN
-}
+		1315 = {
+			add_core_of = JER
+		}
+	if = {
+		limit = {
+			1312 = {
+				is_owned_by =  JER
+			}
+		}
+		1312 = {
+			add_core_of = CAN
+		}
 		CAN = {
-transfer_state = 1312
+			transfer_state = 1312
 		}
-}		
-           }   
+	}		
+}   
 
 option = { 
 	
