@@ -1,20 +1,5 @@
 spriteTypes = {
-	spriteType = {
-		name = "GFX_report_event_FRA_la_rochelle"
-		texturefile = "gfx/interface/goals/KXX_COF/FRA_la_rochelle.png"
-	}
-	spriteType = {
-		name = "GFX_report_event_FRA_jacobin_collapse"
-		texturefile = "gfx/interface/goals/KXX_COF/FRA_jacobin_collapse.png"
-	}
-	spriteType = {
-		name = "GFX_goal_FRA_based_valois_lives"
-		texturefile = "gfx/interface/goals/KXX_COF/FRA_based_valois_lives.png"
-	}
-	spriteType = {
-		name = "GFX_goal_FRA_fonctions_tripartites"
-		texturefile = "gfx/interface/goals/KXX_COF/FRA_fonctions_tripartites.png"
-	}
+	
 	spriteType = {
 		name = "GFX_goal_Red_France"
 		texturefile = "gfx/interface/goals/KXX_COF/Red_France.png"
@@ -690,5 +675,25 @@ spriteTypes = {
 		name = "GFX_idea_FRA_union_loyalty"
 		texturefile = "gfx/interface/ideas/FRA/FRA_union_loyalty.png"
 	}
-	
+	#cof final
+	spriteType = {
+		name = "GFX_report_event_FRA_la_rochelle"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_la_rochelle.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_FRA_jacobin_collapse"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_jacobin_collapse.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_based_valois_lives"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_based_valois_lives.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_fonctions_tripartites"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_fonctions_tripartites.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BEL_neosocialist_belgium"
+		texturefile = "gfx/interface/goals/KXX_COF/BEL_neosocialist_belgium.png"
+	}
 }
