@@ -192,8 +192,8 @@ ideologies = {
 			tot_islamism_subtype = {can_be_randomly_selected = no} #伊斯兰主义（阿尔及利亚拓展）
 			tot_narodism_subtype = {can_be_randomly_selected = no} #民粹主义
 			red_national_radicalism_subtype = {can_be_randomly_selected = no}  #红色民族激进主义
-			christian_bolshevism_subtype = {can_be_randomly_selected = no} #家长制社会主义
-
+			christian_bolshevism_subtype = {can_be_randomly_selected = no} #基督布尔什维主义
+			monarcho_syndicalism_subtype = {can_be_randomly_selected = no} #君主工团主义
 
 		}
 		dynamic_faction_names = {

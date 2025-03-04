@@ -6377,7 +6377,24 @@ country_event = {
 			}
 	}
 }
-
+country_event = {
+	id = comfrance.9030
+	immediate = {log = "[GetDateText]: [Root.GetName]: event comfrance.904"}
+	title = comfrance.9030.t
+	desc = comfrance.9030.d
+	is_triggered_only = yes
+	
+	option = {
+		name = comfrance.9030.a 
+		custom_effect_tooltip = KXX_UNFINISHED_TOOLTIP
+	}
+	option = {
+		name = comfrance.9030.b
+		add_stability = -0.2
+		set_country_flag = FRA_BASED_VALOIS
+		mark_focus_tree_layout_dirty = yes
+	}
+}
 country_event = {
 	id = comfrance.904
 	immediate = {log = "[GetDateText]: [Root.GetName]: event comfrance.904"}
@@ -6423,6 +6440,18 @@ country_event = {
 			remove_ideas_with_trait = head_of_government
 			add_ideas = FRA_Pierre_Laval_hog_tot
 			set_country_flag = FRA_valois_is_dead
+		}
+	}
+	option = {
+		name = comfrance.904.b
+		add_stability = 0.2
+		
+		hidden_effect = {		
+			country_event = {
+				id = comfrance.903
+				days = 12
+			}
+			
 		}
 	}
 }

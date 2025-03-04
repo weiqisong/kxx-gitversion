@@ -7400,4 +7400,10 @@ text = {
 		}
 		localization_key = fredaism_subtype  
 	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = monarcho_syndicalism_subtype
+		}
+		localization_key = monarcho_syndicalism_subtype
+	}	
 }
