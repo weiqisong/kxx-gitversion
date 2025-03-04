@@ -30,7 +30,7 @@ focus_tree = {
 				country_event = {
 					id = fengtian.110
 					days = 13
-					random = 1248
+					random_hours = 1248
 				}
 				country_event = fngsystem.1000
 			}

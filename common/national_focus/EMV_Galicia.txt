@@ -60,6 +60,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = GLC_A_Corunan_Factories
 		icon = GFX_GRU_factory_network
@@ -174,7 +175,7 @@ focus_tree = {
 			add_war_support = 0.1
 		}
 	}
-		focus = {
+	focus = {
 		id = GLC_Disarm_Guardia_Civil
 		icon = GFX_goal_NIC_Puppet_Guards
 		relative_position_id = GLC_Liberty
@@ -208,7 +209,7 @@ focus_tree = {
 			}
 		}
 	}
-		focus = {
+	focus = {
 		id = GLC_Seize_Spanish_Assets
 		icon = GFX_goal_AUS_spanish_crises
 		relative_position_id = GLC_Liberty
@@ -244,7 +245,7 @@ focus_tree = {
 			}
 		}
 	}
-		focus = {
+	focus = {
 		id = GLC_Haven_for_Exiled_Republicans
 		icon = GFX_focus_generic_befriend_republican_spain
 		relative_position_id = GLC_Liberty
@@ -336,7 +337,7 @@ focus_tree = {
 		add_research_slot = 1
 		}
 	}
-		focus = {
+	focus = {
 		id = GLC_Fan_the_Flames_of_Budding_Galicianism
 		icon = GFX_goal_WHR_New_Man_Born_Seas_Fire
 		relative_position_id = GLC_Liberty
@@ -392,7 +393,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = GLC.20
-			}
 		}
 	}
 }

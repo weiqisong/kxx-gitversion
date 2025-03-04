@@ -1073,18 +1073,6 @@ focus_tree = {
 			tag = HKC
 		}
 		completion_reward = {
-			BYJ = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = HKC_transit_port_op
-				}
-			}
-			KMT = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = HKC_transit_port_op
-				}
-			}
 			country_event = HKC.4
 		}
 	}

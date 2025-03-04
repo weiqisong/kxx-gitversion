@@ -61,42 +61,42 @@ focus_tree = {
 	  
     }
   }
-  focus = {
-    id = SZC_Introduce_NEP
-    text = SZC_Introduce_NEP
-    icon = GFX_RUS_Introduce_NEP
-    cost = 4  
-    prerequisite = {
-      focus = SZC_Premier_Bukharin
-    }
-    relative_position_id = SZC_Premier_Bukharin
-    x = 0
-    y = 1
-    available = {
-       has_country_leader = {
-       name = "邓小平"  # Nikolay Bukharin
-        ruling_only = yes
-      }
-    }
-    bypass = {
-      has_dynamic_modifier = {
-        modifier = RUS_New_Economic_Policy_modifier
-      }
-    }
-    ai_will_do = {
-      factor = 100
-    }
-    completion_reward = {
-		hidden_effect = {
-				set_technology = {
-				irregular_infantry_tech = 1
-				}
+	focus = {
+		id = SZC_Introduce_NEP
+		text = SZC_Introduce_NEP
+		icon = GFX_RUS_Introduce_NEP
+		cost = 4  
+		prerequisite = {
+		focus = SZC_Premier_Bukharin
 		}
-	  set_cosmetic_tag = SZC_KMT_radical_socialist
-	  add_political_power = 500
-	  add_ideas = YUN_Kuomintang3
-	  add_ideas = GXC_sanmin
-	  remove_ideas = SZC_aftermath_of_the_civil_war_1
+		relative_position_id = SZC_Premier_Bukharin
+		x = 0
+		y = 1
+		available = {
+		has_country_leader = {
+		name = "邓小平"  # Nikolay Bukharin
+			ruling_only = yes
+		}
+		}
+		bypass = {
+		has_dynamic_modifier = {
+			modifier = RUS_New_Economic_Policy_modifier
+		}
+		}
+		ai_will_do = {
+		factor = 100
+		}
+		completion_reward = {
+			hidden_effect = {
+				set_technology = {
+					irregular_infantry_tech = 1
+				}
+			}
+			set_cosmetic_tag = SZC_KMT_radical_socialist
+			add_political_power = 500
+			add_ideas = YUN_Kuomintang3
+			add_ideas = GXC_sanmin
+			remove_ideas = SZC_aftermath_of_the_civil_war_1
 			hidden_effect = {
 				remove_ideas = {
 					SZC_aftermath_of_the_civil_war_2
@@ -104,38 +104,38 @@ focus_tree = {
 					SZC_aftermath_of_the_civil_war_4
 				}
 			}
-      log = "[GetDateText]: [Root.GetName]: Focus SOV_Introduce_NEP"
-      add_popularity = {
-        ideology = radical_socialist
-        popularity = 0.05
-      }
-      country_event = rusdem.309
-      set_variable = {
-        RUS_NEP_global_building_slots_factor = 0.1
-      }
-      set_variable = {
-        RUS_NEP_production_factory_max_efficiency_factor = -0.06
-      }
-      set_variable = {
-        RUS_NEP_production_factory_efficiency_gain_factor = 0.03
-      }
-      set_variable = {
-        RUS_nep_market = 0
-      }
-      set_variable = {
-        RUS_nep_state = 3
-      }
-      set_variable = {
-        RUS_nep_worker = 1
-      }
-      set_variable = {
-        RUS_nep_peasant = 3
-      }
-      add_dynamic_modifier = {
-        modifier = RUS_New_Economic_Policy_modifier
-      }
-    }
-  }
+			log = "[GetDateText]: [Root.GetName]: Focus SOV_Introduce_NEP"
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.05
+			}
+			country_event = rusdem.309
+			set_variable = {
+				RUS_NEP_global_building_slots_factor = 0.1
+			}
+			set_variable = {
+				RUS_NEP_production_factory_max_efficiency_factor = -0.06
+			}
+			set_variable = {
+				RUS_NEP_production_factory_efficiency_gain_factor = 0.03
+			}
+			set_variable = {
+				RUS_nep_market = 0
+			}
+			set_variable = {
+				RUS_nep_state = 3
+			}
+			set_variable = {
+				RUS_nep_worker = 1
+			}
+			set_variable = {
+				RUS_nep_peasant = 3
+			}
+			add_dynamic_modifier = {
+				modifier = RUS_New_Economic_Policy_modifier
+			}
+		}
+	}
   focus = { 
     id = SZC_Allow_Small_Traders
     text = SZC_Allow_Small_Traders

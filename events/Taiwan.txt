@@ -60,7 +60,6 @@ country_event = { #Nomination of the Republican Candidate
 	name = "噢...不..."
 		create_country_leader = {
 					name = "台湾总督府"
-					desc = "-"
 					picture = "gfx/leaders/TWI/Portrait_TWI_Taiwan_Sōtoku.png"
 					expire = "1965.1.1"
 					ideology = colonial_govt_subtype

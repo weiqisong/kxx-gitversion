@@ -159,7 +159,6 @@ country_event = {
 		}
 		hidden_effect = {
 			YUN = {
-				H_to_china = yes
 				every_state = {		
 			limit = {
 			OR = {
@@ -317,11 +316,9 @@ country_event = {
 		name = "金日成将成为我们新的名义领袖。"
 		create_country_leader = {
    		 	name = "金日成"
-				desc = ""
 				picture = "gfx/leaders/YUN/Portrait_KOR_Kim_Il_Sung.png"
 				expire = "1965.1.1"
 				ideology = juche_subtype
-				traits = {}
 		}
 		set_party_name = {
 			ideology = totalist

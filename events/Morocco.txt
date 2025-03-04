@@ -124,7 +124,7 @@ country_event = { # German help
 	option = { #Refuse help
 		name = mor.5.a
 		ai_chance = {
-			factor = 10
+			base = 10
 		}
 		MOR = {
 			country_event = {
@@ -136,7 +136,7 @@ country_event = { # German help
 	option = { #Send Military mission
 		name = mor.5.b
 		ai_chance = {
-			factor = 90
+			base = 90
 		}
 		add_manpower = -2000
 		MOR = {
@@ -199,6 +199,7 @@ country_event = { # Germany sends mission
 		leave_faction = yes
 		GER = {
 			end_puppet = MOR
+		}	
 	}
 }
 country_event = { # Morocco wants to join Entente

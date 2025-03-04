@@ -26,7 +26,7 @@ country_event = { #Knock knock...its the ERC
 		name = uob.2003.a
 		add_popularity = { ideology = radical_socialist popularity = 0.02 }
 		ai_chance = {
-			factor = 20
+			base = 20
 			modifier = {
 				factor = 0
 			}
@@ -82,7 +82,7 @@ country_event = { ##Undermine soccred opposition
 		name = uob.2004.a
 		add_popularity = { ideology = radical_socialist popularity = 0.05 }
 		ai_chance = {
-			factor = 20
+			base = 20
 		}
 		add_timed_idea = {
 			idea = ENG_Soccred_Purges
@@ -105,7 +105,7 @@ country_event = { ##WHOMSTVE gets the funding
 	option = {
 		name = uob.2005.aa
 		ai_chance = {
-			factor = 25
+			base = 25
 		}
 		if = {
 			limit = { has_dlc_aat = no }
@@ -126,7 +126,7 @@ country_event = { ##WHOMSTVE gets the funding
 	option = {
 		name = uob.2005.ab
 		ai_chance = {
-			factor = 25
+			base = 25
 		}
 		if = {
 			limit = { has_dlc_aat = no }
@@ -149,7 +149,7 @@ country_event = { ##WHOMSTVE gets the funding
 	option = {
 		name = uob.2005.ac
 		ai_chance = {
-			factor = 25
+			base = 25
 		}
 			if = {
 				limit = { has_dlc_aat = no }
@@ -168,7 +168,7 @@ country_event = { ##WHOMSTVE gets the funding
 	option = {
 		name = uob.2005.ad
 		ai_chance = {
-			factor = 25
+			base = 25
 		}
 		add_political_power = 100
 	}
@@ -318,13 +318,13 @@ country_event = { ##Mosley rip bozo you wont be missed
 		option = {##death
 			name = uob.2010.a
 			ai_chance = {
-				factor = 50
+				base = 50
 			}
 			add_stability = 0.02
 			hidden_effect = {
 				news_event = {
-				id = worldnews.1260
-				days = 5
+					id = worldnews.1260
+					days = 5
 				}
 			}
 		}

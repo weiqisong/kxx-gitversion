@@ -16,16 +16,16 @@ focus_tree = {
     id = FIN_red_earth_government
     icon = GFX_goal_FIN_Social_Democrats
     available = {
-      has_left_democratic_government = yes
-      OR = {
+        has_left_democratic_government = yes
+        OR = {
+          set_temp_variable = {
+            coalition_target = token:social_liberal
+          }
+          has_coalition_with_target = yes
         set_temp_variable = {
-          coalition_target = token:social_liberal
+            coalition_target = token:social_democrat
         }
-        has_coalition_with_target = yes
-        set_temp_variable = {
-          coalition_target = token:social_democrat
-        }
-        has_coalition_with_target = yes
+          has_coalition_with_target = yes
       }
     }
     prerequisite = {

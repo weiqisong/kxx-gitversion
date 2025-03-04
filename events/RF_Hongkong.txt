@@ -1870,10 +1870,6 @@ country_event = { #香港的同志？
 		trigger = {
 			OR = {
 				has_government = syndicalist
-				has_country_leader = {
-					character = GER_Paul_Joseph_Goebbels
-					ruling_only = yes
-				}
 			}
 		}
 		HKC = {
@@ -1889,10 +1885,6 @@ country_event = { #香港的同志？
 			NOT = {
 				OR = {
 					has_government = syndicalist
-					has_country_leader = {
-						character = GER_Paul_Joseph_Goebbels
-						ruling_only = yes
-					}
 				}
 			}
 		}
