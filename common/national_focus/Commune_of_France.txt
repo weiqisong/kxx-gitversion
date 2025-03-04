@@ -18971,6 +18971,7 @@ focus = FRA_garden_city_movement
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_establish_the_corporates"
 			add_political_power = 100
+			set_country_leader_ideology = monarcho_syndicalism_subtype
 		}
 	}
 	focus = {
@@ -19072,16 +19073,11 @@ focus = FRA_garden_city_movement
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_establish_the_corporates"
-			create_country_leader = {
-				name = "乔治一世"
-				desc = "POLITICS_GEORGES_VALOIS_DESC"
-				picture = "gfx/leaders/FRA/Portrait_France_Georges_Valois_King.png"
-				traits = {
-					sorelian_monarch
-				}
-				expire = "1965.1.1"
-				ideology = monarcho_syndicalism_subtype
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/FRA/Portrait_France_Georges_Valois_King.png"
 			}
+			add_country_leader_trait = sorelian_monarch
+			
 			add_stability = 0.1
 		}
 	}
