@@ -117,22 +117,23 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_STABILITY
 		}
-		prerequisite = { focus = HNNQUZHEN_crush_kuomintang_cells  } prerequisite = { focus = HNNQUZHEN_setup_porridge_sheds  }
+		prerequisite = { focus = HNNQUZHEN_crush_kuomintang_cells  } 
+		prerequisite = { focus = HNNQUZHEN_setup_porridge_sheds  }
 		completion_reward = {
-		set_party_name = {
-			ideology = national_populist
-			long_name = HNN_quzhen_party_long
-			name = HNN_quzhen_party
-		}
-		add_natpop_to_coalition = yes
-		hidden_effect = {
-		create_country_leader = {
-			name = "陈渠珍"
-			picture = "gfx/leaders/HNN/Portrait_HNN_Chen_Quzhen.png"
-			expire = "1965.1.1"
-			ideology = occultism_subtype
-		}
-		}
+			set_party_name = {
+				ideology = national_populist
+				long_name = HNN_quzhen_party_long
+				name = HNN_quzhen_party
+			}
+			add_natpop_to_coalition = yes
+			hidden_effect = {
+				create_country_leader = {
+					name = "陈渠珍"
+					picture = "gfx/leaders/HNN/Portrait_HNN_Chen_Quzhen.png"
+					expire = "1965.1.1"
+					ideology = occultism_subtype
+				}
+			}
 		}
 	}
 
@@ -146,9 +147,10 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_STABILITY
 		}
-		prerequisite = { focus = HNNQUZHEN_crush_kuomintang_cells  } prerequisite = { focus = HNNQUZHEN_setup_porridge_sheds  }
+		prerequisite = { focus = HNNQUZHEN_crush_kuomintang_cells  } 
+		prerequisite = { focus = HNNQUZHEN_setup_porridge_sheds  }
 		completion_reward = {
-		add_stability = 0.1
+			add_stability = 0.1
 		}
 	}
 
@@ -183,9 +185,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = HNNQUZHEN_suppression_and_appeasement  } prerequisite = { focus = HNNQUZHEN_protectingthelands  }
 		completion_reward = {
-		add_ideas = {
-		HNN_miao_nationalism
-		}
+			add_ideas = {
+				HNN_miao_nationalism
+			}
 		}
 	}
 

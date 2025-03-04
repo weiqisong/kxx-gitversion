@@ -2186,7 +2186,7 @@ focus_tree = {
 		prerequisite = { focus = GXC_incremental_movement_to_communalism  } prerequisite = { focus = GXC_valorise_watermargin_militias  }
 		mutually_exclusive = { focus = GXC_classicalanarchistmilitarycities  }
 		completion_reward = {
-		add_offsite_building = { type = industrial_complexlevel = 1 }
+		add_offsite_building = { type = industrial_complex level = 1 }
 		add_offsite_building = { type = industrial_complex level = 1 }
 		add_offsite_building = { type = industrial_complex level = 1 }
 		}
@@ -2205,7 +2205,7 @@ focus_tree = {
 		prerequisite = { focus = GXC_a_peach_garden_outside_the_world  } prerequisite = { focus = GXC_valorise_watermargin_militias  }
 		mutually_exclusive = { focus = GXC_rebuild_cities_for_the_common  }
 		completion_reward = {
-		add_offsite_building = { type = industrial_complexlevel = 1 }
+		add_offsite_building = { type = industrial_complex level = 1 }
 		add_offsite_building = { type = industrial_complex level = 1 }
 		add_offsite_building = { type = infrastructure level = 1 }
 		}
@@ -2266,9 +2266,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = GXC_anewoldanarchism  }
 		completion_reward = {
-		add_ideas = {
-		GXC_anarchist_gentry
-		}
+			add_ideas = {
+				GXC_anarchist_gentry
+			}
 		}
 	}
 

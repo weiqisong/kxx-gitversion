@@ -1971,3 +1971,95 @@ CHN_setup_major_dockyards_decision_effect = {
 		}
 	}
 }
+
+H_to_china = {#对全中国的宣战借口
+	create_wargoal = {
+		type = annex_everything
+		target = GXC
+	}
+	create_wargoal = {
+		type = annex_everything
+		target = HNN
+	}
+	create_wargoal = {
+		type = annex_everything
+		target = YUN
+	}
+	create_wargoal = {
+		type = annex_everything
+		target = SZC
+	}
+	create_wargoal = {
+		type = annex_everything
+		target = CHI
+	}
+	create_wargoal = {
+		type = annex_everything
+		target = SQI
+	}
+	create_wargoal = {
+		type = annex_everything
+		target = QIE
+	}
+	create_wargoal = {
+		type = annex_everything
+		target = LEC
+	}
+	create_wargoal = {
+		type = annex_everything
+		target = FNG
+	}
+	create_wargoal = {
+		type = annex_everything
+		target = TIB
+	}
+	create_wargoal = {
+		type = annex_everything
+		target = SHX
+	}
+	create_wargoal = {
+		type = annex_everything
+		target = XSM
+	}
+	create_wargoal = {
+		type = annex_everything
+		target = MON
+	}
+	create_wargoal = {
+		type = annex_everything
+		target = SIK
+	}
+	create_wargoal = {
+		type = annex_everything
+		target = TAN
+	}
+}
+
+H_in_china = {#全国核心
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = HNN
+				is_core_of = YUN
+				is_core_of = SZC
+				is_core_of = CHI
+				is_core_of = SQI
+				is_core_of = QIE
+				is_core_of = LEC
+				is_core_of = FNG
+				is_core_of = TIB
+				is_core_of = SHX
+				is_core_of = XSM
+				is_core_of = MON
+				is_core_of = SIK
+				is_core_of = TAN
+				is_core_of = LEP
+				is_core_of = GXC
+			}
+			NOT = {
+				is_core_of = ROOT
+			}
+		}
+		add_core_of = ROOT
+	}
+}

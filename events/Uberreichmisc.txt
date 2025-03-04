@@ -219,7 +219,7 @@ country_event = { # Offer was accepted
 			}
 		
 		add_offsite_building = { type = industrial_complex level = 1 }
-		add_offsite_building = { type = arms_factory level level = 1 }
+		add_offsite_building = { type = arms_factory level = 1 }
 		720 = {
 			SWA = { transfer_state = PREV }
 			}

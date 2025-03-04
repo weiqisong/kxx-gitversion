@@ -24,7 +24,7 @@ country_event = { # Spanish Africa Intro Event
 	option = {
 		name = spanishafrica.1.a
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
 		hidden_effect = {
 			}
@@ -46,16 +46,14 @@ country_event = { # Reform?
 	option = {
 		name = spanishafrica.2.a
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
-		hidden_effect = {
-			}
-		}
+	}
 		
 	option = {
 		name = spanishafrica.2.b
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
 		set_politics = {
 			ruling_party = authoritarian_democrat
@@ -67,8 +65,6 @@ country_event = { # Reform?
 			}
 		add_stability = -0.05
 		add_war_support = 0.1
-		hidden_effect = {
-			}
 		}
 	}
 
@@ -81,13 +77,10 @@ country_event = { # Death of Abd el-Krim
 	is_triggered_only = yes
 	
 
-	immediate = {
-	}
-
 	option = {
 		name = spanishafrica.3.a
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
 		if = {
 			limit = {
@@ -96,8 +89,6 @@ country_event = { # Death of Abd el-Krim
 			add_stability = -0.05
 		}
 		add_political_power = -10
-		hidden_effect = {
-			}
 		}
 	}
 	
@@ -108,15 +99,12 @@ country_event = { # Worker shortages
 	desc = spanishafrica.4.d
 	picture = GFX_report_event_picking
 	is_triggered_only = yes
-	
 
-	immediate = {
-	}
 
 	option = {
 		name = spanishafrica.4.a
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
 		if = {
 		limit = {
@@ -125,8 +113,6 @@ country_event = { # Worker shortages
 			add_ideas = SFA_labour_shortages
 		}
 		add_stability = -0.05
-		hidden_effect = {
-			}
 		}
 	}
 	
@@ -137,15 +123,11 @@ country_event = { # Black Monday
 	desc = spanishafrica.5.d
 	picture = GFX_report_event_stonetown
 	is_triggered_only = yes
-	
-
-	immediate = {
-	}
 
 	option = {
 		name = spanishafrica.5.a
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
 		if = {
 		limit = {
@@ -156,8 +138,6 @@ country_event = { # Black Monday
 			add_war_support = -0.15
 			decrease_ruling_party_popularity_by_10 = yes
 		}
-		hidden_effect = {
-			}
 		}
 	}
 	
@@ -190,7 +170,7 @@ country_event = { # Collapse of Spanish Africa
 	option = {
 		name = spanishafrica.6.a
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
 		news_event = {
 			id = sharedafrika.12
@@ -209,7 +189,7 @@ country_event = { # Collapse of Spanish Africa
 			}
 		}
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 		news_event = {
 			id = sharedafrika.12
@@ -231,7 +211,7 @@ country_event = { # Collapse of Spanish Africa
 			}
 		}
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 		news_event = {
 			id = sharedafrika.12
@@ -253,7 +233,7 @@ country_event = { # Collapse of Spanish Africa
 			}
 		}
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 		news_event = {
 			id = sharedafrika.12

@@ -22,7 +22,6 @@ country_event = {
                 expire = "1965.1.1"
                 ideology = italian_right_futurism_subtype
             }
-    
             set_politics = { 
             ruling_party = national_populist
             }
@@ -31,7 +30,7 @@ country_event = {
                 popularity = 0.20
             }
             set_cosmetic_tag = FIU_accelerationism
-            load_focus_tree=FIU_starter
+            load_focus_tree = FIU_starter
             remove_ideas =FIU_sharpshooters
             remove_ideas =FIU_pirates_of_the_mediterranean
         }
@@ -40,14 +39,13 @@ country_event = {
     option = {
         name = "原来一切只是霍尔蒂的一场梦"
     }
+
+    option = {
+        name = rf_kxx_fiu.1.b
+    }
 }      
         
-        
 
-option = {
-    name = rf_kxx_fiu.1.b
-}
-}
 
 country_event = {
 	id = rf_kxx_fiu.2

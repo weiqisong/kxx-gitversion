@@ -1764,7 +1764,7 @@ country_event = { # Introduction
 		}
 		load_oob = "LEC - Shanghai Revolution Beijing 2"
 		}
-		else = {
+		else_if = {
 		limit = {
 		AND = {
 			check_variable = { revolt_qing_xian > 9 }
@@ -1825,15 +1825,15 @@ country_event = { # Introduction
 		}
 		load_oob = "LEC - Shanghai Revolution Manchu 2"
 		}
-		else = {
-		limit = {
-		AND = {
-			check_variable = { revolt_manchu_xingan > 9 }
-			check_variable = { revolt_manchu_nenjiang > 9 }
-			check_variable = { revolt_manchu_hejiang > 9 }
+		else_if = {
+			limit = {
+				AND = {
+					check_variable = { revolt_manchu_xingan > 9 }
+					check_variable = { revolt_manchu_nenjiang > 9 }
+					check_variable = { revolt_manchu_hejiang > 9 }
+				}
 			}
-		}
-		load_oob = "LEC - Shanghai Revolution Manchu 3"
+			load_oob = "LEC - Shanghai Revolution Manchu 3"
 		}
 		}
 	}
@@ -2421,7 +2421,7 @@ country_event = { # Introduction
 			desc = "POLITICS_DESC_GUO_MORUO"
 			picture = "gfx/leaders/LEC/Portrait_LEC_Lin_Jilu.png"
 			expire = "1978.11.19"
-			ideology = Portrait_LEC_Dorje Caidan
+			ideology = technocratic_socialism_subtype #Caidan
 			}
 		set_politics = { ruling_party = totalist }
 		add_popularity = { ideology = totalist popularity = 1 }
@@ -2433,7 +2433,7 @@ country_event = { # Introduction
 			desc = "POLITICS_DESC_GUO_MORUO"
 			picture = "gfx/leaders/LEC/Portrait_LEC_Lai_He.png"
 			expire = "1978.11.19"
-			ideology = Portrait_LEC_Dorje Caidan
+			ideology = technocratic_socialism_subtype #Caidan
 			}
 		set_politics = { ruling_party = totalist }
 		add_popularity = { ideology = totalist popularity = 1 }

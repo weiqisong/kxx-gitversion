@@ -360,7 +360,7 @@ country_event = {
 	desc = BAS.18.d 
 	picture = GFX_BASutia_celebration
 	is_triggered_only = yes
-	fire_only_once = no
+	 
 	
 	option = {
 		name = BAS.180.a
@@ -584,12 +584,12 @@ country_event = {
 	title = BAS.24.t 
 	desc = BAS.24.d 
 	is_triggered_only = yes
-	fire_only_once = no
+	 
 	
 	option = {
 		name = BAS.24.a
 		ai_chance = {
-			factor = 33
+			base = 33
 			modifier = {
 				factor = 1.2
 				has_same_government_as_ROOT = yes
@@ -718,7 +718,6 @@ country_event = {
 	title = BAS.25.t 
 	desc = BAS.25.d 
 	is_triggered_only = yes
-	fire_only_once = no
 	
 	option = {
 		name = BAS.25.a
@@ -739,7 +738,7 @@ country_event = {
 	title = BAS.26.t 
 	desc = BAS.26.d 
 	is_triggered_only = yes
-	fire_only_once = no
+	 
 	
 	option = {
 		name = BAS.25.a
@@ -760,7 +759,7 @@ country_event = {
 	title = BAS.27.t 
 	desc = BAS.27.d 
 	is_triggered_only = yes
-	fire_only_once = no
+	 
 	
 	option = {
 		name = BAS.27.a
@@ -776,7 +775,7 @@ country_event = {
 	title = BAS.28.t 
 	desc = BAS.28.d 
 	is_triggered_only = yes
-	fire_only_once = no
+	 
 	
 	option = {
 		name = BAS.28.a
@@ -832,7 +831,7 @@ country_event = {
 	title = BAS.29.t 
 	desc = BAS.29.d 
 	is_triggered_only = yes
-	fire_only_once = no
+	 
 	
 	option = {
 		name = BAS.29.a
@@ -844,7 +843,7 @@ country_event = {
 	title = BAS.30.t 
 	desc = BAS.30.d 
 	is_triggered_only = yes
-	fire_only_once = no
+	 
 	
 	option = {
 		name = BAS.30.a
@@ -856,7 +855,7 @@ country_event = {
 	title = BAS.31.t 
 	desc = BAS.31.d 
 	is_triggered_only = yes
-	fire_only_once = no
+	 
 	
 	option = {
 		name = BAS.31.a
@@ -868,7 +867,7 @@ country_event = {
 	title = BAS.32.t 
 	desc = BAS.32.d 
 	is_triggered_only = yes
-	fire_only_once = no
+	 
 	
 	option = {
 		name = BAS.32.a
@@ -881,7 +880,7 @@ country_event = {
 	title = BAS.33.t 
 	desc = BAS.33.d 
 	is_triggered_only = yes
-	fire_only_once = no
+	 
 	
 	option = {
 		name = BAS.33.a
@@ -893,7 +892,7 @@ country_event = {
 	title = BAS.34.t 
 	desc = BAS.34.d 
 	is_triggered_only = yes
-	fire_only_once = no
+	 
 	
 	option = {
 		name = BAS.34.a
@@ -906,7 +905,7 @@ country_event = {
 	title = BAS.35.t 
 	desc = BAS.35.d 
 	is_triggered_only = yes
-	fire_only_once = no
+	 
 	
 	option = {
 		name = BAS.35.a
@@ -1768,7 +1767,7 @@ country_event = {
 	title = BAS.100.t 
 	desc = BAS.100.d 
 	is_triggered_only = yes
-	fire_only_once = no
+	 
 	
 	option = {
 		name = BAS.100.a
@@ -1799,7 +1798,7 @@ country_event = {
 	title = BAS.101.t 
 	desc = BAS.101.d 
 	is_triggered_only = yes
-	fire_only_once = no
+	 
 	
 	option = {
 		name = BAS.101.a
@@ -1811,7 +1810,7 @@ country_event = {
 	title = BAS.103.t 
 	desc = BAS.103.d 
 	is_triggered_only = yes
-	fire_only_once = no
+	 
 	
 	option = {
 		name = BAS.103.a
@@ -1852,7 +1851,7 @@ country_event = {
 	title = BAS.104.t 
 	desc = BAS.104.d 
 	is_triggered_only = yes
-	fire_only_once = no
+	 
 	
 	option = {
 		name = BAS.104.a
@@ -1899,7 +1898,7 @@ country_event = {
 	title = BAS.105.t 
 	desc = BAS.105.d 
 	is_triggered_only = yes
-	fire_only_once = no
+	 
 	
 	option = {
 		name = BAS.105.a
@@ -1919,7 +1918,7 @@ country_event = {
 	title = BAS.106.t 
 	desc = BAS.106.d 
 	is_triggered_only = yes
-	fire_only_once = no
+	 
 	
 	option = {
 		name = BAS.106.a
@@ -1950,7 +1949,7 @@ country_event = {
 	title = BAS.107.t 
 	desc = BAS.107.d 
 	is_triggered_only = yes
-	fire_only_once = no
+	 
 	
 	option = {
 		name = BAS.107.a
@@ -1962,7 +1961,7 @@ country_event = {
 	title = BAS.108.t 
 	desc = BAS.108.d 
 	is_triggered_only = yes
-	fire_only_once = no
+	 
 	
 	option = {
 		name = BAS.108.a
@@ -1993,7 +1992,7 @@ country_event = {
 	title = BAS.109.t 
 	desc = BAS.109.d 
 	is_triggered_only = yes
-	fire_only_once = no
+	 
 	
 	option = {
 		name = BAS.109.a
@@ -2398,9 +2397,11 @@ country_event = {# Portugal Alliance
 	option = {# accept
 		name = BAS.225.a
 		ai_chance = {
-			factor = 75
+			base = 75
 		}
-		BAS = { country_event = { id = BAS.223 = 1 }}
+		BAS = { 
+			country_event = { id = BAS.223 days = 1 }
+		}
 	}
 	option = { #reject
 		name = BAS.225.b
@@ -2424,7 +2425,12 @@ country_event = {# Portugal Alliance
 		ai_chance = {
 			base = 25
 		}
-		CHL = { country_event = { id = BAS.225 = 1 }}
+		CHL = { 
+			country_event = { 
+				id = BAS.225
+				days = 1 
+			}
+		}
 	}
 	option = { #reject
 		name = BAS.226.b
@@ -2750,7 +2756,7 @@ country_event = {#
 	option = {
 		name = BAS.240.a
 		add_political_power = -150
-		add_radsoc_to_coalition
+		add_radsoc_to_coalition = yes
 	}
 }
 

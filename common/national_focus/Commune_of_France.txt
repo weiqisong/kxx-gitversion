@@ -13,549 +13,551 @@ focus_tree = {
     y = 4000
   }
   focus = {
-	id = FRA_grand_army_reform
-	icon = GFX_goal_FRA_Reinforce_ARF_Command
-	cost = 5
-	prerequisite = {
-		focus = FRA_la_guardia_rossa
-		focus = FRA_la_legione_proletaria
-	
-	}
-	x = 0
-	y = 9
-	relative_position_id = FRA_communal_army
-	ai_will_do = {
-		factor = 3
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus FRA_grand_army_reform"
-		add_ideas = FRA_Red_Army
-		add_doctrine_cost_reduction = {
-			name = land_doc_bonus
-			cost_reduction = 0.5
-			uses = 1
-			category = land_doctrine
-		}
-	}
-}
-focus = {
-	id = FRA_integrate_the_corps_francs
-	icon = GFX_goal_integrate_the_militia
-	cost = 3
-
-	x = -2
-	y = 1
-	relative_position_id = FRA_communal_army
-	prerequisite = {
-		focus = FRA_communal_army
-	}
-	ai_will_do = {
-		factor = 2
-		modifier = {
-			factor = 3
-			has_war = yes
-		}
-		modifier = {
-			factor = 1.5
-			date > 1937.1.1
-		}
-		modifier = {
-			factor = 1.5
-			date > 1938.1.1
-		}
-		modifier = {
-			factor = 1.5
-			date > 1939.1.1
-		}
-	}
-
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus FRA_integrate_the_corps_francs"
-		army_experience = 20
-		add_doctrine_cost_reduction = {
-			name = FRA_integrate_the_corps_francs
-			cost_reduction = 0.75
-			uses = 1
-			category = land_doctrine
-		}
-		custom_effect_tooltip = tooltip_white_line
-		custom_effect_tooltip = tech_assault_battalion_effect
+		id = FRA_grand_army_reform
+		icon = GFX_goal_FRA_Reinforce_ARF_Command
+		cost = 5
+		prerequisite = {
+			focus = FRA_la_guardia_rossa
+			focus = FRA_la_legione_proletaria
 		
-		set_technology = { tech_assault_battalion = 1 popup = yes }
-		
-	}
-}
-focus = {
-	id = FRA_the_riflemans_friend
-	icon = GFX_focus_generic_military_equipment
-	cost = 3
-
-	relative_position_id = FRA_integrate_the_corps_francs
-	x = 2
-	y = 0
-	prerequisite = {
-		focus = FRA_communal_army
-	}
-	ai_will_do = {
-		factor = 2
-		modifier = {
+		}
+		x = 0
+		y = 9
+		relative_position_id = FRA_communal_army
+		ai_will_do = {
 			factor = 3
-			has_war = yes
 		}
-		modifier = {
-			factor = 1.5
-			date > 1937.1.1
-		}
-		modifier = {
-			factor = 1.5
-			date > 1938.1.1
-		}
-		modifier = {
-			factor = 1.5
-			date > 1939.1.1
-		}
-	}
-
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus FRA_the_riflemans_friend"
-		add_one_random_military_factory = yes
-		custom_effect_tooltip = tooltip_white_line
-		add_tech_bonus = {
-			name = FRA_the_riflemans_friend
-			bonus = 0.75
-			uses = 2
-			category = infantry_weapons
-		}
-	}
-}
-focus = {
-	id = FRA_eyes_on_the_ligne_bleue
-	icon = GFX_focus_AUS_osterreichische_gebirgsjager
-	cost = 3
-
-	relative_position_id = FRA_the_riflemans_friend
-	x = 2
-	y = 0
-	prerequisite = {
-		focus = FRA_communal_army
-	}
-	ai_will_do = {
-		factor = 2
-		modifier = {
-			factor = 3
-			has_war = yes
-		}
-		modifier = {
-			factor = 1.5
-			date > 1937.1.1
-		}
-		modifier = {
-			factor = 1.5
-			date > 1938.1.1
-		}
-		modifier = {
-			factor = 1.5
-			date > 1939.1.1
-		}
-	}
-
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus FRA_eyes_on_the_ligne_bleue"
-		army_experience = 20
-		if = {
-			limit = { has_dlc_aat = yes }
-			add_tech_bonus = {
-				name = FRA_eyes_on_the_ligne_bleue
-				bonus = 1
-				uses = 1
-				category = mountaineers_tech
-			}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_grand_army_reform"
+			add_ideas = FRA_Red_Army
 			add_doctrine_cost_reduction = {
-				name = FRA_eyes_on_the_ligne_bleue
+				name = land_doc_bonus
 				cost_reduction = 0.5
 				uses = 1
-				category = cat_mountaineers_doctrine
+				category = land_doctrine
 			}
 		}
-		else = {
+	}
+	focus = {
+		id = FRA_integrate_the_corps_francs
+		icon = GFX_goal_integrate_the_militia
+		cost = 3
+
+		x = -2
+		y = 1
+		relative_position_id = FRA_communal_army
+		prerequisite = {
+			focus = FRA_communal_army
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 3
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_integrate_the_corps_francs"
+			army_experience = 20
+			add_doctrine_cost_reduction = {
+				name = FRA_integrate_the_corps_francs
+				cost_reduction = 0.75
+				uses = 1
+				category = land_doctrine
+			}
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = tech_assault_battalion_effect
+			
+			set_technology = { tech_assault_battalion = 1 popup = yes }
+			
+		}
+	}
+	focus = {
+		id = FRA_the_riflemans_friend
+		icon = GFX_focus_generic_military_equipment
+		cost = 3
+
+		relative_position_id = FRA_integrate_the_corps_francs
+		x = 2
+		y = 0
+		prerequisite = {
+			focus = FRA_communal_army
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 3
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_the_riflemans_friend"
+			add_one_random_military_factory = yes
+			custom_effect_tooltip = tooltip_white_line
 			add_tech_bonus = {
-				name = FRA_eyes_on_the_ligne_bleue
+				name = FRA_the_riflemans_friend
 				bonus = 0.75
 				uses = 2
-				category = mountaineers_tech
+				category = infantry_weapons
 			}
 		}
-		custom_effect_tooltip = tooltip_white_line
-		set_technology = { tech_ski_infantry = 1 popup = yes }
 	}
-}
-focus = {
-	id = FRA_reform_the_high_command
-	icon = GFX_goal_FRA_army
-	cost = 3
+	focus = {
+		id = FRA_eyes_on_the_ligne_bleue
+		icon = GFX_focus_AUS_osterreichische_gebirgsjager
+		cost = 3
 
-	prerequisite = {
-		focus = FRA_integrate_the_corps_francs
-	}
-	prerequisite = {
-		focus = FRA_the_riflemans_friend
-	}
-	prerequisite = {
-		focus = FRA_eyes_on_the_ligne_bleue
-	}
-
-	
-	x = 0
-	y = 2
-	relative_position_id = FRA_communal_army
-	ai_will_do = {
-		factor = 2
-		modifier = {
-			factor = 3
-			has_war = yes
+		relative_position_id = FRA_the_riflemans_friend
+		x = 2
+		y = 0
+		prerequisite = {
+			focus = FRA_communal_army
 		}
-		modifier = {
-			factor = 1.5
-			date > 1937.1.1
-		}
-		modifier = {
-			factor = 1.5
-			date > 1938.1.1
-		}
-		modifier = {
-			factor = 1.5
-			date > 1939.1.1
-		}
-	}
-
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus FRA_reform_the_high_command"
-		add_war_support = 0.05
-		custom_effect_tooltip = tooltip_white_line
-		add_dynamic_modifier = { modifier = FRA_armee_federale_modifier }
-		army_experience = 20
-	}
-}
-focus = {
-	id = FRA_la_legione_proletaria
-	icon = GFX_goal_FRA_red_legionaries
-	cost = 5
-	relative_position_id = FRA_reform_the_high_command	
-	x = -2
-	y = 6
-	prerequisite = {
-		focus = FRA_corps_francs_hunters
-		focus = FRA_deepen_the_fog_of_war
-		focus = FRA_rapid_response_detachments
-		focus = FRA_defence_of_the_revolution
-		focus = FRA_la_petite_reine
-	}
-	 mutually_exclusive = {
-		focus = FRA_la_guardia_rossa
-	 }
-	completion_reward = {
-	  log = "[GetDateText]: [Root.GetName]: Focus SRI_la_legione_proletaria"
-	 
-		add_ideas = FRA_legione_proletaria_dummy
-	  
-	}
-	search_filters = {
-	  FOCUS_FILTER_ARMY_BONUS
-	  FOCUS_FILTER_MANPOWER
-	}
-  }
-focus = {
-	id = FRA_la_guardia_rossa
-	icon = GFX_goal_reform_socialist_army
-	cost = 5
-	relative_position_id = FRA_reform_the_high_command	
-	x = 2
-	y = 6
-	
-	prerequisite = {
-		focus = FRA_corps_francs_hunters
-		focus = FRA_deepen_the_fog_of_war
-		focus = FRA_rapid_response_detachments
-		focus = FRA_defence_of_the_revolution
-		focus = FRA_la_petite_reine
-	}
-	mutually_exclusive = {
-		focus = FRA_la_legione_proletaria
-	 }
-	
-	ai_will_do = {
-	  factor = 15
-	  modifier = {
-		factor = 4
-		has_war = yes
-	  }
-	  modifier = {
-		factor = 1.5
-		date > 1937.1.1
-	  }
-	  modifier = {
-		factor = 1.5
-		date > 1938.1.1
-	  }
-	  modifier = {
-		factor = 1.5
-		date > 1939.1.1
-	  }
-	}
-	completion_reward = {
-	  log = "[GetDateText]: [Root.GetName]: Focus SRI_la_guardia_rossa"
-		add_ideas = FRA_guardia_rossa_dummy
-	}
-	search_filters = {
-	  FOCUS_FILTER_ARMY_BONUS
-	}
-  }
-focus = {
-	id = FRA_all_for_the_revolution
-	icon = GFX_focus_SOV_builder_of_the_red_army
-	cost = 3
-
-	prerequisite = {
-		focus = FRA_makhnos_military_plan
-	}
-	relative_position_id = FRA_makhnos_military_plan
-
-	x = -2
-	y = 1
-
-	ai_will_do = {
-		factor = 2
-		modifier = {
-			factor = 3
-			has_war = yes
-		}
-		modifier = {
-			factor = 1.5
-			date > 1937.1.1
-		}
-		modifier = {
-			factor = 1.5
-			date > 1938.1.1
-		}
-		modifier = {
-			factor = 1.5
-			date > 1939.1.1
-		}
-	}
-
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus FRA_all_for_the_revolution"
-		custom_effect_tooltip = {
-			localization_key = tooltip_modify_dynmod
-			DYNMOD = FRA_armee_federale_modifier
-		}
-		add_to_variable = {
-			FRA_af_army_org_factor = 0.1
-			tooltip = army_org_factor_tooltip
-		}
-		add_to_variable = {
-			FRA_af_army_morale_factor = 0.1
-			tooltip = army_morale_factor_tooltip
-		}
-		custom_effect_tooltip = tooltip_white_line
-		add_doctrine_cost_reduction = {
-			name = FRA_all_for_the_revolution
-			cost_reduction = 0.5
-			uses = 2
-			category = land_doctrine
-		}
-		
-
-		
-	}
-}
-focus = {
-	id = FRA_our_comrades_fight_too
-	icon = GFX_goal_generic_solidarity
-	cost = 3
-
-	prerequisite = {
-		focus = FRA_all_for_the_revolution
-	}
-	mutually_exclusive = {
-		focus = FRA_levee_en_masse
-	}
-
-	relative_position_id = FRA_all_for_the_revolution
-	x = -1
-	y = 1
-
-	ai_will_do = {
-		factor = 2
-		modifier = {
-			factor = 3
-			has_war = yes
-		}
-		modifier = {
-			factor = 1.5
-			date > 1937.1.1
-		}
-		modifier = {
-			factor = 1.5
-			date > 1938.1.1
-		}
-		modifier = {
-			factor = 1.5
-			date > 1939.1.1
-		}
-	}
-
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus FRA_our_comrades_fight_too"
-		custom_effect_tooltip = {
-			localization_key = tooltip_modify_dynmod
-			DYNMOD = FRA_armee_federale_modifier
-		}
-		add_to_variable = {
-			FRA_af_weekly_manpower = 3000
-			tooltip = weekly_manpower_tooltip
-		}
-		add_to_variable = {
-			FRA_af_modifier_army_sub_unit_militia_attack_factor = 0.05
-			tooltip = army_infantry_attack_factor_tooltip
-		}
-		add_to_variable = {
-			FRA_af_modifier_army_sub_unit_militia_defence_factor = 0.05
-			tooltip = army_infantry_defence_factor_tooltip
-		}
-		add_to_variable = {
-			FRA_af_modifier_army_sub_unit_militia_max_org_factor = 0.05
-			tooltip = army_org_factor_tooltip
-		}
-		custom_effect_tooltip = tooltip_white_line
-		add_manpower = 50000
-		custom_effect_tooltip = tooltip_white_line
-		custom_effect_tooltip = {
-			localization_key = tooltip_modify_dynmod
-			DYNMOD = FRA_armee_federale_modifier
-		}
-		add_to_variable = {
-			FRA_af_conscription = 0.015
-			tooltip = conscription_tooltip
-		}
-		add_to_variable = {
-			FRA_af_mobilization_speed = 0.15
-			tooltip = mobilization_speed_tooltip
-		}
-		custom_effect_tooltip = tooltip_white_line
-		custom_override_tooltip = {
-			tooltip = {
-				localization_key = FRA_create_international_brigade_template
-				NAME = "Volontaires Internationaux"
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 3
+				has_war = yes
 			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_eyes_on_the_ligne_bleue"
+			army_experience = 20
 			if = {
-				limit = { has_template = "Volontaires Internationaux" }
-				delete_unit_template_and_units = { division_template = "Volontaires Internationaux" disband = yes } #no cheating
+				limit = { has_dlc_aat = yes }
+				add_tech_bonus = {
+					name = FRA_eyes_on_the_ligne_bleue
+					bonus = 1
+					uses = 1
+					category = mountaineers_tech
+				}
+				add_doctrine_cost_reduction = {
+					name = FRA_eyes_on_the_ligne_bleue
+					cost_reduction = 0.5
+					uses = 1
+					category = cat_mountaineers_doctrine
+				}
 			}
-			division_template = {
-				name = "Volontaires Internationaux"
-				division_names_group = FRA_MIL_02
-				template_counter = 68
-				role = infantry
-				regiments = {
-					militia = { x = 0 y = 0 }
-					militia = { x = 0 y = 1 }
-					militia = { x = 0 y = 2 }
-					militia = { x = 1 y = 0 }
-					militia = { x = 1 y = 1 }
-					militia = { x = 1 y = 2 }
-					militia = { x = 2 y = 0 }
-					militia = { x = 2 y = 1 }
-					militia = { x = 2 y = 2 }
+			else = {
+				add_tech_bonus = {
+					name = FRA_eyes_on_the_ligne_bleue
+					bonus = 0.75
+					uses = 2
+					category = mountaineers_tech
 				}
-				support = {
-					assault_battalion = { x = 0 y = 0 }
-					artillery = { x = 0 y = 1 }
-				}
+			}
+			custom_effect_tooltip = tooltip_white_line
+			set_technology = { tech_ski_infantry = 1 popup = yes }
+		}
+	}
+	focus = {
+		id = FRA_reform_the_high_command
+		icon = GFX_goal_FRA_army
+		cost = 3
+
+		prerequisite = {
+			focus = FRA_integrate_the_corps_francs
+		}
+		prerequisite = {
+			focus = FRA_the_riflemans_friend
+		}
+		prerequisite = {
+			focus = FRA_eyes_on_the_ligne_bleue
+		}
+
+		
+		x = 0
+		y = 2
+		relative_position_id = FRA_communal_army
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 3
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
 			}
 		}
-		custom_effect_tooltip = tooltip_white_line
-		random_controlled_state = {
-			prioritize = { 16 }
-			limit = { valid_state_for_spawning_friendly_unit = yes }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_reform_the_high_command"
+			add_war_support = 0.05
+			custom_effect_tooltip = tooltip_white_line
+			add_dynamic_modifier = { modifier = FRA_armee_federale_modifier }
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = FRA_la_legione_proletaria
+		icon = GFX_goal_FRA_red_legionaries
+		cost = 5
+		relative_position_id = FRA_reform_the_high_command	
+		x = -2
+		y = 6
+		prerequisite = {
+			focus = FRA_corps_francs_hunters
+			focus = FRA_deepen_the_fog_of_war
+			focus = FRA_rapid_response_detachments
+			focus = FRA_defence_of_the_revolution
+			focus = FRA_la_petite_reine
+		}
+		mutually_exclusive = {
+			focus = FRA_la_guardia_rossa
+		}
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SRI_la_legione_proletaria"
+		
+			add_ideas = FRA_legione_proletaria_dummy
+		
+		}
+		search_filters = {
+		FOCUS_FILTER_ARMY_BONUS
+		FOCUS_FILTER_MANPOWER
+		}
+	}
+	focus = {
+		id = FRA_la_guardia_rossa
+		icon = GFX_goal_reform_socialist_army
+		cost = 5
+		relative_position_id = FRA_reform_the_high_command	
+		x = 2
+		y = 6
+		
+		prerequisite = {
+			focus = FRA_corps_francs_hunters
+			focus = FRA_deepen_the_fog_of_war
+			focus = FRA_rapid_response_detachments
+			focus = FRA_defence_of_the_revolution
+			focus = FRA_la_petite_reine
+		}
+		mutually_exclusive = {
+			focus = FRA_la_legione_proletaria
+		}
+		
+		ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 4
+			has_war = yes
+		}
+		modifier = {
+			factor = 1.5
+			date > 1937.1.1
+		}
+		modifier = {
+			factor = 1.5
+			date > 1938.1.1
+		}
+		modifier = {
+			factor = 1.5
+			date > 1939.1.1
+		}
+		}
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SRI_la_guardia_rossa"
+			add_ideas = FRA_guardia_rossa_dummy
+		}
+		search_filters = {
+		FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+	focus = {
+		id = FRA_all_for_the_revolution
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		cost = 3
+
+		prerequisite = {
+			focus = FRA_makhnos_military_plan
+		}
+		relative_position_id = FRA_makhnos_military_plan
+
+		x = -2
+		y = 1
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 3
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_all_for_the_revolution"
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = FRA_armee_federale_modifier
+			}
+			add_to_variable = {
+				var = FRA_af_army_org_factor
+				value = 0.1
+				tooltip = army_org_factor_tooltip
+			}
+			add_to_variable = {
+				var = FRA_af_army_morale_factor 
+				value = 0.1
+				tooltip = army_morale_factor_tooltip
+			}
+			custom_effect_tooltip = tooltip_white_line
+			add_doctrine_cost_reduction = {
+				name = FRA_all_for_the_revolution
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			
+
+			
+		}
+	}
+	focus = {
+		id = FRA_our_comrades_fight_too
+		icon = GFX_goal_generic_solidarity
+		cost = 3
+
+		prerequisite = {
+			focus = FRA_all_for_the_revolution
+		}
+
+		relative_position_id = FRA_all_for_the_revolution
+		x = -1
+		y = 1
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 3
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_our_comrades_fight_too"
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = FRA_armee_federale_modifier
+			}
+			add_to_variable = {
+				var = FRA_af_weekly_manpower
+				value = 3000
+				tooltip = weekly_manpower_tooltip
+			}
+			add_to_variable = {
+				var = FRA_af_modifier_army_sub_unit_militia_attack_factor
+				value = 0.05
+				tooltip = army_infantry_attack_factor_tooltip
+			}
+			add_to_variable = {
+				var = FRA_af_modifier_army_sub_unit_militia_defence_factor
+				value = 0.05
+				tooltip = army_infantry_defence_factor_tooltip
+			}
+			add_to_variable = {
+				var = FRA_af_modifier_army_sub_unit_militia_max_org_factor
+				value = 0.05
+				tooltip = army_org_factor_tooltip
+			}
+			custom_effect_tooltip = tooltip_white_line
+			add_manpower = 50000
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = FRA_armee_federale_modifier
+			}
+			add_to_variable = {
+				FRA_af_conscription = 0.015
+				tooltip = conscription_tooltip
+			}
+			add_to_variable = {
+				FRA_af_mobilization_speed = 0.15
+				tooltip = mobilization_speed_tooltip
+			}
+			custom_effect_tooltip = tooltip_white_line
 			custom_override_tooltip = {
 				tooltip = {
-					localization_key = tooltip_spawn_units
-					COUNT = 8
-					TYPE = "Volontaires Internationaux"
+					localization_key = FRA_create_international_brigade_template
+					NAME = "Volontaires Internationaux"
 				}
-				create_unit = {
-					division = "division_template = \"Volontaires Internationaux\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
-					owner = ROOT
-					count = 8
+				if = {
+					limit = { has_template = "Volontaires Internationaux" }
+					delete_unit_template_and_units = { division_template = "Volontaires Internationaux" disband = yes } #no cheating
+				}
+				division_template = {
+					name = "Volontaires Internationaux"
+					division_names_group = FRA_MIL_02
+					template_counter = 68
+					role = infantry
+					regiments = {
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 0 y = 2 }
+						militia = { x = 1 y = 0 }
+						militia = { x = 1 y = 1 }
+						militia = { x = 1 y = 2 }
+						militia = { x = 2 y = 0 }
+						militia = { x = 2 y = 1 }
+						militia = { x = 2 y = 2 }
+					}
+					support = {
+						assault_battalion = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+					}
+				}
+			}
+			custom_effect_tooltip = tooltip_white_line
+			random_controlled_state = {
+				prioritize = { 16 }
+				limit = { valid_state_for_spawning_friendly_unit = yes }
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = tooltip_spawn_units
+						COUNT = 8
+						TYPE = "Volontaires Internationaux"
+					}
+					create_unit = {
+						division = "division_template = \"Volontaires Internationaux\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+						owner = ROOT
+						count = 8
+					}
 				}
 			}
 		}
 	}
-}
 
-focus = {
-	id = FRA_the_methodical_war
-	icon = GFX_focus_BEL_legacy_of_the_great_war
-	cost = 3
+	focus = {
+		id = FRA_the_methodical_war
+		icon = GFX_focus_BEL_legacy_of_the_great_war
+		cost = 3
 
-	
-	prerequisite = {
-		focus = FRA_military_academy
-	}
-	
-	x = 1
-	y = 1
-	relative_position_id = FRA_military_academy
-	
-	ai_will_do = {
-		factor = 2
-		modifier = {
-			factor = 3
-			has_war = yes
-		}
-		modifier = {
-			factor = 1.5
-			date > 1937.1.1
-		}
-		modifier = {
-			factor = 1.5
-			date > 1938.1.1
-		}
-		modifier = {
-			factor = 1.5
-			date > 1939.1.1
-		}
-	}
-
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus FRA_the_methodical_war"
-		custom_effect_tooltip = {
-			localization_key = tooltip_modify_dynmod
-			DYNMOD = FRA_armee_federale_modifier
-		}
-		add_to_variable = {
-			FRA_af_max_planning = 0.25
-			tooltip = max_planning_tooltip
-		}
-		add_to_variable = {
-			FRA_af_planning_speed = 0.05
-			tooltip = planning_speed_tooltip
-		}
-		add_to_variable = {
-			FRA_af_max_command_power = 40
-			tooltip = max_command_power_tooltip
-		}
-		custom_effect_tooltip = tooltip_white_line
-		add_doctrine_cost_reduction = {
-			name = FRA_the_methodical_war
-			cost_reduction = 0.5
-			uses = 2
-			category = land_doctrine
+		prerequisite = {
+			focus = FRA_military_academy
 		}
 		
+		x = 1
+		y = 1
+		relative_position_id = FRA_military_academy
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 3
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_the_methodical_war"
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = FRA_armee_federale_modifier
+			}
+			add_to_variable = {
+				FRA_af_max_planning = 0.25
+				tooltip = max_planning_tooltip
+			}
+			add_to_variable = {
+				FRA_af_planning_speed = 0.05
+				tooltip = planning_speed_tooltip
+			}
+			add_to_variable = {
+				FRA_af_max_command_power = 40
+				tooltip = max_command_power_tooltip
+			}
+			custom_effect_tooltip = tooltip_white_line
+			add_doctrine_cost_reduction = {
+				name = FRA_the_methodical_war
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			
+		}
 	}
-}
 focus = {
 	id = FRA_an_armys_stomach
 	icon = GFX_focus_generic_reinforcing_the_supply_network
@@ -867,14 +869,10 @@ focus = {
 		
 		if = {
 			limit = { has_dlc_lar = yes }
-			
-				
 			add_ideas = FRA_af_hidden_motor_production_bonus
 			
 		}
 		else = {
-			
-			
 			add_ideas = FRA_af_hidden_motor_production_bonus_no_lar
 			
 		}
@@ -1244,10 +1242,7 @@ focus = {
 focus = {
 	id = FRA_chasseurs_portes
 	icon = GFX_goal_FRA_Revolutionary_Guerilla_Tactics
-		
-		 
-	
-	
+
 	cost = 3
 
 	prerequisite = {
@@ -4256,7 +4251,7 @@ focus = {
 		y = 1
 
 		prerequisite = {
-focus = FRA_office_des_chemins_de_fer
+			focus = FRA_office_des_chemins_de_fer
 		}
 
 		ai_will_do = {
@@ -5271,9 +5266,6 @@ focus = FRA_office_des_chemins_de_fer
 			add_one_random_military_factory = yes
 			custom_effect_tooltip = tooltip_white_line
 			add_ideas = FRA_ploughshares_into_swords_idea
-			
-			
-			
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -5541,7 +5533,7 @@ focus = FRA_office_des_chemins_de_fer
 		y = 3
 
 		prerequisite = {
-focus = FRA_directorate_for_arms_production
+			focus = FRA_directorate_for_arms_production
 		}
 
 		ai_will_do = {
@@ -5629,7 +5621,7 @@ focus = FRA_directorate_for_arms_production
 		y = 1
 
 		prerequisite = {
-focus = FRA_office_des_chemins_de_fer
+			focus = FRA_office_des_chemins_de_fer
 		}
 
 		ai_will_do = {
@@ -5714,8 +5706,7 @@ focus = FRA_office_des_chemins_de_fer
 		y = 3
 
 		prerequisite = {
-focus = FRA_garden_city_movement
-
+			focus = FRA_garden_city_movement
 		}
 		prerequisite = {
 
@@ -18107,7 +18098,6 @@ focus = FRA_garden_city_movement
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_remove_false_prophets"
 			add_ideas = FRA_organic_socialism
-
 		}
 	}
 	
@@ -18132,7 +18122,6 @@ focus = FRA_garden_city_movement
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_remove_false_prophets"
 			country_event = {
 				id = comfranceeu.2
-				days = 0
 			}
 		}
 	}
@@ -39470,7 +39459,6 @@ focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_defensive_line"
 			add_manpower = 5000
 			add_war_support = 0.02
-			
 		}
 	}
 	

@@ -87,7 +87,7 @@ country_event = {
 			limit={
 				free_building_slots={
 					building=industrial_complex
-					size>0
+					size > 0
 					include_locked=yes
 				}
 			}
@@ -104,7 +104,7 @@ country_event = {
 			limit={
 				free_building_slots={
 					building=industrial_complex
-					size>0
+					size > 0
 					include_locked=yes
 				}
 			}
@@ -121,7 +121,7 @@ country_event = {
 			limit={
 				free_building_slots={
 					building=industrial_complex
-					size>0
+					size > 0
 					include_locked=yes
 				}
 			}
