@@ -150,8 +150,28 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/subideologies/left_occultism.png"
 	}
 	spriteType = {
+		name = "GFX_ideology_radsoc_left_occultism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/radsoc_left_occultism.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_radsoc_islamism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/radsoc_islamism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_tot_islamism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/tot_islamism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_syn_islamism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/tot_islamism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_imperialcult_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/imperialate_group.png"
+	}
+	spriteType = {
 		name = "GFX_ideology_tot_pan_celticism_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/tot_paniranism.png"
+		texturefile = "gfx/interface/ideologies/subideologies/tot_pan_celticism_subtype.png"
 	}
 	SpriteType = {
 		name = "GFX_ideology_revisionist_sorelianism_subtype"
@@ -184,6 +204,18 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ideology_polish_natsynd"
 		texturefile = "gfx/interface/ideologies/subideologies/polish_natsynd.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_tot_narodism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/tot_narodism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_eugenicsism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/scientific_monarchism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_monarcho_syndicalism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/monarcho_syndicalism_subtype.png"
 	}
 
 	##毛主义衍生
@@ -305,6 +337,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/subideologies/genshitism.png"
 	}
 	spriteType = {
+		name = "GFX_ideology_otokonomusumeism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/otokonomusumeism.png"
+	}
+	spriteType = {
 		name = "GFX_ideology_berberism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/berberism.png"
 	}
@@ -345,6 +381,15 @@ spriteTypes = {
 		name = "GFX_ideology_natpop_zadrugism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/zadrugism.png"
 	}
+	spriteType = {
+		name = "GFX_ideology_radsoc_surrealism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/radsoc_surrealism_subtype.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_surrealist_eroticism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/surrealist_eroticism_subtype.png"
+	}
+
 	#fx
 	spriteType = {
 		name = "GFX_ideology_pataut_metaxism_subtype"
@@ -358,12 +403,85 @@ spriteTypes = {
 		name = "GFX_ideology_mercourism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/mercourism_group.png"
 	}
+
+	#维斯瓦河奇迹
 	spriteType = {
-		name = "GFX_ideology_tot_narodism_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/tot_narodism_group.png"
+		name = "GFX_ideology_red_national_radicalism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/red_national_radicalism_group.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_monarcho_syndicalism_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/monarcho_syndicalism_subtype.png"
+		name = "GFX_ideology_christian_bolshevism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/christian_bolshevism_group.png"
+	}		
+	spriteType = {
+		name = "GFX_ideology_radsoc_paternal_socialism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/radsoc_paternal_socialism_group.png"
 	}
+
+	#弱智时刻
+	spriteType = {
+		name = "GFX_ideology_libertarian_possibilism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/libertarian_possibilism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_left_carlism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/left_carlism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_radsoc_yellow_syndicalism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/yellow_syndicalism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_soclib_blasquismo_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/blasquismo_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_marlib_kleptocracy_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/marlib_kleptocracy_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_soclib_blasquismo_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/blasquismo_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_marlib_lerrouxismo_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/marlib_lerrouxismo_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_soccon_liberal_conservative_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/soccon_liberal_conservative_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_soccon_maurism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/soccon_maurism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_noucentisme_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/noucentisme_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_iberian_federalism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/iberian_federalism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_maurism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/maurism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_authdem_noucentisme_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/authdem_noucentisme_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_pataut_synarchism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/pataut_synarchism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_pataut_maurism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/pataut_maurism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_liberating_nationalism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/liberating_nationalism_group.png"
+	}
+	
 }

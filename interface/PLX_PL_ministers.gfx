@@ -130,16 +130,4 @@ spriteTypes = {
 	}	
 
 	#SubIdeologies
-	spriteType = {
-		name = "GFX_ideology_red_national_radicalism_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/red_national_radicalism_group.png"
-	}
-	spriteType = {
-		name = "GFX_ideology_christian_bolshevism_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/christian_bolshevism_group.png"
-	}		
-	spriteType = {
-		name = "GFX_ideology_radsoc_paternal_socialism_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/radsoc_paternal_socialism_group.png"
-	}
 }

@@ -7031,6 +7031,134 @@ text = {
 		}
 		localization_key = radsoc_paternal_socialism_subtype
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = tot_surrealism
+		}
+		localization_key = tot_surrealism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = syn_regenerationism
+		}
+		localization_key = syn_regenerationism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = surrealist_eroticism_subtype
+		}
+		localization_key = surrealist_eroticism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_surrealism_subtype
+		}
+		localization_key = radsoc_surrealism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = libertarian_possibilism_subtype
+		}
+		localization_key = libertarian_possibilism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = left_carlism_subtype
+		}
+		localization_key = left_carlism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_yellow_syndicalism_subtype
+		}
+		localization_key = radsoc_yellow_syndicalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = blasquismo_subtype
+		}
+		localization_key = blasquismo_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soclib_blasquismo_subtype
+		}
+		localization_key = soclib_blasquismo_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = marlib_kleptocracy_subtype
+		}
+		localization_key = marlib_kleptocracy_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = marlib_lerrouxismo_subtype
+		}
+		localization_key = marlib_lerrouxismo_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soccon_liberal_conservative_subtype
+		}
+		localization_key = soccon_liberal_conservative_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = maurism_subtype
+		}
+		localization_key = maurism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soccon_maurism_subtype
+		}
+		localization_key = soccon_maurism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = pataut_maurism_subtype
+		}
+		localization_key = pataut_maurism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = noucentisme_subtype
+		}
+		localization_key = noucentisme_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = authdem_noucentisme_subtype
+		}
+		localization_key = authdem_noucentisme_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = iberian_federalism_subtype
+		}
+		localization_key = iberian_federalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = pataut_synarchism_subtype
+		}
+		localization_key = pataut_synarchism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = liberating_nationalism_subtype
+		}
+		localization_key = liberating_nationalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = monarcho_syndicalism_subtype
+		}
+		localization_key = monarcho_syndicalism_subtype
+	}
+
+
 
 	#风雨欲来	
 	text = {
@@ -7076,6 +7204,12 @@ text = {
 			has_country_leader_ideology = motoori_thought_subtype
 		}
 		localization_key = motoori_thought_subtype  
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = otokonomusumeism_subtype
+		}
+		localization_key = otokonomusumeism_subtype  
 	}
 	text = {
 		trigger = {
@@ -7399,11 +7533,5 @@ text = {
 			has_country_leader_ideology = fredaism_subtype
 		}
 		localization_key = fredaism_subtype  
-	}	
-	text = {
-		trigger = {
-			has_country_leader_ideology = monarcho_syndicalism_subtype
-		}
-		localization_key = monarcho_syndicalism_subtype
 	}	
 }
