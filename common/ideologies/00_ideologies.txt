@@ -292,7 +292,7 @@ ideologies = {
 			syn_islamism_subtype = {can_be_randomly_selected = no} #伊斯兰主义（阿尔及利亚拓展)
 			arab_socialism = {can_be_randomly_selected = no} #阿拉伯社会主义
 			syn_regenerationism = {can_be_randomly_selected = no} #再生主义
-			c = {can_be_randomly_selected = no} #西式自由意志主义
+			libertarian_possibilism_subtype = {can_be_randomly_selected = no} #西式自由意志主义
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_SYNDICALIST_1"
