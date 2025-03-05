@@ -5189,7 +5189,7 @@ country_event = {
 	  trigger = {
 		tag = FRA
 		FRA = {			
-			has_cosmetic_tag = FRA_Sorel_Capetiens
+			has_completed_focus = FRA_based_valois_lives
 			controls_state = 59
 		}
 	}
@@ -5245,11 +5245,7 @@ country_event = {
 	trigger = {
 		tag = FRA
 		FRA = {		
-			OR = {
-				has_cosmetic_tag = FRA_Sorel_Capetiens
-				has_cosmetic_tag = FRA_Sorel_Capitiens_Frankish
-			}	
-			
+			has_completed_focus = FRA_based_valois_lives
 			controls_state = 126
 		}
 	}

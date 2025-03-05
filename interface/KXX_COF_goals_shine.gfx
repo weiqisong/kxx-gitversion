@@ -4809,7 +4809,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_goal_FRA_based_valois_lives_shine"
-		texturefile = "gfx/interface/goals/FRA_based_valois_lives.png"
+		texturefile = "gfx/interface/goals/CHL_protestas_crushear.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/FRA_based_valois_lives.png"
@@ -4839,7 +4839,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_goal_FRA_fonctions_tripartites_shine"
-		texturefile = "gfx/interface/goals/FRA_fonctions_tripartites.png"
+		texturefile = "gfx/interface/goals/CHL_protestas_crushear.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/FRA_fonctions_tripartites.png"
@@ -4869,7 +4869,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_goal_BEL_neosocialist_belgium_shine"
-		texturefile = "gfx/interface/goals/BEL_neosocialist_belgium.png"
+		texturefile = "gfx/interface/goals/CHL_protestas_crushear.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/BEL_neosocialist_belgium.png"

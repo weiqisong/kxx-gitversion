@@ -6392,6 +6392,11 @@ country_event = {
 		name = comfrance.9030.b
 		add_stability = -0.2
 		set_country_flag = FRA_BASED_VALOIS
+		set_party_name = {
+			ideology = totalist
+			long_name = FRA_Sorel_Capetiens_Party
+			name = FRA_Sorel_Capetiens_Party
+		}
 		mark_focus_tree_layout_dirty = yes
 	}
 }
@@ -6448,7 +6453,7 @@ country_event = {
 		
 		hidden_effect = {		
 			country_event = {
-				id = comfrance.903
+				id = comfrance.9030
 				days = 12
 			}
 			
