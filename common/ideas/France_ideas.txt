@@ -910,7 +910,7 @@ ideas = {
 				local_resources_factor = 0.1
 				defensive_war_stability_factor = 0.25
 				offensive_war_stability_factor = 0.25
-				stability_popularity_factor = 0.25
+				party_popularity_stability_factor = 0.25
 				global_building_slots_factor = 0.15
 				production_speed_buildings_factor = 0.1
 				monthly_population = 0.5
@@ -943,7 +943,7 @@ ideas = {
 				local_resources_factor = 0.1
 				defensive_war_stability_factor = 0.25
 				offensive_war_stability_factor = 0.25
-				stability_popularity_factor = 0.25
+				party_popularity_stability_factor = 0.25
 
 			}
 		}
@@ -2810,7 +2810,7 @@ ideas = {
 				army_leader_start_level = 1 
 				acclimatization_hot_climate_gain_factor = 0.2 
 				acclimatization_cold_climate_gain_factor = 0.2 
-				man_power_weekly = 100
+				manpower_weekly = 100
 				breakthrough_factor = 0.1
 				recon_factor = 0.1
 				land_reinforce_rate = 0.1
@@ -2828,7 +2828,7 @@ ideas = {
 				army_leader_start_level = 1 
 				acclimatization_hot_climate_gain_factor = 0.2 
 				acclimatization_cold_climate_gain_factor = 0.2 
-				man_power_weekly = 100
+				manpower_weekly = 100
 			}
 		}
 		FRA_minority_right_protection = {
@@ -6251,7 +6251,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.15
 				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.075
-				add_stability = 0.15
+				stability_factor = 0.15
 				totalist_drift = 0.03
 			}
 		}
@@ -6558,19 +6558,7 @@ ideas = {
 				supply_consumption_factor = -0.1
 			}
 		}
-		FRA_home_of_the_international_revolution = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_home_of_the_international_revolution"}
-			allowed = { always = no }
-			picture = FRA_phalanstere
-			picture = FRA_home_of_the_international_revolution
-			modifier = {
-				drift_defence_factor = 0.5
-				send_volunteer_size = 4
-				totalist_acceptance = 100
-				syndicalist_acceptance = 100
-				radical_socialist_acceptance = 100
-			}
-		}
+		
 		FRA_af_hidden_motor_production_bonus = { #adds equipment_bonus not allowed in dynmod
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_af_hidden_motor_production_bonus" }
 			name = FRA_armee_federale_modifier

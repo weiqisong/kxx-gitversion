@@ -36103,11 +36103,153 @@ focus = {
 		}
 	}
 	focus = {
+		id = FRA_anarchist_cgt
+		icon = GFX_goal_FRA_faure_faction
+		x = 40
+		y = 10
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
+			add_popularity = { ideology = syndicalist popularity = 0.03 }
+		}
+	}
+	focus = {
+		id = FRA_expand_millitias
+		icon = GFX_goal_FRA_faure_faction
+		x = -2
+		y = 1
+		relative_position_id = FRA_anarchist_cgt
+		prerequisite = {
+			focus = FRA_anarchist_cgt
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
+			add_popularity = { ideology = syndicalist popularity = 0.03 }
+		}
+	}
+	focus = {
+		id = FRA_agrian_union
+		icon = GFX_goal_FRA_faure_faction
+		x = 0
+		y = 1
+		relative_position_id = FRA_anarchist_cgt
+		prerequisite = {
+			focus = FRA_anarchist_cgt
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
+			add_popularity = { ideology = syndicalist popularity = 0.03 }
+		}
+	}
+	focus = {
+		id = FRA_city_communes
+		icon = GFX_goal_FRA_faure_faction
+		x = 2
+		y = 1
+		relative_position_id = FRA_anarchist_cgt
+		prerequisite = {
+			focus = FRA_anarchist_cgt
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
+			add_popularity = { ideology = syndicalist popularity = 0.03 }
+		}
+	}
+	focus = {
+		id = FRA_push_decentralize
+		icon = GFX_goal_FRA_faure_faction
+		x = -1
+		y = 2
+		relative_position_id = FRA_anarchist_cgt
+		prerequisite = {
+			focus = FRA_expand_millitias
+		}
+		prerequisite = {
+			focus = FRA_agrian_union
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
+			add_popularity = { ideology = syndicalist popularity = 0.03 }
+		}
+	}
+	focus = {
+		id = FRA_pacifism_stands
+		icon = GFX_goal_FRA_faure_faction
+		x = 1
+		y = 2
+		relative_position_id = FRA_anarchist_cgt
+		prerequisite = {
+			focus = FRA_city_communes
+		}
+		prerequisite = {
+			focus = FRA_agrian_union
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
+			add_popularity = { ideology = syndicalist popularity = 0.03 }
+		}
+	}
+	focus = {
+		id = FRA_deciding_leadership
+		icon = GFX_goal_FRA_faure_faction
+		x = 0
+		y = 3
+		relative_position_id = FRA_anarchist_cgt
+		prerequisite = {
+			focus = FRA_push_decentralize
+		}
+		prerequisite = {
+			focus = FRA_pacifism_stands
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
+			add_popularity = { ideology = syndicalist popularity = 0.03 }
+		}
+	}
+	focus = {
 		id = FRA_faure_faction
 		icon = GFX_goal_FRA_faure_faction
-		x = 36
-		y = 11
-		
+		x = -5
+		y = 4
+		relative_position_id = FRA_anarchist_cgt
+		prerequisite = {
+			focus = FRA_deciding_leadership
+		}
 		cost = 4
 		ai_will_do = {
 			factor = 1

@@ -195,23 +195,7 @@ ideas = {
 
 			}
 		}
-		NFA_total_chaos4 = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AST_uob_advisors_idea"}
-			
-			picture = NFA_devastation
-			
-			modifier = {
-				consumer_goods_factor = 0.2
-				stability_weekly = -0.1
-				war_support_factor = -0.02
-				political_power_gain = -0.02
-				command_power_gain_mult = -0.1
-				max_command_power_mult = -0.1
-				
-				conscription_factor = -0.4
-
-			}
-		}
+		
 		NFA_total_chaos4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AST_uob_advisors_idea"}
 			
