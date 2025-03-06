@@ -36116,6 +36116,7 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
 			add_popularity = { ideology = syndicalist popularity = 0.03 }
+
 		}
 	}
 	focus = {
@@ -36250,7 +36251,12 @@ focus = {
 		prerequisite = {
 			focus = FRA_deciding_leadership
 		}
-	
+		mutually_exclusive = {
+			focus = FRA_faure_faction
+		}
+		mutually_exclusive = {
+			focus = FRA_pericat_faction
+		}
 		cost = 4
 		ai_will_do = {
 			factor = 1
@@ -36504,6 +36510,12 @@ focus = {
 		prerequisite = {
 			focus = FRA_deciding_leadership
 		}
+		mutually_exclusive = {
+			focus = FRA_worker_power
+		}
+		mutually_exclusive = {
+			focus = FRA_faure_faction
+		}
 		cost = 4
 		ai_will_do = {
 			factor = 1
@@ -36532,6 +36544,7 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
 			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			
 		}
 	}
 	focus = {
@@ -36593,7 +36606,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_local_management
-		icon = GFX_goal_FRA_faure_faction
+		icon = GFX_NEE_coop_management
 		x = 1
 		y = 4
 		relative_position_id = FRA_pericat_faction
@@ -36612,7 +36625,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_revitalise_international
-		icon = GFX_goal_BBR_internationale_struggle
+		icon = GFX_BBR_internationale_struggle
 		x = -2
 		y = 5
 		relative_position_id = FRA_pericat_faction
@@ -36634,7 +36647,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_bonds_of_friendship
-		icon = GFX_UKR_friendship_nations
+		icon = GFX_goal_NIC_Victory_Social_Democracy
 		x = -1
 		y = 6
 		relative_position_id = FRA_pericat_faction
@@ -36722,7 +36735,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_relationship_with_jacobins
-		icon = GFX_goal_FRA_faure_faction
+		icon = GFX_goal_FRA_jacobin_cgt
 		x = -1
 		y = 3
 		relative_position_id = FRA_pericat_faction
@@ -36766,6 +36779,12 @@ focus = {
 		relative_position_id = FRA_anarchist_cgt
 		prerequisite = {
 			focus = FRA_deciding_leadership
+		}
+		mutually_exclusive = {
+			focus = FRA_worker_power
+		}
+		mutually_exclusive = {
+			focus = FRA_pericat_faction
 		}
 		cost = 4
 		ai_will_do = {

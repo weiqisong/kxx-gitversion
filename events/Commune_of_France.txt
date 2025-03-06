@@ -1920,23 +1920,20 @@ country_event = {
 			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
 		}
 			create_country_leader = {
-				name = "达尼埃尔·介朗"
-				desc = "POLITICS_DANIEL_GUERIN_DESC"
-				picture = "gfx/leaders/FRA/Portrait_France_Daniel_Guerin.png"
+				name = "雷蒙德·佩里卡特"
+				picture = "gfx/leaders/FRA/Portrait_FRA_Raymond_Pericat.png"
 				expire = "1.1.1"
 				ideology = anarcho_communism_subtype
 			}
 			create_country_leader = {
-				name = "达尼埃尔·介朗"
-				desc = "POLITICS_DANIEL_GUERIN_DESC"
-				picture = "gfx/leaders/FRA/Portrait_France_Daniel_Guerin.png"
+				name = "雷蒙德·佩里卡特"
+				picture = "gfx/leaders/FRA/Portrait_FRA_Raymond_Pericat.png"
 				expire = "1.1.1"
 				ideology = anarcho_syndicalist_subtype
 			}
 			create_country_leader = {
-				name = "达尼埃尔·介朗"
-				desc = "POLITICS_DANIEL_GUERIN_DESC"
-				picture = "gfx/leaders/FRA/Portrait_France_Daniel_Guerin.png"
+				name = "雷蒙德·佩里卡特"
+				picture = "gfx/leaders/FRA/Portrait_FRA_Raymond_Pericat.png"
 				expire = "1.1.1"
 				ideology = totalist_subtype
 			}
@@ -1975,23 +1972,20 @@ country_event = {
 			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
 		}
 		create_country_leader = {
-			name = "塞巴斯蒂安·富尔"
-			desc = "POLITICS_SEBASTIEN_FAURE_DESC"
-			picture = "gfx/leaders/FRA/Portrait_France_Sebastien_Faure.png"
+			name = "乔治·叶维托"
+			picture = "gfx/leaders/FRA/Portrait_FRA_Georges_Yvetot.png"
 			expire = "1.1.1"
 			ideology = anarchism_subtype
 		}
 		create_country_leader = {
-			name = "塞巴斯蒂安·富尔"
-			desc = "POLITICS_SEBASTIEN_FAURE_DESC"
-			picture = "gfx/leaders/FRA/Portrait_France_Sebastien_Faure.png"
+			name = "乔治·叶维托"
+			picture = "gfx/leaders/FRA/Portrait_FRA_Georges_Yvetot.png"
 			expire = "1.1.1"
 			ideology = anarcho_syndicalist_subtype
 		}
 		create_country_leader = {
-			name = "塞巴斯蒂安·富尔"
-			desc = "POLITICS_SEBASTIEN_FAURE_DESC"
-			picture = "gfx/leaders/FRA/Portrait_France_Sebastien_Faure.png"
+			name = "乔治·叶维托"
+			picture = "gfx/leaders/FRA/Portrait_FRA_Georges_Yvetot.png"
 			expire = "1.1.1"
 			ideology = totalist_subtype
 		}
@@ -2016,7 +2010,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = comfrance.17.c #Picqueray
+		name = comfrance.17.c #besnard
 		meta_effect = {
 			text = {
 				set_politics = {
@@ -2029,20 +2023,20 @@ country_event = {
 			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
 		}
 		create_country_leader = {
-				name = "迈·皮克雷"
-				picture = "gfx/leaders/FRA/Portrait_France_May_Picqueray.png"
+				name = "皮埃尔·贝斯纳德"
+				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Besnard.png"
 				expire = "1.1.1"
-				ideology = radsoc_socialist_feminism_subtype
+				ideology = radsoc_anarcho_syndicalist_subtype
 			}
 			create_country_leader = {
-				name = "迈·皮克雷"
-				picture = "gfx/leaders/FRA/Portrait_France_May_Picqueray.png"
+				name = "皮埃尔·贝斯纳德"
+				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Besnard.png"
 				expire = "1.1.1"
-				ideology = feminist_syndicalist_subtype
+				ideology = anarcho_syndicalist_subtype
 			}
 			create_country_leader = {
-				name = "迈·皮克雷"
-				picture = "gfx/leaders/FRA/Portrait_France_May_Picqueray.png"
+				name = "皮埃尔·贝斯纳德"
+				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Besnard.png"
 				expire = "1.1.1"
 				ideology = totalist_subtype
 			}
