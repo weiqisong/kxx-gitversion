@@ -9,8 +9,11 @@ ideas = {
 			allowed = { always = no }
 			picture = generic_syndicalist_revolution
 			modifier = {
-				political_power_cost = 0.15
-				stability_factor = -0.1
+				consumer_goods_factor = 0.05
+				offensive_war_stability_factor = -0.2
+				max_command_power = -10
+				local_resources_factor = 0.03
+				industry_free_repair_factor	= 0.03
 			}
 		}
 		###起始精神###
