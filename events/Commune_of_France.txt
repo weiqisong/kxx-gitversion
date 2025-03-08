@@ -1507,6 +1507,7 @@ country_event = {
 		}
 		add_ideas = FRA_Benoit_Frachon_eco_syn
 		set_country_flag = FRA_SYNDIE_JOUHAUX
+		add_socdem_to_coalition = yes
 		meta_effect = {
 			text = {
 				set_politics = {
@@ -1609,6 +1610,7 @@ country_event = {
       CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
     }
 	set_country_flag = FRA_SYNDIE_ZYROMSKI
+	add_tot_to_coalition = yes
     custom_effect_tooltip = "每五年举行一次公社大选！"  # New Communal Elections will take place every 5 years!
   }
 }
@@ -1948,7 +1950,7 @@ country_event = {
 		add_tot_to_coalition = yes
 		set_global_flag = anarchiste_majority_1936
 		custom_effect_tooltip = "New Communal Elections will take place every 5 years!"
-
+		set_country_flag = ANAR_PERICAT
 		hidden_effect = {
 			random_other_country = {
 				news_event = {
@@ -1999,7 +2001,7 @@ country_event = {
 		}
 		set_global_flag = anarchiste_majority_1936
 		custom_effect_tooltip = "New Communal Elections will take place every 5 years!"
-
+		set_country_flag = ANAR_YVETOT
 		hidden_effect = {
 			random_other_country = {
 				news_event = {
@@ -2051,7 +2053,7 @@ country_event = {
 		add_synd_to_coalition = yes
 		set_global_flag = anarchiste_majority_1936
 		custom_effect_tooltip = "New Communal Elections will take place every 5 years!"
-
+		set_country_flag = ANAR_BESNARD
 		hidden_effect = {
 			random_other_country = {
 				news_event = {

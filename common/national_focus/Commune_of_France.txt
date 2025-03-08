@@ -36040,7 +36040,7 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
 
 		}
 	}
@@ -36200,6 +36200,9 @@ focus = {
 		}
 		mutually_exclusive = {
 			focus = FRA_pericat_faction
+		}
+		available = {
+			has_country_flag = ANAR_BESNARD
 		}
 		cost = 4
 		ai_will_do = {
@@ -36518,6 +36521,9 @@ focus = {
 		mutually_exclusive = {
 			focus = FRA_faure_faction
 		}
+		available = {
+			has_country_flag = ANAR_PERICAT
+		}
 		cost = 4
 		ai_will_do = {
 			factor = 1
@@ -36666,7 +36672,7 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
 			add_war_support = 0.04
 			add_political_power = 60
 			add_stability = 0.04
@@ -36845,6 +36851,9 @@ focus = {
 		}
 		mutually_exclusive = {
 			focus = FRA_pericat_faction
+		}
+		available = {
+			has_country_flag = ANAR_YVETOTANAR_PERICAT
 		}
 		cost = 4
 		ai_will_do = {
