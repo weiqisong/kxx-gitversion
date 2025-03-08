@@ -4,17 +4,315 @@
 ideas = {
 
 	country = {
+		FRA_bonds_of_friendship = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = BBR_socialist_civic_identity
+			modifier = {
+				send_volunteer_divisions_required = -0.1
+				opinion_gain_monthly_factor = 0.25
+				min_export = 0.1
+				trade_opinion_factor = 0.25
+				compliance_starting_value = 0.1
+				compliance_growth = 0.25
+			
+			}
+		}
+		FRA_automous_web_committe = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = BBR_top_down_autonomy
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				required_garrison_factor = -0.1
+				attrition = -0.1
+
+			}
+		}
+		FRA_embrace_ancom = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = anarcho_marxist_economy
+			modifier = {
+				production_speed_buildings_factor = 0.03
+				production_speed_arms_factory_factor = 0.03
+				production_speed_industrial_complex_factor = 0.03
+				research_speed_factor = 0.05
+				political_power_gain = 0.15
+			}
+		}
+		FRA_legacy_of_upa = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = UKR_peasant_idea
+			modifier = {
+				org_loss_at_low_org_factor = -0.1
+				army_attack_speed_factor = 0.1
+				mobilization_speed = 0.25
+				army_speed_factor = 0.1
+				experience_loss_factor = -0.1
+			}
+		}
+		FRA_platform_anarchism4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = SOV_communes
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				org_loss_when_moving = -0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				recon_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = -0.03
+				production_speed_arms_factory_factor = -0.03
+				production_speed_industrial_complex_factor = -0.03
+				war_support_weekly = 0.02
+				breakthrough_factor = 0.05
+				conscription = 0.015
+
+			}
+		}
+		FRA_platform_anarchism3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = SOV_communes
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				org_loss_when_moving = -0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				recon_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+				production_speed_industrial_complex_factor = -0.1
+
+			}
+		}
+		FRA_platform_anarchism2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = SOV_communes
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				org_loss_when_moving = -0.1
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_start_efficiency_factor = -0.05
+				recon_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+
+			}
+		}
+		FRA_platform_anarchism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = SOV_communes
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				org_loss_when_moving = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_start_efficiency_factor = -0.1
+				recon_factor = 0.05
+			}
+		}
+		FRA_pursue_autarky = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = generic_autarky
+			modifier = {
+				min_export = -0.1
+				conscription_factor = 0.2
+				production_speed_bunker_factor = 0.2
+				production_speed_infrastructure_factor = 0.2
+
+			}
+		}
+		FRA_economic_rationalization = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = generic_autarky
+			modifier = {
+				min_export = -0.1
+				conscription_factor = 0.2
+				production_speed_bunker_factor = 0.2
+				production_speed_infrastructure_factor = 0.2
+				supply_consumption_factor = -0.1
+				production_factory_max_efficiency_factor = 0.04
+				production_factory_efficiency_gain_factor = 0.04
+			}	
+		}
+		FRA_scientist_unions = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = new_sciences
+			modifier = {
+				research_speed_factor = 0.1
+				supply_node_range = 0.1
+				military_industrial_organization_research_bonus = 0.1
+				military_industrial_organization_funds_gain = 0.1
+				army_fuel_consumption_factor = -0.1
+			}
+		}
+		FRA_single_and_equal_pay = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = WHR_goods_vouchers_community
+			modifier = {
+				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
+				production_factory_max_efficiency_factor = -0.02
+				production_factory_efficiency_gain_factor = -0.03
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.1
+			}
+		}
+		FRA_push_decentralize = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = decentralized_planning
+			modifier = {
+				line_change_production_efficiency_factor = -0.02
+				industrial_capacity_factory = -0.03
+				production_speed_arms_factory_factor = 0.08
+				production_speed_industrial_complex_factor = 0.08
+				global_building_slots_factor = 0.1
+
+			}
+		}
+		FRA_push_decentralize2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = decentralized_planning
+			modifier = {
+				line_change_production_efficiency_factor = 0.02
+				industrial_capacity_factory = 0.03
+				production_speed_arms_factory_factor = 0.08
+				production_speed_industrial_complex_factor = 0.08
+				global_building_slots_factor = 0.1
+				local_resources_factor = 0.05
+			}
+		}
 		FRA_pure_syndicalism = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
 			allowed = { always = no }
 			picture = generic_syndicalist_revolution
 			modifier = {
 				consumer_goods_factor = 0.05
-				offensive_war_stability_factor = -0.2
-				max_command_power = -10
+				consumer_goods_expected_value = 0.05
+				production_factory_max_efficiency_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.03
 				local_resources_factor = 0.03
-				industry_free_repair_factor	= 0.03
 			}
+		}
+		
+		FRA_pure_syndicalism2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = generic_syndicalist_revolution
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.03
+				local_resources_factor = 0.03
+				fuel_gain_factor = 0.25
+				global_building_slots = 1
+				industry_repair_factor = 0.1
+				monthly_population = 0.2
+
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					soft_attack = 0.05
+					hard_attack = 0.05
+
+					instant = yes
+				}
+			}
+		
+		}
+		FRA_pure_syndicalism3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = generic_syndicalist_revolution
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.03
+				local_resources_factor = 0.03
+				fuel_gain_factor = 0.25
+				global_building_slots = 1
+				industry_repair_factor = 0.1
+				monthly_population = 0.2
+				production_factory_start_efficiency_factor = 0.03
+				production_factory_max_efficiency_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.03
+				production_speed_buildings_factor = 0.05
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					soft_attack = 0.05
+					hard_attack = 0.05
+					defense = 0.05
+					breakthrough = 0.05
+					hardness = 0.05
+
+					instant = yes
+				}
+			}
+		
+		}
+		FRA_pure_syndicalism4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = generic_syndicalist_revolution
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.03
+				local_resources_factor = 0.03
+				fuel_gain_factor = 0.25
+				global_building_slots = 1
+				industry_repair_factor = 0.1
+				monthly_population = 0.2
+				production_factory_start_efficiency_factor = 0.03
+				production_factory_max_efficiency_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.03
+				production_speed_buildings_factor = 0.05
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					soft_attack = 0.1
+					hard_attack = 0.1
+					defense = 0.1
+					breakthrough = 0.1
+					hardness = 0.1
+					instant = yes
+				}
+			}
+		
 		}
 		###起始精神###
 		FRA_rural_religious_question = {

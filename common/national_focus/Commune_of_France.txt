@@ -19427,18 +19427,7 @@ focus = FRA_office_des_chemins_de_fer
 		x = -2
 		y = 1
 		relative_position_id = FRA_state_anarchy
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					name = "涅斯托尔·马赫诺"					# Nestor Makhno
-				}
-				has_country_leader = {
-					ruling_only = yes
-					name = "黑卫军"					# Black Guard
-				}
-			}
-		}
+		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_true_equality"
 			country_event = comfrance.959
@@ -19456,18 +19445,7 @@ focus = FRA_office_des_chemins_de_fer
 		x = 0
 		y = 1
 		relative_position_id = FRA_state_anarchy
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					name = "涅斯托尔·马赫诺"					# Nestor Makhno
-				}
-				has_country_leader = {
-					ruling_only = yes
-					name = "黑卫军"					# Black Guard
-				}
-			}
-		}
+		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_communes"
 			country_event = comfrance.957
@@ -19484,18 +19462,7 @@ focus = FRA_office_des_chemins_de_fer
 		x = 2
 		y = 1
 		relative_position_id = FRA_state_anarchy
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					name = "涅斯托尔·马赫诺"					# Nestor Makhno
-				}
-				has_country_leader = {
-					ruling_only = yes
-					name = "黑卫军"					# Black Guard
-				}
-			}
-		}
+		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_power"
 			country_event = comfrance.961
@@ -19526,18 +19493,7 @@ focus = FRA_office_des_chemins_de_fer
 		x = -1
 		y = 2
 		relative_position_id = FRA_state_anarchy
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					name = "涅斯托尔·马赫诺"					# Nestor Makhno
-				}
-				has_country_leader = {
-					ruling_only = yes
-					name = "黑卫军"					# Black Guard
-				}
-			}
-		}
+		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_abolish"
 			country_event = comfrance.960
@@ -19595,18 +19551,7 @@ focus = FRA_office_des_chemins_de_fer
 		x = 1
 		y = 2
 		relative_position_id = FRA_state_anarchy
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					name = "涅斯托尔·马赫诺"					# Nestor Makhno
-				}
-				has_country_leader = {
-					ruling_only = yes
-					name = "黑卫军"					# Black Guard
-				}
-			}
-		}
+		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_smash_shackles"
 			custom_effect_tooltip = FRA_destroy_tooltip
@@ -19638,18 +19583,7 @@ focus = FRA_office_des_chemins_de_fer
 		x = 0
 		y = 3
 		relative_position_id = FRA_state_anarchy
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					name = "涅斯托尔·马赫诺"					# Nestor Makhno
-				}
-				has_country_leader = {
-					ruling_only = yes
-					name = "黑卫军"					# Black Guard
-				}
-			}
-		}
+		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_death"
 			add_ideas = FRA_tachanka
@@ -19676,18 +19610,7 @@ focus = FRA_office_des_chemins_de_fer
 		x = 0
 		y = 4
 		relative_position_id = FRA_state_anarchy
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					name = "涅斯托尔·马赫诺"					# Nestor Makhno
-				}
-				has_country_leader = {
-					ruling_only = yes
-					name = "黑卫军"					# Black Guard
-				}
-			}
-		}
+		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_slaves"
 			country_event = comfrance.962
@@ -36107,7 +36030,9 @@ focus = {
 		icon = GFX_goal_anarcho_communism
 		x = 37
 		y = 10
-		
+		available = {
+			has_global_flag = anarchiste_majority_1936
+		}
 		cost = 4
 		ai_will_do = {
 			factor = 1
@@ -36612,7 +36537,7 @@ focus = {
 		y = 1
 		relative_position_id = FRA_pericat_faction
 		prerequisite = {
-			focus = FRA_deciding_leadership
+			focus = FRA_pericat_faction
 		}
 		cost = 4
 		ai_will_do = {
@@ -36799,7 +36724,7 @@ focus = {
 			}
 			hidden_effect = {
 				country_event = {
-					id = kxxfrance.73
+					id = kxxfrance.75
 					days = 7
 				}
 			}

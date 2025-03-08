@@ -5241,7 +5241,6 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
 	title = kxxfrance.71.t
 	desc = kxxfrance.71.d
-	is_triggered_only = yes
 	trigger = {
 		tag = FRA
 		FRA = {		
@@ -5274,7 +5273,178 @@ option = {
 	}
 }	
 }
+country_event = {	
+	id = kxxfrance.72 #idea of franco-spainish union
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
+	title = kxxfrance.72.t
+	desc = kxxfrance.72.d
+	is_triggered_only = yes
 
+option = { 
+	name = kxxfrance.72.a
+	
+}	
+option = { 
+	name = kxxfrance.72.b
+	CNT = {
+		country_event = {
+			id = kxxfrance.73
+			days = 7
+		}
+	}
+	custom_effect_tooltip = "假如社会主义西班牙赢得了内战且由无政府主义者或工团主义者执政，他们就会与我们合并。"
+}	
+}
+country_event = {	
+	id = kxxfrance.73 #french proposal
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
+	title = kxxfrance.73.t
+	desc = kxxfrance.73.d
+	is_triggered_only = yes
+
+option = { 
+	name = kxxfrance.73.a
+	ai_chance = {
+		factor = 100
+	}
+	set_global_flag = FRA_CNT_UNION
+}	
+option = { 
+	name = kxxfrance.73.b
+	
+}	
+}
+country_event = {	
+	id = kxxfrance.74 #union forms
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
+	title = kxxfrance.74.t
+	desc = kxxfrance.74.d
+	trigger = {
+		tag = FRA
+		has_global_flag = FRA_CNT_UNION
+		CNT = {	
+			OR = {
+				has_completed_focus = NCNT_1
+				has_completed_focus = NCNT_17
+			}	
+			controls_state = 41
+		}
+	}
+
+option = { 
+	name = kxxfrance.74.a
+	FRA = {
+		annex_country = { target = CNT transfer_troops = yes }
+	}
+	every_state = {
+		limit = { is_core_of = CNT }
+		add_core_of = FRA
+	}
+	CNT = {
+		every_unit_leader = {	
+			set_nationality = FRA
+		}	
+	}
+	set_cosmetic_tag = FRA_CNT_fed
+}	
+option = { #more,why not?
+	name = kxxfrance.74.a
+	FRA = {
+		annex_country = { target = CNT transfer_troops = yes }
+	}
+	every_state = {
+		limit = { is_core_of = CNT }
+		add_core_of = FRA
+	}
+	every_state = {
+		limit = { is_core_of = POR }
+		add_core_of = FRA
+	}
+	CNT = {
+		every_unit_leader = {	
+			set_nationality = FRA
+		}	
+	}
+	set_cosmetic_tag = FRA_CNT_fed_larp
+}	
+}
+country_event = {	
+	id = kxxfrance.75 #anarchist revolution
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
+	title = kxxfrance.75.t
+	desc = kxxfrance.75.d
+	is_triggered_only = yes
+
+option = { 
+	name = kxxfrance.75.a
+
+}	
+option = { 
+	name = kxxfrance.75.b
+	hidden_effect = {
+		country_event = {
+			id = kxxfrance.76
+			days = 1
+		}
+	}
+}	
+}
+country_event = {	
+	id = kxxfrance.76 #anarchist revolution
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
+	title = kxxfrance.76.t
+	desc = kxxfrance.76.d
+	is_triggered_only = yes
+
+option = { 
+	name = kxxfrance.76.a
+	add_stability = -0.50
+		
+	set_politics = {
+		ruling_party = radical_socialist
+		elections_allowed = no
+	}
+
+	add_popularity = {
+		ideology = radical_socialist
+		popularity = 0.3
+	}
+
+	add_popularity = {
+		ideology = totalist
+		popularity = -0.3
+	}
+
+	create_country_leader = {
+		name = "雷蒙德·佩里卡特"
+		picture = "gfx/leaders/FRA/Portrait_FRA_Raymond_Pericat.png"
+		expire = "1.1.1"
+		ideology = anarcho_communism_subtype
+		
+	}
+	complete_national_focus = FRA_state_anarchy
+	set_cosmetic_tag = FRA_Makhno
+	set_party_name = {
+		ideology = radical_socialist
+		long_name = "黑卫军"
+		name = "黑卫军"
+	}
+	set_country_flag = Marcel_Deat_dead
+	set_country_flag = Marcel_Bucard_dead
+	set_country_flag = Pierre_Laval_dead
+	set_country_flag = Jacques_Doriot_dead
+	set_country_flag = Jacques_Arthuys_dead
+	set_country_flag = Rene_V_Binet_dead
+	set_country_flag = Rene_Belin_dead
+	set_country_flag = Pierre_Drieu_La_Rochelle_dead
+	set_country_flag = Paul_Marion_dead
+	set_country_flag = Marc_Augier_dead
+	set_country_flag = Hubert_Lagradelle_dead
+	set_country_flag = Gabriel_Jeantet_dead
+	set_country_flag = Pierre_Clementi_dead
+}	
+
+}
 news_event = {
 	id = kxx.news.1
 	title = kxx.news.1.t
