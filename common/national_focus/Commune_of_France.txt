@@ -36135,7 +36135,14 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_political_power = 35
+			add_stability = 0.02
+			add_manpower = 3000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = FRA
+			}
 		}
 	}
 	focus = {
@@ -36154,7 +36161,10 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_political_power = 60
 		}
 	}
 	focus = {
@@ -36173,7 +36183,10 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_stability = 0.06
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
 		}
 	}
 	focus = {
@@ -36195,7 +36208,8 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_ideas = FRA_push_decentralize
 		}
 	}
 	focus = {
@@ -36217,7 +36231,10 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_political_power = 80
+			add_stability = 0.04
+			add_manpower = 4000
 		}
 	}
 	focus = {
@@ -36239,7 +36256,9 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_political_power = 30
+			add_popularity = { ideology = radical_socialist popularity = 0.08 }
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -36264,7 +36283,8 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_political_power = 20
 		}
 	}
 	focus = {
@@ -36286,7 +36306,10 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_popularity = { ideology = syndicalist popularity = -0.03 }
+			add_political_power = 60
+			add_ideas = FRA_pure_syndicalism
 		}
 	}
 	focus = {
@@ -36306,7 +36329,14 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_political_power = 60
+			add_one_random_civilian_factory = yes
+			add_one_random_military_factory = yes
+			swap_ideas = {
+				remove_idea = FRA_push_decentralize
+				add_idea = FRA_push_decentralize2
+			}
 		}
 	}
 	focus = {
@@ -36326,7 +36356,20 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			swap_ideas = {
+				remove_idea = FRA_pure_syndicalism
+				add_idea = FRA_pure_syndicalism2
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = FRA
+					is_controlled_by = FRA
+					industrial_complex > 0
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			add_war_support = 0.05
 		}
 	}
 	focus = {
@@ -36348,7 +36391,14 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = syndicalist popularity = -0.03 }
+			add_popularity = { ideology = social_democrat popularity = -0.03 }
+			add_war_support = 0.04
+			add_stability = 0.03
+			swap_ideas = {
+				remove_idea = FRA_pure_syndicalism2
+				add_idea = FRA_pure_syndicalism3
+			}
 		}
 	}
 	focus = {
@@ -36370,7 +36420,10 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_political_power = 50
+			add_one_random_civilian_factory = yes
+			add_ideas = FRA_single_and_equal_pay
 		}
 	}
 	focus = {
@@ -36392,7 +36445,11 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_war_support = 0.03
+			add_ideas = FRA_pursue_autarky
 		}
 	}
 	focus = {
@@ -36414,7 +36471,11 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.05 }
+			add_popularity = { ideology = totalist popularity = -0.05 }
+			add_political_power = 20
+			add_stability = 0.03
+			add_war_support = 0.05
 		}
 	}
 	focus = {
@@ -36436,7 +36497,9 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_ideas = FRA_scientist_unions
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -36457,6 +36520,8 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
 			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			country_event = kxxfrance.72
 		}
 	}
 	focus = {
@@ -36476,7 +36541,13 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_political_power = 35
+			add_stability = 0.05
+			swap_ideas = {
+				remove_idea = FRA_pure_syndicalism3
+				add_idea = FRA_pure_syndicalism4
+			}
 		}
 	}
 	focus = {
@@ -36498,7 +36569,13 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			swap_ideas = {
+				remove_idea = FRA_pursue_autarky
+				add_idea = FRA_economic_rationalization
+			}
 		}
 	}
 	focus = {
@@ -36523,7 +36600,8 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_political_power = 20
 		}
 	}
 	
@@ -36543,8 +36621,10 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
-			
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_political_power = 20
+			add_war_support = 0.06
+			add_ideas = FRA_embrace_ancom
 		}
 	}
 	focus = {
@@ -36563,7 +36643,10 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_political_power = 30
+			add_stability = 0.03
+			add_ideas = FRA_automous_web_committe
 		}
 	}
 	focus = {
@@ -36582,7 +36665,14 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_manpower = 5000
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 500
+				producer = FRA
+			}
+			add_ideas = FRA_legacy_of_upa
 		}
 	}
 	focus = {
@@ -36601,7 +36691,10 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_ideas = FRA_platform_anarchism
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
 		}
 	}
 	focus = {
@@ -36620,7 +36713,13 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_stability = 0.03
+			add_war_support = 0.05
+			swap_ideas = {
+				remove_idea = FRA_platform_anarchism
+				add_idea = FRA_platform_anarchism2
+			}
 		}
 	}
 	focus = {
@@ -36643,6 +36742,9 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
 			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_war_support = 0.04
+			add_political_power = 60
+			add_stability = 0.04
 		}
 	}
 	focus = {
@@ -36664,7 +36766,10 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_war_support = 0.06
+			add_manpower = 3000
+			add_ideas = FRA_bonds_of_friendship
 		}
 	}
 	focus = {
@@ -36686,7 +36791,18 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_political_power = 60
+			swap_ideas = {
+				remove_idea = FRA_platform_anarchism3
+				add_idea = FRA_platform_anarchism4
+			}
+			hidden_effect = {
+				country_event = {
+					id = kxxfrance.73
+					days = 7
+				}
+			}
 		}
 	}
 	focus = {
@@ -36708,7 +36824,12 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_stability = -0.1
+			add_one_random_civilian_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_military_factory = yes
 		}
 	}
 	focus = {
@@ -36730,7 +36851,13 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			swap_ideas = {
+				remove_idea = FRA_platform_anarchism2
+				add_idea = FRA_platform_anarchism3
+			}
 		}
 	}
 	focus = {
@@ -36750,6 +36877,10 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
 			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = totalist popularity = 0.03 }
+			add_command_power = 50
+			add_political_power = 30
+			add_stability = 0.03
 		}
 	}
 	focus = {
@@ -36768,7 +36899,11 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_popularity = { ideology = social_democrat popularity = -0.1 }
+			add_one_random_civilian_factory = yes
+			add_one_random_military_factory = yes
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -36793,7 +36928,8 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_faure_faction"
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_political_power = 20
 		}
 	}
 	
@@ -36813,7 +36949,7 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_communal_dominance"
 			add_political_power = 10
-			add_popularity = { ideology = syndicalist popularity = 0.05 }
+			add_popularity = { ideology = radical_socialist popularity = 0.05 }
 			add_stability = 0.03
 			add_war_support = 0.05
 			random_owned_state = {
@@ -36843,7 +36979,7 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_synthesis_anarchism"
-			add_popularity = { ideology = syndicalist popularity = 0.04 }
+			add_popularity = { ideology = radical_socialist popularity = 0.04 }
 			add_political_power = 30
 			add_stability = 0.04
 			add_war_support = 0.02
@@ -36905,7 +37041,7 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_libertine_society"
-			add_popularity = { ideology = syndicalist popularity = 0.05 }
+			add_popularity = { ideology = radical_socialist popularity = 0.05 }
 			add_political_power = 15
 			add_war_support = 0.05
 			add_popularity = { ideology = totalist popularity = -0.02 }
@@ -36932,7 +37068,7 @@ focus = {
 			remove_idea = FRA_radical_support_1_idea
 			add_idea = FRA_radical_support_2_idea
 			}
-			add_popularity = { ideology = syndicalist popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
 			add_political_power = 40
 			add_war_support = 0.08
 			add_manpower = 3000
@@ -37018,7 +37154,7 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_from_each_to_each"
 			add_stability = 0.03
-			add_popularity = { ideology = syndicalist popularity = 0.08 }
+			add_popularity = { ideology = radical_socialist popularity = 0.08 }
 			random_owned_state = {
 				limit = {
 					is_core_of = FRA
@@ -37051,7 +37187,7 @@ focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_commune_liberty"
 			add_war_support = 0.05
 			add_political_power = 50
-			add_popularity = { ideology = syndicalist popularity = 0.05 }
+			add_popularity = { ideology = radical_socialist popularity = 0.05 }
 			swap_ideas = {
 			remove_idea = FRA_radical_support_2_idea
 			add_idea = FRA_radical_support_3_idea
@@ -37076,7 +37212,7 @@ focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_bastions_of_anarchism"
 			add_war_support = 0.03
 			add_political_power = 20
-			add_popularity = { ideology = syndicalist popularity = 0.02 }
+			add_popularity = { ideology = radical_socialist popularity = 0.02 }
 			add_tech_bonus = {
 				name = doctrine_bonus
 				bonus = 0.75
@@ -37105,7 +37241,7 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_peoples_columns"
-			add_popularity = { ideology = syndicalist popularity = 0.02 }
+			add_popularity = { ideology = radical_socialist popularity = 0.02 }
 			add_war_support = 0.05
 			add_manpower = 5600
 			add_equipment_to_stockpile = {

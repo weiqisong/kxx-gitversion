@@ -4,6 +4,15 @@
 ideas = {
 
 	country = {
+		FRA_pure_syndicalism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = generic_syndicalist_revolution
+			modifier = {
+				political_power_cost = 0.15
+				stability_factor = -0.1
+			}
+		}
 		###起始精神###
 		FRA_rural_religious_question = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
@@ -112,7 +121,7 @@ ideas = {
 				local_resources_factor = 0.03
 				industry_free_repair_factor	= 0.03
 			}
-			picture = generic_syndicalist_medal
+			picture = worker_coops
 		}
 		FRA_communal_economy_2_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_communal_economy_2_idea"}
@@ -126,7 +135,7 @@ ideas = {
 				production_lack_of_resource_penalty_factor = -0.05
 				production_factory_max_efficiency_factor = 0.05
 			}
-			picture = generic_syndicalist_medal
+			picture = worker_coops
 		}
 		FRA_communal_economy_3_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_communal_economy_3_idea"}
@@ -138,7 +147,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 				conscription_factor	= 0.02
 			}
-			picture = generic_syndicalist_medal
+			picture = worker_coops
 		}
 		FRA_communal_economy_4_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_communal_economy_4_idea"}
@@ -155,7 +164,7 @@ ideas = {
 				min_export = 0.1
 				stability_weekly = 0.01
 			}
-			picture = generic_syndicalist_medal
+			picture = worker_coops
 		}
 		FRA_radical_support_1_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_radical_support_1_idea"}
@@ -170,7 +179,7 @@ ideas = {
 				encryption_factor = 0.03
 				army_org_factor = -0.1
 			}
-			picture = generic_syndicalist_medal
+			picture = BBR_total_radicalism
 		}
 		FRA_radical_support_2_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_radical_support_2_idea"}
@@ -185,7 +194,7 @@ ideas = {
 				army_core_defence_factor = 0.05
 				army_org_factor = -0.05
 			}
-			picture = generic_syndicalist_medal
+			picture = BBR_total_radicalism
 		}
 		FRA_radical_support_3_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_radical_support_3_idea"}
@@ -200,7 +209,7 @@ ideas = {
 				army_core_defence_factor = 0.05
 				army_org_factor = -0.02
 			}
-			picture = generic_syndicalist_medal
+			picture = BBR_total_radicalism
 		}
 		FRA_peoples_columns_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_peoples_columns_idea"}
@@ -217,7 +226,7 @@ ideas = {
 				minimum_training_level = -3
 				planning_speed = -0.1
 			}
-			picture = generic_syndicalist_medal
+			picture = UoB_militia_idea
 		}
 		
 		###第一次选举-工会派###
@@ -359,6 +368,18 @@ ideas = {
 				max_fuel_building = 0.03
 			}
 			picture = radical_education
+		}
+		FRA_liberatory_learning_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_union_education"}
+			modifier = {
+				research_speed_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = -0.1
+				line_change_production_efficiency_factor = 0.05
+				resistance_target = -0.1
+			}
+			picture = educate_rural_whites
 		}
 		###第一次选举-无政府###
 		FRA_coop_economy_1_idea = {
