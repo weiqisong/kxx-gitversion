@@ -1069,7 +1069,7 @@ ideas = {
 				opinion_gain_monthly_same_ideology = 0.1
 				guarantee_cost = -5
 			}
-			picture = generic_syndicalist_medal
+			picture = GRU_RED_NEWS
 		}
 		FRA_humanite_idea_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_humanite_idea_2"}
@@ -1080,7 +1080,7 @@ ideas = {
 				opinion_gain_monthly_same_ideology = 0.2
 				guarantee_cost = -15
 			}
-			picture = generic_syndicalist_medal
+			picture = GRU_RED_NEWS
 		}
 		FRA_jacobin_dominance_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_dominance_idea"}
@@ -1093,7 +1093,7 @@ ideas = {
 				mobilization_speed = 0.05
 				puppet_cost_factor = -0.1
 			}
-			picture = generic_syndicalist_medal
+			picture = left_krestostrel
 		}
 		FRA_jacobin_red_dominance_1_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_red_dominance_1_idea"}
@@ -1107,7 +1107,7 @@ ideas = {
 				puppet_cost_factor = -0.3
 				recruitable_population = 0.02
 			}
-			picture = generic_syndicalist_medal
+			picture = SOV_dictator
 		}
 		FRA_jacobin_red_dominance_2_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_red_dominance_2_idea"}
@@ -1121,7 +1121,7 @@ ideas = {
 				opinion_gain_monthly_same_ideology = 0.01
 				recruitable_population = 0.02
 			}
-			picture = generic_syndicalist_medal
+			picture = SOV_dictator
 		}
 		FRA_jacobin_red_dominance_3_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_red_dominance_3_idea"}
@@ -1136,7 +1136,7 @@ ideas = {
 				recruitable_population = 0.03
 				stability_weekly = 0.01
 			}
-			picture = generic_syndicalist_medal
+			picture = SOV_dictator
 		}
 		FRA_jacobin_red_dominance_4_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_red_dominance_4_idea"}
@@ -1152,7 +1152,7 @@ ideas = {
 				stability_weekly = 0.02
 				production_speed_buildings_factor = 0.1
 			}
-			picture = generic_syndicalist_medal
+			picture = SOV_dictator
 		}
 		FRA_jacobin_red_dominance_5_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_red_dominance_5_idea"}
@@ -1168,7 +1168,7 @@ ideas = {
 				stability_weekly = 0.04
 				production_speed_buildings_factor = 0.1
 			}
-			picture = generic_syndicalist_medal
+			picture = SOV_dictator
 		}
 		FRA_jacobin_red_dominance_6_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_red_dominance_5_idea"}
@@ -1184,7 +1184,7 @@ ideas = {
 				stability_weekly = 0.04
 				production_speed_buildings_factor = 0.15
 			}
-			picture = generic_syndicalist_medal
+			picture = SOV_dictator
 		}
 		FRA_communist_enlightenment_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_communist_enlightenment_idea"}
@@ -1193,7 +1193,7 @@ ideas = {
 				encryption_factor = 0.05
 				industry_repair_factor = 0.05
 			}
-			picture = generic_syndicalist_medal
+			picture = SOV_proletarian_religion_idea
 		}
 		FRA_red_centralization_1_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_red_centralization_1_idea"}
@@ -1204,7 +1204,7 @@ ideas = {
 				civilian_intel_factor = 0.1
 				boost_ideology_mission_factor = 0.1
 			}
-			picture = generic_syndicalist_medal
+			picture = SOV_cultural
 		}
 		FRA_state_agriculture_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_state_agriculture_idea"}
@@ -1214,7 +1214,7 @@ ideas = {
 				local_resources = 0.08
 				production_lack_of_resource_penalty_factor = -0.05
 			}
-			picture = generic_syndicalist_medal
+			picture = agricultural_collectivization
 		}
 		FRA_communal_front_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_communal_front_idea"}
@@ -1224,7 +1224,7 @@ ideas = {
 				local_resources = 0.08
 				production_lack_of_resource_penalty_factor = -0.05
 			}
-			picture = generic_syndicalist_medal
+			picture = agricultural_revolution
 		}
 		FRA_pure_marxism_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_pure_marxism_idea"}
@@ -1234,17 +1234,86 @@ ideas = {
 				stability_weekly = -0.01
 				party_popularity_stability_factor = 0.2
 			}
-			picture = generic_syndicalist_medal
+			picture = GER_praise_marx
 		}
 		FRA_pure_marxism_2_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_pure_marxism_2_idea"}
 			modifier = {
 				max_command_power = 20
 				political_power_gain = 0.05
-				stability_weekly = -0.01
+				stability_weekly = 0.01
 				party_popularity_stability_factor = 0.2
+				command_power_gain = 0.1
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+				war_support_weekly = 0.01
 			}
-			picture = generic_syndicalist_medal
+			picture = GER_praise_marx
+		}
+		FRA_socialist_new_man_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_pure_marxism_2_idea"}
+			modifier = {
+				weekly_manpower = 250
+				monthly_population = 0.3
+				experience_loss_factor = -0.1
+				army_leader_start_level = 1 
+				acclimatization_hot_climate_gain_factor = 0.2 
+				acclimatization_cold_climate_gain_factor = 0.2 
+
+			}
+			picture = NYC_new_man
+		}
+		FRA_national_jacobin_centralization_1_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_national_dominance_1_idea"}
+			modifier = {
+				political_power_cost = -0.1
+				compliance_growth = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				conscription_factor = 0.1
+			}
+			picture = centralist_gdc
+		}
+		FRA_national_jacobin_centralization_2_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_national_dominance_1_idea"}
+			modifier = {
+				political_power_cost = -0.1
+				compliance_growth = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				conscription_factor = 0.1
+				production_factory_max_efficiency_factor = 0.12
+				production_factory_efficiency_gain_factor = 0.12
+			}
+			picture = centralist_gdc
+		}
+		FRA_national_jacobin_centralization_3_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_national_dominance_1_idea"}
+			modifier = {
+				political_power_cost = -0.1
+				compliance_growth = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				conscription_factor = 0.1
+				production_factory_max_efficiency_factor = 0.12
+				production_factory_efficiency_gain_factor = 0.12
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+
+			}
+			picture = centralist_gdc
+		}
+		FRA_red_legionnaries_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_national_dominance_1_idea"}
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				supply_consumption_factor = -0.1
+				no_supply_grace = 24
+				org_loss_when_moving = -0.1
+
+			}
+			picture = BBR_militia_support
 		}
 		FRA_jacobin_national_dominance_1_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_national_dominance_1_idea"}
@@ -1258,7 +1327,7 @@ ideas = {
 				local_manpower = 0.03
 				puppet_cost_factor = -0.1
 			}
-			picture = generic_syndicalist_medal
+			picture = NFA_national_revolution
 		}
 		FRA_jacobin_national_dominance_2_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_national_dominance_2_idea"}
@@ -1273,7 +1342,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.05
 				puppet_cost_factor = -0.1
 			}
-			picture = generic_syndicalist_medal
+			picture = NFA_national_revolution
 		}
 		FRA_jacobin_national_dominance_3_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_national_dominance_3_idea"}
@@ -1289,7 +1358,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.05
 				puppet_cost_factor = -0.15
 			}
-			picture = generic_syndicalist_medal
+			picture = NFA_national_revolution
 		}
 		FRA_jacobin_national_dominance_4_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_national_dominance_4_idea"}
@@ -1305,7 +1374,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.08
 				puppet_cost_factor = -0.2
 			}
-			picture = generic_syndicalist_medal
+			picture = NFA_national_revolution
 		}
 		FRA_jacobin_national_dominance_5_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_national_dominance_4_idea"}
@@ -1321,7 +1390,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.08
 				puppet_cost_factor = -0.2
 			}
-			picture = generic_syndicalist_medal
+			picture = NFA_national_revolution
 		}
 		FRA_jacobin_national_dominance_6_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_jacobin_national_dominance_4_idea"}
@@ -1338,7 +1407,7 @@ ideas = {
 				puppet_cost_factor = -0.3
 				war_support_weekly = 0.01
 			}
-			picture = generic_syndicalist_medal
+			picture = NFA_national_revolution
 		}
 		FRA_forced_labor_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_forced_labor_idea"}
@@ -1353,7 +1422,7 @@ ideas = {
 				local_manpower = -0.01
 				resistance_damage_to_garrison = 0.1
 			}
-			picture = generic_syndicalist_medal
+			picture = forced_labor_economy
 		}
 		FRA_red_purge_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_forced_labor_idea"}
@@ -1364,7 +1433,7 @@ ideas = {
 			political_power_cost = 10
 			political_power_gain = 0.1
 			}
-			picture = generic_syndicalist_medal
+			picture = great_famine
 		}
 		
 		### Army Ideas ###
