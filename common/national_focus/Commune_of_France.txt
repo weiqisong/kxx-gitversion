@@ -15683,7 +15683,7 @@ focus = FRA_office_des_chemins_de_fer
 	focus = {
 		id = FRA_reign_of_terror
 		icon = GFX_goal_NFA_Saint_Just_Blanc_alt
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = FRA_woke_women
 		}
@@ -15701,14 +15701,16 @@ focus = FRA_office_des_chemins_de_fer
 			custom_effect_tooltip = FRA_terror_tooltip2
 			add_political_power = 100
 			add_manpower = -50000
+			add_stability = 0.1
+			increase_ruling_party_popularity_by_25 = yes
 		}
 	}
 	
 	
 	focus = {
 		id = FRA_french_marxism
-		icon = GFX_goal_FRA_jacobin_cgt
-		cost = 5
+		icon = GFX_GRU_RED_PATRIOT
+		cost = 4
 		prerequisite = {
 			focus = FRA_new_jacobin
 		}
@@ -15731,7 +15733,7 @@ focus = FRA_office_des_chemins_de_fer
 	focus = {
 		id = FRA_woke_women
 		icon = GFX_goal_generic_red_university
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = FRA_french_marxism
 		}
@@ -15753,8 +15755,8 @@ focus = FRA_office_des_chemins_de_fer
 	
 	focus = {
 		id = FRA_commune_virtue
-		icon = GFX_goal_FRA_national_liberation
-		cost = 5
+		icon = GFX_goal_FRA_reign_of_working_man
+		cost = 4
 		x = 0
 		y = 2
 		relative_position_id = FRA_new_jacobin
@@ -15775,7 +15777,7 @@ focus = FRA_office_des_chemins_de_fer
 	focus = {
 		id = FRA_new_worker
 		icon = GFX_goal_generic_happy_workers
-		cost = 5
+		cost = 4
 		x = 0
 		y = 3
 		relative_position_id = FRA_new_jacobin
@@ -15799,7 +15801,7 @@ focus = FRA_office_des_chemins_de_fer
 	focus = {
 		id = FRA_revolutionary_youth
 		icon = GFX_goal_FRA_le_nouvel_age
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = FRA_new_jacobin
 		}
@@ -15825,8 +15827,8 @@ focus = FRA_office_des_chemins_de_fer
 	}
 	focus = {
 		id = FRA_new_national_culture
-		icon = GFX_goal_FRA_national_jacobin
-		cost = 5
+		icon = GFX_goal_ALB_Cultural_Revolution
+		cost = 4
 		prerequisite = {
 			focus = FRA_revolutionary_youth
 		}
@@ -15843,12 +15845,13 @@ focus = FRA_office_des_chemins_de_fer
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_revolutionary_youth"
 			add_political_power = 100
 			add_stability = 0.1
+			add_war_support = 0.1
 		}
 	}	
 	focus = {
 		id = FRA_export_revolution
 		icon = GFX_goal_CSA_lead_american_revolution
-		cost = 3
+		cost = 4
 		prerequisite = {
 			focus = FRA_new_national_culture 
 		}	
@@ -15873,13 +15876,15 @@ focus = FRA_office_des_chemins_de_fer
 			}
 			add_war_support = 0.06
 			add_command_power = 75
+			army_experience = 50
+			add_manpower = 10000
 		}
 	}	
 	
 	focus = {
 		id = FRA_communism_reborn
 		icon = GFX_goal_FRA_Doriot_Revolutionary
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = FRA_reign_of_terror
 		}
@@ -15910,7 +15915,7 @@ focus = FRA_office_des_chemins_de_fer
 	}
 	focus = {
 		id = FRA_lenin_legacy
-		icon = GFX_goal_FRA_orthodox_jacobins
+		icon = GFX_goal_AUS_lenin_bust
 		cost = 3
 		prerequisite = {
 			focus = FRA_single_party
@@ -15940,7 +15945,7 @@ focus = FRA_office_des_chemins_de_fer
 	focus = {
 		id = FRA_peoples_commune
 		icon = GFX_goal_Farmer
-		cost = 3
+		cost = 4
 		prerequisite = {
 			focus = FRA_lenin_legacy
 		}
@@ -15976,7 +15981,7 @@ focus = FRA_office_des_chemins_de_fer
 	focus = {
 		id = FRA_big_jump
 		icon = GFX_goal_Jump3
-		cost = 3
+		cost = 4
 		prerequisite = {
 			focus = FRA_peoples_commune
 		}
@@ -15998,7 +16003,7 @@ focus = FRA_office_des_chemins_de_fer
 	focus = {
 		id = FRA_worker
 		icon = GFX_goal_Worker
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = FRA_big_jump
 		}
@@ -34572,7 +34577,10 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+		available = {
+			has_global_flag = jacobin_majority_1936
+			
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_jacobin_cgt"
 			custom_effect_tooltip = FRA_jacobinpower_tooltip
@@ -34687,6 +34695,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_country_flag = FRA_red_jac_sup
+			has_country_leader = {
+				ruling_only = yes
+				name = "莫里斯·多列士"				# Maurice Thorez
+			}
+		}
 		mutually_exclusive = {
 			focus = FRA_national_jacobin
 		}
@@ -34790,7 +34805,7 @@ focus = {
 	
 	focus = {
 		id = FRA_purity_of_marx
-		icon = GFX_goal_FRA_purity_of_marx
+		icon = GFX_goal_GER_Hero_Marx
 		x = -3
 		y = 5
 		relative_position_id = FRA_jacobin_cgt
@@ -35095,6 +35110,13 @@ focus = {
 		}
 		mutually_exclusive = {
 			focus = FRA_orthodox_jacobin
+		}
+		available = {
+			has_country_flag = FRA_nat_jac_sup
+			has_country_leader = {
+				ruling_only = yes
+				name = "雅克·多里奥"				# Jacques Doriot
+			}
 		}
 		prerequisite = {
 			focus = FRA_empower_comite_de_salut_public
