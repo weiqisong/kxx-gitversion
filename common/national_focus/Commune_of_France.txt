@@ -15529,7 +15529,7 @@ focus = FRA_office_des_chemins_de_fer
 	
 	focus = {
 		id = FRA_no_nationalism
-		icon = GFX_goal_FRA_strike_french_reaction
+		icon = GFX_goal_FRA_strike_french_reaction_jacobin
 		cost = 3
 		prerequisite = {
 			focus = FRA_true_marxism
