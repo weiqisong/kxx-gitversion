@@ -1,0 +1,168 @@
+﻿###########################
+# Belgium Events
+###########################
+# By Jeankedezeehond
+###########################
+
+add_namespace = kxxbel
+
+country_event = { 
+	id = kxxbel.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event belind.15" }
+	title = kxxbel.1.t
+	desc = kxxbel.1.d
+	picture = GFX_report_event_BEL_Parliament2
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { 
+		name = kxxbel.1.a
+		ai_chance = {
+			factor = 0
+			
+		}
+	}
+	option = { 
+		name = kxxbel.1.b
+		ai_chance = {
+			factor = 100
+			
+		}
+		BEL = {
+			annex_country = { target = ROOT transfer_troops = yes }
+	
+		}
+		every_unit_leader = {	
+			set_nationality = BEL
+		}
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			BEL = { 
+				add_state_core = PREV 
+			}
+		}
+	}
+}
+country_event = { 
+	id = kxxbel.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event belind.15" }
+	title = kxxbel.2.t
+	desc = kxxbel.2.d
+	picture = GFX_report_event_BEL_Parliament2
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { 
+		name = kxxbel.2.a
+		
+	}
+	option = { 
+		name = kxxbel.2.b
+		every_state = {
+			limit = {
+				is_core_of = COG
+			}
+			BEL = {
+				add_state_core = PREV
+			}
+		}
+	}
+	option = { 
+		name = kxxbel.2.c
+		set_country_flag = BEL_NEOSOCEF
+		every_state = {
+			limit = {
+				is_on_continent = africa
+			}
+			BEL = {
+				add_state_core = PREV
+			}
+		}
+	}
+}
+country_event = { 
+	id = kxxbel.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event belind.15" }
+	title = kxxbel.3.t
+	desc = kxxbel.3.d
+	picture = GFX_report_event_BEL_Parliament2
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BEL
+		
+		16 = { is_controlled_by_ROOT_or_ally = yes}
+		64 = { is_controlled_by_ROOT_or_ally = yes}
+		6 = { is_controlled_by_ROOT_or_ally = yes}
+		34 = { is_controlled_by_ROOT_or_ally = yes}
+		7 = { is_controlled_by_ROOT_or_ally = yes}
+		3 = { is_controlled_by_ROOT_or_ally = yes}
+		1137 = { is_controlled_by_ROOT_or_ally = yes}
+		41 = { is_controlled_by_ROOT_or_ally = yes}
+		112 = { is_controlled_by_ROOT_or_ally = yes}
+		117 = { is_controlled_by_ROOT_or_ally = yes}
+		2 = { is_controlled_by_ROOT_or_ally = yes}
+		1129 = { is_controlled_by_ROOT_or_ally = yes}
+		43 = { is_controlled_by_ROOT_or_ally = yes}
+		91 = { is_controlled_by_ROOT_or_ally = yes}
+		10 = { is_controlled_by_ROOT_or_ally = yes}
+		107 = { is_controlled_by_ROOT_or_ally = yes}
+		109 = { is_controlled_by_ROOT_or_ally = yes}
+		44 = { is_controlled_by_ROOT_or_ally = yes}
+		46 = { is_controlled_by_ROOT_or_ally = yes}
+		47 = { is_controlled_by_ROOT_or_ally = yes}
+		48 = { is_controlled_by_ROOT_or_ally = yes}
+		202 = { is_controlled_by_ROOT_or_ally = yes}
+		206 = { is_controlled_by_ROOT_or_ally = yes}
+		96 = { is_controlled_by_ROOT_or_ally = yes}
+		1091 = { is_controlled_by_ROOT_or_ally = yes}
+		840 = { is_controlled_by_ROOT_or_ally = yes}
+		37 = { is_controlled_by_ROOT_or_ally = yes}
+		110 = { is_controlled_by_ROOT_or_ally = yes}
+		141 = { is_controlled_by_ROOT_or_ally = yes}
+		219 = { is_controlled_by_ROOT_or_ally = yes}
+		195 = { is_controlled_by_ROOT_or_ally = yes}
+		100 = { is_controlled_by_ROOT_or_ally = yes}
+	}
+
+	option = { 
+		name = kxxbel.3.a
+		
+	}
+	option = { 
+		name = kxxbel.3.b
+		every_state = {
+			limit = {
+				is_on_continent = asia
+			}
+			BEL = {
+				add_state_core = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_on_continent = middle_east
+			}
+			BEL = {
+				add_state_core = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_on_continent = india
+			}
+			BEL = {
+				add_state_core = PREV
+			}
+		}
+		set_cosmetic_tag = BEL_neosoc_efa
+	}
+	
+}
