@@ -3461,7 +3461,7 @@ focus = {
 			set_technology = { masterful_blitz = 1 }
 		}
 		if = {
-			limit = { has_idea = FRA_billotte_military_plan_5 }
+			limit = { has_idea = FRA_billotte_military_plan_8 }
 			swap_ideas = {
 				remove_idea = FRA_billotte_military_plan_8
 				add_idea = FRA_billotte_military_plan_10
@@ -20494,11 +20494,7 @@ focus = {
 	prerequisite = {
 		focus = FRA_Paris_en_ordre
 	}
-	allow_branch = {
-		NOT = {
-			tag = FRA
-		}
-	}
+	
 	x = -18
 	y = 1
 	relative_position_id = FRA_Paris_en_ordre
@@ -20530,7 +20526,9 @@ focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FRA_Restoring_Socialist_Order"
-		custom_effect_tooltip = FRA_deat_tooltip
+		remove_ideas = FRA_black_guard_insurgency_idea
+		remove_ideas = FRA_Sorelian_Division
+		remove_ideas = FRA_corporate_syndie_idea
 	}
 }
 focus = {
@@ -35586,8 +35584,8 @@ focus = {
 			else_if = {
 			limit = { has_idea = FRA_jacobin_national_dominance_4_idea }
 			swap_ideas = {
-				remove_idea = FRA_jacobin_red_dominance_4_idea
-				add_idea = FRA_jacobin_red_dominance_5_idea
+				remove_idea = FRA_jacobin_national_dominance_4_idea
+				add_idea = FRA_jacobin_national_dominance_5_idea
 				}
 			}
 		}
@@ -35705,7 +35703,7 @@ focus = {
 				producer = FRA
 			}
 			if = {
-			limit = { has_idea = FRA_jacobin_red_dominance_5_idea }
+			limit = { has_idea = FRA_jacobin_national_dominance_5_idea }
 			swap_ideas = {
 				remove_idea = FRA_jacobin_national_dominance_5_idea
 				add_idea = FRA_jacobin_national_dominance_6_idea
