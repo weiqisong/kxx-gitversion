@@ -12,17 +12,10 @@ spriteTypes = {
 		name = "GFX_ideology_individualist_anarchism"
 		texturefile = "gfx/interface/ideologies/individualist_anarchism.png"
 	}
-	SpriteType = {
-		name = "GFX_ideology_anarcho_market_socialism"
-		texturefile = "gfx/interface/ideologies/anarcho_market_socialism.png"
-	}
+
 	SpriteType = {
 	name = "GFX_ideology_national_programmatism"
 	texturefile = "gfx/interface/ideologies/national_programmatism.png"
-	}
-	SpriteType = {
-	name = "GFX_ideology_tot_eternal_revolution"
-	texturefile = "gfx/interface/ideologies/tot_eternal_revolution.png"
 	}
 	SpriteType = {
 	name = "GFX_ideology_pau_eternal_revolution"
@@ -84,18 +77,9 @@ spriteTypes = {
 	name = "GFX_ideology_regenerationism"
 	texturefile = "gfx/interface/ideologies/regenerationism.png"
 	}
-	spriteType = {
-	name = "GFX_ideology_pau_falangism"
-	texturefile = "gfx/interface/ideologies/pau_falangism.png"
-	}
-	spriteType = {
-	name = "GFX_ideology_revolution_falangism"
-	texturefile = "gfx/interface/ideologies/revolution_falangism.png"
-	}
-	spriteType = {
-	name = "GFX_ideology_autdem_falangism"
-	texturefile = "gfx/interface/ideologies/autdem_falangism.png"
-	}
+
+
+
 	spriteType = {
 	name = "GFX_ideology_arab_socialism"
 	texturefile = "gfx/interface/ideologies/arab_socialism.png"

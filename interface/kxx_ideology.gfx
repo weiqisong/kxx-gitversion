@@ -484,4 +484,29 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/subideologies/liberating_nationalism_group.png"
 	}
 	
+	#NR
+	spriteType = {
+		name = "GFX_ideology_pau_falangism"
+		texturefile = "gfx/interface/ideologies/subideologies/pau_falangism.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_anarcho_market_socialism"
+		texturefile = "gfx/interface/ideologies/subideologies/anarcho_market_socialism.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_radsoc_social_anarchism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/radsoc_social_anarchism.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_revolution_falangism"
+		texturefile = "gfx/interface/ideologies/subideologies/revolution_falangism.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_autdem_falangism"
+		texturefile = "gfx/interface/ideologies/subideologies/autdem_falangism.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_tot_eternal_revolution"
+		texturefile = "gfx/interface/ideologies/subideologies/tot_eternal_revolution.png"
+	}
 }
