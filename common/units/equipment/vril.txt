@@ -42,6 +42,7 @@ equipments = {
 		naval_strike_targetting = 10
 
 		build_cost_ic = 30
+
 		resources = {
 			aluminium = 2
 			tungsten = 3
@@ -49,6 +50,7 @@ equipments = {
 		}
 
 		manpower = 40
+		
 		fuel_consumption = 0.00
 	}
 
