@@ -280,7 +280,7 @@ option = {
 	name = kxxfrance.10.a
 	create_country_leader = {
 		name = "马塞尔·加香"
-		picture = "gfx/leaders/FRA/Portrait_France_Marcel_Cachin.png"
+		picFRAe = "gfx/leaders/FRA/Portrait_France_Marcel_Cachin.png"
 		expire = "1.1.1"
 		ideology = broad_communism_subtype
 	}
@@ -310,7 +310,7 @@ option = {
 	name = kxxfrance.11.a
 	create_country_leader = {
 		name = "临时政务会议"
-		picture = "gfx/leaders/FRA/Portrait_FRA_Conseil.png"
+		picFRAe = "gfx/leaders/FRA/Portrait_FRA_Conseil.png"
 		expire = "1.1.1"
 		ideology = syndicalist_subtype
 	}
@@ -335,7 +335,7 @@ option = {
 	create_country_leader = {
 		name = "马塞尔·戴亚"
 		desc = "POLITICS_MARCEL_DEAT_DESC"
-		picture = "gfx/leaders/FRA/Portrait_France_Marcel_Deat_Emergency.png"
+		picFRAe = "gfx/leaders/FRA/Portrait_France_Marcel_Deat_Emergency.png"
 		expire = "1.1.1"
 		traits = { chairman_leader }
 		ideology = neo_socialism_subtype
@@ -392,7 +392,7 @@ option = {
 	create_country_leader = {
 		name = "莫里斯·甘末林"
 		desc = "POLITICS_GAMELIN_DESC"
-		picture = "gfx/leaders/FRA/Portrait_France_Maurice_Gamelin_KR.png"
+		picFRAe = "gfx/leaders/FRA/Portrait_France_Maurice_Gamelin_KR.png"
 		expire = "1965.1.1"
 		ideology = syndicalist_subtype
 		traits = {marshal_leader}
@@ -401,7 +401,7 @@ option = {
 	create_country_leader = {
 		name = "莫里斯·甘末林"
 		desc = "POLITICS_GAMELIN_DESC"
-		picture = "gfx/leaders/FRA/Portrait_France_Maurice_Gamelin_KR.png"
+		picFRAe = "gfx/leaders/FRA/Portrait_France_Maurice_Gamelin_KR.png"
 		expire = "1965.1.1"
 		ideology = marechal_democracy_subtype
 		traits = {marshal_leader}
@@ -410,7 +410,7 @@ option = {
 	create_country_leader = {
 		name = "莫里斯·甘末林"
 		desc = "POLITICS_GAMELIN_DESC"
-		picture = "gfx/leaders/FRA/Portrait_France_Maurice_Gamelin_KR.png"
+		picFRAe = "gfx/leaders/FRA/Portrait_France_Maurice_Gamelin_KR.png"
 		expire = "1965.1.1"
 		ideology = radical_socialist_subtype
 		traits = {marshal_leader}
@@ -419,7 +419,7 @@ option = {
 	create_country_leader = {
 		name = "乔治·瓦卢瓦"
 		desc = "POLITICS_GEORGES_VALOIS_DESC"
-		picture = "gfx/leaders/FRA/Portrait_France_Georges_Valois.png"
+		picFRAe = "gfx/leaders/FRA/Portrait_France_Georges_Valois.png"
 		expire = "1965.1.1"
 		ideology = sorelianism_subtype
 		traits = {}
@@ -498,7 +498,7 @@ option = {
 	name = kxxfrance.13.a
 	create_country_leader = {
 		name = "拿破仑六世"
-		picture = "gfx/leaders/NFA/Portrait_NFA_Napoleon_VI.png"
+		picFRAe = "gfx/leaders/NFA/Portrait_NFA_Napoleon_VI.png"
 		expire = "1.1.1"
 		traits = { NFA_New_Eagle }
 		ideology = radsoc_bonapartism_subtype
@@ -586,9 +586,110 @@ option = {
 }
 option = { 
 	name = kxxfrance.14.b
-	
+	set_cosmetic_tag = FRA_pope
+	set_country_flag = KXX_LEADER_GUI_VISIBLE
+	set_country_flag = FRA_Jesus_Weil_VISIBLE
+	set_country_leader_ideology = radsoc_left_occultism_subtype
+	hidden_effect = {
+		every_state = {
+			limit = { 
+				OR = {
+					is_core_of = GEO
+					is_claimed_by = GEO
+					is_core_of = ARM
+					is_claimed_by = ARM
+					is_on_continent = europe
+					is_on_continent = north_america is_on_continent = central_america is_on_continent = south_america
+				}
+			}
+			add_core_of = ROOT
+			#national france
+			458 = { add_core_of = ROOT }
+			665 = { add_core_of = ROOT }
+			513 = { add_core_of = ROOT }
+			460 = { add_core_of = ROOT }
+			459 = { add_core_of = ROOT }
+			805 = { add_core_of = ROOT }
+			514 = { add_core_of = ROOT }
+			968 = { add_core_of = ROOT }
+			557 = { add_core_of = ROOT }
+			967 = { add_core_of = ROOT }
+			#土耳其
+			340 = { add_core_of = ROOT }
+			339 = { add_core_of = ROOT }
+			342 = { add_core_of = ROOT }
+			164 = { add_core_of = ROOT }
+			343 = { add_core_of = ROOT }
+			346 = { add_core_of = ROOT }
+			49 = { add_core_of = ROOT }
+			356 = { add_core_of = ROOT }
+			344 = { add_core_of = ROOT }
+			345 = { add_core_of = ROOT }
+			355 = { add_core_of = ROOT }
+			354 = { add_core_of = ROOT }
+			1001 = { add_core_of = ROOT }	
+			#spain
+			290 = { add_core_of = ROOT }
+			699 = { add_core_of = ROOT }
+			1318 = { add_core_of = ROOT }
+			#morocco
+			461 = { add_core_of = ROOT }
+			462 = { add_core_of = ROOT }
+			#ottoman empire
+			273 = { add_core_of = ROOT }
+			450 = { add_core_of = ROOT }
+			448 = { add_core_of = ROOT }
+			#cyrenica
+			1009 = { add_core_of = ROOT }
+			663 = { add_core_of = ROOT }
+			451 = { add_core_of = ROOT }			   
+			#沙姆
+			677 = { add_core_of = ROOT }
+			680 = { add_core_of = ROOT }
+			995 = { add_core_of = ROOT }
+			554 = { add_core_of = ROOT }
+			553 = { add_core_of = ROOT }
+			992 = { add_core_of = ROOT }
+			455 = { add_core_of = ROOT }
+			454 = { add_core_of = ROOT }
+			350 = { add_core_of = ROOT }
+			#密斯儿
+			753 = { add_core_of = ROOT }
+			452 = { add_core_of = ROOT }
+			447 = { add_core_of = ROOT }
+			446 = { add_core_of = ROOT }
+			552 = { add_core_of = ROOT }
+			1008 = { add_core_of = ROOT }
+			457 = { add_core_of = ROOT }
+			456 = { add_core_of = ROOT }
+			453 = { add_core_of = ROOT }
+			#群岛
+			178 = { add_core_of = ROOT }
+			702 = { add_core_of = ROOT }
+			GER = { 
+				add_timed_idea = {
+					idea = yun_fatimah_punishment
+					days = 730
+				}			
+			}
+			CAN = { 
+				add_timed_idea = {
+					idea = yun_fatimah_punishment
+					days = 730
+				}			
+			}
+			NFA = { 
+				add_timed_idea = {
+					idea = yun_fatimah_punishment
+					days = 730
+				}			
+			}
+		}
+	}
 }
-
+	option = { 
+		name = kxxfrance.14.c
+	}
 }
 country_event = {	
 	id = kxxfrance.15 #fate of radsocs
@@ -662,7 +763,7 @@ option = {
 	create_country_leader = {
 		name = "亨利·多尔热"
 
-		picture = "gfx/leaders/FRA/Portrait_FRA_Henri_Dorgeres.png"
+		picFRAe = "gfx/leaders/FRA/Portrait_FRA_Henri_Dorgeres.png"
 		expire = "1.1.1"
 		traits = { protector_of_farmers }
 		ideology = agrarian_socialism_subtype
@@ -703,7 +804,7 @@ option = {
 	create_country_leader = {
 		name = "古斯塔夫·爱尔威"
 
-		picture = "gfx/leaders/FRA/Portrait_FRA_Gustaf_Herve.png"
+		picFRAe = "gfx/leaders/FRA/Portrait_FRA_Gustaf_Herve.png"
 		expire = "1.1.1"
 		traits = { pacifist_millitarist }
 		ideology = hervism_subtype
@@ -744,7 +845,7 @@ option = {
 	create_country_leader = {
 		name = "安德烈·肖梅"
 
-		picture = "gfx/leaders/FRA/Portrait_FRA_Andre_Chaumet.png"
+		picFRAe = "gfx/leaders/FRA/Portrait_FRA_Andre_Chaumet.png"
 		expire = "1.1.1"
 		ideology = radsoc_bonapartism_subtype
 	}
@@ -761,7 +862,7 @@ option = {
 		remove_ideas_with_trait = head_of_government
 		add_ideas = FRA_Andre_Chaumet_hog_rso
 		remove_ideas_with_trait = foreign_minister
-		add_ideas = FRA_Jean_Turlais_for_rso
+		add_ideas = FRA_Jean_FRAlais_for_rso
 		remove_ideas_with_trait = economy_minister
 		add_ideas = FRA_Paul_Cassagnac_eco_rso
 		remove_ideas_with_trait = security_minister
@@ -784,7 +885,7 @@ option = {
 	create_country_leader = {
 		name = "西蒙娜·威尔"
 
-		picture = "gfx/leaders/FRA/Portrait_Simone_Weil.png"
+		picFRAe = "gfx/leaders/FRA/Portrait_Simone_Weil.png"
 		expire = "1.1.1"
 		traits = { Devout }
 		ideology = christian_socialism_subtype
@@ -844,7 +945,7 @@ country_event = {	#戴亚选举第二部分
 		create_country_leader = {
 			name = "安德烈·洛吕奥"
 	
-			picture = "gfx/leaders/FRA/Portrait_FRA_Andre_Lorulot.png"
+			picFRAe = "gfx/leaders/FRA/Portrait_FRA_Andre_Lorulot.png"
 			expire = "1.1.1"
 			traits = { anti_christ }
 			ideology = militant_atheism_subtype
@@ -885,7 +986,7 @@ country_event = {	#戴亚选举第二部分
 		create_country_leader = {
 			name = "罗伯特·佩尔蒂埃"
 	
-			picture = "gfx/leaders/FRA/FRA_Robert_Pelletier.png"
+			picFRAe = "gfx/leaders/FRA/FRA_Robert_Pelletier.png"
 			expire = "1.1.1"
 			traits = { gaul_man }
 			ideology = pan_celticism_subtype
@@ -912,7 +1013,7 @@ country_event = {	#戴亚选举第二部分
 			  ideology = radical_socialist
 			   popularity = 0.20
 			 }
-			complete_national_focus = FRA_return_to_past
+			complete_national_focus = FRA_reFRAn_to_past
 			remove_ideas = FRA_valois_dead_idea
 			remove_ideas = French_Revanchism_idea
 			 
@@ -926,7 +1027,7 @@ country_event = {	#戴亚选举第二部分
 		create_country_leader = {
 			name = "罗杰·加罗迪"
 	
-			picture = "gfx/leaders/FRA/Portrait_FRA_Roger_Gaurady.png"
+			picFRAe = "gfx/leaders/FRA/Portrait_FRA_Roger_Gaurady.png"
 			expire = "1.1.1"
 			traits = {  }
 			ideology = tot_islamic_socialism_subtype
@@ -1919,7 +2020,7 @@ option = { #slavs too
 }
 }
 country_event = {	
-	id = kxxfrance.22 #lanoir return yellow syndie or not
+	id = kxxfrance.22 #lanoir reFRAn yellow syndie or not
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
 	title = kxxfrance.22.t
 	desc = kxxfrance.22.d
@@ -1957,7 +2058,7 @@ option = {
 	
 	create_country_leader = {
 		name = "乔治·马歇"  # Georges Marchais
-		picture = "gfx/leaders/NRM/Portrait_Normandy_Georges_Marchais.png"
+		picFRAe = "gfx/leaders/NRM/Portrait_Normandy_Georges_Marchais.png"
 		expire = "1.1.1"
 		ideology = popcom_subtype
 	}
@@ -1970,7 +2071,7 @@ option = {
 	}
 	create_country_leader = {
 		name = "乔治·马歇"  # Georges Marchais
-		picture = "gfx/leaders/NRM/Portrait_Normandy_Georges_Marchais.png"
+		picFRAe = "gfx/leaders/NRM/Portrait_Normandy_Georges_Marchais.png"
 		expire = "1.1.1"
 		ideology = radsoc_popcom_subtype
 	}
@@ -1983,7 +2084,7 @@ option = {
 	}
 	create_country_leader = {
 		name = "乔治·马歇"  # Georges Marchais
-		picture = "gfx/leaders/NRM/Portrait_Normandy_Georges_Marchais.png"
+		picFRAe = "gfx/leaders/NRM/Portrait_Normandy_Georges_Marchais.png"
 		expire = "1.1.1"
 		ideology = broad_communism_subtype
 	}
@@ -1996,7 +2097,7 @@ option = {
 	}
 	create_country_leader = {
 		name = "乔治·马歇"  # Georges Marchais
-		picture = "gfx/leaders/NRM/Portrait_Normandy_Georges_Marchais.png"
+		picFRAe = "gfx/leaders/NRM/Portrait_Normandy_Georges_Marchais.png"
 		expire = "1.1.1"
 		ideology = radsoc_communism_subtype
 	}
@@ -2611,7 +2712,7 @@ country_event = {
 		create_country_leader = {
 			name = "莫里斯·甘末林"
 			desc = "POLITICS_GAMELIN_DESC"
-			picture = "gfx/leaders/FRA/Portrait_France_Maurice_Gamelin_KR.png"
+			picFRAe = "gfx/leaders/FRA/Portrait_France_Maurice_Gamelin_KR.png"
 			expire = "1965.1.1"
 			ideology = red_tinted_autocracy_subtype
 			traits = {
@@ -2695,7 +2796,7 @@ country_event = {
 			create_country_leader = {
 				name = "皮埃尔·雷诺德尔"
 		
-				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
+				picFRAe = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
 				expire = "1.1.1"
 				traits = {  }
 				ideology = socdem_humanistic_capitalism_subtype
@@ -2732,7 +2833,7 @@ country_event = {
 			create_country_leader = {
 				name = "皮埃尔·雷诺德尔"
 		
-				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
+				picFRAe = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
 				expire = "1.1.1"
 				traits = {  }
 				ideology = socdem_liberalized_syndicalism_subtype
@@ -2762,7 +2863,7 @@ country_event = {
 			create_country_leader = {
 				name = "皮埃尔·雷诺德尔"
 		
-				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
+				picFRAe = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
 				expire = "1.1.1"
 				traits = {  }
 				ideology = socdem_democratic_socialism_subtype
@@ -2793,7 +2894,7 @@ country_event = {
 			create_country_leader = {
 				name = "皮埃尔·雷诺德尔"
 		
-				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
+				picFRAe = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
 				expire = "1.1.1"
 				traits = {  }
 				ideology = radsoc_revisionist_marxism_subtype
@@ -2824,7 +2925,7 @@ country_event = {
 			create_country_leader = {
 				name = "皮埃尔·雷诺德尔"
 		
-				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
+				picFRAe = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
 				expire = "1.1.1"
 				traits = {  }
 				ideology = radsoc_liberal_socialism_subtype
@@ -2855,7 +2956,7 @@ country_event = {
 			create_country_leader = {
 				name = "皮埃尔·雷诺德尔"
 		
-				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
+				picFRAe = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
 				expire = "1.1.1"
 				traits = {  }
 				ideology = radsoc_possibilism_subtype
@@ -3046,7 +3147,7 @@ option = { #no god no please no
 				### Leader
 				create_country_leader = {
 					name = "加拿大社会主义者代表大会"
-					picture = "gfx/leaders/CAN/Portrait_Canada_Vacant_Office_2.png"
+					picFRAe = "gfx/leaders/CAN/Portrait_Canada_Vacant_Office_2.png"
 					expire = "1.1.1"
 					ideology = syndicalist_subtype
 				}
@@ -3126,7 +3227,7 @@ option = { #no god no please no
 		### Leader
 		create_country_leader = {
 			name = "加拿大社会主义者代表大会"
-			picture = "gfx/leaders/CAN/Portrait_Canada_Vacant_Office_2.png"
+			picFRAe = "gfx/leaders/CAN/Portrait_Canada_Vacant_Office_2.png"
 			expire = "1.1.1"
 			ideology = syndicalist_subtype
 		}
@@ -3271,7 +3372,7 @@ option = { #no god no please no
 		### Leader
 		create_country_leader = {
 			name = "加拿大社会主义者代表大会"
-			picture = "gfx/leaders/CAN/Portrait_Canada_Vacant_Office_2.png"
+			picFRAe = "gfx/leaders/CAN/Portrait_Canada_Vacant_Office_2.png"
 			expire = "1.1.1"
 			ideology = syndicalist_subtype
 		}
@@ -3532,7 +3633,7 @@ country_event = {
 	
 	trigger = {
 		tag = FRA
-		has_idea = FRA_reactionarism_return_dummy
+		has_idea = FRA_reactionarism_reFRAn_dummy
 	}
 	mean_time_to_happen = {
 		days = 30
@@ -3569,7 +3670,7 @@ option = {
 		  }
 		create_country_leader = {
 		name = "Marie-Pierre Koenig"
-		picture = "gfx/leaders/FRA/Portrait_FRA_Marie_Pierre_Koenig_KX.png"
+		picFRAe = "gfx/leaders/FRA/Portrait_FRA_Marie_Pierre_Koenig_KX.png"
 		expire = "1965.1.1"
 		ideology = syn_red_junta_subtype
 		
@@ -3780,7 +3881,7 @@ option = {
 	name = kxxfrance.41.a
 	create_country_leader = {
 		name = "Vitus Heller"
-		picture = "gfx/leaders/BAY/Portrait_Bavaria_Vitus_Heller.png"
+		picFRAe = "gfx/leaders/BAY/Portrait_Bavaria_Vitus_Heller.png"
 		expire = "1.1.1"
 		ideology = christian_communism_subtype
 	}
@@ -3799,7 +3900,7 @@ option = {
 	name = kxxfrance.41.b
 	create_country_leader = {
 		name = "Heinrich Laufenberg"
-		picture = "gfx/leaders/GER/Portrait_Germany_Heinrich_Laufenberg.png"
+		picFRAe = "gfx/leaders/GER/Portrait_Germany_Heinrich_Laufenberg.png"
 		expire = "1.1.1"
 		ideology = national_communism_subtype
 	}
@@ -3818,7 +3919,7 @@ option = {
 	name = kxxfrance.41.c
 	create_country_leader = {
 		name = "Heinrich Brandler"
-		picture = "gfx/leaders/NGF/Portrait_NGF_Heinrich_Brandler.png"
+		picFRAe = "gfx/leaders/NGF/Portrait_NGF_Heinrich_Brandler.png"
 		expire = "1.1.1"
 		ideology = bukharinist_subtype
 	}
@@ -3837,7 +3938,7 @@ option = {
 	name = kxxfrance.41.e
 	create_country_leader = {
 		name = "Ruth Fischer"
-		picture = "gfx/leaders/DDR/Portrait_Prussia_Ruth_Fischer.png"
+		picFRAe = "gfx/leaders/DDR/Portrait_Prussia_Ruth_Fischer.png"
 		expire = "1.1.1"
 		ideology = bordigism_subtype
 	}
@@ -3856,7 +3957,7 @@ option = {
 	name = kxxfrance.41.f
 	create_country_leader = {
 		name = "Max Seydewitz"
-		picture = "gfx/leaders/DDR/Portrait_Prussia_Max_Seydewitz.png"
+		picFRAe = "gfx/leaders/DDR/Portrait_Prussia_Max_Seydewitz.png"
 		expire = "1.1.1"
 		ideology = radsoc_communism_subtype
 	}
@@ -3889,7 +3990,7 @@ option = {
 	name = kxxfrance.42.a
 	create_country_leader = {
 		name = "Jan Appel"
-		picture = "gfx/leaders/NGF/Portrait_NGF_Jan_Appel.png"
+		picFRAe = "gfx/leaders/NGF/Portrait_NGF_Jan_Appel.png"
 		expire = "1.1.1"
 		ideology = centralized_syndicalism_subtype
 	}
@@ -3908,7 +4009,7 @@ option = {
 	name = kxxfrance.42.b
 	create_country_leader = {
 		name = "Clara Zetkin"
-		picture = "gfx/leaders/DDR/Portrait_Prussia_Clara_Zetkin.png"
+		picFRAe = "gfx/leaders/DDR/Portrait_Prussia_Clara_Zetkin.png"
 		expire = "1.1.1"
 		ideology = feminist_syndicalist_subtype
 	}
@@ -3927,7 +4028,7 @@ option = {
 	name = kxxfrance.42.c
 	create_country_leader = {
 		name = "Rudolf Rocker"
-		picture = "gfx/leaders/GER/Portrait_Germany_Rudolf_Rocker_I.png"
+		picFRAe = "gfx/leaders/GER/Portrait_Germany_Rudolf_Rocker_I.png"
 		expire = "1.1.1"
 		ideology = anarcho_syndicalist_subtype
 	}
@@ -3946,7 +4047,7 @@ option = {
 	name = kxxfrance.42.e
 	create_country_leader = {
 		name = "Ernst Thalmann"
-		picture = "gfx/leaders/GER/Portrait_Germany_Ernst_Thalmann.png"
+		picFRAe = "gfx/leaders/GER/Portrait_Germany_Ernst_Thalmann.png"
 		expire = "1.1.1"
 		ideology = democratic_syndicalism_subtype
 	}
@@ -3981,7 +4082,7 @@ option = {
 	name = kxxfrance.43.a
 	create_country_leader = {
 		name = "Ernst Niekisch"
-		picture = "gfx/leaders/BAY/Portrait_Bavaria_Ernst_Niekisch.png"
+		picFRAe = "gfx/leaders/BAY/Portrait_Bavaria_Ernst_Niekisch.png"
 		expire = "1.1.1"
 		ideology = germanic_socialism_subtype
 	}
@@ -4000,7 +4101,7 @@ option = {
 	name = kxxfrance.43.b
 	create_country_leader = {
 		name = "Karl Otto Paetel"
-		picture = "gfx/leaders/WGR/Portrait_Rhineland_Karl_Otto_Paetel.png"
+		picFRAe = "gfx/leaders/WGR/Portrait_Rhineland_Karl_Otto_Paetel.png"
 		expire = "1.1.1"
 		ideology = sorelianism_subtype
 	}
@@ -4019,7 +4120,7 @@ option = {
 	name = kxxfrance.43.c
 	create_country_leader = {
 		name = "August Winnig"
-		picture = "gfx/leaders/EPR/Portrait_EPR_August_Winnig.png"
+		picFRAe = "gfx/leaders/EPR/Portrait_EPR_August_Winnig.png"
 		expire = "1.1.1"
 		ideology = volkisch_communitarianism_subtype
 	}
@@ -4038,7 +4139,7 @@ option = {
 	name = kxxfrance.43.e
 	create_country_leader = {
 		name = "Gregor Strasser"
-		picture = "gfx/leaders/GRU/Portrait_Germany_Gregor_Strasser.png"
+		picFRAe = "gfx/leaders/GRU/Portrait_Germany_Gregor_Strasser.png"
 		expire = "1.1.1"
 		ideology = natsynd_subtype
 	}
@@ -4057,7 +4158,7 @@ option = {
 	name = kxxfrance.43.f
 	create_country_leader = {
 		name = "Josef Goebbels"
-		picture = "gfx/leaders/GRU/Portrait_Germany_Josef_Goebbels_13.png"
+		picFRAe = "gfx/leaders/GRU/Portrait_Germany_Josef_Goebbels_13.png"
 		expire = "1.1.1"
 		ideology = national_marxist_subtype
 	}
@@ -4090,7 +4191,7 @@ option = {
 	name = kxxfrance.44.a
 	create_country_leader = {
 		name = "Gustav Landauer"
-		picture = "gfx/leaders/BAY/Portrait_Bavaria_Gustav_Landauer.png"
+		picFRAe = "gfx/leaders/BAY/Portrait_Bavaria_Gustav_Landauer.png"
 		expire = "1.1.1"
 		ideology = anarchism_subtype
 	}
@@ -4109,7 +4210,7 @@ option = {
 	name = kxxfrance.44.b
 	create_country_leader = {
 		name = "Erich Mühsam"
-		picture = "gfx/leaders/EPR/Portrait_EPR_Erich_Muhsam.png"
+		picFRAe = "gfx/leaders/EPR/Portrait_EPR_Erich_Muhsam.png"
 		expire = "1.1.1"
 		ideology = anarcho_communism_subtype
 	}
@@ -4128,7 +4229,7 @@ option = {
 	name = kxxfrance.44.c
 	create_country_leader = {
 		name = "Rudolf Rocker"
-		picture = "gfx/leaders/GER/Portrait_Germany_Rudolf_Rocker_I.png"
+		picFRAe = "gfx/leaders/GER/Portrait_Germany_Rudolf_Rocker_I.png"
 		expire = "1.1.1"
 		ideology = radsoc_anarcho_syndicalist_subtype
 	}
@@ -4162,7 +4263,7 @@ option = {
 	name = kxxfrance.45.a
 	create_country_leader = {
 		name = "Kurt Eisner"
-		picture = "gfx/leaders/BAY/Portrait_Bavaria_Kurt_Eisner.png"
+		picFRAe = "gfx/leaders/BAY/Portrait_Bavaria_Kurt_Eisner.png"
 		expire = "1.1.1"
 		ideology = moderate_socialist_subtype
 	}
@@ -4181,7 +4282,7 @@ option = {
 	name = kxxfrance.45.b
 	create_country_leader = {
 		name = "Max Brauer"
-		picture = "gfx/leaders/NGF/Portrait_NGF_Max_Brauer.png"
+		picFRAe = "gfx/leaders/NGF/Portrait_NGF_Max_Brauer.png"
 		expire = "1.1.1"
 		ideology = syndie_social_democrat_subtype
 	}
@@ -4200,7 +4301,7 @@ option = {
 	name = kxxfrance.45.c
 	create_country_leader = {
 		name = "Wilhelm Buck"
-		picture = "gfx/leaders/DDR/Portrait_Prussia_Wilhelm_Buck.png"
+		picFRAe = "gfx/leaders/DDR/Portrait_Prussia_Wilhelm_Buck.png"
 		expire = "1.1.1"
 		ideology = socdem_left_nationalism_subtype
 	}
@@ -4218,7 +4319,7 @@ option = {
 	name = kxxfrance.45.e
 	create_country_leader = {
 		name = "Silvio Gesell"
-		picture = "gfx/leaders/WGR/Portrait_Rhineland_Silvio_Gesell.png"
+		picFRAe = "gfx/leaders/WGR/Portrait_Rhineland_Silvio_Gesell.png"
 		expire = "1.1.1"
 		ideology = radsoc_georgism_subtype
 	}
@@ -4236,7 +4337,7 @@ option = {
 	name = kxxfrance.45.f
 	create_country_leader = {
 		name = "Josef Friedrich Matthes"
-		picture = "gfx/leaders/WGR/Portrait_Rhineland_Josef_Friedrich_Matthes.png"
+		picFRAe = "gfx/leaders/WGR/Portrait_Rhineland_Josef_Friedrich_Matthes.png"
 		expire = "1.1.1"
 		ideology = liberal_socialism_subtype
 	}
@@ -5031,7 +5132,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
 	title = kxxfrance.66.t
 	desc = kxxfrance.66.d
-  picture = GFX_report_event_FRA_jacobin_collapse
+  picFRAe = GFX_report_event_FRA_jacobin_collapse
 	is_triggered_only = yes
 	
 
@@ -5053,7 +5154,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
 	title = kxxfrance.67.t
 	desc = kxxfrance.67.d
-  picture = GFX_report_event_FRA_la_rochelle
+  picFRAe = GFX_report_event_FRA_la_rochelle
 	is_triggered_only = yes
 	
 
@@ -5075,7 +5176,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
 	title = kxxfrance.68.t
 	desc = kxxfrance.68.d
-  picture = GFX_report_event_FRA_bietry_lanoir
+  picFRAe = GFX_report_event_FRA_bietry_lanoir
 	is_triggered_only = yes
 	
 
@@ -5093,7 +5194,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
 	title = kxxfrance.69.t
 	desc = kxxfrance.69.d
-	picture = GFX_WLL_Capet
+	picFRAe = GFX_WLL_Capet
 	is_triggered_only = yes
 	
 
@@ -5186,7 +5287,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
 	title = kxxfrance.70.t
 	desc = kxxfrance.70.d
-	picture = GFX_WLL_Charlemagne
+	picFRAe = GFX_WLL_Charlemagne
 	fire_only_once = yes
 	  trigger = {
 		tag = FRA
@@ -5420,7 +5521,7 @@ option = {
 
 	create_country_leader = {
 		name = "雷蒙德·佩里卡特"
-		picture = "gfx/leaders/FRA/Portrait_FRA_Raymond_Pericat.png"
+		picFRAe = "gfx/leaders/FRA/Portrait_FRA_Raymond_Pericat.png"
 		expire = "1.1.1"
 		ideology = anarcho_communism_subtype
 		
@@ -5448,11 +5549,462 @@ option = {
 }	
 
 }
+country_event = {	
+	id = kxxfrance.77 #pan islam
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
+	title = kxxfrance.77.t
+	desc = kxxfrance.77.d
+	is_triggered_only = yes
+
+option = { 
+	name = kxxfrance.77.a
+	every_state = {
+		limit = { is_core_of = OMA }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = OMA }
+every_state = {
+		limit = { is_core_of = JBS }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = JBS }
+every_state = {
+		limit = { is_core_of = SAU }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = SAU }
+every_state = {
+		limit = { is_core_of = YEM }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = YEM }
+every_state = {
+		limit = { is_core_of = PER }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = PER }
+every_state = {
+		limit = { is_core_of = AFG }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = AFG }
+every_state = {
+		limit = { is_core_of = SUD }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = SUD }
+every_state = {
+		limit = { is_core_of = AZE }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = AZE }
+every_state = {
+		limit = { is_core_of = EGY }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = EGY }
+every_state = {
+		limit = { is_core_of = LEB }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = LEB }
+every_state = {
+		limit = { is_core_of = TRP }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = TRP }
+every_state = {
+		limit = { is_core_of = TUN }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = TUN }
+every_state = {
+		limit = { is_core_of = ALG }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = ALG }
+every_state = {
+		limit = { is_core_of = MOR }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = MOR }
+every_state = {
+		limit = { is_core_of = MRT }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = MRT }
+create_wargoal = { type = annex_everything target = NFA }
+every_state = {
+		limit = { is_core_of = ERI }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = ERI }
+every_state = {
+		limit = { is_core_of = DJI }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = DJI }
+every_state = {
+		limit = { is_core_of = UZB }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = UZB }
+every_state = {
+		limit = { is_core_of = KOK }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = KOK }
+every_state = {
+		limit = { is_core_of = TRK }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = TRK }
+every_state = {
+		limit = { is_core_of = KYR }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = KYR }
+every_state = {
+		limit = { is_core_of = ALO }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = ALO }
+every_state = {
+		limit = { is_core_of = NER }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = NER }
+every_state = {
+		limit = { is_core_of = MAL }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = MAL }
+every_state = {
+		limit = { is_core_of = WAD }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = WAD }
+every_state = {
+		limit = { is_core_of = BFA }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = BFA }
+every_state = {
+		limit = { is_core_of = SEN }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = SEN }
+every_state = {
+		limit = { is_core_of = GNA }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = GNA }
+every_state = {
+		limit = { is_core_of = CVG }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = CVG }
+every_state = {
+		limit = { is_core_of = SIE }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = SIE }
+every_state = {
+		limit = { is_core_of = ALB }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = ALB }
+every_state = {
+		limit = { is_core_of = BOS }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = BOS }
+every_state = {
+		limit = { is_core_of = SIK }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = SIK }
+every_state = {
+		limit = { is_core_of = MTR }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = MTR }
+every_state = {
+	limit = { is_core_of = TUR }
+	add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = TUR }
+every_state = {
+	limit = {
+		OR = {
+			is_core_of = SOM
+			is_claimed_by = SOM
+		}
+	}
+	add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = SOM }
+set_cosmetic_tag = FRA_islam_larp
+hidden_effect = {
+	819 = {	add_core_of = FRA }
+	352 = {	add_core_of = FRA }
+	350 = {	add_core_of = FRA }
+	450 = {	add_core_of = FRA }
+	905 = { add_core_of = FRA }
+	965 = { add_core_of = FRA }
+	834 = { add_core_of = FRA }
+	1219 = { add_core_of = FRA }
+	444 = {	add_core_of = FRA }
+	443 = {	add_core_of = FRA }
+	445 = { add_core_of = FRA }
+	442 = { add_core_of = FRA }
+	891 = { add_core_of = FRA }
+	441 = { add_core_of = FRA }
+	1208 = { add_core_of = FRA }
+	583 = { add_core_of = FRA }
+	588 = { add_core_of = FRA }
+	708 = {	add_core_of = FRA }
+	
+}
+}	
+option = { 
+	name = kxxfrance.77.b
+	set_cosmetic_tag = FRA_islam_larp
+	every_state = {
+		limit = { is_core_of = OMA }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = OMA }
+every_state = {
+		limit = { is_core_of = JBS }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = JBS }
+every_state = {
+		limit = { is_core_of = SAU }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = SAU }
+every_state = {
+		limit = { is_core_of = YEM }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = YEM }
+every_state = {
+		limit = { is_core_of = PER }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = PER }
+every_state = {
+		limit = { is_core_of = AFG }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = AFG }
+every_state = {
+		limit = { is_core_of = SUD }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = SUD }
+every_state = {
+		limit = { is_core_of = AZE }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = AZE }
+every_state = {
+		limit = { is_core_of = EGY }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = EGY }
+every_state = {
+		limit = { is_core_of = LEB }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = LEB }
+every_state = {
+		limit = { is_core_of = TRP }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = TRP }
+every_state = {
+		limit = { is_core_of = TUN }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = TUN }
+every_state = {
+		limit = { is_core_of = ALG }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = ALG }
+every_state = {
+		limit = { is_core_of = MOR }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = MOR }
+every_state = {
+		limit = { is_core_of = MRT }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = MRT }
+create_wargoal = { type = annex_everything target = NFA }
+every_state = {
+		limit = { is_core_of = ERI }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = ERI }
+every_state = {
+		limit = { is_core_of = DJI }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = DJI }
+every_state = {
+		limit = { is_core_of = UZB }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = UZB }
+every_state = {
+		limit = { is_core_of = KOK }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = KOK }
+every_state = {
+		limit = { is_core_of = TRK }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = TRK }
+every_state = {
+		limit = { is_core_of = KYR }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = KYR }
+every_state = {
+		limit = { is_core_of = ALO }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = ALO }
+every_state = {
+		limit = { is_core_of = NER }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = NER }
+every_state = {
+		limit = { is_core_of = MAL }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = MAL }
+every_state = {
+		limit = { is_core_of = WAD }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = WAD }
+every_state = {
+		limit = { is_core_of = BFA }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = BFA }
+every_state = {
+		limit = { is_core_of = SEN }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = SEN }
+every_state = {
+		limit = { is_core_of = GNA }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = GNA }
+every_state = {
+		limit = { is_core_of = CVG }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = CVG }
+every_state = {
+		limit = { is_core_of = SIE }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = SIE }
+every_state = {
+		limit = { is_core_of = ALB }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = ALB }
+every_state = {
+		limit = { is_core_of = BOS }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = BOS }
+every_state = {
+		limit = { is_core_of = SIK }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = SIK }
+every_state = {
+		limit = { is_core_of = MTR }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = MTR }
+every_state = {
+	limit = { is_core_of = TUR }
+	add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = TUR }
+every_state = {
+	limit = { is_core_of = SPR }
+	add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = SPR }
+every_state = {
+	limit = { is_core_of = CAR }
+	add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = CAR }
+every_state = {
+	limit = { is_core_of = CNT }
+	add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = CNT }
+every_state = {
+	limit = { is_core_of = POR }
+	add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = POR }
+every_state = {
+	limit = {
+		OR = {
+			is_core_of = SOM
+			is_claimed_by = SOM
+		}
+	}
+	add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = SOM }
+
+hidden_effect = {
+	819 = {	add_core_of = FRA }
+	352 = {	add_core_of = FRA }
+	350 = {	add_core_of = FRA }
+	450 = {	add_core_of = FRA }
+	905 = { add_core_of = FRA }
+	965 = { add_core_of = FRA }
+	834 = { add_core_of = FRA }
+	1219 = { add_core_of = FRA }
+	444 = {	add_core_of = FRA }
+	443 = {	add_core_of = FRA }
+	445 = { add_core_of = FRA }
+	442 = { add_core_of = FRA }
+	891 = { add_core_of = FRA }
+	441 = { add_core_of = FRA }
+	1208 = { add_core_of = FRA }
+	583 = { add_core_of = FRA }
+	588 = { add_core_of = FRA }
+	708 = {	add_core_of = FRA }
+	
+}
+}	
+}
 news_event = {
 	id = kxx.news.1
 	title = kxx.news.1.t
 	desc = kxx.news.1.d
-	picture = GFX_news_event_frg_cw
+	picFRAe = GFX_news_event_frg_cw
 
 	fire_only_once = no
 	major = yes

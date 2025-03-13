@@ -4,6 +4,93 @@
 ideas = {
 
 	country = {
+		FRA_sword_of_islam = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = NGR_at_islam
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_attack_speed_factor = 0.1
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				army_speed_factor = 0.1
+
+			}
+		}
+		FRA_pan_islam_commitee = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = OTT_institutionalised_islam
+			modifier = {
+				weekly_manpower = 1000
+				non_core_manpower = 0.5
+				conscription = 0.025
+				conscription_factor = 0.25
+				compliance_growth = 0.25
+
+			}
+		}
+		FRA_spirtual_humanism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = NEE_sci_fi
+			modifier = {
+				research_speed_factor = 0.25
+				local_resources_factor = 0.15
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+
+			}
+		}
+		FRA_islamic_france2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = TUR_golden_age_of_islam
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+				command_power_gain = 0.1
+				max_command_power = 150
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				supply_consumption_factor = -0.1
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+			
+			}
+		}
+		FRA_islamic_france = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = TUR_golden_age_of_islam
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+				command_power_gain = 0.1
+				max_command_power = 150
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+			}
+		}
+		FRA_red_green_alliance = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = UK_politics_syn_idea
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.1
+				war_stability_factor = 0.1
+				war_support_factor = 0.1
+				totalist_drift = 0.05
+				global_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+
+			}
+		}
 		FRA_bonds_of_friendship = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
 			allowed = { always = no }

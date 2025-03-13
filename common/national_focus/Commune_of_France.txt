@@ -20529,6 +20529,7 @@ focus = {
 		remove_ideas = FRA_black_guard_insurgency_idea
 		remove_ideas = FRA_Sorelian_Division
 		remove_ideas = FRA_corporate_syndie_idea
+		add_stability = 0.15
 	}
 }
 focus = {
@@ -20543,13 +20544,17 @@ focus = {
 	x = 0
 	y = 1
 	relative_position_id = FRA_islamic_socialism
-	cost = 2
+	cost = 4
 	ai_will_do = {
 		factor = 1000
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FRA_Restoring_Socialist_Order"
-		custom_effect_tooltip = FRA_deat_tooltip
+		add_manpower = -1000
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.15
+		}
 	}
 }
 focus = {
@@ -20564,13 +20569,26 @@ focus = {
 	x = 2
 	y = 1
 	relative_position_id = FRA_islamic_socialism
-	cost = 2
+	cost = 4
 	ai_will_do = {
 		factor = 1000
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FRA_Restoring_Socialist_Order"
-		custom_effect_tooltip = FRA_deat_tooltip
+		every_owned_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = -1
+				instant_build = yes
+			}
+			
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = -0.15
+		}
+		add_political_power = 100
+		add_war_support = 0.1
 	}
 }
 focus = {
@@ -20594,7 +20612,9 @@ focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FRA_Restoring_Socialist_Order"
-		custom_effect_tooltip = FRA_deat_tooltip
+		add_ideas = FRA_red_green_alliance
+		add_radsoc_to_coalition = yes
+
 	}
 }
 focus = {
@@ -20618,7 +20638,15 @@ focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FRA_Restoring_Socialist_Order"
-		custom_effect_tooltip = FRA_deat_tooltip
+		every_owned_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			
+		}
+		add_stability = 0.15
 	}
 }
 
@@ -20643,7 +20671,7 @@ focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FRA_Restoring_Socialist_Order"
-		custom_effect_tooltip = FRA_deat_tooltip
+		add_ideas = FRA_islamic_france
 	}
 }
 focus = {
@@ -20665,7 +20693,7 @@ focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FRA_Restoring_Socialist_Order"
-		custom_effect_tooltip = FRA_deat_tooltip
+		add_ideas = FRA_spirtual_humanism
 	}
 }
 
@@ -20688,7 +20716,7 @@ focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FRA_Restoring_Socialist_Order"
-		custom_effect_tooltip = FRA_deat_tooltip
+		add_ideas = FRA_pan_islam_commitee
 	}
 }
 focus = {
@@ -20710,7 +20738,15 @@ focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FRA_Restoring_Socialist_Order"
-		custom_effect_tooltip = FRA_deat_tooltip
+		add_manpower = 100000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 1000
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 500
+		}
 	}
 }
 focus = {
@@ -20732,7 +20768,9 @@ focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FRA_Restoring_Socialist_Order"
-		custom_effect_tooltip = FRA_deat_tooltip
+		every_owned_state = {
+			add_extra_state_shared_building_slots = 2
+		}
 	}
 }
 focus = {
@@ -20754,7 +20792,7 @@ focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FRA_Restoring_Socialist_Order"
-		custom_effect_tooltip = FRA_deat_tooltip
+		add_ideas = FRA_sword_of_islam
 	}
 }
 focus = {
@@ -20787,7 +20825,10 @@ focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FRA_Restoring_Socialist_Order"
-		custom_effect_tooltip = FRA_deat_tooltip
+		swap_ideas = {
+			remove_idea = FRA_islamic_france
+			add_idea = FRA_islamic_france2
+		}
 	}
 }
 focus = {
@@ -20809,7 +20850,10 @@ focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FRA_Restoring_Socialist_Order"
-		custom_effect_tooltip = FRA_deat_tooltip
+		add_political_power = 100
+		add_stability = 0.1
+		add_war_support = 0.1
+		country_event = kxxfrance.77
 	}
 }
 	focus = {
