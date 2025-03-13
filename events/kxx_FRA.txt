@@ -280,7 +280,7 @@ option = {
 	name = kxxfrance.10.a
 	create_country_leader = {
 		name = "马塞尔·加香"
-		picFRAe = "gfx/leaders/FRA/Portrait_France_Marcel_Cachin.png"
+		picture = "gfx/leaders/FRA/Portrait_France_Marcel_Cachin.png"
 		expire = "1.1.1"
 		ideology = broad_communism_subtype
 	}
@@ -310,7 +310,7 @@ option = {
 	name = kxxfrance.11.a
 	create_country_leader = {
 		name = "临时政务会议"
-		picFRAe = "gfx/leaders/FRA/Portrait_FRA_Conseil.png"
+		picture = "gfx/leaders/FRA/Portrait_FRA_Conseil.png"
 		expire = "1.1.1"
 		ideology = syndicalist_subtype
 	}
@@ -335,7 +335,7 @@ option = {
 	create_country_leader = {
 		name = "马塞尔·戴亚"
 		desc = "POLITICS_MARCEL_DEAT_DESC"
-		picFRAe = "gfx/leaders/FRA/Portrait_France_Marcel_Deat_Emergency.png"
+		picture = "gfx/leaders/FRA/Portrait_France_Marcel_Deat_Emergency.png"
 		expire = "1.1.1"
 		traits = { chairman_leader }
 		ideology = neo_socialism_subtype
@@ -392,7 +392,7 @@ option = {
 	create_country_leader = {
 		name = "莫里斯·甘末林"
 		desc = "POLITICS_GAMELIN_DESC"
-		picFRAe = "gfx/leaders/FRA/Portrait_France_Maurice_Gamelin_KR.png"
+		picture = "gfx/leaders/FRA/Portrait_France_Maurice_Gamelin_KR.png"
 		expire = "1965.1.1"
 		ideology = syndicalist_subtype
 		traits = {marshal_leader}
@@ -401,7 +401,7 @@ option = {
 	create_country_leader = {
 		name = "莫里斯·甘末林"
 		desc = "POLITICS_GAMELIN_DESC"
-		picFRAe = "gfx/leaders/FRA/Portrait_France_Maurice_Gamelin_KR.png"
+		picture = "gfx/leaders/FRA/Portrait_France_Maurice_Gamelin_KR.png"
 		expire = "1965.1.1"
 		ideology = marechal_democracy_subtype
 		traits = {marshal_leader}
@@ -410,7 +410,7 @@ option = {
 	create_country_leader = {
 		name = "莫里斯·甘末林"
 		desc = "POLITICS_GAMELIN_DESC"
-		picFRAe = "gfx/leaders/FRA/Portrait_France_Maurice_Gamelin_KR.png"
+		picture = "gfx/leaders/FRA/Portrait_France_Maurice_Gamelin_KR.png"
 		expire = "1965.1.1"
 		ideology = radical_socialist_subtype
 		traits = {marshal_leader}
@@ -419,7 +419,7 @@ option = {
 	create_country_leader = {
 		name = "乔治·瓦卢瓦"
 		desc = "POLITICS_GEORGES_VALOIS_DESC"
-		picFRAe = "gfx/leaders/FRA/Portrait_France_Georges_Valois.png"
+		picture = "gfx/leaders/FRA/Portrait_France_Georges_Valois.png"
 		expire = "1965.1.1"
 		ideology = sorelianism_subtype
 		traits = {}
@@ -498,7 +498,7 @@ option = {
 	name = kxxfrance.13.a
 	create_country_leader = {
 		name = "拿破仑六世"
-		picFRAe = "gfx/leaders/NFA/Portrait_NFA_Napoleon_VI.png"
+		picture = "gfx/leaders/NFA/Portrait_NFA_Napoleon_VI.png"
 		expire = "1.1.1"
 		traits = { NFA_New_Eagle }
 		ideology = radsoc_bonapartism_subtype
@@ -763,7 +763,7 @@ option = {
 	create_country_leader = {
 		name = "亨利·多尔热"
 
-		picFRAe = "gfx/leaders/FRA/Portrait_FRA_Henri_Dorgeres.png"
+		picture = "gfx/leaders/FRA/Portrait_FRA_Henri_Dorgeres.png"
 		expire = "1.1.1"
 		traits = { protector_of_farmers }
 		ideology = agrarian_socialism_subtype
@@ -804,7 +804,7 @@ option = {
 	create_country_leader = {
 		name = "古斯塔夫·爱尔威"
 
-		picFRAe = "gfx/leaders/FRA/Portrait_FRA_Gustaf_Herve.png"
+		picture = "gfx/leaders/FRA/Portrait_FRA_Gustaf_Herve.png"
 		expire = "1.1.1"
 		traits = { pacifist_millitarist }
 		ideology = hervism_subtype
@@ -845,7 +845,7 @@ option = {
 	create_country_leader = {
 		name = "安德烈·肖梅"
 
-		picFRAe = "gfx/leaders/FRA/Portrait_FRA_Andre_Chaumet.png"
+		picture = "gfx/leaders/FRA/Portrait_FRA_Andre_Chaumet.png"
 		expire = "1.1.1"
 		ideology = radsoc_bonapartism_subtype
 	}
@@ -885,7 +885,7 @@ option = {
 	create_country_leader = {
 		name = "西蒙娜·威尔"
 
-		picFRAe = "gfx/leaders/FRA/Portrait_Simone_Weil.png"
+		picture = "gfx/leaders/FRA/Portrait_Simone_Weil.png"
 		expire = "1.1.1"
 		traits = { Devout }
 		ideology = christian_socialism_subtype
@@ -945,7 +945,7 @@ country_event = {	#戴亚选举第二部分
 		create_country_leader = {
 			name = "安德烈·洛吕奥"
 	
-			picFRAe = "gfx/leaders/FRA/Portrait_FRA_Andre_Lorulot.png"
+			picture = "gfx/leaders/FRA/Portrait_FRA_Andre_Lorulot.png"
 			expire = "1.1.1"
 			traits = { anti_christ }
 			ideology = militant_atheism_subtype
@@ -986,7 +986,7 @@ country_event = {	#戴亚选举第二部分
 		create_country_leader = {
 			name = "罗伯特·佩尔蒂埃"
 	
-			picFRAe = "gfx/leaders/FRA/FRA_Robert_Pelletier.png"
+			picture = "gfx/leaders/FRA/FRA_Robert_Pelletier.png"
 			expire = "1.1.1"
 			traits = { gaul_man }
 			ideology = pan_celticism_subtype
@@ -1027,7 +1027,7 @@ country_event = {	#戴亚选举第二部分
 		create_country_leader = {
 			name = "罗杰·加罗迪"
 	
-			picFRAe = "gfx/leaders/FRA/Portrait_FRA_Roger_Gaurady.png"
+			picture = "gfx/leaders/FRA/Portrait_FRA_Roger_Gaurady.png"
 			expire = "1.1.1"
 			traits = {  }
 			ideology = tot_islamic_socialism_subtype
@@ -1048,13 +1048,13 @@ country_event = {	#戴亚选举第二部分
 		set_cosmetic_tag = FRA_islam
 		hidden_effect = {	
 			remove_ideas_with_trait = head_of_government
-			add_ideas = FRA_Guy_Mollet_hog_sde
+			add_ideas = FRA_Roger_Gaurady_hog_tot
 			remove_ideas_with_trait = foreign_minister
-			add_ideas = FRA_Joseph_Paul_Boncour_for_sde
+			add_ideas = FRA_Paul_Rassinier_for_tot
 			remove_ideas_with_trait = economy_minister
-			add_ideas = FRA_Daniel_Guerin_eco_rso
+			add_ideas = FRA_Khalid_ibn_Hashim_eco_tot
 			remove_ideas_with_trait = security_minister
-			add_ideas = FRA_Sebastien_Faure_sec_rso
+			add_ideas = FRA_Abbe_Pierre_sec_tot
 			add_popularity = {
 			  ideology = totalist
 			   popularity = 0.20
@@ -2058,7 +2058,7 @@ option = {
 	
 	create_country_leader = {
 		name = "乔治·马歇"  # Georges Marchais
-		picFRAe = "gfx/leaders/NRM/Portrait_Normandy_Georges_Marchais.png"
+		picture = "gfx/leaders/NRM/Portrait_Normandy_Georges_Marchais.png"
 		expire = "1.1.1"
 		ideology = popcom_subtype
 	}
@@ -2071,7 +2071,7 @@ option = {
 	}
 	create_country_leader = {
 		name = "乔治·马歇"  # Georges Marchais
-		picFRAe = "gfx/leaders/NRM/Portrait_Normandy_Georges_Marchais.png"
+		picture = "gfx/leaders/NRM/Portrait_Normandy_Georges_Marchais.png"
 		expire = "1.1.1"
 		ideology = radsoc_popcom_subtype
 	}
@@ -2084,7 +2084,7 @@ option = {
 	}
 	create_country_leader = {
 		name = "乔治·马歇"  # Georges Marchais
-		picFRAe = "gfx/leaders/NRM/Portrait_Normandy_Georges_Marchais.png"
+		picture = "gfx/leaders/NRM/Portrait_Normandy_Georges_Marchais.png"
 		expire = "1.1.1"
 		ideology = broad_communism_subtype
 	}
@@ -2097,7 +2097,7 @@ option = {
 	}
 	create_country_leader = {
 		name = "乔治·马歇"  # Georges Marchais
-		picFRAe = "gfx/leaders/NRM/Portrait_Normandy_Georges_Marchais.png"
+		picture = "gfx/leaders/NRM/Portrait_Normandy_Georges_Marchais.png"
 		expire = "1.1.1"
 		ideology = radsoc_communism_subtype
 	}
@@ -2712,7 +2712,7 @@ country_event = {
 		create_country_leader = {
 			name = "莫里斯·甘末林"
 			desc = "POLITICS_GAMELIN_DESC"
-			picFRAe = "gfx/leaders/FRA/Portrait_France_Maurice_Gamelin_KR.png"
+			picture = "gfx/leaders/FRA/Portrait_France_Maurice_Gamelin_KR.png"
 			expire = "1965.1.1"
 			ideology = red_tinted_autocracy_subtype
 			traits = {
@@ -2796,7 +2796,7 @@ country_event = {
 			create_country_leader = {
 				name = "皮埃尔·雷诺德尔"
 		
-				picFRAe = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
+				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
 				expire = "1.1.1"
 				traits = {  }
 				ideology = socdem_humanistic_capitalism_subtype
@@ -2833,7 +2833,7 @@ country_event = {
 			create_country_leader = {
 				name = "皮埃尔·雷诺德尔"
 		
-				picFRAe = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
+				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
 				expire = "1.1.1"
 				traits = {  }
 				ideology = socdem_liberalized_syndicalism_subtype
@@ -2863,7 +2863,7 @@ country_event = {
 			create_country_leader = {
 				name = "皮埃尔·雷诺德尔"
 		
-				picFRAe = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
+				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
 				expire = "1.1.1"
 				traits = {  }
 				ideology = socdem_democratic_socialism_subtype
@@ -2894,7 +2894,7 @@ country_event = {
 			create_country_leader = {
 				name = "皮埃尔·雷诺德尔"
 		
-				picFRAe = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
+				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
 				expire = "1.1.1"
 				traits = {  }
 				ideology = radsoc_revisionist_marxism_subtype
@@ -2925,7 +2925,7 @@ country_event = {
 			create_country_leader = {
 				name = "皮埃尔·雷诺德尔"
 		
-				picFRAe = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
+				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
 				expire = "1.1.1"
 				traits = {  }
 				ideology = radsoc_liberal_socialism_subtype
@@ -2956,7 +2956,7 @@ country_event = {
 			create_country_leader = {
 				name = "皮埃尔·雷诺德尔"
 		
-				picFRAe = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
+				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
 				expire = "1.1.1"
 				traits = {  }
 				ideology = radsoc_possibilism_subtype
@@ -3147,7 +3147,7 @@ option = { #no god no please no
 				### Leader
 				create_country_leader = {
 					name = "加拿大社会主义者代表大会"
-					picFRAe = "gfx/leaders/CAN/Portrait_Canada_Vacant_Office_2.png"
+					picture = "gfx/leaders/CAN/Portrait_Canada_Vacant_Office_2.png"
 					expire = "1.1.1"
 					ideology = syndicalist_subtype
 				}
@@ -3227,7 +3227,7 @@ option = { #no god no please no
 		### Leader
 		create_country_leader = {
 			name = "加拿大社会主义者代表大会"
-			picFRAe = "gfx/leaders/CAN/Portrait_Canada_Vacant_Office_2.png"
+			picture = "gfx/leaders/CAN/Portrait_Canada_Vacant_Office_2.png"
 			expire = "1.1.1"
 			ideology = syndicalist_subtype
 		}
@@ -3372,7 +3372,7 @@ option = { #no god no please no
 		### Leader
 		create_country_leader = {
 			name = "加拿大社会主义者代表大会"
-			picFRAe = "gfx/leaders/CAN/Portrait_Canada_Vacant_Office_2.png"
+			picture = "gfx/leaders/CAN/Portrait_Canada_Vacant_Office_2.png"
 			expire = "1.1.1"
 			ideology = syndicalist_subtype
 		}
@@ -3670,7 +3670,7 @@ option = {
 		  }
 		create_country_leader = {
 		name = "Marie-Pierre Koenig"
-		picFRAe = "gfx/leaders/FRA/Portrait_FRA_Marie_Pierre_Koenig_KX.png"
+		picture = "gfx/leaders/FRA/Portrait_FRA_Marie_Pierre_Koenig_KX.png"
 		expire = "1965.1.1"
 		ideology = syn_red_junta_subtype
 		
@@ -3881,7 +3881,7 @@ option = {
 	name = kxxfrance.41.a
 	create_country_leader = {
 		name = "Vitus Heller"
-		picFRAe = "gfx/leaders/BAY/Portrait_Bavaria_Vitus_Heller.png"
+		picture = "gfx/leaders/BAY/Portrait_Bavaria_Vitus_Heller.png"
 		expire = "1.1.1"
 		ideology = christian_communism_subtype
 	}
@@ -3900,7 +3900,7 @@ option = {
 	name = kxxfrance.41.b
 	create_country_leader = {
 		name = "Heinrich Laufenberg"
-		picFRAe = "gfx/leaders/GER/Portrait_Germany_Heinrich_Laufenberg.png"
+		picture = "gfx/leaders/GER/Portrait_Germany_Heinrich_Laufenberg.png"
 		expire = "1.1.1"
 		ideology = national_communism_subtype
 	}
@@ -3919,7 +3919,7 @@ option = {
 	name = kxxfrance.41.c
 	create_country_leader = {
 		name = "Heinrich Brandler"
-		picFRAe = "gfx/leaders/NGF/Portrait_NGF_Heinrich_Brandler.png"
+		picture = "gfx/leaders/NGF/Portrait_NGF_Heinrich_Brandler.png"
 		expire = "1.1.1"
 		ideology = bukharinist_subtype
 	}
@@ -3938,7 +3938,7 @@ option = {
 	name = kxxfrance.41.e
 	create_country_leader = {
 		name = "Ruth Fischer"
-		picFRAe = "gfx/leaders/DDR/Portrait_Prussia_Ruth_Fischer.png"
+		picture = "gfx/leaders/DDR/Portrait_Prussia_Ruth_Fischer.png"
 		expire = "1.1.1"
 		ideology = bordigism_subtype
 	}
@@ -3957,7 +3957,7 @@ option = {
 	name = kxxfrance.41.f
 	create_country_leader = {
 		name = "Max Seydewitz"
-		picFRAe = "gfx/leaders/DDR/Portrait_Prussia_Max_Seydewitz.png"
+		picture = "gfx/leaders/DDR/Portrait_Prussia_Max_Seydewitz.png"
 		expire = "1.1.1"
 		ideology = radsoc_communism_subtype
 	}
@@ -3990,7 +3990,7 @@ option = {
 	name = kxxfrance.42.a
 	create_country_leader = {
 		name = "Jan Appel"
-		picFRAe = "gfx/leaders/NGF/Portrait_NGF_Jan_Appel.png"
+		picture = "gfx/leaders/NGF/Portrait_NGF_Jan_Appel.png"
 		expire = "1.1.1"
 		ideology = centralized_syndicalism_subtype
 	}
@@ -4009,7 +4009,7 @@ option = {
 	name = kxxfrance.42.b
 	create_country_leader = {
 		name = "Clara Zetkin"
-		picFRAe = "gfx/leaders/DDR/Portrait_Prussia_Clara_Zetkin.png"
+		picture = "gfx/leaders/DDR/Portrait_Prussia_Clara_Zetkin.png"
 		expire = "1.1.1"
 		ideology = feminist_syndicalist_subtype
 	}
@@ -4028,7 +4028,7 @@ option = {
 	name = kxxfrance.42.c
 	create_country_leader = {
 		name = "Rudolf Rocker"
-		picFRAe = "gfx/leaders/GER/Portrait_Germany_Rudolf_Rocker_I.png"
+		picture = "gfx/leaders/GER/Portrait_Germany_Rudolf_Rocker_I.png"
 		expire = "1.1.1"
 		ideology = anarcho_syndicalist_subtype
 	}
@@ -4047,7 +4047,7 @@ option = {
 	name = kxxfrance.42.e
 	create_country_leader = {
 		name = "Ernst Thalmann"
-		picFRAe = "gfx/leaders/GER/Portrait_Germany_Ernst_Thalmann.png"
+		picture = "gfx/leaders/GER/Portrait_Germany_Ernst_Thalmann.png"
 		expire = "1.1.1"
 		ideology = democratic_syndicalism_subtype
 	}
@@ -4082,7 +4082,7 @@ option = {
 	name = kxxfrance.43.a
 	create_country_leader = {
 		name = "Ernst Niekisch"
-		picFRAe = "gfx/leaders/BAY/Portrait_Bavaria_Ernst_Niekisch.png"
+		picture = "gfx/leaders/BAY/Portrait_Bavaria_Ernst_Niekisch.png"
 		expire = "1.1.1"
 		ideology = germanic_socialism_subtype
 	}
@@ -4101,7 +4101,7 @@ option = {
 	name = kxxfrance.43.b
 	create_country_leader = {
 		name = "Karl Otto Paetel"
-		picFRAe = "gfx/leaders/WGR/Portrait_Rhineland_Karl_Otto_Paetel.png"
+		picture = "gfx/leaders/WGR/Portrait_Rhineland_Karl_Otto_Paetel.png"
 		expire = "1.1.1"
 		ideology = sorelianism_subtype
 	}
@@ -4120,7 +4120,7 @@ option = {
 	name = kxxfrance.43.c
 	create_country_leader = {
 		name = "August Winnig"
-		picFRAe = "gfx/leaders/EPR/Portrait_EPR_August_Winnig.png"
+		picture = "gfx/leaders/EPR/Portrait_EPR_August_Winnig.png"
 		expire = "1.1.1"
 		ideology = volkisch_communitarianism_subtype
 	}
@@ -4139,7 +4139,7 @@ option = {
 	name = kxxfrance.43.e
 	create_country_leader = {
 		name = "Gregor Strasser"
-		picFRAe = "gfx/leaders/GRU/Portrait_Germany_Gregor_Strasser.png"
+		picture = "gfx/leaders/GRU/Portrait_Germany_Gregor_Strasser.png"
 		expire = "1.1.1"
 		ideology = natsynd_subtype
 	}
@@ -4158,7 +4158,7 @@ option = {
 	name = kxxfrance.43.f
 	create_country_leader = {
 		name = "Josef Goebbels"
-		picFRAe = "gfx/leaders/GRU/Portrait_Germany_Josef_Goebbels_13.png"
+		picture = "gfx/leaders/GRU/Portrait_Germany_Josef_Goebbels_13.png"
 		expire = "1.1.1"
 		ideology = national_marxist_subtype
 	}
@@ -4191,7 +4191,7 @@ option = {
 	name = kxxfrance.44.a
 	create_country_leader = {
 		name = "Gustav Landauer"
-		picFRAe = "gfx/leaders/BAY/Portrait_Bavaria_Gustav_Landauer.png"
+		picture = "gfx/leaders/BAY/Portrait_Bavaria_Gustav_Landauer.png"
 		expire = "1.1.1"
 		ideology = anarchism_subtype
 	}
@@ -4210,7 +4210,7 @@ option = {
 	name = kxxfrance.44.b
 	create_country_leader = {
 		name = "Erich Mühsam"
-		picFRAe = "gfx/leaders/EPR/Portrait_EPR_Erich_Muhsam.png"
+		picture = "gfx/leaders/EPR/Portrait_EPR_Erich_Muhsam.png"
 		expire = "1.1.1"
 		ideology = anarcho_communism_subtype
 	}
@@ -4229,7 +4229,7 @@ option = {
 	name = kxxfrance.44.c
 	create_country_leader = {
 		name = "Rudolf Rocker"
-		picFRAe = "gfx/leaders/GER/Portrait_Germany_Rudolf_Rocker_I.png"
+		picture = "gfx/leaders/GER/Portrait_Germany_Rudolf_Rocker_I.png"
 		expire = "1.1.1"
 		ideology = radsoc_anarcho_syndicalist_subtype
 	}
@@ -4263,7 +4263,7 @@ option = {
 	name = kxxfrance.45.a
 	create_country_leader = {
 		name = "Kurt Eisner"
-		picFRAe = "gfx/leaders/BAY/Portrait_Bavaria_Kurt_Eisner.png"
+		picture = "gfx/leaders/BAY/Portrait_Bavaria_Kurt_Eisner.png"
 		expire = "1.1.1"
 		ideology = moderate_socialist_subtype
 	}
@@ -4282,7 +4282,7 @@ option = {
 	name = kxxfrance.45.b
 	create_country_leader = {
 		name = "Max Brauer"
-		picFRAe = "gfx/leaders/NGF/Portrait_NGF_Max_Brauer.png"
+		picture = "gfx/leaders/NGF/Portrait_NGF_Max_Brauer.png"
 		expire = "1.1.1"
 		ideology = syndie_social_democrat_subtype
 	}
@@ -4301,7 +4301,7 @@ option = {
 	name = kxxfrance.45.c
 	create_country_leader = {
 		name = "Wilhelm Buck"
-		picFRAe = "gfx/leaders/DDR/Portrait_Prussia_Wilhelm_Buck.png"
+		picture = "gfx/leaders/DDR/Portrait_Prussia_Wilhelm_Buck.png"
 		expire = "1.1.1"
 		ideology = socdem_left_nationalism_subtype
 	}
@@ -4319,7 +4319,7 @@ option = {
 	name = kxxfrance.45.e
 	create_country_leader = {
 		name = "Silvio Gesell"
-		picFRAe = "gfx/leaders/WGR/Portrait_Rhineland_Silvio_Gesell.png"
+		picture = "gfx/leaders/WGR/Portrait_Rhineland_Silvio_Gesell.png"
 		expire = "1.1.1"
 		ideology = radsoc_georgism_subtype
 	}
@@ -4337,7 +4337,7 @@ option = {
 	name = kxxfrance.45.f
 	create_country_leader = {
 		name = "Josef Friedrich Matthes"
-		picFRAe = "gfx/leaders/WGR/Portrait_Rhineland_Josef_Friedrich_Matthes.png"
+		picture = "gfx/leaders/WGR/Portrait_Rhineland_Josef_Friedrich_Matthes.png"
 		expire = "1.1.1"
 		ideology = liberal_socialism_subtype
 	}
@@ -5132,7 +5132,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
 	title = kxxfrance.66.t
 	desc = kxxfrance.66.d
-  picFRAe = GFX_report_event_FRA_jacobin_collapse
+  picture = GFX_report_event_FRA_jacobin_collapse
 	is_triggered_only = yes
 	
 
@@ -5154,7 +5154,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
 	title = kxxfrance.67.t
 	desc = kxxfrance.67.d
-  picFRAe = GFX_report_event_FRA_la_rochelle
+  picture = GFX_report_event_FRA_la_rochelle
 	is_triggered_only = yes
 	
 
@@ -5176,7 +5176,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
 	title = kxxfrance.68.t
 	desc = kxxfrance.68.d
-  picFRAe = GFX_report_event_FRA_bietry_lanoir
+  picture = GFX_report_event_FRA_bietry_lanoir
 	is_triggered_only = yes
 	
 
@@ -5194,7 +5194,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
 	title = kxxfrance.69.t
 	desc = kxxfrance.69.d
-	picFRAe = GFX_WLL_Capet
+	picture = GFX_WLL_Capet
 	is_triggered_only = yes
 	
 
@@ -5287,7 +5287,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
 	title = kxxfrance.70.t
 	desc = kxxfrance.70.d
-	picFRAe = GFX_WLL_Charlemagne
+	picture = GFX_WLL_Charlemagne
 	fire_only_once = yes
 	  trigger = {
 		tag = FRA
@@ -5521,7 +5521,7 @@ option = {
 
 	create_country_leader = {
 		name = "雷蒙德·佩里卡特"
-		picFRAe = "gfx/leaders/FRA/Portrait_FRA_Raymond_Pericat.png"
+		picture = "gfx/leaders/FRA/Portrait_FRA_Raymond_Pericat.png"
 		expire = "1.1.1"
 		ideology = anarcho_communism_subtype
 		
@@ -6004,7 +6004,7 @@ news_event = {
 	id = kxx.news.1
 	title = kxx.news.1.t
 	desc = kxx.news.1.d
-	picFRAe = GFX_news_event_frg_cw
+	picture = GFX_news_event_frg_cw
 
 	fire_only_once = no
 	major = yes

@@ -33,6 +33,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ministers/FRA/FRA_Louis_Vallon_hog_tot.png"
 	}
 	spriteType = {
+		name = "GFX_idea_FRA_Roger_Gaurady_hog_tot"
+		texturefile = "gfx/interface/ministers/FRA/FRA_Roger_Gaurady_hog_tot.png"
+	}
+	spriteType = {
 		name = "GFX_idea_FRA_Jacques_Le_Roy_Ladurie_for_rso"
 		texturefile = "gfx/interface/ministers/FRA/FRA_Jacques_Le_Roy_Ladurie_for_rso.png"
 	}
@@ -55,6 +59,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_FRA_Rene_Pleven_for_tot"
 		texturefile = "gfx/interface/ministers/FRA/FRA_Phileas_Lebesgue_for_rso.png"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Paul_Rassinier_for_tot"
+		texturefile = "gfx/interface/ministers/FRA/FRA_Paul_Rassinier_for_tot.png"
 	}
 	spriteType = {
 		name = "GFX_idea_FRA_Pierre_Caziot_eco_rso"
@@ -81,6 +89,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ministers/FRA/FRA_Pierre_Clostermann_eco_tot.png"
 	}
 	spriteType = {
+		name = "GFX_idea_FRA_Khalid_ibn_Hashim_eco_tot"
+		texturefile = "gfx/interface/ministers/FRA/FRA_Khalid_ibn_Hashim_eco_tot.png"
+	}
+	spriteType = {
 		name = "GFX_idea_FRA_Pierre_Poujade_sec_rso"
 		texturefile = "gfx/interface/ministers/FRA/FRA_Pierre_Poujade_sec_rso.png"
 	}
@@ -103,6 +115,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_FRA_Jean_Moulin_sec_tot"
 		texturefile = "gfx/interface/ministers/FRA/FRA_Jean_Moulin_sec_tot.png"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Abbe_Pierre_sec_tot"
+		texturefile = "gfx/interface/ministers/FRA/FRA_Abbe_Pierre_sec_tot.png"
 	}
 }	
 
