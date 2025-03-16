@@ -4168,7 +4168,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.1
 				stability_factor = 0.05
-				social_democrat_drift = 0.01
+				war_support_factor = 0.05
 			}
 		}
 		FRA_socdem_regime2 = {
@@ -4178,7 +4178,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.1
 				stability_factor = 0.05
-				social_democrat_drift = 0.01
+				war_support_factor = 0.05
 				research_speed_factor = 0.05
 				local_resources_factor = 0.2
 				consumer_goods_factor = -0.15
@@ -4191,11 +4191,11 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.1
 				stability_factor = 0.05
-				social_democrat_drift = 0.05
-				social_liberal_drift = 0.02
-				market_liberal = 0.02
-				social_conservative_drift = 0.02
-				authoritarian_democrat_drift = 0.01
+				war_support_factor = 0.05
+				compliance_growth = 0.15
+				production_lack_of_resource_penalty_factor = -0.1
+				resistance_target = -0.15
+				industry_free_repair_factor = 0.1
 				research_speed_factor = 0.05
 				local_resources_factor = 0.2
 				consumer_goods_factor = -0.15
@@ -4235,7 +4235,7 @@ ideas = {
 		FRA_civil_right = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
 			allowed = { always = yes }
-			picture = civil_rights_act_idea
+			picture = BBR_civil_rights_act_idea
 			modifier = {
 				political_power_gain = 0.1
 				stability_factor = 0.1

@@ -1,0 +1,35 @@
+###########################################
+# Constitutional American Republic
+# Decisions by Matthew
+# SIKE THEY AINT - kalmus
+###########################################
+FRA_cachin_bop_decisions = {
+	FRA_revolutionary_policies = {
+		allowed = {
+			tag = FRA
+		}
+		cost = 50
+		priority = 10
+		complete_effect = {
+			add_power_balance_value = {
+				id = FRA_cachin_bop
+				value = 0.25
+			}
+		}
+	}
+	FRA_make_compromises = {
+		allowed = {
+			tag = FRA
+		}
+		cost = 50
+		priority = 10
+		complete_effect = {
+			add_power_balance_value = {
+				id = FRA_cachin_bop
+				value = -0.25
+			}
+		}
+	}
+
+
+}

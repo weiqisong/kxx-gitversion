@@ -26038,6 +26038,10 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Extend_Provisional_Dictatorship"
 			add_ideas = FRA_commie_syndie
+			set_power_balance = {
+				id = FRA_cachin_bop
+			}
+			set_country_flag = FRA_cachin_bop_begins 
 			hidden_effect = {
 				set_variable = {
 					var = FRA_commie_power
@@ -38944,7 +38948,7 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_universal_unionization"
-			add_popularity = { ideology = radical_socialist popularity  = 0.05 }
+			add_popularity = { ideology = social_democrat popularity  = 0.05 }
 			add_political_power = 25
 			add_ideas = FRA_universal_unionization_idea_1
 		}
@@ -39063,7 +39067,7 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_SFIO_leadership"
-			add_popularity = { ideology = radical_socialist popularity = 0.02 }
+			add_popularity = { ideology = social_democrat popularity = 0.02 }
 			add_stability = 0.02
 			add_political_power = 10
 		}
@@ -39084,13 +39088,10 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_socialist_affirmations"
-			add_popularity = { ideology = radical_socialist popularity = 0.04 }
+			add_popularity = { ideology = social_democrat popularity = 0.04 }
 			add_stability = 0.04
 			add_political_power = 25
-			swap_ideas = {
-			remove_idea = FRA_angered_socialists_idea_2
-			add_idea = FRA_angered_socialists_idea_3
-			}
+			add_ideas = FRA_SFIO_hegemony
 		}
 	}
 	
@@ -39109,13 +39110,11 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_cgt_moderations"
-			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_popularity = { ideology = social_democrat popularity = 0.03 }
 			add_popularity = { ideology = syndicalist popularity = -0.05 }
 			add_political_power = 20
-			swap_ideas = {
-			remove_idea = FRA_angered_socialists_idea_3
-			add_idea = FRA_angered_socialists_idea_4
-			}
+			add_manpower = 2000
+			add_command_power = 15
 		}
 	}
 	
@@ -39138,11 +39137,8 @@ focus = {
 			add_political_power = 30
 			add_war_support = 0.03
 			add_command_power = 5
-			add_popularity = { ideology = radical_socialist popularity = 0.03 }
-			swap_ideas = {
-			remove_idea = FRA_angered_socialists_idea_4
-			add_idea = FRA_angered_socialists_idea_5
-			}
+			add_popularity = { ideology = social_democrat popularity = 0.03 }
+			
 		}
 	}
 	
@@ -39181,7 +39177,7 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_labourist_federal_election"
-			add_popularity = { ideology = radical_socialist popularity = 0.05 }
+			add_popularity = { ideology = social_democrat popularity = 0.05 }
 			add_political_power = 30
 			add_stability = 0.03
 		}
@@ -39202,9 +39198,9 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_improved_artisan_organization"
-			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_popularity = { ideology = social_democrat popularity = 0.03 }
 			add_popularity = { ideology = totalist popularity = -0.02 }
-			add_popularity = { ideology = social_democrat popularity = -0.02 }
+			add_popularity = { ideology = radical_socialist popularity = -0.02 }
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 0.4
@@ -39241,10 +39237,13 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_party_unification"
-			add_popularity = { ideology = radical_socialist popularity = 0.08 }
+			add_popularity = { ideology = social_democrat popularity = 0.08 }
 			add_political_power = 50
 			add_stability = 0.1
-			remove_ideas = FRA_angered_socialists_idea_5
+			swap_ideas = {
+				remove_idea = FRA_SFIO_hegemony
+				add_idea = FRA_SFIO_hegemony2
+			}
 		}
 	}
 	
@@ -39304,7 +39303,7 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_labor_valuation"
-			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_popularity = { ideology = social_democrat popularity = 0.03 }
 			add_political_power = 20
 			add_stability = 0.02
 			random_owned_state = {
@@ -39444,7 +39443,7 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_buy_in_bulk"
 			add_political_power = -20
-			add_popularity = { ideology = radical_socialist popularity = 0.02 }
+			add_popularity = { ideology = social_democrat popularity = 0.02 }
 			random_owned_state = {
 				limit = {
 					is_core_of = FRA
@@ -39565,8 +39564,12 @@ focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_fraternal_socialism"
 			add_stability = 0.08
 			add_political_power = 40
-			add_popularity = { ideology = radical_socialist popularity = 0.1 }
+			add_popularity = { ideology = social_democrat popularity = 0.1 }
 			add_manpower = 5000
+			swap_ideas = {
+				remove_idea = FRA_SFIO_hegemony2
+				add_idea = FRA_SFIO_hegemony3
+			}
 		}
 	}
 	
@@ -39738,10 +39741,7 @@ focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_monied_reforms"
 			add_political_power = 30
 			add_stability = 0.05
-			swap_ideas = {
-				remove_idea = FRA_socdem_regime2
-				add_idea = FRA_socdem_regime3
-			}
+			add_ideas = FRA_finacial_reform
 			random_owned_state = {
 				limit = {
 					is_core_of = FRA
@@ -39749,7 +39749,7 @@ focus = {
 					industrial_complex > 0
 				}
 				add_extra_state_shared_building_slots = 1
-				}
+			}
 		}
 	}
 	
@@ -39770,7 +39770,6 @@ focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_municipal_republicanism"
 			add_political_power = 30
 			add_popularity = { ideology = social_democrat popularity = 0.04 }
-			
 			add_ideas = FRA_socdem_regime
 		}
 	}
@@ -39880,7 +39879,7 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_radical_propertarianships"
 			add_popularity = { ideology = social_democrat popularity = 0.05 }
-			add_ideas = FRA_social_justice
+		
 			random_owned_state = {
 				limit = {
 					is_core_of = FRA
@@ -39922,6 +39921,10 @@ focus = {
 					industrial_complex > 0
 				}
 				add_extra_state_shared_building_slots = 1
+			}
+			swap_ideas = {
+				remove_idea = FRA_finacial_reform
+				add_idea = FRA_finacial_reform2
 			}
 		}
 	}
@@ -39967,6 +39970,10 @@ focus = {
 					level = 1
 					instant_build = yes
 				}
+			}
+			swap_ideas = {
+				remove_idea = FRA_finacial_reform2
+				add_idea = FRA_finacial_reform3
 			}
 		}
 	}
@@ -40030,6 +40037,7 @@ focus = {
 				uses = 1
 				category = electronics
 			}
+			add_ideas = FRA_republican_schooling
 		}
 	}
 	
@@ -40136,6 +40144,7 @@ focus = {
 			add_popularity = { ideology = social_democrat popularity = 0.08 }
 			add_stability = 0.08
 			add_political_power = 50
+			add_ideas = FRA_social_justice
 		}
 	}
 	
@@ -40343,6 +40352,7 @@ focus = {
 					instant_build = yes
 				}
 			}
+			
 		}
 	}
 	

@@ -4,6 +4,240 @@
 ideas = {
 
 	country = {
+		
+		FRA_republican_schooling = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = educational_spending
+			modifier = {
+				research_speed_factor = 0.25
+			}
+			research_bonus = {
+				armor = 0.1
+				electronics = 0.1
+				construction_tech = 0.1
+				excavation_tech = 0.1
+				industry = 0.1
+				infantry_weapons = 0.1
+				support_tech = 0.1
+				land_doctrine = 0.1
+				motorized_equipment = 0.1		
+				artillery = 0.1
+
+			}
+		
+		}
+		FRA_finacial_reform3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = give_money
+			modifier = {
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_factory_start_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_speed_buildings_factor = 0.15
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		
+		}
+		FRA_finacial_reform2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = give_money
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = 0.03
+				line_change_production_efficiency_factor = 0.03
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+
+			}
+		}
+		FRA_finacial_reform = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = give_money
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = -0.1
+				line_change_production_efficiency_factor = -0.1
+
+			}
+		}
+		FRA_SFIO_hegemony3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = MEX_social_democracy_idea
+			modifier = {
+				political_power_cost = -0.1
+				stability_factor = 0.1
+				war_stability_factor = 0.1
+				war_support_factor = 0.1
+				required_garrison_factor = -0.1
+				conscription = 0.02
+				conscription_factor = 0.2
+				party_popularity_stability_factor = 0.1
+				weekly_casualties_war_support = 0.0005
+				equipment_capture_factor = 0.15
+				production_lack_of_resource_penalty_factor = -0.1
+				supply_node_range = 0.1
+				conversion_cost_civ_to_mil_factor = -0.15
+				conversion_cost_mil_to_civ_factor = -0.15
+				military_industrial_organization_policy_cost = -0.1
+				military_industrial_organization_funds_gain = 0.1
+				no_supply_grace = 24
+
+			}
+		}
+		FRA_SFIO_hegemony2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = MEX_social_democracy_idea
+			modifier = {
+				political_power_cost = -0.1
+				stability_factor = 0.1
+				war_stability_factor = 0.1
+				war_support_factor = 0.1
+				required_garrison_factor = -0.1
+				conscription = 0.01
+				conscription_factor = 0.1
+				party_popularity_stability_factor = 0.1
+				weekly_casualties_war_support = 0.005
+				equipment_capture_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
+				supply_node_range = 0.1
+			}
+		}
+		FRA_SFIO_hegemony = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = MEX_social_democracy_idea
+			modifier = {
+				political_power_cost = -0.1
+				stability_factor = 0.1
+				war_stability_factor = 0.1
+				war_support_factor = 0.1
+				required_garrison_factor = -0.1
+			}
+		}
+		FRA_emancipatory_education_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = GRU_SPD_EDUCATION_GRANTS
+			modifier = {
+				command_power_gain = 0.1
+				max_command_power = 100
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+				training_time_army_factor = -0.1
+				mobilization_speed = 0.1
+			}
+		}
+		FRA_SFIO_labourism_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = NEE_union_peace
+			modifier = {
+				consumer_goods_factor = -0.2
+				consumer_goods_expected_value = -0.2
+				monthly_population = 0.75
+				industrial_capacity_factory = 0.15
+				compliance_growth = 0.1
+				supply_consumption_factor = -0.15
+				global_building_slots = 1
+				stability_factor = 0.15
+				military_industrial_organization_funds_gain = 0.1
+				military_industrial_organization_research_bonus = 0.1
+			}
+		}
+		FRA_SFIO_labourism_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = NEE_union_peace
+			modifier = {
+				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
+				monthly_population = 0.5
+				industrial_capacity_factory = 0.1
+				compliance_growth = 0.1
+				supply_consumption_factor = -0.1
+				global_building_slots = 1
+				stability_factor = 0.1
+
+			}
+		}
+		FRA_SFIO_labourism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = NEE_union_peace
+			modifier = {
+				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
+				monthly_population = 0.5
+				industrial_capacity_factory = 0.05
+				compliance_growth = 0.1
+			}
+		}
+		FRA_universal_unionization_idea_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = KIV_unionism_idea
+			modifier = {
+				production_speed_buildings_factor = 0.03
+				production_speed_arms_factory_factor = 0.12
+				production_speed_industrial_complex_factor = 0.12
+				global_building_slots_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				research_speed_factor = 0.1
+				local_resources_factor = 0.1
+				trade_opinion_factor = 0.25
+
+			}
+		}
+		FRA_universal_unionization_idea_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = KIV_unionism_idea
+			modifier = {
+				production_speed_buildings_factor = 0.03
+				production_speed_arms_factory_factor = 0.12
+				production_speed_industrial_complex_factor = 0.12
+				global_building_slots_factor = 0.1
+				production_factory_start_efficiency_factor = 0.03
+				production_factory_max_efficiency_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.03
+				line_change_production_efficiency_factor = 0.03
+
+			}
+		}
+		FRA_universal_unionization_idea_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
+			allowed = { always = no }
+			picture = KIV_unionism_idea
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				production_speed_arms_factory_factor = 0.12
+				production_speed_industrial_complex_factor = 0.12
+				global_building_slots_factor = 0.05
+			}
+		}
 		FRA_sword_of_islam = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
 			allowed = { always = no }

@@ -1,0 +1,16 @@
+###########################################
+# Constitutional American Republic
+# Decisions by Matthew
+###########################################
+
+FRA_cachin_bop_decisions = {
+	priority = 100
+	visible_when_empty = yes
+	allowed = {
+		original_tag = FRA
+	}
+
+	visible = {
+		tag = FRA
+	}
+}
