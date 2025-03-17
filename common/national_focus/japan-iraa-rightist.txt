@@ -361,7 +361,7 @@ focus_tree = {
 		prerequisite = { focus = JAPIRAARIGHTIST_sneak_in_toseiha_influence  }
 		completion_reward = {
 		add_ideas = {
-		JAP_spiritual_army
+			JAP_spiritual_army_1
 		}
 		}
 	}
@@ -703,6 +703,10 @@ focus_tree = {
 		add_war_support = 0.1
 		add_stability = 0.05
 		add_political_power = 50
+		swap_ideas = {
+			remove_idea = JAP_the_invisible_market
+			add_idea = JAP_the_invisible_market_1
+			}
 		}
 	}
 

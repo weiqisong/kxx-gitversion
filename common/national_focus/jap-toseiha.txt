@@ -661,9 +661,28 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPTOSEIHA_push_forward_modernization  } prerequisite = { focus = JAPTOSEIHA_weraiseourriflestotheemperor  }
 		completion_reward = {
-		add_ideas = {
-		JAP_nagata_shogunate
-		}
+			if = {
+				limit = {
+					has_country_leader = {
+						ruling_only = yes
+						name = "永田铁山"
+					}
+				}
+				add_ideas = {	
+					JAP_nagata_shogunate
+				}
+			}
+			if = {
+				limit = {
+					has_country_leader = {
+						ruling_only = yes
+						name = "池田纯久"
+					}
+				}
+				add_ideas = {	
+					JAP_Sumihisa_idea
+				}
+			}
 		}
 	}
 

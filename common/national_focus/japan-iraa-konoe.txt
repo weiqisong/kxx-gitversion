@@ -87,7 +87,7 @@ focus_tree = {
 		prerequisite = { focus = JAPKONOE_national_land_reforms  }
 		completion_reward = {
 		add_ideas = {
-		JAP_peoples_showa_connections
+			JAP_peoples_showa_connections_2
 		}
 		}
 	}
@@ -142,8 +142,8 @@ focus_tree = {
 		completion_reward = {
 		add_tech_bonus = {
 			name = RUS_Expand_The_Railway_Network 
-			bonus = 0.5
-			uses = 1
+			bonus = 2
+			uses = 3
 			category = train_tech
 		}
 		}

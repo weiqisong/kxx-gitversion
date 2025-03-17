@@ -121,6 +121,7 @@ focus_tree = {
 		completion_reward = {
 		add_war_support = 0.05
 		add_political_power = 10
+		add_ideas = JAP_military_leap
 		add_to_variable = {
 				var = JAP_military_leap
 				value = 10
@@ -224,6 +225,9 @@ focus_tree = {
 		prerequisite = { focus = JAPARAKI_extending_the_fist_of_military_might  } prerequisite = { focus = JAPARAKI_nationalist_propagation  }
 		completion_reward = {
 		add_political_power = 50
+		add_ideas = {
+			JAP_are_ya_ready_war
+		}	
 		add_to_variable = {
 				var = JAP_military_leap
 				value = 10
@@ -279,6 +283,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPARAKI_reinforce_security_of_the_state  } prerequisite = { focus = JAPARAKI_arrest_the_syndicalist_traitors  } prerequisite = { focus = JAPARAKI_crush_aristocratic_corruption  }
 		completion_reward = {
+			remove_ideas = JAP_military_leap
+			remove_ideas = JAP_spiritual_leap
+			remove_ideas = JAP_economy_leaps
+			add_ideas = JAP_three_leap
 		add_popularity = {
 				ideology = ROOT
 				popularity = 0.10
@@ -302,6 +310,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPARAKI_arrest_the_syndicalist_traitors  } prerequisite = { focus = JAPARAKI_crush_aristocratic_corruption  }
 		completion_reward = {
+			add_ideas = {
+				JAP_militaristic_social_justice
+				}
 		add_stability = 0.10
 		add_to_variable = {
 				var = JAP_military_leap
@@ -362,6 +373,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPARAKI_on_the_hill_of_hashimoto_thought  } prerequisite = { focus = JAPARAKI_militaristic_social_justice  }
 		completion_reward = {
+			add_ideas = {
+				JAP_Pronouncing_the_New_Kokutairon_idea
+			}	
 		add_research_slot = 1
 		}
 	}
@@ -451,6 +465,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPARAKI_proclaim_a_new_shogunate  }
 		completion_reward = {
+			add_ideas = JAP_rally_the_tonarigumi
 		add_stability = 0.15
 		add_political_power = 25
 		}
@@ -488,6 +503,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPARAKI_rally_the_tonarigumi  } prerequisite = { focus = JAPARAKI_revive_the_kokutai  } prerequisite = { focus = JAPARAKI_shinmin_no_michi  }
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = JAP_rally_the_tonarigumi
+				add_idea = JAP_rally_the_tonarigumi_1
+				}
 		add_research_slot = 1
 		}
 	}
@@ -522,6 +541,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPARAKI_rally_the_tonarigumi  } prerequisite = { focus = JAPARAKI_revive_the_kokutai  }
 		completion_reward = {
+			add_ideas = {
+				JAP_Pronouncing_the_New_Kokutairon_idea
+			}	
 		add_war_support = 0.05
 		add_political_power = -100
 		add_popularity = {
@@ -597,8 +619,11 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPARAKI_kokutai_no_hongi  }
 		completion_reward = {
-		army_experience = 25
-		navy_experience = 15
+			add_ideas = {
+				JAP_spiritual_army
+				}
+		army_experience = 50
+		navy_experience = 50
 		add_war_support = 0.05
 		}
 	}
@@ -615,9 +640,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPARAKI_national_mobilization  } prerequisite = { focus = JAPARAKI_spiritual_training  }
 		completion_reward = {
-		add_ideas = {
-		JAP_spiritual_army
-		}
+			swap_ideas = {
+				remove_idea = JAP_spiritual_army
+				add_idea = JAP_spiritual_army_1
+				}
 		}
 	}
 
@@ -633,7 +659,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPARAKI_preparing_for_total_war  } prerequisite = { focus = JAPARAKI_crush_ugaki_thought  }
 		completion_reward = {
-		
+			add_war_support = 0.15
 		add_popularity = {
 		ideology =  ROOT
 		popularity = 0.1
@@ -672,6 +698,10 @@ focus_tree = {
 		prerequisite = { focus = JAPARAKI_national_spiritual_mobilisation  }
 		completion_reward = {
 		add_political_power = 100
+			swap_ideas = {
+			remove_idea = JAP_peoples_showa_connections_1
+			add_idea = JAP_peoples_showa_connections_2
+			}
 		}
 	}
 
@@ -687,10 +717,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPARAKI_the_bamboo_spear_slay_our_enemies  } prerequisite = { focus = JAPARAKI_serving_for_the_emperor  }
 		completion_reward  = {
-		swap_ideas = {
-		remove_idea = JAP_peoples_showa_connections_1
-		add_idea = JAP_peoples_showa_connections_2
-		}
+			add_ideas = JAP_new_shogunate_2
 		}
 	}
 
@@ -706,6 +733,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPARAKI_declaring_the_3_leaps  }
 		mutually_exclusive = { focus = JAPARAKI_theemperortheeconomy  }
+		completion_reward  = {
+			add_ideas = JAP_economy_leaps
+		}
 	}
 
 	#The Emperor & The Economy

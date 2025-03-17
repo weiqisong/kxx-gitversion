@@ -451,6 +451,9 @@
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_rapid_industrialisation"
 			add_one_random_military_factory = yes
 			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -586,6 +589,8 @@
 			log = "[GetDateText]: [Root.GetName]: shared_focus JAP_finance_factory_projects"
 			add_one_random_civilian_factory = yes
 			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
 			add_tech_bonus = {
 				name = JAP_finance_factory_projects
 				bonus = 1
@@ -653,6 +658,8 @@
 					category = synth_resources
 				}
 			}
+			add_one_random_synthetic_refinery = yes
+			add_one_random_synthetic_refinery = yes
 			add_one_random_synthetic_refinery = yes
 			add_one_random_synthetic_refinery = yes
 			custom_effect_tooltip = tooltip_white_line
@@ -794,7 +801,7 @@
 			537 = {
 				add_resource = {
 					type = oil
-					amount = 6
+					amount = 12
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -822,6 +829,8 @@
 		ai_will_do = { factor = 25 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_regulating_the_automotive_industry"
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
 			add_one_random_civilian_factory = yes
 			add_one_random_civilian_factory = yes
 			if = {

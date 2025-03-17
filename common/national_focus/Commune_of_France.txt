@@ -10943,7 +10943,7 @@ focus = FRA_office_des_chemins_de_fer
 		
 		
 		x = 90
-		y = 12
+		y = 22
 		allow_branch = {
 			NOT = {
 				tag = FRA
@@ -16574,9 +16574,9 @@ focus = FRA_office_des_chemins_de_fer
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_valois_is_gone"
 			custom_effect_tooltip = FRA_infamy_tooltip
 			FRA = {
-				country_event = comfrance.904
+				country_event = COF_Valois.1
 			}
-			add_ideas = FRA_valois_dead_idea
+			
 		}
 	}
 
@@ -16587,14 +16587,12 @@ focus = FRA_office_des_chemins_de_fer
 		text = FRA_who_shall_lead
 		icon = GFX_goals_FRA_who_will_lead
 		cost = 8.00
-		prerequisite = {
-			focus = FRA_valois_is_gone
-		}
+		
 		ai_will_do = {
 			factor = 999
 		}
 		x = 0
-		y = 5
+		y = 15
 		relative_position_id = FRA_sorelians_rule_supreme
 		available = {
 			has_government = totalist
@@ -16604,6 +16602,7 @@ focus = FRA_office_des_chemins_de_fer
 			custom_effect_tooltip = FRA_who_leads_tooltip
 			add_ideas = FRA_black_guard_insurgency_idea
 			remove_ideas = FRA_sorelians_supreme_idea2
+			add_ideas = FRA_valois_dead_idea
 		}
 	}
 	
@@ -18710,20 +18709,551 @@ focus = FRA_office_des_chemins_de_fer
 			}
 		}
 	}
+	###瓦卢瓦存活 正常线路
+	#瓦卢瓦存活
+	focus = {
+
+		id = FRA_Prometheus_the_Immortal
+		icon = GFX_goal_FRA_Prometheus_the_Immortal
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = FRA_valois_is_gone
+		}	
+		x = 0
+		y = 5
+		relative_position_id = FRA_sorelians_rule_supreme
+		
+		completion_reward = {
+			add_country_leader_trait = COF_prometheus_the_immortal_traits	
+		}
+	}
+	focus = {
+		id = FRA_No_Democracy_required
+		icon = GFX_goal_FRA_No_Democracy_required
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = FRA_Prometheus_the_Immortal
+		}
+		relative_position_id = FRA_Prometheus_the_Immortal
+		x = -1
+		y = 1
+		completion_reward = {
+			add_popularity = {
+				ideology = syndicalist
+				popularity = -0.2
+			}
+			add_manpower = -300
+			add_ideas = FRA_no_democracy_required_idea
+		}
+	}
+	focus = {
+		id = FRA_Valois_Gabriel_Horn
+		icon = GFX_goal_FRA_Valois_Gabriel_Horn
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = FRA_Prometheus_the_Immortal
+		}
+		relative_position_id = FRA_Prometheus_the_Immortal
+		x = 1
+		y = 1
+		completion_reward = {
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = -0.2
+			}
+			add_stability = 0.2
+			add_manpower = -5000
+		}
+	}
+	focus = {
+		id = FRA_United_Revolutionary_Syn
+		icon = GFX_Focus_COMFRA9
+		cost = 3
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = FRA_No_Democracy_required
+		}
+		prerequisite = {
+			focus = FRA_Valois_Gabriel_Horn
+		}
+		relative_position_id = FRA_Prometheus_the_Immortal
+		x = 0
+		y = 2
+		completion_reward = {
+			add_country_leader_trait = COF_leader_of_national_rejuvenation
+			swap_ideas = {
+				remove_idea = FRA_french_nationalism_idea
+				add_idea = FRA_french_nationalism_idea2
+			}
+		}
+	}
+	focus = {
+		id = FRA_Continue_Cooperation_Sorelians
+		icon = GFX_goal_FRA_Continue_Cooperation_Sorelians
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_completed_focus = FRA_Curbing_the_More_Radical
+		}
+		prerequisite = {
+			focus = FRA_United_Revolutionary_Syn
+		}
+		relative_position_id = FRA_United_Revolutionary_Syn
+		x = -1
+		y = 1
+		completion_reward = {
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = syndicalist
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.1
+			}
+			add_synd_to_coalition = yes
+			add_natpop_to_coalition = yes
+			hidden_effect = {
+				add_ideas = FRA_union_loyalty
+			}
+		}
+	}
+	focus = {
+		id = FRA_Cultivating_Technocrats
+		icon = GFX_goal_CSA_Technical_Alliance
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = FRA_Continue_Cooperation_Sorelians
+		}
+		relative_position_id = FRA_Continue_Cooperation_Sorelians
+		x = -3
+		y = 1
+		completion_reward = {
+			add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 0.25
+			}
+			add_research_slot = 1
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = construction_tech
+			}
+			add_tech_bonus = {
+				name = FRA_secret_weaponry
+				bonus = 1
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = FRA_Sorel_Planning_Doctrine
+		icon = GFX_goal_COR_Southern_Command_Economy
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = FRA_Continue_Cooperation_Sorelians
+		}
+		relative_position_id = FRA_Continue_Cooperation_Sorelians
+		x = -1
+		y = 1
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_Mouvement_Class_Moyennes
+		icon = GFX_focus_spr_class_war
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = FRA_Cultivating_Technocrats
+		}
+		prerequisite = {
+			focus = FRA_Sorel_Planning_Doctrine
+		}
+		relative_position_id = FRA_Cultivating_Technocrats
+		x = 1
+		y = 1
+		completion_reward = {
+			add_ideas = FRA_neoclass_society
+		}
+	}
+	focus = {
+		id = FRA_Curbing_the_More_Radical
+		icon = GFX_focus_focus_fra_fascist_threat
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = FRA_United_Revolutionary_Syn
+		}
+		relative_position_id = FRA_United_Revolutionary_Syn
+		x = 1
+		y = 1
+		completion_reward = {
+			set_party_name = { 
+				ideology = national_populist
+				long_name = FRA_sorelians_Natpop_Party_long
+				name = FRA_sorelians_Natpop_Party
+			}
+			create_country_leader = {
+				name = "乔治·瓦卢瓦"
+				desc = "POLITICS_GEORGES_VALOIS_DESC"
+				picture = "gfx/leaders/FRA/Portrait_France_Georges_Valois.png"
+				expire = "1965.1.1"
+				traits = {
+					COF_prometheus_the_immortal_traits
+					COF_leader_of_national_rejuvenation
+				}
+				ideology = natpop_sorelism_subtype
+			}
+		}
+	}
+	focus = {
+		id = FRA_Warrior_Class_First
+		icon = GFX_Focus_COMFRA4
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = FRA_Curbing_the_More_Radical
+		}
+		relative_position_id = FRA_Curbing_the_More_Radical
+		x = 1
+		y = 1
+		completion_reward={
+			add_ideas = FRA_combatant
+		}
+	}
+	focus = {
+		id = FRA_Defence_of_Culture_SR
+		icon = GFX_goal_FRA_Defence_of_Culture_SR
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = FRA_Warrior_Class_First
+		}
+		available = {
+			has_completed_focus = FRA_avantgarde
+		}
+		relative_position_id = FRA_Warrior_Class_First
+		x = -1
+		y = 1
+		completion_reward = { 
+			country_event = COF_Valois.7
+		}
+	}
+	focus = {
+		id = FRA_Between_Paneu_and_Nat
+		icon = GFX_goal_FRA_Between_Paneu_and_Nat
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = FRA_Warrior_Class_First
+		}
+		relative_position_id = FRA_Warrior_Class_First
+		x = 0
+		y = 2
+		completion_reward = { 
+			country_event = COF_Valois.8
+		}
+	}
+	focus = {
+		id = FRA_Dreyfus_Affair_Nightmare
+		icon = GFX_goal_FRA_slay_bourgeois_decadence
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = FRA_Warrior_Class_First
+		}
+		relative_position_id = FRA_Warrior_Class_First
+		x = 1
+		y = 1
+		completion_reward = {
+			add_political_power = 100
+			add_stability = -0.20
+			add_manpower = -5000
+			add_war_support = 0.2
+		}
+	}
+	focus = {
+		id = FRA_Bucard_Threat_Great
+		icon = GFX_goals_FRA_ultranatsynd_gang
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = FRA_Curbing_the_More_Radical
+		}
+		relative_position_id = FRA_Curbing_the_More_Radical
+		x = 3
+		y = 1
+		completion_reward = {
+			army_experience = 50
+			country_event = COF_Valois.3
+		}
+	}
+	focus = {
+		id = FRA_Family_Motherland_Revolution
+		icon = GFX_goal_FRA_Family_Motherland_Revolution
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = FRA_Warrior_Class_First
+		}
+		relative_position_id = FRA_Warrior_Class_First
+		x = -3
+		y = 1
+		completion_reward = {
+			add_ideas = FRA_Family_Motherland_Revolution
+		}
+	}
+	focus = {
+		id = FRA_Remember_1871_and_1918
+		icon = GFX_goal_FRA_Remember_1871_and_1918
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = FRA_Dreyfus_Affair_Nightmare
+		}
+		relative_position_id = FRA_Dreyfus_Affair_Nightmare
+		x = 1
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_combatant
+				add_idea = FRA_combatant2
+			}
+		}
+	}
+	focus = {
+		id = FRA_Cartel_Arthuys
+		icon = GFX_Focus_COMFRA5
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = FRA_Family_Motherland_Revolution
+		}
+		prerequisite = {
+			focus = FRA_Mouvement_Class_Moyennes
+		}
+		relative_position_id = FRA_Mouvement_Class_Moyennes
+		x = 1
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_corporate_syndie_idea
+				add_idea = FRA_corporate_syndie_idea2
+			}
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+		}
+	}
+	focus = {
+		id = FRA_Retablissement_de_Letalonor
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = FRA_Mouvement_Class_Moyennes
+		}
+		relative_position_id = FRA_Mouvement_Class_Moyennes
+		x = -1
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_neoclass_society
+				add_idea = FRA_neoclass_society2
+			}
+		}
+	}
+	focus = {
+		id = FRA_Awakening_the_Labor_Myth
+		icon = GFX_goal_FRA_empire_of_french_worker
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = FRA_Retablissement_de_Letalonor
+		}
+		prerequisite = {
+			focus = FRA_Cartel_Arthuys
+		}
+		relative_position_id = FRA_Mouvement_Class_Moyennes
+		x = 0
+		y = 2
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_neoclass_society2
+				add_idea = FRA_neoclass_society3
+			}
+		}
+	}
+	focus = {
+		id = FRA_Totalism_International_Goal
+		icon = GFX_goal_totalism
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = FRA_Between_Paneu_and_Nat
+		}
+		available = {
+			date > 1943.1.1
+		}
+		relative_position_id = FRA_Mouvement_Class_Moyennes
+		x = 3
+		y = 2
+		completion_reward = {
+			custom_effect_tooltip = FRA_Totalism_International_Crazy
+			increase_ruling_party_popularity_by_25 = yes
+			add_country_leader_trait = COF_totalism_international_mentor
+			hidden_effect = {
+				every_country = {
+					limit = {
+						NOT = { 
+							has_government = totalist
+							is_in_faction_with = ROOT
+						}
+					}
+					ROOT = {
+						create_wargoal = {
+							type = annex_everything
+							target = PREV
+						}
+					}
+				}				
+			}
+		}
+	}
+	focus = {
+		id = FRA_Common_Enemy_Allemagne
+		icon = GFX_goal_NFE_take_down_germany
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = FRA_Between_Paneu_and_Nat
+		}
+		prerequisite = {
+			focus = FRA_Remember_1871_and_1918
+		}
+		relative_position_id = FRA_Dreyfus_Affair_Nightmare
+		x = 0
+		y = 2
+		completion_reward={
+			swap_ideas = {
+				remove_idea = FRA_combatant2
+				add_idea = FRA_combatant3
+			}
+		}
+	}
+
+	###瓦卢瓦发疯
+	#瓦卢瓦发疯
 	focus = {
 		id = FRA_based_valois_lives
 		icon = GFX_goal_FRA_based_valois_lives
 		cost = 5.00
-		x = 110
-		y = 12
-
-		available = {
-			has_government = totalist
-			has_country_flag = FRA_BASED_VALOIS
-		}
+		prerequisite = {
+			focus = FRA_valois_is_gone
+		}	
+		x = 8
+		y = 5
+		relative_position_id = FRA_sorelians_rule_supreme
 		ai_will_do = {
 			factor = 100
 		}
+		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_establish_the_corporates"
 			add_political_power = 100
@@ -18828,11 +19358,14 @@ focus = FRA_office_des_chemins_de_fer
 			factor = 100
 		}
 		completion_reward = {
+			set_cosmetic_tag = FRA_Sorel_Capetiens
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_establish_the_corporates"
 			set_country_leader_portrait = {
 				portrait = "gfx/leaders/FRA/Portrait_France_Georges_Valois_King.png"
 			}
 			add_country_leader_trait = sorelian_monarch
+			add_country_leader_trait = COF_prometheus_the_immortal_traits
+			add_country_leader_trait = COF_leader_of_national_rejuvenation
 			set_country_leader_name = {
 				name = "乔治一世"
 			}
@@ -19100,7 +19633,7 @@ focus = FRA_office_des_chemins_de_fer
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_establish_the_corporates"
-			country_event = kxxfrance.69
+			country_event = COF_Valois.10
 		}
 	}
 	focus = {
@@ -20475,7 +21008,7 @@ focus = FRA_office_des_chemins_de_fer
 		always = no
 	}
 	x = 90
-	y = 22
+	y = 30
 	cost = 2
 	ai_will_do = {
 		factor = 1000
@@ -20511,9 +21044,7 @@ focus = {
 focus = {
 	id = FRA_annihlate_oppositions
 	icon = GFX_oppose_radicals
-	available = {
-		always = no
-	}
+	
 	prerequisite = {
 		focus = FRA_islamic_socialism
 	}
@@ -20535,9 +21066,7 @@ focus = {
 focus = {
 	id = FRA_expose_judo_conpiracy
 	icon = GFX_goal_COR_erase_false_hebrewism
-	available = {
-		always = no
-	}
+	
 	prerequisite = {
 		focus = FRA_islamic_socialism
 	}
@@ -20560,9 +21089,7 @@ focus = {
 focus = {
 	id = FRA_destroy_churches
 	icon = GFX_BRY_Destroy_Churches
-	available = {
-		always = no
-	}
+	
 	prerequisite = {
 		focus = FRA_islamic_socialism
 	}
@@ -20594,9 +21121,7 @@ focus = {
 focus = {
 	id = FRA_red_green_alliance
 	icon = GFX_goal_AFG_Islamic_Socialist_Synthesis
-	available = {
-		always = no
-	}
+	
 	prerequisite = {
 		focus = FRA_annihlate_oppositions
 	}
@@ -20620,9 +21145,7 @@ focus = {
 focus = {
 	id = FRA_build_mosque
 	icon = GFX_goal_EGY_Islamic_Values
-	available = {
-		always = no
-	}
+	
 	prerequisite = {
 		focus = FRA_destroy_churches
 	}
@@ -20653,9 +21176,7 @@ focus = {
 focus = {
 	id = FRA_rise_of_francistan
 	icon = GFX_goal_INS_focus_islamic_socialism
-	available = {
-		always = no
-	}
+	
 	prerequisite = {
 		focus = FRA_red_green_alliance
 	}
@@ -20677,9 +21198,7 @@ focus = {
 focus = {
 	id = FRA_spirtual_humanism
 	icon = GFX_goal_GUA_Spiritual_Socialism
-	available = {
-		always = no
-	}
+	
 	prerequisite = {
 		focus = FRA_rise_of_francistan
 	}
@@ -20700,9 +21219,7 @@ focus = {
 focus = {
 	id = FRA_pan_islam_commitee
 	icon = GFX_goal_EGY_United_in_Diversity
-	available = {
-		always = no
-	}
+	
 	prerequisite = {
 		focus = FRA_rise_of_francistan
 	}
@@ -20722,9 +21239,7 @@ focus = {
 focus = {
 	id = FRA_anti_colonialism
 	icon = GFX_UKR_Colonial_Problem
-	available = {
-		always = no
-	}
+	
 	prerequisite = {
 		focus = FRA_rise_of_francistan
 	}
@@ -20752,9 +21267,7 @@ focus = {
 focus = {
 	id = FRA_enviromental_protection
 	icon = GFX_NEE_education_administration
-	available = {
-		always = no
-	}
+	
 	prerequisite = {
 		focus = FRA_rise_of_francistan
 	}
@@ -20776,9 +21289,7 @@ focus = {
 focus = {
 	id = FRA_sword_of_islam
 	icon = GFX_goal_NGR_at_islam
-	available = {
-		always = no
-	}
+	
 	prerequisite = {
 		focus = FRA_rise_of_francistan
 	}
@@ -20798,9 +21309,7 @@ focus = {
 focus = {
 	id = FRA_socialist_jihad
 	icon = GFX_goal_AFG_islamic_revolution
-	available = {
-		always = no
-	}
+	
 	prerequisite = {
 		focus = FRA_spirtual_humanism
 	}
@@ -20834,9 +21343,7 @@ focus = {
 focus = {
 	id = FRA_salaam
 	icon = GFX_goal_SOM_Islamic_Liberalism
-	available = {
-		always = no
-	}
+	
 	prerequisite = {
 		focus = FRA_socialist_jihad
 	}
@@ -24981,29 +25488,20 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Extend_Provisional_Dictatorship"
-			add_popularity = {
-				ideology = totalist
-				popularity = 0.1
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1000
 			}
-			add_popularity = {
-				ideology = syndicalist
-				popularity = 0.1
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 500
 			}
-			add_popularity = {
-				ideology = radical_socialist
-				popularity = 0.1
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 250
 			}
-			add_popularity = {
-				ideology = social_democrat
-				popularity = 0.1
-			}
-			add_popularity = {
-				ideology = social_liberal
-				popularity = 0.1
-			}
-			add_political_power = 200
-			add_stability = 0.1
-			add_war_support = 0.1
+			add_manpower = 10000
+
 		}		
 			
 	}
@@ -25027,29 +25525,9 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Extend_Provisional_Dictatorship"
-			add_popularity = {
-				ideology = totalist
-				popularity = 0.1
-			}
-			add_popularity = {
-				ideology = syndicalist
-				popularity = 0.1
-			}
-			add_popularity = {
-				ideology = radical_socialist
-				popularity = 0.1
-			}
-			add_popularity = {
-				ideology = social_democrat
-				popularity = 0.1
-			}
-			add_popularity = {
-				ideology = social_liberal
-				popularity = 0.1
-			}
-			add_political_power = 200
-			add_stability = 0.1
-			add_war_support = 0.1
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
 		}		
 			
 	}
@@ -25075,7 +25553,9 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Extend_Provisional_Dictatorship"
-			add_ideas = FRA_broad
+			add_political_power = 100
+			add_stability = 0.1
+			add_war_support = 0.1
 		}		
 			
 	}	
@@ -25130,11 +25610,20 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Extend_Provisional_Dictatorship"
 			add_popularity = {
-				ideology = national_populist
+				ideology = social_democrat
 				popularity = -0.1
 			}
-			add_command_power = 25
-			add_war_support = 0.1
+			add_political_power = 50
+			add_stability = 0.1
+			if = {
+				limit = {
+					has_country_flag = FRA_cachin_bop_begins 
+				}
+				add_power_balance_value = {
+					id = FRA_cachin_bop
+					value = -0.1
+				}
+			}
 		}		
 			
 	}
@@ -25157,12 +25646,17 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Extend_Provisional_Dictatorship"
-			add_popularity = {
-				ideology = national_populist
-				popularity = -0.1
+			army_experience = 50
+			add_manpower = 4000
+			if = {
+				limit = {
+					has_country_flag = FRA_cachin_bop_begins 
+				}
+				add_power_balance_value = {
+					id = FRA_cachin_bop
+					value = -0.1
+				}
 			}
-			add_command_power = 25
-			add_war_support = 0.1
 		}		
 			
 	}
@@ -25188,12 +25682,7 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Extend_Provisional_Dictatorship"
-			add_popularity = {
-				ideology = national_populist
-				popularity = -0.1
-			}
-			add_command_power = 25
-			add_war_support = 0.1
+			add_research_slot = 1
 		}		
 			
 	}
@@ -25219,46 +25708,14 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Extend_Provisional_Dictatorship"
-			add_popularity = {
-				ideology = national_populist
-				popularity = -0.1
+			add_political_power = 100
+			hidden_effect = {
+				country_event = kxxfrance.9
 			}
-			add_command_power = 25
-			add_war_support = 0.1
 		}		
 			
 	}
-	focus = {
-		id = FRA_destroy_reactionary_party
-		icon = GFX_goal_COR_Socialist_Knife
-		cost = 2
-		available = {
-			has_global_flag = FRA_no_majority_1936
-		}
-		relative_position_id = FRA_commie_syndie_compromise
-		x = -1
-		y = 8
-		prerequisite = {
-			focus = FRA_ready_to_revolt
-		}
-		mutually_exclusive = {
-			focus = FRA_towards_extreme_revolution
-		}
-		ai_will_do = {
-			factor = 100
-		}
-		
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Extend_Provisional_Dictatorship"
-			add_popularity = {
-				ideology = national_populist
-				popularity = -0.1
-			}
-			add_command_power = 25
-			add_war_support = 0.1
-		}		
-			
-	}
+	
 	focus = {
 		id = FRA_towards_extreme_revolution
 		icon = GFX_goal_FIU_socialist_evolution
@@ -25267,14 +25724,12 @@ focus = {
 			has_global_flag = FRA_no_majority_1936
 		}
 		relative_position_id = FRA_commie_syndie_compromise
-		x = 1
+		x = 0
 		y = 8
 		prerequisite = {
 			focus = FRA_ready_to_revolt
 		}
-		mutually_exclusive = {
-			focus = FRA_destroy_reactionary_party
-		}
+		
 		ai_will_do = {
 			factor = 100
 		}
@@ -25367,10 +25822,9 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Extend_Provisional_Dictatorship"
-			add_political_power = 100
-			add_popularity = {
-				ideology = syndicalist
-				popularity = 0.2
+			swap_ideas = {
+				remove_idea = FRA_broad2
+				add_idea = FRA_broad3
 			}
 		}		
 			
@@ -25428,9 +25882,11 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Extend_Provisional_Dictatorship"
-			swap_ideas = {
-				remove_idea = FRA_broad2
-				add_idea = FRA_broad3
+			
+			add_political_power = 100
+			add_popularity = {
+				ideology = syndicalist
+				popularity = 0.2
 			}
 		}		
 			
@@ -25538,7 +25994,7 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Extend_Provisional_Dictatorship"
-			add_ideas = FRA_commune_soldarity
+			add_ideas = FRA_caretaker_government
 		}		
 			
 	}
@@ -25565,7 +26021,13 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Extend_Provisional_Dictatorship"
-			add_ideas = FRA_commune_soldarity
+			custom_effect_tooltip = "New Communal Elections will take place in 1 year!"
+			hidden_effect = {
+				id = comfrance.1004
+				days = 365
+			}
+			add_political_power = -100
+			add_stability = -0.1
 		}		
 			
 	}
@@ -25594,11 +26056,13 @@ focus = {
 			}
 			add_stability = 0.1
 			add_political_power = 100
-			custom_effect_tooltip = FRA_commie_rise
-			hidden_effect = {
-				add_to_variable = {
-					var = FRA_commie_power
-					value = 1
+			if = {
+				limit = {
+					has_country_flag = FRA_cachin_bop_begins 
+				}
+				add_power_balance_value = {
+					id = FRA_cachin_bop
+					value = -0.1
 				}
 			}
 		}		
@@ -25624,11 +26088,13 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Extend_Provisional_Dictatorship"
 			add_ideas = FRA_fuck_bureaucrats
-			custom_effect_tooltip = FRA_commie_rise
-			hidden_effect = {
-				add_to_variable = {
-					var = FRA_commie_power
-					value = 1
+			if = {
+				limit = {
+					has_country_flag = FRA_cachin_bop_begins 
+				}
+				add_power_balance_value = {
+					id = FRA_cachin_bop
+					value = -0.1
 				}
 			}
 		}		
@@ -25655,7 +26121,15 @@ focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Extend_Provisional_Dictatorship"
 			add_political_power = 100
 			add_stability = 0.1
-			
+			if = {
+				limit = {
+					has_country_flag = FRA_cachin_bop_begins 
+				}
+				add_power_balance_value = {
+					id = FRA_cachin_bop
+					value = -0.1
+				}
+			}
 		}		
 			
 	}
@@ -25682,11 +26156,13 @@ focus = {
 				remove_idea = FRA_commie_syndie2
 				add_idea = FRA_commie_syndie3
 			}
-			custom_effect_tooltip = FRA_syndie_rise
-			hidden_effect = {
-				add_to_variable = {
-					var = FRA_syndie_power
-					value = 1
+			if = {
+				limit = {
+					has_country_flag = FRA_cachin_bop_begins 
+				}
+				add_power_balance_value = {
+					id = FRA_cachin_bop
+					value = -0.1
 				}
 			}
 		}		
@@ -25713,8 +26189,17 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Extend_Provisional_Dictatorship"
-			add_stability = 0.1
+			add_war_support = 0.1
 			add_political_power = 100
+			if = {
+				limit = {
+					has_country_flag = FRA_cachin_bop_begins 
+				}
+				add_power_balance_value = {
+					id = FRA_cachin_bop
+					value = -0.1
+				}
+			}
 		}		
 			
 	}
@@ -25741,6 +26226,15 @@ focus = {
 			swap_ideas = {
 				remove_idea = FRA_commie_syndie3
 				add_idea = FRA_commie_syndie4
+			}
+			if = {
+				limit = {
+					has_country_flag = FRA_cachin_bop_begins 
+				}
+				add_power_balance_value = {
+					id = FRA_cachin_bop
+					value = -0.1
+				}
 			}
 		}		
 			
@@ -25771,11 +26265,13 @@ focus = {
 				popularity = 0.1
 			}
 			add_radsoc_to_coalition = yes
-			custom_effect_tooltip = FRA_commie_rise
-			hidden_effect = {
-				add_to_variable = {
-					var = FRA_commie_power
-					value = 1
+			if = {
+				limit = {
+					has_country_flag = FRA_cachin_bop_begins 
+				}
+				add_power_balance_value = {
+					id = FRA_cachin_bop
+					value = -0.1
 				}
 			}
 		}		
@@ -25808,13 +26304,7 @@ focus = {
 				popularity = 0.1
 			}
 			add_political_power = 200
-			custom_effect_tooltip = FRA_syndie_rise
-			hidden_effect = {
-				add_to_variable = {
-					var = FRA_syndie_power
-					value = 1
-				}
-			}
+			
 		}		
 			
 	}
@@ -25852,13 +26342,16 @@ focus = {
 				popularity = -0.05
 			}
 			add_war_support = 0.1
-			custom_effect_tooltip = FRA_commie_rise
-			hidden_effect = {
-				add_to_variable = {
-				var = FRA_commie_power
-				value = 1
+			if = {
+				limit = {
+					has_country_flag = FRA_cachin_bop_begins 
+				}
+				add_power_balance_value = {
+					id = FRA_cachin_bop
+					value = -0.1
+				}
 			}
-			}
+			
 			
 		}		
 			
@@ -25940,9 +26433,18 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Extend_Provisional_Dictatorship"
 			add_political_power = 100
-			hidden_effect = {
-				country_event = kxxfrance.9
+			add_one_random_civilian_factory = yes
+			add_one_random_military_factory = yes
+			if = {
+				limit = {
+					has_country_flag = FRA_cachin_bop_begins 
+				}
+				add_power_balance_value = {
+					id = FRA_cachin_bop
+					value = -0.1
+				}
 			}
+			
 		}		
 			
 	}
@@ -25967,11 +26469,13 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Extend_Provisional_Dictatorship"
 			add_ideas = FRA_revsyn
-			custom_effect_tooltip = FRA_commie_rise
-			hidden_effect = {
-				add_to_variable = {
-					var = FRA_commie_power
-					value = 1
+			if = {
+				limit = {
+					has_country_flag = FRA_cachin_bop_begins 
+				}
+				add_power_balance_value = {
+					id = FRA_cachin_bop
+					value = -0.1
 				}
 			}
 		}		
@@ -26007,11 +26511,13 @@ focus = {
 			}
 			add_stability = 0.1
 			add_political_power = 100
-			custom_effect_tooltip = FRA_commie_rise
-			hidden_effect = {
-				add_to_variable = {
-					var = FRA_commie_power
-					value = 1
+			if = {
+				limit = {
+					has_country_flag = FRA_cachin_bop_begins 
+				}
+				add_power_balance_value = {
+					id = FRA_cachin_bop
+					value = -0.1
 				}
 			}
 		}		
@@ -26040,16 +26546,14 @@ focus = {
 			add_ideas = FRA_commie_syndie
 			set_power_balance = {
 				id = FRA_cachin_bop
+				right_side = FRA_cachin_bop_reac
+				set_value = 0.5
 			}
 			set_country_flag = FRA_cachin_bop_begins 
 			hidden_effect = {
-				set_variable = {
-					var = FRA_commie_power
-					value = 0
-				}
-				set_variable = {
-					var = FRA_syndie_power
-					value = 0
+				add_power_balance_modifier = {
+					id = FRA_cachin_bop
+					modifier = FRA_reactionaries_on_the_move
 				}
 			}
 		}		
@@ -26058,7 +26562,7 @@ focus = {
 	focus = {
 		id = FRA_syndicalist_compromise
 		icon = GFX_GRU_union_congress-4049
-		cost = 4
+		cost = 1
 		available = {
 			has_global_flag = FRA_no_majority_1936
 		}
@@ -26074,16 +26578,9 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Extend_Provisional_Dictatorship"
-			add_ideas = FRA_commie_syndie
-			hidden_effect = {
-				set_variable = {
-					var = FRA_commie_power
-					value = 0
-				}
-				set_variable = {
-					var = FRA_syndie_power
-					value = 0
-				}
+			add_popularity = {
+				ideology = syndicalist
+				popularity = 0.05
 			}
 		}		
 			
@@ -38922,6 +39419,9 @@ focus = {
 		prerequisite = {
 			focus = FRA_stalemate
 		}
+		available = {
+			has_country_flag = FRA_COMPROMISE_socdem
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -38929,6 +39429,7 @@ focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_socialist_cartel_victory"
 			add_popularity = { ideology = social_democrat popularity = 0.02 }
 			add_popularity = { ideology = radical_socialist popularity = 0.02 }
+
 		}
 	}
 	
@@ -38948,7 +39449,7 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_universal_unionization"
-			add_popularity = { ideology = social_democrat popularity  = 0.05 }
+			add_popularity = { ideology = radical_socialist popularity  = 0.05 }
 			add_political_power = 25
 			add_ideas = FRA_universal_unionization_idea_1
 		}
@@ -39088,7 +39589,7 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_socialist_affirmations"
-			add_popularity = { ideology = social_democrat popularity = 0.04 }
+			add_popularity = { ideology = radical_socialist popularity = 0.04 }
 			add_stability = 0.04
 			add_political_power = 25
 			add_ideas = FRA_SFIO_hegemony
@@ -39110,7 +39611,7 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_cgt_moderations"
-			add_popularity = { ideology = social_democrat popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
 			add_popularity = { ideology = syndicalist popularity = -0.05 }
 			add_political_power = 20
 			add_manpower = 2000
@@ -39137,7 +39638,7 @@ focus = {
 			add_political_power = 30
 			add_war_support = 0.03
 			add_command_power = 5
-			add_popularity = { ideology = social_democrat popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
 			
 		}
 	}
@@ -39177,7 +39678,7 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_labourist_federal_election"
-			add_popularity = { ideology = social_democrat popularity = 0.05 }
+			add_popularity = { ideology = radical_socialist popularity = 0.05 }
 			add_political_power = 30
 			add_stability = 0.03
 		}
@@ -39198,9 +39699,9 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_improved_artisan_organization"
-			add_popularity = { ideology = social_democrat popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
 			add_popularity = { ideology = totalist popularity = -0.02 }
-			add_popularity = { ideology = radical_socialist popularity = -0.02 }
+			add_popularity = { ideology = social_democrat popularity = -0.02 }
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 0.4
@@ -39237,7 +39738,7 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_party_unification"
-			add_popularity = { ideology = social_democrat popularity = 0.08 }
+			add_popularity = { ideology = radical_socialist popularity = 0.08 }
 			add_political_power = 50
 			add_stability = 0.1
 			swap_ideas = {
@@ -39303,7 +39804,7 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_labor_valuation"
-			add_popularity = { ideology = social_democrat popularity = 0.03 }
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
 			add_political_power = 20
 			add_stability = 0.02
 			random_owned_state = {
@@ -39443,7 +39944,7 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_buy_in_bulk"
 			add_political_power = -20
-			add_popularity = { ideology = social_democrat popularity = 0.02 }
+			add_popularity = { ideology = radical_socialist popularity = 0.02 }
 			random_owned_state = {
 				limit = {
 					is_core_of = FRA
@@ -39564,7 +40065,7 @@ focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_fraternal_socialism"
 			add_stability = 0.08
 			add_political_power = 40
-			add_popularity = { ideology = social_democrat popularity = 0.1 }
+			add_popularity = { ideology = radical_socialist popularity = 0.1 }
 			add_manpower = 5000
 			swap_ideas = {
 				remove_idea = FRA_SFIO_hegemony2

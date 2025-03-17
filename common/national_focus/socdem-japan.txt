@@ -535,6 +535,12 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_STABILITY
 		}
+		available = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "浅沼稻次郎"
+			}
+		}
 		prerequisite = { focus = JAPSOCDEM_the_path_of_peace  }
 		completion_reward = {
 		remove_ideas = {
@@ -550,6 +556,12 @@ focus_tree = {
 		x = 11
 		y = 5
 		cost = 5
+		available = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "片山哲"
+			}
+		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -571,7 +583,7 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
 		}
-		prerequisite = { focus = JAPSOCDEM_denounce_the_syndicalist_folly  } prerequisite = { focus = JAPSOCDEM_crush_military_radicalism  }
+		prerequisite = { focus = JAPSOCDEM_denounce_the_syndicalist_folly focus = JAPSOCDEM_crush_military_radicalism }
 		completion_reward = {
 		add_ideas = {
 		JAP_new_agrarian_reforms
@@ -589,7 +601,7 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_STABILITY
 		}
-		prerequisite = { focus = JAPSOCDEM_crush_military_radicalism  } prerequisite = { focus = JAPSOCDEM_denounce_the_syndicalist_folly  }
+		prerequisite = { focus = JAPSOCDEM_crush_military_radicalism focus = JAPSOCDEM_denounce_the_syndicalist_folly }
 		completion_reward = {
 		add_political_power = 20
 		}
@@ -861,9 +873,50 @@ focus_tree = {
 			FOCUS_FILTER_STABILITY
 		}
 		available = {
-		always = no
 		}
 		prerequisite = { focus = JAPTAISHUTOTWO_shrivel_up_the_military_industrial_complex  focus = JAPTAISHUTOTWO_up_hold_a_strong_military_presence  }
+		completion_reward = {
+			if = {
+				limit = {
+					power_balance_value = {
+						id = JAP_Shakai_Taishuto_balance
+						value < -0.1
+					}
+				}
+				custom_effect_tooltip = Inejiro_Asanuma_tooltip
+				hidden_effect = {
+					create_country_leader = {
+						name = "浅沼稻次郎"
+						picture = "gfx/leaders/JAP/Portrait_JAP_Inejiro_Asanuma.png"
+						expire = "1965.1.1"
+						ideology = massimalismo_subtype
+					}
+					set_politics = {
+						ruling_party = totalist
+					}
+					add_ideas = {
+						JAP_Vanguard_proles
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					power_balance_value = {
+						id = JAP_Shakai_Taishuto_balance
+						value < 0.1
+					}
+				}
+				hidden_effect = {
+					create_country_leader = {
+						name = "片山哲"
+						picture = "gfx/leaders/JAP/Portrait_JAP_Katayama_Tetsu.png"
+						expire = "1965.1.1"
+						ideology = socdem_paternal_socialism_subtype
+					}
+				}
+			}
+		}
 	}
 
 	#Promises of Peace
@@ -923,6 +976,12 @@ focus_tree = {
 		x = 6
 		y = 17
 		cost = 5
+		available = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "片山哲"
+			}
+		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -940,8 +999,200 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		available = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "浅沼稻次郎"
+			}
+		}
 		prerequisite = { focus = JAPTAISHUTOTWO_crumbling_of_the_party  }
 		mutually_exclusive = { focus = JAPTAISHUTOTWO_support_the_diet  }
+		completion_reward = {
+			custom_effect_tooltip = Inejiro_Asanuma_1_tooltip
+			hidden_effect = {
+				JSR = {
+					add_state_core = 537
+					add_state_core = 555
+					add_state_core = 536
+					add_state_core = 533
+					add_state_core = 282
+					add_state_core = 532
+					add_state_core = 534
+					add_state_core = 535
+					add_state_core = 531
+					add_state_core = 530
+					add_state_core = 529
+					add_state_core = 528
+					annex_country = {
+						target = JAP
+						transfer_troops = yes
+					}
+						
+				}
+				JSR = {
+					set_global_flag = JAP_civil_war_over
+					inherit_technology = GER		
+					add_equipment_to_stockpile = {
+					type = infantry_equipment_2
+					amount = 40000
+					}
+					add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 1000
+					}
+					add_ideas = {
+					JAP_Yamamoto_Kenzo_hog_syn
+					JAP_Oyama_Ikuo_for_syn
+					JAP_Yamada_Moritaro_eco_syn
+					JAP_Aso_Hisashi_sec_syn
+					JAP_no_navy
+					JAP_workers_of_the_world_unite
+					JAP_no_emperor
+					JAP_i_am_black_smith
+					JAP_reactionary_army_resistance_1
+					}
+					load_oob = "Japan_revolution"
+					load_focus_tree = japan-revolution
+					create_country_leader = {
+						name = "野坂参三"
+						desc = "-"
+						picture = "gfx/leaders/JAP/Portrait_JAP_Nosaka_Sanzo_LKMT.png"
+						expire = "1965.1.1"
+						ideology = syn_red_junta_subtype
+					}
+					create_country_leader = {
+						name = "麻生久"
+						desc = "-"
+						picture = "gfx/leaders/JAP/Portrait_JAP_Aso_Hisashi.png"
+						expire = "1965.1.1"
+						ideology = totalist_subtype
+					}
+					create_country_leader = {
+						name = "荒畑寒村"
+						desc = "-"
+						picture = "gfx/leaders/JAP/Portrait_JAP_Kenzo_Yamamoto.png"
+						expire = "1965.1.1"
+						ideology = radical_socialist_subtype
+					}
+					create_field_marshal = {
+						name = "野坂参三"
+						portrait_path = "gfx/leaders/JAP/Portrait_JAP_Nosaka_Sanzo_LKMT.png"
+						traits = {
+						
+						}
+						skill = 2
+						attack_skill = 2
+						defense_skill = 1
+						planning_skill = 2
+						logistics_skill = 2
+					}
+					create_field_marshal = {
+						name = "德田球一"
+						portrait_path = "gfx/leaders/JAP/Portrait_JAP_Kyuchi_Tokuda_RD_Ver.png"
+						traits = {
+						
+						}
+						skill = 2
+						attack_skill = 2
+						defense_skill = 1
+						planning_skill = 2
+						logistics_skill = 2
+					}
+					create_field_marshal = {
+						name = "西光万吉"
+						portrait_path = "gfx/leaders/JAP/Portrait_JAP_Saiko_Mankichi.png"
+						traits = {
+						
+						}
+						skill = 2
+						attack_skill = 2
+						defense_skill = 1
+						planning_skill = 2
+						logistics_skill = 2
+					}
+					
+					set_politics = {
+						ruling_party = syndicalist
+						last_election = "1936.11.16"
+						elections_allowed = no
+					}
+					
+					set_popularities = {
+							totalist = 20
+							syndicalist = 50
+							radical_socialist = 20
+							social_democrat = 10
+							social_liberal = 3
+							authoritarian_democrat = 3
+							market_liberal = 20
+							social_conservative = 40
+							paternal_autocrat = 10
+							national_populist = 4
+						}
+					set_party_name = {
+							ideology = totalist
+							long_name = JSR_REBELLION_TOTALIST_PARTY_long
+							name = JSR_REBELLION_TOTALIST_PARTY
+					}
+					set_party_name = {
+							ideology = syndicalist
+							long_name = JSR_REBELLION_SYNDIE_PARTY_long
+							name = JSR_REBELLION_SYNDIE_PARTY
+					}
+					set_party_name = {
+							ideology = radical_socialist
+							long_name = JSR_REBELLION_RADSOC_PARTY_long
+							name = JSR_REBELLION_RADSOC_PARTY
+					}
+					
+					set_party_name = {
+							ideology = social_democrat
+							long_name = JSR_REBELLION_SOCDEM_PARTY_long
+							name = JSR_REBELLION_SOCDEM_PARTY
+					}
+					
+					
+					set_party_name = {
+							ideology = social_liberal
+							long_name = JSR_SOCLIB_PARTY
+							name = JSR_SOCLIB_PARTY
+					}
+					set_party_name = {
+							ideology = market_liberal
+							long_name = JSR_MARLIB_PARTY
+							name = JSR_MARLIB_PARTY
+					}
+					set_party_name = {
+							ideology = social_conservative
+							long_name = JSR_CONS_PARTY
+							name = JSR_CONS_PARTY
+					}
+					
+					set_party_name = {
+							ideology = authoritarian_democrat
+							long_name = JSR_AUTH_PARTY
+							name = JSR_AUTH_PARTY
+					}
+					set_party_name = {
+							ideology = paternal_autocrat
+							long_name = JSR_PATE_PARTY
+							name = JSR_PATE_PARTY
+					}
+					set_party_name = {
+							ideology = national_populist
+							long_name = JSR_NAPO_PARTY
+							name = JSR_NAPO_PARTY
+					}
+				}
+				JSR = { change_tag_from = JAP }
+				JAP = {
+					dismantle_faction = yes
+					release = KOR
+					end_puppet = TAI
+					end_puppet = JST
+				}
+			}
+		}
 	}
 
 	#Shrivel Up the Military Industrial Complex

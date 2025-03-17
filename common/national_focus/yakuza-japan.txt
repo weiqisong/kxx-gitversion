@@ -17,9 +17,10 @@ focus_tree = {
 	focus = {
 		id = JAP_YAKUZA_strengthen_the_drug_trade
 		icon = GFX_JAP_YAKUZA_strengthen_the_drug_trade-248360
-		x = 7
+		x = 2
 		y = 2
-		cost = 5
+		cost = 3
+		relative_position_id = JAP_YAKUZA_the_yakuza_in_power
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
@@ -70,21 +71,23 @@ focus_tree = {
 	focus = {
 		id = JAP_YAKUZA_dominate_the_other_factions
 		icon = GFX_JAP_YAKUZA_dominate_the_other_factions-248360
-		x = 3
+		x = -2
 		y = 1
-		cost = 5
+		cost = 3
+		relative_position_id = JAP_YAKUZA_the_yakuza_in_power
 		search_filters = {
 			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
 		}
 		prerequisite = { focus = JAP_YAKUZA_the_yakuza_in_power  }
 		completion_reward = {
-		add_popularity = {
-		ideology = paternal_autocrat
-		popularity = 0.4
-		}
-		remove_ideas = {
-		JAP_no_army_focus
-		}
+			add_war_support = 0.1
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.4
+			}
+			remove_ideas = {
+				JAP_no_army_focus
+			}
 		}
 	}
 
@@ -92,17 +95,18 @@ focus_tree = {
 	focus = {
 		id = JAP_YAKUZA_monopolize_on_crime
 		icon = GFX_JAP_YAKUZA_monopolize_on_crime-248360
-		x = 7
+		x = 2
 		y = 1
-		cost = 5
+		cost = 3
+		relative_position_id = JAP_YAKUZA_the_yakuza_in_power
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = { focus = JAP_YAKUZA_the_yakuza_in_power  }
 		completion_reward = {
-		add_ideas = {
-		JAP_power_secured_yakuza
-		}
+			add_ideas = {
+				JAP_power_secured_yakuza
+			}
 		}
 	}
 
@@ -110,9 +114,10 @@ focus_tree = {
 	focus = {
 		id = JAP_YAKUZA_set_new_inhiations
 		icon = GFX_JAP_YAKUZA_set_new_inhiations-248360
-		x = 5
+		x = 0
 		y = 2
-		cost = 5
+		cost = 3
+		relative_position_id = JAP_YAKUZA_the_yakuza_in_power
 		search_filters = {
 			FOCUS_FILTER_MANPOWER
 		}
@@ -128,9 +133,10 @@ focus_tree = {
 	focus = {
 		id = JAP_YAKUZA_ultranationalist_alliances
 		icon = GFX_JAP_YAKUZA_ultranationalist_alliances-248360
-		x = 3
+		x = -2
 		y = 2
-		cost = 5
+		cost = 3
+		relative_position_id = JAP_YAKUZA_the_yakuza_in_power
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -149,9 +155,10 @@ focus_tree = {
 	focus = {
 		id = JAP_YAKUZA_international_smuggling_networks
 		icon = GFX_JAP_YAKUZA_international_smuggling_networks-248360
-		x = 4
+		x = -1
 		y = 3
-		cost = 5
+		relative_position_id = JAP_YAKUZA_the_yakuza_in_power
+		cost = 3
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -166,10 +173,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -184,7 +191,7 @@ focus_tree = {
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_0
-				amount = 1500
+				amount = 5500
 				producer = JAP
 			}
 		}
@@ -194,9 +201,10 @@ focus_tree = {
 	focus = {
 		id = JAP_YAKUZA_yoshiospresence
 		icon = GFX_JAP_YAKUZA_yoshiospresence-248360
-		x = 6
+		x = 1
 		y = 5
 		cost = 0
+		relative_position_id = JAP_YAKUZA_the_yakuza_in_power
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -211,9 +219,10 @@ focus_tree = {
 	focus = {
 		id = JAP_YAKUZA_maintaining_tradition
 		icon = GFX_JAP_YAKUZA_maintaining_tradition-248360
-		x = 4
+		x = -1
 		y = 5
 		cost = 0
+		relative_position_id = JAP_YAKUZA_the_yakuza_in_power
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -228,9 +237,10 @@ focus_tree = {
 	focus = {
 		id = JAP_YAKUZA_thejackalstwoheads
 		icon = GFX_JAP_YAKUZA_thejackalstwoheads-248360
-		x = 5
+		x = 0
 		y = 4
 		cost = 2
+		relative_position_id = JAP_YAKUZA_the_yakuza_in_power
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -244,9 +254,10 @@ focus_tree = {
 	focus = {
 		id = JAP_YAKUZA_work_with_the_black_dragon
 		icon = GFX_JAP_YAKUZA_work_with_the_black_dragon-248360
-		x = 5
+		x = 0
 		y = 6
-		cost = 5
+		cost = 3
+		relative_position_id = JAP_YAKUZA_the_yakuza_in_power
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -263,17 +274,18 @@ focus_tree = {
 	focus = {
 		id = JAP_YAKUZA_crush_the_syndicalist_snakes
 		icon = GFX_JAP_YAKUZA_crush_the_syndicalist_snakes-248360
-		x = 6
+		x = 1
 		y = 3
-		cost = 5
+		cost = 3
+		relative_position_id = JAP_YAKUZA_the_yakuza_in_power
 		search_filters = {
 			FOCUS_FILTER_MANPOWER
 		}
 		prerequisite = { focus = JAP_YAKUZA_strengthen_the_drug_trade  } prerequisite = { focus = JAP_YAKUZA_set_new_inhiations  }
 		completion_reward = {
-		remove_ideas = {
-		JAP_red_army_resistance_1
-		}
+			remove_ideas = {
+				JAP_red_army_resistance_1
+			}
 		}
 	}
 
@@ -281,19 +293,23 @@ focus_tree = {
 	focus = {
 		id = JAP_YAKUZA_japansfixer
 		icon = GFX_JAP_YAKUZA_japansfixer-248360
-		x = 7
+		x = 2
 		y = 6
-		cost = 5
+		cost = 3
+		relative_position_id = JAP_YAKUZA_the_yakuza_in_power
 		search_filters = {
 			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
 		}
 		prerequisite = { focus = JAP_YAKUZA_yoshiospresence  }
 		completion_reward = {
-		add_war_support = 0.1
-		add_political_power = 100
-		add_ideas = {
-		JAP_fixers
-		}
+			add_war_support = 0.1
+			add_political_power = 100
+			add_ideas = {
+				JAP_fixers
+			}
+			create_intelligence_agency = {
+				name = "儿玉机关"
+			}
 		}
 	}
 
@@ -301,15 +317,19 @@ focus_tree = {
 	focus = {
 		id = JAP_YAKUZA_memories_from_the_rice_riots
 		icon = GFX_JAP_YAKUZA_memories_from_the_rice_riots-248360
-		x = 3
+		x = -2
 		y = 6
-		cost = 5
+		relative_position_id = JAP_YAKUZA_the_yakuza_in_power
+		cost = 3
 		search_filters = {
 			FOCUS_FILTER_STABILITY
 		}
 		prerequisite = { focus = JAP_YAKUZA_maintaining_tradition  }
 		completion_reward = {
-		add_stability = 0.1
+			add_stability = 0.1
+			add_ideas = {
+				JAP_memories_from_the_rice_riots
+			}
 		}
 	}
 
@@ -317,17 +337,18 @@ focus_tree = {
 	focus = {
 		id = JAP_YAKUZA_no_law_for_our_order
 		icon = GFX_JAP_YAKUZA_no_law_for_our_order-248360
-		x = 4
+		x = -1
 		y = 7
-		cost = 5
+		cost = 3
+		relative_position_id = JAP_YAKUZA_the_yakuza_in_power
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = JAP_YAKUZA_work_with_the_black_dragon  } prerequisite = { focus = JAP_YAKUZA_memories_from_the_rice_riots  }
 		completion_reward = {
-		add_ideas = {
-		JAP_new_era_yak
-		}
+			add_ideas = {
+				JAP_new_era_yak
+			}
 		}
 	}
 
@@ -335,9 +356,10 @@ focus_tree = {
 	focus = {
 		id = JAP_YAKUZA_embrace_japanese_dominance
 		icon = GFX_JAP_YAKUZA_embrace_japanese_dominance-248360
-		x = 6
+		x = 1
 		y = 7
-		cost = 5
+		cost = 3
+		relative_position_id = JAP_YAKUZA_the_yakuza_in_power
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}

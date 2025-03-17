@@ -1,38 +1,25 @@
 leader_traits = {
-	PLA_youjizhandashi = {
+	COF_prometheus_the_immortal_traits = {
 		random = no
-		equipment_capture = 0.10
-		terrain_penalty_reduction = 0.10
-		ai_will_do = {
-			factor = 1
-		}
+		stability_factor = 0.1
+		political_power_factor = 0.05
+		party_popularity_stability_factor = 0.5
+		ai_focus_aggressive_factor = 0.25
 	}
-	PLA_yingluren = {
+	COF_leader_of_national_rejuvenation = {
 		random = no
-		political_power_factor = 0.15
-	    war_support_factor = 0.05
-		radical_socialist_drift = 0.05
-		ai_will_do = {
-			factor = 1
-		}
+		war_stability_factor = 0.05
+		war_support_factor = 0.05
+		max_command_power = 10
+		army_morale_factor = 0.1
+		weekly_casualties_war_support = 0.003
 	}
-	PLA_zyjwzx = {
+	COF_totalism_international_mentor = {
 		random = no
-		command_power_gain = 0.10
-		grant_medal_cost_factor = -0.30
-		ai_will_do = {
-			factor = 1
-		}
+		totalist_drift = 0.05
+		justify_war_goal_time = -0.5
+		opinion_gain_monthly_same_ideology = 5
+		intel_network_gain = 0.1
 	}
-	PLA_rmzzdwydh = {
-		random = no
-		org_loss_when_moving = -0.10
-		experience_loss_factor = -0.10
-		equipment_capture = 0.15
-		ai_will_do = {
-			factor = 1
-		}
-}
-
 }
 	

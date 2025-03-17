@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_JAP_1984"
+		textureFile = "gfx/interface/ideas/JAP/1984.png"
+	}
+}

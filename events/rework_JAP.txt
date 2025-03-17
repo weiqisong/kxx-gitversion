@@ -560,6 +560,13 @@ country_event = { #
 				
 			}
 		}
+		create_country_leader = {
+			name = "井上日召"
+			desc = "KANJI_LEADER_DESC"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Nissho_Inoue.png"
+			expire = "1965.1.1"
+			ideology = natpop_nichiren_buddhism_subtype
+			}
 		complete_national_focus = JAPNICH_blood_shall_reign_for_the_buddha
 		remove_all_ministers = yes
 		add_ideas = {
@@ -5287,7 +5294,11 @@ country_event = { #
 	option = { #
 		name = rework_japan.287.a
 		ai_chance = { base = 100 }
-		
+		set_technology = {
+
+	irregular_infantry_tech = 1
+
+}
 	}
 }
 

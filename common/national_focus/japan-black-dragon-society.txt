@@ -40,7 +40,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAP_BLACKDRAG_uchida_faction  }
 		completion_reward = {
-		add_war_support = 0.15
+		add_stability = -0.25
+		add_war_support = 0.25
 		}
 	}
 
@@ -491,6 +492,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_BLACKDRAG_oomoto_faction_victory  }
 		completion_reward = {
 		add_political_power = 100
+		add_stability = 0.25
 		add_war_support = -0.25
 		}
 	}
@@ -559,6 +561,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAP_BLACKDRAG_esperanto_education  } prerequisite = { focus = JAP_BLACKDRAG_revive_the_dainippon_shusaikai  }
 		completion_reward = {
+			add_ideas = {
+				JAP_spiritualist_association
+			}
 		add_popularity = {
 		ideology = authoritarian_democrat
 		popularity = 0.1
@@ -656,9 +661,12 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAP_BLACKDRAG_centralised_under_the_emperor  } prerequisite = { focus = JAP_BLACKDRAG_humanitygoodwill  }
 		completion_reward = {
+			add_ideas = {
+			The_Path_of_War_idea_1
+			}
 			create_country_leader = {
-				name = "裕仁"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+				name = "出口王仁三郎"
+				picture = "gfx/leaders/JAP/Portrait_JAP_Onisburo_Deguchi.png"
 				expire = "1965.1.1"
 				ideology = spiritualism_subtype
 			}

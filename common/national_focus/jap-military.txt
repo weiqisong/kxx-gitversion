@@ -65,11 +65,11 @@
 		}
 		prerequisite = { focus = JAPARMY_reform_the_disarmament_policy  }
 		completion_reward = {
-			army_experience = 10
+			army_experience = 50
 			add_doctrine_cost_reduction = {
 				name = JAP_weltkreig_lessons
 				cost_reduction = 0.5
-				uses = 1
+				uses = 3
 				category = land_doctrine
 			}
 		}
@@ -811,7 +811,10 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_new_field_manuals"
 			add_to_variable = { JAP_compled_mil_focuses = 1 }
-			add_ideas = JAP_shared_modernisation_1
+			swap_ideas = {
+				remove_idea = JAP_shared_modernisation_1
+				add_idea = JAP_army_modernization_2
+			}
 		}
 	}
 
@@ -1045,10 +1048,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_update_the_imperial_war_college"
 			add_to_variable = { JAP_compled_mil_focuses = 1 }
-			swap_ideas = {
-				remove_idea = JAP_shared_modernisation_1
-				add_idea = JAP_army_modernization_2
-			}
+			add_ideas = JAP_shared_modernisation_1
 		}
 	}
 
@@ -1429,9 +1429,9 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-		army_experience = 10
-		navy_experience = 10
-		air_experience = 10
+		army_experience = 50
+		navy_experience = 50
+		air_experience = 50
 		}
 	}
 

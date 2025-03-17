@@ -123,7 +123,8 @@ focus_tree = {
 		
 		prerequisite = { focus = JAPPAN_purging_the_nation_of_the_impure  }
 		completion_reward = {
-		country_event = japan_new_event.95
+			country_event = japan_new_event.95
+			add_ideas = JAP_Support_the_Red_Emperor
 		}
 	}
 
@@ -139,10 +140,13 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPPAN_breaking_the_marx_spectre  } prerequisite = { focus = JAPPAN_the_showa_rises_for_national_salvation  } prerequisite = { focus = JAPPAN_embrace_the_nichirenists  }
 		completion_reward = {
-		add_war_support = 0.05
+		add_war_support = 0.15
 		add_popularity = {
 		ideology = ROOT
 		popularity = 0.075
+		}
+		add_ideas = {
+			JAP_Pronouncing_the_New_Kokutairon_idea
 		}
 		}
 	}
@@ -159,7 +163,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPPAN_pure_socialism_has_arrived  }
 		completion_reward = {
-		add_war_support = 0.15
+			add_war_support = 0.15
+			add_ideas = {
+				Showa_Rises_For_National_Salvation_idea
+			}
 		}
 	}
 
@@ -175,10 +182,17 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPPAN_pure_socialism_has_arrived  }
 		completion_reward = {
-		add_popularity = {
-		ideology = national_populist
-		popularity = 0.1
-		}
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.1
+			}
+			add_ideas = {
+				JAP_lotus_sutra
+			}
 		}
 	}
 
@@ -677,15 +691,13 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPPAN_support_the_red_emperor  }
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = JAP_Support_the_Red_Emperor
+				add_idea = JAP_Support_the_Red_Emperor_1
+			}
 		swap_ideas = {
 		remove_idea = JAP_Kita_Ikki_hog_tot
 		add_idea = JAP_Kametaro_Mitsukawa_hog_tot
-		}
-		create_country_leader = {
-			name = "北一辉"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Kita_Ikki.png"
-			expire = "1965.1.1"
-			ideology = ikki_kita_thought_subtype
 		}
 		}
 	}
@@ -723,7 +735,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPPAN_socialdemocracyrenewedforjapan  }
 		completion_reward = {
-		add_political_power = 100
+		add_political_power = 300
 		}
 	}
 
@@ -739,6 +751,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPPAN_question_meiji  } prerequisite = { focus = JAPPAN_merely_an_imperial_organ  }
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = JAP_Pronouncing_the_New_Kokutairon_idea
+				add_idea = JAP_Pronouncing_the_New_Kokutairon_idea_1
+			}
 		add_popularity = {
 		ideology = totalist
 		popularity = 0.1
@@ -760,7 +776,6 @@ focus_tree = {
 		prerequisite = { focus = JAPPAN_implement_universal_suffrage  } prerequisite = { focus = JAPPAN_the_true_kokutai  }
 		completion_reward = {
 		set_cosmetic_tag = JAP_KITA_ASIA
-		unlock_decision_category_tooltip = JAP_pan_asia_program_decision_category
 		}
 	}
 

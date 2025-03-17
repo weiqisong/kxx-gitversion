@@ -247,7 +247,10 @@ option = {
 	name = kxxfrance.9.b
 	if = {
 		limit = {
-			check_variable = { FRA_commie_power > FRA_syndie_power }
+			power_balance_value = {
+				id = FRA_cachin_bop
+				value < 0 
+			}
 		}
 		hidden_effect = {
 			country_event = {
@@ -292,9 +295,28 @@ option = {
 		long_name = FRA_parti_communiste_long
 		name = FRA_parti_communiste
 	}
+	set_party_name = {
+		ideology = syndicalist
+		long_name = "革命工团委员会"
+		name = "革命工团委员会"
+	}
+	set_party_name = {
+		ideology = radical_socialist
+		long_name = "联邦无政府主义者同盟"
+		name = "联邦无政府主义者同盟"
+	}
+	set_party_name = {
+		ideology = social_democrat
+		long_name = "工农社会党"
+		name = "工农社会党"
+	}
+	set_country_flag = FRA_cachin_bop_ends
 	set_country_flag = FRA_mod_jac_sup
-	complete_national_focus = FRA_moderate
-	
+	complete_national_focus = FRA_towards_extreme_revolution
+	remove_power_balance_modifier = {
+		id = FRA_cachin_bop
+		modifier = FRA_reactionaries_on_the_move
+	}
 }	
 }
 country_event = {	
@@ -314,6 +336,13 @@ option = {
 		expire = "1.1.1"
 		ideology = syndicalist_subtype
 	}
+	remove_power_balance = {
+		id = FRA_cachin_bop
+	}
+	remove_ideas = FRA_commie_syndie
+	remove_ideas = FRA_commie_syndie2
+	remove_ideas = FRA_commie_syndie3
+	remove_ideas = FRA_commie_syndie4
 	country_event = {
 		id = kxxfrance.12
 		days = 7

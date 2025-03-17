@@ -437,11 +437,12 @@ JAP_declare_civil_war_win_military = {
 		}
 		remove_effect = {
 			create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "荒木贞夫"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Sadao_Araki.png"
 			expire = "1965.1.1"
 			ideology = pataut_showa_statism_subtype
 			}
+			set_country_flag = KXX_LEADER_GUI_VISIBLE
 			remove_all_ministers = yes
 			add_ideas = {
 			JAP_Araki_Sadao_hog_npo
@@ -462,7 +463,6 @@ JAP_declare_civil_war_win_military = {
 			}
 			clr_country_flag = japan_civil_war
 			country_event = japan_new_event.19
-			set_cosmetic_tag = JAP_Araki
 			complete_national_focus = JAPARAKI_arakissuccess
 			set_country_flag = factionalism_japan_no
 		}

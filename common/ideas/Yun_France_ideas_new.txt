@@ -1,0 +1,837 @@
+ideas = {
+
+	country = {
+		#索雷尔重置
+		FRA_combatant3 = {#战斗者集团
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = NFA_veterans
+			modifier = {
+				org_loss_at_low_org_factor = -0.1
+				army_attack_speed_factor = 0.1
+				grant_medal_cost_factor = -0.5
+				dig_in_speed_factor = 0.2
+				max_dig_in_factor = 0.1
+				army_infantry_attack_factor = 0.08
+				army_infantry_defence_factor = 0.08
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				experience_loss_factor = -0.1
+				army_speed_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				breakthrough_bonus_against = 0.1
+			}
+		
+		}
+		FRA_combatant2 = {#战斗者集团
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = NFA_veterans
+			modifier = {
+				org_loss_at_low_org_factor = -0.1
+				army_attack_speed_factor = 0.1
+				grant_medal_cost_factor = -0.5
+				dig_in_speed_factor = 0.2
+				max_dig_in_factor = 0.1
+				army_infantry_attack_factor = 0.08
+				army_infantry_defence_factor = 0.08
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		FRA_combatant = {#战斗者集团
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = NFA_veterans
+			modifier = {
+				org_loss_at_low_org_factor = -0.1
+				army_attack_speed_factor = 0.1
+				grant_medal_cost_factor = -0.5
+				dig_in_speed_factor = 0.2
+				max_dig_in_factor = 0.1
+
+			}
+		}
+		FRA_Family_Motherland_Revolution = {#家庭，祖国，革命
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = generic_totalist_revolution
+			modifier = {
+				weekly_manpower = 500
+				army_core_defence_factor = 0.25
+				industrial_capacity_factory = 0.05
+			}
+		}
+		FRA_neoclass_society3 = {#阶级复兴
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = NFA_fraternal_france
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.03
+				industrial_capacity_factory = 0.03
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+				global_building_slots = 1
+				production_speed_buildings_factor = 0.12
+				local_resources_factor = 0.1
+				fuel_gain_factor = 0.15
+			}
+		}
+		FRA_neoclass_society2 = {#无阶级社会
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = NFA_fraternal_france
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.03
+				industrial_capacity_factory = 0.03
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+		FRA_neoclass_society = {#无阶级社会
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = NFA_fraternal_france
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = -0.03
+				industrial_capacity_factory = -0.03
+				war_support_weekly = 0.01
+			}
+		}
+		FRA_no_democracy_required_idea = {#诋毁民主制
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = FRA_no_democracy_required
+			modifier = {
+				surrender_limit = -0.1
+				war_support_weekly = -0.01
+				totalist_drift = 0.1
+				syndicalist_drift = -0.1
+				radical_socialist_drift = -0.1
+				social_democrat_drift = -0.2
+			}
+		}
+		FRA_soreleu1_idea = {#泛欧极权革命
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = FRA_soreleu1
+			modifier = {
+				surrender_limit = 0.2
+				war_support_weekly = 0.02
+				totalist_drift = 0.1
+				stability_factor = -0.1
+				production_speed_naval_base_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				industrial_capacity_factory = 0.1
+				political_power_gain = -0.2
+			}
+			targeted_modifier = {
+				tag = GER
+				defense_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = RUS
+				defense_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = CAN
+				defense_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = NFA
+				defense_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+			}
+		}	
+		FRA_soreleu2_idea = {#拉丁本位主义
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = FRA_soreleu2
+			modifier = {
+				surrender_limit = 0.1
+				war_support_weekly = 0.01
+				stability_factor = -0.1
+				totalist_drift = 0.1
+				faction_trade_opinion_factor = 0.5
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				training_time_army_factor = -0.1
+				army_speed_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.03
+			}
+			targeted_modifier = {
+				tag = CAN
+				attack_bonus_against = 0.03
+			}
+			targeted_modifier = {
+				tag = NFA
+				attack_bonus_against = 0.03
+			}
+		}		
+		FRA_soreleu3_idea = {#法兰西本位主义
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = FRA_soreleu3
+			modifier = {
+				war_support_weekly = 0.02
+				stability_weekly = 0.01
+				production_speed_naval_base_factor = 0.08
+				production_speed_arms_factory_factor = 0.08
+				industrial_capacity_factory = 0.15
+				political_power_gain = 0.2
+			}
+		}
+		FRA_antibucard_sorel_idea = { #更忠诚的革命军团
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_corporate_syndie_idea"}
+			picture = FRA_sorel_loyal
+			modifier = {
+				stability_factor = 0.1
+				conscription = 0.1
+				supply_consumption_factor = -0.1
+				training_time_factor = -0.01
+				industrial_capacity_factory = 0.05
+				production_speed_arms_factory_factor = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				armor = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				motorized_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		FRA_classical_arts_idea = { #古典艺术
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_corporate_syndie_idea"}
+			picture = FRA_classical_arts
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.1
+				consumer_goods_factor = 0.05
+				max_planning = 0.3
+				army_breakthrough_against_major_factor = 0.05
+				resistance_target = 0.15
+			}
+		}
+		#瓦卢瓦发疯
+		FRA_revenge_for_the_war_of_hundred = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = generic_britain_on_fire
+			modifier = {
+				invasion_preparation = -0.25
+				amphibious_invasion = 0.25
+			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				breakthrough_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = CAN
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				breakthrough_bonus_against = 0.1
+			}
+		}
+		FRA_ultracentralization = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = CAN_exile_government
+			modifier = {
+				industrial_capacity_factory = 0.10
+				monthly_population = 0.5
+				no_supply_grace = 24
+				mobilization_speed = 0.1
+			}
+		}
+		FRA_fonctions_tripartites = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = NFA_fraternal_france
+			modifier = {
+				research_speed_factor = 0.15
+				local_resources_factor = 0.15
+				command_power_gain = 0.1
+				max_command_power = 150
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+				production_resource_need_factor = -0.1
+				compliance_growth = 0.2	
+				conscription = 0.04
+				conscription_factor = 0.25
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				supply_consumption_factor = -0.1
+				org_loss_when_moving = -0.15
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_speed_factor = 0.1
+				army_attack_speed_factor = 0.25
+				experience_loss_factor = -0.15
+				army_strength_factor = 0.15
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				global_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
+			}
+			research_bonus = {
+				armor = 0.1
+				electronics = 0.1
+				construction_tech = 0.1
+				excavation_tech = 0.1
+				industry = 0.1
+				infantry_weapons = 0.1
+				support_tech = 0.1
+				land_doctrine = 0.1
+				motorized_equipment = 0.1		
+				artillery = 0.1
+
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					reliability = 0.1
+					defense = 0.1
+					breakthrough = 0.1
+					hardness = 0.1
+					soft_attack = 0.1
+					hard_attack = 0.1
+					instant = yes
+				}
+				
+				artillery_equipment = {
+					build_cost_ic = -0.1
+					reliability = 0.1
+					defense = 0.1
+					breakthrough = 0.1
+					hardness = 0.1
+					soft_attack = 0.1
+					hard_attack = 0.1
+					instant = yes
+				}
+				armor = {
+					build_cost_ic = -0.1
+					reliability = 0.1
+					defense = 0.1
+					breakthrough = 0.1
+					hardness = 0.1
+					soft_attack = 0.1
+					hard_attack = 0.1
+					instant = yes
+				}
+				
+			}
+		}
+		FRA_oratores1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = NFA_pope_lefebvre
+			modifier = {
+				research_speed_factor = 0.15
+				local_resources_factor = 0.15
+				command_power_gain = 0.1
+				max_command_power = 150
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+				production_resource_need_factor = -0.1
+				compliance_growth = 0.2	
+			}
+			research_bonus = {
+				armor = 0.1
+				electronics = 0.1
+				construction_tech = 0.1
+				excavation_tech = 0.1
+				industry = 0.1
+				infantry_weapons = 0.1
+				support_tech = 0.1
+				land_doctrine = 0.1
+				motorized_equipment = 0.1		
+				artillery = 0.1
+
+			}
+		}
+		FRA_oratores = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = NFA_pope_lefebvre
+			modifier = {
+				research_speed_factor = 0.15
+				
+			}
+			research_bonus = {
+				armor = 0.1
+				electronics = 0.1
+				construction_tech = 0.1
+				excavation_tech = 0.1
+				industry = 0.1
+				infantry_weapons = 0.1
+				support_tech = 0.1
+				land_doctrine = 0.1
+				motorized_equipment = 0.1		
+				artillery = 0.1
+
+			}
+		}
+		FRA_bellatores1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = red_militias
+			modifier = {
+				conscription = 0.04
+				conscription_factor = 0.25
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				supply_consumption_factor = -0.1
+				org_loss_when_moving = -0.15
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_speed_factor = 0.1
+				army_attack_speed_factor = 0.25
+				experience_loss_factor = -0.15
+				army_strength_factor = 0.15
+			}
+		}
+		FRA_bellatores = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = red_militias
+			modifier = {
+				conscription = 0.04
+				conscription_factor = 0.25
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				supply_consumption_factor = -0.1
+				org_loss_when_moving = -0.15
+
+			}
+		}
+		FRA_laboratores1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = farmer_labor_alliance
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				global_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
+			}
+		}
+		FRA_laboratores = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = farmer_labor_alliance
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+
+			}
+		}
+		FRA_monarcho_syndicalism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = generic_syndicalist_monarchy
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.1
+				totalist_drift = 0.05
+				war_support_factor = 0.1
+				war_stability_factor = 0.25
+				
+			}
+		}
+		#暂未启用的战后国策树
+		FRA_1812_never_again = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = NFA_red_resistance
+			targeted_modifier = {
+				tag = RUS
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				breakthrough_bonus_against = 0.1
+			}
+		}
+		FRA_RUS_trade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = generic_trade
+			modifier = {
+				min_export = 0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+		FRA_infitrated = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = CAN_canadian_resistance_idea
+			modifier = {
+				surrender_limit = -0.2
+				war_support_weekly = -0.01
+				
+			}
+		}
+		FRA_latin_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = fair_share_economy
+			modifier = {
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		FRA_roman_unity = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = NFA_eternal_claim
+			modifier = {
+				political_power_cost = -0.1
+				stability_factor = 0.05
+			}
+		}
+		FRA_back_to_latin = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = MEX_neolatin_renaissance_idea
+			modifier = {
+				no_supply_grace = 24
+				attrition = -0.1
+				acclimatization_hot_climate_gain_factor = 0.2
+				terrain_penalty_reduction = 0.1
+			}
+		}
+		FRA_global_delivery = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = NFA_navy_ministry
+			modifier = {
+				naval_speed_factor = 0.1
+				navy_max_range_factor = 0.2
+				navy_fuel_consumption_factor = -0.1
+				invasion_preparation = -0.1
+				amphibious_invasion = 0.1
+
+			}
+		}
+		FRA_socialism_civilization = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = NFA_union_africa
+			modifier = {
+				non_core_manpower = 0.5
+				resistance_target = 0.05
+				resistance_decay = 0.02
+				resistance_growth = -0.02
+				compliance_growth = 0.02
+				required_garrison_factor = -0.15
+				attrition = 0.05
+
+			}
+		}
+		FRA_post_war_scars = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = UK_politics_syn_idea
+			modifier = {
+				political_power_cost = 1
+				stability_factor = -0.3
+				war_support_weekly = -0.05
+				conscription = -0.05
+				conscription_factor = -0.3
+				industrial_capacity_factory = -0.3
+				consumer_goods_factor = 0.2
+			}
+		}
+		FRA_post_war_scars1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = UK_politics_syn_idea
+			modifier = {
+				political_power_cost = 1
+				stability_factor = -0.3
+				war_support_weekly = -0.05
+				conscription = -0.05
+				conscription_factor = -0.3
+				industrial_capacity_factory = -0.3
+				consumer_goods_factor = 0.1
+			}
+		}
+		FRA_post_war_scars2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = UK_politics_syn_idea
+			modifier = {
+				political_power_cost = 0.5
+				stability_factor = -0.2
+				war_support_weekly = -0.04
+				conscription = -0.04
+				conscription_factor = -0.2
+				industrial_capacity_factory = -0.3
+			}
+		}
+		FRA_post_war_scars3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = UK_politics_syn_idea
+			modifier = {
+				political_power_cost = 0.4
+				stability_factor = -0.1
+				war_support_weekly = -0.03
+				conscription = -0.03
+				conscription_factor = -0.1
+				industrial_capacity_factory = -0.3
+			}
+		}
+		FRA_post_war_scars4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = UK_politics_syn_idea
+			modifier = {
+				political_power_cost = 0.3
+				stability_factor = -0.05
+				war_support_weekly = -0.02
+				conscription = -0.02
+				conscription_factor = -0.05
+				industrial_capacity_factory = -0.2
+			}
+		}
+		FRA_post_war_scars5 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = UK_politics_syn_idea
+			modifier = {
+				political_power_cost = 0.3
+				stability_factor = -0.05
+				war_support_factor = -0.1
+				conscription = -0.01
+				industrial_capacity_factory = -0.2
+			}
+		}
+		FRA_post_war_scars6 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = UK_politics_syn_idea
+			modifier = {
+				political_power_cost = 0.25
+				war_support_factor = -0.1
+				conscription = -0.01
+				industrial_capacity_factory = -0.2
+			}
+		}
+		FRA_post_war_scars7 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = UK_politics_syn_idea
+			modifier = {
+				political_power_cost = 0.1
+				war_support_factor = -0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+		FRA_post_war_scars8 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = UK_politics_syn_idea
+			modifier = {
+				political_power_cost = 0.1
+				war_support_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		
+		pow_labor_camp = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = forced_labor_economy
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				industry_repair_factor = 0.5
+			}
+		}
+		FRA_reactionarism_return_dummy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_vanguard_of_the_revolution_idea" }
+			name = FRA_vanguard_of_the_revolution
+			picture = SOV_soviet_hegemony
+			modifier = {}
+				
+		}
+		FRA_reactionarism_return = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_vanguard_of_the_revolution_idea" }
+			name = FRA_vanguard_of_the_revolution
+			picture = SOV_soviet_hegemony
+			modifier = {
+				political_power_cost = 0.2
+				stability_weekly = -0.1
+				radical_socialist_drift = -0.03
+				syndicalist_drift = -0.03
+				totalist_drift = -0.03
+			}
+		}
+		FRA_reactionarism_return_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_vanguard_of_the_revolution_idea" }
+			name = FRA_vanguard_of_the_revolution
+			picture = SOV_soviet_hegemony
+			modifier = {
+				political_power_cost = 0.1
+				stability_weekly = -0.05
+				
+			}
+		}
+		FRA_vanguard_of_the_revolution_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_vanguard_of_the_revolution_idea" }
+			name = FRA_vanguard_of_the_revolution
+			picture = SOV_soviet_hegemony
+			modifier = {
+				drift_defence_factor = 0.5
+				send_volunteer_size = 10
+			}
+		}
+		FRA_renseignements_generaux_lar = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_renseignements_generaux_lar" }
+			picture = generic_spy_intel
+			allowed = { always = no }
+			modifier = {
+				operative_slot = 1
+				intelligence_agency_defense = 0.5
+			}
+		}
+		FRA_renseignements_generaux_lar_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_renseignements_generaux_lar_2" }
+			name = FRA_renseignements_generaux_lar
+			picture = generic_spy_intel
+			allowed = { always = no }
+			modifier = {
+				operative_slot = 3
+				intelligence_agency_defense = 0.5
+				enemy_operative_detection_chance_factor = 0.1
+				enemy_operative_intel_extraction_rate = 0.1
+				enemy_operative_capture_chance_factor = 0.1
+			}
+		}
+		FRA_road_construction_efforts = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_road_construction_efforts" }
+			picture = ARG_invest_in_roads
+			allowed = { always = no }
+			modifier = {
+				production_speed_infrastructure_factor = 0.25
+			}
+		}
+		FRA_autonomous_communes_default = {
+			picture = new_economic_policy
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_large_scale_rural_projects_idea" }
+			allowed = { always = no }
+	
+			modifier = {
+				consumer_goods_expected_value = -0.15
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		FRA_autonomous_communes_upgraded = {
+			name = FRA_autonomous_communes_default
+			picture = new_economic_policy
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_large_scale_rural_projects_idea" }
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_expected_value = -0.10
+				production_speed_buildings_factor = 0.2
+				global_building_slots_factor = 0.1
+
+			}
+		}
+		FRA_large_scale_rural_projects_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_large_scale_rural_projects_idea" }
+			picture = generic_exploit_mines
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+		FRA_second_wave_of_mechanisation_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_second_wave_of_mechanisation_idea" }
+			picture = LIT_invested_in_farms
+			allowed = { always = no }
+			modifier = {
+				weekly_manpower = 1000
+				monthly_population = 0.3
+			}
+		}
+		FRA_communal_waterworks_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_communal_waterworks_idea" }
+			picture = SOV_transformation_of_nature
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+		FRA_ploughshares_into_swords_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_ploughshares_into_swords_idea" }
+			picture = SOV_fourth_five_year_plan
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_factory = 0.05
+				conversion_cost_civ_to_mil_factor = -0.3
+			}
+		}
+	}
+}

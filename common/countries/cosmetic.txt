@@ -4396,6 +4396,14 @@ AST_obu_slp = {
 	color = rgb { 97 6 6 }
 	color_ui = rgb { 97 6 6 }
 }
+AST_ger = {
+	color = rgb { 121 121 121 }
+	color_ui = rgb { 121 121 121 }
+}
+AST_jap = {
+	color = rgb { 240 240 240 }
+	color_ui = rgb { 240 240 240 }
+}
 
 ###小黄总督辖区
 GRU_HEYDRICH_STATE = {
@@ -5350,7 +5358,6 @@ LEC_XIE = {
 LEC_GOG = {
 	color = { 59 23 203 }
 	color_ui = { 59 23 203 }
-
 }
 
 LEC_JIA = {
@@ -10094,10 +10101,6 @@ FRG_Promised_land = {
     color = rgb { 139 26 26 }
 	color_ui = rgb { 139 26 26 }
 }
-FRG_Promised_land = {
-    color = rgb { 139 26 26 }
-	color_ui = rgb { 139 26 26 }
-}
 FRG_New_Eden = {
 	color = rgb { 230 230 250 }
 	color_ui = rgb { 230 230 250 }
@@ -10154,4 +10157,21 @@ WHR_nazilol = {
 WHR_kievrus_nazilol = {
 	color = rgb { 143 20 20 }
 	color_ui = rgb { 143 40 40 }
+}
+###法公社瓦卢瓦
+FRA_Breton = {
+	color = rgb { 0 18 93 }
+	color_ui = rgb { 0 18 93 }
+}
+FRA_acephale = {
+	color = rgb { 99 33 66 }
+	color_ui = rgb { 99 33 66 }
+}
+FRA_Sorel_Capetiens = {
+	color = rgb { 138 28 33 }
+	color_ui = rgb { 138 28 33 }
+}
+FRA_Sorel_Capitiens_Frankish = {
+	color = rgb { 138 28 33 }
+	color_ui = rgb { 138 28 33 }
 }

@@ -452,6 +452,8 @@ focus_tree = {
 		prerequisite = { focus = JAPANA_the_fight_against_discrimination  }
 		mutually_exclusive = { focus = JAPANA_burnthecrown  }
 		completion_reward = {
+			set_country_flag = KXX_LEADER_GUI_VISIBLE
+			set_country_flag = JAP_Hirohito_VISIBLE
 		swap_ideas = {
 		remove_idea = JAP_no_emperor
 		add_idea = JAP_emperor_hirohito
@@ -669,10 +671,30 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPANA_taking_revenge_on_the_yakuza  focus = JAPANA_revolutionary_expansion  focus = JAPANA_the_path_of_liberation  focus = JAPANA_construct_proletarian_councils  }
 		completion_reward = {
-		add_ideas = {
-		JAP_japan_shall_be_free
-		}
-		country_event = japan_new_event.116
+			if = {
+				limit = {
+					has_country_leader = {
+						ruling_only = yes
+						name = "松本治一郎"
+					}
+				}
+				add_ideas = {
+					JAP_japan_shall_be_free
+				}
+				country_event = japan_new_event.116
+			}
+			if = {
+				limit = {
+					has_country_leader = {
+						ruling_only = yes
+						name = "部落解放团中央委员会"
+					}
+				}
+				add_ideas = {
+					JSR_the_council_idea
+				}
+				country_event = japan_new_event.116
+			}
 		}
 	}
 
@@ -867,6 +889,9 @@ focus_tree = {
 		prerequisite = { focus = JAPANA_promotingcommunalagrarianism  } prerequisite = { focus = JAPANA_anarchosyndicalist_programme  }
 		completion_reward = {
 		add_political_power = 50
+		add_ideas = {
+			JAP_mutalist_program_1
+			}
 		}
 	}
 
@@ -901,7 +926,7 @@ focus_tree = {
 		prerequisite = { focus = JAPANA_promotingthelocallife  } prerequisite = { focus = JAPANA_syncretic_anarchist_ethos  }
 		completion_reward = {
 		add_ideas = {
-		JAP_mutalist_program_1
+			JSR_Ishikawa_Sanshiro_idea
 		}
 		}
 	}
@@ -1226,6 +1251,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPANA_iamthetengu  } prerequisite = { focus = JAPANA_formthetsujijunkoenkai  }
 		completion_reward = {
+			add_ideas = {
+				JSR_Jun_Tsuji_idea
+				}
 		country_event = japan_new_event.118
 		}
 	}
@@ -2945,6 +2973,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPCOMMUNIST_a_japanese_cultural_revolution  }
 		completion_reward = {
+			add_ideas = JSR_Kazuo_Fukumoto_idea
 		add_political_power = 100
 		add_popularity = {
 		ideology = totalist

@@ -28,6 +28,8 @@ JAP_nationalization_trigger = {
 		has_idea = JAP_Giro_Senoo_hog_rso
 		has_idea = JAP_Kingoro_Hashimoto_hog_npo
 		has_idea = JAP_Aso_Hisashi_hog_tot
+		has_idea = JAP_Noboru_Yamaguchi_hog_pau
+		has_idea = JAP_Yoshio_Kodama_hog_npo
 		}
 	}
 }

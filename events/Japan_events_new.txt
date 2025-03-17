@@ -325,8 +325,8 @@ country_event = { #1936 Elections
 			}
 		}
 		create_country_leader = {
-					name = "裕仁"
-					picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+					name = "国会"
+					picture = "gfx/leaders/JAP/Portrait_JAP_Vacant_Office.png"
 					expire = "1965.1.1"
 					ideology = authdem_showa_statism_subtype
 				}
@@ -426,6 +426,13 @@ country_event = { #Shakai-Taishuto Candidate
 				has_game_rule = { rule = JAP_path option = JAP_PATH_SHAKAI_TAISHUTO_YAMAMOTO_1936 }
 			}
 		}
+		create_country_leader = {
+			name = "山本悬藏"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Kenzo_Yamamoto.png"
+			expire = "1965.1.1"
+			ideology = syndie_social_democrat_subtype
+		}
+
 		clr_country_flag = JAP_shakai_taishuto_won_in_1936_elections
 		
 		remove_all_ministers = yes
@@ -501,10 +508,9 @@ country_event = { #Yakuza Take Power
 		JAP_Kakuji_Inagawa_eco_pau
 		JAP_Ryōichi_Sasakawa_sec_npo
 		}
-		load_focus_tree = yakuza-japan
 		clr_country_flag = KXX_LEADER_GUI_VISIBLE
 		create_country_leader = {
-					name = "山口升"
+					name = "山口登"
 					picture = "gfx/leaders/JAP/Portrait_JAP_Noboru_Yamaguchi.png"
 					expire = "1965.1.1"
 					ideology = crime_syndicate_subtype
@@ -516,15 +522,15 @@ country_event = { #Yakuza Take Power
 			set_cosmetic_tag = JAP_YAKUZA_paternal_autocrat
 			set_party_name = {
 				ideology = authoritarian_democrat
-				name = "Yakuza"
+				name = "山口组"
 			}
 			set_party_name = {
 				ideology = paternal_autocrat
-				name = "Yakuza"
+				name = "山口组"
 			}
 			set_party_name = {
 				ideology = national_populist
-				name = "Yakuza"
+				name = "山口组"
 			}
 	}
 }
@@ -579,15 +585,15 @@ country_event = { #The Jackal's Two Heads
 			set_cosmetic_tag = JAP_YAKUZA_national_populist
 			set_party_name = {
 				ideology = authoritarian_democrat
-				name = "Yakuza"
+				name = "雅库扎"
 			}
 			set_party_name = {
 				ideology = paternal_autocrat
-				name = "Yakuza"
+				name = "雅库扎"
 			}
 			set_party_name = {
 				ideology = national_populist
-				name = "Yakuza"
+				name = "雅库扎"
 			}
 	}
 }
@@ -606,7 +612,10 @@ country_event = { #Embracing Japanese Dominance
 	option = { #
 		name = japan_new_event.14.a
 		ai_chance = { base = 100 }
-		
+		swap_ideas = {
+			remove_idea = JAP_fixers
+			add_idea = JAP_fixers_2
+		}
 	}
 	
 	option = { #
@@ -617,9 +626,13 @@ country_event = { #Embracing Japanese Dominance
 		}
 		set_politics = { ruling_party = paternal_autocrat }
 		set_country_flag = KXX_LEADER_GUI_VISIBLE
+		swap_ideas = {
+			remove_idea = JAP_fixers
+			add_idea = JAP_fixers_3
+		}
 		create_country_leader = {
-					name = "裕仁"
-					picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+					name = "儿玉誉士夫"
+					picture = "gfx/leaders/JAP/Portrait_JAP_Yoshio_Kodama.png"
 					expire = "1965.1.1"
 					ideology = pataut_legionarism_subtype
 				}
@@ -631,21 +644,25 @@ country_event = { #Embracing Japanese Dominance
 		add_ideas = {
 		JAP_Tatsuo_Tsukui_hog_tot
 		}
+		swap_ideas = {
+			remove_idea = JAP_fixers
+			add_idea = JAP_fixers_4
+		}
 		set_party_name = {
 				ideology = totalist
-				name_long = "Aikoku Kinroto (Patriotic Labor Party)"
-				name = "Aikoku Kinroto"
+				name_long = "爱国勤劳党"
+				name = "爱国勤劳党"
 			}		
 		set_party_name = {
 				ideology = paternal_autocrat
-				name_long = "Aikoku Kinroto (Patriotic Labor Party)"
-				name = "Aikoku Kinroto"
+				name_long = "爱国勤劳党"
+				name = "爱国勤劳党"
 			}
 		set_politics = { ruling_party = totalist }
 		set_country_flag = KXX_LEADER_GUI_VISIBLE
 		create_country_leader = {
-					name = "裕仁"
-					picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+					name = "津久井龙雄"
+					picture = "gfx/leaders/JAP/Portrait_JAP_Tatsuo_Tsukui.png"
 					expire = "1965.1.1"
 					ideology = caponism_subtype
 				}
@@ -654,26 +671,30 @@ country_event = { #Embracing Japanese Dominance
 	option = { #
 		name = japan_new_event.14.d
 		ai_chance = { base = 100 }
+		swap_ideas = {
+			remove_idea = JAP_fixers
+			add_idea = JAP_fixers_4
+		}
 		add_ideas = {
 		JAP_Tatsuo_Tsukui_hog_tot
 		}
 		set_politics = { ruling_party = paternal_autocrat }
 		set_country_flag = KXX_LEADER_GUI_VISIBLE
 		create_country_leader = {
-					name = "裕仁"
-					picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+					name = "津久井龙雄"
+					picture = "gfx/leaders/JAP/Portrait_JAP_Tatsuo_Tsukui.png"
 					expire = "1965.1.1"
 					ideology = pataut_caponism_subtype
 				}
 		set_party_name = {
 				ideology = totalist
-				name_long = "Aikoku Kinroto (Patriotic Labor Party)"
-				name = "Aikoku Kinroto"
+				name_long = "爱国勤劳党"
+				name = "爱国勤劳党"
 			}		
 		set_party_name = {
 				ideology = paternal_autocrat
-				name_long = "Aikoku Kinroto (Patriotic Labor Party)"
-				name = "Aikoku Kinroto"
+				name_long = "爱国勤劳党"
+				name = "爱国勤劳党"
 			}
 	}
 }
@@ -729,13 +750,19 @@ country_event = { #May 15 Incident
 		}
 		add_stability = -0.2
 		country_event = {
-		id = japan_new_event.20
-		days = 7
+			id = japan_new_event.20
+			days = 7
 		}
 		remove_ideas_with_trait = head_of_government
-			add_ideas = { 
+		add_ideas = { 
 			JAP_Suzuki_Kisaburo_hog_sco
-			}
+		}
+		create_country_leader = {
+			name = "铃木喜三郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Suzuki_Kisaburo.png"
+			expire = "1965.1.1"
+			ideology = national_conservative_subtype
+		}
 		
 	}
 	
@@ -751,6 +778,12 @@ country_event = { #May 15 Incident
 		days = 7
 		}
 		remove_ideas_with_trait = head_of_government
+		create_country_leader = {
+			name = "滨口雄幸"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Hamaguchi_Osachi.png"
+			expire = "1965.1.1"
+			ideology = liberal_conservative_subtype
+		}
 		add_ideas = {
 		JAP_Hamaguchi_Osachi_hog_mli
 		}
@@ -775,8 +808,8 @@ country_event = { #May 15 Incident
 		remove_ideas_with_trait = head_of_government
 			add_ideas = JAP_jotaro_kawakami_hog_sde
 			create_country_leader = {
-				name = "裕仁"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+				name = "河上丈太郎"
+				picture = "gfx/leaders/JAP/Portrait_JAP_Jotaro_Kawakami.png"
 				expire = "1965.1.1"
 				ideology = socdem_paternal_socialism_subtype
 			}
@@ -943,7 +976,6 @@ country_event = { #Japanese Civil War
 					type = support_equipment
 					amount = 1000
 					}
-					set_cosmetic_tag = JAP_red_army
 					add_ideas = {
 					JAP_Yamamoto_Kenzo_hog_syn
 					JAP_Oyama_Ikuo_for_syn
@@ -955,6 +987,7 @@ country_event = { #Japanese Civil War
 					JAP_i_am_black_smith
 					JAP_reactionary_army_resistance_1
 					}
+					set_cosmetic_tag = JAP_red_army
 					load_oob = "Japan_revolution"
 					load_focus_tree = japan-revolution
 					create_country_leader = {
@@ -967,7 +1000,7 @@ country_event = { #Japanese Civil War
 					create_country_leader = {
 						name = "麻生久"
 						desc = "-"
-						picture = "gfx/leaders/JAP/Portrait_JAP_Kenzo_Yamamoto.png"
+						picture = "gfx/leaders/JAP/Portrait_JAP_Aso_Hisashi.png"
 						expire = "1965.1.1"
 						ideology = totalist_subtype
 					}
@@ -1944,15 +1977,15 @@ country_event = { #League of Blood Incident
 		set_politics = { ruling_party = national_populist }
 			country_event = japan_new_event.46
 			create_country_leader = {
-			name = "裕仁"
+			name = "石原莞尔"
 			desc = "KANJI_LEADER_DESC"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Kanji_Ishiwara.png"
 			expire = "1965.1.1"
 			ideology = natpop_nichiren_buddhism_subtype
 			}
 			create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "妹尾义郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Giro_Senoo.png"
 			desc = "GIRO_LEADER_DESC"
 			expire = "1965.1.1"
 			ideology = radsoc_nichiren_buddhism_subtype
@@ -2264,8 +2297,8 @@ country_event = { #Siding With a Faction
 			name = JAP_party_yuzonsha
 		}
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "北一辉"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Kita_Ikki.png"
 			expire = "1965.1.1"
 			ideology = ikki_kita_thought_subtype
 		}
@@ -2393,8 +2426,8 @@ country_event = { #Siding With a Faction
 		add_to_coalition = yes
 		
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "近卫文麿"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Konoe_Fumimaro.png"
 			expire = "1965.1.1"
 			ideology = right_syndicalism_subtype
 		}
@@ -2461,8 +2494,8 @@ country_event = { #Shumei or Kita
 			}
 		}
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "大川周明"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Okawa_Shumei_2.png"
 			expire = "1965.1.1"
 			ideology = okawa_shumei_thought_subtype
 		}
@@ -2506,14 +2539,7 @@ country_event = { #The Kokuhonsha & The Sakurakai
 			long_name = JAP_party_kokuhonsha_long
 			name = JAP_party_kokuhonsha
 		}
-		set_cosmetic_tag = JAP_Araki
 		complete_national_focus = JAPARAKI_arakissuccess
-		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
-			expire = "1965.1.1"
-			ideology = pataut_showa_statism_subtype
-		}
 	}
 	option = { #Sakurakai
 		name = japan_new_event.32.b
@@ -2552,14 +2578,14 @@ country_event = { #The Kokuhonsha & The Sakurakai
 		}
 		
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "桥本欣五郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Kingoro_Hashimoto.png"
 			expire = "1965.1.1"
 			ideology = tot_nihon_socialism_subtype
 		}
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "桥本欣五郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Kingoro_Hashimoto.png"
 			expire = "1965.1.1"
 			ideology = natpop_nihon_socialism_subtype
 		}
@@ -2866,11 +2892,12 @@ country_event = { #Closing of the First Yokusan Elections
 		}
 		
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "近卫文麿"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Konoe_Fumimaro.png"
 			expire = "1965.1.1"
 			ideology = natsynd_subtype
 		}
+		add_ideas = JAP_Konoe_Controls_the_Center
 		set_politics = {
 			ruling_party = totalist
 			elections_allowed = no
@@ -2895,6 +2922,7 @@ country_event = { #Closing of the First Yokusan Elections
 				
 			}
 		}
+		add_ideas = JAP_Konoe_Controls_the_Center_1
 		trigger = {
 		and = {
 		power_balance_value = {
@@ -2984,8 +3012,8 @@ country_event = { #Rightist Election
 			}
 		}
 	create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "林铳十郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Senjuro_Hayashi.png"
 			expire = "1965.1.1"
 			ideology = junta_subtype
 		}
@@ -3017,8 +3045,8 @@ country_event = { #Rightist Election
 		complete_national_focus = JAPIRAARIGHTIST_militarist_victory
 		complete_national_focus = JAPIRAARIGHTIST_kiichirosvictory
 	create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "平沼骐一郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Hiranuma_Kiichiro.png"
 			expire = "1965.1.1"
 			ideology = pataut_national_conservative_subtype
 		}
@@ -3047,8 +3075,8 @@ country_event = { #Rightist Election
 			}
 		}
 	create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "久原房之助"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Fusanosuke_Kuhara.png"
 			expire = "1965.1.1"
 			ideology = natpop_corporatocracy_subtype
 		}
@@ -3093,8 +3121,8 @@ country_event = { #leftist Election
 		set_cosmetic_tag = JAP_TOKOHAI
 		complete_national_focus = JAPLEFTIRAA_tokohai_succession
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "中野正刚"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Seigo_Nakano_2.png"
 			expire = "1965.1.1"
 			ideology = natsynd_subtype
 		}
@@ -3125,8 +3153,8 @@ country_event = { #leftist Election
 		set_cosmetic_tag = JAP_Kingoro
 		complete_national_focus = JAPLEFTIRAA_hashimoto_victory
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "桥本欣五郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Kingoro_Hashimoto.png"
 			expire = "1965.1.1"
 			ideology = tot_nihon_socialism_subtype
 		}
@@ -3157,8 +3185,8 @@ country_event = { #leftist Election
 		set_cosmetic_tag = JAP_AKAMATSU
 		complete_national_focus = JAPLEFTIRAA_asanumaspowergrab
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "浅沼稻次郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Inejiro_Asanuma.png"
 			expire = "1965.1.1"
 			ideology = tot_national_socialism_subtype
 		}
@@ -3189,6 +3217,8 @@ country_event = { #Hashimoto Ideology Picker
 	is_triggered_only = yes
 	option = { #stay the same
 		name = "我们将继续自己的道路"	
+		ai_chance = { base = 100 }
+		add_ideas = JAP_The_Blossoms_Bloom_idea
 	}
 	option = { #Totalist HST
 		name = japan_new_event.41.a
@@ -3199,8 +3229,8 @@ country_event = { #Hashimoto Ideology Picker
 		}
 		}
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "桥本欣五郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Kingoro_Hashimoto.png"
 			expire = "1965.1.1"
 			ideology = tot_nihon_socialism_subtype
 		}
@@ -3208,7 +3238,7 @@ country_event = { #Hashimoto Ideology Picker
 			ruling_party = totalist
 			elections_allowed = no
 		}
-		
+		add_ideas = JAP_The_Blossoms_Bloom_idea
 		remove_all_ministers = yes
 		add_ideas = {
 			JAP_Kingoro_Hashimoto_hog_tot
@@ -3227,8 +3257,8 @@ country_event = { #Hashimoto Ideology Picker
 		}
 		}
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "桥本欣五郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Kingoro_Hashimoto.png"
 			expire = "1965.1.1"
 			ideology = natpop_nihon_socialism_subtype
 		}
@@ -3236,7 +3266,7 @@ country_event = { #Hashimoto Ideology Picker
 			ruling_party = national_populist
 			elections_allowed = no
 		}
-		
+		add_ideas = JAP_The_Blossoms_Bloom_idea
 		remove_all_ministers = yes
 		add_ideas = {
 			JAP_Kingoro_Hashimoto_hog_tot
@@ -3250,12 +3280,12 @@ country_event = { #Hashimoto Ideology Picker
 		ai_chance = { base = 100 }
 		
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "桥本欣五郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Kingoro_Hashimoto.png"
 			expire = "1965.1.1"
 			ideology = natpop_kemalism_subtype
 		}
-		
+		add_ideas = JAP_The_Blossoms_Bloom_idea_2
 		set_party_name = {
 				ideology = authoritarian_democrat
 				long_name = JAP_Hashimoto_party_long
@@ -3275,8 +3305,8 @@ country_event = { #Hashimoto Ideology Picker
 		ai_chance = { base = 100 }
 		
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "桥本欣五郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Kingoro_Hashimoto.png"
 			expire = "1965.1.1"
 			ideology = natpop_showa_statism_subtype
 		}
@@ -3284,7 +3314,7 @@ country_event = { #Hashimoto Ideology Picker
 			ruling_party = national_populist
 			elections_allowed = no
 		}
-		
+		add_ideas = JAP_The_Blossoms_Bloom_idea_1
 		remove_all_ministers = yes
 		add_ideas = {
 			JAP_Kingoro_Hashimoto_hog_tot
@@ -3305,7 +3335,7 @@ country_event = { #Araki Ideology Picker
 	is_triggered_only = yes
 	option = { #stay same
 		name = 我们永远忠于皇帝
-		
+		add_ideas = JAP_new_shogunate
 	}
 	option = { #Pan-Asianism
 		name = japan_new_event.42.a
@@ -3316,11 +3346,12 @@ country_event = { #Araki Ideology Picker
 			elections_allowed = yes
 		}
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "荒木贞夫"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Sadao_Araki.png"
 			expire = "1965.1.1"
 			ideology = pataut_pan_asianism_subtype
 		}
+		add_ideas = JAP_are_ya_ready_war_3
 		remove_all_ministers = yes
 		add_ideas = {
 			JAP_Araki_Sadao_hog_npo
@@ -3340,8 +3371,8 @@ country_event = { #Araki Ideology Picker
 			elections_allowed = yes
 		}
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "荒木贞夫"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Sadao_Araki.png"
 			expire = "1965.1.1"
 			ideology = prussian_constitutionalism_subtype
 		}
@@ -3350,6 +3381,7 @@ country_event = { #Araki Ideology Picker
 			long_name = JAP_party_kokuhonsha_long
 			name = JAP_party_kokuhonsha
 		}
+		add_ideas = JAP_new_shogunate_1
 		set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
 		add_to_coalition = yes
 		remove_all_ministers = yes
@@ -3387,12 +3419,12 @@ country_event = { #Kozaburo Ideology Picker
 		
 		
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "橘孝三郎"
+			picture = "gfx/leaders/JAP/Portrait_Two_Kozaburo_Tachibana.png"
 			expire = "1965.1.1"
 			ideology = natpop_state_shintoism_subtype
 		}
-		
+		add_ideas = Tachibana_Ascension_idea_3
 	}
 	option = { #Gugolov
 		name = japan_new_event.43.b
@@ -3411,12 +3443,12 @@ country_event = { #Kozaburo Ideology Picker
 		
 		
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "橘孝三郎"
+			picture = "gfx/leaders/JAP/Portrait_Two_Kozaburo_Tachibana.png"
 			expire = "1965.1.1"
 			ideology = scythianism_subtype
 		}
-		
+		add_ideas = Tachibana_Ascension_idea_1
 	}
 	
 	option = { #Totalist Shinto
@@ -3436,12 +3468,12 @@ country_event = { #Kozaburo Ideology Picker
 		
 		
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "橘孝三郎"
+			picture = "gfx/leaders/JAP/Portrait_Two_Kozaburo_Tachibana.png"
 			expire = "1965.1.1"
 			ideology = tot_state_shintoism_subtype
 		}
-		
+		add_ideas = Tachibana_Ascension_idea_3
 	}
 	
 	
@@ -3462,12 +3494,12 @@ country_event = { #Kozaburo Ideology Picker
 		
 		
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "橘孝三郎"
+			picture = "gfx/leaders/JAP/Portrait_Two_Kozaburo_Tachibana.png"
 			expire = "1965.1.1"
 			ideology = tot_datong_shu_subtype
 		}
-		
+		add_ideas = Tachibana_Ascension_idea_2
 	}
 	
 	option = { #Anarchism
@@ -3487,12 +3519,12 @@ country_event = { #Kozaburo Ideology Picker
 		
 		
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "橘孝三郎"
+			picture = "gfx/leaders/JAP/Portrait_Two_Kozaburo_Tachibana.png"
 			expire = "1965.1.1"
 			ideology = tot_illegalism_subtype
 		}
-		
+		add_ideas = Tachibana_Ascension_idea
 	}
 }
 
@@ -3604,8 +3636,8 @@ country_event = { #A Twist in the Coup
 		
 		
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "内田良平"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Ryohei_Uchida.png"
 			expire = "1965.1.1"
 			ideology = occultism_subtype
 		}
@@ -3653,8 +3685,8 @@ country_event = { #A Twist in the Coup
 		
 		
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "橘孝三郎"
+			picture = "gfx/leaders/JAP/Portrait_Two_Kozaburo_Tachibana.png"
 			expire = "1965.1.1"
 			ideology = natpop_state_shintoism_subtype
 		}
@@ -3688,6 +3720,7 @@ country_event = { #Leading the Genyosha
 				
 			}
 		}
+		add_ideas = The_Path_of_War_idea
 		set_country_flag = black_dragon_death
 		complete_national_focus = JAP_BLACKDRAG_uchida_faction
 	}
@@ -3731,11 +3764,12 @@ country_event = { #Leading the Genyosha
 		
 		
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "出口王仁三郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Onisburo_Deguchi.png"
 			expire = "1965.1.1"
 			ideology = fundementalism_subtype
 		}
+		add_ideas = The_Path_of_Peace_idea
 		complete_national_focus = JAP_BLACKDRAG_oomoto_faction_victory
 		remove_all_ministers = yes
 		add_ideas = {
@@ -3766,8 +3800,8 @@ country_event = { #Death of Ryohei Uchida
 		name = japan_new_event.48.a
 		ai_chance = { base = 100 }
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "头山满"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Toyama_Mitsuru.png"
 			expire = "1965.1.1"
 			ideology = occultism_subtype
 		}
@@ -3793,8 +3827,8 @@ country_event = { #Death of Ryohei Uchida
 		set_cosmetic_tag = JAP_roerich
 		}
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "头山满"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Toyama_Mitsuru.png"
 			expire = "1965.1.1"
 			ideology = natpop_roerichism_subtype
 		}
@@ -3805,6 +3839,11 @@ country_event = { #Death of Ryohei Uchida
 			JAP_Ikki_Kita_eco_tot
 			JAP_Yoshio_Kodama_sec_npo
 		}
+		swap_ideas = {
+			remove_idea = The_Path_of_War_idea
+			add_idea = The_Path_of_War_idea_1
+		}
+		add_ideas = Touyama_idea
 	}
 	
 	
@@ -3960,6 +3999,12 @@ country_event = { #1937 Snap Elections
 				
 			}
 		}
+		create_country_leader = {
+			name = "水野炼太郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Mizuno_Rentaro.png"
+			expire = "1965.1.1"
+			ideology = national_conservative_subtype
+		}
 		add_political_power = 50
 		set_country_flag = JAP_seiyukai_won_in_1937_elections
 		mark_focus_tree_layout_dirty = yes
@@ -4002,6 +4047,12 @@ country_event = { #1937 Snap Elections
 			ideology = market_liberal
 			popularity = 0.4
 		}
+		create_country_leader = {
+			name = "滨口雄幸"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Hamaguchi_Osachi.png"
+			expire = "1965.1.1"
+			ideology = liberal_conservative_subtype
+		}
 		remove_all_ministers = yes
 		add_ideas = {
 			JAP_Hamaguchi_Osachi_hog_mli
@@ -4029,6 +4080,12 @@ country_event = { #1937 Snap Elections
 				}
 				
 			}
+		}
+		create_country_leader = {
+			name = "浅沼稻次郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Inejiro_Asanuma.png"
+			expire = "1965.1.1"
+			ideology = socdem_paternal_socialism_subtype
 		}
 		set_politics = {
 			ruling_party = social_democrat
@@ -4340,8 +4397,8 @@ country_event = { #Struggle of the Toseiha
 		
 		
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "松井石根"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Iwane_Matsui.png"
 			expire = "1965.1.1"
 			ideology = natpop_turanism_subtype
 		}
@@ -4384,8 +4441,8 @@ country_event = { #Struggle of the Toseiha
 		
 		
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "东条英机"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Hideki_Tojo.png"
 			expire = "1965.1.1"
 			ideology = natpop_japanese_militarism_subtype
 		}
@@ -4428,8 +4485,8 @@ country_event = { #Struggle of the Toseiha
 		
 		
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "永田铁山"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Nagata_Tetsuzan.png"
 			expire = "1965.1.1"
 			ideology = pataut_japanese_militarism_subtype
 		}
@@ -4504,8 +4561,8 @@ country_event = { #Minseito Factionalism
 			JAP_party_factionalism_minseito
 			}
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "永井柳太郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Ryūtarō_Nagai.png"
 			expire = "1965.1.1"
 			ideology = national_liberalism_subtype
 		}
@@ -4547,8 +4604,8 @@ country_event = { #Minseito Factionalism
 			JAP_party_factionalism_minseito
 			}
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "滨口雄幸"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Hamaguchi_Osachi.png"
 			expire = "1965.1.1"
 			ideology = national_liberalism_subtype
 		}
@@ -4607,8 +4664,8 @@ country_event = { #Seiyukai Factionalism
 		complete_national_focus = JAPSEI_orthodox_victory
 		complete_national_focus = JAPSEI_rentaro_cabinet
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "水野炼太郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Mizuno_Rentaro.png"
 			expire = "1965.1.1"
 			ideology = national_conservative_subtype
 		}
@@ -4647,8 +4704,8 @@ country_event = { #Seiyukai Factionalism
 		complete_national_focus = JAPSEI_kuharascabinet
 		set_politics = { ruling_party = authoritarian_democrat }
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "久原房之助"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Fusanosuke_Kuhara.png"
 			expire = "1965.1.1"
 			ideology = authdem_national_conservative_subtype
 		}
@@ -4690,8 +4747,8 @@ country_event = { #Seiyukai Factionalism
 		set_politics = { ruling_party = social_conservative }
 		complete_national_focus = JAPSEI_the_reform_faction_hold
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "中岛知久平"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Chikuhei_Nakajima.png"
 			expire = "1965.1.1"
 			ideology = conservative_populism_subtype
 		}
@@ -4781,8 +4838,8 @@ country_event = { #Social-Democrats
 			JAP_Miwa_Juso_sec_tot
 		}
 		create_country_leader = {
-				name = "裕仁"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+				name = "麻生久"
+				picture = "gfx/leaders/JAP/Portrait_JAP_Aso_Hisashi.png"
 				expire = "1965.1.1"
 				ideology = tot_national_socialism_subtype
 			}
@@ -4836,9 +4893,12 @@ country_event = { #Social-Democrats
 			JAP_Wada_Hiroo_eco_rso
 			JAP_Sakisaka_Itsuro_sec_rso
 		}
+		remove_ideas = {
+			JAP_red_army_resistance_1
+			}
 		create_country_leader = {
-				name = "裕仁"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+				name = "浅沼稻次郎"
+				picture = "gfx/leaders/JAP/Portrait_JAP_Inejiro_Asanuma.png"
 				expire = "1965.1.1"
 				ideology = radsoc_revisionist_marxism_subtype
 			}
@@ -4891,9 +4951,12 @@ country_event = { #Social-Democrats
 			JAP_Mizutani_Chozaburo_eco_sde
 			JAP_Matsuoka_Komakichi_sec_sde
 		}
+		remove_ideas = {
+			JAP_no_army_focus
+			}
 		create_country_leader = {
-				name = "裕仁"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+				name = "片山哲"
+				picture = "gfx/leaders/JAP/Portrait_JAP_Katayama_Tetsu.png"
 				expire = "1965.1.1"
 				ideology = socdem_paternal_socialism_subtype
 			}
@@ -4963,6 +5026,7 @@ country_event = { #Victory of the Tokohai
 			ideology = totalist
 			popularity = 0.25
 		}
+		add_ideas = JAP_Konoe_Controls_the_Center
 		remove_all_ministers = yes
 		add_ideas = {
 			JAP_Nakano_Seigo_hog_npo
@@ -4984,6 +5048,7 @@ country_event = { #Victory of the Tokohai
 				has_game_rule = { rule = JAP_SNAP_ELECTIONS option = JAP_SNAP_ELECTIONS_TOHOKAI_RIGHT }
 			}
 		}
+		add_ideas = JAP_Konoe_Controls_the_Center_1
 		complete_national_focus = JAPNAK_the_issue_of_party_factionalism
 		add_popularity = {
 			ideology = national_populist
@@ -5215,6 +5280,12 @@ country_event = { #1940 elections
 			id = JAP_Shakai_Taishuto_balance
 			left_side = JAP_JSP_LEFT_left_side
 			right_side = JAP_JSP_RIGHT_right_side
+		}
+		create_country_leader = {
+			name = "浅沼稻次郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Inejiro_Asanuma.png"
+			expire = "1965.1.1"
+			ideology = socdem_paternal_socialism_subtype
 		}
 		set_country_flag = JAP_shakai_taishuto_won_in_1940_elections
 		if = {
@@ -5630,6 +5701,7 @@ country_event = { #Transitioning From a Junta Government
 						expire = "1965.1.1"
 						ideology = socialist_feminism_subtype
 					}
+					add_ideas = JSR_Kenji_Miyamoto_idea_1
 	}
 	
 	option = { #Red Empire
@@ -5645,6 +5717,7 @@ country_event = { #Transitioning From a Junta Government
 			ideology = radical_socialist
 			popularity = 0.15
 		}
+		add_ideas = JSR_Nosaka_Sanzo_idea
 		set_cosmetic_tag = JAP_SANZO_MONBOL
 		create_country_leader = {
 						name = "野坂参三"
@@ -5667,6 +5740,7 @@ country_event = { #Transitioning From a Junta Government
 			ideology = radical_socialist
 			popularity = 0.15
 		}
+		add_ideas = JSR_Nosaka_Sanzo_idea_1
 		create_country_leader = {
 						name = "野坂参三"
 						desc = "-"
@@ -5688,6 +5762,7 @@ country_event = { #Transitioning From a Junta Government
 			ideology = totalist
 			popularity = 0.15
 		}
+		add_ideas = JSR_Kenji_Miyamoto_idea
 		create_country_leader = {
 						name = "野坂参三"
 						desc = "-"
@@ -5718,6 +5793,7 @@ country_event = { #Legacy of Yamakawaism
 			ideology = syndicalist
 			popularity = 0.15
 		}
+		add_ideas = JSR_Hitoshi_Yamakawa_idea_1
 		create_country_leader = {
 						name = "山川均"
 						desc = "-"
@@ -5736,6 +5812,7 @@ country_event = { #Legacy of Yamakawaism
 			ideology = radical_socialist
 			popularity = 0.15
 		}
+		add_ideas = JSR_Hitoshi_Yamakawa_idea
 	}
 	
 	option = { #Feminist Socialism Kikue
@@ -5746,7 +5823,7 @@ country_event = { #Legacy of Yamakawaism
 			popularity = 0.15
 		}
 		create_country_leader = {
-						name = "山川均"
+						name = "山川菊荣"
 						desc = "-"
 						picture = "gfx/leaders/JAP/Portrait_JAP_Kikue_Yamakawa.png"
 						expire = "1965.1.1"
@@ -5754,6 +5831,7 @@ country_event = { #Legacy of Yamakawaism
 					}
 					
 		set_country_leader_ideology = socialist_feminism_subtype	
+		add_ideas = JSR_Kenji_Miyamoto_idea_1
 	}
 	
 	option = { #Ansyn Kikue
@@ -5763,8 +5841,9 @@ country_event = { #Legacy of Yamakawaism
 			ideology = radical_socialist
 			popularity = 0.15
 		}
+		add_ideas = JSR_Hitoshi_Yamakawa_idea_1
 		create_country_leader = {
-						name = "山川均"
+						name = "山川菊荣"
 						desc = "-"
 						picture = "gfx/leaders/JAP/Portrait_JAP_Kikue_Yamakawa.png"
 						expire = "1965.1.1"
@@ -5902,23 +5981,29 @@ country_event = { #Questioning Kenji's Leadership
 		name = 社会安保控制国家
 		ai_chance = { base = 100 }
 		set_country_leader_ideology = socialist_security_state_subtype
+		add_ideas = JSR_Kenji_Miyamoto_idea
 	}
 	
 	option = { #Sexuality Freed
 		name = 倡导性解放
 		ai_chance = { base = 100 }
 		set_country_leader_ideology = socialist_feminism_subtype
+		add_ideas = JSR_Kenji_Miyamoto_idea_1
 	}
 	
 	option = { #Technocratic Socialism
 		name = 选择技术官僚社会主义
 		ai_chance = { base = 100 }
 		set_country_leader_ideology = technocratic_socialism_subtype
+		add_research_slot = 5
+		add_ideas = JSR_Kenji_Miyamoto_idea_2
 	}
 	
 	option = { #Kuahara Techsoc
 		name = japan_new_event.71.d
 		ai_chance = { base = 100 }
+		add_research_slot = 5
+		add_ideas = JSR_Kenji_Miyamoto_idea_2
 		create_country_leader = {
 						name = "瓜原义仁"
 						desc = "-"
@@ -5931,7 +6016,9 @@ country_event = { #Questioning Kenji's Leadership
 	
 	option = { #Kuahara Social-Futurist
 		name = japan_new_event.71.e
+		add_research_slot = 3
 		ai_chance = { base = 100 }
+		add_ideas = JSR_Kenji_Miyamoto_idea_3
 		create_country_leader = {
 						name = "瓜原义仁"
 						desc = "-"
@@ -5945,6 +6032,7 @@ country_event = { #Questioning Kenji's Leadership
 	option = { #Miyamoto Yuriko
 		name = japan_new_event.71.f
 		ai_chance = { base = 100 }
+		add_ideas = JSR_Kenji_Miyamoto_idea_1
 		create_country_leader = {
 						name = "宫本百合子"
 						desc = "-"
@@ -6103,8 +6191,8 @@ country_event = { #Japan Demands Our Submission
 		name = japan_new_event.75.a
 		ai_chance = { base = 100 }
 		JAP = {
-			set_country_flag = JAP_Chose_A_Faction
-			puppet = {
+		set_country_flag = JAP_Chose_A_Faction
+		puppet = {
 				target = ROOT
 				end_wars = yes
 			}
@@ -6116,9 +6204,9 @@ country_event = { #Japan Demands Our Submission
 		ai_chance = { base = 100 }
 		
 		country_event = japan_new_event.81
+		}
 	}
 }
-
 
 country_event = { #Refusal But Alliance?
 	id = japan_new_event.76
@@ -6498,8 +6586,8 @@ country_event = { #Leading the Kokumin Domei
 		
 		
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "风间章"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Akira_Kazami_suit.png"
 			expire = "1965.1.1"
 			ideology = social_nationalism_subtype
 		}
@@ -6539,8 +6627,8 @@ country_event = { #Leading the Kokumin Domei
 			JAP_Akita_Kiyoshi_sec_ade
 		}
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "安达谦藏"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Adachi_Kenzo.png"
 			expire = "1965.1.1"
 			ideology = pataut_showa_statism_subtype
 		}
@@ -6585,8 +6673,8 @@ country_event = { #Minseito Factionalism
 		}
 		complete_national_focus = JAPMINSEITOTWO_a_party_of_the_middle_class
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "永井柳太郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Ryūtarō_Nagai.png"
 			expire = "1965.1.1"
 			ideology = national_liberalism_subtype
 		}
@@ -6633,8 +6721,8 @@ country_event = { #Minseito Factionalism
 		}
 		complete_national_focus = JAPMINSEITOTWO_keeping_party_tradition 
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "滨口雄幸"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Hamaguchi_Osachi.png"
 			expire = "1965.1.1"
 			ideology = national_liberalism_subtype
 		}
@@ -6701,8 +6789,8 @@ country_event = { #
 			complete_national_focus = JAPSEI_rentaro_cabinet
 		}
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "水野炼太郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Mizuno_Rentaro.png"
 			expire = "1965.1.1"
 			ideology = national_conservative_subtype
 		}
@@ -6751,8 +6839,8 @@ country_event = { #
 			complete_national_focus = JAPSEI_the_reform_faction_hold
 		}
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "中岛知久平"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Chikuhei_Nakajima.png"
 			expire = "1965.1.1"
 			ideology = conservative_populism_subtype
 		}
@@ -6827,38 +6915,36 @@ country_event = { #The True Emperor
 		name = japan_new_event.87.a
 		ai_chance = { base = 100 }
 		add_stability = -0.1
-		create_country_leader = {
-			name = "熊泽宽道"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Kumazawa_Hiromichi.png"
-			expire = "1965.1.1"
-			ideology = natpop_nichiren_buddhism_subtype
-		}
-		create_country_leader = {
-			name = "熊泽宽道"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Kumazawa_Hiromichi.png"
-			expire = "1965.1.1"
-			ideology = socdem_nichiren_buddhism_subtype
-		}
-		create_country_leader = {
-			name = "熊泽宽道"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Kumazawa_Hiromichi.png"
-			expire = "1965.1.1"
-			ideology = radsoc_nichiren_buddhism_subtype
-		}
-		create_country_leader = {
-			name = "熊泽宽道"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Kumazawa_Hiromichi.png"
-			expire = "1965.1.1"
-			ideology = tot_nichiren_buddhism_subtype
-		}
+		clr_country_flag = JAP_Hirohito_VISIBLE
+		set_country_flag = JAP_Kumazawa_Hiromichi_VISIBLE
+		add_ideas = JAP_Kumazawa_Hiromichi_idea
 	}
 	
 	option = { #
 		name = japan_new_event.87.b
 		ai_chance = { base = 100 }
-		add_manpower = -10
-		add_stability = 0.1
-		
+		if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "石原莞尔"
+				}
+			}
+			add_ideas = Ishiwara_idea
+			add_manpower = -10
+			add_stability = 0.1
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "井上日召"
+				}
+			}
+			add_ideas = Blood_Shall_idea
+			add_manpower = -10
+			add_stability = 0.1
+		}
 	}
 }
 
@@ -6969,6 +7055,7 @@ country_event = { #The Future Under the Crimson Empire
 			JAP_Kenji_Miyazawa_eco_rso
 			JAP_Yasuhide_Kurihara_sec_tot
 		}
+		add_ideas = Red_Nichirenism
 	}
 	
 	option = { #
@@ -6979,11 +7066,12 @@ country_event = { #The Future Under the Crimson Empire
 		set_politics = { ruling_party = totalist }
 		country_event = japan_new_event.88
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "牧口常三郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Tsunesaburo_Makiguchi.png"
 			expire = "1965.1.1"
 			ideology = tot_nichiren_buddhism_subtype
 		}
+		add_ideas = Red_Nichirenism_1
 		
 		set_party_name = {
 			ideology = totalist
@@ -7017,11 +7105,12 @@ country_event = { #The Future Under the Crimson Empire
 		set_politics = { ruling_party = social_democrat }
 		country_event = japan_new_event.88
 		create_country_leader = {
-			name = "裕仁"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			name = "户田城圣"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Josei_Toda.png"
 			expire = "1965.1.1"
 			ideology = socdem_nichiren_buddhism_subtype
 		}
+		add_ideas = Red_Nichirenism_2
 		set_party_name = {
 			ideology = totalist
 			long_name = JAP_Soka_Gakkai_party_long
@@ -7266,13 +7355,8 @@ country_event = { #Japan's Red Emperor!?
 	option = { #
 		name = japan_new_event.95.a
 		ai_chance = { base = 100 }
-		create_country_leader = {
-				name = "雍仁"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Yasuhito.png"
-				expire = "1965.1.1"
-				ideology = ikki_kita_thought_subtype
-				
-			}
+		clr_country_flag = JAP_Hirohito_VISIBLE
+		set_country_flag = JAP_Yasuhito_VISIBLE
 	}
 	
 	option = { #
@@ -7298,12 +7382,28 @@ country_event = { #Spreading The Red Sun to the Globe
 	option = { #
 		name = japan_new_event.96.a
 		ai_chance = { base = 100 }
-		
+		add_ideas = JAP_Kita_Ikki_idea
+		every_state = {
+			limit = {
+				OR = {
+					is_on_continent = asia
+					is_on_continent = india
+				}
+			}
+			JAP = {
+				add_state_core = PREV
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = PREV
+				}
+			}
+		}
 	}
 	
 	option = { #
 		name = japan_new_event.96.b
 		ai_chance = { base = 100 }
+		add_ideas = JAP_Kita_Ikki_idea
 		
 		set_cosmetic_tag = JAP_IKKI_KITA_WORLD
 		every_state = {
@@ -7339,29 +7439,15 @@ country_event = { #Future of the Shumei Government
 		name = japan_new_event.97.b
 		ai_chance = { base = 100 }
 		set_cosmetic_tag = JAP_SHUMEI_ASIA
-		
 		if = {
 			limit = {
 				has_government = national_populist
 			}
 			create_country_leader = {
-				name = "裕仁"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+				name = "大川周明"
+				picture = "gfx/leaders/JAP/Portrait_JAP_Okawa_Shumei_2.png"
 				expire = "1965.1.1"
 				ideology = natpop_pan_asianism_subtype
-			}
-		}
-		
-		if = {
-			limit = {
-				has_country_flag = JAP_puppet_asia
-			}
-			unlock_decision_category_tooltip = JAP_pan_asia_program_decision_category
-		}
-		
-		else_if = {
-			limit = {
-				has_country_flag = JAP_unify_asia
 			}
 			every_state = {
 				limit = {
@@ -7370,15 +7456,34 @@ country_event = { #Future of the Shumei Government
 						is_on_continent = india
 					}
 				}
-				
-			JAP = {
-			add_state_core = PREV
-				create_wargoal = {
+				JAP = {
+					add_state_core = PREV
+					create_wargoal = {
 						type = puppet_wargoal_focus
 						target = PREV
 					}
-			
+				}
 			}
+		}
+		if = {
+			limit = {
+				has_government = totalist
+
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_on_continent = asia
+						is_on_continent = india
+					}
+				}
+				JAP = {
+					add_state_core = PREV
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = PREV
+					}
+				}
 			}
 		}
 	}
@@ -7388,13 +7493,18 @@ country_event = { #Future of the Shumei Government
 		ai_chance = { base = 100 }
 		set_cosmetic_tag = JAP_SHUMEI_MUSLIM
 		JAP_shumei_caliphate_cores = yes
+		add_ideas = JAP_are_ya_ready_war_1
 		if = {
 			limit = {
 				has_government = national_populist
 			}
+			swap_ideas = {
+				remove_idea = JAP_are_ya_ready_war_3
+				add_idea = JAP_are_ya_ready_war_1
+			}
 			create_country_leader = {
-				name = "裕仁"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+				name = "大川周明"
+				picture = "gfx/leaders/JAP/Portrait_JAP_Okawa_Shumei_2.png"
 				expire = "1965.1.1"
 				ideology = natpop_islamism_subtype
 			}
@@ -7404,9 +7514,13 @@ country_event = { #Future of the Shumei Government
 			limit = {
 				has_government = totalist
 			}
+			swap_ideas = {
+				remove_idea = JAP_are_ya_ready_war_2
+				add_idea = JAP_are_ya_ready_war_1
+			}
 			create_country_leader = {
-				name = "裕仁"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+				name = "大川周明"
+				picture = "gfx/leaders/JAP/Portrait_JAP_Okawa_Shumei_2.png"
 				expire = "1965.1.1"
 				ideology = tot_islamic_socialism_subtype
 			}
@@ -7427,8 +7541,8 @@ country_event = { #Direction of Radical Reforms
 		ai_chance = { base = 100 }
 		set_politics = { ruling_party = national_populist }
 			create_country_leader = {
-				name = "裕仁"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+				name = "大川周明"
+				picture = "gfx/leaders/JAP/Portrait_JAP_Okawa_Shumei_2.png"
 				expire = "1965.1.1"
 				ideology = natpop_pan_asianism_subtype
 			}
@@ -7451,6 +7565,7 @@ country_event = { #Direction of Radical Reforms
 		add_to_coalition = yes
 		set_temp_variable = { coalition_partner_var = token:syndicalist }
 		add_to_coalition = yes
+		add_ideas = JAP_are_ya_ready_war_3
 	}
 	
 	option = { #
@@ -7459,7 +7574,8 @@ country_event = { #Direction of Radical Reforms
 		add_popularity = {
 		ideology = totalist
 		popularity = 0.1
-		}		
+		}	
+		add_ideas = JAP_are_ya_ready_war_2	
 	}
 }
 
@@ -7578,8 +7694,8 @@ country_event = { #The Essential Principles of National Defense and Proposals fo
 	immediate = {
 		hidden_effect = {
 			create_country_leader = {
-				name = "裕仁"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+				name = "池田纯久"
+				picture = "gfx/leaders/JAP/Portrait_JAP_Sumihisa_Ikeda.png"
 				expire = "1965.1.1"
 				ideology = tot_ikedaism_subtype
 			}
@@ -7628,7 +7744,8 @@ country_event = { #Claiming Pan-Turania
 		name = japan_new_event.103.a
 		ai_chance = { base = 100 }
 		JAP_pan_turania_cores = yes
-		set_cosmetic_tag = JAP_TURANIA
+		add_ideas = JAP_Turanism_idea
+		set_cosmetic_tag = FORM_TRN_JPN2
 		
 	}
 }
@@ -7657,6 +7774,12 @@ country_event = { #Death of Aso Hisashi
 		JAP_Shunhide_Suga_for_tot
 		JAP_Genkuro_Eto_sec_tot
 		}
+		create_country_leader = {
+			name = "赤松克麿"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Katsumaro_Akamatsu.png"
+			expire = "1965.1.1"
+			ideology = tot_national_socialism_subtype
+		}
 		
 	}
 	
@@ -7671,7 +7794,12 @@ country_event = { #Death of Aso Hisashi
 		JAP_Sugiyama_Motojiro_eco_tot
 		JAP_Miwa_Juso_sec_tot
 		}
-		set_country_leader_ideology = massimalismo_subtype
+		create_country_leader = {
+			name = "浅沼稻次郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Inejiro_Asanuma.png"
+			expire = "1965.1.1"
+			ideology = massimalismo_subtype
+		}
 		
 	}
 	
@@ -7686,7 +7814,12 @@ country_event = { #Death of Aso Hisashi
 		JAP_Tadashi_Kodaira_for_tot
 		JAP_Azuma_Takashi_sec_tot
 		}
-		set_country_leader_ideology = tot_kleptocracy_subtype
+		create_country_leader = {
+			name = "平野力三"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Rikizo_Hirano.png"
+			expire = "1965.1.1"
+			ideology = tot_agrarian_socialism_subtype
+		}
 		
 	}
 	
@@ -7701,8 +7834,12 @@ country_event = { #Death of Aso Hisashi
 		JAP_Kanichiro_Kamei_for_tot
 		JAP_Kazuyuki_Kasuga_sec_tot
 		}
-		set_country_leader_ideology = sorelianism_subtype
-		
+		create_country_leader = {
+			name = "山名芳久"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Yoshikuru_Yamana.png"
+			expire = "1965.1.1"
+			ideology = sorelianism_subtype
+		}
 	}
 }
 
@@ -7761,6 +7898,8 @@ country_event = { #Tohokai Remove the Kokumin Domei
 		set_politics = {
 			ruling_party = national_populist
 		}
+		add_ideas = JAP_Konoe_Controls_the_Center_1
+		load_focus_tree = japan-nakano
 		add_popularity = {
 			ideology = national_populist
 			popularity = 0.25
@@ -7891,14 +8030,19 @@ country_event = { #Nakano Above All
 		popularity = 1
 		}
 		set_cosmetic_tag = JAP_NAKANO_1984 
+		add_ideas = JAP_1984_idea
+		hidden_effect = {
+			remove_ideas = JAP_Konoe_Controls_the_Center
+			remove_ideas = JAP_Konoe_Controls_the_Center_1
+		}
 		every_state = {
-				limit = {
-					OR = {
-					is_on_continent = asia
-					is_on_continent = india
-					}
+			limit = {
+				OR = {
+				is_on_continent = asia
+				is_on_continent = india
 				}
-				
+			}
+			
 			JAP = {
 			add_state_core = PREV
 				create_wargoal = {
@@ -8125,6 +8269,8 @@ country_event = { #The Manifesto of Pure Anarchism
 	
 	is_triggered_only = yes
 	option = { #
+		set_country_flag = KXX_LEADER_GUI_VISIBLE
+		set_country_flag = JAP_Hirohito_VISIBLE
 		name = japan_new_event.117.a
 		ai_chance = { base = 100 }
 		add_ideas = {
@@ -8336,6 +8482,8 @@ country_event = { #Question of the Emperor?
 	option = { #
 		name = japan_new_event.125.a
 		ai_chance = { base = 100 }
+		set_country_flag = KXX_LEADER_GUI_VISIBLE
+		set_country_flag = JAP_Hirohito_VISIBLE
 		swap_ideas = {
 		remove_idea = JAP_no_emperor
 		add_idea = JAP_emperor_hirohito
@@ -8399,6 +8547,7 @@ country_event = { #Kenzo's Syndicalist Dream
 			ideology = syndicalist
 			popularity = 0.15
 		}
+		add_ideas = JSR_Hitoshi_Yamakawa_idea
 		create_country_leader = {
 						name = "大山郁夫"
 						desc = "-"
@@ -8420,6 +8569,7 @@ country_event = { #Kenzo's Syndicalist Dream
 			ideology = syndicalist
 			popularity = 0.15
 		}
+		add_ideas = JSR_Kenzo_Yamamoto_idea
 		create_country_leader = {
 						name = "铃木文治"
 						desc = "-"
@@ -8441,6 +8591,7 @@ country_event = { #Kenzo's Syndicalist Dream
 			ideology = totalist
 			popularity = 0.75
 		}
+		add_ideas = JSR_Kenzo_Yamamoto_idea_1
 		create_country_leader = {
 						name = "西尾未广"
 						desc = "-"
@@ -8478,18 +8629,21 @@ country_event = { #Legacy of the New Proletarian Struggle
 		name = japan_new_event.129.a
 		ai_chance = { base = 100 }
 		set_country_leader_ideology = national_communism_subtype
+		add_ideas = JSR_Kyuchi_Tokuda_idea_2
 	}
 	
 	option = { #
 		name = japan_new_event.129.b
 		ai_chance = { base = 100 }
 		set_country_leader_ideology = authcom_subtype
+		add_ideas = JSR_Kyuchi_Tokuda_idea
 	}
 	
 	option = { #
 		name = japan_new_event.129.c
 		ai_chance = { base = 100 }
 		set_country_leader_ideology = mao_zedong_thought_subtype
+		add_ideas = JSR_Kyuchi_Tokuda_idea_1
 	}
 }
 
@@ -8608,6 +8762,7 @@ country_event = { #
 			has_idea = JAP_Nakano_Seigo_hog_tot
 		}
 		load_focus_tree = japan-nakano
+		add_ideas = JAP_Konoe_Controls_the_Center
 		complete_national_focus = JAPNAK_nakano_secures_the_diet
 		complete_national_focus = JAPNAK_the_issue_of_party_factionalism
 		
@@ -8702,6 +8857,13 @@ country_event = { #Revenge of the Zaibatsu
 			ideology = paternal_autocrat
 			popularity = 0.4
 		}
+		create_country_leader = {
+			name = "财阀理事会"
+			desc = ""
+			picture = "gfx/leaders/JAP/Portrait_JAP_Zaibatsu_council.png"
+			expire = "1.1.1"
+			ideology = corporatocracy_subtype
+		}
 		remove_all_ministers = yes
 		add_ideas = {
 			JAP_Zaibatsu_Council_hog_pau
@@ -8730,21 +8892,21 @@ country_event = { #Revenge of the Zaibatsu
 country_event = { #Taiwan Slips Through Our Fingers
 	id = japan_new_event.137
 	immediate = {log = "[GetDateText]: [Root.GetName]: event japan_new_event.137"}
-	title = "台湾叛乱"
-	desc = "消息传来，我们的台湾殖民地的叛乱成功了。在镇压台湾原住民失败后，台湾殖民驻军在乌舍叛乱中被镇压。现在，随着殖民政府撤退到大陆，我们现在必须决定如何应对这种情况。"
+	title = 台湾叛乱
+	desc = 消息传来，我们的台湾殖民地的叛乱成功了。在镇压台湾原住民失败后，台湾殖民驻军在乌舍叛乱中被镇压。现在，随着殖民政府撤退到大陆，我们现在必须决定如何应对这种情况。
 	picture = "GFX_japan_foreign_minister_2"
 	
 	is_triggered_only = yes
 	option = { #
-		name = "别管他们，我们以后会粉碎他们"
+		name = 别管他们，我们以后会粉碎他们
 		ai_chance = { base = 100 }
-		add_stability = -0.05
+		add_stability = = -0.05
 		add_war_support = -0.1
 		
 	}
 	
 	option = { #
-		name = "马上镇压叛乱"
+		name = 马上镇压叛乱
 		ai_chance = { base = 100 }
 		trigger = {
 		is_ai = no
@@ -8761,19 +8923,19 @@ country_event = { #Taiwan Slips Through Our Fingers
 country_event = { #Charlie Chaplin Visits Japan
 	id = japan_new_event.138
 	immediate = {log = "[GetDateText]: [Root.GetName]: event japan_new_event.138"}
-	title = "查理·卓别林访问日本"
-	desc = "1936 年 5 月 14 日，著名演员查理·卓别林抵达日本度假 3 周的消息传来，人们涌向东京码头。当他走下船时，飞机从低空飞过，抛出“欢迎小册子”。除了他的兄弟，卓别林还由他的长期助手河野虎一陪同日本，他在日本长大，然后定居在南加州，并于 1916 年遇到了这位喜剧演员。尽管日本人对此持欢迎态度，但政治动荡的阴影仍然笼罩着日本，但这个问题可以通过派遣一个快速的安全小组到卓别林身边来解决。"
+	title = 查理·卓别林访问日本
+	desc = 1936 年 5 月 14 日，著名演员查理·卓别林抵达日本度假 3 周的消息传来，人们涌向东京码头。当他走下船时，飞机从低空飞过，抛出“欢迎小册子”。除了他的兄弟，卓别林还由他的长期助手河野虎一陪同日本，他在日本长大，然后定居在南加州，并于 1916 年遇到了这位喜剧演员。尽管日本人对此持欢迎态度，但政治动荡的阴影仍然笼罩着日本，但这个问题可以通过派遣一个快速的安全小组到卓别林身边来解决。
 	picture = "GFX_chaplin_visits_japan"
 	
 	is_triggered_only = yes
 	option = { #May He Enjoy His Stay
-		name = "愿他享受在日本的时光"
+		name = 愿他享受在日本的时光
 		ai_chance = { base = 100 }
 		
 	}
 	
 	option = { #Encourage Him to Stay a Bit Long
-		name = "鼓励他多待一会儿"
+		name = 鼓励他多待一会儿
 		ai_chance = { base = 100 }
 		set_country_flag = JAP_chaplin_stay_longer
 	}
@@ -8782,13 +8944,13 @@ country_event = { #Charlie Chaplin Visits Japan
 country_event = { #Death of Charli Chaplin
 	id = japan_new_event.139
 	immediate = {log = "[GetDateText]: [Root.GetName]: event japan_new_event.139"}
-	title = "卓别林之死"
-	desc = "随着查理·卓别林在被激进军官枪杀后被宣布死亡，悲伤的消息传遍了全世界。在选择延长逗留时间后，查理·卓别林将进行全国巡回演出，甚至会见了包括总理在内的一些政客。尽管就在最近，一个名为“血腥联盟”的激进组织发动了一场针对政府的政变。可悲的是，查理卓别林也会成为目标。原因是因为血盟想让美国对日本宣战，尽管美国不会对此采取行动。全世界数以百万计的人现在正在哀悼失去这样一位伟大的演员。"
+	title = 卓别林之死
+	desc = 随着查理·卓别林在被激进军官枪杀后被宣布死亡，悲伤的消息传遍了全世界。在选择延长逗留时间后，查理·卓别林将进行全国巡回演出，甚至会见了包括总理在内的一些政客。尽管就在最近，一个名为“血腥联盟”的激进组织发动了一场针对政府的政变。可悲的是，查理卓别林也会成为目标。原因是因为血盟想让美国对日本宣战，尽管美国不会对此采取行动。全世界数以百万计的人现在正在哀悼失去这样一位伟大的演员。
 	picture = "GFX_chaplin_visits_japan"
 	
 	is_triggered_only = yes
 	option = { #
-		name = "多么悲惨，他会被怀念的......"
+		name = 多么悲惨，他会被怀念的......
 		ai_chance = { base = 100 }
 		add_manpower = -1
 	}
@@ -8827,8 +8989,8 @@ country_event = { #Shumei Translates the Quran
 country_event = { #Missing Weapon Shipments From Factories
 	id = japan_new_event.142
 	immediate = {log = "[GetDateText]: [Root.GetName]: event japan_new_event.142"}
-	title = "工厂缺少武器运输"
-	desc = "自从我们开始将宰拔公司国有化计划以来，已经过去了100多天，这引起了日本财阀的愤怒，尽管由于我们的警察和军队，他们无能为力，紧紧地束缚着他们。但这种束缚似乎是徒劳的，因为最近似乎有大量武器库存来自日本财阀的工厂。这引起了人们对日本财阀的怀疑。政府现在面临着一个决定，是调查这些怀疑，还是照常进行。"
+	title = 工厂缺少武器运输
+	desc = 自从我们开始将宰拔公司国有化计划以来，已经过去了100多天，这引起了日本财阀的愤怒，尽管由于我们的警察和军队，他们无能为力，紧紧地束缚着他们。但这种束缚似乎是徒劳的，因为最近似乎有大量武器库存来自日本财阀的工厂。这引起了人们对日本财阀的怀疑。政府现在面临着一个决定，是调查这些怀疑，还是照常进行。
 	picture = "GFX_zaibatsu_image"
 	
 	is_triggered_only = yes

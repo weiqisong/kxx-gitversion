@@ -8,12 +8,19 @@ FRA_cachin_bop_decisions = {
 		allowed = {
 			tag = FRA
 		}
-		cost = 50
+		available = {
+			NOT = {
+				has_country_flag = FRA_cachin_bop_ends
+			}
+		}
+		cost = 100
+		days_remove = 10
+		days_re_enable = 0
 		priority = 10
 		complete_effect = {
 			add_power_balance_value = {
 				id = FRA_cachin_bop
-				value = 0.25
+				value = -0.1
 			}
 		}
 	}
@@ -21,12 +28,19 @@ FRA_cachin_bop_decisions = {
 		allowed = {
 			tag = FRA
 		}
-		cost = 50
+		available = {
+			NOT = {
+				has_country_flag = FRA_cachin_bop_ends
+			}
+		}
+		cost = 100
+		days_remove = 10
+		days_re_enable = 0
 		priority = 10
 		complete_effect = {
 			add_power_balance_value = {
 				id = FRA_cachin_bop
-				value = -0.25
+				value = 0.1
 			}
 		}
 	}

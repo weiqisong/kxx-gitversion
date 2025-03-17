@@ -47,7 +47,8 @@ focus_tree = {
 	focus = {
 		id = JAPNICH_blood_shall_reign_for_the_buddha
 		icon = GFX_JAPNICH_blood_shall_reign_for_the_buddha-248360
-		x = 7
+		relative_position_id = JAPNICH_the_league_of_blood_incident
+		x = -8
 		y = 1
 		cost = 1
 		search_filters = {
@@ -71,7 +72,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPNICH_blood_shall_reign_for_the_buddha  }
 		completion_reward = {
-		add_stability = 0.1
+			add_war_support = 0.1
+			add_stability = 0.1
 		}
 	}
 
@@ -88,6 +90,7 @@ focus_tree = {
 		prerequisite = { focus = JAPNICH_ishiwarasreign  focus = JAPNICH_blood_shall_reign_for_the_buddha  }
 		completion_reward = {
 		add_war_support = 0.1
+		add_stability = 0.1
 		}
 	}
 
@@ -166,8 +169,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAPNICH_toarenmeiundo focus = JAPNICH_relaying_the_gohonzon  } prerequisite = { focus = JAPNICH_encourage_nichiren_shoshu  }
 		completion_reward = {
-			unlock_decision_tooltip = JAP_uniting_the_pan_buddhist_realm
-			add_idea = JAP_save_world_buddha
+		unlock_decision_tooltip = JAP_uniting_the_pan_buddhist_realm
+		add_idea = JAP_save_world_buddha
 		}
 	}
 
@@ -356,8 +359,7 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = JAPNICH_stab_the_socialist_snakes focus = JAPNICH_pistols_to_the_degenerates focus = JAPNICH_sekai_sai_shu_senron } prerequisite = { focus = JAPNICH_economic_agrarianism  }
-		mutually_exclusive = { focus = JAPNICH_the_new_shogun  }
+		prerequisite = { focus = JAPNICH_stab_the_socialist_snakes focus = JAPNICH_pistols_to_the_degenerates } prerequisite = { focus = JAPNICH_economic_agrarianism  }
 		completion_reward = {
 		country_event = japan_new_event.87
 		add_stability = 0.5
@@ -374,8 +376,7 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = JAPNICH_stab_the_socialist_snakes focus = JAPNICH_pistols_to_the_degenerates focus = JAPNICH_sekai_sai_shu_senron  } prerequisite = { focus = JAPNICH_economic_agrarianism  }
-		mutually_exclusive = { focus = JAPNICH_the_emperor_all_mighty  }
+		prerequisite = { focus = JAPNICH_stab_the_socialist_snakes  focus = JAPNICH_sekai_sai_shu_senron  } prerequisite = { focus = JAPNICH_economic_agrarianism  }
 		completion_reward = {
 		country_event = japan_new_event.87
 		add_war_support = 0.5
