@@ -4,6 +4,232 @@
 ideas = {
 
 	country = {
+		###Sorelian###
+		FRA_sorelian_nationalism_1_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				local_manpower = 0.03
+				war_support_weekly = 0.01
+				recruitable_population_factor = 0.02
+				surrender_limit = 0.03
+				army_core_attack_factor	= 0.01
+				party_popularity_stability_factor = 0.03
+				war_stability_factor = 0.05
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_sorelian_nationalism_2_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				local_manpower = 0.05
+				war_support_weekly = 0.02
+				recruitable_population_factor = 0.03
+				surrender_limit = 0.05
+				army_core_attack_factor	= 0.02
+				party_popularity_stability_factor = 0.08
+				war_stability_factor = 0.1
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_sorelian_command_1_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_command_1_idea"}
+			modifier = {
+				political_power_cost = -5
+				conversion_cost_civ_to_mil_factor = -0.05
+				max_command_power = 10
+				mobilization_speed = 0.05
+				political_power_gain = 0.05
+				command_power_gain = 0.01
+				stability_weekly = -0.01
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_sorelian_command_2_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_command_1_idea"}
+			modifier = {
+				political_power_cost = -10
+				conversion_cost_civ_to_mil_factor = -0.08
+				max_command_power = 15
+				mobilization_speed = 0.08
+				political_power_gain = 0.08
+				command_power_gain = 0.02
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_sorelian_command_3_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_command_3_idea"}
+			modifier = {
+				political_power_cost = -10
+				war_support_weekly = 0.01
+				local_manpower = 0.05
+				industrial_capacity_factory = 0.03
+				conversion_cost_civ_to_mil_factor = -0.1
+				production_speed_arms_factory_factor = 0.15
+				max_command_power = 35
+				mobilization_speed = 0.15
+				political_power_gain = 0.12
+				command_power_gain = 0.05
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_sorelian_command_4_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_command_4_idea"}
+			modifier = {
+				political_power_cost = -15
+				war_support_weekly = 0.02
+				local_manpower = 0.1
+				industrial_capacity_factory = 0.04
+				conversion_cost_civ_to_mil_factor = -0.15
+				production_speed_arms_factory_factor = 0.15
+				max_command_power = 50
+				mobilization_speed = 0.25
+				political_power_gain = 0.15
+				command_power_gain = 0.08
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_sorelian_productiveness_idea_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_productiveness_idea_1"}
+			modifier = {
+				conversion_cost_mil_to_civ_factor = -0.05
+				production_lack_of_resource_penalty_factor = 0.05
+				drift_defence_factor = -0.1
+				research_speed_factor = 0.02
+				industry_repair_factor = 0.05
+				local_resources_factor = 0.05
+				political_power_gain = 0.03
+				production_factory_start_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.03
+				production_factory_max_efficiency_factor = 0.05
+				surrender_limit = -0.02
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_sorelian_productiveness_idea_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_productiveness_idea_2"}
+			modifier = {
+				conversion_cost_mil_to_civ_factor = -0.05
+				production_lack_of_resource_penalty_factor = 0.03
+				drift_defence_factor = -0.1
+				research_speed_factor = 0.03
+				industry_repair_factor = 0.05
+				local_resources_factor = 0.05
+				political_power_gain = 0.03
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_sorelian_productiveness_3_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_productiveness_3_idea"}
+			modifier = {
+				conversion_cost_mil_to_civ_factor = -0.05
+				production_lack_of_resource_penalty_factor = 0.03
+				drift_defence_factor = -0.2
+				research_speed_factor = 0.04
+				industry_repair_factor = 0.08
+				local_resources_factor = 0.05
+				political_power_gain = 0.05
+				production_factory_max_efficiency_factor = 0.12
+				production_factory_efficiency_gain_factor = 0.05
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_sorelian_warriors_1_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_warriors_1_idea"}
+			modifier = {
+				war_support_weekly = 0.01
+				recruitable_population = 0.04
+				experience_gain_army = 0.1
+				no_supply_grace	= 6
+				max_training = 0.1
+				attrition = -0.05
+				army_speed_factor = 0.05
+				breakthrough_factor	= 0.1
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_sorelian_warriors_2_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_warriors_2_idea"}
+			modifier = {
+				war_support_weekly = 0.02
+				recruitable_population = 0.06
+				experience_gain_army = 0.1
+				no_supply_grace	= 12
+				pocket_penalty = -0.1
+				max_training = 0.1
+				attrition = -0.1
+				army_speed_factor = 0.1
+				breakthrough_factor	= 0.1
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_sorelian_warriors_3_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_warriors_3_idea"}
+			modifier = {
+				war_support_weekly = 0.03
+				recruitable_population = 0.08
+				experience_gain_army = 0.1
+				no_supply_grace	= 14
+				pocket_penalty = -0.1
+				max_training = 0.1
+				attrition = -0.1
+				army_speed_factor = 0.1
+				breakthrough_factor	= 0.1
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_sorelian_expansion_1_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_expansion_1_idea"}
+			modifier = {
+				offensive_war_stability_factor = 0.1
+				military_leader_cost_factor	= -0.2
+				army_leader_start_attack_level = 1
+				justify_war_goal_time = -0.15
+				max_commander_army_size = 4
+				experience_gain_army_factor	= 0.1
+				political_power_gain = 0.05
+				recruitable_population = 0.01
+				promote_cost_factor = -0.3
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_sorelian_expansion_2_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_expansion_2_idea"}
+			modifier = {
+				offensive_war_stability_factor = 0.2
+				military_leader_cost_factor	= -0.3
+				army_leader_start_attack_level = 1
+				justify_war_goal_time = -0.5
+				max_commander_army_size = 5
+				experience_gain_army_factor	= 0.2
+				political_power_gain = 0.08
+				recruitable_population = 0.03
+				promote_cost_factor = -0.3
+				naval_invasion_prep_speed = -0.2
+				production_speed_dockyard_factor = 0.03
+			}
+			picture = generic_syndicalist_medal
+		}
+		FRA_sorelian_expansion_3_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_expansion_3_idea"}
+			modifier = {
+				offensive_war_stability_factor = 0.4
+				military_leader_cost_factor	= -0.4
+				army_leader_start_attack_level = 1
+				justify_war_goal_time = -0.8
+				max_commander_army_size = 6
+				experience_gain_army_factor	= 0.3
+				political_power_gain = 0.1
+				recruitable_population = 0.05
+				promote_cost_factor = -0.4
+				naval_invasion_prep_speed = -0.3
+				production_speed_dockyard_factor = 0.08
+			}
+			picture = generic_syndicalist_medal
+		}
+		
+		###Jacobins###
 		FRA_caretaker_government = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
 			allowed = { always = no }
