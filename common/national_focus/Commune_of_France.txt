@@ -26565,6 +26565,10 @@ focus = {
 		cost = 1
 		available = {
 			has_global_flag = FRA_no_majority_1936
+			OR = {
+				has_country_flag = FRA_COMPROMISE_Manouchian
+				has_country_flag = FRA_COMPROMISE_Cachin
+			}
 		}
 		relative_position_id = FRA_stalemate
 		x = 0
@@ -39420,7 +39424,11 @@ focus = {
 			focus = FRA_stalemate
 		}
 		available = {
-			has_country_flag = FRA_COMPROMISE_socdem
+			OR = {
+				has_country_flag = FRA_COMPROMISE_sfio
+				has_country_flag = FRA_COMPROMISE_socdem
+			}
+			
 		}
 		ai_will_do = {
 			factor = 1
@@ -39562,6 +39570,9 @@ focus = {
 		cost = 4
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			has_country_flag = FRA_COMPROMISE_sfio
 		}
 		prerequisite = {
 			focus = FRA_socialist_cartel_victory
@@ -40168,6 +40179,9 @@ focus = {
 		cost = 2
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			has_country_flag = FRA_COMPROMISE_socdem
 		}
 		prerequisite = {
 			focus = FRA_socialist_cartel_victory

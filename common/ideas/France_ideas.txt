@@ -4250,7 +4250,7 @@ ideas = {
 		FRA_minority = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
 			allowed = { always = yes }
-			picture = new_justice
+			picture = BBR_civil_rights_act_idea
 			modifier = {
 				stability_factor = 0.1
 				political_power_gain = 0.1
@@ -4276,7 +4276,7 @@ ideas = {
 		FRA_revsyn = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
 			allowed = { always = yes }
-			picture = NOR_syndicalist_support
+			picture = TUS_syndie_economy
 			modifier = {
 				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
