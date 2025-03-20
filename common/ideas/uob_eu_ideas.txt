@@ -762,7 +762,8 @@ SYN_admirality = {
 				political_power_factor = 0.15
 				stability_factor = 0.15
 				war_support_factor = 0.1
-				
+				consumer_goods_factor = -0.1
+
 			}
 			picture = FRA_frenchhierarchy
 		}
@@ -771,6 +772,13 @@ SYN_admirality = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_one_way_for_france"}
 			modifier = {
 				drift_defence_factor = 1
+				consumer_goods_expected_value = -0.1
+				command_power_gain = 0.1
+				max_command_power = 150
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+				research_speed_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
 			}
 			picture = FRA_onefrenchway
 		}
@@ -805,6 +813,11 @@ SYN_admirality = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_one_doctrine_one_rule"}
 			modifier = {
 				drift_defence_factor = 0.3
+				local_resources_factor = 0.1
+				totalist_drift = 0.05
+				stability_popularity_factor = 0.1
+				political_power_cost = -0.1
+				army_morale_factor = 0.05
 			}
 			picture = FRA_onedoctrine
 		}
@@ -825,7 +838,8 @@ SYN_admirality = {
             modifier = {
 				production_factory_max_efficiency_factor = 0.05
 				production_speed_buildings_factor = 0.05
-                
+                industrial_capacity_factory = 0.1
+
             }
 		}
         FRA_union_loyalty3 = {
@@ -838,7 +852,7 @@ SYN_admirality = {
 				production_speed_buildings_factor = 0.10
 			    production_factory_efficiency_gain_factor = 0.10
 				production_factory_start_efficiency_factor = 0.10
-                
+                industrial_capacity_factory = 0.2
             }
 		}
         FRA_camps = {
@@ -848,7 +862,7 @@ SYN_admirality = {
             picture = FRA_camp_idea
             modifier = {
 				stability_factor = 0.05
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.1
 				political_power_gain = 0.08
                 
             }
@@ -863,8 +877,8 @@ SYN_admirality = {
 				political_power_gain = 0.25
 				army_morale_factor = 0.05
 				land_reinforce_rate = 0.05
-				army_speed_factor = 0.03
-                
+				army_speed_factor = 0.05
+                industrial_capacity_factory = 0.1
             }
 		}
 		FRA_cpai3 = {
@@ -876,7 +890,9 @@ SYN_admirality = {
 				decryption_factor = 0.10
 				encryption_factor = 0.10
 				special_forces_cap = 0.05
-                
+                attrition = -0.15
+				required_garrison_factor = -0.15
+
             }
 		}
         FRA_cpai4 = {
@@ -890,7 +906,9 @@ SYN_admirality = {
 				stability_factor = 0.05
 				political_power_gain = 0.10
 				special_forces_cap = 0.10
-                
+				attrition = -0.2
+				required_garrison_factor = -0.15
+				experience_loss_factor = -0.1
             }
 		}
 

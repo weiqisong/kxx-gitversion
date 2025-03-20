@@ -5,6 +5,16 @@ ideas = {
 
 	country = {
 		###Sorelian###
+		FRA_last_chapter_of_myth = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				army_attack_against_major_factor = 0.15
+				army_defence_against_major_factor = 0.15
+				army_attack_against_minor_factor = 0.075
+				army_defence_against_minor_factor = 0.075
+			}
+			picture = LPD_global_freedom_idea
+		}
 		FRA_sorelian_nationalism_1_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
 			modifier = {
@@ -16,7 +26,7 @@ ideas = {
 				party_popularity_stability_factor = 0.03
 				war_stability_factor = 0.05
 			}
-			picture = generic_syndicalist_medal
+			picture = NFA_veterans
 		}
 		FRA_sorelian_nationalism_2_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
@@ -29,7 +39,7 @@ ideas = {
 				party_popularity_stability_factor = 0.08
 				war_stability_factor = 0.1
 			}
-			picture = generic_syndicalist_medal
+			picture = NFA_veterans
 		}
 		FRA_sorelian_command_1_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_command_1_idea"}
@@ -42,7 +52,7 @@ ideas = {
 				command_power_gain = 0.01
 				stability_weekly = -0.01
 			}
-			picture = generic_syndicalist_medal
+			picture = BBR_vanguard_party
 		}
 		FRA_sorelian_command_2_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_command_1_idea"}
@@ -54,7 +64,7 @@ ideas = {
 				political_power_gain = 0.08
 				command_power_gain = 0.02
 			}
-			picture = generic_syndicalist_medal
+			picture = BBR_vanguard_party
 		}
 		FRA_sorelian_command_3_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_command_3_idea"}
@@ -70,7 +80,7 @@ ideas = {
 				political_power_gain = 0.12
 				command_power_gain = 0.05
 			}
-			picture = generic_syndicalist_medal
+			picture = BBR_vanguard_party
 		}
 		FRA_sorelian_command_4_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_command_4_idea"}
@@ -86,7 +96,7 @@ ideas = {
 				political_power_gain = 0.15
 				command_power_gain = 0.08
 			}
-			picture = generic_syndicalist_medal
+			picture = BBR_vanguard_party
 		}
 		FRA_sorelian_productiveness_idea_1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_productiveness_idea_1"}
@@ -103,7 +113,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.05
 				surrender_limit = -0.02
 			}
-			picture = generic_syndicalist_medal
+			picture = national_ownership_2
 		}
 		FRA_sorelian_productiveness_idea_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_productiveness_idea_2"}
@@ -118,7 +128,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.05
 			}
-			picture = generic_syndicalist_medal
+			picture = national_ownership_2
 		}
 		FRA_sorelian_productiveness_3_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_productiveness_3_idea"}
@@ -133,7 +143,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.12
 				production_factory_efficiency_gain_factor = 0.05
 			}
-			picture = generic_syndicalist_medal
+			picture = national_ownership_2
 		}
 		FRA_sorelian_warriors_1_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_warriors_1_idea"}
@@ -147,7 +157,7 @@ ideas = {
 				army_speed_factor = 0.05
 				breakthrough_factor	= 0.1
 			}
-			picture = generic_syndicalist_medal
+			picture = NFA_native_pacification
 		}
 		FRA_sorelian_warriors_2_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_warriors_2_idea"}
@@ -162,7 +172,7 @@ ideas = {
 				army_speed_factor = 0.1
 				breakthrough_factor	= 0.1
 			}
-			picture = generic_syndicalist_medal
+			picture = NFA_native_pacification
 		}
 		FRA_sorelian_warriors_3_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_warriors_3_idea"}
@@ -177,7 +187,7 @@ ideas = {
 				army_speed_factor = 0.1
 				breakthrough_factor	= 0.1
 			}
-			picture = generic_syndicalist_medal
+			picture = NFA_native_pacification
 		}
 		FRA_sorelian_expansion_1_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_expansion_1_idea"}
@@ -192,7 +202,7 @@ ideas = {
 				recruitable_population = 0.01
 				promote_cost_factor = -0.3
 			}
-			picture = generic_syndicalist_medal
+			picture = generic_ultranationalism
 		}
 		FRA_sorelian_expansion_2_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_expansion_2_idea"}
@@ -209,7 +219,7 @@ ideas = {
 				naval_invasion_prep_speed = -0.2
 				production_speed_dockyard_factor = 0.03
 			}
-			picture = generic_syndicalist_medal
+			picture = generic_ultranationalism
 		}
 		FRA_sorelian_expansion_3_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_expansion_3_idea"}
@@ -226,7 +236,7 @@ ideas = {
 				naval_invasion_prep_speed = -0.3
 				production_speed_dockyard_factor = 0.08
 			}
-			picture = generic_syndicalist_medal
+			picture = generic_ultranationalism
 		}
 		
 		###Jacobins###

@@ -53,20 +53,22 @@ country_event = {
 	
 	option = {
 		name = comfranceeu.2.a 
+		add_radsoc_to_coalition = yes
+		add_synd_to_coalition = yes
 		set_party_name = {
 			  ideology = totalist
-			  long_name = "Parti ouvrier français"
-			  name = "POF"
+			  long_name = "全国革命阵线"
+			  name = "全国革命阵线"
 		}	 
 		set_party_name = {
 			  ideology = syndicalist
-			  long_name = "Parti ouvrier français"
-			  name = "POF"
+			  long_name = "全国革命阵线"
+			  name = "全国革命阵线"
 		}	 
 		set_party_name = {
 			  ideology = radical_socialist
-			  long_name = "Parti ouvrier français"
-			  name = "POF"
+			  long_name = "全国革命阵线"
+			  name = "全国革命阵线"
 		}
 		set_popularities = {
 			totalist = 34

@@ -16662,9 +16662,7 @@ focus = FRA_office_des_chemins_de_fer
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_valois_vision"
-			FRA = {
-				country_event = comfrance.949
-			}
+			
 			create_wargoal = {
 				type = annex_everything
 				target = GER
@@ -17697,7 +17695,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_class_rejuvenation
 		text = FRA_class_rejuvenation
 		icon = GFX_goal_FRA_class_rejuvenation
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = FRA_sorels_win
 		}
@@ -17721,7 +17719,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_establish_one_true_ideal
 		text = FRA_establish_one_true_ideal
 		icon = GFX_goal_FRA_chad_sorel
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = FRA_class_rejuvenation
 		}
@@ -17745,7 +17743,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_three_french_leaders
 		text = FRA_three_french_leaders
 		icon = GFX_goal_FRA_three_leaders
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = FRA_establish_one_true_ideal
 		}
@@ -17761,6 +17759,7 @@ focus = FRA_office_des_chemins_de_fer
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_class_rejuvenation"
 			add_country_leader_trait = the_third_sorelian
+			add_war_support = 0.15
 		}
 	}
 	
@@ -17768,7 +17767,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_truly_french_doctrine
 		text = FRA_truly_french_doctrine
 		icon = GFX_goal_FRA_truly_french_doctrine
-		cost = 1
+		cost = 4
 		prerequisite = {
 			focus = FRA_three_french_leaders
 		}
@@ -17791,7 +17790,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_true_revolution
 		text = FRA_true_revolution
 		icon = GFX_goal_FRA_one_revolution_sorelian
-		cost = 1
+		cost = 4
 		prerequisite = {
 			focus = FRA_class_rejuvenation
 		}
@@ -17818,7 +17817,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_remove_false_prophets 
 		text = FRA_remove_false_prophets
 		icon = GFX_goal_FRA_remove_the_leeches
-		cost = 3
+		cost = 4
 		prerequisite = {
 			focus = FRA_true_revolution
 		}
@@ -17833,14 +17832,14 @@ focus = FRA_office_des_chemins_de_fer
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_remove_false_prophets"
-			kill_ideology_leader = social_democrat
-			kill_ideology_leader = social_liberal
-			kill_ideology_leader = market_liberal
-			kill_ideology_leader = social_conservative
-			kill_ideology_leader = authoritarian_democrat
-			kill_ideology_leader = paternal_autocrat
-			kill_ideology_leader = national_populist
-			
+			random_unit_leader = {
+				limit = { has_id = 5770 }			
+				remove_unit_leader = yes
+			}
+			add_manpower = -100
+			add_political_power = 100
+			add_command_power = 50
+			army_experience = 50
 		}
 	}
 	
@@ -17848,7 +17847,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_one_organic_society
 		text = FRA_one_organic_society
 		icon = GFX_goal_FRA_organic_socialism
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = FRA_remove_false_prophets
 		}
@@ -17871,7 +17870,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_pardon_anarchists
 		text = FRA_pardon_anarchists
 		icon = GFX_goal_FRA_broad_but_narrow
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = FRA_class_rejuvenation
 		}
@@ -17889,6 +17888,8 @@ focus = FRA_office_des_chemins_de_fer
 			country_event = {
 				id = comfranceeu.2
 			}
+			add_stability = 0.1
+			add_political_power = 100
 		}
 	}
 	
@@ -17896,7 +17897,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_societal_order
 		text = FRA_societal_order
 		icon = GFX_goal_FRA_all_under_one
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = FRA_pardon_anarchists
 		}
@@ -17919,7 +17920,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_new_syndicalism
 		text = FRA_new_syndicalism
 		icon = GFX_goal_FRA_new_syndicalism
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = FRA_societal_order
 		}
@@ -17938,6 +17939,21 @@ focus = FRA_office_des_chemins_de_fer
 				id = comfranceeu.3
 				days = 0 
 			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -17945,7 +17961,8 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_sorelian_dream
 		text = FRA_sorelian_dream
 		icon = GFX_goal_FRA_ideal_france
-		cost = 2
+		cost = 4
+		
 		prerequisite = {
 			focus = FRA_one_organic_society
 		}
@@ -17968,6 +17985,22 @@ focus = FRA_office_des_chemins_de_fer
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_remove_false_prophets"
 			custom_effect_tooltip = doriot_summary_tt
+			add_political_power = 100
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -18002,8 +18035,8 @@ focus = FRA_office_des_chemins_de_fer
 	focus = {
 		id = FRA_the_great_purge
 		text = FRA_the_great_purge
-		icon = GFX_goals_FRA_purge
-		cost = 5.00
+		icon = GFX_ALA_killing_fields
+		cost = 4
 		prerequisite = {
 			focus = FRA_nazbols_win
 		}
@@ -18031,8 +18064,8 @@ focus = FRA_office_des_chemins_de_fer
 	focus = {
 		id = FRA_merge_all_trade_unions
 		text = FRA_merge_all_trade_unions
-		icon = GFX_goals_FRA_merge_all_trade_unions
-		cost = 5.00
+		icon = GFX_goal_UK_ban_unions
+		cost = 4
 		prerequisite = {
 			focus = FRA_the_great_purge
 		}
@@ -18056,8 +18089,8 @@ focus = FRA_office_des_chemins_de_fer
 	focus = {
 		id = FRA_agricultural_collectivisation
 		text = FRA_agricultural_collectivisation
-		icon = GFX_goals_FRA_agricultural_collectivisation
-		cost = 5.00
+		icon = GFX_goal_CZE_state_agriculture
+		cost = 4
 		prerequisite = {
 			focus = FRA_merge_all_trade_unions
 		}
@@ -18108,8 +18141,8 @@ focus = FRA_office_des_chemins_de_fer
 	focus = {
 		id = FRA_replace_industrial_leaders
 		text = FRA_replace_industrial_leaders
-		icon = GFX_goals_FRA_replace_industrial_leaders
-		cost = 5.00
+		icon = GFX_RUS_Control_Trade_Unions_nsp
+		cost = 4
 		prerequisite = {
 			focus = FRA_agricultural_collectivisation
 		}
@@ -18134,8 +18167,8 @@ focus = FRA_office_des_chemins_de_fer
 	focus = {
 		id = FRA_establish_secret_police
 		text = FRA_establish_secret_police
-		icon = GFX_goals_FRA_establish_secret_police
-		cost = 5.00
+		icon = GFX_HUN_jacobin_boys
+		cost = 4
 		prerequisite = {
 			focus = FRA_the_great_purge
 		}
@@ -18150,7 +18183,7 @@ focus = FRA_office_des_chemins_de_fer
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_establish_secret_police"
-			custom_effect_tooltip = FRA_secret_police_tooltip
+			
 			add_ideas = FRA_cpai3
 		}
 	}
@@ -18159,7 +18192,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_destory_reactionary_thought
 		text = FRA_destory_reactionary_thought
 		icon = GFX_goals_FRA_destory_reactionary_thought
-		cost = 5.00
+		cost = 4
 		prerequisite = {
 			focus = FRA_establish_secret_police
 		}
@@ -18185,8 +18218,8 @@ focus = FRA_office_des_chemins_de_fer
 	focus = {
 		id = FRA_reeducation_camps
 		text = FRA_reeducation_camps
-		icon = GFX_goals_FRA_reeducation_camps
-		cost = 5.00
+		icon = GFX_goal_FRA_penal_labor
+		cost = 4
 		prerequisite = {
 			focus = FRA_destory_reactionary_thought
 		}
@@ -18262,7 +18295,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_vanguard_commissars
 		text = FRA_vanguard_commissars
 		icon = GFX_goals_FRA_vanguard_commissars
-		cost = 5.00
+		cost = 4
 		prerequisite = {
 			focus = FRA_the_great_purge
 		}
@@ -18277,7 +18310,7 @@ focus = FRA_office_des_chemins_de_fer
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_vanguard_commissars"
-			custom_effect_tooltip = FRA_commissar_tooltip
+			
 			
 			add_political_power = 100
 			add_popularity = {
@@ -18290,7 +18323,7 @@ focus = FRA_office_des_chemins_de_fer
 	focus = {
 		id = FRA_deat_youth
 		icon = GFX_goals_FRA_deat_youth
-		cost = 5.00
+		cost = 4
 		prerequisite = {
 			focus = FRA_vanguard_commissars
 		}
@@ -18322,8 +18355,8 @@ focus = FRA_office_des_chemins_de_fer
 	focus = {
 		id = FRA_cult_of_personality
 		text = FRA_cult_of_personality
-		icon = GFX_goals_FRA_cult
-		cost = 5.00
+		icon = GFX_goal_generic_cult_personality
+		cost = 4
 		prerequisite = {
 			focus = FRA_deat_youth
 		}
@@ -18344,8 +18377,8 @@ focus = FRA_office_des_chemins_de_fer
 	
 	focus = {
 		id = FRA_glory_to_the_chairman
-		icon = GFX_goals_FRA_glorynew
-		cost = 2.00
+		icon = GFX_goals_FRA_nizan
+		cost = 4
 		prerequisite = {
 			focus = FRA_cult_of_personality
 		}
@@ -18405,7 +18438,7 @@ focus = FRA_office_des_chemins_de_fer
 	focus = {
 		id = FRA_death_to_traitors
 		icon = GFX_goal_FRA_warrior_ethics
-		cost = 5.00
+		cost = 4
 		prerequisite = {
 			focus = FRA_woke_gang_win
 		}
@@ -18431,8 +18464,8 @@ focus = FRA_office_des_chemins_de_fer
 	
 	focus = {
 		id = FRA_superior_french_culture
-		icon = GFX_goal_FRA_reign_of_working_man
-		cost = 5.00
+		icon = GFX_goal_NFA_Strong_Clean_France
+		cost = 4
 		prerequisite = {
 			focus = FRA_death_to_traitors
 		}
@@ -18455,7 +18488,7 @@ focus = FRA_office_des_chemins_de_fer
 	focus = {
 		id = FRA_inflame_second_affaire
 		icon = GFX_goal_FRA_slay_bourgeois_decadence
-		cost = 5.00
+		cost = 4
 		prerequisite = {
 			focus = FRA_superior_french_culture
 		}
@@ -18480,7 +18513,7 @@ focus = FRA_office_des_chemins_de_fer
 	focus = {
 		id = FRA_red_colonialism
 		icon = GFX_goals_FRA_red_africa
-		cost = 4.00
+		cost = 4
 		prerequisite = {
 			focus = FRA_inflame_second_affaire
 		}
@@ -18512,7 +18545,7 @@ focus = FRA_office_des_chemins_de_fer
 	focus = {
 		id = FRA_strength_through_joy
 		icon = GFX_goals_FRA_avant_garde
-		cost = 5.00
+		cost = 4
 		prerequisite = {
 			focus = FRA_death_to_traitors
 		}
@@ -18530,13 +18563,15 @@ focus = FRA_office_des_chemins_de_fer
 			FRA = {
 				country_event = comfrance.927
 			}
+			add_stability = 0.15
+			add_political_power = 100
 		}
 	}
 	
 	focus = {
 		id = FRA_revolutionary_voilence
 		icon = GFX_goals_FRA_violent_spirit
-		cost = 5.00
+		cost = 4
 		prerequisite = {
 			focus = FRA_strength_through_joy
 		}
@@ -18558,8 +18593,8 @@ focus = FRA_office_des_chemins_de_fer
 	
 	focus = {
 		id = FRA_every_worker_a_patriot
-		icon = GFX_goal_FRA_producer_aristocracy
-		cost = 5.00
+		icon = GFX_goal_NFA_Corporatism_Empire
+		cost = 4
 		prerequisite = {
 			focus = FRA_revolutionary_voilence
 		}
@@ -18609,8 +18644,8 @@ focus = FRA_office_des_chemins_de_fer
 	
 	focus = {
 		id = FRA_empower_technocrats
-		icon = GFX_goal_FRA_productive_bourgeoisie
-		cost = 5.00
+		icon = GFX_goal_CSA_technocratic_subjugation
+		cost = 4
 		prerequisite = {
 			focus = FRA_crush_factionalism
 		}
@@ -18688,7 +18723,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_france_awake
 		text = FRA_france_awake
 		icon = GFX_goals_FRA_awake
-		cost = 5.00
+		cost = 4
 		prerequisite = { focus = FRA_every_worker_a_patriot }
 		prerequisite = { focus = FRA_red_colonialism }
 		prerequisite = { focus = FRA_establish_the_corporates }
@@ -18707,6 +18742,8 @@ focus = FRA_office_des_chemins_de_fer
 			FRA = {
 				country_event = comfrance.949
 			}
+			add_war_support = 0.15
+			increase_ruling_party_popularity_by_10 = yes
 		}
 	}
 	###瓦卢瓦存活 正常线路
@@ -18722,6 +18759,9 @@ focus = FRA_office_des_chemins_de_fer
 		prerequisite = {
 			focus = FRA_valois_is_gone
 		}	
+		available = {
+			has_country_flag = Georges_Valois_lived
+		}
 		x = 0
 		y = 5
 		relative_position_id = FRA_sorelians_rule_supreme
@@ -19155,7 +19195,7 @@ focus = FRA_office_des_chemins_de_fer
 	}
 	focus = {
 		id = FRA_Awakening_the_Labor_Myth
-		icon = GFX_goal_FRA_empire_of_french_worker
+		icon = GFX_goal_NFA_Happy_Workers
 		cost = 10
 		ai_will_do = {
 			factor = 100
@@ -19186,22 +19226,55 @@ focus = FRA_office_des_chemins_de_fer
 		prerequisite = {
 			focus = FRA_Between_Paneu_and_Nat
 		}
-		available = {
-			date > 1943.1.1
-		}
+		
 		relative_position_id = FRA_Mouvement_Class_Moyennes
 		x = 3
 		y = 2
 		completion_reward = {
-			custom_effect_tooltip = FRA_Totalism_International_Crazy
 			increase_ruling_party_popularity_by_25 = yes
 			add_country_leader_trait = COF_totalism_international_mentor
+		}
+	}
+	focus = {
+		id = FRA_last_chapter_of_myth
+		icon = GFX_goal_burning_globe
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = FRA_Totalism_International_Goal
+		}
+		prerequisite = {
+			focus = FRA_Awakening_the_Labor_Myth
+		}
+		prerequisite = {
+			focus = FRA_Common_Enemy_Allemagne
+		}
+		available = {
+			date > 1943.1.1
+			NOT = {
+				country_exists = GER
+			}
+		}
+		relative_position_id = FRA_Mouvement_Class_Moyennes
+		x = 3
+		y = 3
+		completion_reward = {
+			custom_effect_tooltip = FRA_Totalism_International_Crazy
+			set_war_support = 1
+			set_stability = 1
+			add_ideas = FRA_last_chapter_of_myth
 			hidden_effect = {
 				every_country = {
 					limit = {
-						NOT = { 
-							has_government = totalist
-							is_in_faction_with = ROOT
+						OR = { 
+							has_government = social_democrat
+							has_government = social_liberal
+							has_government = market_liberal
+							has_government = social_conservative
+							has_government = authoritarian_democrat
+							has_government = paternal_autocrat
 						}
 					}
 					ROOT = {
@@ -19247,6 +19320,9 @@ focus = FRA_office_des_chemins_de_fer
 		prerequisite = {
 			focus = FRA_valois_is_gone
 		}	
+		available = {
+			has_country_flag = Georges_Valois_crazy
+		}
 		x = 8
 		y = 5
 		relative_position_id = FRA_sorelians_rule_supreme
@@ -19640,7 +19716,7 @@ focus = FRA_office_des_chemins_de_fer
 
 	focus = {
 		id = FRA_sorelian_power
-		icon = GFX_goal_FRA_sorealians_alt
+		icon = GFX_goal_FRA_sorelians
 		relative_position_id = FRA_valois_is_gone
 		x = -8
 		y = 1
@@ -19688,7 +19764,7 @@ focus = FRA_office_des_chemins_de_fer
 	focus = {
 		id = FRA_class_rejuvination
 		icon = GFX_goal_FRA_class_rejuvenation
-		x = -2
+		x = -1
 		y = 2
 		relative_position_id = FRA_sorelian_power
 		cost = 4
@@ -19703,78 +19779,32 @@ focus = FRA_office_des_chemins_de_fer
 			add_popularity = { ideology = totalist popularity = 0.03 }
 			add_popularity = { ideology = social_democrat popularity = -0.02 }
 			add_political_power = 35
-			add_stability = -0.02
-			add_manpower = -2000
+			add_stability = 0.02
+			add_manpower = 5000
+			add_ideas = FRA_sorelian_nationalism_1_idea
 			add_war_support = 0.05
 			army_experience = 5
 		}
 	}
 	
-	focus = {
-		id = FRA_revitalize_nationalism
-		icon = GFX_goal_FRA_revitalize_nationalism
-		x = 0
-		y = 2
-		relative_position_id = FRA_sorelian_power
-		cost = 4
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = {
-			focus = FRA_cement_military_support
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FRA_revitalize_nationalism"
-			add_popularity = { ideology = totalist popularity = 0.03 }
-			add_stability = 0.02
-			add_political_power = 20
-			add_manpower = 5000
-			add_war_support = 0.05
-			add_ideas = FRA_sorelian_nationalism_1_idea
-		}
-	}
 	
-	focus = {
-		id = FRA_ensure_cgt_loyalism
-		icon = GFX_goal_FRA_cgt_loyalty
-		x = 2
-		y = 2
-		relative_position_id = FRA_sorelian_power
-		cost = 4
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = {
-			focus = FRA_cement_military_support
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FRA_ensure_cgt_loyalism"
-			add_political_power = 30
-			add_popularity = { ideology = totalist popularity = 0.03 }
-			add_popularity = { ideology = syndicalist popularity = -0.02 }
-			add_stability = 0.03
-		}
-	}
+	
+	
 	
 	focus = {
 		id = FRA_correct_the_democratic_error
 		icon = GFX_goal_FRA_democratic_error
-		x = 0
-		y = 3
+		x = 1
+		y = 2
 		relative_position_id = FRA_sorelian_power
 		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
 		prerequisite = {
-			focus = FRA_ensure_cgt_loyalism
+			focus = FRA_cement_military_support
 		}
-		prerequisite = {
-			focus = FRA_revitalize_nationalism
-		}
-		prerequisite = {
-			focus = FRA_class_rejuvination
-		}
+		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_correct_the_democratic_error"
 			add_popularity = { ideology = totalist popularity = 0.1 }
@@ -19788,7 +19818,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_national_worker_mythos
 		icon = GFX_goal_CSA_lead_the_revolution
 		x = -2
-		y = 4
+		y = 3
 		relative_position_id = FRA_sorelian_power
 		cost = 4
 		ai_will_do = {
@@ -19796,6 +19826,9 @@ focus = FRA_office_des_chemins_de_fer
 		}
 		prerequisite = {
 			focus = FRA_correct_the_democratic_error
+		}
+		prerequisite = {
+			focus = FRA_class_rejuvination
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_national_worker_mythos"
@@ -19815,7 +19848,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_proletariat_avant_garde
 		icon = GFX_goal_CSA_purge_reactionaries
 		x = -2
-		y = 5
+		y = 4
 		relative_position_id = FRA_sorelian_power
 		cost = 4
 		ai_will_do = {
@@ -19868,15 +19901,18 @@ focus = FRA_office_des_chemins_de_fer
 	focus = {
 		id = FRA_militant_syndicalist_corp
 		icon = GFX_goal_FRA_militant_syn_corp
-		x = -1
-		y = 7
+		x = 0
+		y = 6
 		relative_position_id = FRA_sorelian_power
 		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
 		prerequisite = {
-			focus = FRA_proletariat_avant_garde
+			focus = FRA_producer_aristocracy
+		}
+		prerequisite = {
+			focus = FRA_the_law_of_combatants
 		}
 		prerequisite = {
 			focus = FRA_a_productive_bourgeoisie
@@ -19951,7 +19987,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_producer_aristocracy
 		icon = GFX_goal_FRA_producer_aristocracy
 		x = -2
-		y = 6
+		y = 5
 		relative_position_id = FRA_sorelian_power
 		cost = 4
 		ai_will_do = {
@@ -20007,11 +20043,14 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_avenge_laffaire
 		icon = GFX_goal_CSA_collectivist_military
 		x = 0
-		y = 4
+		y = 3
 		relative_position_id = FRA_sorelian_power
 		cost = 4
 		ai_will_do = {
 			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_class_rejuvination
 		}
 		prerequisite = {
 			focus = FRA_correct_the_democratic_error
@@ -20030,7 +20069,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_slay_bourgeois_decadence
 		icon = GFX_goal_FRA_slay_bourgeois_decadence
 		x = 0
-		y = 5
+		y = 4
 		relative_position_id = FRA_sorelian_power
 		cost = 4
 		ai_will_do = {
@@ -20053,7 +20092,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_a_productive_bourgeoisie
 		icon = GFX_goal_FRA_productive_bourgeoisie
 		x = 0
-		y = 6
+		y = 5
 		relative_position_id = FRA_sorelian_power
 		cost = 4
 		ai_will_do = {
@@ -20125,7 +20164,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_warrior_ethics
 		icon = GFX_goal_FRA_warrior_ethics
 		x = 2
-		y = 4
+		y = 3
 		relative_position_id = FRA_sorelian_power
 		cost = 4
 		ai_will_do = {
@@ -20133,6 +20172,9 @@ focus = FRA_office_des_chemins_de_fer
 		}
 		prerequisite = {
 			focus = FRA_correct_the_democratic_error
+		}
+		prerequisite = {
+			focus = FRA_class_rejuvination
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_warrior_ethics"
@@ -20150,7 +20192,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_classical_heroic_socialism
 		icon = GFX_goal_FRA_classical_heroic_socialism
 		x = 2
-		y = 5
+		y = 4
 		relative_position_id = FRA_sorelian_power
 		cost = 4
 		ai_will_do = {
@@ -20182,7 +20224,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_the_law_of_combatants
 		icon = GFX_goal_FRA_law_of_combatants
 		x = 2
-		y = 6
+		y = 5
 		relative_position_id = FRA_sorelian_power
 		cost = 4
 		ai_will_do = {
@@ -20210,52 +20252,19 @@ focus = FRA_office_des_chemins_de_fer
 		}
 	}
 	
+	
+	
 	focus = {
-		id = FRA_focused_germanophobia
-		icon = GFX_goal_FRA_germanophobia
-		x = 1
+		id = FRA_sfio_absorption
+		icon = GFX_goal_FRA_sfio_absorption
+		x = -2
 		y = 7
 		relative_position_id = FRA_sorelian_power
 		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
-		prerequisite = {
-			focus = FRA_classical_heroic_socialism
-		}
-		prerequisite = {
-			focus = FRA_a_productive_bourgeoisie
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FRA_focused_germanophobia"
-			add_popularity = { ideology = totalist popularity = 0.05 }
-			add_war_support = 0.1
-			add_manpower = 12000
-			add_command_power = 10
-			GER = {
-			add_opinion_modifier = { target = FRA modifier = medium_decrease }
-			}
-			add_threat = 5
-			swap_ideas = {
-			remove_idea = FRA_sorelian_warriors_2_idea
-			add_idea = FRA_sorelian_warriors_3_idea
-			}
-		}
-	}
-	
-	focus = {
-		id = FRA_sfio_absorption
-		icon = GFX_goal_FRA_sfio_absorption
-		x = -2
-		y = 8
-		relative_position_id = FRA_sorelian_power
-		cost = 4
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = {
-			focus = FRA_producer_aristocracy
-		}
+		
 		prerequisite = {
 			focus = FRA_militant_syndicalist_corp
 		}
@@ -20266,8 +20275,9 @@ focus = FRA_office_des_chemins_de_fer
 			add_political_power = 35
 			add_stability = 0.08
 			swap_ideas = {
-			remove_idea = FRA_sorelian_productiveness_2_idea
-			add_idea = FRA_sorelian_productiveness_3_idea
+				remove_idea = FRA_sorelian_productiveness_idea_2
+				add_idea = FRA_sorelian_productiveness_3_idea
+			
 			}
 		}
 	}
@@ -20276,15 +20286,13 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_le_nouvel_age
 		icon = GFX_goal_FRA_le_nouvel_age
 		x = 0
-		y = 8
+		y = 7
 		relative_position_id = FRA_sorelian_power
 		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
-		prerequisite = {
-			focus = FRA_focused_germanophobia
-		}
+		
 		prerequisite = {
 			focus = FRA_militant_syndicalist_corp
 		}
@@ -20295,8 +20303,12 @@ focus = FRA_office_des_chemins_de_fer
 			add_command_power = 25
 			add_manpower = 4500
 			swap_ideas = {
-			remove_idea = FRA_sorelian_command_3_idea
-			add_idea = FRA_sorelian_command_4_idea
+				remove_idea = FRA_sorelian_command_3_idea
+				add_idea = FRA_sorelian_command_4_idea
+			}
+			swap_ideas = {
+				remove_idea = FRA_sorelian_warriors_2_idea
+				add_idea = FRA_sorelian_warriors_3_idea
 			}
 		}
 	}
@@ -20305,18 +20317,16 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_red_imperialism
 		icon = GFX_goal_FRA_red_imperialism
 		x = 2
-		y = 8
+		y = 7
 		relative_position_id = FRA_sorelian_power
 		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
 		prerequisite = {
-			focus = FRA_focused_germanophobia
+			focus = FRA_militant_syndicalist_corp
 		}
-		prerequisite = {
-			focus = FRA_the_law_of_combatants
-		}
+		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_red_imperialism"
 			add_war_support = 0.05
@@ -20382,7 +20392,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_empire_of_the_french_worker
 		icon = GFX_goal_FRA_empire_of_french_worker
 		x = 0
-		y = 9
+		y = 8
 		relative_position_id = FRA_sorelian_power
 		cost = 4
 		ai_will_do = {
@@ -27432,7 +27442,7 @@ focus = {
 		x=0
 		y=1
 		prerequisite={focus=FRACOM_1}
-		cost=5
+		cost=4
 		ai_will_do = {
 			factor = 100
 		}
@@ -27450,7 +27460,7 @@ focus = {
 		x=-2
 		y=2
 		prerequisite={focus=FRACOM_2}
-		cost=5
+		cost=4
 		ai_will_do = {
 			factor = 100
 		}
@@ -27479,7 +27489,7 @@ focus = {
 		x=0
 		y=2
 		prerequisite={focus=FRACOM_2}
-		cost=5
+		cost=4
 		ai_will_do = {
 			factor = 100
 		}
@@ -27503,7 +27513,7 @@ focus = {
 		x=2
 		y=2
 		prerequisite={focus=FRACOM_2}
-		cost=5
+		cost=4
 		ai_will_do = {
 			factor = 100
 		}
@@ -27534,7 +27544,7 @@ focus = {
 		x=-3
 		y=3
 		prerequisite={focus=FRACOM_3}
-		cost=5
+		cost=4
 		ai_will_do = {
 			factor = 100
 		}
@@ -27552,7 +27562,7 @@ focus = {
 		x=0
 		y=3
 		prerequisite={focus=FRACOM_4}
-		cost=5
+		cost=4
 		ai_will_do = {
 			factor = 100
 		}
@@ -27573,7 +27583,7 @@ focus = {
 		x=3
 		y=3
 		prerequisite={focus=FRACOM_5}
-		cost=5
+		cost=4
 		ai_will_do = {
 			factor = 100
 		}
@@ -27587,11 +27597,11 @@ focus = {
 	}
 	focus={
 		id=FRACOM_9
-		icon = GFX_goal_FRA_technocratic_ministry
+		icon = GFX_goal_CSA_industrial_unionism
 		x=-2
 		y=4
 		prerequisite={focus=FRACOM_6}
-		cost=5
+		cost=4
 		ai_will_do = {
 			factor = 100
 		}
@@ -27638,7 +27648,7 @@ focus = {
 		x=0
 		y=4
 		prerequisite={focus=FRACOM_7}
-		cost=5
+		cost=4
 		ai_will_do = {
 			factor = 100
 		}
@@ -27691,7 +27701,7 @@ focus = {
 		x=2
 		y=4
 		prerequisite={focus=FRACOM_8}
-		cost=5
+		cost=4
 		ai_will_do = {
 			factor = 100
 		}
@@ -27714,7 +27724,7 @@ focus = {
 		prerequisite={focus=FRACOM_9}
 		prerequisite={focus=FRACOM_10}
 		prerequisite={focus=FRACOM_11}
-		cost=5
+		cost=4
 		ai_will_do = {
 			factor = 100
 		}
@@ -27734,7 +27744,7 @@ focus = {
 	id = FRA_capitant_win
 	
 	icon = GFX_goal_FRA_socialist_republican_party
-	cost = 3
+	cost = 0
 	prerequisite = {
 		focus = FRA_who_shall_lead
 	}
@@ -27762,7 +27772,7 @@ focus = {
 	id = FRA_Relax_political_oppression
 	
 	icon = GFX_RUS_Loosen_Oppression
-	cost = 3.00
+	cost = 4
 	prerequisite = {
 		focus = FRA_capitant_win
 	}
@@ -27790,7 +27800,7 @@ focus = {
 	id = FRA_Initiate_economic_reforms
 	
 	icon = GFX_goal_CSA_economy_of_scale
-	cost = 3.00
+	cost = 4
 	prerequisite = {
 		focus = FRA_Relax_political_oppression
 	}
@@ -27817,7 +27827,7 @@ focus = {
 	id = FRA_Except_for_anarchists
 	
 	icon = GFX_goal_purge_opposition
-	cost = 3.00
+	cost = 4
 	prerequisite = {
 		focus = FRA_Relax_political_oppression
 	}
@@ -27848,7 +27858,7 @@ focus = {
 	id = FRA_Anti_German_Molecular_Vigilance_Committee
 	
 	icon = GFX_goal_FRA_institute_of_sociology
-	cost = 3.00
+	cost = 4
 	prerequisite = {
 		focus = FRA_Relax_political_oppression
 	}
@@ -27871,7 +27881,7 @@ focus = {
 	id = FRA_Factory_joint_management
 	
 	icon = GFX_goal_NFA_Slowly_Desocialize_Economy
-	cost = 3.00
+	cost = 4
 	prerequisite = {
 		focus = FRA_Initiate_economic_reforms
 	}
@@ -27923,7 +27933,7 @@ focus = {
 	id = FRA_Unfreezing_syndicalism
 	
 	icon = GFX_RUS_Syndical_Cooperative_Federation
-	cost = 3.00
+	cost = 4
 	prerequisite = {
 		focus = FRA_Except_for_anarchists
 	}
@@ -27956,7 +27966,7 @@ focus = {
 	id = FRA_Social_Catholicism
 
 	icon = GFX_goal_WHR_Church_Belarus
-	cost = 3.00
+	cost = 4
 	prerequisite = {
 		focus = FRA_Anti_German_Molecular_Vigilance_Committee
 	}
@@ -27979,7 +27989,7 @@ focus = {
 	id = FRA_Organic_combination_of_capital_and_labor
 	
 	icon = GFX_goal_AUS_corporatism
-	cost = 3.00
+	cost = 4
 	prerequisite = {
 		focus = FRA_Factory_joint_management
 	}
@@ -28005,7 +28015,7 @@ focus = {
 	id = FRA_The_True_Republic_of_Trade_Unions
 	
 	icon = GFX_goal_FIU_syndicalize_unions
-	cost = 3.00
+	cost = 4
 	prerequisite = {
 		focus = FRA_Unfreezing_syndicalism
 	}
@@ -28037,7 +28047,7 @@ focus = {
 	id = FRA_Responsible_Society
 	
 	icon = GFX_goal_FRA_commune_of_liberty
-	cost = 3.00
+	cost = 4
 	prerequisite = {
 		focus = FRA_Social_Catholicism
 	}
@@ -28066,7 +28076,7 @@ focus = {
 	id = FRA_A_brand_new_radicalism
 	
 	icon = GFX_goal_COR_Champion_Womens_Three_Movements
-	cost = 3.00
+	cost = 4
 	prerequisite = {
 		focus = FRA_Organic_combination_of_capital_and_labor
 	}
