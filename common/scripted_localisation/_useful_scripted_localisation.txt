@@ -7534,4 +7534,10 @@ text = {
 		}
 		localization_key = fredaism_subtype  
 	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = transhumanism_subtype
+		}
+		localization_key = transhumanism_subtype  
+	}
 }

@@ -9946,6 +9946,31 @@ country_event = { #moderates leader
     }
     custom_effect_tooltip = "每五年举行一次公社大选！"  # New Communal Elections will take place every 5 years!
   }
+  option = {
+    name = comfrance.1008.g
+    create_country_leader = {
+      name = "让·龙格"  # Jean Longuet
+      picture = "gfx/leaders/FRA/Portrait_FRA_Jean_Longuet.png"
+      expire = "1.1.1"
+      ideology = moderate_socialist_subtype
+    }
+    meta_effect = {
+      text = {
+        set_politics = {
+          ruling_party = radical_socialist
+          last_election = "[CURRENT_DATE]"
+          election_frequency = 60
+          elections_allowed = yes
+        }
+      }
+      CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+    }
+    add_popularity = {
+      ideology = radical_socialist
+      popularity = 0.3
+    }
+    custom_effect_tooltip = "每五年举行一次公社大选！"  # New Communal Elections will take place every 5 years!
+  }
 }
 
 country_event = { #gamelin restore democracy?

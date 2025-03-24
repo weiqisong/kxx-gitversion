@@ -19720,9 +19720,12 @@ focus = FRA_office_des_chemins_de_fer
 		relative_position_id = FRA_valois_is_gone
 		x = -8
 		y = 1
-		cost = 4
+		cost = 1
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			has_country_flag = Valois_Berth
 		}
 		prerequisite = {
 			focus = FRA_valois_is_gone
@@ -25589,7 +25592,7 @@ focus = {
 		available = {
 			always = no
 		}
-		x = 220
+		x = 240
 		y = 0
 		ai_will_do = {
 			factor = 20
@@ -35246,6 +35249,306 @@ focus = {
 		}
 	}
 	focus = {
+		id = FRA_johnny_comes_forth
+		icon = GFX_RUS_Marxist_Vision
+		
+		x = 183
+		y = 41
+		cost = 4
+		 
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			ENG = {
+				country_event = kxxfrance.24
+			}
+		}
+	}
+	focus = {
+		id = FRA_edgars_orthodoxism
+		icon = GFX_goal_GER_Hero_Marx
+		relative_position_id = FRA_johnny_comes_forth
+		x = -1
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus= FRA_johnny_comes_forth
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			ENG = {
+				country_event = kxxfrance.24
+			}
+		}
+	}
+	focus = {
+		id = FRA_pauls_agrianism
+		icon = GFX_UKR_Between_Marxism_Narodism
+		relative_position_id = FRA_johnny_comes_forth
+		x = 1
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus= FRA_johnny_comes_forth
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			ENG = {
+				country_event = kxxfrance.24
+			}
+		}
+	}
+	focus = {
+		id = FRA_union_of_socialist_party
+		icon = GFX_goal_ENG_socialist_rebirth
+		relative_position_id = FRA_johnny_comes_forth
+		x = 0
+		y = 2
+		cost = 4
+		prerequisite = {
+			focus = FRA_edgars_orthodoxism
+		}
+		prerequisite = {
+			focus = FRA_pauls_agrianism
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			ENG = {
+				country_event = kxxfrance.24
+			}
+		}
+	}
+	focus = {
+		id = FRA_infrasture_construction
+		icon = GFX_goal_socialist_infrastructure
+		relative_position_id = FRA_johnny_comes_forth
+		x = 0
+		y = 3
+		cost = 4
+		prerequisite = {
+			focus = FRA_union_of_socialist_party
+		}
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			ENG = {
+				country_event = kxxfrance.24
+			}
+		}
+	}
+	focus = {
+		id = FRA_technocracy_implement
+		icon = GFX_goal_COR_Attract_Wayward_Technocrats
+		relative_position_id = FRA_johnny_comes_forth
+		x = 2
+		y = 2
+		cost = 4
+		prerequisite = {
+			focus = FRA_edgars_orthodoxism
+		}
+		prerequisite = {
+			focus = FRA_pauls_agrianism
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			ENG = {
+				country_event = kxxfrance.24
+			}
+		}
+	}
+	focus = {
+		id = FRA_intervene_economics
+		icon = GFX_CRM_Economic_Council
+		relative_position_id = FRA_johnny_comes_forth
+		x = 2
+		y = 3
+		cost = 4
+		prerequisite = {
+			focus = FRA_technocracy_implement
+		}
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			ENG = {
+				country_event = kxxfrance.24
+			}
+		}
+	}
+	focus = {
+		id = FRA_medical_care
+		icon = GFX_goal_generic_medical
+		relative_position_id = FRA_johnny_comes_forth
+		x = -2
+		y = 2
+		cost = 4
+		prerequisite = {
+			focus = FRA_edgars_orthodoxism
+		}
+		prerequisite = {
+			focus = FRA_pauls_agrianism
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			ENG = {
+				country_event = kxxfrance.24
+			}
+		}
+	}
+	focus = {
+		id = FRA_absorb_moderate_jacobins
+		icon = GFX_BBR_approach_local_socialists
+		relative_position_id = FRA_johnny_comes_forth
+		x = -2
+		y = 3
+		cost = 4
+		prerequisite = {
+			focus = FRA_medical_care
+		}
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			ENG = {
+				country_event = kxxfrance.24
+			}
+		}
+	}
+	focus = {
+		id = FRA_municipal_reorganize
+		icon = GFX_RUS_Municipalization_Of_Land
+		relative_position_id = FRA_johnny_comes_forth
+		x = -1
+		y = 4
+		cost = 4
+		prerequisite = {
+			focus = FRA_absorb_moderate_jacobins
+		}
+		prerequisite = {
+			focus = FRA_infrasture_construction
+		}
+		prerequisite = {
+			focus = FRA_intervene_economics
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			ENG = {
+				country_event = kxxfrance.24
+			}
+		}
+	}
+	focus = {
+		id = FRA_military_loans
+		icon = GFX_goal_FIU_loans_bailouts
+		relative_position_id = FRA_johnny_comes_forth
+		x = 1
+		y = 4
+		cost = 4
+		prerequisite = {
+			focus = FRA_absorb_moderate_jacobins
+		}
+		prerequisite = {
+			focus = FRA_infrasture_construction
+		}
+		prerequisite = {
+			focus = FRA_intervene_economics
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			ENG = {
+				country_event = kxxfrance.24
+			}
+		}
+	}
+	focus = {
+		id = FRA_embrace_paneuropeism
+		icon = GFX_goal_ALB_Europe
+		relative_position_id = FRA_johnny_comes_forth
+		x = -2
+		y = 5
+		cost = 4
+		prerequisite = {
+			focus = FRA_municipal_reorganize
+		}
+		prerequisite = {
+			focus = FRA_military_loans
+		}
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			ENG = {
+				country_event = kxxfrance.24
+			}
+		}
+	}
+	focus = {
+		id = FRA_united_west_europe
+		icon = GFX_UKR_Dream_Central_European_Council
+		relative_position_id = FRA_johnny_comes_forth
+		x = 0
+		y = 5
+		cost = 4
+		prerequisite = {
+			focus = FRA_municipal_reorganize
+		}
+		prerequisite = {
+			focus = FRA_military_loans
+		}
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			ENG = {
+				country_event = kxxfrance.24
+			}
+		}
+	}
+	focus = {
+		id = FRA_liberate_the_colonies
+		icon = GFX_goal_CEA_liberate_equatorial_africa
+		relative_position_id = FRA_johnny_comes_forth
+		x = 2
+		y = 5
+		cost = 4
+		prerequisite = {
+			focus = FRA_municipal_reorganize
+		}
+		prerequisite = {
+			focus = FRA_military_loans
+		}
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			ENG = {
+				country_event = kxxfrance.24
+			}
+		}
+	}
+	focus = {
 		id = FRA_Auguste_win
 		icon = GFX_goal_FRA_christian_socialism
 		available = {
@@ -42399,5 +42702,1777 @@ focus = {
 			}
 		}
 	}
-	
+	focus = {
+		id = FRA_synarchist_conpiracy
+		icon = GFX_goal_COR_eyes_of_the_lord
+		x = 190
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_end_of_anarchism
+		icon = GFX_goal_FRA_Combat_Anarchist_Chaos
+		x = -2
+		y = 1
+		relative_position_id = FRA_synarchist_conpiracy
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_synarchist_conpiracy
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_recentralization
+		icon = GFX_goal_generic_authoritarian_government
+		x = 0
+		y = 1
+		relative_position_id = FRA_synarchist_conpiracy
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_synarchist_conpiracy
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_legacy_of_deat
+		icon = GFX_goal_WIP
+		x = 2
+		y = 1
+		relative_position_id = FRA_synarchist_conpiracy
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_synarchist_conpiracy
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_technocracy_meeting
+		icon = GFX_goal_CSA_Technical_Alliance
+		x = 0
+		y = 2
+		relative_position_id = FRA_synarchist_conpiracy
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_end_of_anarchism
+		}
+		prerequisite = {
+			focus = FRA_recentralization
+		}
+		prerequisite = {
+			focus = FRA_legacy_of_deat
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_rise_of_purism
+		icon = GFX_goal_WIP
+		x = 0
+		y = 3
+		relative_position_id = FRA_synarchist_conpiracy
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_technocracy_meeting
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_pure_order
+		icon = GFX_goal_COR_State_Supreme_Orderer
+		x = -1
+		y = 1
+		relative_position_id = FRA_rise_of_purism
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_rise_of_purism
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_pure_race
+		icon = GFX_goal_BUL_the_bulgarian_race
+		x = 1
+		y = 1
+		relative_position_id = FRA_rise_of_purism
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_rise_of_purism
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_technocratic_urbanism
+		icon = GFX_goal_KIV_urban
+		x = -2
+		y = 2
+		relative_position_id = FRA_rise_of_purism
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_pure_order
+		}
+		prerequisite = {
+			focus = FRA_pure_race
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_erdicate_anti_france
+		icon = GFX_NFA_crush_anti_france
+		x = 0
+		y = 2
+		relative_position_id = FRA_rise_of_purism
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_pure_order
+		}
+		prerequisite = {
+			focus = FRA_pure_race
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_eugenic_ideas
+		icon = GFX_NEE_stoddard_regime
+		x = 2
+		y = 2
+		relative_position_id = FRA_rise_of_purism
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_pure_order
+		}
+		prerequisite = {
+			focus = FRA_pure_race
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_nation_city_collective
+		icon = GFX_CAL_focus_collective_housing
+		x = -1
+		y = 3
+		relative_position_id = FRA_rise_of_purism
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_technocratic_urbanism
+		}
+		prerequisite = {
+			focus = FRA_erdicate_anti_france
+		}
+		prerequisite = {
+			focus = FRA_eugenic_ideas
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_new_human
+		icon = GFX_goal_AUS_eagle_fallen
+		x = 1
+		y = 3
+		relative_position_id = FRA_rise_of_purism
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_technocratic_urbanism
+		}
+		prerequisite = {
+			focus = FRA_erdicate_anti_france
+		}
+		prerequisite = {
+			focus = FRA_eugenic_ideas
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_perfect_system
+		icon = GFX_goal_CSA_Perfect_Purify_Democratic_System
+		x = 0
+		y = 4
+		relative_position_id = FRA_rise_of_purism
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_nation_city_collective
+		}
+		prerequisite = {
+			focus = FRA_new_human
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_geometry_hyigene_purity
+		icon = GFX_goal_COL_Catholic_Pure_Colombia
+		x = -1
+		y = 5
+		relative_position_id = FRA_rise_of_purism
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_perfect_system
+		}
+		
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_order_strong_ration
+		icon = GFX_goal_NFA_Service_Emperor_Order_Legion
+		x = 1
+		y = 5
+		relative_position_id = FRA_rise_of_purism
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_perfect_system
+		}
+		
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_to_the_utopia
+		icon = GFX_goal_GER_Vers_Europe_Unie
+		x = 6
+		y = 3
+		relative_position_id = FRA_synarchist_conpiracy
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_technocracy_meeting
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_reject_authortianism
+		icon = GFX_RUS_Denounce_Senate_Authoritarianism
+		x = -2
+		y = 1
+		relative_position_id = FRA_to_the_utopia
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_to_the_utopia
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_new_monied_system
+		icon = GFX_goal_CSA_price_controls
+		x = 0
+		y = 1
+		relative_position_id = FRA_to_the_utopia
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_to_the_utopia
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_rebuild_union_system
+		icon = GFX_goal_CSA_american_guildism
+		x = 2
+		y = 1
+		relative_position_id = FRA_to_the_utopia
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_to_the_utopia
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_international_pacifism_appeals
+		icon = GFX_goal_GUA_Pacifism_World_Stage
+		x = -1
+		y = 2
+		relative_position_id = FRA_to_the_utopia
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_reject_authortianism
+		}
+		prerequisite = {
+			focus = FRA_new_monied_system
+		}
+		prerequisite = {
+			focus = FRA_rebuild_union_system
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_redress_anarchists
+		icon = GFX_FAUD_PROMOTE_ANARCHISM
+		x = 1
+		y = 2
+		relative_position_id = FRA_to_the_utopia
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_reject_authortianism
+		}
+		prerequisite = {
+			focus = FRA_new_monied_system
+		}
+		prerequisite = {
+			focus = FRA_rebuild_union_system
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_labor_protection_bureau
+		icon = GFX_goal_MEX_Enshrine_Rights_Workers_Laborers
+		x = -2
+		y = 3
+		relative_position_id = FRA_to_the_utopia
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_international_pacifism_appeals
+		}
+		prerequisite = {
+			focus = FRA_redress_anarchists
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_remove_oligarchy
+		icon = GFX_goal_CSA_liquidate_bourgeoisie
+		x = 0
+		y = 3
+		relative_position_id = FRA_to_the_utopia
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_international_pacifism_appeals
+		}
+		prerequisite = {
+			focus = FRA_redress_anarchists
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_syndical_repubic
+		icon = GFX_goal_CEA_new_syndicalist_society
+		x = 2
+		y = 3
+		relative_position_id = FRA_to_the_utopia
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_international_pacifism_appeals
+		}
+		prerequisite = {
+			focus = FRA_redress_anarchists
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_era_of_prosper
+		icon = GFX_goal_MNT_decade_to_prosperity
+		x = 0
+		y = 4
+		relative_position_id = FRA_to_the_utopia
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_labor_protection_bureau
+		}
+		prerequisite = {
+			focus = FRA_remove_oligarchy
+		}
+		prerequisite = {
+			focus = FRA_syndical_repubic
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_uniting_europa
+		icon = GFX_goal_GER_Pax_Europaea
+		x = 0
+		y = 5
+		relative_position_id = FRA_to_the_utopia
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_era_of_prosper
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_the_flesh_is_weak
+		icon = GFX_goal_WIP
+		x = 13
+		y = 3
+		relative_position_id = FRA_synarchist_conpiracy
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_technocracy_meeting
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_estabilish_COST
+		icon = GFX_goal_CSA_Technocracy_Committee
+		x = 0
+		y = 1
+		relative_position_id = FRA_the_flesh_is_weak
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_the_flesh_is_weak
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_indivisual_marxism
+		icon = GFX_goal_GER_Marx_German_Reformer
+		x = -1
+		y = 2
+		relative_position_id = FRA_the_flesh_is_weak
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_estabilish_COST
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_economic_humanism
+		icon = GFX_goal_COR_Equal_Economic_Political_Legal_Rights
+		x = 1
+		y = 2
+		relative_position_id = FRA_the_flesh_is_weak
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_estabilish_COST
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_transhumanism
+		icon = GFX_goal_CSA_heresy
+		x = 0
+		y = 3
+		relative_position_id = FRA_the_flesh_is_weak
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_indivisual_marxism
+		}
+		prerequisite = {
+			focus = FRA_economic_humanism
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_addtions_of_reason
+		icon = GFX_goals_FRA_reason
+		x = -2
+		y = 4
+		relative_position_id = FRA_the_flesh_is_weak
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_transhumanism
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_rationlize_economy
+		icon = GFX_goal_AUS_Productive_Rationality
+		x = 0
+		y = 4
+		relative_position_id = FRA_the_flesh_is_weak
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_transhumanism
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_quality_beyond_numbers
+		icon = GFX_goal_NEE_Spiritual_Awakening
+		x = 2
+		y = 4
+		relative_position_id = FRA_the_flesh_is_weak
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_transhumanism
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_enhance_humans
+		icon = GFX_goal_MEX_Adapt_Totalism
+		x = -1
+		y = 5
+		relative_position_id = FRA_the_flesh_is_weak
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_addtions_of_reason
+		}
+		prerequisite = {
+			focus = FRA_rationlize_economy
+		}
+		prerequisite = {
+			focus = FRA_quality_beyond_numbers
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_to_the_space
+		icon = GFX_goal_NEE_Fly_Me_To_Moon
+		x = 1
+		y = 5
+		relative_position_id = FRA_the_flesh_is_weak
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_addtions_of_reason
+		}
+		prerequisite = {
+			focus = FRA_rationlize_economy
+		}
+		prerequisite = {
+			focus = FRA_quality_beyond_numbers
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_beyond_extreme
+		icon = GFX_goal_NEE_Accelerate_Left_Reformism
+		x = 0
+		y = 6
+		relative_position_id = FRA_the_flesh_is_weak
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_enhance_humans
+		}
+		prerequisite = {
+			focus = FRA_to_the_space
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_burhnamites_in_france
+		icon = GFX_goal_WIP
+		x = -6
+		y = 3
+		relative_position_id = FRA_synarchist_conpiracy
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_technocracy_meeting
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_atlantic_totalism
+		icon = GFX_goal_CSA_asserting_the_apparatus
+		x = -1
+		y = 1
+		relative_position_id = FRA_burhnamites_in_france
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_burhnamites_in_france
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_patriotic_socialism
+		icon = GFX_goal_GER_Moderated_Revolutionary_Patriotism
+		x = 1
+		y = 1
+		relative_position_id = FRA_burhnamites_in_france
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_burhnamites_in_france
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_manageism_system
+		icon = GFX_BBR_collective_management
+		x = -2
+		y = 2
+		relative_position_id = FRA_burhnamites_in_france
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_atlantic_totalism
+		}
+		prerequisite = {
+			focus = FRA_patriotic_socialism
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_break_marxism_stereotype
+		icon = GFX_goal_GER_Red_Marx
+		x = 0
+		y = 2
+		relative_position_id = FRA_burhnamites_in_france
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_atlantic_totalism
+		}
+		prerequisite = {
+			focus = FRA_patriotic_socialism
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_machiaville_enlightment
+		icon = GFX_goal_CSA_Machevellii
+		x = 2
+		y = 2
+		relative_position_id = FRA_burhnamites_in_france
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_atlantic_totalism
+		}
+		prerequisite = {
+			focus = FRA_patriotic_socialism
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_new_industrial_state
+		icon = GFX_RUS_Moderate_Industrialization
+		x = -1
+		y = 3
+		relative_position_id = FRA_burhnamites_in_france
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_manageism_system
+		}
+		prerequisite = {
+			focus = FRA_break_marxism_stereotype
+		}
+		prerequisite = {
+			focus = FRA_machiaville_enlightment
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_ultimatum_to_socdems
+		icon = GFX_HUN_social_democracy
+		x = 1
+		y = 3
+		relative_position_id = FRA_burhnamites_in_france
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_manageism_system
+		}
+		prerequisite = {
+			focus = FRA_break_marxism_stereotype
+		}
+		prerequisite = {
+			focus = FRA_machiaville_enlightment
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_production_management_office
+		icon = GFX_goal_AUS_field_factory
+		x = -1
+		y = 4
+		relative_position_id = FRA_burhnamites_in_france
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_new_industrial_state
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_absolute_loyalty
+		icon = GFX_goal_ENG_empower_loyalists
+		x = 1
+		y = 4
+		relative_position_id = FRA_burhnamites_in_france
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_ultimatum_to_socdems
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_power_safety_honor
+		icon = GFX_BBR_power_of_faith
+		x = 0
+		y = 5
+		relative_position_id = FRA_burhnamites_in_france
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_production_management_office
+		}
+		prerequisite = {
+			focus = FRA_absolute_loyalty
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_triumph_of_orthodox_technocracy
+		icon = GFX_goal_GER_Synarchy_Technocrats
+
+		x = -13
+		y = 3
+		relative_position_id = FRA_synarchist_conpiracy
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_technocracy_meeting
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_thought_of_scott
+		icon = GFX_goal_CSA_Scott_Cult
+		x = -1
+		y = 1
+		relative_position_id = FRA_triumph_of_orthodox_technocracy
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_triumph_of_orthodox_technocracy
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_implement_of_ford
+		icon = GFX_goal_COR_Throw_Spanner_Ford
+		x = 1
+		y = 1
+		relative_position_id = FRA_triumph_of_orthodox_technocracy
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_triumph_of_orthodox_technocracy
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_council_not_sydicate
+		icon = GFX_goal_COR_fordism
+		x = -1
+		y = 2
+		relative_position_id = FRA_triumph_of_orthodox_technocracy
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_thought_of_scott
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_introduce_taylorism
+		icon = GFX_goal_COR_Establish_Fordist_Economy
+		x = 1
+		y = 2
+		relative_position_id = FRA_triumph_of_orthodox_technocracy
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_implement_of_ford
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_relation_with_nationalists
+		icon = GFX_goal_WIP
+		x = -3
+		y = 3
+		relative_position_id = FRA_triumph_of_orthodox_technocracy
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_council_not_sydicate
+		}
+		prerequisite = {
+			focus = FRA_introduce_taylorism
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_Charte_du_travail
+		icon = GFX_CAL_workers_compensation_act
+		x = -1
+		y = 3
+		relative_position_id = FRA_triumph_of_orthodox_technocracy
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_council_not_sydicate
+		}
+		prerequisite = {
+			focus = FRA_introduce_taylorism
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_industrial_science
+		icon = GFX_CAL_new_sciences
+		x = 1
+		y = 3
+		relative_position_id = FRA_triumph_of_orthodox_technocracy
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_council_not_sydicate
+		}
+		prerequisite = {
+			focus = FRA_introduce_taylorism
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_revitalize_car_industry
+		icon = GFX_goal_generic_armored_cars
+		x = 3
+		y = 3
+		relative_position_id = FRA_triumph_of_orthodox_technocracy
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_council_not_sydicate
+		}
+		prerequisite = {
+			focus = FRA_introduce_taylorism
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_perfect_technate
+		icon = GFX_CSA_technocrat_logo
+		x = 0
+		y = 4
+		relative_position_id = FRA_triumph_of_orthodox_technocracy
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_relation_with_nationalists
+		}
+		prerequisite = {
+			focus = FRA_Charte_du_travail
+		}
+		prerequisite = {
+			focus = FRA_industrial_science
+		}
+		prerequisite = {
+			focus = FRA_revitalize_car_industry
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_justice_friendship_cooperation
+		icon = GFX_goal_NEE_Replace_Aristocracy_Technocracy
+		x = 0
+		y = 5
+		relative_position_id = FRA_triumph_of_orthodox_technocracy
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FRA_perfect_technate
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			army_experience = 10
+			add_command_power = 10
+			add_political_power = 15
+			add_war_support = 0.08
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.35
+				category = land_doctrine
+			}
+		}
+	}
 }

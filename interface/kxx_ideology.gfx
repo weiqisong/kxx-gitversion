@@ -217,7 +217,10 @@ spriteTypes = {
 		name = "GFX_ideology_monarcho_syndicalism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/monarcho_syndicalism_subtype.png"
 	}
-
+	spriteType = {
+		name = "GFX_ideology_transhumanism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/transhumanism_subtype.png"
+	}
 	##毛主义衍生
 	spriteType = {
 		name = "GFX_ideology_linism_subtype"

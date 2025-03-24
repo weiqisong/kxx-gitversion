@@ -6070,3 +6070,146 @@ news_event = {
 	}
 	
 }
+country_event = {	
+	id = kxxfrance.78 
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
+	title = kxxfrance.78.t
+	desc = kxxfrance.78.d
+	is_triggered_only = yes
+
+option = { 
+	name = kxxfrance.78.a
+
+}	
+option = { 
+	name = kxxfrance.78.b
+	create_country_leader = {
+		name = "埃德加·龙格" 
+		picture = "gfx/leaders/FRA/Portrait_FRA_Edgar_Longuet.png"
+		expire = "1.1.1"
+		ideology = radsoc_communism_subtype
+	}
+}	
+}
+country_event = {	
+	id = kxxfrance.79 
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
+	title = kxxfrance.79.t
+	desc = kxxfrance.79.d
+	is_triggered_only = yes
+
+option = { 
+	name = kxxfrance.79.a
+
+}	
+option = { 
+	name = kxxfrance.79.b
+	set_politics = {
+		ruling_party = social_democrat
+		elections_allowed = yes
+	}
+	add_popularity = {
+		ideology = social_democrat
+		popularity = 0.3
+	  }
+	create_country_leader = {
+		name = "保罗·龙格" 
+		picture = "gfx/leaders/FRA/Portrait_FRA_Paul_Longuet.png"
+		expire = "1.1.1"
+		ideology = socdem_paternal_socialism_subtype
+	}
+}	
+}
+country_event = {	
+	id = kxxfrance.80 
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
+	title = kxxfrance.80.t
+	desc = kxxfrance.80.d
+	is_triggered_only = yes
+
+option = { 
+	name = kxxfrance.80.a
+	set_politics = {
+		ruling_party = totalist
+		elections_allowed = no
+	}
+	add_popularity = {
+		ideology = totalist
+		popularity = 0.3
+	  }
+	create_country_leader = {
+		name = "弗朗索瓦·勒海杜" 
+		picture = "gfx/leaders/FRP/Portrait_France_Francois_Lehideux.png"
+		expire = "1.1.1"
+		ideology = technocracy_subtype
+	}
+}	
+option = { 
+	name = kxxfrance.80.b
+	set_politics = {
+		ruling_party = totalist
+		elections_allowed = no
+	}
+	add_popularity = {
+		ideology = totalist
+		popularity = 0.3
+	  }
+	create_country_leader = {
+		name = "雷蒙德·阿隆" 
+		picture = "gfx/leaders/FRA/Portrait_France_Raymond_Aron.png"
+		expire = "1.1.1"
+		ideology = burnhamite_thought_subtype
+	}
+}	
+option = { 
+	name = kxxfrance.80.c
+	set_politics = {
+		ruling_party = totalist
+		elections_allowed = no
+	}
+	add_popularity = {
+		ideology = totalist
+		popularity = 0.3
+	  }
+	create_country_leader = {
+		name = "勒·柯布西耶" 
+		picture = "gfx/leaders/FRA/Portrait_corbusier.png"
+		expire = "1.1.1"
+		ideology = technocratic_socialism_subtype
+	}
+}	
+option = { 
+	name = kxxfrance.80.e
+	set_politics = {
+		ruling_party = social_democrat
+		elections_allowed = no
+	}
+	add_popularity = {
+		ideology = social_democrat
+		popularity = 0.3
+	  }
+	create_country_leader = {
+		name = "弗朗西斯·德拉西" 
+		picture = "gfx/leaders/FRP/Portrait_France_Francis_Delaisi.png"
+		expire = "1.1.1"
+		ideology = socdem_utopian_technocracy_subtype
+	}
+}	
+option = { 
+	name = kxxfrance.80.f
+	set_politics = {
+		ruling_party = totalist
+		elections_allowed = no
+	}
+	add_popularity = {
+		ideology = totalist
+		popularity = 0.3
+	  }
+	create_country_leader = {
+		name = "让·库特罗" 
+		picture = "gfx/leaders/FRA/Portrait_France_Jean_Coutrot.png"
+		expire = "1.1.1"
+		ideology = transhumanism_subtype
+	}
+}	
+}

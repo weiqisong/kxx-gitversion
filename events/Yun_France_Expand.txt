@@ -1229,6 +1229,19 @@ country_event = {
 		}
 		mark_focus_tree_layout_dirty = yes
 	}
+	option = {
+		name = COF_Valois.9.b
+		add_stability = 0.2
+		set_country_flag = Valois_Berth
+		create_country_leader = {
+			name = "爱德华·贝尔特"
+			picture = "gfx/leaders/FRA/Portrait_France_Edouard_Berth.png"
+			expire = "1.1.1"
+			ideology = sorelianism_subtype
+			traits = {}
+		}
+		mark_focus_tree_layout_dirty = yes
+	}
 }
 
 country_event = {	
