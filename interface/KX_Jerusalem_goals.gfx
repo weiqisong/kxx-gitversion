@@ -1,0 +1,478 @@
+SpriteTypes = {
+	SpriteType = {
+		name = "PAL_New_Years_Agenda_in_Jerusalem"
+		texturefile = "gfx/interface/goals/PAL_New_Years_Agenda_in_Jerusalem.png"
+	}
+	SpriteType = {
+		name = "PAL_Smooth_Vilaye"
+		texturefile = "gfx/interface/goals/PAL_Smooth_Vilaye.png"
+	}
+	SpriteType = {
+		name = "PAL_The_Speaker_is_caught_in_a_conspiracy"
+		texturefile = "gfx/interface/goals/PAL_The_Speaker_is_caught_in_a_conspiracy.png"
+	}
+	SpriteType = {
+		name = "PAL_A_vote_of_no_confidence_in_parliament"
+		texturefile = "gfx/interface/goals/PAL_A_vote_of_no_confidence_in_parliament.png"
+	}
+	SpriteType = {
+		name = "PAL_The_parliament_is_paralyzed"
+		texturefile = "gfx/interface/goals/PAL_The_parliament_is_paralyzed.png"
+	}
+	SpriteType = {
+		name = "PAL_The_end_of_democracy_in_Jerusalem"
+		texturefile = "gfx/interface/goals/PAL_The_end_of_democracy_in_Jerusalem.png"
+	}
+	SpriteType = {
+		name = "PAL_Parliamentary_reshuffling_elections"
+		texturefile = "gfx/interface/goals/PAL_Parliamentary_reshuffling_elections.png"
+	}
+	SpriteType = {
+		name = "PAL_A_win_for_the_UDFs_collaborators"
+		texturefile = "gfx/interface/goals/PAL_A_win_for_the_UDFs_collaborators.png"
+	}
+	SpriteType = {
+		name = "PAL_OHF_reorganizes_the_government"
+		texturefile = "gfx/interface/goals/PAL_OHF_reorganizes_the_government.png"
+	}
+	SpriteType = {
+		name = "PAL_Vilaye_trade_union"
+		texturefile = "gfx/interface/goals/PAL_Vilaye_trade_union.png"
+	}
+	SpriteType = {
+		name = "PAL_Centralized_parliament_within_the_party"
+		texturefile = "gfx/interface/goals/PAL_Centralized_parliament_within_the_party.png"
+	}
+	SpriteType = {
+		name = "PAL_Look_for_collaborators_within_the_opposition"
+		texturefile = "gfx/interface/goals/PAL_Look_for_collaborators_within_the_opposition.png"
+	}
+	SpriteType = {
+		name = "PAL_The_state_of_emergency_is_normalized"
+		texturefile = "gfx/interface/goals/PAL_The_state_of_emergency_is_normalized.png"
+	}
+	SpriteType = {
+		name = "PAL_Revisit_the_Vilaye_Law_on_Social_Harmony"
+		texturefile = "gfx/interface/goals/PAL_Revisit_the_Vilaye_Law_on_Social_Harmony.png"
+	}
+	SpriteType = {
+		name = "PAL_Revisit_Ottoman_authority"
+		texturefile = "gfx/interface/goals/PAL_Revisit_Ottoman_authority.png"
+	}
+	SpriteType = {
+		name = "PAL_The_influence_of_the_Ottoman_garrison"
+		texturefile = "gfx/interface/goals/PAL_The_influence_of_the_Ottoman_garrison.png"
+	}
+	SpriteType = {
+		name = "PAL_Securing_the_ballot"
+		texturefile = "gfx/interface/goals/PAL_Securing_the_ballot.png"
+	}
+	SpriteType = {
+		name = "PAL_Continuation_of_Kemalism"
+		texturefile = "gfx/interface/goals/PAL_Continuation_of_Kemalism.png"
+	}
+	SpriteType = {
+		name = "PAL_Establishment_of_district_gendarmerie_offices"
+		texturefile = "gfx/interface/goals/PAL_Establishment_of_district_gendarmerie_offices.png"
+	}
+	SpriteType = {
+		name = "PAL_Ensuring_the_powers_of_the_National_Minorities_Council"
+		texturefile = "gfx/interface/goals/PAL_Ensuring_the_powers_of_the_National_Minorities_Council.png"
+	}
+	SpriteType = {
+		name = "PAL_Introduce_an_official_language_law"
+		texturefile = "gfx/interface/goals/PAL_Introduce_an_official_language_law.png"
+	}
+	SpriteType = {
+		name = "PAL_Budget_cuts_for_the_Jaffa_port_project"
+		texturefile = "gfx/interface/goals/PAL_Budget_cuts_for_the_Jaffa_port_project.png"
+	}
+	SpriteType = {
+		name = "PAL_Preparations_for_cooperation_with_the_PCP"
+		texturefile = "gfx/interface/goals/PAL_Preparations_for_cooperation_with_the_PCP.png"
+	}
+	SpriteType = {
+		name = "PAL_Crush_the_PCP"
+		texturefile = "gfx/interface/goals/PAL_Crush_the_PCP.png"
+	}
+	SpriteType = {
+		name = "PAL_Jaffa_Port_Engineering_Department"
+		texturefile = "gfx/interface/goals/PAL_Jaffa_Port_Engineering_Department.png"
+	}
+	SpriteType = {
+		name = "PAL_Strengthen_Kemalist_education"
+		texturefile = "gfx/interface/goals/PAL_Strengthen_Kemalist_education.png"
+	}
+	SpriteType = {
+		name = "PAL_Strengthening_Palestinian_national_identity"
+		texturefile = "gfx/interface/goals/PAL_Strengthening_Palestinian_national_identity.png"
+	}
+	SpriteType = {
+		name = "PAL_Equal_pay_for_equal_work_for_multiple_ethnic_groups"
+		texturefile = "gfx/interface/goals/PAL_Equal_pay_for_equal_work_for_multiple_ethnic_groups.png"
+	}
+	SpriteType = {
+		name = "PAL_Jaffa_Seaport"
+		texturefile = "gfx/interface/goals/PAL_Jaffa_Seaport.png"
+	}
+	SpriteType = {
+		name = "PAL_Administrative_system_issues"
+		texturefile = "gfx/interface/goals/PAL_Administrative_system_issues.png"
+	}
+	SpriteType = {
+		name = "PAL_Reform_the_Palestinian_Israeli_dispute"
+		texturefile = "gfx/interface/goals/PAL_Reform_the_Palestinian_Israeli_dispute.png"
+	}
+	SpriteType = {
+		name = "PAL_Reconstitution_of_urban_population"
+		texturefile = "gfx/interface/goals/PAL_Reconstitution_of_urban_population.png"
+	}
+	SpriteType = {
+		name = "PAL_Suez_Exchange_Agreement"
+		texturefile = "gfx/interface/goals/PAL_Suez_Exchange_Agreement.png"
+	}
+	SpriteType = {
+		name = "PAL_Security_gendarmerie"
+		texturefile = "gfx/interface/goals/PAL_Security_gendarmerie.png"
+	}
+	SpriteType = {
+		name = "PAL_De_Ottoman_authority"
+		texturefile = "gfx/interface/goals/PAL_De_Ottoman_authority.png"
+	}
+	SpriteType = {
+		name = "PAL_Resettlement_Multi_Ethnic_Immigration_Act"
+		texturefile = "gfx/interface/goals/PAL_Resettlement_Multi_Ethnic_Immigration_Act.png"
+	}
+	SpriteType = {
+		name = "PAL_Efficient_administrative_system"
+		texturefile = "gfx/interface/goals/PAL_Efficient_administrative_system.png"
+	}
+	SpriteType = {
+		name = "PAL_Economic_Integration_Report"
+		texturefile = "gfx/interface/goals/PAL_Economic_Integration_Report.png"
+	}
+	SpriteType = {
+		name = "PAL_Urban_roads"
+		texturefile = "gfx/interface/goals/PAL_Urban_roads.png"
+	}
+	SpriteType = {
+		name = "PAL_Supplies_Railway"
+		texturefile = "gfx/interface/goals/PAL_Supplies_Railway.png"
+	}
+	SpriteType = {
+		name = "PAL_Jordanian_irrigation"
+		texturefile = "gfx/interface/goals/PAL_Jordanian_irrigation.png"
+	}
+	SpriteType = {
+		name = "PAL_Construction_of_the_Jaffa_seaport_begins"
+		texturefile = "gfx/interface/goals/PAL_Construction_of_the_Jaffa_seaport_begins.png"
+	}
+	SpriteType = {
+		name = "PAL_Palestinian_communist_attack"
+		texturefile = "gfx/interface/goals/PAL_Palestinian_communist_attack.png"
+	}
+	SpriteType = {
+		name = "PAL_Harness_the_power_of_the_Zionist"
+		texturefile = "gfx/interface/goals/PAL_Harness_the_power_of_the_Zionist.png"
+	}
+	SpriteType = {
+		name = "PAL_Sinai_Border_Patrol"
+		texturefile = "gfx/interface/goals/PAL_Sinai_Border_Patrol.png"
+	}
+	SpriteType = {
+		name = "PAL_Ottoman_military_assistance_was_requested"
+		texturefile = "gfx/interface/goals/PAL_Ottoman_military_assistance_was_requested.png"
+	}
+	SpriteType = {
+		name = "PAL_Tel_Aviv_Light_Weapons_Factory"
+		texturefile = "gfx/interface/goals/PAL_Tel_Aviv_Light_Weapons_Factory.png"
+	}
+	SpriteType = {
+		name = "PAL_Sinai_Border_Fortress"
+		texturefile = "gfx/interface/goals/PAL_Sinai_Border_Fortress.png"
+	}
+	SpriteType = {
+		name = "PAL_UDF_asked_to_join_Parliament"
+		texturefile = "gfx/interface/goals/PAL_UDF_asked_to_join_Parliament.png"
+	}
+	SpriteType = {
+		name = "PAL_Independents_Party"
+		texturefile = "gfx/interface/goals/PAL_Independents_Party.png"
+	}
+	SpriteType = {
+		name = "PAL_The_Palestinian_flag_flutters"
+		texturefile = "gfx/interface/goals/PAL_The_Palestinian_flag_flutters.png"
+	}
+	SpriteType = {
+		name = "PAL_Hammer_Zionism_to_the_grave"
+		texturefile = "gfx/interface/goals/PAL_Hammer_Zionism_to_the_grave.png"
+	}
+	SpriteType = {
+		name = "PAL_Allow_the_PCP_to_work_again"
+		texturefile = "gfx/interface/goals/PAL_Allow_the_PCP_to_work_again.png"
+	}
+	SpriteType = {
+		name = "PAL_Confronting_Palestinian_rights"
+		texturefile = "gfx/interface/goals/PAL_Confronting_Palestinian_rights.png"
+	}
+	SpriteType = {
+		name = "PAL_Multi_communal_parliament"
+		texturefile = "gfx/interface/goals/PAL_Multi_communal_parliament.png"
+	}
+	SpriteType = {
+		name = "PAL_Implement_a_quarantine_policy"
+		texturefile = "gfx/interface/goals/PAL_Implement_a_quarantine_policy.png"
+	}
+	SpriteType = {
+		name = "PAL_Open_economic_policy"
+		texturefile = "gfx/interface/goals/PAL_Open_economic_policy.png"
+	}
+	SpriteType = {
+		name = "PAL_Expansion_of_the_budget_for_the_Jaffa_Port_project"
+		texturefile = "gfx/interface/goals/PAL_Expansion_of_the_budget_for_the_Jaffa_Port_project.png"
+	}
+	SpriteType = {
+		name = "PAL_Liberals_Party"
+		texturefile = "gfx/interface/goals/PAL_Liberals_Party.png"
+	}
+	SpriteType = {
+		name = "PAL_Increase_the_export_of_products"
+		texturefile = "gfx/interface/goals/PAL_Increase_the_export_of_products.png"
+	}
+	SpriteType = {
+		name = "PAL_Integration_of_the_gendarmerie"
+		texturefile = "gfx/interface/goals/PAL_Integration_of_the_gendarmerie.png"
+	}
+	SpriteType = {
+		name = "PAL_Freedom_for_the_Palestinians"
+		texturefile = "gfx/interface/goals/PAL_Freedom_for_the_Palestinians.png"
+	}
+	SpriteType = {
+		name = "PAL_Revisit_the_Freedom_of_Speech_Amendment"
+		texturefile = "gfx/interface/goals/PAL_Revisit_the_Freedom_of_Speech_Amendment.png"
+	}
+	SpriteType = {
+		name = "PAL_Bicameral_government"
+		texturefile = "gfx/interface/goals/PAL_Bicameral_government.png"
+	}
+	SpriteType = {
+		name = "PAL_The_foundation_of_the_people_the_help_of_clean_officials"
+		texturefile = "gfx/interface/goals/PAL_The_foundation_of_the_people_the_help_of_clean_officials.png"
+	}
+	SpriteType = {
+		name = "PAL_Improve_the_Supreme_Court_system"
+		texturefile = "gfx/interface/goals/PAL_Improve_the_Supreme_Court_system.png"
+	}
+	SpriteType = {
+		name = "PAL_Reform_Party"
+		texturefile = "gfx/interface/goals/PAL_Reform_Party.png"
+	}
+	SpriteType = {
+		name = "PAL_Levy_a_tax_on_the_rich"
+		texturefile = "gfx/interface/goals/PAL_Levy_a_tax_on_the_rich.png"
+	}
+	SpriteType = {
+		name = "PAL_Sanctions_against_the_Ottoman_nobility"
+		texturefile = "gfx/interface/goals/PAL_Sanctions_against_the_Ottoman_nobility.png"
+	}
+	SpriteType = {
+		name = "PAL_Nobility_Property_Law"
+		texturefile = "gfx/interface/goals/PAL_Nobility_Property_Law.png"
+	}
+	SpriteType = {
+		name = "PAL_People_are_equal"
+		texturefile = "gfx/interface/goals/PAL_People_are_equal.png"
+	}
+	SpriteType = {
+		name = "PAL_A_conciliatory_law_was_introduced"
+		texturefile = "gfx/interface/goals/PAL_A_conciliatory_law_was_introduced.png"
+	}
+	SpriteType = {
+		name = "PAL_Thousands_of_rivers_flow_into_the_river_of_Vilaye"
+		texturefile = "gfx/interface/goals/PAL_Thousands_of_rivers_flow_into_the_river_of_Vilaye.png"
+	}
+	SpriteType = {
+		name = "PAL_Increase_the_strength_of_the_gendarmerie"
+		texturefile = "gfx/interface/goals/PAL_Increase_the_strength_of_the_gendarmerie.png"
+	}
+	SpriteType = {
+		name = "PAL_Subdivide_the_management_system"
+		texturefile = "gfx/interface/goals/PAL_Subdivide_the_management_system.png"
+	}
+	SpriteType = {
+		name = "PAL_Attracting_investment_brings_prosperity"
+		texturefile = "gfx/interface/goals/PAL_Attracting_investment_brings_prosperity.png"
+	}
+	SpriteType = {
+		name = "PAL_Develop_borders"
+		texturefile = "gfx/interface/goals/PAL_Develop_borders.png"
+	}
+	SpriteType = {
+		name = "PAL_The_new_king_of_Jerusalem"
+		texturefile = "gfx/interface/goals/PAL_The_new_king_of_Jerusalem.png"
+	}
+	SpriteType = {
+		name = "PAL_The_empire_is_under_the_direct_jurisdiction_of_Vilaye"
+		texturefile = "gfx/interface/goals/PAL_The_empire_is_under_the_direct_jurisdiction_of_Vilaye.png"
+	}
+	SpriteType = {
+		name = "PAL_Suppress_the_nationalist_bug"
+		texturefile = "gfx/interface/goals/PAL_Suppress_the_nationalist_bug.png"
+	}
+	SpriteType = {
+		name = "PAL_Its_a_long_way_to_get_home"
+		texturefile = "gfx/interface/goals/PAL_Its_a_long_way_to_get_home.png"
+	}
+	SpriteType = {
+		name = "PAL_A_permanent_state_of_emergency_was_declared"
+		texturefile = "gfx/interface/goals/PAL_A_permanent_state_of_emergency_was_declared.png"
+	}
+	SpriteType = {
+		name = "PAL_Parliamentary_Tin_House"
+		texturefile = "gfx/interface/goals/PAL_Parliamentary_Tin_House.png"
+	}
+	SpriteType = {
+		name = "PAL_Revise_the_Settlement_Act"
+		texturefile = "gfx/interface/goals/PAL_Revise_the_Settlement_Act.png"
+	}
+	SpriteType = {
+		name = "PAL_Abandon_decentralization"
+		texturefile = "gfx/interface/goals/PAL_Abandon_decentralization.png"
+	}
+	SpriteType = {
+		name = "PAL_Gendarmerie_government"
+		texturefile = "gfx/interface/goals/PAL_Gendarmerie_government.png"
+	}
+	SpriteType = {
+		name = "PAL_The_Future_of_Kemalist_Doctrine_in_Jerusalem"
+		texturefile = "gfx/interface/goals/PAL_The_Future_of_Kemalist_Doctrine_in_Jerusalem.png"
+	}
+	SpriteType = {
+		name = "PAL_The_Empires_Council_of_Economic_Advisers"
+		texturefile = "gfx/interface/goals/PAL_The_Empires_Council_of_Economic_Advisers.png"
+	}
+	SpriteType = {
+		name = "PAL_The_authority_of_the_Ottomans_was_supreme"
+		texturefile = "gfx/interface/goals/PAL_The_authority_of_the_Ottomans_was_supreme.png"
+	}
+	SpriteType = {
+		name = "PAL_Remove_instability"
+		texturefile = "gfx/interface/goals/PAL_Remove_instability.png"
+	}
+	SpriteType = {
+		name = "PAL_The_garrison_took_over_power"
+		texturefile = "gfx/interface/goals/PAL_The_garrison_took_over_power.png"
+	}
+	SpriteType = {
+		name = "PAL_Talat_Pasha_became_the_new_Speaker"
+		texturefile = "gfx/interface/goals/PAL_Talat_Pasha_became_the_new_Speaker.png"
+	}
+	SpriteType = {
+		name = "PAL_kick_down_the_ladder"
+		texturefile = "gfx/interface/goals/PAL_kick_down_the_ladder.png"
+	}
+	SpriteType = {
+		name = "PAL_A_horn_used_to_cut_off_the_tongue"
+		texturefile = "gfx/interface/goals/PAL_A_horn_used_to_cut_off_the_tongue.png"
+	}
+	SpriteType = {
+		name = "PAL_Eliminate_Kemalism"
+		texturefile = "gfx/interface/goals/PAL_Eliminate_Kemalism.png"
+	}
+	SpriteType = {
+		name = "PAL_Shelving_the_Jaffa_seaport_project"
+		texturefile = "gfx/interface/goals/PAL_Shelving_the_Jaffa_seaport_project.png"
+	}
+	SpriteType = {
+		name = "PAL_The_Princes_Tempering"
+		texturefile = "gfx/interface/goals/PAL_The_Princes_Tempering.png"
+	}
+	SpriteType = {
+		name = "PAL_Establishment_of_the_Immigration_Administration"
+		texturefile = "gfx/interface/goals/PAL_Establishment_of_the_Immigration_Administration.png"
+	}
+	SpriteType = {
+		name = "PAL_Establishment_of_the_Central_Security_Service"
+		texturefile = "gfx/interface/goals/PAL_Establishment_of_the_Central_Security_Service.png"
+	}
+	SpriteType = {
+		name = "PAL_Break_down_the_port_of_Jaffa"
+		texturefile = "gfx/interface/goals/PAL_Break_down_the_port_of_Jaffa.png"
+	}
+	SpriteType = {
+		name = "PAL_Expulsion_of_Jews"
+		texturefile = "gfx/interface/goals/PAL_Expulsion_of_Jews.png"
+	}
+	SpriteType = {
+		name = "PAL_Fight_against_PCP"
+		texturefile = "gfx/interface/goals/PAL_Fight_against_PCP.png"
+	}
+	SpriteType = {
+		name = "PAL_Talatism"
+		texturefile = "gfx/interface/goals/PAL_Talatism.png"
+	}
+	SpriteType = {
+		name = "PAL_Palestinian_Quarter"
+		texturefile = "gfx/interface/goals/PAL_Palestinian_Quarter.png"
+	}
+	SpriteType = {
+		name = "PAL_Jerusalem_safe_and_eternal"
+		texturefile = "gfx/interface/goals/PAL_Jerusalem_safe_and_eternal.png"
+	}
+	SpriteType = {
+		name = "Lehi_Stern_withstood_the_pressure"
+		texturefile = "gfx/interface/goals/Lehi_Stern_withstood_the_pressure.png"
+	}
+	SpriteType = {
+		name = "Lehi_Ignoring_calls_for_democracy"
+		texturefile = "gfx/interface/goals/Lehi_Ignoring_calls_for_democracy.png"
+	}
+	SpriteType = {
+		name = "Lehi_Fight_for_freedom_for_the_Motherland"
+		texturefile = "gfx/interface/goals/Lehi_Fight_for_freedom_for_the_Motherland.png"
+	}
+	SpriteType = {
+		name = "Lehi_Win_over_Israeli_youth"
+		texturefile = "gfx/interface/goals/Lehi_Win_over_Israeli_youth.png"
+	}
+	SpriteType = {
+		name = "Lehi_Hit_Maki"
+		texturefile = "gfx/interface/goals/Lehi_Hit_Maki.png"
+	}
+	SpriteType = {
+		name = "Lehi_Expose_the_stupidity_of_David_Ben_Gurion"
+		texturefile = "gfx/interface/goals/Lehi_Expose_the_stupidity_of_David_Ben_Gurion.png"
+	}
+	SpriteType = {
+		name = "Lehi_Authorized_Ahimeir"
+		texturefile = "gfx/interface/goals/Lehi_Authorized_Ahimeir.png"
+	}
+	SpriteType = {
+		name = "Lehi_There_will_be_no_more_Hebron_tragedy"
+		texturefile = "gfx/interface/goals/Lehi_There_will_be_no_more_Hebron_tragedy.png"
+	}
+	SpriteType = {
+		name = "Lehi_Expand_Lehi_mandate"
+		texturefile = "gfx/interface/goals/Lehi_Expand_Lehi_mandate.png"
+	}
+	SpriteType = {
+		name = "Lehi_Completely_shatter_parliamentary_illusions"
+		texturefile = "gfx/interface/goals/Lehi_Completely_shatter_parliamentary_illusions.png"
+	}
+	SpriteType = {
+		name = "Lehi_Standing_in_a_sea_of_blood"
+		texturefile = "gfx/interface/goals/Lehi_Standing_in_a_sea_of_blood.png"
+	}
+	SpriteType = {
+		name = "Lehi_Closure_of_Radio_Free_Palestine"
+		texturefile = "gfx/interface/goals/Lehi_Closure_of_Radio_Free_Palestine.png"
+	}
+	SpriteType = {
+		name = "Lehi_Attacks_on_Arab_settlements"
+		texturefile = "gfx/interface/goals/Lehi_Attacks_on_Arab_settlements.png"
+	}
+	SpriteType = {
+		name = "Lehi_The_Israelites_shook_off_their_chains"
+		texturefile = "gfx/interface/goals/Lehi_The_Israelites_shook_off_their_chains.png"
+	}
+}

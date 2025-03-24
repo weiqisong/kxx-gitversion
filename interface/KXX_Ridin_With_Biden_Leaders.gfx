@@ -7,6 +7,26 @@ spriteTypes = {
 	###民族与革命###
 
 	spriteType = {
+		name = "GFX_Portrait_OTT_Huseyin_Rauf"
+		texturefile = "gfx/leaders/MOJ/Portrait_OTT_Huseyin_Rauf.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_PAL_Husayn_al_Khalidi"
+		texturefile = "gfx/leaders/MOJ/Portrait_PAL_Husayn_al_Khalidi.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_PAL_Raghib_al_Nashashibi"
+		texturefile = "gfx/leaders/MOJ/Portrait_PAL_Raghib_al_Nashashibi.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_PAL_Ahmet_Ferit_Tek"
+		texturefile = "gfx/leaders/MOJ/Portrait_PAL_Ahmet_Ferit_Tek.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_PAL_Hassan_Sidqi_al_Dajani"
+		texturefile = "gfx/leaders/MOJ/Portrait_PAL_Hassan_Sidqi_al_Dajani.png"
+	}
+	spriteType = {
 		name = "GFX_Portrait_Bavaria_Adalbert_Probst"
 		texturefile = "gfx/leaders/BAY/Portrait_Bavaria_Adalbert_Probst.png"
 	}

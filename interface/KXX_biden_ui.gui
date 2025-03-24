@@ -8,6 +8,31 @@ guiTypes = {
 		############民族与革命#############
 		
 		iconType = {
+			name = "Husayn_al_Khalidi" 
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_PAL_Husayn_al_Khalidi"
+		}
+		iconType = {
+			name = "Raghib_al_Nashashibi" 
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_PAL_Raghib_al_Nashashibi"
+		}
+		iconType = {
+			name = "Ahmet_Ferit_Tek" 
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_PAL_Ahmet_Ferit_Tek"
+		}
+		iconType = {
+			name = "Hassan_Sidqi_al_Dajani" 
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_PAL_Hassan_Sidqi_al_Dajani"
+		}
+		iconType = {
+			name = "Huseyin_Rauf_Orbay" 
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_OTT_Huseyin_Rauf"
+		}
+		iconType = {
 			name = "Ali_Munif_Bey" 
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_Ali_Munif_Bey"

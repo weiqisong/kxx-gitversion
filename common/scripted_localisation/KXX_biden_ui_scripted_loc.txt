@@ -7,6 +7,7 @@ defined_text = {
 			OR = {
 				has_country_flag = POL_Jozef_Chacinski_VISIBLE
 				has_country_flag = JAP_Hirohito_VISIBLE
+				has_country_flag = JAP_Yasuhito_VISIBLE
 				has_country_leader = {
 					name = "奥斯曼行政当局"
 					ruling_only = yes
@@ -149,7 +150,7 @@ defined_text = {
 			OR = {
 				has_country_flag = JAP_Hirohito_VISIBLE
 				has_country_flag = JAP_Yasuhito_VISIBLE
-				has_country_flag = Kumazawa_Hiromichi_visible
+				has_country_flag = JAP_Kumazawa_Hiromichi_VISIBLE
 			}
     	}
  		localization_key = JAP_OR_LEADER
@@ -319,6 +320,41 @@ defined_text = {
 	}
 
 	#民族与革命
+	text = {
+		trigger = {
+		  tag = PAL
+		  has_idea = PAL_Huseyin_Rauf_Orbay_hog_sco
+		}
+		localization_key = PAL_OR_LEADER
+	}
+	text = {
+		trigger = {
+		  tag = PAL
+		  has_idea = PAL_Husayn_al_Khalidi_hog_sde
+		}
+		localization_key = PAL_OR_LEADER
+	}
+	text = {
+		trigger = {
+		  tag = PAL
+		  has_idea = PAL_Raghib_al_Nashashibi_hog_mil
+		}
+		localization_key = PAL_OR_LEADER
+	}
+	text = {
+		trigger = {
+		  tag = PAL
+		  has_idea = PAL_Hassan_Sidqi_al_Dajani_hog_sli
+		}
+		localization_key = PAL_OR_LEADER
+	}
+	text = {
+		trigger = {
+		  tag = PAL
+		  has_idea = PAL_Ahmet_Ferit_Tek_hog_sco
+		}
+		localization_key = PAL_OR_LEADER
+	}
 	text = {
     	trigger = {
       		tag = LEB
@@ -579,7 +615,7 @@ defined_text = {
 			OR = {
 				has_country_flag = JAP_Hirohito_VISIBLE
 				has_country_flag = JAP_Yasuhito_VISIBLE
-				has_country_flag = Kumazawa_Hiromichi_visible
+				has_country_flag = JAP_Kumazawa_Hiromichi_VISIBLE
 			}
     	}
  		localization_key = JAP_OR_LEADER1
@@ -744,6 +780,41 @@ defined_text = {
 		localization_key = FRG_OR_LEADER_2
 	}
 	#民族与革命
+	text = {
+		trigger = {
+		  tag = PAL
+		  has_idea = PAL_Huseyin_Rauf_Orbay_hog_sco
+		}
+		localization_key = PAL_OR_LEADER2
+	}
+	text = {
+		trigger = {
+		  tag = PAL
+		  has_idea = PAL_Husayn_al_Khalidi_hog_sde
+		}
+		localization_key = PAL_OR_LEADER2
+	}
+	text = {
+		trigger = {
+		  tag = PAL
+		  has_idea = PAL_Raghib_al_Nashashibi_hog_mil
+		}
+		localization_key = PAL_OR_LEADER2
+	}
+	text = {
+		trigger = {
+		  tag = PAL
+		  has_idea = PAL_Hassan_Sidqi_al_Dajani_hog_sli
+		}
+		localization_key = PAL_OR_LEADER2
+	}
+	text = {
+		trigger = {
+		  tag = PAL
+		  has_idea = PAL_Ahmet_Ferit_Tek_hog_sco
+		}
+		localization_key = PAL_OR_LEADER2
+	}
 	text = {
     	trigger = {
    			tag = LEB
@@ -1089,7 +1160,7 @@ defined_text = {
 	#日本重置
 	text = {
     	trigger = {
-			has_country_flag= Kumazawa_Hiromichi_visible
+			has_country_flag= JAP_Kumazawa_Hiromichi_VISIBLE
     	}
  		localization_key = JAP_OR_Kumazawa
  	}
@@ -1360,6 +1431,36 @@ defined_text = {
 	}
 
 	#民族与革命
+	text = {
+		trigger = {
+		  has_idea = PAL_Husayn_al_Khalidi_hog_sde
+		}
+		localization_key = PAL_Husayn_al_Khalidi_hog_sde
+	}
+	text = {
+		trigger = {
+		  has_idea = PAL_Huseyin_Rauf_Orbay_hog_sco
+		}
+		localization_key = PAL_Huseyin_Rauf_Orbay_hog_sco
+	}
+	text = {
+		trigger = {
+		  has_idea = PAL_Raghib_al_Nashashibi_hog_mil
+		}
+		localization_key = PAL_Raghib_al_Nashashibi_hog_mil
+	}
+	text = {
+		trigger = {
+		  has_idea = PAL_Hassan_Sidqi_al_Dajani_hog_sli
+		}
+		localization_key = PAL_Hassan_Sidqi_al_Dajani_hog_sli
+	}
+	text = {
+		trigger = {
+		  has_idea = PAL_Ahmet_Ferit_Tek_hog_sco
+		}
+		localization_key = PAL_Ahmet_Ferit_Tek_hog_sco
+	}
 	text = {
     	trigger = {
       		tag = LEB
@@ -1645,7 +1746,7 @@ defined_text = {
 	#日本重置
 	text = {
     	trigger = {
-			has_country_flag= Kumazawa_Hiromichi_visible
+			has_country_flag= JAP_Kumazawa_Hiromichi_VISIBLE
     	}
  		localization_key = GFX_Portrait_JAP_Kumazawa
  	}
@@ -1919,6 +2020,36 @@ defined_text = {
 
 
 	#民族与革命
+	text = {
+		trigger = {
+		  has_idea = PAL_Huseyin_Rauf_Orbay_hog_sco
+		}
+		localization_key = GFX_Portrait_OTT_Huseyin_Rauf
+	}
+	text = {
+		trigger = {
+		  has_idea = PAL_Husayn_al_Khalidi_hog_sde
+		}
+		localization_key = GFX_Portrait_PAL_Husayn_al_Khalidi
+	}
+	text = {
+		trigger = {
+		  has_idea = PAL_Raghib_al_Nashashibi_hog_mil
+		}
+		localization_key = GFX_Portrait_PAL_Raghib_al_Nashashibi
+	}
+	text = {
+		trigger = {
+		  has_idea = PAL_Hassan_Sidqi_al_Dajani_hog_sli
+		}
+		localization_key = GFX_Portrait_PAL_Hassan_Sidqi_al_Dajani
+	}
+	text = {
+		trigger = {
+		  has_idea = PAL_Ahmet_Ferit_Tek_hog_sco
+		}
+		localization_key = GFX_Portrait_PAL_Ahmet_Ferit_Tek
+	}
 	text = {
     	trigger = {
       		tag = LEB

@@ -1,5 +1,131 @@
 ideas = {
 	head_of_government = {
+		SUE_Heinrich_August_Meissner_hog_ade = {
+			allowed = { original_tag = SUE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SUE_Heinrich_August_Meissner_hog_ade"
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_the_grand_old_man
+			}
+		}
+		SUE_Fedor_von_Bock_hog_pau = {
+			allowed = { original_tag = SUE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SUE_Fedor_von_Bock_hog_pau"
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_respected_war_hero
+			}
+		}
+		PAL_Husayn_al_Khalidi_hog_sde = {
+			allowed = { original_tag = PAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PAL_Husayn_al_Khalidi_hog_sde"
+			}
+			traits = {
+				speaker_of_the_parliament 
+				social_democrat
+				hog_reformist_soldier
+			}
+		}
+		PAL_Hassan_Sidqi_al_Dajani_hog_sli = {
+			allowed = { original_tag = PAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PAL_Hassan_Sidqi_al_Dajani_hog_sli"
+			}
+			traits = {
+				speaker_of_the_parliament 
+				social_liberal
+				hog_pragmatic_statesman
+			}
+		}
+		PAL_Raghib_al_Nashashibi_hog_mil = {
+			allowed = { original_tag = PAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PAL_Raghib_al_Nashashibi_hog_mil"
+			}
+			traits = {
+				speaker_of_the_parliament 
+				market_liberal
+				hog_the_grand_old_man
+			}
+		}
+		PAL_Ahmet_Ferit_Tek_hog_sco = {
+			allowed = { original_tag = PAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PAL_Ahmet_Ferit_Tek_hog_sco"
+			}
+			traits = {
+				speaker_of_the_parliament 
+				social_conservative
+				hog_gentleman_politician
+			}
+		}
+		PAL_Huseyin_Rauf_Orbay_hog_sco = {
+			allowed = { original_tag = PAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PAL_Huseyin_Rauf_Orbay_hog_sco"
+			}
+			traits = {
+				speaker_of_the_parliament 
+				social_conservative
+				hog_gentleman_politician
+			}
+		}
 		LEB_Akram_al_Haurani_hog_syn = {
 			allowed = { original_tag = LEB }
 			available = {
@@ -109,7 +235,79 @@ ideas = {
 			}
 		}
 	}
-	person_of_influence = {	
+	person_of_influence = {
+		SUE_Max_von_Oppenheim_eco_sco = {
+			allowed = { original_tag = SUE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SUE_Max_von_Oppenheim_eco_sco"
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_oil_baron
+			}
+		}
+		SUE_Oswald_Spengler_for_ade = {
+			allowed = { original_tag = SUE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SUE_Oswald_Spengler_for_ade"
+			}
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_tireless_organiser
+			}
+		}
+		SUE_Fedor_von_Bock_sec_pau = {
+			allowed = { original_tag = SUE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SUE_Fedor_von_Bock_sec_pau"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				hog_old_general
+			}
+		}
+		SUE_Paul_Emilvon_Lettow_Vorbeck_sec_pau = {
+			allowed = { original_tag = SUE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SUE_Paul_Emilvon_Lettow_Vorbeck_sec_pau"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_crime_fighter
+			}
+		}
 		LEB_Munif_al_Razzaz_for_syn = {
 			allowed = { original_tag = LEB }
 			available = {

@@ -1,20 +1,48 @@
 spriteTypes = {	
 	
 	SpriteType = {
-	name = "GFX_idea_ISR_Avraham_Stern_hog_npo"
-	texturefile = "gfx/interface/ministers/ISR/ISR_Avraham_Stern.png"			
+	name = "GFX_idea_SUE_Paul_Emilvon_Lettow_Vorbeck_sec_pau"
+	texturefile = "gfx/interface/ministers/PAL/SUE_Paul_Emilvon_Lettow_Vorbeck.png"			
 	}
 	SpriteType = {
-	name = "GFX_idea_ISR_Nathan_Yellin_Mor_eco_pau"
-	texturefile = "gfx/interface/ministers/ISR/ISR_Nathan_Yellin_Mor.png"			
+	name = "GFX_idea_SUE_Heinrich_August_Meissner_hog_ade"
+	texturefile = "gfx/interface/ministers/PAL/SUE_Heinrich_August_Meissner.png"			
 	}
 	SpriteType = {
-	name = "GFX_idea_ISR_Ya_akov_Meridor_for_pau"
-	texturefile = "gfx/interface/ministers/ISR/ISR_Ya_akov_Meridor.png"			
+	name = "GFX_idea_SUE_Max_von_Oppenheim_eco_sco"
+	texturefile = "gfx/interface/ministers/PAL/SUE_Max_von_Oppenheim.png"			
 	}
 	SpriteType = {
-	name = "GFX_idea_ISR_Eliyahu_Giladi_sec_npo"
-	texturefile = "gfx/interface/ministers/ISR/ISR_Eliyahu_Giladi.png"			
+	name = "GFX_idea_SUE_Oswald_Spengler_for_ade"
+	texturefile = "gfx/interface/ministers/PAL/SUE_Oswald_Spengler.png"			
+	}
+	SpriteType = {
+	name = "GFX_idea_SUE_Fedor_von_Bock_hog_pau"
+	texturefile = "gfx/interface/ministers/PAL/SUE_Fedor_von_Bock.png"			
+	}
+	SpriteType = {
+	name = "GFX_idea_SUE_Fedor_von_Bock_sec_pau"
+	texturefile = "gfx/interface/ministers/PAL/SUE_Fedor_von_Bock.png"			
+	}
+	SpriteType = {
+	name = "GFX_idea_PAL_Husayn_al_Khalidi_hog_sde"
+	texturefile = "gfx/interface/ministers/PAL/PAL_Husayn_al_Khalidi.png"			
+	}
+	SpriteType = {
+	name = "GFX_idea_PAL_Hassan_Sidqi_al_Dajani_hog_sli"
+	texturefile = "gfx/interface/ministers/PAL/PAL_Hassan_Sidqi_al_Dajani.png"			
+	}
+	SpriteType = {
+	name = "GFX_idea_PAL_Raghib_al_Nashashibi_hog_mil"
+	texturefile = "gfx/interface/ministers/PAL/PAL_Raghib_al_Nashashibi.png"			
+	}
+	SpriteType = {
+	name = "GFX_idea_PAL_Ahmet_Ferit_Tek_hog_sco"
+	texturefile = "gfx/interface/ministers/PAL/PAL_Ahmet_Ferit_Tek.png"			
+	}
+	SpriteType = {
+	name = "GFX_idea_PAL_Huseyin_Rauf_Orbay_hog_sco"
+	texturefile = "gfx/interface/ministers/PAL/PAL_Huseyin_Rauf_Orbay.png"			
 	}
 
 }

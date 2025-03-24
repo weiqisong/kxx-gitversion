@@ -510,6 +510,36 @@ scripted_gui = {
 			
 
 			#民族与革命
+			Huseyin_Rauf_Orbay_visible = { #侯赛因·劳夫·奥尔拜
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = PAL_Huseyin_Rauf_Orbay_hog_sco
+				}
+			}
+			Husayn_al_Khalidi_visible = { #侯赛因·哈利迪
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = PAL_Husayn_al_Khalidi_hog_sde
+				}
+			}
+			Raghib_al_Nashashibi_visible = { #拉吉布·纳沙什比
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = PAL_Raghib_al_Nashashibi_hog_mil
+				}
+			}
+			Hassan_Sidqi_al_Dajani_visible = { #哈桑·西德奇·达贾尼
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = PAL_Hassan_Sidqi_al_Dajani_hog_sli
+				}
+			}
+			Ahmet_Ferit_Tek_visible = { #艾哈迈德·费里特·泰克
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = PAL_Ahmet_Ferit_Tek_hog_sco
+				}
+			}
 			Adalbert_Probst_visible = {
 				AND = {
 					has_country_flag = KXX_HOG_veiw

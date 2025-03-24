@@ -1,0 +1,25 @@
+﻿###################
+# Bosnia Events
+###################
+
+add_namespace = sue
+
+country_event = {
+	id = sue.1
+    title = sue.1.t
+    desc = sue.1.d
+	picture = GFX_Goltz_Died
+	
+    is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { 
+		name = sue.1.a
+		create_country_leader = {
+			name = "临时管辖委员会"
+			picture = "gfx/leaders/MOJ/Portrait_SUE_Provisional_Jurisdiction_Committee.png"
+			expire = "1.1.1"
+			ideology = colonial_govt_subtype
+		}
+	}
+}

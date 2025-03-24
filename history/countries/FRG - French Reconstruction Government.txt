@@ -102,26 +102,101 @@ set_politics = {
 }
 
 set_popularities = {
-    totalist = 20
-    radical_socialist = 0
-    syndicalist = 0
-    social_democrat = 0
-    social_liberal = 0
-    market_liberal = 0
-    social_conservative = 0
-    authoritarian_democrat = 0
-    paternal_autocrat = 30
-    national_populist = 50
+	totalist = 4
+	radical_socialist = 10
+	syndicalist = 3
+	social_democrat = 4
+	social_liberal = 4
+	market_liberal = 4
+	social_conservative = 7
+	authoritarian_democrat = 8
+	paternal_autocrat = 22
+	national_populist = 34
 }
 
 FRA = {
 	country_event = { id = frg.1 days = 15 }
 }
-
-add_ideas = {
-
+FRA = {
+	country_event = { id = FruitFarmerRevolution.1 days = 195 }
 }
 
+add_ideas = {
+	FRG_independence_war
+	FRG_A_chaotic_government
+
+	FRG_Robert_Brasillach_hog_npo
+	FRG_POI_Leon_Degrelle_npo
+	FRG_POI_Maurice_Papon_npo
+	FRG_POI_Francis_Delaisi_npo
+}
+
+create_country_leader = {
+	name = "西蒙·萨比亚尼"
+	desc = ""
+	picture = "gfx/leaders/FRG/Portrait_FRG_Simon_Sabiani.png"
+	expire = "1965.1.1"
+	ideology = national_jacobinism_subtype
+}
+
+create_country_leader = {
+	name = "亨利·弗勒奈"
+	picture = "gfx/leaders/FRA/Portrait_FRA_Henri_Frenay.png"
+	expire = "1.1.1"
+	ideology = liberalized_syndicalism_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "达尼埃尔·介朗"
+	picture = "gfx/leaders/FRA/Portrait_France_Daniel_Guerin.png"
+	expire = "1.1.1"
+	ideology = anarcho_communism_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "费利克斯·古安"
+	picture = "gfx/leaders/FRA/Portrait_France_Felix_Gouin.png"
+	expire = "1.1.1"
+	ideology = liberal_socialism_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "加斯东·泰西耶"  # Gaston Tessier
+	picture = "gfx/leaders/FRA/Portrait_FRA_Gaston_Tessier.png"
+	expire = "1.1.1"
+	ideology = soclib_christian_democracy_subtype
+}
+
+create_country_leader = {
+	name = "加斯东·泰西耶"  # Gaston Tessier
+	picture = "gfx/leaders/FRA/Portrait_FRA_Gaston_Tessier.png"
+	expire = "1.1.1"
+	ideology = marlib_christian_democracy_subtype
+}
+
+create_country_leader = {
+	name = "加斯东·泰西耶"  # Gaston Tessier
+	picture = "gfx/leaders/FRA/Portrait_FRA_Gaston_Tessier.png"
+	expire = "1.1.1"
+	ideology = christian_democracy_subtype
+}
+
+create_country_leader = {	
+	name = "加斯东·维达尔"  # Gaston Vidal
+	picture = "gfx/leaders/FRA/Portrait_FRA_Gaston_Vidal.png"
+	expire = "1.1.1"
+	ideology = authdem_paternal_socialism_subtype
+}
+
+create_country_leader = {	
+	name = "安托万·拉·罗卡"  # Gaston Vidal
+	picture = "gfx/leaders/FRG/Portrait_FRG_Antoine_La_Rocca.png"
+	expire = "1.1.1"
+	ideology = pataut_caponism_subtype
+}
 
 create_country_leader = {
   name = "科洛内尔·雷米"  # Colonel Rémy
@@ -130,23 +205,104 @@ create_country_leader = {
   ideology = maurrassism_subtype
 }
 
-create_country_leader = {
-	name = "马塞尔·布卡德"
-	desc = "POLITICS_MARCEL_BUCARD_DESC"
-	picture = "gfx/leaders/FRA/Portrait_France_Marcel_Bucard_Political.png"
-	expire = "1965.1.1"
-	ideology = tot_francism_subtype
+
+
+create_field_marshal = {
+	name = "科洛内尔·雷米"  
+	portrait_path = "gfx/leaders/FRA/Portrait_FRA_Gilbert_Renault_KX.png"
+	traits = {
+	  infantry_officer
+	  trickster
+	  trait_engineer
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
 }
 
-create_country_leader = {
-	name = "保罗·查克"
-	picture = "gfx/leaders/FRG/Portrait_FRA_Paul_Chack.png"
-	desc = ""
-	expire = "1965.1.1"
-	ideology = revolution_nationale_subtype
+
+create_corps_commander = {
+  name = "夏尔-马里·孔戴"  # Charles-Marie Condé
+  portrait_path = "gfx/leaders/FRP/Portrait_FRP_Conde.png"
+  traits = {
+    infantry_officer
+    trickster
+  }
+  skill = 2
+  attack_skill = 1
+  defense_skill = 3
+  planning_skill = 2
+  logistics_skill = 2
 }
-
-
-
-
-
+create_corps_commander = {
+  name = "保罗-安德烈·杜瓦扬"  # Paul-André Doyen
+  portrait_path = "gfx/leaders/FRP/Portrait_FRP_Doyen.png"
+  traits = {
+    infantry_officer
+    trait_engineer
+    trait_mountaineer
+  }
+  skill = 3
+  attack_skill = 2
+  defense_skill = 3
+  planning_skill = 4
+  logistics_skill = 3
+}
+create_corps_commander = {
+  name = "贝特朗·法加尔德"  # Bertrand Fagalde
+  portrait_path = "gfx/leaders/FRP/Portrait_FRP_Fagalde.png"
+  traits = {
+    old_guard
+    trickster
+  }
+  skill = 1
+  attack_skill = 1
+  defense_skill = 2
+  planning_skill = 1
+  logistics_skill = 1
+}
+create_corps_commander = {
+  name = "马塞尔·伊勒尔"  # Marcel Ihler
+  portrait_path = "gfx/leaders/FRP/Portrait_FRP_Ihler.png"
+  traits = {
+    infantry_officer
+    organizer
+  }
+  skill = 2
+  attack_skill = 2
+  defense_skill = 1
+  planning_skill = 2
+  logistics_skill = 2
+}
+create_corps_commander = {
+  name = "亨利·马丁"  # Henry Martin
+  portrait_path = "gfx/leaders/FRP/Portrait_FRP_Martin.png"
+  traits = {
+    career_officer
+    old_guard
+    harsh_leader
+    inflexible_strategist
+  }
+  skill = 3
+  attack_skill = 2
+  defense_skill = 3
+  planning_skill = 1
+  logistics_skill = 2
+}
+create_corps_commander = {
+  name = "夏尔·马斯特"  # Charles Mast
+  portrait_path = "gfx/leaders/FRP/Portrait_FRP_Mast.png"
+  traits = {
+    career_officer
+    infantry_officer
+    organizer
+    skilled_staffer
+  }
+  skill = 2
+  attack_skill = 2
+  defense_skill = 2
+  planning_skill = 3
+  logistics_skill = 2
+}
