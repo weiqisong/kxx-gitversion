@@ -16596,6 +16596,7 @@ focus = FRA_office_des_chemins_de_fer
 		relative_position_id = FRA_sorelians_rule_supreme
 		available = {
 			has_government = totalist
+			has_country_flag = Georges_Valois_dead
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_who_shall_lead"
@@ -35250,7 +35251,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_johnny_comes_forth
-		icon = GFX_RUS_Marxist_Vision
+		icon = GFX_goal_FRA_johnny_comes_forth
 		
 		x = 183
 		y = 41
@@ -35263,11 +35264,12 @@ focus = {
 			ENG = {
 				country_event = kxxfrance.24
 			}
+			
 		}
 	}
 	focus = {
 		id = FRA_edgars_orthodoxism
-		icon = GFX_goal_GER_Hero_Marx
+		icon = GFX_goal_FRA_edgars_orthodoxism
 		relative_position_id = FRA_johnny_comes_forth
 		x = -1
 		y = 1
@@ -35286,7 +35288,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_pauls_agrianism
-		icon = GFX_UKR_Between_Marxism_Narodism
+		icon = GFX_goal_FRA_pauls_agrianism
 		relative_position_id = FRA_johnny_comes_forth
 		x = 1
 		y = 1
@@ -35305,7 +35307,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_union_of_socialist_party
-		icon = GFX_goal_ENG_socialist_rebirth
+		icon = GFX_goal_FRA_union_of_socialist_party
 		relative_position_id = FRA_johnny_comes_forth
 		x = 0
 		y = 2
@@ -35327,7 +35329,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_infrasture_construction
-		icon = GFX_goal_socialist_infrastructure
+		icon = GFX_goal_FRA_infrasture_construction
 		relative_position_id = FRA_johnny_comes_forth
 		x = 0
 		y = 3
@@ -35347,7 +35349,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_technocracy_implement
-		icon = GFX_goal_COR_Attract_Wayward_Technocrats
+		icon = GFX_goal_FRA_technocracy_implement
 		relative_position_id = FRA_johnny_comes_forth
 		x = 2
 		y = 2
@@ -35369,7 +35371,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_intervene_economics
-		icon = GFX_CRM_Economic_Council
+		icon = GFX_goal_FRA_intervene_economics
 		relative_position_id = FRA_johnny_comes_forth
 		x = 2
 		y = 3
@@ -35389,7 +35391,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_medical_care
-		icon = GFX_goal_generic_medical
+		icon = GFX_goal_FRA_medical_care
 		relative_position_id = FRA_johnny_comes_forth
 		x = -2
 		y = 2
@@ -35411,7 +35413,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_absorb_moderate_jacobins
-		icon = GFX_BBR_approach_local_socialists
+		icon = GFX_goal_FRA_absorb_moderate_jacobins
 		relative_position_id = FRA_johnny_comes_forth
 		x = -2
 		y = 3
@@ -35431,7 +35433,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_municipal_reorganize
-		icon = GFX_RUS_Municipalization_Of_Land
+		icon = GFX_goal_FRA_municipal_reorganize
 		relative_position_id = FRA_johnny_comes_forth
 		x = -1
 		y = 4
@@ -35456,7 +35458,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_military_loans
-		icon = GFX_goal_FIU_loans_bailouts
+		icon = GFX_goal_FRA_military_loans
 		relative_position_id = FRA_johnny_comes_forth
 		x = 1
 		y = 4
@@ -35481,7 +35483,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_embrace_paneuropeism
-		icon = GFX_goal_ALB_Europe
+		icon = GFX_goal_FRA_embrace_paneuropeism
 		relative_position_id = FRA_johnny_comes_forth
 		x = -2
 		y = 5
@@ -35504,7 +35506,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_united_west_europe
-		icon = GFX_UKR_Dream_Central_European_Council
+		icon = GFX_goal_FRA_united_west_europe
 		relative_position_id = FRA_johnny_comes_forth
 		x = 0
 		y = 5
@@ -35527,7 +35529,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_liberate_the_colonies
-		icon = GFX_goal_CEA_liberate_equatorial_africa
+		icon = GFX_goal_FRA_liberate_the_colonies
 		relative_position_id = FRA_johnny_comes_forth
 		x = 2
 		y = 5
@@ -42068,6 +42070,7 @@ focus = {
 			add_stability = 0.03
 			add_war_support = 0.04
 			add_popularity = { ideology = totalist popularity = 0.05 }
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -42089,6 +42092,7 @@ focus = {
 			add_popularity = { ideology = totalist popularity = 0.06 }
 			add_manpower = 2000
 			add_war_support = 0.05
+			add_ideas = FRA_society_acephale
 		}
 	}
 	focus = {
@@ -42107,8 +42111,9 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_nietzschean_vanguard"
 			add_political_power = 45
-			add_command_power = 5.5
+			add_command_power = 6
 			add_popularity = { ideology = totalist popularity = 0.04 }
+			add_manpower = 2000
 		}
 	}
 	focus = {
@@ -42134,6 +42139,7 @@ focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_beauty_of_destruction"
 			add_stability = -0.08
 			add_popularity = { ideology = totalist popularity = 0.03 }
+			add_ideas = FRA_beauty_of_destruction
 			add_political_power = 20
 			army_experience = 5
 			add_war_support = 0.1
@@ -42210,6 +42216,10 @@ focus = {
 			add_popularity = { ideology = social_democrat popularity = -0.05 }
 			add_war_support = 0.1
 			army_experience = 8
+			swap_ideas = {
+				remove_idea = FRA_beauty_of_destruction
+				add_idea = FRA_beauty_of_destruction2
+			}
 		}
 	}
 	focus = {
@@ -42231,6 +42241,7 @@ focus = {
 			add_stability = 0.03
 			add_popularity = { ideology = totalist popularity = 0.03 }
 			add_political_power = 10
+			add_ideas = FRA_hete_and_homo
 		}
 	}
 	focus = {
@@ -42253,6 +42264,10 @@ focus = {
 			add_war_support = 0.05
 			add_manpower = 1200
 			add_stability = 0.03
+			swap_ideas = {
+				remove_idea = FRA_hete_and_homo
+				add_idea = FRA_hete_and_homo2
+			}
 		}
 	}
 	focus = {
@@ -42335,6 +42350,7 @@ focus = {
 				uses = 1
 				category = industry
 			}
+			add_ideas = FRA_universal_economics
 		}
 	}
 	focus = {
@@ -42375,6 +42391,10 @@ focus = {
 				}
 				add_extra_state_shared_building_slots = 1
 			}
+			swap_ideas = {
+				remove_idea = FRA_universal_economics
+				add_idea = FRA_universal_economics2
+			}
 		}
 	}
 	focus = {
@@ -42396,6 +42416,10 @@ focus = {
 			add_political_power = 20
 			add_popularity = { ideology = totalist popularity = 0.08 }
 			add_manpower = 1200
+			swap_ideas = {
+				remove_idea = FRA_universal_economics2
+				add_idea = FRA_universal_economics3
+			}
 		}
 	}
 	focus = {
@@ -42417,6 +42441,10 @@ focus = {
 			add_political_power = 35
 			add_popularity = { ideology = totalist popularity = 0.05 }
 			add_war_support = 0.04
+			swap_ideas = {
+				remove_idea = FRA_society_acephale
+				add_idea = FRA_society_acephale2
+			}
 		}
 	}
 	focus = {
@@ -42442,6 +42470,10 @@ focus = {
 			add_command_power = 10
 			add_political_power = 65
 			add_manpower = -200
+			swap_ideas = {
+				remove_idea = FRA_society_acephale2
+				add_idea = FRA_society_acephale3
+			}
 		}
 	}
 	focus = {
@@ -42489,6 +42521,10 @@ focus = {
 					industrial_complex > 0
 				}
 				add_extra_state_shared_building_slots = 2
+			}
+			swap_ideas = {
+				remove_idea = FRA_universal_economics3
+				add_idea = FRA_universal_economics4
 			}
 		}
 	}
@@ -42545,6 +42581,10 @@ focus = {
 				uses = 0.35
 				category = infantry_weapons
 			}
+			swap_ideas = {
+				remove_idea = FRA_beauty_of_destruction2
+				add_idea = FRA_beauty_of_destruction3
+			}
 		}
 	}
 	focus = {
@@ -42566,6 +42606,10 @@ focus = {
 			add_war_support = 0.05
 			add_manpower = 2500
 			add_political_power = 35
+			swap_ideas = {
+				remove_idea = FRA_society_acephale3
+				add_idea = FRA_society_acephale4
+			}
 		}
 	}
 	focus = {
@@ -42596,6 +42640,10 @@ focus = {
 				uses = 0.8
 				category = land_doctrine
 			}
+			swap_ideas = {
+				remove_idea = FRA_beauty_of_destruction3
+				add_idea = FRA_beauty_of_destruction4
+			}
 		}
 	}
 	focus = {
@@ -42619,6 +42667,7 @@ focus = {
 			add_command_power = 15.5
 			add_popularity = { ideology = totalist popularity = 0.08 }
 			add_manpower = 4000
+			add_ideas = FRA_new_order_of_humanity
 		}
 	}
 	focus = {
@@ -42699,6 +42748,10 @@ focus = {
 				bonus = 1
 				uses = 0.35
 				category = land_doctrine
+			}
+			swap_ideas = {
+				remove_idea = FRA_hete_and_homo2
+				add_idea = FRA_hete_and_homo3
 			}
 		}
 	}
@@ -42782,7 +42835,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_legacy_of_deat
-		icon = GFX_goal_WIP
+		icon = GFX_goal_FRA_legacy_of_deat
 		x = 2
 		y = 1
 		relative_position_id = FRA_synarchist_conpiracy
@@ -42842,7 +42895,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_rise_of_purism
-		icon = GFX_goal_WIP
+		icon = GFX_goal_FRA_rise_of_purism
 		x = 0
 		y = 3
 		relative_position_id = FRA_synarchist_conpiracy
@@ -43171,7 +43224,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_to_the_utopia
-		icon = GFX_goal_GER_Vers_Europe_Unie
+		icon = GFX_goal_FRA_to_the_utopia
 		x = 6
 		y = 3
 		relative_position_id = FRA_synarchist_conpiracy
@@ -43199,7 +43252,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_reject_authortianism
-		icon = GFX_RUS_Denounce_Senate_Authoritarianism
+		icon = GFX_goal_FRA_reject_authortianism
 		x = -2
 		y = 1
 		relative_position_id = FRA_to_the_utopia
@@ -43227,7 +43280,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_new_monied_system
-		icon = GFX_goal_CSA_price_controls
+		icon = GFX_goal_FRA_new_monied_system
 		x = 0
 		y = 1
 		relative_position_id = FRA_to_the_utopia
@@ -43255,7 +43308,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_rebuild_union_system
-		icon = GFX_goal_CSA_american_guildism
+		icon = GFX_goal_FRA_rebuild_union_system
 		x = 2
 		y = 1
 		relative_position_id = FRA_to_the_utopia
@@ -43283,7 +43336,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_international_pacifism_appeals
-		icon = GFX_goal_GUA_Pacifism_World_Stage
+		icon = GFX_goal_FRA_international_pacifism_appeals
 		x = -1
 		y = 2
 		relative_position_id = FRA_to_the_utopia
@@ -43316,7 +43369,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_redress_anarchists
-		icon = GFX_FAUD_PROMOTE_ANARCHISM
+		icon = GFX_goal_FRA_redress_anarchists
 		x = 1
 		y = 2
 		relative_position_id = FRA_to_the_utopia
@@ -43349,7 +43402,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_labor_protection_bureau
-		icon = GFX_goal_MEX_Enshrine_Rights_Workers_Laborers
+		icon = GFX_goal_FRA_labor_protection_bureau
 		x = -2
 		y = 3
 		relative_position_id = FRA_to_the_utopia
@@ -43380,7 +43433,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_remove_oligarchy
-		icon = GFX_goal_CSA_liquidate_bourgeoisie
+		icon = GFX_goal_FRA_remove_oligarchy
 		x = 0
 		y = 3
 		relative_position_id = FRA_to_the_utopia
@@ -43411,7 +43464,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_syndical_repubic
-		icon = GFX_goal_CEA_new_syndicalist_society
+		icon = GFX_goal_FRA_syndical_repubic
 		x = 2
 		y = 3
 		relative_position_id = FRA_to_the_utopia
@@ -43442,7 +43495,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_era_of_prosper
-		icon = GFX_goal_MNT_decade_to_prosperity
+		icon = GFX_goal_FRA_era_of_prosper
 		x = 0
 		y = 4
 		relative_position_id = FRA_to_the_utopia
@@ -43475,7 +43528,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_uniting_europa
-		icon = GFX_goal_GER_Pax_Europaea
+		icon = GFX_goal_FRA_uniting_europa
 		x = 0
 		y = 5
 		relative_position_id = FRA_to_the_utopia
@@ -43503,7 +43556,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_the_flesh_is_weak
-		icon = GFX_goal_WIP
+		icon = GFX_goal_FRA_the_flesh_is_weak
 		x = 13
 		y = 3
 		relative_position_id = FRA_synarchist_conpiracy
@@ -43531,7 +43584,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_estabilish_COST
-		icon = GFX_goal_CSA_Technocracy_Committee
+		icon = GFX_goal_FRA_estabilish_COST
 		x = 0
 		y = 1
 		relative_position_id = FRA_the_flesh_is_weak
@@ -43559,7 +43612,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_indivisual_marxism
-		icon = GFX_goal_GER_Marx_German_Reformer
+		icon = GFX_goal_FRA_indivisual_marxism
 		x = -1
 		y = 2
 		relative_position_id = FRA_the_flesh_is_weak
@@ -43587,7 +43640,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_economic_humanism
-		icon = GFX_goal_COR_Equal_Economic_Political_Legal_Rights
+		icon = GFX_goal_FRA_economic_humanism
 		x = 1
 		y = 2
 		relative_position_id = FRA_the_flesh_is_weak
@@ -43615,7 +43668,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_transhumanism
-		icon = GFX_goal_CSA_heresy
+		icon = GFX_goal_FRA_transhumanism
 		x = 0
 		y = 3
 		relative_position_id = FRA_the_flesh_is_weak
@@ -43645,7 +43698,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_addtions_of_reason
-		icon = GFX_goals_FRA_reason
+		icon = GFX_goal_FRA_addtions_of_reason
 		x = -2
 		y = 4
 		relative_position_id = FRA_the_flesh_is_weak
@@ -43673,7 +43726,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_rationlize_economy
-		icon = GFX_goal_AUS_Productive_Rationality
+		icon = GFX_goal_FRA_rationlize_economy
 		x = 0
 		y = 4
 		relative_position_id = FRA_the_flesh_is_weak
@@ -43701,7 +43754,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_quality_beyond_numbers
-		icon = GFX_goal_NEE_Spiritual_Awakening
+		icon = GFX_goal_FRA_quality_beyond_numbers
 		x = 2
 		y = 4
 		relative_position_id = FRA_the_flesh_is_weak
@@ -43729,7 +43782,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_enhance_humans
-		icon = GFX_goal_MEX_Adapt_Totalism
+		icon = GFX_goal_FRA_enhance_humans
 		x = -1
 		y = 5
 		relative_position_id = FRA_the_flesh_is_weak
@@ -43762,7 +43815,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_to_the_space
-		icon = GFX_goal_NEE_Fly_Me_To_Moon
+		icon = GFX_goal_FRA_to_the_space
 		x = 1
 		y = 5
 		relative_position_id = FRA_the_flesh_is_weak
@@ -43795,7 +43848,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_beyond_extreme
-		icon = GFX_goal_NEE_Accelerate_Left_Reformism
+		icon = GFX_goal_FRA_beyond_extreme
 		x = 0
 		y = 6
 		relative_position_id = FRA_the_flesh_is_weak
@@ -43826,7 +43879,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_burhnamites_in_france
-		icon = GFX_goal_WIP
+		icon = GFX_goal_FRA_burhnamites_in_france
 		x = -6
 		y = 3
 		relative_position_id = FRA_synarchist_conpiracy
@@ -43854,7 +43907,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_atlantic_totalism
-		icon = GFX_goal_CSA_asserting_the_apparatus
+		icon = GFX_goal_FRA_atlantic_totalism
 		x = -1
 		y = 1
 		relative_position_id = FRA_burhnamites_in_france
@@ -43882,7 +43935,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_patriotic_socialism
-		icon = GFX_goal_GER_Moderated_Revolutionary_Patriotism
+		icon = GFX_goal_FRA_patriotic_socialism
 		x = 1
 		y = 1
 		relative_position_id = FRA_burhnamites_in_france
@@ -43910,7 +43963,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_manageism_system
-		icon = GFX_BBR_collective_management
+		icon = GFX_goal_FRA_manageism_system
 		x = -2
 		y = 2
 		relative_position_id = FRA_burhnamites_in_france
@@ -43940,7 +43993,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_break_marxism_stereotype
-		icon = GFX_goal_GER_Red_Marx
+		icon = GFX_goal_FRA_break_marxism_stereotype
 		x = 0
 		y = 2
 		relative_position_id = FRA_burhnamites_in_france
@@ -43970,7 +44023,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_machiaville_enlightment
-		icon = GFX_goal_CSA_Machevellii
+		icon = GFX_goal_FRA_machiaville_enlightment
 		x = 2
 		y = 2
 		relative_position_id = FRA_burhnamites_in_france
@@ -44000,7 +44053,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_new_industrial_state
-		icon = GFX_RUS_Moderate_Industrialization
+		icon = GFX_goal_FRA_new_industrial_state
 		x = -1
 		y = 3
 		relative_position_id = FRA_burhnamites_in_france
@@ -44033,7 +44086,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_ultimatum_to_socdems
-		icon = GFX_HUN_social_democracy
+		icon = GFX_goal_FRA_ultimatum_to_socdems
 		x = 1
 		y = 3
 		relative_position_id = FRA_burhnamites_in_france
@@ -44066,7 +44119,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_production_management_office
-		icon = GFX_goal_AUS_field_factory
+		icon = GFX_goal_FRA_production_management_office
 		x = -1
 		y = 4
 		relative_position_id = FRA_burhnamites_in_france
@@ -44094,7 +44147,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_absolute_loyalty
-		icon = GFX_goal_ENG_empower_loyalists
+		icon = GFX_goal_FRA_absolute_loyalty
 		x = 1
 		y = 4
 		relative_position_id = FRA_burhnamites_in_france
@@ -44122,7 +44175,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_power_safety_honor
-		icon = GFX_BBR_power_of_faith
+		icon = GFX_goal_FRA_power_safety_honor
 		x = 0
 		y = 5
 		relative_position_id = FRA_burhnamites_in_france
@@ -44152,7 +44205,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_triumph_of_orthodox_technocracy
-		icon = GFX_goal_GER_Synarchy_Technocrats
+		icon = GFX_goal_FRA_triumph_of_orthodox_technocracy
 
 		x = -13
 		y = 3
@@ -44293,7 +44346,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_relation_with_nationalists
-		icon = GFX_goal_WIP
+		icon = GFX_goal_FRA_relation_with_nationalists
 		x = -3
 		y = 3
 		relative_position_id = FRA_triumph_of_orthodox_technocracy
