@@ -21829,7 +21829,7 @@ focus = FRA_office_des_chemins_de_fer
 	available = {
 		always = no
 	}
-	x = 90
+	x = 100
 	y = 30
 	cost = 2
 	ai_will_do = {
@@ -22194,7 +22194,7 @@ focus = {
 		prerequisite = {
 			focus = FRA_Paris_en_ordre
 		}
-		x = -24
+		x = -30
 		y = 1
 		relative_position_id = FRA_Paris_en_ordre
 		cost = 2
@@ -22742,6 +22742,626 @@ focus = {
 		relative_position_id = FRA_Nation_Reconstituted
 		x = 0
 		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_restore_calavry_spirits
+		icon = GFX_goal_ROM_Legionary_Revolution
+		
+		prerequisite = {
+			focus = FRA_Paris_en_ordre
+		}
+		available = {
+			always = no
+		}
+		relative_position_id = FRA_Paris_en_ordre
+		x = 30
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_nationalist_allies
+		icon = GFX_goal_FRA_nationalist_allies
+		
+		prerequisite = {
+			focus = FRA_restore_calavry_spirits
+		}
+		relative_position_id = FRA_restore_calavry_spirits
+		x = -2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_destory_socialist_bandits
+		icon = GFX_goal_BEL_Crush_Socialist_Rabble
+		
+		prerequisite = {
+			focus = FRA_restore_calavry_spirits
+		}
+		relative_position_id = FRA_restore_calavry_spirits
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_restore_christian_spirit
+		icon = GFX_goal_NYC_Christian_Front
+		
+		prerequisite = {
+			focus = FRA_restore_calavry_spirits
+		}
+		relative_position_id = FRA_restore_calavry_spirits
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_approach_agarians
+		icon = GFX_goal_TEX_farmer_labor_organization
+		
+		prerequisite = {
+			focus = FRA_nationalist_allies
+		}
+		prerequisite = {
+			focus = FRA_destory_socialist_bandits
+		}
+		relative_position_id = FRA_restore_calavry_spirits
+		x = -1
+		y = 2
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_reestablish_templar
+		icon = GFX_goal_NFA_Bolster_Nationalism
+		
+		prerequisite = {
+			focus = FRA_restore_christian_spirit
+		}
+		prerequisite = {
+			focus = FRA_destory_socialist_bandits
+		}
+		relative_position_id = FRA_restore_calavry_spirits
+		x = 1
+		y = 2
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_renaissence_of_france
+		icon = GFX_goal_NFA_Youth_Devotion
+		
+		prerequisite = {
+			focus = FRA_approach_agarians
+		}
+		prerequisite = {
+			focus = FRA_reestablish_templar
+		}
+		relative_position_id = FRA_restore_calavry_spirits
+		x = 0
+		y = 3
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_autonomy_of_ethnics
+		icon = GFX_goal_FIU_ethnic_understanding
+		
+		prerequisite = {
+			focus = FRA_renaissence_of_france
+		}
+		
+		relative_position_id = FRA_restore_calavry_spirits
+		x = -2
+		y = 4
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_return_to_earth
+		icon = GFX_goal_CSA_agricultural_revolution
+		
+		prerequisite = {
+			focus = FRA_renaissence_of_france
+		}
+		
+		relative_position_id = FRA_restore_calavry_spirits
+		x = -1
+		y = 5
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_legionary_state
+		icon = GFX_PAP_legionary_spirit
+		
+		prerequisite = {
+			focus = FRA_renaissence_of_france
+		}
+		
+		relative_position_id = FRA_restore_calavry_spirits
+		x = 2
+		y = 4
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_aristocracy_populism
+		icon = GFX_goal_ATH_aristocracy
+		
+		prerequisite = {
+			focus = FRA_renaissence_of_france
+		}
+		
+		relative_position_id = FRA_restore_calavry_spirits
+		x = 1
+		y = 5
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_spritual_revolution
+		icon = GFX_goal_COR_spirit_age
+		
+		prerequisite = {
+			focus = FRA_renaissence_of_france
+		}
+		
+		relative_position_id = FRA_restore_calavry_spirits
+		x = 0
+		y = 4
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_aryan_socialism
+		icon = GFX_goal_AUS_Geist_Ariosophie
+		
+		prerequisite = {
+			focus = FRA_autonomy_of_ethnics
+		}
+		prerequisite = {
+			focus = FRA_spritual_revolution
+		}
+		prerequisite = {
+			focus = FRA_return_to_earth
+		}
+		prerequisite = {
+			focus = FRA_aristocracy_populism
+		}
+		prerequisite = {
+			focus = FRA_legionary_state
+		}
+		relative_position_id = FRA_restore_calavry_spirits
+		x = 0
+		y = 6
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_towards_a_free_europe
+		icon = GFX_goal_COR_Imperium_Rise
+		
+		prerequisite = {
+			focus = FRA_aryan_socialism
+		}
+		
+		relative_position_id = FRA_restore_calavry_spirits
+		x = 0
+		y = 7
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_resurgent_of_sansimonism
+		icon = GFX_goal_GER_Vision_Saint_Simon
+		
+		prerequisite = {
+			focus = FRA_Paris_en_ordre
+		}
+		available = {
+			always = no
+		}
+		relative_position_id = FRA_Paris_en_ordre
+		x = -24
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_absorb_sorelians
+		icon = GFX_goal_FRA_absorb_sorelians
+		
+		prerequisite = {
+			focus = FRA_resurgent_of_sansimonism
+		}
+		relative_position_id = FRA_resurgent_of_sansimonism
+		x = -2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_establish_BS
+		icon = GFX_goal_secret_police
+		
+		prerequisite = {
+			focus = FRA_resurgent_of_sansimonism
+		}
+		relative_position_id = FRA_resurgent_of_sansimonism
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_integrate_technocrats
+		icon = GFX_goal_CSA_Technocracy_Committee
+		
+		prerequisite = {
+			focus = FRA_resurgent_of_sansimonism
+		}
+		relative_position_id = FRA_resurgent_of_sansimonism
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_end_jacobinism
+		icon = GFX_goal_NIC_Move_Against_Liberals
+		
+		prerequisite = {
+			focus = FRA_absorb_sorelians
+		}
+		prerequisite = {
+			focus = FRA_establish_BS
+		}
+		relative_position_id = FRA_resurgent_of_sansimonism
+		x = -1
+		y = 2
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_end_syndicalism
+		icon = GFX_goal_UK_ban_unions
+		
+		prerequisite = {
+			focus = FRA_integrate_technocrats
+		}
+		prerequisite = {
+			focus = FRA_establish_BS
+		}
+		relative_position_id = FRA_resurgent_of_sansimonism
+		x = 1
+		y = 2
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_bulid_the_phalanstere
+		icon = GFX_goal_AUS_aid_post_habsburg
+		
+		prerequisite = {
+			focus = FRA_end_jacobinism
+		}
+		prerequisite = {
+			focus = FRA_end_syndicalism
+		}
+		relative_position_id = FRA_resurgent_of_sansimonism
+		x = 0
+		y = 3
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_love_thy_neighbor
+		icon = GFX_ITA_christbol
+		
+		prerequisite = {
+			focus = FRA_bulid_the_phalanstere
+		}
+		
+		relative_position_id = FRA_resurgent_of_sansimonism
+		x = -2
+		y = 4
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_wave_of_industrialization
+		icon = GFX_goal_AUS_field_factory
+		
+		prerequisite = {
+			focus = FRA_bulid_the_phalanstere
+		}
+		
+		relative_position_id = FRA_resurgent_of_sansimonism
+		x = 0
+		y = 4
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_duty_of_national_defence
+		icon = GFX_goal_FRA_Defence_Revolution
+		
+		prerequisite = {
+			focus = FRA_bulid_the_phalanstere
+		}
+		
+		relative_position_id = FRA_resurgent_of_sansimonism
+		x = 2
+		y = 4
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_new_third_council
+		icon = GFX_GRU_COUNCILISM
+		
+		prerequisite = {
+			focus = FRA_bulid_the_phalanstere
+		}
+		
+		relative_position_id = FRA_resurgent_of_sansimonism
+		x = -1
+		y = 5
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_cult_of_science
+		icon = GFX_goal_AUS_aggressive_reconstruction
+		
+		prerequisite = {
+			focus = FRA_bulid_the_phalanstere
+		}
+		
+		relative_position_id = FRA_resurgent_of_sansimonism
+		x = 1
+		y = 5
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_sansimon_dream_realized
+		icon = GFX_goal_COR_No_Revolution_No_Reaction
+		
+		prerequisite = {
+			focus = FRA_love_thy_neighbor
+		}
+		prerequisite = {
+			focus = FRA_new_third_council
+		}
+		prerequisite = {
+			focus = FRA_wave_of_industrialization
+		}
+		prerequisite = {
+			focus = FRA_duty_of_national_defence
+		}
+		prerequisite = {
+			focus = FRA_cult_of_science
+		}
+		relative_position_id = FRA_resurgent_of_sansimonism
+		x = 0
+		y = 6
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			custom_effect_tooltip = FRA_europe_tooltip
+			unlock_decision_tooltip = FRA_claim_deat_europe
+		}
+	}
+	focus = {
+		id = FRA_fraternal_europe
+		icon = GFX_goal_ALB_Europe
+		
+		prerequisite = {
+			focus = FRA_sansimon_dream_realized
+		}
+		
+		relative_position_id = FRA_resurgent_of_sansimonism
+		x = 0
+		y = 7
 		cost = 4
 		ai_will_do = {
 			factor = 1000
@@ -35255,6 +35875,9 @@ focus = {
 		
 		x = 183
 		y = 41
+		available = {
+			always = no
+		}
 		cost = 4
 		 
 		ai_will_do = {
@@ -42041,6 +42664,9 @@ focus = {
 		icon = GFX_goal_FRA_revolt_of_the_masters
 		x = 60
 		y = 15
+		available = {
+			always = no
+		}
 		cost = 4
 		ai_will_do = {
 			factor = 1
@@ -42764,6 +43390,9 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			always = no
+		}
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
@@ -42923,7 +43552,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_pure_order
-		icon = GFX_goal_COR_State_Supreme_Orderer
+		icon = GFX_goal_FRA_pure_order
 		x = -1
 		y = 1
 		relative_position_id = FRA_rise_of_purism
@@ -42951,7 +43580,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_pure_race
-		icon = GFX_goal_BUL_the_bulgarian_race
+		icon = GFX_goal_FRA_pure_race
 		x = 1
 		y = 1
 		relative_position_id = FRA_rise_of_purism
@@ -42979,7 +43608,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_technocratic_urbanism
-		icon = GFX_goal_KIV_urban
+		icon = GFX_goal_FRA_technocratic_urbanism
 		x = -2
 		y = 2
 		relative_position_id = FRA_rise_of_purism
@@ -43009,7 +43638,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_erdicate_anti_france
-		icon = GFX_NFA_crush_anti_france
+		icon = GFX_goal_FRA_erdicate_anti_france
 		x = 0
 		y = 2
 		relative_position_id = FRA_rise_of_purism
@@ -43039,7 +43668,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_eugenic_ideas
-		icon = GFX_NEE_stoddard_regime
+		icon = GFX_goal_FRA_eugenic_ideas
 		x = 2
 		y = 2
 		relative_position_id = FRA_rise_of_purism
@@ -43069,7 +43698,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_nation_city_collective
-		icon = GFX_CAL_focus_collective_housing
+		icon = GFX_goal_FRA_nation_city_collective
 		x = -1
 		y = 3
 		relative_position_id = FRA_rise_of_purism
@@ -43102,7 +43731,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_new_human
-		icon = GFX_goal_AUS_eagle_fallen
+		icon = GFX_goal_FRA_new_human
 		x = 1
 		y = 3
 		relative_position_id = FRA_rise_of_purism
@@ -43135,7 +43764,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_perfect_system
-		icon = GFX_goal_CSA_Perfect_Purify_Democratic_System
+		icon = GFX_goal_FRA_perfect_system
 		x = 0
 		y = 4
 		relative_position_id = FRA_rise_of_purism
@@ -43166,7 +43795,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_geometry_hyigene_purity
-		icon = GFX_goal_COL_Catholic_Pure_Colombia
+		icon = GFX_goal_FRA_geometry_hyigene_purity
 		x = -1
 		y = 5
 		relative_position_id = FRA_rise_of_purism
@@ -43195,7 +43824,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_order_strong_ration
-		icon = GFX_goal_NFA_Service_Emperor_Order_Legion
+		icon = GFX_goal_FRA_order_strong_ration
 		x = 1
 		y = 5
 		relative_position_id = FRA_rise_of_purism
@@ -44234,7 +44863,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_thought_of_scott
-		icon = GFX_goal_CSA_Scott_Cult
+		icon = GFX_goal_FRA_thought_of_scott
 		x = -1
 		y = 1
 		relative_position_id = FRA_triumph_of_orthodox_technocracy
@@ -44262,7 +44891,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_implement_of_ford
-		icon = GFX_goal_COR_Throw_Spanner_Ford
+		icon = GFX_goal_FRA_implement_of_ford
 		x = 1
 		y = 1
 		relative_position_id = FRA_triumph_of_orthodox_technocracy
@@ -44290,7 +44919,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_council_not_sydicate
-		icon = GFX_goal_COR_fordism
+		icon = GFX_goal_FRA_council_not_sydicate
 		x = -1
 		y = 2
 		relative_position_id = FRA_triumph_of_orthodox_technocracy
@@ -44318,7 +44947,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_introduce_taylorism
-		icon = GFX_goal_COR_Establish_Fordist_Economy
+		icon = GFX_goal_FRA_introduce_taylorism
 		x = 1
 		y = 2
 		relative_position_id = FRA_triumph_of_orthodox_technocracy
@@ -44376,7 +45005,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_Charte_du_travail
-		icon = GFX_CAL_workers_compensation_act
+		icon = GFX_goal_FRA_Charte_du_travail
 		x = -1
 		y = 3
 		relative_position_id = FRA_triumph_of_orthodox_technocracy
@@ -44406,7 +45035,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_industrial_science
-		icon = GFX_CAL_new_sciences
+		icon = GFX_goal_FRA_industrial_science
 		x = 1
 		y = 3
 		relative_position_id = FRA_triumph_of_orthodox_technocracy
@@ -44436,7 +45065,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_revitalize_car_industry
-		icon = GFX_goal_generic_armored_cars
+		icon = GFX_goal_FRA_revitalize_car_industry
 		x = 3
 		y = 3
 		relative_position_id = FRA_triumph_of_orthodox_technocracy
@@ -44466,7 +45095,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_perfect_technate
-		icon = GFX_CSA_technocrat_logo
+		icon = GFX_goal_FRA_perfect_technate
 		x = 0
 		y = 4
 		relative_position_id = FRA_triumph_of_orthodox_technocracy
@@ -44502,7 +45131,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_justice_friendship_cooperation
-		icon = GFX_goal_NEE_Replace_Aristocracy_Technocracy
+		icon = GFX_goal_FRA_justice_friendship_cooperation
 		x = 0
 		y = 5
 		relative_position_id = FRA_triumph_of_orthodox_technocracy

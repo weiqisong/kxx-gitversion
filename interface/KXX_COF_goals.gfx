@@ -912,4 +912,88 @@ spriteTypes = {
 		name = "GFX_goal_FRA_military_loans"
 		texturefile = "gfx/interface/goals/KXX_COF/FIU_loans_bailouts.png"
 	}
+	spriteType = {
+		name = "GFX_goal_FRA_pure_order"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_pure_order.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_pure_race"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_pure_race.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_technocratic_urbanism"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_technocratic_urbanism.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_erdicate_anti_france"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_erdicate_anti_france.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_eugenic_ideas"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_eugenic_ideas.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_nation_city_collective"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_nation_city_collective.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_new_human"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_new_human.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_perfect_system"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_perfect_system.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_geometry_hyigene_purity"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_geometry_hyigene_purity.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_order_strong_ration"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_order_strong_ration.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_thought_of_scott"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_thought_of_scott.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_implement_of_ford"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_implement_of_ford.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_council_not_sydicate"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_council_not_sydicate.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_introduce_taylorism"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_introduce_taylorism.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_relation_with_nationalists"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_relation_with_nationalists.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_Charte_du_travail"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_Charte_du_travail.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_industrial_science"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_industrial_science.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_revitalize_car_industry"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_revitalize_car_industry.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_perfect_technate"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_perfect_technate.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_justice_friendship_cooperation"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_justice_friendship_cooperation.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_nationalist_allies"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_nationalist_allies.png"
+	}
 }

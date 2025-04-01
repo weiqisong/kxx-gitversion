@@ -1094,7 +1094,88 @@ country_event = {	#戴亚选举第二部分
 			 
 		}
 	}
-
+	option = { 
+		name = kxxfrance.30.e #dysutopia
+		ai_chance = {
+			factor = 50
+		}
+		create_country_leader = {
+			name = "皮埃尔·普丘"
+			picture = "gfx/leaders/FRP/Portrait_France_Pierre_Pucheu.png"
+			expire = "1.1.1"
+			traits = {  }
+			ideology = radsoc_saint_simonianism_subtype
+		}
+		set_politics = {
+			ruling_party = radical_socialist
+		}
+		
+		set_party_name = {
+			ideology = radical_socialist
+			long_name = "共治帝国运动—圣西门主义派"
+			name = "共治帝国运动—圣西门主义派"
+		}
+		set_cosmetic_tag = FRA_sansimon
+		hidden_effect = {	
+			remove_ideas_with_trait = head_of_government
+			add_ideas = FRA_Roger_Gaurady_hog_tot
+			remove_ideas_with_trait = foreign_minister
+			add_ideas = FRA_Paul_Rassinier_for_tot
+			remove_ideas_with_trait = economy_minister
+			add_ideas = FRA_Khalid_ibn_Hashim_eco_tot
+			remove_ideas_with_trait = security_minister
+			add_ideas = FRA_Abbe_Pierre_sec_tot
+			add_popularity = {
+			  ideology = totalist
+			   popularity = 0.20
+			}
+			complete_national_focus = FRA_resurgent_of_sansimonism
+			remove_ideas = FRA_valois_dead_idea
+			remove_ideas = French_Revanchism_idea
+			 
+		}
+	}
+	option = { 
+		name = kxxfrance.30.f #red flood again and again
+		ai_chance = {
+			factor = 50
+		}
+		create_country_leader = {
+			name = "阿尔方斯·德·沙托布里昂"
+			picture = "gfx/leaders/FRP/Portrait_France_Alphonse_de_Chateaubriant.png"
+			expire = "1.1.1"
+			traits = {  }
+			ideology = popular_legionism
+		}
+		set_politics = {
+			ruling_party = totalist
+		}
+		
+		set_party_name = {
+			ideology = totalist
+			long_name = "民族革命阵线"
+			name = "民族革命阵线"
+		}
+		set_cosmetic_tag = FRA_legionary
+		hidden_effect = {	
+			remove_ideas_with_trait = head_of_government
+			add_ideas = FRA_Roger_Gaurady_hog_tot
+			remove_ideas_with_trait = foreign_minister
+			add_ideas = FRA_Paul_Rassinier_for_tot
+			remove_ideas_with_trait = economy_minister
+			add_ideas = FRA_Khalid_ibn_Hashim_eco_tot
+			remove_ideas_with_trait = security_minister
+			add_ideas = FRA_Abbe_Pierre_sec_tot
+			add_popularity = {
+			  ideology = totalist
+			   popularity = 0.20
+			}
+			complete_national_focus = FRA_restore_calavry_spirits
+			remove_ideas = FRA_valois_dead_idea
+			remove_ideas = French_Revanchism_idea
+			 
+		}
+	}
 	option = { 
 		name = kxxfrance.30.b #who fucking cares just a cringe commie chad
 		ai_chance = {
