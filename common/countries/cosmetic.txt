@@ -10343,3 +10343,35 @@ FRA_Sorel_Capitiens_Frankish = {
 	color = rgb { 138 28 33 }
 	color_ui = rgb { 138 28 33 }
 }
+FRA_islam = {
+	color = rgb { 67 132 92 }
+	color_ui = rgb { 67 132 92 }
+}
+FRA_islam_larp = {
+	color = rgb { 67 132 92 }
+	color_ui = rgb { 67 132 92 }
+}
+FRA_legionary = {
+	color = rgb { 132 67 110 }
+	color_ui = rgb { 67 132 392 }
+}
+FRA_legionary_europe = {
+	color = rgb { 132 67 110 }
+	color_ui = rgb { 67 132 392 }
+}
+FRA_batailles = {
+	color = rgb {  0  18  93 }
+	color_ui = rgb {  0  18  93 }
+}
+FRA_acephale_accelerationism = {
+	color = rgb {  0  18  93 }
+	color_ui = rgb {  0  18  93 }
+}
+FRA_sansimon = {
+	color = rgb { 98 67 132 }
+	color_ui = rgb { 98 67 132 }
+}
+FRA_sansimon_europe = {
+	color = rgb { 98 67 132 }
+	color_ui = rgb { 98 67 132 }
+}

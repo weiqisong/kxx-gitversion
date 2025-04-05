@@ -3254,9 +3254,7 @@ focus = {
 				add_idea = FRA_billotte_military_plan_3
 			}
 		}
-		custom_effect_tooltip = tooltip_white_line
-		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = panhard
+	
 	}
 }
 focus = {
@@ -22771,8 +22769,7 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -22791,8 +22788,13 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.1
+			}
+			add_political_power = 100
+			add_war_support = 0.1
+			add_command_power = 50
 		}
 	}
 	focus = {
@@ -22811,8 +22813,13 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = -0.1
+			}
+			add_manpower = -1000
+			remove_ideas = FRA_black_guard_insurgency_idea
+			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -22831,8 +22838,7 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			add_ideas = FRA_christian_spirit
 		}
 	}
 	focus = {
@@ -22854,8 +22860,21 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			set_party_name = {
+				ideology = radical_socialist
+				long_name = FRA_dorgeres_party
+				name = FRA_dorgeres_party
+			}
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.1
+			}
+			add_radsoc_to_coalition = yes
+			add_manpower = 1000
 		}
 	}
 	focus = {
@@ -22877,8 +22896,7 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			add_ideas = FRA_reestablish_templar	
 		}
 	}
 	focus = {
@@ -22900,8 +22918,7 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			add_ideas = FRA_renaissence_of_france
 		}
 	}
 	focus = {
@@ -22921,8 +22938,28 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = FRA
+				}
+				increase_state_category_by_two_levels = yes
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = FRA
+				}
+				increase_state_category_by_two_levels = yes
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = FRA
+				}
+				increase_state_category_by_two_levels = yes
+			}
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -22942,8 +22979,11 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_ideas = FRA_industral_democracy
 		}
 	}
 	focus = {
@@ -22963,8 +23003,10 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			swap_ideas = {
+				remove_idea = FRA_reestablish_templar 
+				add_idea = FRA_legionary_state
+			}
 		}
 	}
 	focus = {
@@ -22984,8 +23026,19 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			add_war_support = 0.1
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 5000
+			}	
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 2500
+			}	
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1000
+			}	
 		}
 	}
 	focus = {
@@ -23005,8 +23058,13 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			add_political_power = 100
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.1
+			}
 		}
 	}
 	focus = {
@@ -23037,8 +23095,10 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			swap_ideas = {
+				remove_idea = FRA_renaissence_of_france
+				add_idea = FRA_aryan_socialism
+			}
 		}
 	}
 	focus = {
@@ -23058,8 +23118,15 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			every_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			set_cosmetic_tag = FRA_legionary_europe
 		}
 	}
 	focus = {
@@ -23081,8 +23148,7 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -23101,8 +23167,20 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			add_tot_to_coalition = yes
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.1
+			}
+			set_party_name = {
+				ideology = totalist
+				long_name = "共和工团党"				
+				name = "共和工团党"	
+			}
 		}
 	}
 	focus = {
@@ -23121,8 +23199,12 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			add_ideas = FRA_BS
+			remove_ideas = FRA_black_guard_insurgency_idea
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.1
+			}
 		}
 	}
 	focus = {
@@ -23141,8 +23223,8 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			add_research_slot = 1
+			add_ideas = command_economy
 		}
 	}
 	focus = {
@@ -23164,8 +23246,13 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			add_manpower = -100
+			add_stability = 0.1
+			add_political_power = 100
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.1
+			}
 		}
 	}
 	focus = {
@@ -23187,8 +23274,19 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			swap_ideas = {
+				remove_idea = FRA_corporate_syndie_idea
+				add_idea = FRA_techno_committees
+			}
+			add_socdem_to_coalition = yes
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = syndicalist
+				popularity = -0.1
+			}
 		}
 	}
 	focus = {
@@ -23210,8 +23308,12 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			add_ideas = FRA_dream_of_sansimon
+			add_soclib_to_coalition = yes
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.1
+			}
 		}
 	}
 	focus = {
@@ -23231,8 +23333,39 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			add_stability = 0.1
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = FRA
+				}
+				increase_state_category_by_two_levels = yes
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = FRA
+				}
+				increase_state_category_by_one_level = yes
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = FRA
+				}
+				increase_state_category_by_two_levels = yes
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = FRA
+				}
+				increase_state_category_by_one_level = yes
+			}
 		}
 	}
 	focus = {
@@ -23252,8 +23385,12 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
 		}
 	}
 	focus = {
@@ -23273,8 +23410,9 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			add_ideas = FRA_duty_of_national_defence
+			add_command_power = 50
+			army_experience = 50
 		}
 	}
 	focus = {
@@ -23294,8 +23432,13 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			add_political_power = 100
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.1
+			}
 		}
 	}
 	focus = {
@@ -23315,8 +23458,18 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			add_research_slot = 1
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = construction_tech
+			}
+			add_tech_bonus = {
+				name = FRA_secret_weaponry
+				bonus = 1
+				uses = 1
+				category = electronics
+			}
 		}
 	}
 	focus = {
@@ -23347,8 +23500,10 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			swap_ideas = {
+				remove_idea = FRA_dream_of_sansimon
+				add_idea = FRA_dream_of_sansimon2
+			}
 		}
 	}
 	focus = {
@@ -23368,8 +23523,15 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			every_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			set_cosmetic_tag = FRA_sansimon_europe
 		}
 	}
 	#戴亚选举-可能派
@@ -42675,6 +42837,7 @@ focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_revolt_of_the_masters"
 			add_popularity = { ideology = totalist popularity = 0.02 }
 			add_war_support = 0.03
+			set_cosmetic_tag = FRA_batailles
 		}
 	}
 	focus = {
@@ -43326,6 +43489,7 @@ focus = {
 			target = AUS
 			}
 			add_threat = 10
+			set_cosmetic_tag = FRA_acephale_accelerationism
 		}
 	}
 	focus = {

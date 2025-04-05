@@ -126,7 +126,42 @@ head_of_government = { ### Head of Government ###
 				hog_flamboyant_tough_guy 
 			}
 		}
-		
+		FRA_Francois_Lehideux_hog_tot = {
+			allowed = { original_tag = FRA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Amadeo_Bordiga_hog_tot"
+			}
+			traits = {
+				head_of_government
+				totalist
+				hog_flamboyant_tough_guy 
+			}
+		}
+		FRA_Jean_Giono_hog_tot = {
+			allowed = { original_tag = FRA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Amadeo_Bordiga_hog_tot"
+			}
+			traits = {
+				head_of_government
+				totalist
+				hog_respected_war_hero
+			}
+		}
 }
 person_of_influence = { ### Person of Influence ###
 		## Foreign Minister ##
@@ -239,6 +274,42 @@ person_of_influence = { ### Person of Influence ###
 			}
 		}
 		FRA_Paul_Rassinier_for_tot = {
+			allowed = { original_tag = FRA}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Onorato_Damen_for_tot"
+			}
+			traits = {
+				foreign_minister
+				totalist
+				for_ideological_crusader 
+			}
+		}
+		FRA_Jean_Coutrot_for_tot = {
+			allowed = { original_tag = FRA}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Onorato_Damen_for_tot"
+			}
+			traits = {
+				foreign_minister
+				totalist
+				for_tireless_organiser
+			}
+		}
+		FRA_Paul_Morand_for_tot = {
 			allowed = { original_tag = FRA}
 			available = {
 				custom_trigger_tooltip = {
@@ -382,6 +453,42 @@ person_of_influence = { ### Person of Influence ###
 				eco_administrative_genius
 			}
 		}
+		FRA_Le_Corbusier_eco_tot = {
+			allowed = { original_tag = FRA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Bruno_Fortichiari_eco_tot"
+			}
+			traits = {
+				economy_minister
+				totalist
+				eco_planned_economy_proponent
+			}
+		}
+		FRA_Jean_Cocteau_eco_tot = {
+			allowed = { original_tag = FRA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Bruno_Fortichiari_eco_tot"
+			}
+			traits = {
+				economy_minister
+				totalist
+				eco_the_minister_for_everything
+			}
+		}
 		FRA_Pierre_Poujade_sec_rso = {
 			allowed = { original_tag = FRA }
 			available = {
@@ -506,6 +613,42 @@ person_of_influence = { ### Person of Influence ###
 				security_minister
 				totalist
 				sec_man_of_the_people
+			}
+		}
+		FRA_Francis_Delaisi_sec_sde = {
+			allowed = { original_tag = FRA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Bruno_Maffi_sec_tot"
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_man_of_the_people
+			}
+		}
+		FRA_Marcel_Ayme_sec_tot = {
+			allowed = { original_tag = FRA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Bruno_Maffi_sec_tot"
+			}
+			traits = {
+				security_minister
+				totalist
+				sec_popular_figurehead
 			}
 		}
 	}

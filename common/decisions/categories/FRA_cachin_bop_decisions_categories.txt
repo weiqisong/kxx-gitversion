@@ -12,5 +12,6 @@ FRA_cachin_bop_decisions = {
 
 	visible = {
 		tag = FRA
+		has_country_flag = FRA_cachin_bop_begins 
 	}
 }
