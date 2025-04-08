@@ -4,6 +4,575 @@
 ideas = {
 
 	country = {
+		FRA_transhumanism6 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				military_leader_cost_factor = -0.50 
+				army_leader_start_level = 3
+				acclimatization_hot_climate_gain_factor = 0.5 
+				acclimatization_cold_climate_gain_factor = 0.5 
+				experience_gain_army = 0.05
+				experience_loss_factor = -0.3
+				required_garrison_factor = -0.1
+				attrition = -0.15
+				army_org_factor = 0.1
+				army_morale_factor = 0.15
+				org_loss_when_moving = -0.15
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				org_loss_at_low_org_factor = -0.1
+				army_attack_speed_factor = 0.15
+				monthly_population = 0.5
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				equipment_capture_factor = 0.1
+				winter_attrition_factor = -0.2
+				heat_attrition_factor = -0.2
+				terrain_penalty_reduction = -0.2
+				supply_consumption_factor = -0.2
+				no_supply_grace = 96
+				army_speed_factor = 0.2
+				max_dig_in_factor = 0.15
+				dig_in_speed_factor = 0.1
+				research_speed_factor = 0.25
+				local_resources_factor = 0.2
+				production_lack_of_resource_penalty_factor = -0.1
+				consumer_goods_expected_value = -0.1
+			}
+			
+		
+		}
+		FRA_transhumanism5 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				military_leader_cost_factor = -0.50 
+				army_leader_start_level = 3
+				acclimatization_hot_climate_gain_factor = 0.5 
+				acclimatization_cold_climate_gain_factor = 0.5 
+				experience_gain_army = 0.05
+				experience_loss_factor = -0.3
+				required_garrison_factor = -0.1
+				attrition = -0.15
+				army_org_factor = 0.1
+				army_morale_factor = 0.15
+				org_loss_when_moving = -0.15
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				org_loss_at_low_org_factor = -0.1
+				army_attack_speed_factor = 0.15
+				monthly_population = 0.5
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				equipment_capture_factor = 0.1
+				winter_attrition_factor = -0.2
+				heat_attrition_factor = -0.2
+				terrain_penalty_reduction = -0.2
+				supply_consumption_factor = -0.2
+				no_supply_grace = 96
+				army_speed_factor = 0.2
+				max_dig_in_factor = 0.15
+				dig_in_speed_factor = 0.1
+			}
+		}
+		FRA_transhumanism4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				military_leader_cost_factor = -0.50 
+				army_leader_start_level = 3
+				acclimatization_hot_climate_gain_factor = 0.5 
+				acclimatization_cold_climate_gain_factor = 0.5 
+				experience_gain_army = 0.05
+				experience_loss_factor = -0.3
+				required_garrison_factor = -0.1
+				attrition = -0.15
+				army_org_factor = 0.1
+				army_morale_factor = 0.15
+				org_loss_when_moving = -0.15
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				org_loss_at_low_org_factor = -0.1
+				army_attack_speed_factor = 0.15
+				monthly_population = 0.5
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				equipment_capture_factor = 0.1
+				winter_attrition_factor = -0.2
+				heat_attrition_factor = -0.2
+				terrain_penalty_reduction = -0.2
+				supply_consumption_factor = -0.2
+				no_supply_grace = 96
+
+			}
+			picture = humanist_manifesto
+		}
+		FRA_transhumanism3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				military_leader_cost_factor = -0.50 
+				army_leader_start_level = 3
+				acclimatization_hot_climate_gain_factor = 0.5 
+				acclimatization_cold_climate_gain_factor = 0.5 
+				experience_gain_army = 0.05
+				experience_loss_factor = -0.2
+				required_garrison_factor = -0.1
+				attrition = -0.15
+				army_org_factor = 0.1
+				army_morale_factor = 0.15
+				org_loss_when_moving = -0.15
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				org_loss_at_low_org_factor = -0.1
+				army_attack_speed_factor = 0.15
+				monthly_population = 0.5
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				equipment_capture_factor = 0.1
+			}
+			picture = humanist_manifesto
+		}
+		FRA_transhumanism3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				military_leader_cost_factor = -0.50 
+				army_leader_start_level = 3
+				acclimatization_hot_climate_gain_factor = 0.5 
+				acclimatization_cold_climate_gain_factor = 0.5 
+				experience_gain_army = 0.05
+				experience_loss_factor = -0.1
+				required_garrison_factor = -0.1
+				attrition = -0.15
+				army_org_factor = 0.1
+				army_morale_factor = 0.15
+				org_loss_when_moving = -0.15
+				monthly_population = 0.5
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				equipment_capture_factor = 0.1
+			}
+			picture = humanist_manifesto
+		}
+		FRA_transhumanism2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				military_leader_cost_factor = -0.50 
+				army_leader_start_level = 3
+				acclimatization_hot_climate_gain_factor = 0.5 
+				acclimatization_cold_climate_gain_factor = 0.5 
+				experience_gain_army = 0.05
+				experience_loss_factor = -0.1
+				required_garrison_factor = -0.1
+				attrition = -0.15
+				army_org_factor = 0.1
+				army_morale_factor = 0.15
+				org_loss_when_moving = -0.15
+			}
+			picture = humanist_manifesto
+		}
+		FRA_transhumanism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				military_leader_cost_factor = -0.50 
+				army_leader_start_level = 3
+				acclimatization_hot_climate_gain_factor = 0.5 
+				acclimatization_cold_climate_gain_factor = 0.5 
+				experience_gain_army = 0.05
+				experience_loss_factor = -0.1
+			}
+			picture = humanist_manifesto
+		}
+		FRA_COST = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				political_power_factor = 0.15
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				totalist_drift = 0.05
+			}
+			picture = Ross_Idea
+		}
+		FRA_era_of_prosper = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				non_core_manpower = 0.5
+				monthly_population = 0.5
+				mobilization_speed = 0.1
+				stability_weekly = 0.001
+			}
+			picture = social_capitalism_3
+		}
+		FRA_rebuild_union_system2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				
+			}
+			picture = GER_socdem_unions
+		}
+		FRA_rebuild_union_system = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				
+			}
+			picture = GER_socdem_unions
+		}
+		FRA_new_monied_system2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				
+				global_building_slots_factor = 0.1
+				global_building_slots = 1
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_expected_value = -0.25
+				consumer_goods_factor = -0.25
+				supply_consumption_factor = -0.1
+				supply_node_range = 0.15
+			}
+			picture = COR_progressive_capitalist_economics
+		}
+		FRA_new_monied_system = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				
+				global_building_slots_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+
+			}
+			picture = COR_progressive_capitalist_economics
+		}
+		FRA_new_state2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				social_democrat_drift = 0.05
+				radical_socialist_drift = 0.02
+				conscription = 0.02
+				conscription_factor = 0.2
+				war_stability_factor = 0.2
+				compliance_growth = 0.25
+				required_garrison_factor = -0.1
+				resistance_target = -0.15
+			}
+			picture = state_economy
+		}
+		FRA_new_state = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				social_democrat_drift = 0.05
+				conscription = 0.02
+				conscription_factor = 0.2
+
+			}
+			picture = state_economy
+		}
+		FRA_perfect_system = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
+				compliance_growth = 0.15
+			}
+			picture = referendum_voting
+		}
+		FRA_order_strong_ration = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				experience_loss_factor = -0.15
+				monthly_population = 0.1
+				weekly_manpower = 100
+				conscription = 0.025
+				conscription_factor = 0.25
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
+				org_loss_when_moving = 0.15
+				supply_consumption_factor = -0.15
+				planning_speed = 0.25
+				max_planning = 0.25
+				breakthrough_factor = 0.1
+			}
+			picture = ALB_renewed_vision_albania
+		}
+		FRA_pure_race2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				experience_loss_factor = -0.15
+				monthly_population = 0.1
+				weekly_manpower = 100
+				conscription = 0.025
+				conscription_factor = 0.25
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
+				org_loss_when_moving = 0.15
+
+			}
+			picture = ZAM_segregation_idea
+		}
+		FRA_pure_race = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				experience_loss_factor = -0.15
+				monthly_population = 0.1
+				weekly_manpower = 100
+				conscription = 0.015
+				conscription_factor = 0.15
+			}
+			picture = ZAM_segregation_idea
+		}
+		FRA_geometry_hyigene_purity = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				totalist_drift = 0.05
+				research_speed_factor = 0.15
+				local_resources_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				global_building_slots_factor = 0.15
+				line_change_production_efficiency_factor = 0.07
+				industrial_capacity_factory = 0.07
+				industrial_capacity_dockyard = 0.07
+				production_factory_start_efficiency_factor = 0.12
+				production_factory_max_efficiency_factor = 0.12
+				production_factory_efficiency_gain_factor = 0.12
+
+			}
+			picture = authority_caesar
+		}
+		FRA_pure_order2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				totalist_drift = 0.05
+				research_speed_factor = 0.15
+				local_resources_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				global_building_slots_factor = 0.15
+
+			}
+			picture = NFA_moral_order
+		}
+		FRA_pure_order = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				totalist_drift = 0.05
+				research_speed_factor = 0.15
+				local_resources_factor = 0.15
+			}
+			picture = NFA_moral_order
+		}
+		FRA_power_safety_honor = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				industrial_capacity_factory = 0.1
+				mobilization_speed = 0.1
+				compliance_growth = 0.25
+			}
+			picture = CSA_iron_brigades_rigged
+		}
+		FRA_machiaville_enlightment = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
+				stability_factor = 0.1
+				war_stability_factor = 0.1
+			}
+			picture = CSA_pcc
+		}
+		FRA_manageism_system2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				line_change_production_efficiency_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+
+			}
+			picture = CSA_technocrat_council
+		}
+		FRA_manageism_system = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+			}
+			picture = CSA_technocrat_council
+		}
+		FRA_patriotic_socialism2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				conscription = 0.02
+				conscription_factor = 0.25
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				supply_consumption_factor = -0.1
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				attrition = -0.1
+			}
+			picture = HOL_totalist_military
+		}
+		FRA_patriotic_socialism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				conscription = 0.02
+				conscription_factor = 0.25
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				supply_consumption_factor = -0.1
+
+			}
+			picture = HOL_totalist_military
+		}
+		FRA_atlantic_totalism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				political_power_factor = 0.15
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				totalist_drift = 0.05
+				command_power_gain = 0.01
+				max_command_power = 150
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+
+			}
+			picture = generic_totalist_revolution
+		}
+		FRA_atlantic_totalism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				political_power_factor = 0.15
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				totalist_drift = 0.05
+				command_power_gain = 0.01
+				max_command_power = 150
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+
+			}
+			picture = generic_totalist_revolution
+		}
+		FRA_perfect_technate = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				political_power_cost = -0.1
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				war_stability_factor = 0.1
+				totalist_drift = 0.05
+				paternal_autocrat_drift = 0.02
+				conscription_factor = 0.2
+				required_garrison_factor = -0.1
+			}
+			picture = CSA_twenty_four_techno_hours
+		}
+		FRA_revitalize_car_industry = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			equipment_bonus = {
+				motorized_equipment  = {
+					build_cost_ic = -0.15
+					instant = yes
+				} 
+				mechanized_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				armor = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+		
+			picture = BBR_patterson_motorization_spirit
+		}
+		FRA_Charte_du_travail = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
+				min_export = -0.1
+				repair_speed_factor = 0.1
+			}
+			picture = MAF_labour_charter
+		}
+		FRA_fordism2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.05
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+			}
+			picture = Oil_Oligarchy_1
+		}
+		FRA_fordism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				line_change_production_efficiency_factor = 0.07
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.07
+			}
+			picture = Oil_Oligarchy_1
+		}
+		FRA_scottism2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				global_building_slots = 1
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				research_speed_factor = 0.15
+				local_resources_factor = 0.15
+				global_building_slots_factor = 0.1
+			}
+			picture = CSA_burnham_economic_policy
+		}
+		FRA_scottism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				global_building_slots = 1
+				production_speed_buildings_factor = 0.07
+				production_speed_arms_factory_factor = 0.12
+				production_speed_industrial_complex_factor = 0.12
+
+			}
+			picture = CSA_burnham_economic_policy
+		}
 		FRA_aryan_socialism = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
 			modifier = {

@@ -6534,18 +6534,7 @@ country_event = {
 			set_country_flag = FRA_valois_is_dead
 		}
 	}
-	option = {
-		name = comfrance.904.b
-		add_stability = 0.2
-		
-		hidden_effect = {		
-			country_event = {
-				id = comfrance.9030
-				days = 12
-			}
-			
-		}
-	}
+	
 }
 	
 country_event = {
@@ -7119,35 +7108,6 @@ country_event = {
 
 	option = { 
 		name = comfrance.919.b
-		add_stability = 0.1
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 10000
-					has_game_rule = {
-						rule = FRA_xday_of_imfamy
-						option = FRA_CLEMEN_ASSUMES_CONTROL
-					}
-			}
-		}
-		create_country_leader = { #Auto-Generated
-			name = "皮埃尔·克莱门蒂"
-			picture = "gfx/leaders/FRA/Portrait_Pierre_Clémenti.png"
-			
-			expire = "1965.1.1"
-			ideology = national_collectivist_subtype
-			
-		}
-		set_party_name = {
-			ideology = totalist
-			long_name = FRA_natcol_party
-			name = FRA_natcol_party
-		}
-		set_cosmetic_tag = FRA_natcol
-		complete_national_focus = FRA_national_collectivists
-	}
-	option = { 
-		name = comfrance.919.c
 		ai_chance = {
 			factor = 50
 			modifier = {
