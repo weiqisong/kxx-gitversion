@@ -501,3 +501,50 @@ FRA_neocolonialism_create_nouvelle_france = {
 		remove_claim_by = FRA
 	}
 }
+FRA_transhumanism_idea_swap = {
+	if = {
+		limit = {
+			has_idea = FRA_transhumanism
+		}
+		swap_ideas = {
+			remove_idea = FRA_transhumanism
+			add_idea = FRA_transhumanism2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_transhumanism2
+		}
+		swap_ideas = {
+			remove_idea = FRA_transhumanism2
+			add_idea = FRA_transhumanism3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_transhumanism3
+		}
+		swap_ideas = {
+			remove_idea = FRA_transhumanism3
+			add_idea = FRA_transhumanism4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_transhumanism4
+		}
+		swap_ideas = {
+			remove_idea = FRA_transhumanism4
+			add_idea = FRA_transhumanism5
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_transhumanism5
+		}
+		swap_ideas = {
+			remove_idea = FRA_transhumanism5
+			add_idea = FRA_transhumanism6
+		}
+	}
+}

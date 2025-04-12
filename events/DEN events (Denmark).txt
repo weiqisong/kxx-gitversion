@@ -5106,7 +5106,7 @@ country_event = {
 		log = "[GetLogInfo]: event den.1019 option den.1019.a"
 		name = den.1500.a
 		add_political_power = 100
-	}
+	} 
 
 	option = { 
 		log = "[GetLogInfo]: event den.1019 option den.1019.b"

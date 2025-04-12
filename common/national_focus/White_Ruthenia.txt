@@ -519,32 +519,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = WHR_take_baltics
-		icon = GFX_goal_PLC_baltic
-		relative_position_id = WHR_global_belarus
-		x = -10
-		y = 2
-		cost = 1
-		ai_will_do = {
-			base = 100
-		}
-		allow_branch = {
-			NOT = {
-				tag = WHR
-			}
-		}
-		prerequisite = { 
-			focus = WHR_equal_RP_membership
-			focus = WHR_secede_from_RP
-		}
-		
-		
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
-		}
-	}
+	
 	focus = {
 		id = WHR_federation_of_free_man
 		icon = GFX_RUS_Raise_The_Red_Banners
@@ -1325,30 +1300,935 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = WHR_finno_ugric_myth
-		icon = GFX_goal_FIN_Kingdom
-		relative_position_id = WHR_global_belarus
-		x = -6
+		id = WHR_schzios
+		icon = GFX_goal_COR_Champion_Womens_Three_Movements 
+
+		x = -10
+		y = 20
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+
+		available = {
+			has_country_flag = WHR_schziopath_finno		
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_call_of_antiquitian
+		icon = GFX_goal_AUS_Schizo
+		relative_position_id = WHR_schzios
+		x = 6
+		y = 1
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_schzios
+		}
+		available = {
+			has_country_flag = WHR_schziopath_pagan
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_restore_slav_paganism
+		icon = GFX_goalsRUS_paganism
+		relative_position_id = WHR_call_of_antiquitian
+		x = -2
+		y = 1
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_call_of_antiquitian
+		}
+		available = {
+			has_country_flag = WHR_schziopath_pagan
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_learn_sanskrit
+		icon = GFX_goal_COR_old_covenant
+		relative_position_id = WHR_call_of_antiquitian
+		x = 0
+		y = 1
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_call_of_antiquitian
+		}
+		available = {
+			has_country_flag = WHR_schziopath_pagan
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_oppose_judo_christian_conpiracy
+		icon = GFX_goal_COR_erase_false_hebrewism
+		relative_position_id = WHR_call_of_antiquitian
+		x = 2
+		y = 1
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_call_of_antiquitian
+		}
+		available = {
+			has_country_flag = WHR_schziopath_pagan
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_aryan_identity
+		icon = GFX_goal_AUS_Pure_Clairvoyancy_Nordic_Aryans
+		relative_position_id = WHR_call_of_antiquitian
+		x = -1
 		y = 2
 		cost = 1
 		ai_will_do = {
 			base = 100
 		}
-		allow_branch = {
-			NOT = {
-				tag = WHR
-			}
+		prerequisite = {
+			focus  = WHR_restore_slav_paganism
 		}
-		prerequisite = { 
-			focus = WHR_equal_RP_membership
-			focus = WHR_secede_from_RP
-		 }
+		prerequisite = {
+			focus  = WHR_learn_sanskrit
+		}
+		prerequisite = {
+			focus  = WHR_oppose_judo_christian_conpiracy
+		}
 		available = {
-			is_subject = no
-			OR = {
-				has_completed_focus = WHR_Revive_BVZR
-				has_completed_focus = WHR_Create_BKA
-			}			
+			has_country_flag = WHR_schziopath_pagan
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_vedaism_enlightment
+		icon = GFX_goal_FIN_Kingdom
+		relative_position_id = WHR_call_of_antiquitian
+		x = 1
+		y = 2
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_restore_slav_paganism
+		}
+		prerequisite = {
+			focus  = WHR_learn_sanskrit
+		}
+		prerequisite = {
+			focus  = WHR_oppose_judo_christian_conpiracy
+		}
+		available = {
+			has_country_flag = WHR_schziopath_pagan
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_end_kaliyuga
+		icon = GFX_goal_AUS_Sign_Into_Unholy_Aryan_Alliance
+		relative_position_id = WHR_call_of_antiquitian
+		x = 0
+		y = 3
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_aryan_identity
+		}
+		prerequisite = {
+			focus  = WHR_vedaism_enlightment
+		}
+		
+		available = {
+			has_country_flag = WHR_schziopath_pagan
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_unity_of_slavs
+		icon = GFX_goal_AUS_south_slavs
+		relative_position_id = WHR_call_of_antiquitian
+		x = -1
+		y = 4
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_end_kaliyuga
+		}
+		
+		available = {
+			has_country_flag = WHR_schziopath_pagan
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_return_to_india
+		icon = GFX_goal_AFG_Towards_Indian_Unification
+		relative_position_id = WHR_call_of_antiquitian
+		x = 1
+		y = 4
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_end_kaliyuga
+		}
+		
+		available = {
+			has_country_flag = WHR_schziopath_pagan
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_land_of_aryans
+		icon = GFX_goal_AFG_Land_Aryan
+		relative_position_id = WHR_call_of_antiquitian
+		x = -2
+		y = 5
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_unity_of_slavs
+		}
+		prerequisite = {
+			focus  = WHR_return_to_india
+		}
+		available = {
+			has_country_flag = WHR_schziopath_pagan
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_destroy_germans
+		icon = GFX_goal_PLC_germany
+		relative_position_id = WHR_call_of_antiquitian
+		x = 0
+		y = 5
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_unity_of_slavs
+		}
+		prerequisite = {
+			focus  = WHR_return_to_india
+		}
+		available = {
+			has_country_flag = WHR_schziopath_pagan
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_liberate_the_turks
+		icon = GFX_BKN_United_Turkestan
+		relative_position_id = WHR_call_of_antiquitian
+		x = 2
+		y = 5
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_unity_of_slavs
+		}
+		prerequisite = {
+			focus  = WHR_return_to_india
+		}
+		available = {
+			has_country_flag = WHR_schziopath_pagan
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_old_paradise
+		icon = GFX_goal_AUS_Saturate_Donauquelle_Vril
+		relative_position_id = WHR_call_of_antiquitian
+		x = 0
+		y = 6
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_land_of_aryans
+		}
+		prerequisite = {
+			focus  = WHR_destroy_germans
+		}
+		prerequisite = {
+			focus  = WHR_liberate_the_turks
+		}
+		available = {
+			has_country_flag = WHR_schziopath_pagan
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_legacy_of_palemonids
+		icon = GFX_goal_GRE_rome
+		relative_position_id = WHR_schzios
+		x = 0
+		y = 1
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_schzios
+		}
+		available = {
+			has_country_flag = WHR_schziopath_roman	
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_empire_of_romans
+		icon = GFX_goal_GRE_rebirth
+		relative_position_id = WHR_legacy_of_palemonids
+		x = -2
+		y = 1
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_legacy_of_palemonids
+		}
+		available = {
+			has_country_flag = WHR_schziopath_roman	
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_reestublish_senate
+		icon = GFX_PAP_roman_senate
+		relative_position_id = WHR_legacy_of_palemonids
+		x = 0
+		y = 1
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_legacy_of_palemonids
+		}
+		available = {
+			has_country_flag = WHR_schziopath_roman	
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_culture_of_romans
+		icon = GFX_goal_FIN_Kingdom
+		relative_position_id = WHR_legacy_of_palemonids
+		x = 2
+		y = 1
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_legacy_of_palemonids
+		}
+		available = {
+			has_country_flag = WHR_schziopath_roman	
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_reorganize_legion
+		icon = GFX_goal_GRE_Greek_Empire
+		relative_position_id = WHR_legacy_of_palemonids
+		x = -1
+		y = 2
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_empire_of_romans
+		}
+		prerequisite = {
+			focus  = WHR_reestublish_senate
+		}
+		prerequisite = {
+			focus  = WHR_culture_of_romans
+		}
+		available = {
+			has_country_flag = WHR_schziopath_roman	
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_latinization
+		icon = GFX_goal_SRI_latin
+		relative_position_id = WHR_legacy_of_palemonids
+		x = 1
+		y = 2
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_empire_of_romans
+		}
+		prerequisite = {
+			focus  = WHR_reestublish_senate
+		}
+		prerequisite = {
+			focus  = WHR_culture_of_romans
+		}
+		available = {
+			has_country_flag = WHR_schziopath_roman	
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_restore_empire
+		icon = GFX_goal_GRE_remove_kebab
+		relative_position_id = WHR_legacy_of_palemonids
+		x = 0
+		y = 3
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_reorganize_legion
+		}
+		prerequisite = {
+			focus  = WHR_latinization
+		}
+		
+		available = {
+			has_country_flag = WHR_schziopath_roman	
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_reverange_the_attla
+		icon = GFX_goal_CZE_kill_hungary
+		relative_position_id = WHR_legacy_of_palemonids
+		x = -1
+		y = 4
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_restore_empire
+		}
+		
+		available = {
+			has_country_flag = WHR_schziopath_roman	
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_return_to_baltics
+		icon = GFX_goal_generic_baltic_sea
+		relative_position_id = WHR_legacy_of_palemonids
+		x = 1
+		y = 4
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_restore_empire
+		}
+		
+		available = {
+			has_country_flag = WHR_schziopath_roman	
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_west_roma
+		icon = GFX_goal_SIC_ride_the_tiger
+		relative_position_id = WHR_legacy_of_palemonids
+		x = -2
+		y = 5
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_reverange_the_attla
+		}
+		prerequisite = {
+			focus  = WHR_return_to_baltics
+		}
+		available = {
+			has_country_flag = WHR_schziopath_roman	
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_italy_compaign
+		icon = GFX_ITA_reunited
+		relative_position_id = WHR_legacy_of_palemonids
+		x = 0
+		y = 5
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_reverange_the_attla
+		}
+		prerequisite = {
+			focus  = WHR_return_to_baltics
+		}
+		available = {
+			has_country_flag = WHR_schziopath_roman	
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_east_roma
+		icon = GFX_goal_GRE_Nationalist_Byzantium
+		relative_position_id = WHR_legacy_of_palemonids
+		x = 2
+		y = 5
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_reverange_the_attla
+		}
+		prerequisite = {
+			focus  = WHR_return_to_baltics
+		}
+		available = {
+			has_country_flag = WHR_schziopath_roman	
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_pax_romania
+		icon = GFX_goal_GRE_secure_south
+		relative_position_id = WHR_legacy_of_palemonids
+		x = 0
+		y = 6
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_west_roma
+		}
+		prerequisite = {
+			focus  = WHR_east_roma
+		}
+		prerequisite = {
+			focus  = WHR_italy_compaign
+		}
+		available = {
+			has_country_flag = WHR_schziopath_roman	
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_finno_ugric_myth
+		icon = GFX_goal_FIN_Kingdom
+		relative_position_id = WHR_schzios
+		x = -6
+		y = 1
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus  = WHR_schzios
+		}
+		available = {
+			has_country_flag = WHR_schziopath_finno		
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_finno_identity
+		icon = GFX_goal_FIN_National_Coalition
+		relative_position_id = WHR_finno_ugric_myth
+		x = -2
+		y = 1
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus =  WHR_finno_ugric_myth
+		}
+		available = {
+			has_country_flag = WHR_schziopath_finno		
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_finno_ugric_meetings
+		icon = GFX_goal_KAR_Dreams_Of_Finno_Ugric_State
+		relative_position_id = WHR_finno_ugric_myth
+		x = 0
+		y = 1
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus =  WHR_finno_ugric_myth
+		}
+		available = {
+			has_country_flag = WHR_schziopath_finno		
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_anti_russianism
+		icon = GFX_goal_MON_we_dont_need_russia
+		relative_position_id = WHR_finno_ugric_myth
+		x = 2
+		y = 1
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus =  WHR_finno_ugric_myth
+		}
+		available = {
+			has_country_flag = WHR_schziopath_finno		
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_study_our_language
+		icon = GFX_goal_CAN_english_language_act
+		relative_position_id = WHR_finno_ugric_myth
+		x = -1
+		y = 2
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus =  WHR_finno_identity
+		}
+		prerequisite = {
+			focus =  WHR_finno_ugric_meetings
+		}
+		prerequisite = {
+			focus =  WHR_anti_russianism
+		}
+		available = {
+			has_country_flag = WHR_schziopath_finno		
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_erase_slavics
+		icon = GFX_goal_GER_Butcher_Russian_Bear
+		relative_position_id = WHR_finno_ugric_myth
+		x = 1
+		y = 2
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus =  WHR_anti_russianism
+		}
+		prerequisite = {
+			focus =  WHR_finno_ugric_meetings
+		}
+		prerequisite = {
+			focus =  WHR_finno_identity
+		}
+		available = {
+			has_country_flag = WHR_schziopath_finno		
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_follow_ancester
+		icon = GFX_goal_VIN_abide_ancestors_animism
+		relative_position_id = WHR_finno_ugric_myth
+		x = 0
+		y = 3
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus =  WHR_study_our_language
+		}
+		prerequisite = {
+			focus =  WHR_erase_slavics
+		}
+		available = {
+			has_country_flag = WHR_schziopath_finno		
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_finno_kalelia
+		icon = GFX_goal_KAR_Together_With_Finland
+		relative_position_id = WHR_finno_ugric_myth
+		x = 1
+		y = 4
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus =  WHR_follow_ancester
+		}
+	
+		available = {
+			has_country_flag = WHR_schziopath_finno		
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_take_baltics
+		icon = GFX_goal_PLC_baltic
+		relative_position_id = WHR_finno_ugric_myth
+		x = -1
+		y = 4
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus =  WHR_follow_ancester
+		}
+	
+		available = {
+			has_country_flag = WHR_schziopath_finno		
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_take_hungary
+		icon = GFX_goal_CZE_attack_hungary
+		relative_position_id = WHR_finno_ugric_myth
+		x = -2
+		y = 5
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus =  WHR_take_baltics
+		}
+		prerequisite = {
+			focus =  WHR_finno_kalelia
+		}
+		available = {
+			has_country_flag = WHR_schziopath_finno		
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_ural_altay_brothers
+		icon = GFX_BKN_Ural_Altaic_Federation
+		relative_position_id = WHR_finno_ugric_myth
+		x = 0
+		y = 5
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus =  WHR_take_baltics
+		}
+		prerequisite = {
+			focus =  WHR_finno_kalelia
+		}
+		available = {
+			has_country_flag = WHR_schziopath_finno		
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_retake_mongolia
+		icon = GFX_goal_MON_constitutionalists
+		relative_position_id = WHR_finno_ugric_myth
+		x = 2
+		y = 5
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus =  WHR_take_baltics
+		}
+		prerequisite = {
+			focus =  WHR_finno_kalelia
+		}
+		available = {
+			has_country_flag = WHR_schziopath_finno		
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			
+		}
+	}
+	focus = {
+		id = WHR_restore_collection
+		icon = GFX_goal_chi_one_china_policy_KMT
+		relative_position_id = WHR_finno_ugric_myth
+		x = 0
+		y = 6
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = {
+			focus =  WHR_take_hungary
+		}
+		prerequisite = {
+			focus =  WHR_ural_altay_brothers
+		}
+		prerequisite = {
+			focus =  WHR_retake_mongolia
+		}
+		available = {
+			has_country_flag = WHR_schziopath_finno		
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
@@ -13221,55 +14101,5 @@ focus = {
 	}
 }
 
-focus = {
-	id = WHR_future_to_eurasia
-	icon = GFX_RUS_Revive_National_Identity
-	cost = 1
-	relative_position_id = WHR_message_for_mankind
-	x = 0
-	y = 8
-	available = {
-		owns_state = 219
-	}
-	prerequisite = {
-		focus = WHR_future_perfection
-		focus = WHR_modern_methamorphosis
-	}
-	prerequisite = {
-		focus = WHR_custodianship_of_the_earth
-	}
-	prerequisite = {
-		focus = WHR_new_alchemists
-	}
-	completion_reward = { 
-		add_war_support = 0.3
-		add_stability = 0.3
-		add_research_slot = 1
-		set_capital = {
-			state = 219
-		}
-		every_state = {
-			add_core_of = WHR
-		}
-		clr_country_flag = is_russian_warlord
-		set_global_flag = united_russia
-		save_global_event_target_as = russian_unification
-		if = {
-			limit = {
-				has_completed_focus = FCR_for_order
-			}
-			set_cosmetic_tag = FCR_unification_muravyov
-			
-			set_party_name = {
-			   ideology = accelerationism
-			   long_name = FCR_leagueoftime_long
-			   name = FCR_leagueoftime
-			  }
-		}
-		else = {
-			set_cosmetic_tag = FCR_unification_yarolsavski
-			
-		}
-	}
-}
+
 }

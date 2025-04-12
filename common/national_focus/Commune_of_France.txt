@@ -8461,7 +8461,7 @@ focus = FRA_office_des_chemins_de_fer
 					is_core_of = LEB
 				}
 				FRA = { 
-					add_state_claim = PREV 
+					add_state_core = PREV 
 				}
 			}
 			every_state = {
@@ -8469,7 +8469,7 @@ focus = FRA_office_des_chemins_de_fer
 					is_core_of = SYR
 				}
 				FRA = { 
-					add_state_claim = PREV 
+					add_state_core = PREV 
 				}
 			}
 		}
@@ -8628,7 +8628,7 @@ focus = FRA_office_des_chemins_de_fer
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_arab_committee"
 			every_state = {
 				limit = { 
-					is_claimed_by = FRA
+					is_coreed_by = FRA
 					NOT = {
 						is_core_of = FRA
 					}
@@ -9219,7 +9219,7 @@ focus = FRA_office_des_chemins_de_fer
 	}
 	focus = {
 		id = FRA_latin_axis
-		icon = GFX_goal_PRU_proclaim_indoamerica
+		icon = GFX_goal_PRU_procore_indoamerica
 		cost = 4
 		prerequisite = {
 			focus = FRA_friends_in_madrid
@@ -11264,7 +11264,7 @@ focus = FRA_office_des_chemins_de_fer
 	
 	focus = {
 		id = FRA_Cest_la_lutte_finale
-		icon = GFX_focus_SOV_proclaim_soviet_hegemony
+		icon = GFX_focus_SOV_procore_soviet_hegemony
 		cost = 4
 		prerequisite = {
 			focus = FRA_krasnacht
@@ -17032,10 +17032,10 @@ focus = FRA_office_des_chemins_de_fer
 					transfer_state = 181
 					transfer_state = 112
 					transfer_state = 179
-					add_state_claim = 180
-					add_state_claim = 181
-					add_state_claim = 112
-					add_state_claim = 179
+					add_state_core = 180
+					add_state_core = 181
+					add_state_core = 112
+					add_state_core = 179
 				}	
 				if = {	
 					limit = {
@@ -17047,10 +17047,10 @@ focus = FRA_office_des_chemins_de_fer
 						target = POR 
 						transfer_troops = no 
 					}
-					add_state_claim = 180
-					add_state_claim = 181
-					add_state_claim = 112
-					add_state_claim = 179
+					add_state_core = 180
+					add_state_core = 181
+					add_state_core = 112
+					add_state_core = 179
 				}
 			}
 			1313 = {
@@ -17319,10 +17319,10 @@ focus = FRA_office_des_chemins_de_fer
 					transfer_state = 113
 					transfer_state = 134
 					transfer_state = 135
-					add_state_claim = 119
-					add_state_claim = 113
-					add_state_claim = 134
-					add_state_claim = 135
+					add_state_core = 119
+					add_state_core = 113
+					add_state_core = 134
+					add_state_core = 135
 				}	
 				if = {	
 					limit = {
@@ -18531,13 +18531,13 @@ focus = FRA_office_des_chemins_de_fer
 				target = NFA
 				type = annex_everything
 			}
-			add_state_claim = 458
-			add_state_claim = 665
-			add_state_claim = 460
-			add_state_claim = 459
-			add_state_claim = 805
-			add_state_claim = 513
-			add_state_claim = 514
+			add_state_core = 458
+			add_state_core = 665
+			add_state_core = 460
+			add_state_core = 459
+			add_state_core = 805
+			add_state_core = 513
+			add_state_core = 514
 		}
 	}
 	
@@ -20735,6 +20735,12 @@ focus = FRA_office_des_chemins_de_fer
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_slaves"
 			country_event = comfrance.962
 			add_ideas = FRA_makhno_idea
+			hidden_effect = {
+				country_event = {
+					id = kxxfrance.81
+					days = 30
+				}
+			}
 		}
 	}
 	focus = {
@@ -22747,7 +22753,7 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
 			custom_effect_tooltip = FRA_europe_tooltip
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			unlock_decision_tooltip = FRA_core_deat_europe
 		}
 	}
 	focus = {
@@ -26901,7 +26907,7 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Extend_Provisional_Dictatorship"
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			unlock_decision_tooltip = FRA_core_deat_europe
 			set_country_flag = FRA_embraced_pan_europe
 		}
 		
@@ -29319,7 +29325,7 @@ focus = {
 			factor = 1000
 		}
 		completion_reward = {
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			unlock_decision_tooltip = FRA_core_deat_europe
 			set_country_flag = FRA_embraced_pan_europe
 		}
 	}
@@ -30049,7 +30055,7 @@ focus = {
 			factor = 1000
 		}
 		completion_reward = {
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			unlock_decision_tooltip = FRA_core_deat_europe
 			set_country_flag = FRA_embraced_pan_europe
 		}
 	}
@@ -31111,7 +31117,7 @@ focus = {
 			factor = 1000
 		}
 		completion_reward = {
-			unlock_decision_tooltip = FRA_claim_deat_europe
+			unlock_decision_tooltip = FRA_core_deat_europe
 			set_country_flag = FRA_embraced_pan_europe
 		}
 	}
@@ -36046,10 +36052,7 @@ focus = {
 			factor = 1000
 		}
 		completion_reward = {
-			ENG = {
-				country_event = kxxfrance.24
-			}
-			
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -36066,9 +36069,8 @@ focus = {
 			factor = 1000
 		}
 		completion_reward = {
-			ENG = {
-				country_event = kxxfrance.24
-			}
+			country_event = kxxfrance.78 
+			add_ideas = FRA_edgars_orthodoxism
 		}
 	}
 	focus = {
@@ -36085,9 +36087,8 @@ focus = {
 			factor = 1000
 		}
 		completion_reward = {
-			ENG = {
-				country_event = kxxfrance.24
-			}
+			country_event = kxxfrance.79
+			add_ideas = FRA_pauls_agrianism
 		}
 	}
 	focus = {
@@ -36107,9 +36108,7 @@ focus = {
 			factor = 1000
 		}
 		completion_reward = {
-			ENG = {
-				country_event = kxxfrance.24
-			}
+			add_ideas = FRA_union_of_socialist_party
 		}
 	}
 	focus = {
@@ -36127,8 +36126,13 @@ focus = {
 			factor = 1000
 		}
 		completion_reward = {
-			ENG = {
-				country_event = kxxfrance.24
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				
 			}
 		}
 	}
@@ -36149,8 +36153,12 @@ focus = {
 			factor = 1000
 		}
 		completion_reward = {
-			ENG = {
-				country_event = kxxfrance.24
+			add_research_slot = 1
+			add_tech_bonus = {
+				name = FRA_secret_weaponry
+				bonus = 2
+				uses = 2
+				category = electronics
 			}
 		}
 	}
@@ -36169,9 +36177,7 @@ focus = {
 			factor = 1000
 		}
 		completion_reward = {
-			ENG = {
-				country_event = kxxfrance.24
-			}
+			add_ideas = FRA_intervene_economics
 		}
 	}
 	focus = {
@@ -36191,9 +36197,8 @@ focus = {
 			factor = 1000
 		}
 		completion_reward = {
-			ENG = {
-				country_event = kxxfrance.24
-			}
+			add_ideas = FRA_medical_care
+			
 		}
 	}
 	focus = {
@@ -36211,9 +36216,23 @@ focus = {
 			factor = 1000
 		}
 		completion_reward = {
-			ENG = {
-				country_event = kxxfrance.24
+			add_socdem_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.1
 			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = totalist
+				popularity = -0.1
+			}
+			add_political_power = 100
+			add_stability = 0.1
+			add_war_support = 0.1
 		}
 	}
 	focus = {
@@ -36236,8 +36255,13 @@ focus = {
 			factor = 1000
 		}
 		completion_reward = {
-			ENG = {
-				country_event = kxxfrance.24
+			every_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				
 			}
 		}
 	}
@@ -36261,9 +36285,8 @@ focus = {
 			factor = 1000
 		}
 		completion_reward = {
-			ENG = {
-				country_event = kxxfrance.24
-			}
+			
+			
 		}
 	}
 	focus = {
@@ -36284,8 +36307,13 @@ focus = {
 			factor = 1000
 		}
 		completion_reward = {
-			ENG = {
-				country_event = kxxfrance.24
+			every_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
 			}
 		}
 	}
@@ -36307,9 +36335,115 @@ focus = {
 			factor = 1000
 		}
 		completion_reward = {
-			ENG = {
-				country_event = kxxfrance.24
+			every_state = {
+				limit = {
+					is_core_of = SRI
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
 			}
+			create_wargoal = {
+				type = annex_everything
+				target = SRI
+			}
+			every_state = {
+				limit = {
+					is_core_of = ITA
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ITA
+			}
+			every_state = {
+				limit = {
+					is_core_of = PAP
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = PAP
+			}
+			every_state = {
+				limit = {
+					is_core_of = SIC
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SIC
+			}
+			every_state = {
+				limit = {
+					is_core_of = SRD
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SRD
+			}
+			every_state = {
+				limit = {
+					is_core_of = ENG
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = GER
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = BEL
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = HOL
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = WLL
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = FLA
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+
 		}
 	}
 	focus = {
@@ -36330,9 +36464,57 @@ focus = {
 			factor = 1000
 		}
 		completion_reward = {
-			ENG = {
-				country_event = kxxfrance.24
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = NFA
+						is_claimed_by = NFA
+						is_core_of = ALG	
+						is_core_of = TUN
+						is_core_of = MRT
+						is_core_of = SEN
+						is_core_of = GNA
+						is_core_of = MAL
+						is_core_of = BFA
+						is_core_of = NER
+						is_core_of = WAD
+					}
+				}
+				FRA = { add_state_core = PREV }
 			}
+					add_state_core = 461
+					add_state_core = 462
+					add_state_core = 807
+					add_state_core = 963
+					add_state_core = 876
+					add_state_core = 975
+					add_state_core = 660
+					add_state_core = 971
+					add_state_core = 974
+					add_state_core = 953
+					add_state_core = 928
+					add_state_core = 539
+					add_state_core = 543
+					add_state_core = 268
+					add_state_core = 856
+					add_state_core = 826
+					add_state_core = 286
+					add_state_core = 268
+					add_state_core = 827
+					add_state_core = 670
+					add_state_core = 857
+					add_state_core = 728
+					add_state_core = 671
+					add_state_core = 750
+					add_state_core = 825
+					add_state_core = 1177
+					add_state_core = 1178
+					add_state_core = 1179
+					add_state_core = 708
+					add_state_core = 706
+					add_state_core = 1095
+					add_state_core = 635
+					add_state_core = 641
 		}
 	}
 	focus = {
@@ -44353,10 +44535,7 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
-			swap_ideas = {
-				remove_idea = FRA_transhumanism
-				add_idea = FRA_transhumanism2
-			}
+			FRA_transhumanism_idea_swap = yes
 		}
 	}
 	focus = {
@@ -44375,10 +44554,7 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
-			swap_ideas = {
-				remove_idea = FRA_transhumanism2
-				add_idea = FRA_transhumanism3
-			}
+			FRA_transhumanism_idea_swap = yes
 		}
 	}
 	focus = {
@@ -44397,10 +44573,7 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
-			swap_ideas = {
-				remove_idea = FRA_transhumanism3
-				add_idea = FRA_transhumanism4
-			}
+			FRA_transhumanism_idea_swap = yes
 		}
 	}
 	focus = {
@@ -44424,10 +44597,7 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
-			swap_ideas = {
-				remove_idea = FRA_transhumanism4
-				add_idea = FRA_transhumanism5
-			}
+			FRA_transhumanism_idea_swap = yes
 		}
 	}
 	focus = {
@@ -44451,10 +44621,7 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
-			swap_ideas = {
-				remove_idea = FRA_transhumanism5
-				add_idea = FRA_transhumanism6
-			}
+			FRA_transhumanism_idea_swap = yes
 		}
 	}
 	focus = {
