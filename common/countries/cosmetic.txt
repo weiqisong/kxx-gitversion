@@ -10364,8 +10364,8 @@ FRA_batailles = {
 	color_ui = rgb {  0  18  93 }
 }
 FRA_acephale_accelerationism = {
-	color = rgb {  0  18  93 }
-	color_ui = rgb {  0  18  93 }
+	color = rgb { 99 33 66 }
+	color_ui = rgb { 99 33 66 }
 }
 FRA_sansimon = {
 	color = rgb { 98 67 132 }
@@ -10374,4 +10374,8 @@ FRA_sansimon = {
 FRA_sansimon_europe = {
 	color = rgb { 98 67 132 }
 	color_ui = rgb { 98 67 132 }
+}
+FRA_BRE = {
+	color = rgb { 0 18 93 }
+	color_ui = rgb { 0 18 93 }
 }

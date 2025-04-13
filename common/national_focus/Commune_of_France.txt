@@ -34400,6 +34400,393 @@ focus = {
 		}
 	}
 	focus = {
+		id = FRA_surrealist_politics
+		icon = GFX_goal_AUS_Coalition_Splits
+		x = 183
+		y = 34
+
+		cost = 4
+		available = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "安德烈·布勒东"
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_rifle_establish_power
+		icon = GFX_goal_ALB_Arme_Municion
+		x = -3
+		y = 1
+		relative_position_id = FRA_surrealist_politics
+		cost = 4
+		prerequisite = {
+			focus = FRA_surrealist_politics
+		}
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_war_support = 0.1
+			add_manpower = 10000
+			add_command_power = 50
+		}
+	}
+	
+	focus = {
+		id = FRA_embrace_futurism
+		icon = GFX_goals_FRA_avant_garde
+		x = -1
+		y = 1
+		relative_position_id = FRA_surrealist_politics
+		cost = 4
+		prerequisite = {
+			focus = FRA_surrealist_politics
+		}
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			add_ideas = FRA_futurism
+		}
+	}
+	focus = {
+		id = FRA_anarchist_revolutionary
+		icon = GFX_FAUD_ANARCHO_SOCIETY
+		x = 1
+		y = 1
+		relative_position_id = FRA_surrealist_politics
+		cost = 4
+		prerequisite = {
+			focus = FRA_surrealist_politics
+		}
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			add_ideas = FRA_revolutionary_extremism
+		}
+	}
+	focus = {
+		id = FRA_decipate_reactionaries
+		icon = GFX_ALA_killing_fields
+		x = 3
+		y = 1
+		relative_position_id = FRA_surrealist_politics
+		cost = 4
+		prerequisite = {
+			focus = FRA_surrealist_politics
+		}
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = syndicalist
+				popularity = -0.1
+			}
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = FRA_knives_for_crowd
+		icon = GFX_RUS_Revolutionary_Terror
+		x = -2
+		y = 2
+		relative_position_id = FRA_surrealist_politics
+		cost = 4
+		prerequisite = {
+			focus = FRA_rifle_establish_power
+		}
+		prerequisite = {
+			focus = FRA_embrace_futurism
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_revolutionary_extremism
+				add_idea = FRA_revolutionary_extremism2
+
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1000
+			}	
+		}
+	}
+	focus = {
+		id = FRA_vitasse_sois_mon_dieu
+		icon = GFX_goal_FRA_Speed_Cult
+		x = 0
+		y = 2
+		relative_position_id = FRA_surrealist_politics
+		cost = 4
+		prerequisite = {
+			focus = FRA_anarchist_revolutionary
+		}
+		prerequisite = {
+			focus = FRA_embrace_futurism
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_futurism
+				add_idea = FRA_futurism2
+			}
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 0.8
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FRA_burn_the_bureaucracy
+		icon = GFX_goal_COL_Burn_All_History_Books
+		x = 2
+		y = 2
+		relative_position_id = FRA_surrealist_politics
+		cost = 4
+		prerequisite = {
+			focus = FRA_anarchist_revolutionary
+		}
+		prerequisite = {
+			focus = FRA_decipate_reactionaries
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			add_ideas = FRA_new_social_order
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = FRA_brave_strong_fast
+		icon = GFX_goal_NIC_Strong_Presidency
+		x = -2
+		y = 3
+		relative_position_id = FRA_surrealist_politics
+		cost = 4
+		prerequisite = {
+			focus = FRA_knives_for_crowd
+		}
+		prerequisite = {
+			focus = FRA_vitasse_sois_mon_dieu
+		}
+		prerequisite = {
+			focus = FRA_burn_the_bureaucracy
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_revolutionary_extremism2
+				add_idea = FRA_revolutionary_extremism3
+
+			}
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+		}
+	}
+	focus = {
+		id = FRA_radical_than_radicals
+		icon = GFX_HUN_total_recovery
+		x = 0
+		y = 3
+		relative_position_id = FRA_surrealist_politics
+		cost = 4
+		prerequisite = {
+			focus = FRA_knives_for_crowd
+		}
+		prerequisite = {
+			focus = FRA_vitasse_sois_mon_dieu
+		}
+		prerequisite = {
+			focus = FRA_burn_the_bureaucracy
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_futurism2
+				add_idea = FRA_futurism3
+			}
+			add_war_support = 0.15
+		}
+	}
+	focus = {
+		id = FRA_arts_of_dictator
+		icon = GFX_goal_CSA_Machevellii
+		x = 2
+		y = 3
+		relative_position_id = FRA_surrealist_politics
+		cost = 4
+		prerequisite = {
+			focus = FRA_knives_for_crowd
+		}
+		prerequisite = {
+			focus = FRA_vitasse_sois_mon_dieu
+		}
+		prerequisite = {
+			focus = FRA_burn_the_bureaucracy
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_new_social_order
+				add_idea = FRA_new_social_order2
+			}
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+		}
+	}
+	focus = {
+		id = FRA_war_of_masses
+		icon = GFX_goal_CSA_union_army
+		x = -2
+		y = 4
+		relative_position_id = FRA_surrealist_politics
+		cost = 4
+		prerequisite = {
+			focus = FRA_brave_strong_fast
+		}
+		prerequisite = {
+			focus = FRA_radical_than_radicals
+		}
+		prerequisite = {
+			focus = FRA_arts_of_dictator
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_revolutionary_extremism3
+				add_idea = FRA_revolutionary_extremism4
+
+			}
+			add_manpower = 10000
+			army_experience = 50
+		}
+	}
+	focus = {
+		id = FRA_new_reality
+		icon = GFX_goal_BBR_futurist_edu
+		x = 0
+		y = 4
+		relative_position_id = FRA_surrealist_politics
+		cost = 4
+		prerequisite = {
+			focus = FRA_brave_strong_fast
+		}
+		prerequisite = {
+			focus = FRA_radical_than_radicals
+		}
+		prerequisite = {
+			focus = FRA_arts_of_dictator
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_futurism3
+				add_idea = FRA_futurism4
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.15
+			}
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_quis_contra_nois
+		icon = GFX_goal_ITA_dannunzio
+		x = 2
+		y = 4
+		relative_position_id = FRA_surrealist_politics
+		cost = 4
+		prerequisite = {
+			focus = FRA_brave_strong_fast
+		}
+		prerequisite = {
+			focus = FRA_radical_than_radicals
+		}
+		prerequisite = {
+			focus = FRA_arts_of_dictator
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_new_social_order2
+				add_idea = FRA_new_social_order3
+			}
+			add_stability = 0.15
+		}
+	}
+	focus = {
+		id = FRA_war_of_liberation
+		icon = GFX_goal_COR_Let_World_Free
+		x = 0
+		y = 5
+		relative_position_id = FRA_surrealist_politics
+		cost = 4
+		prerequisite = {
+			focus = FRA_war_of_masses
+		}
+		prerequisite = {
+			focus = FRA_new_reality
+		}
+		prerequisite = {
+			focus = FRA_quis_contra_nois
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			set_cosmetic_tag = FRA_BRE
+			every_state = {
+				
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+		}
+	}
+	focus = {
 		id = FRA_moderate_second
 		icon = GFX_goals_FRA_socdem_goverment
 		x = 158
@@ -36042,7 +36429,7 @@ focus = {
 		icon = GFX_goal_FRA_johnny_comes_forth
 		
 		x = 183
-		y = 41
+		y = 40
 		available = {
 			always = no
 		}

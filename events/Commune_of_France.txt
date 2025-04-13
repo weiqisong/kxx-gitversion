@@ -9739,6 +9739,33 @@ country_event = { #anarchist leader
 		}
 		custom_effect_tooltip = "New Communal Elections will take place every 5 years!"
 	}
+	option = {
+		name = comfrance.1007.g #BRETON
+		create_country_leader = {
+			name = "安德烈·布勒东"
+			picture = "gfx/leaders/FRA/Portrait_FRA_Andre_Breton.png"
+			expire = "1.1.1"
+			ideology = radsoc_surrealism_subtype
+		}
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = radical_socialist
+					elections_allowed = no
+				}
+			}
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.3
+		}
+		set_party_name = { 
+			ideology = radical_socialist
+			long_name = "法兰西超现实主义党"
+			name = "法兰西超现实主义党"
+		}
+		set_cosmetic_tag = FRA_Breton
+	}
 }
 
 country_event = { #moderates leader
