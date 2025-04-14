@@ -37078,6 +37078,7 @@ focus = {
 			hidden_effect = {
 				country_event = { id = frg.4 }
 			}
+			
 			custom_effect_tooltip = FRG_tear_tooltip
 		}
 	}
