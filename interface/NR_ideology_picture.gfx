@@ -54,5 +54,24 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideologies/ideology_bars/nr/ssnp.png"
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+		name = "GFX_ideology_arab_socialism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/nr/arab_socialism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_regenerationism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/nr/regenerationism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_pan_turkism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/nr/pan_turkism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_technocratic_pan_turkism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/nr/technocratic_pan_turkism.png"
+		legacy_lazy_load = no
+	}
 }

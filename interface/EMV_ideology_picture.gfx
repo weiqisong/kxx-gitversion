@@ -44,5 +44,15 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideologies/ideology_bars/emv/liberating_nationalism.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_ideology_integrism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/emv/integrism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_anarcho_abertzalism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/emv/anarcho_abertzalism.png"
+		legacy_lazy_load = no
+	}
 
 }
