@@ -104,4 +104,59 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideologies/ideology_bars/kxx/venizelism.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_ideology_revisionist_sorelianism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/kxx/revisionist_sorelianism_subtype.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_millitarist_sorelianism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/kxx/millitarist_sorelianism_subtype.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_red_national_radicalism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/kxx/red_national_radicalism_subtype.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_surrealism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/kxx/surrealism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_monarcho_syndicalism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/kxx/monarcho_syndicalism_subtype.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_transhumanism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/kxx/transhumanism_subtype.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_left_occultism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/kxx/left_occultism_subtype.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_possibilism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/kxx/possibilism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_saint_simonianism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/kxx/saint_simonianism_subtype.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_surrealist_eroticism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/kxx/surrealist_eroticism_subtype.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_christian_bolshevism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/kxx/christian_bolshevism_subtype.png"
+		legacy_lazy_load = no
+	}
 }

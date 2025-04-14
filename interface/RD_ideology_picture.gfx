@@ -50,7 +50,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_ideology_cn_national_socialism_bar"
+		name = "GFX_ideology_national_socialism_bar"
 		textureFile = "gfx/interface/ideologies/ideology_bars/rd/national_socialism.png"
 		legacy_lazy_load = no
 	}
@@ -177,7 +177,22 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_prag_syn_bar"
-		textureFile = "gfx/interface/ideologies/ideology_bars/rd/indiv_anar.png"
+		textureFile = "gfx/interface/ideologies/ideology_bars/rd/prag_syn.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_new_citizen_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/rd/new_citizen.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_daijitao_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/rd/daijitao.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_new_life_movement_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/rd/new_life_movement.png"
 		legacy_lazy_load = no
 	}
 }
