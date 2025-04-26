@@ -25,7 +25,7 @@ focus_tree = {
 		cost = 3
 
 		ai_will_do = {
-			base = 100
+			base = 0
 		}
 		available = {
 			if = {
