@@ -7970,7 +7970,7 @@ focus_tree = {
 			add_research_slot = 1
 			add_ideas = DEN_danes_rise_to_fight
 			hidden_effect = {
-				DEN = { country_event = den.44 }
+				DEN = { country_event = den.1501 }
 			}
 			
 		}
