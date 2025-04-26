@@ -83,5 +83,15 @@ leader_traits = {
 				factor = 1
 		}
 	}
-	
+	FRA_socdem_dict = {
+
+		random = no
+		industrial_capacity_factory = 0.15
+		conscription_factor = 0.2
+		social_democrat_drift = 0.03
+		consumer_goods_expected_value = -0.15
+		ai_will_do = {
+				factor = 1
+		}
+	}
 }
