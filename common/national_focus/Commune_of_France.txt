@@ -38371,7 +38371,9 @@ focus = {
 		prerequisite = {
 			focus = FRA_socdem_and_catholicism
 		}
-		
+		available = {
+			has_country_flag = FRA_ribes_autocracy
+		}
 		cost = 3
 		 
 		
