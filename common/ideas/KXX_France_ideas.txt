@@ -4,6 +4,31 @@
 ideas = {
 
 	country = {
+		FRA_moralism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				political_power_factor = 0.15
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+				social_democrat_drift = 0.05
+				social_conservative_drift = 0.02
+			}
+			
+			picture = NFA_social_catholic
+		}
+		FRA_agriculture_family_youth = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				supply_consumption_factor = -0.15
+				global_building_slots_factor = 0.15
+				monthly_population = 0.75
+				conscription = 0.04
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+			}
+			
+			picture = generic_catholic_corporatism_spirit
+		}
 		FRA_new_social_order3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
 			modifier = {

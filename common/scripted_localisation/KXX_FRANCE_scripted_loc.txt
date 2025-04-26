@@ -1,0 +1,13 @@
+
+defined_text = {
+	name = FRA_Boncour_yes
+	text = {
+		trigger = { has_country_flag = FRA_Boncour_01yes }
+		localization_key = FRA_Boncour_yes_focus
+	}
+	text = {
+		trigger = { has_country_flag = FRA_Boncour_01no }
+		localization_key = FRA_Boncour_no
+	}
+	
+}

@@ -996,4 +996,8 @@ spriteTypes = {
 		name = "GFX_goal_FRA_nationalist_allies"
 		texturefile = "gfx/interface/goals/KXX_COF/FRA_nationalist_allies.png"
 	}
+	spriteType = {
+		name = "GFX_goal_FRA_dictator_of_social_democracy"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_dictator_of_social_democracy.png"
+	}
 }
