@@ -9947,10 +9947,53 @@ focus = FRA_office_des_chemins_de_fer
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_arab_committee"
-			remove_ideas = FRA_ECSC
-			remove_ideas = FRA_EEC
-			add_ideas = FRA_EUROPE
-			set_cosmetic_tag = FRA_PANEUROPE
+			custom_effect_tooltip = "我们的所有傀儡国意识形态将被设置为与我们相同。"
+			if = {
+				limit = {
+					has_government = totalist
+				}
+				every_country = {
+					limit = {
+						is_subject_of = FRA
+					}
+					set_politics = {
+						ruling_party = totalist
+						elections_allowed = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_government = syndicalist
+				}
+				every_country = {
+					limit = {
+						is_subject_of = FRA
+					}
+					set_politics = {
+						ruling_party = syndicalist
+						elections_allowed = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_government = radical_socialist
+						has_government = social_democrat
+					}
+					
+				}
+				every_country = {
+					limit = {
+						is_subject_of = FRA
+					}
+					set_politics = {
+						ruling_party = radical_socialist
+						elections_allowed = no
+					}
+				}
+			}
 		}
 		
 	}
