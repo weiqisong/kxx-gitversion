@@ -1580,7 +1580,7 @@ country_event = {
         	name = "让·齐罗姆斯基"  # Jean Zyromski
         	picture = "gfx/leaders/FRP/Portrait_France_Jean_Zyromski.png"
         	expire = "1.1.1"
-        	ideology = syndicalist_subtype
+        	ideology = syn_united_front
         	traits = {}
       	}
       create_country_leader = {

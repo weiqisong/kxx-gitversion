@@ -37776,9 +37776,14 @@ focus = {
 			factor = 1000
 		}
 		completion_reward = {
+			custom_effect_tooltip = "命定之日即将到来……"
 			if = {
 				limit = {
-					has_completed_focus = FRA_Gamelin_yes
+					OR = {
+						has_completed_focus = FRA_United_We_Stand_Forever
+						has_completed_focus = FRA_Left_Wing_Front
+					}
+					
 				}
 				custom_effect_tooltip = FRG_Gamelin_yes_tooltip
 				country_event = { id = frg.12 }
@@ -38382,6 +38387,9 @@ focus = {
 		}
 		completion_reward = {
 			add_country_leader_trait = FRA_socdem_dict
+			hidden_effect={
+				set_country_leader_ideology = authoritarian_social_democracy_subtype
+			}
 		}
 	}
 	### Jacobins ###
