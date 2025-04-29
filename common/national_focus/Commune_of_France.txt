@@ -44904,6 +44904,12 @@ focus = {
 			}
 			add_threat = 10
 			set_cosmetic_tag = FRA_acephale_accelerationism
+			every_state = {
+				
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
 		}
 	}
 	focus = {

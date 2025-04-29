@@ -188,7 +188,7 @@ ideologies = {
 			transhumanism_subtype = {can_be_randomly_selected = no} #超人类主义
 			Maximism_subtype = { can_be_randomly_selected = no }  #众生平等主义（制作组彩蛋）
 			Messiahism_subtype = { can_be_randomly_selected = no }  #弥赛亚情结（制作组彩蛋）
-
+			surrealist_eroticism_subtype = { can_be_randomly_selected = no color = { 91 9 76 } } #超现实神秘主义（巴塔耶）
 
 		}
 		dynamic_faction_names = {
@@ -458,8 +458,7 @@ ideologies = {
 			radsoc_yellow_syndicalism_subtype = {can_be_randomly_selected = no color = { 240 225 48 } } #黄色工团主义
 			otokonomusumeism_subtype = { can_be_randomly_selected = no }  #伪娘风徽（彩蛋）
 			dazhuanshunism_subtype = { can_be_randomly_selected = no }  #大赚顺制度（彩蛋）
-			radsoc_surrealism_subtype = { can_be_randomly_selected = no } #超现实主义（布勒东）
-			surrealist_eroticism_subtype = { can_be_randomly_selected = no color = { 91 9 76 } } #超现实神秘主义（巴塔耶）
+			radsoc_surrealism_subtype = { can_be_randomly_selected = no } #超现实主义（布勒东）			
 			radsoc_syndicalist_subtype = {can_be_randomly_selected = no} #工团主义
 		}
 		dynamic_faction_names = {

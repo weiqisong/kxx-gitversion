@@ -3710,7 +3710,7 @@ country_event = { #
 			elections_allowed = no
 		}
 		set_cosmetic_tag = SIC_catholic
-		set_country_flag = SRI_catholicisis
+		set_country_flag = SIC_catholicisis
 		set_party_name = {
 			ideology = paternal_autocrat
 			long_name = SIC_catholic_party_long
@@ -8751,7 +8751,7 @@ country_event = {
 	fire_only_once = yes
 	
 	is_triggered_only = yes
-}
+
 	option = {
 		name = cathitaly.2000.a
 		add_political_power = -150
@@ -8774,7 +8774,8 @@ country_event = {
 		name = cathitaly.2000.c
 		add_political_power = 50
 	}
-	country_event = {
+}
+country_event = {
 	id= bor.1
 	title = bor.1.t
 	desc = bor.1.d

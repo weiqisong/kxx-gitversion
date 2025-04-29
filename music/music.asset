@@ -2,7 +2,7 @@
 # MAIN THEME
 music = {
 	name = "maintheme"
-	file = "war_song.ogg"
+	file = "Europe libere toi.ogg"
 	volume = 1
 }
 

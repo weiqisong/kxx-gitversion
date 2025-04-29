@@ -513,6 +513,16 @@ option = {
 			name = FRA_gamelin_party
 		}
 }
+option = {
+	name = kxxfrance.13.c
+	add_stability = -0.1
+	hidden_effect = {
+		country_event = {
+			id = kxxfrance.84
+			days = 7
+		}
+	}
+}
 }
 country_event = {	
 	id = kxxfrance.13 #yay nap
@@ -765,6 +775,16 @@ option = {
 	country_event = {
 		id = kxxfrance.17
 		days = 7
+	}
+}
+option = {
+	name = kxxfrance.16.c
+	add_stability = -0.1
+	hidden_effect = {
+		country_event = {
+			id = kxxfrance.84
+			days = 7
+		}
 	}
 }
 }
@@ -6368,6 +6388,14 @@ option = {
 		ideology = technocracy_subtype
 		traits = { }
 	}
+			remove_ideas_with_trait = head_of_government
+			add_ideas = FRA_Francois_Lehideux_hog_tot
+			remove_ideas_with_trait = foreign_minister
+			add_ideas = FRA_Jean_Coutrot_for_tot
+			remove_ideas_with_trait = economy_minister
+			add_ideas = FRA_Le_Corbusier_eco_tot
+			remove_ideas_with_trait = security_minister
+			add_ideas = FRA_Francis_Delaisi_sec_sde
 	set_politics = {
 		ruling_party = totalist
 		elections_allowed = no
@@ -6406,4 +6434,34 @@ option = {
 	complete_national_focus = FRA_synarchist_conpiracy
 }	
 
+}
+country_event = {	
+	id = kxxfrance.84
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
+	title = kxxfrance.84.t
+	desc = kxxfrance.84.d
+	is_triggered_only = yes
+
+option = { 
+	create_country_leader = {
+		name = "乔治·巴塔耶"
+		picture = "gfx/leaders/FRA/Portrait_FRA_Georges_Bataille.png"
+		expire = "1965.1.1"
+		ideology = surrealist_eroticism_subtype
+		traits = { }
+	}
+	add_popularity = {
+		ideology = totalist
+		popularity = 0.2
+	}
+	set_party_name = {
+		ideology = totalist
+		long_name = "阿赛法尔社团"
+		name = "阿赛法尔社团"
+	}
+	complete_national_focus = FRA_revolt_of_the_masters
+	set_cosmetic_tag = FRA_batailles
+	
+}	
+	
 }

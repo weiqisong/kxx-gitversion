@@ -99,7 +99,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_syn_united_front"
-		texturefile = "gfx/interface/ideologies/uobeu/tot_einheitsfront.png"
+		texturefile = "gfx/interface/ideologies/uobeu/radsoc_einheitsfront.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_socdem_united_front"
