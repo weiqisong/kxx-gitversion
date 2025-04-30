@@ -190,6 +190,615 @@ defined_text = { #定义标题
 		}
 		localization_key = "GFX_SPEVNT_TAIWAN_COMMIE_UNITE_CHINA"
 	}
+
+	###超事件扩展
+	text = { 
+		trigger = {
+			has_global_flag = CAN_IMPERAL_FEDERATION_FORMED_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Imperial_Federation"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = CAN_KIBBO_IMPFED_FORMED_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Kibbo_ImpFed"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = IRE_CELTICS_UNIFIED_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Celtics"
+	}
+
+	##World Conquests
+	text = { 
+		trigger = {
+			has_global_flag = ALB_HOXHA_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Hoxha_World"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = CSA_LOEB_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Loeb_World"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = SIC_PIO_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Pio_World"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = POL_POLAND_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Poland_World"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = BBR_SUN_RA_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Sun_Ra_World"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = CSA_TECHNOCRACY_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Technocracy_World"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_TOMLINSON_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Tomlinson_World"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_LOVECRAFT_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Lovecraft_World"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_LEFTCRAFT_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Leftcraft_World"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = TIB_ROERICH_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Roerich_World"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = USA_WILLKIE_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Willkie_World"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = VIN_COCONUT_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Coconut_World"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = VIN_HOA_HAO_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Hoa_Hao_World"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = VIN_CAO_DAI_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Cao_Dai_World"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = MEX_VASCONCELOS_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Vasconcelos_World"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = CSA_BURNHAM_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Burnham_World"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = FOP_POSADAS_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Posadas_World"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = FOP_FONTE_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Fonte_World"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = MOR_GUENON_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Guenon_World"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = ENG_CLEM_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Clem_World"
+	}
+
+	
+	#################
+	##American ones##
+	#################
+
+	##BBR
+	text = { 
+		trigger = {
+			has_global_flag = BBR_NORMAL_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Normal_BBR_America"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = BBR_SOCIALIST_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Socialist_BBR_America"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = BBR_UNIA_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_UNIA"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = BBR_NOI_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_NOI"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = BBR_ABB_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_ABB"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = BBR_JEWISH_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Israelites_America"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = BBR_SUN_RA_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Sun_Ra_America"
+	}
+
+	##NYC
+	text = { 
+		trigger = {
+			has_global_flag = NYC_ROOSEVELT_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Roosevelt"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_TRUMP_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Trump"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_STEINBECK_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Steinbeck"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_TAMMANY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Tammany"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_NYPD_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_NYPD"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_ITALIAN_MOB_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Italian_Mob"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_HARLEM_MOB_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Harlem_Mob"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_HARLEM_NATIONALIST_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Harlem_Nationalist"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_HARLEM_SYNDIES_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Harlem_Syndies"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_SUFI_ABDUL_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Sufi_Abdul"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_CONSHANKIN_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Conshankin"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_WELLES_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Welles"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_LAGUARDIA_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_LaGuardia"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_LAGUARDIA_SUCCESSORS_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_LaGuardia_Successors"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_CHRISTIANS_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Christians"
+	}
+	#AUS
+	text = { 
+		trigger = {
+			has_global_flag = AUS_HUEY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Huey"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = AUS_FOLLETTE_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Follette"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = AUS_PELLEY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Pelley"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = AUS_MARLAND_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Marland"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = AUS_PAPPY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Pappy"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = AUS_PENDERGAST_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Pendergast"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = AUS_CATHOLIC_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Catholic"
+	}
+
+	##USA
+	text = { 
+		trigger = {
+			has_global_flag = USA_MAC_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_MacArthur"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = USA_NAVY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Navy"
+	}
+
+	##NEE
+	text = { 
+		trigger = {
+			has_global_flag = NEE_MILITARY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_NEE_Military"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_PERSHING_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Pershing"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_LERMOND_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Lermond"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_NORDIC_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Nordic"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_AMERICAN_MONARCHY_FLAG
+		}
+		localization_key = "GFX_SPEVNT_American_Monarchy"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_QUAKER_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Quaker"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_ANCAP_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Ancap"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_PROHIB_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Prohib"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_DEMOCRACY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_NEE_Democracy"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_IRISH_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Irish_America"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_DOMINIONIST_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Dominionists"
+	}
+
+	##PSA
+	text = { 
+		trigger = {
+			has_global_flag = PSA_MILITARY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_PSA_Military"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_DEMOCRACY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_PSA_Democracy"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_SPIRITUALIST_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Spiritualists"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_NORTON_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Norton"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_PROGRESSIVE_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Progressives"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_SHAMBHALA_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Wallace_Shambhala"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_JAPANESE_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Japanese_America"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_HUGHES_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Hughes"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_HEARST_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Hearst"
+	}
+
+	##COR
+	text = { 
+		trigger = {
+			has_global_flag = COR_LINDBERGH_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Lindbergh"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_FORDIST_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Fordist"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_RUSSELL_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Russell_Jr"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_CRUMP_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Crump"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_MURRAY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Murray"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_GENERIC_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_COR_Generic"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_KLAN_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Klan"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_PATTON_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Patton"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_FORTY_EIGHT_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_FortyEight"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_ARMSTRONG_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Armstrong"
+	}
+
+	##Meme mode/Funny##
+	text = { 
+		trigger = {
+			has_global_flag = VIN_CAO_DAI_WORLD_FUNNY_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Cao_Dai_World_Funny"
+	}
 }
 
 defined_text = { #定义格言
@@ -385,6 +994,649 @@ defined_text = { #定义格言
 		}
 		localization_key = "GFX_SPEVNT_TAIWAN_COMMIE_UNITE_CHINA_TEXT"
 	}
+
+	###超事件扩展
+	text = { 
+		trigger = {
+			has_global_flag = CAN_IMPERAL_FEDERATION_FORMED_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Imperial_Federation_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = CAN_KIBBO_IMPFED_FORMED_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Kibbo_ImpFed_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = IRE_CELTICS_UNIFIED_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Celtics_TEXT"
+	}
+
+	##World Conquests
+	text = { 
+		trigger = {
+			has_global_flag = ALB_HOXHA_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Hoxha_World_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = CSA_LOEB_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Loeb_World_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = SIC_PIO_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Pio_World_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = POL_POLAND_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Poland_World_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = BBR_SUN_RA_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Sun_Ra_World_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = CSA_TECHNOCRACY_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Technocracy_World_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_TOMLINSON_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Tomlinson_World_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_LOVECRAFT_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Lovecraft_World_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_LEFTCRAFT_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Leftcraft_World_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = TIB_ROERICH_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Roerich_World_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = USA_WILLKIE_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Willkie_World_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = VIN_COCONUT_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Coconut_World_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = VIN_HOA_HAO_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Hoa_Hao_World_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = VIN_CAO_DAI_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Cao_Dai_World_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = MEX_VASCONCELOS_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Vasconcelos_World_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = CSA_BURNHAM_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Burnham_World_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = FOP_POSADAS_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Posadas_World_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = FOP_FONTE_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Fonte_World_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = MOR_GUENON_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Guenon_World_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = ENG_CLEM_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Clem_World_TEXT"
+	}
+
+
+	##American unification
+	text = { 
+		trigger = {
+			has_global_flag = BBR_NORMAL_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Normal_BBR_America_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = BBR_SOCIALIST_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Socialist_BBR_America_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = BBR_UNIA_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_UNIA_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = BBR_NOI_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_NOI_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = BBR_ABB_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_ABB_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = BBR_JEWISH_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Israelites_America_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = BBR_SUN_RA_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Sun_Ra_America_TEXT"
+	}
+
+	##NYC 
+	text = { 
+		trigger = {
+			has_global_flag = NYC_ROOSEVELT_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Roosevelt_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_TRUMP_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Trump_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_STEINBECK_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Steinbeck_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_TAMMANY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Tammany_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_NYPD_AMERICA_FLAG
+			NOT = { 
+				OR = {
+					has_country_leader = { name = "Frank Sinatra" ruling_only = yes }
+					has_country_leader = { name = "Frank Sinatra " ruling_only = yes }
+					has_country_leader = { name = "弗兰克·辛纳屈" ruling_only = yes }
+					has_country_leader = { name = "弗兰克·辛纳屈 " ruling_only = yes }
+				}
+			}
+		}
+		localization_key = "GFX_SPEVNT_NYPD_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_NYPD_AMERICA_FLAG
+			OR = {
+				has_country_leader = { name = "Frank Sinatra" ruling_only = yes }
+				has_country_leader = { name = "Frank Sinatra " ruling_only = yes }
+				has_country_leader = { name = "弗兰克·辛纳屈" ruling_only = yes }
+				has_country_leader = { name = "弗兰克·辛纳屈 " ruling_only = yes }
+			}
+		}
+		localization_key = "GFX_SPEVNT_Sinatra_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_ITALIAN_MOB_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Italian_Mob_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_HARLEM_MOB_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Harlem_Mob_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_HARLEM_NATIONALIST_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Harlem_Nationalist_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_HARLEM_SYNDIES_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Harlem_Syndies_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_SUFI_ABDUL_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Sufi_Abdul_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_CONSHANKIN_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Conshankin_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_WELLES_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Welles_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_LAGUARDIA_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_LaGuardia_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_LAGUARDIA_SUCCESSORS_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_LaGuardia_Successors_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_CHRISTIANS_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Christians_TEXT"
+	}
+	#AUS
+	text = { 
+		trigger = {
+			has_global_flag = AUS_HUEY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Huey_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = AUS_FOLLETTE_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Follette_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = AUS_PELLEY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Pelley_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = AUS_MARLAND_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Marland_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = AUS_PAPPY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Pappy_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = AUS_PENDERGAST_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Pendergast_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = AUS_CATHOLIC_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Catholic_TEXT"
+	}
+
+	##USA
+
+	text = { 
+		trigger = {
+			has_global_flag = USA_MAC_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_MacArthur_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = USA_NAVY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Navy_TEXT"
+	}
+
+	##NEE
+	text = { 
+		trigger = {
+			has_global_flag = NEE_MILITARY_AMERICA_FLAG
+			OR = {
+				has_country_leader = { name = "Leslie Groves" ruling_only = yes}
+				has_country_leader = { name = "莱斯利·格罗夫斯" ruling_only = yes}
+			}
+			
+		}
+		localization_key = "GFX_SPEVNT_NEE_Groves_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_MILITARY_AMERICA_FLAG
+			OR = {
+				has_country_leader = { name = "Hiram Bingham III" ruling_only = yes}
+				has_country_leader = { name = "海勒姆·宾厄姆三世" ruling_only = yes}
+			}
+		}
+		localization_key = "GFX_SPEVNT_NEE_Bingham_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_PERSHING_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Pershing_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_LERMOND_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Lermond_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_NORDIC_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Nordic_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_AMERICAN_MONARCHY_FLAG
+		}
+		localization_key = "GFX_SPEVNT_American_Monarchy_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_QUAKER_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Quaker_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_ANCAP_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Ancap_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_PROHIB_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Prohib_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_DEMOCRACY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_NEE_Democracy_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_IRISH_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Irish_America_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_DOMINIONIST_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Dominionists_TEXT"
+	}
+	##PSA
+	text = { 
+		trigger = {
+			has_global_flag = PSA_MILITARY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_PSA_Military_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_DEMOCRACY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_PSA_Democracy_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_SPIRITUALIST_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Spiritualists_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_NORTON_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Norton_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_PROGRESSIVE_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Progressives_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_SHAMBHALA_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Wallace_Shambhala_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_JAPANESE_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Japanese_America_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_HUGHES_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Hughes_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_HEARST_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Hearst_TEXT"
+	}
+	
+	##COR
+	text = { 
+		trigger = {
+			has_global_flag = COR_LINDBERGH_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Lindbergh_TEXT"
+	}
+	
+	text = { 
+		trigger = {
+			has_global_flag = COR_FORDIST_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Fordist_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_RUSSELL_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Russell_Jr_TEXT"
+	}
+
+	
+	text = { 
+		trigger = {
+			has_global_flag = COR_CRUMP_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Crump_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_MURRAY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Murray_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_GENERIC_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_COR_Generic_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_KLAN_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Klan_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_PATTON_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Patton_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_FORTY_EIGHT_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_FortyEight_TEXT"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_ARMSTRONG_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Armstrong_TEXT"
+	}
+
+	##Meme mode/Funny##
+	text = { 
+		trigger = {
+			has_global_flag = VIN_CAO_DAI_WORLD_FUNNY_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Cao_Dai_World_Funny_TEXT"
+	}
 }
 
 defined_text = { #定义选项
@@ -579,6 +1831,610 @@ defined_text = { #定义选项
 		}
 		localization_key = "GFX_SPEVNT_TAIWAN_COMMIE_UNITE_CHINA_REMARK"
 	}
+
+	###超事件扩展
+	text = { 
+		trigger = {
+			has_global_flag = CAN_IMPERAL_FEDERATION_FORMED_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Imperial_Federation_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = CAN_KIBBO_IMPFED_FORMED_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Kibbo_ImpFed_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = IRE_CELTICS_UNIFIED_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Celtics_REMARK"
+	}
+
+	##World Conquests
+	text = { 
+		trigger = {
+			has_global_flag = ALB_HOXHA_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Hoxha_World_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = CSA_LOEB_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Loeb_World_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = SIC_PIO_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Pio_World_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = POL_POLAND_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Poland_World_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = BBR_SUN_RA_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Sun_Ra_World_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = CSA_TECHNOCRACY_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Technocracy_World_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_TOMLINSON_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Tomlinson_World_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_LOVECRAFT_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Lovecraft_World_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_LEFTCRAFT_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Leftcraft_World_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = TIB_ROERICH_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Roerich_World_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = USA_WILLKIE_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Willkie_World_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = VIN_COCONUT_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Coconut_World_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = VIN_HOA_HAO_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Hoa_Hao_World_REMARK"
+	}
+	
+	text = { 
+		trigger = {
+			has_global_flag = VIN_CAO_DAI_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Cao_Dai_World_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = MEX_VASCONCELOS_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Vasconcelos_World_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = CSA_BURNHAM_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Burnham_World_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = FOP_POSADAS_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Posadas_World_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = FOP_FONTE_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Fonte_World_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = MOR_GUENON_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Guenon_World_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = ENG_CLEM_WORLD_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Clem_World_REMARK"
+	}
+
+	##American Unification##
+	text = { 
+		trigger = {
+			has_global_flag = BBR_NORMAL_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Normal_BBR_America_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = BBR_SOCIALIST_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Socialist_BBR_America_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = BBR_UNIA_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_UNIA_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = BBR_NOI_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_NOI_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = BBR_ABB_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_ABB_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = BBR_JEWISH_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Israelites_America_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = BBR_SUN_RA_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Sun_Ra_America_REMARK"
+	}
+
+	##NYC
+	text = { 
+		trigger = {
+			has_global_flag = NYC_ROOSEVELT_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Roosevelt_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_TRUMP_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Trump_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_STEINBECK_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Steinbeck_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_TAMMANY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Tammany_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_NYPD_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_NYPD_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_ITALIAN_MOB_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Italian_Mob_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_HARLEM_MOB_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Harlem_Mob_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_HARLEM_NATIONALIST_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Harlem_Nationalist_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_HARLEM_SYNDIES_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Harlem_Syndies_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_SUFI_ABDUL_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Sufi_Abdul_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_CONSHANKIN_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Conshankin_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_WELLES_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Welles_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_LAGUARDIA_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_LaGuardia_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_LAGUARDIA_SUCCESSORS_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_LaGuardia_Successors_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NYC_CHRISTIANS_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Christians_REMARK"
+	}
+	##AUS
+	text = { 
+		trigger = {
+			has_global_flag = AUS_HUEY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Huey_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = AUS_FOLLETTE_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Follette_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = AUS_PELLEY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Pelley_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = AUS_MARLAND_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Marland_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = AUS_PAPPY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Pappy_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = AUS_PENDERGAST_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Pendergast_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = AUS_CATHOLIC_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Catholic_REMARK"
+	}
+
+	##USA	
+	text = { 
+		trigger = {
+			has_global_flag = USA_MAC_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_MacArthur_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = USA_NAVY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Navy_REMARK"
+	}
+
+	##NEE
+	text = { 
+		trigger = {
+			has_global_flag = NEE_MILITARY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_NEE_Military_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_PERSHING_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Pershing_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_LERMOND_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Lermond_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_NORDIC_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Nordic_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_AMERICAN_MONARCHY_FLAG
+		}
+		localization_key = "GFX_SPEVNT_American_Monarchy_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_QUAKER_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Quaker_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_ANCAP_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Ancap_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_PROHIB_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Prohib_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_DEMOCRACY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_NEE_Democracy_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_IRISH_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Irish_America_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = NEE_DOMINIONIST_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Dominionists_REMARK"
+	}
+	##PSA
+	text = { 
+		trigger = {
+			has_global_flag = PSA_MILITARY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_PSA_Military_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_DEMOCRACY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_PSA_Democracy_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_SPIRITUALIST_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Spiritualists_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_NORTON_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Norton_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_PROGRESSIVE_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Progressives_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_SHAMBHALA_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Wallace_Shambhala_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_JAPANESE_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Japanese_America_REMARK"
+	}
+	
+	text = { 
+		trigger = {
+			has_global_flag = PSA_HUGHES_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Hughes_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = PSA_HEARST_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Hearst_REMARK"
+	}
+
+	##COR
+	text = { 
+		trigger = {
+			has_global_flag = COR_LINDBERGH_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Lindbergh_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_FORDIST_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Fordist_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_RUSSELL_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Russell_Jr_REMARK"
+	}
+
+	
+	text = { 
+		trigger = {
+			has_global_flag = COR_CRUMP_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Crump_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_MURRAY_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Murray_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_GENERIC_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_COR_Generic_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_KLAN_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Klan_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_PATTON_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Patton_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_FORTY_EIGHT_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_FortyEight_REMARK"
+	}
+
+	text = { 
+		trigger = {
+			has_global_flag = COR_ARMSTRONG_AMERICA_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Armstrong_REMARK"
+	}
+
+	##Meme mode/Funny##
+	text = { 
+		trigger = {
+			has_global_flag = VIN_CAO_DAI_WORLD_FUNNY_FLAG
+		}
+		localization_key = "GFX_SPEVNT_Cao_Dai_World_Funny_REMARK"
+	}
 }
 
 defined_text = { #定义内容
@@ -772,4 +2628,609 @@ defined_text = { #定义内容
 		}
 		localization_key = "GFX_SPEVNT_TAIWAN_COMMIE_UNITE_CHINA_DESC"
 	}
+
+	###超事件扩展
+		###Enhanced Super Events By Sloppenheimer
+		text = { 
+			trigger = {
+				has_global_flag = CAN_IMPERAL_FEDERATION_FORMED_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Imperial_Federation_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = CAN_KIBBO_IMPFED_FORMED_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Kibbo_ImpFed_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = IRE_CELTICS_UNIFIED_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Celtics_DESC"
+		}
+	
+		##World Conquests
+		text = { 
+			trigger = {
+				has_global_flag = ALB_HOXHA_WORLD_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Hoxha_World_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = CSA_LOEB_WORLD_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Loeb_World_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = SIC_PIO_WORLD_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Pio_World_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = POL_POLAND_WORLD_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Poland_World_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = BBR_SUN_RA_WORLD_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Sun_Ra_World_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = CSA_TECHNOCRACY_WORLD_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Technocracy_World_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NYC_TOMLINSON_WORLD_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Tomlinson_World_DESC"
+		}
+		
+		text = { 
+			trigger = {
+				has_global_flag = NEE_LOVECRAFT_WORLD_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Lovecraft_World_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NEE_LEFTCRAFT_WORLD_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Leftcraft_World_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = TIB_ROERICH_WORLD_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Roerich_World_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = USA_WILLKIE_WORLD_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Willkie_World_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = VIN_COCONUT_WORLD_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Coconut_World_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = VIN_HOA_HAO_WORLD_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Hoa_Hao_World_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = VIN_CAO_DAI_WORLD_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Cao_Dai_World_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = MEX_VASCONCELOS_WORLD_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Vasconcelos_World_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = CSA_BURNHAM_WORLD_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Burnham_World_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = FOP_POSADAS_WORLD_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Posadas_World_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = FOP_FONTE_WORLD_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Fonte_World_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = MOR_GUENON_WORLD_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Guenon_World_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = ENG_CLEM_WORLD_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Clem_World_DESC"
+		}
+	
+		##American unification
+		text = { 
+			trigger = {
+				has_global_flag = BBR_NORMAL_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Normal_BBR_America_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = BBR_SOCIALIST_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Socialist_BBR_America_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = BBR_UNIA_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_UNIA_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = BBR_NOI_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_NOI_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = BBR_ABB_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_ABB_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = BBR_JEWISH_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Israelites_America_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = BBR_SUN_RA_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Sun_Ra_America_DESC"
+		}
+	
+		##NYC
+		text = { 
+			trigger = {
+				has_global_flag = NYC_ROOSEVELT_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Roosevelt_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NYC_TRUMP_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Trump_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NYC_STEINBECK_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Steinbeck_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NYC_TAMMANY_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Tammany_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NYC_NYPD_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_NYPD_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NYC_ITALIAN_MOB_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Italian_Mob_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NYC_HARLEM_MOB_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Harlem_Mob_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NYC_HARLEM_NATIONALIST_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Harlem_Nationalist_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NYC_HARLEM_SYNDIES_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Harlem_Syndies_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NYC_SUFI_ABDUL_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Sufi_Abdul_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NYC_CONSHANKIN_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Conshankin_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NYC_WELLES_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Welles_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NYC_LAGUARDIA_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_LaGuardia_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NYC_LAGUARDIA_SUCCESSORS_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_LaGuardia_Successors_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NYC_CHRISTIANS_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Christians_DESC"
+		}
+		#AUS
+		text = { 
+			trigger = {
+				has_global_flag = AUS_HUEY_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Huey_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = AUS_FOLLETTE_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Follette_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = AUS_PELLEY_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Pelley_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = AUS_MARLAND_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Marland_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = AUS_PAPPY_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Pappy_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = AUS_PENDERGAST_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Pendergast_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = AUS_CATHOLIC_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Catholic_DESC"
+		}
+	
+		##USA
+		text = { 
+			trigger = {
+				has_global_flag = USA_MAC_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_MacArthur_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = USA_NAVY_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Navy_DESC"
+		}
+	
+		##NEE
+		text = { 
+			trigger = {
+				has_global_flag = NEE_MILITARY_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_NEE_Military_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NEE_PERSHING_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Pershing_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NEE_LERMOND_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Lermond_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NEE_NORDIC_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Nordic_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NEE_AMERICAN_MONARCHY_FLAG
+			}
+			localization_key = "GFX_SPEVNT_American_Monarchy_DESC"
+		}
+		
+		text = { 
+			trigger = {
+				has_global_flag = NEE_QUAKER_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Quaker_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NEE_ANCAP_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Ancap_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NEE_PROHIB_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Prohib_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NEE_DEMOCRACY_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_NEE_Democracy_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NEE_IRISH_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Irish_America_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = NEE_DOMINIONIST_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Dominionists_DESC"
+		}
+		##PSA
+		text = { 
+			trigger = {
+				has_global_flag = PSA_MILITARY_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_PSA_Military_DESC"
+		}
+		
+		text = { 
+			trigger = {
+				has_global_flag = PSA_DEMOCRACY_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_PSA_Democracy_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = PSA_SPIRITUALIST_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Spiritualists_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = PSA_NORTON_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Norton_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = PSA_PROGRESSIVE_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Progressives_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = PSA_SHAMBHALA_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Wallace_Shambhala_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = PSA_JAPANESE_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Japanese_America_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = PSA_HUGHES_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Hughes_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = PSA_HEARST_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Hearst_DESC"
+		}
+	
+		##COR
+		text = { 
+			trigger = {
+				has_global_flag = COR_LINDBERGH_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Lindbergh_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = COR_FORDIST_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Fordist_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = COR_RUSSELL_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Russell_Jr_DESC"
+		}
+	
+		
+		text = { 
+			trigger = {
+				has_global_flag = COR_CRUMP_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Crump_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = COR_MURRAY_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Murray_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = COR_GENERIC_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_COR_Generic_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = COR_KLAN_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Klan_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = COR_PATTON_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Patton_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = COR_FORTY_EIGHT_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_FortyEight_DESC"
+		}
+	
+		text = { 
+			trigger = {
+				has_global_flag = COR_ARMSTRONG_AMERICA_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Armstrong_DESC"
+		}
+	
+		##Meme mode/Funny##
+		text = { 
+			trigger = {
+				has_global_flag = VIN_CAO_DAI_WORLD_FUNNY_FLAG
+			}
+			localization_key = "GFX_SPEVNT_Cao_Dai_World_Funny_DESC"
+		}
 }

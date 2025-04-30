@@ -36474,7 +36474,10 @@ focus = {
 		x = 183
 		y = 40
 		available = {
-			always = no
+			has_country_leader = {
+				ruling_only = yes
+				name = "让·龙格"
+			}
 		}
 		cost = 4
 		 
@@ -36687,7 +36690,7 @@ focus = {
 		completion_reward = {
 			every_owned_state = {
 				add_building_construction = {
-					type = arms_factory
+					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
@@ -36715,7 +36718,14 @@ focus = {
 			factor = 1000
 		}
 		completion_reward = {
-			
+			every_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				
+			}
 			
 		}
 	}
@@ -37735,10 +37745,12 @@ focus = {
 			focus = FRA_deat_yes
 		}
 		available = {
-			
+			OR = {
 				has_country_flag = FRA_Arthuys_01yes
 				has_country_flag = FRA_Thorez_01yes
 				has_country_flag = FRA_deat_01yes
+			}
+				
 			
 		}
 		mutually_exclusive = {
@@ -37773,11 +37785,11 @@ focus = {
 			focus = FRA_deat_no
 		}
 		available = {
-			OR ={
+			
 				has_country_flag = FRA_Arthuys_01no
 				has_country_flag = FRA_Thorez_01no
 				has_country_flag = FRA_deat_01no
-			}
+			
 		
 		}
 		mutually_exclusive = {
@@ -45106,7 +45118,12 @@ focus = {
 		prerequisite = {
 			focus = FRA_technocracy_meeting
 		}
-		
+		available = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "勒·柯布西耶"
+			}
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
 			add_political_power = 100
@@ -45376,7 +45393,12 @@ focus = {
 		prerequisite = {
 			focus = FRA_technocracy_meeting
 		}
-		
+		available = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "弗朗西斯·德拉西"
+			}
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
 			add_political_power = 100
@@ -45650,7 +45672,12 @@ focus = {
 		prerequisite = {
 			focus = FRA_technocracy_meeting
 		}
-		
+		available = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "让·库特罗"
+			}
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
 			add_political_power = 100
@@ -45904,7 +45931,12 @@ focus = {
 		prerequisite = {
 			focus = FRA_technocracy_meeting
 		}
-		
+		available = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "雷蒙德·阿隆"
+			}
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
 			add_political_power = 100
@@ -46170,6 +46202,12 @@ focus = {
 		cost = 4
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "弗朗索瓦·勒海杜"
+			}
 		}
 		prerequisite = {
 			focus = FRA_technocracy_meeting

@@ -3,6 +3,7 @@
 ##################
 
 add_namespace = KXX_super
+add_namespace = EnhSuper
 
 country_event = {		#EUROPE UNIFICATION THIRART
 	id = KXX_super.1
@@ -41,3 +42,6490 @@ country_event = {		#EUROPE UNIFICATION THIRART
 
 
 
+##WORLD conquests
+country_event = {
+	#hoxha
+	id = EnhSuper.1
+	title = EnhSuper.1.t
+	desc = EnhSuper.1.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		ALB = {
+			all_core_state = {
+				is_owned_and_controlled_by = ALB
+			}
+		}
+		1223 = {
+			is_core_of = ALB
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.1.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = ALB_HOXHA_WORLD_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_ALB_Hoxha_World"
+		}
+	}
+}
+
+country_event = {
+	#Loeb
+	id = EnhSuper.2
+	title = EnhSuper.2.t
+	desc = EnhSuper.2.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		CSA = {
+			has_cosmetic_tag = CSA_loeb_world
+			OR = {
+				all_core_state = {
+					is_owned_and_controlled_by = PREV
+				}
+				all_country = {
+					is_subject_of = PREV
+				}
+			}
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.2.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = CSA_LOEB_WORLD_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_CSA_Loeb_World"
+		}
+	}
+}
+
+country_event = {
+	#Father Pio
+	id = EnhSuper.3
+	title = EnhSuper.3.t
+	desc = EnhSuper.3.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		SIC = {
+			all_core_state = {
+				is_owned_and_controlled_by = SIC
+			}
+		}
+		1223 = {
+			is_core_of = SIC
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.3.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = SIC_PIO_WORLD_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_SIC_Pio_World"
+		}
+	}
+}
+
+country_event = {
+	#Polands wild ride
+	id = EnhSuper.4
+	title = EnhSuper.4.t
+	desc = EnhSuper.4.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		POL = {
+			all_core_state = {
+				is_owned_and_controlled_by = POL
+			}
+		}
+		1223 = {
+			is_core_of = POL
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.4.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = POL_POLAND_WORLD_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_POL_Poland_World"
+		}
+	}
+}
+
+country_event = {
+	#Sun ra World
+	id = EnhSuper.5
+	title = EnhSuper.5.t
+	desc = EnhSuper.5.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		BBR = {
+			all_core_state = {
+				is_owned_and_controlled_by = BBR
+			}
+		}
+		1223 = {
+			is_core_of = BBR
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.5.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = BBR_SUN_RA_WORLD_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_BBR_Sun_Ra_World"
+		}
+	}
+}
+
+country_event = {
+	#Technocracy Inc
+	id = EnhSuper.6
+	title = EnhSuper.6.t
+	desc = EnhSuper.6.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		CSA = {
+			has_cosmetic_tag = CSA_technoworld
+			OR = {
+				all_core_state = {
+					is_owned_and_controlled_by = PREV
+				}
+				all_country = {
+					is_subject_of = PREV
+				}
+			}
+		}
+		1223 = {
+			is_core_of = CSA
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.6.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = CSA_TECHNOCRACY_WORLD_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_CSA_Technocracy_World"
+		}
+	}
+}
+
+country_event = {
+	#Tomlinson
+	id = EnhSuper.7
+	title = EnhSuper.7.t
+	desc = EnhSuper.7.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = { 
+		NYC = {
+			OR = {
+				has_country_leader = { name = "Homer Aubrey Tomlinson" ruling_only = yes }
+				has_country_leader = { name = "荷马·奥布里·汤姆林森" ruling_only = yes }
+			}
+			all_core_state = {
+				is_owned_and_controlled_by = NYC
+			}
+		}
+		1223 = {
+			is_core_of = NYC
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.7.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NYC_TOMLINSON_WORLD_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NYC_Tomlinson_World"
+		}
+	}
+}
+
+country_event = {
+	#Racist Lovecraft
+	id = EnhSuper.8
+	title = EnhSuper.8.t
+	desc = EnhSuper.8.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NEE = {
+			has_cosmetic_tag = NEE_lovecraft_empire
+			has_government = national_populist
+			all_core_state = {
+				is_owned_and_controlled_by = NEE
+			}
+		}
+		1223 = {
+			is_core_of = NEE
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.8.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NEE_LOVECRAFT_WORLD_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NEE_Lovecraft_World"
+		}
+	}
+}
+
+country_event = {
+	#Wholesum not Racist Lovecraft
+	id = EnhSuper.9
+	title = EnhSuper.9.t
+	desc = EnhSuper.9.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NEE = {
+			has_completed_focus = NEE_face_obvilion
+			all_core_state = {
+				is_owned_and_controlled_by = NEE
+			}
+		}
+		1223 = {
+			is_core_of = NEE
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.9.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NEE_LEFTCRAFT_WORLD_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NEE_Leftcraft_World"
+		}
+	}
+}
+
+country_event = {
+	#Roerich Shambhala
+	id = EnhSuper.10
+	title = EnhSuper.10.t
+	desc = EnhSuper.10.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		TIB = {
+			all_core_state = {
+				is_owned_and_controlled_by = TIB
+			}
+		}
+		1223 = {
+			is_core_of = TIB
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.10.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = TIB_ROERICH_WORLD_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_TIB_Roerich_World"
+		}
+	}
+}
+
+country_event = {
+	#We want Willkie
+	id = EnhSuper.11
+	title = EnhSuper.11.t
+	desc = EnhSuper.11.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		OR = {
+			USA = {
+				all_core_state = {
+					is_owned_and_controlled_by = USA
+				}
+				has_cosmetic_tag = USA_Willkie_World
+			}
+			NYC = {
+				all_core_state = {
+					is_owned_and_controlled_by = NYC
+				}
+				has_cosmetic_tag = USA_Willkie_World
+			}
+		}
+		1223 = {
+			OR = {
+				is_core_of = NYC
+				is_core_of = USA
+			}
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.11.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = USA_WILLKIE_WORLD_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_USA_Willkie_World"
+		}
+	}
+}
+
+country_event = {
+	#Coconuts are cool
+	id = EnhSuper.12
+	title = EnhSuper.12.t
+	desc = EnhSuper.12.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		VIN = {
+			all_core_state = {
+				is_owned_and_controlled_by = VIN
+			}
+			has_cosmetic_tag = VIN_COCONUT_WORLD
+		}
+		1223 = {
+			is_core_of = VIN
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.12.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = VIN_COCONUT_WORLD_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_VIN_Coconut_World"
+		}
+	}
+}
+
+country_event = {
+	#Hoa Hao
+	id = EnhSuper.13
+	title = EnhSuper.13.t
+	desc = EnhSuper.13.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		VIN = {
+			all_core_state = {
+				is_owned_and_controlled_by = VIN
+			}
+			has_cosmetic_tag = VIN_HOA_HAO_WORLD
+		}
+		1223 = {
+			is_core_of = VIN
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.13.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = VIN_HOA_HAO_WORLD_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_VIN_Hoa_Hao_World"
+		}
+	}
+}
+
+country_event = {
+	#Cao Dai
+	id = EnhSuper.14
+	title = EnhSuper.14.t
+	desc = EnhSuper.14.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		VIN = {
+			all_core_state = {
+				is_owned_and_controlled_by = VIN
+			}
+			has_cosmetic_tag = VIN_CAO_DAI_WORLD
+		}
+		1223 = {
+			is_core_of = VIN
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.14.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = VIN_CAO_DAI_WORLD_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_VIN_Cao_Dai_World"
+		}
+	}
+}
+
+country_event = {
+	#Vasconcelos
+	id = EnhSuper.15
+	title = EnhSuper.15.t
+	desc = EnhSuper.15.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		MEX = {
+			all_core_state = {
+				is_owned_and_controlled_by = MEX
+			}
+			has_cosmetic_tag = MEX_UNIVERSOPILIS
+		}
+		1223 = {
+			is_core_of = MEX
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.15.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = MEX_VASCONCELOS_WORLD_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_MEX_Vasconcelos_World"
+		}
+	}
+}
+
+country_event = {
+	#Burnham (chris P bacon)
+	id = EnhSuper.16
+	title = EnhSuper.16.t
+	desc = EnhSuper.16.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		CSA = {
+			all_core_state = {
+				is_owned_and_controlled_by = CSA
+			}
+			has_cosmetic_tag = CSA_burnham_earth
+		}
+		1223 = {
+			is_core_of = CSA
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.16.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = CSA_BURNHAM_WORLD_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_CSA_Burnham_World"
+		}
+	}
+}
+
+country_event = {
+	#Posadas
+	id = EnhSuper.17
+	title = EnhSuper.17.t
+	desc = EnhSuper.17.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		FOP = {
+			OR = {
+				has_country_leader = {
+					name = "Homero Rómulo Cristalli"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "奥梅罗·罗慕洛·克里斯塔利"
+					ruling_only = yes
+				}
+			}
+			all_core_state = {
+				is_owned_and_controlled_by = FOP
+			}
+			
+		}
+		1223 = {
+			is_core_of = FOP
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.17.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = FOP_POSADAS_WORLD_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_FOP_Posadas_World"
+		}
+	}
+}
+
+country_event = {
+	#Alfredo Linguini (fonte)
+	id = EnhSuper.18
+	title = EnhSuper.18.t
+	desc = EnhSuper.18.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		FOP = {
+			all_core_state = {
+				is_owned_and_controlled_by = FOP
+			}
+			has_cosmetic_tag = FOP_FONTEWORLD
+			NOT = {
+				OR = {
+					has_country_leader = {
+						name = "Homero Rómulo Cristalli"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "奥梅罗·罗慕洛·克里斯塔利"
+						ruling_only = yes
+					}
+				}
+				
+				
+			}
+		}
+		1223 = {
+			is_core_of = FOP
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.18.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = FOP_FONTE_WORLD_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_FOP_Fonte_World"
+		}
+	}
+}
+
+country_event = {
+	#GUENON JUMPSCARE
+	id = EnhSuper.19
+	title = EnhSuper.19.t
+	desc = EnhSuper.19.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		MOR = {
+			all_core_state = {
+				is_owned_and_controlled_by = MOR
+			}
+			has_cosmetic_tag = MOR_rene_world
+		}
+		1223 = {
+			is_core_of = MOR
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.19.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = MOR_GUENON_WORLD_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_MOR_Guenon_World"
+		}
+	}
+}
+
+country_event = {
+	#CLEM! World
+	id = EnhSuper.20
+	title = EnhSuper.20.t
+	desc = EnhSuper.20.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		ENG = {
+			all_core_state = {
+				is_owned_and_controlled_by = ENG
+			}
+			has_cosmetic_tag = BRG_clem_internationalist
+		}
+		1223 = {
+			is_core_of = ENG
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.20.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = ENG_CLEM_WORLD_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_ENG_CLEM_World"
+		}
+	}
+}
+
+##America Reunited##
+country_event = {
+	#Authdem to socdem BBR, "the '''normal''' factions"
+	id = EnhSuper.21
+	title = EnhSuper.21.t
+	desc = EnhSuper.21.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		BBR = {
+			OR ={
+				has_government = authoritarian_democrat
+				has_government = social_conservative
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.21.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = BBR_NORMAL_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_BBR_Americanist"
+		}
+	}
+}
+
+country_event = {
+	#Socialist BBR (rasdsoc, syndie and totalist excluding Sun ra and duse)
+	id = EnhSuper.22
+	title = EnhSuper.22.t
+	desc = EnhSuper.22.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		BBR = {
+			OR = {
+				has_government = totalist
+				has_government = syndicalist
+				has_government = radical_socialist
+			}
+			NOT = {
+				OR = {
+					has_country_leader = { ruling_only = yes name = "Duse Muhammad" }
+					has_country_leader = { ruling_only = yes name = "Otto Huiswoud" }
+					has_country_leader = { ruling_only = yes name = "Claude McKay" }
+					has_country_leader = { ruling_only = yes name = "Richard Wright" }
+					has_country_leader = { ruling_only = yes name = "Cyril Briggs" }
+					has_country_leader = { ruling_only = yes name = "杜斯·穆罕默德" }
+					has_country_leader = { ruling_only = yes name = "奥托·黑斯沃德" }
+					has_country_leader = { ruling_only = yes name = "克劳德·麦凯" }
+					has_country_leader = { ruling_only = yes name = "理查德·赖特" }
+					has_country_leader = { ruling_only = yes name = "西里尔·布里格斯" }
+					has_country_flag = BBR_sun_ra_flag
+				}
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.22.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = BBR_SOCIALIST_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_BBR_Socialist_America"
+		}
+	}
+}
+
+country_event = {
+	#UNIA
+	id = EnhSuper.23
+	title = EnhSuper.23.t
+	desc = EnhSuper.23.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		BBR = {
+			OR ={
+				has_country_leader = { ruling_only = yes name = "James R. Stewart" }
+				has_country_leader = { ruling_only = yes name = "Marcus Garvey" }
+				has_country_leader = { ruling_only = yes name = "詹姆斯·R·斯图尔特" }
+				has_country_leader = { ruling_only = yes name = "马库斯·加维" }
+			}
+			has_government = paternal_autocrat
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.23.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = BBR_UNIA_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_BBR_Garvey_America"
+		}
+	}
+}
+
+country_event = {
+	#NOI(CE)
+	id = EnhSuper.24
+	title = EnhSuper.24.t
+	desc = EnhSuper.24.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		BBR = {
+			has_government = national_populist
+			OR = {
+				has_country_leader = { ruling_only = yes name = "Elijah Muhammad" }#can die after 1945
+				has_country_leader = { ruling_only = yes name = "NOI Leadership" }
+				has_country_leader = { ruling_only = yes name = "Clara Muhammad" }
+				has_country_leader = { ruling_only = yes name = "Malcolm X" }
+				has_country_leader = { ruling_only = yes name = "Clarence 13X" }
+				has_country_leader = { ruling_only = yes name = "Charles Kirkman-Bey" }
+				has_country_leader = { ruling_only = yes name = "Wallace Fard Muhammad" }
+				has_country_leader = { ruling_only = yes name = "Mittie Maude Lena Gordon" }
+				has_country_leader = { ruling_only = yes name = "伊利贾·穆罕默德" }#can die after 1945
+				has_country_leader = { ruling_only = yes name = "伊斯兰民族组织领导层" }
+				has_country_leader = { ruling_only = yes name = "克拉拉·穆罕默德" }
+				has_country_leader = { ruling_only = yes name = "马尔科姆X" }
+				has_country_leader = { ruling_only = yes name = "克拉伦斯十三" }
+				has_country_leader = { ruling_only = yes name = "查尔斯·柯克曼-贝伊" }
+				has_country_leader = { ruling_only = yes name = "华莱士·法德·穆罕默德" }
+				has_country_leader = { ruling_only = yes name = "米蒂·莫德·莉娜·戈登" }
+
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.24.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = BBR_NOI_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_BBR_NOI_America"
+		}
+	}
+}
+
+country_event = {
+	#ABB
+	id = EnhSuper.25
+	title = EnhSuper.25.t
+	desc = EnhSuper.25.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		BBR = {
+			has_government = totalist
+			has_completed_focus = BBR_abb
+			OR = {
+				has_country_leader = { ruling_only = yes name = "Duse Muhammad" }
+				has_country_leader = { ruling_only = yes name = "Otto Huiswoud" }
+				has_country_leader = { ruling_only = yes name = "Claude McKay" }
+				has_country_leader = { ruling_only = yes name = "Richard Wright" }
+				has_country_leader = { ruling_only = yes name = "Cyril Briggs" }
+				has_country_leader = { ruling_only = yes name = "杜斯·穆罕默德" }
+				has_country_leader = { ruling_only = yes name = "奥托·黑斯沃德" }
+				has_country_leader = { ruling_only = yes name = "克劳德·麦凯" }
+				has_country_leader = { ruling_only = yes name = "理查德·赖特" }
+				has_country_leader = { ruling_only = yes name = "西里尔·布里格斯" }
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.25.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = BBR_ABB_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_BBR_ABB_America"
+		}
+	}
+}
+
+country_event = {
+	#Israelites
+	id = EnhSuper.26
+	title = EnhSuper.26.t
+	desc = EnhSuper.26.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		BBR = {
+			has_government = national_populist
+			OR = {
+				has_country_leader = { ruling_only = yes name = "Wentworth Arthur Matthew" }
+				has_country_leader = { ruling_only = yes name = "温特沃思·亚瑟·马修" }
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.26.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = BBR_JEWISH_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_BBR_Israelites_America"
+		}
+	}
+}
+
+country_event = {
+	#Sun ra america
+	id = EnhSuper.27
+	title = EnhSuper.27.t
+	desc = EnhSuper.27.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		BBR = {
+			OR = {
+				has_country_leader = { ruling_only = yes name = "Herman Poole Blount" }
+				has_country_leader = { ruling_only = yes name = "Le Sony'r Ra" }
+				has_country_leader = { ruling_only = yes name = "Sun Ra" }
+				has_country_leader = { ruling_only = yes name = "赫尔曼·普尔·布朗特" }
+				has_country_leader = { ruling_only = yes name = "勒·索尼尔·拉" }
+				has_country_leader = { ruling_only = yes name = "桑·拉" }
+			}
+			
+			has_country_flag = BBR_sun_ra_flag
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.27.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = BBR_SUN_RA_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_BBR_Sun_Ra_America"
+		}
+	}
+}
+
+##NYC
+country_event = {
+	#row row row with Roosevelt 
+	id = EnhSuper.28
+	title = EnhSuper.28.t
+	desc = EnhSuper.28.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NYC = {
+			has_government = totalist
+			OR = {
+				has_country_leader = {
+					name = "Franklin D. Roosevelt Jr."
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "小富兰克林·D·罗斯福"
+					ruling_only = yes
+				}
+			}
+			
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+		
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.28.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NYC_ROOSEVELT_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NYC_Roosevelt"
+		}
+	}
+}
+
+country_event = {
+	#Trump (not that one)
+	id = EnhSuper.29
+	title = EnhSuper.29.t
+	desc = EnhSuper.29.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NYC = {
+			has_government = market_liberal
+			OR = {
+				has_country_leader = {
+					name = "Fred Trump"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "弗雷德·特朗普"
+					ruling_only = yes
+				}
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.29.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NYC_TRUMP_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NYC_Trump"
+		}
+	}
+}
+
+country_event = {
+	#Steinbeck (yes that one)
+	id = EnhSuper.30
+	title = EnhSuper.30.t
+	desc = EnhSuper.30.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NYC = {
+			has_government = radical_socialist
+			OR = {
+				has_country_leader = {
+					name = "John Steinbeck"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "约翰·斯坦贝克"
+					ruling_only = yes
+				}
+			}
+			
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.30.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NYC_STEINBECK_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NYC_Steinbeck"
+		}
+	}
+}
+
+country_event = {
+	#Tammany
+	id = EnhSuper.31
+	title = EnhSuper.31.t
+	desc = EnhSuper.31.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NYC = {
+			has_government = social_conservative
+			OR = {
+				has_country_leader = {
+					name = "Society of St. Tammany"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Jimmy Walker"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "George Washington Olvany"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "William O'Dwyer"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Adam Clayton Powell Jr."
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Enoch L. Johnson"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Al Smith"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Frank Costello"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Edward de Valera"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "圣坦慕尼协会"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "吉米·沃克"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "乔治·华盛顿·奥尔瓦尼"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "威廉·奥德怀尔"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "小亚当·克莱顿·鲍威尔"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "伊诺克·L·约翰逊"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "阿尔·史密斯"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "弗兰克·科斯特洛"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "爱德华·德·瓦莱拉"
+					ruling_only = yes
+				}
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.31.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NYC_TAMMANY_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NYC_Tammany"
+		}
+	}
+}
+
+country_event = {
+	#NYPD
+	id = EnhSuper.32
+	title = EnhSuper.32.t
+	desc = EnhSuper.32.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NYC = {
+			has_government = authoritarian_democrat
+			OR = {
+				has_country_leader = {
+					name = "Lewis J. Valentine"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Arthur William Wallander"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "John F. O'Ryan"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Louis F. Costuma"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Samuel J. Battle"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Mary A. Sullivan"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Charles N. Fitzgerald"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Frank Sinatra"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Frank Sinatra " 
+					ruling_only = yes 
+				}
+				has_country_leader = {
+					name = "刘易斯·J·瓦伦廷"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "亚瑟·威廉·维兰德"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "约翰·F·奥兰"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "路易斯·F·科斯图马"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "塞缪尔·J·巴特勒"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "玛丽·A·沙利文"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "查尔斯·N·菲茨杰拉德"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "弗兰克·辛纳屈"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "弗兰克·辛纳屈 " 
+					ruling_only = yes 
+				}
+
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.32.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NYC_NYPD_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_leader = { name = "Frank Sinatra" ruling_only = yes }
+						has_country_leader = { name = "Frank Sinatra " ruling_only = yes }
+						has_country_leader = { name = "弗兰克·辛纳屈" ruling_only = yes }
+						has_country_leader = { name = "弗兰克·辛纳屈 " ruling_only = yes }
+					}
+				}
+				scoped_sound_effect = "ES_NYC_Sinatra"
+			}
+			#Frank Simpnatra (yes im giving him his own speical sound. Sue me)
+			else = {
+				scoped_sound_effect = "ES_NYC_NYPD"
+			}
+		}
+	}
+}
+
+country_event = {
+	#Spaghetti Mob
+	id = EnhSuper.33
+	title = EnhSuper.33.t
+	desc = EnhSuper.33.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NYC = {
+			has_government = paternal_autocrat
+			OR = {
+				has_country_leader = {
+					name = "Lucky Luciano"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Bugsy Siegel"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Meyer Lansky"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "“福星”卢西亚诺"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "“癫虫”西格尔"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "迈耶·兰斯基"
+					ruling_only = yes
+				}
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.33.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NYC_ITALIAN_MOB_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NYC_Italian_Mob"
+		}
+	}
+}
+
+country_event = {
+	#Harlem Mob
+	id = EnhSuper.34
+	title = EnhSuper.34.t
+	desc = EnhSuper.34.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NYC = {
+			OR = {
+				has_country_leader = {
+					name = "Casper Holstein"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Stephanie St. Clair"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Bumpy Johnson"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "卡斯珀·荷尔斯泰因"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "斯蒂芬妮·圣克莱尔"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "“凸头”约翰逊"
+					ruling_only = yes
+				}
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		} 
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.34.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NYC_HARLEM_MOB_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NYC_Harlem_Mob"
+		}
+	}
+}
+
+country_event = {
+	#Harlem nationalists
+	id = EnhSuper.35
+	title = EnhSuper.35.t
+	desc = EnhSuper.35.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NYC = {
+			OR = {
+				has_country_leader = {
+					name = "James R. Lawson"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Ira Kemp"
+					ruling_only = yes
+					
+				}
+				has_country_leader = {
+					name = "Herman Poole Blount"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "詹姆斯·R·劳森"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "艾拉·坎普"
+					ruling_only = yes
+					
+				}
+				has_country_leader = {
+					name = "赫尔曼·普尔·布朗特"
+					ruling_only = yes
+				}
+				AND ={
+					OR = {
+						has_country_leader = {
+							name = "Sufi Abdul Hamid"
+							ruling_only = yes
+						}
+						has_country_leader = {
+							name = "苏非·阿卜杜勒·哈米德"
+							ruling_only = yes
+						}
+					}
+					OR = {
+						has_government = social_conservative
+						has_government = authoritarian_democrat
+					}
+				}
+
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.35.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NYC_HARLEM_NATIONALIST_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NYC_Harlem_Nationalist"
+		}
+	}
+}
+
+country_event = {
+	#Harlem Syndies
+	id = EnhSuper.36
+	title = EnhSuper.36.t
+	desc = EnhSuper.36.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NYC = {
+			has_government = syndicalist
+			OR = {
+				has_country_leader = {
+					name = "David Hamilton Jackson"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Frank Crosswaith"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Hubert Harrison"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Bayard Rustin"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "A. Philip Randolph"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Duse Muhammed"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "大卫·汉密尔顿·杰克逊"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "弗兰克·克罗斯韦斯"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "休伯特·哈里森"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "贝亚德·拉斯廷"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "A·菲利普·伦道夫"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "杜斯·穆罕默德"
+					ruling_only = yes
+				}
+				
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.36.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NYC_HARLEM_SYNDIES_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NYC_Harlem_Syndies"
+		}
+	}
+}
+
+country_event = {
+	#Sufi abdul hamid 
+	id = EnhSuper.37
+	title = EnhSuper.37.t
+	desc = EnhSuper.37.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NYC = {
+			OR = {
+				has_government = national_populist
+				has_government = authoritarian_democrat
+				has_government = social_conservative
+			}
+			OR = {
+				has_country_leader = {
+					name = "Amiru Al-Mu-Minin Sufi Abdul Hamid"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Sufi Abdul Hamid"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "信士长官苏非·阿卜杜勒·哈米德"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "苏非·阿卜杜勒·哈米德"
+					ruling_only = yes
+				}
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		} 
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.37.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NYC_SUFI_ABDUL_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NYC_Hamid"
+		}
+	}
+}
+
+country_event = {
+	#Sufi abdul hamid but buddhist style
+	id = EnhSuper.38
+	title = EnhSuper.38.t
+	desc = EnhSuper.38.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NYC = {
+			has_government = national_populist
+			OR = {
+				has_country_leader = {
+					name = "Bishop Conshankin"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "康斯汉金住持"
+					ruling_only = yes
+				}
+			}
+			
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		} 
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.38.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NYC_CONSHANKIN_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NYC_Conshankin"
+		}
+	}
+}
+
+country_event = {
+	#Awesome Welles
+	id = EnhSuper.39
+	title = EnhSuper.39.t
+	desc = EnhSuper.39.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NYC = {
+			has_government = social_democrat
+			OR = {
+				has_country_leader = {
+					name = "Orson Welles"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "奥逊·威尔斯"
+					ruling_only = yes
+				}
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		} 
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.39.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NYC_WELLES_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NYC_Welles"
+		}
+	}
+}
+
+country_event = {
+	#La guardia my fucking goat
+	id = EnhSuper.40
+	title = EnhSuper.40.t
+	desc = EnhSuper.40.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NYC = {
+			has_government = social_liberal
+			OR = {
+				has_country_leader = {
+					name = "Fiorello H. La Guardia"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "菲奥雷洛·H·拉瓜迪亚"
+					ruling_only = yes
+				}
+			}
+			
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		} 
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.40.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NYC_LAGUARDIA_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NYC_Democratic"
+		}
+	}
+}
+
+country_event = {
+	#La guardia successors
+	id = EnhSuper.41
+	title = EnhSuper.41.t
+	desc = EnhSuper.41.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NYC = {
+			has_government = social_liberal
+			OR = {
+				has_country_leader = {
+					name = "Kermit Roosevelt"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Robert Moses"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Julius Henry 'Groucho' Marx"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Vincent Impellitteri"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Thomas Dewey"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Wendell Willkie"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "克米特·罗斯福"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "罗伯特·摩西"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "朱利叶斯·亨利·“格劳乔”·马克斯"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "文森特·因佩利泰里"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "托马斯·杜威"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "温德尔·威尔基"
+					ruling_only = yes
+				}
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		} 
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.41.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NYC_LAGUARDIA_SUCCESSORS_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NYC_LaGuardia_Successors"
+		}
+	}
+}
+
+country_event = {
+	#Christian front
+	id = EnhSuper.42
+	title = EnhSuper.42.t
+	desc = EnhSuper.42.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NYC = {
+			has_government = national_populist
+			OR = {
+				has_country_leader = {
+					name = "Joe McWilliams"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Thomas Edmund Molloy"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Generoso Pope"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Homer Aubrey Tomlinson"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "乔·麦克威廉斯"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "托马斯·埃德蒙·莫洛伊"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "杰内罗索·波普"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "荷马·奥布里·汤姆林森"
+					ruling_only = yes
+				}
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		COR = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		USA = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		} 
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.42.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NYC_CHRISTIANS_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NYC_Christians"
+		}
+	}
+}
+
+##AUS
+country_event = {
+	#Ue long wins
+	id = EnhSuper.43
+	title = EnhSuper.43.t
+	desc = EnhSuper.43.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		TEX = {
+			OR = {
+				has_country_leader = {
+					name = "Huey Long"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "休伊·朗"
+					ruling_only = yes
+				}
+			}
+			
+			has_government = authoritarian_democrat
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = yes
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			OR = {
+				has_global_flag = KX_superevent_total_off
+				has_global_flag = HAD_ACW_SUPER
+			}
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.43.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = AUS_HUEY_AMERICA_FLAG
+		set_global_flag = HAD_ACW_SUPER
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_AUS_Huey"
+		}
+	}
+}
+
+country_event = {
+	#la Follette
+	id = EnhSuper.44
+	title = EnhSuper.44.t
+	desc = EnhSuper.44.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		TEX = {
+			OR = {
+				has_country_leader = {
+					name = "Philip Fox La Follette"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "菲利普·福克斯·拉福莱特"
+					ruling_only = yes
+				}
+			}
+			
+			has_government = social_liberal
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = yes
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			OR = {
+				has_global_flag = KX_superevent_total_off
+				has_global_flag = HAD_ACW_SUPER
+			}
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.44.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = AUS_FOLLETTE_AMERICA_FLAG
+		set_global_flag = HAD_ACW_SUPER
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_AUS_Follette"
+		}
+	}
+}
+
+country_event = {
+	#Squilliam Dudley Smelley
+	id = EnhSuper.45
+	title = EnhSuper.45.t
+	desc = EnhSuper.45.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		TEX = {
+			OR = {
+				has_country_leader = {
+					name = "William Dudley Pelley"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "威廉·达德利·佩利"
+					ruling_only = yes
+				}
+			}
+			
+			OR = {
+				has_government = social_conservative
+				has_government = authoritarian_democrat
+			}
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = yes
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			OR = {
+				has_global_flag = KX_superevent_total_off
+				has_global_flag = HAD_ACW_SUPER
+			}
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.45.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = AUS_PELLEY_AMERICA_FLAG
+		set_global_flag = HAD_ACW_SUPER
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_AUS_Pelley"
+		}
+	}
+}
+
+country_event = {
+	#Marland 
+	id = EnhSuper.46
+	title = EnhSuper.46.t
+	desc = EnhSuper.46.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		TEX = {
+			OR = {
+				has_country_leader = {
+					name = "E. W. Marland"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "E·W·马兰"
+					ruling_only = yes
+				}
+			}
+			
+			has_government = market_liberal
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = yes
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			OR = {
+				has_global_flag = KX_superevent_total_off
+				has_global_flag = HAD_ACW_SUPER
+			}
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.46.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = AUS_MARLAND_AMERICA_FLAG
+		set_global_flag = HAD_ACW_SUPER
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_AUS_Marland"
+		}
+	}
+}
+
+country_event = {
+	#PAPPY o'daniel (and the light crust doughboys) 
+	id = EnhSuper.47
+	title = EnhSuper.47.t
+	desc = EnhSuper.47.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		TEX = {
+			OR = {
+				has_country_leader = {
+					name = "W. Lee O'Daniel"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "W·李·奥丹尼尔"
+					ruling_only = yes
+				}
+			}
+			
+			has_government = social_conservative
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = yes
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			OR = {
+				has_global_flag = KX_superevent_total_off
+				has_global_flag = HAD_ACW_SUPER
+			}
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.47.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = AUS_PAPPY_AMERICA_FLAG
+		set_global_flag = HAD_ACW_SUPER
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_AUS_Pappy"
+		}
+	}
+}
+
+country_event = {
+	#Pendergast
+	id = EnhSuper.48
+	title = EnhSuper.48.t
+	desc = EnhSuper.48.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		TEX = {
+			OR = {
+				has_country_leader = {
+					name = "Tom Pendergast"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "汤姆·彭德格斯特"
+					ruling_only = yes
+				}
+			}
+			
+			has_government = paternal_autocrat
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = yes
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.48.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = AUS_PENDERGAST_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_AUS_Pendergast"
+		}
+	}
+}
+
+country_event = {
+	#Catholic/Carroll
+	id = EnhSuper.49
+	title = EnhSuper.49.t
+	desc = EnhSuper.49.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		TEX = {
+			OR = {
+				has_country_leader = {
+					name = "Philip Carroll"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "菲利普·卡罗尔"
+					ruling_only = yes
+				}
+			}
+			
+			has_government = national_populist
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = yes
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.49.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = AUS_CATHOLIC_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_AUS_Catholic"
+		}
+	}
+}
+
+##USA
+country_event = {
+	#Big Mac
+	id = EnhSuper.50
+	title = EnhSuper.50.t
+	desc = EnhSuper.50.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		USA = {
+			OR = {
+				has_country_leader = {
+					name = "Douglas MacArthur"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "道格拉斯·麦克阿瑟"
+					ruling_only = yes
+				}
+			}
+			
+			OR = {
+				has_government = paternal_autocrat
+				has_government = authoritarian_democrat
+			}
+			is_subject = no
+		}
+		USA = {
+			exists = yes
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.50.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = USA_MAC_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_USA_Military"
+		}
+	}
+}
+
+country_event = {
+	#US Navy
+	id = EnhSuper.51
+	title = EnhSuper.51.t
+	desc = EnhSuper.51.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		USA = {
+			OR = {
+				AND = {
+					OR = {
+						has_country_leader = {
+							name = "William D. Leahy"
+							ruling_only = yes
+						}
+						has_country_leader = {
+							name = "威廉·D·莱希"
+							ruling_only = yes
+						}
+					}
+					has_government = authoritarian_democrat
+				}
+				AND = {
+					OR = {
+						has_country_leader = {
+							name = "Ernest J. King"
+							ruling_only = yes
+						}
+						has_country_leader = {
+							name = "欧内斯特·J·金"
+							ruling_only = yes
+						}
+					}
+					has_government = paternal_autocrat
+				}
+			}
+			is_subject = no
+		}
+		USA = {
+			exists = yes
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.51.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = USA_NAVY_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_USA_Navy"
+		}
+	}
+}
+
+##NEE
+country_event = {
+	#Bingham and Groves
+	id = EnhSuper.52
+	title = EnhSuper.52.t
+	desc = EnhSuper.52.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NEE = {
+			OR = {
+				AND = {
+					OR = {
+						has_country_leader = {
+							name = "莱斯利·格罗夫斯"
+							ruling_only = yes
+						}
+						has_country_leader = {
+							name = "Leslie Groves"
+							ruling_only = yes
+						}
+					}
+					
+					has_completed_focus = NEE_Down_with_Macarthurs_Tyanny
+				}
+				AND = {
+					OR = {
+						has_country_leader = {
+							name = "Hiram Bingham III"
+							ruling_only = yes
+						}
+						has_country_leader = {
+							name = "海勒姆·宾厄姆三世"
+							ruling_only = yes
+						}
+					}
+					
+					has_completed_focus = NEE_End_this_Chaos
+				}
+			}
+			has_government = authoritarian_democrat
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.52.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NEE_MILITARY_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NEE_Military"
+		}
+	}
+}
+
+country_event = {
+	#Pershing
+	id = EnhSuper.53
+	title = EnhSuper.53.t
+	desc = EnhSuper.53.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NEE = {
+			OR = {
+				has_country_leader = {
+					name = "John J. Pershing"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "约翰·J·潘兴"
+					ruling_only = yes
+				}
+			}
+			
+			has_completed_focus = NEE_Put_the_Traitors_All_to_Rout
+			has_government = authoritarian_democrat
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.53.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NEE_PERSHING_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NEE_Pershing"
+		}
+	}
+}
+
+country_event = {
+	#Lermond 
+	id = EnhSuper.54
+	title = EnhSuper.54.t
+	desc = EnhSuper.54.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NEE = {
+			OR = {
+				has_country_leader = {
+					name = "Norman Wallace Lermond"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Socialist Party of New England Central Committee"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Harry Ault"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Barry Commoner"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Henry Augustus Pilsbry"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Harvey Bulfinch Lovell"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Paul Goodman"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "诺曼·华莱士·莱蒙德"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "新英格兰社会党中央委员会"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "哈里·奥尔特"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "巴里·康芒纳"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "亨利·奥古斯塔斯·皮尔斯布里"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "哈维·布尔芬奇·洛弗尔"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "保罗·古德曼"
+					ruling_only = yes
+				}
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.54.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NEE_LERMOND_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NEE_Lermond"
+		}
+	}
+}
+
+country_event = {
+	#Nordic america (comical levels of racism) 
+	id = EnhSuper.55
+	title = EnhSuper.55.t
+	desc = EnhSuper.55.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NEE = {
+			has_government = national_populist
+			OR = {
+				has_country_leader = {
+					name = "Lothrop Stoddard"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Madison Grant"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "洛斯罗普·斯托达德"
+					ruling_only = yes
+				}
+			}
+			
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.55.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NEE_NORDIC_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NEE_Nordic"
+		}
+	}
+}
+
+country_event = {
+	#American monarchy
+	id = EnhSuper.56
+	title = EnhSuper.56.t
+	desc = EnhSuper.56.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NEE = {
+			has_government = paternal_autocrat
+			OR = {
+				has_country_leader = {
+					name = "George II"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Joseph, Baron Kennedy"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Vincent, Baron Astor"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "乔治二世"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "肯尼迪男爵约瑟夫"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "阿斯特男爵文森特"
+					ruling_only = yes
+				}
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.56.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NEE_AMERICAN_MONARCHY_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NEE_Monarchy"
+		}
+	}
+}
+
+country_event = {
+	#Quaker oats
+	id = EnhSuper.57
+	title = EnhSuper.57.t
+	desc = EnhSuper.57.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NEE = {
+			has_government = radical_socialist
+			has_country_leader_ideology = quaker_socialism_subtype
+			OR = {
+				has_country_leader = {
+					name = "Jean Toomer"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Eleanor Roosevelt"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Clarence Pickett"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Wilson A. Head"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Bayard Rustin"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "让·图默"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "埃莉诺·罗斯福"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "克拉伦斯·皮克特"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "威尔逊·A·海德"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "贝亚德·拉斯廷"
+					ruling_only = yes
+				}
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.57.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NEE_QUAKER_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NEE_Quaker"
+		}
+	}
+}
+
+country_event = {
+	#Ancap (sentinals/rementant)
+	id = EnhSuper.58
+	title = EnhSuper.58.t
+	desc = EnhSuper.58.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NEE = {
+			OR = {
+				AND = {
+					OR = {
+						has_country_leader = {
+							name = "Albert Jay Nock"
+							ruling_only = yes
+						}
+						has_country_leader = {
+							name = "阿尔伯特·杰伊·诺克"
+							ruling_only = yes
+						}
+					}
+					
+					has_government = paternal_autocrat
+				}
+				AND = {
+					OR = {
+						has_country_leader = {
+							name = "Irenee du Pont"
+							ruling_only = yes
+						}
+						has_country_leader = {
+							name = "依勒内·杜邦"
+							ruling_only = yes
+						}
+					}
+					
+					has_government = national_populist
+				}
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.58.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NEE_ANCAP_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NEE_Ancap"
+		}
+	}
+}
+
+country_event = {
+	#Prohib
+	id = EnhSuper.59
+	title = EnhSuper.59.t
+	desc = EnhSuper.59.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NEE = {
+			has_government = social_democrat
+			OR = {
+				has_country_leader = {
+					name = "William D. Upshaw"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "D. Leigh Colvin"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Robert P. Shuler"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Roger Babson"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "威廉·D·厄普肖"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "D·利·科尔文"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "罗伯特·P·舒勒"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "罗杰·巴布森"
+					ruling_only = yes
+				}
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.59.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NEE_PROHIB_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NEE_Prohib"
+		}
+	}
+}
+
+country_event = {
+	#Democratic NEE
+	id = EnhSuper.60
+	title = EnhSuper.60.t
+	desc = EnhSuper.60.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NEE = {
+			has_country_flag = NEE_hartford_convention_done
+			OR = {
+				has_government = radical_socialist
+				has_government = social_democrat
+				has_government = social_liberal
+				has_government = market_liberal
+				has_government = social_conservative
+			}
+			NOT = {
+				has_country_flag = NEE_Fed_Elections
+				has_completed_focus = NEE_the_remnant
+				has_completed_focus = NEE_socialist_victory
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.60.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NEE_DEMOCRACY_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NEE_Democracy"
+		}
+	}
+}
+
+country_event = {
+	#NEE New ireland
+	id = EnhSuper.61
+	title = EnhSuper.61.t
+	desc = EnhSuper.61.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NEE = {
+			has_cosmetic_tag = NEE_new_ireland
+			OR = {
+				has_country_leader = {
+					name = "James Michael Curley"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "詹姆斯·迈克尔·柯利"
+					ruling_only = yes
+				}
+			}
+			
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.61.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NEE_IRISH_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NEE_Irish"
+		}
+	}
+}
+
+country_event = {
+	#Dominionists
+	id = EnhSuper.62
+	title = EnhSuper.62.t
+	desc = EnhSuper.62.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		NEE = {
+			has_completed_focus = NEE_avenge_geroge_III
+			OR ={
+				has_country_leader = { name = "Albert I" ruling_only = yes }
+				has_country_leader = { name = "Henry I" ruling_only = yes }
+				has_country_leader = { name = "Alastair I" ruling_only = yes }
+				has_country_leader = { name = "Urban I" ruling_only = yes }
+				has_country_leader = { name = "Joseph I" ruling_only = yes }
+				has_country_leader = { name = "Elizabeth II" ruling_only = yes }
+				has_country_leader = { name = "Elizabeth I" ruling_only = yes }
+				has_country_leader = { name = "阿尔伯特一世" ruling_only = yes }
+				has_country_leader = { name = "亨利一世" ruling_only = yes }
+				has_country_leader = { name = "阿拉斯泰尔一世" ruling_only = yes }
+				has_country_leader = { name = "乌尔班一世" ruling_only = yes }
+				has_country_leader = { name = "约瑟夫一世" ruling_only = yes }
+				has_country_leader = { name = "伊丽莎白二世" ruling_only = yes }
+				has_country_leader = { name = "伊丽莎白一世" ruling_only = yes }
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.62.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = NEE_DOMINIONIST_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_NEE_Dominionists"
+		}
+	}
+}
+
+##PSA
+country_event = {
+	#A million sons (military PSA)
+	id = EnhSuper.63
+	title = EnhSuper.63.t
+	desc = EnhSuper.63.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		CAL = {
+			OR = {
+				has_country_leader = {
+					name = "George Marshall"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Henry H. Arnold"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "乔治·马歇尔"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "亨利·H·阿诺德"
+					ruling_only = yes
+				}
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = yes
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.63.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = PSA_MILITARY_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_PSA_Military"
+		}
+	}
+}
+
+country_event = {
+	#Democracy excluding commonwealth, progressives, hearst and norton conmoc elections
+	id = EnhSuper.64
+	title = EnhSuper.64.t
+	desc = EnhSuper.64.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		CAL = {
+			#yes im aware how much of a mess this is
+			has_country_flag = PSA_had_1937_election
+			NOT = {
+				OR = {
+					has_country_flag = CAL_Norton_PSA_flag
+					has_country_leader = { name = "Upton Sinclair" ruling_only = yes }
+					has_country_leader = { name = "Culbert Olson" ruling_only = yes }
+					has_country_leader = { name = "Henry Wallace" ruling_only = yes }
+					has_country_leader = { name = "Charles McNary" ruling_only = yes }
+					has_country_leader = { name = "Hiram Johnson" ruling_only = yes }
+					has_country_leader = { name = "C.C. Young" ruling_only = yes }
+					has_country_leader = { name = "George Norris" ruling_only = yes }
+					has_country_leader = { name = "John F. Aiso" ruling_only = yes }
+					has_country_leader = { name = "William Randolph Hearst" ruling_only = yes}
+					has_country_leader = { name = "厄普顿·辛克莱" ruling_only = yes }
+					has_country_leader = { name = "科尔伯特·奥尔森" ruling_only = yes }
+					has_country_leader = { name = "亨利·华莱士" ruling_only = yes }
+					has_country_leader = { name = "查尔斯·麦克纳里" ruling_only = yes }
+					has_country_leader = { name = "海勒姆·约翰逊" ruling_only = yes }
+					has_country_leader = { name = "C·C·扬" ruling_only = yes }
+					has_country_leader = { name = "乔治·诺里斯" ruling_only = yes }
+					has_country_leader = { name = "相矶藤雄" ruling_only = yes }
+					has_country_leader = { name = "威廉·伦道夫·赫斯特" ruling_only = yes}
+				}
+			}
+			OR = {
+				has_government = social_conservative
+				has_government = market_liberal
+				has_government = social_liberal
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = yes
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.64.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = PSA_DEMOCRACY_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_PSA_Democracy"
+		}
+	}
+}
+
+country_event = {
+	#Spiritualists (Battlefield Earth, L. Ron Hoyabembe, 10 trillion years, etc etc)
+	id = EnhSuper.65
+	title = EnhSuper.65.t
+	desc = EnhSuper.65.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		CAL = {
+			AND = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+				}
+				OR = {
+					has_country_leader = {
+						name = "Lafayette Ronald Hubbard"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "L. Ron Hubbard"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Edward Longstreet Bodin"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Bernarr Macfadden"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "拉斐特·罗纳德·哈伯德"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "L·罗恩·哈伯德"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "爱德华·朗斯特里特·博丹"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "伯纳·麦克法登"
+						ruling_only = yes
+					}
+				}
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = yes
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.65.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = PSA_SPIRITUALIST_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_PSA_Spiritualists"
+		}
+	}
+}
+
+country_event = {
+	#God Emperor of mankind, Norton II
+	id = EnhSuper.66
+	title = EnhSuper.66.t
+	desc = EnhSuper.66.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		CAL = {
+			has_country_flag = CAL_Norton_PSA_flag
+			OR = {
+				has_country_leader = {
+					name = "Norton II"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Norton III"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "诺顿二世"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "诺顿三世"
+					ruling_only = yes
+				}
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = yes
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.66.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = PSA_NORTON_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_PSA_Norton"
+		}
+	}
+}
+
+country_event = {
+	#Progressives/commonwealth party
+	id = EnhSuper.67
+	title = EnhSuper.67.t
+	desc = EnhSuper.67.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		CAL = { #yes, im aware of how much of a mess this is as well
+			OR = {
+				has_country_leader = { name = "Upton Sinclair" ruling_only = yes }
+				has_country_leader = { name = "Culbert Olson" ruling_only = yes }
+				has_country_leader = { name = "Henry Wallace" ruling_only = yes }
+				has_country_leader = { name = "Charles McNary" ruling_only = yes }
+				has_country_leader = { name = "Hiram Johnson" ruling_only = yes }
+				has_country_leader = { name = "C.C. Young" ruling_only = yes }
+				has_country_leader = { name = "George Norris" ruling_only = yes }
+				has_country_leader = { name = "厄普顿·辛克莱" ruling_only = yes }
+				has_country_leader = { name = "科尔伯特·奥尔森" ruling_only = yes }
+				has_country_leader = { name = "亨利·华莱士" ruling_only = yes }
+				has_country_leader = { name = "查尔斯·麦克纳里" ruling_only = yes }
+				has_country_leader = { name = "海勒姆·约翰逊" ruling_only = yes }
+				has_country_leader = { name = "C·C·扬" ruling_only = yes }
+				has_country_leader = { name = "乔治·诺里斯" ruling_only = yes }
+			}
+			NOT = {
+				has_country_flag = CAL_Norton_PSA_flag
+				has_country_flag = CAL_Wallace_Shalala
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = yes
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.67.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = PSA_PROGRESSIVE_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_PSA_Progressive"
+		}
+	}
+}
+
+country_event = {
+	#Henry wallace goes goofy mode
+	id = EnhSuper.68
+	title = EnhSuper.68.t
+	desc = EnhSuper.68.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		CAL = {
+			has_country_flag = CAL_Wallace_Shalala
+			OR = {
+				has_country_leader = { name = "Henry Wallace" ruling_only = yes }
+				has_country_leader = { name = "亨利·华莱士" ruling_only = yes }
+			}
+			
+			NOT = {
+				has_country_flag = CAL_Norton_PSA_flag
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = yes
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.68.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = PSA_SHAMBHALA_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_PSA_Wallace"
+		}
+	}
+}
+
+country_event = {
+	#Japanese PSA (california roll time)
+	id = EnhSuper.69
+	title = EnhSuper.69.t
+	desc = EnhSuper.69.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		CAL = {
+			OR = {
+				has_country_leader = { name = "John F. Aiso" ruling_only = yes }
+				has_country_leader = { name = "Tamon Yamaguchi" ruling_only = yes }
+				has_country_leader = { name = "Max Thornburg" ruling_only = yes }
+				has_country_leader = { name = "Ralph Townsend" ruling_only = yes }
+				has_country_leader = { name = "Kichisaburō Nomura" ruling_only = yes }
+				has_country_leader = { name = "Yasuhito" ruling_only = yes }
+				has_country_leader = { name = "Nobuhito" ruling_only = yes }
+				has_country_leader = { name = "Kan'in Kotohito" ruling_only = yes }
+				has_country_leader = { name = "相矶藤雄" ruling_only = yes }
+				has_country_leader = { name = "山口多闻" ruling_only = yes }
+				has_country_leader = { name = "马克斯·索恩伯格" ruling_only = yes }
+				has_country_leader = { name = "拉尔夫·汤森" ruling_only = yes }
+				has_country_leader = { name = "野村吉三郎" ruling_only = yes }
+				has_country_leader = { name = "雍仁" ruling_only = yes }
+				has_country_leader = { name = "宣仁" ruling_only = yes }
+				has_country_leader = { name = "闲院宫载仁亲王" ruling_only = yes }
+			}
+			OR = {
+				is_subject = no
+				is_subject_of = JAP
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = yes
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.69.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = PSA_JAPANESE_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_PSA_Japanese"
+		}
+	}
+}
+
+country_event = {
+	#Howard House Hughes
+	id = EnhSuper.70
+	title = EnhSuper.70.t
+	desc = EnhSuper.70.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		CAL = {
+			has_government = paternal_autocrat
+			has_completed_focus = CAL_the_house_always_wins
+			OR = {
+				has_country_leader = { name = "Howard Hughes" ruling_only = yes }
+				has_country_leader = { name = "霍华德·休斯" ruling_only = yes }
+			}
+			
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = yes
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.70.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = PSA_HUGHES_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_PSA_Hughes"
+		}
+	}
+}
+
+country_event = {
+	#Hearst (i cant think of a funny joke)
+	id = EnhSuper.71
+	title = EnhSuper.71.t
+	desc = EnhSuper.71.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		CAL = {
+			OR = {
+				has_government = paternal_autocrat
+				has_government = authoritarian_democrat
+			}
+			OR = {
+				has_country_leader = { name = "William Randolph Hearst" ruling_only = yes }
+				has_country_leader = { name = "威廉·伦道夫·赫斯特" ruling_only = yes }
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = no
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = yes
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.71.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = PSA_HEARST_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_PSA_Hearst"
+		}
+	}
+}
+
+##COR
+country_event = {
+	#Lindbergh (le ebic plot against America reference??)
+	id = EnhSuper.72
+	title = EnhSuper.72.t
+	desc = EnhSuper.72.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		COR = {
+			has_government = paternal_autocrat
+			OR = {
+				has_country_leader = { ruling_only = yes name = "Charles Lindbergh"}
+				has_country_leader = { ruling_only = yes name = "查尔斯·林德伯格"}
+			}
+			
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = yes
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.72.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = COR_LINDBERGH_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_COR_Lindbergh"
+		}
+	}
+}
+
+country_event = {
+	#Ford F-150 Raptor mode initiate
+	id = EnhSuper.73
+	title = EnhSuper.73.t
+	desc = EnhSuper.73.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		COR = {
+			has_government = paternal_autocrat
+			OR = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "Henry Ford"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "Herbert Hoover"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "Edsel Ford"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "John D. Rockefeller Jr."
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "Harry Bennett"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "John Bugas"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "Howard Hughes"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "Torklid Rieber"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "Stephen Birch"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "William Randolph Hearst"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "Charles Edison"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "Howard Scott"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "Lawrence Dennis"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "亨利·福特"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "赫伯特·胡佛"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "埃兹尔·福特"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "小约翰·D·洛克菲勒"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "哈里·本内特"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "约翰·巴加斯"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "霍华德·休斯"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "托基尔德·里伯"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "斯蒂芬·伯奇"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "威廉·伦道夫·赫斯特"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "查尔斯·爱迪生"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "霍华德·斯科特"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "劳伦斯·丹尼斯"
+				}
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = yes
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.73.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = COR_FORDIST_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_COR_Fordist"
+		}
+	}
+}
+
+country_event = {
+	#Racism but you can choose who's in charge (Russel Jr)
+	id = EnhSuper.74
+	title = EnhSuper.74.t
+	desc = EnhSuper.74.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		COR = {
+			has_government = social_conservative
+			OR = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "Richard Russell Jr."
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "小理查德·罗素"
+				}
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = yes
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.74.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = COR_RUSSELL_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_COR_Russell_Jr"
+		}
+	}
+}
+
+country_event = {
+	#*Marge simpson voice* "Ill Crump with you sweetie pie"
+	id = EnhSuper.75
+	title = EnhSuper.75.t
+	desc = EnhSuper.75.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		COR = {
+			has_government = authoritarian_democrat
+			OR = {
+				has_country_leader = { ruling_only = yes name = "E.H. Crump" }
+				has_country_leader = { ruling_only = yes name = "Georgia Tann" }
+				has_country_leader = { ruling_only = yes name = "N.J. Ford" }
+				has_country_leader = { ruling_only = yes name = "E·H·克伦普" }
+				has_country_leader = { ruling_only = yes name = "乔治娅·坦恩" }
+				has_country_leader = { ruling_only = yes name = "N·J·福特" }
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = yes
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.75.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = COR_CRUMP_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_COR_Crump"
+		}
+	}
+}
+
+country_event = {
+	#Murray
+	id = EnhSuper.76
+	title = EnhSuper.76.t
+	desc = EnhSuper.76.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		COR = {
+			has_government = paternal_autocrat
+			OR = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "William H. Murray"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "威廉·H·默里"
+				}
+			}
+			
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = yes
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.76.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = COR_MURRAY_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_COR_Murray"
+		}
+	}
+}
+
+country_event = {
+	#Murray successors/other ODP guys
+	id = EnhSuper.77
+	title = EnhSuper.77.t
+	desc = EnhSuper.77.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		COR = {
+			has_government = paternal_autocrat
+			OR = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "Johnston Murray"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "John E. Rankin"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "Eugene Talmadge"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "Strom Thurmond"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "约翰斯顿·默里"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "约翰·E·兰金"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "尤金·塔尔梅奇"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "斯特罗姆·瑟蒙德"
+				}
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = yes
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.77.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = COR_GENERIC_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_COR_Generic"
+		}
+	}
+}
+
+country_event = {
+	#Klan/KKK
+	id = EnhSuper.78
+	title = EnhSuper.78.t
+	desc = EnhSuper.78.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		COR = {
+			has_government = national_populist
+			OR = {
+				has_country_leader = { ruling_only = yes name = "Hiram Wesley Evans" }
+				has_country_leader = { ruling_only = yes name = "James A. Colescott" }
+				has_country_leader = { ruling_only = yes name = "Theodore G. Bilbo" }
+				has_country_leader = { ruling_only = yes name = "Samuel Green" }
+				has_country_leader = { ruling_only = yes name = "D.C. Stephenson" }
+				has_country_leader = { ruling_only = yes name = "William Joseph Simmons" }
+				has_country_leader = { ruling_only = yes name = "海勒姆·韦斯利·埃文斯" }
+				has_country_leader = { ruling_only = yes name = "詹姆斯·A·科莱斯科特" }
+				has_country_leader = { ruling_only = yes name = "西奥多·G·比尔博" }
+				has_country_leader = { ruling_only = yes name = "塞缪尔·格林" }
+				has_country_leader = { ruling_only = yes name = "D·C·斯蒂芬森" }
+				has_country_leader = { ruling_only = yes name = "威廉·约瑟夫·西蒙斯" }
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = yes
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.78.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = COR_KLAN_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_COR_Klan"
+		}
+	}
+}
+
+country_event = {
+	#Patton
+	id = EnhSuper.79
+	title = EnhSuper.79.t
+	desc = EnhSuper.79.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		COR = {
+			has_government = paternal_autocrat
+			OR = {
+				has_country_leader = { ruling_only = yes name = "George Patton" }
+				has_country_leader = { ruling_only = yes name = "乔治·巴顿" }
+			}
+			
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = yes
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.79.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = COR_PATTON_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_COR_Patton"
+		}
+	}
+}
+
+country_event = {
+	#48ers
+	id = EnhSuper.80
+	title = EnhSuper.80.t
+	desc = EnhSuper.80.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		COR = {
+			OR = {
+				has_country_leader = { ruling_only = yes name = "Rush Limbaugh Sr." }#socdem
+				has_country_leader = { ruling_only = yes name = "Al Gore Sr." }#soccon
+				has_country_leader = { ruling_only = yes name = "David Bibb Graves" }##soclib
+				has_country_leader = { ruling_only = yes name = "William Alexander Percy"}#marlib
+				has_country_leader = { ruling_only = yes name = "老拉什·林博" }#socdem
+				has_country_leader = { ruling_only = yes name = "老阿尔·戈尔" }#soccon
+				has_country_leader = { ruling_only = yes name = "大卫·比伯·格雷夫斯" }##soclib
+				has_country_leader = { ruling_only = yes name = "威廉·亚历山大·珀西"}#marlib
+			}
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = yes
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.80.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = COR_FORTY_EIGHT_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_COR_FortyEight"
+		}
+	}
+}
+
+country_event = {
+	#Armstrong (NANOMACHINES, SON)
+	id = EnhSuper.81
+	title = EnhSuper.81.t
+	desc = EnhSuper.81.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		COR = {
+			has_government = national_populist
+			OR = {
+				has_country_leader = { ruling_only = yes name = "Herbert W. Armstrong" }
+				has_country_leader = { ruling_only = yes name = "赫伯特·W·阿姆斯特朗" }
+			}
+			
+			owns_state = 361			#Maryland
+			owns_state = 371			#Louisiana
+			owns_state = 395			#Illinois
+			owns_state = 797			#San Francisco
+			owns_state = 932			#Massachusetts
+			is_subject = no
+		}
+		USA = {
+			exists = no
+		}
+		COR = {
+			exists = yes
+		}
+		TEX = {
+			exists = no
+		}
+		CSA = {
+			exists = no
+		}
+		WCC = {
+			exists = no
+		}
+		CAL = {
+			exists = no
+		}
+		NOT = {
+			country_exists = NEE
+			NEE = { has_country_flag = NEE_claimed_america }
+		}
+		NOT = {
+			country_exists = TXS
+			TXS = { has_country_flag = TXS_claimed_america }
+		}
+		NOT = {
+			country_exists = NYC
+			NYC = { has_country_flag = NYC_can_invade_america }
+		}
+		NOT = {
+			country_exists = BBR
+			BBR = { has_country_flag = BBR_claimed_america }
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+		has_global_flag = USA_civil_war_over_flag
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.81.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = COR_ARMSTRONG_AMERICA_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_COR_Armstrong"
+		}
+	}
+}
+
+
+country_event = {
+	#Meme Mode cao dai 
+	id = EnhSuper.999
+	title = EnhSuper.999.t
+	desc = EnhSuper.999.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = no
+	trigger = {
+		VIN = {
+			all_core_state = {
+				is_owned_and_controlled_by = VIN
+			}
+			has_cosmetic_tag = VIN_CAO_DAI_WORLD_FUN
+		}
+		1223 = {
+			is_core_of = VIN
+		}
+		NOT = {
+			has_global_flag = KX_superevent_total_off
+		}
+	}
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = EnhSuper.999.a
+		set_global_flag = KXX_Super_Event_Visible
+		set_global_flag = VIN_CAO_DAI_WORLD_FUNNY_FLAG
+		every_country = {
+			limit = {
+				NOT = {
+					is_ai = yes
+					has_global_flag = KX_superevent_sounds_off
+				}
+			}
+			scoped_sound_effect = "ES_VIN_Cao_Dai_FUNNY"
+		}
+	}
+}

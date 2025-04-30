@@ -173,6 +173,534 @@ guiTypes = {
 			spriteType = "GFX_SPEVNT_TAIWAN_XIONGZHENG_UNITE_CHINA"
 			position = { x = -150 y = -45 }
 		}
+		
+		###超事件扩展
+		iconType = {
+			name ="Super_Event_Image_Imperial_Federation"
+			spriteType = "GFX_SPEVNT_Imperial_Federation"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Kibbo_ImpFed"
+			spriteType = "GFX_SPEVNT_Kibbo_ImpFed"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Celtics"
+			spriteType = "GFX_SPEVNT_Celtics"
+			position = { x = -150 y = -45 }
+		}
+
+        ###################
+		##World Conquests##
+		###################
+
+		iconType = {
+			name ="Super_Event_Image_Hoxha_World"
+			spriteType = "GFX_SPEVNT_Hoxha_World"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Loeb_World"
+			spriteType = "GFX_SPEVNT_Loeb_World"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Pio_World"
+			spriteType = "GFX_SPEVNT_Pio_World"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Poland_World"
+			spriteType = "GFX_SPEVNT_Poland_World"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Sun_Ra_World"
+			spriteType = "GFX_SPEVNT_Sun_Ra_World"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Technocracy_World"
+			spriteType = "GFX_SPEVNT_Technocracy_World"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Tomlinson_World"
+			spriteType = "GFX_SPEVNT_Tomlinson_World"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Lovecraft_World"
+			spriteType = "GFX_SPEVNT_Lovecraft_World"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Leftcraft_World"
+			spriteType = "GFX_SPEVNT_Leftcraft_World"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Roerich_World"
+			spriteType ="GFX_SPEVNT_Roerich_World"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Willkie_World"
+			spriteType ="GFX_SPEVNT_Willkie_World"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Coconut_World"
+			spriteType ="GFX_SPEVNT_Coconut_World"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Hoa_Hao_World"
+			spriteType ="GFX_SPEVNT_Hoa_Hao_World"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Cao_Dai_World"
+			spriteType ="GFX_SPEVNT_Cao_Dai_World"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Vasconcelos_World"
+			spriteType ="GFX_SPEVNT_Vasconcelos_World"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Burnham_World"
+			spriteType ="GFX_SPEVNT_Burnham_World"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Posadas_World"
+			spriteType ="GFX_SPEVNT_Posadas_World"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Fonte_World"
+			spriteType ="GFX_SPEVNT_Fonte_World"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Guenon_World"
+			spriteType ="GFX_SPEVNT_Guenon_World"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Clem_World"
+			spriteType ="GFX_SPEVNT_Clem_World"
+			position = { x = -150 y = -45 }
+		}
+
+
+		#################
+		##American ones##
+		#################
+
+		#BBR#
+		iconType = {
+			name ="Super_Event_Image_Normal_BBR_America"
+			spriteType ="GFX_SPEVNT_Normal_BBR_America"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Socialist_BBR_America"
+			spriteType ="GFX_SPEVNT_Socialist_BBR_America"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_UNIA"
+			spriteType ="GFX_SPEVNT_UNIA"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_NOI"
+			spriteType ="GFX_SPEVNT_NOI"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_ABB"
+			spriteType ="GFX_SPEVNT_ABB"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Israelites_America"
+			spriteType ="GFX_SPEVNT_Israelites_America"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Sun_Ra_America"
+			spriteType ="GFX_SPEVNT_Sun_Ra_America"
+			position = { x = -150 y = -45 }
+		}
+
+		##NYC 
+		
+		iconType = {
+			name ="Super_Event_Image_Roosevelt"
+			spriteType ="GFX_SPEVNT_Roosevelt"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Trump"
+			spriteType ="GFX_SPEVNT_Trump"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Steinbeck"
+			spriteType ="GFX_SPEVNT_Steinbeck"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Tammany"
+			spriteType ="GFX_SPEVNT_Tammany"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_NYPD"
+			spriteType ="GFX_SPEVNT_NYPD"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Italian_Mob"
+			spriteType ="GFX_SPEVNT_Italian_Mob"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Harlem_Mob"
+			spriteType ="GFX_SPEVNT_Harlem_Mob"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Harlem_Nationalist"
+			spriteType ="GFX_SPEVNT_Harlem_Nationalist"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Harlem_Syndies"
+			spriteType ="GFX_SPEVNT_Harlem_Syndies"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Sufi_Abdul"
+			spriteType ="GFX_SPEVNT_Sufi_Abdul"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Conshankin"
+			spriteType ="GFX_SPEVNT_Conshankin"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Welles"
+			spriteType ="GFX_SPEVNT_Welles"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_LaGuardia"
+			spriteType ="GFX_SPEVNT_LaGuardia"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_LaGuardia_Successors"
+			spriteType ="GFX_SPEVNT_LaGuardia_Successors"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Christians"
+			spriteType ="GFX_SPEVNT_Christians"
+			position = { x = -150 y = -45 }
+		}
+		#AUS
+		iconType = {
+			name ="Super_Event_Image_Huey"
+			spriteType ="GFX_SPEVNT_Huey"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Follette"
+			spriteType ="GFX_SPEVNT_Follette"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Pelley"
+			spriteType ="GFX_SPEVNT_Pelley"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Marland"
+			spriteType ="GFX_SPEVNT_Marland"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Pappy"
+			spriteType ="GFX_SPEVNT_Pappy"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Pendergast"
+			spriteType ="GFX_SPEVNT_Pendergast"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Catholic"
+			spriteType ="GFX_SPEVNT_Catholic"
+			position = { x = -150 y = -45 }
+		}
+
+		##USA
+		iconType = {
+			name ="Super_Event_Image_MacArthur"
+			spriteType ="GFX_SPEVNT_MacArthur"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Navy"
+			spriteType ="GFX_SPEVNT_Navy"
+			position = { x = -150 y = -45 }
+		}
+
+		##NEE
+		iconType = {
+			name ="Super_Event_Image_NEE_Military"
+			spriteType ="GFX_SPEVNT_NEE_Military"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Pershing"
+			spriteType ="GFX_SPEVNT_Pershing"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Lermond"
+			spriteType ="GFX_SPEVNT_Lermond"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Nordic"
+			spriteType ="GFX_SPEVNT_Nordic"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_American_Monarchy"
+			spriteType ="GFX_SPEVNT_American_Monarchy"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Quaker"
+			spriteType ="GFX_SPEVNT_Quaker"
+			position = { x = -150 y = -45 }
+		}
+		
+		iconType = {
+			name ="Super_Event_Image_Ancap"
+			spriteType ="GFX_SPEVNT_Ancap"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Prohib"
+			spriteType ="GFX_SPEVNT_Prohib"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_NEE_Democracy"
+			spriteType ="GFX_SPEVNT_NEE_Democracy"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Irish_America"
+			spriteType ="GFX_SPEVNT_Irish_America"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Dominionists"
+			spriteType ="GFX_SPEVNT_Dominionists"
+			position = { x = -150 y = -45 }
+		}
+
+		##PSA
+		iconType = {
+			name ="Super_Event_Image_PSA_Military"
+			spriteType ="GFX_SPEVNT_PSA_Military"
+			position = { x = -150 y = -45 }
+		}
+		
+		iconType = {
+			name ="Super_Event_Image_PSA_Democracy"
+			spriteType ="GFX_SPEVNT_PSA_Democracy"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Spiritualists"
+			spriteType ="GFX_SPEVNT_Spiritualists"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Norton"
+			spriteType ="GFX_SPEVNT_Norton"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Progressives"
+			spriteType ="GFX_SPEVNT_Progressives"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Wallace_Shambhala"
+			spriteType ="GFX_SPEVNT_Wallace_Shambhala"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Japanese_America"
+			spriteType ="GFX_SPEVNT_Japanese_America"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Hughes"
+			spriteType ="GFX_SPEVNT_Hughes"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Hearst"
+			spriteType ="GFX_SPEVNT_Hearst"
+			position = { x = -150 y = -45 }
+		}
+
+		##COR
+		iconType = {
+			name ="Super_Event_Image_Lindbergh"
+			spriteType ="GFX_SPEVNT_Lindbergh"
+			position = { x = -150 y = -45 }
+		}
+		
+		iconType = {
+			name ="Super_Event_Image_Fordist"
+			spriteType ="GFX_SPEVNT_Fordist"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Russell_Jr"
+			spriteType ="GFX_SPEVNT_Russell_Jr"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Crump"
+			spriteType ="GFX_SPEVNT_Crump"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Murray"
+			spriteType ="GFX_SPEVNT_Murray"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_COR_Generic"
+			spriteType ="GFX_SPEVNT_COR_Generic"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Klan"
+			spriteType ="GFX_SPEVNT_Klan"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Patton"
+			spriteType ="GFX_SPEVNT_Patton"
+			position = { x = -150 y = -45 }
+		}
+		
+		iconType = {
+			name ="Super_Event_Image_FortyEight"
+			spriteType ="GFX_SPEVNT_FortyEight"
+			position = { x = -150 y = -45 }
+		}
+
+		iconType = {
+			name ="Super_Event_Image_Armstrong"
+			spriteType ="GFX_SPEVNT_Armstrong"
+			position = { x = -150 y = -45 }
+		}
+
+		##Meme Mode/Funny##
+		iconType = {
+			name ="Super_Event_Image_Cao_Dai_World_Funny"
+			spriteType ="GFX_SPEVNT_Cao_Dai_World_Funny"
+			position = { x = -150 y = -45 }
+		}	
 
 
 		instantTextBoxType = {

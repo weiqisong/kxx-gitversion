@@ -176,6 +176,530 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	###超事件扩展
+	spriteType = {
+		name = "GFX_SPEVNT_Imperial_Federation"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Imperial_Federation.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Kibbo_ImpFed"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Kibbo_ImpFed.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Celtics"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Celtics.png"
+		legacy_lazy_load = no
+	}
+
+	###################
+	##World Conquests##
+	###################
+	spriteType = {
+		name = "GFX_SPEVNT_Hoxha_World"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Hoxha_World.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Loeb_World"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Loeb_World.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Pio_World"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Pio_World.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Poland_World"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Poland_World.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Sun_Ra_World"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Sun_Ra_World.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Technocracy_World"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Technocracy_World.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Tomlinson_World"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Tomlinson_World.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SPEVNT_Lovecraft_World"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Lovecraft_World.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Leftcraft_World"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Leftcraft_World.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Roerich_World"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Roerich_World.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Willkie_World"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Willkie_World.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Coconut_World"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Coconut_World.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Hoa_Hao_World"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Hoa_Hao_World.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Cao_Dai_World"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Cao_Dai_World.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Vasconcelos_World"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Vasconcelos_World.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Burnham_World"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Burnham_World.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Posadas_World"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Posadas_World.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_SPEVNT_Fonte_World"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Fonte_World.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Guenon_World"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Guenon_World.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Clem_World"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Clem_World.png"
+		legacy_lazy_load = no
+	}
+
+	#################
+	##American ones##
+	#################
+	#BBR
+	spriteType = {
+		name = "GFX_SPEVNT_Normal_BBR_America"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Holesum_BBR.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Socialist_BBR_America"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Black_Socialist_America.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_UNIA"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_UNIA.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_NOI"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_NOI.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_ABB"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_ABB.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Israelites_America"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Israelites_America.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Sun_Ra_America"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Sun_Ra_America.png"
+		legacy_lazy_load = no
+	}
+
+	##NYC
+
+	spriteType = {
+		name = "GFX_SPEVNT_Roosevelt"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Roosevelt.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Trump"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Trump.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Steinbeck"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Steinbeck.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Tammany"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Tammany.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_NYPD"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_NYPD.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Italian_Mob"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Italian_Mob.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_SPEVNT_Harlem_Mob"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Harlem_Mob.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Harlem_Nationalist"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Harlem_Nationalist.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Harlem_Syndies"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Harlem_Syndies.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Sufi_Abdul"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Hamid.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Conshankin"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Conshankin.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Welles"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Welles.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_LaGuardia"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_LaGuardia.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_LaGuardia_Successors"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_LaGuardia_Successors.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Christians"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Christians.png"
+		legacy_lazy_load = no
+	}
+
+	##AUS
+	spriteType = {
+		name = "GFX_SPEVNT_Huey"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Huey.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Follette"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Follette.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Pelley"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Pelley.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Marland"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Marland.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Pappy"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Pappy.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Pendergast"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Pendergast.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Catholic"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Catholic.png"
+		legacy_lazy_load = no
+	}
+
+	##USA military (Mac and navy)
+
+	spriteType = {
+		name = "GFX_SPEVNT_MacArthur"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_MacArthur.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Navy"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Navy.png"
+		legacy_lazy_load = no
+	}
+
+	##NEE
+	spriteType = {
+		name = "GFX_SPEVNT_NEE_Military"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_NEE_Military.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Pershing"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Pershing.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Lermond"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Lermond.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Nordic"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Nordic_America.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_American_Monarchy"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_American_Monarchy.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SPEVNT_Quaker"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Quaker.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Ancap"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Ancap.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Prohib"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Prohib.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_NEE_Democracy"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_NEE_Democracy.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Irish_America"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Irish_America.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Dominionists"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Dominionists.png"
+		legacy_lazy_load = no
+	}
+	#PSA
+	spriteType = {
+		name = "GFX_SPEVNT_PSA_Military"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_PSA_Military.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_PSA_Democracy"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_PSA_Democracy.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Spiritualists"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Spiritualists.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Norton"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Norton.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Progressives"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Progressives.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_SPEVNT_Wallace_Shambhala"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_WallaceIsNuts.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Japanese_America"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Japanese_America.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Hughes"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Hughes.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Hearst"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Hearst.png"
+		legacy_lazy_load = no
+	}
+
+	##COR
+	spriteType = {
+		name = "GFX_SPEVNT_Lindbergh"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Lindbergh.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Fordist"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Fordist.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Russell_Jr"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Russell_Jr.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Crump"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Crump.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Murray"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Murray.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_COR_Generic"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_COR_Generic.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Klan"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Klan.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Patton"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Patton.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_FortyEight"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_FortyEight.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_Armstrong"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Armstrong.png"
+		legacy_lazy_load = no
+	}
+
+	##Funny/Meme Mode ones##
+	spriteType = {
+		name = "GFX_SPEVNT_Cao_Dai_World_Funny"
+		texturefile = "gfx/EnhancedSuperEvents/SPEVNT_Cao_Dai_World_Funny.png"
+		legacy_lazy_load = no
+	}
+
 
 
 

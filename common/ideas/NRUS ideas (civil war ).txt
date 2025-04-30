@@ -1,0 +1,159 @@
+### Portugal in Exile Ideas ###
+### Don't merge this file into the base Portugal file, it's separate to avoid merge issues
+
+ideas = {
+	country = {
+
+		league_collapse_RUS = {
+			name = "内战"
+			picture = "generic_destruction"
+
+			targeted_modifier = {
+				tag = WRA
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = RRF
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = RVA
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = SIB
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = TRM
+				attack_bonus_against = 3.0
+			}
+		}
+		league_collapse_WRA = {
+			name = "内战"
+			picture = "generic_destruction"
+
+			targeted_modifier = {
+				tag = RUS
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = RRF
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = RVA
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = SIB
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = TRM
+				attack_bonus_against = 3.0
+			}
+		}
+		league_collapse_RRF = {
+			name = "内战"
+			picture = "generic_destruction"
+
+			targeted_modifier = {
+				tag = WRA
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = RUS
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = RVA
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = SIB
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = TRM
+				attack_bonus_against = 3.0
+			}
+		}
+		league_collapse_RVA = {
+			name = "内战"
+			picture = "generic_destruction"
+
+			targeted_modifier = {
+				tag = WRA
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = RRF
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = RUS
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = SIB
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = TRM
+				attack_bonus_against = 3.0
+			}
+		}
+		league_collapse_SIB = {
+			name = "内战"
+			picture = "generic_destruction"
+
+			targeted_modifier = {
+				tag = WRA
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = RRF
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = RVA
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = RUS
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = TRM
+				attack_bonus_against = 3.0
+			}
+		}
+		league_collapse_TRM = {
+			name = "内战"
+			picture = "generic_destruction"
+
+			targeted_modifier = {
+				tag = WRA
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = RRF
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = RVA
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = SIB
+				attack_bonus_against = 3.0
+			}
+			targeted_modifier = {
+				tag = RUS
+				attack_bonus_against = 3.0
+			}
+		}
+	}
+}
+

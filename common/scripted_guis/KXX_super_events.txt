@@ -171,6 +171,524 @@ scripted_gui = {
 			}
 		}
 
+		###超事件扩展
+
+		triggers = {
+			Super_Event_Image_Imperial_Federation_visible = {
+				has_global_flag = CAN_IMPERAL_FEDERATION_FORMED_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Kibbo_ImpFed_visible = {
+				has_global_flag = CAN_KIBBO_IMPFED_FORMED_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Celtics_visible = {
+				has_global_flag = IRE_CELTICS_UNIFIED_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Hoxha_World_visible = {
+				has_global_flag = ALB_HOXHA_WORLD_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Loeb_World_visible = {
+				has_global_flag = CSA_LOEB_WORLD_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Pio_World_visible = {
+				has_global_flag = SIC_PIO_WORLD_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Poland_World_visible = {
+				has_global_flag = POL_POLAND_WORLD_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Sun_Ra_World_visible = {
+				has_global_flag = BBR_SUN_RA_WORLD_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Technocracy_World_visible = {
+				has_global_flag = CSA_TECHNOCRACY_WORLD_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Tomlinson_World_visible = {
+				has_global_flag = NYC_TOMLINSON_WORLD_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Lovecraft_World_visible = {
+				has_global_flag = NEE_LOVECRAFT_WORLD_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Leftcraft_World_visible = {
+				has_global_flag = NEE_LEFTCRAFT_WORLD_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Roerich_World_visible = {
+				has_global_flag = TIB_ROERICH_WORLD_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Willkie_World_visible = {
+				has_global_flag = USA_WILLKIE_WORLD_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Coconut_World_visible = {
+				has_global_flag = VIN_COCONUT_WORLD_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Hoa_Hao_World_visible = {
+				has_global_flag = VIN_HOA_HAO_WORLD_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Cao_Dai_World_visible = {
+				has_global_flag = VIN_CAO_DAI_WORLD_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Vasconcelos_World_visible = {
+				has_global_flag = MEX_VASCONCELOS_WORLD_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Burnham_World_visible = {
+				has_global_flag = CSA_BURNHAM_WORLD_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Posadas_World_visible = {
+				has_global_flag = FOP_POSADAS_WORLD_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Fonte_World_visible = {
+				has_global_flag = FOP_FONTE_WORLD_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Guenon_World_visible = {
+				has_global_flag = MOR_GUENON_WORLD_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Clem_World_visible = {
+				has_global_flag = ENG_CLEM_WORLD_FLAG
+			}
+		}
+
+		##American Unification##
+		triggers = {
+			Super_Event_Image_Normal_BBR_America_visible = {
+				has_global_flag = BBR_NORMAL_AMERICA_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Socialist_BBR_America_visible = {
+				has_global_flag = BBR_SOCIALIST_AMERICA_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_UNIA_visible = {
+				has_global_flag = BBR_UNIA_AMERICA_FLAG
+			}
+		}
+		
+		triggers = {
+			Super_Event_Image_NOI_visible = {
+				has_global_flag = BBR_NOI_AMERICA_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_ABB_visible = {
+				has_global_flag = BBR_ABB_AMERICA_FLAG
+			}
+		}
+		
+
+		triggers = {
+			Super_Event_Image_Israelites_America_visible = {
+				has_global_flag = BBR_JEWISH_AMERICA_FLAG
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Sun_Ra_America_visible = {
+				has_global_flag = BBR_SUN_RA_AMERICA_FLAG
+			}
+		}
+
+		##NYC
+		triggers = {
+			Super_Event_Image_Roosevelt_visible = {
+				has_global_flag = NYC_ROOSEVELT_AMERICA_FLAG
+			}
+		}
+		
+		triggers = { 
+			Super_Event_Image_Trump_visible = {
+				 has_global_flag = NYC_TRUMP_AMERICA_FLAG
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Steinbeck_visible = { 
+				has_global_flag = NYC_STEINBECK_AMERICA_FLAG
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Tammany_visible = { 
+				has_global_flag = NYC_TAMMANY_AMERICA_FLAG
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_NYPD_visible = { 
+				has_global_flag = NYC_NYPD_AMERICA_FLAG
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Italian_Mob_visible = { 
+				has_global_flag = NYC_ITALIAN_MOB_AMERICA_FLAG
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Harlem_Mob_visible = { 
+				has_global_flag = NYC_HARLEM_MOB_AMERICA_FLAG
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Harlem_Nationalist_visible = { 
+				has_global_flag = NYC_HARLEM_NATIONALIST_AMERICA_FLAG
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Harlem_Syndies_visible = { 
+				has_global_flag = NYC_HARLEM_SYNDIES_AMERICA_FLAG
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Sufi_Abdul_visible = { 
+				has_global_flag = NYC_SUFI_ABDUL_AMERICA_FLAG
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Conshankin_visible = { 
+				has_global_flag = NYC_CONSHANKIN_AMERICA_FLAG
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Welles_visible = { 
+				has_global_flag = NYC_WELLES_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_LaGuardia_visible = { 
+				has_global_flag = NYC_LAGUARDIA_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_LaGuardia_Successors_visible = { 
+				has_global_flag = NYC_LAGUARDIA_SUCCESSORS_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Christians_visible = { 
+				has_global_flag = NYC_CHRISTIANS_AMERICA_FLAG    
+			}
+		}
+		#AUS
+		triggers = { 
+			Super_Event_Image_Huey_visible = { 
+				has_global_flag = AUS_HUEY_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Follette_visible = { 
+				has_global_flag = AUS_FOLLETTE_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Pelley_visible = { 
+				has_global_flag = AUS_PELLEY_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Marland_visible = { 
+				has_global_flag = AUS_MARLAND_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Pappy_visible = { 
+				has_global_flag = AUS_PAPPY_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Pendergast_visible = { 
+				has_global_flag = AUS_PENDERGAST_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Catholic_visible = { 
+				has_global_flag = AUS_CATHOLIC_AMERICA_FLAG    
+			}
+		}
+
+		##USA
+		triggers = { 
+			Super_Event_Image_MacArthur_visible = { 
+				has_global_flag = USA_MAC_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Navy_visible = { 
+				has_global_flag = USA_NAVY_AMERICA_FLAG    
+			}
+		}
+
+		##NEE
+		triggers = { 
+			Super_Event_Image_NEE_Military_visible = { 
+				has_global_flag = NEE_MILITARY_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Pershing_visible = { 
+				has_global_flag = NEE_PERSHING_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Lermond_visible = { 
+				has_global_flag = NEE_LERMOND_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Nordic_visible = { 
+				has_global_flag = NEE_NORDIC_AMERICA_FLAG    
+			}
+		}
+			
+		triggers = { 
+			Super_Event_Image_American_Monarchy_visible = { 
+				has_global_flag = NEE_AMERICAN_MONARCHY_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Quaker_visible = { 
+				has_global_flag = NEE_QUAKER_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Ancap_visible = { 
+				has_global_flag = NEE_ANCAP_AMERICA_FLAG     
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Prohib_visible = { 
+				has_global_flag = NEE_PROHIB_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_NEE_Democracy_visible = { 
+				has_global_flag = NEE_DEMOCRACY_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Irish_America_visible = { 
+				has_global_flag = NEE_IRISH_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Dominionists_visible = { 
+				has_global_flag = NEE_DOMINIONIST_AMERICA_FLAG    
+			}
+		}
+		##PSA
+		triggers = { 
+			Super_Event_Image_PSA_Military_visible = { 
+				has_global_flag = PSA_MILITARY_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_PSA_Democracy_visible = { 
+				has_global_flag = PSA_DEMOCRACY_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Spiritualists_visible = { 
+				has_global_flag = PSA_SPIRITUALIST_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Norton_visible = { 
+				has_global_flag = PSA_NORTON_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Progressives_visible = { 
+				has_global_flag = PSA_PROGRESSIVE_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Wallace_Shambhala_visible = { 
+				has_global_flag = PSA_SHAMBHALA_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Japanese_America_visible = { 
+				has_global_flag = PSA_JAPANESE_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Hughes_visible = { 
+				has_global_flag = PSA_HUGHES_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Hearst_visible = { 
+				has_global_flag = PSA_HEARST_AMERICA_FLAG    
+			}
+		}
+
+		##COR
+		triggers = { 
+			Super_Event_Image_Lindbergh_visible = { 
+				has_global_flag = COR_LINDBERGH_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Fordist_visible = { 
+				has_global_flag = COR_FORDIST_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Russell_Jr_visible = { 
+				has_global_flag = COR_RUSSELL_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Crump_visible = { 
+				has_global_flag = COR_CRUMP_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Murray_visible = { 
+				has_global_flag = COR_MURRAY_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_COR_Generic_visible = { 
+				has_global_flag = COR_GENERIC_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Klan_visible = { 
+				has_global_flag = COR_KLAN_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Patton_visible = { 
+				has_global_flag = COR_PATTON_AMERICA_FLAG    
+			}
+		}
+		
+		triggers = { 
+			Super_Event_Image_FortyEight_visible = { 
+				has_global_flag = COR_FORTY_EIGHT_AMERICA_FLAG    
+			}
+		}
+
+		triggers = { 
+			Super_Event_Image_Armstrong_visible = { 
+				has_global_flag = COR_ARMSTRONG_AMERICA_FLAG    
+			}
+		}
+
+		##Meme Mode/Funny##
+		triggers = { 
+			Super_Event_Image_Cao_Dai_World_Funny_visible = { 
+				has_global_flag = VIN_CAO_DAI_WORLD_FUNNY_FLAG
+			}
+		}
 		###	
 		properties = {
 			KXX_Super_Event_Image_Default = {
@@ -361,6 +879,617 @@ scripted_gui = {
 						has_global_flag = TAIWAN_COMMIE_UNITE_CHINA
 					}
 					clr_global_flag  = TAIWAN_COMMIE_UNITE_CHINA
+				}
+
+
+				###超事件扩展
+
+				##Enhanced Super Events
+				if = {
+					limit = {	
+						has_global_flag = CAN_IMPERAL_FEDERATION_FORMED_FLAG
+					}
+					clr_global_flag  = CAN_IMPERAL_FEDERATION_FORMED_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = CAN_KIBBO_IMPFED_FORMED_FLAG
+					}
+					clr_global_flag  = CAN_KIBBO_IMPFED_FORMED_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = IRE_CELTICS_UNIFIED_FLAG
+					}
+					clr_global_flag  = IRE_CELTICS_UNIFIED_FLAG
+				}
+
+				##World Conquests
+				if = {
+					limit = {	
+						has_global_flag = ALB_HOXHA_WORLD_FLAG
+					}
+					clr_global_flag  = ALB_HOXHA_WORLD_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = CSA_LOEB_WORLD_FLAG
+					}
+					clr_global_flag  = CSA_LOEB_WORLD_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = SIC_PIO_WORLD_FLAG
+					}
+					clr_global_flag  = SIC_PIO_WORLD_FLAG
+				}
+				
+				if = {
+					limit = {	
+						has_global_flag = POL_POLAND_WORLD_FLAG
+					}
+					clr_global_flag  = POL_POLAND_WORLD_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = BBR_SUN_RA_WORLD_FLAG
+					}
+					clr_global_flag  = BBR_SUN_RA_WORLD_FLAG
+				}
+				
+				if = {
+					limit = {	
+						has_global_flag = CSA_TECHNOCRACY_WORLD_FLAG
+					}
+					clr_global_flag  = CSA_TECHNOCRACY_WORLD_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = NYC_TOMLINSON_WORLD_FLAG
+					}
+					clr_global_flag  = NYC_TOMLINSON_WORLD_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = NEE_LOVECRAFT_WORLD_FLAG
+					}
+					clr_global_flag  = NEE_LOVECRAFT_WORLD_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = NEE_LEFTCRAFT_WORLD_FLAG
+					}
+					clr_global_flag  = NEE_LEFTCRAFT_WORLD_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = TIB_ROERICH_WORLD_FLAG
+					}
+					clr_global_flag  = TIB_ROERICH_WORLD_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = USA_WILLKIE_WORLD_FLAG
+					}
+					clr_global_flag  = USA_WILLKIE_WORLD_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = VIN_COCONUT_WORLD_FLAG
+					}
+					clr_global_flag  = VIN_COCONUT_WORLD_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = VIN_HOA_HAO_WORLD_FLAG
+					}
+					clr_global_flag  = VIN_HOA_HAO_WORLD_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = VIN_CAO_DAI_WORLD_FLAG
+					}
+					clr_global_flag  = VIN_CAO_DAI_WORLD_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = MEX_VASCONCELOS_WORLD_FLAG
+					}
+					clr_global_flag  = MEX_VASCONCELOS_WORLD_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = CSA_BURNHAM_WORLD_FLAG
+					}
+					clr_global_flag  = CSA_BURNHAM_WORLD_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = FOP_POSADAS_WORLD_FLAG
+					}
+					clr_global_flag  = FOP_POSADAS_WORLD_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = FOP_FONTE_WORLD_FLAG
+					}
+					clr_global_flag  = FOP_FONTE_WORLD_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = MOR_GUENON_WORLD_FLAG
+					}
+					clr_global_flag  = MOR_GUENON_WORLD_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = ENG_CLEM_WORLD_FLAG
+					}
+					clr_global_flag  = ENG_CLEM_WORLD_FLAG
+				}
+
+				############
+				##American##
+				############
+				##BBR
+				if = {
+					limit = {	
+						has_global_flag = BBR_NORMAL_AMERICA_FLAG
+					}
+					clr_global_flag  = BBR_NORMAL_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = BBR_SOCIALIST_AMERICA_FLAG
+					}
+					clr_global_flag  = BBR_SOCIALIST_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = BBR_UNIA_AMERICA_FLAG
+					}
+					clr_global_flag  = BBR_UNIA_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = BBR_NOI_AMERICA_FLAG
+					}
+					clr_global_flag  = BBR_NOI_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = BBR_ABB_AMERICA_FLAG
+					}
+					clr_global_flag  = BBR_ABB_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = BBR_JEWISH_AMERICA_FLAG
+					}
+					clr_global_flag  = BBR_JEWISH_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = BBR_SUN_RA_AMERICA_FLAG
+					}
+					clr_global_flag  = BBR_SUN_RA_AMERICA_FLAG
+				}
+
+				##NYC 
+				if = {
+					limit = {	
+						has_global_flag = NYC_ROOSEVELT_AMERICA_FLAG
+					}
+					clr_global_flag  = NYC_ROOSEVELT_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = NYC_TRUMP_AMERICA_FLAG
+					}
+					clr_global_flag  = NYC_TRUMP_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = NYC_STEINBECK_AMERICA_FLAG
+					}
+					clr_global_flag  = NYC_STEINBECK_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = NYC_TAMMANY_AMERICA_FLAG
+					}
+					clr_global_flag  = NYC_TAMMANY_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = NYC_NYPD_AMERICA_FLAG
+					}
+					clr_global_flag  = NYC_NYPD_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = NYC_ITALIAN_MOB_AMERICA_FLAG
+					}
+					clr_global_flag  = NYC_ITALIAN_MOB_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = NYC_HARLEM_MOB_AMERICA_FLAG
+					}
+					clr_global_flag  = NYC_HARLEM_MOB_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = NYC_HARLEM_NATIONALIST_AMERICA_FLAG
+					}
+					clr_global_flag  = NYC_HARLEM_NATIONALIST_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = NYC_HARLEM_SYNDIES_AMERICA_FLAG
+					}
+					clr_global_flag  = NYC_HARLEM_SYNDIES_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = NYC_SUFI_ABDUL_AMERICA_FLAG
+					}
+					clr_global_flag  = NYC_SUFI_ABDUL_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = NYC_CONSHANKIN_AMERICA_FLAG
+					}
+					clr_global_flag  = NYC_CONSHANKIN_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = NYC_WELLES_AMERICA_FLAG
+					}
+					clr_global_flag  = NYC_WELLES_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = NYC_LAGUARDIA_AMERICA_FLAG
+					}
+					clr_global_flag  = NYC_LAGUARDIA_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = NYC_LAGUARDIA_SUCCESSORS_AMERICA_FLAG
+					}
+					clr_global_flag  = NYC_LAGUARDIA_SUCCESSORS_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = NYC_CHRISTIANS_AMERICA_FLAG
+					}
+					clr_global_flag  = NYC_CHRISTIANS_AMERICA_FLAG
+				}
+				##AUS
+				if = {
+					limit = {	
+						has_global_flag = AUS_HUEY_AMERICA_FLAG
+					}
+					clr_global_flag  = AUS_HUEY_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = AUS_FOLLETTE_AMERICA_FLAG
+					}
+					clr_global_flag  = AUS_FOLLETTE_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = AUS_PELLEY_AMERICA_FLAG
+					}
+					clr_global_flag  = AUS_PELLEY_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = AUS_MARLAND_AMERICA_FLAG
+					}
+					clr_global_flag  = AUS_MARLAND_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = AUS_PAPPY_AMERICA_FLAG
+					}
+					clr_global_flag  = AUS_PAPPY_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = AUS_PENDERGAST_AMERICA_FLAG
+					}
+					clr_global_flag  = AUS_PENDERGAST_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = AUS_CATHOLIC_AMERICA_FLAG
+					}
+					clr_global_flag  = AUS_CATHOLIC_AMERICA_FLAG
+				}
+
+				##USA
+				if = {
+					limit = {
+						has_global_flag = USA_MAC_AMERICA_FLAG
+					}
+					clr_global_flag  = USA_MAC_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = USA_NAVY_AMERICA_FLAG
+					}
+					clr_global_flag  = USA_NAVY_AMERICA_FLAG
+				}
+
+				##NEE
+				if = {
+					limit = {
+						has_global_flag = NEE_MILITARY_AMERICA_FLAG
+					}
+					clr_global_flag  = NEE_MILITARY_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = NEE_PERSHING_AMERICA_FLAG
+					}
+					clr_global_flag  = NEE_PERSHING_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = NEE_LERMOND_AMERICA_FLAG
+					}
+					clr_global_flag  = NEE_LERMOND_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = NEE_NORDIC_AMERICA_FLAG
+					}
+					clr_global_flag  = NEE_NORDIC_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = NEE_AMERICAN_MONARCHY_FLAG
+					}
+					clr_global_flag  = NEE_AMERICAN_MONARCHY_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = NEE_QUAKER_AMERICA_FLAG
+					}
+					clr_global_flag  = NEE_QUAKER_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = NEE_ANCAP_AMERICA_FLAG
+					}
+					clr_global_flag  = NEE_ANCAP_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = NEE_PROHIB_AMERICA_FLAG
+					}
+					clr_global_flag  = NEE_PROHIB_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = NEE_DEMOCRACY_AMERICA_FLAG
+					}
+					clr_global_flag  = NEE_DEMOCRACY_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = NEE_IRISH_AMERICA_FLAG
+					}
+					clr_global_flag  = NEE_IRISH_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = NEE_DOMINIONIST_AMERICA_FLAG
+					}
+					clr_global_flag  = NEE_DOMINIONIST_AMERICA_FLAG
+				}
+				##PSA
+				if = {
+					limit = {
+						has_global_flag = PSA_MILITARY_AMERICA_FLAG
+					}
+					clr_global_flag  = PSA_MILITARY_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = PSA_DEMOCRACY_AMERICA_FLAG
+					}
+					clr_global_flag  = PSA_DEMOCRACY_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = PSA_SPIRITUALIST_AMERICA_FLAG
+					}
+					clr_global_flag  = PSA_SPIRITUALIST_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = PSA_NORTON_AMERICA_FLAG
+					}
+					clr_global_flag  = PSA_NORTON_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = PSA_PROGRESSIVE_AMERICA_FLAG
+					}
+					clr_global_flag  = PSA_PROGRESSIVE_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = PSA_SHAMBHALA_AMERICA_FLAG
+					}
+					clr_global_flag  = PSA_SHAMBHALA_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = PSA_JAPANESE_AMERICA_FLAG
+					}
+					clr_global_flag  = PSA_JAPANESE_AMERICA_FLAG
+				}
+
+				
+				if = {
+					limit = {
+						has_global_flag = PSA_HUGHES_AMERICA_FLAG
+					}
+					clr_global_flag  = PSA_HUGHES_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = PSA_HEARST_AMERICA_FLAG
+					}
+					clr_global_flag  = PSA_HEARST_AMERICA_FLAG
+				}
+
+				#COR
+				if = {
+					limit = {
+						has_global_flag = COR_LINDBERGH_AMERICA_FLAG
+					}
+					clr_global_flag  = COR_LINDBERGH_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = COR_FORDIST_AMERICA_FLAG
+					}
+					clr_global_flag  = COR_FORDIST_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = COR_RUSSELL_AMERICA_FLAG
+					}
+					clr_global_flag  = COR_RUSSELL_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = COR_CRUMP_AMERICA_FLAG
+					}
+					clr_global_flag  = COR_CRUMP_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = COR_MURRAY_AMERICA_FLAG
+					}
+					clr_global_flag  = COR_MURRAY_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = COR_GENERIC_AMERICA_FLAG
+					}
+					clr_global_flag  = COR_GENERIC_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = COR_KLAN_AMERICA_FLAG
+					}
+					clr_global_flag  = COR_KLAN_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = COR_PATTON_AMERICA_FLAG
+					}
+					clr_global_flag  = COR_PATTON_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = COR_FORTY_EIGHT_AMERICA_FLAG
+					}
+					clr_global_flag  = COR_FORTY_EIGHT_AMERICA_FLAG
+				}
+
+				if = {
+					limit = {
+						has_global_flag = COR_ARMSTRONG_AMERICA_FLAG
+					}
+					clr_global_flag  = COR_ARMSTRONG_AMERICA_FLAG
+				}
+
+
+				##Meme Mode/Funny##
+				if = {
+					limit = {
+						has_global_flag = VIN_CAO_DAI_WORLD_FUNNY_FLAG
+					}
+					clr_global_flag  = VIN_CAO_DAI_WORLD_FUNNY_FLAG
 				}
 			}
 		}
