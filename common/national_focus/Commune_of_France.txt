@@ -45326,6 +45326,8 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
 			add_ideas = FRA_perfect_system
+			set_cosmetic_tag = FRA_corb_larp
+
 			every_state = {
 				
 				FRA = { 
@@ -45649,6 +45651,7 @@ focus = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
+			set_cosmetic_tag = FRA_utopian_larp
 			every_state = {
 				limit = {
 					is_on_continent = europe
@@ -45764,7 +45767,7 @@ focus = {
 		}
 	}
 	focus = {
-		id = FRA_transhumanism
+		id = FRA_transhumanism_ideas
 		icon = GFX_goal_FRA_transhumanism
 		x = 0
 		y = 3
@@ -45795,7 +45798,7 @@ focus = {
 			factor = 1
 		}
 		prerequisite = {
-			focus = FRA_transhumanism
+			focus = FRA_transhumanism_ideas
 		}
 		
 		completion_reward = {
@@ -45814,7 +45817,7 @@ focus = {
 			factor = 1
 		}
 		prerequisite = {
-			focus = FRA_transhumanism
+			focus = FRA_transhumanism_ideas
 		}
 		
 		completion_reward = {
@@ -45833,7 +45836,7 @@ focus = {
 			factor = 1
 		}
 		prerequisite = {
-			focus = FRA_transhumanism
+			focus = FRA_transhumanism_ideas
 		}
 		
 		completion_reward = {
@@ -45910,6 +45913,7 @@ focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
 			set_stability = 1
 			set_war_support = 1
+			set_cosmetic_tag = FRA_transhumanism_larp
 			every_state = {
 				
 				FRA = { 
@@ -46184,6 +46188,7 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
 			add_ideas = FRA_power_safety_honor
+			set_cosmetic_tag = FRA_burhnamite_larp
 			every_state = {
 				
 				FRA = { 
@@ -46455,6 +46460,7 @@ focus = {
 			add_stability = 0.1
 			add_political_power = 150
 			add_war_support = 0.1
+			set_cosmetic_tag = CSA_scott2
 			every_state = {
 				
 				FRA = { 

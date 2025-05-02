@@ -10379,3 +10379,39 @@ FRA_BRE = {
 	color = rgb { 0 18 93 }
 	color_ui = rgb { 0 18 93 }
 }
+FRA_burhnamite = {
+	color = rgb { 128 52 52 }
+	color_ui = rgb { 128 52 52 }
+}
+FRA_burhnamite_larp = {
+	color = rgb { 128 52 52 }
+	color_ui = rgb { 128 52 52 }
+}
+FRA_corbusier = {
+	color = rgb { 0 18 93 }
+	color_ui = rgb { 0 18 93 }
+}
+FRA_corb_larp = {
+	color = rgb { 0 18 93 }
+	color_ui = rgb { 0 18 93 }
+}
+FRA_utopian = {
+	color = rgb { 246 28 66 }
+	color_ui = rgb { 246 28 66 }
+}
+FRA_utopian_larp = {
+	color = rgb { 246 28 66 }
+	color_ui = rgb { 246 28 66 }
+}
+FRA_transhumanism = {
+	color = rgb { 0 102 102 }
+	color_ui = rgb { 0 102 102 }
+}
+FRA_transhumanism_larp = {
+	color = rgb { 0 102 102 }
+	color_ui = rgb { 0 102 102 }
+}
+FRA_technocracy = {
+	color = rgb { 160 41 100 }
+	color_ui = rgb { 160 41 100 }
+}

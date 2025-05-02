@@ -6250,6 +6250,7 @@ option = {
 		expire = "1.1.1"
 		ideology = technocracy_subtype
 	}
+	
 }	
 option = { 
 	name = kxxfrance.80.b
@@ -6267,6 +6268,7 @@ option = {
 		expire = "1.1.1"
 		ideology = burnhamite_thought_subtype
 	}
+	set_cosmetic_tag = FRA_burhnamite
 }	
 option = { 
 	name = kxxfrance.80.c
@@ -6284,6 +6286,7 @@ option = {
 		expire = "1.1.1"
 		ideology = technocratic_socialism_subtype
 	}
+	set_cosmetic_tag = FRA_corbusier
 }	
 option = { 
 	name = kxxfrance.80.e
@@ -6301,6 +6304,7 @@ option = {
 		expire = "1.1.1"
 		ideology = socdem_utopian_technocracy_subtype
 	}
+	set_cosmetic_tag = FRA_utopian
 }	
 option = { 
 	name = kxxfrance.80.f
@@ -6318,6 +6322,12 @@ option = {
 		expire = "1.1.1"
 		ideology = transhumanism_subtype
 	}
+	set_party_name = {
+		ideology = totalist
+		long_name = "法国超人类主义协会"
+		name = "法国超人类主义协会"
+	}
+	set_cosmetic_tag = FRA_transhumanism
 }	
 
 }
@@ -6381,6 +6391,7 @@ country_event = {
 
 option = { 
 	name = kxxfrance.83.a
+	set_cosmetic_tag = FRA_technocracy
 	create_country_leader = {
 		name = "技官委员会"
 		picture = "gfx/leaders/CSA/Portrait_CSA_Techno_Council.png"
