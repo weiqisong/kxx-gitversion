@@ -2116,6 +2116,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
+		allow_branch = {
+			NOT = {
+				tag = FRG
+			}
+		}
 		available = {
 			has_war = yes
 			surrender_progress > 0.1
@@ -14866,6 +14871,11 @@ focus = {
 	y = 20
 	ai_will_do = {
 		factor = 80
+	}
+	allow_branch = {
+		NOT = {
+			tag = FRG
+		}
 	}
 	available = {
 					has_completed_focus = FRG_ARMY_1

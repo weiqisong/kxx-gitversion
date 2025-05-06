@@ -907,6 +907,7 @@ country_event = {
 
 	option = {
 		name = frg.22.a
+		dismantle_faction = yes
 		set_politics = {
 			ruling_party = radical_socialist
 			elections_allowed = no
