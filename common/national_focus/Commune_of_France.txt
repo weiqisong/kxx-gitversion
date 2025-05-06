@@ -4454,6 +4454,7 @@ focus = FRA_office_des_chemins_de_fer
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_close_bureaucratic_loopholes"
+			remove_ideas = FRA_les_grand_travaux
 			if = {
 				limit = { has_completed_focus = FRA_voluntary_association }
 				custom_effect_tooltip = {
@@ -5414,6 +5415,7 @@ focus = FRA_office_des_chemins_de_fer
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_syndical_consolidation"
+			remove_ideas = FRA_les_grand_travaux
 			if = {
 				limit = { has_completed_focus = FRA_voluntary_association }
 				custom_effect_tooltip = {
@@ -7182,6 +7184,7 @@ focus = FRA_office_des_chemins_de_fer
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_military_buildup_two"
 			add_stability = 0.05
 			add_ideas = FRA_military_buildup_two_idea
+			remove_ideas = FRA_tempered_revanchism
 		}
 	}
 	focus = {
@@ -7316,6 +7319,7 @@ focus = FRA_office_des_chemins_de_fer
 			add_stability = 0.05
 			add_war_support = 0.05
 			add_political_power = 100
+			remove_ideas = FRA_rural_religious_question
 		}
 	}
 	focus = {
@@ -37715,7 +37719,7 @@ focus = {
 			focus = FRA_FRA_help_from_Arthuys
 		}
 		available = {
-			has_country_flag = FRA_Arthuys_01yes
+			has_country_flag = FRA_Arthuys_01no
 		}
 		mutually_exclusive = {
 	
@@ -37866,6 +37870,7 @@ focus = {
 			factor = 1000
 		}
 		completion_reward = {
+			
 			if = {
 				limit = {
 					has_completed_focus = FRA_Boncour_yes
@@ -38048,6 +38053,10 @@ focus = {
 				}
 				custom_effect_tooltip = FRG_deat_yes_tooltip
 				hidden_effect = {
+					set_politics = {
+						ruling_party = totalist
+						elections_allowed = no
+					}
 					create_country_leader = {
 						name = "马塞尔·戴亚"
 						desc = "POLITICS_MARCEL_DEAT_DESC"
@@ -38277,6 +38286,7 @@ focus = {
 		}
 		completion_reward = {
 			add_political_power = 100
+			remove_ideas = FRG_large_tear
 		}
 	}
 	focus = {

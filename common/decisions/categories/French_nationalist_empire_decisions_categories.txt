@@ -3,7 +3,7 @@ FRG_nuit_decisions = {
 	icon = hol_prepare_the_inundation_lines
         picture = GFX_decision_crystal_nights
 	available = {  
-                    has_completed_focus = FRG_ARMY_19
+                    has_completed_focus = FRG_Make_the_tricolour_proud
                     NOT = { country_exists = FRA }
                    }
 }

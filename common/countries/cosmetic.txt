@@ -10415,3 +10415,15 @@ FRA_technocracy = {
 	color = rgb { 160 41 100 }
 	color_ui = rgb { 160 41 100 }
 }
+FRG_commune = {
+	color = rgb {  17  159  252 }
+	color_ui = rgb {  17  159  252 }
+}
+FRG_tessier = {
+	color = rgb {  17  159  252 }
+	color_ui = rgb {  17  159  252 }
+}
+FRG_vidal = {
+	color = rgb {  17  159  252 }
+	color_ui = rgb {  17  159  252 }
+}

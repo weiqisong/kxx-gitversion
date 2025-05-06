@@ -14,18 +14,8 @@ country_event = {
 	
 	option = {	
         name = fne.21.a
-		set_politics = {
-			ruling_party = totalist
-			elections_allowed = no
-		}
-		create_country_leader = {
-			name = "莫里斯·多列士"
-			desc = "POLITICS_MAURICE_THOREZ_DESC"
-			picture = "gfx/leaders/FRA/Portrait_France_Maurice_Thorez.png"
-			expire = "1965.1.1"
-			ideology = jacobinism_subtype
-		}
         FRG = { change_tag_from = FRA }
+
         hidden_effect = {
             FRG = { transfer_state = 762 }
             FRG = { transfer_state = 21 }
@@ -34,17 +24,14 @@ country_event = {
             FRG = { transfer_state = 735 }
             FRG = { transfer_state = 20 }
             FRG = { transfer_state = 26 }
-            FRG = { transfer_state = 22 }
 			FRG = { transfer_state = 25 }
-            JDF = { transfer_state = 785 }
-			OCC = { transfer_state = 817 }
-			OCC = { transfer_state = 984 }
-			OCC = { transfer_state = 31 }
-			OCC = { transfer_state = 19 }
-			OCC = { transfer_state = 22 }
-			NRM = { transfer_state = 15 }
-			BRI = { transfer_state = 983 }
-			BRI = { transfer_state = 14 }
+			FRG = {
+				create_faction =  "自由法国"
+				add_to_faction = NFA
+			}
+          
+		
+			
             FRG = { 
 				add_state_core = 762
                 add_state_core = 21
@@ -55,35 +42,7 @@ country_event = {
                 add_state_core = 26
 				add_state_core = 25
 			}
-			JDF = { 
-				add_state_core = 785
-			}
-			OCC = { 
-				add_state_core = 817
-				add_state_core = 984
-				add_state_core = 31
-				add_state_core = 19
-				add_state_core = 22
-				set_politics = {
-					ruling_party = authoritarian_democrat
-					elections_allowed = no
-				}
-			}
-			NRM = { 
-				add_state_core = 15
-				set_politics = {
-					ruling_party = totalist
-					elections_allowed = no
-				}
-			}
-			BRI = { 
-				add_state_core = 983
-				add_state_core = 14
-				set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
-				}
-			}
+			
 			FRG = {
 				add_manpower = 800000
 				add_equipment_to_stockpile = {
@@ -101,95 +60,52 @@ country_event = {
          	type = annex_everything
         }
     }
-    option = {	
+	option = {	
         name = fne.21.b
-		set_politics = {
-			ruling_party = national_populist
-			elections_allowed = no
+		hidden_effect = {
+            FRG = { transfer_state = 762 }
+            FRG = { transfer_state = 21 }
+            FRG = { transfer_state = 763 }
+            FRG = { transfer_state = 32 }
+            FRG = { transfer_state = 735 }
+            FRG = { transfer_state = 20 }
+            FRG = { transfer_state = 26 }
+			FRG = { transfer_state = 25 }
+			FRG = {
+				create_faction =  "自由法国"
+				add_to_faction = NFA
+			}
+          
+		
+			
+            FRG = { 
+				add_state_core = 762
+                add_state_core = 21
+                add_state_core = 763
+                add_state_core = 32
+                add_state_core = 735
+                add_state_core = 20
+                add_state_core = 26
+				add_state_core = 25
+			}
+			
+			FRG = {
+				add_manpower = 800000
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 50000
+					producer = FRA
+				}
+				load_oob = FRG
+			}
+			dismantle_faction = yes
 		}
-		create_country_leader = {
-			name = "阿尔弗雷德·法布尔·卢斯"
-			desc = ""
-			picture = "gfx/leaders/FRG/Portrait_FRG_Alfred_Fabre_Luce.png"
-			expire = "1965.1.1"
-			ideology = natpop_revolution_nationale_subtype
-		}
-    }  
-
-	option = {	
-        name = "忘掉愚蠢的极权思想吧，让我们看向马克思主义的另外一端...."
-		set_politics = {
-			ruling_party = national_populist
-			elections_allowed = no
-		}
-		create_country_leader = {
-			name = "阿尔弗雷德·法布尔·卢斯"
-			desc = ""
-			picture = "gfx/leaders/FRG/Portrait_FRG_Alfred_Fabre_Luce.png"
-			expire = "1965.1.1"
-			ideology = natpop_goebbels_subtype
-		}
+       
+        declare_war_on = {
+         	target = FRG
+         	type = annex_everything
+        }
     } 
-
-	option = {	
-        name = "布拉希拉赫的思想尚有可取之处"
-		set_politics = {
-			ruling_party = national_populist
-			elections_allowed = no
-		}
-		create_country_leader = {
-			name = "罗伯特·布拉希拉赫"
-			desc = ""
-			picture = "gfx/leaders/FRG/Portrait_FRG_Robert_Brasillach.png"
-			expire = "1965.1.1"
-			ideology = ultranationalism_proto_subtype
-			traits = { Valley_of_the_Sons_of_Hinnom_2 }
-		}
-    } 
-
-	option = {	
-        name = "回归初心，新社会主义将会在法兰西崛起"
-		set_politics = {
-			ruling_party = totalist
-			elections_allowed = no
-		}
-		create_country_leader = {
-			name = "阿尔弗雷德·法布尔·卢斯"
-			desc = ""
-			picture = "gfx/leaders/FRG/Portrait_FRG_Alfred_Fabre_Luce.png"
-			expire = "1965.1.1"
-			ideology = neo_socialism_subtype
-		}
-    } 
-
-	option = {	
-        name = "就现实来说，多里奥的民族雅各宾更适合我们"
-		set_politics = {
-			ruling_party = totalist
-			elections_allowed = no
-		}
-		create_country_leader = {
-			name = "阿尔弗雷德·法布尔·卢斯"
-			desc = ""
-			picture = "gfx/leaders/FRG/Portrait_FRG_Alfred_Fabre_Luce.png"
-			expire = "1965.1.1"
-			ideology = national_jacobinism_subtype
-		}
-    } 
-	option = {	
-        name = "法国革命将会永远前进！"
-		set_politics = {
-			ruling_party = totalist
-			elections_allowed = no
-		}
-		create_country_leader = {
-			name = "阿尔弗雷德·法布尔·卢斯"
-			desc = ""
-			picture = "gfx/leaders/FRG/Portrait_FRG_Alfred_Fabre_Luce.png"
-			expire = "1965.1.1"
-			ideology = tot_francism_subtype
-		}
-    }
 }
 
 country_event = { 
@@ -445,9 +361,20 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		country_event = {
-			id = frg.210
-			days = 7
+		if = {
+			limit = {
+				has_completed_focus = FRA_help_from_Boncour
+			}
+			country_event = {
+				id = frg.15
+				days = 7
+			}
+		}
+		else = {
+			country_event = {
+				id = frg.16
+				days = 7
+			}
 		}
 	}
 
@@ -637,4 +564,771 @@ country_event = {
 		}
 		set_country_flag = FRA_blum_01no
 	}
+}
+country_event = { 
+	id = frg.15 #gamelin seizes control
+	immediate = {log = "[GetDateText]: [Root.GetName]: event frg.7 "}
+	title = frg.15.t
+	desc = frg.15.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+         
+
+	option = {
+		name = frg.15.a
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+		}
+
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.3
+		}
+
+		add_popularity = {
+			ideology = totalist
+			popularity = -0.3
+		}
+		add_stability = -0.2
+		create_country_leader = {
+			name = "莫里斯·甘末林"
+			desc = "POLITICS_GAMELIN_DESC"
+			picture = "gfx/leaders/FRA/Portrait_France_Maurice_Gamelin_KR.png"
+			expire = "1965.1.1"
+			ideology = marechal_democracy_subtype
+			traits = {marshal_leader}
+		}
+		hidden_effect = {
+			country_event = {
+				id = frg.21
+				days = 7
+			}
+			country_event = {
+				id = frg.18
+				days = 14
+			}
+			country_event = {
+				id = frg.19
+				days = 21
+			}
+			country_event = {
+				id = frg.20
+				days = 28
+			}
+			country_event = {
+				id = frg.210
+				days = 30
+			}
+		}
+	}
+	
+	
+}
+country_event = { 
+	id = frg.16 #thorez seizes control
+	immediate = {log = "[GetDateText]: [Root.GetName]: event frg.7 "}
+	title = frg.16.t
+	desc = frg.16.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+         
+
+	option = {
+		name = frg.16.a
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+		}
+
+		add_popularity = {
+			ideology = social_democrat
+			popularity = -0.3
+		}
+
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.3
+		}
+		add_stability = -0.2
+		create_country_leader = {
+			name = "莫里斯·多列士"
+			desc = "POLITICS_MAURICE_THOREZ_DESC"
+			picture = "gfx/leaders/FRA/Portrait_France_Maurice_Thorez.png"
+			expire = "1965.1.1"
+			ideology = jacobinism_subtype
+		}
+		hidden_effect = {
+			country_event = {
+				id = frg.17
+				days = 7
+			}
+			country_event = {
+				id = frg.18
+				days = 14
+			}
+			country_event = {
+				id = frg.19
+				days = 21
+			}
+			country_event = {
+				id = frg.20
+				days = 28
+			}
+			country_event = {
+				id = frg.210
+				days = 30
+			}
+		}
+	}
+
+	
+}
+country_event = { 
+	id = frg.17 #normandy seperatists
+	immediate = {log = "[GetDateText]: [Root.GetName]: event frg.7 "}
+	title = frg.17.t
+	desc = frg.17.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+         
+
+	option = {
+		name = frg.17.a
+		NRM = { transfer_state = 15 }
+		NRM = { 
+			add_state_core = 15
+			set_politics = {
+				ruling_party = social_liberal
+				elections_allowed = no
+			}
+		}
+	}
+	option = {
+		name = frg.17.b
+		NRM = { transfer_state = 15 }
+		NRM = { 
+			add_state_core = 15
+			set_politics = {
+				ruling_party = social_liberal
+				elections_allowed = no
+			}
+		}
+		NRM = { change_tag_from = FRA }
+	}
+	
+}
+country_event = { 
+	id = frg.18 #brittany revolts
+	immediate = {log = "[GetDateText]: [Root.GetName]: event frg.7 "}
+	title = frg.18.t
+	desc = frg.18.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+         
+
+	option = {
+		name = frg.18.a
+		BRI = { transfer_state = 983 }
+		BRI = { transfer_state = 14 }
+		BRI = { 
+			add_state_core = 983
+			add_state_core = 14
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+	option = {
+		name = frg.18.b
+		BRI = { transfer_state = 983 }
+		BRI = { transfer_state = 14 }
+		BRI = { 
+			add_state_core = 983
+			add_state_core = 14
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+		BRI = { change_tag_from = FRA }
+	}
+	
+}
+country_event = { 
+	id = frg.19 #occitania independence
+	immediate = {log = "[GetDateText]: [Root.GetName]: event frg.7 "}
+	title = frg.19.t
+	desc = frg.19.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+         
+
+	option = {
+		name = frg.19.a
+			OCC = { transfer_state = 817 }
+			OCC = { transfer_state = 984 }
+			OCC = { transfer_state = 1334 }
+			OCC = { transfer_state = 31 }
+			OCC = { transfer_state = 19 }
+			OCC = { transfer_state = 22 }
+			OCC = { 
+				add_state_core = 817
+				add_state_core = 984
+				add_state_core = 31
+				add_state_core = 19
+				add_state_core = 22
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
+				}
+			}
+	}
+	option = {
+		name = frg.19.b
+			OCC = { transfer_state = 817 }
+			OCC = { transfer_state = 984 }
+			OCC = { transfer_state = 1334 }
+			OCC = { transfer_state = 31 }
+			OCC = { transfer_state = 19 }
+			OCC = { transfer_state = 22 }
+			OCC = { 
+				add_state_core = 817
+				add_state_core = 984
+				add_state_core = 31
+				add_state_core = 19
+				add_state_core = 22
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
+				}
+			}
+		OCC = { change_tag_from = FRA }
+	}
+	
+}
+country_event = { 
+	id = frg.20 #JDF
+	immediate = {log = "[GetDateText]: [Root.GetName]: event frg.7 "}
+	title = frg.20.t
+	desc = frg.20.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+         
+
+	option = {
+		name = frg.20.a
+		JDF = { transfer_state = 785 }
+		JDF = { 
+			set_politics = {
+				ruling_party = social_liberal
+				elections_allowed = no
+			}
+			add_state_core = 785
+		}
+	}
+	option = {
+		name = frg.20.b
+		JDF = { transfer_state = 785 }
+		JDF = { 
+			add_state_core = 785
+			set_politics = {
+				ruling_party = social_liberal
+				elections_allowed = no
+			}
+		}
+		JDF = { change_tag_from = FRA }
+	}
+	
+}
+country_event = { 
+	id = frg.21 #normandy revolution
+	immediate = {log = "[GetDateText]: [Root.GetName]: event frg.7 "}
+	title = frg.21.t
+	desc = frg.21.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+         
+
+	option = {
+		name = frg.21.a
+		NRM = { transfer_state = 15 }
+		NRM = { 
+			add_state_core = 15
+			set_politics = {
+				ruling_party = totalist
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "革命指挥部"
+				picture = "gfx/leaders/FRG/Communard_politburo.dds"
+				expire = "1965.1.1"
+				ideology = jacobinism_subtype
+			}
+		}
+	}
+	option = {
+		name = frg.21.b
+		NRM = { transfer_state = 15 }
+		NRM = { 
+			add_state_core = 15
+			set_politics = {
+				ruling_party = totalist
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "革命指挥部"
+				picture = "gfx/leaders/FRG/Communard_politburo.dds"
+				expire = "1965.1.1"
+				ideology = jacobinism_subtype
+			}
+		}
+		NRM = { change_tag_from = FRA }
+	}
+	
+}
+country_event = { 
+	id = frg.22 #commuards has returned
+	immediate = {log = "[GetDateText]: [Root.GetName]: event frg.7 "}
+	title = frg.22.t
+	desc = frg.22.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+         
+
+	option = {
+		name = frg.22.a
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		}
+
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.2
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.2
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.2
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.2
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = -0.5
+		}
+		create_country_leader = {	
+			name = "加斯东·维达尔"  # Gaston Vidal
+			picture = "gfx/leaders/FRA/Portrait_FRA_Gaston_Vidal.png"
+			expire = "1.1.1"
+			ideology = radsoc_red_junta_subtype
+		}
+		remove_all_ministers = yes
+		add_ideas = {
+			FRA_Guy_Mollet_hog_sde
+			FRA_Fernand_Despres_for_rso
+			FRA_Laurent_Casenove_eco_syn
+			FRA_Claudine_Chomat_sec_tot
+		}
+		set_party_name = {
+			ideology = totalist
+			long_name = "社会主义行动党"
+			name = "社会主义行动党"
+		}
+		set_party_name = {
+			ideology = syndicalist
+			long_name = "劳工总联合会"
+			name = "劳工总联合会"
+		}
+		set_party_name = {
+			ideology = radical_socialist
+			long_name = "临时政府/联邦无政府主义者联合会"
+			name = "临时政府/联邦无政府主义者联合会"
+		}
+		set_party_name = {
+			ideology = social_democrat
+			long_name = "工人国际法国支部"
+			name = "工人国际法国支部"
+		}
+		set_cosmetic_tag = FRG_commune
+		FRG = {
+			every_unit_leader = {	
+				set_nationality = NSW
+			}	
+		}
+		FRA = {
+			every_unit_leader = {	
+				set_nationality = FRG
+			}	
+		}
+		country_event = {
+			id = frg.23 
+			days = 2
+		}
+		remove_ideas = FRG_A_chaotic_government
+	}
+	
+	
+}
+country_event = { 
+	id = frg.23 #elections or not
+	immediate = {log = "[GetDateText]: [Root.GetName]: event frg.7 "}
+	title = frg.23.t
+	desc = frg.23.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+         
+
+	option = {
+		name = frg.23.a
+		set_country_flag = FRG_totalist_tip
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.1
+		}
+		country_event = {
+			id = frg.24
+			days = 7
+		}
+	}
+	option = {
+		name = frg.23.b
+		
+		set_country_flag = FRG_syndicalist_tip
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.1
+		}
+		country_event = {
+			id = frg.25
+			days = 7
+		}
+	}
+	
+}
+country_event = { 
+	id = frg.24 #elections?
+	immediate = {log = "[GetDateText]: [Root.GetName]: event frg.7 "}
+	title = frg.24.t
+	desc = frg.24.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+         
+
+	option = {
+		name = frg.24.a
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+		}
+		set_cosmetic_tag = FRA_Jacobin
+		
+	}
+	option = {
+		name = frg.24.b
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = radical_socialist
+			long_nameb = "基督教劳联"
+			name = "基督教劳联"
+		}
+		set_party_name = {
+			ideology = social_democrat
+			long_name = "基督教劳联"
+			name = "基督教劳联"
+		}
+		create_country_leader = {
+			name = "加斯东·泰西耶"  # Gaston Tessier
+			picture = "gfx/leaders/FRA/Portrait_FRA_Gaston_Tessier.png"
+			expire = "1.1.1"
+			ideology = christian_socialism_subtype
+		}
+		create_country_leader = {
+			name = "加斯东·泰西耶"  # Gaston Tessier
+			picture = "gfx/leaders/FRA/Portrait_FRA_Gaston_Tessier.png"
+			expire = "1.1.1"
+			ideology = socdem_christian_socialism_subtype
+		}
+		set_cosmetic_tag = FRG_tessier
+	}
+	option = {
+		name = frg.24.c
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = social_democrat
+			long_name = "共和社会党"
+			name = "共和社会党"
+		}
+		create_country_leader = {	
+			name = "加斯东·维达尔"  # Gaston Vidal
+			picture = "gfx/leaders/FRA/Portrait_FRA_Gaston_Vidal.png"
+			expire = "1.1.1"
+			ideology = socdem_paternal_socialism_subtype
+		}
+		set_cosmetic_tag = FRG_vidal
+	}
+}
+country_event = { 
+	id = frg.25 #elections?
+	immediate = {log = "[GetDateText]: [Root.GetName]: event frg.7 "}
+	title = frg.25.t
+	desc = frg.25.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+         
+
+	option = {
+		name = frg.25.a
+		set_politics = {
+			ruling_party = syndicalist
+			elections_allowed = no
+		}
+		
+		
+	}
+	option = {
+		name = frg.25.b
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+		}
+		
+	}
+	option = {
+		name = frg.25.c
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = radical_socialist
+			long_name = "联邦无政府主义者联合会"
+			name = "联邦无政府主义者联合会"
+		}
+		create_country_leader = {
+			name = "达尼埃尔·介朗"
+			picture = "gfx/leaders/FRA/Portrait_France_Daniel_Guerin.png"
+			expire = "1.1.1"
+			ideology = anarcho_communism_subtype
+			traits = {}
+		}
+		
+	}
+}
+country_event = { 
+	id = frg.26 #remy is shot
+	immediate = {log = "[GetDateText]: [Root.GetName]: event frg.7 "}
+	title = frg.26.t
+	desc = frg.26.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+         
+
+	option = {
+		name = frg.26.a
+		add_stability = -0.1
+		create_country_leader = {	
+			name = "临时委员会"  
+			picture = "gfx/leaders/NFA/Portrait_NFA_AF_Council.png"
+			expire = "1.1.1"
+			ideology = maurrassism_subtype
+		}
+		random_unit_leader = {
+			limit = { has_id = 114514 }
+			remove_unit_leader = yes
+		}
+		country_event = {
+			id = frg.27 
+			days = 3
+		}
+		set_country_flag = Remy_die
+	}
+	option = {
+		name = frg.26.b
+		set_country_flag = Remy_alive
+	}
+	
+}
+country_event = { 
+	id = frg.27 #new leader
+	immediate = {log = "[GetDateText]: [Root.GetName]: event frg.7 "}
+	title = frg.27.t
+	desc = frg.27.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+         
+
+	option = {
+		name = frg.27.a
+		complete_national_focus = FRG_Fable_win
+	
+	}
+	option = {
+		name = frg.27.b
+		complete_national_focus = FRG_Chanel_win
+	}
+	option = {
+		name = frg.27.c
+		complete_national_focus = FRG_Mahieu_win
+	}
+	option = {
+		name = frg.27.e
+		complete_national_focus = FRG_Chack_win
+	}
+	option = {
+		name = frg.27.f
+		complete_national_focus = FRG_Brasillach_win
+	}
+}
+country_event = { 
+	id = frg.28 #ideo picker
+	immediate = {log = "[GetDateText]: [Root.GetName]: event frg.7 "}
+	title = frg.28.t
+	desc = frg.28.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {	
+        name = "现在就挺好，没必要换。"
+		
+    }  
+	option = {	
+        name = "民族革命万岁！"
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		create_country_leader = {
+			name = "阿尔弗雷德·法布尔·卢斯"
+			desc = ""
+			picture = "gfx/leaders/FRG/Portrait_FRG_Alfred_Fabre_Luce.png"
+			expire = "1965.1.1"
+			ideology = natpop_revolution_nationale_subtype
+		}
+		add_tot_to_coalition = yes
+    }  
+
+	option = {	
+        name = "忘掉愚蠢的极权思想吧，让我们看向马克思主义的另外一端...."
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		add_tot_to_coalition = yes
+		create_country_leader = {
+			name = "阿尔弗雷德·法布尔·卢斯"
+			desc = ""
+			picture = "gfx/leaders/FRG/Portrait_FRG_Alfred_Fabre_Luce.png"
+			expire = "1965.1.1"
+			ideology = natpop_goebbels_subtype
+		}
+    } 
+
+	option = {	
+        name = "布拉希拉赫的思想尚有可取之处"
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		add_tot_to_coalition = yes
+		create_country_leader = {
+			name = "阿尔弗雷德·法布尔·卢斯"
+			desc = ""
+			picture = "gfx/leaders/FRG/Portrait_FRG_Alfred_Fabre_Luce.png"
+			expire = "1965.1.1"
+			ideology = ultranationalism_proto_subtype
+		}
+    } 
+
+	option = {	
+        name = "回归初心，新社会主义将会在法兰西崛起"
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+		}
+		set_cosmetic_tag = FRG_Fabre_Luce_neosoc
+		create_country_leader = {
+			name = "阿尔弗雷德·法布尔·卢斯"
+			desc = ""
+			picture = "gfx/leaders/FRG/Portrait_FRG_Alfred_Fabre_Luce.png"
+			expire = "1965.1.1"
+			ideology = neo_socialism_subtype
+		}
+		add_natpop_to_coalition = yes
+    } 
+
+	option = {	
+        name = "就现实来说，多里奥的民族雅各宾更适合我们"
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+		}
+		set_cosmetic_tag = FRG_Fabre_Luce_sorelian
+		create_country_leader = {
+			name = "阿尔弗雷德·法布尔·卢斯"
+			desc = ""
+			picture = "gfx/leaders/FRG/Portrait_FRG_Alfred_Fabre_Luce.png"
+			expire = "1965.1.1"
+			ideology = national_jacobinism_subtype
+		}
+		add_natpop_to_coalition = yes
+    } 
+	option = {	
+        name = "法国革命将会永远前进！"
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+		}
+		set_cosmetic_tag = FRG_Fabre_Luce_sorelian
+		create_country_leader = {
+			name = "阿尔弗雷德·法布尔·卢斯"
+			desc = ""
+			picture = "gfx/leaders/FRG/Portrait_FRG_Alfred_Fabre_Luce.png"
+			expire = "1965.1.1"
+			ideology = tot_francism_subtype
+		}
+		add_natpop_to_coalition = yes
+    }
 }

@@ -6,7 +6,7 @@ FRG_nuit_decisions = {
 
                                    
 FRG_cristal_nuit = {                           
-          allowed = { has_completed_focus = FRG_incite_factionalism }                
+          allowed = { has_completed_focus = FRG_Make_the_tricolour_proud }                
           available = {   
            has_country_flag = FRG_paris_nuit_comp     
            has_country_flag = FRG_bordeaux_nuit_comp 
@@ -19,7 +19,7 @@ FRG_cristal_nuit = {
 		}
           activation = {                             
                tag = FRG
-              has_completed_focus = FRG_ARMY_19    
+              has_completed_focus = FRG_Make_the_tricolour_proud    
           }
           is_good = no                           
           selectable_mission = yes     
@@ -30,7 +30,8 @@ FRG_cristal_nuit = {
                add_stability = -0.45
                add_war_support = -0.35
                custom_effect_tooltip = cristal_nuit_failure   
-               country_event = { id = fne.99 }          
+               remove_ideas = FRG_A_chaotic_government
+               country_event = { id = frg.22 }          
           }
           complete_effect = {                    
                add_political_power = 500
@@ -45,11 +46,11 @@ FRG_paris_nuit_decision = {
                 on_map_mode = map_and_decisions_view
                 highlight_states = { state = 16 }
 		visible = {
-                        has_completed_focus = FRG_incite_factionalism
+                        has_completed_focus = FRG_Make_the_tricolour_proud  
 			16 = { is_owned_and_controlled_by = FRG }
 		}
 		available = {
-			has_completed_focus = FRG_incite_factionalism
+			has_completed_focus = FRG_Make_the_tricolour_proud  
 			16 = { is_owned_and_controlled_by = FRG }
 			NOT = { has_country_flag = FRG_nuit }
 		}
@@ -88,14 +89,14 @@ FRG_paris_nuit_decision = {
 FRG_bordeaux_nuit_decision = {
 		icon = decision_cat_generic_purge
                 on_map_mode = map_and_decisions_view
-                highlight_states = { state = 19 }
+                highlight_states = { state = 33 }
 		visible = {
-			19 = { is_owned_and_controlled_by = FRG }
-                        has_completed_focus = FRG_incite_factionalism
+			33 = { is_owned_and_controlled_by = FRG }
+                        has_completed_focus = FRG_Make_the_tricolour_proud  
 		}
 		available = {
-			has_completed_focus = FRG_incite_factionalism
-			19 = { is_owned_and_controlled_by = FRG }
+			has_completed_focus = FRG_Make_the_tricolour_proud  
+			33 = { is_owned_and_controlled_by = FRG }
 			NOT = { has_country_flag = FRG_nuit }
 		}
 		fire_only_once = yes
@@ -126,7 +127,7 @@ FRG_bordeaux_nuit_decision = {
                       level = 1
                       instant_build = yes
                    }
-                   19 = { add_extra_state_shared_building_slots = 1 }
+                   33 = { add_extra_state_shared_building_slots = 1 }
 		}
 	}
 
@@ -136,10 +137,10 @@ FRG_marseille_nuit_decision = {
                 highlight_states = { state = 21 }
 		visible = {
 			21 = { is_owned_and_controlled_by = FRG }
-                        has_completed_focus = FRG_incite_factionalism
+                        has_completed_focus = FRG_Make_the_tricolour_proud  
 		}
 		available = {
-			has_completed_focus = FRG_incite_factionalism
+			has_completed_focus = FRG_Make_the_tricolour_proud  
 			21 = { is_owned_and_controlled_by = FRG }
 			NOT = { has_country_flag = FRG_nuit }
 		}
@@ -181,10 +182,10 @@ FRG_lyon_nuit_decision = {
                 highlight_states = { state = 20 }
 		visible = {
 			20 = { is_owned_and_controlled_by = FRG }
-                        has_completed_focus = FRG_incite_factionalism
+                        has_completed_focus = FRG_Make_the_tricolour_proud  
 		}
 		available = {
-			has_completed_focus = FRG_incite_factionalism
+			has_completed_focus = FRG_Make_the_tricolour_proud  
 			20 = { is_owned_and_controlled_by = FRG }
 			NOT = { has_country_flag = FRG_nuit }
 		}
@@ -586,9 +587,7 @@ FRG_switzerland_imperialate_decision = {
                                      state = 761 }
 		visible = {
 			has_completed_focus = FRG_conquest_2
-			3 = { is_owned_and_controlled_by = ROOT }
-                        151 = { is_owned_and_controlled_by = ROOT }
-                        761 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
 			has_completed_focus = FRG_conquest_2
@@ -625,11 +624,7 @@ FRG_spain_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = {
 			has_completed_focus = FRG_conquest_2
-			176 = { is_owned_and_controlled_by = ROOT }
-                        41 = { is_owned_and_controlled_by = ROOT }
-                        173 = { is_owned_and_controlled_by = ROOT }
-                        165 = { is_owned_and_controlled_by = ROOT }
-                        167 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
 			has_completed_focus = FRG_conquest_2
@@ -683,11 +678,7 @@ FRG_spain_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = {
 			has_completed_focus = FRG_conquest_2
-			158 = { is_owned_and_controlled_by = ROOT }
-                        159 = { is_owned_and_controlled_by = ROOT }
-                        2 = { is_owned_and_controlled_by = ROOT }
-                        117 = { is_owned_and_controlled_by = ROOT }
-                        115 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
 			has_completed_focus = FRG_conquest_2
@@ -783,16 +774,7 @@ FRG_lowland_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = {
 			has_completed_focus = FRG_conquest_10
-			6 = { is_owned_and_controlled_by = ROOT }
-                        34 = { is_owned_and_controlled_by = ROOT }
-                        29 = { is_owned_and_controlled_by = ROOT }
-                        741 = { is_owned_and_controlled_by = ROOT }
-                        8 = { is_owned_and_controlled_by = ROOT }
-                        978 = { is_owned_and_controlled_by = ROOT }
-                        35 = { is_owned_and_controlled_by = ROOT }
-                        7 = { is_owned_and_controlled_by = ROOT }
-                        866 = { is_owned_and_controlled_by = ROOT }
-                        36 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
 			has_completed_focus = FRG_conquest_10
@@ -854,10 +836,7 @@ FRG_german_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = { 
 			has_completed_focus = FRG_conquest_10
-			55 = { is_owned_and_controlled_by = ROOT }
-                        51 = { is_owned_and_controlled_by = ROOT }
-                        59 = { is_owned_and_controlled_by = ROOT }
-                        50 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
                         NOT = { country_exists = GER }
@@ -919,8 +898,7 @@ FRG_austria_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = { 
 			has_completed_focus = FRG_conquest_2
-			1137 = { is_owned_and_controlled_by = ROOT }
-                        775 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
                         NOT = { country_exists = AUS }
@@ -996,8 +974,7 @@ FRG_austria_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = { 
 			has_completed_focus = FRG_conquest_2
-			109 = { is_owned_and_controlled_by = ROOT }
-                        104 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
                         NOT = { country_exists = CRO }
@@ -1070,8 +1047,7 @@ FRG_bavaria_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = { 
 			has_completed_focus = FRG_conquest_10
-			52 = { is_owned_and_controlled_by = ROOT }
-                        54 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
                         NOT = { country_exists = GER }
@@ -1116,8 +1092,7 @@ FRG_schleswig_holstein_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = { 
 			has_completed_focus = FRG_conquest_10
-			58 = { is_owned_and_controlled_by = ROOT }
-                        782 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
                         NOT = { country_exists = GER }
@@ -1149,8 +1124,7 @@ FRG_bohemia_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = { 
 			has_completed_focus = FRG_conquest_11
-			1129 = { is_owned_and_controlled_by = ROOT }
-                        75 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
                         NOT = { country_exists = CZE }
@@ -1211,8 +1185,7 @@ FRG_ukraine_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = { 
                         has_completed_focus = FRG_conquest_10
-			202 = { is_owned_and_controlled_by = ROOT }
-                        226 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
                         NOT = { country_exists = UKR }
@@ -1310,8 +1283,7 @@ FRG_berlin_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = { 
                         has_completed_focus = FRG_conquest_10
-			64 = { is_owned_and_controlled_by = ROOT }
-                        65 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
                         NOT = { country_exists = GER }
@@ -1393,8 +1365,7 @@ FRG_belarus_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = { 
                         has_completed_focus = FRG_conquest_10
-			206 = { is_owned_and_controlled_by = ROOT }
-                        194 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
                         NOT = { country_exists = WHR }
@@ -1448,9 +1419,7 @@ FRG_baltic_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = { 
                         has_completed_focus = FRG_conquest_10
-			96 = { is_owned_and_controlled_by = ROOT }
-                        1091 = { is_owned_and_controlled_by = ROOT }
-                        13 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
                         has_completed_focus = FRG_conquest_10
@@ -1509,8 +1478,7 @@ FRG_donkuban_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = { 
                         has_completed_focus = FRG_conquest_12
-			234 = { is_owned_and_controlled_by = ROOT }
-                        218 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
                         NOT = { country_exists = DKB }
@@ -1561,8 +1529,7 @@ FRG_transcaucasia_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = { 
                         has_completed_focus = FRG_conquest_12
-			237 = { is_owned_and_controlled_by = ROOT }
-                        233 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
                         NOT = { country_exists = KLY }
@@ -1626,8 +1593,7 @@ FRG_denmark_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = { 
                         has_completed_focus = FRG_conquest_10
-			99 = { is_owned_and_controlled_by = ROOT }
-                        37 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
                         NOT = { country_exists = DEN }
@@ -1673,8 +1639,7 @@ FRG_norway_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = { 
                         has_completed_focus = FRG_conquest_10
-			110 = { is_owned_and_controlled_by = ROOT }
-                        142 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
                         NOT = { country_exists = NOR }
@@ -1717,9 +1682,7 @@ FRG_sweden_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = { 
                         has_completed_focus = FRG_conquest_10
-			141 = { is_owned_and_controlled_by = ROOT }
-                        138 = { is_owned_and_controlled_by = ROOT }
-                        140 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
                         NOT = { country_exists = SWE }
@@ -1767,8 +1730,7 @@ FRG_finland_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = { 
                         has_completed_focus = FRG_conquest_10
-			840 = { is_owned_and_controlled_by = ROOT }
-                        149 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
                         NOT = { country_exists = FIN }
@@ -1816,8 +1778,7 @@ FRG_russia_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = { 
                         has_completed_focus = FRG_conquest_12
-			219 = { is_owned_and_controlled_by = ROOT }
-                        195 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
                         #has_country_flag = russia_peace
@@ -1976,8 +1937,7 @@ FRG_tunisia_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = { 
                         has_completed_focus = FRG_conquest_3
-			458 = { is_owned_and_controlled_by = ROOT }
-                        665 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
                         NOT = { country_exists = NFA }
@@ -2015,8 +1975,7 @@ FRG_maghreb_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = { 
                         has_completed_focus = FRG_conquest_3
-			513 = { is_owned_and_controlled_by = ROOT }
-                        699 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
                         NOT = { country_exists = NFA }
@@ -2075,8 +2034,7 @@ FRG_west_africa_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = { 
                         has_completed_focus = FRG_conquest_3
-			272 = { is_owned_and_controlled_by = ROOT }
-                        700 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
                         NOT = { country_exists = NFA }
@@ -2127,8 +2085,7 @@ FRG_england_imperialate_decision = {
 		icon = decision_cat_generic_purge
 		visible = { 
                        
-			126 = { is_owned_and_controlled_by = ROOT }
-                        128 = { is_owned_and_controlled_by = ROOT }
+			
 		}
 		available = {
                         NOT = { country_exists = ENG }

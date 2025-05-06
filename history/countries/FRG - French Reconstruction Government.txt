@@ -124,7 +124,6 @@ FRA = {
 add_ideas = {
 	FRG_independence_war
 	FRG_A_chaotic_government
-
 	FRG_Robert_Brasillach_hog_npo
 	FRG_POI_Leon_Degrelle_npo
 	FRG_POI_Maurice_Papon_npo
@@ -199,16 +198,20 @@ create_country_leader = {
 }
 
 create_country_leader = {
-  name = "科洛内尔·雷米"  # Colonel Rémy
+  name = "吉尔伯特·雷诺"  # Colonel Rémy
+   traits = {
+		FRG_Colonel_Remy
+	}
   picture = "gfx/leaders/FRA/Portrait_FRA_Gilbert_Renault_KX.png"
   expire = "1.1.1"
   ideology = maurrassism_subtype
+  
 }
 
 
 
 create_field_marshal = {
-	name = "科洛内尔·雷米"  
+	name = "吉尔伯特·雷诺"  
 	portrait_path = "gfx/leaders/FRA/Portrait_FRA_Gilbert_Renault_KX.png"
 	traits = {
 	  infantry_officer
@@ -220,6 +223,7 @@ create_field_marshal = {
 	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 2
+	id = 114514
 }
 
 
