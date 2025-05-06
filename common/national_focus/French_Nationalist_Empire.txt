@@ -13667,6 +13667,16 @@ focus = {
 	}
 	completion_reward = {
 		create_faction =  "大陆轴心"
+			add_state_core = 29
+			add_state_core = 42
+			add_state_core = 781
+			add_state_core = 8
+			add_state_core = 741
+			add_state_core = 34
+			add_state_core = 6
+			add_state_core = 979
+			add_state_core = 978
+			add_state_core = 35
 	}
 }
 focus = {
@@ -13806,6 +13816,8 @@ focus = {
 		
 	}
 	completion_reward = {
+		add_state_core = 943
+		add_state_core = 760
 		create_wargoal = {
 			type = annex_everything
 			target = SWI
@@ -14182,8 +14194,7 @@ focus = {
 		
 	}
 	completion_reward = {
-		army_experience = 25
-		add_ideas = FRG_european_unity_pact
+		add_ideas = FRA_EUROPE
 	}
 }
 focus = {
@@ -14337,6 +14348,7 @@ focus = {
 		
 	}
 	completion_reward = {
+			add_state_core = 29
 			add_state_core = 42
 			add_state_core = 781
 			add_state_core = 8
@@ -14424,6 +14436,8 @@ focus = {
 			type = annex_everything
 			target = SWI
 		}
+		add_state_core = 943
+		add_state_core = 760
 	}
 }
 focus = {
@@ -14797,7 +14811,7 @@ focus = {
 		
 	}
 	completion_reward = {
-		add_ideas = FRG_european_union
+		add_ideas = FRA_EUROPE
 	}
 }
 focus = {
