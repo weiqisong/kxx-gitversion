@@ -7066,6 +7066,9 @@ focus_tree = {
 			create_intelligence_agency = {
 				name = "嘉柏丽尔之眼"
 			}
+			hidden_effect = {
+				country_event = frg.31
+			}
 		}
 	}
 
@@ -9075,6 +9078,9 @@ focus_tree = {
 				ideology = social_liberal
 				popularity = -0.15
 			}
+			hidden_effect = {
+				country_event = frg.34
+			}
 		}
 	}
 
@@ -10852,6 +10858,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
+		allow_branch = {
+			NOT = {
+				tag = FRG
+			}
+		}
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		available = {
 			has_country_flag = Rocca_die
@@ -12486,6 +12497,11 @@ focus_tree = {
 		available = {
 			always = no
 		}
+		allow_branch = {
+			NOT = {
+				tag = FRG
+			}
+		}
 		prerequisite = {
 			has_country_flag = Tom_and_Jerry
 		}
@@ -13377,6 +13393,11 @@ focus_tree = {
 			has_country_leader = {
 				ruling_only = yes
 				name = "约瑟夫·迪·马布罗"
+			}
+		}
+		allow_branch = {
+			NOT = {
+				tag = FRG
 			}
 		}
 		prerequisite = {

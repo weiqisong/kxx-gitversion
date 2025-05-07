@@ -1333,3 +1333,263 @@ country_event = {
 		add_natpop_to_coalition = yes
     }
 }
+country_event = { 
+	id = frg.29 #frg wants to union
+	immediate = {log = "[GetDateText]: [Root.GetName]: event frg.7 "}
+	title = frg.29.t
+	desc = frg.29.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+         
+
+	option = {
+		name = frg.29.a #sure why not maruassians
+		trigger = {
+			NFA = {
+				has_completed_focus = NFA_victory_for_af
+			}
+		}
+		if = {
+			limit = {
+				NFA = {
+					is_ai = no
+				}
+				
+			}
+			NFA = {
+					annex_country = { target = FRG transfer_troops = yes }
+					every_state = {
+						limit = {
+							is_core_of = FRG
+						}
+		
+						add_core_of = NFA
+					}
+					
+				}
+				FRG = {
+					every_unit_leader = {	
+						set_nationality = NFA
+					}	
+				}
+		}
+		else = {
+			FRG = {
+				annex_country = { target = NFA transfer_troops = yes }
+				every_state = {
+					limit = {
+						is_core_of = NFA
+					}
+	
+					add_claim_by = FRG
+				}
+				
+			}
+			NFA = {
+				every_unit_leader = {	
+					set_nationality = FRG
+				}	
+			}
+		}
+	}
+	option = {
+		name = frg.29.b #demand military cuts
+		FRG = {
+			country_event = frg.30
+		}
+	}
+	
+}
+country_event = { 
+	id = frg.30 #nfa demands military cuts
+	immediate = {log = "[GetDateText]: [Root.GetName]: event frg.7 "}
+	title = frg.30.t
+	desc = frg.30.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+         
+
+	option = {
+		name = frg.30.a #we will obey
+		delete_unit_template_and_units = {
+			division_template = "解放运动精锐师"
+		}
+		delete_unit_template_and_units = {
+			division_template = "民族国海军陆战队"
+		}
+		if = {
+			limit = {
+				NFA = {
+					is_ai = no
+				}
+				
+			}
+			NFA = {
+					annex_country = { target = FRG transfer_troops = no }
+					every_state = {
+						limit = {
+							is_core_of = FRG
+						}
+		
+						add_core_of = NFA
+					}
+					
+				}
+				FRG = {
+					every_unit_leader = {	
+						set_nationality = NFA
+					}	
+				}
+		}
+		else = {
+			FRG = {
+				annex_country = { target = NFA transfer_troops = yes }
+				every_state = {
+					limit = {
+						is_core_of = NFA
+					}
+	
+					add_claim_by = FRG
+				}
+				
+			}
+			NFA = {
+				every_unit_leader = {	
+					set_nationality = FRG
+				}	
+			}
+		}
+	}
+	option = {
+		name = frg.30.b #thats treason!
+		dismantle_faction = yes
+		create_wargoal = {
+			target = NFA
+			type = annex_everything
+		}
+	}
+	
+}
+country_event = { 
+	id = frg.31 #more power to clara?
+	immediate = {log = "[GetDateText]: [Root.GetName]: event frg.7 "}
+	title = frg.31.t
+	desc = frg.31.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+         
+
+	option = {
+		name = frg.31.a #yes
+		add_stability = 0.2
+		hidden_effect = {
+			country_event = {
+				id = frg.32
+				days = 180
+			}
+		}
+	
+	}
+	option = {
+		name = frg.31.b #no
+	}
+	
+}
+country_event = { 
+	id = frg.32 #clara threat
+	immediate = {log = "[GetDateText]: [Root.GetName]: event frg.7 "}
+	title = frg.32.t
+	desc = frg.32.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+         
+
+	option = {
+		name = frg.32.a #do it
+		add_stability = 0.2
+		hidden_effect = {
+			country_event = {
+				id = frg.33
+				days = 7
+			}
+		}
+	
+	}
+	option = {
+		name = frg.32.b #no
+	}
+	
+}
+country_event = { 
+	id = frg.33 #clara coup
+	immediate = {log = "[GetDateText]: [Root.GetName]: event frg.7 "}
+	title = frg.33.t
+	desc = frg.33.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+         
+
+	option = {
+		name = frg.33.a #
+		complete_national_focus = FRG_Appearing_from_the_shadow
+	
+	}
+	
+	
+}
+country_event = { 
+	id = frg.34 #fate of gangs
+	immediate = {log = "[GetDateText]: [Root.GetName]: event frg.7 "}
+	title = frg.34.t
+	desc = frg.34.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+         
+
+	option = {
+		name = frg.34.a #purge them
+		hidden_effect = {
+			country_event = {
+				id = frg.35
+				days = 7
+			}
+		}
+	
+	}
+	option = {
+		name = frg.34.b #no
+	}
+	
+}
+country_event = { 
+	id = frg.35 #assination
+	immediate = {log = "[GetDateText]: [Root.GetName]: event frg.7 "}
+	title = frg.35.t
+	desc = frg.35.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+         
+
+	option = {
+		name = frg.35.a #rocca
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+		add_tot_to_coalition = yes
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.15
+		}
+		set_country_flag = Rocca_coup
+	}
+	
+	
+}
