@@ -13689,7 +13689,7 @@ focus = {
 		focus = FRG_revive_workers_internationale
 	}
 	available = {
-		
+		has_socialist_government = no
 	}
 	completion_reward = {
 		create_faction =  "大陆轴心"
@@ -14284,7 +14284,7 @@ focus = {
 		focus = FRG_new_order_of_france
 	}
 	available = {
-		
+		has_socialist_government = yes
 	}
 	completion_reward = {
 		create_faction =  "工团国际"

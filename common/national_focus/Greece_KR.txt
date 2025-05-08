@@ -8402,11 +8402,15 @@ focus_tree = {
 		relative_position_id = GRE_drachma_devaluation
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRE_heavy_industry"
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.5
+			add_tech_bonus = {
+				name = armor
+				bonus = 1
 				uses = 2
 				category = armor
+
 			}
+			
+			
 		}
 	}
 
