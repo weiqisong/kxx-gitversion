@@ -2837,7 +2837,7 @@ focus_tree = {
 		y = 4
 		cost = 3
 		ai_will_do = {
-			factor = 100
+			factor = 100 
 		}
 		prerequisite = {
 			focus = PB_FRA_Do_It_For_France
