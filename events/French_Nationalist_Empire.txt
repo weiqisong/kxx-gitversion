@@ -28,6 +28,7 @@ country_event = {
 			FRG = {
 				create_faction =  "自由法国"
 				add_to_faction = NFA
+				inherit_technology = FRA
 			}
           
 		
@@ -74,6 +75,7 @@ country_event = {
 			FRG = {
 				create_faction =  "自由法国"
 				add_to_faction = NFA
+				inherit_technology = FRA
 			}
           
 		
@@ -509,6 +511,7 @@ country_event = {
 			}
 			set_country_flag = FRA_ribes_ousted
 		}
+		mark_focus_tree_layout_dirty = yes
 	}
 
 	
@@ -700,6 +703,7 @@ country_event = {
 		name = frg.17.a
 		NRM = { transfer_state = 15 }
 		NRM = { 
+			inherit_technology = FRA
 			add_state_core = 15
 			set_politics = {
 				ruling_party = social_liberal
@@ -711,6 +715,7 @@ country_event = {
 		name = frg.17.b
 		NRM = { transfer_state = 15 }
 		NRM = { 
+			inherit_technology = FRA
 			add_state_core = 15
 			set_politics = {
 				ruling_party = social_liberal
@@ -736,6 +741,7 @@ country_event = {
 		BRI = { transfer_state = 983 }
 		BRI = { transfer_state = 14 }
 		BRI = { 
+			inherit_technology = FRA
 			add_state_core = 983
 			add_state_core = 14
 			set_politics = {
@@ -749,6 +755,7 @@ country_event = {
 		BRI = { transfer_state = 983 }
 		BRI = { transfer_state = 14 }
 		BRI = { 
+			inherit_technology = FRA
 			add_state_core = 983
 			add_state_core = 14
 			set_politics = {
@@ -779,6 +786,7 @@ country_event = {
 			OCC = { transfer_state = 19 }
 			OCC = { transfer_state = 22 }
 			OCC = { 
+				inherit_technology = FRA
 				add_state_core = 817
 				add_state_core = 984
 				add_state_core = 31
@@ -799,6 +807,7 @@ country_event = {
 			OCC = { transfer_state = 19 }
 			OCC = { transfer_state = 22 }
 			OCC = { 
+				inherit_technology = FRA
 				add_state_core = 817
 				add_state_core = 984
 				add_state_core = 31
@@ -827,6 +836,7 @@ country_event = {
 		name = frg.20.a
 		JDF = { transfer_state = 785 }
 		JDF = { 
+			inherit_technology = FRA
 			set_politics = {
 				ruling_party = social_liberal
 				elections_allowed = no
@@ -838,6 +848,7 @@ country_event = {
 		name = frg.20.b
 		JDF = { transfer_state = 785 }
 		JDF = { 
+			inherit_technology = FRA
 			add_state_core = 785
 			set_politics = {
 				ruling_party = social_liberal
@@ -862,6 +873,7 @@ country_event = {
 		name = frg.21.a
 		NRM = { transfer_state = 15 }
 		NRM = { 
+			inherit_technology = FRA
 			add_state_core = 15
 			set_politics = {
 				ruling_party = totalist
@@ -879,6 +891,7 @@ country_event = {
 		name = frg.21.b
 		NRM = { transfer_state = 15 }
 		NRM = { 
+			inherit_technology = FRA
 			add_state_core = 15
 			set_politics = {
 				ruling_party = totalist

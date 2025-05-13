@@ -2212,3 +2212,261 @@ FRA_neocolonialism_category = {
 		}
 	}
 }
+FRA_debug_focus_category = {
+	FRA_load_syndicalist_first = {
+		icon = generic_construction
+		visible = {
+			is_debug = yes
+		}
+
+		cost = 0
+		days_remove = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove FRA_Savoy_Hydroelectricity_decision"
+			set_global_flag = travailleur_majority_1936
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+FRA_load_anarchist_first = {
+		icon = generic_construction
+		visible = {
+			is_debug = yes
+		}
+
+		cost = 0
+		days_remove = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove FRA_Savoy_Hydroelectricity_decision"
+			set_global_flag = anarchiste_majority_1936
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	FRA_load_sorelian = {
+		icon = generic_construction
+		visible = {
+			is_debug = yes
+		}
+
+		cost = 0
+		days_remove = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove FRA_Savoy_Hydroelectricity_decision"
+			set_global_flag = sorelian_majority_1936
+			set_country_flag = Georges_Valois_lived
+			set_country_flag = Georges_Valois_crazy
+			set_country_flag = Georges_Valois_dead
+			set_country_flag = Valois_Berth
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+FRA_load_jacobin = {
+		icon = generic_construction
+		visible = {
+			is_debug = yes
+		}
+
+		cost = 0
+		days_remove = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove FRA_Savoy_Hydroelectricity_decision"
+			set_global_flag = jacobin_majority_1936
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	FRA_load_deat_and_his_friends = {
+		icon = generic_construction
+		visible = {
+			is_debug = yes
+		}
+
+		cost = 0
+		days_remove = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove FRA_Savoy_Hydroelectricity_decision"
+			set_country_flag = FRA_deat_supreme
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	FRA_load_gamelin_and_makhno = {
+		icon = generic_construction
+		visible = {
+			is_debug = yes
+		}
+
+		cost = 0
+		days_remove = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove FRA_Savoy_Hydroelectricity_decision"
+			set_country_flag = FRA_counter_revolution
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	FRA_load_stalemate = {
+		icon = generic_construction
+		visible = {
+			is_debug = yes
+		}
+
+		cost = 0
+		days_remove = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove FRA_Savoy_Hydroelectricity_decision"
+			set_global_flag = FRA_no_majority_1936
+			set_country_flag = FRA_mod_jac_sup
+			set_country_flag = FRA_ribes_ousted
+			set_country_flag = FRA_ribes_victory
+			set_country_flag = FRA_ribes_autocracy
+			set_country_flag = FRG_CIVIL_WAR_INCOMING
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	FRA_load_syndicalist_second = {
+		icon = generic_construction
+		visible = {
+			is_debug = yes
+		}
+
+		cost = 0
+		days_remove = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove FRA_Savoy_Hydroelectricity_decision"
+			set_country_flag = FRA_SECOND_SYND
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	FRA_load_anarchist_second = {
+		icon = generic_construction
+		visible = {
+			is_debug = yes
+		}
+
+		cost = 0
+		days_remove = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove FRA_Savoy_Hydroelectricity_decision"
+			set_country_flag = FRA_SECOND_ANAR
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	FRA_load_socdem_second = {
+		icon = generic_construction
+		visible = {
+			is_debug = yes
+		}
+
+		cost = 0
+		days_remove = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove FRA_Savoy_Hydroelectricity_decision"
+			set_country_flag = FRA_SECOND_SOCDEM
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	FRA_load_totalist_second = {
+		icon = generic_construction
+		visible = {
+			is_debug = yes
+		}
+
+		cost = 0
+		days_remove = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove FRA_Savoy_Hydroelectricity_decision"
+			set_country_flag = FRA_SECOND_RAD
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	FRA_load_batalie = {
+		icon = generic_construction
+		visible = {
+			is_debug = yes
+		}
+
+		cost = 0
+		days_remove = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove FRA_Savoy_Hydroelectricity_decision"
+			set_country_flag = FRA_batalie
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	FRA_load_technocracy = {
+		icon = generic_construction
+		visible = {
+			is_debug = yes
+		}
+
+		cost = 0
+		days_remove = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove FRA_Savoy_Hydroelectricity_decision"
+			set_country_flag = FRA_synarchist_victory
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+}

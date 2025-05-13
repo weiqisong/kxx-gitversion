@@ -927,6 +927,8 @@
  FRA_Thorez_01no:0 "多列士拒绝支持我们"
  FRA_Arthuys_01yes:0 "科皮坦支持我们。"
  FRA_Arthuys_01no:0 "科皮坦拒绝支持我们。"
+ FRA_blum_01yes:0 "布鲁姆宣布支持我们。"
+ FRA_blum_01no:0 "布鲁姆拒绝支持我们。"
  Remy_alive:0 "雷米侥幸存活！"
  Remy_die:0 "雷米上校死了！"
  FRG_totalist_tip:0 "公社极权派赢得了大会"
@@ -1090,6 +1092,7 @@
  FRG_Robin:0 "法兰西的罗宾汉"
  FRG_mafia:0 "法兰西教父"
  FRG_Colonel_Remy:0 "雷米上校"
+ FRA_socdem_dict:0 "社会民主主义的独裁者"
 
  #事件
  frg.1.t:0 "法兰西地区现状其一：布列塔尼"

@@ -1412,7 +1412,7 @@ country_event = {
 			}
 		}
 		set_global_flag = travailleur_majority_1936
-
+		mark_focus_tree_layout_dirty = yes
 		hidden_effect = {
 			random_other_country = {
 				news_event = {
@@ -1446,7 +1446,7 @@ country_event = {
 			}
 		}
 		set_global_flag = travailleur_majority_1936
-
+		mark_focus_tree_layout_dirty = yes
 		hidden_effect = {
 			random_other_country = {
 				news_event = {
@@ -1666,7 +1666,7 @@ country_event = {
 			}
 		}
 		set_global_flag = jacobin_majority_1936
-
+		mark_focus_tree_layout_dirty = yes
 		hidden_effect = {
 			random_other_country = {
 				news_event = {
@@ -1715,7 +1715,7 @@ country_event = {
 			}
 		}
 		set_global_flag = jacobin_majority_1936
-
+		mark_focus_tree_layout_dirty = yes
 		hidden_effect = {
 			random_other_country = {
 				news_event = {
@@ -1811,7 +1811,7 @@ country_event = {
 		add_stability = -0.1
 				set_cosmetic_tag = FRA_Valois
 		set_global_flag = sorelian_majority_1936
-
+		mark_focus_tree_layout_dirty = yes
 		hidden_effect = {
 			random_other_country = {
 				news_event = {
@@ -1858,7 +1858,7 @@ country_event = {
 		}
 		set_global_flag = sorelian_majority_1936
 				set_cosmetic_tag = FRA_Valois
-
+		mark_focus_tree_layout_dirty = yes
 		hidden_effect = {
 			random_other_country = {
 				news_event = {
@@ -1949,6 +1949,7 @@ country_event = {
 		}
 		add_tot_to_coalition = yes
 		set_global_flag = anarchiste_majority_1936
+		mark_focus_tree_layout_dirty = yes
 		custom_effect_tooltip = "New Communal Elections will take place every 5 years!"
 		set_country_flag = ANAR_PERICAT
 		hidden_effect = {
@@ -2000,6 +2001,7 @@ country_event = {
 			popularity = 0.20
 		}
 		set_global_flag = anarchiste_majority_1936
+		mark_focus_tree_layout_dirty = yes
 		custom_effect_tooltip = "New Communal Elections will take place every 5 years!"
 		set_country_flag = ANAR_YVETOT
 		hidden_effect = {
@@ -2052,6 +2054,7 @@ country_event = {
 		}
 		add_synd_to_coalition = yes
 		set_global_flag = anarchiste_majority_1936
+		mark_focus_tree_layout_dirty = yes
 		custom_effect_tooltip = "New Communal Elections will take place every 5 years!"
 		set_country_flag = ANAR_BESNARD
 		hidden_effect = {
@@ -2143,7 +2146,7 @@ country_event = {
 		add_ideas = FRA_Adrien_Tixier_sec_syn
 		set_global_flag = FRA_no_majority_1936
 		custom_effect_tooltip = "New Communal Elections will take place every 5 years!"
-
+		mark_focus_tree_layout_dirty = yes
 		hidden_effect = {
 			random_other_country = {
 				news_event = {
@@ -2210,7 +2213,7 @@ country_event = {
 		remove_ideas_with_trait = security_minister
 		add_ideas = FRA_Marceau_Pivert_sec_syn
 		set_global_flag = FRA_no_majority_1936
-		
+		mark_focus_tree_layout_dirty = yes
 
 		hidden_effect = {
 			random_other_country = {
@@ -2279,7 +2282,7 @@ country_event = {
 		add_ideas = FRA_Sebastien_Faure_sec_rso
 		set_global_flag = FRA_no_majority_1936
 		custom_effect_tooltip = "New Communal Elections will take place every 5 years!"
-
+		mark_focus_tree_layout_dirty = yes
 		hidden_effect = {
 			random_other_country = {
 				news_event = {
@@ -2365,7 +2368,7 @@ country_event = {
 		add_ideas = FRA_Sebastien_Faure_sec_rso
 		set_global_flag = FRA_no_majority_1936
 		custom_effect_tooltip = "New Communal Elections will take place every 5 years!"
-
+		mark_focus_tree_layout_dirty = yes
 		hidden_effect = {
 			random_other_country = {
 				news_event = {
@@ -2435,7 +2438,7 @@ country_event = {
 			ideology = socdem_christian_socialism_subtype
 		}
 		custom_effect_tooltip = "New Communal Elections will take place every 5 years!"
-
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 
@@ -5425,7 +5428,8 @@ country_event = {
 		set_country_flag = Marcel_Cachin_dead
 		set_country_flag = Jacques_Duclos_dead
 		set_country_flag = FRA_gamelins_coup
-
+		set_country_flag = FRA_counter_revolution
+		mark_focus_tree_layout_dirty = yes
 		if = {
 			limit = {
 				has_unit_leader = 200
@@ -7092,7 +7096,8 @@ country_event = {
 		set_country_flag = Hubert_Lagradelle_dead
 		set_country_flag = Gabriel_Jeantet_dead
 		set_country_flag = Pierre_Clementi_dead
-
+		set_country_flag = FRA_counter_revolution
+		mark_focus_tree_layout_dirty = yes
 		set_party_name = {
 			ideology = radical_socialist
 			long_name = FRA_makhno
@@ -7334,7 +7339,7 @@ country_event = {
 				
 				picture = "gfx/leaders/FRA/Portrait_France_Paul_Nizan.png"
 				expire = "1965.1.1"
-				ideology = sorelianism_subtype
+				ideology = national_bolshevik_subtype
 			}
 			add_stability = -0.1
 			remove_ideas_with_trait = head_of_government
@@ -7499,6 +7504,8 @@ country_event = {
 			  ideology = totalist
 			   popularity = 0.20
 		 	}
+			set_country_flag = FRA_deat_supreme
+			mark_focus_tree_layout_dirty = yes
 			complete_national_focus = FRA_Paris_en_ordre
 			remove_ideas = FRA_valois_dead_idea
 			remove_ideas = French_Revanchism_idea
@@ -9161,7 +9168,8 @@ country_event = { #militant leader
 	
 	immediate = {
 		hidden_effect = {
-			
+			set_country_flag = FRA_SECOND_RAD
+			mark_focus_tree_layout_dirty = yes
 			remove_all_ministers = yes
 			add_ideas = {
 				FRA_Marcel_Cachin_hog_tot
@@ -9382,6 +9390,7 @@ country_event = { #syndie leader
 			}
 		}
 		set_country_flag = FRA_SECOND_SYND
+		mark_focus_tree_layout_dirty = yes
 	}
 
 	option = {
@@ -9575,6 +9584,7 @@ country_event = { #anarchist leader
 			}
 		}
 		set_country_flag = FRA_SECOND_ANAR
+		mark_focus_tree_layout_dirty = yes
 	}
 
 	option = {
@@ -9789,6 +9799,7 @@ country_event = { #moderates leader
 			}
 		}
 		set_country_flag = FRA_SECOND_SOCDEM
+		mark_focus_tree_layout_dirty = yes
 	}
 
 	option = {

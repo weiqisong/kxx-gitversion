@@ -461,5 +461,8 @@ spriteTypes = {
 		name = "GFX_ideology_radsoc_paternal_socialism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/radsoc_paternal_socialism_group.png"
 	}
-	
+	spriteType = {
+		name = "GFX_ideology_national_bolshevik_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/national_bolshevik_subtype.png"
+	}
 }

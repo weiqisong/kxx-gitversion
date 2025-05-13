@@ -7632,4 +7632,10 @@ text = {
 		}
 		localization_key = fredaism_subtype  
 	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = national_bolshevik_subtype
+		}
+		localization_key = national_bolshevik_subtype 
+	}	
 }

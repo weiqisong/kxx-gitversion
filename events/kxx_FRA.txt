@@ -391,6 +391,8 @@ option = {
 		  ideology = totalist
 		   popularity = 0.20
 		 }
+		 set_country_flag = FRA_deat_supreme
+		 mark_focus_tree_layout_dirty = yes
 		complete_national_focus = FRA_Paris_en_ordre
 		remove_ideas = FRA_valois_dead_idea
 		remove_ideas = French_Revanchism_idea
@@ -416,8 +418,8 @@ option = {
 		ideology = totalist
 		popularity = -0.3
 	}
-
-
+	set_country_flag = FRA_counter_revolution
+	mark_focus_tree_layout_dirty = yes
 	create_country_leader = {
 		name = "莫里斯·甘末林"
 		desc = "POLITICS_GAMELIN_DESC"
@@ -1062,7 +1064,7 @@ country_event = {	#戴亚选举第二部分
 			  ideology = radical_socialist
 			   popularity = 0.20
 			 }
-			complete_national_focus = FRA_reFRAn_to_past
+			complete_national_focus = FRA_return_to_past
 			remove_ideas = FRA_valois_dead_idea
 			remove_ideas = French_Revanchism_idea
 			 
@@ -6443,6 +6445,8 @@ option = {
 		popularity = -0.2
 	}
 	complete_national_focus = FRA_synarchist_conpiracy
+	set_country_flag = FRA_synarchist_victory
+	mark_focus_tree_layout_dirty = yes
 }	
 
 }
@@ -6465,6 +6469,10 @@ option = {
 		ideology = totalist
 		popularity = 0.2
 	}
+	set_politics = {
+		ruling_party = totalist
+		elections_allowed = no
+	}
 	set_party_name = {
 		ideology = totalist
 		long_name = "阿赛法尔社团"
@@ -6472,7 +6480,11 @@ option = {
 	}
 	complete_national_focus = FRA_revolt_of_the_masters
 	set_cosmetic_tag = FRA_batailles
-	
+	hidden_effect = {
+		remove_ideas = FRA_black_guard_insurgency_idea
+		remove_ideas = FRA_valois_dead_idea
+	}
+	set_country_flag = FRA_batalie
 }	
 	
 }

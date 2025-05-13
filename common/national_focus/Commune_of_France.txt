@@ -2509,6 +2509,7 @@ focus = {
 			uses = 2
 			category = cat_mass_assault
 		}
+		
 		add_ideas = FRA_makhno_military_plan_1
 	}
 }
@@ -2537,6 +2538,7 @@ focus = {
 			uses = 2
 			category = cat_superior_firepower
 		}
+		
 		add_ideas = FRA_tanguy_military_plan_1
 	}
 }
@@ -2630,29 +2632,9 @@ focus = {
 		hidden_effect = {
 			set_technology = { improved_field_hospitals = 1 }
 		}
-		if = {
-			limit = { has_idea = FRA_revolutionary_militias_2 }
-			swap_ideas = {
-				remove_idea = FRA_revolutionary_militias_2
-				add_idea = FRA_revolutionary_militias_5
-			}
-		}
-		else_if = {
-			limit = { has_idea = FRA_revolutionary_militias_4 }
-			swap_ideas = {
-				remove_idea = FRA_revolutionary_militias_4
-				add_idea = FRA_revolutionary_militias_6
-			}
-		}
-		else_if = {
-			limit = { has_idea = FRA_revolutionary_militias_7 }
-			swap_ideas = {
-				remove_idea = FRA_revolutionary_militias_7
-				add_idea = FRA_revolutionary_militias_8
-			}
-		}
-		else = {
-			add_ideas = FRA_revolutionary_militias_3
+		swap_ideas = {
+			remove_idea = FRA_revolutionary_militias_1
+			add_idea = FRA_revolutionary_militias_2
 		}
 	}
 }
@@ -2722,8 +2704,7 @@ focus = {
 	x = 1
 	y = 2
 	prerequisite = { 
-		focus = FRA_makhnos_military_plan
-		focus = FRA_tanguys_military_plan
+		focus = FRA_decentralized_support_network
 	}
 	ai_will_do = {
 		factor = 1
@@ -2748,29 +2729,9 @@ focus = {
 			gain_xp = 300
 		}
 		custom_effect_tooltip = tooltip_white_line
-		if = {
-			limit = { has_idea = FRA_revolutionary_militias_3 }
-			swap_ideas = {
-				remove_idea = FRA_revolutionary_militias_3
-				add_idea = FRA_revolutionary_militias_5
-			}
-		}
-		else_if = {
-			limit = { has_idea = FRA_revolutionary_militias_4 }
-			swap_ideas = {
-				remove_idea = FRA_revolutionary_militias_4
-				add_idea = FRA_revolutionary_militias_7
-			}
-		}
-		else_if = {
-			limit = { has_idea = FRA_revolutionary_militias_6 }
-			swap_ideas = {
-				remove_idea = FRA_revolutionary_militias_6
-				add_idea = FRA_revolutionary_militias_8
-			}
-		}
-		else = {
-			add_ideas = FRA_revolutionary_militias_2
+		swap_ideas = {
+			remove_idea = FRA_revolutionary_militias_2
+			add_idea = FRA_revolutionary_militias_5
 		}
 	}
 }
@@ -3116,30 +3077,10 @@ focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FRA_defenders_of_the_commune"
-		if = {
-			limit = { has_idea = FRA_revolutionary_militias_2 }
-			swap_ideas = {
-				remove_idea = FRA_revolutionary_militias_2
-				add_idea = FRA_revolutionary_militias_7
-			}
-		}
-		else_if = {
-			limit = { has_idea = FRA_revolutionary_militias_3 }
-			swap_ideas = {
-				remove_idea = FRA_revolutionary_militias_3
-				add_idea = FRA_revolutionary_militias_6
-			}
-		}
-		else_if = {
-			limit = { has_idea = FRA_revolutionary_militias_5 }
-			swap_ideas = {
-				remove_idea = FRA_revolutionary_militias_5
-				add_idea = FRA_revolutionary_militias_8
-			}
-		}
-		else = {
-			add_ideas = FRA_revolutionary_militias_4
-		}			
+		swap_ideas = {
+			remove_idea = FRA_revolutionary_militias_5
+			add_idea = FRA_revolutionary_militias_8
+		}		
 		add_doctrine_cost_reduction = {
 			name = FRA_defenders_of_the_commune
 			cost_reduction = 1
@@ -3462,13 +3403,13 @@ focus = {
 			limit = { has_idea = FRA_billotte_military_plan_8 }
 			swap_ideas = {
 				remove_idea = FRA_billotte_military_plan_8
-				add_idea = FRA_billotte_military_plan_10
+				add_idea = FRA_billotte_military_plan_11
 			}
 		}
 		else = {
 			swap_ideas = {
 				remove_idea = FRA_billotte_military_plan_9
-				add_idea = FRA_billotte_military_plan_11
+				add_idea = FRA_billotte_military_plan_10
 			}
 		}			
 		add_doctrine_cost_reduction = {
@@ -15387,7 +15328,7 @@ focus = FRA_office_des_chemins_de_fer
 			add_stability = 0.2
 			add_war_support = 0.1
 			#event
-			
+			country_event = comfrance.968
 		}
 	}
 	focus = {
@@ -16289,10 +16230,11 @@ focus = FRA_office_des_chemins_de_fer
 		x = 100
 		y = 0
 		available = {
-			has_country_leader = {
-				ruling_only = yes
-				name = "乔治·瓦卢瓦"
-			}
+			has_global_flag = sorelian_majority_1936
+			
+		}
+		allow_branch = {
+			has_global_flag = sorelian_majority_1936
 		}
 		ai_will_do = {
 			factor = 1000
@@ -16641,6 +16583,9 @@ focus = FRA_office_des_chemins_de_fer
 		relative_position_id = FRA_sorelians_rule_supreme
 		available = {
 			has_government = totalist
+			has_country_flag = Georges_Valois_dead
+		}
+		allow_branch = {
 			has_country_flag = Georges_Valois_dead
 		}
 		completion_reward = {
@@ -18808,6 +18753,9 @@ focus = FRA_office_des_chemins_de_fer
 		available = {
 			has_country_flag = Georges_Valois_lived
 		}
+		allow_branch = {
+			has_country_flag = Georges_Valois_lived
+		}
 		x = 0
 		y = 5
 		relative_position_id = FRA_sorelians_rule_supreme
@@ -19369,6 +19317,9 @@ focus = FRA_office_des_chemins_de_fer
 		available = {
 			has_country_flag = Georges_Valois_crazy
 		}
+		allow_branch = {
+			has_country_flag = Georges_Valois_crazy
+		}
 		x = 8
 		y = 5
 		relative_position_id = FRA_sorelians_rule_supreme
@@ -19771,6 +19722,9 @@ focus = FRA_office_des_chemins_de_fer
 			factor = 1
 		}
 		available = {
+			has_country_flag = Valois_Berth
+		}
+		allow_branch = {
 			has_country_flag = Valois_Berth
 		}
 		prerequisite = {
@@ -20524,6 +20478,9 @@ focus = FRA_office_des_chemins_de_fer
 					name = "黑卫军"					# Black Guard
 				}
 			}
+		}
+		allow_branch = {
+			has_country_flag = FRA_counter_revolution
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_counter"
@@ -21879,6 +21836,9 @@ focus = FRA_office_des_chemins_de_fer
 	icon = GFX_goal_NFA_government_consensus
 	available = {
 		always = no
+	}
+	allow_branch = {
+		has_country_flag = FRA_deat_supreme
 	}
 	x = 100
 	y = 30
@@ -26966,6 +26926,9 @@ focus = {
 		available = {
 			has_global_flag = FRA_no_majority_1936
 		}
+		allow_branch = {
+			has_global_flag = FRA_no_majority_1936
+		}
 		x = 150
 		y = 0
 		
@@ -27379,6 +27342,9 @@ focus = {
 		cost = 2
 		available = {
 			has_global_flag = FRA_no_majority_1936
+		}
+		allow_branch = {
+			has_country_flag = FRA_mod_jac_sup
 		}
 		relative_position_id = FRA_commie_syndie_compromise
 		x = 0
@@ -28942,7 +28908,27 @@ focus = {
 		}
 	}
 }
+focus = {
+		id = FRA_radicalist_second
+		icon = GFX_goal_ideology_totalist
+		x = 158
+		y = 17
+		cost = 1
+		 
+		available = {
+			has_country_flag = FRA_SECOND_RAD
+		}
+		 allow_branch = {
+			has_country_flag = FRA_SECOND_RAD
+		 }
 
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
 	
 	focus = {
 		id = FRA_neosocialism_in_effect
@@ -28956,7 +28942,9 @@ focus = {
 				name = "阿德里安·马凯"
 			}
 		 }
-
+		 prerequisite = {
+			focus = FRA_radicalist_second
+		 }
 		ai_will_do = {
 			factor = 1000
 		}
@@ -29390,7 +29378,9 @@ focus = {
 			}
 		 }
 
-		
+		prerequisite = {
+			focus = FRA_radicalist_second
+		 }
 		ai_will_do = {
 			factor = 1000
 		}
@@ -29764,7 +29754,9 @@ focus = {
 				name = "皮埃尔·德里厄·拉罗谢尔"
 			}
 		 }
-		
+		prerequisite = {
+			focus = FRA_radicalist_second
+		 }
 		
 		ai_will_do = {
 			factor = 1000
@@ -30119,7 +30111,9 @@ focus = {
 				name = "雅克·杜克洛"
 			}
 		 }
-		
+		prerequisite = {
+			focus = FRA_radicalist_second
+		 }
 		ai_will_do = {
 			factor = 1000
 		}
@@ -30483,7 +30477,9 @@ focus = {
 				name = "勒内·比奈"
 			}
 		 }
-		
+		prerequisite = {
+			focus = FRA_radicalist_second
+		 }
 		ai_will_do = {
 			factor = 1000
 		}
@@ -30821,7 +30817,9 @@ focus = {
 				name = "乔治·马歇"
 			}
 		 }
-		
+		prerequisite = {
+			focus = FRA_radicalist_second
+		 }
 		ai_will_do = {
 			factor = 1000
 		}
@@ -31181,7 +31179,9 @@ focus = {
 				name = "皮埃尔·比耶特里"
 			}
 		 }
-		
+		prerequisite = {
+			focus = FRA_syndicalist_second
+		}
 		
 		ai_will_do = {
 			factor = 1000
@@ -31571,13 +31571,15 @@ focus = {
 		id = FRA_syndicalist_second
 		icon = GFX_goal_FRA_cgt_mandate
 		x = 158
-		y = 28
+		y = 27
 	
 		cost = 1
 		available = {
 			has_country_flag = FRA_SECOND_SYND
 		}
-		
+		allow_branch = {
+			has_country_flag = FRA_SECOND_SYND
+		}
 		ai_will_do = {
 			factor = 1000
 		}
@@ -33024,7 +33026,7 @@ focus = {
 		id = FRA_anarchists_second
 		icon = GFX_SOV_towards_anarchy
 		x = 158
-		y = 34
+		y = 33
 		
 		cost = 4
 		cost = 1
@@ -33032,7 +33034,9 @@ focus = {
 			has_country_flag = FRA_SECOND_ANAR
 			
 		}
-		
+		allow_branch = {
+			has_country_flag = FRA_SECOND_ANAR
+		}
 		ai_will_do = {
 			factor = 1000
 		}
@@ -34459,7 +34463,9 @@ focus = {
 				name = "安德烈·布勒东"
 			}
 		}
-		
+		prerequisite = {
+			focus = FRA_anarchists_second
+		}
 		ai_will_do = {
 			factor = 1000
 		}
@@ -34837,14 +34843,16 @@ focus = {
 		id = FRA_moderate_second
 		icon = GFX_goals_FRA_socdem_goverment
 		x = 158
-		y = 40
+		y = 39
 		
 		cost = 1
 		 available = {
 			has_country_flag = FRA_SECOND_SOCDEM
 			
 		 }
-		
+		allow_branch = {
+			has_country_flag = FRA_SECOND_SOCDEM
+		}
 		ai_will_do = {
 			factor = 1000
 		}
@@ -36483,6 +36491,9 @@ focus = {
 				name = "让·龙格"
 			}
 		}
+		prerequisite = {
+			focus = FRA_moderate_second
+		}
 		cost = 4
 		 
 		ai_will_do = {
@@ -37865,7 +37876,9 @@ focus = {
 		 available = {
 			has_country_flag = FRA_ribes_ousted
 		 }
-		
+		allow_branch = {
+			has_country_flag = FRA_ribes_ousted
+		}
 		ai_will_do = {
 			factor = 1000
 		}
@@ -38005,6 +38018,7 @@ focus = {
 						long_name = FRA_parti_communiste_long
 						name = FRA_parti_communiste
 					}
+					set_global_flag = jacobin_majority_1936
 					set_country_flag = FRA_red_jac_sup
 					complete_national_focus = FRA_orthodox_jacobin
 				}
@@ -38030,6 +38044,8 @@ focus = {
 						ruling_party = totalist
 						elections_allowed = no
 					}
+					complete_national_focus = FRA_capitant_win
+					set_country_flag = Georges_Valois_dead
 					hidden_effect = {	
 						remove_ideas_with_trait = head_of_government
 						add_ideas = FRA_Louis_Vallon_hog_tot
@@ -38071,7 +38087,7 @@ focus = {
 						name = FRA_deat_start
 					}
 					set_cosmetic_tag = FRA_Deat	 
-					
+					set_country_flag = FRA_deat_supreme
 						remove_ideas_with_trait = head_of_government
 						add_ideas = FRA_Ernest_Lafont_hog_tot
 						remove_ideas_with_trait = foreign_minister
@@ -38163,7 +38179,7 @@ focus = {
 							remove_unit_leader = yes
 						}
 					set_country_flag = soc_dems_are_socialists
-			
+						set_country_flag = FRA_counter_revolution
 					16 = {
 						damage_building = {
 							type = industrial_complex
@@ -38243,7 +38259,7 @@ focus = {
 					}
 				}
 			}
-			
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 	focus = {
@@ -38259,7 +38275,9 @@ focus = {
 		 available = {
 			has_country_flag = FRG_CIVIL_WAR_INCOMING
 		 }
-		
+		allow_branch = {
+			has_country_flag = FRG_CIVIL_WAR_INCOMING
+		 }
 		ai_will_do = {
 			factor = 1000
 		}
@@ -38280,7 +38298,9 @@ focus = {
 		available = {
 			has_country_flag = FRA_ribes_victory
 		 }
-		
+		allow_branch = {
+			has_country_flag = FRA_ribes_victory
+		}
 		ai_will_do = {
 			factor = 1000
 		}
@@ -38444,6 +38464,9 @@ focus = {
 		available = {
 			has_country_flag = FRA_ribes_autocracy
 		}
+		allow_branch = {
+			has_country_flag = FRA_ribes_autocracy
+		}
 		cost = 3
 		 
 		
@@ -38471,6 +38494,9 @@ focus = {
 		available = {
 			has_global_flag = jacobin_majority_1936
 			
+		}
+		allow_branch = {
+			has_global_flag = jacobin_majority_1936
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_jacobin_cgt"
@@ -39679,6 +39705,9 @@ focus = {
 		available = {
 			has_global_flag = anarchiste_majority_1936
 		}
+		allow_branch = {
+			has_global_flag = anarchiste_majority_1936
+		}
 		cost = 4
 		ai_will_do = {
 			factor = 1
@@ -40499,7 +40528,7 @@ focus = {
 			focus = FRA_pericat_faction
 		}
 		available = {
-			has_country_flag = ANAR_YVETOTANAR_PERICAT
+			has_country_flag = ANAR_YVETOT
 		}
 		cost = 4
 		ai_will_do = {
@@ -40863,6 +40892,9 @@ focus = {
 		y = 7
 		cost = 5
 		available = {
+			has_global_flag = travailleur_majority_1936
+		}
+		allow_branch = {
 			has_global_flag = travailleur_majority_1936
 		}
 		ai_will_do = {
@@ -44180,7 +44212,6 @@ focus = {
 		}
 		prerequisite = {
 			focus = FRA_socialist_republican_party
-			focus = FRA_state_reconstitution
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_legislate_petit_bourgeois_trade"
@@ -44265,6 +44296,10 @@ focus = {
 		available = {
 			always = no
 		}
+		allow_branch = {
+			has_country_flag = FRA_batalie
+		}
+		
 		cost = 4
 		ai_will_do = {
 			factor = 1
@@ -44999,7 +45034,9 @@ focus = {
 		available = {
 			always = no
 		}
-		
+		allow_branch = {
+			has_country_flag = FRA_synarchist_victory
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
 			
@@ -46470,7 +46507,7 @@ focus = {
 			add_stability = 0.1
 			add_political_power = 150
 			add_war_support = 0.1
-			set_cosmetic_tag = CSA_scott2
+			set_cosmetic_tag = CSA_technoworld
 			every_state = {
 				
 				FRA = { 

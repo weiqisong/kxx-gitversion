@@ -31,3 +31,11 @@ FRA_neocolonialism_category = {
 	icon = generic_foreign_policy
 	allowed = { tag = FRA }
 }
+FRA_debug_focus_category = {
+	icon = generic_foreign_policy
+	allowed = { 
+		tag = FRA 
+		is_debug = yes
+	}
+}
+
