@@ -1,4 +1,5 @@
 add_namespace = yundebug
+add_namespace = yuntest
 
 country_event = { 
 	id = yundebug.1
@@ -98,8 +99,6 @@ country_event = {
     trigger = {
 		country_exists = CNT	
 		OR = { 
-		country_exists = SVK
-		country_exists = JER
 		CNT = { has_cosmetic_tag = CNT_FE }
 		CNT = { has_cosmetic_tag = CNT_FE_JONS }
 		CNT = { has_cosmetic_tag = CNT_JONS }
@@ -110,8 +109,7 @@ country_event = {
 	major = yes
 
 	option = { 
-		name = yundebug.77.a
-		custom_effect_tooltip = fatima_fuckex	
+		name = yundebug.77.a	
 		trigger = {
 			has_socialist_government = no
 		}
@@ -148,7 +146,6 @@ country_event = {
 
 	option = { 
 		name = yundebug.77.b
-		custom_effect_tooltip = fatima_fuckex
 		trigger = {
 			has_socialist_government = yes
 		}		
@@ -182,9 +179,6 @@ country_event = {
 			}				
 		}
 	}
-	option = {
-		name = yundebug.77.c
-	}
 }
 
 country_event = { 
@@ -206,4 +200,41 @@ country_event = {
 				white_peace = ROOT
 			}
 	}
+}
+
+country_event = {	
+	id = yuntest.1 
+	immediate = {log = "[GetDateText]: [Root.GetName]: event yuntest.1"}
+	title = yuntest.1.t
+	desc = yuntest.1.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { 
+	name = yuntest.1.a 
+	set_autonomy = { target = BRA autonomy_state = autonomous_territory }
+	BRA = {  
+	set_cosmetic_tag = BRZ_CHI
+	create_country_leader = {
+		name = "陈介"
+		picture = "gfx/leaders/funny/Portrait_CHI_Chen_Jie.png"
+		expire = "1.1.1"
+		traits = {  }
+		ideology = autocratic_colonial_govt_subtype
+	    }		
+	set_politics = {
+		ruling_party = paternal_autocrat
+	   }
+	set_party_name = {
+		ideology = paternal_autocrat
+		long_name = "总理巴西拓殖衙门"
+		name = "总理巴西拓殖衙门"
+	   }
+	add_popularity = {
+		ideology = paternal_autocrat
+		popularity = 0.50
+	   }	   	   	
+      }	
+	}	
 }

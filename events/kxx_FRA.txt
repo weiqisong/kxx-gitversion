@@ -5671,6 +5671,8 @@ option = {
 		long_name = "黑卫军"
 		name = "黑卫军"
 	}
+	set_country_flag = FRA_counter_revolution
+	mark_focus_tree_layout_dirty = yes
 	set_country_flag = Marcel_Deat_dead
 	set_country_flag = Marcel_Bucard_dead
 	set_country_flag = Pierre_Laval_dead
@@ -5752,6 +5754,11 @@ every_state = {
 }
 create_wargoal = { type = annex_everything target = TRP }
 every_state = {
+		limit = { is_core_of = LBA }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = LBA }
+every_state = {
 		limit = { is_core_of = TUN }
 		add_core_of = FRA
 }
@@ -5788,10 +5795,10 @@ every_state = {
 }
 create_wargoal = { type = annex_everything target = UZB }
 every_state = {
-		limit = { is_core_of = KOK }
+		limit = { is_core_of = KHI }
 		add_core_of = FRA
 }
-create_wargoal = { type = annex_everything target = KOK }
+create_wargoal = { type = annex_everything target = KHI }
 every_state = {
 		limit = { is_core_of = TRK }
 		add_core_of = FRA
@@ -5957,7 +5964,13 @@ every_state = {
 		limit = { is_core_of = LEB }
 		add_core_of = FRA
 }
+
 create_wargoal = { type = annex_everything target = LEB }
+every_state = {
+		limit = { is_core_of = LBA }
+		add_core_of = FRA
+}
+create_wargoal = { type = annex_everything target = LBA }
 every_state = {
 		limit = { is_core_of = TRP }
 		add_core_of = FRA
@@ -6000,10 +6013,10 @@ every_state = {
 }
 create_wargoal = { type = annex_everything target = UZB }
 every_state = {
-		limit = { is_core_of = KOK }
+		limit = { is_core_of = KHI }
 		add_core_of = FRA
 }
-create_wargoal = { type = annex_everything target = KOK }
+create_wargoal = { type = annex_everything target = KHI }
 every_state = {
 		limit = { is_core_of = TRK }
 		add_core_of = FRA

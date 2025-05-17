@@ -407,5 +407,13 @@ spriteTypes = {
 	spriteType = {
 		name = "FORM_FRK_Charlemagne"
 		texturefile = "gfx/event_pictures/FORM_FRK_Charlemagne.png"
-	}																		
+	}	
+	spriteType = {
+		name = "Zoo_Gunruoxuan"
+		texturefile = "gfx/event_pictures/Zoo_Gunruoxuan.png"
+	}	
+	spriteType = {
+		name = "HAN_Liu_Bang"
+		texturefile = "gfx/leaders/funny/HAN_Liu_Bang.png"
+	}																				
 }

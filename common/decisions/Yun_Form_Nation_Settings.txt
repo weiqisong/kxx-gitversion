@@ -58,6 +58,7 @@ formable_nations_mod_category = {
 				has_country_flag = unform_available
 				has_country_flag = expand_territory
 				date > 1939.1.1
+				has_global_flag = debug_mode
 				}
 			any_state = {
 				is_claim_or_core_of_ROOT = yes
@@ -89,7 +90,43 @@ formable_nations_mod_category = {
 			 }
 		}
 	}
-
+	suo_qu_he_xin2 = {
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 0
+		visible = {
+			is_ai = no
+		}
+		available = { 
+			OR = {			
+			AND = { 
+			date > 1940.1.1			
+			126 = { is_owned_and_controlled_by_ROOT_or_ally = yes }
+			16 = { is_owned_and_controlled_by_ROOT_or_ally = yes }
+			64 = { is_owned_and_controlled_by_ROOT_or_ally = yes }
+			219 = { is_owned_and_controlled_by_ROOT_or_ally = yes }
+			}
+			AND = {
+				is_ai = no
+				has_global_flag = debug_mode
+			}
+			}
+	    }
+		days_re_enable = 0
+		
+		icon = generic_decision
+		complete_effect = {
+			hidden_effect = { 
+				every_state = {
+					limit = {
+						is_claim_or_core_of_ROOT = yes
+					}
+					ROOT = { transfer_state = PREV }
+				}
+			 }
+		}
+	}	
 	hide_settings = {
 		ai_will_do = {
 			factor = 0

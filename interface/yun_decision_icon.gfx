@@ -1,12 +1,56 @@
 spriteTypes = {
-				
+
+	spriteType = {
+		name = "nakichan"
+		texturefile = "gfx/interface/decisions/nakichan.tga"
+	}
+	spriteType = {
+		name = "nakichan2"
+		texturefile = "gfx/interface/decisions/nakichan2.tga"
+	}	
+	spriteType = {
+		name = "dehya"
+		texturefile = "gfx/interface/decisions/dehya.tga"
+	}
+	spriteType = {
+		name = "mrcb"
+		texturefile = "gfx/interface/decisions/mrcb.tga"
+	}	
+	spriteType = {
+		name = "fuji_kiseki"
+		texturefile = "gfx/interface/decisions/fuji_kiseki.tga"
+	}		
+	spriteType = {
+		name = "tanino_gimlet"
+		texturefile = "gfx/interface/decisions/tanino_gimlet.tga"
+	}	
+	spriteType = {
+		name = "Nikaidou_Saki"
+		texturefile = "gfx/interface/decisions/Nikaidou_Saki.tga"
+	}	
+	spriteType = {
+		name = "Sara_Kujou"
+		texturefile = "gfx/interface/decisions/Sara_Kujou.tga"
+	}
+	spriteType = {
+		name = "Ange_Katrina"
+		texturefile = "gfx/interface/decisions/Ange_Katrina.tga"
+	}	
+	spriteType = {
+		name = "Nakayama_Satsuki"
+		texturefile = "gfx/interface/decisions/Nakayama_Satsuki.tga"
+	}						
 	spriteType = {
 		name = "GFX_decision_sonko_chan"
 		texturefile = "gfx/interface/decisions/decision_sonko_chan.png"
 	}
 	spriteType = {
+		name = "hyper_muteki"
+		texturefile = "gfx/interface/decisions/hyper_muteki.tga"
+	}		
+	spriteType = {
 		name = "de_industrialization"
-		texturefile = "gfx/interface/decisions/de_industrialization.png"
+		texturefile = "gfx/interface/decisions/de_industrialization.tga"
 	}	
 	spriteType = {
 		name = "meiguo_neizhan"
@@ -163,5 +207,9 @@ spriteTypes = {
 	spriteType = {
 		name = "SACW_CAN_Attack_CSA"
 		texturefile = "gfx/interface/decisions/SACW_CAN_Attack_CSA.tga"
+	}		
+	spriteType = {
+		name = "Dongbai_Rome"
+		texturefile = "gfx/interface/decisions/Dongbai_Rome.tga"
 	}																										
 }

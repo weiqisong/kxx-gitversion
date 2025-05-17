@@ -27646,8 +27646,11 @@ focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Extend_Provisional_Dictatorship"
 			custom_effect_tooltip = "New Communal Elections will take place in 1 year!"
 			hidden_effect = {
+				country_event = {
 				id = comfrance.1004
 				days = 365
+				}
+				
 			}
 			add_political_power = -100
 			add_stability = -0.1
@@ -39224,8 +39227,8 @@ focus = {
 			}
 			add_tech_bonus = {
 				name = doctrine_bonus
-				bonus = 1
-				uses = 0.8
+				bonus = 0.8
+				uses = 1
 				category = land_doctrine
 			}
 			random_owned_controlled_state = {
@@ -44564,8 +44567,8 @@ focus = {
 			}
 			add_tech_bonus = {
 				name = artillery_bonus
-				bonus = 1
-				uses = 0.2
+				bonus = 0.5
+				uses = 1
 				category = artillery
 			}
 		}
@@ -44809,8 +44812,8 @@ focus = {
 			add_popularity = { ideology = totalist popularity = 0.07 }
 			add_tech_bonus = {
 				name = doctrine_bonus
-				bonus = 1
-				uses = 0.5
+				bonus = 0.5
+				uses = 1
 				category = land_doctrine
 			}
 		}
@@ -44837,8 +44840,8 @@ focus = {
 			add_manpower = 8000
 			add_tech_bonus = {
 				name = infantry_weapons_bonus
-				bonus = 1
-				uses = 0.35
+				bonus = 0.5
+				uses = 1
 				category = infantry_weapons
 			}
 			swap_ideas = {
@@ -44897,7 +44900,7 @@ focus = {
 			add_tech_bonus = {
 				name = doctrine_bonus
 				bonus = 1
-				uses = 0.8
+				uses = 1
 				category = land_doctrine
 			}
 			swap_ideas = {
@@ -45012,8 +45015,8 @@ focus = {
 			add_war_support = 0.08
 			add_tech_bonus = {
 				name = doctrine_bonus
-				bonus = 1
-				uses = 0.35
+				bonus = 0.5
+				uses = 1
 				category = land_doctrine
 			}
 			swap_ideas = {

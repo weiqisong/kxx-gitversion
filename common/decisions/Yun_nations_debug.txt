@@ -32,7 +32,7 @@ yun_debug_decisions = {
 		complete_effect = {
 			hidden_effect = { remove_ideas = yun_skull_army }
 		}
-	}
+	}	
 	yun_extreme_limitations_on = {
 		ai_will_do = {
 			factor = 0
@@ -91,46 +91,251 @@ yun_debug_decisions = {
 		icon = de_industrialization
 		complete_effect = {
 			every_state = {
-			limit = {
-				is_capital = no
+				limit = {
+					is_capital = no
+				}
+				if = {
+					limit = { 
+						arms_factory > 4
+					}
+					remove_building = {
+						type = arms_factory
+						level = 4
+					}
+				}
+				else_if = {
+					limit = { 
+						arms_factory > 3
+					}
+					remove_building = {
+						type = arms_factory
+						level = 3
+					}
+				}
+				else_if = {
+					limit = { 
+						arms_factory > 2
+					}
+					remove_building = {
+						type = arms_factory
+						level = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						arms_factory > 1
+					}
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+				else_if = {
+					limit = { 
+						arms_factory > 0
+					}
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+
+				if = {
+					limit = { 
+						industrial_complex > 4
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 4
+					}
+				}
+				else_if = {
+					limit = { 
+						industrial_complex > 3
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 3
+					}
+				}
+				else_if = {
+					limit = { 
+						industrial_complex > 2
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						industrial_complex > 1
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+				else_if = {
+					limit = { 
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+
+				if = {
+					limit = { 
+						infrastructure > 4
+					}
+					remove_building = {
+						type = infrastructure
+						level = 4
+					}
+				}
+				else_if = {
+					limit = { 
+						infrastructure > 3
+					}
+					remove_building = {
+						type = infrastructure
+						level = 3
+					}
+				}
+				else_if = {
+					limit = { 
+						infrastructure > 2
+					}
+					remove_building = {
+						type = infrastructure
+						level = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						infrastructure > 1
+					}
+					remove_building = {
+						type = infrastructure
+						level = 1
+					}
+				}
+				else_if = {
+					limit = { 
+						infrastructure > 0
+					}
+					remove_building = {
+						type = infrastructure
+						level = 1
+					}
+				}
+
+				if = {
+					limit = { 
+						dockyard > 4
+					}
+					remove_building = {
+						type = dockyard
+						level = 4
+					}
+				}
+				else_if = {
+					limit = { 
+						dockyard > 3
+					}
+					remove_building = {
+						type = dockyard
+						level = 3
+					}
+				}
+				else_if = {
+					limit = { 
+						dockyard > 2
+					}
+					remove_building = {
+						type = dockyard
+						level = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						dockyard > 1
+					}
+					remove_building = {
+						type = dockyard
+						level = 1
+					}
+				}
+				else_if = {
+					limit = { 
+						dockyard > 0
+					}
+					remove_building = {
+						type = dockyard
+						level = 1
+					}
+				}
+		   }
+			every_state = {
+				limit = {
+					arms_factory > 4
+				}
+				remove_building = {
+					type = arms_factory
+					level = 3
+				}
 			}
-			remove_building = {
-				type = arms_factory
-				level = 2
+			every_state = {
+				limit = {
+					industrial_complex > 4
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 3
+				}
 			}
-			remove_building = {
-				type = industrial_complex
-				level = 1
-			}
-			remove_building = {
-				type = infrastructure
-				level = 1
-			}
-			remove_building = {
-				type = dockyard
-				level = 2
-			}
-		  }
-		every_state = {
-			limit = {
-				arms_factory > 4
-			}
-			remove_building = {
-				type = arms_factory
-				level = 3
-			}
-		  }
-		  every_state = {
-			limit = {
-				industrial_complex > 4
-			}
-			remove_building = {
-				type = industrial_complex
-				level = 3
-			}
-		  }
 		}
 	}	
+	yun_no_continued = {
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 0
+		visible = {
+			is_ai = no
+			NOT = { has_idea = yun_muteki_hyper  }
+		}
+		available = { always = yes }
+		days_re_enable = 0
+		
+		icon = hyper_muteki
+		complete_effect = {
+			hidden_effect = { 
+				add_ideas = yun_muteki_hyper 
+			 }
+		}
+	}
+	yun_muteki_time_up = {
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 0
+		visible = {
+			is_ai = no
+			has_idea = yun_muteki_hyper 
+		}
+		available = { always = yes }
+		days_re_enable = 0
+		
+		icon = hyper_muteki
+		complete_effect = {
+			hidden_effect = { 
+				remove_ideas = yun_muteki_hyper 
+			}
+		}
+	}		
     yun_only_europe_exists = {
 	    icon = unknown_nation_icon
 		available = { 
@@ -162,7 +367,7 @@ yun_debug_decisions = {
 					NOT = { is_owned_and_controlled_by = LBA }
 					NOT = { is_owned_and_controlled_by = RUS }
 					NOT = { is_owned_and_controlled_by = ALO }
-					NOT = { is_owned_and_controlled_by = UZB }
+					NOT = { is_owned_and_controlled_by = KHI }
 					NOT = { is_owned_and_controlled_by = TRK }
 					NOT = { is_owned_and_controlled_by = KYR }
 					NOT = { is_owned_and_controlled_by = TRM }
@@ -227,56 +432,6 @@ yun_debug_decisions = {
 				annex_country = { target = HNN }
 				annex_country = { target = GXC }
 				annex_country = { target = ANQ }			
-				}				
-			}
-		}	
-	}		
-    yun_zhongguo_exists = {
-	    icon = unknown_nation_icon
-		available = { 
-			NOT = { any_country = { has_cosmetic_tag = ZZZ } }
-		}
-		visible = {
-			always = yes
-		}
-		cost = 0
-		fire_only_once = no	
-		ai_will_do = {
-			factor = 0
-		}
-		complete_effect = {	
-			709 = { transfer_state_to = FRA }
-			707 = { transfer_state_to = ENG }
-			1273 = { transfer_state_to = CAN }			
-			every_state = {
-				limit = {
-					OR = {
-						is_on_continent = europe
-						is_on_continent = africa
-						is_on_continent = south_america
-						is_on_continent = central_america
-						is_on_continent = middle_east
-						is_on_continent = north_america
-					}
-					NOT = { is_owned_and_controlled_by = AFG }
-					NOT = { is_owned_and_controlled_by = ALO }
-					NOT = { is_owned_and_controlled_by = NSW }
-					NOT = { state = 709 }
-					NOT = { state = 707 }
-					NOT = { state = 1273 }
-				}
-				add_core_of = ZZZ
-				transfer_state_to = ZZZ				
-			}			
-			hidden_effect = {
-				ZZZ = {	
-				add_ideas = absolutely_negative	
-				annex_country = { target = USA }
-				every_owned_state = {
-					ZZZ = {
-						add_state_core = PREV
-					}
-				  }							
 				}				
 			}
 		}	
@@ -432,14 +587,11 @@ yun_debug_decisions = {
 				}				
 			}
 		}	
-	}
+	}		
     yun_fuck_jepen = {
 	    icon = unknown_nation_icon
 		available = { 
-			OR = { 
-			JAP = { exists = yes }	
-			JSR = { exists = yes }	
-			}	
+			JAP = { exists = yes }		
 		}
 		visible = {
 			always = yes
@@ -452,19 +604,66 @@ yun_debug_decisions = {
 		complete_effect = {	
 			hidden_effect = {
 				ZZZ = {	
-				annex_country = { target = JAP }
-				annex_country = { target = JSR }	
+				annex_country = { target = JAP }	
 				annex_country = { target = KOR }
-				annex_country = { target = TAI }
-				annex_country = { target = JSI }
 				every_owned_state = {
 					ZZZ = { add_state_core = PREV }
 					set_demilitarized_zone = yes
 				    }
-				}						
+				}					
 			}
 		}	
 	}		
+    yun_zhongguo_exists = {
+	    icon = unknown_nation_icon
+		available = { 
+			NOT = { any_country = { has_cosmetic_tag = ZZZ } }
+		}
+		visible = {
+			always = yes
+		}
+		cost = 0
+		fire_only_once = no	
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {	
+			709 = { transfer_state_to = FRA }
+			707 = { transfer_state_to = ENG }
+			1273 = { transfer_state_to = CAN }			
+			every_state = {
+				limit = {
+					OR = {
+						is_on_continent = europe
+						is_on_continent = africa
+						is_on_continent = south_america
+						is_on_continent = central_america
+						is_on_continent = middle_east
+						is_on_continent = north_america
+					}
+					NOT = { is_owned_and_controlled_by = AFG }
+					NOT = { is_owned_and_controlled_by = ALO }
+					NOT = { is_owned_and_controlled_by = NSW }
+					NOT = { state = 709 }
+					NOT = { state = 707 }
+					NOT = { state = 1273 }
+				}
+				add_core_of = ZZZ
+				transfer_state_to = ZZZ				
+			}			
+			hidden_effect = {
+				ZZZ = {	
+				add_ideas = absolutely_negative	
+				annex_country = { target = USA }
+				every_owned_state = {
+					ZZZ = {
+						add_state_core = PREV
+					}
+				  }							
+				}				
+			}
+		}	
+	}			
     yun_no_central_africa = {
 	    icon = unknown_nation_icon
 		available = { 
@@ -490,9 +689,10 @@ yun_debug_decisions = {
 				annex_country = { target = MAG }
 				annex_country = { target = KIK }
 				every_owned_state = {
-					ZZZ = { add_state_core = PREV }
-					set_demilitarized_zone = yes
-				    }				
+					ZZZ = {
+						add_state_core = PREV
+					}
+				  }		
 				}				
 			}
 		}	
@@ -524,7 +724,7 @@ yun_debug_decisions = {
 				}				
 			}
 		}	
-	}			
+	}		
 	hide_yun_dongya_optimization = {
 		ai_will_do = {
 			factor = 0
@@ -1029,6 +1229,7 @@ yun_debug_decisions = {
 			}
 		}
 	}			
+
     SACW_CAN_Attack_CSA = {
 	    icon = SACW_CAN_Attack_CSA
 		available = { 
@@ -2066,7 +2267,36 @@ yun_debug_decisions = {
 	}					
 }		
 yun_direct_to_nations = {
-	yun_korea_revolt = {
+	ikemen_joshi_banzai = {
+		icon = handsome_women
+		available = { 
+			IMJ = {
+				exists = no
+			}
+		}
+		visible = {
+			is_debug = yes
+			has_country_flag = unhiden_yun_directnation
+		}
+		cost = 0	
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {	
+			IMJ = {
+				transfer_state = 710
+				transfer_state = 706
+				transfer_state = 707
+				transfer_state = 709
+				add_state_core = 710
+				add_state_core = 706
+				add_state_core = 707
+				add_state_core = 709
+			    change_tag_from = ROOT
+			}					
+		}
+	}	
+ yun_korea_revolt = {
 		icon = Joseon_icon
 		available = { 
 			KOR = {

@@ -581,7 +581,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = plx.7.g #Endecja
+		name = plx.7.g #meme
 		add_political_power = 50
 		add_stability = -0.05
 		hidden_effect = {
@@ -633,6 +633,51 @@ country_event = {
 			factor = 0
 		}
 	}	
+	option = {
+		name = plx.7.f #natsoc
+		add_political_power = 50
+		add_stability = -0.05
+		hidden_effect = {
+			complete_national_focus = POL_national_socialists
+			set_politics = {
+				ruling_party = radical_socialist
+				elections_allowed = no
+			}
+			set_party_name = {
+				ideology = radical_socialist
+				name = "波兰民族社会主义党"
+				long_name = "波兰民族社会主义党"
+			}
+			create_country_leader = {
+				name = "卡齐米日·达格南"
+				picture = "gfx/leaders/POL/portrait_POL_kazimierz_dagnan.png"
+				expire = "1965.1.1"
+				ideology = polish_national_socialism_subtype
+			}
+			country_event = {
+				id = plx.32 days = 12
+			}
+			clr_country_flag = POL_Jozef_Chacinski_VISIBLE
+			mark_focus_tree_layout_dirty = yes
+			country_event = {
+				id = plx.38 days = 3
+			}		
+			GER_remove_from_mitteleuropa = yes
+			leave_faction = yes
+			every_unit_leader = {
+				limit = { has_trait = POL_german_commander }
+				set_nationality = GER
+				remove_unit_leader_trait = POL_german_commander
+			}
+			remove_ideas = POL_warsaw_garrison
+			GER = {
+				country_event = {
+					id = plxf.16 days = 7
+				}
+			}
+		}		
+		
+	}
 }
 
 ###Cut-off from Germany or Not

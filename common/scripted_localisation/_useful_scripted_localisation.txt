@@ -7638,4 +7638,10 @@ text = {
 		}
 		localization_key = national_bolshevik_subtype 
 	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = polish_national_socialism_subtype
+		}
+		localization_key = polish_national_socialism_subtype
+	}	
 }

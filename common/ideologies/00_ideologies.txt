@@ -460,6 +460,7 @@ ideologies = {
 			dazhuanshunism_subtype = { can_be_randomly_selected = no }  #大赚顺制度（彩蛋）
 			radsoc_surrealism_subtype = { can_be_randomly_selected = no } #超现实主义（布勒东）			
 			radsoc_syndicalist_subtype = {can_be_randomly_selected = no} #工团主义
+			polish_national_socialism_subtype = {can_be_randomly_selected = no} #波兰民族社会主义
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_RADICAL_SOCIALIST_1"

@@ -488,7 +488,20 @@ create_corps_commander = {
 	planning_skill = 1
 	logistics_skill = 1
 }
-
+create_corps_commander = {
+	name = "Jacques Arthuys"
+	portrait_path = "gfx/leaders/FRA/Portrait_FRA_Jacques_Arthuys2.png"
+	traits = {
+		cavalry_leader
+		fast_planner
+		politically_connected
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
 create_corps_commander = {
 	name = "Missak Manouchian"
 	portrait_path = "gfx/leaders/FRA/Portrait_France_Missak_Manouchian.png"

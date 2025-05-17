@@ -1,0 +1,15 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_goal_POL_radical_healing_movement"
+		texturefile = "gfx/interface/goals/KXX_POL/POL_radical_healing_movement.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_POL_national_socialists"
+		texturefile = "gfx/interface/goals/KXX_POL/POL_national_socialists.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_POL_national_socialists_alt"
+		texturefile = "gfx/interface/goals/KXX_POL/POL_national_socialists_alt.png"
+	}
+	
+}
