@@ -564,22 +564,22 @@ country_event = {
 			factor = 100
 		}
 	}
-	option = {
-		name = plx.7.f #Ciszak
-		add_stability = -0.05
-		custom_effect_tooltip = PLX_ciszak_coalition_tooltip
-		hidden_effect = {
-			country_event = {
-				id = plxv2.002 days = 2
-			}
+	#option = {
+		#name = plx.7.f #Ciszak
+		#add_stability = -0.05
+		#custom_effect_tooltip = PLX_ciszak_coalition_tooltip
+		#hidden_effect = {
+			#country_event = {
+				# id = plxv2.002 days = 2
+			#}
 			#country_event = {
 			#	id = plx.32 days = 2
 			#}			
-		}		
-		ai_chance = {
-			factor = 100
-		}
-	}
+		#}		
+		#ai_chance = {
+		#	factor = 100
+		#}
+	#}
 	option = {
 		name = plx.7.g #meme
 		add_political_power = 50
@@ -634,7 +634,61 @@ country_event = {
 		}
 	}	
 	option = {
-		name = plx.7.f #natsoc
+		name = plx.7.i #nazi monarchy
+		add_political_power = 50
+		add_stability = -0.05
+		hidden_effect = {
+			complete_national_focus = POL_radical_healing_movement
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "激进治愈运动"
+				long_name = "激进治愈运动"
+			}
+			create_country_leader = {
+				name = "杰弗里·波托基"
+				picture = "gfx/leaders/POL/Portrait_POL_geoffery_potocki.png"
+				expire = "1965.1.1"
+				ideology = occultism_subtype
+			}
+			set_cosmetic_tag = POL_empire
+			remove_all_ministers = yes
+			add_ideas = POL_Jozef_Kowal_Lipinski_hog_npo
+			add_ideas = POL_Waclaw_Kozielski_for_npo
+			add_ideas = POL_Jozef_Grallo_eco_npo
+			add_ideas = POL_Wladyslaw_Obrebski_sec_npo
+			country_event = {
+				id = plx.32 days = 12
+			}
+			clr_country_flag = POL_Jozef_Chacinski_VISIBLE
+			clr_country_flag = KXX_LEADER_GUI_VISIBLE
+			set_country_flag = KXX_LEADER_GUI_NOT_VISIBLE
+			mark_focus_tree_layout_dirty = yes
+			country_event = {
+				id = plx.38 days = 3
+			}		
+			set_country_flag = PLX_radical_healing
+			GER_remove_from_mitteleuropa = yes
+			leave_faction = yes
+			every_unit_leader = {
+				limit = { has_trait = POL_german_commander }
+				set_nationality = GER
+				remove_unit_leader_trait = POL_german_commander
+			}
+			remove_ideas = POL_warsaw_garrison
+			GER = {
+				country_event = {
+					id = plxf.16 days = 7
+				}
+			}
+		}		
+		
+	}
+	option = {
+		name = plx.7.h #natsoc
 		add_political_power = 50
 		add_stability = -0.05
 		hidden_effect = {
@@ -654,10 +708,18 @@ country_event = {
 				expire = "1965.1.1"
 				ideology = polish_national_socialism_subtype
 			}
+			set_cosmetic_tag = POL_natsoc
+			remove_all_ministers = yes
+			add_ideas = POL_Kazimierz_Dagnan_hog_rso
+			add_ideas = POL_Fryderyk_Fialkiewicz_for_rso
+			add_ideas = POL_Roman_Kuchciak_eco_rso
+			add_ideas = POL_Antoni_Szadkowski_sec_rso
 			country_event = {
 				id = plx.32 days = 12
 			}
 			clr_country_flag = POL_Jozef_Chacinski_VISIBLE
+			clr_country_flag = KXX_LEADER_GUI_VISIBLE
+			set_country_flag = KXX_LEADER_GUI_NOT_VISIBLE
 			mark_focus_tree_layout_dirty = yes
 			country_event = {
 				id = plx.38 days = 3
@@ -670,6 +732,7 @@ country_event = {
 				remove_unit_leader_trait = POL_german_commander
 			}
 			remove_ideas = POL_warsaw_garrison
+			set_country_flag = PLX_natsoc
 			GER = {
 				country_event = {
 					id = plxf.16 days = 7
@@ -678,6 +741,7 @@ country_event = {
 		}		
 		
 	}
+	
 }
 
 ###Cut-off from Germany or Not
@@ -5739,7 +5803,214 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = plx.76 #Slavic Federation
+	immediate = { log = "[GetDateText]: [Root.GetName]: event plx.28" }
+	title = plx.28.t
+	desc = plx.28.d
+	#picture = GFX_report_event_soldiers_marching
 
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = plx.28.a
+		add_political_power = 25
+		hidden_effect = {
+			set_country_flag = plx_synd_slav_decision
+		}
+		custom_effect_tooltip = PLX_tame_synd_foreign
+		ai_chance = {
+			factor = 65
+		}		
+	}
+	
+	option = {
+		name = plx.28.b
+		#trigger = {
+		#	has_country_flag = plx_expansionist_poland
+		#	NOT = { has_cosmetic_tag = POL_intermarian }
+		#}
+		add_stability = -0.40
+		custom_effect_tooltip = PLX_centroslavic_declaration_tooltip
+		hidden_effect = {
+			#if = {
+			#	limit = { NOT = { has_cosmetic_tag = POL_intermarian } }
+			#	set_cosmetic_tag = POL_slav_fed
+			#}
+			set_cosmetic_tag = POL_slav_fed_natsoc
+			#set_country_flag = POL_ready_to_go_foreign
+			set_country_flag = plx_synd_slav_decision
+			set_country_flag = plx_slavic_communists
+			set_country_flag = plx_supernation_flag
+			complete_national_focus = KX_PLX_NEXT_STAGE			
+			set_party_name = {
+				ideology = radical_socialist
+				long_name = "斯拉夫民族社会主义党"
+				name = "斯拉夫民族社会主义党"
+			}
+		
+			##add_state_core = 1133
+			##add_state_core = 69
+			##add_state_core = 1138
+			##add_state_core = 1134
+			##add_state_core = 9
+			##add_state_core = 1129
+			##add_state_core = 1139
+			##add_state_core = 1130
+			##add_state_core = 786
+			##add_state_core = 1132
+			##add_state_core = 74
+			##add_state_core = 75
+			##add_state_core = 71
+			##add_state_core = 1123
+			##add_state_core = 1135
+			##add_state_core = 70
+			##add_state_core = 1120
+			##add_state_core = 1121
+			##add_state_core = 1119
+			##add_state_core = 73
+			##add_state_core = 1122
+			##add_state_core = 664
+			##add_state_core = 1136	
+			#
+			#1133 = { add_claim_by = POL }
+			#69 = { add_claim_by = POL }
+			#1138 = { add_claim_by = POL }
+			#1134 = { add_claim_by = POL }
+			#9 = { add_claim_by = POL }
+			#1129 = { add_claim_by = POL }
+			#1139 = { add_claim_by = POL }
+			#1130 = { add_claim_by = POL }
+			#786 = { add_claim_by = POL }
+			#1132 = { add_claim_by = POL }
+			#74 = { add_claim_by = POL }
+			#75 = { add_claim_by = POL }
+			#71 = { add_claim_by = POL }
+			#1123 = { add_claim_by = POL }
+			#1135 = { add_claim_by = POL }
+			#70 = { add_claim_by = POL }
+			#1120 = { add_claim_by = POL }
+			#1121 = { add_claim_by = POL }
+			#1119 = { add_claim_by = POL }
+			#73 = { add_claim_by = POL }
+			#1122 = { add_claim_by = POL }
+			#664 = { add_claim_by = POL }
+			#1136 = { add_claim_by = POL }
+			#
+			#activate_targeted_decision = { target = 1133 decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 69   decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 1138 decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 1134 decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 9    decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 1129 decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 1139 decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 1130 decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 786  decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 1132 decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 74   decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 75   decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 71   decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 1123 decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 1135 decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 70   decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 1120 decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 1121 decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 1119 decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 73   decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 1122 decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 664  decision = SOC_POL_Integrate_State }
+			#activate_targeted_decision = { target = 1136 decision = SOC_POL_Integrate_State }	
+
+			PLX_effect_panslavic_cores = yes
+		}
+		ai_chance = {
+			factor = 35
+		}		
+	}
+}
+country_event = {
+	id = plx.77 #Intermarium
+	immediate = { log = "[GetDateText]: [Root.GetName]: event plx.39" }
+	title = plx.39.t
+	desc = plx.39.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #Poland-Lithuania
+		name = plx.39.a
+		add_stability = -0.10
+		
+		custom_effect_tooltip = PLX_intermarum_integration_tooltip
+		hidden_effect = {
+			
+			set_cosmetic_tag = POL_intermarian_empire
+			PLX_effect_intermarium_1_cores = yes
+			set_country_flag = plx_is_intermarium
+			set_country_flag = plx_supernation_flag
+			complete_national_focus = KX_PLX_NEXT_STAGE
+		}
+		ai_chance = {
+			factor = 40
+		}		
+	}
+	option = { #+West Slavs
+		name = plx.39.b
+		add_stability = -0.20
+
+		custom_effect_tooltip = PLX_intermarum_integration_tooltip
+		hidden_effect = {		
+			
+		set_cosmetic_tag = POL_intermarian_empire
+			PLX_effect_intermarium_2_cores = yes
+			set_country_flag = plx_is_intermarium
+			set_country_flag = plx_supernation_flag
+			complete_national_focus = KX_PLX_NEXT_STAGE
+		}
+		ai_chance = {
+			factor = 30
+		}		
+	}	
+	option = { #+Hungary and Romania
+		name = plx.39.c
+		add_stability = -0.40
+
+
+		custom_effect_tooltip = PLX_intermarum_integration_tooltip
+		hidden_effect = {		
+			
+		set_cosmetic_tag = POL_intermarian_empire
+			PLX_effect_intermarium_3_cores = yes	
+			set_country_flag = plx_is_intermarium
+			set_country_flag = plx_supernation_flag
+			complete_national_focus = KX_PLX_NEXT_STAGE
+		}
+		ai_chance = {
+			factor = 15
+		}		
+	}
+	option = { #+Balkans
+		name = plx.39.e
+		add_stability = -0.50
+		
+		custom_effect_tooltip = PLX_intermarum_integration_tooltip
+		hidden_effect = {
+			set_cosmetic_tag = POL_intermarian_empire
+		
+			PLX_effect_intermarium_4_cores = yes
+			set_country_flag = plx_is_intermarium
+			set_country_flag = plx_supernation_flag
+			complete_national_focus = KX_PLX_NEXT_STAGE
+		}
+		ai_chance = {
+			factor = 15
+		}		
+	}	
+}
 country_event = {
 	id = plxv2.002
 	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.002" }

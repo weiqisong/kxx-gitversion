@@ -19635,8 +19635,7 @@ focus = {
 		id = POL_national_socialists
 		icon = GFX_goal_POL_national_socialists
 		available = {
-			has_country_flag = plx_falanga_wins
-			has_government = totalist
+			has_country_flag = PLX_natsoc
 		}
 		
 		x = -43
@@ -19663,7 +19662,9 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.2
+			add_war_support = 0.2
+
 		}
 	}
 	focus = {
@@ -19680,7 +19681,23 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_popularity = {
+       			ideology = radical_socialist
+      			popularity = 0.15
+      		}
+			add_popularity = {
+       			ideology = totalist
+      			popularity = -0.1
+      		}
+			add_popularity = {
+       			ideology = syndicalist
+      			popularity = -0.1
+      		}
+			add_popularity = {
+       			ideology = social_democrat
+      			popularity = -0.1
+      		}
+			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -19697,7 +19714,35 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_popularity = {
+       			ideology = radical_socialist
+      			popularity = 0.15
+      		}
+			add_popularity = {
+       			ideology = social_liberal
+      			popularity = -0.1
+      		}
+			add_popularity = {
+       			ideology = market_liberal
+      			popularity = -0.1
+      		}
+			add_popularity = {
+       			ideology = social_conservative
+      			popularity = -0.1
+      		}
+			add_popularity = {
+       			ideology = authoritarian_democrat
+      			popularity = -0.1
+      		}
+			add_popularity = {
+       			ideology = paternal_autocrat
+      			popularity = -0.1
+      		}
+			add_popularity = {
+       			ideology = national_populist
+      			popularity = -0.1
+      		}
+			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -19717,7 +19762,8 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 100
+			add_ideas = POL_national_democratic_revoltion
 		}
 	}
 	focus = {
@@ -19734,7 +19780,9 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = POL_natsoc_army
+			add_command_power = 75
+			army_experience = 25
 		}
 	}
 	focus = {
@@ -19751,7 +19799,12 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_war_support = 0.1
+			add_manpower = 100000
+			add_popularity = {
+       			ideology = radical_socialist
+      			popularity = 0.1
+      		}
 		}
 	}
 	focus = {
@@ -19768,7 +19821,10 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			swap_ideas = {
+				remove_idea = POL_natsoc_army
+				add_idea = POL_natsoc_army2
+			}
 		}
 	}
 	
@@ -19789,7 +19845,7 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			country_event = plx.76
 		}
 	}
 	focus = {
@@ -19806,7 +19862,10 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			swap_ideas = {
+				remove_idea = POL_national_democratic_revoltion
+				add_idea = POL_national_democratic_revoltion2
+			}
 		}
 	}
 	focus = {
@@ -19823,7 +19882,10 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			swap_ideas = {
+				remove_idea = POL_national_democratic_revoltion2
+				add_idea = POL_national_democratic_revoltion3
+			}
 		}
 	}
 	focus = {
@@ -19840,7 +19902,9 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_manpower = -10000
+			add_political_power = 100
+			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -19860,7 +19924,11 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			swap_ideas = {
+				remove_idea = POL_national_democratic_revoltion3
+				add_idea = POL_national_democratic_revoltion4
+			}
+			add_stability = -0.05
 		}
 	}
 	focus = {
@@ -19877,7 +19945,7 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = POL_natsoc_eco
 		}
 	}
 	focus = {
@@ -19894,7 +19962,10 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			swap_ideas = {
+				remove_idea = POL_natsoc_eco
+				add_idea = POL_natsoc_eco2
+			}
 		}
 	}
 	focus = {
@@ -19911,7 +19982,10 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
 		}
 	}
 	focus = {
@@ -19931,7 +20005,10 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			swap_ideas = {
+				remove_idea = POL_natsoc_eco2
+				add_idea = POL_natsoc_eco3
+			}
 		}
 	}
 	focus = {
@@ -19954,14 +20031,27 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			swap_ideas = {
+				remove_idea = POL_national_democratic_revoltion4
+				add_idea = POL_national_democratic_revoltion5
+			}
+			swap_ideas = {
+				remove_idea = POL_natsoc_army2
+				add_idea = POL_natsoc_army3
+			}
+			swap_ideas = {
+				remove_idea = POL_natsoc_eco3
+				add_idea = POL_natsoc_eco4
+			}
 		}
 	}
 	####radical healing movement
 	focus = {
 		id = POL_radical_healing_movement
 		icon = GFX_goal_POL_radical_healing_movement
-		
+		available = {
+			has_country_flag = PLX_radical_healing
+		}
 		x = -52
 		y = 25
 		cost = 3
@@ -19971,6 +20061,7 @@ focus = {
 		completion_reward = {
 			add_political_power = 50
 		}
+		
 	}
 	focus = {
 		id = POL_expel_austrian_monarch
@@ -19986,7 +20077,15 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.15
+			add_popularity = {
+       			ideology = national_populist
+      			popularity = 0.15
+      		}
+			add_popularity = {
+       			ideology = paternal_autocrat
+      			popularity = -0.15
+      		}
 		}
 	}
 	focus = {
@@ -20003,7 +20102,14 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			set_country_leader_name = {
+				name = "瓦迪斯瓦夫五世"
+			}
+			set_country_leader_portrait = {
+				portrait = gfx/leaders/POL/Portrait_POL_geoffery_potocki_king.png
+			}
+			add_country_leader_trait = john_penis
+			add_country_leader_trait = trve_king_of_poland
 		}
 	}
 	
@@ -20021,7 +20127,7 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = POL_return_to_absolute_monarchy
 		}
 	}
 	focus = {
@@ -20038,7 +20144,7 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = POL_anti_catholicism
 		}
 	}
 	focus = {
@@ -20055,7 +20161,7 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = POL_power_to_royal_council
 		}
 	}
 	focus = {
@@ -20072,7 +20178,10 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			swap_ideas = {
+				remove_idea = POL_anti_catholicism
+				add_idea = POL_esotericism_beliefs
+			}
 		}
 	}
 	focus = {
@@ -20092,7 +20201,7 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = POL_forced_pololize
 		}
 	}
 	focus = {
@@ -20110,7 +20219,10 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			swap_ideas = {
+				remove_idea = POL_power_to_royal_council
+				add_idea = POL_salute_to_king_and_nachenik
+			}
 		}
 	}
 	focus = {
@@ -20128,7 +20240,13 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_country_leader_trait = solar_worshipper
+			add_stability = -0.1
+			add_political_power = 100
+			add_popularity = {
+       			ideology = national_populist
+      			popularity = 0.1
+      		}
 		}
 	}
 	focus = {
@@ -20148,7 +20266,7 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = POL_restore_social_hiearchy
 		}
 	}
 	focus = {
@@ -20171,7 +20289,8 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_country_leader_trait = king_of_commonwealth
+			add_war_support = 0.2
 		}
 	}
 	focus = {
@@ -20189,7 +20308,23 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_popularity = {
+       			ideology = national_populist
+      			popularity = 0.1
+      		}
+			add_popularity = {
+       			ideology = totalist
+      			popularity = -0.1
+      		}
+			add_popularity = {
+       			ideology = syndicalist
+      			popularity = -0.1
+      		}
+			add_popularity = {
+       			ideology = radical_socialist
+      			popularity = -0.1
+      		}
+			add_stability = 0.15
 		}
 	}
 	focus = {
@@ -20209,7 +20344,7 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = POL_state_capitalism
 		}
 	}
 	focus = {
@@ -20229,7 +20364,7 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = POL_revitalize_old_culture
 		}
 	}
 	focus = {
@@ -20247,7 +20382,7 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			country_event = plx.77
 		}
 	}
 	focus = {
@@ -20265,7 +20400,7 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = POL_aristocracy_corporatism
 		}
 	}
 	focus = {
@@ -20283,7 +20418,12 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 100
+			add_stability = 0.1
+			add_popularity = {
+       			ideology = social_democrat
+      			popularity = -0.1
+      		}
 		}
 	}
 	focus = {
@@ -20301,7 +20441,15 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_popularity = {
+       			ideology = national_populist
+      			popularity = 0.1
+      		}
+			add_war_support = 0.1
+			add_popularity = {
+       			ideology = social_liberal
+      			popularity = -0.1
+      		}
 		}
 	}
 	focus = {
@@ -20324,7 +20472,10 @@ focus = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 50
+			swap_ideas = {
+				remove_idea = POL_return_to_absolute_monarchy
+				add_idea = POL_rebirth_of_old_order
+			}
 		}
 	}
 	####红色激进派

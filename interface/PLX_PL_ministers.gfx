@@ -128,6 +128,37 @@ spriteTypes = {
 		name = "GFX_idea_POL_Jan_Dobraczynski_for_tot"
 		texturefile = "gfx/interface/ministers/PLX/blank_minister.png"
 	}	
-
+	spriteType = {
+		name = "GFX_idea_POL_Kazimierz_Dagnan_hog_rso"
+		texturefile = "gfx/interface/ministers/PLX/blank_minister.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_POL_Jozef_Kowal_Lipinski_hog_npo"
+		texturefile = "gfx/interface/ministers/PLX/blank_minister.png"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_Fryderyk_Fialkiewicz_for_rso"
+		texturefile = "gfx/interface/ministers/PLX/blank_minister.png"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_Roman_Kuchciak_eco_rso"
+		texturefile = "gfx/interface/ministers/PLX/blank_minister.png"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_Antoni_Szadkowski_sec_rso"
+		texturefile = "gfx/interface/ministers/PLX/blank_minister.png"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_Waclaw_Kozielski_for_npo"
+		texturefile = "gfx/interface/ministers/PLX/blank_minister.png"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_Jozef_Grallo_eco_npo"
+		texturefile = "gfx/interface/ministers/PLX/blank_minister.png"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_Wladyslaw_Obrebski_sec_npo"
+		texturefile = "gfx/interface/ministers/PLX/blank_minister.png"
+	}
 	#SubIdeologies
 }
