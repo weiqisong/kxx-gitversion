@@ -975,7 +975,16 @@ PLX_effect_panslavic_cores = {
 		limit = { region = 245 }
 		add_core_of = POL
 	}	
+	576 = { add_core_of = POL }
+	575 = { add_core_of = POL }
+	568 = { add_core_of = POL }
+	1293 = { add_core_of = POL }
+	811 = { add_core_of = POL }
+	657 = { add_core_of = POL }
+	560 = { add_core_of = POL }
+	561 = { add_core_of = POL }
 }
+
 
 PLX_effect_ger_soc_generals = {
 	create_field_marshal = {
