@@ -601,7 +601,8 @@ ideas = {
 			picture = BLR_icon_agrarian_socialism
 		}
 		BLR_socialist_black_market = {
-			industrial_capacity_factory = 0.1
+		
+			
 			equipment_bonus = {
 				infantry_equipment = {
 					build_cost_ic = -0.2 instant = yes
@@ -614,6 +615,7 @@ ideas = {
 			}
 			modifier = {
 				trade_opinion_factor = 0.1
+				industrial_capacity_factory = 0.1
 			}
 			picture = BLR_icon_socialist_black_market
 		}
@@ -637,8 +639,10 @@ ideas = {
 		BLR_purge_on_atamans_clique = {
 			
 			modifier = {
-				paternal_autocrat_drift = -0.1
-				stability_factor = -0.05
+				political_power_factor = 0.25
+				stability_weekly = 0.001
+				stability_factor = -0.1
+				industrial_capacity_factory = 0.25
 			}
 			picture = BLR_icon_purge_on_clique
 		}
@@ -646,11 +650,14 @@ ideas = {
 			
 			modifier = {
 				conscription = 0.025
+				conscription_factor = 0.25
 			}
 			equipment_bonus = {
 				infantry_equipment = {
 					instant = yes
 					reliability = 0.02
+					build_cost_ic = -0.1
+
 				}
 			}
 			picture = BLR_icon_black_cat_paramilitary
@@ -659,7 +666,8 @@ ideas = {
 			
 			modifier = {
 				political_power_factor = 0.4
-				stability_factor = -0.05
+				army_org_factor = 0.15
+
 			}
 			picture = BLR_icon_ethnic_nationalism
 		}
@@ -667,7 +675,8 @@ ideas = {
 			
 			modifier = {
 				political_power_factor = 0.4
-				stability_factor = -0.15
+				army_org_factor = 0.15
+				army_attack_factor = 0.15
 				resistance_target = -0.15
 			}
 			picture = BLR_icon_ethnic_nationalism
@@ -675,7 +684,8 @@ ideas = {
 		BLR_karycnievy_teror = {
 			
 			modifier = {
-				resistance_target = -0.05
+				resistance_target = -0.25
+				attrition = -0.15
 			}
 			picture = BLR_icon_karycnievy_teror
 		}
@@ -683,7 +693,7 @@ ideas = {
 			
 			modifier = {
 				industrial_capacity_factory = 0.15
-				consumer_goods_factor = -0.07
+				consumer_goods_expected_value = -0.15
 			}
 			picture = BLR_icon_national_economics
 		}
@@ -691,7 +701,8 @@ ideas = {
 			
 			modifier = {
 				national_populist_drift = 0.1
-				research_speed_factor = -0.05
+				production_speed_buildings_factor = 0.15
+
 			}
 			picture = BLR_icon_reactionary_beacon
 		}
@@ -699,7 +710,7 @@ ideas = {
 			
 			modifier = {
 				national_populist_drift = 0.1
-				research_speed_factor = -0.05
+				production_speed_buildings_factor = 0.15
 				attrition = -0.05
 			}
 			picture = BLR_icon_reactionary_beacon

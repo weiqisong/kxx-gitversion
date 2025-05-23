@@ -1315,6 +1315,478 @@ ideas = {
 				army_core_defence_factor = 0.02
 			}
 		}
-		
+		CAN_anar_policy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = FAUD_ANARCHO
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				radical_socialist_drift = 0.01
+				production_speed_buildings_factor = 0.05
+				global_building_slots_factor = 0.05
+			}
+		}
+		CAN_anar_policy2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = FAUD_ANARCHO
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				radical_socialist_drift = 0.02
+				production_speed_buildings_factor = 0.05
+				global_building_slots_factor = 0.05
+				command_power_gain_mult = 0.15
+				max_command_power_mult = 0.15
+				resistance_target = -0.25
+				attrition = -0.05
+			}
+		}
+		CAN_anar_policy3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = FAUD_ANARCHO
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				radical_socialist_drift = 0.02
+				production_speed_buildings_factor = 0.07
+				global_building_slots_factor = 0.07
+				command_power_gain_mult = 0.15
+				max_command_power_mult = 0.15
+				resistance_target = -0.25
+				attrition = -0.05
+				research_speed_factor = 0.1
+				local_resources_factor = 0.1
+				command_power_gain = 0.1
+			}
+		}
+		CAN_anar_policy3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = FAUD_ANARCHO
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.1
+				radical_socialist_drift = 0.02
+				production_speed_buildings_factor = 0.07
+				global_building_slots_factor = 0.07
+				command_power_gain_mult = 0.15
+				max_command_power_mult = 0.15
+				resistance_target = -0.25
+				attrition = -0.1
+				research_speed_factor = 0.1
+				local_resources_factor = 0.1
+				command_power_gain = 0.1
+				production_factory_start_efficiency_factor = 0.07
+				production_factory_max_efficiency_factor = 0.07
+				production_factory_efficiency_gain_factor = 0.07
+			}
+		}
+		CAN_anar_policy4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = FAUD_ANARCHO
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.1
+				radical_socialist_drift = 0.02
+				production_speed_buildings_factor = 0.07
+				global_building_slots_factor = 0.07
+				command_power_gain_mult = 0.15
+				max_command_power_mult = 0.15
+				resistance_target = -0.25
+				attrition = -0.1
+				research_speed_factor = 0.15
+				local_resources_factor = 0.15
+				command_power_gain = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		CAN_espsynd_policy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = SOV_syndicate_decentralization
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				syndicalist_drift = 0.01
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		CAN_espsynd_policy2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = SOV_syndicate_decentralization
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				syndicalist_drift = 0.01
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+	
+			}
+		}
+		CAN_espsynd_policy3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = SOV_syndicate_decentralization
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				syndicalist_drift = 0.01
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+	
+			}
+		}
+		CAN_espsynd_policy4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = SOV_syndicate_decentralization
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				syndicalist_drift = 0.02
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
+				research_speed_factor = 0.1
+			}
+		}
+		CAN_indigenous_policy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = indiancommunism
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				radical_socialist_drift = 0.01
+				conscription = 0.015
+				conscription_factor = 0.15
+			}
+		}
+		CAN_indigenous_policy2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = indiancommunism
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				radical_socialist_drift = 0.01
+				conscription = 0.015
+				conscription_factor = 0.15
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				global_building_slots = 1
+				supply_consumption_factor = -0.1
+
+			}
+		}
+		CAN_indigenous_policy3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = indiancommunism
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				radical_socialist_drift = 0.01
+				conscription = 0.015
+				conscription_factor = 0.15
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				global_building_slots = 1
+				supply_consumption_factor = -0.1
+				monthly_population = 0.5
+				mobilization_speed = 0.1
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+
+			}
+		}
+		CAN_indigenous_policy4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = indiancommunism
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				radical_socialist_drift = 0.02
+				conscription = 0.015
+				conscription_factor = 0.15
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				global_building_slots = 1
+				supply_consumption_factor = -0.1
+				monthly_population = 0.5
+				mobilization_speed = 0.1
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
+				command_power_gain = 0.1
+				max_command_power = 150
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+			}
+		}
+		CAN_moderate_policy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = GER_socdem_unions
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				social_democrat_drift = 0.01
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+		CAN_moderate_policy2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = GER_socdem_unions
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				social_democrat_drift = 0.01
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+				line_change_production_efficiency_factor = 0.07
+				industrial_capacity_factory = 0.07
+				production_factory_start_efficiency_factor = 0.07
+				production_factory_max_efficiency_factor = 0.07
+				production_factory_efficiency_gain_factor = 0.07
+
+			}
+		}
+		CAN_moderate_policy3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = GER_socdem_unions
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				social_democrat_drift = 0.01
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+				line_change_production_efficiency_factor = 0.07
+				industrial_capacity_factory = 0.07
+				production_factory_start_efficiency_factor = 0.07
+				production_factory_max_efficiency_factor = 0.07
+				production_factory_efficiency_gain_factor = 0.07
+				war_support_factor = 0.1
+				planning_speed = 0.15
+				max_planning = 0.15
+				experience_loss_factor = -0.15
+			}
+		}
+		CAN_moderate_policy4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = GER_socdem_unions
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				social_democrat_drift = 0.02
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				war_support_factor = 0.1
+				planning_speed = 0.15
+				max_planning = 0.15
+				experience_loss_factor = -0.15
+			}
+		}
+		CAN_liberallol_policy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = new_liberalism
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				social_democrat_drift = 0.01
+				social_liberal_drift = 0.01
+				market_liberal_drift = 0.01
+				compliance_growth = 0.25
+				resistance_target = -0.25
+
+			}
+		}
+		CAN_liberallol_policy2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = new_liberalism
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				social_democrat_drift = 0.01
+				social_liberal_drift = 0.01
+				market_liberal_drift = 0.01
+				compliance_growth = 0.25
+				resistance_target = -0.25
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+			}
+		}
+		CAN_liberallol_policy3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = new_liberalism
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				social_democrat_drift = 0.02
+				social_liberal_drift = 0.02
+				market_liberal_drift = 0.02
+				compliance_growth = 0.25
+				resistance_target = -0.25
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				monthly_population = 0.75
+				weekly_manpower = 1000
+				conscription = 0.02
+				conscription_factor = 0.2
+			}
+		}
+		CAN_liberallol_policy4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = new_liberalism
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				social_democrat_drift = 0.02
+				social_liberal_drift = 0.02
+				market_liberal_drift = 0.02
+				compliance_growth = 0.25
+				resistance_target = -0.25
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				monthly_population = 0.75
+				weekly_manpower = 1000
+				conscription = 0.02
+				conscription_factor = 0.2
+				research_speed_factor = 0.1
+				local_resources_factor = 0.1
+				command_power_gain = 0.1
+				max_command_power = 100
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+
+			}
+		}
+		CAN_conslol_policy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = CAN_conservative_welfare_state_idea
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				social_democrat_drift = 0.01
+				social_conservative_drift =  0.01
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+
+			}
+		}
+		CAN_conslol_policy2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = CAN_conservative_welfare_state_idea
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				social_democrat_drift = 0.01
+				social_conservative_drift =  0.01
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				army_infantry_attack_factor = 0.15
+				army_infantry_defence_factor = 0.15
+				army_speed_factor = 0.1
+				army_attack_speed_factor = 0.1
+				mobilization_speed = 0.1
+				command_power_gain = 0.1
+				max_command_power = 100
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+				global_building_slots_factor = 0.1
+			}
+		}
+		CAN_conslol_policy3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = CAN_conservative_welfare_state_idea
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				social_democrat_drift = 0.01
+				social_conservative_drift =  0.01
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				command_power_gain = 0.1
+				max_command_power = 100
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+				global_building_slots_factor = 0.1
+				army_infantry_attack_factor = 0.15
+				army_infantry_defence_factor = 0.15
+				army_speed_factor = 0.1
+				army_attack_speed_factor = 0.1
+				mobilization_speed = 0.1
+			}
+		}
+		CAN_conslol_policy4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_CCF_policies"}
+			picture = CAN_conservative_welfare_state_idea
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				social_democrat_drift = 0.01
+				social_conservative_drift =  0.01
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				command_power_gain = 0.1
+				max_command_power = 100
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+				global_building_slots_factor = 0.1
+				army_infantry_attack_factor = 0.15
+				army_infantry_defence_factor = 0.15
+				army_speed_factor = 0.1
+				army_attack_speed_factor = 0.1
+				mobilization_speed = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+
+			}
+		}
 	}
 }

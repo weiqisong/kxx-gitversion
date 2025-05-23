@@ -28,6 +28,12 @@ focus_tree = {
 	shared_focus = CAN_second_chance_of_social_credit
 	shared_focus = CAN_socialist_action_union
 	shared_focus = CAN_technocracy_in_canada
+	shared_focus = CAN_anarchism_in_canada
+	shared_focus = CAN_victory_of_quebec_model
+	shared_focus = CAN_rise_of_first_nation
+	shared_focus = CAN_between_revo_reform
+	shared_focus = CAN_second_times_charm
+	shared_focus = CAN_second_times_charm2
 	### POLITICAL
 
 	focus = {
