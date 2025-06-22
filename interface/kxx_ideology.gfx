@@ -469,4 +469,8 @@ spriteTypes = {
 		name = "GFX_ideology_polish_national_socialism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/polish_national_socialism_subtype.png"
 	}
+	spriteType = {
+		name = "GFX_ideology_autdem_legionarism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/autdem_legionarism_subtype.png"
+	}
 }

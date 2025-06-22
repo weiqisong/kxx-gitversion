@@ -1,5 +1,4 @@
 #!gfx:interface/FX_goals.gfx
-
 ############################################################
 #               GREEK NATIONAL FOCUS TREE                  #
 ############################################################
@@ -3247,7 +3246,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRE_religious_state"
 			add_ideas = GRE_state_religion
-			
+			add_soccon_to_coalition = yes
 		}
 	}
 
@@ -3300,19 +3299,13 @@ focus_tree = {
 
 	focus = {
 		id = GRE_an_alternative
-		icon = none
+		icon = GFX_goal_ALB_Church
 		cost = 4
-		x = 45
-		y = 1
-		relative_position_id = GRE_elections
-		prerequisite = {
-			focus = GRE_elections
-		}
-		allow_branch = {
-			NOT = {
-				tag = GRE
-			}
-		}
+		x = 0
+		y = -1
+		relative_position_id = GRE_power_to_the_church
+		
+		
 		available = {
 			always = no
 		}
@@ -3321,161 +3314,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = GRE_His_All_Holiness
-		icon = none
-		cost = 4
-		x = -2
-		y = 1
-		relative_position_id = GRE_an_alternative
-		prerequisite = {
-			focus = GRE_an_alternative
-		}
-		available = {
-			has_country_flag = GRE_theocracy
-			has_government = authoritarian_democrat
-		}
-		completion_reward = { }
-	}
-
-	focus = {
-		id = GRE_faith_mount_athos
-		icon = none
-		cost = 4
-		x = 2
-		y = 1
-		relative_position_id = GRE_an_alternative
-		prerequisite = {
-			focus = GRE_an_alternative
-		}
-		available = {
-			has_country_flag = GRE_theocracy
-			has_government = authoritarian_democrat
-		}
-		completion_reward = { }
-	}
-
-	focus = {
-		id = GRE_invite_Benjamin
-		icon = none
-		cost = 4
-		x = 0
-		y = 1
-		relative_position_id = GRE_an_alternative
-		prerequisite = {
-			focus = GRE_an_alternative
-		}
-		available = {
-			has_country_flag = GRE_theocracy
-			has_government = authoritarian_democrat
-		}
-		completion_reward = { }
-	}
-
-	focus = {
-		id = GRE_state_orthodoxism
-		icon = none
-		cost = 4
-		x = -1
-		y = 1
-		relative_position_id = GRE_invite_Benjamin
-		prerequisite = {
-			focus = GRE_invite_Benjamin
-		}
-		available = {
-			has_country_flag = GRE_theocracy
-			has_government = authoritarian_democrat
-		}
-		completion_reward = { }
-	}
-
-	focus = {
-		id = GRE_with_His_blessings
-		icon = none
-		cost = 4
-		x = 1
-		y = 1
-		relative_position_id = GRE_invite_Benjamin
-		prerequisite = {
-			focus = GRE_invite_Benjamin
-		}
-		available = {
-			has_country_flag = GRE_theocracy
-			has_government = authoritarian_democrat
-		}
-		completion_reward = { }
-	}
-
-	focus = {
-		id = GRE_the_patriarch_in_parliament
-		icon = none
-		cost = 4
-		x = 1
-		y = 1
-		relative_position_id = GRE_state_orthodoxism
-		prerequisite = {
-			focus = GRE_state_orthodoxism
-		}
-		prerequisite = {
-			focus = GRE_with_His_blessings
-		}
-		available = {
-			has_country_flag = GRE_theocracy
-			has_government = authoritarian_democrat
-		}
-		completion_reward = { }
-	}
-
-	focus = {
-		id = GRE_the_question_of_ethinicity
-		icon = none
-		cost = 4
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = GRE_the_patriarch_in_parliament
-		}
-		relative_position_id = GRE_the_patriarch_in_parliament
-		available = {
-			has_country_flag = GRE_theocracy
-			has_government = authoritarian_democrat
-		}
-		completion_reward = { }
-	}
-
-	focus = {
-		id = GRE_patriarch_ruler
-		icon = none
-		cost = 4
-		x = 0
-		y = 1
-		relative_position_id = GRE_the_question_of_ethinicity
-		prerequisite = {
-			focus = GRE_the_question_of_ethinicity
-		}
-		available = {
-			has_country_flag = GRE_theocracy
-			has_government = authoritarian_democrat
-		}
-		completion_reward = { }
-	}
-
-	focus = {
-		id = GRE_theocratic_dictatorship
-		icon = none
-		cost = 4
-		x = 0
-		y = 1
-		relative_position_id = GRE_patriarch_ruler
-		prerequisite = {
-			focus = GRE_patriarch_ruler
-		}
-		available = {
-			has_country_flag = GRE_theocracy
-			has_government = authoritarian_democrat
-		}
-		completion_reward = { }
-	}
 
 
 	#SOCIALISM
@@ -4949,21 +4787,18 @@ focus_tree = {
 
 	focus = {
 		id = GRE_the_patriarch_in_power
-		icon = none
+		icon = GFX_goal_ATH_crusader_legacy
 		cost = 4
-		x = 80
-		y = 30
+		x = 0
+		y = 1
+		relative_position_id = GRE_the_churches_integrated_once_more
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = GRE_PATRIARCH_ALLOWED
 				always = no
 			}
 		}
-		allow_branch = {
-		NOT = {
-			tag = GRE
-		}
-		}
+		
 		completion_reward = {
 			set_politics = {
 				ruling_party = authoritarian_democrat
@@ -4985,16 +4820,31 @@ focus_tree = {
 
 		}
 	}
-
+focus = {
+		id = GRE_the_question_of_ethinicity
+		icon = GFX_goal_ATH_integrate_old_elite
+		cost = 4
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GRE_the_patriarch_in_power
+		}
+		relative_position_id = GRE_the_patriarch_in_power
+		available = {
+			has_country_flag = GRE_theocracy
+			has_government = authoritarian_democrat
+		}
+		completion_reward = { }
+	}
 	focus = {
 		id = GRE_a_theocracy_ruled_by_god
-		icon = none
+		icon = GFX_goal_ATH_greco_catholicism
 		cost = 4
 		x = 0
 		y = 2
 		relative_position_id = GRE_the_patriarch_in_power
 		prerequisite = {
-			focus = GRE_the_patriarch_in_power
+			focus = GRE_the_question_of_ethinicity
 		}
 		completion_reward = {
 			if = {
@@ -5010,7 +4860,7 @@ focus_tree = {
 
 	focus = {
 		id = GRE_His_Beautitude
-		icon = none
+		icon = GFX_goal_NIC_Separation_Church_State
 		cost = 4
 		x = 2
 		y = 1
@@ -5027,7 +4877,7 @@ focus_tree = {
 
 	focus = {
 		id = GRE_bring_back_ancient_greek
-		icon = none
+		icon = GFX_goal_ATH_priest_princes
 		cost = 4
 		x = -2
 		y = 1
@@ -5042,7 +4892,7 @@ focus_tree = {
 
 	focus = {
 		id = GRE_theocratic_byzantium
-		icon = none
+		icon = GFX_goal_GRE_purple_pheonix
 		cost = 4
 		x = 0
 		y = 1
@@ -6995,24 +6845,22 @@ focus_tree = {
 	# Theocracy Political Path
 	focus = {
 		id = GRE_power_to_the_church
-		icon = none
+		icon = GFX_goal_CAN_Church_Canada
 		cost = 0
-		x = 29
-		y = 10
+		x = 25
+		y = 9
 		available = {
 			always = no
 		}
-		allow_branch = {
-			NOT = {
-				tag = GRE
-			}
+		prerequisite = {
+			focus = GRE_an_alternative
 		}
 		completion_reward = { }
 	}
 
 	focus = {
 		id = GRE_an_orthodox_nation
-		icon = none
+		icon = GFX_goal_generic_orthodoxy
 		cost = 4
 		x = 0
 		y = 1
@@ -7025,7 +6873,7 @@ focus_tree = {
 
 	focus = {
 		id = GRE_the_mount_athos
-		icon = none
+		icon = GFX_focus_rus_orthodoxy
 		cost = 4
 		x = 1
 		y = 1
@@ -7038,7 +6886,7 @@ focus_tree = {
 
 	focus = {
 		id = GRE_Gods_country
-		icon = none
+		icon = GFX_goal_orthodox_state
 		cost = 4
 		x = -1
 		y = 1
@@ -7052,7 +6900,7 @@ focus_tree = {
 
 	focus = {
 		id = GRE_denounce_the_pope
-		icon = none
+		icon = GFX_goal_AUS_Shun_Clericals
 		cost = 4
 		x = 2
 		y = 1
@@ -7127,7 +6975,7 @@ focus_tree = {
 
 	focus = {
 		id = GRE_institute_catholic_as_branch
-		icon = none
+		icon = GFX_goal_SRD_enshrine_church_collaboration
 		cost = 4
 		x = 0
 		y = 2
@@ -7140,7 +6988,7 @@ focus_tree = {
 
 	focus = {
 		id = GRE_denounce_protestantism
-		icon = none
+		icon = GFX_goal_CZE_anticlericalism
 		cost = 4
 		x = -2
 		y = 1
@@ -7153,7 +7001,7 @@ focus_tree = {
 
 	focus = {
 		id = GRE_institute_protestantism_as_branch
-		icon = none
+		icon = GFX_goal_HON_Work_With_Church
 		cost = 4
 		x = 0
 		y = 2
@@ -7166,7 +7014,7 @@ focus_tree = {
 
 	focus = {
 		id = GRE_the_patriarch_in_the_parliament
-		icon = none
+		icon = GFX_goal_MNT_orthodoxy
 		cost = 4
 		x = 0
 		y = 2
@@ -7190,7 +7038,7 @@ focus_tree = {
 
 	focus = {
 		id = GRE_solve_dogmatic_differences_with_protestants
-		icon = none
+		icon = GFX_goal_KIV_church_support
 		cost = 4
 		x = 1
 		y = 1
@@ -7206,7 +7054,7 @@ focus_tree = {
 
 	focus = {
 		id = GRE_solve_dogmatic_differences_with_catholics
-		icon = none
+		icon = GFX_HUN_role_of_the_church
 		cost = 4
 		x = -1
 		y = 1
@@ -7222,7 +7070,7 @@ focus_tree = {
 
 	focus = {
 		id = GRE_declare_them_as_part_of_orthodoxism
-		icon = none
+		icon = GFX_DKB_Orthodox_Welfare
 		cost = 4
 		x = 1
 		y = 1
@@ -7238,7 +7086,7 @@ focus_tree = {
 
 	focus = {
 		id = GRE_the_churches_integrated_once_more
-		icon = none
+		icon = GFX_goal_AUS_Fortress_Churchs_Standing
 		cost = 4
 		x = 0
 		y = 1
@@ -11444,7 +11292,7 @@ focus_tree = {
 		icon = GFX_GRE_army_focus
 		cost = 4
 		x = 25
-		y = 16
+		y = 20
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -12208,7 +12056,7 @@ focus_tree = {
 		icon = GFX_GRE_air_force_focus
 		cost = 4
 		x = 38
-		y = 16
+		y = 20
 		text_icon = joint_focus_style
 
 		ai_will_do = {
@@ -12620,7 +12468,7 @@ focus_tree = {
 		icon = GFX_GRE_navy_focus
 		cost = 4
 		x = 46
-		y = 16
+		y = 20
 		text_icon = joint_focus_style
 
 		ai_will_do = {
@@ -13571,4 +13419,532 @@ focus_tree = {
 		  FOCUS_FILTER_STABILITY
 		}
 	  }
+	  focus = {
+		id = GRE_national_reform_party
+		icon = GFX_goal_ideology_authoritarian_democrat
+		cost = 3.00
+		
+		x = 32
+		y = 8
+		
+		available = {
+	
+		}
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		 
+		  remove_ideas = GRE_anathema
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	  }
+	   focus = {
+		id = GRE_right_union
+		icon = GFX_goal_AUS_Approach_Ariosophs_alt
+		cost = 3.00
+		prerequisite = {
+		  focus = GRE_national_reform_party
+		}
+		x = -2
+		y = 1
+		relative_position_id = GRE_national_reform_party
+		available = {
+	
+		}
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  add_political_power = 150
+		  add_stability = 0.05
+		  add_pataut_to_coalition = yes
+		  add_soccon_to_coalition = yes
+		  add_marlib_to_coalition = yes
+		  add_popularity = {
+			ideology = social_conservative
+			popularity = 0.1
+		  }
+		  add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.1
+		  }
+		  add_popularity = {
+			ideology = market_liberal
+			popularity = 0.1
+		  }
+		  add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.1
+		  }
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	  }
+	focus = {
+		id = GRE_retaliate_venizelists
+		icon = GFX_RUS_I_Was_Never_A_Liberal
+		cost = 3.00
+		prerequisite = {
+		  focus = GRE_national_reform_party
+		}
+		x = 0
+		y = 1
+		relative_position_id = GRE_national_reform_party
+		available = {
+			
+		}
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+			add_popularity = {
+				ideology = social_liberal
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.15
+			}
+			add_command_power = 50
+			army_experience = 50
+			remove_ideas = GRE_venizelist_officers
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_destroying_socialism
+		icon = GFX_GRE_ban_SEKE
+		cost = 3.00
+		prerequisite = {
+		  focus = GRE_national_reform_party
+		}
+		x = 2
+		y = 1
+		relative_position_id = GRE_national_reform_party
+		available = {
+	
+		}
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = totalist
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = syndicalist
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = -0.1
+			}
+		  add_stability = 0.15
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	
+	focus = {
+		id = GRE_end_of_palimentary_democracy
+		icon = GFX_goal_FRA_democratic_error
+		cost = 3.00
+		prerequisite = {
+		  focus = GRE_right_union
+		}
+		prerequisite = {
+		  focus = GRE_retaliate_venizelists
+		}
+		prerequisite = {
+		  focus = GRE_destroying_socialism
+		}
+		x = 0
+		y = 2
+		relative_position_id = GRE_national_reform_party
+		available = {
+	
+		}
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+			add_political_power = 100
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.1
+			}
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_expand_parmilitary
+		icon = GFX_goal_HON_Junta_Skeleton
+		cost = 3.00
+		prerequisite = {
+		  focus = GRE_end_of_palimentary_democracy
+		}
+		
+		x = -2
+		y = 3
+		relative_position_id = GRE_national_reform_party
+		available = {
+	
+		}
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		 add_manpower = 10000
+		 add_ideas = GRE_parmilitary
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_dual_nation_state
+		icon = GFX_GRE_greco_russian_friendship
+		cost = 3.00
+		prerequisite = {
+		  focus = GRE_end_of_palimentary_democracy
+		}
+		
+		x = 0
+		y = 3
+		relative_position_id = GRE_national_reform_party
+		available = {
+	
+		}
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  add_ideas = GRE_dual_nation_state
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	
+	focus = {
+		id = GRE_regime_of_worker_peasant_intellicals
+		icon = GFX_goal_NFA_Happy_Workers
+		cost = 3.00
+		prerequisite = {
+		  focus = GRE_end_of_palimentary_democracy
+		}
+		
+		x = 2
+		y = 3
+		relative_position_id = GRE_national_reform_party
+		available = {
+	
+		}
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		 add_ideas = GRE_national_unity_government
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_native_legionarism
+		icon = GFX_goal_ROM_Legionary_Revolution
+		cost = 3.00
+		prerequisite = {
+		  focus = GRE_expand_parmilitary
+		}
+		
+		x = -3
+		y = 4
+		relative_position_id = GRE_national_reform_party
+		available = {
+	
+		}
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  swap_ideas = {
+			remove_idea = GRE_parmilitary
+			add_idea = GRE_parmilitary2
+		  }
+		   country_event = gre.505
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_tradition_value
+		icon = GFX_goal_NZL_conservative_outreach
+		cost = 3.00
+		prerequisite = {
+		  focus = GRE_expand_parmilitary
+		}
+		prerequisite = {
+		  focus = GRE_dual_nation_state
+		}
+		x = -1
+		y = 4
+		relative_position_id = GRE_national_reform_party
+		available = {
+	
+		}
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  add_ideas = GRE_tradition_value
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_relation_with_slav_brothers
+		icon = GFX_goal_AUS_south_slavs
+		cost = 3.00
+		prerequisite = {
+		  focus = GRE_regime_of_worker_peasant_intellicals
+		}
+		prerequisite = {
+		  focus = GRE_dual_nation_state
+		}
+		x = 1
+		y = 4
+		relative_position_id = GRE_national_reform_party
+		available = {
+	
+		}
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  add_political_power = 150
+		  add_stability = 0.05
+		  add_war_support = 0.05
+		  RUS = {
+				add_opinion_modifier = {
+					target = GRE
+					modifier = medium_increase
+				}
+			}
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_national_corporatism
+		icon = GFX_goal_generic_corporatism
+		cost = 3.00
+		prerequisite = {
+		  focus = GRE_regime_of_worker_peasant_intellicals
+		}
+		prerequisite = {
+		  focus = GRE_dual_nation_state
+		}
+		x = 3
+		y = 4
+		relative_position_id = GRE_national_reform_party
+		available = {
+	
+		}
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		 swap_ideas = {
+			remove_idea = GRE_national_unity_government
+			add_idea = GRE_national_unity_government2
+		 }
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_ethnicophrosyne
+		icon = GFX_goal_ATH_strategoi
+		cost = 3.00
+		prerequisite = {
+		  focus = GRE_native_legionarism
+		}
+		prerequisite = {
+		  focus = GRE_tradition_value
+		}
+		x = -2
+		y = 5
+		relative_position_id = GRE_national_reform_party
+		available = {
+	
+		}
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		 swap_ideas = {
+			remove_idea = GRE_tradition_value
+			add_idea = GRE_ethnicophrosyne
+		  }
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_from_great_macedonia
+		icon = GFX_goal_SER_macedonia_in_flames
+		cost = 3.00
+		prerequisite = {
+		  focus = GRE_relation_with_slav_brothers
+		}
+		prerequisite = {
+		  focus = GRE_tradition_value
+		}
+		x = 0
+		y = 5
+		relative_position_id = GRE_national_reform_party
+		available = {
+	
+		}
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  add_state_core = 184
+		  add_state_core = 1089
+		  add_state_core = 769
+		  add_state_core = 731
+		  add_state_core = 106
+		  add_state_core = 1271
+		  create_wargoal = {
+			target = SER
+			type = annex_everything
+		  }
+		   create_wargoal = {
+			target = BUL
+			type = annex_everything
+		  }
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_end_of_plutocracy
+		icon = GFX_goal_WCC_punish_capital
+		cost = 3.00
+		prerequisite = {
+		  focus = GRE_relation_with_slav_brothers
+		}
+		prerequisite = {
+		  focus = GRE_national_corporatism
+		}
+		x = 2
+		y = 5
+		relative_position_id = GRE_national_reform_party
+		available = {
+	
+		}
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+			add_one_random_civilian_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_military_factory = yes
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_to_pan_slav
+		icon = GFX_focus_rus_panslavism
+		cost = 3.00
+		prerequisite = {
+		  focus = GRE_ethnicophrosyne
+		}
+		prerequisite = {
+		  focus = GRE_from_great_macedonia
+		}
+		prerequisite = {
+		  focus = GRE_end_of_plutocracy
+		}
+		x = 0
+		y = 6
+		relative_position_id = GRE_national_reform_party
+		available = {
+	
+		}
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  country_event = gre.504
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
 }

@@ -369,7 +369,28 @@ CAN_expanding_red_entente = {
 
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision ENT_begin_imperial_federatin"
-			country_event = kxx_canada_soc.2
+			set_country_flag = CAN_CUM_Victory
+			set_country_flag = CAN_MEL_Victory
+			set_country_flag = CAN_CPC_Victory
+			set_country_flag = CAN_tech_victory
+			set_country_flag = CAN_SAU_victory
+			set_country_flag = CAN_REDSOCCRED_victory
+			set_country_flag = CAN_OBU_Victory
+			set_country_flag = CAN_TLC_Victory
+			set_country_flag = CAN_WUL_Victory
+			set_country_flag = CAN_FPU_Victory
+			set_country_flag = CAN_espsynd_victory
+			set_country_flag = CAN_SPC_Victory
+			set_country_flag = CAN_SDP_Victory
+			set_country_flag = CAN_RadSoc_CPC_Victory
+			set_country_flag = CAN_indigenous_victory
+			set_country_flag = CAN_moderate_victory
+			set_country_flag = CAN_CCF_Victory
+			set_country_flag = CAN_Synd_CPC_Victory
+			set_country_flag = CAN_anar_victory
+			set_country_flag = CAN_liberallol_victory
+			set_country_flag = CAN_conslol_victory
+			
 		}
 	}
 	CAN_its_anglosphereing_time = {

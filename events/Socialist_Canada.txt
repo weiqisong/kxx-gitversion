@@ -1653,7 +1653,7 @@ country_event = {
 		}
 		create_country_leader = {
 			name = "乔治·格兰特"
-			picture = "gfx/leaders/SCC/Portrait_Canada_George_Grant.png"
+			picture = "gfx/leaders/CAN/Portrait_Canada_George_Grant.png"
 			expire = "1.1.1"
 			ideology = socdem_paternal_socialism_subtype
 		}

@@ -9066,3 +9066,186 @@ country_event = {
 		
 	}
 }
+country_event = {
+	id = gre.504 #panslav
+	title = gre.504.t
+	desc = gre.504.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gre.504.a
+		ai_will_do = {
+			factor = 0
+		}
+		set_cosmetic_tag = FORM_SLV
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = RUS
+						is_claimed_by = RUS
+						is_core_of = TRM
+						is_claimed_by = TRM
+						is_core_of = UKR
+						is_claimed_by = UKR
+						is_core_of = WHR
+						is_claimed_by = WHR
+						is_core_of = SER
+						is_claimed_by = SER
+						is_core_of = BUL
+						is_claimed_by = BUL
+						is_core_of = CZE
+						is_claimed_by = CZE
+						is_core_of = SVK
+						is_claimed_by = SVK
+						is_core_of = POL
+						is_claimed_by = POL
+						is_core_of = GAL
+						is_claimed_by = GAL
+						is_core_of = SLO
+						is_claimed_by = SLO
+						is_core_of = CRO
+						is_claimed_by = CRO
+						is_core_of = BOS
+						is_claimed_by = BOS
+						is_core_of = MNT
+						is_claimed_by = MNT
+					    }
+				    }
+				add_core_of = ROOT
+			    }			
+               
+			    #大顿河军团
+				1231 = { add_core_of = ROOT }
+				1263 = { add_core_of = ROOT }
+				218 = { add_core_of = ROOT }
+				1265 = { add_core_of = ROOT }
+				1264 = { add_core_of = ROOT }
+				1226 = { add_core_of = ROOT }
+				237 = { add_core_of = ROOT }
+				238 = { add_core_of = ROOT }
+				245 = { add_core_of = ROOT }
+				1266 = { add_core_of = ROOT }
+                #库班
+				234 = { add_core_of = ROOT }
+				235 = { add_core_of = ROOT }
+				1227 = { add_core_of = ROOT }
+			    #北高加索   
+				1186 = { add_core_of = ROOT }
+				1187 = { add_core_of = ROOT }
+				1189 = { add_core_of = ROOT }
+				233 = { add_core_of = ROOT }
+				787 = { add_core_of = ROOT }
+				1191 = { add_core_of = ROOT }
+				232 = { add_core_of = ROOT }
+					
+				#伏伊伏丁那
+				45 = { add_core_of = ROOT }
+				#西巴纳特
+				875 = { add_core_of = ROOT }
+				#卡林西亚（原奥地利领土）	   
+				835 = { add_claim_by = ROOT }
+				#波兹南
+				86 = { add_core_of = ROOT }
+				#西里西亚
+				66 = { add_core_of = ROOT }
+				67 = { add_core_of = ROOT }
+				#波美拉尼亚
+				63 = { add_core_of = ROOT }
+				62 = { add_claim_by = ROOT }
+				#但泽
+				776 = { add_core_of = ROOT }
+				#马祖里亚
+				777 = { add_core_of = ROOT }
+				#诺伊马尔克
+				68 = { add_core_of = ROOT }
+				#梅克伦堡
+				61 = { add_claim_by = ROOT }
+				#柏林
+				64 = { add_claim_by = ROOT }
+				#萨克森
+				65 = { add_claim_by = ROOT }
+				#萨哈林岛
+				537 = { add_core_of = ROOT }
+				#千岛群岛
+				555 = { add_core_of = ROOT }
+				1119 = { add_core_of = ROOT }
+				73 = { add_core_of = ROOT }
+	}
+	option = {
+		name = gre.504.b
+		add_stability = 0.1
+		
+		
+	}
+}
+country_event = {
+	id = gre.505 #
+	title = gre.505.t
+	desc = gre.505.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gre.505.a
+		set_country_leader_ideology = autdem_legionarism_subtype
+		
+	}
+	option = {
+		name = gre.505.b
+		set_country_leader_ideology = authdem_paternal_socialism_subtype
+		
+		
+	}
+	option = {
+		name = gre.505.c
+		set_country_leader_ideology = social_nationalism_subtype
+		
+		
+	}
+	option = {
+		name = gre.505.e
+		set_country_leader_ideology = generic_national_democracy_subtype 
+		
+		
+	}
+	option = {
+		name = gre.505.f
+
+		
+		
+	}
+}
+country_event = {
+	id = gre.506 #
+	title = gre.506.t
+	desc = gre.506.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gre.506.a
+		create_country_leader = {
+				name = "索蒂利奥斯·戈扎马尼斯"
+				picture = "gfx/leaders/GRE/Portrait_GRE_Sotirios_Gotzamanis.png"
+				expire = "1.1.1"
+				ideology = authdem_national_conservative_subtype
+		}
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = authoritarian_democrat
+			long_name = "国家改革党"
+			name = "国家改革党"
+		}
+	}
+	
+}

@@ -1026,7 +1026,7 @@ ideologies = {
 			autdem_numitheism_subtype = { can_be_randomly_selected = no }  #努米底亚多神教（阿尔及利亚拓展）
 			autdem_hayekism_subtype = { can_be_randomly_selected = no }  #哈耶克新自由主义（制作组彩蛋）
 			autdem_lusotropicalism_subtype = {can_be_randomly_selected = no} #葡萄牙热带主义 （刚果拓展）
-
+			autdem_legionarism_subtype = {can_be_randomly_selected = no} #军团主义
 
 		}
 		dynamic_faction_names = {

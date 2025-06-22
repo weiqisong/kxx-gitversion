@@ -5565,10 +5565,10 @@ country_event = {
 		tag = FRA
 		has_global_flag = FRA_CNT_UNION
 		CNT = {	
-			OR = {
-				has_completed_focus = NCNT_1
-				has_completed_focus = NCNT_17
-			}	
+			
+			has_completed_focus = SWF_party_congress
+		
+				
 			controls_state = 41
 		}
 	}

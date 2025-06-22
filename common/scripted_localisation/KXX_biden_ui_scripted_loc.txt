@@ -144,6 +144,15 @@ defined_text = {
     	}
  		localization_key = FR_OR_LEADER3
  	}
+
+	#瑞典
+	text = {
+		trigger = {
+			tag = SWE
+		}
+		localization_key = PM_OR_LEADER
+	}
+
 	#日本重置
 	text = {
     	trigger = {
@@ -320,6 +329,13 @@ defined_text = {
 	}
 
 	#民族与革命
+	text = {
+		trigger = {
+		  tag = ISR
+		  has_idea = ISR_Morris_Abraham_Cohen_hog_rso
+		}
+		localization_key = ISR_OR_CHI
+	}
 	text = {
 		trigger = {
 		  tag = PAL
@@ -609,6 +625,15 @@ defined_text = {
     	}
     	localization_key = FR_OR_LEADER4
   	}
+
+	#瑞典
+	text = {
+		trigger = {
+			tag = SWE
+		}
+		localization_key = PM_OR_LEADER2
+	}
+
 	#日本重置
 	text = {
     	trigger = {
@@ -780,6 +805,13 @@ defined_text = {
 		localization_key = FRG_OR_LEADER_2
 	}
 	#民族与革命
+	text = {
+		trigger = {
+		  tag = ISR
+		  has_idea = ISR_Morris_Abraham_Cohen_hog_rso
+		}
+		localization_key = ISR_OR_CHI2
+	}
 	text = {
 		trigger = {
 		  tag = PAL
@@ -1157,6 +1189,112 @@ defined_text = {
  		}
     	localization_key =  FRA_Maurice_Thorez_sec_tot
   	}
+
+	#瑞典
+	text = {
+		trigger = {
+			has_idea = SWE_Per_Albin_Hansson_hog_sde
+		}
+		localization_key = SWE_Per_Albin_Hansson_hog_sde
+	}
+	
+	text = {
+		trigger = {
+			has_idea = SWE_Tage_Erlander_hog_sde
+		}
+		localization_key = SWE_Tage_Erlander_hog_sde
+	}
+	
+	text = {
+		trigger = {
+			has_idea = SWE_Axel_Pehrsson_Bramstorp_hog_sli
+		}
+		localization_key = SWE_Axel_Pehrsson_Bramstorp_hog_sli
+	}
+	
+	text = {
+		trigger = {
+			has_idea = SWE_Bertil_Ohlin_hog_mli
+		}
+		localization_key = SWE_Bertil_Ohlin_hog_mli
+	}
+	
+	text = {
+		trigger = {
+			has_idea = SWE_Goesta_Bagge_hog_sco
+		}
+		localization_key = SWE_Goesta_Bagge_hog_sco
+	}
+	
+	text = {
+		trigger = {
+			has_idea = SWE_Fritiof_Domoe_hog_sco
+		}
+		localization_key = SWE_Fritiof_Domoe_hog_sco
+	}
+
+	text = {
+		trigger = {
+			has_idea = SWE_Helge_Jung_hog_pau
+		}
+		localization_key = SWE_Helge_Jung_hog_pau
+	}
+
+	text = {
+		trigger = {
+			has_idea = SWE_Archibald_Douglas_hog_npo
+		}
+		localization_key = SWE_Archibald_Douglas_hog_npo
+	}	
+	
+	text = {
+		trigger = {
+			has_idea = SWE_Carl_August_Ehrensvaerd_hog_ade
+			
+		}
+		localization_key = SWE_Carl_August_Ehrensvaerd_hog_ade
+	}
+	
+	text = {
+		trigger = {
+			has_idea = SWE_Martin_Ekstroem_hog_npo
+			
+		}
+		localization_key = SWE_Martin_Ekstroem_hog_npo
+	}	
+
+	text = {
+		trigger = {
+			has_idea = SWE_Elmo_Lindholm_hog_npo
+			
+		}
+		localization_key = SWE_Elmo_Lindholm_hog_npo
+	}	
+
+	text = {
+		trigger = {
+			has_idea = SWE_Axel_Gyllenkrok_hog_npo
+			
+		}
+		localization_key = SWE_Axel_Gyllenkrok_hog_npo
+	}
+
+	text = {
+		trigger = {
+			has_idea = SWE_Gustaf_Andersson_hog_mli
+			
+		}
+		localization_key = SWE_Gustaf_Andersson_hog_mli
+	}
+
+	text = {
+		trigger = {
+			has_idea = SWE_Karl_Kilbom_hog_rso
+			
+		}
+		localization_key = SWE_Karl_Kilbom_hog_rso
+	}	
+
 	#日本重置
 	text = {
     	trigger = {
@@ -1431,6 +1569,12 @@ defined_text = {
 	}
 
 	#民族与革命
+	text = {
+		trigger = {
+		  has_idea = ISR_Morris_Abraham_Cohen_hog_rso
+		}
+		localization_key = ISR_Morris_Abraham_Cohen_hog_rso
+	}
 	text = {
 		trigger = {
 		  has_idea = PAL_Husayn_al_Khalidi_hog_sde
@@ -1743,6 +1887,113 @@ defined_text = {
     	}
     	localization_key = GFX_Portrait_France_Maurice_Thorez
   	}
+
+	#瑞典
+	text = {
+		trigger = {
+			has_idea = SWE_Per_Albin_Hansson_hog_sde
+		}
+		localization_key = GFX_Portrait_Sweden_Per_Albin_Hansson_orig
+	}
+	
+	text = {
+		trigger = {
+			has_idea = SWE_Tage_Erlander_hog_sde
+		}
+		localization_key = GFX_Portrait_Sweden_Tage_Erlander
+	}
+	
+	text = {
+		trigger = {
+			has_idea = SWE_Axel_Pehrsson_Bramstorp_hog_sli
+		}
+		localization_key = GFX_Portrait_Sweden_Axel_Pehrsson_Bramstorp
+	}
+	
+	text = {
+		trigger = {
+			has_idea = SWE_Bertil_Ohlin_hog_mli
+		}
+		localization_key = GFX_Portrait_Sweden_Bertil_Ohlin
+	}
+	
+	text = {
+		trigger = {
+			has_idea = SWE_Goesta_Bagge_hog_sco
+		}
+		localization_key = GFX_Portrait_Sweden_Goesta_Bagge
+	}
+	
+	text = {
+		trigger = {
+			has_idea = SWE_Fritiof_Domoe_hog_sco
+		}
+		localization_key = GFX_Portrait_Sweden_Fritiof_Domoe
+	}
+	
+	text = {
+		trigger = {
+			has_idea = SWE_Helge_Jung_hog_pau
+		}
+		localization_key = GFX_Portrait_Sweden_Helge_jung
+	}
+
+	text = {
+		trigger = {
+			has_idea = SWE_Archibald_Douglas_hog_npo
+		}
+		localization_key = GFX_Portrait_Sweden_Archibald_Douglas
+	}	
+	
+	text = {
+		trigger = {
+			has_idea = SWE_Carl_August_Ehrensvaerd_hog_ade
+			
+		}
+		localization_key = GFX_Portrait_Sweden_Carl_August_Ehrensvaerd
+	}
+	
+	text = {
+		trigger = {
+			has_idea = SWE_Martin_Ekstroem_hog_npo
+			
+		}
+		localization_key = GFX_Portrait_Sweden_Martin_Ekstroem
+	}	
+
+	text = {
+		trigger = {
+			has_idea = SWE_Elmo_Lindholm_hog_npo
+			
+		}
+		localization_key = GFX_Portrait_Sweden_Elmo_Lindholm
+	}	
+
+	text = {
+		trigger = {
+			has_idea = SWE_Axel_Gyllenkrok_hog_npo
+			
+		}
+		localization_key = GFX_Portrait_Sweden_Axel_Gyllenkrok
+	}	
+
+	text = {
+		trigger = {
+			has_idea = SWE_Gustaf_Andersson_hog_mli
+			
+		}
+		localization_key = GFX_Portrait_Sweden_Gustaf_Andersson
+	}	
+
+	text = {
+		trigger = {
+			has_idea = SWE_Karl_Kilbom_hog_rso
+			
+		}
+		localization_key = GFX_Portrait_Sweden_Karl_Kilbom
+	}
+
+
 	#日本重置
 	text = {
     	trigger = {
@@ -2020,6 +2271,12 @@ defined_text = {
 
 
 	#民族与革命
+	text = {
+		trigger = {
+		  has_idea = ISR_Morris_Abraham_Cohen_hog_rso
+		}
+		localization_key = GFX_Portrait_ISR_Morris_Abraham_Cohen
+	}
 	text = {
 		trigger = {
 		  has_idea = PAL_Huseyin_Rauf_Orbay_hog_sco

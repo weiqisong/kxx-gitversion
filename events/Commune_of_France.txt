@@ -6504,7 +6504,7 @@ country_event = {
 		name = comfrance.904.a 
 		add_stability = -0.2
 		set_country_flag = Georges_Valois_dead
-				
+		mark_focus_tree_layout_dirty = yes		
 		hidden_effect = {		
 			country_event = {
 				id = comfrance.910

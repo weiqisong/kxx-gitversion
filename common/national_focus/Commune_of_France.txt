@@ -8573,7 +8573,7 @@ focus = FRA_office_des_chemins_de_fer
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_arab_committee"
 			every_state = {
 				limit = { 
-					is_coreed_by = FRA
+					is_claimed_by = FRA
 					NOT = {
 						is_core_of = FRA
 					}
