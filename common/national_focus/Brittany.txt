@@ -1,0 +1,905 @@
+focus_tree = {
+	id = BRI_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BRI
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 200 y = 2500 }
+	
+	focus = {
+		id = BRI_ar_chas_donv_yelo_da_ouez
+		icon = GFX_ALA_grey_wolf
+		x = 3
+		y = 0
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_popular_power
+		icon = GFX_goal_FRA_popular_combat_front
+		x = -2
+		y = 1
+		relative_position_id = BRI_ar_chas_donv_yelo_da_ouez
+		cost = 1
+		prerequisite = {
+			focus = BRI_ar_chas_donv_yelo_da_ouez
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_fortify
+		icon = GFX_goal_NVN_Fortify_Fort_Defiance
+		x = 0
+		y = 1
+		relative_position_id = BRI_ar_chas_donv_yelo_da_ouez
+		cost = 1
+		prerequisite = {
+			focus = BRI_ar_chas_donv_yelo_da_ouez
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_seize_industry
+		icon = GFX_BRY_Seize_Production
+		x = 2
+		y = 1
+		relative_position_id = BRI_ar_chas_donv_yelo_da_ouez
+		cost = 1
+		prerequisite = {
+			focus = BRI_ar_chas_donv_yelo_da_ouez
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_partisan_tactics
+		icon = GFX_goal_WCC_guerilla_tactic
+		x = -2
+		y = 2
+		relative_position_id = BRI_ar_chas_donv_yelo_da_ouez
+		cost = 1
+		prerequisite = {
+			focus = BRI_popular_power
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_digging_in
+		icon = GFX_goal_skull_fortification
+		x = 0
+		y = 2
+		relative_position_id = BRI_ar_chas_donv_yelo_da_ouez
+		cost = 1
+		prerequisite = {
+			focus = BRI_fortify
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_guns_more
+		icon = GFX_goal_NFA_subsidize_guns
+		x = 2
+		y = 2
+		relative_position_id = BRI_ar_chas_donv_yelo_da_ouez
+		cost = 1
+		prerequisite = {
+			focus = BRI_seize_industry
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_independent_win
+		icon = GFX_goal_FRG_Brittany
+		x = 0
+		y = 3
+		relative_position_id = BRI_ar_chas_donv_yelo_da_ouez
+		cost = 1
+		prerequisite = {
+			focus = BRI_partisan_tactics
+		}
+		prerequisite = {
+			focus = BRI_digging_in
+		}
+		prerequisite = {
+			focus = BRI_guns_more
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_PNB_holds
+		icon = GFX_goal_BRI_PNB_holds
+		x = 20
+		y = 0
+		
+		cost = 1
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_celtic_nation
+		icon = GFX_IRE_gaelic
+		x = 0
+		y = 2
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_radicalize_national_revolution
+			focus = BRI_rise_of_Ar_Falz	
+			focus = BRI_mordel_again
+			focus = BRI_marruassism_incoming
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_britanny_language
+		icon = GFX_goal_IRE_language
+		x = 0
+		y = 3
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_celtic_nation
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_mordel_again
+		icon = GFX_goal_ideology_paternal_autocrat
+		x = 5
+		y = 1
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_PNB_holds
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_marruassism_incoming
+		icon = GFX_goal_ideology_national_populist
+		x = 7
+		y = 1
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_PNB_holds
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_regionalism_and_autonomism
+		icon = GFX_goal_NFA_power_to_provinces
+		x = 8
+		y = 2
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_marruassism_incoming
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_rebuild_army
+		icon = GFX_goal_LPD_allign_nationalists
+		x = 8
+		y = 3
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_regionalism_and_autonomism
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_party_unity
+		icon = GFX_ALO_Promote_Party_Unity
+		x = 10
+		y = 2
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_marruassism_incoming
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_erdicrate_jew
+		icon = GFX_goal_COR_jewish_segregation
+		x = 10
+		y = 3
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_party_unity
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_organic_state
+		icon = GFX_goal_NFA_organic_state_realised
+		x = 9
+		y = 4
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_erdicrate_jew
+		}
+		prerequisite = {
+			focus = BRI_rebuild_army
+		}
+		prerequisite = {
+			focus = BRI_class_cooperation
+		}
+		prerequisite = {
+			focus = BRI_britanny_language
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_road_of_independent
+		icon = GFX_goal_BRI_road_of_independent
+		x = 0 
+		y = 5
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_popular_state
+			focus = BRI_red_liberty
+			focus = BRI_national_wakening
+			focus = BRI_organic_state
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_friend_of_capital
+		icon = GFX_goal_ALB_Cooperate_Chiefs_Capital
+		x = 2
+		y = 2
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_mordel_again
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_made_in_britanny
+		icon = GFX_goal_CSA_department_of_production
+		x = 2
+		y = 3
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_friend_of_capital
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_moderate_legionarism
+		icon = GFX_goal_NFA_Service_Emperor_Order_Legion
+		x = 4
+		y = 2
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_mordel_again
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_dominate_church
+		icon = GFX_goal_MEX_friendship_with_church
+		x = 4
+		y = 3
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_moderate_legionarism
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_corporatism_policy
+		icon = GFX_goal_generic_corporatism
+		x = 6
+		y = 2
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_mordel_again
+			focus = BRI_marruassism_incoming
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_class_cooperation
+		icon = GFX_goal_CSA_class_fusion
+		x = 6
+		y = 3
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_mordel_again
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_national_wakening
+		icon = GFX_goal_GUA_Onwards_True_National_Liberation
+		x = 3
+		y = 4
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_britanny_language
+		}
+		prerequisite = {
+			focus = BRI_made_in_britanny
+		}
+		prerequisite = {
+			focus = BRI_dominate_church
+		}
+		prerequisite = {
+			focus = BRI_class_cooperation
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_radicalize_national_revolution
+		icon = GFX_goal_ideology_totalist
+		x = -7
+		y = 1
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_PNB_holds
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_intergrate_perrots
+		icon = GFX_goal_integrate_the_militia
+		x = -10
+		y = 2
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_radicalize_national_revolution
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_intergral_revolutionary_nationalism
+		icon = GFX_TRK_Revolution
+		x = -10
+		y = 3
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_intergrate_perrots
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_social_national_worker_movement
+		icon = GFX_goal_BRG_Patriotic_Worker
+		x = -8
+		y = 2
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_radicalize_national_revolution
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_britanny_peasant_britanny_bread
+		icon = GFX_UKR_Free_Bread
+		x = -8
+		y = 3
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_social_national_worker_movement
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_popular_state
+		icon = GFX_HUN_state_protection_authority
+		x = -9
+		y = 4
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_britanny_peasant_britanny_bread
+		}
+		prerequisite = {
+			focus = BRI_intergral_revolutionary_nationalism
+		}
+		prerequisite = {
+			focus = BRI_nationalize_industry
+		}
+		prerequisite = {
+			focus = BRI_britanny_language
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_rise_of_Ar_Falz
+		icon = GFX_goal_ideology_radical_socialist
+		x = -5
+		y = 1
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_PNB_holds
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_socialist_policy
+		icon = GFX_socialist_constitution
+		x = -6
+		y = 2
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_radicalize_national_revolution
+			focus = BRI_rise_of_Ar_Falz
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_nationalize_industry
+		icon = GFX_RUS_Nationalize_Vital_Sectors
+		x = -6
+		y = 3
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_socialist_policy
+			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_cooperate_with_cachin
+		icon = GFX_goal_LPD_allign_radicals
+		x = -4
+		y = 2
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_rise_of_Ar_Falz
+			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_down_with_ultranat
+		icon = GFX_HOL_crackdown_natpop
+		x = -4
+		y = 3
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_cooperate_with_cachin
+			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_intergrate_syndicalists
+		icon = GFX_focus_HOL_deal_with_left
+		x = -2
+		y = 2
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_rise_of_Ar_Falz
+			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_farmers_syndicate
+		icon = GFX_goal_TEX_farmer_labor_organization
+		x = -2
+		y = 3
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_intergrate_syndicalists
+			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = BRI_red_liberty
+		icon = GFX_goal_NYC_Democratic_Socialism
+		x = -3
+		y = 4
+		relative_position_id = BRI_PNB_holds
+		cost = 1
+		prerequisite = {
+			focus = BRI_farmers_syndicate		
+		}
+		prerequisite = {
+			focus = BRI_down_with_ultranat	
+		}
+		prerequisite = {
+			focus = BRI_nationalize_industry
+		}
+		prerequisite = {
+			focus = BRI_britanny_language
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+}

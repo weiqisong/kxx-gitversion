@@ -1,0 +1,200 @@
+﻿capital = 14
+
+oob = "empty"
+
+set_research_slots = 3
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		basic_heavy_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+		engine_tech_1 = 1
+	}
+}
+### Starting Technologies ###
+set_technology = {
+	### General ###
+	electronic_mechanical_engineering = 1
+	### Infantry ###
+	infantry_weapons = 1
+	basic_train = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "BRI_air_bba"
+		set_technology = {
+			aa_lmg = 1
+			early_bombs = 1
+			engines_1 = 1
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+		}
+	else = {
+		set_air_oob = "BRI_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			naval_bomber1 = 1
+			early_bomber = 1
+			cv_early_fighter = 1
+			cv_naval_bomber1 = 1
+		}
+	}
+}
+
+### Navy - MtG ###
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		
+		basic_naval_mines = 1
+
+		## Modules##
+		basic_battery = 1
+		basic_light_battery = 1
+		smoke_generator = 1
+	}
+}
+
+### Navy - Non MtG ###
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+	}
+}
+
+
+set_convoys = 40
+set_stability = 0.5
+set_war_support = 0.4
+
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1932.5.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	totalist = 2
+	radical_socialist = 3
+	syndicalist = 5
+	social_democrat = 5
+	social_liberal = 5
+	market_liberal = 10
+	social_conservative = 10
+	authoritarian_democrat = 20
+	paternal_autocrat = 30
+	national_populist = 10
+}
+add_ideas = {
+	
+	limited_conscription
+	BRI_memories_of_1932
+	BRI_lag_millitary
+	BRI_inner_factionalism
+}
+create_country_leader = {
+	name = "让-伊夫·克劳德伦"
+	picture = "gfx/leaders/BRI/Portrait_Britanny_Theophile_Jeusset.png"
+	expire = "1.1.1"
+	ideology = tot_francism_subtype
+}
+
+create_country_leader = {
+	name = "埃米尔·马松"
+	picture = "gfx/leaders/BRI/Portrait_Britanny_Emil_Masson.png"
+	expire = "1.1.1"
+	ideology = anarcho_syndicalist_subtype 
+}
+
+create_country_leader = {
+	name = "扬·索西耶"
+	picture = "gfx/leaders/BRI/Portrait_Britanny_Yann_Sohier.png"
+	expire = "1.1.1"
+	ideology = left_nationalism_subtype
+}
+create_country_leader = {
+	name = "路易-拿破仑·勒鲁"
+	picture = "gfx/leaders/BRI/Portrait_Britanny_Loeiz_Napoleon_Rouz.png"
+	expire = "1.1.1"
+	ideology = socdem_left_nationalism_subtype
+}
+create_country_leader = {
+	name = "让·布歇"
+	picture = "gfx/leaders/BRI/Portrait_Britanny_Jean_Boucher.png"
+	expire = "1.1.1"
+	ideology = radical_liberalism_subtype 
+}
+create_country_leader = {
+	name = "企业理事会"
+	picture = "gfx/leaders/NYC/Portrait_NYC_Commission.png"
+	expire = "1.1.1"
+	ideology = free_market_capitalist_subtype
+}
+
+create_country_leader = {
+	name = "阿道夫·勒·戈阿奇乌"
+	picture = "gfx/leaders/BRI/Portrait_Britanny_Adolphe_Le_Goaziou.png"
+	expire = "1.1.1"
+	ideology = christian_democracy_subtype 
+}
+
+create_country_leader = {
+	name = "让-玛丽·佩洛特"
+	picture = "gfx/leaders/BRI/Portrait_Britanny_Jean_Marie_Perrot.png"
+	expire = "1.1.1"
+	ideology = autdem_christian_democracy_subtype
+}
+
+create_country_leader = {
+	name = "奥利弗·莫德雷尔"
+	picture = "gfx/leaders/BRI/Portrait_Britanny_Olier_Mordrel.png"
+	expire = "1.1.1"
+	ideology = pataut_legionarism_subtype 
+}
+
+create_country_leader = {
+	name = "弗朗索瓦·德博威"
+	picture = "gfx/leaders/BRI/Portrait_Britanny_Francois_Debeauvais.png"
+	expire = "1.1.1"
+	ideology = maurrassism_subtype
+}

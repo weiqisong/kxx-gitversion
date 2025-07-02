@@ -1237,7 +1237,7 @@ country_event = {
 			name = "吉姆·布拉迪"
 			picture = "gfx/leaders/SCC/Portrait_Canada_Jim_Brady.png"
 			expire = "1.1.1"
-			ideology = radsoc_communism_subtype
+			ideology = radsoc_indigenous_communitarianism_subtype
 		}
 		set_party_name = {
 			name = SCC_radsoc_communist_party
@@ -1586,7 +1586,7 @@ country_event = {
 			name = "阿蒂利奥·博尔托洛蒂"
 			picture = "gfx/leaders/SCC/Portrait_Canada_Attilio_Bortolotti.png"
 			expire = "1.1.1"
-			ideology = anarcho_syndicalist_subtype
+			ideology = anarchism_subtype
 		}
 		set_party_name = {
 			name = "加拿大无政府主义联盟"
@@ -1613,7 +1613,7 @@ country_event = {
 			name = "汤米·道格拉斯"
 			picture = "gfx/leaders/CAN/Portrait_Canada_Tommy_Douglas.png"
 			expire = "1.1.1"
-			ideology = radical_progressivism_subtype
+			ideology = socdem_radical_progressivism_subtype
 		}
 		set_party_name = {
 			name = "新民主党"

@@ -16903,7 +16903,9 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			
+			NOT = {
+				has_country_flag = CHI_red_legations
+			}
 			is_subject = no
 			NOT = {
 				country_exists = QIE
@@ -21993,6 +21995,667 @@ focus = {
   completion_reward = {
     log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
     add_stability = 0.10
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_internationale_in_control
+  icon = GFX_RUS_Internationalists
+  cost = 5.00
+  
+  available = {
+    always = no
+  }
+  allow_branch = {
+	has_country_flag = CHI_red_legations
+  }
+  x = -12
+  y = 5
+  
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    add_stability = 0.10
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_end_the_chaos
+  icon = GFX_goal_BAN_order_streets
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_internationale_in_control
+  }
+  
+  x = -4
+  y = 1
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    add_stability = 0.10
+	add_political_power = 100
+	add_popularity = {
+		ideology = radical_socialist
+		popularity = -0.1
+	}
+	add_popularity = {
+		ideology = social_democrat
+		popularity = -0.1
+	}
+	add_popularity = {
+		ideology = totalist
+		popularity = -0.1
+	}
+	add_popularity = {
+		ideology = social_liberal
+		popularity = -0.1
+	}
+	add_popularity = {
+		ideology = syndicalist
+		popularity = 0.1
+	}
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_disband_nra
+  icon = GFX_focus_HKG_Curtail_Military
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_end_the_chaos
+  }
+  
+  x = -5
+  y = 2
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    add_command_power = 50
+	army_experience = 50
+	add_war_support = 0.1
+	add_timed_idea = {
+		idea = CHI_nra_demobilized
+		days = 365
+	}
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_ban_totalists
+  icon = GFX_YUN_Goal_Deal_with_the_Left_KMT
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_end_the_chaos
+  }
+  
+  x = -3
+  y = 2
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    add_stability = 0.10
+	add_popularity = {
+		ideology = syndicalist
+		popularity = 0.1
+	}
+	add_popularity = {
+		ideology = totalist
+		popularity = -0.2
+	}
+	add_political_power = 100
+	
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_french_army
+  icon = GFX_goal_FRA_law_of_combatants
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_disband_nra
+  }
+ 
+  x = -5
+  y = 3
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    add_ideas = CHI_FRA_army
+	add_ideas = CHI_MMIC_2_idea
+	add_ideas = CHI_MMIC_theorist_idea
+	remove_ideas = CHI_nra_demobilized
+
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_french_bureaucrat
+  icon = GFX_goal_FRA_popular_committees
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_ban_totalists
+  }
+ 
+  x = -3
+  y = 3
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+  	 remove_ideas = CHI_unpopular_rule
+   	add_ideas = CHI_FRA_bureaucracy
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_pacify_warlordism
+  icon = GFX_goal_FNG_End_Republican_Warlords
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_french_army
+  }
+  prerequisite = {
+	focus = CHI_french_bureaucrat
+  }
+  available = {
+	has_completed_focus = CHI_estabulish_clentel_web
+  }
+  x = -4
+  y = 4
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    add_ideas = CHI_FRA_red_legations
+	
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_land_of_adventure
+  icon = GFX_goal_KSV_soldiers_republic
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_internationale_in_control
+  }
+  available = {
+	has_completed_focus = CHI_ban_totalists
+  }
+ 
+  x = 0
+  y = 1
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    add_war_support = 0.1
+	add_equipment_to_stockpile = {
+		type = fighter_equipment_0
+		amount = 200
+		producer = FRA
+	}
+	add_manpower = 10000
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+
+focus = {
+  id = CHI_puppet_csp
+  icon = GFX_ALA_useful_idiots
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_land_of_adventure
+  }
+  
+ 
+  x = -1
+  y = 2
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    add_ideas = CHI_FRA_loyal_syndies
+	add_ideas = CHI_Chen_Duxiu_hog_syn
+	add_popularity = {
+		ideology = syndicalist
+		popularity = 0.1
+	}
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_world_society_contacts
+  icon = GFX_goal_anarcho_communism
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_puppet_csp
+  }
+  
+  
+  x = -1
+  y = 3
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    add_radsoc_to_coalition = yes
+	set_party_name = {
+		ideology = radical_socialist
+		name = "第三国际军事代表团"
+		long_name = "第三国际军事代表团"
+	}
+	add_popularity = {
+		ideology = radical_socialist
+		popularity = 0.1
+	}
+	add_popularity = {
+		ideology = social_conservative
+		popularity = -0.1
+	}
+	add_research_slot = 1
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_oriental_culture_studies
+  icon = GFX_goal_AOG_Panoply_Orient
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_land_of_adventure
+  }
+  
+  
+  x = 1
+  y = 2
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    remove_country_leader_trait = CHI_alien_puppet
+	add_country_leader_trait = CHI_orientist
+	add_ideas = CHI_FRA_smuggle
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 2000
+		producer = FRA
+	}
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_anti_imperialism_appeals
+  icon = GFX_goal_USA_anti_imperialist_league
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_oriental_culture_studies
+  }
+  x = 1
+  y = 3
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    add_war_support = 0.2
+	add_popularity = {
+		ideology = totalist
+		popularity = 0.1
+	}
+	add_tot_to_coalition = yes
+	set_party_name = {
+		ideology = totalist
+		name = "第三国际军事代表团"
+		long_name = "第三国际军事代表团"
+	}
+	add_popularity = {
+		ideology = national_populist
+		popularity = -0.1
+	}
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_estabulish_clentel_web
+  icon = GFX_focus_HKG_Crooks
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_world_society_contacts
+  }
+  prerequisite = {
+	focus = CHI_anti_imperialism_appeals
+  }
+ 
+  x = 0
+  y = 4
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    swap_ideas = {
+		remove_idea = CHI_FRA_smuggle
+		add_idea = CHI_FRA_smuggle2
+	}
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_syndicalist_economics
+  icon = GFX_RUS_Syndical_Cooperative_Federation
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_internationale_in_control
+  }
+  
+ 
+  x = 4
+  y = 1
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    add_ideas = CHI_FRA_syndie_eco
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_expand_union
+  icon = GFX_focus_HKG_ACFTU
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_syndicalist_economics
+  }
+  
+  
+  x = 3
+  y = 2
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+     swap_ideas = {
+		remove_idea = CHI_FRA_syndie_eco
+		add_idea = CHI_FRA_syndie_eco2
+	}
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_and_greases
+  icon = GFX_goal_CAL_Corrupt_Capital
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_expand_union
+  }
+  
+  
+  x = 3
+  y = 3
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    add_stability = -0.10
+	add_one_random_civilian_factory = yes
+	add_one_random_civilian_factory = yes
+	add_one_random_civilian_factory = yes
+	add_one_random_civilian_factory = yes
+	add_one_random_civilian_factory = yes
+	add_one_random_civilian_factory = yes
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_international_investment
+  icon = GFX_goal_AST_an_open_door_to_investment
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_syndicalist_economics
+  }
+  
+  
+  x = 5
+  y = 2
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    add_ideas = CHI_FRA_global_investment
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_industurialize_campaign
+  icon = GFX_RUS_Begin_Industrialization
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_international_investment
+  }
+  
+ 
+  x = 5
+  y = 3
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    add_one_random_military_factory = yes
+	add_one_random_military_factory = yes
+	add_one_random_military_factory = yes
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_total_economic_revival
+  icon = GFX_goal_CSA_economy_of_scale
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_and_greases
+  }
+  prerequisite = {
+	focus = CHI_industurialize_campaign
+  }
+ 
+  x = 4
+  y = 4
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+	add_one_random_military_factory = yes
+	add_one_random_military_factory = yes
+   swap_ideas = {
+		remove_idea = CHI_FRA_syndie_eco2
+		add_idea = CHI_FRA_syndie_eco3
+	}
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_outpost_of_asian_revolution
+  icon = GFX_goal_VIN_pan_asian_appeals
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_pacify_warlordism
+  }
+  prerequisite = {
+	focus = CHI_estabulish_clentel_web
+  }
+  prerequisite = {
+	focus = CHI_total_economic_revival
+  }
+  
+  x = 0
+  y = 5
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    add_political_power = 100
+	add_war_support = 0.1
+	add_stability = 0.1
+	hidden_effect = {
+		country_event = CHI.lategame.10000
+	}
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_place_in_world_revolution
+  icon = GFX_goal_NYC_Ally_Syndies
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_outpost_of_asian_revolution
+  }
+  mutually_exclusive = {
+	focus = CHI_declare_commune_in_exile
+  }
+   available = {
+	
+		country_exists = FRA
+	
+  }
+  x = -1
+  y = 6
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    complete_national_focus = CHI_world_revolution
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_declare_commune_in_exile
+  icon = GFX_goal_CEA_exploit_france
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_outpost_of_asian_revolution
+  }
+  mutually_exclusive = {
+	focus = CHI_place_in_world_revolution
+  }
+  available = {
+	NOT = {
+		country_exists = FRA
+	}
+  }
+  x = 1
+  y = 6
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    add_war_support = 0.1
+	set_cosmetic_tag = CHI_FRA_free_france
+	FRA = {
+		every_unit_leader = {	
+			set_nationality = CHI
+		}	
+	}
+	every_state = {
+		limit = {
+			is_core_of = FRA
+		}
+		CHI = {
+			add_state_core = PREV
+		}
+		
+	}
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_urgent_navy_construction
+  icon = GFX_goal_USA_navy_top
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_declare_commune_in_exile
+  }
+ 
+  x = 0
+  y = 7
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    add_timed_idea = {
+		idea = CHI_urgent_navy_construction
+		days = 365
+	}
+	navy_experience = 50
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_contact_resistence
+  icon = GFX_goal_GUA_Resistance
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_declare_commune_in_exile
+  }
+ 
+  x = 2
+  y = 7
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    add_ideas = CHI_contact_resistence
+  }
+  search_filters = {
+    FOCUS_FILTER_POLITICAL
+  }
+}
+focus = {
+  id = CHI_liberate_france
+  icon = GFX_goal_GUA_Liberation
+  cost = 5.00
+  prerequisite = {
+	focus = CHI_urgent_navy_construction
+  }
+	prerequisite = {
+	focus = CHI_contact_resistence
+  }
+  x = 1
+  y = 8
+  relative_position_id = CHI_internationale_in_control
+  completion_reward = {
+    log = "[GetDateText]: [Root.GetName]: Focus QIE_pick_YCP"
+    create_wargoal = { target = NFA type = annex_everything }
+	create_wargoal = { target = GER type = annex_everything }
+	create_wargoal = { target = FRP type = annex_everything }
+	create_wargoal = { target = FRG type = annex_everything }
+	create_wargoal = { target = BRI type = annex_everything }
+	create_wargoal = { target = NRM type = annex_everything }
+	create_wargoal = { target = OCC type = annex_everything }
+	create_wargoal = { target = JDF type = annex_everything }
   }
   search_filters = {
     FOCUS_FILTER_POLITICAL

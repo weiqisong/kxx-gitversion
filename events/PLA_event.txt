@@ -19,10 +19,13 @@ country_event = { # PLA.1
 		name = "赵恒惕政府镇压了这场叛乱"
 		}
 		ai_chance = { 
-			base = 20 
+			base = 100
 		}
 	option = {	
 		name = "起义军将赵恒惕政府赶出了长沙"
+		ai_chance = { 
+			base = 0
+		}
 		PLA = {
 			country_event = { id = PLA.20 days = 3 }
 			transfer_state = 602 #Xiangjiang

@@ -11,5 +11,5 @@ dependencies={
 	"KX汉化补充"
 }
 picture="thumbnail.png"
-supported_version="1.16"
+supported_version="1.16.9"
 remote_file_id="3244364529"

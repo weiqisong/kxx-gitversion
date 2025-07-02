@@ -250,10 +250,74 @@ spriteTypes = {
 		name = "GFX_goal_FRG_A_Call_from_Deep_Space_2"
 		texturefile = "gfx/interface/goals/KXX_FRG/FRG_A_Call_from_Deep_Space_2.png"
 	}
-
-
-
-
+	spriteType = {
+		name = "GFX_goal_BRI_road_of_independent"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_road_of_independent.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_PNB_holds"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_PNB_holds.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_PNB_holds_shine"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_PNB_holds.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KXX_FRG/BRI_PNB_holds.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KXX_FRG/BRI_PNB_holds.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_road_of_independent_shine"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_road_of_independent.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KXX_FRG/BRI_road_of_independent.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KXX_FRG/BRI_road_of_independent.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
 	spriteType = {
 		name = "GFX_goal_FRG_Perfect_Utopia_shine"
 		texturefile = "gfx/interface/goals/KXX_FRG/FRG_Perfect_Utopia.png"

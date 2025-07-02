@@ -3888,15 +3888,6 @@ defined_text = {
 		}
 		localization_key = pan_asianism_subtype
 	}
-	
-	
-	text = {
-		trigger = {
-			has_country_leader_ideology = lu_xun_thought_subtype
-		}
-		localization_key = lu_xun_thought_subtype
-	}
-	
 	text = {
 		trigger = {
 			has_country_leader_ideology = radsoc_communism_subtype
@@ -5882,21 +5873,6 @@ text = {
 		}
 		localization_key = reform_bureaucracy_subtype
 	}
-
-	text = {
-		trigger = {
-			has_country_leader_ideology = natpop_new_legalism_subtype
-		}
-		localization_key = natpop_new_legalism_subtype
-	}
-
-	text = {
-		trigger = {
-			has_country_leader_ideology = pataut_new_legalism_subtype
-		}
-		localization_key = pataut_new_legalism_subtype
-	}
-
 	text = {
 		trigger = {
 			has_country_leader_ideology = authdem_new_legalism_subtype
@@ -5944,12 +5920,6 @@ text = {
 			has_country_leader_ideology = soccon_euro_panafricanism_subtype
 		}
 		localization_key = soccon_euro_panafricanism_subtype
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = buddhist_autocrat_subtype
-		}
-		localization_key = buddhist_autocrat_subtype
 	}
 	text = {
 		trigger = {
@@ -6139,12 +6109,6 @@ text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = sorelian_marketism_subtype
-		}
-		localization_key = sorelian_marketism_subtype
-	}
-	text = {
-		trigger = {
 			has_country_leader_ideology = islamic_three_subtype
 		}
 		localization_key = islamic_three_subtype
@@ -6163,18 +6127,6 @@ text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = jun_zheng_ji_quan_subtype
-		}
-		localization_key = jun_zheng_ji_quan_subtype
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = mao_ze_dong_thought_subtype
-		}
-		localization_key = mao_ze_dong_thought_subtype
-	}
-	text = {
-		trigger = {
 			has_country_leader_ideology = spanish_syndicalism
 		}
 		localization_key = spanish_syndicalism
@@ -6185,60 +6137,6 @@ text = {
 		}
 		localization_key = falangism
 	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = radsoc_datong_shu_thought_subtype
-		}
-		localization_key = radsoc_datong_shu_thought_subtype
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = socdem_datong_shu_thought_subtype
-		}
-		localization_key = socdem_datong_shu_thought_subtype
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = socdem_lianshengism_subtype
-		}
-		localization_key = socdem_lianshengism_subtype
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = soclib_lianshengism_subtype
-		}
-		localization_key = soclib_lianshengism_subtype
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = marlib_lianshengism_subtype
-		}
-		localization_key = marlib_lianshengism_subtype
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = soccon_lianshengism_subtype
-		}
-		localization_key = soccon_lianshengism_subtype
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = authdem_lianshengism_subtype
-		}
-		localization_key = authdem_lianshengism_subtype
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = pataut_yan_xishan_thought_subtype
-		}
-		localization_key = pataut_yan_xishan_thought_subtype
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = CN_integralism_group_subtype
-		}
-		localization_key = CN_integralism_group_subtype
-	}	
 	text = {
 		trigger = {
 			has_country_leader_ideology = ukrainian_social_nationalism_tot
@@ -7247,10 +7145,892 @@ text = {
 		}
 		localization_key = transhumanism_subtype
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = Ahnenerbe_ariosophy_subtype
+		}
+		localization_key = Ahnenerbe_ariosophy_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = Vril_ariosophy_subtype
+		}
+		localization_key = Vril_ariosophy_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = Thule_Society_ariosophy_subtype
+		}
+		localization_key = Thule_Society_ariosophy_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = autdem_right_technocracy_subtype
+		}
+		localization_key = autdem_right_technocracy_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = natpop_zionism
+		}
+		localization_key = natpop_zionism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = envers_cult_of_personality
+		}
+		localization_key = envers_cult_of_personality
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = red_turanianism
+		}
+		localization_key = red_turanianism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = technocratic_pan_turkism
+		}
+		localization_key = technocratic_pan_turkism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = pan_turkism
+		}
+		localization_key = pan_turkism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = pataut_zionism
+		}
+		localization_key = pataut_zionism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = autdem_zionism
+		}
+		localization_key = autdem_zionism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soccon_zionism
+		}
+		localization_key = soccon_zionism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = marlib_zionism
+		}
+		localization_key = marlib_zionism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_zionism
+		}
+		localization_key = socdem_zionism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_zionism
+		}
+		localization_key = radsoc_zionism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = tot_zionism
+		}
+		localization_key = tot_zionism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = pataut_agrarianism_subtype
+		}
+		localization_key = pataut_agrarianism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soclib_liberal_feminism_subtype
+		}
+		localization_key = soclib_liberal_feminism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = liberal_feminism_subtype
+		}
+		localization_key = liberal_feminism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_jeffersonianism_subtype
+		}
+		localization_key = radsoc_jeffersonianism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_kritarchy_subtype
+		}
+		localization_key = radsoc_kritarchy_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = syn_utopian_technocracy_subtype
+		}
+		localization_key = syn_utopian_technocracy_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_normal_dixiecrat_subtype
+		}
+		localization_key = socdem_normal_dixiecrat_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soclib_liberal_conservative_subtype
+		}
+		localization_key = soclib_liberal_conservative_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soclib_normal_dixiecrat_subtype
+		}
+		localization_key = soclib_normal_dixiecrat_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soccon_popular_patriotism_subtype
+		}
+		localization_key = soccon_popular_patriotism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = syn_broad_communism_subtype
+		}
+		localization_key = syn_broad_communism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = syn_popcom_subtype
+		}
+		localization_key = syn_popcom_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socialist_federalism_subtype
+		}
+		localization_key = socialist_federalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = sorelian_bolshevism_subtype
+		}
+		localization_key = sorelian_bolshevism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = ultranational_bolshevism_subtype
+		}
+		localization_key = ultranational_bolshevism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = national_mysticism_subtype
+		}
+		localization_key = national_mysticism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = pataut_national_mysticism_subtype
+		}
+		localization_key = pataut_national_mysticism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = authdem_national_mysticism_subtype
+		}
+		localization_key = authdem_national_mysticism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soccon_national_mysticism_subtype
+		}
+		localization_key = soccon_national_mysticism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = marlib_national_mysticism_subtype
+		}
+		localization_key = marlib_national_mysticism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soclib_national_mysticism_subtype
+		}
+		localization_key = soclib_national_mysticism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_national_mysticism_subtype
+		}
+		localization_key = socdem_national_mysticism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_national_mysticism_subtype
+		}
+		localization_key = radsoc_national_mysticism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = syn_national_mysticism_subtype
+		}
+		localization_key = syn_national_mysticism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = tot_national_mysticism_subtype
+		}
+		localization_key = tot_national_mysticism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_revisionist_sorelianism_subtype
+		}
+		localization_key = socdem_revisionist_sorelianism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_neo_socialism_subtype
+		}
+		localization_key = radsoc_neo_socialism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = right_jacobinism_subtype
+		}
+		localization_key = right_jacobinism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = paternalistic_reactionaryism_subtype
+		}
+		localization_key = paternalistic_reactionaryism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = neo_dirigisme_technocratique_subtype
+		}
+		localization_key = neo_dirigisme_technocratique_subtype
+	}
+
+	text = {
+		trigger = {
+			has_country_leader_ideology = social_gaullism_subtype
+		}
+		localization_key = social_gaullism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = right_neo_socialism_subtype
+		}
+		localization_key = right_neo_socialism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = Francism_subtype
+		}
+		localization_key = Francism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_left_occultism_subtype
+		}
+		localization_key = socdem_left_occultism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = tot_surrealism_subtype
+		}
+		localization_key = tot_surrealism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = Ave_Mujica_subtype
+		}
+		localization_key = Ave_Mujica_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = natpop_Ave_Mujica_subtype
+		}
+		localization_key = natpop_Ave_Mujica_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = Mygo_subtype
+		}
+		localization_key = Mygo_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = social_Mygo_subtype
+		}
+		localization_key = social_Mygo_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = national_bolshevik_subtype
+		}
+		localization_key = national_bolshevik_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = polish_national_socialism_subtype
+		}
+		localization_key = polish_national_socialism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_kessoku_banndo_subtype
+		}
+		localization_key = socdem_kessoku_banndo_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_Togenashi_Togeari_subtype
+		}
+		localization_key = radsoc_Togenashi_Togeari_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = Final_Theory_subtype
+		}
+		localization_key = Final_Theory_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socialism_with_chinese_characteristics
+		}
+		localization_key = socialism_with_chinese_characteristics
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = tot_socialism_with_chinese_characteristics
+		}
+		localization_key = tot_socialism_with_chinese_characteristics
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = natpop_anti_japaneseism_subtype
+		}
+		localization_key = natpop_anti_japaneseism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = authdem_datong_shu_thought_subtype
+		}
+		localization_key = authdem_datong_shu_thought_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = envers_cult_of_personality
+		}
+		localization_key = envers_cult_of_personality
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = ustase_crusader_ideology_subtype
+		}
+		localization_key = ustase_crusader_ideology_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = croatian_socialism_subtype
+		}
+		localization_key = croatian_socialism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = ustase_legionarism_subtype
+		}
+		localization_key = ustase_legionarism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = ustase_fiumeism_subtype
+		}
+		localization_key = ustase_fiumeism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = pataut_haganah_military_rule_subtype
+		}
+		localization_key = pataut_haganah_military_rule_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = haganah_military_rule_subtype
+		}
+		localization_key = haganah_military_rule_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_haganah_military_rule_subtype
+		}
+		localization_key = socdem_haganah_military_rule_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = syn_haganah_military_rule_subtype
+		}
+		localization_key = syn_haganah_military_rule_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = occult_ethnic_hellenism_subtype
+		}
+		localization_key = occult_ethnic_hellenism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = ethnic_hellenism_subtype
+		}
+		localization_key = ethnic_hellenism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = faisceau_subtype
+		}
+		localization_key = faisceau_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = pataut_ethnic_hellenism_subtype
+		}
+		localization_key = pataut_ethnic_hellenism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = left_militarism_subtype
+		}
+		localization_key = left_militarism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = tot_marxist_humanism_subtype
+		}
+		localization_key = tot_marxist_humanism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = tot_regenerationism_subtype
+		}
+		localization_key = tot_regenerationism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = marxist_humanism_subtype
+		}
+		localization_key = marxist_humanism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_hellenism_subtype
+		}
+		localization_key = radsoc_hellenism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_social_confucianism_subtype
+		}
+		localization_key = radsoc_social_confucianism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = social_confucianism_subtype
+		}
+		localization_key = social_confucianism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_hellenism_subtype
+		}
+		localization_key = socdem_hellenism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_social_confucianism_subtype
+		}
+		localization_key = socdem_social_confucianism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = hellenism_subtype
+		}
+		localization_key = hellenism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = authdem_legionarism_subtype
+		}
+		localization_key = authdem_legionarism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = authdem_social_confucianism_subtype
+		}
+		localization_key = authdem_social_confucianism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = pataut_social_confucianism_subtype
+		}
+		localization_key = pataut_social_confucianism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = natpop_social_confucianism_subtype
+		}
+		localization_key = natpop_social_confucianism_subtype
+	}
 
 
 
 
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_iseri_nina_subtype
+		}
+		localization_key = radsoc_iseri_nina_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_Kawaragi_Momoka_subtype
+		}
+		localization_key = radsoc_Kawaragi_Momoka_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_Ebisuza_Tomo_subtype
+		}
+		localization_key = radsoc_Ebisuza_Tomo_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_Subaru_Awa_subtype
+		}
+		localization_key = socdem_Subaru_Awa_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = pataut_rupa_subtype
+		}
+		localization_key = pataut_rupa_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soccon_diamond_dust_subtype
+		}
+		localization_key = soccon_diamond_dust_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = THE_IDOLMSTERism_subtype
+		}
+		localization_key = THE_IDOLMSTERism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = Euphoniumism_subtype
+		}
+		localization_key = Euphoniumism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = Tea_Time_subtype
+		}
+		localization_key = Tea_Time_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = miusi_subtype
+		}
+		localization_key = miusi_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = player_subtype
+		}
+		localization_key = player_subtype
+	}
+
+
+
+	#点
+	text = {
+		trigger = {
+			has_country_leader_ideology = tot_baishi_subtype
+		}
+		localization_key = tot_baishi_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = islamic_communism_subtype
+		}
+		localization_key = islamic_communism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = jun_zheng_ji_quan_subtype
+		}
+		localization_key = jun_zheng_ji_quan_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = sorelian_marketism_subtype
+		}
+		localization_key = sorelian_marketism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = syn_islamic_communism_subtype
+		}
+		localization_key = syn_islamic_communism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_islamic_communism_subtype
+		}
+		localization_key = radsoc_islamic_communism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_lu_xun_thought_subtype
+		}
+		localization_key = radsoc_lu_xun_thought_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = monanarchism_subtype
+		}
+		localization_key = monanarchism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = buddhist_anarchist_subtype
+		}
+		localization_key = buddhist_anarchist_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = anarcho_tridemism_subtype
+		}
+		localization_key = anarcho_tridemism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_datong_shu_thought_subtype
+		}
+		localization_key = radsoc_datong_shu_thought_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_datong_shu_thought_subtype
+		}
+		localization_key = socdem_datong_shu_thought_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_lianshengism_subtype
+		}
+		localization_key = socdem_lianshengism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soclib_lianshengism_subtype
+		}
+		localization_key = soclib_lianshengism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = marlib_lianshengism_subtype
+		}
+		localization_key = marlib_lianshengism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soccon_lianshengism_subtype
+		}
+		localization_key = soccon_lianshengism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = authdem_lianshengism_subtype
+		}
+		localization_key = authdem_lianshengism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = pataut_yan_xishan_thought_subtype
+		}
+		localization_key = pataut_yan_xishan_thought_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = CN_integralism_group_subtype
+		}
+		localization_key = CN_integralism_group_subtype
+	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = mao_ze_dong_thought_subtype
+		}
+		localization_key = mao_ze_dong_thought_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_new_democracy_subtype
+		}
+		localization_key = radsoc_new_democracy_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_islamic_communism_subtype
+		}
+		localization_key = socdem_islamic_communism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = new_democracy_subtype
+		}
+		localization_key = new_democracy_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_anarcho_tridemism_subtype
+		}
+		localization_key = socdem_anarcho_tridemism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = subtype_tangtangtang_subtype
+		}
+		localization_key = subtype_tangtangtang_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = lu_xun_thought_subtype
+		}
+		localization_key = lu_xun_thought_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soclib_new_legalism_subtype
+		}
+		localization_key = soclib_new_legalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = traditional_tridemism_subtype
+		}
+		localization_key = traditional_tridemism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = new_legalism_subtype
+		}
+		localization_key = new_legalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = authdem_yan_xishan_thought_subtype
+		}
+		localization_key = authdem_yan_xishan_thought_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = autdem_technocratic_tridemism_subtype
+		}
+		localization_key = autdem_technocratic_tridemism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = authdem_chiangism_subtype
+		}
+		localization_key = authdem_chiangism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = pataut_new_legalism_subtype
+		}
+		localization_key = pataut_new_legalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = buddhist_autocrat_subtype
+		}
+		localization_key = buddhist_autocrat_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = absolute_monarchy_CN_subtype
+		}
+		localization_key = absolute_monarchy_CN_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = Coca_Cola_Monarchy
+		}
+		localization_key = Coca_Cola_Monarchy
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = Anti_Posadasism_subtype
+		}
+		localization_key = Anti_Posadasism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = Yiguandao_subtype
+		}
+		localization_key = Yiguandao_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = lixing_group_subtype
+		}
+		localization_key = lixing_group_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = natpop_new_legalism_subtype
+		}
+		localization_key = natpop_new_legalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = rm_national_marxism_subtype
+		}
+		localization_key = rm_national_marxism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = rm_germanic_socialism_lensch_subtype
+		}
+		localization_key = rm_germanic_socialism_lensch_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = rm_strasserism_subtype
+		}
+		localization_key = rm_strasserism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = rm_burgundian_system_subtype
+		}
+		localization_key = rm_burgundian_system_subtype
+	}
+	
 
 	#风雨欲来	
 	text = {
@@ -7631,23 +8411,5 @@ text = {
 			has_country_leader_ideology = fredaism_subtype
 		}
 		localization_key = fredaism_subtype  
-	}	
-	text = {
-		trigger = {
-			has_country_leader_ideology = national_bolshevik_subtype
-		}
-		localization_key = national_bolshevik_subtype 
-	}	
-	text = {
-		trigger = {
-			has_country_leader_ideology = polish_national_socialism_subtype
-		}
-		localization_key = polish_national_socialism_subtype
-	}	
-	text = {
-		trigger = {
-			has_country_leader_ideology = autdem_legionarism_subtype
-		}
-		localization_key = autdem_legionarism_subtype
 	}	
 }

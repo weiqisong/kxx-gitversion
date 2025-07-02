@@ -41,4 +41,18 @@ leader_traits = {
 		stability_factor = -0.1
 		compliance_gain = -0.01
 	}
+	CHI_alien_puppet = {
+		random = no
+		political_power_gain = -0.1
+		stability_factor = -0.1
+		war_support_factor = -0.1
+		syndicalist_drift = 0.02
+	}
+	CHI_orientist = {
+		random = no
+		political_power_factor = 0.15
+		research_speed_factor = 0.15
+		compliance_gain = 0.02
+		syndicalist_drift = 0.02
+	}
 }

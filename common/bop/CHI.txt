@@ -9,35 +9,6 @@ CHI_power_balance = {
 	side = {
 		id = CHI_PAC_winning_side
 		icon = GFX_bop_CHI_pac_side
-
-		range = {
-			id = CHI_bop_PAC_tilt
-			min = -0.20
-			max = 0.00
-			modifier = {
-				experience_gain_army_factor = 0.025
-			}
-			on_activate = {
-			}
-			on_deactivate = {
-			}
-		}
-
-		range = {
-			id = CHI_bop_PAC_ascendant
-			min = -0.60
-			max = -0.20
-			modifier = {
-				experience_gain_army_factor = 0.05
-			}
-			on_activate = {
-
-			}
-			on_deactivate = {
-
-			}
-		}
-
 		range = {
 			id = CHI_bop_PAC_dominant
 			min = -1.00
@@ -62,6 +33,34 @@ CHI_power_balance = {
 				}
 			}
 		}
+	
+		range = {
+			id = CHI_bop_PAC_ascendant
+			min = -0.60
+			max = -0.20
+			modifier = {
+				experience_gain_army_factor = 0.05
+			}
+			on_activate = {
+
+			}
+			on_deactivate = {
+
+			}
+		}
+		range = {
+			id = CHI_bop_PAC_tilt
+			min = -0.20
+			max = 0.00
+			modifier = {
+				experience_gain_army_factor = 0.025
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		
 	}
 
 	### Favoring RCA

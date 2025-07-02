@@ -1117,6 +1117,58 @@ country_event = {	#戴亚选举第二部分
 		}
 	}
 	option = { 
+		name = kxxfrance.17.i #可能派
+		ai_chance = {
+			base = 35
+			modifier = {
+				factor = 1000
+				has_game_rule = {
+					rule = FRA_after_deat
+					option = FRA_AFTER_DEAT_POSSIBLE
+				}
+			}
+		}
+		create_country_leader = {
+			name = "皮埃尔·雷诺德尔"
+			picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
+			expire = "1.1.1"
+			traits = {  }
+			ideology = socdem_possibilism_subtype
+		}
+		set_politics = {
+			ruling_party = social_democrat
+		}
+		set_party_name = {
+			ideology = social_democrat
+			long_name = "法兰西社会党-可能派"
+			name = "法兰西社会党"
+		}
+		set_party_name = {
+			ideology = radical_socialist
+			long_name = "法兰西社会党"
+			name = "法兰西社会党"
+		}
+		set_cosmetic_tag = FRA_Possibiliste
+		hidden_effect = {	
+			remove_ideas_with_trait = head_of_government
+			add_ideas = FRA_Guy_Mollet_hog_sde
+			remove_ideas_with_trait = foreign_minister
+			add_ideas = FRA_Joseph_Paul_Boncour_for_sde
+			remove_ideas_with_trait = economy_minister
+			add_ideas = FRA_Daniel_Guerin_eco_rso
+			remove_ideas_with_trait = security_minister
+			add_ideas = FRA_Sebastien_Faure_sec_rso
+			add_popularity = {
+			  ideology = social_democrat
+			   popularity = 0.20
+			}
+			complete_national_focus = FRA_Possibiliste_win
+			remove_ideas = FRA_valois_dead_idea
+			remove_ideas = French_Revanchism_idea
+			 
+		}
+	}
+	option = { 
 		name = kxxfrance.30.e #dysutopia
 		ai_chance = {
 			factor = 50

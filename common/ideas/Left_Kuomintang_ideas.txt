@@ -5,6 +5,221 @@ ideas = {
 	###############################
 
 	country = {
+		CHI_contact_resistence = {
+			picture = CRE_resistance_idea
+			modifier = {
+				resistance_target_on_our_occupied_states = 1
+				resistance_growth_on_our_occupied_states = 1
+			}
+			targeted_modifier = {
+				tag = NFA
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+				breakthrough_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = FRP
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+				breakthrough_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = FRG
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+				breakthrough_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = BRI
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+				breakthrough_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = NRM
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+				breakthrough_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = OCC
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+				breakthrough_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = JDF
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+				breakthrough_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+				breakthrough_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = NFA
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+				breakthrough_bonus_against = 0.25
+			}
+		}
+		CHI_urgent_navy_construction = {
+			picture = generic_navy
+			modifier = {
+				industrial_capacity_dockyard = 0.5
+				invasion_preparation = -0.5
+				amphibious_invasion = 0.5
+			}
+		}
+		CHI_FRA_global_investment = {
+			picture = give_money
+			modifier = {
+				local_resources_factor = 0.15
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+			}
+		}
+		 CHI_FRA_syndie_eco3 = {
+			picture = SOV_syndicate_decentralization
+			modifier = {
+				global_building_slots_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		 CHI_FRA_syndie_eco2 = {
+			picture = SOV_syndicate_decentralization
+			modifier = {
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		 CHI_FRA_syndie_eco = {
+			picture = SOV_syndicate_decentralization
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		CHI_FRA_smuggle2 = {
+			picture = LEC_high_reserves
+			modifier = {
+				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				armor = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		CHI_FRA_smuggle = {
+			picture = LEC_high_reserves
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		CHI_unpopular_rule = {
+			picture = generic_scars_of_civil_war
+			modifier = {
+				political_power_cost = 0.2
+				stability_weekly = -0.02
+				war_support_weekly = -0.02
+			}
+		}
+		CHI_FRA_loyal_syndies = {
+			picture = orthodox_syndicalism
+			modifier = {
+				resistance_target = -0.15
+				compliance_growth = 0.15
+				industrial_capacity_factory = 0.15
+			}
+		}
+		CHI_FRA_red_legations = {
+			picture = LEC_passports
+			modifier = {
+				political_power_factor = 0.1
+				production_speed_buildings_factor = 0.15
+				syndicalist_drift = 0.03
+				radical_socialist_drift = 0.03
+				totalist_drift = 0.03
+			}
+		}
+		CHI_FRA_bureaucracy = {
+			picture = NFA_revolving_door
+			modifier = {
+				political_power_gain = 0.1
+				stability_weekly = 0.02
+				conscription_factor = 0.05
+				monthly_population = 0.2
+				command_power_gain = 0.1
+				max_command_power = 200
+
+			}
+		}
+		CHI_FRA_army = {
+			picture = NFA_native_pacification
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				breakthrough_factor = 0.1
+				recon_factor = 0.1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				attrition = -0.15
+
+			}
+		}
+		CHI_nra_demobilized = {
+			picture = CHI_demobilised_nra
+			modifier = {
+				experience_gain_army = -0.1
+				experience_gain_air = -0.1
+				experience_gain_navy = -0.1
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+			}
+		}
+
 		CHI_MMIC_2_idea = {
 			name = CHI_MMIC_theorist
 			modifier = {

@@ -1,0 +1,75 @@
+BRI_factionism = {
+
+ BRI_support_nationalists = {
+		icon = generic_nationalism
+		allowed = { is_ai = no }
+		visible = {
+			tag = BRI			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision BUL_YUG_Flag_Picker"		
+			
+		}
+	}	
+	BRI_support_paramilitary = {
+		icon = generic_nationalism
+		allowed = { is_ai = no }
+		visible = {
+			tag = BRI			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision BUL_YUG_Flag_Picker"		
+			
+		}
+	}
+	BRI_support_corporates = {
+		icon = generic_nationalism
+		allowed = { is_ai = no }
+		visible = {
+			tag = BRI			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 0
+		} 
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision BUL_YUG_Flag_Picker"		
+			
+		}
+	}
+	BRI_support_soc_and_dem = {
+		icon = generic_nationalism
+		allowed = { is_ai = no }
+		visible = {
+			tag = BRI			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision BUL_YUG_Flag_Picker"		
+			
+		}
+	}
+}	

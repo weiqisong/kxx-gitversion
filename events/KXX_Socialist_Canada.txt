@@ -1191,7 +1191,7 @@ country_event = {
 			name = "吉姆·布拉迪"
 			picture = "gfx/leaders/SCC/Portrait_Canada_Jim_Brady.png"
 			expire = "1.1.1"
-			ideology = radsoc_communism_subtype
+			ideology = radsoc_indigenous_communitarianism_subtype
 		}
 		set_party_name = {
 			name = SCC_radsoc_communist_party

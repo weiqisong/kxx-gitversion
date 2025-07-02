@@ -3909,6 +3909,34 @@ add_namespace = chi_faction
 				set_country_flag = lhzf
 			}
 		}
+		option = {
+			name = CHI.lategame.052.g #A complete disaster!
+			hidden_effect = {
+				set_politics = {
+					ruling_party = syndicalist
+				}
+				set_party_name = {
+					ideology = syndicalist
+					name = "第三国际军事代表团"
+					long_name = "第三国际军事代表团"
+				}
+				complete_national_focus = CHI_internationale_in_control
+				add_ideas = CHI_unpopular_rule
+				remove_ideas_with_trait = head_of_government
+				add_ideas = CHI_Chen_Duxiu_hog_syn
+				create_country_leader = {
+					name = "安德烈·马尔罗"
+					desc = ""
+					picture = "gfx/leaders/CHI/CHI_Andre_Malraux_FRA.png"
+					expire = "1965.1.1"
+					ideology = syn_kleptocracy_subtype
+					traits = {  
+						CHI_alien_puppet
+					}
+				}
+				set_country_flag = CHI_red_legations
+			}
+		}
 	}
 	
 	### 溶工政策 ###
@@ -12286,5 +12314,60 @@ country_event = {
 		name = CHI.lategame.1111.a
 		country_event = { id = CHI.lategame.1112 days = 14 }
 		hidden_effect = { scoped_play_song = "sanminzhuyige" }
+	}
+}
+country_event = {
+	id = CHI.lategame.10000
+	title = CHI.lategame.10000.t
+	picture = GFX_report_event_CHI_LDF
+	desc = CHI.lategame.10000.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = CHI.lategame.10000.a
+	}
+	option = {
+		name = CHI.lategame.10000.b
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+		}
+		hidden_effect = {
+		add_radsoc_to_coalition = yes
+		add_synd_to_coalition = yes
+		create_country_leader = {
+			name = "安德烈·马尔罗"
+			desc = ""
+			picture = "gfx/leaders/CHI/CHI_Andre_Malraux_FRA.png"
+			expire = "1965.1.1"
+			ideology = revisionist_sorelianism_subtype
+			traits = {  
+				CHI_orientist
+			}
+		}
+		}
+	}
+	option = {
+		name = CHI.lategame.10000.c
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		}
+		hidden_effect = {
+		add_tot_to_coalition = yes
+		add_synd_to_coalition = yes
+		create_country_leader = {
+			name = "安德烈·马尔罗"
+			desc = ""
+			picture = "gfx/leaders/CHI/CHI_Andre_Malraux_FRA.png"
+			expire = "1965.1.1"
+			ideology = radsoc_clientelism_subtype
+			traits = {  
+				CHI_orientist
+			}
+		}
+		}
 	}
 }

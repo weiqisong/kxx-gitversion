@@ -1,0 +1,33 @@
+ideas = {
+	country = {
+		BRI_memories_of_1932 = {
+			picture = generic_destruction
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARY_supermen "}
+            modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+		BRI_lag_millitary = {
+			picture = army_of_militias
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARY_supermen "}
+            modifier = {
+				army_infantry_attack_factor = 0.15
+				org_loss_when_moving = 0.1
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+			}
+		}
+		BRI_inner_factionalism = {
+			picture = generic_broken_champagne
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARY_supermen "}
+            modifier = {
+				political_power_gain = -0.1
+				paternal_autocrat_drift = 0.01
+				totalist_drift = 0.01
+				national_populist_drift = 0.01
+				radical_socialist_drift = 0.01
+			}
+		}
+	}
+}

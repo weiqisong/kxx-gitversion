@@ -2059,6 +2059,19 @@ country_event = {
 		}
 		complete_national_focus = GRE_freethinker
 	}
+	option = {
+		name = gre.52.g 
+		
+		ai_chance = {
+			factor = 25
+			
+		}
+		add_stability = -0.2
+		country_event = {
+			id = gre.507
+			days = 7
+		}
+	}
 }
 country_event = { # The Question on the royal succession
 	id = gre.93
@@ -8241,6 +8254,7 @@ country_event = {
 			var = golden_dawn_influence
 			value > 101
 		}
+		has_idea = GRE_golden_dawn
 		NOT = {
 			has_completed_focus = GRE_left_gold_down
 		}
@@ -9221,7 +9235,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = gre.506 #
+	id = gre.506 #stalemate - gotzamanis demands power
 	title = gre.506.t
 	desc = gre.506.d
 
@@ -9232,20 +9246,141 @@ country_event = {
 	option = {
 		name = gre.506.a
 		create_country_leader = {
-				name = "索蒂利奥斯·戈扎马尼斯"
-				picture = "gfx/leaders/GRE/Portrait_GRE_Sotirios_Gotzamanis.png"
-				expire = "1.1.1"
-				ideology = authdem_national_conservative_subtype
+			name = "索蒂利奥斯·戈扎马尼斯"
+			picture = "gfx/leaders/GRE/Portrait_GRE_Sotirios_Gotzamanis.png"
+			expire = "1.1.1"
+			ideology = authdem_national_conservative_subtype
 		}
 		set_politics = {
 			ruling_party = authoritarian_democrat
 			elections_allowed = no
 		}
+		complete_national_focus = GRE_national_reform_party
 		set_party_name = {
 			ideology = authoritarian_democrat
 			long_name = "国家改革党"
 			name = "国家改革党"
 		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.1
+		}
+		set_cosmetic_tag = GRE_gre_mace
+		add_ideas = {
+			GRE_Sotirios_Gotzamanis_hog_ade
+			GRE_Konstantinos_Logothetopoulos_for_ade
+			GRE_Nikolaos_Kanellopoulos_eco_ade
+			GRE_Kostas_Kotzias_sec_ade
+		}
+		remove_ideas = GRE_golden_dawn
+	}
+	option = {
+		name = gre.506.b #nah
+		add_stability = -0.1
+		country_event = {
+			id = gre.508
+		}
+	}
+}
+country_event = {
+	id = gre.507 #stalemate - power to church?
+	title = gre.507.t
+	desc = gre.507.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gre.507.a #our only option
+		create_country_leader = {
+			name = "本雅明一世"
+			picture = "gfx/leaders/GRE/Portrait_GRE_Benjamin_I.png"
+			expire = "1.1.1"
+			ideology = theocracy_subtype
+		}
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = paternal_autocrat
+			long_name = "牧首"
+			name = "牧首"
+		}
+		complete_national_focus = GRE_an_alternative
+		add_ideas = {
+			GRE_Benjamin_I_hog_ade
+			GRE_Alexandros_Korizis_for_pau
+			GRE_Anastasios_Michalakopoulos_eco_pau
+			GRE_Konstantinos_Maniadakis_sec_pau
+		}
+		set_cosmetic_tag = GRE_theocracy
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.1
+		}
+		
+	}
+	option = {
+		name = gre.507.b #nah
+		add_stability = -0.1
+		country_event = {
+			id = gre.506
+			days = 7 
+		}
+	}
+}
+country_event = {
+	id = gre.508 #sitsa coups 
+	title = gre.508.t
+	desc = gre.508.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gre.508.a 
+		create_country_leader = {
+			name = "西察·卡赖斯卡季斯"
+			picture = "gfx/leaders/GRE/Portrait_GRE_Sitsa_Karaiskakis.png"
+			expire = "1.1.1"
+			ideology = natpop_goebbels_subtype
+		}
+		create_country_leader = {
+			name = "西察·卡赖斯卡季斯"
+			picture = "gfx/leaders/GRE/Portrait_GRE_Sitsa_Karaiskakis.png"
+			expire = "1.1.1"
+			ideology = national_marxist_subtype
+		}
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		add_tot_to_coalition = yes
+		set_party_name = {
+			ideology = national_populist
+			long_name = "民族国家主权组织"
+			name = "民族国家主权组织"
+		}
+		set_party_name = {
+			ideology = totalist
+			long_name = "民族国家主权组织"
+			name = "民族国家主权组织"
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.1
+		}
+		set_cosmetic_tag = GRE_nazilol
+		complete_national_focus = GRE_the_eclipse
+		remove_ideas = GRE_golden_dawn
+		remove_all_ministers = yes
 	}
 	
 }
