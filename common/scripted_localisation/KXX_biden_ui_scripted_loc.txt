@@ -145,6 +145,22 @@ defined_text = {
  		localization_key = FR_OR_LEADER3
  	}
 
+	#布列塔尼
+	text = {
+		trigger = {
+			has_country_flag = BRI_Marcel_Capron_VISIBLE
+		  }
+		localization_key = BRI_OR_LEADER
+	}
+
+	#国民党左派
+	text = {
+		trigger = {
+			has_country_flag = CHI_Wang_jingwei_VISIBLE
+	  	}
+	   localization_key = CHI_OR_Wang_LEADER
+	}
+
 	#瑞典
 	text = {
 		trigger = {
@@ -625,6 +641,22 @@ defined_text = {
     	}
     	localization_key = FR_OR_LEADER4
   	}
+
+	#布列塔尼
+	text = {
+		trigger = {
+			has_country_flag = BRI_Marcel_Capron_VISIBLE
+		  }
+		localization_key = BRI_OR_LEADER2
+	}
+
+	#国民党左派
+	text = {
+		trigger = {
+			has_country_flag = CHI_Wang_jingwei_VISIBLE
+	  	}
+	   localization_key = CHI_OR_Wang_LEADER2
+	}
 
 	#瑞典
 	text = {
@@ -1189,6 +1221,22 @@ defined_text = {
  		}
     	localization_key =  FRA_Maurice_Thorez_sec_tot
   	}
+
+	#布列塔尼
+	text = {
+		trigger = {
+			has_country_flag = BRI_Marcel_Capron_VISIBLE
+		  }
+		localization_key = BRI_OR_Marcel_Capron
+	}
+
+	#国民党左派
+	text = {
+		trigger = {
+			has_country_flag = CHI_Wang_jingwei_VISIBLE
+	  	}
+	   localization_key = CHI_OR_Wang_jingwei
+	}
 
 	#瑞典
 	text = {
@@ -1888,6 +1936,22 @@ defined_text = {
     	localization_key = GFX_Portrait_France_Maurice_Thorez
   	}
 
+	#布列塔尼
+	text = {
+		trigger = {
+			has_country_flag = BRI_Marcel_Capron_VISIBLE
+		  }
+		localization_key = GFX_Portrait_BRI_Marcel_Capron
+	}
+
+	#国民党左派
+	text = {
+		trigger = {
+			has_country_flag = CHI_Wang_jingwei_VISIBLE
+	  	}
+	   localization_key = GFX_Portrait_CHI_Wang_jingwei
+	}
+
 	#瑞典
 	text = {
 		trigger = {
@@ -2472,6 +2536,14 @@ defined_text = {
 		}
 		localization_key = WRS_OR_Tukhachevskiy
 	}
+
+	#布列塔尼
+	text = {
+		trigger = {
+			has_country_flag = Bri_Marcel_Gitton_VISIBLE
+		  }
+		localization_key = Bri_OR_LEADER3
+	}
 	
 	#刚果&葡萄牙
 	text = {
@@ -2524,6 +2596,14 @@ defined_text = {
 			has_country_flag = WRS_Mikhail_Tukhachevskiy_VISIBLE
 		}
 		localization_key = WRS_OR_Tukhachevskiy_2
+	}
+
+	#布列塔尼
+	text = {
+		trigger = {
+			has_country_flag = Bri_Marcel_Gitton_VISIBLE
+		  }
+		localization_key = Bri_OR_LEADER4
 	}
 
 	#刚果&葡萄牙
@@ -2596,6 +2676,14 @@ defined_text = {
 			has_country_flag = WRS_Mikhail_Tukhachevskiy_VISIBLE
 		}
 		localization_key = WRS_LC_Tukhachevskiy
+	}
+
+	#布列塔尼
+	text = {
+		trigger = {
+			has_country_flag = Bri_Marcel_Gitton_VISIBLE
+		  }
+		localization_key = Bri_OR_Marcel_Gitton
 	}
 
 	
@@ -2678,6 +2766,14 @@ defined_text = {
 			has_country_flag = WRS_Mikhail_Tukhachevskiy_VISIBLE
 		}
 		localization_key = GFX_Portrait_WRS_Mikhail_Tukhachevskiy
+	}
+
+	#布列塔尼
+	text = {
+		trigger = {
+			has_country_flag = Bri_Marcel_Gitton_VISIBLE
+		  }
+		localization_key = GFX_Portrait_BRI_Marcel_Gitton
 	}
 
 	#刚果&葡萄牙

@@ -11,6 +11,10 @@ spriteTypes = {
 		texturefile = "gfx/leaders/MOJ/Portrait_OTT_Huseyin_Rauf.png"
 	}
 	spriteType = {
+		name = "GFX_Portrait_ISR_Morris_Abraham_Cohen"
+		texturefile = "gfx/leaders/PAL/Portrait_ISR_Morris_Abraham_Cohen.png"
+	}
+	spriteType = {
 		name = "GFX_Portrait_PAL_Husayn_al_Khalidi"
 		texturefile = "gfx/leaders/MOJ/Portrait_PAL_Husayn_al_Khalidi.png"
 	}
@@ -196,6 +200,174 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_Albert_Speer"
 		texturefile = "gfx/leaders/GRU/Portrait_germany_Albert_Speer.png"
+	}
+
+	###挪威###
+	spriteType = {
+		name = "GFX_Portrait_Norway_Albin_Eines"
+		texturefile = "gfx/leaders/NOR/Portrait_Norway_Albin_Eines.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Norway_Elias_Volan"
+		texturefile = "gfx/leaders/NOR/Portrait_Norway_Elias_Volan.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Norway_Martin_Tranmel"
+		texturefile = "gfx/leaders/NOR/Portrait_Norway_Martin_Tranmel.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Norway_Magnus_Nilssen"
+		texturefile = "gfx/leaders/NOR/Portrait_Norway_Magnus_Nilssen.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Norway_Haakon_Five"
+		texturefile = "gfx/leaders/NOR/Portrait_Norway_Haakon_Five.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Norway_Johan_Nygaardsvold_KX"
+		texturefile = "gfx/leaders/NOR/Portrait_Norway_Johan_Nygaardsvold_KX.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Norway_Carl_Joachim_Hambro"
+		texturefile = "gfx/leaders/NOR/Portrait_Norway_Carl_Joachim_Hambro.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Norway_Johan_Henrik_Andresen"
+		texturefile = "gfx/leaders/NOR/Portrait_Norway_Johan_Henrik_Andresen.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Norway_Jens_Hundseid"
+		texturefile = "gfx/leaders/NOR/Portrait_Norway_Jens_Hundseid.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Norway_Odd_Nansen"
+		texturefile = "gfx/leaders/NOR/Portrait_Norway_Odd_Nansen.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Norway_Joakim_Lehmkuhl"
+		texturefile = "gfx/leaders/NOR/Portrait_Norway_Joakim_Lehmkuhl.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Norway_Johan_Bernhard_Hjort"
+		texturefile = "gfx/leaders/NOR/Portrait_Norway_Johan_Bernhard_Hjort.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Norway_Vidkun_Quisling_Suit"
+		texturefile = "gfx/leaders/NOR/Portrait_Norway_Vidkun_Quisling_KR.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Norway_Jonas_Lie"
+		texturefile = "gfx/leaders/NOR/Portrait_Norway_Jonas_Lie.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Norway_Per_Imerslund"
+		texturefile = "gfx/leaders/NOR/Portrait_Norway_Per_Imerslund.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Norway_Harald_Damsleth"
+		texturefile = "gfx/leaders/NOR/Portrait_Norway_Harald_Damsleth.png"
+	}
+
+	###布列塔尼###
+	spriteType = {
+		name = "GFX_Portrait_BRI_Marcel_Capron"
+		texturefile = "gfx/leaders/BRI/BRI_Marcel_Capron.png"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_BRI_Marcel_Gitton"
+		texturefile = "gfx/leaders/BRI/Bri_Marcel_Gitton.png"
+	}
+	###国民党左派###
+	spriteType = {
+		name = "GFX_Portrait_CHI_Wang_jingwei"
+		texturefile = "gfx/leaders/CHI/Portrait_CHI_Wang_Jingwei_KR.png"
+	}
+
+	###瑞典###
+	spriteType = {
+		name = "GFX_Portrait_Sweden_Per_Albin_Hansson_orig"
+		texturefile = "gfx/leaders/SWE/Portrait_Sweden_Per_Albin_Hansson_orig.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Sweden_Tage_Erlander"
+		texturefile = "gfx/leaders/SWE/Portrait_Sweden_Tage_Fritjof_Erlander.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Sweden_Bertil_Ohlin"
+		texturefile = "gfx/leaders/SWE/Portrait_Sweden_Bertil_Ohlin.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Sweden_Axel_Pehrsson_Bramstorp"
+		texturefile = "gfx/leaders/SWE/Portrait_Sweden_Axel_Pehrsson_Bramstorp.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Sweden_Goesta_Bagge"
+		texturefile = "gfx/leaders/SWE/Portrait_Sweden_Goesta_Bagge.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Sweden_Fritiof_Domoe"
+		texturefile = "gfx/leaders/SWE/Portrait_Sweden_Fritiof_Domoe.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Sweden_Helge_jung"
+		texturefile = "gfx/leaders/SWE/Portrait_Sweden_Helge_Jung.png"
+	}	
+	
+	spriteType = {
+		name = "GFX_Portrait_Sweden_Archibald_Douglas"
+		texturefile = "gfx/leaders/SWE/Portrait_Sweden_Archibald_Douglas.png"
+	}	
+
+	spriteType = {
+		name = "GFX_Portrait_Sweden_Carl_August_Ehrensvard"
+		texturefile = "gfx/leaders/SWE/Portrait_Sweden_Carl_August_Ehrensvard.png"
+	}	
+
+	spriteType = {
+		name = "GFX_Portrait_Sweden_Martin_Ekstrom"
+		texturefile = "gfx/leaders/SWE/Portrait_Sweden_Martin_Ekstrom.png"
+	}	
+
+	spriteType = {
+		name = "GFX_Portrait_Sweden_Elmo_Lindholm"
+		texturefile = "gfx/leaders/SWE/Portrait_Sweden_Elmo_Lindholm.png"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Sweden_Axel_Gyllenkrok"
+		texturefile = "gfx/leaders/SWE/Portrait_Sweden_Axel_Gyllenkrok.png"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Sweden_Gustaf_Andersson"
+		texturefile = "gfx/leaders/SWE/Portrait_Sweden_Gustaf_Andersson.png"
+	}	
+
+	spriteType = {
+		name = "GFX_Portrait_Sweden_Karl_Kilbom"
+		texturefile = "gfx/leaders/SWE/Portrait_Sweden_Karl_Kilbom.png"
 	}
 	
 	###法国复兴政府###

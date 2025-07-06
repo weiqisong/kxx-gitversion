@@ -2020,6 +2020,8 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LAT_infiltrate_riga"
 			LAT = {	transfer_state = 1091 }
+			remove_ideas = LAT_remember_riga
+
 		}
 	}
 	focus = {
@@ -2154,7 +2156,7 @@ focus_tree = {
 		cost = 8
 
 		relative_position_id = LAT_look_to_russian_bolshevism
-		x = -3
+		x = -4
 		y = 1
 
 		prerequisite = {
@@ -3018,6 +3020,7 @@ focus_tree = {
 				remove_idea = LAT_5_year_plan_1
 				add_idea = LAT_5_year_plan_2
 			}
+			remove_ideas = LAT_disorganized_economy
 		}
 	}
 
@@ -3684,8 +3687,7 @@ focus_tree = {
 			focus = LAT_SOV_foreign_policy
 		}	
 		available = {
-			MON = {
-				
+			MON = {	
 				is_subject = no
 				is_neighbor_of = LAT
 			}
@@ -3693,13 +3695,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LAT_SOV_mongolia"
-					LAT = {
-						set_autonomy = {
-							target = MON
-							autonomy_state = default_puppet
-							end_wars = no
-						}
-					}
+					
 					LAT = {	transfer_state = 329 }
 					LAT = {	transfer_state = 811 }
 					LAT = {	transfer_state = 654 }
@@ -3880,7 +3876,7 @@ focus_tree = {
 				ideology = totalist
 				popularity = 0.25
 			}
-			add_stability = -0.20
+			add_stability = -0.1
 			every_controlled_state = {
 				limit = {
 					is_core_of = LAT

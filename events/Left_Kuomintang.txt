@@ -3715,17 +3715,13 @@ add_namespace = chi_faction
 			name = CHI.lategame.051.b
 			remove_ideas_with_trait = head_of_government
 			add_ideas = CHI_Zhang_Guotao_hog_tot
-			add_country_leader_role = {
-				character = CHI_wang_jingwei
-				promote_leader = yes
-				country_leader = {
-					ideology = radsoc_tridemism_subtype
-					expire = "1965.1.1.1"
-					desc = POLITICS_CHI_WANG_JINGWEI_DESC
-					traits = {
-						CHI_heir_to_the_revolution
-					}
-				}
+			set_country_flag = KXX_LEADER_GUI_VISIBLE
+			set_country_flag = CHI_Wang_jingwei_VISIBLE
+			create_country_leader = {
+				name = "胡宗南"
+				picture = "gfx/leaders/CHI/Portrait_CHI_Hu_Zongnan_KR.png"
+				expire = "1965.1.1"
+				ideology = tot_tridemism_subtype
 			}
 			hidden_effect = { country_event = { id = CHI.lategame.053 days = 3 } }
 		}
@@ -3765,7 +3761,9 @@ add_namespace = chi_faction
 		fire_only_once = yes
 		is_triggered_only = yes
 		timeout_days = 7
-	
+	immediate = {
+		mark_focus_tree_layout_dirty = yes
+	}
 		option = {
 			name = CHI.lategame.052.a #A complete disaster!
 			effect_tooltip = { kill_country_leader = yes }
@@ -12220,6 +12218,8 @@ country_event = {
 
 	option = {
 		name = CHI.lategame.1110.a
+
+		
 	}
 }
 country_event = {
@@ -12370,4 +12370,503 @@ country_event = {
 		}
 		}
 	}
+}
+country_event = { #Fate of the Political Department Clique
+    id = CHI.endgame.462
+    immediate = { log = "[GetDateText]: [Root.GetName]: event CHI.endgame.462" }
+    title = CHI.endgame.462.t
+    desc = CHI.endgame.462.d
+    picture = GFX_report_event_CHI_general_zhou_enlai_at_headquarters
+    fire_only_once = yes
+    is_triggered_only = yes #Triggered by Focus CHI_reconcile_the_rca
+
+    option = { #We are comrades after all.
+        name = CHI.endgame.462.a
+        ai_chance = {
+            base = 40
+            modifier = {
+                factor = 2
+                radical_socialist < 0.25
+            }
+        }
+        add_popularity = { ideology = radical_socialist popularity = 0.10 }
+        CHI_recruit_RCA_generals_effect = yes
+        army_experience = 35
+    }
+    option = { #They need to get with the program.
+        name = CHI.endgame.462.b
+        ai_chance = {
+            base = 60
+            modifier = {
+                factor = 2
+                social_democrat < 0.25
+            }
+        }
+        add_popularity = { ideology = social_democrat popularity = 0.08 }
+        add_popularity = { ideology = paternal_autocrat popularity = 0.02 }
+    }
+}
+country_event = { #The United Front Work Department
+    id = CHI.endgame.441
+    immediate = { log = "[GetDateText]: [Root.GetName]: event CHI.endgame.441" }
+    title = CHI.endgame.441.t
+    desc = CHI.endgame.441.d
+    picture = GFX_report_event_zhang_junmai
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            create_country_leader = {
+                name = "Assorted Leaders"
+                expire = "1.1.1"
+                ideology = market_liberal_subtype
+            }
+            create_country_leader = {
+                name = "Assorted Leaders"
+                expire = "1.1.1"
+                ideology = social_conservative_subtype
+            }
+            create_country_leader = {
+                name = "Assorted Leaders"
+                expire = "1.1.1"
+                ideology = authoritarian_democrat_subtype
+            }
+            for_each_scope_loop = {
+                array = global.asian_tags_array
+                if = {
+                    limit = {
+                        is_tag_in_china_area = yes
+                    }
+                    if = {
+                        limit = {
+                            OR = {
+                                exists = no
+                                tag = CHI
+                            }
+                        }
+                        CHI = { set_country_flag = GXC_zhang_junmai_joined_CHI }
+                        create_country_leader = {
+                            name = "Zhang Junmai"
+                            picture = "gfx/leaders/GXC/Portrait_GXC_Zhang_Junmai.png"
+                            expire = "1.1.1"
+                            ideology = market_liberal_subtype
+                        }
+                    }
+                    if = {
+                        limit = {
+                            OR = {
+                                exists = no
+                                tag = CHI
+                            }
+                        }
+                        create_country_leader = {
+                            name = "James Yen"
+                            picture = "gfx/leaders/Generic/Portrait_Asia_Generic_land_new_4.png"
+                            expire = "1.1.1"
+                            ideology = social_conservative_subtype
+                        }
+                    }
+                }
+            }
+            set_party_name = {
+                ideology = market_liberal
+                long_name = CHI_CDL_party_long
+                name = CHI_CDL_party
+            }
+            set_party_name = {
+                ideology = social_conservative
+                long_name = CHI_RRA_party_long
+                name = CHI_RRA_party
+            }
+            set_party_name = {
+                ideology = authoritarian_democrat
+                long_name = CHI_market_liberal_party_long
+                name = CHI_market_liberal_party
+            }
+        }
+    }
+
+    option = { #We welcome them cordially.
+        name = CHI.endgame.441.a
+        ai_chance = {
+            base = 40
+            modifier = {
+                factor = 2
+                social_liberal > 0.25
+            }
+        }
+        add_political_power = 100
+        add_popularity = { ideology = social_liberal popularity = 0.05 }
+        add_popularity = { ideology = market_liberal popularity = 0.075 }
+        add_popularity = { ideology = social_conservative popularity = 0.075 }
+        add_popularity = { ideology = authoritarian_democrat popularity = 0.10 }
+    }
+    option = { #Keep an eye on their activities.
+        name = CHI.endgame.441.b
+        ai_chance = {
+            base = 60
+            modifier = {
+                factor = 2
+                radical_socialist < 0.25
+            }
+        }
+        add_political_power = 50
+        add_popularity = { ideology = social_liberal popularity = 0.07 }
+        add_popularity = { ideology = market_liberal popularity = 0.025 }
+        add_popularity = { ideology = social_conservative popularity = 0.025 }
+        add_popularity = { ideology = authoritarian_democrat popularity = 0.03 }
+    }
+}
+country_event = { #A Disillusioned Young Guard
+    id = CHI.endgame.461
+    immediate = { log = "[GetDateText]: [Root.GetName]: event CHI.endgame.461" }
+    title = CHI.endgame.461.t
+    desc = CHI.endgame.461.d
+    picture = GFX_report_event_CHI_children_nationalist_parade
+    fire_only_once = yes
+    is_triggered_only = yes #Triggered by Focus CHI_exalt_the_proletaritan_struggle
+
+    option = { #We are comrades after all.
+        name = CHI.endgame.461.a
+        ai_chance = {
+            base = 40
+            modifier = {
+                factor = 2
+                syndicalist > 0.25
+            }
+        }
+        add_popularity = { ideology = syndicalist popularity = 0.05 }
+        CHI_recruit_LCS_generals_effect = yes
+        army_experience = 15
+    }
+    option = { #They need to get with the program.
+        name = CHI.endgame.461.b
+        ai_chance = {
+            base = 60
+            modifier = {
+                factor = 2
+                social_democrat < 0.25
+            }
+        }
+        add_popularity = { ideology = social_democrat popularity = 0.05 }
+        add_popularity = { ideology = paternal_autocrat popularity = 0.01 }
+    }
+}
+country_event = { #Braving the Darkness
+    id = CHI.endgame.407
+    immediate = { log = "[GetDateText]: [Root.GetName]: event CHI.endgame.407" }
+    title = CHI.endgame.407.t
+    desc = CHI.endgame.407.d
+    picture = GFX_report_event_CHI_military_parade
+    fire_only_once = yes
+    is_triggered_only = yes #Fired from focus CHI_fate_of_the_crs
+
+    option = {
+        name = CHI.endgame.407.a #Let things take their course.
+        ai_chance = {
+            base = 40
+            modifier = {
+                factor = 2
+                totalist > 0.25
+            }
+        }
+        add_stability = -0.05
+        add_popularity = { ideology = totalist popularity = 0.03 }
+        clr_country_flag = Dai_Chunfeng_dead
+        CHI_recruit_CRS_generals_effect = yes
+    }
+
+    option = {
+        name = CHI.endgame.407.b #Sideline Hu Zongnan’s Clique
+        trigger = {
+            check_variable = { stability > party_popularity@totalist }
+        }
+        ai_chance = {
+            base = 30
+            modifier = {
+                factor = 2
+                totalist < 0.10
+            }
+        }
+        set_temp_variable = { CHI_totalist_pop_temp_var = party_popularity@totalist }
+        multiply_temp_variable = { CHI_totalist_pop_temp_var = -0.5 }
+        add_stability = CHI_totalist_pop_temp_var
+        add_popularity = { ideology = totalist popularity = CHI_totalist_pop_temp_var }
+        CHI_purge_CRS_generals_effect = yes
+        hidden_effect = {
+            create_country_leader = {
+                name = "Dai Chunfeng"
+                desc = "POLITICS_CHI_DAI_CHUNFENG_DESC"
+                picture = "gfx/leaders/CHI/Portrait_CHI_Dai_Chunfeng.png"
+                expire = "1.1.1"
+                ideology = socialist_security_state_subtype
+            }
+        }
+    }
+    option = {
+        name = CHI.endgame.407.c #Purge them once and for all!
+        trigger = {
+            check_variable = { stability > party_popularity@totalist }
+            totalist < 0.15
+        }
+        ai_chance = {
+            base = 30
+            modifier = {
+                factor = 2
+                totalist < 0.05
+            }
+        }
+        set_temp_variable = { CHI_totalist_pop_temp_var = party_popularity@totalist }
+        multiply_temp_variable = { CHI_totalist_pop_temp_var = -1 }
+        add_stability = CHI_totalist_pop_temp_var
+        add_popularity = { ideology = totalist popularity = CHI_totalist_pop_temp_var }
+        CHI_purge_CRS_generals_effect = yes
+        CHI_purge_CRS_advisors_effect = yes
+        hidden_effect = {
+            create_country_leader = {
+                name = "Lixingshe"
+                expire = "1.1.1"
+                ideology = socialist_security_state_subtype
+            }
+            country_event = { id = CHI.endgame.408 days = 30 } #Demise of the Laoban
+        }
+    }
+}
+country_event = { #Legacy of the India Clique
+    id = CHI.endgame.460
+    immediate = { log = "[GetDateText]: [Root.GetName]: event CHI.endgame.460" }
+    title = CHI.endgame.460.t
+    desc = CHI.endgame.460.d
+    picture = GFX_report_event_CHI_xue_zhang
+    fire_only_once = yes
+    is_triggered_only = yes #Triggered by focus CHI_honouring_revolutionary_martyrs
+
+    option = { #We are comrades after all.
+        name = CHI.endgame.460.a
+        ai_chance = {
+            base = 60
+            modifier = {
+                factor = 2
+                social_liberal > 0.25
+            }
+        }
+        add_popularity = { ideology = social_liberal popularity = 0.05 }
+        CHI_recruit_RF_generals_effect = yes
+        army_experience = 15
+    }
+    option = { #They need to get with the program.
+        name = CHI.endgame.460.b
+        ai_chance = {
+            base = 40
+            modifier = {
+                factor = 2
+                social_democrat < 0.25
+            }
+        }
+        add_popularity = { ideology = social_democrat popularity = 0.04 }
+        add_popularity = { ideology = paternal_autocrat popularity = 0.01 }
+    }
+}
+country_event = { #Unity of Peasants and Workers
+    id = CHI.endgame.501
+    immediate = { log = "[GetDateText]: [Root.GetName]: event CHI.endgame.501" }
+    title = CHI.endgame.501.t
+    desc = CHI.endgame.501.d
+    picture = GFX_report_event_CHI_chen_duxiu_peng_shu_zhi_court
+    fire_only_once = yes
+    is_triggered_only = yes #Triggered by Focus CHI_groundwork_for_proletarian_future
+    option = { #A partnership to last.
+        name = CHI.endgame.501.a
+        add_popularity = { ideology = syndicalist popularity = 0.05 }
+    }
+}
+
+country_event = { #The Dream of Our Forefathers
+    id = CHI.endgame.504
+    immediate = { log = "[GetDateText]: [Root.GetName]: event CHI.endgame.504" }
+    title = CHI.endgame.504.t
+    desc = CHI.endgame.504.d
+    picture = GFX_report_event_CHI_sun_fo_heroic
+    fire_only_once = yes
+    is_triggered_only = yes #Triggered by Focus CHI_the_vision_of_the_eternal_premier
+    option = { #A chance to right past wrongs.
+        name = CHI.endgame.504.a
+        add_popularity = { ideology = radical_socialist popularity = 0.02 }
+        add_popularity = { ideology = social_liberal popularity = 0.03 }
+    }
+}
+country_event = { #Epilogue - Chen/Wang
+    id = CHI.endgame.301
+    immediate = { log = "[GetDateText]: [Root.GetName]: event CHI.endgame.301" }
+    title = CHI.endgame.301.t
+    desc = CHI.endgame.301.d
+    picture = GFX_report_event_CHI_wang_jingwei_smug
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = CHI.endgame.301.a
+    }
+}
+country_event = { #Epilogue - Residence Faction/Wang
+    id = CHI.endgame.302
+    immediate = { log = "[GetDateText]: [Root.GetName]: event CHI.endgame.302" }
+    title = CHI.endgame.302.t
+    desc = CHI.endgame.302.d
+    picture = GFX_report_event_CHI_wang_jingwei_family
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = CHI.endgame.302.a
+        hidden_effect = { country_event = { id = CHI.endgame.305 days = 365 } } #Musings of a Successor
+    }
+}
+country_event = { #Epilogue - Moderates/Wang
+    id = CHI.endgame.303
+    immediate = { log = "[GetDateText]: [Root.GetName]: event CHI.endgame.303" }
+    title = CHI.endgame.303.t
+    desc = CHI.endgame.303.d
+    picture = GFX_report_event_CHI_wang_jingwei_studio_portrait
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = CHI.endgame.303.a
+    }
+}
+country_event = { #Intrigues in the CSP
+    id = CHI.endgame.244
+    immediate = { log = "[GetDateText]: [Root.GetName]: event CHI.endgame.244" }
+    title = CHI.endgame.244.t
+    desc = CHI.endgame.244.d
+    picture = GFX_report_event_CHI_worker
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {  #Court the Radicals
+        name = CHI.endgame.244.a
+        ai_chance = {
+            base = 30
+            modifier = {
+                factor = 2
+                totalist > 0.25
+            }
+        }
+        add_popularity = { ideology = totalist popularity = 0.05 }
+    }
+    option = {  #Work with the Orthodox
+        name = CHI.endgame.244.b
+        ai_chance = {
+            base = 40
+            modifier = {
+                factor = 2
+                social_democrat > 0.25
+            }
+        }
+        add_popularity = { ideology = social_democrat popularity = 0.05 }
+    }
+    option = {  #The CSP have played their part
+        name = CHI.endgame.244.c
+        ai_chance = {
+            base = 30
+            modifier = {
+                factor = 2
+                radical_socialist > 0.50
+            }
+        }
+        add_popularity = { ideology = radical_socialist popularity = 0.1 }
+        add_popularity = { ideology = syndicalist popularity = -0.05 }
+    }
+}
+country_event = {
+    id = CHI.endgame.248 #Building a national Mausoleum
+    immediate = { log = "[GetDateText]: [Root.GetName]: event CHI.endgame.248" }
+    title = CHI.endgame.248.t
+    desc = CHI.endgame.248.d
+    picture = GFX_report_event_CHI_sun_yat_sen
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = CHI.endgame.248.a
+        add_political_power = 10
+    }
+}
+country_event = {
+    id = CHI.endgame.247
+    immediate = { log = "[GetDateText]: [Root.GetName]: event CHI.endgame.247" }
+    title = CHI.endgame.247.t
+    desc = CHI.endgame.247.d
+    picture = GFX_report_event_CHI_gu_mengyu_3
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = { #The Party will lead us forward
+        name = CHI.endgame.247.a
+        ai_chance = { base = 40 }
+        add_popularity = { ideology = social_democrat popularity = 0.15 }
+        add_popularity = { ideology = social_liberal popularity = 0.05 }
+        add_popularity = { ideology = market_liberal popularity = 0.05 }
+        add_political_power = 50
+    }
+    option = { #tutelage must end
+        name = CHI.endgame.247.b
+        ai_chance = { base = 60 }
+        add_popularity = { ideology = social_democrat popularity = 0.03 }
+        add_popularity = { ideology = social_liberal popularity = 0.01 }
+        add_popularity = { ideology = market_liberal popularity = 0.03 }
+    }
+}
+country_event = {
+    id = CHI.endgame.243
+    immediate = { log = "[GetDateText]: [Root.GetName]: event CHI.endgame.243" }
+    title = CHI.endgame.243.t
+    desc = CHI.endgame.243.d
+    picture = GFX_report_event_CHI_wang_jingwei_desk
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = { #TOTALISM
+        name = CHI.endgame.243.a
+        ai_chance = {
+            base = 30
+            modifier = {
+                factor = 2
+                totalist > 0.25
+            }
+        }
+        add_popularity = { ideology = totalist popularity = 0.05 }
+        add_stability = 0.1
+    }
+    option = { #some of the experts can be used
+        name = CHI.endgame.243.b
+        ai_chance = {
+            base = 40
+            modifier = {
+                factor = 2
+                radical_socialist > 0.50
+            }
+        }
+        add_popularity = { ideology = radical_socialist popularity = 0.05 }
+        clr_country_flag = Chen_Youren_dead
+        custom_effect_tooltip = available_political_advisor
+        show_ideas_tooltip = CHI_Chen_Youren_for_sde
+        CHI_recruit_song_ziwen_effect = yes #bad wang u catering to the reactionaries now
+    }
+    option = { #amnesty
+        name = CHI.endgame.243.c
+        ai_chance = {
+            base = 30
+            modifier = {
+                factor = 2
+                totalist > 0.25
+            }
+        }
+        add_popularity = { ideology = social_democrat popularity = 0.05 }
+        clr_country_flag = Chen_Youren_dead
+        custom_effect_tooltip = available_political_advisor
+        show_ideas_tooltip = CHI_Chen_Youren_for_sde
+        clr_country_flag = He_Xiangning_dead
+        custom_effect_tooltip = available_political_advisor
+        show_ideas_tooltip = CHI_He_Xiangning_sec_sde
+        clr_country_flag = Zhang_Bojun_dead
+        custom_effect_tooltip = available_political_advisor
+        show_ideas_tooltip = CHI_Zhang_Bojun_eco_sde
+        CHI_recruit_song_ziwen_effect = yes
+    }
 }

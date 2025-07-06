@@ -250,6 +250,8 @@ spriteTypes = {
 		name = "GFX_goal_FRG_A_Call_from_Deep_Space_2"
 		texturefile = "gfx/interface/goals/KXX_FRG/FRG_A_Call_from_Deep_Space_2.png"
 	}
+	#布列塔尼
+
 	spriteType = {
 		name = "GFX_goal_BRI_road_of_independent"
 		texturefile = "gfx/interface/goals/KXX_FRG/BRI_road_of_independent.png"
@@ -257,6 +259,220 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_BRI_PNB_holds"
 		texturefile = "gfx/interface/goals/KXX_FRG/BRI_PNB_holds.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_synd_socdem"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_synd_socdem.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_radsoc_soclib"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_radsoc_soclib.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_authdem_soccon"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_authdem_soccon.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_lagadelle"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_lagadelle.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_danone"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_danone.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_burnam"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_burnam.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_michellin"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_michellin.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_totalenergy"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_totalenergy.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_lvmh"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_lvmh.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_puppet_pcf"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_puppet_pcf.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_independent_win"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_independent_win.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_independent_win_shine"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_independent_win.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KXX_FRG/BRI_independent_win.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_puppet_pcf_shine"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_puppet_pcf.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KXX_FRG/BRI_puppet_pcf.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_lvmh_shine"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_lvmh.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KXX_FRG/BRI_lvmh.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_michellin_shine"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_michellin.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KXX_FRG/BRI_michellin.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_burnam_shine"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_burnam.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KXX_FRG/BRI_burnam.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_danone_shine"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_danone.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KXX_FRG/BRI_danone.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_lagadelle_shine"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_lagadelle.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KXX_FRG/BRI_lagadelle.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_authdem_soccon_shine"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_authdem_soccon.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KXX_FRG/BRI_authdem_soccon.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_radsoc_soclib_shine"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_radsoc_soclib.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KXX_FRG/BRI_radsoc_soclib.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+	spriteType = {
+		name = "GFX_goal_BRI_synd_socdem_shine"
+		texturefile = "gfx/interface/goals/KXX_FRG/BRI_synd_socdem.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KXX_FRG/BRI_synd_socdem.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
 	}
 	spriteType = {
 		name = "GFX_goal_BRI_PNB_holds_shine"

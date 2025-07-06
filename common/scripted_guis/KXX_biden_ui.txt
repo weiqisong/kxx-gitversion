@@ -169,6 +169,29 @@ scripted_gui = {
 				}
 			}
 
+			#布列塔尼
+			Marcel_Capron_visible = { #马塞尔·卡普隆
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_country_flag = BRI_Marcel_Capron_VISIBLE
+				}
+			}
+
+			Marcel_Gitton_visible = { #马塞尔·吉顿
+				AND = {
+					has_country_flag = KXX_HOG_second_veiw
+					has_country_flag = Bri_Marcel_Gitton_VISIBLE
+				}
+			}
+
+			#国民党左派
+			Wang_jingwei_visible = { #汪精卫
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_country_flag = CHI_Wang_jingwei_VISIBLE
+				}
+			}
+
 			#瑞典
 			Per_Albin_Hansson_visible = { #佩尔·阿尔宾·汉森
 				AND = {

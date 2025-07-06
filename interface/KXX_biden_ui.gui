@@ -6,7 +6,11 @@ guiTypes = {
 		orientation = upper_left
 		
 		############民族与革命#############
-		
+		iconType = {
+			name = "Morris_Abraham_Cohen" 
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_ISR_Morris_Abraham_Cohen"
+		}
 		iconType = {
 			name = "Husayn_al_Khalidi" 
 			position = { x = 8 y = 10 }
@@ -127,6 +131,218 @@ guiTypes = {
 			name = "Draza_Mihailovic" 
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_SER_Draza_Mihailovic"
+		}
+		####################挪威#############################
+		iconType = { #
+			name = "Albin_Eines"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Norway_Albin_Eines"
+		}
+		
+		iconType = { #
+			name = "Albin_Eines_propagandist"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Norway_Albin_Eines"
+		}
+		
+		iconType = { #
+			name = "Elias_Volan"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Norway_Elias_Volan"
+		}
+		
+		iconType = { #
+			name = "Martin_Tranmel"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Norway_Martin_Tranmel"
+		}
+		
+		iconType = { #
+			name = "Johan_Nygaardsvold"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Norway_Johan_Nygaardsvold_KX"
+		}
+		
+		iconType = { #
+			name = "Magnus_Nilssen"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Norway_Magnus_Nilssen"
+		}
+		
+		iconType = { #
+			name = "Haakon_Five"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Norway_Haakon_Five"
+		}
+		
+		iconType = { #
+			name = "Carl_Joachim_Hambro"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Norway_Carl_Joachim_Hambro"
+		}
+		
+		iconType = { #
+			name = "Johan_Henrik_Andresen"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Norway_Johan_Henrik_Andresen"
+		}
+		
+		iconType = { #
+			name = "Jens_Hundseid"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Norway_Jens_Hundseid"
+		}
+		
+		iconType = { #
+			name = "Odd_Nansen"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Norway_Odd_Nansen"
+		}
+		
+		iconType = { #
+			name = "Joakim_Lehmkuhl"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Norway_Joakim_Lehmkuhl"
+		}
+		
+		iconType = { #
+			name = "Johan_Bernhard_Hjort"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Norway_Johan_Bernhard_Hjort"
+		}
+		
+		iconType = { #
+			name = "Vidkun_Quisling"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Norway_Vidkun_Quisling_Suit"
+		}
+
+		iconType = { #
+			name = "Vidkun_Quisling_council"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Norway_Vidkun_Quisling_Suit"
+		}
+		
+		iconType = { #
+			name = "Jonas_Lie"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Norway_Jonas_Lie"
+		}
+		
+		iconType = { #
+			name = "Per_Imerslund"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Norway_Per_Imerslund"
+		}
+		
+		iconType = { #
+			name = "Harald_Damsleth_propagandist"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Norway_Harald_Damsleth"
+		}
+		
+		####################布列塔尼#########################
+		iconType = { #
+			name = "Marcel_Capron"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_BRI_Marcel_Capron"
+		}
+		
+		iconType = { #
+			name = "Marcel_Gitton"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_BRI_Marcel_Gitton"
+		}
+		####################国民党左派#######################
+		iconType = { #
+			name = "Wang_jingwei"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_CHI_Wang_jingwei"
+		}
+		
+		####################瑞典#############################
+		iconType = { #
+			name = "Per_Albin_Hansson"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Sweden_Per_Albin_Hansson_orig"
+		}
+		
+		iconType = { #
+			name = "Tage_Erlander"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Sweden_Tage_Erlander"
+		}
+		
+		iconType = { #
+			name = "Axel_Pehrsson_Bramstorp"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Sweden_Axel_Pehrsson_Bramstorp"
+		}
+		
+		iconType = { #
+			name = "Bertil_Ohlin"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Sweden_Bertil_Ohlin"
+		}
+		
+		iconType = { #
+			name = "Goesta_Bagge"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Sweden_Goesta_Bagge"
+		}
+		
+		iconType = { #
+			name = "Fritiof_Domoe"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Sweden_Fritiof_Domoe"
+		}
+
+		iconType = { #
+			name = "Helge_Jung"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Sweden_Helge_jung"
+		}
+
+		iconType = { #
+			name = "Archibald_Douglas"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Sweden_Archibald_Douglas"
+		}
+		
+		iconType = { #
+			name = "Carl_August_Ehrensvard"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Sweden_Carl_August_Ehrensvard"
+		}
+
+		iconType = { #
+			name = "Martin_Ekstrom"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Sweden_Martin_Ekstrom"
+		}
+
+		iconType = { #
+			name = "Elmo_Lindholm"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Sweden_Elmo_Lindholm"
+		}
+
+		iconType = { #
+			name = "Axel_Gyllenkrok"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Sweden_Axel_Gyllenkrok"
+		}
+
+		iconType = { #
+			name = "Gustaf_Andersson"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Sweden_Gustaf_Andersson"
+		}
+
+		iconType = { #
+			name = "Karl_Kilbom"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Sweden_Karl_Kilbom"
 		}
 		
 		#################法公社杜克洛########################

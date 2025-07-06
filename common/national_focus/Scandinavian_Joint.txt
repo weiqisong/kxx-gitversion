@@ -4,19 +4,26 @@
 		cost = 8
 		text_icon = joint_focus_style
 
-		x = 50
-		y = 20
+		x = 25
+		y = 7
 
 		offset = {
-			x = 10
-			y = 2
+			x = 36
+			y = -4
 			trigger = { original_tag = NOR }
 		}
 		offset = {
-			x = -36
-			y = -13
+			x = -11
+			y = 0
 			trigger = { original_tag = SWE }		
 		}
+		offset = {
+			x = 23
+			y = -7
+			trigger = { original_tag = DEN }		
+		}
+
+
 		allow_branch = {
 			NOT = { has_global_flag = SCA_nordic_council_refused }
 			NOT = { NOR = { has_completed_focus = NOR_DEM_join_entente } }
@@ -32,7 +39,7 @@
 			}
 			else_if = {
 				limit = { original_tag = NOR }
-				has_completed_focus = NOR_DEM_internationalism
+				has_global_flag = NOR_democratic_nation
 			}
 			has_elected_government = yes
 			is_in_faction = no
@@ -71,7 +78,7 @@
 				limit = { NOT = { original_tag = NOR } }
 				NOR = {
 					exists = yes
-					has_completed_focus = NOR_DEM_political_mandate
+					has_global_flag = NOR_democratic_nation
 					NOT = { focus_progress = { focus = NOR_DEM_join_entente progress > 0 } }
 					has_elected_government = yes
 					is_in_faction = no

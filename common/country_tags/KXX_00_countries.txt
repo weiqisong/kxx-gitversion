@@ -13,7 +13,7 @@ GOR = "countries/GOR.txt"  #高尔基
 VYT = "countries/VYT.txt"  #维亚特卡
 PRM = "countries/PRM.txt"  #雅利安兄弟会
 URL = "countries/URL.txt"  #乌拉尔联盟
-SAM = "countries/SAM.txt"  #萨马拉
+SMM = "countries/SMM.txt"  #萨马拉
 ORB = "countries/ORB.txt"  #奥伦堡
 ZLT = "countries/ZLT.txt"  #兹拉托乌斯克
 MGN = "countries/MGN.txt"  #马格尼托格尔斯克
@@ -49,6 +49,3 @@ CHP = "countries/CHP.txt" #香槟
 PRO = "countries/CHP.txt" #普罗旺斯
 DOB = "countries/CHP.txt" #勃艮第
 PDL = "countries/CHP.txt" #卢瓦尔河
-
-MCU = "countries/POR_colonies.txt"
-GOA = "countries/POR_colonies.txt"

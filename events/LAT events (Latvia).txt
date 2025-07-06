@@ -1837,7 +1837,7 @@ country_event = {
 						is_core_of = TAN
 						is_core_of = ETS
 						is_core_of = FNG
-
+						is_core_of = UKR
 					}
 				}
 				add_claim_by = LAT
