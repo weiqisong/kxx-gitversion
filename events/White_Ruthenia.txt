@@ -3589,6 +3589,7 @@ country_event = { # Astrouski asks the Sojm for support
 		}
 		add_soccon_to_coalition = yes
 		country_event = { id = whrpol.23 days = 3 }
+		country_event = { id = belarus.54 days = 1 }
 		hidden_effect = {
 			if = {
 				limit = { has_game_rule = { rule = WHR_situation option = DEFAULT } }
@@ -5506,55 +5507,7 @@ country_event = { # Hramada Fate
 		add_radsoc_to_coalition = yes
 		add_soclib_to_coalition = yes
 	}
-	option = { # BPSF
-		name = whrpol.51.e
-		ai_chance = {
-			base = 30
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = { rule = WHR_situation option = WHR_SITUATION_ANARCHISTS_TOT }
-					has_game_rule = { rule = WHR_situation option = WHR_SITUATION_ANARCHISTS_RADSOC }
-					has_game_rule = { rule = WHR_situation option = WHR_SITUATION_CENTRAL_RADA }
-					has_game_rule = { rule = WHR_situation option = WHR_SITUATION_GERMAN_GOVERNMENT }
-					has_game_rule = { rule = WHR_situation option = WHR_SITUATION_BULAK_BALAKHOVICH }
-					has_game_rule = { rule = WHR_situation option = WHR_SITUATION_KRYVIA }
-					has_game_rule = { rule = WHR_situation option = WHR_SITUATION_BRA }
-					has_game_rule = { rule = WHR_situation option = WHR_SITUATION_BPSR }
-					has_game_rule = { rule = WHR_situation option = WHR_SITUATION_BSRH }
-					has_game_rule = { rule = WHR_situation option = WHR_SITUATION_BSDP }
-				}
-			}
-		}
-		add_popularity = {
-			ideology = social_liberal
-			popularity = 0.2
-		}
-		add_popularity = {
-			ideology = market_liberal
-			popularity = 0.1
-		}
-		set_politics = {
-			ruling_party = social_liberal
-			elections_allowed = yes
-		}
-		set_country_flag = WHR_bpsfvictory
-		remove_all_ministers = yes
-		add_ideas = {
-			WHR_Mikola_Abramcyk_hog_sli
-			WHR_Alyaksandr_Tsvikyevich_for_sli
-			WHR_Jan_Sierada_eco_sli
-			WHR_Jazep_Varonka_sec_sli
-		}
-		complete_national_focus = WHR_BPSF
-		clear_all_relations = yes
-		clr_country_flag = sigismund_I_HoS
-		GER = {
-			country_event = {
-				id = whiteruthenia.1000 days = 1
-			}
-		}
-	}
+	
 	option = { # monbol
 		name = whrpol.51.g
 		ai_chance = {
@@ -5586,6 +5539,57 @@ country_event = { # Hramada Fate
 				WHR_Aliaksandr_Carviakou_for_tot
 				WHR_Salamon_Kacenbohien_eco_tot
 				WHR_Nicypar_Natalievic_sec_tot
+			}
+
+		
+	}
+	option = { # bund
+		name = whrpol.51.h
+		ai_chance = {
+			base = 30
+			
+		}
+		country_event = belarus.53
+	
+			complete_national_focus = WHR_Bund_rises
+			remove_all_ministers = yes
+			add_ideas = {
+				WHR_Jazep_Adamovic_hog_tot
+				WHR_Aliaksandr_Carviakou_for_tot
+				WHR_Salamon_Kacenbohien_eco_tot
+				WHR_Nicypar_Natalievic_sec_tot
+			}
+
+		
+	}
+	option = { # kyrvia
+		name = whrpol.51.i
+		trigger = {
+			has_country_flag = WHR_kyrvia_socialist
+		}
+		ai_chance = {
+			base = 30
+			
+		}
+			set_cosmetic_tag = WHR_national_populist
+			set_politics = {
+				ruling_party = radical_socialist
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "Vacłaŭ Łastoŭski"
+				desc = "POLITICS_VACLAU_LASTOUSKI_DESC"
+				picture = "gfx/leaders/WHR/Portrait_WHR_Vaclau_Lastouski.png"
+				expire = "1.1.1"
+				ideology = agrarian_socialism_subtype
+			}
+			complete_national_focus = WHR_peaceful_change
+			remove_all_ministers = yes
+			add_ideas = {
+				WHR_Vaclau_Lastouski_hog_npo
+				WHR_Uladzislau_Kazlouski_for_npo
+				WHR_Dmitry_Pryshchepau_eco_rso
+				WHR_Pavel_Valoshin_sec_rso
 			}
 
 		

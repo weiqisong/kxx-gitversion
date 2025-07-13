@@ -316,7 +316,7 @@ country_event = {
 		name = "金日成将成为我们新的名义领袖。"
 		create_country_leader = {
    		 	name = "金日成"
-				picture = "gfx/leaders/YUN/Portrait_KOR_Kim_Il_Sung.png"
+				picture = "gfx/leaders/KOR/Portrait_KOR_Kim_Il_Sung_2.png"
 				expire = "1965.1.1"
 				ideology = juche_subtype
 		}

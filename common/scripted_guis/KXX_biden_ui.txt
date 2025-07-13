@@ -168,6 +168,135 @@ scripted_gui = {
 					has_country_flag = GRU_Horst_Wessel_2_VISIBLE
 				}
 			}
+			
+			#挪威
+			Albin_Eines_visible = { #阿尔宾·埃内斯
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = NOR_Albin_Eines_hog_tot
+				}
+			}
+			
+			Albin_Eines_propagandist_visible = { #阿尔宾·埃内斯
+				AND = {
+					has_country_flag = KXX_HOG_second_veiw
+					has_country_flag = NOR_EINES_PROPAGANDA_VISIBLE
+				}
+			}
+			
+			Elias_Volan_visible = { #埃利亚斯·沃兰
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					tag = NOR
+					has_government = syndicalist
+				}
+			}
+			
+			Martin_Tranmel_visible = { #马丁·特兰梅尔
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					tag = NOR
+					has_government = radical_socialist
+				}
+			}
+			
+			Johan_Nygaardsvold_visible = { #约翰·尼高斯沃尔
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = NOR_Johan_Nygaardsvold_hog_sde
+				}
+			}
+			
+			Magnus_Nilssen_visible = { #芒努斯·尼尔森
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = NOR_Magnus_Nilssen_hog_sde
+				}
+			}
+			
+			Haakon_Five_visible = { #哈康·菲弗
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = NOR_Haakon_Five_hog_sli
+				}
+			}
+			
+			Carl_Joachim_Hambro_visible = { #卡尔·约阿希姆·汉布罗
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = NOR_Carl_Joachim_Hambro_hog_mli
+				}
+			}
+			
+			Johan_Henrik_Andresen_visible = { #约翰·亨里克·安德烈森
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = NOR_Johan_Henrik_Andresen_hog_mli
+				}
+			}
+			
+			Jens_Hundseid_visible = { #延斯·洪德塞德
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = NOR_Jens_Hundseid_hog_sco
+				}
+			}
+			
+			Odd_Nansen_visible = { #奥德·南森
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = NOR_Odd_Nansen_hog_sco
+				}
+			}
+			
+			Joakim_Lehmkuhl_visible = { #约阿基姆·莱姆库尔
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = NOR_Joakim_Lehmkuhl_hog_ade
+				}
+			}
+			
+			Johan_Bernhard_Hjort_visible = { #约翰·伯恩哈尔·约尔特
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = NOR_Johan_Bernhard_Hjort_hog_ade
+				}
+			}
+			
+			Vidkun_Quisling_visible = { #维德孔·吉斯林
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = NOR_Vidkun_Quisling_hog_pau
+				}
+			}
+
+			Vidkun_Quisling_council_visible = { #维德孔·吉斯林
+				AND = {
+					has_country_flag = KXX_HOG_second_veiw
+					has_country_flag = NOR_QUISLING_COUNCILOR_VISIBLE
+				}
+			}
+			
+			Jonas_Lie_visible = { #约纳斯·利
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = NOR_Jonas_Lie_hog_npo
+				}
+			}
+			
+			Per_Imerslund_visible = { #佩尔·伊梅斯隆
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = NOR_Per_Imerslund_hog_npo
+				}
+			}
+			
+			Harald_Damsleth_propagandist_visible = { #哈拉尔·达姆斯莱特
+				AND = {
+					has_country_flag = KXX_HOG_second_veiw
+					has_country_flag = NOR_DAMSLETH_PROPAGANDA_VISIBLE
+				}
+			}
 
 			#布列塔尼
 			Marcel_Capron_visible = { #马塞尔·卡普隆

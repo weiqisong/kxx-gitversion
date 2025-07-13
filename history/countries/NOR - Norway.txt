@@ -113,7 +113,7 @@ country_event = {
   days = 21
 }
 
-set_country_flag = LEADER_GUI_NOT_VISIBLE
+set_country_flag = LEADER_GUI_VISIBLE
 set_country_flag = KXX_LEADER_GUI_VISIBLE
 
 set_research_slots = 3

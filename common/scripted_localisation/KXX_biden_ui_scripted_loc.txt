@@ -136,6 +136,40 @@ defined_text = {
 		localization_key = SHE_SWTH
 	}
 	##############################################
+	#挪威
+	text = {
+		trigger = {
+		  tag = NOR
+		  NOT = {
+			has_country_flag = NOR_QUISLING_COUNCILOR_VISIBLE
+		  }
+		  NOT = {
+			has_country_flag = NOR_DAMSLETH_PROPAGANDA_VISIBLE
+		  }
+		  NOT = {
+			has_country_flag = NOR_EINES_PROPAGANDA_VISIBLE
+		  }
+		}
+		localization_key = FR_OR_LEADER
+	  }
+	text = {
+		trigger = {
+		  tag = NOR
+		  has_country_flag = NOR_QUISLING_COUNCILOR_VISIBLE
+		}
+		localization_key = NOR_OR_leader1
+	}
+	text = {
+		trigger = {
+		  tag = NOR
+		  OR = {
+			has_country_flag = NOR_EINES_PROPAGANDA_VISIBLE
+			has_country_flag = NOR_DAMSLETH_PROPAGANDA_VISIBLE
+		  }
+		}
+		localization_key = NOR_OR_leader2
+	}
+
 	#杜克洛
  	text = {
     	trigger = {
@@ -633,6 +667,13 @@ defined_text = {
 		localization_key = SHE_SWTH_2
 	}
 	#################################################
+	#挪威
+	text = {
+		trigger = {
+		  tag = NOR
+		}
+		localization_key = FR_OR_LEADER2
+	}
 	#杜克洛
   	text = {
     	trigger = {
@@ -1207,7 +1248,99 @@ defined_text = {
 		localization_key = GRU_LC_MOLOTOV
 	}
 	############################################################
-
+	#挪威
+	text = {
+		trigger = {
+		  has_idea = NOR_Albin_Eines_hog_tot
+		}
+		localization_key = "阿尔宾·埃内斯"  # Albin Eines
+	  }
+	  text = {
+		trigger = {
+		  tag = NOR
+		  has_government = syndicalist
+		}
+		localization_key = "埃利亚斯·沃兰"  # Elias Volan
+	  }
+	  text = {
+		trigger = {
+		  tag = NOR
+		  has_government = radical_socialist
+		}
+		localization_key = "马丁·特兰梅尔"  # Martin Tranmæl
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Magnus_Nilssen_hog_sde
+		}
+		localization_key = NOR_Magnus_Nilssen_hog_sde
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Johan_Nygaardsvold_hog_sde
+		}
+		localization_key = NOR_Johan_Nygaardsvold_hog_sde
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Haakon_Five_hog_sli
+		}
+		localization_key = NOR_Haakon_Five_hog_sli
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Carl_Joachim_Hambro_hog_mli
+		}
+		localization_key = NOR_Carl_Joachim_Hambro_hog_mli
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Johan_Henrik_Andresen_hog_mli
+		}
+		localization_key = NOR_Johan_Henrik_Andresen_hog_mli
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Jens_Hundseid_hog_sco
+		}
+		localization_key = NOR_Jens_Hundseid_hog_sco
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Odd_Nansen_hog_sco
+		}
+		localization_key = NOR_Odd_Nansen_hog_sco
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Joakim_Lehmkuhl_hog_ade
+		}
+		localization_key = NOR_Joakim_Lehmkuhl_hog_ade
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Johan_Bernhard_Hjort_hog_ade
+		}
+		localization_key = NOR_Johan_Bernhard_Hjort_hog_ade
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Vidkun_Quisling_hog_pau
+		}
+		localization_key = NOR_Vidkun_Quisling_hog_pau
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Jonas_Lie_hog_npo
+		}
+		localization_key = NOR_Jonas_Lie_hog_npo
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Per_Imerslund_hog_npo
+		}
+		localization_key = NOR_Per_Imerslund_hog_npo
+	  }
 	#杜克洛
   	text = {
     	trigger = {
@@ -1922,6 +2055,100 @@ defined_text = {
 	}
 	##############################################
 
+	#挪威
+	text = {
+		trigger = {
+		  has_idea = NOR_Albin_Eines_hog_tot
+		}
+		localization_key = GFX_Portrait_Norway_Albin_Eines
+	  }
+	  text = {
+		trigger = {
+		  tag = NOR
+		  has_government = syndicalist
+		}
+		localization_key = GFX_Portrait_Norway_Elias_Volan
+	  }
+	  text = {
+		trigger = {
+		  tag = NOR
+		  has_government = radical_socialist
+		}
+		localization_key = GFX_Portrait_Norway_Martin_Tranmel
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Magnus_Nilssen_hog_sde
+		}
+		localization_key = GFX_Portrait_Norway_Magnus_Nilssen
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Johan_Nygaardsvold_hog_sde
+		}
+		localization_key = GFX_Portrait_Norway_Johan_Nygaardsvold_KX
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Haakon_Five_hog_sli
+		}
+		localization_key = GFX_Portrait_Norway_Haakon_Five
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Carl_Joachim_Hambro_hog_mli
+		}
+		localization_key = GFX_Portrait_Norway_Carl_Joachim_Hambro
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Johan_Henrik_Andresen_hog_mli
+		}
+		localization_key = GFX_Portrait_Norway_Johan_Henrik_Andresen
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Jens_Hundseid_hog_sco
+		}
+		localization_key = GFX_Portrait_Norway_Jens_Hundseid
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Odd_Nansen_hog_sco
+		}
+		localization_key = GFX_Portrait_Norway_Odd_Nansen
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Joakim_Lehmkuhl_hog_ade
+		}
+		localization_key = GFX_Portrait_Norway_Joakim_Lehmkuhl
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Johan_Bernhard_Hjort_hog_ade
+		}
+		localization_key = GFX_Portrait_Norway_Johan_Bernhard_Hjort
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Vidkun_Quisling_hog_pau
+		}
+		localization_key = GFX_Portrait_Norway_Vidkun_Quisling_Suit
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Jonas_Lie_hog_npo
+		}
+		localization_key = GFX_Portrait_Norway_Jonas_Lie
+	  }
+	  text = {
+		trigger = {
+		  has_idea = NOR_Per_Imerslund_hog_npo
+		}
+		localization_key = GFX_Portrait_Norway_Per_Imerslund
+	}
+
 	#杜克洛
   	text = {
     	trigger = {
@@ -2528,6 +2755,25 @@ defined_text = {
 ##########################第三领袖分区#########################
 defined_text = {
 	name = KXXGetHOG2Title   #三头政府按钮定义
+	#挪威
+	text = {
+		trigger = {
+		  tag = NOR
+		  has_country_flag = NOR_QUISLING_COUNCILOR_VISIBLE
+		}
+		localization_key = NOR_OR_leader3
+	}
+	text = {
+		trigger = {
+		  tag = NOR
+		  OR = {
+			has_country_flag = NOR_EINES_PROPAGANDA_VISIBLE
+			has_country_flag = NOR_DAMSLETH_PROPAGANDA_VISIBLE
+		  }
+		}
+		localization_key = NOR_OR_leader4
+	}
+
 	#西俄革
 	text = {
 		trigger = {
@@ -2590,6 +2836,24 @@ defined_text = {
 
 defined_text = {
 	name = KXXGetThirdLeaderTitle  #第三领袖外交按钮
+	#挪威
+	text = {
+		trigger = {
+		  tag = NOR
+		  has_country_flag = NOR_QUISLING_COUNCILOR_VISIBLE
+		}
+		localization_key = KNG_OR_CON2
+	}
+	text = {
+		trigger = {
+		  tag = NOR
+		  OR = {
+			has_country_flag = NOR_EINES_PROPAGANDA_VISIBLE
+			has_country_flag = NOR_DAMSLETH_PROPAGANDA_VISIBLE
+		  }
+		}
+		localization_key = ERL_OR_PRP2
+	}
 	#西俄革
   	text = {
 		trigger = {
@@ -2670,6 +2934,27 @@ defined_text = {
 
 defined_text = {
 	name = KXXGetOtherPrimeMinister  #第三领袖名字
+
+	#挪威
+	text = {
+		trigger = {
+		  has_country_flag = NOR_QUISLING_COUNCILOR_VISIBLE
+		}
+		localization_key = "维德孔·吉斯林"  # Vidkun Quisling
+	  }
+	  text = {
+		trigger = {
+		  has_country_flag = NOR_EINES_PROPAGANDA_VISIBLE
+		}
+		localization_key = "阿尔宾·埃内斯"  # Albin Eines
+	  }
+	  text = {
+		trigger = {
+		  has_country_flag = NOR_DAMSLETH_PROPAGANDA_VISIBLE
+		}
+		localization_key = "哈拉尔·达姆斯莱特"  # Harald Damsleth
+	}
+
 	#西俄革
 	text = {
 		trigger = {
@@ -2760,6 +3045,26 @@ defined_text = {
 
 defined_text = {
 	name = KXXGetOtherPMPortrait  #第三领袖图片
+
+	#挪威
+	text = {
+		trigger = {
+		  has_country_flag = NOR_QUISLING_COUNCILOR_VISIBLE
+		}
+		localization_key = GFX_Portrait_Norway_Vidkun_Quisling_Suit
+	  }
+	  text = {
+		trigger = {
+		  has_country_flag = NOR_EINES_PROPAGANDA_VISIBLE
+		}
+		localization_key = GFX_Portrait_Norway_Albin_Eines
+	  }
+	  text = {
+		trigger = {
+		  has_country_flag = NOR_DAMSLETH_PROPAGANDA_VISIBLE
+		}
+		localization_key = GFX_Portrait_Norway_Harald_Damsleth
+	}
 	#西俄革
 	text = {
 		trigger = {
@@ -2899,6 +3204,73 @@ defined_text = {
 		localization_key =  GFX_Portrait_Albert_Speer
 	}
 }
+
+###########################################################
+#挪威
+defined_text = {
+	name = NORGetLeaderTitle
+	text = {
+	  trigger = {
+		or = {
+			has_country_leader = {
+				name = "哈康七世"  # Haakon VII
+				ruling_only = yes
+			}
+			has_country_leader = {
+				name = "Haakon VII"  # Haakon VII
+				ruling_only = yes
+			}
+		}
+		
+	  }
+	  localization_key = "国王"  # King
+	}
+	text = {
+	  trigger = {
+		or = {
+			has_country_leader = {
+				name = "斯泰因·巴尔特-海尔达尔"  # Stein Barth-Heyerdahl
+				ruling_only = yes
+			}
+			has_country_leader = {
+				name = "Stein Barth-Heyerdahl"  # Haakon VII
+				ruling_only = yes
+			}
+		}
+	  }
+	  localization_key = "厄里尔"  # Eril
+	}
+  }
+  defined_text = {
+	name = NORGetHoGTitle
+	text = {
+	  trigger = {
+		has_idea = NOR_Vidkun_Quisling_hog_pau
+	  }
+	  localization_key = "元首"  # Fører
+	}
+	text = {
+	  trigger = {
+		OR = {
+		  has_idea = NOR_Jonas_Lie_hog_npo
+		  has_idea = NOR_Per_Imerslund_hog_npo
+		}
+	  }
+	  localization_key = "述法官"  # Law-Speaker
+	}
+	text = {
+	  trigger = {
+		NOT = {
+		  OR = {
+			has_idea = NOR_Vidkun_Quisling_hog_pau
+			has_idea = NOR_Jonas_Lie_hog_npo
+			has_idea = NOR_Per_Imerslund_hog_npo
+		  }
+		}
+	  }
+	  localization_key = "总理"  # Prime Minister
+	}
+  }
 
 
 

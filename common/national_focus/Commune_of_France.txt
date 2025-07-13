@@ -10240,7 +10240,7 @@ focus = FRA_office_des_chemins_de_fer
 		icon = GFX_goal_USA_anti_imperialist_league
 		cost = 4
 		prerequisite = {
-			focus = FRA_seperation_of_powers
+			focus = FRA_cooperate_with_americans
 		}
 		x = -1
 		y = 2

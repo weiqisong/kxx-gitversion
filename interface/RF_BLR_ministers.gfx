@@ -4,6 +4,22 @@ spriteTypes = {
   ### BLR
   ################################################################################################################################################################################################
   	spriteType = {
+		name = "GFX_idea_WHR_Vladimir_Medem_sec_rso"
+		texturefile = "gfx/interface/ministers/BLR/Vladimir_Medem.png"
+	}
+ 	spriteType = {
+		name = "GFX_idea_WHR_Victor_Alter_eco_sde"
+		texturefile = "gfx/interface/ministers/BLR/Victor_Alter.png"
+	} 
+	spriteType = {
+		name = "GFX_idea_WHR_Esther_Frumkin_for_rso"
+		texturefile = "gfx/interface/ministers/BLR/Esther_Frumkin.png"
+	}
+  	spriteType = {
+		name = "GFX_idea_WHR_Marek_Edelman_hog_sde"
+		texturefile = "gfx/interface/ministers/BLR/Marek_Edelman.png"
+	}
+    spriteType = {
 		name = "GFX_idea_WHR_Ivan_Jermacenka_eco_npo"
 		texturefile = "gfx/interface/ministers/BLR/WHR_Ivan_Jermacenka.png"
 	}

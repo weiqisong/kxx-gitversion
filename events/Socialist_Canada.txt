@@ -14,11 +14,12 @@ country_event = {
 	picture = GFX_report_event_CAN_ccs
 
 	trigger = {
+		tag = CAN
+		has_completed_focus = CAN_Congress_of_Canadian_Socialists
 		has_socialist_government = yes
 	}
 
 	fire_only_once = yes
-	is_triggered_only = yes
 
 	option = {
 		name = canada_soc.1.a

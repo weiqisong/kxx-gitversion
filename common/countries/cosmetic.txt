@@ -10637,3 +10637,15 @@ GRE_theocracy = {
 	color = rgb { 255 255 204 }
 	color_ui = rgb { 255 255 204 }
 }
+WHR_KRY_larp = {
+	color = rgb { 95 0 191 }
+	color_ui = rgb { 95 0 191 }
+}
+WHR_EAST_EUROPE = {
+	color = rgb { 0 91 127 }
+	color_ui = rgb { 0 91 127 }
+}
+WHR_schizo_pagan = {
+	color = rgb { 45 45 45 }
+	color_ui = rgb { 55 55 55 }
+}

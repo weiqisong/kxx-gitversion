@@ -2003,40 +2003,93 @@ ideas = {
 		
 		YUN_tianlima = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
-			picture = generic_radical_socialist_revolution
+			picture = KOR_Juche_Idea
 			modifier = {
 				consumer_goods_factor = -0.30
-				local_resources_factor = 0.09
+				local_resources_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.10
-				production_factory_max_efficiency_factor = 0.05			
+				production_factory_max_efficiency_factor = 0.1	
+
 			}
 		}
-		
+		YUN_personality = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
+			picture = generic_totalist_revolution
+			modifier = {
+				political_power_gain = 0.1
+				stability_weekly = 0.001
+				totalist_drift = 0.05
+				conscription_factor = 0.8
+				industrial_capacity_factory = 0.1
+
+			}
+		}
 		YUN_culture_revolution = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
-			picture = generic_radical_socialist_revolution
+			picture = ALB_cultural_ideological_revolution
 			modifier = {
-				political_power_gain = -0.10
-				research_speed_factor = 0.05
-				army_defence_factor = 0.05
+				political_power_gain = 0.10
+				research_speed_factor = 0.15
+				army_defence_factor = 0.1
 				army_attack_factor = 0.10
 				war_support_weekly = 0.001
 			}
 		}
-		
+		YUN_attack_qing = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
+			picture = HOL_totalist_military
+			modifier = {
+				supply_consumption_factor = -0.15
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+
+			}
+			targeted_modifier = {
+				tag = QIE
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+				breakthrough_against = 0.1
+			}
+		}
+		YUN_attack_revisionism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
+			picture = HOL_totalist_military
+			modifier = {
+				supply_consumption_factor = -0.15
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				breakthrough_factor = 0.1
+				attrition = -0.1
+			}
+			targeted_modifier = {
+				tag = QIE
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+				breakthrough_against = 0.1
+			}
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+				breakthrough_against = 0.1
+			}
+			
+		}
 		YUN_culture_revolution_beyond_hill = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
-			picture = generic_radical_socialist_revolution
+			picture = ALB_thousand_voices
 			modifier = {
 				research_speed_factor = 0.10
-				army_morale_factor = 0.05
+				army_morale_factor = 0.1
 				resistance_damage_to_garrison = -0.1
-				supply_consumption_factor = -0.05
-				targeted_modifier = {
+				supply_consumption_factor = -0.1
+				
+			}
+			targeted_modifier = {
 				tag = JAP
 				attack_bonus_against = 0.10
 				defense_bonus_against = 0.10
-			}
+				breakthrough_against = 0.1
 			}
 		}
 		

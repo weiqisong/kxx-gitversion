@@ -120,11 +120,6 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_ideology_surrealism_bar"
-		textureFile = "gfx/interface/ideologies/ideology_bars/kxx/surrealism.png"
-		legacy_lazy_load = no
-	}
-	spriteType = {
 		name = "GFX_ideology_monarcho_syndicalism_bar"
 		textureFile = "gfx/interface/ideologies/ideology_bars/kxx/monarcho_syndicalism_subtype.png"
 		legacy_lazy_load = no
@@ -157,6 +152,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_christian_bolshevism_bar"
 		textureFile = "gfx/interface/ideologies/ideology_bars/kxx/christian_bolshevism_subtype.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_national_bolshevik_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/kxx/national_bolshevik.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_eugenicsism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/kxx/eugenicsism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_ultranationalism_proto_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/kxx/ultranationalism_proto.png"
 		legacy_lazy_load = no
 	}
 }

@@ -534,16 +534,12 @@ focus_tree = {
 
 			focus = WHR_secede_from_RP
 		 }
-		 allow_branch = {
-			NOT = {
-				tag = WHR
-			}
-		}
+		
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			activate_targeted_decision = { target = LIT decision = WHR_reclaim_vilnya }
-			activate_targeted_decision = { target = 94.owner decision = WHR_reclaim_bialystok }
+			add_ideas = WHR_federation_of_free_man
+			set_cosmetic_tag = WHR_EAST_EUROPE
 		}
 	}
 	focus = {
@@ -563,15 +559,167 @@ focus_tree = {
 		
 		available = {
 			is_subject = no
-			OR = {
-				has_completed_focus = WHR_Revive_BVZR
-				has_completed_focus = WHR_Create_BKA
-			}			
+					
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			activate_targeted_decision = { target = LIT decision = WHR_reclaim_vilnya }
-			activate_targeted_decision = { target = 94.owner decision = WHR_reclaim_bialystok }
+			454 = { add_core_of = ROOT }
+			992 = { add_core_of = ROOT }
+		}
+	}
+	focus = {
+		id = WHR_american_bunds
+		icon = GFX_goal_usa
+		relative_position_id = WHR_federation_of_free_man
+		x = 1
+		y = 1
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = { 
+
+			focus = WHR_federation_of_free_man
+		 }
+		
+		available = {
+			is_subject = no
+					
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			every_state = {
+				limit = {
+					is_core_of = USA
+				}
+				WHR = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = USA
+			}
+			every_state = {
+				limit = {
+					is_core_of = CSA
+				}
+				WHR = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = CSA
+			}
+			every_state = {
+				limit = {
+					is_core_of = TEX
+				}
+				WHR = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = TEX
+			}
+			every_state = {
+				limit = {
+					is_core_of = COR
+				}
+				WHR = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = COR
+			}
+			every_state = {
+				limit = {
+					is_core_of = WCC
+				}
+				WHR = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = WCC
+			}
+			every_state = {
+				limit = {
+					is_core_of = CAL
+				}
+				WHR = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = CAL
+			}
+			every_state = {
+				limit = {
+					is_core_of = NYC
+				}
+				WHR = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = NYC
+			}
+			every_state = {
+				limit = {
+					is_core_of = NEE
+				}
+				IRE = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = NEE
+			}
+			every_state = {
+				limit = {
+					is_core_of = TXS
+				}
+				WHR = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = TXS
+			}
+			every_state = {
+				limit = {
+					is_core_of = ALA
+				}
+				WHR = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ALA
+			}
+			every_state = {
+				limit = {
+					is_core_of = BBR
+				}
+				WHR = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BBR
+			}
 		}
 	}
 	focus = {
@@ -598,8 +746,131 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			activate_targeted_decision = { target = LIT decision = WHR_reclaim_vilnya }
-			activate_targeted_decision = { target = 94.owner decision = WHR_reclaim_bialystok }
+			create_wargoal = {
+				target = LIT
+				type = annex_everything
+			}	
+			create_wargoal = {
+				target = BAT
+				type = annex_everything
+			}	
+			create_wargoal = {
+				target = LAT
+				type = annex_everything
+			}	
+			create_wargoal = {
+				target = EST
+				type = annex_everything
+			}	
+			create_wargoal = {
+				target = POL
+				type = annex_everything
+			}	
+			create_wargoal = {
+				target = GAL
+				type = annex_everything
+			}	
+			create_wargoal = {
+				target = UKR
+				type = annex_everything
+			}	
+			create_wargoal = {
+				target = WSU
+				type = annex_everything
+			}	
+			create_wargoal = {
+				target = RUS
+				type = annex_everything
+			}	
+			create_wargoal = {
+				target = TRM
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = DKB
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_core_of = KUB
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_core_of = KLY
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_core_of = MTR
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_core_of = TRM
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_core_of = RUS
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_core_of = LIT
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_core_of = EST
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_core_of = LAT
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_core_of = BAT
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_core_of = GAL
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_core_of = POL
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_core_of = UKR
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_core_of = WSU
+				}
+				add_core_of = WHR
+			}
+
 		}
 	}
 	focus = {
@@ -626,7 +897,7 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			add_war_support = 0.1
+			add_ideas = WHR_successor_of_ancient_rus
 		}
 	}
 	focus = {
@@ -959,7 +1230,6 @@ focus_tree = {
 				target = LIT
 				type = annex_everything
 			}	
-			
 			create_wargoal = {
 				target = BAT
 				type = annex_everything
@@ -1309,9 +1579,11 @@ focus_tree = {
 		ai_will_do = {
 			base = 100
 		}
-
+		#allow_branch = {
+			#has_country_flag = WHR_schziopath_unlocked
+		#}
 		available = {
-			has_country_flag = WHR_schziopath_finno		
+			has_country_flag = WHR_schziopath_unlocked		
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
@@ -1336,12 +1608,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			add_political_power = 100
+			set_cosmetic_tag = WHR_schizo_pagan
 		}
 	}
 	focus = {
 		id = WHR_restore_slav_paganism
-		icon = GFX_goalsRUS_paganism
+		icon = GFX_goal_RUS_paganism
 		relative_position_id = WHR_call_of_antiquitian
 		x = -2
 		y = 1
@@ -1357,7 +1630,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			add_ideas = WHR_paganism_revival
 		}
 	}
 	focus = {
@@ -1378,7 +1651,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			add_ideas = WHR_learn_sanskrit
 		}
 	}
 	focus = {
@@ -1399,7 +1672,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			add_manpower = -10000
+			add_stability = 0.1
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.15
+			}
 		}
 	}
 	focus = {
@@ -1426,12 +1704,15 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			swap_ideas = {
+				remove_idea = WHR_paganism_revival
+				add_idea = WHR_paganism_revival2
+			}
 		}
 	}
 	focus = {
 		id = WHR_vedaism_enlightment
-		icon = GFX_goal_FIN_Kingdom
+		icon = GFX_goal_COL_Burn_All_History_Books
 		relative_position_id = WHR_call_of_antiquitian
 		x = 1
 		y = 2
@@ -1453,7 +1734,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
 		}
 	}
 	focus = {
@@ -1478,7 +1762,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			swap_ideas = {
+				remove_idea = WHR_paganism_revival2
+				add_idea = WHR_paganism_revival3
+			}
 		}
 	}
 	focus = {
@@ -1500,7 +1787,88 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			create_wargoal = {
+				target = POL
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = POL
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = GAL
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = GAL
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = RUS
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = RUS
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = TRM
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = TRM
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = DKB
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = DKB
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = KUB
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = KUB
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = KLY
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = KLY
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = MTR
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = MTR
+				}
+				add_core_of = WHR
+			}
+			add_state_core = 564
+			add_state_core = 574
 		}
 	}
 	focus = {
@@ -1522,7 +1890,39 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			create_wargoal = {
+				target = DEH
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = DEH
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = PRF
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = PRF
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = BHC
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = BHC
+				}
+				add_core_of = WHR
+			}
+			add_state_core = 320
+			add_state_core = 321
+			add_state_core = 422
 		}
 	}
 	focus = {
@@ -1546,7 +1946,26 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			create_wargoal = {
+				target = AFG
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = AFG
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = PER
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = PER
+				}
+				add_core_of = WHR
+			}
 		}
 	}
 	focus = {
@@ -1570,7 +1989,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			create_wargoal = {
+				target = GER
+				type = annex_everything
+			}
 		}
 	}
 	focus = {
@@ -1594,7 +2016,30 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			every_state = {
+		limit = { is_core_of = UZB }
+		add_core_of = WHR
+}
+create_wargoal = { type = annex_everything target = UZB }
+every_state = {
+		limit = { is_core_of = KHI }
+		add_core_of = WHR
+}
+create_wargoal = { type = annex_everything target = KHI }
+every_state = {
+		limit = { is_core_of = TRK }
+		add_core_of = WHR
+}
+create_wargoal = { type = annex_everything target = TRK }
+every_state = {
+		limit = { is_core_of = KYR }
+		add_core_of = WHR
+}
+create_wargoal = { type = annex_everything target = KYR }
+every_state = {
+		limit = { is_core_of = ALO }
+		add_core_of = WHR
+}
 		}
 	}
 	focus = {
@@ -1621,7 +2066,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			add_ideas = WHR_old_paradise
 		}
 	}
 	focus = {
@@ -1642,7 +2087,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			add_political_power = 100
+			set_cosmetic_tag = GRE_byzantium_rome
 		}
 	}
 	focus = {
@@ -1663,7 +2109,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			add_political_power = 100
+			add_stability = 0.15
 		}
 	}
 	focus = {
@@ -1684,12 +2131,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			add_ideas = WHR_reestublish_senate
 			
 		}
 	}
 	focus = {
 		id = WHR_culture_of_romans
-		icon = GFX_goal_FIN_Kingdom
+		icon = GFX_goal_GRE_People
 		relative_position_id = WHR_legacy_of_palemonids
 		x = 2
 		y = 1
@@ -1705,7 +2153,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			add_ideas = WHR_culture_of_romans
 		}
 	}
 	focus = {
@@ -1732,7 +2180,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			add_ideas = WHR_reorganize_legion
 		}
 	}
 	focus = {
@@ -1759,7 +2207,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			add_ideas = WHR_latinization
 		}
 	}
 	focus = {
@@ -1784,7 +2232,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			add_war_support = 0.2
+			add_manpower = 10000
 		}
 	}
 	focus = {
@@ -1806,7 +2255,16 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			create_wargoal = {
+				target = HUN
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = HUN
+				}
+				add_core_of = WHR
+			}
 		}
 	}
 	focus = {
@@ -1828,7 +2286,25 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			create_wargoal = {
+				target = BAT
+				type = annex_everything
+			}
 			
+			create_wargoal = {
+				target = EST
+				type = annex_everything
+			}
+			
+			create_wargoal = {
+				target = LAT
+				type = annex_everything
+			}
+			
+			create_wargoal = {
+				target = LIT
+				type = annex_everything
+			}
 		}
 	}
 	focus = {
@@ -1852,7 +2328,127 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+		add_state_core = 460
+		add_state_core = 459
+		add_state_core = 805
+		add_state_core = 461
+		add_state_core = 290
+		add_state_core = 114
+		add_state_core = 1002
+		add_state_core = 1
+		add_state_core = 177
+		add_state_core = 179
+		add_state_core = 112
+		add_state_core = 181
+		add_state_core = 180
+		add_state_core = 171
+		add_state_core = 793
+		add_state_core = 174
+		add_state_core = 951
+		add_state_core = 170
+		add_state_core = 1316
+		add_state_core = 169
+		add_state_core = 118
+		add_state_core = 173
+		add_state_core = 795
+		add_state_core = 175
+		add_state_core = 41
+		add_state_core = 176
+		add_state_core = 172
+		add_state_core = 940
+		add_state_core = 166
+		add_state_core = 167
+		add_state_core = 168
+		add_state_core = 165
+		add_state_core = 1313
+		add_state_core = 942
+		add_state_core = 1235
+		add_state_core = 39
+		add_state_core = 759
+		add_state_core = 783
+		add_state_core = 160
+		add_state_core = 151
+		add_state_core = 761
+		add_state_core = 3
+		add_state_core = 760
+		add_state_core = 943
+		add_state_core = 764
+		add_state_core = 1005
+		add_state_core = 157
+		add_state_core = 1236
+		add_state_core = 162
+		add_state_core = 161
+		add_state_core = 1004
+		add_state_core = 159
+		add_state_core = 838
+		add_state_core = 158
+		add_state_core = 1003
+		add_state_core = 762
+		add_state_core = 21
+		add_state_core = 763
+		add_state_core = 735
+		add_state_core = 20
+		add_state_core = 32
+		add_state_core = 26
+		add_state_core = 25
+		add_state_core = 23
+		add_state_core = 19
+		add_state_core = 984
+		add_state_core = 1334
+		add_state_core = 31
+		add_state_core = 817
+		add_state_core = 22
+		add_state_core = 983
+		add_state_core = 14
+		add_state_core = 30
+		add_state_core = 33
+		add_state_core = 27
+		add_state_core = 785
+		add_state_core = 18
+		add_state_core = 16
+		add_state_core = 15
+		add_state_core = 24
+		add_state_core = 980
+		add_state_core = 17
+		add_state_core = 1315
+		add_state_core = 1317
+		add_state_core = 122
+		add_state_core = 32
+		add_state_core = 26
+		add_state_core = 25
+		add_state_core = 23
+		add_state_core = 19
+		add_state_core = 31
+		add_state_core = 817
+		add_state_core = 22
+		add_state_core = 983
+		add_state_core = 14
+		add_state_core = 30
+		add_state_core = 33
+		add_state_core = 27
+		add_state_core = 785
+		add_state_core = 18
+		add_state_core = 16
+		add_state_core = 15
+		add_state_core = 24
+		add_state_core = 980
+		add_state_core = 17
+		add_state_core = 1315
+		add_state_core = 1317
+		add_state_core = 122
+		add_state_core = 123
+		add_state_core = 127
+		add_state_core = 338
+		add_state_core = 126
+		add_state_core = 125
+		add_state_core = 129
+		add_state_core = 128
+		add_state_core = 132
+		add_state_core = 130
+		add_state_core = 131
+		add_state_core = 462
+		add_state_core = 1318
+	    add_state_core = 513
 		}
 	}
 	focus = {
@@ -1876,7 +2472,76 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			create_wargoal = {
+				target = SRI
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = SRI
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = ITA
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = ITA
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = PAP
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = PAP
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = SIC
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = SIC
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = SRD
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = SRD
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = VNC
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = VNC
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = LOM
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = LOM
+				}
+				add_core_of = WHR
+			}
 		}
 	}
 	focus = {
@@ -1900,7 +2565,99 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			every_state = {
+				limit = {
+					is_core_of = GRE
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SLO
+				}
+				add_core_of = WHR
+			}
+					add_state_core = 1089
+					add_state_core = 211
+					add_state_core = 1097
+					add_state_core = 1098
+					add_state_core = 1145
+					add_state_core = 1141
+					add_state_core = 1102
+					add_state_core = 794
+					add_state_core = 1128
+					add_state_core = 1142
+					add_state_core = 109
+					add_state_core = 1099
+					add_state_core = 1105
+					add_state_core = 771
+					add_state_core = 77
+					add_state_core = 772
+					add_state_core = 770
+					add_state_core = 1090
+					add_state_core = 212
+					add_state_core = 48
+					add_state_core = 106
+					add_state_core = 766
+					add_state_core = 44
+					add_state_core = 1268
+					add_state_core = 1269
+					add_state_core = 1271
+					add_state_core = 841
+					add_state_core = 765
+					add_state_core = 767
+					add_state_core = 108
+					add_state_core = 107
+					add_state_core = 105
+					add_state_core = 163
+					add_state_core = 104
+					add_state_core = 103
+					add_state_core = 1143
+					add_state_core = 1270
+					add_state_core = 1206
+					add_state_core = 346
+					add_state_core = 680
+					add_state_core = 344
+					add_state_core = 677
+					add_state_core = 995
+					add_state_core = 554
+					add_state_core = 553
+					add_state_core = 455
+					add_state_core = 992
+					add_state_core = 454
+					add_state_core = 753
+					add_state_core = 453
+					add_state_core = 446
+					add_state_core = 447
+					add_state_core = 452
+					add_state_core = 350
+					add_state_core = 552
+					add_state_core = 1008
+					add_state_core = 457
+					add_state_core = 456
+					add_state_core = 451
+					add_state_core = 663
+					add_state_core = 450
+					add_state_core = 448
+					add_state_core = 665
+					add_state_core = 458
+					add_state_core = 116
+					add_state_core = 773
+					add_state_core = 341
+					add_state_core = 1225
+					add_state_core = 340
+					add_state_core = 339
+					add_state_core = 342
+					add_state_core = 343
+					add_state_core = 346
+					add_state_core = 49
+					add_state_core = 356
+					add_state_core = 345
+					add_state_core = 355
+					add_state_core = 354
+					add_state_core = 1000
+					add_state_core = 1001
+					add_state_core = 1213
 		}
 	}
 	focus = {
@@ -1927,7 +2684,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			add_ideas = WHR_pax_romania
 		}
 	}
 	focus = {
@@ -1948,7 +2705,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			add_political_power = 100
+			set_cosmetic_tag = WHR_schizo_ugric
 		}
 	}
 	focus = {
@@ -1969,7 +2727,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			add_political_power = 100
+			add_stability = 0.1
+			add_war_support = 0.1
 		}
 	}
 	focus = {
@@ -1990,7 +2750,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			add_ideas = WHR_finno_ugric_meetings
 		}
 	}
 	focus = {
@@ -2011,7 +2771,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			add_ideas = WHR_anti_slavs
 		}
 	}
 	focus = {
@@ -2038,7 +2798,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			add_ideas = WHR_finno_ugric_language
 		}
 	}
 	focus = {
@@ -2065,7 +2825,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			swap_ideas = {
+				remove_idea = WHR_anti_slavs
+				add_idea = WHR_anti_slavs2
+			}
 		}
 	}
 	focus = {
@@ -2089,7 +2852,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			swap_ideas = {
+				remove_idea = WHR_finno_ugric_language
+				add_idea = WHR_finno_ugric_language2
+			}
 		}
 	}
 	focus = {
@@ -2111,7 +2877,83 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			create_wargoal = {
+				target = FIN
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = FIN
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = KAR
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = KAR
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = { 
+					OR = {
+						state = 214
+						state = 397
+						state = 262
+						state = 1291
+						state = 208
+						state = 195
+						state = 400
+						state = 399
+						state = 1193
+						state = 398				
+						state = 936
+						state = 144						
+						state = 960
+						state = 666
+						state = 909
+						state = 937	
+						state = 1328
+						state = 244
+						state = 264	
+						state = 351
+						state = 263
+						state = 1289	
+						state = 209
+						state = 13
+						state = 191
+						state = 1288	
+					}
+				}
+				add_core_of = WHR
+
+				
+			}
+			  every_state = {
+       			 limit = {
+         			 OR = {
+            state = 146
+            state = 1324
+            state = 1326
+            state = 213
+            state = 215
+            state = 216
+            state = 1327
+            state = 722
+            state = 1328
+            state = 1325
+            state = 147
+            state = 1274
+			state = 581
+			state = 1290
+          }
+        
+       			 }
+      			  add_core_of = WHR
+    			}
 		}
 	}
 	focus = {
@@ -2133,7 +2975,46 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			create_wargoal = {
+				target = BAT
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = BAT
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = EST
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = EST
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = LAT
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = LAT
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = LIT
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = LIT
+				}
+				add_core_of = WHR
+			}
 		}
 	}
 	focus = {
@@ -2157,7 +3038,16 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			create_wargoal = {
+				target = HUN
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = HUN
+				}
+				add_core_of = WHR
+			}
 		}
 	}
 	focus = {
@@ -2181,7 +3071,17 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			every_state = {
+				limit = { 
+					OR = { 
+						is_siberia = yes
+						is_central_asia = yes
+						region = 221
+						region = 152
+					}
+				}
+				add_core_of = ROOT
+			}
 		}
 	}
 	focus = {
@@ -2205,7 +3105,16 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			create_wargoal = {
+				target = MON
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					is_core_of = MON
+				}
+				add_core_of = WHR
+			}
 		}
 	}
 	focus = {
@@ -2232,7 +3141,75 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			every_state = {		
+			limit = {
+				OR = {
+					is_core_of = LEP
+					is_core_of = CHI
+					is_core_of = SQI
+					is_core_of = ANQ
+					is_core_of = QIE
+					is_core_of = FNG
+					is_core_of = GXC
+					is_core_of = YUN
+					is_core_of = XSM
+					is_core_of = Mon
+					is_core_of = shx
+					is_core_of = szc
+					is_core_of = lec
+					is_core_of = sik
+					is_core_of = tib
+					is_core_of = TAI
+					is_core_of = JST
+					is_core_of = HNN
+				}
+			}					
+			add_core_of = WHR
+		}
+		add_state_core = 537
+		add_state_core = 525
+		add_state_core = 527
+		add_state_core = 858
+		add_state_core = 745
+		add_state_core = 1246
+		add_state_core = 409
+		add_state_core = 561
+		add_state_core = 560
+		add_state_core = 563
+		add_state_core = 657
+		add_state_core = 564
+		add_state_core = 565
+		add_state_core = 574
+		add_state_core = 562
+		add_state_core = 637
+		add_state_core = 654
+		add_state_core = 1293
+		add_state_core = 811
+		add_state_core = 329
+		add_state_core = 729
+		add_state_core = 600
+		add_state_core = 1046
+		add_state_core = 802
+		add_state_core = 1066
+		add_state_core = 595
+		add_state_core = 1044
+		add_state_core = 1045
+		add_state_core = 1069
+		add_state_core = 803
+		add_state_core = 1068
+		add_state_core = 1067
+		add_state_core = 596
+		add_state_core = 613
+		add_state_core = 1014
+		add_state_core = 606
+		add_state_core = 1050
+		add_state_core = 598
+		add_state_core = 1047
+		add_state_core = 1064
+		add_state_core = 597
+		add_state_core = 1065
+		add_state_core = 996
+		add_state_core = 744
 		}
 	}
 	focus = {
@@ -2252,7 +3229,8 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			custom_effect_tooltip = KXX_UNFINISHED_TOOLTIP
+			add_ideas = WHR_kryvian_aryan_concept
+			set_cosmetic_tag = WHR_KRY_larp
 		}
 	}
 	focus = {
@@ -2271,7 +3249,112 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			create_wargoal = {
+				target = ROM
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = ROM
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = HUN
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = HUN
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = LIT
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = LIT
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = BAT
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = BAT
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = EST
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = EST
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = LAT
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = LAT
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = RUS
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = RUS
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = TRM
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = TRM
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_core_of = DKB
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_core_of = KUB
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_core_of = KLY
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_core_of = MTR
+				}
+				add_core_of = WHR
+			}
+			add_state_core = 564
+			add_state_core = 574
 		}
 	}
 	focus = {
@@ -2290,7 +3373,56 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			create_wargoal = {
+				target = NOR
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = NOR
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = SWE
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = SWE
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = FIN
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = FIN
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = DEN
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = DEN
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = ICE
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = ICE
+				}
+				add_core_of = WHR
+			}
 		}
 	}
 	focus = {
@@ -2309,7 +3441,76 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			create_wargoal = {
+				target = GER
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = GER
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = AUS
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = AUS
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = HOL
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = HOL
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = BEL
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = BEL
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = FLN
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = FLN
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = WLL
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = WLL
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = SWI
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = SWI
+				}
+				add_core_of = WHR
+			}
 		}
 	}
 	focus = {
@@ -2328,7 +3529,77 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			create_wargoal = {
+				target = BUL
+				type = annex_everything
+			}	
 			
+			create_wargoal = {
+				target = SER
+				type = annex_everything
+			}	
+			create_wargoal = {
+				target = POL
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = UKR
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = CZE
+				type = annex_everything
+			}	
+			create_wargoal = {
+				target = GAL
+				type = annex_everything
+			}	
+			create_wargoal = {
+				target = CRO
+				type = annex_everything
+			}	
+			create_wargoal = {
+				target = WSU
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					OR = {
+						
+						is_core_of = UKR
+						is_claimed_by = UKR
+						is_core_of = SER
+						is_claimed_by = SER
+						is_core_of = BUL
+						is_claimed_by = BUL
+						is_core_of = CZE
+						is_claimed_by = CZE
+						is_core_of = SVK
+						is_claimed_by = SVK
+						is_core_of = POL
+						is_claimed_by = POL
+						is_core_of = GAL
+						is_claimed_by = GAL						
+						is_core_of = SLO
+						is_claimed_by = SLO
+						is_core_of = CRO
+						is_claimed_by = CRO
+						is_core_of = BOS
+						is_claimed_by = BOS
+						is_core_of = MNT
+						is_claimed_by = MNT
+					    }
+				    }
+				add_core_of = ROOT
+			    }
+				#伏伊伏丁那
+				45 = { add_core_of = ROOT }
+				#西巴纳特
+				875 = { add_core_of = ROOT }
+				#卡林西亚（原奥地利领土）	   
+				835 = { add_claim_by = ROOT }
+				1119 = { add_claim_by = ROOT }
+				73 = { add_core_of = ROOT }
 		}
 	}
 	focus = {
@@ -2347,7 +3618,26 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			
+			create_wargoal = {
+				target = GRE
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = GRE
+				}
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				target = CRE
+				type = annex_everything
+			}	
+			every_state = {
+				limit = {
+					is_core_of = CRE
+				}
+				add_core_of = WHR
+			}
 		}
 	}
 
@@ -2842,8 +4132,8 @@ focus_tree = {
 	focus = {
 		id = WHR_revolution
 		icon = GFX_goal_WHR_Socialist
-		x = 15
-		y = 15
+		x = 20
+		y = 18
 		cost = 5
 
 		ai_will_do = {
@@ -2891,9 +4181,362 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY }
 	}
+	focus = {
+		id = WHR_Bund_rises
+		icon = GFX_goal_WHR_Bund
+		relative_position_id = WHR_revolution
+		x = -15
+		y = 1
+		prerequisite = { focus = WHR_revolution }
+		mutually_exclusive = {
+			focus = WHR_bolshevik
+			focus = WHR_BPSR
+			focus = WHR_monarchobol
+			focus = WHR_Black_Banner_Engulfs_Nation
+		}
+		available = {
+			always = no
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 1500
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Black_Banner_Engulfs_Nation"
+			custom_effect_tooltip = unlock_focuses
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_production_means_socialize
+		icon = GFX_RUS_Involve_Peasants_Into_Socialism
+		relative_position_id = WHR_Bund_rises
+		x = 0
+		y = 1
+		prerequisite = { focus = WHR_Bund_rises }
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1500
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Black_Banner_Engulfs_Nation"
+			WHR_reduce_black_monday = yes
+			set_country_flag = WHRIndustrial
+			custom_effect_tooltip = WHR_Unlock_Industrial
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_expel_zionists
+		icon = GFX_goal_AUS_destroy_nationalism
+		relative_position_id = WHR_Bund_rises
+		x = -2
+		y = 1
+		prerequisite = { focus = WHR_Bund_rises }
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1500
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Black_Banner_Engulfs_Nation"
+			add_political_power = 100
+			add_manpower = -1154
+			add_command_power = 40
+			add_stability = 0.1
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_austrianmarxism
+		icon = GFX_goal_AUS_renner_goal
+		relative_position_id = WHR_Bund_rises
+		x = -4
+		y = 1
+		prerequisite = { focus = WHR_Bund_rises }
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1500
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Black_Banner_Engulfs_Nation"
+			add_ideas = WHR_austrianmarxism
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_ensure_our_left_allies
+		icon = GFX_goal_ideology_syndicalist
+		relative_position_id = WHR_Bund_rises
+		x = 2
+		y = 1
+		prerequisite = { focus = WHR_Bund_rises }
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1500
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Black_Banner_Engulfs_Nation"
+			add_ideas = WHR_left_unity
+			add_synd_to_coalition = yes
+			add_popularity = {
+				ideology = syndicalist
+				popularity = 0.1
+			}
+			add_political_power = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_destroy_reaction_thought
+		icon = GFX_goal_GER_Decapitate_Reactionaries
+		relative_position_id = WHR_Bund_rises
+		x = 4
+		y = 1
+		prerequisite = { focus = WHR_Bund_rises }
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1500
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Black_Banner_Engulfs_Nation"
+			add_popularity = {
+				ideology = national_populist
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.1
+			}
+			add_stability = 0.2
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_national_cultural_autonomy
+		icon = GFX_goal_AUS_promote_ssd
+		relative_position_id = WHR_Bund_rises
+		x = -3
+		y = 2
+		prerequisite = { 
+			focus = WHR_austrianmarxism
+			
+		}
+		prerequisite = { 
+			
+			focus = WHR_expel_zionists
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 1500
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Black_Banner_Engulfs_Nation"
+			swap_ideas = {
+				remove_idea = WHR_austrianmarxism
+				add_idea = WHR_national_cultural_autonomy
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_anticlerical_education
+		icon = GFX_SOV_soc_edu
+		relative_position_id = WHR_Bund_rises
+		x = -3
+		y = 3
+		prerequisite = { 
+			focus = WHR_national_cultural_autonomy
+			
+		}
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1500
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Black_Banner_Engulfs_Nation"
+			add_research_slot = 1
+			remove_ideas = WHR_illiteracy
+			remove_ideas = WHR_weak_national_identity
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_expand_unions
+		icon = GFX_RUS_Power_To_Trade_Unions
+		relative_position_id = WHR_Bund_rises
+		x = 0
+		y = 3
+		prerequisite = { 
+			focus = WHR_community_self_defence
+			
+		}
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1500
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Black_Banner_Engulfs_Nation"
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_ideas = WHR_expand_unions
 
-	
-
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_marxism_of_liberty_democracy
+		icon = GFX_goal_GER_Hero_Marx
+		relative_position_id = WHR_Bund_rises
+		x = 3
+		y = 3
+		prerequisite = { 
+			focus = WHR_reject_communism
+			
+		}
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1500
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Black_Banner_Engulfs_Nation"
+			swap_ideas = {
+				remove_idea = WHR_Jewish_Bund
+				add_idea = WHR_Jewish_Bund2
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_community_self_defence
+		icon = GFX_goal_POL_Defensive_Tactics
+		relative_position_id = WHR_Bund_rises
+		x = 0
+		y = 2
+		prerequisite = { 
+			focus = WHR_production_means_socialize
+		}
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1500
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Black_Banner_Engulfs_Nation"
+			add_ideas = WHR_community_self_defence
+			add_manpower = 100000
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_reject_communism
+		icon = GFX_goal_ALB_Smashing_Communism
+		relative_position_id = WHR_Bund_rises
+		x = 3
+		y = 2
+		prerequisite = { 
+			focus = WHR_ensure_our_left_allies
+			
+		}
+		prerequisite = { 
+			
+			focus = WHR_destroy_reaction_thought
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 1500
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Black_Banner_Engulfs_Nation"
+			add_popularity = {
+				ideology = totalist
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.1
+			}
+			swap_ideas = {
+				remove_idea = WHR_left_unity
+				add_idea = WHR_left_unity2
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_no_more_national_clash
+		icon = GFX_goal_GUA_Peaceful_Revolution
+		relative_position_id = WHR_Bund_rises
+		x = 0
+		y = 4
+		prerequisite = { 
+			focus = WHR_expand_unions			
+		}
+		prerequisite = { 			
+			focus = WHR_anticlerical_education
+		}
+		prerequisite = { 			
+			focus = WHR_marxism_of_liberty_democracy
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 1500
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Black_Banner_Engulfs_Nation"
+			add_ideas = WHR_national_peace
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_seek_unification
+		icon = GFX_goal_MNT_marxist_stitch
+		relative_position_id = WHR_Bund_rises
+		x = 0
+		y = 5
+		prerequisite = { 
+			focus = WHR_no_more_national_clash		
+		}
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1500
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Black_Banner_Engulfs_Nation"
+			add_political_power = 100
+			add_stability = 0.2
+			add_war_support = 0.2
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
 	focus = {
 		id = WHR_Black_Banner_Engulfs_Nation
 		icon = GFX_goal_WHR_Black_Banner_Engulfs_Nation
@@ -2905,6 +4548,7 @@ focus_tree = {
 			focus = WHR_bolshevik
 			focus = WHR_BPSR
 			focus = WHR_monarchobol
+			focus = WHR_Bund_rises
 		}
 		available = { WHR_anarchists_in_power = yes }
 		bypass = { WHR_anarchists_in_power = yes }
@@ -3278,6 +4922,7 @@ focus_tree = {
 			focus = WHR_Black_Banner_Engulfs_Nation
 			focus = WHR_bolshevik
 			focus = WHR_monarchobol
+			focus = WHR_Bund_rises
 		}
 		available = {
 			WHR_bpsr_in_power = yes
@@ -3606,6 +5251,7 @@ focus_tree = {
 			focus = WHR_Black_Banner_Engulfs_Nation
 			focus = WHR_BPSR
 			focus = WHR_monarchobol
+			focus = WHR_Bund_rises
 		}
 		available = {
 			NOT = {
@@ -6445,6 +8091,12 @@ focus = {
 		set_variable = { WHR_integrate_state_medium_speed = 90 }
 		set_variable = { WHR_integrate_state_hard_cost = 55 }
 		set_variable = { WHR_integrate_state_hard_speed = 120 }
+		hidden_effect = {
+			country_event = {
+				id = belarus.55
+				days = 30
+			}
+		}
 	}
 	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_ANNEXATION }
 }
@@ -7548,9 +9200,7 @@ focus = {
 		available = {
 			hidden_trigger = { always = no }
 		}
-		mutually_exclusive = {
-			focus = WHR_The_Countercoup
-		}
+		
 		relative_position_id = WHR_Aftermath_Of_The_Coup
 		x = -3
 		y = 1
@@ -7952,13 +9602,15 @@ focus = {
 		available = {
 			hidden_trigger = { always = no }
 		}
-		
-		x = 22
-		y = 8
+		relative_position_id = WHR_Aftermath_Of_The_Coup
+		x = 3
+		y = 1
 		ai_will_do = {
 			factor = 100
 		}
-
+		prerequisite = {
+			focus = WHR_Aftermath_Of_The_Coup
+		}
 		cost = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_Belarus_Pure_And_True"
@@ -8832,18 +10484,14 @@ focus = {
 	focus = {
 		id = WHR_The_Countercoup
 		icon = GFX_goal_WHR_Countercoup
-		prerequisite = {
-			focus = WHR_Aftermath_Of_The_Coup
-		}
+		
 		available = {
 			hidden_trigger = { always = no }
 		}
-		mutually_exclusive = {
-			focus = WHR_The_New_Populist_Government
-		}
+		
 		relative_position_id = WHR_Aftermath_Of_The_Coup
-		x = 3
-		y = 1
+		x = -3
+		y = 9
 		ai_will_do = {
 			factor = 200
 		}
@@ -8854,7 +10502,140 @@ focus = {
 		}
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
 	}
-
+	focus = {
+		id = WHR_peaceful_change
+		icon = GFX_goal_WHR_peaceful_change
+		
+		available = {
+			hidden_trigger = { always = no }
+		}
+		
+		relative_position_id = WHR_The_Countercoup
+		x = -2
+		y = 0
+		ai_will_do = {
+			factor = 200
+		}
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_The_Countercoup"
+			custom_effect_tooltip = unlock_focuses
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+	focus = {
+		id = WHR_peasant_council
+		icon = GFX_goal_FRA_peasant_commitees
+		
+		available = {
+			has_government = radical_socialist
+		}
+		prerequisite = {
+			focus = WHR_peaceful_change
+		}
+		relative_position_id = WHR_peaceful_change
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 200
+		}
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_The_Countercoup"
+			add_ideas = WHR_peasant_council
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+	focus = {
+		id = WHR_class_above_nation
+		icon = GFX_RUS_national_maximalists
+		
+		available = {
+			has_government = radical_socialist
+		}
+		prerequisite = {
+			focus = WHR_The_Kryvian_Concept
+		}
+		relative_position_id = WHR_peaceful_change
+		x = -1
+		y = 2
+		ai_will_do = {
+			factor = 200
+		}
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_The_Countercoup"
+			add_ideas = WHR_class_above_nation
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+	focus = {
+		id = WHR_socialist_education
+		icon = GFX_CAL_socialize_education
+		
+		available = {
+			has_government = radical_socialist
+		}
+		prerequisite = {
+			focus = WHR_The_Agrarian_Ideal
+		}
+		prerequisite = {
+			focus = WHR_class_above_nation
+		}
+		relative_position_id = WHR_peaceful_change
+		x = -3
+		y = 3
+		ai_will_do = {
+			factor = 200
+		}
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_The_Countercoup"
+			add_ideas = WHR_socialist_education
+			add_timed_idea = {
+				idea = WHR_rural_schoolbuilding
+				days = 200
+			}
+			add_research_slot = 1
+			hidden_effect = {
+				country_event = {
+					id = whrmisc.3
+					days = 200
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+	
+	focus = {
+		id = WHR_zadruga_instead_state
+		icon = GFX_goal_UKR_Noble_Communes
+		
+		available = {
+			has_government = radical_socialist
+		}
+		prerequisite = {
+			focus = WHR_The_Agrarian_Ideal
+		}
+		prerequisite = {
+			focus = WHR_class_above_nation
+		}
+		relative_position_id = WHR_peaceful_change
+		x = -1
+		y = 3
+		ai_will_do = {
+			factor = 200
+		}
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_The_Countercoup"
+			swap_ideas = {
+				remove_idea = WHR_peasant_council
+				add_idea = WHR_peasant_council2
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
 	focus = {
 		id = WHR_Purge_The_Rada
 		icon = GFX_goal_NFA_end_parliamentarism
@@ -8865,7 +10646,7 @@ focus = {
 			has_government = national_populist
 		}
 		relative_position_id = WHR_The_Countercoup
-		x = -1
+		x = 1
 		y = 1
 		ai_will_do = {
 			factor = 70
@@ -8883,12 +10664,11 @@ focus = {
 		icon = GFX_goal_national_populism
 		prerequisite = {
 			focus = WHR_The_Countercoup
+			focus = WHR_peaceful_change
 		}
-		available = {
-			has_government = national_populist
-		}
+		
 		relative_position_id = WHR_The_Countercoup
-		x = 1
+		x = -1
 		y = 1
 		ai_will_do = {
 			factor = 60
@@ -8913,13 +10693,12 @@ focus = {
 		}
 		prerequisite = {
 			focus = WHR_Purge_The_Rada
+			focus = WHR_peasant_council
 		}
-		available = {
-			has_government = national_populist
-		}
-		relative_position_id = WHR_The_Kryvian_Concept
-		x = -2
-		y = 1
+		
+		relative_position_id = WHR_The_Countercoup
+		x = -1
+		y = 2
 		ai_will_do = {
 			factor = 70
 		}
@@ -8929,6 +10708,9 @@ focus = {
 			206 = {
 				add_extra_state_shared_building_slots = 3
 			}
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -8942,9 +10724,12 @@ focus = {
 		available = {
 			has_government = national_populist
 		}
-		relative_position_id = WHR_The_Kryvian_Concept
-		x = 0
-		y = 1
+		available = {
+			has_government = national_populist
+		}
+		relative_position_id = WHR_The_Countercoup
+		x = 1
+		y = 2
 		ai_will_do = {
 			factor = 70
 		}
@@ -8964,13 +10749,12 @@ focus = {
 		}
 		prerequisite = {
 			focus = WHR_Nation_Above_Class
+			focus = WHR_class_above_nation
 		}
-		available = {
-			has_government = national_populist
-		}
-		relative_position_id = WHR_The_Kryvian_Concept
-		x = -3
-		y = 2
+		
+		relative_position_id = WHR_The_Countercoup
+		x = -1
+		y = 3
 		ai_will_do = {
 			factor = 70
 		}
@@ -8980,6 +10764,9 @@ focus = {
 			WHR_reduce_black_monday = yes
 			set_country_flag = WHRIndustrial
 			custom_effect_tooltip = WHR_Unlock_Industrial
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -8997,7 +10784,7 @@ focus = {
 			has_government = national_populist
 		}
 		relative_position_id = WHR_The_Countercoup
-		x = 0
+		x = 1
 		y = 3
 		ai_will_do = {
 			factor = 60
@@ -9025,9 +10812,9 @@ focus = {
 		available = {
 			has_government = national_populist
 		}
-		relative_position_id = WHR_The_Kryvian_Concept
-		x = 1
-		y = 2
+		relative_position_id = WHR_The_Countercoup
+		x = 3
+		y = 3
 		ai_will_do = {
 			factor = 70
 		}
@@ -9039,6 +10826,7 @@ focus = {
 				idea = WHR_rural_schoolbuilding
 				days = 200
 			}
+			add_research_slot = 1
 			hidden_effect = {
 				country_event = {
 					id = whrmisc.3
@@ -9057,16 +10845,16 @@ focus = {
 		}
 		prerequisite = {
 			focus = WHR_Control_The_State
+			focus = WHR_zadruga_instead_state
 		}
 		prerequisite = {
 			focus = WHR_Nationalist_Education
+			focus = WHR_socialist_education
 		}
-		available = {
-			has_government = national_populist
-		}
-		relative_position_id = WHR_The_Kryvian_Concept
+		
+		relative_position_id = WHR_The_Countercoup
 		x = -1
-		y = 3
+		y = 4
 		ai_will_do = {
 			factor = 100
 		}
@@ -9079,10 +10867,8 @@ focus = {
 				}
 				set_cosmetic_tag = WHR_KRY
 			}
-			add_popularity = {
-				ideology = national_populist
-				popularity = 0.15
-			}
+			add_stability = 0.15
+			increase_ruling_party_popularity_by_15 = yes
 		}
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
 	}
@@ -9093,12 +10879,10 @@ focus = {
 		prerequisite = {
 			focus = WHR_Proclaim_Kryvia
 		}
-		available = {
-			has_government = national_populist
-		}
-		relative_position_id = WHR_The_Kryvian_Concept
-		x = -3
-		y = 4
+		
+		relative_position_id = WHR_The_Countercoup
+		x = -1
+		y = 5
 		ai_will_do = {
 			factor = 60
 		}
@@ -9109,7 +10893,53 @@ focus = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
-
+	focus = {
+		id = WHR_popular_republic
+		icon = GFX_goal_POL_Establish_New_Communes
+		prerequisite = {
+			focus = WHR_Proclaim_Kryvia
+		}
+		
+		relative_position_id = WHR_The_Countercoup
+		x = -5
+		y = 5
+		ai_will_do = {
+			factor = 60
+		}
+		cost = 5
+		available = {
+			has_government = radical_socialist
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Kryvian_Orthodox_Church"
+			swap_ideas = {
+				remove_idea = WHR_peasant_council2
+				add_idea = WHR_peasant_council3
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_anti_rus
+		icon = GFX_goal_MON_we_dont_need_russia
+		prerequisite = {
+			focus = WHR_Proclaim_Kryvia
+		}
+		
+		relative_position_id = WHR_The_Countercoup
+		x = -3
+		y = 5
+		ai_will_do = {
+			factor = 60
+		}
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Kryvian_Orthodox_Church"
+			add_ideas = WHR_anti_rus
+			add_manpower = 100000
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
 	focus = {
 		id = WHR_Constitutional_Amendment
 		icon = GFX_goal_NFA_A_New_Constitution
@@ -9119,9 +10949,9 @@ focus = {
 		available = {
 			has_government = national_populist
 		}
-		relative_position_id = WHR_The_Kryvian_Concept
-		x = -1
-		y = 4
+		relative_position_id = WHR_The_Countercoup
+		x = 3
+		y = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -9142,44 +10972,106 @@ focus = {
 		prerequisite = {
 			focus = WHR_Proclaim_Kryvia
 		}
-		available = {
-			has_government = national_populist
-		}
-		relative_position_id = WHR_The_Kryvian_Concept
+		
+		relative_position_id = WHR_The_Countercoup
 		x = 1
-		y = 4
+		y = 5
 		ai_will_do = {
 			factor = 80
 		}
 		cost = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_Anti_Russian_Propaganda"
-			swap_ideas = {
-				remove_idea = WHR_Coup_Education1
-				add_idea = WHR_Coup_Education2
-			}				
+			add_ideas = WHR_anti_ger	
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = WHR
+			}
+		
 		}
 		search_filters = { FOCUS_FILTER_STABILITY }
 	}
-
 	focus = {
-		id = WHR_The_Rise_of_Kryvia
-		icon = GFX_goal_WHR_Kryvia
+		id = WHR_bright_future
+		icon = GFX_goal_ALB_Red_Flag
+		prerequisite = {
+			focus = WHR_popular_republic
+		}
 		prerequisite = {
 			focus = WHR_Kryvian_Orthodox_Church
 		}
 		prerequisite = {
+			focus = WHR_Anti_Russian_Propaganda
+		}
+		prerequisite = {
+			focus = WHR_anti_rus
+		}
+		available = {
+			has_government = radical_socialist
+		}
+		relative_position_id = WHR_The_Countercoup
+		x = -2
+		y = 6
+		ai_will_do = {
+			factor = 200
+		}
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_The_Rise_of_Kryvia"
+			swap_ideas = {
+				remove_idea = WHR_socialist_education
+				add_idea = WHR_socialist_education2
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_golden_century
+		icon = GFX_goal_AUS_Industrialisms_Past_Present_Future
+		prerequisite = {
 			focus = WHR_Constitutional_Amendment
+		}
+		prerequisite = {
+			focus = WHR_Kryvian_Orthodox_Church
 		}
 		prerequisite = {
 			focus = WHR_Anti_Russian_Propaganda
 		}
+		prerequisite = {
+			focus = WHR_anti_rus
+		}
 		available = {
 			has_government = national_populist
 		}
-		relative_position_id = WHR_The_Kryvian_Concept
+		relative_position_id = WHR_The_Countercoup
+		x = 0
+		y = 6
+		ai_will_do = {
+			factor = 200
+		}
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_The_Rise_of_Kryvia"
+			swap_ideas = {
+				remove_idea = WHR_Coup_Education1
+				add_idea = WHR_Coup_Education2
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_The_Rise_of_Kryvia
+		icon = GFX_goal_WHR_Kryvia
+		
+		prerequisite = {
+			focus = WHR_bright_future
+			focus = WHR_golden_century
+		}
+		
+		relative_position_id = WHR_The_Countercoup
 		x = -1
-		y = 5
+		y = 7
 		ai_will_do = {
 			factor = 200
 		}
@@ -9187,6 +11079,9 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_The_Rise_of_Kryvia"
 			add_political_power = 200
+			add_manpower = 100000
+			add_command_power = 50
+			add_war_support = 0.1
 			remove_ideas = WHR_weak_national_identity
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -10660,6 +12555,12 @@ focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_new_regime"
 			add_stability = 0.10
 			remove_ideas = WHR_weak_national_identity
+			hidden_effect = {
+				country_event = {
+					id = belarus.56
+					days = 30
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_STABILITY }
 	}
@@ -10828,6 +12729,7 @@ focus = {
 			focus = WHR_Black_Banner_Engulfs_Nation
 			focus = WHR_bolshevik
 			focus = WHR_BPSR
+			focus = WHR_Bund_rises
 		}
 		cost = 1
 		completion_reward = {
@@ -11556,10 +13458,7 @@ focus = {
 			factor = 10
 		}
 		completion_reward = {
-			add_timed_idea = {
-			    idea = BLR_purge_on_atamans_clique
-			    days = 720
-			}
+			add_ideas = BLR_purge_on_atamans_clique
 		}
 	}
 	focus = {
@@ -11771,16 +13670,14 @@ focus = {
 		id = BLR_hermit_kingdom
 		icon = GFX_goal_generic_isolation
 		relative_position_id = BLR_secret_reeducation
-		x = 0
+		x = 2
 		y = 1
 		cost = 3
 		available_if_capitulated = yes
 		available = {
 			
 		}
-		mutually_exclusive = {
-			focus = BLR_primodial_conquest
-		}
+		
 		prerequisite = {
 			focus = BLR_secret_reeducation
 		}
@@ -11799,28 +13696,30 @@ focus = {
 		id = BLR_primodial_conquest
 		icon = GFX_goal_GEO_Nationalism
 		relative_position_id = BLR_belarussian_pride
-		x = 0
-		y = 1
+		x = -2
+		y = 2
 		cost = 3
 		available_if_capitulated = yes
 		available = {
 			is_subject = no
 		}
-		mutually_exclusive = {
+		
+		prerequisite = {
 			focus = BLR_hermit_kingdom
 		}
-		prerequisite = {
-			focus = BLR_secret_reeducation
-		}
-		prerequisite = {
-			focus = BLR_belarussian_pride
-		}
+		
 		ai_will_do = {
 			factor = 5
 		}
 		
 		completion_reward = {
 			set_war_support = 1
+			hidden_effect = {
+				country_event = {
+					id = belarus.57
+					days = 30
+				}
+			}
 		}
 	}
 	focus = {
@@ -14100,6 +15999,54 @@ focus = {
 		}
 	}
 }
+focus = {
+		id = WHR_future_to_eurasia
+		icon = GFX_RUS_eurasian
+		cost = 1
+		relative_position_id = WHR_message_for_mankind
+		x = 0
+		y = 8
+		
+		prerequisite = {
+			focus = WHR_custodianship_of_the_earth
+		}
+		prerequisite = {
+			focus = WHR_new_alchemists
+		}
+		prerequisite = {
+			focus = WHR_future_perfection
+			focus = WHR_modern_methamorphosis
+		}
+		completion_reward = { 
+			add_war_support = 0.3
+			add_stability = 0.3
+			add_research_slot = 1
+			every_state = {
+				
+				WHR = { 
+					add_state_core = PREV 
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FCR_for_order
+				}
+				set_cosmetic_tag = FCR_unification_muravyov
+				
+				set_party_name = {
+                   ideology = accelerationism
+                   long_name = FCR_leagueoftime_long
+                   name = FCR_leagueoftime
+                  }
+			}
+			else= {
+				set_cosmetic_tag = FCR_unification_yarolsavski
+				
+			}
+		}
+	}
+
+
 
 
 }

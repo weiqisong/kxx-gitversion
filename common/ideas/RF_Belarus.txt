@@ -1,5 +1,440 @@
 ideas = {
 	country = {
+		WHR_Jewish_Bund2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_Jewish_Bund_Split_Complete" }
+			picture = LIT_bundas_controlled_ownership
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.08
+				consumer_goods_factor = -0.15
+			}
+		}
+		WHR_successor_of_ancient_rus = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = RUS_pale_horse_idea
+			modifier = {
+				army_attack_factor = 0.1
+				breakthrough_factor = 0.15
+			}
+			targeted_modifier = {
+				tag = RUS
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = TRM
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+			}
+		}
+		WHR_federation_of_free_man = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = NEE_union_peace
+			modifier = {
+				weekly_manpower = 1000
+				attrition = -0.1
+				conscription = 0.2
+			}
+			targeted_modifier = {
+				tag = RUS
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = TRM
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+			}
+		}
+		WHR_austrianmarxism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = generic_social_democracy
+			modifier = {
+				global_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				global_building_slots = 1
+			}
+
+		}
+		WHR_national_cultural_autonomy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = generic_social_democracy
+			modifier = {
+				global_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				global_building_slots = 1
+				conscription = 0.04
+				conscription_factor = 0.4
+				supply_consumption_factor = -0.1
+				no_supply_grace = 48
+			}
+
+		}
+		WHR_community_self_defence = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = BAN_defend_republic
+			modifier = {
+				army_core_attack_factor = 0.3
+				army_core_defence_factor = 0.3
+				army_infantry_attack_factor = 0.15
+				army_infantry_defence_factor = 0.15
+				experience_loss_factor = -0.15
+			}
+
+		}
+		WHR_expand_unions = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = GER_socdem_unions
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+
+		}
+		WHR_left_unity = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = GRU_UNION_DEMOCRATIC
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				social_democrat_drift = 0.05
+				radical_socialist_drift = 0.05
+				syndicalist_drift = 0.025
+			}
+
+		}
+		WHR_left_unity2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = GRU_UNION_DEMOCRATIC
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				social_democrat_drift = 0.05
+				radical_socialist_drift = 0.05
+				syndicalist_drift = 0.025
+				command_power_gain = 0.1
+				max_command_power = 100
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+				research_speed_factor = 0.25
+				totalist_acceptance = -100
+			}
+
+		}
+		WHR_national_peace = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = peace
+			modifier = {
+				party_popularity_stability_factor = 0.2
+				consumer_goods_expected_value = -0.2
+				consumer_goods_factor = -0.2
+				monthly_population = 0.75
+				mobilization_speed = 0.2
+				non_core_manpower = 0.75
+			}
+
+		}
+		WHR_kryvian_aryan_concept = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = GEN_army_special_forces
+			modifier = {
+				weekly_manpower = 1000
+				army_attack_factor = 0.1
+			}
+
+		}
+		WHR_anti_ger = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = PLC_germany_enemy
+			modifier = {
+				breakthrough_factor = 0.1
+				army_attack_speed_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = AUS
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+			}
+		}
+		WHR_anti_rus = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = PLC_russia_enemy
+			modifier = {
+				experience_loss_factor = -0.1
+				army_speed_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = RUS
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = TRM
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+			}
+		}
+		WHR_peasant_council = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = RUS_gorg_peasant
+			modifier = {
+				political_power_cost = 0.1
+				stability_factor = 0.05
+				radical_socialist_drift = 0.05
+			}
+		}
+		WHR_peasant_council2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = RUS_gorg_peasant
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.1
+				radical_socialist_drift = 0.05
+			}
+		}
+		WHR_peasant_council3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = RUS_gorg_peasant
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.1
+				global_building_slots_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				radical_socialist_drift = 0.05
+			}
+		}
+		WHR_socialist_education = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = radical_education
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				radical_socialist_drift = 0.05
+			}
+		}
+		WHR_socialist_education2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = radical_education
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				industrial_capacity_factory = 0.2
+				radical_socialist_drift = 0.05
+			}
+		}
+		WHR_class_above_nation = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = BBR_socialist_civic_identity
+			modifier = {
+				war_support_factor = 0.15
+				supply_consumption_factor = -0.15
+				attrition = -0.15
+			}
+		}
+		WHR_reestublish_senate = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = GRE_purple_pheonix
+			modifier = {
+				political_power_cost = -0.2
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+			}
+		}
+		WHR_culture_of_romans = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = GRE_national_rebirth
+			modifier = {
+				research_speed_factor = 0.2
+				line_change_production_efficiency_factor = 0.2
+				industrial_capacity_factory = 0.2
+
+			}
+		}
+		WHR_reorganize_legion = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = GRE_varangian_guard 
+			modifier = {
+				army_attack_factor = 0.15
+				experience_loss_factor = -0.15
+				conscription = 0.05
+				breakthrough_factor = 0.1
+
+			}
+		}
+		WHR_latinization = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = ITA_federation
+			modifier = {
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+
+			}
+		}
+		WHR_pax_romania = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = GRE_youth_legion
+			modifier = {
+				monthly_population = 0.5
+				global_building_slots_factor = 0.2
+				production_speed_buildings_factor = 0.25
+				supply_consumption_factor = -0.1
+			}
+		}
+		WHR_finno_ugric_meetings = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = tver_karelians
+			modifier = {
+				conscription = 0.04
+				conscription_factor = 0.4
+				non_core_manpower = 0.75
+				monthly_population = 0.5
+				weekly_manpower = 500
+			}
+		}
+		WHR_anti_slavs = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = CRM_ever_present_russians
+			modifier = {
+				army_attack_speed_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = RUS	
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				breakthrough_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = TRM	
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				breakthrough_bonus_against = 0.1
+			}
+		}
+		WHR_anti_slavs2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = CRM_ever_present_russians
+			modifier = {
+				army_attack_speed_factor = 0.1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = RUS	
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				breakthrough_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = TRM	
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				breakthrough_bonus_against = 0.1
+			}
+		}
+		WHR_finno_ugric_language = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = karelian_research
+			modifier = {
+				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
+				research_speed_factor = 0.1
+			}
+		}
+		WHR_finno_ugric_language2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = karelian_research
+			modifier = {
+				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
+				research_speed_factor = 0.15
+				global_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		WHR_paganism_revival = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = RUS_neopaganism
+			modifier = {
+				stability_factor = -0.25
+				drift_defence_factor = 1
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
+			}
+		}
+		WHR_paganism_revival2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = RUS_neopaganism
+			modifier = {
+				stability_factor = -0.15
+				drift_defence_factor = 1
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				conscription = 0.02
+			}
+		}
+		WHR_paganism_revival3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = RUS_neopaganism
+			modifier = {
+				stability_factor = -0.15
+				drift_defence_factor = 1
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				conscription = 0.02
+				command_power_gain = 0.15
+				max_command_power = 150
+				command_power_gain_mult = 0.15
+				max_command_power_mult = 0.15
+				required_garrison_factor = -0.1
+			}
+		}
+		WHR_learn_sanskrit = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = MEX_reviving_our_los_languages
+			modifier = {
+				encryption = 100
+				decryption = 100
+				army_intel_to_others = -100
+				navy_intel_to_others = -100
+				airforce_intel_to_others = -100
+				civilian_intel_to_others = -100
+				
+			}
+		}
+		WHR_old_paradise = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
+			picture = generic_factory_glow
+			modifier = {
+				political_power_cost = -0.2
+				planning_speed = 0.15
+				max_planning = 0.15
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
 		WHR_transhumanism = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WHR_confiscate_land"}
 			picture = CSA_reinforced_weapons
@@ -711,14 +1146,14 @@ ideas = {
 			modifier = {
 				national_populist_drift = 0.1
 				production_speed_buildings_factor = 0.15
-				attrition = -0.05
+				attrition = -0.15
 			}
 			picture = BLR_icon_reactionary_beacon
 		}
 		BLR_hermits = {
 			
 			modifier = {
-				army_core_defence_factor = 0.15
+				army_defence_factor = 0.15
 				political_power_factor = 0.2
 			}
 			picture = BLR_icon_hermit_kingdom

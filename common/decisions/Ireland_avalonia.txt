@@ -23,9 +23,9 @@ political_actions = {
 					elections_allowed = no
 				}
 				create_country_leader = {
-					name = "Revolutionary Dáil"
-					desc = "POLITICS_DAIL_DESC"
-					picture = "gfx/leaders/IRE/Portrait_Ireland_Revolutionary_Dail.png"
+					name = "Jim Larkin"
+					desc = "POLITICS_JIM_LARKIN_DESC"
+					picture = "gfx/leaders/IRE/Portrait_Ireland_Jim_Larkin.png"
 					expire = "1.1.1"
 					ideology = centralized_syndicalism_subtype
 				}
@@ -228,6 +228,24 @@ political_actions = {
 				697 = { add_core_of = SPR 
 				       transfer_state_to = SPR }
 				178 = { add_core_of = SPR 
+				       transfer_state_to = SPR }
+				1339 = { add_core_of = SPR 
+				       transfer_state_to = SPR }
+				1344 = { add_core_of = SPR 
+				       transfer_state_to = SPR }
+				1338 = { add_core_of = SPR 
+				       transfer_state_to = SPR }
+				1340 = { add_core_of = SPR 
+				       transfer_state_to = SPR }
+				1341 = { add_core_of = SPR 
+				       transfer_state_to = SPR }
+				1342 = { add_core_of = SPR 
+				       transfer_state_to = SPR }
+				1337 = { add_core_of = SPR 
+				       transfer_state_to = SPR }
+				1336 = { add_core_of = SPR 
+				       transfer_state_to = SPR }
+				1343 = { add_core_of = SPR 
 				       transfer_state_to = SPR }
 				#portugal
 				179 = { add_core_of = SPR 

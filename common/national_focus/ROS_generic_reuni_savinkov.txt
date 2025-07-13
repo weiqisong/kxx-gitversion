@@ -25,8 +25,7 @@
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_control_supreme_court"
-			retire_character = RUS_vladimir_nabokov
-			country_event = russia.120
+			add_stability = 0.1
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -61,21 +60,12 @@
 				}
 			}
 		}
-		select_effect = {
-			log = "[GetDateText]: [Root.GetName]: Select Focus RUS_savinkov_constitution"
-			country_event = russia.122 #The Basic Law of the RDFR of 1922
-		}
+		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_savinkov_constitution"
 			add_political_power = 100
 			add_country_leader_trait = RUS_supreme_commander
-			country_event = russia.126
-			hidden_effect = {
-				country_event = { id = rusfla.18 days = 30 } #The Old Svobodniks
-				country_event = { id = russia.231 days = 60 } #The National Union of Solidarists
-				country_event = { id = rusfla.21 days = 90 } #The Fellow-Travellers
-				country_event = { id = rusfla.19 days = 120 } #Eurasianist-Ideocrats
-			}
+			
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_POLITICAL_CHARACTER }
 	}
@@ -116,19 +106,7 @@
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_undercut_monarchists"
-			set_temp_variable = { coalition_partner_var = token:authoritarian_democrat }
-			remove_from_coalition = yes
-			add_popularity = { ideology = authoritarian_democrat popularity = -0.1 }
-			custom_effect_tooltip = RUS_remove_SOR_tt
-			character_list_tooltip = {
-				limit = {
-					OR = {
-						RUS = { RUS_vasily_shulgin = { is_character = PREV.PREV } }
-						RUS = { RUS_ivan_ilyin = { is_character = PREV.PREV } }
-					}
-				}
-			}
-			hidden_effect = { country_event = russia.129 }
+			
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -171,17 +149,7 @@
 				}
 			}
 		}
-		select_effect = {
-			log = "[GetDateText]: [Root.GetName]: Select Focus RUS_necessary_revenge"
-			hidden_effect = {
-				country_event = { id = russia.130 days = 7 } #Mass Trials
-				country_event = { id = russia.127 days = 14 } #Labour Union Operation
-				country_event = { id = russia.128 days = 21 } #Extermination of the Radical-Democratic Party
-				country_event = { id = rusfla.176 days = 34 }
-				country_event = { id = russia.249 days = 50 random_days = 50 } #All-Russian Combat Organisation
-				country_event = { id = russia.295 days = 120 } #Flying Squads of the Security Department
-			}
-		}
+	
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_necessary_revenge"
 			add_popularity = { ideology = social_liberal popularity = -0.08 }
@@ -219,14 +187,7 @@
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_svobodniks"
 			set_technology = { tech_assault_battalion = 1 }
 			add_war_support = 0.05
-			custom_effect_tooltip = tooltip_white_line
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = RUS_anastasy_vonsyatsky_advisor
-			hidden_effect = {
-				country_event = { id = russia.238 days = 10 } #Rise of the Svobodniks
-				country_event = { id = rusfla.32 days = 100 random_days = 100 } #Attack on the Synagogue of Vladivostok
-				country_event = { id = russia.261 days = 200 random_days = 200 } #The Svobodnik Scandal
-			}
+			
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL_CHARACTER }
 	}
@@ -259,10 +220,9 @@
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_army_commissars"
-			custom_effect_tooltip = RUS_evalute_VVFR_tt
-			custom_effect_tooltip = tooltip_white_line
+			
 			add_ideas = RUS_army_commissars_idea
-			hidden_effect = { country_event = russia.233 }
+			
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}

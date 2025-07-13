@@ -259,6 +259,21 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideologies/ideology_bars/social_liberal/cultural_mannism.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_ideology_liberal_feminism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/social_liberal/liberal_feminism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_socialist_federalism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/social_liberal/socialist_federalism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_community_movement_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/social_liberal/community_movement.png"
+		legacy_lazy_load = no
+	}
 
 	#tot
 	spriteType = {
@@ -632,6 +647,16 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_ideology_council_communism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/tot/council_communism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_zinovievism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/tot/zinovievism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_ideology_syn_bar"
 		textureFile = "gfx/interface/ideologies/ideology_bars/syn/syn.png"
 		legacy_lazy_load = no
@@ -912,6 +937,21 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_ideology_laborismo_esperantista_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/radsoc/laborismo_esperantista.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_matswanism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/radsoc/matswanism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_francoism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/radsoc/francoism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_ideology_socdem_bar"
 		textureFile = "gfx/interface/ideologies/ideology_bars/socdem/socdem.png"
 		legacy_lazy_load = no
@@ -1019,6 +1059,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_sino_federalism_bar"
 		textureFile = "gfx/interface/ideologies/ideology_bars/socdem/sino_federalism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_batllismo_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/socdem/batllismo.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -1252,6 +1297,16 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_ideology_herrerismo_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/soccon/herrerismo.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_conservative_feminism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/soccon/conservative_feminism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_ideology_authdem_bar"
 		textureFile = "gfx/interface/ideologies/ideology_bars/authdem/authdem.png"
 		legacy_lazy_load = no
@@ -1387,6 +1442,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_ideology_peronism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/authdem/peronism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_ideology_pataut_bar"
 		textureFile = "gfx/interface/ideologies/ideology_bars/pataut/pataut.png"
 		legacy_lazy_load = no
@@ -1509,6 +1569,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_spectral_state_bar"
 		textureFile = "gfx/interface/ideologies/ideology_bars/pataut/spectral_state.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_terrismo_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/pataut/terrismo.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_nuevo_ideal_nacional_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/pataut/nuevo_ideal_nacional.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_duplessism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/pataut/duplessism.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -1749,6 +1824,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_lepenisme_bar"
 		textureFile = "gfx/interface/ideologies/ideology_bars/natpop/lepenisme.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_nacionalismo_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/natpop/nacionalismo.png"
 		legacy_lazy_load = no
 	}
 

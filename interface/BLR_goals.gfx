@@ -4,6 +4,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/BLR/The_surge_of_the_crimson_tributaries.png"
 	}
 	SpriteType = {
+		name = "GFX_goal_WHR_peaceful_change"
+		texturefile = "gfx/interface/goals/BLR/WHR_peaceful_change.png"
+	}
+	SpriteType = {
 		name = "GFX_goal_WHR_heliology"
 		texturefile = "gfx/interface/goals/BLR/WHR_heliology.png"
 	}

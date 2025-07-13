@@ -3,6 +3,7 @@
 #####################
 
 leader_traits = {
+
 	### Armenia
 	ARM_national_saviour = { #Garegin Nzhdeh
 		random = no
@@ -25,7 +26,7 @@ leader_traits = {
 		production_speed_buildings_factor = 0.05
 		ai_focus_defense_factor = 0.5
 	}
-	ARM_prestigious_veteran = { #Boghos Bey Dadian
+	ARM_prestigious_veteran = { #Boghos Dadian
 		random = no
 		stability_factor = 0.05
 		experience_gain_army = 0.02
@@ -91,6 +92,11 @@ leader_traits = {
 		production_factory_max_efficiency_factor = 0.05
 		industrial_capacity_factory = 0.05
 	}
+	BAT_autocratic_charmer = { #Wilhelm Munter
+		random = no
+		stability_factor = 0.1
+		political_power_factor = 0.1
+	}
 	BAT_national_revolutionary = { #Max von Scheubner Richter
 		random = no
 		war_support_factor = 0.1
@@ -128,6 +134,83 @@ leader_traits = {
 		supply_consumption_factor = -0.05
 	}
 
+	### Bukhara ###
+
+	BUK_progressive_grey_eminence_leader = { #Behbudiy
+		random = no
+		political_power_factor = 0.05
+		economy_cost_factor = -0.2
+		political_advisor_cost_factor = -0.2
+	}
+	BUK_progressive_puppet = { #Behbudiy (natpop)
+		random = no
+		stability_factor = -0.07
+		economy_cost_factor = -0.2
+		political_advisor_cost_factor = -0.2
+	}
+	BUK_tenacious_autocrat = { #Alim Khan
+		random = no
+		party_popularity_stability_factor = 0.25
+		stability_factor = -0.05
+	}
+	BUK_loved_but_feared = { #Alim Khan
+		random = no
+		stability_factor = 0.1
+	}
+	BUK_feared_and_loved_equally = { #Alim Khan
+		random = no
+		stability_factor = 0.07
+		foreign_subversive_activites = -0.07
+		war_support_factor = 0.03
+	}
+	BUK_feared_and_loved_leader = { #Alim Khan
+		random = no
+		stability_factor = 0.03
+		foreign_subversive_activites = -0.07
+		war_support_factor = 0.07
+	}
+	BUK_terror_of_the_party_state = { #Alim Khan
+		random = no
+		foreign_subversive_activites = -0.1
+		war_stability_factor = 0.1
+		national_populist_drift = 0.01
+	}
+	BUK_the_peoples_poet = { #Sadriddin Ayni
+		random = no
+		political_power_factor = 0.03
+		stability_factor = 0.03
+		research_speed_factor = 0.03
+	}
+	BUK_aloof_ideologue = { #Fayzullah Khodjaev
+		random = no
+		stability_factor = -0.07
+		radical_socialist_drift = 0.02
+		syndicalist_drift = 0.01
+	}
+	KR_kushbeggi_of_the_ulemma_leader_1 = { #Nizamaddin Urganji
+		stability_factor = 0.15
+		war_support_factor = 0.05
+		trade_laws_cost_factor = 0.2
+		economy_cost_factor = 0.2
+	}
+	KR_kushbeggi_of_the_ulemma_leader_2 = {
+		stability_factor = 0.15
+		war_support_factor = 0.05
+	}
+	KR_emirs_fist_leader = { #Ibrahim Bek
+		stability_factor = -0.05
+		army_attack_factor = -0.05
+		army_defence_factor = -0.05
+		cavalry_attack_factor = 0.2
+		cavalry_defence_factor = 0.2
+	}
+	KR_napoleon_of_the_lokai_leader = {
+		army_attack_factor = -0.05
+		army_defence_factor = -0.05
+		cavalry_attack_factor = 0.25
+		cavalry_defence_factor = 0.25
+	}
+
 	### Bulgaria
 	BUL_great_restorer = { #Ferdinand
 		random = no
@@ -137,6 +220,11 @@ leader_traits = {
 		random = no
 		stability_factor = 0.15
 		army_morale_factor = 0.1
+	}
+	BUL_illegitimate_tsar = { #Kyril, puppeted by Serbia
+		random = no
+		political_power_factor = -0.1
+		stability_factor = -0.1
 	}
 
 	### Belgium
@@ -170,6 +258,41 @@ leader_traits = {
 		random = no
 		production_speed_buildings_factor = 0.1
 		party_popularity_stability_factor = 0.5
+	}
+
+	### China
+	CHN_anguojun_aligned = {
+		random = no
+	}
+	CHN_beiyang_aligned = {
+		random = no
+	}
+	CHN_geacps_aligned = {
+		random = no
+	}
+	CHN_federalist_aligned = {
+		random = no
+	}
+	CHN_left_kuomintang_aligned = {
+		random = no
+	}
+	CHN_non_aligned = {
+		random = no
+	}
+	CHN_northern_zhili_aligned = {
+		random = no
+	}
+	CHN_restorationist_aligned = {
+		random = no
+	}
+	CHN_right_kuomintang_aligned = {
+		random = no
+	}
+	CHN_southern_republican_aligned = {
+		random = no
+	}
+	CHN_southern_zhili_aligned = {
+		random = no
 	}
 
 	### Cuba
@@ -217,13 +340,13 @@ leader_traits = {
 	}
 
 	### Fengtian
-	FNG_old_marshal = { #Zhang Zuolin
+	FNG_mukden_tiger = { #Zhang Zuolin
+		custom_modifier_tooltip = FNG_mukden_tiger_desc
 		random = no
-		planning_speed = -0.1
-		max_planning = 0.1
-		stability_factor = 0.1
+		max_planning = 0.05
+		stability_factor = 0.05
 		materiel_manufacturer_cost_factor = -0.25
-		compliance_gain = -0.05
+		compliance_growth = -0.1
 	}
 	FNG_light_in_the_north = { #Zhang Xueliang
 		random = no
@@ -319,10 +442,16 @@ leader_traits = {
 	}
 
 	### India
-	HND_the_mahatma = { #Gandhi
+	HND_netaji_trait = { # Bose
 		random = no
-		ai_focus_aggressive_factor = -0.75
-		stability_factor = 0.1
+		war_stability_factor = 0.2
+		totalist_drift = 0.02
+	}
+	PRF_kaisar_i_hind_trait = { # Emperor Osman
+		random = no
+		army_morale_factor = 0.05
+		war_support_factor = 0.1
+		political_power_gain = -0.25
 	}
 
 	### Indochina
@@ -545,19 +674,118 @@ leader_traits = {
 
 	### Japan ###
 	JAP_hirohito_defeat_trait = { #Trait for Hirohito in Puppet JAP content
+		custom_modifier_tooltip = JAP_hirohito_symbol_trait_desc
 		random = no
 		war_support_factor = -0.2
 		political_power_factor = -0.1
 	}
 	JAP_hirohito_symbol_trait = { #Trait for Hirohito in Puppet JAP content
+		custom_modifier_tooltip = JAP_hirohito_symbol_trait_desc
 		random = no
 		political_power_gain = 0.05
 		stability_factor = 0.15
 	}
 	JAP_regent_trait = { #Trait for regent in Puppet JAP content
+		custom_modifier_tooltip = JAP_regent_trait_desc
 		random = no
 		war_support_factor = -0.1
 		stability_factor = -0.05
+	}
+
+	### Kazakhstan ###
+	KAZ_father_of_the_militias = {
+		random = no
+		conscription_factor = 0.1
+		supply_consumption_factor = -0.1
+	}
+	KAZ_father_of_the_militias_2 = { # Father of the Kazakhs
+		random = no
+		conscription_factor = 0.1
+		supply_consumption_factor = -0.1
+		war_support_factor = 0.1
+	}
+	KAZ_rule_by_sword = {
+		random = no
+		command_power_gain = 0.3
+		resistance_target = -0.1
+		army_core_attack_factor = 0.05
+		army_core_defence_factor = 0.05
+	}
+	KAZ_idealistic_poet = {
+		random = no
+		political_power_factor = 0.05
+		war_support_factor = 0.05
+	}
+	KAZ_weary_peacemaker = {
+		random = no
+		stability_factor = 0.1
+	}
+	KAZ_charismatic_protege = {
+		random = no
+		political_power_factor = 0.1
+	}
+
+	### Khiva ###
+
+	KHI_serdar_karim = { #Junaid Khan
+		random = no
+		cavalry_attack_factor = 0.025
+		cavalry_defence_factor = 0.025
+	}
+	KHI_serdar_karim_2 = { #Junaid Khan
+		random = no
+		cavalry_attack_factor = 0.05
+		cavalry_defence_factor = 0.05
+		breakthrough_factor = 0.1
+		pocket_penalty = -0.1
+	}
+	KHI_true_khan_of_khiva = { #Junaid Khan
+		random = no
+		army_attack_factor = 0.05
+		army_morale_factor = 0.05
+		paternal_autocrat_drift = 0.01
+	}
+	KHI_man_of_action = {
+		random = no
+		army_speed_factor = 0.05
+		command_power_gain = 0.1
+	}
+	KHI_studying_history = {
+		random = no
+		political_power_factor = -0.1
+	}
+	KHI_student_of_guile = {
+		random = no
+		political_power_factor = -0.1
+		recon_factor = 0.05
+		land_night_attack = 0.05
+		research_speed_factor = 0.01
+	}
+	KHI_student_of_terrain = {
+		random = no
+		political_power_factor = -0.1
+		acclimatization_cold_climate_gain_factor = 0.1
+		acclimatization_hot_climate_gain_factor = 0.1
+		research_speed_factor = 0.01
+	}
+	KHI_student_of_history_g = {
+		random = no
+		army_core_defence_factor = 0.03
+		recon_factor = 0.05
+		land_night_attack = 0.05
+		research_speed_factor = 0.03
+	}
+	KHI_student_of_history_t = {
+		random = no
+		army_core_defence_factor = 0.03
+		acclimatization_cold_climate_gain_factor = 0.1
+		acclimatization_hot_climate_gain_factor = 0.1
+		research_speed_factor = 0.03
+	}
+	KHI_student_activist = { #Balysh Ovezov
+		random = no
+		political_power_factor = 0.05
+		army_morale_factor = 0.05
 	}
 
 	### Kumul
@@ -607,6 +835,14 @@ leader_traits = {
 		party_popularity_stability_factor = 0.8
 	}
 
+	LEP_the_smiling_tiger = { #Sun Chuanfang
+		custom_modifier_tooltip = LEP_the_smiling_tiger_desc
+		random = no
+		political_power_factor = 0.10
+		war_support_factor = 0.05
+		army_org_factor = 0.10
+	}
+
 	### Lithuania
 	LIT_unpopular_monarch = { #Vytautas II
 		random = no
@@ -625,26 +861,29 @@ leader_traits = {
 
 	### Mongolia
 	MON_the_mad_baron = { #Roman von Ungern-Sternberg
+		custom_modifier_tooltip = MON_the_mad_baron_desc
 		random = no
-		stability_factor = 0.05
 		war_support_factor = 0.05
-		cavalry_attack_factor = 0.05
+		skill_bonus_factor = 0.10
+		modifier_army_sub_unit_cavalry_speed_factor = 0.10
 	}
-	MON_princes_puppet = { #Unenbayan
+	MON_heir_of_prince_gung = { #Unenbayan
 		random = no
 		stability_factor = 0.05
-		political_power_factor = -0.1
+		research_speed_factor = 0.10
+		political_advisor_cost_factor = -0.15
 	}
-	MON_buddhist_figurehead = { #7th Changkya Khutukhtu
+	MON_the_last_preceptor = { #7th Changkya Khutukhtu
 		random = no
 		stability_factor = 0.05
 		war_support_factor = 0.05
 		political_power_factor = -0.05
 	}
-	MON_the_popular_prince_trait = { #Demchugdongrub
+	MON_princely_eccentric = { #Demchugdongrub
 		random = no
 		stability_factor = 0.05
-		political_power_factor = 0.1
+		political_power_factor = 0.05
+		war_stability_factor = 0.10
 	}
 	MON_abiding_collaborator = { #Jodbajab
 		random = no
@@ -664,10 +903,11 @@ leader_traits = {
 		stability_factor = 0.05
 		ai_focus_peaceful_factor = 0.25
 	}
-	MON_brooding_revolutionary = { #Anandyn Amar
+	MON_the_wise_minister = { #Anandyn Amar
 		random = no
 		political_power_factor = 0.05
-		operative_slot = 1
+		social_democrat_drift = 0.025
+		production_factory_max_efficiency_factor = 0.05
 	}
 
 	### Nepal
@@ -781,6 +1021,7 @@ leader_traits = {
 
 	### Poland
 	POL_effeminate_king = { #August IV
+		custom_modifier_tooltip = POL_effeminate_king_trait_desc
 		random = no
 		stability_factor = -0.05
 	}
@@ -789,10 +1030,12 @@ leader_traits = {
 		stability_factor = 0.05
 	}
 	POL_geheimrat = { #August IV
+		custom_modifier_tooltip = POL_geheimrat_desc
 		random = no
 		political_power_factor = 0.1
 	}
 	POL_geheimrat1 = { #August or Alexander
+		custom_modifier_tooltip = POL_geheimrat1_desc
 		random = no
 		political_power_factor = 0.1
 		max_command_power = 10
@@ -801,11 +1044,13 @@ leader_traits = {
 		license_production_speed = 0.5
 	}
 	POL_geheimrat2 = {
+		custom_modifier_tooltip = POL_geheimrat2_desc
 		random = no
 		political_power_factor = 0.12
 		production_speed_buildings_factor = 0.05
 	}
 	POL_geheimrat3 = {
+		custom_modifier_tooltip = POL_geheimrat3_desc
 		random = no
 		political_power_factor = 0.15
 		stability_factor = 0.05
@@ -827,13 +1072,13 @@ leader_traits = {
 	POL_the_kaiser_maker = { #August or Alexander
 		random = no
 		stability_factor = 0.25
-		offence = 0.05
+		army_attack_factor = 0.05
 	}
 	POL_last_hohenzollern = { #August or Alexander
 		random = no
 		political_power_factor = 0.2
 		global_building_slots_factor = 0.2
-		offence = 0.05
+		army_attack_factor = 0.05
 	}
 	POL_eternal_general_governor = { #Leon Berbecki
 		random = no
@@ -892,6 +1137,13 @@ leader_traits = {
 		random = no
 		stability_factor = 0.1
 	}
+	QIE_son_of_heaven = { #Puyi, Anti-Concessionist
+		custom_modifier_tooltip = QIE_son_of_heaven_desc
+		random = no
+		stability_factor = 0.15
+		political_power_factor = 0.05
+		army_core_defence_factor = 0.05
+	}
 	QIE_restored_emperor = { #Puyi, Manchu
 		random = no
 		political_power_factor = 0.05
@@ -913,6 +1165,60 @@ leader_traits = {
 		justify_war_goal_time = -0.5
 	}
 
+	QIE_the_diplomatic_offensive = { #Wellington Koo
+		custom_modifier_tooltip = QIE_the_diplomatic_offensive_desc
+		random = no
+		opinion_gain_monthly_factor = 0.25
+		political_power_factor = 0.05
+		civilian_intel_factor = 0.10
+	}
+
+	QIE_idealist_against_the_storm = { #Hu Shih
+		custom_modifier_tooltip = QIE_idealist_against_the_storm_desc
+		random = no
+		stability_factor = 0.1
+		research_speed_factor = 0.05
+		social_liberal_drift = 0.02
+	}
+
+	QIE_marshal_of_tianjin = { #Wang Chengbin
+		custom_modifier_tooltip = QIE_marshal_of_tianjin_desc
+		random = no
+		ai_focus_aggressive_factor = 0.25
+		war_support_factor = 0.10
+		breakthrough_factor = 0.05
+	}
+	QIE_marshal_of_tianjin_2 = { #Wang Chengbin
+		custom_modifier_tooltip = QIE_marshal_of_tianjin_desc
+		random = no
+		ai_focus_aggressive_factor = 0.25
+		war_support_factor = 0.15
+		breakthrough_factor = 0.10
+	}
+	QIE_the_diplomat = { #Yan Huiqing
+		custom_modifier_tooltip = QIE_the_diplomat_desc
+		random = no
+		political_power_gain = 0.10
+		required_garrison_factor = -0.10
+	}
+	QIE_the_diplomat_2 = { #Yan Huiqing
+		custom_modifier_tooltip = QIE_the_diplomat_desc
+		random = no
+		stability_factor = 0.05
+		political_power_gain = 0.10
+		required_garrison_factor = -0.15
+	}
+	QIE_squire_of_tianjin = {
+		consumer_goods_factor = -0.15
+		custom_modifier_tooltip = QIE_squire_of_tianjin_desc
+		political_advisor_cost_factor = -0.33
+	}
+	QIE_mediator_of_moderation = {
+		industry_repair_factor = 0.15
+		custom_modifier_tooltip = QIE_mediator_of_moderation_desc
+		compliance_growth = 0.10
+		opinion_gain_monthly_factor = 0.10
+	}
 	### Romania
 	ROM_autocrat = { #Carol II
 		random = no
@@ -945,11 +1251,6 @@ leader_traits = {
 		random = no
 		stability_factor = 0.1
 	}
-	ROM_protector_of_democracy2 = {
-		random = no
-		stability_factor = 0.05
-		political_power_factor = -0.15
-	}
 	ROM_friend_of_the_legion = { #Nicolae
 		random = no
 		political_power_factor = 0.05
@@ -965,6 +1266,395 @@ leader_traits = {
 		party_popularity_stability_factor = 0.3
 		production_speed_arms_factory_factor = 0.05
 	}
+
+	### RSA ###
+	RUS_disgraced_general = {
+		random = no
+		political_power_factor = -0.05
+		experience_gain_army_factor = 0.15
+	}
+	RUS_marshal_of_old_republic = {
+		random = no
+		political_power_factor = 0.05
+		experience_gain_army_factor = 0.15
+		max_command_power_mult = 0.2
+		war_support_factor = 0.05
+	}
+	RUS_russian_caesar = {
+		random = no
+		party_popularity_stability_factor = 0.2
+	}
+
+	### Russia
+	#Savinkov's traits
+	RUS_vozhd = {
+		random = no
+		political_power_factor = 0.05
+		ai_focus_aggressive_factor = 0.25
+	}
+	RUS_supreme_commander = {
+		random = no
+		max_command_power = 20
+		mobilization_laws_cost_factor = -0.25
+	}
+	RUS_knight_of_terror = {
+		random = no
+		political_power_factor = 0.05
+		war_stability_factor = 0.1
+	}
+	RUS_hero_of_northern_ice_march = {
+		random = no
+		army_morale_factor = 0.1
+		weekly_casualties_war_support = 0.003
+	}
+	RUS_revolutionary_genius = {
+		random = no
+		power_balance_weekly = 0.01
+		national_populist_drift = 0.04
+		conscription_factor = 0.05
+	}
+	RUS_father_of_russia = {
+		random = no
+		power_balance_weekly = -0.01
+		stability_factor = 0.05
+		compliance_gain = 0.01
+	}
+	RUS_herald_of_third_russia = {
+		random = no
+		party_popularity_stability_factor = 0.2
+	}
+	RUS_supreme_commander_of_army = {
+		random = no
+		war_stability_factor = 0.05
+		war_support_factor = 0.05
+		max_command_power = 10
+		political_power_factor = -0.25
+		planning_speed = -0.25
+	}
+	RUS_protector_of_the_steppe = {
+		random = no
+		modifier_army_sub_unit_cavalry_attack_factor = 0.05
+		modifier_army_sub_unit_cavalry_max_org_factor = 0.05
+	}
+	RUS_distrustful_vozhd = {
+		random = no
+		political_power_factor = -0.15
+	}
+	RUS_shepherd_of_russians = {
+		random = no
+		stability_factor = 0.1
+	}
+	RUS_boris_the_terrible = {
+		random = no
+		political_power_gain = 0.1
+		national_populist_drift = 0.06
+		compliance_growth = -0.05
+		non_core_manpower = 0.05
+	}
+	RUS_patriarch_of_populism = {
+		random = no
+		national_populist_drift = 0.05
+		justify_war_goal_time = -0.5
+		opinion_gain_monthly_same_ideology = 5
+		intel_network_gain = 0.1
+	}
+	RUS_horseman_of_apocalypse = {
+		random = no
+		air_strategic_bomber_bombing_factor = 0.1
+		air_bombing_targetting = 0.1
+		rocket_attack_factor = 0.1
+	}
+	RUS_last_narodniks = {
+		random = no
+		monthly_population = 0.25
+		global_building_slots_factor = 0.2
+	}
+
+	#Tsar traits
+	RUS_emperor_of_all_russias = {
+		random = no
+		stability_factor = 0.05
+		political_power_gain = 0.1
+	}
+	RUS_emperor_of_all_russias_2 = {
+		random = no
+		stability_factor = 0.15
+		political_power_gain = 0.1
+		army_morale_factor = 0.1
+		conscription_factor = 0.1
+	}
+	RUS_imperial_advisory_council_trait = {
+		random = no
+		party_popularity_stability_factor = 0.1
+		political_advisor_cost_factor = -0.33
+	}
+	RUS_patron_of_sciences = {
+		random = no
+		research_speed_factor = 0.05
+		research_sharing_per_country_bonus = 0.1
+	}
+	RUS_imperial_life_guard = {
+		random = no
+		modifier_army_sub_unit_marine_max_org_factor = 0.1
+		grant_medal_cost_factor = -0.5
+	}
+	RUS_high_imperial_council_trait = {
+		random = no
+		political_power_gain = 0.1
+		political_advisor_cost_factor = -0.33
+	}
+	RUS_high_imperial_council_member = {
+		random = no
+		political_power_gain = 0.075
+	}
+	RUS_guiding_hand = {
+		random = no
+		political_power_factor = 0.05
+		party_popularity_stability_factor = 0.075
+	}
+	RUS_peoples_tsar = {
+		random = no
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		conscription_factor = 0.05
+	}
+	RUS_figurehead_monarch = {
+		random = no
+		stability_factor = 0.05
+		compliance_gain = 0.01
+	}
+	RUS_wrangel_great = {
+		random = no
+		offence = 0.05
+		justify_war_goal_time = -0.25
+	}
+	RUS_vladimir_great = {
+		random = no
+		offence = 0.05
+		send_volunteer_size = 1
+	}
+
+	#Wrangel
+	RUS_imperial_regent = {
+		random = no
+		political_power_factor = 0.05
+	}
+	RUS_ruler_of_state = {
+		random = no
+		political_power_factor = 0.1
+		command_abilities_cost_factor = -0.25
+	}
+	RUS_cossack_guard = {
+		random = no
+		cavalry_attack_factor = 0.05
+		war_support_factor = 0.05
+	}
+	RUS_cossack_guard_2 = {
+		random = no
+		cavalry_attack_factor = 0.1
+		war_support_factor = 0.1
+		grant_medal_cost_factor = -0.5
+	}
+	RUS_emperor_of_all_russias_wrangel = {
+		random = no
+		stability_factor = 0.05
+		political_power_factor = 0.15
+		command_abilities_cost_factor = -0.25
+	}
+	RUS_emperor_of_all_russias_wrangel_2 = {
+		random = no
+		stability_factor = 0.1
+		political_power_factor = 0.15
+		command_abilities_cost_factor = -0.33
+		experience_gain_factor = 0.1
+	}
+
+	#Democratic traits
+	RUS_sulimov_1_off = { random = no }
+	RUS_titov_1_off = {
+		random = no
+		social_democrat_drift = -0.01
+		war_support_factor = -0.05
+	}
+	RUS_titov_2_off = { random = no }
+	RUS_titov_3_off = { random = no }
+	RUS_titov_1_on = {
+		random = no
+		war_support_factor = 0.05
+		conscription_factor = 0.1
+	}
+	RUS_titov_2_on = {
+		random = no
+		social_democrat_drift = 0.025
+		production_factory_max_efficiency_factor = 0.05
+	}
+	RUS_titov_3_on = {
+		random = no
+		consumer_goods_factor = -0.1
+		trade_opinion_factor = 0.75
+	}
+	RUS_rikhter_1_off = {
+		political_power_factor = -0.05
+		random = no
+	}
+	RUS_rikhter_2_off = {
+		random = no
+		stability_factor = -0.05
+	}
+	RUS_rikhter_3_off = { random = no }
+	RUS_rikhter_1_on = {
+		random = no
+		political_power_factor = 0.1
+	}
+	RUS_rikhter_2_on = {
+		random = no
+		stability_factor = 0.1
+		social_liberal_drift = 0.02
+	}
+	RUS_rikhter_3_on = {
+		random = no
+		army_attack_against_major_factor = 0.1
+	}
+	RUS_fondaminsky_1_off = { random = no }
+	RUS_fondaminsky_2_off = { random = no }
+	RUS_fondaminsky_3_off = { random = no }
+	RUS_fondaminsky_1_on = {
+		random = no
+		party_popularity_stability_factor = 0.1
+	}
+	RUS_fondaminsky_2_on = {
+		random = no
+		army_morale_factor = 0.1
+		monthly_population = 0.25
+	}
+	RUS_fondaminsky_3_on = {
+		random = no
+		war_support_factor = 0.1
+		social_liberal_drift = 0.01
+	}
+	RUS_sorokin_1_off = { random = no }
+	RUS_sorokin_2_off = { random = no }
+	RUS_sorokin_3_off = { random = no }
+	RUS_sorokin_1_on = {
+		random = no
+		research_speed_factor = 0.1
+	}
+	RUS_sorokin_2_on = {
+		random = no
+		consumer_goods_factor = -0.15
+		local_resources_factor = 0.05
+	}
+	RUS_sorokin_3_on = {
+		random = no
+		political_power_factor = 0.1
+		trade_opinion_factor = 0.75
+	}
+	RUS_maklakov_1_off = { random = no }
+	RUS_maklakov_2_off = {
+		random = no
+		political_power_gain = -0.05
+	}
+	RUS_maklakov_3_off = { random = no }
+	RUS_maklakov_1_on = {
+		random = no
+		political_power_gain = 0.1
+	}
+	RUS_maklakov_2_on = {
+		random = no
+		market_liberal_drift = 0.02
+		party_popularity_stability_factor = 0.1
+	}
+	RUS_maklakov_3_on = {
+		random = no
+		war_support_factor = 0.1
+		command_power_gain_mult = 0.5
+	}
+	RUS_kartashyov_1_off = { random = no }
+	RUS_kartashyov_2_off = { random = no }
+	RUS_kartashyov_3_off = { random = no }
+	RUS_kartashyov_1_on = {
+		random = no
+		conscription_factor = 0.05
+		war_support_factor = 0.1
+	}
+	RUS_kartashyov_2_on = {
+		random = no
+		industrial_capacity_factory = 0.075
+	}
+	RUS_kartashyov_3_on = {
+		random = no
+		political_power_gain = 0.1
+		army_morale_factor = 0.1
+	}
+	RUS_dolgorukov_1_off = { random = no }
+	RUS_dolgorukov_2_off = { random = no }
+	RUS_dolgorukov_3_off = { random = no }
+	RUS_dolgorukov_1_on = {
+		random = no
+		political_power_gain = 0.1
+		political_advisor_cost_factor = -0.5
+	}
+	RUS_dolgorukov_2_on = {
+		random = no
+		stability_factor = 0.1
+		monthly_population = 0.3
+	}
+	RUS_dolgorukov_3_on = {
+		random = no
+		stability_factor = 0.05
+		production_speed_industrial_complex_factor = 0.1
+	}
+	RUS_golitsyn_1_off = { random = no }
+	RUS_golitsyn_2_off = { random = no }
+	RUS_golitsyn_3_off = { random = no }
+	RUS_golitsyn_1_on = {
+		random = no
+		political_power_gain = 0.05
+		social_conservative_drift = 0.025
+	}
+	RUS_golitsyn_2_on = {
+		random = no
+		compliance_growth = 0.01
+		war_support_factor = 0.1
+	}
+	RUS_golitsyn_3_on = {
+		random = no
+		war_support_factor = 0.05
+		army_morale_factor = 0.1
+	}
+	RUS_solonevich_1_off = {
+		random = no
+	}
+	RUS_solonevich_2_off = {
+		random = no
+		political_power_gain = 0.05
+		stability_factor = -0.05
+	}
+	RUS_solonevich_3_off = { random = no }
+	RUS_solonevich_1_on = {
+		random = no
+		war_support_factor = 0.05
+		max_command_power = 20
+	}
+	RUS_solonevich_2_on = {
+		random = no
+		political_power_gain = 0.1
+		justify_war_goal_time = -0.5
+	}
+	RUS_solonevich_3_on = {
+		random = no
+		stability_factor = 0.1
+	}
+	RUS_solonevich_combined = {
+		random = no
+		political_power_gain = 0.1
+		war_support_factor = 0.05
+		justify_war_goal_time = -0.5
+		max_command_power = 20
+		stability_factor = 0.1
+		army_morale_factor = 0.1
+	}
+	#Add Nekrasov and Dmitry
 
 	### Serbia
 	SER_vodja = { #Milan Stojadinovic
@@ -995,23 +1685,27 @@ leader_traits = {
 
 	### Siam
 	SIA_iron_marshal_trait = { # Phibun
+		custom_modifier_tooltip = SIA_iron_marshal_trait_desc
 		random = no
 		political_power_factor = 0.10
 		army_morale_factor = 0.10
 	}
 	SIA_pho_khun_trait = { # Sarit
+		custom_modifier_tooltip = SIA_pho_khun_trait_desc
 		random = no
 		conscription_factor = 0.05
 		army_core_defence_factor = 0.1
 		ai_focus_aggressive_factor = 0.25
 	}
 	SIA_under_pho_khun_trait = { # Sarit's puppet
+		custom_modifier_tooltip = SIA_under_pho_khun_trait_desc
 		random = no
 		conscription_factor = 0.05
 		army_core_defence_factor = 0.1
 		ai_focus_aggressive_factor = 0.25
 	}
 	SIA_prancing_knight_trait = { # Phao
+		custom_modifier_tooltip = SIA_prancing_knight_trait_desc
 		random = no
 		foreign_subversive_activites = -0.3
 		non_core_manpower = 0.02
@@ -1072,26 +1766,26 @@ leader_traits = {
 	}
 
 	### Shandong
-	SQI_imprisoned_emperor = { #Puyi, Zhang Tianran
+	SHD_imprisoned_emperor = { #Puyi, Zhang Tianran
 		random = no
 		political_power_gain = -0.05
 		improve_relations_maintain_cost_factor = 0.25
 	}
-	SQI_restored_benevolence = { #Puyi, Qu Yingguang
+	SHD_restored_benevolence = { #Puyi, Qu Yingguang
 		random = no
 		stability_factor = 0.05
 		political_power_factor = 0.05
 		improve_relations_maintain_cost_factor = -0.25
 	}
-	SQI_dogmeat_general = { #Zhang Zongchang
+	SHD_dogmeat_general = { #Zhang Zongchang
 		random = no
 		experience_gain_army = 0.05
 	}
-	SQI_honored_master = { #Zhang Tianran
+	SHD_honored_master = { #Zhang Tianran
 		random = no
 		conscription = 0.01
 	}
-	SQI_qu_bodisattva = { #Qu Yingguang
+	SHD_qu_bodisattva = { #Qu Yingguang
 		random = no
 		stability_factor = 0.05
 		political_power_factor = 0.05
@@ -1147,6 +1841,18 @@ leader_traits = {
 		war_support_factor = -0.05
 		political_power_gain = -0.05
 	}
+	TUR_sultan_of_the_poor = { #Mehmed VII
+		random = no
+		stability_factor = 0.10
+		political_power_gain = -0.1
+		compliance_gain = 0.02
+	}
+	TUR_sultan_of_the_music = { #Mehmed VIII
+		random = no
+		stability_factor = 0.05
+		war_support_factor = -0.05
+		political_power_gain = -0.1
+	}
 	TUR_sultan_of_architecture = { #Ahmed IV
 		random = no
 		production_speed_buildings_factor = 0.10
@@ -1185,6 +1891,57 @@ leader_traits = {
 		consumer_goods_factor = -0.15
 	}
 
+	### Turkestan Republic ###
+	TRK_amir_ul_musliman = { #Madamin Bek
+		random = no
+		political_power_factor = 0.05
+		modifier_army_sub_unit_irregular_infantry_defence_factor = 0.05
+	}
+	TRK_amir_ul_musliman_2 = { #Madamin Bek
+		random = no
+		modifier_army_sub_unit_irregular_infantry_defence_factor = 0.05
+		army_org_factor = 0.05
+	}
+	TRK_amir_ul_musliman_3 = { #Madamin Bek
+		random = no
+		political_power_factor = 0.05
+		modifier_army_sub_unit_irregular_infantry_attack_factor = 0.05
+		modifier_army_sub_unit_irregular_infantry_defence_factor = 0.05
+		experience_gain_army = 0.05
+		army_morale_factor = 0.1
+	}
+	TRK_amir_ul_musliman_4 = { #Madamin Bek
+		random = no
+		modifier_army_sub_unit_irregular_infantry_attack_factor = 0.05
+		modifier_army_sub_unit_irregular_infantry_defence_factor = 0.05
+		army_org_factor = 0.05
+		experience_gain_army = 0.05
+		army_morale_factor = 0.1
+	}
+	TRK_pragmatic_mediator = { #Madamin Bek
+		random = no
+		political_advisor_cost_factor = -0.33
+	}
+	TRK_pan_turkic_revolutionary = { #Turar Ryskulov
+		random = no
+		political_power_factor = 0.1
+		war_support_factor = 0.1
+	}
+	TRK_big_kurbashi_leader = {
+		random = no
+		foreign_subversive_activites = -0.1
+		resistance_growth_on_our_occupied_states = 0.1
+		drift_defence_factor = 0.5
+	}
+	TRK_big_kurbashi_2_leader = {
+		random = no
+		foreign_subversive_activites = -0.1
+		resistance_growth_on_our_occupied_states = 0.1
+		drift_defence_factor = 0.5
+		army_core_attack_factor = 0.03
+		army_core_defence_factor = 0.03
+	}
+
 	### Ukraine
 	UKR_hetman = {
 		random = no
@@ -1204,7 +1961,7 @@ leader_traits = {
 	UKR_faithful_son_trait = {
 		random = no
 		conscription = 0.01
-		army_morale_factor = 0.05
+		army_morale_factor = 0.1
 	}
 	UKR_torchbearer_of_progress = {
 		random = no
@@ -1237,10 +1994,7 @@ leader_traits = {
 	UKR_the_lord_of_land_order_labour = {
 		random = no
 		stability_factor = 0.05
-	}
-	UKR_indecisive = {
-		random = no
-		political_power_factor = -0.1
+		authoritarian_democrat_drift = 0.03
 	}
 	UKR_hetman_of_all_ukraine_trait = {
 		random = no
@@ -1332,16 +2086,28 @@ leader_traits = {
 		command_power_gain = 0.5
 		training_time_factor = -0.1
 	}
-	XSM_fundamentalist = { #Ma Lin
+	XSM_honesty_and_sincerity = { #Ma Lin
 		random = no
-		defence = 0.05
+		army_defence_factor = 0.05
 		production_speed_buildings_factor = 0.1
 		stability_factor = 0.05
 	}
-	XSM_modernist = { #Ma Bufang
+	XSM_brutality_and_schemes = { #Ma Bufang
 		random = no
-		army_attack_factor = 0.05
-		war_support_factor = 0.05
+		army_attack_factor = 0.10
+		stability_factor = -0.10
+		war_support_factor = -0.05
+	}
+	XSM_the_hard_general = { #Ma Hongkui
+		random = no
+		army_speed_factor = 0.05
+		army_org_factor = 0.05
 		industrial_capacity_factory = 0.05
+	}
+	XSM_the_kind_general = { #Ma Hongbin
+		random = no
+		stability_factor = 0.05
+		political_power_gain = 0.10
+		training_time_factor = -0.1
 	}
 }

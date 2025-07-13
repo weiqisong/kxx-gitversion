@@ -1495,22 +1495,22 @@ country_event = { #
 					}
 				}
 				if = {
-					limit = { is_claimed_by = SAM }
-					remove_claim_by = SAM
+					limit = { is_claimed_by = SMM }
+					remove_claim_by = SMM
 				}
 				if = {
 					limit = { 
-						NOT = { is_core_of = SAM }
+						NOT = { is_core_of = SMM }
 					}
-					add_core_of = SAM
-					SAM = { transfer_state = PREV }
+					add_core_of = SMM
+					SMM = { transfer_state = PREV }
 				}
 			}
-			original_tag = SAM
-			tag = SAM
-			SAM = {
+			original_tag = SMM
+			tag = SMM
+			SMM = {
 				hidden_effect = {
-					RUS = { SAM = { transfer_technology_without_doctrines = yes } }
+					RUS = { SMM = { transfer_technology_without_doctrines = yes } }
 
 					set_research_slots = 5
                     RUS_enable_integration = yes
@@ -2901,7 +2901,7 @@ country_event = { #
 			set_country_flag = TRM_Yui
 			JAP = { puppet = TRM }
 			hidden_effect = {
-				setup_japanese_transamur_dissolution = yes
+				setup_japanese_tranSMMur_dissolution = yes
 				set_politics = {
 					ruling_party = authoritarian_democrat
 				}

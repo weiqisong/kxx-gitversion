@@ -19,6 +19,24 @@ ideas = {
 				hog_naive_optimist
 			}
 		}
+		WHR_Marek_Edelman_hog_sde = {
+			allowed = { original_tag = WHR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea WHR_Fabijan_Akincyc_hog_npo"
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_ambitious_union_boss
+			}
+		}
 		WHR_janka_kupala_hog_tot = {
 			allowed = { original_tag = WHR }
 			available = {
@@ -76,6 +94,24 @@ ideas = {
 				foreign_minister
 				national_populist
 				for_biased_intellectual
+			}
+		}
+		WHR_Esther_Frumkin_for_rso = {
+			allowed = { original_tag = WHR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea WHR_Uladzislau_Kazlouski_for_npo"
+			}
+			traits = {
+				foreign_minister
+				radical_socialist
+				for_great_compromiser
 			}
 		}
 		WHR_larysa_hienijus_for_tot = {
@@ -137,6 +173,24 @@ ideas = {
 				eco_corrupt_kleptocrat
 			}
 		}
+		WHR_Victor_Alter_eco_sde = {
+			allowed = { original_tag = WHR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea WHR_Ivan_Jermacenka_eco_npo"
+			}
+			traits = {
+				economy_minister
+				social_democrat
+				eco_socialist_industrializer
+			}
+		}
 		WHR_dzmitryj_pryshchepau_eco_tot = {
 			allowed = { original_tag = WHR }
 			available = {
@@ -191,6 +245,24 @@ ideas = {
 				security_minister
 				totalist
 				sec_crime_fighter
+			}
+		}
+		WHR_Vladimir_Medem_sec_rso = {
+			allowed = { original_tag = WHR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Bruno_Maffi_sec_tot"
+			}
+			traits = {
+				security_minister
+				radical_socialist
+				sec_man_of_the_people
 			}
 		}
 		WHR_fabian_szantyr_sec_tot = {
