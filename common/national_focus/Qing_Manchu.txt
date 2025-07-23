@@ -2682,6 +2682,7 @@ focus_tree = {
 				remove_idea = QIE_white_russian_advisors_idea
 				add_idea = QIE_white_russian_advisors_idea_2
 			}
+			MON = { country_event = { id = qiefor.49 } }
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_BONUS }
 	}
@@ -2694,7 +2695,10 @@ focus_tree = {
 		x = 0
 		y = 4
 		relative_position_id = QIE_baron_ungern
-		completion_reward = { add_ideas = QIE_counterrevolution }
+		completion_reward = { 
+			add_ideas = QIE_counterrevolution 
+			
+		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	

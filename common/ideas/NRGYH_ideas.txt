@@ -4,7 +4,7 @@ ideas = {
 	country = {
 		NR_GJGYH = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea NR_GJGYH" }
-			name = 国家工业化
+			name = industrial
 			picture = GJGYH
 			allowed = { always = no }
 			modifier = {
@@ -21,7 +21,7 @@ ideas = {
 		}
 		NR_HZGR = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea NR_HZGR" }
-			name = 鼓动工人
+			name = worker
 			picture = HZGR
 			allowed = { always = no }
 			modifier = {

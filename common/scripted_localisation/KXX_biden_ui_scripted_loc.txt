@@ -263,6 +263,13 @@ defined_text = {
     	}
  		localization_key = FRA_OR_JESUS
  	}	
+	text = {
+    	trigger = {
+     	 	tag = FRA
+      		has_country_flag= FRA_Simone_Weil_occult_VISIBLE
+    	}
+ 		localization_key = FRA_OR_SIMONE_OCCULT
+ 	}	
 	#丹麦
 	text = {
     	trigger = {
@@ -379,6 +386,13 @@ defined_text = {
 	}
 
 	#民族与革命
+	text = {
+		trigger = {
+		  tag = EGY
+		  has_idea = EGY_Ahmed_Hussein_hog_npo
+		}
+		localization_key = SUL_OR_PM
+	}
 	text = {
 		trigger = {
 		  tag = ISR
@@ -767,6 +781,14 @@ defined_text = {
     	}
  		localization_key = FRA_OR_JESUS2
  	}	
+	text = {
+    	trigger = {
+     	 	tag = FRA
+      		has_country_flag= FRA_Simone_Weil_occult_VISIBLE
+    	}
+ 		localization_key = FRA_OR_SIMONE_OCCULT2
+ 	}	
+
 	#丹麦
 	text = {
     	trigger = {
@@ -878,6 +900,13 @@ defined_text = {
 		localization_key = FRG_OR_LEADER_2
 	}
 	#民族与革命
+	text = {
+		trigger = {
+		  tag = EGY
+		  has_idea = EGY_Ahmed_Hussein_hog_npo
+		}
+		localization_key = SUL_OR_PM2
+	}
 	text = {
 		trigger = {
 		  tag = ISR
@@ -1538,7 +1567,14 @@ defined_text = {
    		   has_country_flag = FRA_Jesus_Weil_VISIBLE
  		}
     	localization_key =  FRA_or_Jesus
+  	}
+	text = {
+    	trigger = {
+   		   has_country_flag = FRA_Simone_Weil_occult_VISIBLE
+ 		}
+    	localization_key =  FRA_or_Weil_occult
   	}	
+
 	#丹麦
 	text = {
     	trigger = {
@@ -1750,6 +1786,12 @@ defined_text = {
 	}
 
 	#民族与革命
+	text = {
+		trigger = {
+		  has_idea = EGY_Ahmed_Hussein_hog_npo
+		}
+		localization_key = EGY_Ahmed_Hussein_hog_npo
+	}
 	text = {
 		trigger = {
 		  has_idea = ISR_Morris_Abraham_Cohen_hog_rso
@@ -2341,8 +2383,11 @@ defined_text = {
     	localization_key =  GFX_Portrait_FRA_Andre_Chaumet
   	}
 	text = {
-    	trigger = {
-   		   has_country_flag = FRA_Simone_Weil_VISIBLE
+		trigger = {
+			or = {
+				has_country_flag = FRA_Simone_Weil_VISIBLE
+				has_country_flag = FRA_Simone_Weil_occult_VISIBLE
+			}
  		}
     	localization_key =  GFX_Portrait_FRA_Simone_Weil
   	}
@@ -2562,6 +2607,12 @@ defined_text = {
 
 
 	#民族与革命
+	text = {
+		trigger = {
+		  has_idea = EGY_Ahmed_Hussein_hog_npo
+		}
+		localization_key = GFX_Portrait_EGY_Ahmed_Hussein
+	}
 	text = {
 		trigger = {
 		  has_idea = ISR_Morris_Abraham_Cohen_hog_rso

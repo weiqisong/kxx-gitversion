@@ -7284,7 +7284,11 @@ focus_tree = {
 
 		ai_will_do = { factor = 100 }
 		available = {
-			has_government = radical_socialist
+			OR = {
+				has_government = radical_socialist
+				has_government = social_democrat
+			}
+			
 		}
 		prerequisite = {
 			focus = DEN_the_first_statsraad_congress

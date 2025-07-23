@@ -36,8 +36,11 @@ autonomy_state = {
 	allowed = {
 		OR = {
 			tag = ARM
-			tag = LEB
 			tag = CRM
+			tag = LEB
+			tag = PAL
+			tag = EGY
+			tag = CYP
 		}
 		overlord = { tag = TUR }
 	}

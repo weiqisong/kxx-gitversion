@@ -1,0 +1,5830 @@
+focus_tree={
+	id=Palestine_Focus
+	country={
+		factor=0
+		modifier={
+			add=10
+			tag=PLS
+		}
+	}
+	default=no
+	focus={
+		id=PLS_stand_up_go_to_the_revolution
+		icon=PALS_stand_up_go_to_the_revolution
+		x=17
+		y=0
+		cost=1
+		ai_will_do={
+			factor=100
+		}
+		bypass = {
+			NOT = {
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_An_existential_battle_idea
+		}
+	}
+	focus={
+		id=PLS_Raise_the_black_flag
+		icon=PALS_Raise_the_black_flag
+		x=14
+		y=1
+		prerequisite={focus=PLS_stand_up_go_to_the_revolution}
+		cost=1
+		ai_will_do={
+			factor=100
+		}
+		bypass = {
+			NOT = {
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_blag_flag_idea
+		}
+	}
+	focus={
+		id=PLS_The_influence_of_the_Great_Mufti
+		icon=PALS_The_influence_of_the_Great_Mufti
+		x=14
+		y=2
+		prerequisite={focus=PLS_Raise_the_black_flag}
+		cost=1
+		ai_will_do={
+			factor=100
+		}
+		bypass = {
+			NOT = {
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_blag_flag_idea
+				add_idea = PLS_blag_flag_idea1
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 12500
+				producer = PLS
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1000
+				producer = PLS
+			}
+		}
+	}
+	focus={
+		id=PLS_Islam_dominates
+		icon=PALS_Islam_dominates
+		x=13
+		y=3
+		prerequisite={focus=PLS_The_influence_of_the_Great_Mufti}
+		mutually_exclusive={focus=PLS_Introduce_young_officers }
+		cost=1
+		ai_will_do={
+			factor=100
+		}
+		bypass = {
+			NOT = {
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_blag_flag_idea1
+				add_idea = PLS_blag_flag_idea2
+			}
+		}
+	}
+	focus={
+		id=PLS_Introduce_young_officers
+		icon=PALS_Introduce_young_officers
+		x=15
+		y=3
+		prerequisite={focus=PLS_The_influence_of_the_Great_Mufti}
+		mutually_exclusive={focus=PLS_Islam_dominates }
+		cost=1
+		ai_will_do={
+			factor=100
+		}
+		bypass = {
+			NOT = {
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_blag_flag_idea1
+				add_idea = PLS_blag_flag_idea3
+			}
+		}
+	}
+	focus={
+		id=PLS_The_banner_of_the_Great_Uprising
+		icon=PALS_The_banner_of_the_Great_Uprising
+		x=17
+		y=1
+		prerequisite={focus=PLS_stand_up_go_to_the_revolution}
+		cost=1
+		ai_will_do={
+			factor=100
+		}
+		bypass = {
+			NOT = {
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_arab_flag_idea
+		}
+	}
+	focus={
+		id=PLS_Mobilize_the_militia
+		icon=PALS_Mobilize_the_militia
+		x=17
+		y=2
+		prerequisite={focus=PLS_The_banner_of_the_Great_Uprising}
+		cost=1
+		ai_will_do={
+			factor=100
+		}
+		bypass = {
+			NOT = {
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Palestine Liberation Army\" division_template = \"Palestine Liberation Army\" start_experience_factor = 1 start_equipment_factor = 1"
+					allow_spawning_on_enemy_provs = yes
+					owner = PLS
+				}
+				create_unit = {
+					division = "name = \"Palestine Liberation Army\" division_template = \"Palestine Liberation Army\" start_experience_factor = 1 start_equipment_factor = 1"
+					allow_spawning_on_enemy_provs = yes
+					owner = PLS
+				}
+				create_unit = {
+					division = "name = \"Palestine Liberation Army\" division_template = \"Palestine Liberation Army\" start_experience_factor = 1 start_equipment_factor = 1"
+					allow_spawning_on_enemy_provs = yes
+					owner = PLS
+				}
+			}
+		}
+	}
+	focus={
+		id=PLS_Underground_factory
+		icon=PALS_Underground_factory
+		x=17
+		y=3
+		prerequisite={focus=PLS_Mobilize_the_militia}
+		cost=1
+		ai_will_do={
+			factor=100
+		}
+		bypass = {
+			NOT = {
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_offsite_building = { type = arms_factory level = 3 }
+			add_offsite_building = { type = industrial_complex level = 3 }
+		}
+	}
+	focus={
+		id=PLS_Raise_the_red_flag
+		icon=PALS_Raise_the_red_flag
+		x=20
+		y=1
+		prerequisite={focus=PLS_stand_up_go_to_the_revolution}
+		cost=1
+		ai_will_do={
+			factor=100
+		}
+		bypass = {
+			NOT = {
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_red_flag_idea
+		}
+	}
+	focus={
+		id=PLS_Appeal_to_the_international_columns
+		icon=PALS_Appeal_to_the_international_columns
+		x=20
+		y=2
+		prerequisite={focus=PLS_Raise_the_red_flag}
+		cost=1
+		ai_will_do={
+			factor=100
+		}
+		bypass = {
+			NOT = {
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_red_flag_idea
+				add_idea = PLS_red_flag_idea1
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Palestine Liberation Army\" division_template = \"Palestine Liberation Army\" start_experience_factor = 1 start_equipment_factor = 1"
+					allow_spawning_on_enemy_provs = yes
+					owner = PLS
+				}
+				create_unit = {
+					division = "name = \"Palestine Liberation Army\" division_template = \"Palestine Liberation Army\" start_experience_factor = 1 start_equipment_factor = 1"
+					allow_spawning_on_enemy_provs = yes
+					owner = PLS
+				}
+			}
+		}
+	}
+	focus={
+		id=PLS_Anti_Zionist_stance
+		icon=PALS_Anti_Zionist_stance
+		x=19
+		y=3
+		prerequisite={focus=PLS_Appeal_to_the_international_columns}
+		mutually_exclusive={focus=PLS_Anti_colonial_position }
+		cost=1
+		ai_will_do={
+			factor=100
+		}
+		bypass = {
+			NOT = {
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_red_flag_idea
+				add_idea = PLS_red_flag_idea1
+			}
+		}
+	}
+	focus={
+		id=PLS_Anti_colonial_position
+		icon=PALS_Anti_colonial_position
+		x=21
+		y=3
+		prerequisite={focus=PLS_Appeal_to_the_international_columns}
+		mutually_exclusive={focus=PLS_Anti_Zionist_stance }
+		cost=1
+		ai_will_do={
+			factor=100
+		}
+		bypass = {
+			NOT = {
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_red_flag_idea1
+				add_idea = PLS_red_flag_idea3
+			}
+		}
+	}
+	focus={
+		id=PLS_Through_the_hardships_of_life
+		icon=PALS_Through_the_hardships_of_life
+		x=17
+		y=4
+		prerequisite={focus=PLS_Islam_dominates focus=PLS_Introduce_young_officers}
+		prerequisite={focus=PLS_Underground_factory}
+		prerequisite={focus=PLS_Anti_Zionist_stance focus=PLS_Anti_colonial_position}
+		cost=1
+		ai_will_do={
+			factor=100
+		}
+		bypass = {
+			NOT = {
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_An_existential_battle_idea
+				add_idea = PLS_An_existential_battle_idea1
+			}
+		}
+	}
+	focus={
+		id=PLS_Increase_military_spending
+		icon=PALS_Increase_military_spending
+		x=35
+		y=0
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			army_experience = 100
+			add_command_power = 50
+		}
+	}
+	focus={
+		id=PLS_Direction_of_military_reform
+		icon=PALS_Direction_of_military_reform
+		x=30
+		y=1
+		prerequisite={focus=PLS_Increase_military_spending}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			army_experience = 100
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	focus={
+		id=PLS_Take_Germany_as_a_teacher
+		icon=PALS_Take_Germany_as_a_teacher
+		x=27
+		y=2
+		prerequisite={focus=PLS_Direction_of_military_reform}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = PLS_Traditional_troops
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_German_style_military_reform_idea
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus={
+		id=PLS_Standardize_the_command_system
+		icon=PALS_Standardize_the_command_system
+		x=26
+		y=3
+		prerequisite={focus=PLS_Take_Germany_as_a_teacher}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_German_style_military_reform_idea
+				add_idea = PLS_German_style_military_reform_idea1
+			}
+		}
+	}
+	focus={
+		id=PLS_Defend_the_living_space_of_the_nation
+		icon=PALS_Defend_the_living_space_of_the_nation
+		x=28
+		y=3
+		prerequisite={focus=PLS_Take_Germany_as_a_teacher}
+		prerequisite={focus=PLS_Surprisingly_winning}
+		mutually_exclusive={focus=PLS_Respond_to_the_call_to_jihad }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Arabian_sword_idea
+		}
+	}
+	focus={
+		id=PLS_total_war
+		icon=PALS_total_war
+		x=27
+		y=4
+		prerequisite={focus=PLS_Take_Germany_as_a_teacher}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Standardize_the_command_system
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_command_power = 50
+			add_ideas = war_economy
+			swap_ideas = {
+				remove_idea = PLS_German_style_military_reform_idea1
+				add_idea = PLS_German_style_military_reform_idea2
+			}
+		}
+	}
+	focus={
+		id=PLS_Surprisingly_winning
+		icon=PALS_Surprisingly_winning
+		x=30
+		y=2
+		prerequisite={focus=PLS_Direction_of_military_reform}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Asymmetrical_warfare_idea
+		}
+	}
+	focus={
+		id=PLS_Normalize_death_squads
+		icon=PALS_Normalize_death_squads
+		x=30
+		y=4
+		prerequisite={focus=PLS_Surprisingly_winning}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Asymmetrical_warfare_idea
+				add_idea = PLS_Asymmetrical_warfare_idea1
+			}
+		}
+	}
+	focus={
+		id=PLS_Unscrupulously
+		icon=PALS_Unscrupulously
+		x=30
+		y=5
+		prerequisite={focus=PLS_Normalize_death_squads}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Asymmetrical_warfare_idea1
+				add_idea = PLS_Asymmetrical_warfare_idea2
+			}
+		}
+	}
+	focus={
+		id=PLS_Traditional_troops
+		icon=PALS_Traditional_troops
+		x=33
+		y=2
+		prerequisite={focus=PLS_Direction_of_military_reform}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = PLS_Take_Germany_as_a_teacher
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Traditional_tactics_idea
+		}
+	}
+	focus={
+		id=PLS_Respond_to_the_call_to_jihad
+		icon=PALS_Respond_to_the_call_to_jihad
+		x=32
+		y=3
+		prerequisite={focus=PLS_Traditional_troops}
+		prerequisite={focus=PLS_Surprisingly_winning}
+		mutually_exclusive={focus=PLS_Defend_the_living_space_of_the_nation }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Islam_sword_idea
+		}
+	}
+	focus={
+		id=PLS_Recruit_Burakuren
+		icon=PALS_Recruit_Burakuren
+		x=34
+		y=3
+		prerequisite={focus=PLS_Traditional_troops}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Traditional_tactics_idea
+				add_idea = PLS_Traditional_tactics_idea1
+			}
+		}
+	}
+	focus={
+		id=PLS_Plunder_the_economy
+		icon=PALS_Plunder_the_economy
+		x=33
+		y=4
+		prerequisite={focus=PLS_Traditional_troops}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Recruit_Burakuren
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Traditional_tactics_idea1
+				add_idea = PLS_Traditional_tactics_idea2
+			}
+		}
+	}
+	focus={
+		id=PLS_Establishment_of_the_Military_Academy
+		icon=PALS_Establishment_of_the_Military_Academy
+		x=40
+		y=1
+		prerequisite={focus=PLS_Increase_military_spending}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Military_Academy_idea
+		}
+	}
+	focus={
+		id=PLS_War_Department
+		icon=PALS_War_Department
+		x=37
+		y=2
+		prerequisite={focus=PLS_Establishment_of_the_Military_Academy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Increase_the_input_of_the_army_idea
+		}
+	}
+	focus={
+		id=PLS_Research_regular_gear
+		icon=PALS_Research_regular_gear
+		x=36
+		y=3
+		prerequisite={focus=PLS_War_Department}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Increase_the_input_of_the_army_idea
+				add_idea = PLS_Increase_the_input_of_the_army_idea1
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = support_tech
+			}
+		}
+	}
+	focus={
+		id=PLS_Armor_tests
+		icon=PALS_Armor_tests
+		x=38
+		y=3
+		prerequisite={focus=PLS_War_Department}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Research_regular_gear
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Increase_the_input_of_the_army_idea1
+				add_idea = PLS_Increase_the_input_of_the_army_idea2
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	focus={
+		id=PLS_Admiralty
+		icon=PALS_Admiralty
+		x=40
+		y=2
+		prerequisite={focus=PLS_Establishment_of_the_Military_Academy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Increase_the_input_of_the_navy_idea
+		}
+	}
+	focus={
+		id=PLS_Dockyard_was_added
+		icon=PALS_Dockyard_was_added
+		x=40
+		y=3
+		prerequisite={focus=PLS_Admiralty}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Increase_the_input_of_the_navy_idea
+				add_idea = PLS_Increase_the_input_of_the_navy_idea1
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cv_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+	focus={
+		id=PLS_Ministry_of_the_Air_Force
+		icon=PALS_Ministry_of_the_Air_Force
+		x=42
+		y=2
+		prerequisite={focus=PLS_Establishment_of_the_Military_Academy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Increase_the_input_of_the_air_idea
+		}
+	}
+	focus={
+		id=PLS_Import_of_foreign_aircraft
+		icon=PALS_Import_of_foreign_aircraft
+		x=42
+		y=3
+		prerequisite={focus=PLS_Ministry_of_the_Air_Force}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Increase_the_input_of_the_air_idea
+				add_idea = PLS_Increase_the_input_of_the_air_idea1
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = light_fighter
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cas_bomber
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = tactical_bomber
+			}
+		}
+	}
+	focus={
+		id=PLS_Palestine_was_given_a_respite
+		icon=PALS_Palestine_was_given_a_respite
+		x=56
+		y=3
+		cost=0
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+			add_ideas = PLS_Struggling_idea
+		}
+	}
+	focus={
+		id=PLS_Rebuild_the_political_system
+		icon=PALS_Rebuild_the_political_system
+		x=56
+		y=4
+		prerequisite={focus=PLS_Palestine_was_given_a_respite}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+	focus={
+		id=PLS_Erase_the_traces_of_colonization
+		icon=PALS_Erase_the_traces_of_colonization
+		x=54
+		y=5
+		prerequisite={focus=PLS_Rebuild_the_political_system}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			random_owned_controlled_state = {
+				add_building_construction={
+					type = industrial_complex
+					level = -1
+					instant_build = yes
+				}
+			}
+			country_event = Palestine.5
+		}
+	}
+	focus={
+		id=PLS_Pacify_the_tribes
+		icon=PALS_Pacify_the_tribes
+		x=56
+		y=5
+		prerequisite={focus=PLS_Rebuild_the_political_system}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_manpower = -1435
+			country_event = Palestine.6
+		}
+	}
+	focus={
+		id=PLS_Maintain_public_order
+		icon=PALS_Maintain_public_order
+		x=58
+		y=5
+		prerequisite={focus=PLS_Rebuild_the_political_system}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = -100
+			country_event = Palestine.7
+		}
+	}
+	focus={
+		id=PLS_Unveil_it
+		icon=PALS_Unveil_it
+		x=56
+		y=6
+		prerequisite={focus=PLS_Erase_the_traces_of_colonization}
+		prerequisite={focus=PLS_Pacify_the_tribes}
+		prerequisite={focus=PLS_Maintain_public_order}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = Palestine.4
+		}
+	}
+	focus={
+		id=PLS_The_Jewish_Question
+		icon=PALS_The_Jewish_Question
+		x=8
+		y=7
+		prerequisite={focus=PLS_Unveil_it}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_stability = 0.05
+		}
+	}
+	focus={
+		id=PLS_Total_revenge_on_Zionism
+		icon=PALS_Total_revenge_on_Zionism
+		x=2
+		y=8
+		prerequisite={focus=PLS_The_Jewish_Question}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			OR = {
+				has_completed_focus = PLS_Between_Arabia_and_Islam
+				has_completed_focus = PLS_Holy_Descent
+				has_completed_focus = PLS_Youth_Congress_victory
+				has_completed_focus = PLS_Continue_to_march
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Blood_for_blood_idea
+			hidden_effect = {
+				country_event = {
+					id = Palestine.47
+					days = 180
+				}
+			}
+		}
+	}
+	focus={
+		id=PLS_Shelling_of_the_Wailing_Wall
+		icon=PALS_Shelling_of_the_Wailing_Wall
+		x=0
+		y=9
+		prerequisite={focus=PLS_Total_revenge_on_Zionism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Blood_for_blood_idea
+				add_idea = PLS_Blood_for_blood_idea1
+			}
+		}
+	}
+	focus={
+		id=PLS_Operation_Red
+		icon=PALS_Operation_Red
+		x=0
+		y=10
+		prerequisite={focus=PLS_Shelling_of_the_Wailing_Wall}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Blood_for_blood_idea1
+				add_idea = PLS_Blood_for_blood_idea2
+			}
+			country_event = Palestine.29
+		}
+	}
+	focus={
+		id=PLS_Resumption_of_land
+		icon=PALS_Resumption_of_land
+		x=2
+		y=9
+		prerequisite={focus=PLS_Total_revenge_on_Zionism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction={
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction={
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			454 = {
+				add_resource = {
+					type = steel
+					amount = 25
+				}
+				add_resource = {
+					type = oil
+					amount = 15
+				}
+			}
+		}
+	}
+	focus={
+		id=PLS_Operation_Yellow
+		icon=PALS_Operation_Yellow
+		x=2
+		y=10
+		prerequisite={focus=PLS_Resumption_of_land}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Correctional_camps_idea
+			country_event = Palestine.22
+		}
+	}
+	focus={
+		id=PLS_Burning_the_books
+		icon=PALS_Burning_the_books
+		x=4
+		y=9
+		prerequisite={focus=PLS_Total_revenge_on_Zionism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Arabic_only_idea
+		}
+	}
+	focus={
+		id=PLS_Operation_Gray
+		icon=PALS_Operation_Gray
+		x=4
+		y=10
+		prerequisite={focus=PLS_Burning_the_books}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Arabic_only_idea
+				add_idea = PLS_Arabic_only_idea1
+			}
+			country_event = Palestine.24
+		}
+	}
+	focus={
+		id=PLS_End_the_cycle_of_hatred
+		icon=PALS_End_the_cycle_of_hatred
+		x=8
+		y=8
+		prerequisite={focus=PLS_The_Jewish_Question}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			OR = {
+				has_completed_focus = PLS_Unfinished_business
+				has_completed_focus = PLS_The_Independence_Party_wins
+				has_completed_focus = PLS_The_Reform_Party_wins
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Incredible_reconciliation_idea
+		}
+	}
+	focus={
+		id=PLS_Work_with_the_Haredi_people
+		icon=PALS_Work_with_the_Haredi_people
+		x=6
+		y=9
+		prerequisite={focus=PLS_End_the_cycle_of_hatred}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Incredible_reconciliation_idea
+				add_idea = PLS_Incredible_reconciliation_idea1
+			}
+			country_event = Palestine.23
+		}
+	}
+	focus={
+		id=PLS_Hunt_for_the_Lehi
+		icon=PALS_Hunt_for_the_Lehi
+		x=6
+		y=10
+		prerequisite={focus=PLS_Work_with_the_Haredi_people}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_stability = 0.05
+			swap_ideas = {
+				remove_idea = PLS_Incredible_reconciliation_idea1
+				add_idea = PLS_Incredible_reconciliation_idea2
+			}
+		}
+	}
+	focus={
+		id=PLS_Recognition_of_title_deeds
+		icon=PALS_Recognition_of_title_deeds
+		x=8
+		y=9
+		prerequisite={focus=PLS_End_the_cycle_of_hatred}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = -50
+			add_ideas = PLS_Legal_title_deeds_idea
+		}
+	}
+	focus={
+		id=PLS_End_the_Aria_Movement
+		icon=PALS_End_the_Aria_Movement
+		x=8
+		y=10
+		prerequisite={focus=PLS_Recognition_of_title_deeds}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Legal_title_deeds_idea
+				add_idea = PLS_Legal_title_deeds_idea1
+			}
+			country_event = Palestine.25
+		}
+	}
+	focus={
+		id=PLS_Restoration_of_Judaism
+		icon=PALS_Restoration_of_Judaism
+		x=10
+		y=9
+		prerequisite={focus=PLS_End_the_cycle_of_hatred}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_stability = 0.1
+			add_ideas = PLS_Legalization_of_Judaism_ideas
+		}
+	}
+	focus={
+		id=PLS_A_holy_place_for_all
+		icon=PALS_A_holy_place_for_all
+		x=10
+		y=10
+		prerequisite={focus=PLS_Restoration_of_Judaism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_offsite_building = { type = industrial_complex level = 3 }
+			add_offsite_building = { type = arms_factory level = 2 }
+			country_event = Palestine.55
+		}
+	}
+	focus={
+		id=PLS_Break_away_from_Judass_hand
+		icon=PALS_Break_away_from_Judass_hand
+		x=14
+		y=8
+		prerequisite={focus=PLS_The_Jewish_Question}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			OR = {
+				has_completed_focus = PLS_Revolution_at_sea
+				has_completed_focus = PLS_The_guidance_of_socialism
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Destruction_of_Jewishness_ideas
+		}
+	}
+	focus={
+		id=PLS_Inventory_operations
+		icon=PALS_Inventory_operations
+		x=12
+		y=9
+		prerequisite={focus=PLS_Break_away_from_Judass_hand}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_The_Great_Reckoning_idea
+		}
+	}
+	focus={
+		id=PLS_Only_Palestinians
+		icon=PALS_Only_Palestinians
+		x=12
+		y=10
+		prerequisite={focus=PLS_Inventory_operations}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_The_Great_Reckoning_idea
+				add_idea = PLS_The_Great_Reckoning_idea1
+			}
+			country_event = Palestine.30
+		}
+	}
+	focus={
+		id=PLS_Nationalization_of_immigrants_property
+		icon=PALS_Nationalization_of_immigrants_property
+		x=14
+		y=9
+		prerequisite={focus=PLS_Break_away_from_Judass_hand}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction={
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction={
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = PLS_Destruction_of_Jewishness_ideas
+				add_idea = PLS_Destruction_of_Jewishness_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_Zionism_is_capitalism
+		icon=PALS_Zionism_is_capitalism
+		x=14
+		y=10
+		prerequisite={focus=PLS_Nationalization_of_immigrants_property}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Destruction_of_Jewishness_ideas1
+				add_idea = PLS_Destruction_of_Jewishness_ideas2
+			}
+			country_event = Palestine.28
+		}
+	}
+	focus={
+		id=PLS_End_the_delivery_of_greed
+		icon=PALS_End_the_delivery_of_greed
+		x=16
+		y=9
+		prerequisite={focus=PLS_Break_away_from_Judass_hand}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction={
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = PLS_The_end_of_greed_idea
+		}
+	}
+	focus={
+		id=PLS_Secularization_in_an_orderly_manner
+		icon=PALS_Secularization_in_an_orderly_manner
+		x=16
+		y=10
+		prerequisite={focus=PLS_End_the_delivery_of_greed}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_The_end_of_greed_idea
+				add_idea = PLS_The_end_of_greed_idea1
+			}
+		}
+	}
+	focus={
+		id=PLS_Between_Arabia_and_Islam
+		icon=PALS_Between_Arabia_and_Islam
+		x=24
+		y=7
+		prerequisite={focus=PLS_Unveil_it}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+			hidden_effect = {
+				set_variable = { ABG_nationalism = 0 }
+				set_variable = { ABG_Islamism = 0 }
+				country_event = {
+					id = Palestine.20
+					days = 210
+				}
+			}
+		}
+	}
+	focus={
+		id=PLS_Deepening_anti_colonial_awareness
+		icon=PALS_Deepening_anti_colonial_awareness
+		x=22
+		y=8
+		prerequisite={focus=PLS_Between_Arabia_and_Islam}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = Palestine.52
+		}
+	}
+	focus={
+		id=PLS_Allah_not_democracy
+		icon=PALS_Allah_not_democracy
+		x=24
+		y=8
+		prerequisite={focus=PLS_Between_Arabia_and_Islam}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = Palestine.53
+		}
+	}
+	focus={
+		id=PLS_Socialization_of_the_Islamic_faith
+		icon=PALS_Socialization_of_the_Islamic_faith
+		x=26
+		y=8
+		prerequisite={focus=PLS_Between_Arabia_and_Islam}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = Palestine.54
+		}
+	}
+	focus={
+		id=PLS_The_future_of_the_Alliance
+		icon=PALS_The_future_of_the_Alliance
+		x=24
+		y=9
+		prerequisite={focus=PLS_Deepening_anti_colonial_awareness}
+		prerequisite={focus=PLS_Allah_not_democracy}
+		prerequisite={focus=PLS_Socialization_of_the_Islamic_faith}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 150
+			if = {
+				limit = {
+					check_variable = { ABG_nationalism > ABG_Islamism }
+				}
+				country_event = Palestine.44
+			}
+			if = {
+				limit = {
+					check_variable = { ABG_Islamism > ABG_nationalism }
+				}
+				country_event = Palestine.45
+			}
+		}
+	}
+	focus={
+		id=PLS_Modern_jihad
+		icon=PALS_Modern_jihad
+		x=21
+		y=10
+		prerequisite={focus=PLS_The_future_of_the_Alliance}
+		mutually_exclusive={focus=PLS_Victory_in_Palestine }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Arab_nationalism_win
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			if = {
+				limit = {
+					NOT = {
+						has_idea = PLS_Pan_Arabism_idea
+					}
+				}
+				add_ideas = PLS_Pan_Arabism_idea
+			}
+			if = {
+				limit = {
+					has_idea = PLS_Pan_Arabism_idea
+				}
+				swap_ideas = {
+					remove_idea = PLS_Pan_Arabism_idea
+					add_idea = PLS_Pan_Arabism_idea1
+				}
+			}
+		}
+	}
+	focus={
+		id=PLS_integration
+		icon=PALS_integration
+		x=19
+		y=11
+		prerequisite={focus=PLS_Modern_jihad}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_popularity = { ideology = totalist popularity = -1 }
+			add_popularity = { ideology = syndicalist popularity = -1 }
+			add_popularity = { ideology = radical_socialist popularity = -1 }
+			add_popularity = { ideology = social_democrat popularity = -1 }
+			add_popularity = { ideology = social_liberal popularity = -1 }
+			add_popularity = { ideology = market_liberal popularity = -1 }
+			add_popularity = { ideology = social_conservative popularity = -1 }
+			add_popularity = { ideology = authoritarian_democrat popularity = -1 }
+			add_popularity = { ideology = paternal_autocrat popularity = -1 }
+			add_ideas = PLS_integration_idea
+		}
+	}
+	focus={
+		id=PLS_Centralize_local_power
+		icon=PALS_Centralize_local_power
+		x=18
+		y=12
+		prerequisite={focus=PLS_integration}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_integration_idea
+				add_idea = PLS_integration_idea1
+			}
+		}
+	}
+	focus={
+		id=PLS_Reform_the_mobilization_system
+		icon=PALS_Reform_the_mobilization_system
+		x=20
+		y=12
+		prerequisite={focus=PLS_integration}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Centralize_local_power
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_integration_idea1
+				add_idea = PLS_integration_idea2
+			}
+		}
+	}
+	focus={
+		id=PLS_Hail_to_Haji
+		icon=PALS_Hail_to_Haji
+		x=23
+		y=11
+		prerequisite={focus=PLS_Modern_jihad}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_The_Great_Mufti_Cult_of_Personality_idea
+		}
+	}
+	focus={
+		id=PLS_The_spirit_of_sacrifice
+		icon=PALS_The_spirit_of_sacrifice
+		x=22
+		y=12
+		prerequisite={focus=PLS_Hail_to_Haji}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_The_Great_Mufti_Cult_of_Personality_idea
+				add_idea = PLS_The_Great_Mufti_Cult_of_Personality_idea1
+			}
+		}
+	}
+	focus={
+		id=PLS_Agitation_of_nationalism
+		icon=PALS_Agitation_of_nationalism
+		x=24
+		y=12
+		prerequisite={focus=PLS_Hail_to_Haji}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_The_spirit_of_sacrifice
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_The_Great_Mufti_Cult_of_Personality_idea1
+				add_idea = PLS_The_Great_Mufti_Cult_of_Personality_idea2
+			}
+		}
+	}
+	focus={
+		id=PLS_Struggle_Labor_Obey
+		icon=PALS_Struggle_Labor_Obey
+		x=21
+		y=13
+		prerequisite={focus=PLS_Centralize_local_power}
+		prerequisite={focus=PLS_Reform_the_mobilization_system}
+		prerequisite={focus=PLS_The_spirit_of_sacrifice}
+		prerequisite={focus=PLS_Agitation_of_nationalism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_The_Great_Mufti_Cult_of_Personality_idea2
+				add_idea = PLS_The_Great_Mufti_Cult_of_Personality_idea3
+			}
+			country_event = Palestine.56
+		}
+	}
+	focus={
+		id=PLS_Victory_in_Palestine
+		icon=PALS_Victory_in_Palestine
+		x=28
+		y=10
+		prerequisite={focus=PLS_The_future_of_the_Alliance}
+		mutually_exclusive={focus=PLS_Modern_jihad }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Arab_Islamism_win
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_The_Hakimian_Principle_idea
+		}
+	}
+	focus={
+		id=PLS_Expansion_of_the_Muslim_Brotherhood
+		icon=PALS_Expansion_of_the_Muslim_Brotherhood
+		x=25
+		y=11
+		prerequisite={focus=PLS_Victory_in_Palestine}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_The_Hakimian_Principle_idea
+				add_idea = PLS_The_Hakimian_Principle_idea1
+			}
+		}
+	}
+	focus={
+		id=PLS_Islamic_Police
+		icon=PALS_Islamic_Police
+		x=27
+		y=11
+		prerequisite={focus=PLS_Victory_in_Palestine}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Expansion_of_the_Muslim_Brotherhood
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_The_Hakimian_Principle_idea1
+				add_idea = PLS_The_Hakimian_Principle_idea2
+			}
+		}
+	}
+	focus={
+		id=PLS_Social_justice
+		icon=PALS_Social_justice
+		x=26
+		y=12
+		prerequisite={focus=PLS_Expansion_of_the_Muslim_Brotherhood}
+		prerequisite={focus=PLS_Islamic_Police}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Social_justice_idea
+		}
+	}
+	focus={
+		id=PLS_Refuting_Western_thought
+		icon=PALS_Refuting_Western_thought
+		x=29
+		y=11
+		prerequisite={focus=PLS_Victory_in_Palestine}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Arab_centrism_idea
+			country_event = Palestine.63
+		}
+	}
+	focus={
+		id=PLS_Correcting_the_Pan_Arab_Movement
+		icon=PALS_Correcting_the_Pan_Arab_Movement
+		x=31
+		y=11
+		prerequisite={focus=PLS_Victory_in_Palestine}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			if = {
+				limit = {
+					NOT = {
+						has_idea = PLS_Islamism_idea
+					}
+				}
+				add_ideas = PLS_Islamism_idea
+			}
+			if = {
+				limit = {
+					has_idea = PLS_Islamism_idea
+				}
+				swap_ideas = {
+					remove_idea = PLS_Islamism_idea
+					add_idea = PLS_Islamism_idea1
+				}
+			}
+		}
+	}
+	focus={
+		id=PLS_Stop_the_depravity_and_countercurrent
+		icon=PALS_Stop_the_depravity_and_countercurrent
+		x=30
+		y=12
+		prerequisite={focus=PLS_Refuting_Western_thought}
+		prerequisite={focus=PLS_Correcting_the_Pan_Arab_Movement}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Stop_the_depravity_and_countercurrent_idea
+		}
+	}
+	focus={
+		id=PLS_Spiritual_mobilization
+		icon=PALS_Spiritual_mobilization
+		x=28
+		y=13
+		prerequisite={focus=PLS_Social_justice}
+		prerequisite={focus=PLS_Stop_the_depravity_and_countercurrent}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Arab_centrism_idea
+				add_idea = PLS_Arab_centrism_idea1
+			}
+			hidden_effect = {
+				country_event = {
+					id = Palestine.70
+					days = 240
+				}
+			}
+		}
+	}
+	focus={
+		id=PLS_Unexpected_contenders
+		icon=PALS_Unexpected_contenders
+		x=37
+		y=7
+		prerequisite={focus=PLS_Unveil_it}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+			country_event = {
+				id = Palestine.72
+				days = 14
+			}
+			add_ideas = PAL_Preparating_of_Monarchy_ideas
+		}
+	}
+	focus={
+		id=PLS_Give_the_mufti_a_place
+		icon=PALS_Give_the_mufti_a_place
+		x=35
+		y=8
+		prerequisite={focus=PLS_Unexpected_contenders}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Support_from_Mufti_ideas
+		}
+	}
+	focus={
+		id=PLS_Take_advantage_of_clergy_and_landlords
+		icon=PALS_Take_advantage_of_clergy_and_landlords
+		x=37
+		y=8
+		prerequisite={focus=PLS_Unexpected_contenders}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Preparating_of_Monarchy_ideas
+				add_idea = PAL_Preparating_of_Monarchy_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_Banning_left_wing_political_parties
+		icon=PALS_Banning_left_wing_political_parties
+		x=39
+		y=8
+		prerequisite={focus=PLS_Unexpected_contenders}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Take_advantage_of_clergy_and_landlords
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Preparating_of_Monarchy_ideas1
+				add_idea = PAL_Preparating_of_Monarchy_ideas2
+			}
+		}
+	}
+	focus={
+		id=PLS_Turn_on_monarchy_propaganda
+		icon=PALS_Turn_on_monarchy_propaganda
+		x=36
+		y=9
+		prerequisite={focus=PLS_Give_the_mufti_a_place}
+		prerequisite={focus=PLS_Take_advantage_of_clergy_and_landlords}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Banning_left_wing_political_parties
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Preparating_of_Monarchy_ideas2
+				add_idea = PAL_Preparating_of_Monarchy_ideas3
+			}
+		}
+	}
+	focus={
+		id=PLS_Deregulation_of_the_economy
+		icon=PALS_Deregulation_of_the_economy
+		x=38
+		y=9
+		prerequisite={focus=PLS_Take_advantage_of_clergy_and_landlords}
+		prerequisite={focus=PLS_Banning_left_wing_political_parties}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Turn_on_monarchy_propaganda
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Preparating_of_Monarchy_ideas3
+				add_idea = PAL_Preparating_of_Monarchy_ideas4
+			}
+		}
+	}
+	focus={
+		id=PLS_The_direction_of_the_monarchy
+		icon=PALS_The_direction_of_the_monarchy
+		x=37
+		y=10
+		prerequisite={focus=PLS_Turn_on_monarchy_propaganda}
+		prerequisite={focus=PLS_Deregulation_of_the_economy}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = Palestine.71
+		}
+	}
+	focus={
+		id=PLS_Holy_Descent
+		icon=PALS_Holy_Descent
+		x=34
+		y=11
+		prerequisite={focus=PLS_The_direction_of_the_monarchy}
+		mutually_exclusive={focus=PLS_Unfinished_business }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = PLS_The_Hashemite_Dynasty_Resurges_Flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_The_authority_of_the_caliphate_ideas
+		}
+	}
+	focus={
+		id=PLS_A_society_guided_by_Allah
+		icon=PALS_A_society_guided_by_Allah
+		x=34
+		y=12
+		prerequisite={focus=PLS_Holy_Descent}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_The_authority_of_the_caliphate_ideas
+				add_idea = PAL_The_authority_of_the_caliphate_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_Enable_Sapphira_Scholars
+		icon=PALS_Enable_Sapphira_Scholars
+		x=32
+		y=13
+		prerequisite={focus=PLS_A_society_guided_by_Allah}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_The_authority_of_the_caliphate_ideas1
+				add_idea = PAL_The_authority_of_the_caliphate_ideas2
+			}
+		}
+	}
+	focus={
+		id=PLS_Take_advantage_of_the_Muslim_Brotherhood
+		icon=PALS_Take_advantage_of_the_Muslim_Brotherhood
+		x=34
+		y=13
+		prerequisite={focus=PLS_A_society_guided_by_Allah}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Enable_Sapphira_Scholars
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_The_authority_of_the_caliphate_ideas2
+				add_idea = PAL_The_authority_of_the_caliphate_ideas3
+			}
+		}
+	}
+	focus={
+		id=PLS_Muslims_first
+		icon=PALS_Muslims_first
+		x=36
+		y=13
+		prerequisite={focus=PLS_A_society_guided_by_Allah}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Take_advantage_of_the_Muslim_Brotherhood
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction={
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = PAL_The_authority_of_the_caliphate_ideas3
+				add_idea = PAL_The_authority_of_the_caliphate_ideas4
+			}
+		}
+	}
+	focus={
+		id=PLS_Looking_back_on_the_golden_years
+		icon=PALS_Looking_back_on_the_golden_years
+		x=34
+		y=14
+		prerequisite={focus=PLS_Enable_Sapphira_Scholars}
+		prerequisite={focus=PLS_Take_advantage_of_the_Muslim_Brotherhood}
+		prerequisite={focus=PLS_Muslims_first}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = Palestine.59
+			add_ideas = PAL_The_legacy_of_the_Golden_Age_ideas
+		}
+	}
+	focus={
+		id=PLS_Unfinished_business
+		icon=PALS_Unfinished_business
+		x=40
+		y=11
+		prerequisite={focus=PLS_The_direction_of_the_monarchy}
+		mutually_exclusive={focus=PLS_Holy_Descent }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = PLS_The_constitutionalists_were_at_the_helm_Flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Constitutional_monarchy_ideas
+		}
+	}
+	focus={
+		id=PLS_Responsible_Parliament
+		icon=PALS_Responsible_Parliament
+		x=40
+		y=12
+		prerequisite={focus=PLS_Unfinished_business}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			set_party_name = {
+				ideology = social_democrat
+				name = PLS_parliament_social_democrat_party
+				long_name = PLS_parliament_social_democrat_party_long
+			}
+			set_party_name = {
+				ideology = social_liberal
+				name = PLS_parliament_social_liberal_party
+				long_name = PLS_parliament_social_liberal_party_long
+			}
+			set_party_name = {
+				ideology = market_liberal
+				name = PLS_parliament_market_liberal_party
+				long_name = PLS_parliament_market_liberal_party_long
+			}
+			set_party_name = {
+				ideology = social_conservative
+				name = PLS_parliament_social_conservative_party
+				long_name = PLS_parliament_social_conservative_party_long
+			}
+			create_country_leader = {
+				name = "费萨尔一世"
+				picture = "gfx/leaders/PLS/Portrait_PLS_Faisal_I_king.png"
+				expire = "1.1.1"
+				ideology = socdem_democratic_socialism_subtype
+			}
+			create_country_leader = {
+				name = "费萨尔一世"
+				picture = "gfx/leaders/PLS/Portrait_PLS_Faisal_I_king.png"
+				expire = "1.1.1"
+				ideology = soclib_humanistic_capitalism_subtype
+			}
+			create_country_leader = {
+				name = "费萨尔一世"
+				picture = "gfx/leaders/PLS/Portrait_PLS_Faisal_I_king.png"
+				expire = "1.1.1"
+				ideology = marlib_islamism_subtype
+			}
+			create_country_leader = {
+				name = "费萨尔一世"
+				picture = "gfx/leaders/PLS/Portrait_PLS_Faisal_I_king.png"
+				expire = "1.1.1"
+				ideology = soccon_prussian_constitutionalism_subtype
+			}
+			set_temp_variable = { coalition_partner_var = token:social_democrat }
+			add_to_coalition = yes
+			set_temp_variable = { coalition_partner_var = token:social_liberal }
+			add_to_coalition = yes
+			set_temp_variable = { coalition_partner_var = token:market_liberal }
+			add_to_coalition = yes
+			set_temp_variable = { coalition_partner_var = token:social_conservative }
+			add_to_coalition = yes
+			swap_ideas = {
+				remove_idea = PAL_Constitutional_monarchy_ideas
+				add_idea = PAL_Constitutional_monarchy_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_Reform_the_education_system
+		icon=PALS_Reform_the_education_system
+		x=38
+		y=13
+		prerequisite={focus=PLS_Responsible_Parliament}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Constitutional_monarchy_ideas1
+				add_idea = PAL_Constitutional_monarchy_ideas2
+			}
+		}
+	}
+	focus={
+		id=PLS_Marginalizing_Arab_parties
+		icon=PALS_Marginalizing_Arab_parties
+		x=40
+		y=13
+		prerequisite={focus=PLS_Responsible_Parliament}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Reform_the_education_system
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Constitutional_monarchy_ideas2
+				add_idea = PAL_Constitutional_monarchy_ideas3
+			}
+		}
+	}
+	focus={
+		id=PLS_The_Millett_system_is_adopted
+		icon=PALS_The_Millett_system_is_adopted
+		x=42
+		y=13
+		prerequisite={focus=PLS_Responsible_Parliament}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Marginalizing_Arab_parties
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Constitutional_monarchy_ideas3
+				add_idea = PAL_Constitutional_monarchy_ideas4
+			}
+		}
+	}
+	focus={
+		id=PLS_Modern_Sultanate
+		icon=PALS_Modern_Sultanate
+		x=40
+		y=14
+		prerequisite={focus=PLS_Reform_the_education_system}
+		prerequisite={focus=PLS_Marginalizing_Arab_parties}
+		prerequisite={focus=PLS_The_Millett_system_is_adopted}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Constitutional_monarchy_ideas4
+				add_idea = PAL_Constitutional_monarchy_ideas5
+			}
+			country_event = Palestine.58
+		}
+	}
+	focus={
+		id=PLS_Preparing_for_the_general_election
+		icon=PALS_Preparing_for_the_general_election
+		x=50
+		y=7
+		prerequisite={focus=PLS_Unveil_it}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+			add_ideas = PAL_Step_towards_freedom_ideas
+		}
+	}
+	focus={
+		id=PLS_Campaigning_for_reconstruction
+		icon=PALS_Campaigning_for_reconstruction
+		x=47
+		y=8
+		prerequisite={focus=PLS_Preparing_for_the_general_election}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_offsite_building = { type = industrial_complex level = 3 }
+			add_offsite_building = { type = arms_factory level = 3 }
+		}
+	}
+	focus={
+		id=PLS_Enlist_the_support_of_the_wealthy_family
+		icon=PALS_Enlist_the_support_of_the_wealthy_family
+		x=49
+		y=8
+		prerequisite={focus=PLS_Preparing_for_the_general_election}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_stability = 0.1
+			add_political_power = 250
+		}
+	}
+	focus={
+		id=PLS_Inspire_a_sense_of_democracy
+		icon=PALS_Inspire_a_sense_of_democracy
+		x=51
+		y=8
+		prerequisite={focus=PLS_Preparing_for_the_general_election}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Step_towards_freedom_ideas
+				add_idea = PAL_Step_towards_freedom_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_End_of_mission
+		icon=PALS_End_of_mission
+		x=53
+		y=8
+		prerequisite={focus=PLS_Preparing_for_the_general_election}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_popularity = { ideology = national_populist popularity = -1 }
+			add_stability = 0.1
+			add_political_power = 150
+		}
+	}
+	focus={
+		id=PLS_Spring_in_Palestine
+		icon=PALS_Spring_in_Palestine
+		x=50
+		y=9
+		prerequisite={focus=PLS_Campaigning_for_reconstruction}
+		prerequisite={focus=PLS_Enlist_the_support_of_the_wealthy_family}
+		prerequisite={focus=PLS_Inspire_a_sense_of_democracy}
+		prerequisite={focus=PLS_End_of_mission}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Step_towards_freedom_ideas1
+				add_idea = PAL_Step_towards_freedom_ideas2
+			}
+			country_event = Palestine.46
+		}
+	}
+	focus={
+		id=PLS_Youth_Congress_victory
+		icon=PALS_Youth_Congress_victory
+		x=46
+		y=10
+		prerequisite={focus=PLS_Spring_in_Palestine}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_government = authoritarian_democrat
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Victory_of_Young_Congress_ideas
+		}
+	}
+	focus={
+		id=PLS_Admission_of_the_Islamic_Party
+		icon=PALS_Admission_of_the_Islamic_Party
+		x=45
+		y=11
+		prerequisite={focus=PLS_Youth_Congress_victory}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Victory_of_Young_Congress_ideas
+				add_idea = PAL_Victory_of_Young_Congress_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_Invite_the_Great_Mufti
+		icon=PALS_Invite_the_Great_Mufti
+		x=45
+		y=12
+		prerequisite={focus=PLS_Admission_of_the_Islamic_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Support_from_Mufti_ideas
+		}
+	}
+	focus={
+		id=PLS_Insist_on_nationalism
+		icon=PALS_Insist_on_nationalism
+		x=47
+		y=11
+		prerequisite={focus=PLS_Youth_Congress_victory}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Admission_of_the_Islamic_Party
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Victory_of_Young_Congress_ideas1
+				add_idea = PAL_Victory_of_Young_Congress_ideas2
+			}
+		}
+	}
+	focus={
+		id=PLS_Reorganization_of_the_militia
+		icon=PALS_Reorganization_of_the_militia
+		x=47
+		y=12
+		prerequisite={focus=PLS_Insist_on_nationalism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Victory_of_Young_Congress_ideas2
+				add_idea = PAL_Victory_of_Young_Congress_ideas3
+			}
+			country_event = Palestine.64
+		}
+	}
+	focus={
+		id=PLS_Reiterate_anti_Semitic_positions
+		icon=PALS_Reiterate_anti_Semitic_positions
+		x=46
+		y=13
+		prerequisite={focus=PLS_Invite_the_Great_Mufti}
+		prerequisite={focus=PLS_Reorganization_of_the_militia}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Victory_of_Young_Congress_ideas3
+				add_idea = PAL_Victory_of_Young_Congress_ideas4
+			}
+		}
+	}
+	focus={
+		id=PLS_The_Independence_Party_wins
+		icon=PALS_The_Independence_Party_wins
+		x=50
+		y=10
+		prerequisite={focus=PLS_Spring_in_Palestine}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_government = market_liberal
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Victory_of_Independence_Party_ideas
+		}
+	}
+	focus={
+		id=PLS_Dialogue_with_the_Sheikh
+		icon=PALS_Dialogue_with_the_Sheikh
+		x=49
+		y=11
+		prerequisite={focus=PLS_The_Independence_Party_wins}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Victory_of_Independence_Party_ideas
+				add_idea = PAL_Victory_of_Independence_Party_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_The_edifying_role_of_Islam
+		icon=PALS_The_edifying_role_of_Islam
+		x=49
+		y=12
+		prerequisite={focus=PLS_Dialogue_with_the_Sheikh}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Victory_of_Independence_Party_ideas1
+				add_idea = PAL_Victory_of_Independence_Party_ideas2
+			}
+		}
+	}
+	focus={
+		id=PLS_Responsibility_for_tradition
+		icon=PALS_Responsibility_for_tradition
+		x=51
+		y=11
+		prerequisite={focus=PLS_The_Independence_Party_wins}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_The_duty_of_tradition_ideas
+		}
+	}
+	focus={
+		id=PLS_In_collaboration_with_Hashem
+		icon=PALS_In_collaboration_with_Hashem
+		x=51
+		y=12
+		prerequisite={focus=PLS_Responsibility_for_tradition}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_The_duty_of_tradition_ideas
+				add_idea = PAL_The_duty_of_tradition_ideas1
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction={
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus={
+		id=PLS_Against_colonialism
+		icon=PALS_Against_colonialism
+		x=50
+		y=13
+		prerequisite={focus=PLS_The_edifying_role_of_Islam}
+		prerequisite={focus=PLS_In_collaboration_with_Hashem}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_The_duty_of_tradition_ideas1
+				add_idea = PAL_The_duty_of_tradition_ideas2
+			}
+		}
+	}
+	focus={
+		id=PLS_The_Reform_Party_wins
+		icon=PALS_The_Reform_Party_wins
+		x=54
+		y=10
+		prerequisite={focus=PLS_Spring_in_Palestine}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_government = social_democrat
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Victory_of_Reform_Party_ideas
+		}
+	}
+	focus={
+		id=PLS_Promote_progressive_taxation
+		icon=PALS_Promote_progressive_taxation
+		x=53
+		y=11
+		prerequisite={focus=PLS_The_Reform_Party_wins}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Victory_of_Reform_Party_ideas
+				add_idea = PAL_Victory_of_Reform_Party_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_land_reform
+		icon=PALS_land_reform
+		x=53
+		y=12
+		prerequisite={focus=PLS_Promote_progressive_taxation}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = PAL_Victory_of_Reform_Party_ideas1
+				add_idea = PAL_Victory_of_Reform_Party_ideas2
+			}
+		}
+	}
+	focus={
+		id=PLS_Liberalization_reforms
+		icon=PALS_Liberalization_reforms
+		x=55
+		y=11
+		prerequisite={focus=PLS_The_Reform_Party_wins}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Social_Liberty_ideas
+		}
+	}
+	focus={
+		id=PLS_Secularization_attempts
+		icon=PALS_Secularization_attempts
+		x=55
+		y=12
+		prerequisite={focus=PLS_Liberalization_reforms}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Social_Liberty_ideas
+				add_idea = PAL_Social_Liberty_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_Maintain_an_anti_Zion_stance
+		icon=PALS_Maintain_an_anti_Zion_stance
+		x=54
+		y=13
+		prerequisite={focus=PLS_land_reform}
+		prerequisite={focus=PLS_Secularization_attempts}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Social_Liberty_ideas1
+				add_idea = PAL_Social_Liberty_ideas2
+			}
+		}
+	}
+	focus={
+		id=PLS_Real_commitment
+		icon=PALS_Real_commitment
+		x=50
+		y=14
+		prerequisite={focus=PLS_Reiterate_anti_Semitic_positions focus=PLS_Against_colonialism focus=PLS_Maintain_an_anti_Zion_stance }
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			country_event = Palestine.68
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_flag = PLS_Dagger_in_the_Dark_Flag
+					}
+					country_event = {
+						id = Palestine.62
+						days = 3
+					}
+				}
+			}
+		}
+	}
+	focus={
+		id=PLS_The_guidance_of_socialism
+		icon=PALS_The_guidance_of_socialism
+		x=62
+		y=7
+		prerequisite={focus=PLS_Unveil_it}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+			add_ideas = PAL_Socialism_policies_ideas
+			country_event = Palestine.66
+		}
+	}
+	focus={
+		id=PLS_Follow_Syndicate_International
+		icon=PALS_Follow_Syndicate_International
+		x=60
+		y=8
+		prerequisite={focus=PLS_The_guidance_of_socialism}
+		mutually_exclusive={focus=PLS_The_figure_of_Lenin }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = PLS_syndicalist_Flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Syndicalism_principles_ideas
+		}
+	}
+	focus={
+		id=PLS_Islamic_socialism
+		icon=PALS_Islamic_socialism
+		x=58
+		y=9
+		prerequisite={focus=PLS_Follow_Syndicate_International}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = Palestine.36
+			add_ideas = PAL_Indigenous_syndicalism_ideas
+		}
+	}
+	focus={
+		id=PLS_Integrate_the_education_system
+		icon=PALS_Integrate_the_education_system
+		x=58
+		y=10
+		prerequisite={focus=PLS_Islamic_socialism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = Palestine.32
+			swap_ideas = {
+				remove_idea = PAL_Indigenous_syndicalism_ideas
+				add_idea = PAL_Indigenous_syndicalism_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_Workers_are_self_managed
+		icon=PALS_Workers_are_self_managed
+		x=60
+		y=9
+		prerequisite={focus=PLS_Follow_Syndicate_International}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Syndicalism_principles_ideas
+				add_idea = PAL_Syndicalism_principles_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_Civic_cognition
+		icon=PALS_Civic_cognition
+		x=60
+		y=10
+		prerequisite={focus=PLS_Workers_are_self_managed}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Syndicalism_principles_ideas1
+				add_idea = PAL_Syndicalism_principles_ideas2
+			}
+		}
+	}
+	focus={
+		id=PLS_Remembrance_of_the_martyrs
+		icon=PALS_Remembrance_of_the_martyrs
+		x=62
+		y=9
+		prerequisite={focus=PLS_Follow_Syndicate_International focus=PLS_The_figure_of_Lenin }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Socialism_policies_ideas
+				add_idea = PAL_Socialism_policies_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_Revolutionary_mobilization
+		icon=PALS_Revolutionary_mobilization
+		x=62
+		y=10
+		prerequisite={focus=PLS_Remembrance_of_the_martyrs}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Socialism_policies_ideas1
+				add_idea = PAL_Socialism_policies_ideas2
+			}
+		}
+	}
+	focus={
+		id=PLS_The_figure_of_Lenin
+		icon=PALS_The_figure_of_Lenin
+		x=64
+		y=8
+		prerequisite={focus=PLS_The_guidance_of_socialism}
+		mutually_exclusive={focus=PLS_Follow_Syndicate_International }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = PLS_communlist_Flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Communism_principles_ideas
+		}
+	}
+	focus={
+		id=PLS_Congress_system
+		icon=PALS_Congress_system
+		x=64
+		y=9
+		prerequisite={focus=PLS_The_figure_of_Lenin}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Communism_principles_ideas
+				add_idea = PAL_Communism_principles_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_Full_centralization
+		icon=PALS_Full_centralization
+		x=64
+		y=10
+		prerequisite={focus=PLS_Congress_system}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Communism_principles_ideas1
+				add_idea = PAL_Communism_principles_ideas2
+			}
+		}
+	}
+	focus={
+		id=PLS_Downplay_religious_influences
+		icon=PALS_Downplay_religious_influences
+		x=66
+		y=9
+		prerequisite={focus=PLS_The_figure_of_Lenin}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_reeducate_ideas
+		}
+	}
+	focus={
+		id=PLS_compulsory_education
+		icon=PALS_compulsory_education
+		x=66
+		y=10
+		prerequisite={focus=PLS_Downplay_religious_influences}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_reeducate_ideas
+				add_idea = PAL_reeducate_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_Create_community
+		icon=PALS_Create_community
+		x=60
+		y=11
+		prerequisite={focus=PLS_Integrate_the_education_system}
+		prerequisite={focus=PLS_Civic_cognition}
+		prerequisite={focus=PLS_Revolutionary_mobilization}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Syndicalism_principles_ideas2
+				add_idea = PAL_Syndicalism_principles_ideas3
+			}
+			if = {
+				limit = {
+					check_variable = { PLS_Islamic_socialism_var = 2 }
+				}
+				country_event = Palestine.34
+			}
+		}
+	}
+	focus={
+		id=PLS_Arabization
+		icon=PALS_Arabization
+		x=64
+		y=11
+		prerequisite={focus=PLS_Revolutionary_mobilization}
+		prerequisite={focus=PLS_Full_centralization}
+		prerequisite={focus=PLS_compulsory_education}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Communism_principles_ideas2
+				add_idea = PAL_Communism_principles_ideas3
+			}
+		}
+	}
+	focus={
+		id=PLS_Proclamation_of_Palestine
+		icon=PALS_Proclamation_of_Palestine
+		x=65
+		y=12
+		prerequisite={focus=PLS_Create_community focus=PLS_Arabization }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = {
+				has_country_flag = PLS_The_3I_Mission_seized_power_Flag
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Continue_the_revolution_ideas
+		}
+	}
+	focus={
+		id=PLS_Dismantle_the_Muslim_Brotherhood
+		icon=PALS_Dismantle_the_Muslim_Brotherhood
+		x=64
+		y=13
+		prerequisite={focus=PLS_Proclamation_of_Palestine}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			set_party_name = {
+				ideology = national_populist
+				name = PLS_national_populist_party4
+				long_name = PLS_national_populist_party4_long
+			}
+			swap_ideas = {
+				remove_idea = PAL_Continue_the_revolution_ideas
+				add_idea = PAL_Continue_the_revolution_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_Incorporate_the_Jihadist_Army
+		icon=PALS_Incorporate_the_Jihadist_Army
+		x=64
+		y=14
+		prerequisite={focus=PLS_Dismantle_the_Muslim_Brotherhood}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Continue_the_revolution_ideas1
+				add_idea = PAL_Continue_the_revolution_ideas2
+			}
+		}
+	}
+	focus={
+		id=PLS_Annexation_of_the_Mapai
+		icon=PALS_Annexation_of_the_Mapai
+		x=66
+		y=13
+		prerequisite={focus=PLS_Proclamation_of_Palestine}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			set_party_name = {
+				ideology = totalist
+				name = ISR_syndicalist_party
+				long_name = ISR_syndicalist_party_long
+			}
+			create_country_leader = {
+				name = "大卫·本-古里安"
+				picture = "gfx/leaders/PAL/Portrait_PAL_David_Ben_Gurion.png"
+				expire = "1.1.1"
+				ideology = national_communism_subtype
+			}
+			set_temp_variable = { coalition_partner_var = token:totalist }
+			add_to_coalition = yes
+			add_ideas = PAL_National_unity_ideas
+		}
+	}
+	focus={
+		id=PLS_Banning_Jewish_military_organizations
+		icon=PALS_Banning_Jewish_military_organizations
+		x=66
+		y=14
+		prerequisite={focus=PLS_Annexation_of_the_Mapai}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_National_unity_ideas
+				add_idea = PAL_National_unity_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_The_heart_of_the_Arab_Revolution
+		icon=PALS_The_heart_of_the_Arab_Revolution
+		x=65
+		y=15
+		prerequisite={focus=PLS_Incorporate_the_Jihadist_Army}
+		prerequisite={focus=PLS_Banning_Jewish_military_organizations}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Continue_the_revolution_ideas2
+				add_idea = PAL_Continue_the_revolution_ideas3
+			}
+			unlock_decision_tooltip = PLS_Join_the_Third_International
+		}
+	}
+	focus={
+		id=PLS_Coup_by_Officers
+		icon=PALS_Coup_by_Officers
+		x=74
+		y=7
+		prerequisite={focus=PLS_Unveil_it}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=PLS_Cultural_openness_policy
+		icon=PALS_Cultural_openness_policy
+		x=69
+		y=8
+		prerequisite={focus=PLS_Coup_by_Officers}
+		mutually_exclusive={focus=PLS_Reinterpreting_the_Quran }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Cultural_opening_policy_ideas
+			add_to_variable = {
+				var = PLS_young_officer_revolutionaries
+				value = 1
+			}
+		}
+	}
+	focus={
+		id=PLS_Reinterpreting_the_Quran
+		icon=PALS_Reinterpreting_the_Quran
+		x=71
+		y=8
+		prerequisite={focus=PLS_Coup_by_Officers}
+		mutually_exclusive={focus=PLS_Cultural_openness_policy }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Reinterpret_the_Quran_ideas
+			add_to_variable = {
+				var = PLS_young_officer_conservatives
+				value = 1
+			}
+		}
+	}
+	focus={
+		id=PLS_Cut_the_influence_of_the_Great_Mufti
+		icon=PALS_Cut_the_influence_of_the_Great_Mufti
+		x=73
+		y=8
+		prerequisite={focus=PLS_Coup_by_Officers}
+		mutually_exclusive={focus=PLS_Absorption_of_Arab_parties }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_unimpressed_ideas
+			add_to_variable = {
+				var = PLS_young_officer_revolutionaries
+				value = 1
+			}
+		}
+	}
+	focus={
+		id=PLS_Absorption_of_Arab_parties
+		icon=PALS_Absorption_of_Arab_parties
+		x=75
+		y=8
+		prerequisite={focus=PLS_Coup_by_Officers}
+		mutually_exclusive={focus=PLS_Cut_the_influence_of_the_Great_Mufti }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Support_from_Mufti_ideas
+			add_to_variable = {
+				var = PLS_young_officer_conservatives
+				value = 1
+			}
+		}
+	}
+	focus={
+		id=PLS_Solidarity_with_the_struggle
+		icon=PALS_Solidarity_with_the_struggle
+		x=77
+		y=8
+		prerequisite={focus=PLS_Coup_by_Officers}
+		mutually_exclusive={focus=PLS_Establishment_of_the_Free_Arab_Legion }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Spirit_of_internationalism_ideas
+			add_to_variable = {
+				var = PLS_young_officer_revolutionaries
+				value = 1
+			}
+		}
+	}
+	focus={
+		id=PLS_Establishment_of_the_Free_Arab_Legion
+		icon=PALS_Establishment_of_the_Free_Arab_Legion
+		x=79
+		y=8
+		prerequisite={focus=PLS_Coup_by_Officers}
+		mutually_exclusive={focus=PLS_Solidarity_with_the_struggle }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Spirit_of_nationalism_ideas
+			add_to_variable = {
+				var = PLS_young_officer_conservatives
+				value = 1
+			}
+		}
+	}
+	focus={
+		id=PLS_Nationalist_marquee
+		icon=PALS_Nationalist_marquee
+		x=71
+		y=9
+		prerequisite={focus=PLS_Coup_by_Officers}
+		mutually_exclusive={focus=PLS_The_absolute_leadership_of_young_officers }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Move_altogether_ideas
+			add_to_variable = {
+				var = PLS_young_officer_revolutionaries
+				value = 1
+			}
+		}
+	}
+	focus={
+		id=PLS_The_absolute_leadership_of_young_officers
+		icon=PALS_The_absolute_leadership_of_young_officers
+		x=73
+		y=9
+		prerequisite={focus=PLS_Coup_by_Officers}
+		mutually_exclusive={focus=PLS_Nationalist_marquee }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Army_with_a_country_ideas
+			add_to_variable = {
+				var = PLS_young_officer_conservatives
+				value = 1
+			}
+		}
+	}
+	focus={
+		id=PLS_The_guidelines_of_the_totalist_charter
+		icon=PALS_The_guidelines_of_the_totalist_charter
+		x=75
+		y=9
+		prerequisite={focus=PLS_Coup_by_Officers}
+		mutually_exclusive={focus=PLS_Maintain_the_military_and_political_system }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Totalitarianism_ideas
+			add_to_variable = {
+				var = PLS_young_officer_revolutionaries
+				value = 1
+			}
+		}
+	}
+	focus={
+		id=PLS_Maintain_the_military_and_political_system
+		icon=PALS_Maintain_the_military_and_political_system
+		x=77
+		y=9
+		prerequisite={focus=PLS_Coup_by_Officers}
+		mutually_exclusive={focus=PLS_The_guidelines_of_the_totalist_charter }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Stratocracy_ideas
+			add_to_variable = {
+				var = PLS_young_officer_conservatives
+				value = 1
+			}
+		}
+	}
+	focus={
+		id=PLS_Revolution_at_sea
+		icon=PALS_Revolution_at_sea
+		x=71
+		y=10
+		prerequisite={focus=PLS_Coup_by_Officers}
+		mutually_exclusive={focus=PLS_Continue_to_march }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = PLS_National_Revolution_Flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_National_revolution_ideas
+		}
+	}
+	focus={
+		id=PLS_Subvert_the_system_of_power
+		icon=PALS_Subvert_the_system_of_power
+		x=69
+		y=11
+		prerequisite={focus=PLS_Revolution_at_sea}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Revolutionary_New_Deal_ideas
+		}
+	}
+	focus={
+		id=PLS_Cultural_Revolution
+		icon=PALS_Cultural_Revolution
+		x=69
+		y=12
+		prerequisite={focus=PLS_Subvert_the_system_of_power}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Revolutionary_New_Deal_ideas
+				add_idea = PAL_Revolutionary_New_Deal_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_The_Youth_League_was_formed
+		icon=PALS_The_Youth_League_was_formed
+		x=71
+		y=11
+		prerequisite={focus=PLS_Revolution_at_sea}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_National_revolution_ideas
+				add_idea = PAL_National_revolution_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_Hello_Arabs
+		icon=PALS_Hello_Arabs
+		x=71
+		y=12
+		prerequisite={focus=PLS_The_Youth_League_was_formed}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_National_revolution_ideas1
+				add_idea = PAL_National_revolution_ideas2
+			}
+		}
+	}
+	focus={
+		id=PLS_Continue_to_march
+		icon=PALS_Continue_to_march
+		x=77
+		y=10
+		prerequisite={focus=PLS_Coup_by_Officers}
+		mutually_exclusive={focus=PLS_Revolution_at_sea }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = PLS_Legionnaire_State_Flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Obey_everything_ideas
+		}
+	}
+	focus={
+		id=PLS_Commissar_of_the_army
+		icon=PALS_Commissar_of_the_army
+		x=77
+		y=11
+		prerequisite={focus=PLS_Continue_to_march}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Obey_everything_ideas
+				add_idea = PAL_Obey_everything_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_Gunfire_solo
+		icon=PALS_Gunfire_solo
+		x=77
+		y=12
+		prerequisite={focus=PLS_Commissar_of_the_army}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Obey_everything_ideas1
+				add_idea = PAL_Obey_everything_ideas2
+			}
+		}
+	}
+	focus={
+		id=PLS_Secret_Police_Department
+		icon=PALS_Secret_Police_Department
+		x=79
+		y=11
+		prerequisite={focus=PLS_Continue_to_march}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Be_cautious_in_what_you_say_and_do_ideas
+		}
+	}
+	focus={
+		id=PLS_Jewish_capital_conspiracy_theories
+		icon=PALS_Jewish_capital_conspiracy_theories
+		x=79
+		y=12
+		prerequisite={focus=PLS_Secret_Police_Department}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Be_cautious_in_what_you_say_and_do_ideas
+				add_idea = PAL_Be_cautious_in_what_you_say_and_do_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_Reorganization_of_the_NLF
+		icon=PALS_Reorganization_of_the_NLF
+		x=74
+		y=11
+		prerequisite={focus=PLS_Revolution_at_sea focus=PLS_Continue_to_march }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			set_party_name = {
+				ideology = totalist
+				name = PLS_totalist_party2
+				long_name = PLS_totalist_party2_long
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = PLS_paternal_autocrat_party3
+				long_name = PLS_paternal_autocrat_party3_long
+			}
+			add_ideas = PAL_National_solidarity_ideas
+		}
+	}
+	focus={
+		id=PLS_Support_the_Baathists
+		icon=PALS_Support_the_Baathists
+		x=73
+		y=12
+		prerequisite={focus=PLS_Reorganization_of_the_NLF}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			set_party_name = {
+				ideology = syndicalist
+				name = PLS_syndicalist_party2
+				long_name = PLS_syndicalist_party2_long
+			}
+			swap_ideas = {
+				remove_idea = PAL_National_solidarity_ideas
+				add_idea = PAL_National_solidarity_ideas1
+			}
+			set_temp_variable = { coalition_partner_var = token:syndicalist }
+			add_to_coalition = yes
+			create_country_leader = {
+				name = "米歇尔·阿夫拉克"
+				picture = "gfx/leaders/LEB/Portrait_LEB_Michel_Aflaq.png"
+				expire = "1.1.1"
+				ideology = arab_socialism
+			}
+		}
+	}
+	focus={
+		id=PLS_Dialogue_with_Egypt
+		icon=PALS_Dialogue_with_Egypt
+		x=73
+		y=13
+		prerequisite={focus=PLS_Support_the_Baathists}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Support_the_Baathists
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			set_party_name = {
+				ideology = social_democrat
+				name = PLS_social_democrat_party2
+				long_name = PLS_social_democrat_party2_long
+			}
+			set_temp_variable = { coalition_partner_var = token:social_democrat }
+			add_to_coalition = yes
+			swap_ideas = {
+				remove_idea = PAL_National_solidarity_ideas1
+				add_idea = PAL_National_solidarity_ideas2
+			}
+		}
+	}
+	focus={
+		id=PLS_Unite_the_national_communists
+		icon=PALS_Unite_the_national_communists
+		x=75
+		y=12
+		prerequisite={focus=PLS_Reorganization_of_the_NLF}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			set_party_name = {
+				ideology = radical_socialist
+				name = PLS_radical_socialist_party3
+				long_name = PLS_radical_socialist_party3_long
+			}
+			set_temp_variable = { coalition_partner_var = token:radical_socialist }
+			add_to_coalition = yes
+			swap_ideas = {
+				remove_idea = PAL_National_solidarity_ideas2
+				add_idea = PAL_National_solidarity_ideas3
+			}
+		}
+	}
+	focus={
+		id=PLS_Integrate_the_Jihadist_Army
+		icon=PALS_Integrate_the_Jihadist_Army
+		x=75
+		y=13
+		prerequisite={focus=PLS_Unite_the_national_communists}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			set_party_name = {
+				ideology = national_populist
+				name = PLS_national_populist_party5
+				long_name = PLS_national_populist_party5_long
+			}
+			set_temp_variable = { coalition_partner_var = token:national_populist }
+			add_to_coalition = yes
+			swap_ideas = {
+				remove_idea = PAL_National_solidarity_ideas3
+				add_idea = PAL_National_solidarity_ideas4
+			}
+		}
+	}
+	focus={
+		id=PLS_But_dont_forget_who_we_are
+		icon=PALS_But_dont_forget_who_we_are
+		x=74
+		y=14
+		prerequisite={focus=PLS_Dialogue_with_Egypt}
+		prerequisite={focus=PLS_Integrate_the_Jihadist_Army}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_National_solidarity_ideas4
+				add_idea = PAL_National_solidarity_ideas5
+			}
+		}
+	}
+	focus={
+		id=PLS_economic_recovery
+		icon=PALS_economic_recovery
+		x=90
+		y=7
+		prerequisite={focus=PLS_Unveil_it}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Struggling_idea
+				add_idea = PLS_Struggling_idea1
+			}
+		}
+	}
+	focus={
+		id=PLS_Leveling_the_land
+		icon=PALS_Leveling_the_land
+		x=88
+		y=8
+		prerequisite={focus=PLS_economic_recovery}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			random_owned_controlled_state = {
+				add_building_construction={
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus={
+		id=PLS_Restore_infrastructure
+		icon=PALS_Restore_infrastructure
+		x=90
+		y=8
+		prerequisite={focus=PLS_economic_recovery}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Struggling_idea1
+				add_idea = PLS_Struggling_idea2
+			}
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus={
+		id=PLS_Reopening_of_the_factory
+		icon=PALS_Reopening_of_the_factory
+		x=92
+		y=8
+		prerequisite={focus=PLS_economic_recovery}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction={
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus={
+		id=PLS_Clean_up_the_mess
+		icon=PALS_Clean_up_the_mess
+		x=90
+		y=9
+		prerequisite={focus=PLS_Leveling_the_land}
+		prerequisite={focus=PLS_Restore_infrastructure}
+		prerequisite={focus=PLS_Reopening_of_the_factory}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			remove_ideas = PLS_Struggling_idea2
+		}
+	}
+	focus={
+		id=PLS_Economic_development_strategy
+		icon=PALS_Economic_development_strategy
+		x=90
+		y=10
+		prerequisite={focus=PLS_Clean_up_the_mess}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_stability = 0.02
+		}
+	}
+	focus={
+		id=PLS_Will_wins
+		icon=PALS_Will_wins
+		x=83
+		y=11
+		prerequisite={focus=PLS_Economic_development_strategy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			OR = {
+				has_completed_focus = PLS_Modern_jihad
+				has_completed_focus = PLS_Youth_Congress_victory
+				has_completed_focus = PLS_Continue_to_march
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_The_triumph_of_will_idea
+		}
+	}
+	focus={
+		id=PLS_Introduction_of_the_corporation_system
+		icon=PALS_Introduction_of_the_corporation_system
+		x=82
+		y=12
+		prerequisite={focus=PLS_Will_wins}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_The_triumph_of_will_idea
+				add_idea = PLS_The_triumph_of_will_idea1
+			}
+		}
+	}
+	focus={
+		id=PLS_Militarization_of_the_economy
+		icon=PALS_Militarization_of_the_economy
+		x=82
+		y=13
+		prerequisite={focus=PLS_Introduction_of_the_corporation_system}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_The_triumph_of_will_idea1
+				add_idea = PLS_The_triumph_of_will_idea2
+			}
+		}
+	}
+	focus={
+		id=PLS_Develop_a_five_year_plan
+		icon=PALS_Develop_a_five_year_plan
+		x=84
+		y=12
+		prerequisite={focus=PLS_Will_wins focus=PLS_Socialist_transformation }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Economic_planning_idea
+		}
+	}
+	focus={
+		id=PLS_Pooling_national_resources
+		icon=PALS_Pooling_national_resources
+		x=84
+		y=13
+		prerequisite={focus=PLS_Develop_a_five_year_plan}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Economic_planning_idea
+				add_idea = PLS_Economic_planning_idea1
+			}
+		}
+	}
+	focus={
+		id=PLS_Industrial_leap_forward
+		icon=PALS_Industrial_leap_forward
+		x=83
+		y=14
+		prerequisite={focus=PLS_Militarization_of_the_economy}
+		prerequisite={focus=PLS_Pooling_national_resources}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_The_triumph_of_will_idea2
+				add_idea = PLS_The_triumph_of_will_idea3
+			}
+			add_research_slot = 1
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction={
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction={
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus={
+		id=PLS_Socialist_transformation
+		icon=PALS_Socialist_transformation
+		x=88
+		y=11
+		prerequisite={focus=PLS_Economic_development_strategy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			OR = {
+				has_completed_focus = PLS_Revolution_at_sea
+				has_completed_focus = PLS_The_guidance_of_socialism
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Socialist_economy_idea
+		}
+	}
+	focus={
+		id=PLS_The_communist_model
+		icon=PALS_The_communist_model
+		x=87
+		y=12
+		prerequisite={focus=PLS_Socialist_transformation}
+		mutually_exclusive={focus=PLS_The_syndicalist_model }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_government = radical_socialist
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_The_communist_model_idea
+			NOT = {
+				has_completed_focus = PLS_Save_the_Revolution
+			}
+		}
+	}
+	focus={
+		id=PLS_The_syndicalist_model
+		icon=PALS_The_syndicalist_model
+		x=89
+		y=12
+		prerequisite={focus=PLS_Socialist_transformation}
+		mutually_exclusive={focus=PLS_The_communist_model }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			OR = {
+				has_government = syndicalist
+				has_completed_focus = PLS_Save_the_Revolution
+				has_completed_focus = PLS_Revolution_at_sea
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_The_syndicalist_model_idea
+		}
+	}
+	focus={
+		id=PLS_Nationalization_of_land
+		icon=PALS_Nationalization_of_land
+		x=86
+		y=13
+		prerequisite={focus=PLS_The_communist_model}
+		mutually_exclusive={focus=PLS_Socialization_of_the_land focus=PLS_Promoshin_Ben_Kuperatifs }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Nationalization_of_land_idea
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction={
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus={
+		id=PLS_Socialization_of_the_land
+		icon=PALS_Socialization_of_the_land
+		x=88
+		y=13
+		prerequisite={focus=PLS_The_communist_model focus=PLS_The_syndicalist_model }
+		mutually_exclusive={focus=PLS_Nationalization_of_land focus=PLS_Promoshin_Ben_Kuperatifs }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Socialization_of_the_land_idea
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction={
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction={
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus={
+		id=PLS_Promoshin_Ben_Kuperatifs
+		icon=PALS_Promoshin_Ben_Kuperatifs
+		x=90
+		y=13
+		prerequisite={focus=PLS_The_syndicalist_model}
+		mutually_exclusive={focus=PLS_Nationalization_of_land focus=PLS_Socialization_of_the_land }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction={
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_ideas = PLS_Promoshin_Ben_Kuperatifs_idea
+		}
+	}
+	focus={
+		id=PLS_Reducing_the_urban_rural_gap
+		icon=PALS_Reducing_the_urban_rural_gap
+		x=88
+		y=14
+		prerequisite={focus=PLS_Pooling_national_resources}
+		prerequisite={focus=PLS_Nationalization_of_land focus=PLS_Socialization_of_the_land focus=PLS_Promoshin_Ben_Kuperatifs }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Socialist_economy_idea
+				add_idea = PLS_Socialist_economy_idea1
+			}
+		}
+	}
+	focus={
+		id=PLS_Economy_under_Sharia
+		icon=PALS_Economy_under_Sharia
+		x=93
+		y=11
+		prerequisite={focus=PLS_Economic_development_strategy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			OR = {
+				has_completed_focus = PLS_Victory_in_Palestine
+				has_completed_focus = PLS_Unexpected_contenders
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Economy_under_Sharia_idea
+		}
+	}
+	focus={
+		id=PLS_Crack_down_on_hoarding
+		icon=PALS_Crack_down_on_hoarding
+		x=91
+		y=12
+		prerequisite={focus=PLS_Economy_under_Sharia}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Economy_under_Sharia_idea
+				add_idea = PLS_Economy_under_Sharia_idea1
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction={
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus={
+		id=PLS_Zakat_promotes_equality
+		icon=PALS_Zakat_promotes_equality
+		x=93
+		y=12
+		prerequisite={focus=PLS_Economy_under_Sharia}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Crack_down_on_hoarding
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Economy_under_Sharia_idea1
+				add_idea = PLS_Economy_under_Sharia_idea2
+			}
+		}
+	}
+	focus={
+		id=PLS_Zero_interest_rate
+		icon=PALS_Zero_interest_rate
+		x=95
+		y=12
+		prerequisite={focus=PLS_Economy_under_Sharia}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Zakat_promotes_equality
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Economy_under_Sharia_idea2
+				add_idea = PLS_Economy_under_Sharia_idea3
+			}
+		}
+	}
+	focus={
+		id=PLS_The_social_obligation_of_the_mosque
+		icon=PALS_The_social_obligation_of_the_mosque
+		x=92
+		y=13
+		prerequisite={focus=PLS_Crack_down_on_hoarding}
+		prerequisite={focus=PLS_Zakat_promotes_equality}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Zero_interest_rate
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Economy_under_Sharia_idea3
+				add_idea = PLS_Economy_under_Sharia_idea4
+			}
+			add_research_slot = 1
+		}
+	}
+	focus={
+		id=PLS_Standardize_factory_discipline
+		icon=PALS_Standardize_factory_discipline
+		x=94
+		y=13
+		prerequisite={focus=PLS_Zakat_promotes_equality}
+		prerequisite={focus=PLS_Zero_interest_rate}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_The_social_obligation_of_the_mosque
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Economy_under_Sharia_idea4
+				add_idea = PLS_Economy_under_Sharia_idea5
+			}
+		}
+	}
+	focus={
+		id=PLS_Imitate_the_Western_world
+		icon=PALS_Imitate_the_Western_world
+		x=98
+		y=11
+		prerequisite={focus=PLS_Economic_development_strategy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			OR = {
+				has_completed_focus = PLS_The_Independence_Party_wins
+				has_completed_focus = PLS_The_Reform_Party_wins
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PLS_Liberal_Economy_idea
+		}
+	}
+	focus={
+		id=PLS_Maintain_market_order
+		icon=PALS_Maintain_market_order
+		x=97
+		y=12
+		prerequisite={focus=PLS_Imitate_the_Western_world}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Liberal_Economy_idea
+				add_idea = PLS_Liberal_Economy_idea1
+			}
+		}
+	}
+	focus={
+		id=PLS_Envoys_sent_to_various_countries
+		icon=PALS_Envoys_sent_to_various_countries
+		x=97
+		y=13
+		prerequisite={focus=PLS_Maintain_market_order}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				category = industry
+			}
+			swap_ideas = {
+				remove_idea = PLS_Liberal_Economy_idea1
+				add_idea = PLS_Liberal_Economy_idea2
+			}
+		}
+	}
+	focus={
+		id=PLS_Work_with_landlords
+		icon=PALS_Work_with_landlords
+		x=99
+		y=12
+		prerequisite={focus=PLS_Imitate_the_Western_world}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Envoys_sent_to_various_countries
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Liberal_Economy_idea2
+				add_idea = PLS_Liberal_Economy_idea3
+			}
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus={
+		id=PLS_Encourage_investment
+		icon=PALS_Encourage_investment
+		x=99
+		y=13
+		prerequisite={focus=PLS_Work_with_landlords}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_Liberal_Economy_idea3
+				add_idea = PLS_Liberal_Economy_idea4
+			}
+		}
+	}
+	focus={
+		id=PLS_Utilize_location_advantages
+		icon=PALS_Utilize_location_advantages
+		x=98
+		y=14
+		prerequisite={focus=PLS_Envoys_sent_to_various_countries}
+		prerequisite={focus=PLS_Encourage_investment}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_research_slot = 1
+			swap_ideas = {
+				remove_idea = PLS_Liberal_Economy_idea4
+				add_idea = PLS_Liberal_Economy_idea5
+			}
+			add_offsite_building = { type = industrial_complex level = 4 }
+		}
+	}
+	focus={
+		id=PLS_Future_proof
+		icon=PALS_Future_proof
+		x=105
+		y=7
+		prerequisite={focus=PLS_Unveil_it}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			date > 1938.9.1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+		}
+	}
+	focus={
+		id=PLS_Creation_of_the_PTO
+		icon=PALS_Creation_of_the_PTO
+		x=104
+		y=8
+		prerequisite={focus=PLS_Future_proof}
+		mutually_exclusive={focus=PLS_Cooperation_with_Egypt }
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_faction = Jerusalem_Entente
+		}
+	}
+	focus={
+		id=PLS_Cooperation_with_Egypt
+		icon=PALS_Cooperation_with_Egypt
+		x=106
+		y=8
+		prerequisite={focus=PLS_Future_proof}
+		mutually_exclusive={focus=PLS_Creation_of_the_PTO }
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			EGY = {
+				add_to_faction = PLS
+			}
+		}
+	}
+	focus={
+		id=PLS_Claim_the_Islamic_State_of_Arabia
+		icon=PALS_Claim_the_Islamic_State_of_Arabia
+		x=101
+		y=9
+		prerequisite={focus=PLS_Creation_of_the_PTO focus=PLS_Cooperation_with_Egypt }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Modern_jihad
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			set_cosmetic_tag = PLS_Arab_nationalism1
+			add_ideas = PAL_What_we_desire_ideas
+			create_wargoal = { target = OMA type = annex_everything }
+			create_wargoal = { target = SAU type = annex_everything }
+			create_wargoal = { target = JBS type = annex_everything }
+			create_wargoal = { target = HEJ type = annex_everything }
+			create_wargoal = { target = ETH type = annex_everything }
+			create_wargoal = { target = SYR type = annex_everything }
+			create_wargoal = { target = IRQ type = annex_everything }
+			create_wargoal = { target = LBA type = annex_everything }
+			create_wargoal = { target = LEB type = annex_everything }
+			create_wargoal = { target = EGY type = annex_everything }
+			create_wargoal = { target = TRP type = annex_everything }
+			create_wargoal = { target = TUN type = annex_everything }
+			create_wargoal = { target = ALG type = annex_everything }
+			create_wargoal = { target = MOR type = annex_everything }
+			create_wargoal = { target = MRT type = annex_everything }
+			create_wargoal = { target = ERI type = annex_everything }
+			create_wargoal = { target = DJI type = annex_everything }
+			create_wargoal = { target = YEM type = annex_everything }
+			create_wargoal = { target = KUR type = annex_everything }
+			create_wargoal = { target = SUE type = annex_everything }
+			create_wargoal = { target = PAL type = annex_everything }
+			every_state = {
+				limit = { is_core_of = OMA }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = PAL }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = SAU }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = JBS }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = HEJ }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = ETH }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = SYR }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = IRQ }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = LEB }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = EGY }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = LBA }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = TRP }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = TUN }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = ALG }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = MOR }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = MRT }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = ERI }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = DJI }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = YEM }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = KUR }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = SUE }
+				add_core_of = PLS
+			}
+			550 = { add_core_of = PLS }
+			961 = { add_core_of = PLS }
+			268 = { add_core_of = PLS }
+			450 = { add_core_of = PLS }
+			1297 = { add_core_of = PLS }
+			every_state = {
+				limit = {
+				OR = {
+					is_core_of = SOM
+					is_claimed_by = SOM
+					}
+				}
+				add_core_of = PLS
+			}
+		}
+	}
+	focus={
+		id=PLS_jihad
+		icon=PALS_jihad
+		x=101
+		y=10
+		prerequisite={focus=PLS_Claim_the_Islamic_State_of_Arabia}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = GER type = annex_everything }
+			create_wargoal = { target = CAN type = annex_everything }
+			create_wargoal = { target = NFA type = annex_everything }
+			create_wargoal = { target = RUS type = annex_everything }
+		}
+	}
+	focus={
+		id=PLS_The_ultimate_solution
+		icon=PALS_The_ultimate_solution
+		x=101
+		y=11
+		prerequisite={focus=PLS_jihad}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_What_we_desire_ideas
+				add_idea = PAL_What_we_desire_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_Allah_alone
+		icon=PALS_Allah_alone
+		x=103
+		y=9
+		prerequisite={focus=PLS_Creation_of_the_PTO focus=PLS_Cooperation_with_Egypt }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Victory_in_Palestine
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_What_we_desire_ideas
+			set_cosmetic_tag = PLS_Ihwan1
+		}
+	}
+	focus={
+		id=PLS_Start_with_Arabia
+		icon=PALS_Start_with_Arabia
+		x=103
+		y=10
+		prerequisite={focus=PLS_Allah_alone}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = OMA type = annex_everything }
+			create_wargoal = { target = SAU type = annex_everything }
+			create_wargoal = { target = JBS type = annex_everything }
+			create_wargoal = { target = HEJ type = annex_everything }
+			create_wargoal = { target = ETH type = annex_everything }
+			create_wargoal = { target = SYR type = annex_everything }
+			create_wargoal = { target = IRQ type = annex_everything }
+			create_wargoal = { target = LBA type = annex_everything }
+			create_wargoal = { target = LEB type = annex_everything }
+			create_wargoal = { target = EGY type = annex_everything }
+			create_wargoal = { target = TRP type = annex_everything }
+			create_wargoal = { target = TUN type = annex_everything }
+			create_wargoal = { target = ALG type = annex_everything }
+			create_wargoal = { target = MOR type = annex_everything }
+			create_wargoal = { target = MRT type = annex_everything }
+			create_wargoal = { target = ERI type = annex_everything }
+			create_wargoal = { target = DJI type = annex_everything }
+			create_wargoal = { target = YEM type = annex_everything }
+			create_wargoal = { target = KUR type = annex_everything }
+			create_wargoal = { target = SUE type = annex_everything }
+			create_wargoal = { target = PAL type = annex_everything }
+			every_state = {
+				limit = { is_core_of = OMA }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = PAL }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = SAU }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = JBS }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = HEJ }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = ETH }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = SYR }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = IRQ }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = LEB }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = EGY }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = LBA }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = TRP }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = TUN }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = ALG }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = MOR }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = MRT }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = ERI }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = DJI }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = YEM }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = KUR }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = SUE }
+				add_core_of = PLS
+			}
+			550 = { add_core_of = PLS }
+			961 = { add_core_of = PLS }
+			268 = { add_core_of = PLS }
+			1297 = { add_core_of = PLS }
+			450 = { add_core_of = PLS }
+			every_state = {
+				limit = {
+				OR = {
+					is_core_of = SOM
+					is_claimed_by = SOM
+					}
+				}
+				add_core_of = PLS
+			}
+		}
+	}
+	focus={
+		id=PLS_And_then_there_are_all_Muslims
+		icon=PALS_And_then_there_are_all_Muslims
+		x=103
+		y=11
+		prerequisite={focus=PLS_Start_with_Arabia}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_What_we_desire_ideas
+				add_idea = PAL_What_we_desire_ideas1
+			}
+			create_wargoal = { target = TUR type = annex_everything }
+			create_wargoal = { target = ALO type = annex_everything }
+			create_wargoal = { target = TRK type = annex_everything }
+			create_wargoal = { target = UZB type = annex_everything }
+			create_wargoal = { target = KHI type = annex_everything }
+			create_wargoal = { target = BOS type = annex_everything }
+			create_wargoal = { target = BUL type = annex_everything }
+			create_wargoal = { target = ROM type = annex_everything }
+			create_wargoal = { target = SER type = annex_everything }
+			create_wargoal = { target = CRO type = annex_everything }
+			create_wargoal = { target = ALB type = annex_everything }
+			create_wargoal = { target = GRE type = annex_everything }
+			create_wargoal = { target = PER type = annex_everything }
+			create_wargoal = { target = AFG type = annex_everything }
+			every_state = {
+				limit = { is_core_of = TUR }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = ALO }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = TRK }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = UZB }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = KHI }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = BOS }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = BUL }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = ROM }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = SER }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = CRO }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = ALB }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = GRE }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = YUN }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = SIK }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = TAN }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = XSM }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = AFG }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = PER }
+				add_core_of = PLS
+			}
+			1171 = { add_core_of = PLS }
+			1170 = { add_core_of = PLS }
+			1169 = { add_core_of = PLS }
+			1168 = { add_core_of = PLS }
+			1167 = { add_core_of = PLS }
+		}
+	}
+	focus={
+		id=PLS_Hashem_holds_the_glory
+		icon=PALS_Hashem_holds_the_glory
+		x=105
+		y=9
+		prerequisite={focus=PLS_Creation_of_the_PTO focus=PLS_Cooperation_with_Egypt }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Unexpected_contenders
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_What_we_desire_ideas1
+		}
+	}
+	focus={
+		id=PLS_Claim_Greater_Syria
+		icon=PALS_Claim_Greater_Syria
+		x=105
+		y=10
+		prerequisite={focus=PLS_Hashem_holds_the_glory}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Unexpected_contenders
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_state = {
+				limit = { is_core_of = IRQ }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = SYR }
+				add_core_of = PLS
+			}
+			IRQ = {
+				country_event = Palestine.60
+			}
+			SYR = {
+				country_event = Palestine.60
+			}
+		}
+	}
+	focus={
+		id=PLS_The_crown_of_the_Hejaz
+		icon=PALS_The_crown_of_the_Hejaz
+		x=105
+		y=11
+		prerequisite={focus=PLS_Claim_Greater_Syria}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_state = {
+				limit = { is_core_of = HEJ }
+				add_core_of = PLS
+			}
+			HEJ = {
+				country_event = Palestine.60
+			}
+		}
+	}
+	focus={
+		id=PLS_The_legacy_of_the_Great_Uprising
+		icon=PALS_The_legacy_of_the_Great_Uprising
+		x=107
+		y=9
+		prerequisite={focus=PLS_Creation_of_the_PTO focus=PLS_Cooperation_with_Egypt }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			OR = {
+				has_completed_focus = PLS_Preparing_for_the_general_election
+				has_completed_focus = PLS_The_guidance_of_socialism
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			set_cosmetic_tag = YEM_Arab
+			add_ideas = PLS_arab_flag_idea1
+			every_state = {
+				limit = { is_core_of = IRQ }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = SYR }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = EGY }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = LEB }
+				add_core_of = PLS
+			}
+			create_wargoal = { target = SYR type = annex_everything }
+			create_wargoal = { target = LEB type = annex_everything }
+			create_wargoal = { target = IRQ type = annex_everything }
+			create_wargoal = { target = EGY type = annex_everything }
+			create_wargoal = { target = SUE type = annex_everything }
+			create_wargoal = { target = PAL type = annex_everything }
+		}
+	}
+	focus={
+		id=PLS_Arab_national_revival
+		icon=PALS_Arab_national_revival
+		x=107
+		y=10
+		prerequisite={focus=PLS_The_legacy_of_the_Great_Uprising}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		create_wargoal = { target = OMA type = annex_everything }
+		create_wargoal = { target = YEM type = annex_everything }
+		create_wargoal = { target = KUR type = annex_everything }
+		create_wargoal = { target = JBS type = annex_everything }
+		create_wargoal = { target = SAU type = annex_everything }
+		create_wargoal = { target = HEJ type = annex_everything }
+		create_wargoal = { target = LBA type = annex_everything }
+		create_wargoal = { target = TRP type = annex_everything }
+		create_wargoal = { target = TUR type = annex_everything }
+		create_wargoal = { target = PER type = annex_everything }
+			every_state = {
+				limit = { is_core_of = OMA }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = HEJ }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = YEM }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = KUR }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = JBS }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = SAU }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = LBA }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = TRP }
+				add_core_of = PLS
+			}
+			993 = { add_core_of = PLS }
+			907 = { add_core_of = PLS }
+			658 = { add_core_of = PLS }
+			350 = { add_core_of = PLS }
+			352 = { add_core_of = PLS }
+			450 = { add_core_of = PLS }
+		}
+	}
+	focus={
+		id=PLS_End_the_colonial_order
+		icon=PALS_End_the_colonial_order
+		x=107
+		y=11
+		prerequisite={focus=PLS_Arab_national_revival}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PLS_arab_flag_idea1
+				add_idea = PLS_arab_flag_idea2
+			}
+			create_wargoal = { target = NFA type = annex_everything }
+			create_wargoal = { target = CAN type = annex_everything }
+		}
+	}
+	focus={
+		id=PLS_Pan_Arab_cooperation
+		icon=PALS_Pan_Arab_cooperation
+		x=105
+		y=12
+		prerequisite={focus=PLS_The_crown_of_the_Hejaz}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = JBS type = annex_everything }
+			create_wargoal = { target = HEJ type = annex_everything }
+			create_wargoal = { target = TUR type = annex_everything }
+			create_wargoal = { target = NFA type = annex_everything }
+			every_state = {
+				limit = { is_core_of = JBS }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = HEJ }
+				add_core_of = PLS
+			}
+			993 = { add_core_of = PLS }
+			907 = { add_core_of = PLS }
+			658 = { add_core_of = PLS }
+			350 = { add_core_of = PLS }
+			352 = { add_core_of = PLS }
+			MOR = {
+				country_event = Palestine.75
+			}
+			ALG = {
+				country_event = Palestine.75
+			}
+			TUN = {
+				country_event = Palestine.75
+			}
+			TRP = {
+				country_event = Palestine.75
+			}
+			LBA = {
+				country_event = Palestine.75
+			}
+			YEM = {
+				country_event = Palestine.75
+			}
+			OMA = {
+				country_event = Palestine.75
+			}
+		}
+	}
+	focus={
+		id=PLS_Arab_National_Revolution
+		icon=PALS_Arab_National_Revolution
+		x=109
+		y=9
+		prerequisite={focus=PLS_Creation_of_the_PTO focus=PLS_Cooperation_with_Egypt }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Coup_by_Officers
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			set_cosmetic_tag = YEM_Arab
+			create_wargoal = { target = OMA type = annex_everything }
+			create_wargoal = { target = SAU type = annex_everything }
+			create_wargoal = { target = JBS type = annex_everything }
+			create_wargoal = { target = HEJ type = annex_everything }
+			create_wargoal = { target = ETH type = annex_everything }
+			create_wargoal = { target = SYR type = annex_everything }
+			create_wargoal = { target = IRQ type = annex_everything }
+			create_wargoal = { target = LBA type = annex_everything }
+			create_wargoal = { target = LEB type = annex_everything }
+			create_wargoal = { target = EGY type = annex_everything }
+			create_wargoal = { target = TRP type = annex_everything }
+			create_wargoal = { target = TUN type = annex_everything }
+			create_wargoal = { target = ALG type = annex_everything }
+			create_wargoal = { target = MOR type = annex_everything }
+			create_wargoal = { target = MRT type = annex_everything }
+			create_wargoal = { target = ERI type = annex_everything }
+			create_wargoal = { target = DJI type = annex_everything }
+			create_wargoal = { target = YEM type = annex_everything }
+			create_wargoal = { target = KUR type = annex_everything }
+			create_wargoal = { target = SUE type = annex_everything }
+			create_wargoal = { target = PAL type = annex_everything }
+			every_state = {
+				limit = { is_core_of = OMA }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = PAL }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = SAU }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = JBS }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = HEJ }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = ETH }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = SYR }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = IRQ }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = LEB }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = EGY }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = LBA }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = TRP }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = TUN }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = ALG }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = MOR }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = MRT }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = ERI }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = DJI }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = YEM }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = KUR }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = SUE }
+				add_core_of = PLS
+			}
+			550 = { add_core_of = PLS }
+			961 = { add_core_of = PLS }
+			268 = { add_core_of = PLS }
+			1297 = { add_core_of = PLS }
+			450 = { add_core_of = PLS }
+			every_state = {
+				limit = {
+				OR = {
+					is_core_of = SOM
+					is_claimed_by = SOM
+					}
+				}
+				add_core_of = PLS
+			}
+		}
+	}
+	focus={
+		id=PLS_The_New_Order_in_the_Middle_East
+		icon=PALS_The_New_Order_in_the_Middle_East
+		x=109
+		y=10
+		prerequisite={focus=PLS_Arab_National_Revolution}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = PER type = annex_everything }
+			create_wargoal = { target = TUR type = annex_everything }
+		}
+	}
+	focus={
+		id=PLS_Reborn_in_blood_and_fire
+		icon=PALS_Reborn_in_blood_and_fire
+		x=109
+		y=11
+		prerequisite={focus=PLS_The_New_Order_in_the_Middle_East}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = CAN type = annex_everything }
+			create_wargoal = { target = NFA type = annex_everything }
+			create_wargoal = { target = RUS type = annex_everything }
+			create_wargoal = { target = GER type = annex_everything }
+			add_ideas = PAL_What_we_desire_ideas1
+		}
+	}
+	focus={
+		id=PLS_Save_the_Revolution
+		icon=PALS_Save_the_Revolution
+		x=59
+		y=12
+		prerequisite={focus=PLS_Create_community focus=PLS_Arabization }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = PLS_The_3I_Mission_seized_power_Flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_Shadow_government_ideas
+		}
+	}
+	focus={
+		id=PLS_Expand_the_advisory_authority
+		icon=PALS_Expand_the_advisory_authority
+		x=57
+		y=13
+		prerequisite={focus=PLS_Save_the_Revolution}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Shadow_government_ideas
+				add_idea = PAL_Shadow_government_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_French_advanced_experience
+		icon=PALS_French_advanced_experience
+		x=56
+		y=14
+		prerequisite={focus=PLS_Expand_the_advisory_authority}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Shadow_government_ideas1
+				add_idea = PAL_Shadow_government_ideas2
+			}
+		}
+	}
+	focus={
+		id=PLS_Technological_indoctrination
+		icon=PALS_Technological_indoctrination
+		x=58
+		y=14
+		prerequisite={focus=PLS_Expand_the_advisory_authority}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_research_slot = 1
+		}
+	}
+	focus={
+		id=PLS_The_mission_of_socialist_enlightenment
+		icon=PALS_The_mission_of_socialist_enlightenment
+		x=61
+		y=13
+		prerequisite={focus=PLS_Save_the_Revolution}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = PAL_True_socialism_ideas
+		}
+	}
+	focus={
+		id=PLS_Total_control
+		icon=PALS_Total_control
+		x=60
+		y=14
+		prerequisite={focus=PLS_The_mission_of_socialist_enlightenment}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_True_socialism_ideas
+				add_idea = PAL_True_socialism_ideas1
+			}
+		}
+	}
+	focus={
+		id=PLS_No_more_jihad
+		icon=PALS_No_more_jihad
+		x=62
+		y=14
+		prerequisite={focus=PLS_The_mission_of_socialist_enlightenment}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Total_control
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_True_socialism_ideas1
+				add_idea = PAL_True_socialism_ideas2
+			}
+		}
+	}
+	focus={
+		id=PLS_Paris_took_over_in_full
+		icon=PALS_Paris_took_over_in_full
+		x=58
+		y=15
+		prerequisite={focus=PLS_French_advanced_experience}
+		prerequisite={focus=PLS_Technological_indoctrination}
+		prerequisite={focus=PLS_Total_control}
+		prerequisite={focus=PLS_No_more_jihad}
+		mutually_exclusive={focus=PLS_Wear_white_gloves }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = France_annex_Palestine_tt
+			FRA = {
+				country_event = Palestine.74
+			}
+		}
+	}
+	focus={
+		id=PLS_Wear_white_gloves
+		icon=PALS_Wear_white_gloves
+		x=60
+		y=15
+		prerequisite={focus=PLS_Total_control}
+		prerequisite={focus=PLS_French_advanced_experience}
+		prerequisite={focus=PLS_Technological_indoctrination}
+		prerequisite={focus=PLS_No_more_jihad}
+		mutually_exclusive={focus=PLS_Paris_took_over_in_full }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_True_socialism_ideas2
+				add_idea = PAL_True_socialism_ideas3
+			}
+			country_event = Palestine.57
+		}
+	}
+}

@@ -1,6 +1,32 @@
+political_actions = {
+	LEB_Nihal_Atsiz_picker = {
+		icon = GFX_decision_portraits_picker
+		allowed = {
+			tag = LEB
+		}
+		visible = {
+			has_country_leader = {
+				name = "侯赛因·尼哈尔·阿齐兹"
+				ruling_only = yes
+			}
+			is_ai = no
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 1
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GER_willy_ii_picker"
+			country_event = leb_portrait_picker.1
+		}
+	}
+}
 LEB_Arab_War = {
 	
-	进攻叙利亚 = {
+	LEB_war_of_SYR = {
 	
 		icon = bear
 		
@@ -28,7 +54,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "叙利亚起义军"
+					name = "Syrian insurgents"
 					division_names_group = LEB_NRARABARMY_07
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -48,22 +74,22 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"叙利亚起义军\" division_template = \"叙利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"叙利亚起义军\" division_template = \"叙利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"叙利亚起义军\" division_template = \"叙利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"叙利亚起义军\" division_template = \"叙利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -79,7 +105,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "叙利亚起义军"
+					name = "Syrian insurgents"
 					division_names_group = LEB_NRARABARMY_07
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -99,27 +125,27 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"叙利亚起义军\" division_template = \"叙利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"叙利亚起义军\" division_template = \"叙利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"叙利亚起义军\" division_template = \"叙利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"叙利亚起义军\" division_template = \"叙利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"叙利亚起义军\" division_template = \"叙利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -132,7 +158,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "叙利亚起义军"
+					name = "Syrian insurgents"
 					division_names_group = LEB_NRARABARMY_07
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -152,32 +178,32 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"叙利亚起义军\" division_template = \"叙利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"叙利亚起义军\" division_template = \"叙利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"叙利亚起义军\" division_template = \"叙利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"叙利亚起义军\" division_template = \"叙利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"叙利亚起义军\" division_template = \"叙利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"叙利亚起义军\" division_template = \"叙利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -185,7 +211,7 @@ LEB_Arab_War = {
 			}
 		}
 	}
-	进攻阿曼 = {
+	LEB_war_of_OMA = {
 	
 		icon = bear
 		
@@ -223,7 +249,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "阿曼起义军"
+					name = "Oman insurgents"
 					division_names_group = LEB_NRARABARMY_12
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -243,22 +269,22 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"阿曼起义军\" division_template = \"阿曼起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿曼起义军\" division_template = \"阿曼起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿曼起义军\" division_template = \"阿曼起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿曼起义军\" division_template = \"阿曼起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -274,7 +300,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "阿曼起义军"
+					name = "Oman insurgents"
 					division_names_group = LEB_NRARABARMY_12
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -294,27 +320,27 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"阿曼起义军\" division_template = \"阿曼起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿曼起义军\" division_template = \"阿曼起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿曼起义军\" division_template = \"阿曼起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿曼起义军\" division_template = \"阿曼起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿曼起义军\" division_template = \"阿曼起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -327,7 +353,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "阿曼起义军"
+					name = "Oman insurgents"
 					division_names_group = LEB_NRARABARMY_12
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -347,32 +373,32 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"阿曼起义军\" division_template = \"阿曼起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿曼起义军\" division_template = \"阿曼起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿曼起义军\" division_template = \"阿曼起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿曼起义军\" division_template = \"阿曼起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿曼起义军\" division_template = \"阿曼起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿曼起义军\" division_template = \"阿曼起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -380,7 +406,7 @@ LEB_Arab_War = {
 			}
 		}
 	}
-	进攻也门 = {
+	LEB_war_of_YEM = {
 	
 		icon = bear
 		
@@ -408,7 +434,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "也门起义军"
+					name = "Yemen insurgents"
 					division_names_group = LEB_NRARABARMY_11
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -428,22 +454,22 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"也门起义军\" division_template = \"也门起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"也门起义军\" division_template = \"也门起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"也门起义军\" division_template = \"也门起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"也门起义军\" division_template = \"也门起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -459,7 +485,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "也门起义军"
+					name = "Yemen insurgents"
 					division_names_group = LEB_NRARABARMY_11
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -479,27 +505,27 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"也门起义军\" division_template = \"也门起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"也门起义军\" division_template = \"也门起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"也门起义军\" division_template = \"也门起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"也门起义军\" division_template = \"也门起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"也门起义军\" division_template = \"也门起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -512,7 +538,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "也门起义军"
+					name = "Yemen insurgents"
 					division_names_group = LEB_NRARABARMY_11
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -532,32 +558,32 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"也门起义军\" division_template = \"也门起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"也门起义军\" division_template = \"也门起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"也门起义军\" division_template = \"也门起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"也门起义军\" division_template = \"也门起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"也门起义军\" division_template = \"也门起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"也门起义军\" division_template = \"也门起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -565,7 +591,7 @@ LEB_Arab_War = {
 			}
 		}
 	}
-	进攻内志 = {
+	LEB_war_of_SAU = {
 	
 		icon = bear
 		
@@ -574,13 +600,13 @@ LEB_Arab_War = {
 		fire_only_once = yes
 		
 		visible = {
-			country_exists = SYR
+			country_exists = SAU
 		}
 		
 		remove_effect = {
-			declare_war_on = { target = SYR type = annex_everything }
+			declare_war_on = { target = SAU type = annex_everything }
 			every_state = {
-				limit = { is_core_of = SYR }
+				limit = { is_core_of = SAU }
 				add_core_of = LEB
 			}
 			if = {
@@ -593,7 +619,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "内志起义军"
+					name = "Najd insurgents"
 					division_names_group = LEB_NRARABARMY_10
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -613,22 +639,22 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"内志起义军\" division_template = \"内志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"内志起义军\" division_template = \"内志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"内志起义军\" division_template = \"内志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"内志起义军\" division_template = \"内志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -644,7 +670,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "内志起义军"
+					name = "Najd insurgents"
 					division_names_group = LEB_NRARABARMY_10
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -664,27 +690,27 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"内志起义军\" division_template = \"内志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"内志起义军\" division_template = \"内志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"内志起义军\" division_template = \"内志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"内志起义军\" division_template = \"内志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"内志起义军\" division_template = \"内志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -697,7 +723,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "内志起义军"
+					name = "Najd insurgents"
 					division_names_group = LEB_NRARABARMY_10
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -717,32 +743,32 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"内志起义军\" division_template = \"内志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"内志起义军\" division_template = \"内志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"内志起义军\" division_template = \"内志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"内志起义军\" division_template = \"内志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"内志起义军\" division_template = \"内志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"内志起义军\" division_template = \"内志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -750,7 +776,7 @@ LEB_Arab_War = {
 			}
 		}
 	}
-	进攻伊拉克 = {
+	LEB_war_of_IRQ = {
 	
 		icon = bear
 		
@@ -778,7 +804,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "伊拉克起义军"
+					name = "Iraq insurgents"
 					division_names_group = LEB_NRARABARMY_08
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -798,22 +824,22 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"伊拉克起义军\" division_template = \"伊拉克起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"伊拉克起义军\" division_template = \"伊拉克起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"伊拉克起义军\" division_template = \"伊拉克起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"伊拉克起义军\" division_template = \"伊拉克起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -829,7 +855,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "伊拉克起义军"
+					name = "Iraq insurgents"
 					division_names_group = LEB_NRARABARMY_08
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -849,27 +875,27 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"伊拉克起义军\" division_template = \"伊拉克起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"伊拉克起义军\" division_template = \"伊拉克起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"伊拉克起义军\" division_template = \"伊拉克起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"伊拉克起义军\" division_template = \"伊拉克起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"伊拉克起义军\" division_template = \"伊拉克起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -882,7 +908,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "伊拉克起义军"
+					name = "Iraq insurgents"
 					division_names_group = LEB_NRARABARMY_08
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -902,32 +928,32 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"伊拉克起义军\" division_template = \"伊拉克起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"伊拉克起义军\" division_template = \"伊拉克起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"伊拉克起义军\" division_template = \"伊拉克起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"伊拉克起义军\" division_template = \"伊拉克起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"伊拉克起义军\" division_template = \"伊拉克起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"伊拉克起义军\" division_template = \"伊拉克起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -935,7 +961,7 @@ LEB_Arab_War = {
 			}
 		}
 	}
-	进攻杰拜勒舍迈尔 = {
+	LEB_war_of_JBS = {
 	
 		icon = bear
 		
@@ -963,7 +989,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "杰拜勒舍迈尔起义军"
+					name = "Jebel Shemaier insurgents"
 					division_names_group = LEB_NRARABARMY_09
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -983,22 +1009,22 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"杰拜勒舍迈尔起义军\" division_template = \"杰拜勒舍迈尔起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"杰拜勒舍迈尔起义军\" division_template = \"杰拜勒舍迈尔起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"杰拜勒舍迈尔起义军\" division_template = \"杰拜勒舍迈尔起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"杰拜勒舍迈尔起义军\" division_template = \"杰拜勒舍迈尔起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -1014,7 +1040,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "杰拜勒舍迈尔起义军"
+					name = "Jebel Shemaier insurgents"
 					division_names_group = LEB_NRARABARMY_09
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -1034,27 +1060,27 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"杰拜勒舍迈尔起义军\" division_template = \"杰拜勒舍迈尔起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"杰拜勒舍迈尔起义军\" division_template = \"杰拜勒舍迈尔起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"杰拜勒舍迈尔起义军\" division_template = \"杰拜勒舍迈尔起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"杰拜勒舍迈尔起义军\" division_template = \"杰拜勒舍迈尔起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"杰拜勒舍迈尔起义军\" division_template = \"杰拜勒舍迈尔起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -1067,7 +1093,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "杰拜勒舍迈尔起义军"
+					name = "Jebel Shemaier insurgents"
 					division_names_group = LEB_NRARABARMY_09
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -1087,32 +1113,32 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"杰拜勒舍迈尔起义军\" division_template = \"杰拜勒舍迈尔起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"杰拜勒舍迈尔起义军\" division_template = \"杰拜勒舍迈尔起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"杰拜勒舍迈尔起义军\" division_template = \"杰拜勒舍迈尔起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"杰拜勒舍迈尔起义军\" division_template = \"杰拜勒舍迈尔起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"杰拜勒舍迈尔起义军\" division_template = \"杰拜勒舍迈尔起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"杰拜勒舍迈尔起义军\" division_template = \"杰拜勒舍迈尔起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -1120,7 +1146,7 @@ LEB_Arab_War = {
 			}
 		}
 	}
-	进攻汉志 = {
+	LEB_war_of_HEJ = {
 	
 		icon = bear
 		
@@ -1148,7 +1174,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "汉志起义军"
+					name = "Hejz insurgents"
 					division_names_group = LEB_NRARABARMY_06
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -1168,22 +1194,22 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"汉志起义军\" division_template = \"汉志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"汉志起义军\" division_template = \"汉志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"汉志起义军\" division_template = \"汉志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"汉志起义军\" division_template = \"汉志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -1199,7 +1225,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "汉志起义军"
+					name = "Hejz insurgents"
 					division_names_group = LEB_NRARABARMY_06
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -1219,27 +1245,27 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"汉志起义军\" division_template = \"汉志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"汉志起义军\" division_template = \"汉志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"汉志起义军\" division_template = \"汉志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"汉志起义军\" division_template = \"汉志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"汉志起义军\" division_template = \"汉志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -1252,7 +1278,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "汉志起义军"
+					name = "Hejz insurgents"
 					division_names_group = LEB_NRARABARMY_06
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -1272,32 +1298,32 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"汉志起义军\" division_template = \"汉志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"汉志起义军\" division_template = \"汉志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"汉志起义军\" division_template = \"汉志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"汉志起义军\" division_template = \"汉志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"汉志起义军\" division_template = \"汉志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"汉志起义军\" division_template = \"汉志起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -1305,7 +1331,7 @@ LEB_Arab_War = {
 			}
 		}
 	}
-	进攻索马里 = {
+	LEB_war_of_SOM = {
 	
 		icon = bear
 		
@@ -1333,7 +1359,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "索马里起义军"
+					name = "Somalia insurgents"
 					division_names_group = LEB_NRARABARMY_05
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -1353,22 +1379,22 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"索马里起义军\" division_template = \"索马里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"索马里起义军\" division_template = \"索马里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"索马里起义军\" division_template = \"索马里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"索马里起义军\" division_template = \"索马里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -1384,7 +1410,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "索马里起义军"
+					name = "Somalia insurgents"
 					division_names_group = LEB_NRARABARMY_05
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -1404,27 +1430,27 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"索马里起义军\" division_template = \"索马里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"索马里起义军\" division_template = \"索马里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"索马里起义军\" division_template = \"索马里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"索马里起义军\" division_template = \"索马里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"索马里起义军\" division_template = \"索马里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -1437,7 +1463,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "索马里起义军"
+					name = "Somalia insurgents"
 					division_names_group = LEB_NRARABARMY_05
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -1457,32 +1483,32 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"索马里起义军\" division_template = \"索马里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"索马里起义军\" division_template = \"索马里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"索马里起义军\" division_template = \"索马里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"索马里起义军\" division_template = \"索马里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"索马里起义军\" division_template = \"索马里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"索马里起义军\" division_template = \"索马里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -1490,7 +1516,7 @@ LEB_Arab_War = {
 			}
 		}
 	}
-	进攻埃及 = {
+	LEB_war_of_EGY = {
 	
 		icon = bear
 		
@@ -1514,7 +1540,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "埃及起义军"
+					name = "Egypt insurgents"
 					division_names_group = LEB_NRARABARMY_04
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -1534,22 +1560,22 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"埃及起义军\" division_template = \"埃及起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"埃及起义军\" division_template = \"埃及起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"埃及起义军\" division_template = \"埃及起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"埃及起义军\" division_template = \"埃及起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -1565,7 +1591,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "埃及起义军"
+					name = "Egypt insurgents"
 					division_names_group = LEB_NRARABARMY_04
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -1585,27 +1611,27 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"埃及起义军\" division_template = \"埃及起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"埃及起义军\" division_template = \"埃及起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"埃及起义军\" division_template = \"埃及起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"埃及起义军\" division_template = \"埃及起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"埃及起义军\" division_template = \"埃及起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -1618,7 +1644,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "埃及起义军"
+					name = "Egypt insurgents"
 					division_names_group = LEB_NRARABARMY_04
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -1638,32 +1664,32 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"埃及起义军\" division_template = \"埃及起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"埃及起义军\" division_template = \"埃及起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"埃及起义军\" division_template = \"埃及起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"埃及起义军\" division_template = \"埃及起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"埃及起义军\" division_template = \"埃及起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"埃及起义军\" division_template = \"埃及起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -1672,7 +1698,7 @@ LEB_Arab_War = {
 			if = {
 				limit = { LEB = { has_country_flag = EGY_Funding_of_the_Free_Officers_Organization_Yes } }
 				division_template = {
-					name = "埃及起义军"
+					name = "Egypt insurgents"
 					division_names_group = LEB_EGYNRARABARMY_00
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -1692,12 +1718,12 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"埃及起义军\" division_template = \"埃及起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"埃及起义军\" division_template = \"埃及起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -1705,7 +1731,7 @@ LEB_Arab_War = {
 			}
 		}
 	}
-	进攻摩洛哥 = {
+	LEB_war_of_MOR = {
 	
 		icon = bear
 		
@@ -1744,7 +1770,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "摩洛哥起义军"
+					name = "Morocco insurgents"
 					division_names_group = LEB_NRARABARMY_00
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -1764,22 +1790,22 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"摩洛哥起义军\" division_template = \"摩洛哥起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"摩洛哥起义军\" division_template = \"摩洛哥起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"摩洛哥起义军\" division_template = \"摩洛哥起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"摩洛哥起义军\" division_template = \"摩洛哥起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -1795,7 +1821,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "摩洛哥起义军"
+					name = "Morocco insurgents"
 					division_names_group = LEB_NRARABARMY_00
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -1815,27 +1841,27 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"摩洛哥起义军\" division_template = \"摩洛哥起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"摩洛哥起义军\" division_template = \"摩洛哥起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"摩洛哥起义军\" division_template = \"摩洛哥起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"摩洛哥起义军\" division_template = \"摩洛哥起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"摩洛哥起义军\" division_template = \"摩洛哥起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -1848,7 +1874,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "摩洛哥起义军"
+					name = "Morocco insurgents"
 					division_names_group = LEB_NRARABARMY_00
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -1868,32 +1894,32 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"摩洛哥起义军\" division_template = \"摩洛哥起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"摩洛哥起义军\" division_template = \"摩洛哥起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"摩洛哥起义军\" division_template = \"摩洛哥起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"摩洛哥起义军\" division_template = \"摩洛哥起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"摩洛哥起义军\" division_template = \"摩洛哥起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"摩洛哥起义军\" division_template = \"摩洛哥起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -1908,7 +1934,7 @@ LEB_Arab_War = {
 				LEB = {
 					transfer_state = 290
 					division_template = {
-						name = "里夫独立军"
+						name = "Rif Independence Army"
 						division_names_group = LEB_RIFNRARABARMY_00
 						regiments = {
 							infantry = { x = 0 y = 0 }
@@ -1929,26 +1955,21 @@ LEB_Arab_War = {
 					random_owned_controlled_state = {
 						prioritize = { 290 }
 						create_unit = {
-							division = "name = \"里夫独立军\" division_template = \"里夫独立军\" start_experience_factor = 1 start_equipment_factor = 1"
+							division = "name = \"Rif Independence Army\" division_template = \"Rif Independence Army\" start_experience_factor = 1 start_equipment_factor = 1"
 							allow_spawning_on_enemy_provs = yes
 							owner = LEB
 						}
 						create_unit = {
-							division = "name = \"里夫独立军\" division_template = \"里夫独立军\" start_experience_factor = 1 start_equipment_factor = 1"
+							division = "name = \"Rif Independence Army\" division_template = \"Rif Independence Army\" start_experience_factor = 1 start_equipment_factor = 1"
 							allow_spawning_on_enemy_provs = yes
 							owner = LEB
-						}
-					}
-					RIF = {
-						every_unit_leader = {
-							set_nationality = LEB
 						}
 					}
 				}
 			}
 		}
 	}
-	进攻毛里塔尼亚 = {
+	LEB_Attack_on_Mauritania = {
 	
 		icon = bear
 		
@@ -1971,7 +1992,7 @@ LEB_Arab_War = {
 			}
 		}
 	}
-	夺取法国控制的阿拉伯地区 = {
+	LEB_war_of_NFA = {
 	
 		icon = bear
 		
@@ -2012,7 +2033,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "阿尔及利亚起义军"
+					name = "Algeria insurgents"
 					division_names_group = LEB_NRARABARMY_01
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -2032,22 +2053,22 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"阿尔及利亚起义军\" division_template = \"阿尔及利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿尔及利亚起义军\" division_template = \"阿尔及利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿尔及利亚起义军\" division_template = \"阿尔及利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿尔及利亚起义军\" division_template = \"阿尔及利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -2063,7 +2084,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "阿尔及利亚起义军"
+					name = "Algeria insurgents"
 					division_names_group = LEB_NRARABARMY_01
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -2083,27 +2104,27 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"阿尔及利亚起义军\" division_template = \"阿尔及利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿尔及利亚起义军\" division_template = \"阿尔及利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿尔及利亚起义军\" division_template = \"阿尔及利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿尔及利亚起义军\" division_template = \"阿尔及利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿尔及利亚起义军\" division_template = \"阿尔及利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -2116,7 +2137,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "阿尔及利亚起义军"
+					name = "Algeria insurgents"
 					division_names_group = LEB_NRARABARMY_01
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -2136,32 +2157,32 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"阿尔及利亚起义军\" division_template = \"阿尔及利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿尔及利亚起义军\" division_template = \"阿尔及利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿尔及利亚起义军\" division_template = \"阿尔及利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿尔及利亚起义军\" division_template = \"阿尔及利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿尔及利亚起义军\" division_template = \"阿尔及利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"阿尔及利亚起义军\" division_template = \"阿尔及利亚起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -2177,7 +2198,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "突尼斯起义军"
+					name = "Tunisia insurgents"
 					division_names_group = LEB_NRARABARMY_00
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -2197,22 +2218,22 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"突尼斯起义军\" division_template = \"突尼斯起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"突尼斯起义军\" division_template = \"突尼斯起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"突尼斯起义军\" division_template = \"突尼斯起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"突尼斯起义军\" division_template = \"突尼斯起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -2228,7 +2249,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "突尼斯起义军"
+					name = "Tunisia insurgents"
 					division_names_group = LEB_NRARABARMY_00
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -2248,27 +2269,27 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"突尼斯起义军\" division_template = \"突尼斯起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"突尼斯起义军\" division_template = \"突尼斯起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"突尼斯起义军\" division_template = \"突尼斯起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"突尼斯起义军\" division_template = \"突尼斯起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"突尼斯起义军\" division_template = \"突尼斯起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -2281,7 +2302,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "突尼斯起义军"
+					name = "Tunisia insurgents"
 					division_names_group = LEB_NRARABARMY_00
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -2301,32 +2322,32 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"突尼斯起义军\" division_template = \"突尼斯起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"突尼斯起义军\" division_template = \"突尼斯起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"突尼斯起义军\" division_template = \"突尼斯起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"突尼斯起义军\" division_template = \"突尼斯起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"突尼斯起义军\" division_template = \"突尼斯起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"突尼斯起义军\" division_template = \"突尼斯起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -2334,7 +2355,7 @@ LEB_Arab_War = {
 			}
 		}
 	}
-	进攻的黎波里塔尼亚 = {
+	LEB_war_of_TRP = {
 	
 		icon = bear
 		
@@ -2362,7 +2383,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "的黎波里起义军"
+					name = "Tripoli insurgents"
 					division_names_group = LEB_NRARABARMY_02
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -2382,22 +2403,22 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"的黎波里起义军\" division_template = \"的黎波里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"的黎波里起义军\" division_template = \"的黎波里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"的黎波里起义军\" division_template = \"的黎波里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"的黎波里起义军\" division_template = \"的黎波里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -2413,7 +2434,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "的黎波里起义军"
+					name = "Tripoli insurgents"
 					division_names_group = LEB_NRARABARMY_02
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -2433,27 +2454,27 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"的黎波里起义军\" division_template = \"的黎波里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"的黎波里起义军\" division_template = \"的黎波里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"的黎波里起义军\" division_template = \"的黎波里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"的黎波里起义军\" division_template = \"的黎波里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"的黎波里起义军\" division_template = \"的黎波里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -2466,7 +2487,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "的黎波里起义军"
+					name = "Tripoli insurgents"
 					division_names_group = LEB_NRARABARMY_02
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -2486,32 +2507,32 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"的黎波里起义军\" division_template = \"的黎波里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"的黎波里起义军\" division_template = \"的黎波里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"的黎波里起义军\" division_template = \"的黎波里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"的黎波里起义军\" division_template = \"的黎波里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"的黎波里起义军\" division_template = \"的黎波里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"的黎波里起义军\" division_template = \"的黎波里起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -2519,7 +2540,7 @@ LEB_Arab_War = {
 			}
 		}
 	}
-	进攻昔兰尼加 = {
+	LEB_war_of_LBA = {
 	
 		icon = bear
 		
@@ -2543,7 +2564,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "昔兰尼加起义军"
+					name = "Cyrenaica insurgents"
 					division_names_group = LEB_NRARABARMY_03
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -2563,22 +2584,22 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -2594,7 +2615,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "昔兰尼加起义军"
+					name = "Cyrenaica insurgents"
 					division_names_group = LEB_NRARABARMY_03
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -2614,27 +2635,27 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -2647,7 +2668,7 @@ LEB_Arab_War = {
 					}
 				}
 				division_template = {
-					name = "昔兰尼加起义军"
+					name = "Cyrenaica insurgents"
 					division_names_group = LEB_NRARABARMY_03
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -2667,32 +2688,32 @@ LEB_Arab_War = {
 				}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
 					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
 						allow_spawning_on_enemy_provs = yes
 						owner = LEB
 					}
@@ -2700,188 +2721,7 @@ LEB_Arab_War = {
 			}
 		}
 	}
-	进攻昔兰尼加 = {
-	
-		icon = bear
-		
-		cost = 20
-		days_remove = 20
-		fire_only_once = yes
-		
-		remove_effect = {
-			declare_war_on = { target = LBA type = annex_everything }
-			every_state = {
-				limit = { is_core_of = LBA }
-				add_core_of = LEB
-			}
-			if = {
-				limit = {
-					check_variable = { 
-						Libya_revolt_power > 0
-					}
-					check_variable = { 
-						Libya_revolt_power < 6
-					}
-				}
-				division_template = {
-					name = "昔兰尼加起义军"
-					division_names_group = LEB_NRARABARMY_03
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-					}
-					support = {
-						artillery = { x = 0 y = 0 }
-						recon = { x = 0 y = 1 }
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
-						allow_spawning_on_enemy_provs = yes
-						owner = LEB
-					}
-					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
-						allow_spawning_on_enemy_provs = yes
-						owner = LEB
-					}
-					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
-						allow_spawning_on_enemy_provs = yes
-						owner = LEB
-					}
-					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
-						allow_spawning_on_enemy_provs = yes
-						owner = LEB
-					}
-				}
-			}
-			if = {
-				limit = {
-					check_variable = { 
-						Libya_revolt_power > 5
-					}
-					check_variable = { 
-						Libya_revolt_power < 11
-					}
-				}
-				division_template = {
-					name = "昔兰尼加起义军"
-					division_names_group = LEB_NRARABARMY_03
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-					}
-					support = {
-						artillery = { x = 0 y = 0 }
-						recon = { x = 0 y = 1 }
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
-						allow_spawning_on_enemy_provs = yes
-						owner = LEB
-					}
-					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
-						allow_spawning_on_enemy_provs = yes
-						owner = LEB
-					}
-					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
-						allow_spawning_on_enemy_provs = yes
-						owner = LEB
-					}
-					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
-						allow_spawning_on_enemy_provs = yes
-						owner = LEB
-					}
-					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
-						allow_spawning_on_enemy_provs = yes
-						owner = LEB
-					}
-				}
-			}
-			if = {
-				limit = {
-					check_variable = { 
-						Libya_revolt_power > 10
-					}
-				}
-				division_template = {
-					name = "昔兰尼加起义军"
-					division_names_group = LEB_NRARABARMY_03
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-					}
-					support = {
-						artillery = { x = 0 y = 0 }
-						recon = { x = 0 y = 1 }
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
-						allow_spawning_on_enemy_provs = yes
-						owner = LEB
-					}
-					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
-						allow_spawning_on_enemy_provs = yes
-						owner = LEB
-					}
-					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
-						allow_spawning_on_enemy_provs = yes
-						owner = LEB
-					}
-					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
-						allow_spawning_on_enemy_provs = yes
-						owner = LEB
-					}
-					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
-						allow_spawning_on_enemy_provs = yes
-						owner = LEB
-					}
-					create_unit = {
-						division = "name = \"昔兰尼加起义军\" division_template = \"昔兰尼加起义军\" start_experience_factor = 1 start_equipment_factor = 1"
-						allow_spawning_on_enemy_provs = yes
-						owner = LEB
-					}
-				}
-			}
-		}
-	}
-	核心化厄立特里亚 = {
+	LEB_Core_Eritrea = {
 		icon = bear
 		
 		cost = 20
@@ -2901,7 +2741,7 @@ LEB_Arab_War = {
 			961 = { add_core_of = LEB }
 		}
 	}
-	核心化吉布提 = {
+	LEB_Core_Djibouti = {
 		icon = bear
 		
 		cost = 20
@@ -2918,7 +2758,7 @@ LEB_Arab_War = {
 			268 = { add_core_of = LEB }
 		}
 	}
-	核心化海湾阿拉伯 = {
+	LEB_Core_Gulf_Arabia = {
 		icon = bear
 		
 		cost = 20
@@ -2946,7 +2786,7 @@ LEB_Arab_War = {
 			907 = { add_core_of = LEB }
 		}
 	}
-	核心化伊拉克 = {
+	LEB_Core_Iraq = {
 		icon = bear
 		
 		cost = 20
@@ -2978,7 +2818,7 @@ LEB_Arab_War = {
 			812 = { add_core_of = LEB }
 		}
 	}
-	核心化叙利亚 = {
+	LEB_Core_SYR = {
 		icon = bear
 		
 		cost = 20
@@ -2986,7 +2826,6 @@ LEB_Arab_War = {
 		fire_only_once = yes
 		
 		available {
-			controls_state = 992
 			controls_state = 455
 			controls_state = 554
 			controls_state = 995
@@ -2995,7 +2834,6 @@ LEB_Arab_War = {
 			controls_state = 344
 		}
 		visible = {
-			controls_state = 992
 			controls_state = 455
 			controls_state = 554
 			controls_state = 995
@@ -3003,7 +2841,6 @@ LEB_Arab_War = {
 			controls_state = 677
 			controls_state = 344
 			NOT = {
-				992 = { is_core_of = LEB }
 				455 = { is_core_of = LEB }
 				554 = { is_core_of = LEB }
 				995 = { is_core_of = LEB }
@@ -3022,7 +2859,7 @@ LEB_Arab_War = {
 			344 = { add_core_of = LEB }
 		}
 	}
-	核心化的黎波里 = {
+	LEB_Core_TRP = {
 		icon = bear
 		
 		cost = 20
@@ -3046,7 +2883,7 @@ LEB_Arab_War = {
 			273 = { add_core_of = LEB }
 		}
 	}
-	核心化汉志 = {
+	LEB_Core_HEJ = {
 		icon = bear
 		
 		cost = 20
@@ -3070,7 +2907,7 @@ LEB_Arab_War = {
 			754 = { add_core_of = LEB }
 		}
 	}
-	核心化班加西 = {
+	LEB_Core_BJX = {
 		icon = bear
 		
 		cost = 20
@@ -3090,7 +2927,7 @@ LEB_Arab_War = {
 			450 = { add_core_of = LEB }
 		}
 	}
-	核心化杰拜勒舍迈尔 = {
+	LEB_Core_JBS = {
 		icon = bear
 		
 		cost = 20
@@ -3118,7 +2955,7 @@ LEB_Arab_War = {
 			915 = { add_core_of = LEB }
 		}
 	}
-	核心化内志 = {
+	LEB_Core_SAU = {
 		icon = bear
 		
 		cost = 20
@@ -3154,7 +2991,7 @@ LEB_Arab_War = {
 			656 = { add_core_of = LEB }
 		}
 	}
-	夺取厄立特里亚与吉布提 = {
+	LEB_war_of_JBT_ELT = {
 	
 		icon = bear
 		
@@ -6394,7 +6231,6 @@ LEB_Arab_National_Unit = {
 			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
 			NOT = { country_exists = SYR }
 			TUR = {
-				controls_state = 992
 				controls_state = 455
 				controls_state = 554
 				controls_state = 995
@@ -6431,7 +6267,6 @@ LEB_Arab_National_Unit = {
 			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
 			NOT = { country_exists = SYR }
 			TUR = {
-				controls_state = 992
 				controls_state = 455
 				controls_state = 554
 				controls_state = 995
@@ -6468,7 +6303,6 @@ LEB_Arab_National_Unit = {
 			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
 			NOT = { country_exists = SYR }
 			TUR = {
-				controls_state = 992
 				controls_state = 455
 				controls_state = 554
 				controls_state = 995
@@ -6505,7 +6339,6 @@ LEB_Arab_National_Unit = {
 			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
 			NOT = { country_exists = SYR }
 			TUR = {
-				controls_state = 992
 				controls_state = 455
 				controls_state = 554
 				controls_state = 995
@@ -6545,7 +6378,6 @@ LEB_Arab_National_Unit = {
 			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
 			NOT = { country_exists = SYR }
 			TUR = {
-				controls_state = 992
 				controls_state = 455
 				controls_state = 554
 				controls_state = 995
@@ -7224,7 +7056,7 @@ LEB_Arab_National_Unit = {
 	}
 }
 SSNP_The_party_Unit = {
-	释放阿拉伯傀儡政府 = {
+	LEB_PUPARAB = {
 
 		icon = soldierly_discipline
 
@@ -7302,7 +7134,7 @@ SSNP_The_party_Unit = {
 			transfer_state = 993
 			transfer_state = 907
 				create_country_leader = {
-					name = "Geroge abd Messih"
+					name = "乔治·阿卜杜·迈西赫"
 					picture = "gfx/leaders/LEB/SYR_geroge_abd_messih.jpg"
 					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
 					expire = "1.1.1"
@@ -7312,7 +7144,7 @@ SSNP_The_party_Unit = {
 			set_autonomy = { target = JBS autonomy_state = Social_National_Party_Brotherly_republics }
 		}
 	}
-	释放埃及傀儡政府 = {
+	LEB_PUPEGY = {
 
 		icon = soldierly_discipline
 
@@ -7374,7 +7206,7 @@ SSNP_The_party_Unit = {
 			transfer_state = 1010
 			transfer_state = 549
 				create_country_leader = {
-					name = "Abdullah Saad"
+					name = "阿卜杜拉·萨德"
 					picture = "gfx/leaders/LEB/SYR_Abdullah_Saad.jpg"
 					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
 					expire = "1.1.1"
@@ -7384,7 +7216,7 @@ SSNP_The_party_Unit = {
 			set_autonomy = { target = EGY autonomy_state = Social_National_Party_Brotherly_republics }
 		}
 	}
-	释放伊朗傀儡政府 = {
+	LEB_PUPPER = {
 
 		icon = soldierly_discipline
 
@@ -7440,7 +7272,7 @@ SSNP_The_party_Unit = {
 			transfer_state = 414
 			transfer_state = 410
 				create_country_leader = {
-					name = "Sami al Hinawi"
+					name = "萨米·希尔米·欣纳维"
 					picture = "gfx/leaders/LEB/SYR_sami_al_hinawi.png"
 					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
 					expire = "1.1.1"
@@ -7450,7 +7282,7 @@ SSNP_The_party_Unit = {
 			set_autonomy = { target = PER autonomy_state = Social_National_Party_Brotherly_republics }
 		}
 	}
-	释放土耳其傀儡政府 = {
+	LEB_PUPTUR = {
 
 		icon = soldierly_discipline
 
@@ -7522,7 +7354,7 @@ SSNP_The_party_Unit = {
 			transfer_state = 1213
 			transfer_state = 1001
 				create_country_leader = {
-					name = "Adib bin Hassan"
+					name = "阿迪卜·施舍克里"
 					picture = "gfx/leaders/SYR/Portrait_SYR_Adib_bin_Hassan.png"
 					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
 					expire = "1.1.1"

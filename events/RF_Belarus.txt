@@ -1606,3 +1606,91 @@ country_event = {
 	}
 	
 }
+country_event = {
+	id = belarus.58 #meli
+	title = belarus.58.t
+	desc = belarus.58.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = belarus.58.a 
+		set_politics = {
+			ruling_party = syndicalist
+			elections_allowed = no
+		}
+		set_cosmetic_tag = WHR_christsoc
+		create_country_leader = {
+			name = "迪米特里·梅列日科夫斯基"
+			picture = "gfx/leaders/WHR/Portrait_WHR_Dmitry_Merezhkovsky.png"
+			expire = "1965.1.1"
+			ideology = christian_syndicalism_subtype
+		}
+
+		remove_all_ministers = yes
+		add_ideas = {
+
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.2
+		}
+	}
+	option = {
+		name = belarus.58.b
+		add_stability = 0.2
+	}
+	
+}
+country_event = {
+	id = belarus.59 #meli poland
+	title = belarus.59.t
+	desc = belarus.59.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = belarus.59.a 
+		trigger = {
+			POL = {
+				has_country_flag = plx_zlp_rules
+			}
+		}
+		
+		annex_country = { target = POL transfer_troops = yes }
+		
+		
+	}
+	option = {
+		name = belarus.59.b
+		create_wargoal = { target = POL type = annex_everything }
+	}
+	
+}
+country_event = {
+	id = belarus.60 #meli rus
+	title = belarus.60.t
+	desc = belarus.60.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = belarus.60.a 
+		trigger = {
+			RUS = {
+				OR = {
+					psr_in_power = yes
+					RUS_savinkov_in_power = yes
+					nsnp_in_power = yes
+				}
+				
+			}
+		}
+		
+		annex_country = { target = RUS transfer_troops = yes }
+		
+		
+	}
+	option = {
+		name = belarus.60.b
+		create_wargoal = { target = RUS type = annex_everything }
+	}
+	
+}

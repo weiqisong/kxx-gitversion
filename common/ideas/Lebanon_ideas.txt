@@ -329,7 +329,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_Persian_Council_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Persian_Council_ideas" }
-			name = 波斯委员会
+			name = SSNP_Persian_Council_ideas
 			picture = PER_gendarmerie_idea_icon
 			allowed = { always = no }
 			modifier = {
@@ -345,7 +345,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_Syrian_Committee_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Syrian_Committee_ideas" }
-			name = 叙利亚委员会
+			name = SSNP_Syrian_Committee_ideas
 			picture = SYR_Army
 			allowed = { always = no }
 			modifier = {
@@ -361,7 +361,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_Syrian_Committee_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Syrian_Committee_ideas1" }
-			name = 叙利亚委员会
+			name = SSNP_Syrian_Committee_ideas
 			picture = SYR_Army
 			allowed = { always = no }
 			modifier = {
@@ -380,7 +380,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_Syrian_Committee_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Syrian_Committee_ideas2" }
-			name = 叙利亚委员会
+			name = SSNP_Syrian_Committee_ideas
 			picture = SYR_Army
 			allowed = { always = no }
 			modifier = {
@@ -400,7 +400,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_Iraq_Commission_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Iraq_Commission_ideas" }
-			name = 伊拉克委员会
+			name = SSNP_Iraq_Commission_ideas
 			picture = PER_gendarmerie_idea_icon
 			allowed = { always = no }
 			modifier = {
@@ -416,7 +416,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_Iraq_Commission_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Iraq_Commission_ideas1" }
-			name = 伊拉克委员会
+			name = SSNP_Iraq_Commission_ideas
 			picture = IRQ_Coastal_Defense_Force
 			allowed = { always = no }
 			modifier = {
@@ -434,7 +434,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_Revolt_against_the_Turks_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Revolt_against_the_Turks_ideas" }
-			name = 反抗土耳其人
+			name = SSNP_Revolt_against_the_Turks_ideas
 			picture = OTT_Horrors_of_the_Weltkrieg_idea_icon
 			allowed = { always = no }
 			modifier = {
@@ -450,7 +450,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_Arab_Committee = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Arab_Committee" }
-			name = 阿拉伯委员会
+			name = SSNP_Arab_Committee
 			picture = EGY_model_democracy_arab_world
 			allowed = { always = no }
 			modifier = {
@@ -490,7 +490,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_Arab_Committee1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Arab_Committee1" }
-			name = 阿拉伯委员会
+			name = SSNP_Arab_Committee
 			picture = EGY_model_democracy_arab_world
 			allowed = { always = no }
 			modifier = {
@@ -532,7 +532,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_Arab_Committee2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Arab_Committee2" }
-			name = 阿拉伯委员会
+			name = SSNP_Arab_Committee
 			picture = EGY_model_democracy_arab_world
 			allowed = { always = no }
 			modifier = {
@@ -575,7 +575,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_Egyptian_Committee = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Egyptian_Committee" }
-			name = 埃及委员会
+			name = SSNP_Egyptian_Committee
 			picture = EGY_free_independent_egypt
 			allowed = { always = no }
 			modifier = {
@@ -591,7 +591,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_the_rule_of_the_Socialist_National_Party_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_the_rule_of_the_Socialist_National_Party_ideas" }
-			name = 社会民族党之治
+			name = SSNP_the_rule_of_the_Socialist_National_Party_ideas
 			picture = LEB_the_rule_of_the_Socialist_National_Party
 			allowed = { always = no }
 			modifier = {
@@ -602,7 +602,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_the_rule_of_the_Socialist_National_Party_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_the_rule_of_the_Socialist_National_Party_ideas1" }
-			name = 社会民族党之治
+			name = SSNP_the_rule_of_the_Socialist_National_Party_ideas
 			picture = LEB_the_rule_of_the_Socialist_National_Party
 			allowed = { always = no }
 			modifier = {
@@ -616,7 +616,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_freely_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_freely_ideas" }
-			name = 自由
+			name = SSNP_freely_ideas
 			picture = BBR_free_thought_societies
 			allowed = { always = no }
 			modifier = {
@@ -626,7 +626,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_freely_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_freely_ideas1" }
-			name = 自由
+			name = SSNP_freely_ideas
 			picture = BBR_free_thought_societies
 			allowed = { always = no }
 			modifier = {
@@ -637,7 +637,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_freely_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_freely_ideas2" }
-			name = 自由
+			name = SSNP_freely_ideas
 			picture = BBR_free_thought_societies
 			allowed = { always = no }
 			modifier = {
@@ -650,7 +650,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_freely_ideas3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_freely_ideas3" }
-			name = 自由
+			name = SSNP_freely_ideas
 			picture = BBR_free_thought_societies
 			allowed = { always = no }
 			modifier = {
@@ -665,7 +665,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_freely_ideas4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_freely_ideas4" }
-			name = 自由
+			name = SSNP_freely_ideas
 			picture = BBR_free_thought_societies
 			allowed = { always = no }
 			modifier = {
@@ -680,7 +680,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_progressive_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_progressive_ideas" }
-			name = 进步
+			name = SSNP_progressive_ideas
 			picture = progressive_society
 			allowed = { always = no }
 			modifier = {
@@ -691,7 +691,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_progressive_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_progressive_ideas1" }
-			name = 进步
+			name = SSNP_progressive_ideas
 			picture = progressive_society
 			allowed = { always = no }
 			modifier = {
@@ -703,7 +703,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_progressive_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_progressive_ideas2" }
-			name = 进步
+			name = SSNP_progressive_ideas
 			picture = progressive_society
 			allowed = { always = no }
 			modifier = {
@@ -717,7 +717,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_liability_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_liability_ideas" }
-			name = 责任
+			name = SSNP_liability_ideas
 			picture = ALB_traditions
 			allowed = { always = no }
 			modifier = {
@@ -727,7 +727,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_liability_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_liability_ideas1" }
-			name = 责任
+			name = SSNP_liability_ideas
 			picture = ALB_traditions
 			allowed = { always = no }
 			modifier = {
@@ -738,7 +738,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_liability_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_liability_ideas2" }
-			name = 责任
+			name = SSNP_liability_ideas
 			picture = ALB_traditions
 			allowed = { always = no }
 			modifier = {
@@ -751,7 +751,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_liability_ideas3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_liability_ideas3" }
-			name = 责任
+			name = SSNP_liability_ideas
 			picture = ALB_traditions
 			allowed = { always = no }
 			modifier = {
@@ -766,7 +766,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_liability_ideas4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_liability_ideas4" }
-			name = 责任
+			name = SSNP_liability_ideas
 			picture = ALB_traditions
 			allowed = { always = no }
 			modifier = {
@@ -781,7 +781,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_Build_the_Motherland_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Build_the_Motherland_ideas" }
-			name = 建设
+			name = SSNP_Build_the_Motherland_ideas
 			picture = backward_industry
 			allowed = { always = no }
 			modifier = {
@@ -792,7 +792,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_Build_the_Motherland_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Build_the_Motherland_ideas1" }
-			name = 建设
+			name = SSNP_Build_the_Motherland_ideas
 			picture = backward_industry
 			allowed = { always = no }
 			modifier = {
@@ -804,7 +804,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_Build_the_Motherland_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Build_the_Motherland_ideas2" }
-			name = 建设
+			name = SSNP_Build_the_Motherland_ideas
 			picture = backward_industry
 			allowed = { always = no }
 			modifier = {
@@ -817,7 +817,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_discipline_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_discipline_ideas" }
-			name = 秩序
+			name = SSNP_discipline_ideas
 			picture = NFA_internal_discontent
 			allowed = { always = no }
 			modifier = {
@@ -827,7 +827,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_discipline_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_discipline_ideas1" }
-			name = 秩序
+			name = SSNP_discipline_ideas
 			picture = NFA_internal_discontent
 			allowed = { always = no }
 			modifier = {
@@ -840,7 +840,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_discipline_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_discipline_ideas2" }
-			name = 秩序
+			name = SSNP_discipline_ideas
 			picture = NFA_internal_discontent
 			allowed = { always = no }
 			modifier = {
@@ -854,7 +854,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_discipline_ideas3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_discipline_ideas3" }
-			name = 秩序
+			name = SSNP_discipline_ideas
 			picture = NFA_internal_discontent
 			allowed = { always = no }
 			modifier = {
@@ -868,7 +868,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_discipline_ideas4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_discipline_ideas4" }
-			name = 秩序
+			name = SSNP_discipline_ideas
 			picture = NFA_internal_discontent
 			allowed = { always = no }
 			modifier = {
@@ -885,7 +885,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_Rectification_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Rectification_ideas" }
-			name = 整风
+			name = SSNP_Rectification_ideas
 			picture = ALB_purge
 			allowed = { always = no }
 			modifier = {
@@ -896,7 +896,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_Rectification_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Rectification_ideas1" }
-			name = 整风
+			name = SSNP_Rectification_ideas
 			picture = ALB_purge
 			allowed = { always = no }
 			modifier = {
@@ -907,7 +907,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_power_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_power_ideas" }
-			name = 力量
+			name = SSNP_power_ideas
 			picture = presidential_war_powers
 			allowed = { always = no }
 			modifier = {
@@ -917,7 +917,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_power_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_power_ideas1" }
-			name = 力量
+			name = SSNP_power_ideas
 			picture = presidential_war_powers
 			allowed = { always = no }
 			modifier = {
@@ -929,7 +929,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_power_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_power_ideas2" }
-			name = 力量
+			name = SSNP_power_ideas
 			picture = presidential_war_powers
 			allowed = { always = no }
 			modifier = {
@@ -943,7 +943,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_power_ideas3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_power_ideas3" }
-			name = 力量
+			name = SSNP_power_ideas
 			picture = presidential_war_powers
 			allowed = { always = no }
 			modifier = {
@@ -959,7 +959,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_power_ideas4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_power_ideas4" }
-			name = 力量
+			name = SSNP_power_ideas
 			picture = presidential_war_powers
 			allowed = { always = no }
 			modifier = {
@@ -977,7 +977,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_reform_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_reform_ideas" }
-			name = 改革
+			name = SSNP_reform_ideas
 			picture = BRG_Republican_Spirit
 			allowed = { always = no }
 			modifier = {
@@ -988,7 +988,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_reform_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_reform_ideas1" }
-			name = 改革
+			name = SSNP_reform_ideas
 			picture = BRG_Republican_Spirit
 			allowed = { always = no }
 			modifier = {
@@ -1000,7 +1000,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SSNP_reform_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_reform_ideas2" }
-			name = 改革
+			name = SSNP_reform_ideas
 			picture = BRG_Republican_Spirit
 			allowed = { always = no }
 			modifier = {
@@ -1012,7 +1012,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_Lebanese_nationalism_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Lebanese_nationalism_ideas" }
-			name = 黎巴嫩国家主义
+			name = KATP_Lebanese_nationalism_ideas
 			picture = SAF_native_service
 			allowed = { always = no }
 			modifier = {
@@ -1023,7 +1023,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_Lebanese_nationalism_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Lebanese_nationalism_ideas1" }
-			name = 黎巴嫩国家主义
+			name = KATP_Lebanese_nationalism_ideas
 			picture = SAF_native_service
 			allowed = { always = no }
 			modifier = {
@@ -1036,7 +1036,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_Lebanese_nationalism_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Lebanese_nationalism_ideas2" }
-			name = 上帝、祖国、家庭
+			name = KATP_Lebanese_nationalism_ideas2
 			picture = SAF_native_service
 			allowed = { always = no }
 			modifier = {
@@ -1049,7 +1049,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_Antisemitism_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Antisemitism_ideas" }
-			name = 反犹主义
+			name = KATP_Antisemitism_ideas
 			picture = COR_jewish_segregation
 			allowed = { always = no }
 			modifier = {
@@ -1060,7 +1060,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_Antisemitism_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Antisemitism_ideas1" }
-			name = 反犹主义
+			name = KATP_Antisemitism_ideas
 			picture = COR_jewish_segregation
 			allowed = { always = no }
 			modifier = {
@@ -1072,7 +1072,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_Antisemitism_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Antisemitism_ideas2" }
-			name = 反犹主义
+			name = KATP_Antisemitism_ideas
 			picture = COR_jewish_segregation
 			allowed = { always = no }
 			modifier = {
@@ -1084,7 +1084,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_individualism_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_individualism_ideas" }
-			name = 个人主义
+			name = KATP_individualism_ideas
 			picture = GER_fund_farmers
 			allowed = { always = no }
 			modifier = {
@@ -1095,7 +1095,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_individualism_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_individualism_ideas1" }
-			name = 个人主义
+			name = KATP_individualism_ideas
 			picture = GER_fund_farmers
 			allowed = { always = no }
 			modifier = {
@@ -1107,7 +1107,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_New_Lebanese_Nation = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_New_Lebanese_Nation" }
-			name = 新黎巴嫩民族
+			name = KATP_New_Lebanese_Nation
 			picture = GER_election_representation
 			allowed = { always = no }
 			modifier = {
@@ -1118,7 +1118,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_New_Lebanese_Nation1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_New_Lebanese_Nation1" }
-			name = 新黎巴嫩民族
+			name = KATP_New_Lebanese_Nation
 			picture = GER_election_representation
 			allowed = { always = no }
 			modifier = {
@@ -1130,7 +1130,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_The_Maroonite_faction_dominates = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_The_Maroonite_faction_dominates" }
-			name = 马龙派独大
+			name = KATP_The_Maroonite_faction_dominates
 			picture = christian_commonwealth
 			allowed = { always = no }
 			modifier = {
@@ -1141,7 +1141,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_The_Maroonite_faction_dominates1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_The_Maroonite_faction_dominates1" }
-			name = 马龙派独大
+			name = KATP_The_Maroonite_faction_dominates
 			picture = christian_commonwealth
 			allowed = { always = no }
 			modifier = {
@@ -1154,7 +1154,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_Organize_the_workers_and_peasants_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Organize_the_workers_and_peasants_ideas" }
-			name = 组织工农
+			name = KATP_Organize_the_workers_and_peasants_ideas
 			picture = BBR_workers_market
 			allowed = { always = no }
 			modifier = {
@@ -1165,7 +1165,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_Organize_the_workers_and_peasants_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Organize_the_workers_and_peasants_ideas1" }
-			name = 组织工农
+			name = KATP_Organize_the_workers_and_peasants_ideas
 			picture = BBR_workers_market
 			allowed = { always = no }
 			modifier = {
@@ -1177,7 +1177,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_Mobilize_the_masses_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Mobilize_the_masses_ideas" }
-			name = 动员群众
+			name = KATP_Mobilize_the_masses_ideas
 			picture = worker_coops
 			allowed = { always = no }
 			modifier = {
@@ -1189,7 +1189,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_Mobilize_the_masses_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Mobilize_the_masses_ideas1" }
-			name = 动员群众
+			name = KATP_Mobilize_the_masses_ideas
 			picture = worker_coops
 			allowed = { always = no }
 			modifier = {
@@ -1202,7 +1202,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_Mobilize_the_masses_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Mobilize_the_masses_ideas2" }
-			name = 动员群众
+			name = KATP_Mobilize_the_masses_ideas
 			picture = worker_coops
 			allowed = { always = no }
 			modifier = {
@@ -1215,7 +1215,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_Lebanese_Forces_nouvelles_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Lebanese_Forces_nouvelles_ideas" }
-			name = 黎巴嫩新军
+			name = KATP_Lebanese_Forces_nouvelles_ideas
 			picture = army_cooperation
 			allowed = { always = no }
 			modifier = {
@@ -1226,7 +1226,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_Lebanese_Forces_nouvelles_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Lebanese_Forces_nouvelles_ideas1" }
-			name = 黎巴嫩新军
+			name = KATP_Lebanese_Forces_nouvelles_ideas
 			picture = army_cooperation
 			allowed = { always = no }
 			modifier = {
@@ -1240,7 +1240,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_Lebanese_Forces_nouvelles_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Lebanese_Forces_nouvelles_ideas2" }
-			name = 黎巴嫩新军
+			name = KATP_Lebanese_Forces_nouvelles_ideas
 			picture = army_cooperation
 			allowed = { always = no }
 			modifier = {
@@ -1255,7 +1255,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_Falangist_discipline_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Falangist_discipline_ideas" }
-			name = 长枪式纪律
+			name = KATP_Falangist_discipline_ideas
 			picture = NFA_dispo
 			allowed = { always = no }
 			modifier = {
@@ -1266,7 +1266,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_Falangist_discipline_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Falangist_discipline_ideas1" }
-			name = 长枪式纪律
+			name = KATP_Falangist_discipline_ideas
 			picture = NFA_dispo
 			allowed = { always = no }
 			modifier = {
@@ -1280,7 +1280,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_Falangist_discipline_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Falangist_discipline_ideas2" }
-			name = 长枪式纪律
+			name = KATP_Falangist_discipline_ideas
 			picture = NFA_dispo
 			allowed = { always = no }
 			modifier = {
@@ -1294,7 +1294,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_National_syndicalist_progress_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_National_syndicalist_progress_ideas" }
-			name = 国家工团主义进步
+			name = KATP_National_syndicalist_progress_ideas
 			picture = syndicalist_resistance
 			allowed = { always = no }
 			modifier = {
@@ -1305,7 +1305,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_National_syndicalist_progress_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_National_syndicalist_progress_ideas1" }
-			name = 国家工团主义进步
+			name = KATP_National_syndicalist_progress_ideas
 			picture = syndicalist_resistance
 			allowed = { always = no }
 			modifier = {
@@ -1319,7 +1319,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_National_syndicalist_progress_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_National_syndicalist_progress_ideas2" }
-			name = 国家工团主义进步
+			name = KATP_National_syndicalist_progress_ideas
 			picture = syndicalist_resistance
 			allowed = { always = no }
 			modifier = {
@@ -1333,7 +1333,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_Dedication_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Dedication_ideas" }
-			name = 奉献精神
+			name = KATP_Dedication_ideas
 			picture = NFA_compulsory_work
 			allowed = { always = no }
 			modifier = {
@@ -1344,7 +1344,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_Dedication_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Dedication_ideas1" }
-			name = 奉献精神
+			name = KATP_Dedication_ideas
 			picture = NFA_compulsory_work
 			allowed = { always = no }
 			modifier = {
@@ -1355,7 +1355,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_Long_live_unity_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Long_live_unity_ideas" }
-			name = 团结万岁
+			name = KATP_Long_live_unity_ideas
 			picture = generic_tourism
 			allowed = { always = no }
 			modifier = {
@@ -1367,7 +1367,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		KATP_Long_live_unity_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Long_live_unity_ideas1" }
-			name = 团结万岁
+			name = KATP_Long_live_unity_ideas
 			picture = generic_tourism
 			allowed = { always = no }
 			modifier = {
@@ -1379,7 +1379,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Bridging_divisions_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Bridging_divisions_ideas" }
-			name = 弥合分裂
+			name = SOCL_Bridging_divisions_ideas
 			picture = generic_tourism
 			allowed = { always = no }
 			modifier = {
@@ -1391,7 +1391,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Bridging_divisions_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Bridging_divisions_ideas1" }
-			name = 合众一心
+			name = SOCL_Bridging_divisions_ideas1
 			picture = generic_tourism
 			allowed = { always = no }
 			modifier = {
@@ -1403,7 +1403,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Guiding_Marxism_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Guiding_Marxism_ideas" }
-			name = 指导式马克思主义
+			name = SOCL_Guiding_Marxism_ideas
 			picture = GER_praise_marx
 			allowed = { always = no }
 			modifier = {
@@ -1415,7 +1415,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Workers_Congress_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Workers_Congress_ideas" }
-			name = 工人大会
+			name = SOCL_Workers_Congress_ideas
 			picture = worker_guarantees
 			allowed = { always = no }
 			modifier = {
@@ -1427,7 +1427,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Workers_Congress_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Workers_Congress_ideas1" }
-			name = 工人大会
+			name = SOCL_Workers_Congress_ideas
 			picture = worker_guarantees
 			allowed = { always = no }
 			modifier = {
@@ -1440,7 +1440,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Classless_society_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Classless_society_ideas" }
-			name = 无阶级社会
+			name = SOCL_Classless_society_ideas
 			picture = worker_coops
 			allowed = { always = no }
 			modifier = {
@@ -1452,7 +1452,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Classless_society_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Classless_society_ideas1" }
-			name = 无阶级社会
+			name = SOCL_Classless_society_ideas
 			picture = worker_coops
 			allowed = { always = no }
 			modifier = {
@@ -1464,7 +1464,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Classless_society_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Classless_society_ideas2" }
-			name = 无阶级社会
+			name = SOCL_Classless_society_ideas
 			picture = worker_coops
 			allowed = { always = no }
 			modifier = {
@@ -1476,7 +1476,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Classless_society_ideas3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Classless_society_ideas3" }
-			name = 无阶级社会
+			name = SOCL_Classless_society_ideas
 			picture = worker_coops
 			allowed = { always = no }
 			modifier = {
@@ -1490,7 +1490,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Ownership_reform_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Ownership_reform_ideas" }
-			name = 所有制改革
+			name = SOCL_Ownership_reform_ideas
 			picture = Worksharingplan
 			allowed = { always = no }
 			modifier = {
@@ -1502,7 +1502,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Ownership_reform_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Ownership_reform_ideas1" }
-			name = 所有制改革
+			name = SOCL_Ownership_reform_ideas
 			picture = Worksharingplan
 			allowed = { always = no }
 			modifier = {
@@ -1515,7 +1515,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Build_the_Motherland_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Build_the_Motherland_ideas" }
-			name = 建设祖国
+			name = SOCL_Build_the_Motherland_ideas
 			picture = agro_industrial_army
 			allowed = { always = no }
 			modifier = {
@@ -1527,7 +1527,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Build_the_Motherland_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Build_the_Motherland_ideas1" }
-			name = 建设祖国
+			name = SOCL_Build_the_Motherland_ideas
 			picture = agro_industrial_army
 			allowed = { always = no }
 			modifier = {
@@ -1539,7 +1539,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Build_the_Motherland_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Build_the_Motherland_ideas2" }
-			name = 计划经济
+			name = SOCL_Build_the_Motherland_ideas2
 			picture = NOR_planned_economy
 			allowed = { always = no }
 			modifier = {
@@ -1551,7 +1551,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Build_the_Motherland_ideas3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Build_the_Motherland_ideas3" }
-			name = 计划经济
+			name = SOCL_Build_the_Motherland_ideas2
 			picture = NOR_planned_economy
 			allowed = { always = no }
 			modifier = {
@@ -1563,7 +1563,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Build_the_Motherland_ideas4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Build_the_Motherland_ideas4" }
-			name = 计划经济
+			name = SOCL_Build_the_Motherland_ideas2
 			picture = NOR_planned_economy
 			allowed = { always = no }
 			modifier = {
@@ -1575,7 +1575,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Social_security_system_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Social_security_system_ideas" }
-			name = 社会保障体系
+			name = SOCL_Social_security_system_ideas
 			picture = BBR_workers_aid
 			allowed = { always = no }
 			modifier = {
@@ -1587,7 +1587,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Social_security_system_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Social_security_system_ideas1" }
-			name = 社会保障体系
+			name = SOCL_Social_security_system_ideas
 			picture = BBR_workers_aid
 			allowed = { always = no }
 			modifier = {
@@ -1601,7 +1601,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Subsidiary_Islam_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Subsidiary_Islam_ideas" }
-			name = 辅助性伊斯兰教
+			name = SOCL_Subsidiary_Islam_ideas
 			picture = OTT_institutionalised_islam
 			allowed = { always = no }
 			modifier = {
@@ -1613,7 +1613,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Subsidiary_Islam_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Subsidiary_Islam_ideas1" }
-			name = 启蒙委员会
+			name = SOCL_Subsidiary_Islam_ideas1
 			picture = OTT_institutionalised_islam
 			allowed = { always = no }
 			modifier = {
@@ -1625,7 +1625,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas" }
-			name = 强化工农利益
+			name = SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas
 			picture = worker_coops
 			allowed = { always = no }
 			modifier = {
@@ -1637,7 +1637,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas1" }
-			name = 强化工农利益
+			name = SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas
 			picture = worker_coops
 			allowed = { always = no }
 			modifier = {
@@ -1650,7 +1650,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas2" }
-			name = 强化工农利益
+			name = SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas
 			picture = worker_coops
 			allowed = { always = no }
 			modifier = {
@@ -1664,7 +1664,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Anti_colonialism_front_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Anti_colonialism_front_ideas" }
-			name = 反殖民前线
+			name = SOCL_Anti_colonialism_front_ideas
 			picture = great_army
 			allowed = { always = no }
 			modifier = {
@@ -1676,7 +1676,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_One_party_dominates_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_One_party_dominates_ideas" }
-			name = 一党独大
+			name = SOCL_One_party_dominates_ideas
 			picture = generic_investigation
 			allowed = { always = no }
 			modifier = {
@@ -1688,7 +1688,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_One_party_dominates_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_One_party_dominates_ideas1" }
-			name = 一党独大
+			name = SOCL_One_party_dominates_ideas
 			picture = generic_investigation
 			allowed = { always = no }
 			modifier = {
@@ -1700,7 +1700,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_One_party_dominates_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_One_party_dominates_ideas2" }
-			name = 一党独大
+			name = SOCL_One_party_dominates_ideas
 			picture = generic_investigation
 			allowed = { always = no }
 			modifier = {
@@ -1714,7 +1714,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Pan_Arab_Pioneer = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Pan_Arab_Pioneer" }
-			name = 泛阿拉伯先锋
+			name = SOCL_Pan_Arab_Pioneer
 			picture = generic_lightbulb
 			allowed = { always = no }
 			modifier = {
@@ -1726,7 +1726,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Pan_Arab_Pioneer1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Pan_Arab_Pioneer1" }
-			name = 泛阿拉伯先锋
+			name = SOCL_Pan_Arab_Pioneer
 			picture = generic_lightbulb
 			allowed = { always = no }
 			modifier = {
@@ -1740,7 +1740,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		SOCL_Pan_Arab_Pioneer2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Pan_Arab_Pioneer2" }
-			name = 泛阿拉伯先锋
+			name = SOCL_Pan_Arab_Pioneer
 			picture = generic_lightbulb
 			allowed = { always = no }
 			modifier = {
@@ -1756,7 +1756,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Control_of_military_and_political_organs = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALMAL_Control_of_military_and_political_organs" }
-			name = 控制军政机关
+			name = AMAL_Control_of_military_and_political_organs
 			picture = army_cooperation
 			allowed = { always = no }
 			modifier = {
@@ -1767,7 +1767,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Control_of_military_and_political_organs1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALMAL_Control_of_military_and_political_organs1" }
-			name = 绝不屈服
+			name = AMAL_Control_of_military_and_political_organs1
 			picture = army_cooperation
 			allowed = { always = no }
 			modifier = {
@@ -1780,7 +1780,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Control_of_military_and_political_organs2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALMAL_Control_of_military_and_political_organs2" }
-			name = 绝不屈服
+			name = AMAL_Control_of_military_and_political_organs1
 			picture = army_cooperation
 			allowed = { always = no }
 			modifier = {
@@ -1793,7 +1793,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Defend_the_Motherland_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Defend_the_Motherland_ideas" }
-			name = 保卫祖国
+			name = AMAL_Defend_the_Motherland_ideas
 			picture = carm_elastic_defense_icon
 			allowed = { always = no }
 			modifier = {
@@ -1804,7 +1804,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Defend_the_Motherland_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Defend_the_Motherland_ideas1" }
-			name = 保卫祖国
+			name = AMAL_Defend_the_Motherland_ideas
 			picture = carm_elastic_defense_icon
 			allowed = { always = no }
 			modifier = {
@@ -1817,7 +1817,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Strengthen_your_defenses_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALMAL_Strengthen_your_defenses_ideas" }
-			name = 加强防御
+			name = AMAL_Strengthen_your_defenses_ideas
 			picture = generic_ultranationalism
 			allowed = { always = no }
 			modifier = {
@@ -1828,7 +1828,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Strengthen_your_defenses_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALMAL_Strengthen_your_defenses_ideas1" }
-			name = 加强防御
+			name = AMAL_Strengthen_your_defenses_ideas
 			picture = generic_ultranationalism
 			allowed = { always = no }
 			modifier = {
@@ -1840,7 +1840,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Foreign_Military_Advisory_Groups_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Foreign_Military_Advisory_Groups_ideas" }
-			name = 外国军事顾问团
+			name = AMAL_Foreign_Military_Advisory_Groups_ideas
 			picture = UK_military_loyal_idea
 			allowed = { always = no }
 			modifier = {
@@ -1853,7 +1853,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Restructuring_of_the_militia_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Restructuring_of_the_militia_ideas" }
-			name = 新式民兵
+			name = AMAL_Restructuring_of_the_militia_ideas
 			picture = GER_quenched_militarism
 			allowed = { always = no }
 			modifier = {
@@ -1865,7 +1865,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Restructuring_of_the_militia_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Restructuring_of_the_militia_ideas1" }
-			name = 圣战军
+			name = AMAL_Restructuring_of_the_militia_ideas1
 			picture = GER_quenched_militarism
 			allowed = { always = no }
 			modifier = {
@@ -1877,7 +1877,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Restructuring_of_the_militia_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Restructuring_of_the_militia_ideas2" }
-			name = 圣战军
+			name = AMAL_Restructuring_of_the_militia_ideas1
 			picture = GER_quenched_militarism
 			allowed = { always = no }
 			modifier = {
@@ -1889,7 +1889,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Equality_and_justice_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Equality_and_justice_ideas" }
-			name = 平等与公正
+			name = AMAL_Equality_and_justice_ideas
 			picture = republican_justice_1
 			allowed = { always = no }
 			modifier = {
@@ -1902,7 +1902,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Equality_and_justice_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Equality_and_justice_ideas1" }
-			name = 平等与公正
+			name = AMAL_Equality_and_justice_ideas
 			picture = republican_justice_1
 			allowed = { always = no }
 			modifier = {
@@ -1915,7 +1915,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Islamic_scholars_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Islamic_scholars_ideas" }
-			name = 伊斯兰学者
+			name = AMAL_Islamic_scholars_ideas
 			picture = OTT_institutionalised_islam
 			allowed = { always = no }
 			modifier = {
@@ -1927,7 +1927,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Islamic_scholars_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Islamic_scholars_ideas1" }
-			name = 伊斯兰学者
+			name = AMAL_Islamic_scholars_ideas
 			picture = OTT_institutionalised_islam
 			allowed = { always = no }
 			modifier = {
@@ -1939,7 +1939,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Levy_tribute_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Levy_tribute_ideas" }
-			name = 吉亚兹税
+			name = AMAL_Levy_tribute_ideas
 			picture = give_money
 			allowed = { always = no }
 			modifier = {
@@ -1951,7 +1951,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Re_decide_on_administrative_divisions_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Re_decide_on_administrative_divisions_ideas" }
-			name = 更新行政区划
+			name = AMAL_Re_decide_on_administrative_divisions_ideas
 			picture = KTG_Industrial_Crisis_Town
 			allowed = { always = no }
 			modifier = {
@@ -1964,7 +1964,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Re_decide_on_administrative_divisions_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Re_decide_on_administrative_divisions_ideas1" }
-			name = 更新行政区划
+			name = AMAL_Re_decide_on_administrative_divisions_ideas
 			picture = KTG_Industrial_Crisis_Town
 			allowed = { always = no }
 			modifier = {
@@ -1977,7 +1977,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Re_decide_on_administrative_divisions_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Re_decide_on_administrative_divisions_ideas2" }
-			name = 更新行政区划
+			name = AMAL_Re_decide_on_administrative_divisions_ideas
 			picture = KTG_Industrial_Crisis_Town
 			allowed = { always = no }
 			modifier = {
@@ -1991,7 +1991,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Arab_nationalism_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Arab_nationalism_ideas" }
-			name = 阿拉伯民族主义
+			name = AMAL_Arab_nationalism_ideas
 			picture = JBS_Bedouin_Faction
 			allowed = { always = no }
 			modifier = {
@@ -2003,7 +2003,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Arab_nationalism_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Arab_nationalism_ideas1" }
-			name = 阿拉伯民族主义
+			name = AMAL_Arab_nationalism_ideas
 			picture = JBS_Bedouin_Faction
 			allowed = { always = no }
 			modifier = {
@@ -2016,7 +2016,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Arab_nationalism_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Arab_nationalism_ideas2" }
-			name = 阿拉伯民族主义
+			name = AMAL_Arab_nationalism_ideas
 			picture = JBS_Bedouin_Faction
 			allowed = { always = no }
 			modifier = {
@@ -2030,7 +2030,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_The_experience_of_Mount_Shermail_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_The_experience_of_Mount_Shermail_ideas" }
-			name = 舍迈尔山之思
+			name = AMAL_The_experience_of_Mount_Shermail_ideas
 			picture = JBS_Rashidi_Arabia
 			allowed = { always = no }
 			modifier = {
@@ -2042,7 +2042,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_The_experience_of_Mount_Shermail_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_The_experience_of_Mount_Shermail_ideas1" }
-			name = 舍迈尔山之思
+			name = AMAL_The_experience_of_Mount_Shermail_ideas
 			picture = JBS_Rashidi_Arabia
 			allowed = { always = no }
 			modifier = {
@@ -2055,7 +2055,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_White_Cedar_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_White_Cedar_ideas" }
-			name = 白色雪松
+			name = AMAL_White_Cedar_ideas
 			picture = LEB_White_Cedar
 			allowed = { always = no }
 			modifier = {
@@ -2067,7 +2067,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_White_Cedar_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_White_Cedar_ideas1" }
-			name = 白色雪松
+			name = AMAL_White_Cedar_ideas
 			picture = LEB_White_Cedar
 			allowed = { always = no }
 			modifier = {
@@ -2080,7 +2080,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_White_Cedar_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_White_Cedar_ideas2" }
-			name = 白色雪松
+			name = AMAL_White_Cedar_ideas
 			picture = LEB_White_Cedar
 			allowed = { always = no }
 			modifier = {
@@ -2093,7 +2093,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_White_Cedar_ideas3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_White_Cedar_ideas3" }
-			name = 白色雪松
+			name = AMAL_White_Cedar_ideas
 			picture = LEB_White_Cedar
 			allowed = { always = no }
 			modifier = {
@@ -2107,7 +2107,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Al_Sham_Arab_Liberation_Army_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Al_Sham_Arab_Liberation_Army_ideas" }
-			name = 阿拉伯解放军
+			name = AMAL_Al_Sham_Arab_Liberation_Army_ideas
 			picture = EGY_model_democracy_arab_world
 			allowed = { always = no }
 			modifier = {
@@ -2119,7 +2119,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Al_Sham_Arab_Liberation_Army_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Al_Sham_Arab_Liberation_Army_ideas1" }
-			name = 阿拉伯解放军
+			name = AMAL_Al_Sham_Arab_Liberation_Army_ideas
 			picture = EGY_model_democracy_arab_world
 			allowed = { always = no }
 			modifier = {
@@ -2131,7 +2131,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Al_Sham_Arab_Liberation_Army_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Al_Sham_Arab_Liberation_Army_ideas2" }
-			name = 阿拉伯解放军
+			name = AMAL_Al_Sham_Arab_Liberation_Army_ideas
 			picture = EGY_model_democracy_arab_world
 			allowed = { always = no }
 			modifier = {
@@ -2144,7 +2144,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Al_Sham_Arab_Liberation_Army_ideas3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Al_Sham_Arab_Liberation_Army_ideas3" }
-			name = 阿拉伯解放军
+			name = AMAL_Al_Sham_Arab_Liberation_Army_ideas
 			picture = EGY_model_democracy_arab_world
 			allowed = { always = no }
 			modifier = {
@@ -2157,7 +2157,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_German_consultant_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_German_consultant_ideas" }
-			name = 德国顾问
+			name = AMAL_German_consultant_ideas
 			picture = HOL_totalist_military
 			allowed = { always = no }
 			modifier = {
@@ -2169,7 +2169,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_German_consultant_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_German_consultant_ideas1" }
-			name = 德国顾问
+			name = AMAL_German_consultant_ideas
 			picture = HOL_totalist_military
 			allowed = { always = no }
 			modifier = {
@@ -2181,7 +2181,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Lebanese_Order_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Lebanese_Order_ideas" }
-			name = 黎巴嫩教团
+			name = AMAL_Lebanese_Order_ideas
 			picture = TUR_golden_age_of_islam
 			allowed = { always = no }
 			modifier = {
@@ -2193,7 +2193,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Lebanese_Order_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Lebanese_Order_ideas1" }
-			name = 黎巴嫩教团
+			name = AMAL_Lebanese_Order_ideas
 			picture = TUR_golden_age_of_islam
 			allowed = { always = no }
 			modifier = {
@@ -2205,7 +2205,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Lebanese_Order_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Lebanese_Order_ideas2" }
-			name = 黎巴嫩教团
+			name = AMAL_Lebanese_Order_ideas
 			picture = TUR_golden_age_of_islam
 			allowed = { always = no }
 			modifier = {
@@ -2219,7 +2219,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Lebanese_Order_ideas3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Lebanese_Order_ideas3" }
-			name = 黎巴嫩教团
+			name = AMAL_Lebanese_Order_ideas
 			picture = TUR_golden_age_of_islam
 			allowed = { always = no }
 			modifier = {
@@ -2233,7 +2233,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Lebanese_Order_ideas4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Lebanese_Order_ideas4" }
-			name = 黎巴嫩教团
+			name = AMAL_Lebanese_Order_ideas
 			picture = TUR_golden_age_of_islam
 			allowed = { always = no }
 			modifier = {
@@ -2248,7 +2248,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Religious_colleges_were_opened_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Religious_colleges_were_opened_ideas" }
-			name = 宗教学院
+			name = AMAL_Religious_colleges_were_opened_ideas
 			picture = OTT_institutionalised_islam
 			allowed = { always = no }
 			modifier = {
@@ -2259,7 +2259,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Religious_colleges_were_opened_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Religious_colleges_were_opened_ideas1" }
-			name = 宗教学院
+			name = AMAL_Religious_colleges_were_opened_ideas
 			picture = OTT_institutionalised_islam
 			allowed = { always = no }
 			modifier = {
@@ -2271,7 +2271,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Religious_colleges_were_opened_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Religious_colleges_were_opened_ideas2" }
-			name = 宗教学院
+			name = AMAL_Religious_colleges_were_opened_ideas
 			picture = OTT_institutionalised_islam
 			allowed = { always = no }
 			modifier = {
@@ -2283,7 +2283,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Lebanese_tactics_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Lebanese_tactics_ideas" }
-			name = 黎巴嫩战术
+			name = AMAL_Lebanese_tactics_ideas
 			picture = VIN_Centralized_Militia_Command
 			allowed = { always = no }
 			modifier = {
@@ -2295,7 +2295,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_imams_are_supreme_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_imams_are_supreme_ideas" }
-			name = 伊玛目至上
+			name = AMAL_imams_are_supreme_ideas
 			picture = NGR_at_islam
 			allowed = { always = no }
 			modifier = {
@@ -2307,7 +2307,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_imams_are_supreme_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_imams_are_supreme_ideas1" }
-			name = 伊玛目至上
+			name = AMAL_imams_are_supreme_ideas
 			picture = NGR_at_islam
 			allowed = { always = no }
 			modifier = {
@@ -2321,7 +2321,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_imams_are_supreme_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_imams_are_supreme_ideas2" }
-			name = 伊玛目至上
+			name = AMAL_imams_are_supreme_ideas
 			picture = NGR_at_islam
 			allowed = { always = no }
 			modifier = {
@@ -2337,7 +2337,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_imams_are_supreme_ideas3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_imams_are_supreme_ideas3" }
-			name = 伊玛目至上
+			name = AMAL_imams_are_supreme_ideas
 			picture = NGR_at_islam
 			allowed = { always = no }
 			modifier = {
@@ -2353,7 +2353,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_imams_are_supreme_ideas4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_imams_are_supreme_ideas4" }
-			name = 伊玛目至上
+			name = AMAL_imams_are_supreme_ideas
 			picture = NGR_at_islam
 			allowed = { always = no }
 			modifier = {
@@ -2369,7 +2369,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Religious_Census_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Religious_Census_ideas" }
-			name = 宗教普查
+			name = AMAL_Religious_Census_ideas
 			picture = islam
 			allowed = { always = no }
 			modifier = {
@@ -2381,7 +2381,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Religious_Census_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Religious_Census_ideas1" }
-			name = 信仰警察 
+			name = AMAL_Religious_Census_ideas1 
 			picture = islam
 			allowed = { always = no }
 			modifier = {
@@ -2394,7 +2394,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Religious_Census_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Religious_Census_ideas2" }
-			name = 信仰警察 
+			name = AMAL_Religious_Census_ideas1 
 			picture = islam
 			allowed = { always = no }
 			modifier = {
@@ -2407,7 +2407,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Heresy_Segregation_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_imams_are_supreme_ideas" }
-			name = 隔离异端
+			name = AMAL_Heresy_Segregation_ideas
 			picture = everything_is_fine
 			allowed = { always = no }
 			modifier = {
@@ -2418,7 +2418,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Heresy_Segregation_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_imams_are_supreme_ideas1" }
-			name = 隔离异端
+			name = AMAL_Heresy_Segregation_ideas
 			picture = everything_is_fine
 			allowed = { always = no }
 			modifier = {
@@ -2429,7 +2429,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_Heresy_Segregation_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_imams_are_supreme_ideas2" }
-			name = 隔离异端
+			name = AMAL_Heresy_Segregation_ideas
 			picture = everything_is_fine
 			allowed = { always = no }
 			modifier = {
@@ -2441,7 +2441,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_1785_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_1785_ideas" }
-			name = 1785的教训
+			name = AMAL_1785_ideas
 			picture = CAN_militarism_idea
 			allowed = { always = no }
 			modifier = {
@@ -2453,7 +2453,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_1785_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_1785_ideas1" }
-			name = 1785的教训
+			name = AMAL_1785_ideas
 			picture = CAN_militarism_idea
 			allowed = { always = no }
 			modifier = {
@@ -2465,7 +2465,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_1785_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_1785_ideas2" }
-			name = 1785的教训
+			name = AMAL_1785_ideas
 			picture = CAN_militarism_idea
 			allowed = { always = no }
 			modifier = {
@@ -2478,7 +2478,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_warriors_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_warriors_idea" }
-			name = 勇士精神
+			name = AMAL_warriors_idea
 			picture = AFG_tribal_cavalry
 			allowed = { always = no }
 			modifier = {
@@ -2490,7 +2490,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_warriors_idea1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_warriors_idea1" }
-			name = 勇士精神
+			name = AMAL_warriors_idea
 			picture = AFG_tribal_cavalry
 			allowed = { always = no }
 			modifier = {
@@ -2504,7 +2504,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_warriors_idea2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_warriors_idea2" }
-			name = 勇士精神
+			name = AMAL_warriors_idea
 			picture = AFG_tribal_cavalry
 			allowed = { always = no }
 			modifier = {
@@ -2518,7 +2518,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_warriors_idea3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_warriors_idea3" }
-			name = 勇士精神
+			name = AMAL_warriors_idea
 			picture = AFG_tribal_cavalry
 			allowed = { always = no }
 			modifier = {
@@ -2537,7 +2537,7 @@ on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
 		}
 		AMAL_warriors_idea4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_warriors_idea4" }
-			name = 勇士精神
+			name = AMAL_warriors_idea
 			picture = AFG_tribal_cavalry
 			allowed = { always = no }
 			modifier = {

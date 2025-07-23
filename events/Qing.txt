@@ -6483,8 +6483,82 @@ country_event = {
         }
       }
     }
-    complete_national_focus = HNN_victory_of_the_united_front
-      set_cosmetic_tag = CHI
+    add_stability = -0.2
+    country_event = qiekmt.2
+   remove_ideas = {
+				QIE_fractured_empire
+			}
+			remove_ideas = {
+                QIE_big_debt
+			}
+			remove_ideas = {
+                QIE_leadership_crisis_bad
+			}
+			remove_ideas = {
+                QIE_stalled_80_division_reform_plan
+			}
+			remove_ideas = {
+                QIE_court_of_the_jade_marshal
+			}
+  }
+}
+country_event = {
+  id = qiekmt.1
+  immediate = {
+    log = "[GetDateText]: [Root.GetName]: event qiekmt.1"
+  }
+  title = qiekmt.1.t
+  desc = qiekmt.1.d
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = qiekmt.1.a
+    ai_chance = {
+      factor = 80
+
+    }
+    
+      set_politics = {
+        ruling_party = social_democrat
+      }
+    set_country_flag=led_by_lun
+    add_soclib_to_coalition = yes
+  }
+  option = {
+    name = qiekmt.1.b
+    ai_chance = {
+      factor = 20
+     
+    }
+   
+      set_politics = {
+        ruling_party = social_liberal
+      }
+    set_country_flag = led_by_sun
+     add_socdem_to_coalition = yes
+  }
+ 
+
+}
+country_event = {
+  id = qiekmt.2
+  immediate = {
+    log = "[GetDateText]: [Root.GetName]: event qiekmt.1"
+  }
+  title = qiekmt.2.t
+  desc = qiekmt.2.d
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = qiekmt.2.a
+    ai_chance = {
+      factor = 80
+
+    }
+     remove_ideas = QIE_fractured_empire
+     complete_national_focus = HNN_victory_of_the_united_front
+      set_cosmetic_tag = QIE_KMT
+      remove_all_ministers = yes
       add_ideas = {
         SHX_Feng_Yuxiang_hog_rso
         SHX_Yu_Xinqing_for_ade
@@ -6492,6 +6566,14 @@ country_event = {
         SHX_Ge_Jinzhang_sec_ade
       }
       complete_national_focus = QIE_unrest
+      add_popularity = {
+       	ideology = social_democrat
+        popularity = 0.1
+      }
+      add_popularity = {
+       	ideology = social_liberal
+        popularity = 0.1
+      }
     create_country_leader = {
 	         name = "孙连仲"
 			     desc = QIE_sun_lianzhong_desc
@@ -6521,54 +6603,27 @@ country_event = {
     set_politics = {
         ruling_party = social_democrat
       }
-  }
-}
-country_event = {
-  id = qiekmt.1
-  immediate = {
-    log = "[GetDateText]: [Root.GetName]: event qiekmt.1"
-  }
-  title = qiekmt.1.t
-  desc = qiekmt.1.d
-  fire_only_once = yes
-  is_triggered_only = yes
-  option = {
-    name = qiekmt.1.a
-    ai_chance = {
-      factor = 80
-
-    }
-    
-      set_politics = {
-        ruling_party = social_democrat
-      }
-    set_country_flag=led_by_lun
-  }
-  option = {
-    name = qiekmt.1.b
-    ai_chance = {
-      factor = 20
      
-    }
-   
-      set_politics = {
-        ruling_party = social_liberal
-      }
-    set_country_flag = led_by_sun
   }
   option = {
-    name = qiekmt.1.c
+    name = qiekmt.2.b
     ai_chance = {
       factor = 20
      
     }
     set_country_flag= led_by_li
     set_cosmetic_tag = CHI_syndicalist
+     complete_national_focus = QIE_unrest
+     remove_all_ministers = yes
     add_ideas = {
         SHX_Pan_Zill_hog_syn
         SHX_Yang_Zhongjian_for_rso
         SHX_Xie_Xuegong_eco_tot
         SHX_hu_jingtong_sec_rso
+      }
+      add_popularity = {
+       	ideology = syndicalist
+        popularity = 0.1
       }
       create_country_leader = {
      name = "李大钊"  
@@ -6581,7 +6636,122 @@ country_event = {
       set_politics = {
         ruling_party = syndicalist
       }
+      
+     remove_ideas = QIE_fractured_empire
+      
   }
+ 
+
+}
+country_event = {
+  id = qiekmt.3
+  immediate = {
+    log = "[GetDateText]: [Root.GetName]: event qiekmt.1"
+  }
+  title = qiekmt.3.t
+  desc = qiekmt.3.d
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = qiekmt.3.a
+    ai_chance = {
+      factor = 20
+
+    }
+    add_war_support = 0.2
+  }
+  option = {
+    name = qiekmt.3.b
+    ai_chance = {
+      factor = 80
+     
+    }
+    CHI = {
+        country_event = qiekmt.4
+     }
+  }
+ option = {
+    name = qiekmt.3.c
+    trigger = {
+      NOT = {
+        country_exists = CHI
+      }
+    }
+    ai_chance = {
+      factor = 80
+    
+    }
+     CHI = {
+						every_unit_leader = {
+							set_nationality = QIE
+						}
+						
+					}
+  }
+
+}
+country_event = {
+  id = qiekmt.4
+  immediate = {
+    log = "[GetDateText]: [Root.GetName]: event qiekmt.1"
+  }
+  title = qiekmt.4.t
+  desc = qiekmt.4.d
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = qiekmt.4.a
+    ai_chance = {
+      factor = 100
+
+    }
+    if = {
+				limit = { 
+				CHI = { is_ai = no }
+				
+			}
+      	QIE = {
+						every_unit_leader = {
+							set_nationality = CHI
+						}
+						transfer_navy = { 
+							target = CHI
+						}
+					}
+				CHI ={
+					annex_country = { target = QIE transfer_troops = yes }
+			
+			}
+			}
+      else = {
+	      CHI = {
+						every_unit_leader = {
+							set_nationality = QIE
+						}
+						transfer_navy = { 
+							target = QIE
+						}
+					}
+				QIE ={
+					annex_country = { target = CHI transfer_troops = yes }
+			
+			}
+      }
+  }
+  option = {
+    name = qiekmt.4.b
+    ai_chance = {
+      factor = 0
+        QIE = {
+          create_wargoal = {
+            target = CHI
+            type = annex_everything
+          }
+        }
+    }
+    
+  }
+ 
 
 }
 country_event = {

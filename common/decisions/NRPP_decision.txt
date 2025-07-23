@@ -64,7 +64,7 @@ NR_National_Reconstruction_Commission = {
 
 		complete_effect = {
 		division_template = {
-			name = "通用步兵师一型"
+			name = "General Infantry Division Type 1"
 			division_names_group = PP_NRARMY_00
 			regiments = {
 			infantry = { x = 0 y = 0 }
@@ -85,7 +85,7 @@ NR_National_Reconstruction_Commission = {
 				engineer = { x = 0 y = 1 }
 			}
 			}
-			set_division_template_lock = { division_template = "通用步兵师一型" is_locked = yes }
+			set_division_template_lock = { division_template = "General Infantry Division Type 1" is_locked = yes }
 			set_country_flag = HNR_get_compiled1
 		}
 	}
@@ -110,7 +110,7 @@ NR_National_Reconstruction_Commission = {
 
 		complete_effect = {
 		division_template = {
-			name = "通用步兵师二型"
+			name = "General Infantry Division Type 2"
 			division_names_group = PP_NRARMY_00
 			regiments = {
 			infantry = { x = 0 y = 0 }
@@ -138,7 +138,7 @@ NR_National_Reconstruction_Commission = {
 				engineer = { x = 0 y = 1 }
 			}
 			}
-			set_division_template_lock = { division_template = "通用步兵师二型" is_locked = yes }
+			set_division_template_lock = { division_template = "General Infantry Division Type 2" is_locked = yes }
 			set_country_flag = HNR_get_compiled2
 		}
 	}
@@ -163,7 +163,7 @@ NR_National_Reconstruction_Commission = {
 
 		complete_effect = {
 		division_template = {
-			name = "通用坦克师"
+			name = "General Tank Division"
 			division_names_group = PP_NRARMY_00
 			regiments = {
 			infantry = { x = 0 y = 0 }
@@ -187,7 +187,7 @@ NR_National_Reconstruction_Commission = {
 				anti_air = { x = 0 y = 0 }
 			}
 			}
-			set_division_template_lock = { division_template = "通用坦克师" is_locked = yes }
+			set_division_template_lock = { division_template = "General Tank Division" is_locked = yes }
 			set_country_flag = HNR_get_compiled3
 		}
 	}
@@ -999,7 +999,7 @@ NR_National_Reconstruction_Commission = {
 		remove_effect = {
 		random_owned_controlled_state = {
 				create_unit = {
-					division = "name = \"通用步兵师一型\" division_template = \"通用步兵师一型\" start_experience_factor = 1 start_equipment_factor = 1"
+					division = "name = \"General Infantry Division Type 1\" division_template = \"General Infantry Division Type 1\" start_experience_factor = 1 start_equipment_factor = 1"
 					allow_spawning_on_enemy_provs = yes
 					owner = ROOT
 				}
@@ -1030,7 +1030,7 @@ NR_National_Reconstruction_Commission = {
 		remove_effect = {
 		random_owned_controlled_state = {
 				create_unit = {
-					division = "name = \"通用步兵师二型\" division_template = \"通用步兵师二型\" start_experience_factor = 1 start_equipment_factor = 1"
+					division = "name = \"General Infantry Division Type 2\" division_template = \"General Infantry Division Type 2\" start_experience_factor = 1 start_equipment_factor = 1"
 					allow_spawning_on_enemy_provs = yes
 					owner = ROOT
 				}
@@ -1061,7 +1061,7 @@ NR_National_Reconstruction_Commission = {
 		remove_effect = {
 		random_owned_controlled_state = {
 				create_unit = {
-					division = "name = \"通用坦克师\" division_template = \"通用坦克师\" start_experience_factor = 1 start_equipment_factor = 1"
+					division = "name = \"General Tank Division\" division_template = \"General Tank Division\" start_experience_factor = 1 start_equipment_factor = 1"
 					allow_spawning_on_enemy_provs = yes
 					owner = ROOT
 				}

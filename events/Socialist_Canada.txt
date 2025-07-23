@@ -3797,7 +3797,7 @@ country_event = {
 				has_country_flag = CAN_more_likely_to_anglosphere
 			}
 		}
-		SCC = {
+		CAN = {
 			country_event = { #Accepted
 				id = scc_anglosphere.2
 				days = 1
@@ -3816,10 +3816,10 @@ country_event = {
 		}
 		trigger = {
 			NOT = {
-				is_subject_of = SCC
+				is_subject_of = CAN
 			}
 		}
-		SCC = { #Denied
+		CAN = { #Denied
 			country_event = {
 				id = scc_anglosphere.3
 				days = 1
@@ -3901,7 +3901,7 @@ country_event = {
 		}
 		leave_faction = yes
 		separate_peace_all_wars = yes
-		SCC = {
+		CAN = {
 			create_wargoal = {
 				type = annex_everything
 				target = ROOT
@@ -3921,7 +3921,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		SCC = {
+		CAN = {
 			country_event = { #Accepted
 				id = scc_anglosphere.2
 				days = 1
@@ -3963,7 +3963,7 @@ country_event = { #Join the Fed?
 		ai_chance = {
 			factor = 80
 		}
-		SCC = {
+		CAN = {
 			country_event = scc_anglosphere.8
 			change_tag_from = ROOT
 		}
@@ -3979,7 +3979,7 @@ country_event = { #Join the Fed?
 				is_subject_of = FROM
 			}
 		}
-		SCC = {
+		CAN = {
 			country_event = scc_anglosphere.7
 		}
 		leave_faction = yes
@@ -4020,11 +4020,11 @@ country_event = { #They Accept
 			limit = {
 				is_core_of = FROM
 			}
-			SCC = {
+			CAN = {
 				add_state_core = PREV
 			}
 		}
-		SCC = {
+		CAN = {
 			annex_country = {
 				target = FROM
 				transfer_troops = yes

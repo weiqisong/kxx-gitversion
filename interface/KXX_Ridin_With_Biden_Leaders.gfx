@@ -5,7 +5,11 @@ spriteTypes = {
 	}
 	
 	###民族与革命###
-
+	
+	spriteType = {
+		name = "GFX_Portrait_EGY_Ahmed_Hussein"
+		texturefile = "gfx/leaders/EGY/Portrait_EGY_Ahmed_Hussein.png"
+	}
 	spriteType = {
 		name = "GFX_Portrait_OTT_Huseyin_Rauf"
 		texturefile = "gfx/leaders/MOJ/Portrait_OTT_Huseyin_Rauf.png"

@@ -202,6 +202,9 @@ ideologies = {
 			tot_revolution_nationale_subtype = {can_be_randomly_selected = no} #民族革命
 			tot_left_conservatism_subtype = { can_be_randomly_selected = no } #左翼保守主义
 			bureaucratic_socialism_subtype = { can_be_randomly_selected = no } #官僚社会主义
+			tot_dystopian_subtype = { can_be_randomly_selected = no }  #反乌托邦
+			tot_islamism_subtype = {can_be_randomly_selected = no} #伊斯兰主义
+			arab_legionism_subtype = {can_be_randomly_selected = no} #阿拉伯军团主义
 
 			#点
 			tot_baishi_subtype = {can_be_randomly_selected = no} #百事思想
@@ -318,7 +321,7 @@ ideologies = {
 	
 			despotism_vanguard_anarchism_subtype = {can_be_randomly_selected = no color = { 5 5 5 } } #先锋无政府主义（rm扩展）
 			syn_united_front = {can_be_randomly_selected = no} #统一阵线
-			syn_islamism_subtype = {can_be_randomly_selected = no} #伊斯兰主义（阿尔及利亚拓展)
+			syn_islamism_subtype = {can_be_randomly_selected = no} #伊斯兰主义（阿尔及利亚拓展）
 			arab_socialism = {can_be_randomly_selected = no} #阿拉伯社会主义
 			syn_regenerationism = {can_be_randomly_selected = no} #再生主义
 			syn_volkisch_communitarianism_subtype = {can_be_randomly_selected = no} #人民社群主义
@@ -326,6 +329,7 @@ ideologies = {
 			syn_haganah_military_rule_subtype = {can_be_randomly_selected = no} #哈加纳军事统治
 			syn_left_conservatism_subtype = { can_be_randomly_selected = no } #左翼保守主义
 			syn_bureaucratic_socialism_subtype = { can_be_randomly_selected = no } #官僚社会主义
+			radsoc_mao_zedong_thought_subtype = { can_be_randomly_selected = no } #毛泽东思想
 
 			#点
 			syn_islamic_communism_subtype = {can_be_randomly_selected = no} #伊斯兰马克思主义
@@ -660,7 +664,7 @@ ideologies = {
 			batllismo_subtype = {can_be_randomly_selected = no} #巴特列主义
 			
 			socdem_mao_zedong_thought_subtype = {can_be_randomly_selected = no} #温和农业主义
-			socdem_sangkum_subtype = { can_be_randomly_selected = no }
+			socdem_sangkum_subtype = { can_be_randomly_selected = no } #桑功主义
 			socdem_national_socialism_subtype = { can_be_randomly_selected = no } #民族社会主义
 			socdem_nichiren_buddhism_subtype = { can_be_randomly_selected = no } #社会日莲主义
 			socdem_mayakovskyism_subtype = { can_be_randomly_selected = no } #马雅可夫斯基主义
@@ -1182,6 +1186,7 @@ ideologies = {
 			haganah_military_rule_subtype = {can_be_randomly_selected = no} #哈加纳军事统治
 			authdem_legionarism_subtype = { can_be_randomly_selected = no } #军团主义
 			authdem_social_confucianism_subtype = { can_be_randomly_selected = no } #新儒学
+			controlled_democracy_subtype = { can_be_randomly_selected = no } #受控民主
 			
 			#点
 			new_legalism_subtype = {can_be_randomly_selected = no} #新法家
@@ -1579,6 +1584,8 @@ ideologies = {
 			ethnic_hellenism_subtype = { can_be_randomly_selected = no } #民族希腊主义
 			faisceau_subtype = { can_be_randomly_selected = no }  #费索主义
 			natpop_social_confucianism_subtype = { can_be_randomly_selected = no } #新儒学
+			natpop_dystopian_subtype = { can_be_randomly_selected = no }  #反乌托邦
+			islamic_legionism_subtype = {can_be_randomly_selected = no} #伊斯兰军团主义
 
 			
 

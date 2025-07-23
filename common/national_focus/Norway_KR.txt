@@ -198,6 +198,7 @@ focus_tree = {
 				amount = 16
 				state = 144
 			}
+			NOR_reduce_weak_economy = yes
 			144 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -252,7 +253,7 @@ focus_tree = {
 					}
 				}
 				custom_effect_tooltip = {
-					localization_key = building_state_modifier|dam
+					localization_key = building_state_modifierdam
 					INDENT = "    "
 				}
 			}
@@ -301,6 +302,7 @@ focus_tree = {
 				amount = 10
 				state = 142
 			}
+			NOR_reduce_weak_economy = yes
 			142 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -5619,9 +5621,25 @@ focus_tree = {
 				type = annex_everything
 				target = NFL
 			}
+			every_state = {
+				limit = {
+					is_core_of = NFL
+				}
+				NOR = { 
+					add_state_core = PREV 
+				}
+			}
 			create_wargoal = {
 				type = annex_everything
 				target = CAN
+			}
+			every_state = {
+				limit = {
+					is_core_of = CAN
+				}
+				NOR = { 
+					add_state_core = PREV 
+				}
 			}
 		}
 	}
@@ -5656,6 +5674,26 @@ focus_tree = {
 			create_wargoal = {
 				type = annex_everything
 				target = RUS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = TRM
+			}
+			every_state = {
+				limit = {
+					is_core_of = TRM
+				}
+				NOR = { 
+					add_state_core = PREV 
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = RUS
+				}
+				NOR = { 
+					add_state_core = PREV 
+				}
 			}
 		}
 	}

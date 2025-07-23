@@ -1,0 +1,2558 @@
+﻿add_namespace = Palestine
+add_namespace = PLSguides
+
+country_event = {
+	id = PLSguides.1
+    picture = GFX_introduction_main
+    title = PLSguides.1.t
+    desc = PLSguides.1.d
+	
+    is_triggered_only = yes
+
+	option = { 
+		name = PLSguides.1.a
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = Palestine.1
+	title = Palestine.1.t
+	desc = Palestine.1.d
+	picture = GFX_Liberation_Organization_of_Turkestan
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.1.a
+		division_template = {
+			name = "Gisch Tehrir Turkistan"
+				division_names_group = PLS_NRARMY_03
+				regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				artillery_brigade  = { x = 2 y = 0 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				recon = { x = 0 y = 1 }
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Gisch Tehrir Turkistan\" division_template = \"Gisch Tehrir Turkistan\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = PLS
+			}
+			create_unit = {
+				division = "name = \"Gisch Tehrir Turkistan\" division_template = \"Gisch Tehrir Turkistan\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = PLS
+			}
+			create_unit = {
+				division = "name = \"Gisch Tehrir Turkistan\" division_template = \"Gisch Tehrir Turkistan\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = PLS
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.2
+	title = Palestine.2.t
+	desc = Palestine.2.d
+	picture = GFX_Otto_Skorzney
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.2.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 12500
+			producer = AUS
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 1000
+			producer = AUS
+		}
+		create_field_marshal = {
+			name = "奥托·斯科尔兹内"
+			portrait_path = "gfx/leaders/PLS/Portrait_AUS_Otto.png"
+			traits = {
+				war_hero
+				offensive_doctrine
+				skilled_staffer
+				expert_delegator
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			id = 110473
+		}
+		division_template = {
+			name = "Große germanische Freiwilligenarmee"
+				division_names_group = PLS_NRARMY_02
+				regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 1 y = 3 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				infantry = { x = 2 y = 3 }
+				artillery_brigade  = { x = 3 y = 0 }
+				artillery_brigade  = { x = 3 y = 1 }
+				artillery_brigade  = { x = 3 y = 2 }
+				artillery_brigade  = { x = 3 y = 3 }
+				artillery_brigade  = { x = 3 y = 4 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				recon = { x = 0 y = 1 }
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Große germanische Freiwilligenarmee\" division_template = \"Große germanische Freiwilligenarmee\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = PLS
+			}
+			create_unit = {
+				division = "name = \"Große germanische Freiwilligenarmee\" division_template = \"Große germanische Freiwilligenarmee\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = PLS
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.3
+	title = Palestine.3.t
+	desc = Palestine.3.d
+	picture = GFX_International_Volunteer_Army
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.3.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 500
+			producer = PLS
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = FRA
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = UKR
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = SPR
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = ROM
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 4000
+			producer = RUS
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 150
+			producer = FRA
+		}
+		division_template = {
+			name = "International Volunteer Army"
+				division_names_group = PLS_NRARMY_02
+				regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				artillery_brigade  = { x = 3 y = 0 }
+				artillery_brigade  = { x = 3 y = 1 }
+				artillery_brigade  = { x = 3 y = 2 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				recon = { x = 0 y = 1 }
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"International Volunteer Army\" division_template = \"International Volunteer Army\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = PLS
+			}
+			create_unit = {
+				division = "name = \"International Volunteer Army\" division_template = \"International Volunteer Army\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = PLS
+			}
+			create_unit = {
+				division = "name = \"International Volunteer Army\" division_template = \"International Volunteer Army\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = PLS
+			}
+			create_unit = {
+				division = "name = \"International Volunteer Army\" division_template = \"International Volunteer Army\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = PLS
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.4
+	title = Palestine.4.t
+	desc = Palestine.4.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.4.a
+		set_party_name = {
+			ideology = totalist
+			name = PLS_totalist_party1
+			long_name = PLS_totalist_party1_long
+		}
+		set_party_name = {
+			ideology = syndicalist
+			name = PLS_syndicalist_party1
+			long_name = PLS_syndicalist_party1_long
+		}
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+			name = PLS_radical_socialist_party1
+			long_name = PLS_radical_socialist_party1_long
+		}
+		set_party_name = {
+			ideology = social_democrat
+			name = PLS_social_democrat_party1
+			long_name = PLS_social_democrat_party1_long
+		}
+		set_party_name = {
+			ideology = social_liberal
+			name = PLS_social_liberal_party1
+			long_name = PLS_social_liberal_party1_long
+		}
+		set_party_name = {
+			ideology = market_liberal
+			name = PLS_market_liberal_party1
+			long_name = PLS_market_liberal_party1_long
+		}
+		set_party_name = {
+			ideology = social_conservative
+			name = PLS_social_conservative_party1
+			long_name = PLS_social_conservative_party1_long
+		}
+		set_party_name = {
+			ideology = authoritarian_democrat
+			name = PLS_authoritarian_democrat_party1
+			long_name = PLS_authoritarian_democrat_party1_long
+		}
+		set_party_name = {
+			ideology = paternal_autocrat
+			name = PLS_paternal_autocrat_party1
+			long_name = PLS_paternal_autocrat_party1_long
+		}
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+			name = PLS_national_populist_party1
+			long_name = PLS_national_populist_party1_long
+		}
+		hidden_effect = {
+			set_popularities = {
+				totalist = 5
+				syndicalist = 15
+				radical_socialist = 5
+				social_democrat = 5
+				social_liberal = 5
+				market_liberal = 10
+				social_conservative = 15
+				authoritarian_democrat = 10
+				paternal_autocrat = 10
+				national_populist = 20
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.8
+				days = 2
+			}
+		}
+		create_country_leader = {
+			name = "尤尼斯·巴赫里"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Younis_Saleh_Bahri.png"
+			expire = "1.1.1"
+			ideology = arab_legionism_subtype
+		}
+
+		create_country_leader = {
+			name = "穆罕默德·纳贾蒂·西奇"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Muhammad_Najati_Sidqi.png"
+			expire = "1.1.1"
+			ideology = centralized_syndicalism_subtype
+		}
+
+		create_country_leader = {
+			name = "穆罕默德·纳贾蒂·西奇"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Muhammad_Najati_Sidqi.png"
+			expire = "1.1.1"
+			ideology = radsoc_national_communism_subtype
+		}
+
+		create_country_leader = {
+			name = "侯赛因·哈利迪"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Hussein_Khalidi.png"
+			expire = "1.1.1"
+			ideology = authoritarian_social_democracy_subtype
+		}
+
+		create_country_leader = {
+			name = "侯赛因·哈利迪"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Hussein_Khalidi.png"
+			expire = "1.1.1"
+			ideology = national_liberalism_subtype
+		}
+
+		create_country_leader = {
+			name = "伊扎特·达瓦扎"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Izzat_Darwaza.png"
+			expire = "1.1.1"
+			ideology = humanistic_capitalism_subtype
+		}
+
+		create_country_leader = {
+			name = "伊扎特·达瓦扎"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Izzat_Darwaza.png"
+			expire = "1.1.1"
+			ideology = national_conservative_subtype
+		}
+
+		create_country_leader = {
+			name = "雅库布·古赛因"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Yaqub_al_Ghusayn.png"
+			expire = "1.1.1"
+			ideology = islamism_subtype
+		}
+
+		create_country_leader = {
+			name = "哈桑·萨拉马"
+			picture = "gfx/leaders/PLS/Portrait_PAL_Hasan_Salama.png"
+			expire = "1.1.1"
+			ideology = pataut_savinkovism_subtype
+		}
+
+		create_country_leader = {
+			name = "阿明·侯赛尼"
+			picture = "gfx/leaders/PLS/Portrait_PAL_The_Mufti.png"
+			expire = "1.1.1"
+			ideology = islamic_legionism_subtype
+		}
+		set_country_flag = Palestinian_Civil_War_Flag
+		country_event = {
+			id = Palestine.8
+			days = 3
+		}
+	}
+}
+country_event = {
+	id = Palestine.5
+	title = Palestine.5.t
+	desc = Palestine.5.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.5.a
+	}
+}
+country_event = {
+	id = Palestine.6
+	title = Palestine.6.t
+	desc = Palestine.6.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.6.a
+	}
+}
+country_event = {
+	id = Palestine.7
+	title = Palestine.7.t
+	desc = Palestine.7.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.7.a
+	}
+}
+country_event = {
+	id = Palestine.8
+	title = Palestine.8.t
+	desc = Palestine.8.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.8.a
+		custom_effect_tooltip = PLS_Republican_Defence_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Republican_Defence_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.9
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.8.b
+		custom_effect_tooltip = PLS_Revolutionary_Armed_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Revolutionary_Armed_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.9
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.9
+	title = Palestine.9.t
+	desc = Palestine.9.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.9.a
+		custom_effect_tooltip = PLS_All_Palestinian_Government_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_All_Palestinian_Government_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.10
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.9.b
+		custom_effect_tooltip = PLS_Republican_Defence_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Republican_Defence_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.10
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.10
+	title = Palestine.10.t
+	desc = Palestine.10.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.10.a
+		custom_effect_tooltip = PLS_Revolutionary_Armed_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Revolutionary_Armed_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.11
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.10.b
+		custom_effect_tooltip = PLS_All_Palestinian_Government_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_All_Palestinian_Government_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.11
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.11
+	title = Palestine.11.t
+	desc = Palestine.11.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.11.a
+		custom_effect_tooltip = PLS_Revolutionary_Armed_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Revolutionary_Armed_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.12
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.11.b
+		custom_effect_tooltip = PLS_All_Palestinian_Government_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_All_Palestinian_Government_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.12
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.11.c
+		custom_effect_tooltip = PLS_Republican_Defence_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Republican_Defence_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.12
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.12
+	title = Palestine.12.t
+	desc = Palestine.12.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.12.a
+		custom_effect_tooltip = PLS_All_Palestinian_Government_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_All_Palestinian_Government_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.13
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.12.b
+		custom_effect_tooltip = PLS_Republican_Defence_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Republican_Defence_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.13
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.13
+	title = Palestine.13.t
+	desc = Palestine.13.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.13.a
+		custom_effect_tooltip = PLS_Republican_Defence_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Republican_Defence_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.14
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.13.b
+		custom_effect_tooltip = PLS_Revolutionary_Armed_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Revolutionary_Armed_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.14
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.14
+	title = Palestine.14.t
+	desc = Palestine.14.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.14.a
+		custom_effect_tooltip = PLS_All_Palestinian_Government_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_All_Palestinian_Government_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.15
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.14.b
+		custom_effect_tooltip = PLS_Revolutionary_Armed_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Revolutionary_Armed_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.15
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.14.c
+		custom_effect_tooltip = PLS_Republican_Defence_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Republican_Defence_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.15
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.15
+	title = Palestine.15.t
+	desc = Palestine.15.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.15.a
+		custom_effect_tooltip = PLS_All_Palestinian_Government_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_All_Palestinian_Government_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.16
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.15.b
+		custom_effect_tooltip = PLS_Revolutionary_Armed_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Revolutionary_Armed_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.16
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.16
+	title = Palestine.16.t
+	desc = Palestine.16.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.16.a
+		custom_effect_tooltip = PLS_Republican_Defence_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Republican_Defence_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.17
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.16.b
+		custom_effect_tooltip = PLS_All_Palestinian_Government_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_All_Palestinian_Government_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.17
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.17
+	title = Palestine.17.t
+	desc = Palestine.17.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.17.a
+		custom_effect_tooltip = PLS_Revolutionary_Armed_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Revolutionary_Armed_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.18
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.17.b
+		custom_effect_tooltip = PLS_All_Palestinian_Government_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_All_Palestinian_Government_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.18
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.17.c
+		custom_effect_tooltip = PLS_Republican_Defence_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Republican_Defence_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.18
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.18
+	title = Palestine.18.t
+	desc = Palestine.18.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.18.a
+		if = {
+			limit = {
+				AND = {
+					check_variable = { PLS.PLS_All_Palestinian_Government_unrest = 4 }
+					check_variable = { PLS.PLS_Republican_Defence_Forces_unrest = 3 }
+					check_variable = { PLS.PLS_Revolutionary_Armed_Forces_unrest = 3 }
+				}
+			}
+			country_event = Palestine.41
+		}
+		if = {
+			limit = {
+				AND = {
+					check_variable = { PLS.PLS_All_Palestinian_Government_unrest > PLS_Republican_Defence_Forces_unrest }
+					check_variable = { PLS.PLS_All_Palestinian_Government_unrest > PLS_Revolutionary_Armed_Forces_unrest }
+					check_variable = { PLS.PLS_Republican_Defence_Forces_unrest < 3 }
+					check_variable = { PLS.PLS_Revolutionary_Armed_Forces_unrest < 3 }
+				}
+			}
+			complete_national_focus = PLS_Between_Arabia_and_Islam
+			add_popularity = { ideology = national_populist popularity = 0.45 }
+		}
+		if = {
+			limit = {
+				AND = {
+					check_variable = { PLS.PLS_All_Palestinian_Government_unrest = PLS_Republican_Defence_Forces_unrest }
+					check_variable = { PLS.PLS_All_Palestinian_Government_unrest > PLS_Revolutionary_Armed_Forces_unrest }
+				}
+			}
+			complete_national_focus = PLS_Between_Arabia_and_Islam
+			add_popularity = { ideology = national_populist popularity = 0.45 }
+		}
+		if = {
+			limit = {
+				AND = {
+					check_variable = { PLS.PLS_All_Palestinian_Government_unrest = PLS_Revolutionary_Armed_Forces_unrest }
+					check_variable = { PLS.PLS_All_Palestinian_Government_unrest > PLS_Republican_Defence_Forces_unrest }
+				}
+			}
+			complete_national_focus = PLS_Between_Arabia_and_Islam
+			add_popularity = { ideology = national_populist popularity = 0.45 }
+		}
+		if = {
+			limit = {
+				AND = {
+					check_variable = { PLS.PLS_Republican_Defence_Forces_unrest > PLS_All_Palestinian_Government_unrest }
+					check_variable = { PLS.PLS_Republican_Defence_Forces_unrest > PLS_Revolutionary_Armed_Forces_unrest }
+					check_variable = { PLS.PLS_All_Palestinian_Government_unrest < 3 }
+					check_variable = { PLS.PLS_Revolutionary_Armed_Forces_unrest < 3 }
+				}
+			}
+			set_politics = {
+				ruling_party = social_liberal
+				elections_allowed = no
+			}
+			set_party_name = {
+				ideology = social_conservative
+				name = PLS_market_liberal_party1
+				long_name = PLS_market_liberal_party1_long
+			}
+			country_event = {
+				id = Palestine.38
+				days = 1
+			}
+			complete_national_focus = PLS_Preparing_for_the_general_election
+		}
+		if = {
+			limit = {
+				AND = {
+					check_variable = { PLS.PLS_Revolutionary_Armed_Forces_unrest > PLS_All_Palestinian_Government_unrest }
+					check_variable = { PLS.PLS_Revolutionary_Armed_Forces_unrest > PLS_Republican_Defence_Forces_unrest }
+					check_variable = { PLS.PLS_All_Palestinian_Government_unrest < 3 }
+					check_variable = { PLS.PLS_Republican_Defence_Forces_unrest < 3 }
+				}
+			}
+			complete_national_focus = PLS_The_guidance_of_socialism
+			set_politics = {
+				ruling_party = radical_socialist
+				elections_allowed = no
+			}
+			country_event = {
+				id = Palestine.39
+				days = 1
+			}
+			complete_national_focus = PLS_The_guidance_of_socialism
+		}
+		if = {
+			limit = {
+				AND = {
+					check_variable = { PLS.PLS_Revolutionary_Armed_Forces_unrest > PLS_All_Palestinian_Government_unrest }
+					check_variable = { PLS.PLS_Revolutionary_Armed_Forces_unrest = PLS_Republican_Defence_Forces_unrest }
+				}
+			}
+			country_event = Palestine.37
+		}
+	}
+}
+country_event = {
+	id = Palestine.19
+	title = Palestine.19.t
+	desc = Palestine.19.d
+	picture = GFX_bilibilishenren
+	
+	trigger = {
+		tag = PLS
+		controls_state = 202
+		has_government = national_populist
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.19.a
+		every_owned_state = {
+			limit = {
+				is_core_of = UKR
+			}
+			transfer_state_to = WSU
+		}
+		every_owned_state = {
+			limit = {
+				is_core_of = WSU
+			}
+			transfer_state_to = WSU
+		}
+		every_state = {
+			limit = {
+				is_core_of = UKR
+			}
+			add_core_of = WSU
+		}
+		every_state = {
+			limit = {
+				is_core_of = WSU
+			}
+			add_core_of = WSU
+		}
+		set_autonomy = {
+			target = WSU
+			autonomy_state = kr_autonomous_puppet
+		}
+		WSU = {
+			set_cosmetic_tag = WSU_Islam
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+				name = PLS_national_populist_party6
+				long_name = PLS_national_populist_party6_long
+			}
+			add_popularity = { ideology = national_populist popularity = 1 }
+			create_country_leader = {
+				name = "圣战者班德拉"
+				picture = "gfx/leaders/PLS/Portrait_PLS_Mujahid_Fadil_Bandera.png"
+				expire = "1.1.1"
+				ideology = natpop_islamism_subtype
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.20
+	title = Palestine.20.t
+	desc = Palestine.20.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.20.a
+	}
+}
+country_event = {
+	id = Palestine.21
+	title = Palestine.21.t
+	desc = Palestine.21.d
+	picture = GFX_Croatian_Muslims
+	
+	trigger = {
+		tag = PLS
+		controls_state = 109
+		has_government = national_populist
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.21.a
+		
+	}
+}
+country_event = {
+	id = Palestine.22
+	title = Palestine.22.t
+	desc = Palestine.22.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.22.a
+	}
+}
+country_event = {
+	id = Palestine.23
+	title = Palestine.23.t
+	desc = Palestine.23.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.23.a
+	}
+}
+country_event = {
+	id = Palestine.24
+	title = Palestine.24.t
+	desc = Palestine.24.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.24.a
+		trigger = {
+			NOT = {
+				has_government = totalist
+			}
+		}
+	}
+	option = {
+		name = Palestine.24.b
+		trigger = {
+			has_government = totalist
+		}
+	}
+}
+country_event = {
+	id = Palestine.25
+	title = Palestine.25.t
+	desc = Palestine.25.d
+	picture = GFX_Aliyah_Movement
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.25.a
+	}
+}
+country_event = {
+	id = Palestine.26
+	title = Palestine.26.t
+	desc = Palestine.26.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.26.a
+	}
+}
+country_event = {
+	id = Palestine.27
+	title = Palestine.27.t
+	desc = Palestine.27.d
+	picture = GFX_The_Palestinian_crisis
+	
+	trigger = {
+		tag = PLS
+		has_government = national_populist
+		controls_state = 10
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.27.a
+		country_event = {
+			id = Palestine.26
+			days = 2
+		}
+	}
+}
+country_event = {
+	id = Palestine.28
+	title = Palestine.28.t
+	desc = Palestine.28.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.28.a
+	}
+}
+country_event = {
+	id = Palestine.29
+	title = Palestine.29.t
+	desc = Palestine.29.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.29.a
+	}
+}
+country_event = {
+	id = Palestine.30
+	title = Palestine.30.t
+	desc = Palestine.30.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.30.a
+	}
+}
+country_event = {
+	id = Palestine.31
+	title = Palestine.31.t
+	desc = Palestine.31.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.31.a
+	}
+}
+country_event = {
+	id = Palestine.32
+	title = Palestine.32.t
+	desc = Palestine.32.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.32.a
+	}
+	option = {
+		name = Palestine.32.b
+		add_to_variable = {
+			var = PLS_Islamic_socialism_var
+			value = 1
+		}
+	}
+}
+country_event = {
+	id = Palestine.33
+	title = Palestine.33.t
+	desc = Palestine.33.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.33.a
+	}
+}
+country_event = {
+	id = Palestine.34
+	title = Palestine.34.t
+	desc = Palestine.34.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.34.a
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+			name = PLS_radical_socialist_party2
+			long_name = PLS_radical_socialist_party2_long
+		}
+		create_country_leader = {
+			name = "雅克·萨杜尔"
+			picture = "gfx/leaders/PLS/Portrait_FRA_Jacques_Sadoul.png"
+			expire = "1.1.1"
+			ideology = radsoc_colonial_govt_subtype
+		}
+		create_corps_commander = {
+			name = "亨利·唐吉"
+			portrait_path = "gfx/leaders/PLS/Portrait_FRA_Henri_Tanguy.png"
+			traits = {
+				infantry_officer
+				organizer
+				urban_assault_specialist
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		create_corps_commander = {
+			name = "雅克·萨杜尔"
+			portrait_path = "gfx/leaders/PLS/Portrait_FRA_Jacques_Sadoul.png"
+			traits = {
+				trickster
+				politically_connected
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		create_corps_commander = {
+			name = "路易斯·比松"
+			portrait_path = "gfx/leaders/PLS/Portrait_FRA_Louis_Buisson.png"
+			traits = {
+				organizer
+				panzer_leader
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		add_popularity = { ideology = radical_socialist popularity = 0.8 }
+		set_country_flag = PLS_The_3I_Mission_seized_power_Flag
+		set_cosmetic_tag = PLS_third_international
+	}
+}
+country_event = {
+	id = Palestine.35
+	title = Palestine.35.t
+	desc = Palestine.35.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.35.a
+	}
+}
+country_event = {
+	id = Palestine.36
+	title = Palestine.36.t
+	desc = Palestine.36.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.36.a
+	}
+	option = {
+		name = Palestine.36.b
+		add_to_variable = {
+			var = PLS_Islamic_socialism_var
+			value = 1
+		}
+		create_country_leader = {
+			name = "穆罕默德·纳贾蒂·西奇"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Muhammad_Najati_Sidqi.png"
+			expire = "1.1.1"
+			ideology = syn_islamic_socialism_subtype
+		}
+	}
+}
+country_event = {
+	id = Palestine.37
+	title = Palestine.37.t
+	desc = Palestine.37.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.37.a
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = no
+			name = PLS_social_conservative_party2
+			long_name = PLS_social_conservative_party2_long
+		}
+		set_party_name = {
+			ideology = paternal_autocrat
+			name = PLS_paternal_autocrat_party2
+			long_name = PLS_paternal_autocrat_party2_long
+		}
+		create_country_leader = {
+			name = "费萨尔一世"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Faisal_I_king.png"
+			expire = "1.1.1"
+			ideology = soccon_prussian_constitutionalism_subtype
+		}
+		create_country_leader = {
+			name = "费萨尔一世"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Faisal_I_king.png"
+			expire = "1.1.1"
+			ideology = absolute_monarchy_subtype
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = PLS_Abdullah_I_bin_Al_Hussein_hog_sco
+		remove_ideas_with_trait = economy_minister
+		add_ideas = PLS_Institute_of_Islamic_Studies_eco_sco
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = PLS_Jamal_al_Husayni_for_npo
+		remove_ideas_with_trait = security_minister
+		add_ideas = PLS_Amin_housaini_sec_npo
+		complete_national_focus = PLS_Unexpected_contenders
+		add_popularity = { ideology = social_conservative popularity = 0.25 }
+		add_popularity = { ideology = paternal_autocrat popularity = 0.2 }
+		set_cosmetic_tag = PLS_Kingdom
+	}
+}
+country_event = {
+	id = Palestine.38
+	title = Palestine.38.t
+	desc = Palestine.38.d
+	picture = GFX_Otto_Skorzney
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.38.a
+		random_unit_leader = {
+			limit = { has_id = 110473 }			
+			remove_unit_leader = yes
+		}
+	}
+}
+country_event = {
+	id = Palestine.39
+	title = Palestine.39.t
+	desc = Palestine.39.d
+	picture = GFX_Otto_Skorzney
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.39.a
+		random_unit_leader = {
+			limit = { has_id = 110473 }			
+			remove_unit_leader = yes
+		}
+	}
+}
+country_event = {
+	id = Palestine.40
+	title = Palestine.40.t
+	desc = Palestine.40.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.40.a
+		add_manpower = 50000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 15000
+			producer = PLS
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 2000
+			producer = PLS
+		}
+	}
+}
+country_event = {
+	id = Palestine.41
+	title = Palestine.41.t
+	desc = Palestine.41.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.41.a
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+			name = PLS_totalist_party1
+			long_name = PLS_totalist_party1_long
+		}
+		set_party_name = {
+			ideology = paternal_autocrat
+			name = PLS_totalist_party1
+			long_name = PLS_totalist_party1_long
+		}
+		create_country_leader = {
+			name = "哈桑·萨拉马"
+			picture = "gfx/leaders/PLS/Portrait_PAL_Hasan_Salama.png"
+			expire = "1.1.1"
+			ideology = pataut_savinkovism_subtype
+		}
+		complete_national_focus = PLS_Coup_by_Officers
+		set_cosmetic_tag = PLS_officer
+	}
+}
+country_event = {
+	id = Palestine.42
+	title = Palestine.42.t
+	desc = Palestine.42.d
+	
+	trigger = {
+		tag = PLS
+		check_variable = { PLS_young_officer_revolutionaries > 3 }
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.42.a
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+		}
+		add_popularity = { ideology = totalist popularity = 0.45 }
+		set_country_flag = PLS_National_Revolution_Flag
+	}
+}
+country_event = {
+	id = Palestine.43
+	title = Palestine.43.t
+	desc = Palestine.43.d
+	
+	trigger = {
+		tag = PLS
+		check_variable = { PLS_young_officer_conservatives > 3 }
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.43.a
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+		add_popularity = { ideology = paternal_autocrat popularity = 0.45 }
+		set_country_flag = PLS_Legionnaire_State_Flag
+	}
+}
+country_event = {
+	id = Palestine.44
+	title = Palestine.44.t
+	desc = Palestine.44.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.44.a
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+			name = PLS_national_populist_party2
+			long_name = PLS_national_populist_party2_long
+		}
+		create_country_leader = {
+			name = "阿明·侯赛尼"
+			picture = "gfx/leaders/PLS/Portrait_PAL_The_Mufti.png"
+			expire = "1.1.1"
+			ideology = islamic_legionism_subtype
+		}
+		set_country_flag = Arab_nationalism_win
+		set_cosmetic_tag = PLS_Arab_nationalism
+	}
+}
+country_event = {
+	id = Palestine.45
+	title = Palestine.45.t
+	desc = Palestine.45.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.45.a
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+			name = PLS_national_populist_party3
+			long_name = PLS_national_populist_party3_long
+		}
+		create_country_leader = {
+			name = "哈桑·班纳"
+			picture = "gfx/leaders/PLS/Portrait_Egypt_Hassan_al_Banna.png"
+			expire = "1.1.1"
+			ideology = natpop_islamism_subtype
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = PLS_Amin_housaini_hog_npo
+		remove_ideas_with_trait = economy_minister
+		add_ideas = PLS_Hassan_al_Banna_eco_npo
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = PLS_Jamal_al_Husayni_for_npo
+		remove_ideas_with_trait = security_minister
+		add_ideas = PLS_Sayyid_Qutb_sec_npo
+		set_country_flag = Arab_Islamism_win
+		set_cosmetic_tag = PLS_Ihwan
+	}
+}
+country_event = {
+	id = Palestine.46
+	title = Palestine.46.t
+	desc = Palestine.46.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.46.a
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.45 }
+		remove_ideas_with_trait = head_of_government
+		add_ideas = PLS_Rafiq_al_Tamimi_hog_ade
+		remove_ideas_with_trait = economy_minister
+		add_ideas = PLS_Ministry_of_Economy_eco
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = PLS_Ministry_of_Foreign_for
+		remove_ideas_with_trait = security_minister
+		add_ideas = PLS_Ministry_of_Interior_sec
+	}
+	option = {
+		name = Palestine.46.b
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = no
+		}
+		add_popularity = { ideology = market_liberal popularity = 0.45 }
+		remove_ideas_with_trait = head_of_government
+		add_ideas = PLS_Fahmi_al_Abboushi_hog_sco
+		remove_ideas_with_trait = economy_minister
+		add_ideas = PLS_Ministry_of_Economy_eco
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = PLS_Ministry_of_Foreign_for
+		remove_ideas_with_trait = security_minister
+		add_ideas = PLS_Ministry_of_Interior_sec
+	}
+	option = {
+		name = Palestine.46.c
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+		}
+		add_popularity = { ideology = social_democrat popularity = 0.45 }
+		remove_ideas_with_trait = head_of_government
+		add_ideas = PLS_Hussein_Khalidi_hog_sli
+		remove_ideas_with_trait = economy_minister
+		add_ideas = PLS_Ministry_of_Economy_eco
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = PLS_Ministry_of_Foreign_for
+		remove_ideas_with_trait = security_minister
+		add_ideas = PLS_Ministry_of_Interior_sec
+	}
+}
+country_event = {
+	id = Palestine.47
+	title = Palestine.47.t
+	desc = Palestine.47.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.47.a
+	}
+}
+country_event = {
+	id = Palestine.48
+	title = Palestine.48.t
+	desc = Palestine.48.d
+	
+	trigger = {
+		tag = PLS
+		has_government = national_populist
+		controls_state = 291
+		controls_state = 812
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.48.a
+	}
+}
+country_event = {
+	id = Palestine.49
+	title = Palestine.49.t
+	desc = Palestine.49.d
+	
+	trigger = {
+		tag = PLS
+		has_government = national_populist
+		controls_state = 1195
+		controls_state = 1194
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.49.a
+	}
+}
+country_event = {
+	id = Palestine.50
+	title = Palestine.50.t
+	desc = Palestine.50.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.50.a
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = no
+		}
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = PLS_Muin_al_Madi_for_sli
+		set_country_flag = PLS_The_constitutionalists_were_at_the_helm_Flag
+		add_popularity = { ideology = social_conservative popularity = 0.45 }
+	}
+}
+country_event = {
+	id = Palestine.51
+	title = Palestine.51.t
+	desc = Palestine.51.d
+	picture = GFX_The_Palestinian_crisis
+	
+	trigger = {
+		tag = PLS
+		NOT = { country_exists = ISR }
+		controls_state = 454
+		controls_state = 992
+		is_subject = no
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.51.a
+		complete_national_focus = PLS_Palestine_was_given_a_respite
+		hidden_effect = {
+			remove_ideas = PLS_An_existential_battle_idea
+			remove_ideas = PLS_An_existential_battle_idea1
+			remove_ideas = PLS_blag_flag_idea
+			remove_ideas = PLS_blag_flag_idea1
+			remove_ideas = PLS_blag_flag_idea2
+			remove_ideas = PLS_blag_flag_idea3
+			remove_ideas = PLS_arab_flag_idea
+			remove_ideas = PLS_red_flag_idea
+			remove_ideas = PLS_red_flag_idea1
+			remove_ideas = PLS_red_flag_idea2
+			remove_ideas = PLS_red_flag_idea3
+		}
+	}
+}
+country_event = {
+	id = Palestine.52
+	title = Palestine.52.t
+	desc = Palestine.52.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.52.a
+		add_to_variable = {
+			var = ABG_nationalism
+			value = 1
+		}
+		add_ideas = PLS_Pan_Arabism_idea
+	}
+	option = {
+		name = Palestine.52.b
+		add_to_variable = {
+			var = ABG_Islamism
+			value = 1
+		}
+		add_ideas = PLS_Islamism_idea
+	}
+}
+country_event = {
+	id = Palestine.53
+	title = Palestine.53.t
+	desc = Palestine.53.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.53.a
+		add_to_variable = {
+			var = ABG_nationalism
+			value = 1
+		}
+		add_ideas = PLS_Western_style_system_idea
+	}
+	option = {
+		name = Palestine.53.b
+		add_to_variable = {
+			var = ABG_Islamism
+			value = 1
+		}
+		add_ideas = PLS_Muslim_ummah_idea
+	}
+}
+country_event = {
+	id = Palestine.54
+	title = Palestine.54.t
+	desc = Palestine.54.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.54.a
+		add_to_variable = {
+			var = ABG_nationalism
+			value = 1
+		}
+		add_ideas = PLS_Nation_supremacy_idea
+	}
+	option = {
+		name = Palestine.54.b
+		add_to_variable = {
+			var = ABG_Islamism
+			value = 1
+		}
+		add_ideas = PLS_Islamic_principles_idea
+	}
+}
+country_event = {
+	id = Palestine.55
+	title = Palestine.55.t
+	desc = Palestine.55.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.55.a
+	}
+}
+country_event = {
+	id = Palestine.56
+	title = Palestine.56.t
+	desc = Palestine.56.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.56.a
+	}
+}
+country_event = {
+	id = Palestine.57
+	title = Palestine.57.t
+	desc = Palestine.57.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.57.a
+		set_politics = {
+			ruling_party = syndicalist
+			elections_allowed = no
+			name = PLS_syndicalist_party1
+			long_name = PLS_syndicalist_party1_long
+		}
+		create_country_leader = {
+			name = "穆罕默德·纳贾蒂·西奇"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Muhammad_Najati_Sidqi.png"
+			expire = "1.1.1"
+			ideology = syndicalist_subtype
+		}
+	}
+}
+country_event = {
+	id = Palestine.58
+	title = Palestine.58.t
+	desc = Palestine.58.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.58.a
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+		}
+		add_popularity = { ideology = social_democrat popularity = 0.45 }
+		if = {
+			limit = {
+				has_country_flag = PLS_Fifth_Caliphate_Flag
+			}
+			add_country_leader_trait = PLS_Fifth_Caliphate
+		}
+	}
+	option = {
+		name = Palestine.58.b
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = no
+		}
+		add_popularity = { ideology = social_liberal popularity = 0.45 }
+		if = {
+			limit = {
+				has_country_flag = PLS_Fifth_Caliphate_Flag
+			}
+			add_country_leader_trait = PLS_Fifth_Caliphate
+		}
+	}
+	option = {
+		name = Palestine.58.c
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = no
+		}
+		add_popularity = { ideology = market_liberal popularity = 0.45 }
+		if = {
+			limit = {
+				has_country_flag = PLS_Fifth_Caliphate_Flag
+			}
+			add_country_leader_trait = PLS_Fifth_Caliphate
+		}
+	}
+	option = {
+		name = Palestine.58.e
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = no
+		}
+		add_popularity = { ideology = social_conservative popularity = 0.45 }
+		if = {
+			limit = {
+				has_country_flag = PLS_Fifth_Caliphate_Flag
+			}
+			add_country_leader_trait = PLS_Fifth_Caliphate
+		}
+	}
+}
+country_event = {
+	id = Palestine.59
+	title = Palestine.59.t
+	desc = Palestine.59.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.59.a
+		add_research_slot = 1
+	}
+}
+country_event = {
+	id = Palestine.60
+	title = Palestine.60.t
+	desc = Palestine.60.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Palestine.60.a
+		if = {
+			limit = {
+				PLS = { is_ai = yes }
+			}
+			ai_chance = {
+				factor = 0
+			}
+		}
+		if = {
+			limit = {
+				PLS = { is_ai = no }
+			}
+			ai_chance = {
+				factor = 100
+			}
+		}
+		if = {
+			limit = {
+				tag = HEJ
+			}
+			PLS = {
+				annex_country = { target = HEJ transfer_troops = yes }
+			}
+		}
+		if = {
+			limit = {
+				tag = SYR
+			}
+			PLS = {
+				annex_country = { target = SYR transfer_troops = yes }
+			}
+		}
+		if = {
+			limit = {
+				tag = IRQ
+			}
+			PLS = {
+				annex_country = { target = IRQ transfer_troops = yes }
+			}
+		}
+	}
+	option = {
+		name = Palestine.60.b
+		if = {
+			limit = {
+				PLS = { is_ai = yes }
+			}
+			ai_chance = {
+				factor = 100
+			}
+		}
+		if = {
+			limit = {
+				PLS = { is_ai = no }
+			}
+			ai_chance = {
+				factor = 0
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.61
+	title = Palestine.61.t
+	desc = Palestine.61.d
+	
+	trigger = {
+		tag = Palestine
+		has_completed_focus = PLS_Unexpected_contenders
+		controls_state = 754
+		controls_state = 679
+		controls_state = 915
+		controls_state = 292
+		controls_state = 291
+		controls_state = 554
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.61.a
+		add_country_leader_trait = PLS_Fifth_Caliphate
+		set_cosmetic_tag = PLS_Hashimiyya
+		set_country_flag = PLS_Fifth_Caliphate_Flag
+	}
+}
+country_event = {
+	id = Palestine.62
+	title = Palestine.62.t
+	desc = Palestine.62.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.62.a
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+			name = PLS_national_populist_party2
+			long_name = PLS_national_populist_party2_long
+		}
+		create_country_leader = {
+			name = "阿明·侯赛尼"
+			picture = "gfx/leaders/PLS/Portrait_PAL_The_Mufti.png"
+			expire = "1.1.1"
+			ideology = islamic_legionism_subtype
+		}
+		add_popularity = { ideology = national_populist popularity = 0.45 }
+		complete_national_focus = PLS_Modern_jihad
+		set_cosmetic_tag = PLS_Arab_nationalism
+	}
+}
+country_event = {
+	id = Palestine.63
+	title = Palestine.63.t
+	desc = Palestine.63.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.63.a
+	}
+}
+country_event = {
+	id = Palestine.64
+	title = Palestine.64.t
+	desc = Palestine.64.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.64.a
+	}
+	option = {
+		name = Palestine.64.b
+		set_country_flag = PLS_Dagger_in_the_Dark_Flag
+	}
+}
+country_event = {
+	id = Palestine.65
+	title = Palestine.65.t
+	desc = Palestine.65.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.65.a
+	}
+}
+country_event = {
+	id = Palestine.66
+	title = Palestine.66.t
+	desc = Palestine.66.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.66.a
+		set_politics = {
+			ruling_party = syndicalist
+			elections_allowed = no
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = PLS_Fuad_Nassar_hog_syn
+		remove_ideas_with_trait = economy_minister
+		add_ideas = PLS_Ministry_of_Economy_eco
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = PLS_Ministry_of_Foreign_for
+		remove_ideas_with_trait = security_minister
+		add_ideas = PLS_Ministry_of_Interior_sec
+		add_popularity = { ideology = syndicalist popularity = 0.45 }
+		set_country_flag = PLS_syndicalist_Flag
+	}
+	option = {
+		name = Palestine.66.b
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = PLS_Musa_Alami_hog_rso
+		remove_ideas_with_trait = economy_minister
+		add_ideas = PLS_Ministry_of_Economy_eco
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = PLS_Ministry_of_Foreign_for
+		remove_ideas_with_trait = security_minister
+		add_ideas = PLS_Ministry_of_Interior_sec
+		add_popularity = { ideology = radical_socialist popularity = 0.45 }
+		set_country_flag = PLS_communlist_Flag
+	}
+}
+country_event = {
+	id = Palestine.67
+	title = Palestine.67.t
+	desc = Palestine.67.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.67.a
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+		set_country_flag = PLS_The_Hashemite_Dynasty_Resurges_Flag
+		add_popularity = { ideology = paternal_autocrat popularity = 0.45 }
+	}
+}
+country_event = {
+	id = Palestine.68
+	title = Palestine.68.t
+	desc = Palestine.68.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.68.a
+		set_country_flag = PLS_Sacrificial_myths_Flag
+		unlock_decision_tooltip = PLS_Necessary_evil
+		unlock_decision_tooltip = PLS_Necessary_evil1
+		unlock_decision_tooltip = PLS_Necessary_evil2
+		unlock_decision_tooltip = PLS_Necessary_evil3
+		unlock_decision_tooltip = PLS_Necessary_evil4
+		unlock_decision_tooltip = PLS_Necessary_evil5
+		unlock_decision_tooltip = PLS_Necessary_evil6
+	}
+	option = {
+		name = Palestine.68.b
+		send_embargo = GER
+		send_embargo = WHR
+		send_embargo = UKR
+		send_embargo = CAN
+		send_embargo = NFA
+		send_embargo = USA
+	}
+	option = {
+		name = Palestine.68.c
+		diplomatic_relation = {
+			country = ENG
+			relation = military_access
+			active = yes
+		}
+		diplomatic_relation = {
+			country = SRI
+			relation = military_access
+			active = yes
+		}
+		diplomatic_relation = {
+			country = FRA
+			relation = military_access
+			active = yes
+		}
+		diplomatic_relation = {
+			country = ENG
+			relation = non_aggression_pact
+			active = yes
+		}
+		diplomatic_relation = {
+			country = SRI
+			relation = non_aggression_pact
+			active = yes
+		}
+		diplomatic_relation = {
+			country = FRA
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+}
+country_event = {
+	id = Palestine.69
+	title = Palestine.69.t
+	desc = Palestine.69.d
+	
+	trigger = {
+		tag = PLS
+		has_government = national_populist
+		controls_state = 348
+		controls_state = 774
+		controls_state = 621
+		controls_state = 616
+		controls_state = 604
+		controls_state = 283
+		controls_state = 353
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.69.a
+	}
+}
+country_event = {
+	id = Palestine.70
+	title = Palestine.70.t
+	desc = Palestine.70.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.70.a
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+			name = PLS_national_populist_party3
+			long_name = PLS_national_populist_party3_long
+		}
+		add_popularity = { ideology = radical_socialist popularity = 0.7 }
+		create_country_leader = {
+			name = "赛义德·库布"
+			picture = "gfx/leaders/PLS/Portrait_Egypt_Sayyid_Qutb.png"
+			expire = "1.1.1"
+			ideology = islamic_socialism_subtype
+		}
+		set_temp_variable = { coalition_partner_var = token:national_populist }
+		add_to_coalition = yes 
+	}
+	option = {
+		name = Palestine.70.b
+	}
+}
+country_event = {
+	id = Palestine.71
+	title = Palestine.71.t
+	desc = Palestine.71.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.71.a
+		country_event = {
+			id = Palestine.50
+			days = 1
+		}
+	}
+	option = {
+		name = Palestine.71.b
+		country_event = {
+			id = Palestine.67
+			days = 1
+		}
+	}
+}
+country_event = {
+	id = Palestine.72
+	title = Palestine.72.t
+	desc = Palestine.72.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.72.a
+	}
+}
+country_event = {
+	id = Palestine.73
+	title = Palestine.73.t
+	desc = Palestine.73.d
+	
+	trigger = {
+		tag = PLS
+		has_completed_focus = PLS_Victory_in_Palestine
+		EGY = {
+			has_completed_focus = EGY_authdem_elected
+		}
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.73.a
+		ai_chance = {
+			factor = 100
+		}
+		every_state = {
+			limit = { is_core_of = PLS }
+			add_core_of = EGY
+		}
+		EGY = {
+			change_tag_from = PLS
+			annex_country = { target = PLS transfer_troops = yes }
+		}
+	}
+	option = {
+		name = Palestine.73.b
+		ai_chance = {
+			factor = 0
+		}
+		every_state = {
+			limit = { is_core_of = EGY }
+			add_core_of = PLS
+		}
+		annex_country = { target = EGY transfer_troops = yes }
+	}
+}
+country_event = {
+	id = Palestine.74
+	title = Palestine.74.t
+	desc = Palestine.74.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.74.a
+		ai_chance = {
+			factor = 100
+		}
+		every_state = {
+			limit = { is_core_of = PLS }
+			add_core_of = FRA
+		}
+		every_state = {
+			limit = { is_core_of = SYR }
+			add_core_of = FRA
+		}
+		every_state = {
+			limit = { is_core_of = IRQ }
+			add_core_of = FRA
+		}
+		every_state = {
+			limit = { is_core_of = HEJ }
+			add_core_of = FRA
+		}
+		994 = { add_core_of = FRA }
+		1035 = { add_core_of = FRA }
+		915 = { add_core_of = FRA }
+		553 = { add_core_of = FRA }
+		350 = { add_core_of = FRA }
+		352 = { add_core_of = FRA }
+		344 = { add_core_of = FRA }
+		753 = { add_core_of = FRA }
+		453 = { add_core_of = FRA }
+		if = {
+			limit = {
+				PLS = {
+					is_ai = no
+				}
+			}
+			FRA = {
+				change_tag_from = PLS
+			}
+		}
+		FRA = {
+			add_ideas = PLS_Socialist_economy_idea2
+			add_ideas = PAL_Syndicalism_principles_ideas3
+			add_ideas = PAL_Indigenous_syndicalism_ideas1
+			add_ideas = PAL_Shadow_government_ideas2
+			add_ideas = PAL_True_socialism_ideas3
+			annex_country = { target = PLS transfer_troops = yes }
+			add_research_slot = 1
+		}
+	}
+	option = {
+		name = Palestine.74.b
+		ai_chance = {
+			factor = 0
+		}
+		PLS = {
+			complete_national_focus = PLS_Wear_white_gloves
+		}
+	}
+}
+country_event = {
+	id = Palestine.75
+	title = Palestine.75.t
+	desc = Palestine.75.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Palestine.75.a
+		if = {
+			limit = {
+				PLS = { is_ai = yes }
+			}
+			ai_chance = {
+				factor = 0
+			}
+		}
+		if = {
+			limit = {
+				PLS = { is_ai = no }
+			}
+			ai_chance = {
+				factor = 100
+			}
+		}
+		if = {
+			limit = {
+				PLS = {
+					has_completed_focus = PLS_Creation_of_the_PTO
+				}
+			}
+			PLS = {
+				add_to_faction = ROOT
+			}
+		}
+		if = {
+			limit = {
+				PLS = {
+					has_completed_focus = PLS_Cooperation_with_Egypt
+				}
+			}
+			EGY = {
+				add_to_faction = ROOT
+			}
+		}
+	}
+	option = {
+		name = Palestine.75.b
+		if = {
+			limit = {
+				PLS = { is_ai = yes }
+			}
+			ai_chance = {
+				factor = 100
+			}
+		}
+		if = {
+			limit = {
+				PLS = { is_ai = no }
+			}
+			ai_chance = {
+				factor = 0
+			}
+		}
+	}
+}

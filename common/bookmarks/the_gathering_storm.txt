@@ -209,6 +209,19 @@ bookmarks = {
 			}
 		}
 
+		"KXX" = {
+			minor = yes
+			history = "KXX_KR_GATHERING_STORM_DESC"
+			ideology = authoritarian_democrat 
+			ideas = {
+				
+			}
+			focuses = {
+				
+			
+			}
+		}
+		
 		"LEB" = {
 			minor = yes
 			history = "LEB_KR_GATHERING_STORM_DESC"

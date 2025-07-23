@@ -8228,6 +8228,42 @@ text = {
 		}
 		localization_key = nacionalismo_subtype
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = tot_dystopian_subtype
+		}
+		localization_key = tot_dystopian_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_mao_zedong_thought_subtype
+		}
+		localization_key = radsoc_mao_zedong_thought_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = natpop_dystopian_subtype
+		}
+		localization_key = natpop_dystopian_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = islamic_legionism_subtype
+		}
+		localization_key = islamic_legionism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = tot_islamism_subtype
+		}
+		localization_key = tot_islamism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = arab_legionism_subtype
+		}
+		localization_key = arab_legionism_subtype
+	}
 	
 
 	#风雨欲来	
@@ -8610,4 +8646,10 @@ text = {
 		}
 		localization_key = fredaism_subtype  
 	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = controlled_democracy_subtype
+		}
+		localization_key = controlled_democracy_subtype
+	}
 }

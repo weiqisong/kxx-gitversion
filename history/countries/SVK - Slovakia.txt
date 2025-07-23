@@ -96,7 +96,7 @@ create_country_leader = {
 	name = "维利亚姆·希罗基"
 	picture = "gfx/leaders/SVK/SVK_Viliam_Siroky.png"
 	expire = "1965.1.1"
-	ideology = nazbol_subtype
+	ideology = national_bolshevik_subtype
 }
 
 ### Field Marshals ###

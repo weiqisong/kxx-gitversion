@@ -1,0 +1,525 @@
+add_namespace = revegy
+
+country_event = {
+	id = revegy.1
+	title = revegy.1.t
+	desc = revegy.1.d
+	picture = GFX_Egyptian_Revolution
+
+	is_triggered_only = yes
+
+	option = {
+		name = revegy.1.a
+		set_country_flag = Egyptian_Revolution_Flag
+		complete_national_focus = EGY_Egyptian_Revolution
+		create_country_leader = {
+			name = Revolutionary_Command_Center
+			picture = "gfx/leaders/EGY/Portrait_EGY_Revolutionary_Command_Center.png"
+			expire = "1.1.1"
+			ideology = red_tinted_autocracy_subtype
+		}
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+			name = EGY_military_party
+			long_name = EGY_military_party_long
+		}
+		remove_ideas = EGY_iqta
+		remove_ideas_with_trait = head_of_government
+		add_ideas = EGY_Abbas_Halim_hog_syn
+		remove_ideas_with_trait = economy_minister
+		add_ideas = EGY_Ismail_Sabri_Abdullah_eco_rso
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = EGY_Salah_Nasr_for_rso
+		remove_ideas_with_trait = security_minister
+		add_ideas = EGY_Kamal_el_Din_Hussein_sec_rso
+		clr_country_flag = LEADER_GUI_VISIBLE
+		set_cosmetic_tag = EGYR
+		create_country_leader = {
+			name = "穆罕默德·纳吉布"
+			picture = "gfx/leaders/EGY/Portrait_EGY_Mohammed_Naguib.png"
+			expire = "1.1.1"
+			ideology = socdem_pharaonism_subtype
+		}
+		create_country_leader = {
+			name = "穆罕默德·马哈茂德"
+			desc = "POLITICS_FUAD_I_DESC"
+			picture = "gfx/leaders/EGY/Portrait_Egypt_Mohamed_Mahmoud.png"
+			expire = "1.1.1"
+			ideology = national_liberalism_subtype
+		}
+		create_country_leader = {
+			name = "马克拉姆·奥贝德"
+			picture = "gfx/leaders/EGY/Portrait_Egypt_Makram_Ebeid.png"
+			expire = "1.1.1"
+			ideology = marlib_national_liberalism_subtype
+		}
+		create_country_leader = {
+			name = "艾哈迈德·纳吉布"
+			picture = "gfx/leaders/EGY/Portrait_Egypt_Ahmed_Naguib_el_Hilaly.png"
+			expire = "1.1.1"
+			ideology = soccon_islamism_subtype
+		}
+		create_country_leader = {
+			name = "哈桑·班纳"
+			picture = "gfx/leaders/EGY/Portrait_Egypt_Hassan_al_Banna.png"
+			expire = "1.1.1"
+			ideology = islamism_subtype
+		}
+	}
+	option = {
+		name = revegy.1.b
+		add_manpower = -1563
+		add_stability = 0.03
+	}
+}
+country_event = {
+	id = revegy.2
+	title = revegy.2.t
+	desc = revegy.2.d
+	picture = GFX_Egyptian_Revolution
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = revegy.7
+				days = 25
+			}
+		}
+	}
+
+	option = {
+		name = revegy.2.a
+		add_ideas = EGY_Correctional_camps_idea
+	}
+	option = {
+		name = revegy.2.b
+		add_ideas = EGY_death_penalty_idea
+	}
+}
+country_event = {
+	id = revegy.3
+	title = revegy.3.t
+	desc = revegy.3.d
+	picture = GFX_revolutionary_elections
+
+	is_triggered_only = yes
+
+	option = {
+		name = revegy.3.a
+		country_event = revegy.4
+	}
+	option = {
+		name = revegy.3.b
+		country_event = revegy.5
+	}
+	option = {
+		name = revegy.3.c
+		country_event = revegy.6
+	}
+}
+country_event = {
+	id = revegy.4
+	title = revegy.4.t
+	desc = revegy.4.d
+	picture = GFX_Youth_Egypt
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_cosmetic_tag = EGY_Islamic
+		}
+	}
+
+	option = {
+		name = revegy.4.a
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.65
+		}
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+		}
+		complete_national_focus = EGY_Islamic_Labor_Party
+		remove_ideas_with_trait = head_of_government
+		add_ideas = EGY_Ibrahim_Shoukry_hog_tot
+		remove_ideas_with_trait = economy_minister
+		add_ideas = EGY_Ali_Sabri_eco_tot
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = EGY_Adel_Hussein_for_tot
+		remove_ideas_with_trait = security_minister
+		add_ideas = EGY_Mustafa_Kamel_Murad_sec_tot
+	}
+	option = {
+		name = revegy.4.b
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.65
+		}
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+			name = EGY_socialist_youth_egypt_party
+			long_name = EGY_socialist_youth_egypt_party_long
+		}
+		create_country_leader = {
+			name = "艾哈迈德·侯赛因"
+			picture = "gfx/leaders/EGY/Portrait_EGY_Ahmed_Hussein.png"
+			expire = "1.1.1"
+			ideology = islamic_socialism_subtype
+		}
+		complete_national_focus = EGY_The_rise_of_Islam_in_society
+		remove_ideas_with_trait = head_of_government
+		add_ideas = EGY_Ahmed_Hussein_hog_npo
+		remove_ideas_with_trait = economy_minister
+		add_ideas = EGY_Ali_Sabri_eco_tot
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = EGY_Fathi_Radwan_for_npo
+		remove_ideas_with_trait = security_minister
+		add_ideas = EGY_Mustafa_Kamel_Murad_sec_tot
+	}
+	option = {
+		name = revegy.4.c
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.65
+		}
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		complete_national_focus = EGY_National_Islamic_Party
+		remove_ideas_with_trait = head_of_government
+		add_ideas = EGY_Ahmed_Hussein_hog_npo
+		remove_ideas_with_trait = economy_minister
+		add_ideas = EGY_Hussein_El_Shafei_eco_npo
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = EGY_Fathi_Radwan_for_npo
+		remove_ideas_with_trait = security_minister
+		add_ideas = EGY_Dear_Ali_Al_Masry_sec_npo
+	}
+}
+country_event = {
+	id = revegy.5
+	title = revegy.5.t
+	desc = revegy.5.d
+	picture = GFX_Free_officer
+	
+	immediate = {
+		hidden_effect = {
+			set_party_name = {
+				ideology = syndicalist
+				name = EGY_free_officer_syndicalist_party
+				long_name = EGY_free_officer_syndicalist_party_long
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = EGY_free_officer_paternal_autocrat_party
+				long_name = EGY_free_officer_paternal_autocrat_party_long
+			}
+			set_cosmetic_tag = EGY_Arab
+			create_country_leader = {
+				name = "哈立德·莫希丁"
+				picture = "gfx/leaders/EGY/Portrait_EGY_Khaled_Mohieddin.png"
+				expire = "1.1.1"
+				ideology = arab_socialism
+			}
+			create_country_leader = {
+				name = "穆罕默德·安瓦尔·萨达特"
+				picture = "gfx/leaders/EGY/Portrait_EGY_Muhammad_Anwar_Sadat.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = revegy.5.a
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.65
+		}
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+		complete_national_focus = EGY_Revolutionary_Military_Council
+		remove_ideas_with_trait = head_of_government
+		add_ideas = EGY_Anwar_Sadat_hog_pau
+		remove_ideas_with_trait = economy_minister
+		add_ideas = EGY_Hosni_Mubarak_eco_pau
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = EGY_Abdel_Latif_Boghdadi_for_pau
+		remove_ideas_with_trait = security_minister
+		add_ideas = EGY_Zakaria_Mohieddin_sec_pau
+	}
+	option = {
+		name = revegy.5.b
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.65
+		}
+		set_politics = {
+			ruling_party = syndicalist
+			elections_allowed = no
+		}
+		complete_national_focus = EGY_Pan_Arab_Revolution
+		remove_ideas_with_trait = head_of_government
+		add_ideas = EGY_Khaled_Mohieddin_hog_rso
+		remove_ideas_with_trait = economy_minister
+		add_ideas = EGY_Abdel_Hakim_Amer_eco_rso
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = EGY_Salah_Nasr_for_rso
+		remove_ideas_with_trait = security_minister
+		add_ideas = EGY_Kamal_el_Din_Hussein_sec_rso
+	}
+}
+country_event = {
+	id = revegy.6
+	title = revegy.6.t
+	desc = revegy.6.d
+	picture = GFX_Left_Alliance
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_party_name = {
+				ideology = radical_socialist
+				name = EGY_radical_socialist_party
+				long_name = EGY_radical_socialist_party_long
+			}
+			set_party_name = {
+				ideology = syndicalist
+				name = EGY_syndicalist_party
+				long_name = EGY_syndicalist_party_long
+			}
+			create_country_leader = {
+				name = "阿拔斯·哈利姆"
+				picture = "gfx/leaders/EGY/Portrait_EGY_Abbas_Halim.png"
+				expire = "1.1.1"
+				ideology = syn_left_nationalism_subtype
+			}
+			create_country_leader = {
+				name = "舒赫迪·阿提亚·沙菲"
+				picture = "gfx/leaders/EGY/Portrait_Egypt_Shuhdi_Atiya.png"
+				expire = "1.1.1"
+				ideology = radsoc_communism_subtype
+			}
+		}
+	}
+
+	option = {
+		name = revegy.6.a
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.65
+		}
+		complete_national_focus = EGY_Socialist_Party_of_Egypt
+		remove_ideas_with_trait = head_of_government
+		add_ideas = EGY_Shuhdi_Atiya_ash_Shafi_hog_rso
+		remove_ideas_with_trait = economy_minister
+		add_ideas = EGY_Ismail_Sabri_Abdullah_eco_rso
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = EGY_Hosni_al_Arabi_for_rso
+		remove_ideas_with_trait = security_minister
+		add_ideas = EGY_Henri_Curiel_sec_rso
+	}
+	option = {
+		name = revegy.6.b
+		set_politics = {
+			ruling_party = syndicalist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.65
+		}
+		complete_national_focus = EGY_General_Confederation_of_Labour
+		remove_ideas_with_trait = head_of_government
+		add_ideas = EGY_Abbas_Halim_hog_syn
+		remove_ideas_with_trait = economy_minister
+		add_ideas = EGY_Youssef_Siddiq_eco_syn
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = EGY_Youssef_Darwish_for_syn
+		remove_ideas_with_trait = security_minister
+		add_ideas = EGY_Zaki_Murad_sec_syn
+	}
+}
+country_event = {
+	id = revegy.7
+	title = revegy.7.t
+	desc = revegy.7.d
+	picture = GFX_suit_faruq
+
+	is_triggered_only = yes
+
+	option = {
+		name = revegy.7.a
+		add_stability = 0.01
+		add_manpower = -1
+	}
+}
+country_event = {
+	id = revegy.8
+	title = revegy.8.t
+	desc = revegy.8.d
+	picture = GFX_suit_faruq
+
+	is_triggered_only = yes
+
+	option = {
+		name = revegy.8.a
+	}
+	option = {
+		name = revegy.8.b
+		create_country_leader = {
+			name = "阿拔斯·哈利姆三世"
+			picture = "gfx/leaders/EGY/Portrait_EGY_Abbas_Halim.png"
+			expire = "1.1.1"
+			ideology = islamic_legionism_subtype
+		}
+		set_country_flag = KXX_LEADER_GUI_VISIBLE
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.15
+		}
+		set_temp_variable = { coalition_partner_var = token:syndicalist }
+		add_to_coalition = yes
+		set_cosmetic_tag = EGY_Kingdom
+	}
+}
+country_event = {
+	id = revegy.9
+	title = revegy.9.t
+	desc = revegy.9.d
+	picture = GFX_revolutionary_elections
+
+	is_triggered_only = yes
+
+	option = {
+		name = revegy.9.a
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.65
+		}
+		create_country_leader = {
+			name = "穆罕默德·安瓦尔·萨达特"
+			picture = "gfx/leaders/EGY/Portrait_EGY_Muhammad_Anwar_Sadat.png"
+			expire = "1.1.1"
+			ideology = pataut_authoritarian_liberalism_subtype
+		}
+	}
+	option = {
+		name = revegy.9.b
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.65
+		}
+		create_country_leader = {
+			name = "穆罕默德·安瓦尔·萨达特"
+			picture = "gfx/leaders/EGY/Portrait_EGY_Muhammad_Anwar_Sadat.png"
+			expire = "1.1.1"
+			ideology = pataut_authoritarian_liberalism_subtype
+		}
+	}
+	option = {
+		name = revegy.9.c
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.65
+		}
+		create_country_leader = {
+			name = "穆罕默德·安瓦尔·萨达特"
+			picture = "gfx/leaders/EGY/Portrait_EGY_Muhammad_Anwar_Sadat.png"
+			expire = "1.1.1"
+			ideology = pataut_authoritarian_liberalism_subtype
+		}
+	}
+}
+country_event = {
+	id = revegy.10
+	title = revegy.10.t
+	desc = revegy.10.d
+	picture = GFX_Egyptian_Revolution
+
+	is_triggered_only = yes
+
+	option = {
+		name = revegy.10.a
+	}
+}
+country_event = {
+	id = revegy.11
+	title = revegy.11.t
+	desc = revegy.11.d
+	picture = GFX_Egyptian_Revolution
+
+	trigger = {
+		tag = EGY
+		country_exists = PAL
+		date > 1938.10.1
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = revegy.11.a
+		PLS = {
+			country_event = revegy.12
+		}
+	}
+}
+country_event = {
+	id = revegy.12
+	title = revegy.12.t
+	desc = revegy.12.d
+	picture = GFX_Egyptian_Revolution
+
+	is_triggered_only = yes
+
+	option = {
+		name = revegy.12.a
+		ai_chance = {
+			factor = 100
+		}
+		EGY = {
+			add_to_faction = PLS
+		}
+		PLS = {
+			complete_national_focus = PLS_Cooperation_with_Egypt
+		}
+	}
+	option = {
+		name = revegy.12.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+country_event = {
+	id = revegy.13
+	title = revegy.13.t
+	desc = revegy.13.d
+	picture = GFX_Egyptian_Revolution
+
+	trigger = {
+		tag = EGY
+		country_exists = ISR
+		date > 1938.10.1
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = revegy.13.a
+		create_wargoal = { target = annex_everything type = ISR }
+	}
+}

@@ -2,6 +2,448 @@
 
 ideas = {
 	country = {
+			#kxx意大利
+
+		SRI_The_invincible_revolutionary = {
+			picture = SRI_divided_nation_idea
+			allowed = { always = no }
+			picture = industrial_army
+            modifier = {
+				monthly_population = 0.25
+				mobilization_speed = 0.25
+				experience_gain_army_factor = 0.1
+				recon_factor = 0.1
+				acclimatization_hot_climate_gain_factor = 0.15
+				acclimatization_cold_climate_gain_factor = 0.15
+				military_leader_cost_factor = -0.2
+			}
+		}
+
+		SRI_Fascists_control_everything = {
+			picture = SRI_divided_nation_idea
+			allowed = { always = no }
+			picture = NEE_good_fascism
+            modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.15
+				production_factory_max_efficiency_factor = 0.1
+				offensive_war_stability_factor = 0.2
+			}
+		}
+
+		SRI_Violence_worship = {
+			picture = SRI_divided_nation_idea
+			allowed = { always = no }
+			picture = generic_personality_cult
+            modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				initiative_factor = 0.05
+				experience_loss_factor = 0.05
+				supply_consumption_factor = 0.05
+			}
+		}
+
+		SRI_national_revolution = {
+			picture = SRI_divided_nation_idea
+			allowed = { always = no }
+			picture = HOL_totalist_military
+            modifier = {
+				production_speed_arms_factory_factor = 0.1
+				conscription = 0.05
+				max_dig_in_factor = 0.1
+				org_loss_at_low_org_factor = -0.1
+			}
+		}
+
+		SRI_The_whole_syndicalist_economy = {
+			picture = SRI_divided_nation_idea
+			allowed = { always = no }
+			picture = HUN_totalist_economics_idea
+            modifier = {
+				production_speed_buildings_factor = 0.1
+				local_building_slots_factor = 0.1
+				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				line_change_production_efficiency_factor = 0.1
+				local_resources_factor = 0.2
+			}
+		}
+
+		SRI_National_rejuvenation = {
+			picture = SRI_divided_nation_idea
+			allowed = { always = no }
+			picture = industrial_army
+            modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+
+
+		SRI_italy_war_SRI = {
+			picture = SRI_fash_army
+			available = {
+				original_tag = SRI
+				is_subject = no
+				or = {
+					country_exists = SIC
+				    country_exists = SRD
+				    country_exists = ITA
+					country_exists = PAP
+					country_exists = VNC
+					country_exists = LOM
+
+				}
+				
+			}
+			    modifier = {
+					ai_focus_aggressive_factor = 1
+				}		    
+				targeted_modifier = {
+					tag = SIC
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = SRD
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = ITA
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = PAP
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = VNC
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = LOM
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+
+		}
+
+		SRI_italy_war_ITA = {
+			picture = SRI_fash_army
+			available = {
+				original_tag = ITA
+				is_subject = no
+				or = {
+					country_exists = SIC
+				    country_exists = SRD
+					country_exists = PAP
+					country_exists = VNC
+					country_exists = SRI
+					country_exists = LOM
+
+				}
+				modifier = {
+					ai_focus_aggressive_factor = 1
+				}	
+			}
+			modifier = {
+				ai_focus_aggressive_factor = 1
+			}	
+				targeted_modifier = {
+					tag = SIC
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = SRI
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = SRD
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = PAP
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = VNC
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = LOM
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+		}
+
+		SRI_italy_war_SIC = {
+			picture = SRI_fash_army
+			available = {
+				original_tag = SIC
+				is_subject = no
+				or = {
+				    country_exists = SRD
+				    country_exists = ITA
+					country_exists = PAP
+					country_exists = VNC
+					country_exists = SRI
+					country_exists = LOM
+
+				}
+					
+			}
+			modifier = {
+					ai_focus_aggressive_factor = 1
+				}
+				targeted_modifier = {
+					tag = SRI
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = SRD
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = ITA
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = PAP
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = VNC
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = LOM
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+		}
+
+		SRI_italy_war_SRD = {
+			picture = SRI_fash_army
+			available = {
+				original_tag = SRD
+				is_subject = no
+				or = {
+					country_exists = SIC
+				    country_exists = ITA
+					country_exists = PAP
+					country_exists = VNC
+					country_exists = SRI
+					country_exists = LOM
+
+				}
+				
+			}
+			modifier = {
+					ai_focus_aggressive_factor = 1
+				}	
+				targeted_modifier = {
+					tag = SIC
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = SRI
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = ITA
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = PAP
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = VNC
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = LOM
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+		}
+
+		SRI_italy_war_PAP = {
+			picture = SRI_fash_army
+			available = {
+				original_tag = PAP
+				is_subject = no
+				or = {
+					country_exists = SIC
+				    country_exists = SRD
+				    country_exists = ITA
+					country_exists = VNC
+					country_exists = SRI
+					country_exists = LOM
+
+				}
+					
+			}
+			modifier = {
+					ai_focus_aggressive_factor = 1
+				}
+				targeted_modifier = {
+					tag = SIC
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = SRI
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = SRD
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = ITA
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = VNC
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = LOM
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+		}
+
+		SRI_italy_war_VNC = {
+			picture = SRI_fash_army
+			available = {
+				original_tag = VNC
+				is_subject = no
+				or = {
+					country_exists = SIC
+				    country_exists = SRD
+				    country_exists = ITA
+					country_exists = PAP
+					country_exists = SRI
+					country_exists = LOM
+
+				}
+					
+			}
+			modifier = {
+					ai_focus_aggressive_factor = 1
+				}
+				targeted_modifier = {
+					tag = SIC
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = SRI
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = SRD
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = ITA
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = PAP
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = LOM
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+		}
+
+		SRI_italy_war_LOM = {
+			picture = SRI_fash_army
+			available = {
+				original_tag = LOM
+				is_subject = no
+				or = {
+					country_exists = SIC
+				    country_exists = SRD
+				    country_exists = ITA
+					country_exists = PAP
+					country_exists = SRI
+					country_exists = VNC
+
+
+				}
+					
+			}
+			modifier = {
+					ai_focus_aggressive_factor = 1
+				}
+				targeted_modifier = {
+					tag = SIC
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = SRI
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = SRD
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = ITA
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = PAP
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+				targeted_modifier = {
+					tag = VNC
+					attack_bonus_against = 1
+					breakthrough_bonus_against = 1
+				}
+		}
+
 		SRI_italy_balance_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_italy_balance_idea" }
 			name = italy_balance_idea

@@ -4,7 +4,7 @@ ideas = {
 	country = {
 		PAL_Bloated_administrative_system = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Bloated_administrative_system" }
-			name = 臃肿的行政体系
+			name = PAL_Bloated_administrative_system
 			picture = generic_destruction
 			allowed = { always = no }
 			modifier = {
@@ -16,7 +16,7 @@ ideas = {
 		}
 		PAL_Bloated_administrative_system1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Bloated_administrative_system1" }
-			name = 臃肿的行政体系
+			name = PAL_Bloated_administrative_system
 			picture = generic_destruction
 			allowed = { always = no }
 			modifier = {
@@ -26,7 +26,7 @@ ideas = {
 		}
 		PAL_Kemalist_continued = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Kemalist_continued" }
-			name = 凯末尔主义延续
+			name = PAL_Kemalist_continued
 			picture = TUR_ottoman_hegemony
 			allowed = { always = no }
 			modifier = {
@@ -37,7 +37,7 @@ ideas = {
 		}
 		PAL_Kemalist_continued_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Kemalist_continued2" }
-			name = 凯末尔主义延续
+			name = PAL_Kemalist_continued
 			picture = TUR_ottoman_hegemony
 			allowed = { always = no }
 			modifier = {
@@ -49,7 +49,7 @@ ideas = {
 		}
 		PAL_Kemalist_continued_3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Kemalist_continued3" }
-			name = 凯末尔主义延续
+			name = PAL_Kemalist_continued
 			picture = TUR_ottoman_hegemony
 			allowed = { always = no }
 			modifier = {
@@ -61,7 +61,7 @@ ideas = {
 		}
 		PAL_Kemalist_continued_4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Kemalist_continued_4" }
-			name = 改革凯末尔主义
+			name = PAL_Kemalist_continued_4
 			picture = TUR_ottoman_hegemony
 			allowed = { always = no }
 			modifier = {
@@ -73,7 +73,7 @@ ideas = {
 		}
 		MOJ_Jaffa_Seaport_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Kemalist_continued" }
-			name = 雅法海港
+			name = MOJ_Jaffa_Seaport_ideas
 			picture = TUR_ottoman_hegemony
 			allowed = { always = no }
 			modifier = {
@@ -91,7 +91,7 @@ ideas = {
 		}
 		MOJ_Break_Jaffa_Seaport_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_Break_Jaffa_Seaport_ideas" }
-			name = 拆分雅法海港
+			name = MOJ_Break_Jaffa_Seaport_ideas
 			picture = TUR_ottoman_hegemony
 			allowed = { always = no }
 			modifier = {
@@ -109,7 +109,7 @@ ideas = {
 		}
 		MOJ_Jaffa_Seaport_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_Jaffa_Seaport_ideas1" }
-			name = 雅法海港
+			name = MOJ_Jaffa_Seaport_ideas
 			picture = TUR_ottoman_hegemony
 			allowed = { always = no }
 			modifier = {
@@ -127,7 +127,7 @@ ideas = {
 		}
 		MOJ_Jaffa_Seaport_ideas3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_Jaffa_Seaport_ideas3" }
-			name = 未完工的雅法海港项目
+			name = MOJ_Jaffa_Seaport_ideas3
 			picture = TUR_ottoman_hegemony
 			allowed = { always = no }
 			modifier = {
@@ -143,7 +143,7 @@ ideas = {
 		}
 		MOJ_Purge_the_nationalist_thugs_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_Purge_the_nationalist_thugs_ideas" }
-			name = 肃清民族主义暴徒
+			name = MOJ_Purge_the_nationalist_thugs_ideas
 			picture = BAN_shaken_nation
 			allowed = { always = no }
 			modifier = {
@@ -156,7 +156,7 @@ ideas = {
 		}
 		MOJ_Jaffa_Seaport_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Kemalist_continued2" }
-			name = 雅法海港
+			name = MOJ_Jaffa_Seaport_ideas
 			picture = TUR_ottoman_hegemony
 			allowed = { always = no }
 			modifier = {
@@ -174,7 +174,7 @@ ideas = {
 		}
 		MOJ_J_centralization_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_J_centralization_ideas" }
-			name = 集权化
+			name = MOJ_J_centralization_ideas
 			picture = TUR_ottoman_hegemony
 			allowed = { always = no }
 			modifier = {
@@ -186,7 +186,7 @@ ideas = {
 		}
 		MOJ_J_Decentralization_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_J_Decentralization_ideas" }
-			name = 分权化
+			name = MOJ_J_Decentralization_ideas
 			picture = TUR_ottoman_hegemony
 			allowed = { always = no }
 			modifier = {
@@ -199,7 +199,7 @@ ideas = {
 		}
 		Equal_pay_for_equal_work_for_multiple_ethnic_groups_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea Equal_pay_for_equal_work_for_multiple_ethnic_groups_2" }
-			name = 同工同酬政策
+			name = Equal_pay_for_equal_work_for_multiple_ethnic_groups_2
 			picture = TUR_ottoman_hegemony
 			allowed = { always = no }
 			modifier = {
@@ -210,7 +210,7 @@ ideas = {
 		}
 		PAL_Verana_Zionist_Union = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Verana_Zionist_Union" }
-			name = 维拉那-犹太复国联盟
+			name = PAL_Verana_Zionist_Union
 			picture = COR_safeguard_jewish_communities
 			allowed = { always = no }
 			modifier = {
@@ -221,7 +221,7 @@ ideas = {
 		}
 		PAL_Verana_Zionist_Union_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Verana_Zionist_Union" }
-			name = 复国联参与西奈驻军
+			name = PAL_Verana_Zionist_Union_2
 			picture = COR_safeguard_jewish_communities
 			allowed = { always = no }
 			modifier = {
@@ -234,7 +234,7 @@ ideas = {
 		}
 		PAL_1935_census_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Verana_Zionist_Union" }
-			name = 人口普查工作结束
+			name = PAL_1935_census_ideas
 			picture = COR_safeguard_jewish_communities
 			allowed = { always = no }
 			modifier = {
@@ -245,7 +245,7 @@ ideas = {
 		}
 		PAL_Dependent_on_the_Ottoman_economy_with_the_nobility = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Dependent_on_the_Ottoman_economy_with_the_nobility" }
-			name = 依附奥斯曼与贵族的经济
+			name = PAL_Dependent_on_the_Ottoman_economy_with_the_nobility
 			picture = OTT_Horrors_of_the_Weltkrieg_idea_icon
 			allowed = { always = no }
 			modifier = {
@@ -256,7 +256,7 @@ ideas = {
 		}
 		PAL_Dependent_on_the_Ottoman_economy_with_the_nobility_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Dependent_on_the_Ottoman_economy_with_the_nobility" }
-			name = 自主移民经济
+			name = PAL_Dependent_on_the_Ottoman_economy_with_the_nobility_2
 			picture = OTT_Horrors_of_the_Weltkrieg_idea_icon
 			allowed = { always = no }
 			modifier = {
@@ -267,7 +267,7 @@ ideas = {
 		}
 		PAL_Dependent_on_the_Ottoman_economy_with_the_nobility_3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Dependent_on_the_Ottoman_economy_with_the_nobility" }
-			name = 制裁贵族
+			name = PAL_Dependent_on_the_Ottoman_economy_with_the_nobility_3
 			picture = OTT_Horrors_of_the_Weltkrieg_idea_icon
 			allowed = { always = no }
 			modifier = {
@@ -279,7 +279,7 @@ ideas = {
 		}
 		PAL_Dependent_on_the_Ottoman_economy_with_the_nobility_4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Dependent_on_the_Ottoman_economy_with_the_nobility" }
-			name = 贵族财产法
+			name = PAL_Dependent_on_the_Ottoman_economy_with_the_nobility_4
 			picture = OTT_Horrors_of_the_Weltkrieg_idea_icon
 			allowed = { always = no }
 			modifier = {
@@ -329,7 +329,7 @@ ideas = {
 			}
 		}
 		pal_corporate_power_ideas = {
-			name = 企业的力量
+			name = pal_corporate_power_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_corporate_power_ideas"}
 			picture = chi_hyper_inflation4
 			allowed = { always = no }
@@ -339,7 +339,7 @@ ideas = {
 			}
 		}
 		pal_corporate_power_ideas2 = {
-			name = 发展耶路撒冷里拉
+			name = pal_corporate_power_ideas2
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_corporate_power_ideas"}
 			picture = chi_hyper_inflation4
 			allowed = { always = no }
@@ -348,7 +348,7 @@ ideas = {
 			}
 		}
 		pal_Vilaia_Union_ideas = {
-			name = 维拉耶工会
+			name = pal_Vilaia_Union_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Vilaia_Union_ideas"}
 			picture = SOV_workers
 			allowed = { always = no }
@@ -360,7 +360,7 @@ ideas = {
 			}
 		}
 		pal_Collaborators_in_the_shadows_ideas = {
-			name = 阴影中的合作者
+			name = pal_Collaborators_in_the_shadows_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Collaborators_in_the_shadows_ideas"}
 			picture = collectivist_primacy_2
 			allowed = { always = no }
@@ -371,7 +371,7 @@ ideas = {
 			}
 		}
 		pal_Collaborators_in_the_shadows1_ideas = {
-			name = 确保选票
+			name = pal_Collaborators_in_the_shadows1_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Collaborators_in_the_shadows1_ideas"}
 			picture = collectivist_primacy_2
 			allowed = { always = no }
@@ -383,7 +383,7 @@ ideas = {
 			}
 		}
 		pal_Gendarmerie_state_of_emergency_ideas = {
-			name = 宪兵紧急状态
+			name = pal_Gendarmerie_state_of_emergency_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Gendarmerie_state_of_emergency_ideas"}
 			picture = SKM_outdated_army
 			allowed = { always = no }
@@ -395,7 +395,7 @@ ideas = {
 			}
 		}
 		pal_Gendarmerie_state_of_emergency1_ideas = {
-			name = 宪兵办公室
+			name = pal_Gendarmerie_state_of_emergency1_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Gendarmerie_state_of_emergency1_ideas"}
 			picture = SKM_outdated_army
 			allowed = { always = no }
@@ -408,7 +408,7 @@ ideas = {
 			}
 		}
 		pal_Centralism_within_the_party_ideas = {
-			name = 党内集中制
+			name = pal_Centralism_within_the_party_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Centralism_within_the_party_ideas"}
 			picture = USA_civil_war_pol_aftermath_3
 			allowed = { always = no }
@@ -420,7 +420,7 @@ ideas = {
 			}
 		}
 		pal_Social_Harmony_Act_ideas = {
-			name = 社会和谐法
+			name = pal_Social_Harmony_Act_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Social_Harmony_Act_ideas"}
 			picture = BBR_civil_rights_act_idea
 			allowed = { always = no }
@@ -433,7 +433,7 @@ ideas = {
 			}
 		}
 		pal_Social_Harmony_Act_ideas1 = {
-			name = 社会和谐法
+			name = pal_Social_Harmony_Act_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Social_Harmony_Act_ideas1"}
 			picture = BBR_civil_rights_act_idea
 			allowed = { always = no }
@@ -447,7 +447,7 @@ ideas = {
 			}
 		}
 		pal_Social_Harmony_Act1_ideas = {
-			name = 语言法
+			name = pal_Social_Harmony_Act1_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Social_Harmony_Act1_ideas"}
 			picture = BBR_civil_rights_act_idea
 			allowed = { always = no }
@@ -459,7 +459,7 @@ ideas = {
 			}
 		}
 		pal_Social_Harmony_Act1_ideas1 = {
-			name = 语言法
+			name = pal_Social_Harmony_Act1_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Social_Harmony_Act1_ideas1"}
 			picture = BBR_civil_rights_act_idea
 			allowed = { always = no }
@@ -471,7 +471,7 @@ ideas = {
 			}
 		}
 		pal_Minority_Bill_of_Rights_ideas = {
-			name = 少数民族权利法案
+			name = pal_Minority_Bill_of_Rights_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Social_Harmony_Act1_ideas"}
 			picture = NYC_civil_rights_all_or_nothing
 			allowed = { always = no }
@@ -483,7 +483,7 @@ ideas = {
 			}
 		}
 		pal_State_Academy_of_Sciences_ideas = {
-			name = 州立科学院
+			name = pal_State_Academy_of_Sciences_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_State_Academy_of_Sciences_ideas"}
 			picture = CSA_experimental_research
 			allowed = { always = no }
@@ -494,7 +494,7 @@ ideas = {
 			}
 		}
 		pal_State_Academy_of_Sciences_ideas1 = {
-			name = 州立科学院
+			name = pal_State_Academy_of_Sciences_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_State_Academy_of_Sciences_ideas1"}
 			picture = CSA_experimental_research
 			allowed = { always = no }
@@ -505,7 +505,7 @@ ideas = {
 			}
 		}
 		pal_Maintain_stability_ideas = {
-			name = 维护稳定
+			name = pal_Maintain_stability_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Maintain_stability_ideas"}
 			picture = state_economy
 			allowed = { always = no }
@@ -517,7 +517,7 @@ ideas = {
 			}
 		}
 		pal_German_aid_ideas = {
-			name = 德国援助
+			name = pal_German_aid_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_German_aid_ideas"}
 			picture = GRE_german_sanctions
 			allowed = { always = no }
@@ -529,7 +529,7 @@ ideas = {
 			}
 		}
 		pal_German_aid_ideas1 = {
-			name = 德国援助
+			name = pal_German_aid_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_German_aid_ideas1"}
 			picture = GRE_german_sanctions
 			allowed = { always = no }
@@ -543,7 +543,7 @@ ideas = {
 			}
 		}
 		pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas = {
-			name = 与巴共合作
+			name = pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas"}
 			picture = communal_democracy
 			allowed = { always = no }
@@ -555,7 +555,7 @@ ideas = {
 			}
 		}
 		pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas1 = {
-			name = 与巴共合作
+			name = pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas1"}
 			picture = communal_democracy
 			allowed = { always = no }
@@ -567,7 +567,7 @@ ideas = {
 			}
 		}
 		pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas2 = {
-			name = 与巴共合作
+			name = pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas2"}
 			picture = communal_democracy
 			allowed = { always = no }
@@ -581,7 +581,7 @@ ideas = {
 			}
 		}
 		pal_Ottoman_authority_ideas1 = {
-			name = 重提奥斯曼权威
+			name = pal_Ottoman_authority_ideas1
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Ottoman_authority_ideas1"}
 			picture = OTT_autocracy_idea_icon
 			allowed = { always = no }
@@ -595,7 +595,7 @@ ideas = {
 			}
 		}
 		pal_Ottoman_authority_ideas2 = {
-			name = 重提奥斯曼权威
+			name = pal_Ottoman_authority_ideas1
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Ottoman_authority_ideas2"}
 			picture = OTT_autocracy_idea_icon
 			allowed = { always = no }
@@ -609,7 +609,7 @@ ideas = {
 			}
 		}
 		pal_Ottoman_authority_ideas3 = {
-			name = 重提奥斯曼权威
+			name = pal_Ottoman_authority_ideas1
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Ottoman_authority_ideas3"}
 			picture = OTT_autocracy_idea_icon
 			allowed = { always = no }
@@ -625,7 +625,7 @@ ideas = {
 			}
 		}
 		pal_Ottoman_authority_ideas = {
-			name = 重提奥斯曼权威
+			name = pal_Ottoman_authority_ideas1
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Ottoman_authority_ideas"}
 			picture = OTT_autocracy_idea_icon
 			allowed = { always = no }
@@ -637,7 +637,7 @@ ideas = {
 			}
 		}
 		pal_Gendarmerie_state_of_emergency_ideas2 = {
-			name = 宪兵政府
+			name = pal_Gendarmerie_state_of_emergency_ideas2
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Gendarmerie_state_of_emergency_ideas2"}
 			picture = SKM_outdated_army
 			allowed = { always = no }
@@ -649,7 +649,7 @@ ideas = {
 			}
 		}
 		pal_Collaborate_with_Jews_ideas = {
-			name = 与犹太复国主义组织合作
+			name = pal_Collaborate_with_Jews_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Collaborate_with_Jews_ideas"}
 			picture = COR_jewish_segregation
 			allowed = { always = no }
@@ -661,7 +661,7 @@ ideas = {
 			}
 		}
 		pal_Collaborate_with_Jews_ideas1 = {
-			name = 与犹太复国主义组织合作
+			name = pal_Collaborate_with_Jews_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Collaborate_with_Jews_ideas1"}
 			picture = COR_jewish_segregation
 			allowed = { always = no }
@@ -673,7 +673,7 @@ ideas = {
 			}
 		}
 		pal_Collaborate_with_Jews_ideas2 = {
-			name = 与犹太复国主义组织合作
+			name = pal_Collaborate_with_Jews_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Collaborate_with_Jews_ideas2"}
 			picture = COR_jewish_segregation
 			allowed = { always = no }
@@ -685,7 +685,7 @@ ideas = {
 			}
 		}
 		pal_Collaborate_with_Jews_ideas2_1 = {
-			name = 与犹太复国主义组织合作
+			name = pal_Collaborate_with_Jews_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Collaborate_with_Jews_ideas2_1"}
 			picture = COR_jewish_segregation
 			allowed = { always = no }
@@ -699,7 +699,7 @@ ideas = {
 			}
 		}
 		pal_Palestinian_nation_state_ideas = {
-			name = 巴勒斯坦民族国家
+			name = pal_Palestinian_nation_state_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Palestinian_nation_state_ideas"}
 			picture = islam
 			allowed = { always = no }
@@ -711,7 +711,7 @@ ideas = {
 			}
 		}
 		pal_Freedom_Act_ideas = {
-			name = 自由法案
+			name = pal_Freedom_Act_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Freedom_Act_ideas"}
 			picture = CAN_leader_of_the_free_world
 			allowed = { always = no }
@@ -723,7 +723,7 @@ ideas = {
 			}
 		}
 		pal_Freedom_Act_ideas1 = {
-			name = 自由法案
+			name = pal_Freedom_Act_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Freedom_Act_ideas1"}
 			picture = CAN_leader_of_the_free_world
 			allowed = { always = no }
@@ -735,7 +735,7 @@ ideas = {
 			}
 		}
 		pal_Palestinian_nation_state_ideas1 = {
-			name = 巴勒斯坦民族国家
+			name = pal_Palestinian_nation_state_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Palestinian_nation_state_ideas1"}
 			picture = islam
 			allowed = { always = no }
@@ -749,7 +749,7 @@ ideas = {
 			}
 		}
 		pal_Palestinian_nation_state_ideas2 = {
-			name = 巴勒斯坦民族国家
+			name = pal_Palestinian_nation_state_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Palestinian_nation_state_ideas2"}
 			picture = islam
 			allowed = { always = no }
@@ -764,7 +764,7 @@ ideas = {
 			}
 		}
 		pal_Ethnicity_Bill_ideas = {
-			name = 民族法案
+			name = pal_Ethnicity_Bill_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Ethnicity_Bill_ideas"}
 			picture = NGR_at_islam
 			allowed = { always = no }
@@ -776,7 +776,7 @@ ideas = {
 			}
 		}
 		pal_Ethnicity_Bill_ideas1 = {
-			name = 民族法案
+			name = pal_Ethnicity_Bill_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Ethnicity_Bill_ideas1"}
 			picture = NGR_at_islam
 			allowed = { always = no }
@@ -789,7 +789,7 @@ ideas = {
 			}
 		}
 		pal_Ethnicity_Bill_ideas2 = {
-			name = 民族法案
+			name = pal_Ethnicity_Bill_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Ethnicity_Bill_ideas2"}
 			picture = NGR_at_islam
 			allowed = { always = no }
@@ -805,7 +805,7 @@ ideas = {
 			}
 		}
 		pal_Gendarmerie_state_of_emergency_ideas1 = {
-			name = 整合宪兵
+			name = pal_Gendarmerie_state_of_emergency_ideas1
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Gendarmerie_state_of_emergency_ideas1"}
 			picture = SKM_outdated_army
 			allowed = { always = no }
@@ -817,7 +817,7 @@ ideas = {
 			}
 		}
 		pal_Government_reforms_ideas = {
-			name = 政府改革
+			name = pal_Government_reforms_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Government_reforms_ideas"}
 			picture = SKM_outdated_army
 			allowed = { always = no }
@@ -829,7 +829,7 @@ ideas = {
 			}
 		}
 		pal_Government_reforms_ideas1 = {
-			name = 政府改革
+			name = pal_Government_reforms_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Government_reforms_ideas1"}
 			picture = SKM_outdated_army
 			allowed = { always = no }
@@ -842,7 +842,7 @@ ideas = {
 			}
 		}
 		pal_Government_reforms_ideas2 = {
-			name = 政府改革
+			name = pal_Government_reforms_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Government_reforms_ideas2"}
 			picture = SKM_outdated_army
 			allowed = { always = no }
@@ -856,7 +856,7 @@ ideas = {
 			}
 		}
 		pal_Development_economy_ideas = {
-			name = 开放经济
+			name = pal_Development_economy_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Development_economy_ideas"}
 			picture = corporatist_economy
 			allowed = { always = no }
@@ -868,7 +868,7 @@ ideas = {
 			}
 		}
 		pal_Development_economy_ideas1 = {
-			name = 开放经济
+			name = pal_Development_economy_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Development_economy_ideas1"}
 			picture = corporatist_economy
 			allowed = { always = no }
@@ -882,7 +882,7 @@ ideas = {
 			}
 		}
 		pal_Levy_a_tax_on_the_rich_ideas = {
-			name = 富人税
+			name = pal_Levy_a_tax_on_the_rich_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Levy_a_tax_on_the_rich_ideas"}
 			picture = state_economy
 			allowed = { always = no }
@@ -895,7 +895,7 @@ ideas = {
 			}
 		}
 		pal_People_are_equal_ideas = {
-			name = 民众平等
+			name = pal_People_are_equal_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_People_are_equal_ideas"}
 			picture = COR_protected_not_equal
 			allowed = { always = no }
@@ -907,7 +907,7 @@ ideas = {
 			}
 		}
 		pal_People_are_equal_ideas1 = {
-			name = 民众平等
+			name = pal_People_are_equal_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_People_are_equal_ideas1"}
 			picture = COR_protected_not_equal
 			allowed = { always = no }
@@ -921,7 +921,7 @@ ideas = {
 			}
 		}
 		pal_People_are_equal_ideas2 = {
-			name = 民众平等
+			name = pal_People_are_equal_ideas
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_People_are_equal_ideas2"}
 			picture = COR_protected_not_equal
 			allowed = { always = no }
@@ -938,7 +938,7 @@ ideas = {
 			}
 		}
 		pal_Government_reforms_ideas_1 = {
-			name = 改革议会
+			name = pal_Government_reforms_ideas_1
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Government_reforms_ideas_1"}
 			picture = SKM_outdated_army
 			allowed = { always = no }
@@ -950,7 +950,7 @@ ideas = {
 			}
 		}
 		pal_Government_reforms_ideas_2 = {
-			name = 改革议会
+			name = pal_Government_reforms_ideas_1
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Government_reforms_ideas_2"}
 			picture = SKM_outdated_army
 			allowed = { always = no }
@@ -965,7 +965,7 @@ ideas = {
 			}
 		}
 		pal_Development_economy_ideas_1 = {
-			name = 耶路撒冷繁荣
+			name = pal_Development_economy_ideas_1
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Development_economy_ideas1"}
 			picture = corporatist_economy
 			allowed = { always = no }

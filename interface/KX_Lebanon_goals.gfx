@@ -1003,4 +1003,436 @@ SpriteTypes = {
 		name = "NLEB_Head_north_to_Anatoler"
 		texturefile = "gfx/interface/goals/NLEB_Head_north_to_Anatoler.png"
 	}
+	SpriteType = {
+		name = "NLEB_Ideals_triumph"
+		texturefile = "gfx/interface/goals/NLEB_Ideals_triumph.png"
+	}
+	SpriteType = {
+		name = "NLEB_The_sorrow_of_Vilaye"
+		texturefile = "gfx/interface/goals/NLEB_The_sorrow_of_Vilaye.png"
+	}
+	SpriteType = {
+		name = "NLEB_Preparation_of_Kuriltai"
+		texturefile = "gfx/interface/goals/NLEB_Preparation_of_Kuriltai.png"
+	}
+	SpriteType = {
+		name = "NLEB_Establishment_of_military_posts"
+		texturefile = "gfx/interface/goals/NLEB_Establishment_of_military_posts.png"
+	}
+	SpriteType = {
+		name = "NLEB_A_gunshot_rang_out"
+		texturefile = "gfx/interface/goals/NLEB_A_gunshot_rang_out.png"
+	}
+	SpriteType = {
+		name = "NLEB_Carry_through_heaven_and_earth"
+		texturefile = "gfx/interface/goals/NLEB_Carry_through_heaven_and_earth.png"
+	}
+	SpriteType = {
+		name = "NLEB_Recreate_the_1908_Revolution"
+		texturefile = "gfx/interface/goals/NLEB_Recreate_the_1908_Revolution.png"
+	}
+	SpriteType = {
+		name = "NLEB_Enver_is_in_charge"
+		texturefile = "gfx/interface/goals/NLEB_Enver_is_in_charge.png"
+	}
+	SpriteType = {
+		name = "NLEB_Assemble_the_Lightning_Legion"
+		texturefile = "gfx/interface/goals/NLEB_Assemble_the_Lightning_Legion.png"
+	}
+	SpriteType = {
+		name = "NLEB_Purge_the_opposition"
+		texturefile = "gfx/interface/goals/NLEB_Purge_the_opposition.png"
+	}
+	SpriteType = {
+		name = "NLEB_The_second_attempt_at_modernization"
+		texturefile = "gfx/interface/goals/NLEB_The_second_attempt_at_modernization.png"
+	}
+	SpriteType = {
+		name = "NLEB_Enver_Guards"
+		texturefile = "gfx/interface/goals/NLEB_Enver_Guards.png"
+	}
+	SpriteType = {
+		name = "NLEB_Young_Turkey_Nirvana"
+		texturefile = "gfx/interface/goals/NLEB_Young_Turkey_Nirvana.png"
+	}
+	SpriteType = {
+		name = "NLEB_Advanced_militarism"
+		texturefile = "gfx/interface/goals/NLEB_Advanced_militarism.png"
+	}
+	SpriteType = {
+		name = "NLEB_Blue_Revolution"
+		texturefile = "gfx/interface/goals/NLEB_Blue_Revolution.png"
+	}
+	SpriteType = {
+		name = "NLEB_Laying_of_water_and_electricity_grids"
+		texturefile = "gfx/interface/goals/NLEB_Laying_of_water_and_electricity_grids.png"
+	}
+	SpriteType = {
+		name = "NLEB_Promote_a_cult_of_personality"
+		texturefile = "gfx/interface/goals/NLEB_Promote_a_cult_of_personality.png"
+	}
+	SpriteType = {
+		name = "NLEB_Enville_style_democracy"
+		texturefile = "gfx/interface/goals/NLEB_Enville_style_democracy.png"
+	}
+	SpriteType = {
+		name = "NLEB_Erection_of_railways"
+		texturefile = "gfx/interface/goals/NLEB_Erection_of_railways.png"
+	}
+	SpriteType = {
+		name = "NLEB_Islamic_Pan_Turkic_Education"
+		texturefile = "gfx/interface/goals/NLEB_Islamic_Pan_Turkic_Education.png"
+	}
+	SpriteType = {
+		name = "NLEB_La_Ilaha_Illallah"
+		texturefile = "gfx/interface/goals/NLEB_La_Ilaha_Illallah.png"
+	}
+	SpriteType = {
+		name = "NLEB_Enver_is_the_messenger_of_Allah"
+		texturefile = "gfx/interface/goals/NLEB_Enver_is_the_messenger_of_Allah.png"
+	}
+	SpriteType = {
+		name = "NLEB_Enver_The_sword_of_Islam"
+		texturefile = "gfx/interface/goals/NLEB_Enver_The_sword_of_Islam.png"
+	}
+	SpriteType = {
+		name = "NLEB_The_orthodoxy_of_the_Turkic_spirit"
+		texturefile = "gfx/interface/goals/NLEB_The_orthodoxy_of_the_Turkic_spirit.png"
+	}
+	SpriteType = {
+		name = "NLEB_The_living_space_of_the_nation"
+		texturefile = "gfx/interface/goals/NLEB_The_living_space_of_the_nation.png"
+	}
+	SpriteType = {
+		name = "NLEB_Break_the_backbone_of_the_Bedouins"
+		texturefile = "gfx/interface/goals/NLEB_Break_the_backbone_of_the_Bedouins.png"
+	}
+	SpriteType = {
+		name = "NLEB_Istanbul_again"
+		texturefile = "gfx/interface/goals/NLEB_Istanbul_again.png"
+	}
+	SpriteType = {
+		name = "NLEB_Riding_a_horse_towards_the_Maghreb"
+		texturefile = "gfx/interface/goals/NLEB_Riding_a_horse_towards_the_Maghreb.png"
+	}
+	SpriteType = {
+		name = "NLEB_Cut_off_the_neck_of_a_Copt"
+		texturefile = "gfx/interface/goals/NLEB_Cut_off_the_neck_of_a_Copt.png"
+	}
+	SpriteType = {
+		name = "NLEB_The_question_of_the_Ottoman_royal_family"
+		texturefile = "gfx/interface/goals/NLEB_The_question_of_the_Ottoman_royal_family.png"
+	}
+	SpriteType = {
+		name = "NLEB_The_flames_of_vengeance_swept_through_the_Maghreb"
+		texturefile = "gfx/interface/goals/NLEB_The_flames_of_vengeance_swept_through_the_Maghreb.png"
+	}
+	SpriteType = {
+		name = "NLEB_Eight_hundred_years_of_glory_reappeared"
+		texturefile = "gfx/interface/goals/NLEB_Eight_hundred_years_of_glory_reappeared.png"
+	}
+	SpriteType = {
+		name = "NLEB_But_the_new_empire_of_Enver"
+		texturefile = "gfx/interface/goals/NLEB_But_the_new_empire_of_Enver.png"
+	}
+	SpriteType = {
+		name = "NLEB_Recreate_the_horror_of_the_Ottomans"
+		texturefile = "gfx/interface/goals/NLEB_Recreate_the_horror_of_the_Ottomans.png"
+	}
+	SpriteType = {
+		name = "NLEB_Unexpected_Turkes"
+		texturefile = "gfx/interface/goals/NLEB_Unexpected_Turkes.png"
+	}
+	SpriteType = {
+		name = "NLEB_The_Industrial_Technology_Department_was_established"
+		texturefile = "gfx/interface/goals/NLEB_The_Industrial_Technology_Department_was_established.png"
+	}
+	SpriteType = {
+		name = "NLEB_Preferential_treatment_of_technical_officers"
+		texturefile = "gfx/interface/goals/NLEB_Preferential_treatment_of_technical_officers.png"
+	}
+	SpriteType = {
+		name = "NLEB_Reuse_of_scientific_and_technological_talents"
+		texturefile = "gfx/interface/goals/NLEB_Reuse_of_scientific_and_technological_talents.png"
+	}
+	SpriteType = {
+		name = "NLEB_Five_year_national_industrial_plan"
+		texturefile = "gfx/interface/goals/NLEB_Five_year_national_industrial_plan.png"
+	}
+	SpriteType = {
+		name = "NLEB_Establish_a_technical_administrative_system"
+		texturefile = "gfx/interface/goals/NLEB_Establish_a_technical_administrative_system.png"
+	}
+	SpriteType = {
+		name = "NLEB_Progress_of_Turkic_technocracy"
+		texturefile = "gfx/interface/goals/NLEB_Progress_of_Turkic_technocracy.png"
+	}
+	SpriteType = {
+		name = "NLEB_Turkic_peoples_supremacy"
+		texturefile = "gfx/interface/goals/NLEB_Turkic_peoples_supremacy.png"
+	}
+	SpriteType = {
+		name = "NLEB_Restructuring_of_the_executive_branch"
+		texturefile = "gfx/interface/goals/NLEB_Restructuring_of_the_executive_branch.png"
+	}
+	SpriteType = {
+		name = "NLEB_The_Turks_take_precedence"
+		texturefile = "gfx/interface/goals/NLEB_The_Turks_take_precedence.png"
+	}
+	SpriteType = {
+		name = "NLEB_Apartheid"
+		texturefile = "gfx/interface/goals/NLEB_Apartheid.png"
+	}
+	SpriteType = {
+		name = "NLEB_Interracial_self_government"
+		texturefile = "gfx/interface/goals/NLEB_Interracial_self_government.png"
+	}
+	SpriteType = {
+		name = "NLEB_The_race_of_Turkic_technocracy"
+		texturefile = "gfx/interface/goals/NLEB_The_race_of_Turkic_technocracy.png"
+	}
+	SpriteType = {
+		name = "NLEB_Reclaim_ancestral_legacy"
+		texturefile = "gfx/interface/goals/NLEB_Reclaim_ancestral_legacy.png"
+	}
+	SpriteType = {
+		name = "NLEB_Revive_the_glory_of_the_Pro_Guard"
+		texturefile = "gfx/interface/goals/NLEB_Revive_the_glory_of_the_Pro_Guard.png"
+	}
+	SpriteType = {
+		name = "NLEB_Contemporary_Ranger"
+		texturefile = "gfx/interface/goals/NLEB_Contemporary_Ranger.png"
+	}
+	SpriteType = {
+		name = "NLEB_Look_for_Helan_horses"
+		texturefile = "gfx/interface/goals/NLEB_Look_for_Helan_horses.png"
+	}
+	SpriteType = {
+		name = "NLEB_Light_armored_forces"
+		texturefile = "gfx/interface/goals/NLEB_Light_armored_forces.png"
+	}
+	SpriteType = {
+		name = "NLEB_The_sharpness_of_Turkic_technocracy"
+		texturefile = "gfx/interface/goals/NLEB_The_sharpness_of_Turkic_technocracy.png"
+	}
+	SpriteType = {
+		name = "NLEB_Fly_into_the_future"
+		texturefile = "gfx/interface/goals/NLEB_Fly_into_the_future.png"
+	}
+	SpriteType = {
+		name = "NLEB_Atsiz_is_in_control"
+		texturefile = "gfx/interface/goals/NLEB_Atsiz_is_in_control.png"
+	}
+	SpriteType = {
+		name = "NLEB_Contact_the_German_Empire"
+		texturefile = "gfx/interface/goals/NLEB_Contact_the_German_Empire.png"
+	}
+	SpriteType = {
+		name = "NLEB_Establishment_of_the_University_of_Turan"
+		texturefile = "gfx/interface/goals/NLEB_Establishment_of_the_University_of_Turan.png"
+	}
+	SpriteType = {
+		name = "NLEB_Request_for_a_German_military_advisory_group"
+		texturefile = "gfx/interface/goals/NLEB_Request_for_a_German_military_advisory_group.png"
+	}
+	SpriteType = {
+		name = "NLEB_Prussian_military_training"
+		texturefile = "gfx/interface/goals/NLEB_Prussian_military_training.png"
+	}
+	SpriteType = {
+		name = "NLEB_Turanian_nationalism_in_practice"
+		texturefile = "gfx/interface/goals/NLEB_Turanian_nationalism_in_practice.png"
+	}
+	SpriteType = {
+		name = "NLEB_Zajid_reforms"
+		texturefile = "gfx/interface/goals/NLEB_Zajid_reforms.png"
+	}
+	SpriteType = {
+		name = "NLEB_German_investors_are_invited"
+		texturefile = "gfx/interface/goals/NLEB_German_investors_are_invited.png"
+	}
+	SpriteType = {
+		name = "NLEB_Abolition_of_the_Arabic_alphabet"
+		texturefile = "gfx/interface/goals/NLEB_Abolition_of_the_Arabic_alphabet.png"
+	}
+	SpriteType = {
+		name = "NLEB_Promotion_of_Turkic_languages"
+		texturefile = "gfx/interface/goals/NLEB_Promotion_of_Turkic_languages.png"
+	}
+	SpriteType = {
+		name = "NLEB_Show_loyalty_to_the_ottoman"
+		texturefile = "gfx/interface/goals/NLEB_Show_loyalty_to_the_ottoman.png"
+	}
+	SpriteType = {
+		name = "NLEB_But_it_harbors_evil_intentions"
+		texturefile = "gfx/interface/goals/NLEB_But_it_harbors_evil_intentions.png"
+	}
+	SpriteType = {
+		name = "NLEB_Turanian_nationalism_in_culture"
+		texturefile = "gfx/interface/goals/NLEB_Turanian_nationalism_in_culture.png"
+	}
+	SpriteType = {
+		name = "NLEB_Revive_the_Tengger_faith"
+		texturefile = "gfx/interface/goals/NLEB_Revive_the_Tengger_faith.png"
+	}
+	SpriteType = {
+		name = "NLEB_Establishment_of_religious_segregations"
+		texturefile = "gfx/interface/goals/NLEB_Establishment_of_religious_segregations.png"
+	}
+	SpriteType = {
+		name = "NLEB_Raid_the_mosque"
+		texturefile = "gfx/interface/goals/NLEB_Raid_the_mosque.png"
+	}
+	SpriteType = {
+		name = "NLEB_Shamanic_visits_are_encouraged"
+		texturefile = "gfx/interface/goals/NLEB_Shamanic_visits_are_encouraged.png"
+	}
+	SpriteType = {
+		name = "NLEB_Worship_of_the_Immortal_Heaven"
+		texturefile = "gfx/interface/goals/NLEB_Worship_of_the_Immortal_Heaven.png"
+	}
+	SpriteType = {
+		name = "NLEB_Turanian_nationalism_is_based_on_faith"
+		texturefile = "gfx/interface/goals/NLEB_Turanian_nationalism_is_based_on_faith.png"
+	}
+	SpriteType = {
+		name = "NLEB_The_wolf_howls_in_the_night"
+		texturefile = "gfx/interface/goals/NLEB_The_wolf_howls_in_the_night.png"
+	}
+	SpriteType = {
+		name = "NLEB_Reha_emerges_from_behind_the_scenes"
+		texturefile = "gfx/interface/goals/NLEB_Reha_emerges_from_behind_the_scenes.png"
+	}
+	SpriteType = {
+		name = "NLEB_Continental_voyages"
+		texturefile = "gfx/interface/goals/NLEB_Continental_voyages.png"
+	}
+	SpriteType = {
+		name = "NLEB_Meet_the_Red_Chief"
+		texturefile = "gfx/interface/goals/NLEB_Meet_the_Red_Chief.png"
+	}
+	SpriteType = {
+		name = "NLEB_Spread_the_Red_Race_Turkic_culture"
+		texturefile = "gfx/interface/goals/NLEB_Spread_the_Red_Race_Turkic_culture.png"
+	}
+	SpriteType = {
+		name = "NLEB_Deploy_Bozkuchu"
+		texturefile = "gfx/interface/goals/NLEB_Deploy_Bozkuchu.png"
+	}
+	SpriteType = {
+		name = "NLEB_Red_Turkism_is_homologous"
+		texturefile = "gfx/interface/goals/NLEB_Red_Turkism_is_homologous.png"
+	}
+	SpriteType = {
+		name = "NLEB_El_Chellock_Act"
+		texturefile = "gfx/interface/goals/NLEB_El_Chellock_Act.png"
+	}
+	SpriteType = {
+		name = "NLEB_Molecular_biology_research_is_encouraged"
+		texturefile = "gfx/interface/goals/NLEB_Molecular_biology_research_is_encouraged.png"
+	}
+	SpriteType = {
+		name = "NLEB_Ethnographic_investigation"
+		texturefile = "gfx/interface/goals/NLEB_Ethnographic_investigation.png"
+	}
+	SpriteType = {
+		name = "NLEB_Planning_of_village_reserves"
+		texturefile = "gfx/interface/goals/NLEB_Planning_of_village_reserves.png"
+	}
+	SpriteType = {
+		name = "NLEB_Establish_a_racial_hierarchy"
+		texturefile = "gfx/interface/goals/NLEB_Establish_a_racial_hierarchy.png"
+	}
+	SpriteType = {
+		name = "NLEB_Red_Turkism_is_pure"
+		texturefile = "gfx/interface/goals/NLEB_Red_Turkism_is_pure.png"
+	}
+	SpriteType = {
+		name = "NLEB_Reform_the_administrative_system"
+		texturefile = "gfx/interface/goals/NLEB_Reform_the_administrative_system.png"
+	}
+	SpriteType = {
+		name = "NLEB_Mission_of_the_Turks"
+		texturefile = "gfx/interface/goals/NLEB_Mission_of_the_Turks.png"
+	}
+	SpriteType = {
+		name = "NLEB_Turks_take_precedence"
+		texturefile = "gfx/interface/goals/NLEB_Turks_take_precedence.png"
+	}
+	SpriteType = {
+		name = "NLEB_Establishment_of_nation_states"
+		texturefile = "gfx/interface/goals/NLEB_Establishment_of_nation_states.png"
+	}
+	SpriteType = {
+		name = "NLEB_Red_Turkism_in_the_state"
+		texturefile = "gfx/interface/goals/NLEB_Red_Turkism_in_the_state.png"
+	}
+	SpriteType = {
+		name = "NLEB_Four_thousand_years_home"
+		texturefile = "gfx/interface/goals/NLEB_Four_thousand_years_home.png"
+	}
+	SpriteType = {
+		name = "NLEB_The_call_of_the_ancestors"
+		texturefile = "gfx/interface/goals/NLEB_The_call_of_the_ancestors.png"
+	}
+	SpriteType = {
+		name = "NLEB_The_doctrine_of_the_superiority_of_the_Turkic_peoples"
+		texturefile = "gfx/interface/goals/NLEB_The_doctrine_of_the_superiority_of_the_Turkic_peoples.png"
+	}
+	SpriteType = {
+		name = "NLEB_The_horse_opens_the_bow"
+		texturefile = "gfx/interface/goals/NLEB_The_horse_opens_the_bow.png"
+	}
+	SpriteType = {
+		name = "NLEB_Joint_Red_Race_Turkic_training"
+		texturefile = "gfx/interface/goals/NLEB_Joint_Red_Race_Turkic_training.png"
+	}
+	SpriteType = {
+		name = "NLEB_Fly_to_Arabia"
+		texturefile = "gfx/interface/goals/NLEB_Fly_to_Arabia.png"
+	}
+	SpriteType = {
+		name = "NLEB_Trick_the_Ottomans"
+		texturefile = "gfx/interface/goals/NLEB_Trick_the_Ottomans.png"
+	}
+	SpriteType = {
+		name = "NLEB_Conquest_of_Arab_stan"
+		texturefile = "gfx/interface/goals/NLEB_Conquest_of_Arab_stan.png"
+	}
+	SpriteType = {
+		name = "NLEB_Reforge_the_glory"
+		texturefile = "gfx/interface/goals/NLEB_Reforge_the_glory.png"
+	}
+	SpriteType = {
+		name = "NLEB_Overthrow_of_Osmanoglu"
+		texturefile = "gfx/interface/goals/NLEB_Overthrow_of_Osmanoglu.png"
+	}
+	SpriteType = {
+		name = "NLEB_Riding_a_horse_on_the_grassland"
+		texturefile = "gfx/interface/goals/NLEB_Riding_a_horse_on_the_grassland.png"
+	}
+	SpriteType = {
+		name = "NLEB_to_the_Far_East"
+		texturefile = "gfx/interface/goals/NLEB_to_the_Far_East.png"
+	}
+	SpriteType = {
+		name = "NLEB_Across_continents"
+		texturefile = "gfx/interface/goals/NLEB_Across_continents.png"
+	}
+	SpriteType = {
+		name = "NLEB_Take_control_of_two_rivers"
+		texturefile = "gfx/interface/goals/NLEB_Take_control_of_two_rivers.png"
+	}
+	SpriteType = {
+		name = "NLEB_Look_to_the_New_World"
+		texturefile = "gfx/interface/goals/NLEB_Look_to_the_New_World.png"
+	}
+	SpriteType = {
+		name = "NLEB_Emancipate_the_red_race"
+		texturefile = "gfx/interface/goals/NLEB_Emancipate_the_red_race.png"
+	}
+	SpriteType = {
+		name = "NLEB_Crossing_the_ocean"
+		texturefile = "gfx/interface/goals/NLEB_Crossing_the_ocean.png"
+	}
 }

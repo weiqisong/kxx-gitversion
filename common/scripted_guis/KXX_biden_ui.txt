@@ -540,6 +540,12 @@ scripted_gui = {
 					has_country_flag = FRA_Simone_Weil_VISIBLE
 				}
 			}
+			Simone_Weil_occult_visible = {   #西蒙娜·薇依（神秘学合作）
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_country_flag = FRA_Simone_Weil_occult_VISIBLE
+				}
+			}	
 			Jesus_Weil_visible = {   #吾主耶稣
 				AND = {
 					has_country_flag = KXX_HOG_veiw
@@ -761,6 +767,12 @@ scripted_gui = {
 			
 
 			#民族与革命
+			Ahmed_Hussein_visible = { #艾哈迈德·侯赛因
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = EGY_Ahmed_Hussein_hog_npo
+				}
+			}
 			Huseyin_Rauf_Orbay_visible = { #侯赛因·劳夫·奥尔拜
 				AND = {
 					has_country_flag = KXX_HOG_veiw

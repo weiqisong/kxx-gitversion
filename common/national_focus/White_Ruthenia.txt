@@ -1318,11 +1318,7 @@ focus_tree = {
 		ai_will_do = {
 			base = 100
 		}
-		allow_branch = {
-			NOT = {
-				tag = WHR
-			}
-		}
+		
 		prerequisite = { 
 			focus = WHR_revolution_in_east_europe
 		 }
@@ -1336,8 +1332,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
-			activate_targeted_decision = { target = LIT decision = WHR_reclaim_vilnya }
-			activate_targeted_decision = { target = 94.owner decision = WHR_reclaim_bialystok }
+			
 		}
 	}
 	
@@ -3210,6 +3205,34 @@ every_state = {
 		add_state_core = 1065
 		add_state_core = 996
 		add_state_core = 744
+		}
+	}
+	focus = {
+		id = WHR_messiah_of_europe
+		icon = GFX_goal_POL_Savior_Europe
+		relative_position_id = WHR_global_belarus
+		x = -6
+		y = 2
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		prerequisite = { 
+			focus = WHR_equal_RP_membership
+			focus = WHR_secede_from_RP
+		 }
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			every_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				WHR = {
+					add_state_core = PREV
+				}
+			}
+			set_cosmetic_tag = WHR_christsoc_europe
 		}
 	}
 	focus = {
@@ -10482,6 +10505,449 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
+		id = WHR_hands_of_gods
+		icon = GFX_goal_NYC_Under_God
+		cost = 5
+		x = 12
+		y = 12
+		available = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Belarus_Pure_And_True"
+			custom_effect_tooltip = unlock_focuses
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_ideas_of_tolstoy
+		icon = GFX_goals_FRA_tolstoy
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = WHR_hands_of_gods
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = WHR_hands_of_gods
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Belarus_Pure_And_True"
+			add_ideas = WHR_christsoc
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_oppose_ham
+		icon = GFX_goal_NFA_Crush_Communards
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = WHR_hands_of_gods
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = WHR_hands_of_gods
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Belarus_Pure_And_True"
+			add_popularity = { 
+				ideology = paternal_autocrat
+				popularity = -0.25
+			}
+			add_popularity = { 
+				ideology = authoritarian_democrat
+				popularity = -0.25
+			}
+			add_popularity = { 
+				ideology = syndicalist
+				popularity = 0.2
+			}
+			add_political_power = 100
+			add_stability = 0.1
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_narodnik_allies
+		icon = GFX_RUS_SR_Join_Our_Side
+		cost = 5
+		x = -3
+		y = 2
+		relative_position_id = WHR_hands_of_gods
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = WHR_ideas_of_tolstoy
+		}
+		prerequisite = {
+			focus = WHR_oppose_ham
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Belarus_Pure_And_True"
+			add_socdem_to_coalition = yes
+			add_natpop_to_coalition = yes
+			add_popularity = { 
+				ideology = social_democrat
+				popularity = 0.1
+			}
+			add_popularity = { 
+				ideology = national_populist
+				popularity = 0.1
+			}
+			add_popularity = { 
+				ideology = syndicalist
+				popularity = 0.1
+			}
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_anarchism_under_god
+		icon = GFX_DKB_Christian_Unions
+		cost = 5
+		x = -1
+		y = 2
+		relative_position_id = WHR_hands_of_gods
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = WHR_ideas_of_tolstoy
+		}
+		prerequisite = {
+			focus = WHR_oppose_ham
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Belarus_Pure_And_True"
+			add_radsoc_to_coalition = yes
+			add_popularity = { 
+				ideology = radical_socialist
+				popularity = 0.1
+			}
+			add_popularity = { 
+				ideology = syndicalist
+				popularity = 0.1
+			}
+			swap_ideas = {
+				remove_idea = WHR_christsoc
+				add_idea = WHR_christsoc2
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_denounce_tryants_in_moscow
+		icon = GFX_RUS_Referendum_Fails
+		cost = 5
+		x = 1
+		y = 2
+		relative_position_id = WHR_hands_of_gods
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = WHR_ideas_of_tolstoy
+		}
+		prerequisite = {
+			focus = WHR_oppose_ham
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Belarus_Pure_And_True"
+			add_ideas = WHR_denounce_false_republic
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_ally_christian_democrats
+		icon = GFX_RUS_Christian_Democracy_Lean
+		cost = 5
+		x = 3
+		y = 2
+		relative_position_id = WHR_hands_of_gods
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = WHR_ideas_of_tolstoy
+		}
+		prerequisite = {
+			focus = WHR_oppose_ham
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Belarus_Pure_And_True"
+			add_soccon_to_coalition = yes
+			add_popularity = { 
+				ideology = social_conservative
+				popularity = 0.1
+			}
+			add_popularity = { 
+				ideology = syndicalist
+				popularity = 0.1
+			}
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_no_commies
+		icon = GFX_goal_NYC_Anti_Communist_Internationalism
+		cost = 5
+		x = -4
+		y = 3
+		relative_position_id = WHR_hands_of_gods
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = WHR_narodnik_allies
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Belarus_Pure_And_True"
+			add_popularity = { 
+				ideology = totalist
+				popularity = -0.25
+			}
+			add_popularity = { 
+				ideology = syndicalist
+				popularity = 0.1
+			}
+			add_stability = 0.1
+			add_war_support = 0.1
+			
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_blood_and_spirit
+		icon = GFX_goal_TIB_Roerichism_Esoteric_Buddho_Communism
+		cost = 5
+		x = -2
+		y = 3
+		relative_position_id = WHR_hands_of_gods
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = WHR_narodnik_allies
+		}
+		prerequisite = {
+			focus = WHR_anarchism_under_god
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Belarus_Pure_And_True"
+			swap_ideas = {
+				remove_idea = WHR_christsoc2
+				add_idea = WHR_christsoc3
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_church_of_avatar
+		icon = GFX_goal_BBR_church_of_living_god
+		cost = 5
+		x = 0
+		y = 3
+		relative_position_id = WHR_hands_of_gods
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = WHR_denounce_tryants_in_moscow
+		}
+		prerequisite = {
+			focus = WHR_anarchism_under_god
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Belarus_Pure_And_True"
+			add_ideas = WHR_esoteric
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_god_and_people
+		icon = GFX_goal_AUS_Not_Without_Gods_Good_Light
+		cost = 5
+		x = 2
+		y = 3
+		relative_position_id = WHR_hands_of_gods
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = WHR_denounce_tryants_in_moscow
+		}
+		prerequisite = {
+			focus = WHR_ally_christian_democrats
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Belarus_Pure_And_True"
+			add_manpower = 100000
+			add_war_support = 0.1
+			add_political_power = 100
+			add_command_power = 50
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_liberate_church_from_autocracy
+		icon = GFX_goal_TRM_Orthodox_Integralism
+		cost = 5
+		x = 4
+		y = 3
+		relative_position_id = WHR_hands_of_gods
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = WHR_ally_christian_democrats
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Belarus_Pure_And_True"
+			swap_ideas = {
+				remove_idea = WHR_denounce_false_republic
+				add_idea = WHR_denounce_false_republic2
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_localize_liberalism
+		icon = GFX_goal_NFA_Entrench_Democracy
+		cost = 5
+		x = -2
+		y = 4
+		relative_position_id = WHR_hands_of_gods
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = WHR_no_commies
+		}
+		prerequisite = {
+			focus = WHR_blood_and_spirit
+		}
+		prerequisite = {
+			focus = WHR_church_of_avatar
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Belarus_Pure_And_True"
+			add_soclib_to_coalition = yes
+			add_marlib_to_coalition = yes
+			add_popularity = { 
+				ideology = social_liberal
+				popularity = 0.1
+			}
+			add_popularity = { 
+				ideology = market_liberal
+				popularity = 0.1
+			}
+			add_popularity = { 
+				ideology = syndicalist
+				popularity = 0.1
+			}
+			add_one_random_civilian_factory = yes
+			add_one_random_military_factory = yes
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_spiritual_revolution
+		icon = GFX_goal_GUA_Spiritual_Socialism
+		cost = 5
+		x = 0
+		y = 4
+		relative_position_id = WHR_hands_of_gods
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = WHR_church_of_avatar
+		}
+		prerequisite = {
+			focus = WHR_blood_and_spirit
+		}
+		prerequisite = {
+			focus = WHR_god_and_people
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Belarus_Pure_And_True"
+			swap_ideas = {
+				remove_idea = WHR_esoteric
+				add_idea = WHR_esoteric2
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_legacy_of_eec
+		icon = GFX_goal_POL_Spreading_Revolution
+		cost = 5
+		x = 2
+		y = 4
+		relative_position_id = WHR_hands_of_gods
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = WHR_church_of_avatar
+		}
+		prerequisite = {
+			focus = WHR_liberate_church_from_autocracy
+		}
+		prerequisite = {
+			focus = WHR_god_and_people
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Belarus_Pure_And_True"
+			# event about poland
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = WHR_kingdom_coming
+		icon = GFX_focus_rus_god_with_us
+		cost = 5
+		x = 0
+		y = 5
+		relative_position_id = WHR_hands_of_gods
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = WHR_localize_liberalism
+		}
+		prerequisite = {
+			focus = WHR_spiritual_revolution
+		}
+		prerequisite = {
+			focus = WHR_legacy_of_eec
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_Belarus_Pure_And_True"
+			# event about rus
+			add_ideas = WHR_kingdom_coming
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
 		id = WHR_The_Countercoup
 		icon = GFX_goal_WHR_Countercoup
 		
@@ -10490,7 +10956,7 @@ focus = {
 		}
 		
 		relative_position_id = WHR_Aftermath_Of_The_Coup
-		x = -3
+		x = -1
 		y = 9
 		ai_will_do = {
 			factor = 200
@@ -12338,6 +12804,12 @@ focus = {
 				popularity = 0.2
 			}
 			add_authdem_to_coalition = yes
+			hidden_effect = {
+				country_event = {
+					id = belarus.58
+					days = 30
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_STABILITY }
 	}

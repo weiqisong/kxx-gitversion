@@ -1225,6 +1225,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus QIE_capitalize_politics"
 			country_event = qiefocus.3
 			hidden_effect = {
+				set_country_leader_ideology = generic_national_democracy_subtype
 				if = {
 					limit = { has_template = "Manchu Cavalry Division" }
 					set_division_template_lock = {
@@ -1259,6 +1260,9 @@ focus_tree = {
 			add_one_random_civilian_factory = yes
 			add_one_random_civilian_factory = yes
 			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
 			hidden_effect = {
 				country_event = { id = qieflavor.19 days = 30 random_days = 120 }
 			}
@@ -1284,6 +1288,7 @@ focus_tree = {
 				idea = QIE_defaulted_debt
 				days = 700
 			}
+			add_stability = 0.2
 		}
 	}
 
@@ -1306,6 +1311,9 @@ focus_tree = {
 				uses = 2
 				category = industry
 			}
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -1326,7 +1334,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus QIE_leverage_new_pop"
 			add_ideas = QIE_anti_concession_intellectuals_idea
 			add_stability = 0.10
-			china_add_research_slots = yes
+			add_research_slot = 1
 			hidden_effect = {
 				country_event = { id = qieflavor.21 days = 30 random_days = 120 }
 			}
@@ -1889,6 +1897,7 @@ focus_tree = {
 			activate_targeted_decision = { target = FROM decision = QIE_placate_YCP }
 			activate_targeted_decision = { target = FROM decision = QIE_placate_NCERA }
 			hidden_effect = {
+				set_country_leader_ideology = prussian_constitutionalism_subtype
 				if = {
 					limit = { has_template = "Manchu Cavalry Division" }
 					set_division_template_lock = {
@@ -1947,6 +1956,12 @@ focus_tree = {
 				ideology = market_liberal
 				popularity = 0.08
 			}
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
 			add_ideas = QIE_AOG_bank
 			hidden_effect = {
 				country_event = { id = qieflavor.25 days = 30 random_days = 120 }
@@ -1979,16 +1994,7 @@ focus_tree = {
 			hidden_effect = {
 				country_event = { id = qieflavor.26 days = 90 random_days = 120 }
 			}
-			custom_effect_tooltip = tooltip_white_line
-			add_advisor_role = { #using this instead of the retire and restore method since he needs to be a charachter for republic
-				character = QIE_huang_boqiao
-				advisor = {
-					slot = political_advisor
-					idea_token = QIE_huang_boqiao_pol
-					traits = { KR_railway_magnate }
-					ai_will_do = { factor = 1 }
-				}
-			}
+			
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -2011,39 +2017,21 @@ focus_tree = {
 				type = industrial_complex
 				level = 2
 			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
 			add_popularity = {
 				ideology = market_liberal
-				popularity = 0.03
+				popularity = 0.05
 			}
-			custom_effect_tooltip = tooltip_white_line
-			custom_effect_tooltip = available_industrial_concern
-			show_ideas_tooltip = QIE_AOG_bank
-			custom_effect_tooltip = tooltip_white_line
-			if = {
-				limit = { has_dlc_aat = no }
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = QIE_krupp
-				show_ideas_tooltip = QIE_opel
-				show_ideas_tooltip = QIE_henschel
-				show_ideas_tooltip = QIE_focke_wulf
-				show_ideas_tooltip = QIE_junkers
-				show_ideas_tooltip = QIE_blohm_voss
-			}
-			else = {
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = QIE_krupp_organisation
-				show_mio_tooltip = QIE_opel_organisation
-				show_mio_tooltip = QIE_henschel_organisation
-				show_mio_tooltip = QIE_focke_wulf_organisation
-				show_mio_tooltip = QIE_junkers_organisation
-				show_mio_tooltip = QIE_blohm_voss_organisation
-				mio:QIE_krupp_organisation = { add_mio_size = 2 }
-				mio:QIE_opel_organisation = { add_mio_size = 2 }
-				mio:QIE_henschel_organisation = { add_mio_size = 2 }
-				mio:QIE_focke_wulf_organisation = { add_mio_size = 2 }
-				mio:QIE_junkers_organisation = { add_mio_size = 2 }
-				mio:QIE_blohm_voss_organisation = { add_mio_size = 2 }
-			}
+				mio:QIE_wusong_locomotive_works_organisation = { add_mio_size = 4 }
+				mio:QIE_china_navigation_company_organisation = { add_mio_size = 4 }
+				mio:QIE_china_aviation_corporation_organisation = { add_mio_size = 4 }
+				mio:QIE_aviation_weapons_technical_organisation = { add_mio_size = 4 }
+				mio:QIE_gongxian_arsenal_organisation = { add_mio_size = 4 }
+				mio:QIE_hanyang_arsenal_organisation = { add_mio_size = 4 }
+			
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -2102,6 +2090,14 @@ focus_tree = {
 				uses = 2
 				category = industry
 			}
+			
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_resource = {
+				type = steel
+				amount = 8
+				state = 614
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -2156,10 +2152,12 @@ focus_tree = {
 		ai_will_do = { factor = 4 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus QIE_IGfarben"
-			if = {
-				limit = { NOT = { has_tech = fuel_silos } }
-				set_technology = { fuel_silos = 1 }
-			}
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			
+				
+			set_technology = { fuel_silos = 1 }
+			
 			add_tech_bonus = {
 				name = QIE_IGfarben
 				bonus = 1
@@ -2186,7 +2184,11 @@ focus_tree = {
 		ai_will_do = { factor = 4 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus QIE_germanresearch"
-			china_add_research_slots = yes
+			add_research_slot = 1
+			swap_ideas = {
+				remove_idea = QIE_german_railroad_engineers_idea
+				add_idea = QIE_german_railroad_engineers_idea2
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -2538,12 +2540,12 @@ focus_tree = {
 			set_country_flag = jiangbaili2_incomplete
 			set_country_flag = jiangbaili3_incomplete
 			activate_mission = QIE_jiang_plan_mission
-			effect_tooltip = {
+			
 				swap_ideas = {
 					remove_idea = QIE_stalled_80_division_reform_plan
 					add_idea = QIE_formation_of_a_militaristic_state_people_level1
 				}
-			}
+			
 			clear_army_chief = yes
 			activate_advisor = QIE_jiang_baili_army_chief
 			custom_effect_tooltip = tooltip_white_line
@@ -2572,12 +2574,12 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus QIE_commisars"
 			add_one_random_civilian_factory = yes
 			add_one_random_civilian_factory = yes
-			effect_tooltip = {
+			
 				swap_ideas = {
 					remove_idea = QIE_formation_of_a_militaristic_state_people_level1
 					add_idea = QIE_formation_of_a_militaristic_state_people_level2
 				}
-			}
+			
 			hidden_effect = {
 				QIE_upgrade_military_spirit_jiang_effect = yes
 			}
@@ -2635,12 +2637,12 @@ focus_tree = {
 			set_country_flag = QIE_tang_zaili_plan2_incomplete
 			set_country_flag = QIE_tang_zaili_plan3_incomplete
 			activate_mission = QIE_tang_plan_mission
-			effect_tooltip = {
+			
 				swap_ideas = {
 					remove_idea = QIE_stalled_80_division_reform_plan
 					add_idea = QIE_in_the_footsteps_of_giants_level1
 				}
-			}
+			
 			clear_army_chief = yes
 			activate_advisor = QIE_tang_zaili_mhc
 			custom_effect_tooltip = tooltip_white_line
@@ -2701,12 +2703,12 @@ focus_tree = {
 				custom_effect_tooltip = tooltip_white_line
 			}
 			custom_effect_tooltip = tooltip_white_line
-			effect_tooltip = {
+			
 				swap_ideas = {
 					remove_idea = QIE_in_the_footsteps_of_giants_level1
 					add_idea = QIE_in_the_footsteps_of_giants_level2
 				}
-			}
+			
 			hidden_effect = {
 				QIE_upgrade_military_spirit_germany_effect = yes
 			}
@@ -4356,6 +4358,7 @@ focus = {
 			focus = QIE_wu_constitution
 			focus = QIE_restoration 
 			focus = QIE_XHHSD
+			focus = QIE_Fight_Hetmanist_Bureacracy
 		}
 		completion_reward = {
 			 SHX = {
@@ -5316,6 +5319,10 @@ focus = {
 							set_nationality = QIE
 						}
 					}
+					create_wargoal = {
+							target = SHX
+							type = annex_everything
+						}
 			}
 		}
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
@@ -5323,18 +5330,7 @@ focus = {
 
 	focus = {
 		id = HNN_formenting_the_kuomintang_revival
-		icon = {
-			trigger = {
-				china_is_aligned_with_left_kmt = yes
-			}
-			value = GFX_goal_LKMT_A_New_China
-		}
-		icon = {
-			trigger = {
-				NOT = { china_is_aligned_with_left_kmt = yes }
-			}
-			value = GFX_goal_RKMT_A_New_China
-		}
+		icon = GFX_goal_LKMT_A_New_China
 		cost = 3
 		ai_will_do = { base = 100 }
 		relative_position_id = HNN_victory_of_the_united_front
@@ -5357,12 +5353,7 @@ focus = {
 		}
 
 		completion_reward = {
-			QIE = {
-						create_wargoal = {
-							target = SHX
-							type = annex_everything
-						}
-					}
+			country_event = qiekmt.3
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -6193,10 +6184,11 @@ focus = {
 		cost = 3
 
 		relative_position_id = QIE_Fight_Hetmanist_Bureacracy
-		x = 9
-		y = 0
+		x = -9
+		y = 1
         prerequisite = {
 			focus = HNN_victory_of_the_united_front
+			focus = QIE_Fight_Hetmanist_Bureacracy
 		}
 		ai_will_do = {
 			base = 80
@@ -6478,8 +6470,8 @@ focus = {
 		cost = 3
 
 		relative_position_id = QIE_the_peoples_army
-		x = -1
-		y = 1
+		x = 0
+		y = 2
 
 		prerequisite = {
 			focus = QIE_the_peoples_army
@@ -7533,28 +7525,36 @@ focus = {
 	}
 focus = {
 		id = QIE_Fight_Hetmanist_Bureacracy
-		icon = GFX_UKR_Smash_Russian_Imperialism
+		icon = GFX_goal_HON_Socialist_Banner
 		cost = 3
 		
-		x = 56
-		y = 5
+		x = 65
+		y = 4
 		available = {
 			has_country_flag = led_by_li
 		}
-		prerequisite = {
+		mutually_exclusive = {
+			focus = QIE_wu_constitution
+			focus = QIE_restoration 
+			focus = QIE_XHHSD
 			focus = HNN_victory_of_the_united_front
+		}
+		prerequisite = {
+			focus = QIE_unrest
 		}
 		ai_will_do = {
 			factor = 20
 		}
 		completion_reward = {
-			 add_ideas = SOV_bureaucratic_centralism_1
-			
+			add_popularity = {
+       		 	ideology = syndicalist
+       			popularity = 0.1
+      		}
 		}
 	}
 	focus = {
 		id = QIE_Liknep
-		icon = GFX_goal_PAL_Food_Import
+		icon = GFX_SOV_soc_culture
 		cost = 3
 		relative_position_id = QIE_Fight_Hetmanist_Bureacracy
 		x = 2
@@ -7569,12 +7569,12 @@ focus = {
 			factor = 20
 		}
 		completion_reward = {
-		add_stability = 0.1
+			add_ideas = QIE_Liknep
 		}
 	}
 	focus = {
 		id = QIE_Finance_Art
-		icon = GFX_goal_ideology_syndicalist
+		icon = GFX_UKR_Smash_Russian_Imperialism
 		cost = 3
 		relative_position_id = QIE_Fight_Hetmanist_Bureacracy
 		x = 3
@@ -7589,10 +7589,19 @@ focus = {
 			factor = 20
 		}
 		completion_reward = {
+			add_research_slot = 1
 			add_popularity = {
-        ideology = syndicalist
-        popularity = 0.05
-      }
+       			ideology = authoritarian_democrat
+        		popularity = -0.1
+      		}
+			add_popularity = {
+       			ideology = paternal_autocrat
+        		popularity = -0.1
+      		}
+			add_popularity = {
+       			ideology = national_populist
+        		popularity = -0.1
+      		}
 		}
 	}
 	focus = {
@@ -7612,6 +7621,7 @@ focus = {
 			factor = 20
 		}
 		completion_reward = {
+			add_ideas = QIE_Kyivan_Vanguard
 			add_war_support = 0.10
 		}
 	}
@@ -7632,12 +7642,26 @@ focus = {
 			factor = 20
 		}
 		completion_reward = {
-			add_research_slot_until_five = yes
+			add_tot_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_popularity = {
+       			ideology = totalist
+        		popularity = 0.1
+      		}
+			add_popularity = {
+       			ideology = syndicalist
+        		popularity = 0.1
+      		}
+			add_popularity = {
+       			ideology = radical_socialist
+        		popularity = 0.15
+      		}
+			add_political_power = 100
 		}
 	}
 	focus = {
 		id = QIE_Silskprosvita
-		icon = GFX_goal_generic_revolutionary_government
+		icon = GFX_goal_AFG_Aid_Afghan_Agriculture_Anjumane_Zamidaran
 		cost = 3
 		relative_position_id = QIE_Fight_Hetmanist_Bureacracy
 		x = 3
@@ -7652,10 +7676,12 @@ focus = {
 			factor = 20
 		}
 		completion_reward = {
-			add_popularity = {
-        ideology = syndicalist
-        popularity = 0.05
-      }
+			every_owned_state = {
+				limit = {
+					is_core_of = QIE
+				}
+				add_one_random_infrastructure = yes
+			}
 		}
 	}
 	focus = {
@@ -7669,16 +7695,18 @@ focus = {
 		
 		}
 		prerequisite = {
-			focus = QIE_Fight_Hetmanist_Bureacracy
+			focus = QIE_Negotations_With_Soviet_Russia
+			focus = QIE_Negotiations_With_Communards
 		}
 		ai_will_do = {
 			factor = 20
 		}
 		completion_reward = {
-		add_popularity = {
-        ideology = syndicalist
-        popularity = 0.1
-      }
+			add_research_slot = 1
+			add_popularity = {
+       			ideology = syndicalist
+        		popularity = 0.15
+      		}
 		}
 	}
 	focus = {
@@ -7688,10 +7716,9 @@ focus = {
 		relative_position_id = QIE_Fight_Hetmanist_Bureacracy
 		x = -1
 		y = 1
-		available = {
-			RUS={
-        has_socialist_government=yes
-      }
+		
+		mutually_exclusive = {
+			focus = QIE_Negotiations_With_Communards
 		}
 		prerequisite = {
 			focus = QIE_Fight_Hetmanist_Bureacracy
@@ -7700,32 +7727,8 @@ focus = {
 			factor = 20
 		}
 		completion_reward = {
-			 RUS = {
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = CHI_mission_to_the_soviet_union
-			}
-			add_ai_strategy = {
-				type = alliance
-				id = ROOT
-				value = 200
-			}
-			add_ai_strategy = {
-				type = protect
-				id = ROOT
-				value = 200
-			}
-			add_ai_strategy = {
-				type = send_volunteers_desire
-				id = ROOT
-				value = 200
-			}
-			add_ai_strategy = {
-				type = support
-				id = ROOT
-				value = 200
-			}
-		}
+			add_ideas = QIE_bolshevism
+			set_country_leader_ideology = syn_broad_communism_subtype
 		}
 	}
 	focus = {
@@ -7735,10 +7738,9 @@ focus = {
 		relative_position_id = QIE_Fight_Hetmanist_Bureacracy
 		x = 1
 		y = 1
-		available = {
-			FRA={
-        has_socialist_government=yes
-      }
+		
+		mutually_exclusive = {
+			focus = QIE_Negotiations_With_Communards
 		}
 		prerequisite = {
 			focus = QIE_Fight_Hetmanist_Bureacracy
@@ -7750,32 +7752,7 @@ focus = {
 			factor = 20
 		}
 		completion_reward = {
-			 FRA = {
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = CHI_mission_to_the_soviet_union
-			}
-			add_ai_strategy = {
-				type = alliance
-				id = ROOT
-				value = 200
-			}
-			add_ai_strategy = {
-				type = protect
-				id = ROOT
-				value = 200
-			}
-			add_ai_strategy = {
-				type = send_volunteers_desire
-				id = ROOT
-				value = 200
-			}
-			add_ai_strategy = {
-				type = support
-				id = ROOT
-				value = 200
-			}
-		}
+			add_ideas = QIE_syndicalism
 		}
 	}
 	focus = {
@@ -7789,24 +7766,21 @@ focus = {
 		
 			
 		}
-		bypass = {
-			UKR_land_reform_finished_or_started = yes
-		}
+		
 		prerequisite = {
-			focus = QIE_Fight_Hetmanist_Bureacracy
+			focus = QIE_Negotations_With_Soviet_Russia
+			focus = QIE_Negotiations_With_Communards
 		}
 		ai_will_do = {
 			factor = 20
 		}
 		completion_reward = {
-			swap_ideas = {
-        remove_idea = SOV_bureaucratic_centralism_1
-        add_idea = SOV_bureaucratic_centralism_2
-      }
-      add_timed_idea = {
-        idea = SOV_mass_collectivization
-        days = 900
-      }
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_UKR_BREADBASKET
@@ -7830,6 +7804,7 @@ focus = {
 		}
 		completion_reward = {
 			add_stability = 0.1
+			add_ideas = QIE_Voluntary_Collectivisation
 		}
 		search_filters = {
 			FOCUS_FILTER_UKR_BREADBASKET
@@ -7852,10 +7827,8 @@ focus = {
 			factor = 20
 		}
 		completion_reward = {
-			swap_ideas = {
-        remove_idea = SOV_bureaucratic_centralism_2
-        add_idea = SOV_bureaucratic_centralism_4
-      }
+			add_manpower = 100000
+			add_ideas = QIE_Rural_Labour_Mobilisation
 		}
 		search_filters = {
 			FOCUS_FILTER_UKR_BREADBASKET
@@ -7872,14 +7845,16 @@ focus = {
 		
 		}
 		prerequisite = {
-			focus = QIE_Fight_Hetmanist_Bureacracy
+			focus = QIE_Negotations_With_Soviet_Russia
+			focus = QIE_Negotiations_With_Communards
 		}
 		ai_will_do = {
 			factor = 20
 		}
 		completion_reward = {
-			add_ideas = SOV_power_to_trade_unions
-      
+			add_ideas = QIE_A_Single_Trade_Union 
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
 		}
 	}
 	focus = {
@@ -7899,7 +7874,9 @@ focus = {
 			factor = 20
 		}
 		completion_reward = {
-			add_ideas = RUS_gosplan
+			add_ideas = QIE_gosplan
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
 		}
 	}
 	focus = {
@@ -7926,9 +7903,9 @@ focus = {
 		}
 		completion_reward = {
 			swap_ideas = {
-        remove_idea = SOV_bureaucratic_centralism_4
-        add_idea = SOV_bureaucratic_centralism_5
-      }
+        		remove_idea = QIE_A_Single_Trade_Union
+        		add_idea = QIE_A_Single_Trade_Union2
+      		}
 		}
 	}
 	focus = {
@@ -7955,9 +7932,9 @@ focus = {
 		}
 		completion_reward = {
 			swap_ideas = {
-      remove_idea = RUS_gosplan
-      add_idea = RUS_gosplan_3
-    }
+      			remove_idea = QIE_gosplan
+     			add_idea = QIE_gosplan2
+    		}
 		}
 	}
 	focus = {
@@ -7980,10 +7957,9 @@ focus = {
 			factor = 20
 		}
 		completion_reward = {
-			swap_ideas = {
-      remove_idea = RUS_gosplan_3
-      add_idea = RUS_gosplan_5
-    }
+			add_ideas = QIE_All_Power_To_Soviets
+			add_stability = 0.2
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -8009,10 +7985,7 @@ focus = {
 			factor = 20
 		}
 		completion_reward = {
-			swap_ideas = {
-        remove_idea = SOV_bureaucratic_centralism_5
-        add_idea = SOV_bureaucratic_centralism_6
-      }
+			add_ideas = QIE_Avantguarde_Proletariat
 		}
 	}
 	focus = {
@@ -8575,6 +8548,263 @@ focus = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
+	# hidden path - socialist wu 
+	focus = {
+		id = QIE_alliance_of_unbelieviable		
+		icon = GFX_goal_AUS_fly_red_flag
+		cost = 4
+	
+		x = 45
+		y = 16
+		allow_branch = {
+			has_country_flag = QIE_hidden_path_unlock
+		}
+		available = {  
+			has_country_flag = QIE_hidden_path_unlock
+		}
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = QIE_ally_french	
+		icon = GFX_goal_NYC_Ally_Syndies
+		cost = 4
+		relative_position_id = QIE_alliance_of_unbelieviable	
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = QIE_alliance_of_unbelieviable	
+		}
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = QIE_purge_congress
+		icon = GFX_goal_NFA_end_parliamentarism
+		cost = 4
+		relative_position_id = QIE_alliance_of_unbelieviable	
+		x = -3
+		y = 2
+		prerequisite = {
+			focus = QIE_ally_french
+		}
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = QIE_intergrate_syndie
+		icon = GFX_goal_ALB_Reinforce_Syndicalist_System
+		cost = 4
+		relative_position_id = QIE_alliance_of_unbelieviable	
+		x = -1
+		y = 2
+		prerequisite = {
+			focus = QIE_ally_french
+		}
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = QIE_pro_labor_lesgation
+		icon = GFX_goal_MEX_Enshrine_Rights_Workers_Laborers
+		cost = 4
+		relative_position_id = QIE_alliance_of_unbelieviable	
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = QIE_ally_french
+		}
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = QIE_united_front
+		icon = GFX_goal_FRA_union_dominance
+		cost = 4
+		relative_position_id = QIE_alliance_of_unbelieviable	
+		x = 3
+		y = 2
+		prerequisite = {
+			focus = QIE_ally_french
+		}
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = QIE_social_patriotism
+		icon = GFX_GRU_RED_PATRIOT
+		cost = 4
+		relative_position_id = QIE_alliance_of_unbelieviable	
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = QIE_purge_congress
+		}
+		prerequisite = {
+			focus = QIE_intergrate_syndie
+		}
+		prerequisite = {
+			focus = QIE_pro_labor_lesgation
+		}
+		prerequisite = {
+			focus = QIE_united_front
+		}
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = QIE_nationalize_industry
+		icon = GFX_VK_NATIONALIZE
+		cost = 4
+		relative_position_id = QIE_alliance_of_unbelieviable	
+		x = -1
+		y = 4
+		prerequisite = {
+			focus = QIE_social_patriotism
+		}
+		
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = QIE_populist_propaganda
+		icon = GFX_GRU_PIECK_propaganda
+		cost = 4
+		relative_position_id = QIE_alliance_of_unbelieviable	
+		x = 1
+		y = 4
+		prerequisite = {
+			focus = QIE_social_patriotism
+		}
+		
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	
+	focus = {
+		id = QIE_control_parlament
+		icon = GFX_goal_BBR_black_national_syndicalism
+		cost = 4
+		relative_position_id = QIE_alliance_of_unbelieviable	
+		x = 0
+		y = 5
+		prerequisite = {
+			focus = QIE_nationalize_industry
+		}
+		prerequisite = {
+			focus = QIE_populist_propaganda
+		}
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = QIE_boot_landlords
+		icon = GFX_goal_FOP_Ride_Against_Landlords_Sociedad_Rural
+		cost = 4
+		relative_position_id = QIE_alliance_of_unbelieviable	
+		x = -1
+		y = 6
+		prerequisite = {
+			focus = QIE_control_parlament
+		}
+		
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = QIE_military_socialism
+		icon = GFX_SOV_molotov_2
+		cost = 4
+		relative_position_id = QIE_alliance_of_unbelieviable	
+		x = 1
+		y = 6
+		prerequisite = {
+			focus = QIE_control_parlament
+		}
+		
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = QIE_maintain_socialism
+		icon = GFX_goal_ideology_radical_socialist
+		cost = 4
+		relative_position_id = QIE_alliance_of_unbelieviable	
+		x = -1
+		y = 7
+		prerequisite = {
+			focus = QIE_boot_landlords
+		}
+		prerequisite = {
+			focus = QIE_military_socialism
+		}
+		mutually_exclusive = {
+			focus = QIE_socdem_yay
+		}
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = QIE_socdem_yay
+		icon = GFX_goal_ideology_social_democrat
+		cost = 4
+		relative_position_id = QIE_alliance_of_unbelieviable	
+		x = 1
+		y = 7
+		prerequisite = {
+			focus = QIE_boot_landlords
+		}
+		prerequisite = {
+			focus = QIE_military_socialism
+		}
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			
+		}
+		mutually_exclusive = {
+			focus = QIE_maintain_socialism
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
 	focus = {
 		#restoration, sets up Manchu tree
 		id = QIE_restoration
@@ -8586,8 +8816,12 @@ focus = {
 		y = 1
 
 		prerequisite = { focus = QIE_unrest }
-		mutually_exclusive = { focus = QIE_wu_constitution 
-		focus = QIE_XHHSD focus = HNN_victory_of_the_united_front}
+		mutually_exclusive = { 
+			focus = QIE_wu_constitution 
+			focus = QIE_XHHSD 
+			focus = HNN_victory_of_the_united_front
+			focus = QIE_Fight_Hetmanist_Bureacracy
+		}
 		available = { hidden_trigger = { always = no } }
 
 		completion_reward = {
@@ -8612,8 +8846,12 @@ focus = {
 		available = { has_country_flag = QIE_coup_failed }
 
 		prerequisite = { focus = QIE_unrest }
-		mutually_exclusive = { focus = QIE_restoration 
-		focus = QIE_XHHSD focus = HNN_victory_of_the_united_front}
+		mutually_exclusive = { f
+		ocus = QIE_restoration 
+		focus = QIE_XHHSD 
+		focus = HNN_victory_of_the_united_front
+		focus = QIE_Fight_Hetmanist_Bureacracy
+	}
 
 		select_effect = {
 			log = "[GetDateText]: [Root.GetName]: Select Focus QIE_wu_constitution"
@@ -8954,6 +9192,7 @@ focus = {
 			focus = QIE_wu_constitution
 			focus = QIE_restoration 
 			focus = HNN_victory_of_the_united_front
+			focus = QIE_Fight_Hetmanist_Bureacracy
 		}
 		ai_will_do = {
 			factor = 4
@@ -8973,9 +9212,8 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_ideas = FNG_nap_army_leads_the_empire
-			add_ideas = LEP_Coercive_Rule
-			add_ideas = FNG_Paternal_Guidance
+			set_country_leader_ideology = pataut_washingtonism_subtype
+			add_ideas = QIE_military_regime
 			create_country_leader = {
 	         name = "吴佩孚"
 			 desc = QIE_wu_peifu_leader_desc
@@ -8984,7 +9222,7 @@ focus = {
 	         ideology = washingtonism_subtype
 	         traits = { }
             }
-			add_country_leader_trait = NFA_cult_of_personality
+			
 		}
 	}
 	focus = {
@@ -9016,11 +9254,9 @@ focus = {
 
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = LEP_Coercive_Rule
-				add_idea = LEP_Coercive_Rule7
+				remove_idea = QIE_military_regime
+				add_idea = QIE_military_regime2
 			}
-              add_ideas = FNG_Bingzhan_Network
-			  add_ideas = SHX_arm_the_troops_idea3
 		}
 	}
 	focus = {
@@ -9121,13 +9357,7 @@ focus = {
 
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = LEP_Coercive_Rule7
-				add_idea = LEP_Coercive_Government
-			}
-			  add_ideas = FNG_nap_army_leads_the_empire
-			   add_ideas = FNG_Traditional_Command_Structure
-               add_ideas = FNG_Baojia_System
+			add_ideas = QIE_militarism
 		}
 	}
 	### Tang Xiangming
@@ -9177,6 +9407,7 @@ focus = {
 				ideology = paternal_autocrat
 				popularity = 0.1
 			}
+			add_ideas = QIE_parliment_banned
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 	}
@@ -9337,6 +9568,10 @@ focus = {
 				popularity = 0.10
 			}
 			add_stability = 0.1
+			swap_ideas = {
+				remove_idea = QIE_military_regime2
+				add_idea = QIE_military_regime3
+			}
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 	}
@@ -9622,7 +9857,10 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HNN_bolster_loyal_intellectuals"
 			add_research_slot = 1
-			
+			swap_ideas = {
+				remove_idea = QIE_militarism
+				add_idea = QIE_militarism2
+			}
 				add_political_power = 35
 				
 			
@@ -9632,7 +9870,7 @@ focus = {
 
 	focus = {
 		id = HNN_wipe_out_socialists
-		icon = GFX_goal_LEP_kmt_encirclement
+		icon = GFX_BRY_Anti_Socialist_Raids
 		cost = 4
 
 		relative_position_id = HNN_ensure_rural_loyalty
@@ -9656,14 +9894,7 @@ focus = {
 
 		completion_reward = {
 			add_research_slot = 1
-		swap_ideas = {
-				remove_idea = LEP_Local_Development
-				add_idea = LEP_Local_Development1
-			}
-			swap_ideas = {
-				remove_idea = LEP_Honest_Rule
-				add_idea = LEP_Honest_Rule2
-			}
+		
 			log = "[GetDateText]: [Root.GetName]: Focus HNN_wipe_out_socialists"
 		
 			
@@ -9755,15 +9986,9 @@ focus = {
 
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = LEP_Local_Development1
-				add_idea = LEP_Local_Development3
+				remove_idea = QIE_parliment_banned
+				add_idea = QIE_jade_marshal_rule
 			}
-			swap_ideas = {
-				remove_idea = LEP_Honest_Rule2
-				add_idea = LEP_Honest_Rule4
-			}
-			add_ideas = LEP_nationalist_morale
-			add_ideas = FNG_Centralized_Provincial_Revenues
 			add_ideas = QIE_roc_idea
 		set_cosmetic_tag = QIE_roc_proclaimed
 			log = "[GetDateText]: [Root.GetName]: Focus HNN_safety_and_security"
@@ -9803,19 +10028,14 @@ focus = {
 			add_ideas = CHS_empowered_legislative
 			add_ideas = CHS_xinhai_legacy_idea
 			log = "[GetDateText]: [Root.GetName]: Focus HNN_restore_civilian_rule"
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = yes
-			}
 			
 			add_popularity = {
 				ideology = authoritarian_democrat
 				popularity = 0.20
 			}
-
-			set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
-			add_to_coalition = yes
-				
+			
+			add_authdem_to_coalition = yes
+				# insert election event later
 			
 			
 		}
@@ -10867,10 +11087,9 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			set_country_leader_ideology = prussian_constitutionalism_subtype
-			add_ideas = NFA_strengthened_assembly
-			add_ideas = LEP_Kommission_Sponsorship
-			add_ideas = LEP_Dishonest_Government
+			set_country_leader_ideology = oligarchy_subtype
+			add_marlib_to_coalition = yes
+			add_ideas = QIE_ger_chi_coop
 		}
 	}
 	focus = {
@@ -10901,21 +11120,13 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = NFA_strengthened_assembly
-				add_idea = NFA_strengthened_assembly2
-			}
-			set_politics = {
-			ruling_party = market_liberal
-			elections_allowed = yes
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.1
 			}
 			swap_ideas = {
-				remove_idea = LEP_Kommission_Sponsorship
-				add_idea = LEP_Kommission_Sponsorship1
-			}
-			swap_ideas = {
-				remove_idea = LEP_Dishonest_Government
-				add_idea = LEP_Dishonest_Government1
+				remove_idea = QIE_ger_chi_coop
+				add_idea = QIE_ger_chi_coop2
 			}
 		}
 	}
@@ -10947,7 +11158,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_ideas = LEP_Economic_Modernizationa
+			add_ideas = QIE_ger_industry
 				random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -11041,6 +11252,8 @@ focus = {
 				amount = 500
 				producer = GER
 			}
+			army_experience = 50
+
 		}
 	}
 	focus = {
@@ -11078,14 +11291,8 @@ focus = {
 				ideology = market_liberal
 				popularity = 0.1
 			}
-			swap_ideas = {
-				remove_idea = LEP_Dishonest_Government1
-				add_idea = LEP_Dishonest_Government2
-			}
-			swap_ideas = {
-				remove_idea = NFA_strengthened_assembly2
-				add_idea = NFA_strengthened_assembly3
-			}
+			add_ideas = QIE_useful_idiots
+			add_stability = 0.2
 		}
 	}
 	focus = {
@@ -11119,11 +11326,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_ideas = GEA_New_Shipbuilding_Methods_idea
-			swap_ideas = {
-				remove_idea = LEP_Kommission_Sponsorship1
-				add_idea = LEP_Kommission_Sponsorship2
-			}
+			add_ideas = QIE_ger_fleet
 		}
 	}
 	focus = {
@@ -11154,9 +11357,12 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = LEP_Dishonest_Government2
-				add_idea = LEP_Dishonest_Government3
+			add_war_support = 0.2
+			add_command_power = 50
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 5000
+				producer = GER
 			}
 		}
 	}
@@ -11188,12 +11394,14 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = LEP_Kommission_Sponsorship2
-				add_idea = LEP_Kommission_Sponsorship3
+			add_ideas = QIE_ger_army
+			add_doctrine_cost_reduction = {
+				name = QIE_work_with_manchu
+				cost_reduction = 1
+				uses = 2
+				category = land_doctrine
 			}
-			add_ideas = LEP_life_guards_idea
-			add_ideas = AOG_extended_attache_idea
+
 		}
 	}
 	focus = {
@@ -11231,19 +11439,15 @@ focus = {
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = LEP_Kommission_Sponsorship3
-				add_idea = LEP_Kommission_Sponsorship4
+				remove_idea = QIE_ger_chi_coop2
+				add_idea = QIE_ger_chi_coop3
 			}
-			swap_ideas = {
-				remove_idea = LEP_Dishonest_Government3
-				add_idea = LEP_Dishonest_Government4
-			}
-			GER = { add_to_faction = QIE }
-			add_ideas = GER_preferred_colony_idea
-			transfer_state = 744
-		    transfer_state = 996
-		    transfer_state = 802
-			transfer_state = 592
+			#might be useful later
+			#GER = { add_to_faction = QIE }		
+			#transfer_state = 744
+		   	#transfer_state = 996
+		  	#transfer_state = 802
+			#transfer_state = 592
 		}
 	}
 	focus = {
@@ -11279,12 +11483,13 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			set_politics = {
-			ruling_party = paternal_autocrat
-			elections_allowed = no
+			set_country_leader_ideology = authdem_junta_subtype
+			add_pataut_to_coalition = yes
+			add_ideas = QIE_military_regime
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.08
 			}
-			add_ideas = NFA_nationwide_martial_law
-			add_ideas = LEP_Coercive_Rule
 		}
 	}
 	focus = {
@@ -11315,9 +11520,26 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = LEP_Coercive_Rule
-				add_idea = LEP_Coercive_Rule3
+			add_ideas = QIE_parliment_banned
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.08
+			}
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.08
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = -0.08
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = -0.08
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = -0.08
 			}
 		}
 	}
@@ -11349,7 +11571,14 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_ideas = FNG_Traditional_Command_Structure
+			add_ideas = QIE_militarism
+			every_army_leader = {
+			add_attack = 1
+			add_defense = 1
+			add_planning = 1
+			add_logistics = 1
+			}
+
 		}
 	}
 	focus = {
@@ -11380,7 +11609,12 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_ideas = FNG_nap_army_leads_the_empire
+			swap_ideas = {
+				remove_idea = QIE_military_regime
+				add_idea = QIE_military_regime2
+			}
+			add_command_power = 50
+			army_experience = 50
 		}
 	}
 	focus = {
@@ -11414,12 +11648,21 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_ideas = FNG_Bingzhan_Network
-			add_ideas = SHX_arm_the_troops_idea3
-			swap_ideas = {
-				remove_idea = LEP_Coercive_Rule3
-				add_idea = LEP_Coercive_Rule5
+			add_soclib_to_coalition = yes
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.08
 			}
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.08
+			}
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.08
+			}
+			add_political_power = 100
+			add_war_support = 0.1
 		}
 	}
 	focus = {
@@ -11451,10 +11694,9 @@ focus = {
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = LEP_Coercive_Rule5
-				add_idea = LEP_Coercive_Rule7
+				remove_idea = QIE_military_regime2
+				add_idea = QIE_military_regime3
 			}
-			add_ideas = LEP_nationalist_morale
 		}
 	}
 	focus = {
@@ -11488,7 +11730,11 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_ideas = FNG_Baojia_System
+			swap_ideas = {
+				remove_idea = QIE_militarism
+				add_idea = QIE_militarism2
+			}
+			add_manpower = 100000
 		}
 	}
 	focus = {
@@ -11519,7 +11765,13 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_ideas = FNG_Centralized_Provincial_Revenues
+			add_political_power = 100
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
 		}
 	}
 	focus = {
@@ -11554,14 +11806,13 @@ focus = {
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = LEP_Coercive_Rule7
-				add_idea = LEP_Coercive_Government
+				remove_idea = QIE_parliment_banned
+				add_idea = QIE_jade_marshal_rule
 			}
-			swap_ideas = {
-				remove_idea =  NFA_nationwide_martial_law
-				add_idea =  FNG_Paternal_Guidance
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.1
 			}
-			add_country_leader_trait = NFA_cult_of_personality
 		}
 	}
 	focus = {
@@ -11596,8 +11847,23 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			set_country_leader_ideology = authdem_national_conservative_subtype
-			add_ideas = NFA_strengthened_assembly
+			set_country_leader_ideology = controlled_democracy_subtype
+			add_ideas = QIE_parliment_power
+			add_socdem_to_coalition = yes
+			add_soclib_to_coalition = yes
+			add_soccon_to_coalition = yes
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.08
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.08
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.08
+			}
 		}
 	}
 	focus = {
@@ -11628,21 +11894,19 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			set_politics = {
-			ruling_party = authoritarian_democrat
-			elections_allowed = yes
+			add_ideas = QIE_constitutional_monarchy
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.08
 			}
-			add_country_leader_trait = CAN_constitutional_monarch
-			swap_ideas = {
-				remove_idea = NFA_strengthened_assembly
-				add_idea = NFA_strengthened_assembly2
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.08
 			}
-			set_temp_variable = { coalition_partner_var = token:social_conservative }
-			add_to_coalition = yes
-			set_temp_variable = { coalition_partner_var = token:social_liberal }
-			add_to_coalition = yes
-			set_temp_variable = { coalition_partner_var = token:social_democrat }
-			add_to_coalition = yes
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.08
+			}
 		}
 	}
 	focus = {
@@ -11673,7 +11937,8 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_ideas = LEP_Honest_Rule
+			add_ideas = QIE_moral_government
+			add_stability = 0.2
 		}
 	}
 	focus = {
@@ -11704,7 +11969,10 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_ideas = LEP_Local_Development
+			add_ideas = QIE_capitalist_ally
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
 		}
 	}
 	focus = {
@@ -11739,9 +12007,10 @@ focus = {
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = NFA_strengthened_assembly2
-				add_idea = NFA_strengthened_assembly3
+				remove_idea = QIE_moral_government
+				add_idea = QIE_moral_government2
 			}
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -11775,14 +12044,14 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_ideas = SHX_agri_eco_idea
-			swap_ideas = {
-				remove_idea = LEP_Honest_Rule
-				add_idea = LEP_Honest_Rule1
-			}
-			swap_ideas = {
-				remove_idea = LEP_Local_Development
-				add_idea = LEP_Local_Development1
+			add_ideas = QIE_agarian_ideals
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -11814,14 +12083,11 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = LEP_Honest_Rule1
-				add_idea = LEP_Honest_Rule2
-			}
-			swap_ideas = {
-				remove_idea = LEP_Local_Development1
-				add_idea = LEP_Local_Development2
-			}
+			add_stability = 0.1
+			add_political_power = 100
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
 		}
 	}
 	focus = {
@@ -11852,7 +12118,25 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_ideas = FNG_Restored_Constitution
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.08
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.08
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.08
+			}
+			add_popularity = {
+				ideology = national_populist
+				popularity = -0.08
+			}
+			add_political_power = 100
+			add_stability = 0.1
+			add_war_support = 0.1
 		}
 	}
 	focus = {
@@ -11887,14 +12171,10 @@ focus = {
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			swap_ideas = {
-						remove_idea = LEP_Honest_Rule2
-						add_idea = LEP_Honest_Rule3
-					}
-					swap_ideas = {
-				remove_idea = LEP_Local_Development2
-				add_idea = LEP_Local_Development3
+				remove_idea = QIE_parliment_power
+				add_idea = QIE_parliment_democracy
 			}
-			add_ideas = FNG_5_races_empire
+			#insert election event later		
 		}
 	}
 
