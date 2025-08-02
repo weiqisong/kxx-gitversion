@@ -903,7 +903,7 @@ guiTypes = {
 				name = "country_minor_overlay_poland"
 				spriteType = GFX_minor_entry_revamped_overlay
 				position = {
-					x = 178 # 130 for each slot, so 3rd slot is 130*3=390 for example
+					x = 5 # 130 for each slot, so 3rd slot is 130*3=390 for example
 					y = 183
 				}
 				alwaystransparent = yes
@@ -916,7 +916,7 @@ guiTypes = {
 				name = "country_major_overlay_ger"
 				spriteType = GFX_major_entry_new_overlay_green
 				position = {
-					x = 353 # 130 for each slot, so 3rd slot is 130*3=390 for example
+					x = 1050 # 130 for each slot, so 3rd slot is 130*3=390 for example
 					y = 176
 				}
 				alwaystransparent = yes

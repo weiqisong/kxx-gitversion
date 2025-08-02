@@ -1,13 +1,16 @@
 add_namespace = zhinan
-country_event = { #两广路线指南
+country_event = { #
 	id = zhinan.1
-	title = hnn.20004.t
-	desc = hnn.20004.d
-	picture = GFX_report_event_generic_diplomacy1
-
-	is_triggered_only = yes
+	title = zhinan.1.t
+	desc = zhinan.1.d
+	picture = GFX_for_motherfuckers_who_is_blind
+	trigger = {
+		is_ai = no
+		date > 1936.1.1
+	}
+	fire_only_once = yes
 	option = { #Yes
-		name = guides.1000.b
+		name = zhinan.1.a
 	}
 }
 country_event = { #红德追加路线指南
@@ -432,6 +435,17 @@ country_event = { #白鹅
 	id = zhinan.40
 	title = zhinan.40.t
 	desc = zhinan.40.d
+	picture = GFX_report_event_generic_diplomacy1
+
+	is_triggered_only = yes
+	option = { #Yes
+		name = guides.1000.b
+	}
+}
+country_event = { #耶路撒冷
+	id = zhinan.41
+	title = zhinan.41.t
+	desc = zhinan.41.d
 	picture = GFX_report_event_generic_diplomacy1
 
 	is_triggered_only = yes

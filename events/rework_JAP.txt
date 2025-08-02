@@ -1,4 +1,69 @@
 ﻿add_namespace = rework_japan
+
+country_event = { #Rebellion time in Korea?
+	id = rework_japan.300
+	immediate = { log = "[GetDateText]: [Root.GetName]: event japfor.83" }
+	title = japfor.83.t
+	desc = {
+		text = japfor.83.nay
+	}
+	picture = GFX_report_event_JAP_barricade
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = japfor.83.b
+		hidden_effect = {
+			news_event = {
+				id = worldnews.198
+			}
+		}
+		add_stability = -0.15
+		remove_state_core = 525
+		remove_state_core = 527
+		remove_state_core = 1345
+		remove_state_core = 1346
+		remove_state_core = 1347
+		country_event = { id = japfor.86 days = 3 }
+		KOR = {
+			transfer_state = 525
+			transfer_state = 527
+			transfer_state = 1347
+			transfer_state = 1345
+			transfer_state = 1346
+			set_country_flag = { flag = KOR_rebellion days = 5 value = 1 }
+			country_event = { id = japfor.85 days = 1 }
+		}
+	}
+
+	option = {
+		name = japfor.83.c
+		hidden_effect = {
+			news_event = {
+				id = worldnews.198
+			}
+		}
+		add_stability = -0.15
+		remove_state_core = 525
+		remove_state_core = 527
+		remove_state_core = 1345
+		remove_state_core = 1346
+		remove_state_core = 1347
+		country_event = { id = japfor.86 days = 3 }
+		KOR = {
+			transfer_state = 525
+			transfer_state = 527
+			transfer_state = 1347
+			transfer_state = 1345
+			transfer_state = 1346
+			set_country_flag = { flag = KOR_rebellion days = 5 value = 1 }
+			country_event = { id = japfor.85 days = 1 }
+			change_tag_from = ROOT
+		}
+	}
+}
+
 country_event = { #The March of the Kita Ikki
 	id = rework_japan.0
 	immediate = {log = "[GetDateText]: [Root.GetName]: event rework_japan.0"}

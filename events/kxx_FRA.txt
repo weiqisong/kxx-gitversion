@@ -2965,6 +2965,26 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			set_party_name = {
+				ideology = totalist
+				long_name = "法兰西社会党/共治运动"
+				name = "社会党/共治运动"
+			}			
+			set_party_name = {
+				ideology = social_democrat
+				long_name = "法兰西社会党/共治运动/劳工民主联合会（共和社会党）"
+				name = "社会党/共治运动/劳工民主联合会"
+			}
+			set_party_name = {
+				ideology = radical_socialist
+				long_name = "法兰西社会党/共治运动/劳工民主联合会（工人国际法国支部）"
+				name = "社会党/共治运动/劳工民主联合会"
+			}
+		}
+	}
+
 	option = { 
 		name = kxxfrance.31.a #who fucking cares just a cringe commie chad
 		ai_chance = {
@@ -2982,10 +3002,10 @@ country_event = {
 			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
 		}
 		hidden_effect = {
-			country_event = { id = comfrance.1004 days = 1825 } 
+			country_event = { id = kxxfrance.100 days = 14 } 
+			set_country_flag = socdem_humanistic_capitalism_renaudel
 			create_country_leader = {
 				name = "皮埃尔·雷诺德尔"
-		
 				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
 				expire = "1.1.1"
 				traits = {  }
@@ -3019,7 +3039,8 @@ country_event = {
 			add_idea = FRA_marketization_3
 		}
 		hidden_effect = {
-			country_event = { id = comfrance.1004 days = 1825 } 
+			country_event = { id = kxxfrance.100 days = 14 } 
+			set_country_flag = socdem_liberalized_syndicalism_renaudel
 			create_country_leader = {
 				name = "皮埃尔·雷诺德尔"
 		
@@ -3049,7 +3070,8 @@ country_event = {
 		}	
 		add_ideas = FRA_Lighthouse_of_Democratic_Society
 		hidden_effect = {
-			country_event = { id = comfrance.1004 days = 1825 } 
+			country_event = { id = kxxfrance.100 days = 14 } 
+			set_country_flag = socdem_democratic_socialism_renaudel
 			create_country_leader = {
 				name = "皮埃尔·雷诺德尔"
 		
@@ -3080,7 +3102,8 @@ country_event = {
 		add_ideas = FRA_Between_possibility_and_impossibility
 		hidden_effect = {
 			set_cosmetic_tag = FRA_radical_Possibiliste
-			country_event = { id = comfrance.1004 days = 1825 } 
+			country_event = { id = kxxfrance.100 days = 14 } 
+			set_country_flag = radsoc_revisionist_marxism_renaudel
 			create_country_leader = {
 				name = "皮埃尔·雷诺德尔"
 		
@@ -3111,10 +3134,11 @@ country_event = {
 		add_ideas = FRA_The_third_road
 		hidden_effect = {
 			set_cosmetic_tag = FRA_radical_Possibiliste
-			country_event = { id = comfrance.1004 days = 1825 } 
+			country_event = { id = kxxfrance.100 days = 14 } 
+			set_country_flag = radsoc_liberal_socialism_renaudel
 			create_country_leader = {
 				name = "皮埃尔·雷诺德尔"
-		
+	
 				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
 				expire = "1.1.1"
 				traits = {  }
@@ -3142,7 +3166,8 @@ country_event = {
 		add_ideas = FRA_Still_moving_forward_in_the_midst_of_confusion
 		hidden_effect = {
 			set_cosmetic_tag = FRA_radical_Possibiliste
-			country_event = { id = comfrance.1004 days = 1825 } 
+			country_event = { id = kxxfrance.100 days = 14 } 
+			set_country_flag = radsoc_possibilism_renaudel
 			create_country_leader = {
 				name = "皮埃尔·雷诺德尔"
 		
@@ -6552,4 +6577,1277 @@ option = {
 	set_country_flag = FRA_batalie
 }	
 	
+}
+
+country_event = { 
+	id = kxxfrance.100
+	title = kxxfrance.100.t
+	desc = kxxfrance.100.d
+	is_triggered_only = yes
+	picture = GFX_report_event_FRA_renaudel_election
+	immediate = {
+		complete_national_focus = FRA_possibilite_elections
+	}
+	option = { 
+		name = kxxfrance.100.a
+		country_event = kxxfrance.101
+		custom_effect_tooltip = "共和国将每五年进行一次大选！"
+		set_country_flag = FRA_PS_elected
+	}
+
+	option = { 
+		name = kxxfrance.100.b
+		country_event = kxxfrance.102
+		custom_effect_tooltip = "共和国将每五年进行一次大选！"
+		set_country_flag = FRA_SM_elected	
+	}
+
+	option = { 
+		name = kxxfrance.100.c
+		country_event = kxxfrance.103
+		custom_effect_tooltip = "共和国将每五年进行一次大选！"
+		set_country_flag = FRA_CFDT_elected		
+	}	
+
+}
+
+country_event = { 
+	id = kxxfrance.101
+	title = kxxfrance.101.t
+	desc = kxxfrance.101.d
+	is_triggered_only = yes
+	picture = GFX_report_event_FRA_renaudel_election1
+	
+	option = { 
+		name = kxxfrance.101.a	
+		remove_ideas_with_trait = head_of_government
+		add_ideas = FRA_Ernest_Lafont_hog_tot
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = FRA_Adrien_Marquet_for_tot
+		remove_ideas_with_trait = economy_minister
+		add_ideas = FRA_Max_Hymans_eco_tot
+		remove_ideas_with_trait = security_minister
+		add_ideas = FRA_Max_Bonnafous_sec_tot
+		
+		hidden_effect = {
+			random_list = {
+				50 = {
+					create_country_leader = {
+						name = "马塞尔·戴亚"
+						desc = "POLITICS_MARCEL_DEAT_DESC"
+						picture = "gfx/leaders/FRA/Portrait_France_Marcel_Deat_Comfy.png"
+						expire = "1.1.1"
+						traits = {
+							chairman_leader
+						}
+						ideology = neo_socialism_subtype
+					}
+					add_popularity = {
+						ideology = totalist
+						popularity = 0.3
+					}				
+					meta_effect = {
+						text = {
+							set_politics = {
+								ruling_party = totalist
+								last_election = "[CURRENT_DATE]"
+								election_frequency = 60
+								elections_allowed = yes
+							}
+						}
+						CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+					}
+					add_tot_to_coalition = yes
+					add_radsoc_to_coalition = yes
+					add_socdem_to_coalition = yes			
+				}
+				50 = {
+					create_country_leader = {
+						name = "马塞尔·戴亚"
+						desc = "POLITICS_MARCEL_DEAT_DESC"
+						picture = "gfx/leaders/FRA/Portrait_France_Marcel_Deat_Comfy.png"
+						expire = "1.1.1"
+						traits = {
+							chairman_leader
+						}
+						ideology = radsoc_neo_socialism_subtype
+					}
+					add_popularity = {
+						ideology = radical_socialist
+						popularity = 0.3
+					}
+					meta_effect = {
+						text = {
+							set_politics = {
+								ruling_party = radical_socialist
+								last_election = "[CURRENT_DATE]"
+								election_frequency = 60
+								elections_allowed = yes
+							}
+						}
+						CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+					}
+					add_tot_to_coalition = yes
+					add_radsoc_to_coalition = yes
+					add_socdem_to_coalition = yes								
+				}						
+			}
+		}				
+	}
+
+	option = { 
+		name = kxxfrance.101.b
+		remove_ideas_with_trait = head_of_government
+		add_ideas = FRA_Guy_Mollet_hog_sde
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = FRA_Joseph_Paul_Boncour_for_sde
+		remove_ideas_with_trait = economy_minister
+		add_ideas = FRA_Daniel_Guerin_eco_rso
+		remove_ideas_with_trait = security_minister
+		add_ideas = FRA_Sebastien_Faure_sec_rso		
+		if = {
+			limit = {
+				has_country_flag = socdem_humanistic_capitalism_renaudel
+			}
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = social_democrat
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.3
+			}			
+			create_country_leader = {
+				name = "皮埃尔·雷诺德尔"
+				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
+				expire = "1.1.1"
+				traits = {  }
+				ideology = socdem_humanistic_capitalism_subtype
+			}
+			add_tot_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_socdem_to_coalition = yes											
+		}
+		else_if = {
+			limit = {
+				has_country_flag = socdem_liberalized_syndicalism_renaudel
+			}			
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = social_democrat
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.3
+			}			
+			create_country_leader = {
+				name = "皮埃尔·雷诺德尔"
+				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
+				expire = "1.1.1"
+				traits = {  }
+				ideology = socdem_liberalized_syndicalism_subtype
+			}
+			add_tot_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_socdem_to_coalition = yes					
+		}
+		else_if = {
+			limit = {
+				has_country_flag = socdem_democratic_socialism_renaudel
+			}
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = social_democrat
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}	
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.3
+			}			
+			create_country_leader = {
+				name = "皮埃尔·雷诺德尔"
+				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
+				expire = "1.1.1"
+				traits = {  }
+				ideology = socdem_democratic_socialism_subtype
+			}
+			add_tot_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_socdem_to_coalition = yes								
+		}
+		else_if = {
+			limit = {
+				has_country_flag = radsoc_revisionist_marxism_renaudel
+			}
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = radical_socialist
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.3
+			}			
+			create_country_leader = {
+				name = "皮埃尔·雷诺德尔"
+				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
+				expire = "1.1.1"
+				traits = {  }
+				ideology = radsoc_revisionist_marxism_subtype
+			}
+			add_tot_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_socdem_to_coalition = yes						
+		}
+		else_if = {
+			limit = {
+				has_country_flag = radsoc_liberal_socialism_renaudel
+			}
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = radical_socialist
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.3
+			}			
+			create_country_leader = {
+				name = "皮埃尔·雷诺德尔"
+				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
+				expire = "1.1.1"
+				traits = {  }
+				ideology = radsoc_liberal_socialism_subtype
+			}
+			add_tot_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_socdem_to_coalition = yes						
+		}
+		else_if = {
+			limit = {
+				has_country_flag = radsoc_possibilism_renaudel
+			}
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = radical_socialist
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.3
+			}			
+			create_country_leader = {
+				name = "皮埃尔·雷诺德尔"
+				picture = "gfx/leaders/FRA/Portrait_FRA_Pierre_Renaudel.png"
+				expire = "1.1.1"
+				traits = {  }
+				ideology = radsoc_possibilism_subtype
+			}
+			add_tot_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_socdem_to_coalition = yes									
+		}					
+	}
+
+	option = {
+		name = kxxfrance.101.c
+		remove_ideas_with_trait = head_of_government
+		add_ideas = FRA_Ernest_Lafont_hog_tot
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = FRA_Adrien_Marquet_for_tot
+		remove_ideas_with_trait = economy_minister
+		add_ideas = FRA_Marcel_Deat_eco_tot
+		remove_ideas_with_trait = security_minister
+		add_ideas = FRA_Max_Bonnafous_sec_tot		
+		create_country_leader = {
+			name = "阿德里安·马凯"
+			picture = "gfx/leaders/FRA/Portrait_FRA_Adrien_Marquet.png"
+			expire = "1.1.1"
+			ideology = neo_socialism_subtype
+			traits = {}
+		}
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = totalist
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 60
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.3
+		}
+		add_tot_to_coalition = yes
+		add_radsoc_to_coalition = yes
+		add_socdem_to_coalition = yes		
+	}
+	
+	option = {
+		name = kxxfrance.101.e
+		trigger = {
+			NOT = {
+				country_exists = BEL
+				country_exists = WLL
+			}
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = FRA_Ernest_Lafont_hog_tot
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = FRA_Adrien_Marquet_for_tot
+		remove_ideas_with_trait = economy_minister
+		add_ideas = FRA_Marcel_Deat_eco_tot
+		remove_ideas_with_trait = security_minister
+		add_ideas = FRA_Max_Bonnafous_sec_tot		
+		create_country_leader = {
+			name = "亨利·德·曼"
+			desc = "POLITICS_HENRIK_MAN_DESC"
+			picture = "gfx/leaders/BEL/Portrait_Belgium_Hendrik_De_Man.png"
+			expire = "1.1.1"
+			ideology = neo_socialism_subtype
+		}
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = totalist
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 60
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.3
+		}
+		add_tot_to_coalition = yes
+		add_radsoc_to_coalition = yes
+		add_socdem_to_coalition = yes		
+	}	
+
+}
+
+country_event = { 
+	id = kxxfrance.102
+	title = kxxfrance.102.t
+	desc = kxxfrance.102.d
+	is_triggered_only = yes
+	picture = GFX_report_event_FRA_renaudel_election2	
+
+	immediate = {
+		hidden_effect = {
+			remove_all_ministers = yes
+			add_ideas = {
+				FRA_Marcel_Deat_hog_tot
+				FRA_Joseph_Paul_Boncour_for_sde
+				FRA_Le_Corbusier_eco_tot
+				FRA_Max_Bonnafous_sec_tot
+			}
+		}
+	}	
+
+	option = { 
+		name = kxxfrance.102.a
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = totalist
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 60
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.3
+		}			
+		create_country_leader = {
+			name = "弗朗索瓦·勒海杜" 
+			picture = "gfx/leaders/FRP/Portrait_France_Francois_Lehideux.png"
+			expire = "1.1.1"
+			ideology = technocracy_subtype
+		}
+		if = {
+			limit = { 
+				has_country_flag = FRA_technocratic_peace
+			}
+			country_event = { id = kxxfrance.100 days = 1825 } 
+			add_tot_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_socdem_to_coalition = yes			
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					has_country_flag = FRA_technocratic_peace
+				}
+			}
+			country_event = { id = kxxfrance.105 days = 7 } 
+		}		
+	}
+
+	option = { 
+		name = kxxfrance.102.b
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = totalist
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 60
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}		
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.3
+		}		
+		create_country_leader = {
+			name = "雷蒙德·阿隆" 
+			picture = "gfx/leaders/FRA/Portrait_France_Raymond_Aron.png"
+			expire = "1.1.1"
+			ideology = burnhamite_thought_subtype
+		}
+		if = {
+			limit = { 
+				has_country_flag = FRA_technocratic_peace
+			}
+			country_event = { id = kxxfrance.100 days = 1825 } 
+			add_tot_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_socdem_to_coalition = yes			
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					has_country_flag = FRA_technocratic_peace
+				}
+			}
+			country_event = { id = kxxfrance.105 days = 7 } 
+		}				
+	}
+	
+	option = { 
+		name = kxxfrance.102.c
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = totalist
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 60
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}		
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.3
+		}		
+		create_country_leader = {
+			name = "勒·柯布西耶" 
+			picture = "gfx/leaders/FRA/Portrait_corbusier.png"
+			expire = "1.1.1"
+			ideology = technocratic_socialism_subtype
+		}
+		if = {
+			limit = { 
+				has_country_flag = FRA_technocratic_peace
+			}
+			country_event = { id = kxxfrance.100 days = 1825 } 
+			add_tot_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_socdem_to_coalition = yes			
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					has_country_flag = FRA_technocratic_peace
+				}
+			}
+			country_event = { id = kxxfrance.105 days = 7 } 
+		}			
+	}
+	
+	option = { 
+		name = kxxfrance.102.e
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = social_democrat
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 60
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}	
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.3
+		}			
+		create_country_leader = {
+			name = "弗朗西斯·德拉西" 
+			picture = "gfx/leaders/FRP/Portrait_France_Francis_Delaisi.png"
+			expire = "1.1.1"
+			ideology = socdem_utopian_technocracy_subtype
+		}
+		if = {
+			limit = { 
+				has_country_flag = FRA_technocratic_peace
+			}
+			country_event = { id = kxxfrance.100 days = 1825 } 
+			add_tot_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_socdem_to_coalition = yes			
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					has_country_flag = FRA_technocratic_peace
+				}
+			}
+			country_event = { id = kxxfrance.105 days = 7 } 
+		}			
+	}	
+
+	option = { 
+		name = kxxfrance.102.f
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = totalist
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 60
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.3
+		}			
+		create_country_leader = {
+			name = "让·库特罗" 
+			picture = "gfx/leaders/FRA/Portrait_France_Jean_Coutrot.png"
+			expire = "1.1.1"
+			ideology = transhumanism_subtype
+		}
+		if = {
+			limit = { 
+				has_country_flag = FRA_technocratic_peace
+			}
+			country_event = { id = kxxfrance.100 days = 1825 } 
+			add_tot_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_socdem_to_coalition = yes			
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					has_country_flag = FRA_technocratic_peace
+				}
+			}
+			country_event = { id = kxxfrance.105 days = 7 } 
+		}			
+	}
+	
+	option = { 
+		name = kxxfrance.102.g
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = radical_socialist
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 60
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.3
+		}		
+		create_country_leader = {
+			name = "皮埃尔·普丘"
+			picture = "gfx/leaders/FRP/Portrait_France_Pierre_Pucheu.png"
+			expire = "1.1.1"
+			traits = {  }
+			ideology = radsoc_saint_simonianism_subtype
+		}
+		if = {
+			limit = { 
+				has_country_flag = FRA_technocratic_peace
+			}
+			country_event = { id = kxxfrance.100 days = 1825 } 
+			add_tot_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_socdem_to_coalition = yes			
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					has_country_flag = FRA_technocratic_peace
+				}
+			}
+			country_event = { id = kxxfrance.105 days = 7 } 
+		}
+	}	
+
+}
+
+country_event = { 
+	id = kxxfrance.103
+	title = kxxfrance.103.t
+	desc = kxxfrance.103.d
+	is_triggered_only = yes
+	picture = GFX_report_event_FRA_renaudel_election3	
+
+	immediate = {
+		hidden_effect = {
+			country_event = { id = kxxfrance.100 days = 1825 }
+			remove_all_ministers = yes
+			add_ideas = {
+				FRA_Guy_Mollet_hog_sde
+				FRA_Joseph_Paul_Boncour_for_sde
+				FRA_Vincent_Auriol_eco_rso
+				FRA_Paul_Ramadier_sec_rso
+			}
+		}
+	}
+
+	option = { 
+		name = kxxfrance.103.a
+		create_country_leader = {
+			name = "费利克斯·古安"
+			picture = "gfx/leaders/FRA/Portrait_France_Felix_Gouin.png"
+			expire = "1.1.1"
+			ideology = radsoc_liberal_socialism_subtype
+			traits = {}
+		}
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = radical_socialist
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 60
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.3
+		}
+		add_tot_to_coalition = yes
+		add_radsoc_to_coalition = yes
+		add_socdem_to_coalition = yes				
+	}
+
+	option = { 
+		name = kxxfrance.103.b
+		create_country_leader = {
+			name = "莱昂·布鲁姆"
+			picture = "gfx/leaders/FRA/Portrait_FRA_Leon_Blum_KX.png"
+			expire = "1.1.1"
+			ideology = radsoc_revisionist_marxism_subtype
+			traits = {}
+		}
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = radical_socialist
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 60
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.3
+		}
+		add_tot_to_coalition = yes
+		add_radsoc_to_coalition = yes
+		add_socdem_to_coalition = yes				
+	}
+
+	option = { 
+		name = kxxfrance.103.c
+		create_country_leader = {
+			name = "樊尚·奥里奥尔"
+			picture = "gfx/leaders/FRA/Portrait_France_Vincent_Auriol.png"
+			expire = "1.1.1"
+			ideology = socdem_radical_progressivism_subtype
+			traits = {}
+		}
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = social_democrat
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 60
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.3
+		}
+		add_tot_to_coalition = yes
+		add_radsoc_to_coalition = yes
+		add_socdem_to_coalition = yes					
+	}
+	
+	option = { 
+		name = kxxfrance.103.e
+		create_country_leader = {
+			name = "皮埃尔·赖伐尔"
+			picture = "gfx/leaders/FRA/Portrait_France_Pierre_Laval.png"
+			expire = "1.1.1"
+			ideology = socdem_kleptocracy_subtype
+			traits = {}
+		}
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = social_democrat
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 60
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.3
+		}	
+		add_tot_to_coalition = yes
+		add_radsoc_to_coalition = yes
+		add_socdem_to_coalition = yes				
+	}
+
+	option = { 
+		name = kxxfrance.103.f
+    	create_country_leader = {
+    	  name = "居伊·摩勒"  # Guy Mollet
+    	  picture = "gfx/leaders/NRM/Portrait_Normandy_Guy_Mollet.png"
+    	  expire = "1.1.1"
+    	  ideology = revisionist_marxism_subtype
+    	}
+    	meta_effect = {
+    	  text = {
+    	    set_politics = {
+    	      ruling_party = social_democrat
+    	      last_election = "[CURRENT_DATE]"
+    	      election_frequency = 60
+    	      elections_allowed = yes
+    	    }
+    	  }
+    	  CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+    	}
+    	add_popularity = {
+    	  ideology = social_democrat
+    	  popularity = 0.3
+    	}
+		add_tot_to_coalition = yes
+		add_radsoc_to_coalition = yes
+		add_socdem_to_coalition = yes			
+	}
+
+	option = { 
+		name = kxxfrance.103.g
+		country_event = kxxfrance.104
+	}
+
+}
+
+country_event = { 
+	id = kxxfrance.104
+	title = kxxfrance.104.t
+	desc = kxxfrance.104.d
+	is_triggered_only = yes
+	picture = GFX_report_event_FRA_renaudel_election3
+	option = { 
+		name = kxxfrance.104.a
+		create_country_leader = {
+		  name = "让·龙格"  # Jean Longuet
+		  picture = "gfx/leaders/FRA/Portrait_FRA_Jean_Longuet.png"
+		  expire = "1.1.1"
+		  ideology = moderate_socialist_subtype
+		}
+		meta_effect = {
+		  text = {
+			set_politics = {
+			  ruling_party = radical_socialist
+			  last_election = "[CURRENT_DATE]"
+			  election_frequency = 60
+			  elections_allowed = yes
+			}
+		  }
+		  CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}
+		add_popularity = {
+		  ideology = radical_socialist
+		  popularity = 0.3
+		}
+		add_tot_to_coalition = yes
+		add_radsoc_to_coalition = yes
+		add_socdem_to_coalition = yes				
+	}
+
+	option = { 
+		name = kxxfrance.104.b
+		create_country_leader = {
+			name = "奥古斯特·德·里贝斯"
+			picture = "gfx/leaders/FRA/Portrait_FRA_Auguste_Champetier_de_Ribes.png"
+			expire = "1965.1.1"
+			ideology = authoritarian_social_democracy_subtype
+		}
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = social_democrat
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 60
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.3
+		}	
+		add_tot_to_coalition = yes
+		add_radsoc_to_coalition = yes
+		add_socdem_to_coalition = yes				
+	}
+
+	option = { 
+		name = kxxfrance.104.c
+		create_country_leader = {
+			name = "约瑟夫·保罗-邦库尔"  # Joseph Paul-Boncour
+			picture = "gfx/leaders/FRA/Portrait_FRA_Joseph_Paul_Boncour.png"
+			expire = "1.1.1"
+			ideology = socdem_radical_progressivism_subtype
+			traits = {}
+		}
+    	meta_effect = {
+    	  text = {
+    	    set_politics = {
+    	      ruling_party = social_democrat
+    	      last_election = "[CURRENT_DATE]"
+    	      election_frequency = 60
+    	      elections_allowed = yes
+    	    }
+    	  }
+    	  CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+    	}
+    	add_popularity = {
+    	  ideology = social_democrat
+    	  popularity = 0.3
+    	}	
+		add_tot_to_coalition = yes
+		add_radsoc_to_coalition = yes
+		add_socdem_to_coalition = yes				
+	}
+
+	option = { 
+		name = kxxfrance.104.e
+		create_country_leader = {
+			name = "保罗·富尔"
+			picture = "gfx/leaders/FRA/Portrait_France_Paul_Faure.png"
+			expire = "1.1.1"
+			ideology = moderate_socialist_subtype
+			traits = {}
+		}
+    	meta_effect = {
+    	  text = {
+    	    set_politics = {
+    	      ruling_party = radical_socialist
+    	      last_election = "[CURRENT_DATE]"
+    	      election_frequency = 60
+    	      elections_allowed = yes
+    	    }
+    	  }
+    	  CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+    	}
+    	add_popularity = {
+    	  ideology = radical_socialist
+    	  popularity = 0.3
+    	}	
+		add_tot_to_coalition = yes
+		add_radsoc_to_coalition = yes
+		add_socdem_to_coalition = yes				
+	}	
+
+	option = { 
+		name = kxxfrance.104.f
+		create_country_leader = {	
+			name = "加斯东·维达尔"  # Gaston Vidal
+			picture = "gfx/leaders/FRA/Portrait_FRA_Gaston_Vidal.png"
+			expire = "1.1.1"
+			ideology = socdem_paternal_socialism_subtype
+		}
+    	meta_effect = {
+    	  text = {
+    	    set_politics = {
+    	      ruling_party = social_democrat
+    	      last_election = "[CURRENT_DATE]"
+    	      election_frequency = 60
+    	      elections_allowed = yes
+    	    }
+    	  }
+    	  CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+    	}
+    	add_popularity = {
+    	  ideology = social_democrat
+    	  popularity = 0.3
+    	}
+		add_tot_to_coalition = yes
+		add_radsoc_to_coalition = yes
+		add_socdem_to_coalition = yes
+		add_authdem_to_coalition = yes
+		add_soclib_to_coalition = yes
+		add_soccon_to_coalition = yes									
+	}	
+
+	option = { 
+		name = kxxfrance.104.g	
+		create_country_leader = {
+			name = "加斯东·泰西耶"  # Gaston Tessier
+			picture = "gfx/leaders/FRA/Portrait_FRA_Gaston_Tessier.png"
+			expire = "1.1.1"
+			ideology = socdem_christian_socialism_subtype
+		}
+    	meta_effect = {
+    	  text = {
+    	    set_politics = {
+    	      ruling_party = social_democrat
+    	      last_election = "[CURRENT_DATE]"
+    	      election_frequency = 60
+    	      elections_allowed = yes
+    	    }
+    	  }
+    	  CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+    	}
+    	add_popularity = {
+    	  ideology = social_democrat
+    	  popularity = 0.3
+    	}
+		add_tot_to_coalition = yes
+		add_radsoc_to_coalition = yes
+		add_socdem_to_coalition = yes
+		add_soclib_to_coalition = yes
+		add_soccon_to_coalition = yes							
+	}	
+
+}
+
+country_event = { 
+	id = kxxfrance.105
+	title = kxxfrance.105.t
+	desc = kxxfrance.105.d
+	is_triggered_only = yes
+	picture = GFX_report_event_FRA_renaudel_election2
+	option = { 
+		name = kxxfrance.105.a
+		complete_national_focus = FRA_synarchist_conpiracy
+		set_country_flag = FRA_synarchist_victory
+		set_party_name = {
+			ideology = totalist
+			long_name = "共治运动"
+			name = "共治运动"
+		}
+		set_party_name = {
+			ideology = radical_socialist
+			long_name = "共治运动"
+			name = "共治运动"
+		}		
+		set_party_name = {
+			ideology = paternal_autocrat
+			long_name = "共治运动"
+			name = "共治运动"
+		}
+		set_party_name = {
+			ideology = social_democrat
+			long_name = "全国人民集会"
+			name = "全国人民集会"
+		}		
+		if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "弗朗索瓦·勒海杜"
+				}
+			}
+			set_politics = {
+				ruling_party = totalist
+				elections_allowed = no
+			}
+			set_cosmetic_tag = FRA_technocracy
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "雷蒙德·阿隆"
+				}
+			}
+			set_politics = {
+				ruling_party = totalist
+				elections_allowed = no
+			}			
+			set_cosmetic_tag = FRA_burhnamite	
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "勒·柯布西耶"
+				}
+			}
+			set_politics = {
+				ruling_party = totalist
+				elections_allowed = no
+			}			
+			set_cosmetic_tag = FRA_corbusier	
+		}	
+		if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "弗朗西斯·德拉西"
+				}
+			}
+			set_politics = {
+				ruling_party = social_democrat
+				elections_allowed = no
+			}			
+			set_cosmetic_tag = FRA_utopian
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "让·库特罗"
+				}				
+			}
+			set_politics = {
+				ruling_party = totalist
+				elections_allowed = no
+			}			
+			set_cosmetic_tag = FRA_transhumanism		
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "皮埃尔·普丘"
+				}
+			}
+			set_politics = {
+				ruling_party = radical_socialist
+				elections_allowed = no
+			}
+			set_cosmetic_tag = FRA_sansimon	
+			complete_national_focus = FRA_resurgent_of_sansimonism				
+		}	
+		mark_focus_tree_layout_dirty = yes			
+	}
+
+	option = { 
+		name = kxxfrance.105.b
+		complete_national_focus = FRA_synarchist_conpiracy
+		if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "弗朗索瓦·勒伊德"
+				}
+			}
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = totalist
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+			add_tot_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_socdem_to_coalition = yes						
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "雷蒙德·阿隆"
+				}
+			}
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = totalist
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+			add_tot_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_socdem_to_coalition = yes						
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "勒·柯布西耶"
+				}
+			}
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = totalist
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}	
+			add_tot_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_socdem_to_coalition = yes				
+		}	
+		if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "弗朗西斯·德拉西"
+				}
+			}
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = social_democrat
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+			add_tot_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_socdem_to_coalition = yes			
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "让·库特罗"
+				}
+			}
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = totalist
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+			add_tot_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_socdem_to_coalition = yes					
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "皮埃尔·普丘"
+				}
+			}
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = radical_socialist
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+			add_tot_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_socdem_to_coalition = yes				
+		}
+		hidden_effect = {
+			set_country_flag = FRA_technocratic_peace
+			country_event = { id = kxxfrance.100 days = 1825 } 	
+		}		
+	}
+
 }

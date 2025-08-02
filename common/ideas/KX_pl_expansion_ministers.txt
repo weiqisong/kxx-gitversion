@@ -306,8 +306,98 @@ ideas = {
 				hog_local_tyrant
 			}
 		}
+		POL_Boleslaw_Bierut_hog_tot = {
+			allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_Boleslaw_Bierut_hog_tot"
+			}
+			traits = {
+				head_of_government
+				totalist
+				sec_back_stabber
+			}
+		}
+		POL_Stanislaw_Gaszynski_hog_pau = {
+			allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_Stanislaw_Gaszynski_hog_pau"
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_corporate_suit
+			}
+		}
 	}
 	person_of_influence = {
+		POL_Jan_Hempel_sec_syn = {
+			allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_Jan_Hempel_sec_syn"
+			}
+			traits = {
+				security_minister
+				syndicalist
+				lama_natural_philosopher
+			}
+		}
+		POL_Stanislaw_Tolwinski_eco_syn = {
+			allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_Stanislaw_Tolwinski_eco_syn"
+			}
+			traits = {
+				economy_minister
+				syndicalist
+				eco_unionist
+			}
+		}
+		POL_Aleksander_Wat_for_syn = {
+			allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_Aleksander_Wat_for_syn"
+			}
+			traits = {
+				foreign_minister
+				syndicalist
+				hog_the_futurist
+			}
+		}
 		POL_Jarzy_Szurig_eco_syn = {
 			allowed = { original_tag = POL }
 			available = {

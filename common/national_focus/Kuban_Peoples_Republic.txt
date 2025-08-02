@@ -3785,7 +3785,7 @@ focus_tree = {
 		completion_reward = {
 			for_each_scope_loop = {
 				array = RUS.RUS_starting_states_array
-				add_claim_by = ROOT
+				add_core_of = ROOT
 			}
 			add_timed_idea = {
 				idea = KUB_revo
@@ -4041,11 +4041,6 @@ focus_tree = {
 			
 			RUS_enable_integration = yes
 			ROOT = { save_global_event_target_as = soviet_russia }
-			for_each_scope_loop = {
-				array = RUS.RUS_starting_states_array
-				remove_claim_by = KUB
-				add_core_of = KUB
-			}
 			add_dynamic_modifier = {
 				modifier = KUB_aftermath_modifier
 			}
@@ -4854,10 +4849,10 @@ focus_tree = {
 		prerequisite = { focus = KUB_Into_The_Future }
 		ai_will_do = { factor = 100 }
 		completion_reward = {
-			remove_ideas_with_trait = head_of_government
-			add_ideas = RUS_Maria_A_Spiridonova_hog_rso
-			set_country_flag = LEADER_GUI_NOT_VISIBLE
-			
+			add_popularity = {
+				ideology = syndicalist
+				popularity = 0.1
+			}
 		}
 	}
 	focus = {
@@ -5030,10 +5025,7 @@ focus_tree = {
 		prerequisite = { focus = KUB_Socially_Owned_Economy }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = SOV_social_economy
-				add_idea = SOV_social_economy_1
-			}
+			add_ideas = RUS_rural_obschina
 			activate_targeted_decision = { target = 217 decision = RUS_Develop_Civilian_Industry_In_State } #Tsaritsyn
 			activate_targeted_decision = { target = 220 decision = RUS_Develop_Civilian_Industry_In_State } #Kursk
 		}
@@ -5124,19 +5116,16 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			if = {
-				limit = { has_idea = rus_federation_of_syndicates_5 }
+			
+				
 				swap_ideas = {
 					remove_idea = rus_federation_of_syndicates_5
 					add_idea = SOV_labour_republic_2 
 				}
-			}
-			else = {
-				swap_ideas = {
-					remove_idea = village_communes
-					add_idea = rural_obschina
-				}
-			}
+			
+		
+				
+			
 			custom_effect_tooltip = SOV_Rural_Obschinas_tooltip
 			hidden_effect = {
 				every_owned_state = {
@@ -5229,18 +5218,14 @@ focus_tree = {
 		continue_if_invalid = no
 		
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = SOV_labour_republic_2
-				}
+			
+				
 				swap_ideas = {
 					remove_idea = SOV_labour_republic_2
 					add_idea = SOV_labour_republic_3
 				}
-			}
-			else = {
-				add_ideas = SOV_cooperative_economy_idea
-			}
+			
+			
 		}
 	}
 	focus = {
@@ -5267,21 +5252,16 @@ focus_tree = {
 		continue_if_invalid = no
 		
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = SOV_labour_republic_3
-				}
+			
+				
 				swap_ideas = {
 					remove_idea = SOV_labour_republic_3
 					add_idea = SOV_labour_republic_4
 				}
-			}
-			else = {
-				swap_ideas = {
-					remove_idea = rural_obschina
-					add_idea = SOV_rural_independence
-				}
-			}
+			
+			
+				
+			
 			activate_targeted_decision = { target = 254 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
 			activate_targeted_decision = { target = 246 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
 			activate_targeted_decision = { target = 258 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk

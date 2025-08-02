@@ -4,6 +4,22 @@ spriteTypes = {
   ### BLR
   ################################################################################################################################################################################################
   	spriteType = {
+		name = "GFX_idea_WHR_Aleksandr_Arkadievich_Dikhoff_sec_syn"
+		texturefile = "gfx/interface/ministers/BLR/Aleksandr_Arkadievich_Dikhoff.png"
+	}
+  	spriteType = {
+		name = "GFX_idea_WHR_Valentin_Aleksandrovich_Ternavtsev_eco_syn"
+		texturefile = "gfx/interface/ministers/BLR/Valentin_Aleksandrovich_Ternavtsev.png"
+	}
+ 	spriteType = {
+		name = "GFX_idea_WHR_Alexei_Dmitrievich_Scaldin_for_syn"
+		texturefile = "gfx/interface/ministers/BLR/Alexei_Dmitrievich_Scaldin.png"
+	}
+ 	spriteType = {
+		name = "GFX_idea_WHR_Ilya_Itskovich_Fundaminsky_hog_syn"
+		texturefile = "gfx/interface/ministers/BLR/Ilya_Itskovich_Fundaminsky.png"
+	}
+ 	spriteType = {
 		name = "GFX_idea_WHR_Vladimir_Medem_sec_rso"
 		texturefile = "gfx/interface/ministers/BLR/Vladimir_Medem.png"
 	}

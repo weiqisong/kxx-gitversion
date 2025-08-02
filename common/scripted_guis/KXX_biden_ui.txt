@@ -545,7 +545,7 @@ scripted_gui = {
 					has_country_flag = KXX_HOG_veiw
 					has_country_flag = FRA_Simone_Weil_occult_VISIBLE
 				}
-			}	
+			}			
 			Jesus_Weil_visible = {   #吾主耶稣
 				AND = {
 					has_country_flag = KXX_HOG_veiw
@@ -762,6 +762,54 @@ scripted_gui = {
 				AND = {
 					has_country_flag = KXX_HOG_second_veiw
 					has_country_flag = POL_Jezus_Lechia_VISIBLE
+				}
+			}
+			Kazimierz_Puzak_visible = { #卡奇米日·普扎克
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_country_flag = GAL_Kazimierz_Puzak_VISIBLE
+				}
+			}
+			Roman_Rybarski_visible = { #罗曼·雷巴尔斯基
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_country_flag = POL_Roman_Rybarski_VISIBLE
+				}
+			}
+			Tomasz_Dabal_visible = { #托马什·东巴尔
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_country_flag = GAL_Tomasz_Dabal_VISIBLE
+				}
+			}
+			Zygmunt_Zulawski_visible = { #齐格蒙特·茹瓦夫斯基
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_country_flag = POL_Zygmunt_Zulawski_VISIBLE
+				}
+			}			
+			Tomasz_Arciszewski_visible = { #托马斯·阿尔齐谢夫斯基
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_country_flag = POL_Tomasz_Arciszewski_VISIBLE
+				}
+			}
+			Augustyn_Hlond_visible = { #奥古斯丁·霍隆德
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_country_flag = POL_Archbishop_A_Hlond_VISIBLE
+				}
+			}
+			Stanislaw_Gaszynski_visible = { #坦尼斯瓦夫·加什津斯基
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_country_flag = POL_Stanislaw_Gaszynski_VISIBLE
+				}
+			}
+			Zdzislaw_Lubomirski_visible = { #兹齐斯瓦夫·卢博米尔斯基
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_country_flag = POL_Zdzislaw_Lubomirski_VISIBLE
 				}
 			}
 			

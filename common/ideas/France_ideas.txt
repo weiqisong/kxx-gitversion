@@ -6,6 +6,7 @@
 ideas = {
 
 	country = {
+	
 		FRA_revenge_for_the_war_of_hundred = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
 			allowed = { always = yes }

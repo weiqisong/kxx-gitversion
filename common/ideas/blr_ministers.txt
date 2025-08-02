@@ -1,6 +1,24 @@
 ideas = {
 	
 	head_of_government = { ### Head of Government ###
+		WHR_Ilya_Itskovich_Fundaminsky_hog_syn = {
+			allowed = { original_tag = WHR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea WHR_Fabijan_Akincyc_hog_npo"
+			}
+			traits = {
+				head_of_government
+				syndicalist
+				hog_naive_optimist
+			}
+		}
 		WHR_Fabijan_Akincyc_hog_npo = {
 			allowed = { original_tag = WHR }
 			available = {
@@ -78,6 +96,24 @@ ideas = {
 	}
 	person_of_influence = { ### Person of Influence ###
 		## Foreign Minister ##
+		WHR_Alexei_Dmitrievich_Scaldin_for_syn = {
+			allowed = { original_tag = WHR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea WHR_Uladzislau_Kazlouski_for_npo"
+			}
+			traits = {
+				foreign_minister
+				syndicalist
+				for_iron_fisted_brute
+			}
+		}
 		WHR_Uladzislau_Kazlouski_for_npo = {
 			allowed = { original_tag = WHR }
 			available = {
@@ -153,6 +189,24 @@ ideas = {
 			cancel_if_invalid = no
 			on_add = {
 				log = "[GetDateText]: [Root.GetName]: add idea SIC_Onorato_Damen_for_tot"
+			}
+		}
+		WHR_Valentin_Aleksandrovich_Ternavtsev_eco_syn = {
+			allowed = { original_tag = WHR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea WHR_Ivan_Jermacenka_eco_npo"
+			}
+			traits = {
+				economy_minister
+				syndicalist
+				eco_mixed_economy
 			}
 		}
 		WHR_Ivan_Jermacenka_eco_npo = {
@@ -273,6 +327,26 @@ ideas = {
 				security_minister
 				totalist
 				sec_secret_police_chief
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Bruno_Maffi_sec_tot"
+			}
+		}
+		WHR_Aleksandr_Arkadievich_Dikhoff_sec_syn = {
+			allowed = {
+				original_tag = WHR
+			}
+			traits = {
+				security_minister
+				totalist
+				sec_folk_researcher
 			}
 			available = {
 				custom_trigger_tooltip = {

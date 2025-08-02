@@ -613,6 +613,46 @@ guiTypes = {
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_POL_Jezus_Lechia"
 		}
+		iconType = { #
+			name = "Kazimierz_Puzak"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Kazimierz_Puzak"
+		}
+		iconType = { #
+			name = "Roman_Rybarski"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_POL_Roman_Rybarski"
+		}
+		iconType = { #
+			name = "Tomasz_Dabal"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_PLX_Tomasz_Dabal"
+		}
+		iconType = { #
+			name = "Zygmunt_Zulawski"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_PLX_Zygmunt_Zulawski"
+		}
+		iconType = { #
+			name = "Tomasz_Arciszewski"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_PLX_Tomasz_Arciszewski"
+		}
+		iconType = { #
+			name = "Augustyn_Hlond"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_PLX_Augustyn_Hlond"
+		}
+		iconType = { #
+			name = "Stanislaw_Gaszynski"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_PLX_Stanislaw_Gaszynski"
+		}
+		iconType = { #
+			name = "Zdzislaw_Lubomirski"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_POL_Zdzislaw_Lubomirski"
+		}
 		
 		#####################小黄##################################
 		

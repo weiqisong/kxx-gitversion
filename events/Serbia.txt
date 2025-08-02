@@ -3084,7 +3084,6 @@ country_event = {
 				add_core_of = SER
 			}
       add_state_core = 341
-      add_state_core = 1225
       add_state_core = 773
       set_cosmetic_tag = BAN_balkan_union
     }
@@ -3146,8 +3145,6 @@ country_event = {
 				187 = { add_core_of = ROOT 
 				         }
 				164 = { add_core_of = ROOT 
-				         }
-				1225 = { add_core_of = ROOT 
 				         }
 				773 = { add_core_of = ROOT 
 				         }
@@ -3633,8 +3630,6 @@ country_event = {
 187 = { add_core_of = ROOT 
       }
 164 = { add_core_of = ROOT 
-      }
-1225 = { add_core_of = ROOT 
       }
 773 = { add_core_of = ROOT 
       }

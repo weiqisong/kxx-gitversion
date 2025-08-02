@@ -3090,7 +3090,7 @@ focus_tree = {
 				}
 
 				create_field_marshal = {
-					name = "Jonas Lie"
+					name = "约纳斯·利"
 					portrait_path = "gfx/leaders/NOR/Portrait_Norway_Jonas_Lie.png"
 					traits = { offensive_doctrine politically_connected war_hero harsh_leader }
 					skill = 2
@@ -3100,7 +3100,7 @@ focus_tree = {
 					logistics_skill = 2
 				}
 				create_field_marshal = {
-					name = "Thorvald Thronsen"
+					name = "托瓦尔·特龙森"
 					portrait_path = "gfx/leaders/NOR/Portrait_Norway_Thorvald_Thronsen.png"
 					traits = { old_guard inflexible_strategist politically_connected organizer }
 					skill = 2
@@ -3110,7 +3110,7 @@ focus_tree = {
 					logistics_skill = 2
 				}
 				create_corps_commander = {
-					name = "Karl Marthinsen"
+					name = "卡尔·马丁森"
 					portrait_path = "gfx/leaders/NOR/Portrait_Norway_Karl_Marthinsen.png"
 					traits = { trickster }
 					skill = 2
@@ -3120,7 +3120,7 @@ focus_tree = {
 					logistics_skill = 2
 				}
 				create_corps_commander = {
-					name = "Oliver Møystad"
+					name = "奥利弗·默于斯塔德"
 					portrait_path = "gfx/leaders/NOR/Portrait_Norway_Oliver_Moystad.png"
 					traits = { winter_specialist }
 					skill = 2
@@ -3130,7 +3130,7 @@ focus_tree = {
 					logistics_skill = 2
 				}
 				create_corps_commander = {
-					name = "Henrik Rogstad"
+					name = "亨里克·罗格斯塔德"
 					portrait_path = "gfx/leaders/NOR/Portrait_Norway_Henrik_Rogstad.png"
 					traits = { hill_fighter }
 					skill = 1
@@ -3140,7 +3140,7 @@ focus_tree = {
 					logistics_skill = 2
 				}
 				create_corps_commander = {
-					name = "Axel Stang"
+					name = "阿克塞尔·斯唐"
 					portrait_path = "gfx/leaders/NOR/Portrait_Norway_Axel_Stang.png"
 					traits = { }
 					skill = 1
@@ -3150,7 +3150,7 @@ focus_tree = {
 					logistics_skill = 1
 				}
 				create_corps_commander = {
-					name = "Konrad Sundlo"
+					name = "康拉德·松德洛"
 					portrait_path = "gfx/leaders/NOR/Portrait_Norway_Konrad_Sundlo.png"
 					traits = { old_guard }
 					skill = 1
@@ -4770,7 +4770,7 @@ focus_tree = {
 				}
 
 				create_field_marshal = {
-					name = "Jonas Lie"
+					name = "约纳斯·利"
 					portrait_path = "gfx/leaders/NOR/Portrait_Norway_Jonas_Lie.png"
 					traits = { offensive_doctrine politically_connected war_hero harsh_leader }
 					skill = 2
@@ -4780,7 +4780,7 @@ focus_tree = {
 					logistics_skill = 2
 				}
 				create_field_marshal = {
-					name = "Thorvald Thronsen"
+					name = "托瓦尔·特龙森"
 					portrait_path = "gfx/leaders/NOR/Portrait_Norway_Thorvald_Thronsen.png"
 					traits = { old_guard inflexible_strategist politically_connected organizer }
 					skill = 2
@@ -4790,7 +4790,7 @@ focus_tree = {
 					logistics_skill = 2
 				}
 				create_corps_commander = {
-					name = "Karl Marthinsen"
+					name = "卡尔·马丁森"
 					portrait_path = "gfx/leaders/NOR/Portrait_Norway_Karl_Marthinsen.png"
 					traits = { trickster }
 					skill = 2
@@ -4800,7 +4800,7 @@ focus_tree = {
 					logistics_skill = 2
 				}
 				create_corps_commander = {
-					name = "Oliver Møystad"
+					name = "奥利弗·默于斯塔德"
 					portrait_path = "gfx/leaders/NOR/Portrait_Norway_Oliver_Moystad.png"
 					traits = { winter_specialist }
 					skill = 2
@@ -4810,7 +4810,7 @@ focus_tree = {
 					logistics_skill = 2
 				}
 				create_corps_commander = {
-					name = "Henrik Rogstad"
+					name = "亨里克·罗格斯塔德"
 					portrait_path = "gfx/leaders/NOR/Portrait_Norway_Henrik_Rogstad.png"
 					traits = { hill_fighter }
 					skill = 1
@@ -4820,7 +4820,7 @@ focus_tree = {
 					logistics_skill = 2
 				}
 				create_corps_commander = {
-					name = "Axel Stang"
+					name = "阿克塞尔·斯唐"
 					portrait_path = "gfx/leaders/NOR/Portrait_Norway_Axel_Stang.png"
 					traits = { }
 					skill = 1
@@ -4830,7 +4830,7 @@ focus_tree = {
 					logistics_skill = 1
 				}
 				create_corps_commander = {
-					name = "Konrad Sundlo"
+					name = "康拉德·松德洛"
 					portrait_path = "gfx/leaders/NOR/Portrait_Norway_Konrad_Sundlo.png"
 					traits = { old_guard }
 					skill = 1

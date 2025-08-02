@@ -582,6 +582,38 @@ spriteTypes = {
 		name = "GFX_Portrait_POL_Jezus_Lechia"
 		texturefile = "gfx/leaders/POL/Portrait_POL_Jezus_Lechia.png"
 	}
+	spriteType = {
+		name = "GFX_Portrait_Kazimierz_Puzak"
+		texturefile = "gfx/leaders/POL/Portrait_Kazimierz_Puzak.png"
+	}	
+	spriteType = {
+		name = "GFX_Portrait_POL_Roman_Rybarski"
+		texturefile = "gfx/leaders/POL/Portrait_POL_Roman_Rybarski.png"
+	}	
+	spriteType = {
+		name = "GFX_Portrait_PLX_Tomasz_Dabal"
+		texturefile = "gfx/leaders/POL/Portrait_PLX_Tomasz_Dabal.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_PLX_Zygmunt_Zulawski"
+		texturefile = "gfx/leaders/POL/Portrait_PLX_Zygmunt_Zulawski.png"
+	}	
+	spriteType = {
+		name = "GFX_Portrait_PLX_Tomasz_Arciszewski"
+		texturefile = "gfx/leaders/POL/Portrait_PLX_Tomasz_Arciszewski.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_PLX_Augustyn_Hlond"
+		texturefile = "gfx/leaders/POL/Portrait_PLX_August_Hlond.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_PLX_Stanislaw_Gaszynski"
+		texturefile = "gfx/leaders/POL/Portrait_PLX_Stanislaw_Gaszynski.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_POL_Zdzislaw_Lubomirski"
+		texturefile = "gfx/leaders/POL/Portrait_POL_Zdzislaw_Lubomirski.png"
+	}	
 	###激社拿破仑傀儡###
 	spriteType = {
 		name = "GFX_Portrait_NPL_Jose_Antonio"

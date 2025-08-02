@@ -1500,7 +1500,6 @@ GRE_national_ambitions_decision = {
 	 #ottoman empire
 	 341 = { add_core_of = ROOT }
 	 773 = { add_core_of = ROOT }
-	 1225 = { add_core_of = ROOT }
 		}
 	}
 	GRE_east_europe_unification = {
@@ -1700,52 +1699,14 @@ GRE_reorganize = {
 			has_completed_focus = GRE_save_orient
 		}
 		available = {
-			NOT = {
-				ALQ = { exists = yes }
-				ANQ = { exists = yes }
-				BHU = { exists = yes }
-				BOR = { exists = yes }
-				BRM = { exists = yes }
-				CAM = { exists = yes }
-				CHI = { exists = yes }
-				ETS = { exists = yes }
-				FNG = { exists = yes }
-				GEA = { exists = yes }
-				GXC = { exists = yes }
-				PRC = { exists = yes }
-				HNN = { exists = yes }
-				INC = { exists = yes }
-				JAP = { exists = yes }
-				KAC = { exists = yes }
-				KOR = { exists = yes }
-				KYR = { exists = yes }
-				LAO = { exists = yes }
-				LEC = { exists = yes }
-				LEP = { exists = yes }
-				MAN = { exists = yes }
-				MLY = { exists = yes }
-				MON = { exists = yes }
-				QIE = { exists = yes }
-				PHI = { exists = yes }
-				PNG = { exists = yes }
-				SAR = { exists = yes }
-				SHA = { exists = yes }
-				SHX = { exists = yes }
-				SIA = { exists = yes }
-				SIK = { exists = yes }
-				SIR = { exists = yes }
-				SQI = { exists = yes }
-				SZC = { exists = yes }
-				TAJ = { exists = yes }
-				TAN = { exists = yes }
-				TIB = { exists = yes }
-				UZB = { exists = yes }
-				VIN = { exists = yes }
-				XSM = { exists = yes }
-				YUN = { exists = yes }
-				TRK = { exists = yes }
-				ALO = { exists = yes }
-			} 
+			every_state = {
+				limit = {
+					
+					OR = { is_on_continent = asia  is_on_continent = india   }
+					
+				}
+				is_controlled_by_ROOT_or_ally = yes
+			}
 		}
 		complete_effect = {
 			set_temp_variable = { tag_to_release = CHI }
@@ -1800,38 +1761,16 @@ GRE_reorganize = {
 			has_completed_focus = GRE_revitalize_occident
 		}
 		available = {
-			16 = { is_controlled_by_ROOT_or_ally = yes}
-			64 = { is_controlled_by_ROOT_or_ally = yes}
-			6 = { is_controlled_by_ROOT_or_ally = yes}
-			34 = { is_controlled_by_ROOT_or_ally = yes}
-			7 = { is_controlled_by_ROOT_or_ally = yes}
-			3 = { is_controlled_by_ROOT_or_ally = yes}
-			1137 = { is_controlled_by_ROOT_or_ally = yes}
-			41 = { is_controlled_by_ROOT_or_ally = yes}
-			112 = { is_controlled_by_ROOT_or_ally = yes}
-			117 = { is_controlled_by_ROOT_or_ally = yes}
-			2 = { is_controlled_by_ROOT_or_ally = yes}
-			1129 = { is_controlled_by_ROOT_or_ally = yes}
-			43 = { is_controlled_by_ROOT_or_ally = yes}
-			91 = { is_controlled_by_ROOT_or_ally = yes}
-			10 = { is_controlled_by_ROOT_or_ally = yes}
-			107 = { is_controlled_by_ROOT_or_ally = yes}
-			109 = { is_controlled_by_ROOT_or_ally = yes}
-			44 = { is_controlled_by_ROOT_or_ally = yes}
-			46 = { is_controlled_by_ROOT_or_ally = yes}
-			47 = { is_controlled_by_ROOT_or_ally = yes}
-			48 = { is_controlled_by_ROOT_or_ally = yes}
-			202 = { is_controlled_by_ROOT_or_ally = yes}
-			206 = { is_controlled_by_ROOT_or_ally = yes}
-			96 = { is_controlled_by_ROOT_or_ally = yes}
-			1091 = { is_controlled_by_ROOT_or_ally = yes}
-			840 = { is_controlled_by_ROOT_or_ally = yes}
-			37 = { is_controlled_by_ROOT_or_ally = yes}
-			110 = { is_controlled_by_ROOT_or_ally = yes}
-			141 = { is_controlled_by_ROOT_or_ally = yes}
-			219 = { is_controlled_by_ROOT_or_ally = yes}
-			195 = { is_controlled_by_ROOT_or_ally = yes}
-			100 = { is_controlled_by_ROOT_or_ally = yes}
+			every_state = {
+				limit = {
+					NOT = {
+						is_core_of = NSW
+					}
+					is_on_continent = europe    
+					
+				}
+				is_controlled_by_ROOT_or_ally = yes
+			}
 		}
 		complete_effect = {
 			set_temp_variable = { tag_to_release = FRA }
@@ -1874,30 +1813,14 @@ GRE_reorganize = {
 			has_completed_focus = GRE_liberate_africans
 		}
 		available = {
-			NOT = {
-				TUR = { exists = yes }
-				GEO = { exists = yes }
-				ABK = { exists = yes }
-				ARM = { exists = yes }
-				AZE = { exists = yes }
-				EGY = { exists = yes }
-				IKH = { exists = yes }
-				IRQ = { exists = yes }
-				ASY = { exists = yes }
-				JBS = { exists = yes }
-				HEJ = { exists = yes }
-				KDR = { exists = yes }
-				KUR = { exists = yes }
-				LBA = { exists = yes }
-				TRU = { exists = yes }
-				LEB = { exists = yes }
-				OMA = { exists = yes }
-				PAL = { exists = yes }
-				PER = { exists = yes }
-				SAU = { exists = yes }
-				SYR = { exists = yes }
-				YEM = { exists = yes }
-					}
+			every_state = {
+				limit = {
+					
+					OR = { is_on_continent = africa   }
+					
+				}
+				is_controlled_by_ROOT_or_ally = yes
+			}
 		}
 		complete_effect = {
 			set_temp_variable = { tag_to_release = MAF }

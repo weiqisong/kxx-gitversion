@@ -146,11 +146,15 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/subideologies/ultranationalism.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_left_occultism_subtype"
+		name = "GFX_ideology_left_occultism_subtype" #极权-左翼神秘主义
 		texturefile = "gfx/interface/ideologies/subideologies/left_occultism.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_radsoc_left_occultism_subtype"
+		name = "GFX_ideology_radsoc_left_occultism_subtype" #鸡舍-左翼神秘主义
+		texturefile = "gfx/interface/ideologies/subideologies/radsoc_left_occultism.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_syn_left_occultism_subtype"  #工团-左翼神秘主义
 		texturefile = "gfx/interface/ideologies/subideologies/radsoc_left_occultism.png"
 	}
 	spriteType = {
@@ -397,6 +401,74 @@ spriteTypes = {
 		name = "GFX_ideology_faisceau_subtype" #民粹-费索主义
 		texturefile = "gfx/interface/ideologies/subideologies/faisceau_subtype.png"
 	}	
+	spriteType = {
+		name = "GFX_ideology_tot_revolution_nationale_subtype" #极权-民族革命
+		texturefile = "gfx/interface/ideologies/subideologies/tot_revolution_nationale.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_anarcho_individualism_subtype" #鸡舍-无政府个人主义
+		texturefile = "gfx/interface/ideologies/subideologies/anarcho_individualism_group.png"
+	}	
+	spriteType = {
+		name = "GFX_ideology_tot_left_conservatism_subtype" #极权-左翼保守主义
+		texturefile = "gfx/interface/ideologies/subideologies/tot_left_conservatism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_left_conservatism_subtype" #鸡舍-左翼保守主义
+		texturefile = "gfx/interface/ideologies/subideologies/left_conservatism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_syn_left_conservatism_subtype" #工团-左翼保守主义
+		texturefile = "gfx/interface/ideologies/subideologies/left_conservatism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_bureaucratic_socialism_subtype" #极权-官僚化社会主义
+		texturefile = "gfx/interface/ideologies/subideologies/bureaucratic_socialism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_radsoc_bureaucratic_socialism_subtype" #鸡舍-官僚化社会主义
+		texturefile = "gfx/interface/ideologies/subideologies/radsoc_bureaucratic_socialism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_syn_bureaucratic_socialism_subtype" #工团-官僚化社会主义
+		texturefile = "gfx/interface/ideologies/subideologies/radsoc_bureaucratic_socialism_group.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_radsoc_mao_zedong_thought_subtype" #鸡舍-毛泽东思想
+		texturefile = "gfx/interface/ideologies/subideologies/radsoc_mao_zedong_thought.png"
+	}	
+	spriteType = {
+		name = "GFX_ideology_tot_dystopian_subtype" #极权-反乌托邦体制
+		texturefile = "gfx/interface/ideologies/subideologies/tot_dystopian_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_natpop_dystopian_subtype" #民粹-反乌托邦体制
+		texturefile = "gfx/interface/ideologies/subideologies/natpop_dystopian_group.png"
+	}	
+	SpriteType = { #极权-左倾军团主义
+		name = "GFX_ideology_left_leaning_legionarism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/left_leaning_legionarism_group.png"			
+	}	
+	spriteType = {
+		name = "GFX_ideology_natdem_syndicalism_subtype"  #极权-民族民主工团主义
+		texturefile = "gfx/interface/ideologies/subideologies/natdem_syndicalism_group.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_esoteric_marxism_subtype" #极权-深奥马克思主义
+		texturefile = "gfx/interface/ideologies/subideologies/esoteric_marxism_group.dds"
+	}
+	SpriteType = {
+		name = "GFX_ideology_natpop_esoteric_marxism_subtype" #民粹-深奥马克思主义
+		texturefile = "gfx/interface/ideologies/subideologies/natpop_esoteric_marxism_group.dds"
+	}
+	SpriteType = {
+		name = "GFX_ideology_right_totalism_subtype" #极权-极权主义（亲右翼）
+		texturefile = "gfx/interface/ideologies/subideologies/right_totalism_group.png"
+	}	
+	SpriteType = {
+		name = "GFX_ideology_social_national_populism_subtype" #民粹-国家民粹主义（亲左翼）
+		texturefile = "gfx/interface/ideologies/subideologies/social_national_populism_group.png"
+	}	
 
 	frameAnimatedSpriteType = { #民粹-终末论
 		name = "GFX_ideology_Final_Theory_subtype"
@@ -601,16 +673,16 @@ spriteTypes = {
 
 	#fx
 	spriteType = {
-		name = "GFX_ideology_pataut_metaxism_subtype"
+		name = "GFX_ideology_pataut_metaxism_subtype" #家独-梅塔克萨斯主义
 		texturefile = "gfx/interface/ideologies/subideologies/metaxism_pataut.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_venizelism_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/venizelism_group.png"
+		name = "GFX_ideology_mercourism_subtype" #民粹-梅尔库里斯主义
+		texturefile = "gfx/interface/ideologies/subideologies/mercourism_group.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_mercourism_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/mercourism_group.png"
+		name = "GFX_ideology_controlled_democracy_subtype" #威民-指导式民主
+		texturefile = "gfx/interface/ideologies/subideologies/controlled_democracy_group.png"
 	}
 
 	#维斯瓦河奇迹
@@ -629,6 +701,24 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_polish_national_socialism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/polish_national_socialism_subtype.png"
+	}
+
+	#rm扩展
+	spriteType = { #民粹-斯巴达主义
+		name = "GFX_ideology_national_socialism_spartanism_subtype" 
+		texturefile = "gfx/interface/ideologies/subideologies/national_socialism_spartanism_subtype.dds"
+	}
+	spriteType = { #工团-先锋无政府主义
+		name = "GFX_ideology_despotism_vanguard_anarchism_subtype" 
+		texturefile = "gfx/interface/ideologies/subideologies/despotism_vanguard_anarchism_subtype.dds"
+	}
+	spriteType = { #极权-施特拉塞主义
+		name = "GFX_ideology_strasserism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/strasserism_group.png"
+	}
+	spriteType = { #极权-勃艮第体制
+		name = "GFX_ideology_burgundian_system_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/burgundian_system_group.png"
 	}
 
 

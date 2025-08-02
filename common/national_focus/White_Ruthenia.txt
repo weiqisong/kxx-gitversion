@@ -534,7 +534,9 @@ focus_tree = {
 
 			focus = WHR_secede_from_RP
 		 }
-		
+		available = {
+			has_completed_focus = WHR_Bund_rises
+		}
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
@@ -1137,7 +1139,9 @@ focus_tree = {
 
 			focus = WHR_secede_from_RP
 		 }
-		
+		available = {
+			has_completed_focus = WHR_monarchobol
+		}
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
@@ -1155,10 +1159,14 @@ focus_tree = {
 			base = 100
 		}
 		prerequisite = { 
-
 			focus = WHR_declare_ruthian_empire
-		 }
-		
+		}
+		available = {
+			OR = {
+				has_completed_focus = WHR_dawn_of_new_belarus
+				has_completed_focus = BLR_actions_of_vituska
+			}
+		}
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
@@ -1222,7 +1230,11 @@ focus_tree = {
 		 }
 		
 		available = {
-			has_socialist_government = yes		
+			OR = {
+				has_completed_focus = WHR_bolshevik	
+				has_completed_focus = WHR_BPSR
+			}
+			
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
@@ -2639,7 +2651,6 @@ every_state = {
 					add_state_core = 116
 					add_state_core = 773
 					add_state_core = 341
-					add_state_core = 1225
 					add_state_core = 340
 					add_state_core = 339
 					add_state_core = 342
@@ -3221,7 +3232,9 @@ every_state = {
 			focus = WHR_equal_RP_membership
 			focus = WHR_secede_from_RP
 		 }
-		
+		available = {
+			has_completed_focus = WHR_hands_of_gods
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
 			every_state = {
@@ -3248,8 +3261,14 @@ every_state = {
 		prerequisite = { 
 			focus = WHR_equal_RP_membership
 			focus = WHR_secede_from_RP
-		 }
-		
+		}
+		available = {
+			OR = {
+				has_completed_focus = WHR_The_Countercoup
+				has_completed_focus = WHR_peaceful_change
+			}
+			
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
 			add_ideas = WHR_kryvian_aryan_concept
@@ -6708,7 +6727,7 @@ focus = {
 				add_idea = WHR_partisan_warfare_idea2
 			}
 						create_corps_commander = {
-						name = "Michał Vituška"
+						name = "米哈尔·维图什卡"
 						portrait_path = "gfx/leaders/WHR/Portrait_WHR_Michal_Vituska.png"
 						traits = { guerilla_fighter }
 						skill = 2
@@ -7176,7 +7195,7 @@ focus = {
 			WHR_bsrh_in_power = yes
 		}
 		has_country_leader = {
-			name = "Uladzimir"
+			name = "弗拉基米尔"
 			ruling_only = yes
 		}
 	}
@@ -7187,7 +7206,7 @@ focus = {
 		WHR_bsdp_in_power = yes
 		NOT = {
 			has_country_leader = {
-				name = "Uladzimir"
+				name = "弗拉基米尔"
 				ruling_only = yes
 			}
 		}
@@ -8160,7 +8179,7 @@ focus = {
 	icon = GFX_goal_agricultural_policies
 	available = {
 		has_country_leader = {
-			name = "Uladzimir"
+			name = "弗拉基米尔"
 			ruling_only = yes
 		}
 		OR = {
@@ -8192,7 +8211,7 @@ focus = {
 	}
 	available = {
 		has_country_leader = {
-			name = "Uladzimir"
+			name = "弗拉基米尔"
 			ruling_only = yes
 		}
 		OR = {
@@ -8235,7 +8254,7 @@ focus = {
 	
 	available = {
 		has_country_leader = {
-			name = "Uladzimir"
+			name = "弗拉基米尔"
 			ruling_only = yes
 		}
 		OR = {
@@ -8279,7 +8298,7 @@ focus = {
 	}
 	available = {
 		has_country_leader = {
-			name = "Uladzimir"
+			name = "弗拉基米尔"
 			ruling_only = yes
 		}
 		OR = {
@@ -8321,7 +8340,7 @@ focus = {
 	}
 	available = {
 		has_country_leader = {
-			name = "Uladzimir"
+			name = "弗拉基米尔"
 			ruling_only = yes
 		}
 		OR = {
@@ -8360,7 +8379,7 @@ focus = {
 	}
 	available = {
 		has_country_leader = {
-			name = "Uladzimir"
+			name = "弗拉基米尔"
 			ruling_only = yes
 		}
 		OR = {
@@ -8387,7 +8406,7 @@ focus = {
 	}
 	available = {
 		has_country_leader = {
-			name = "Uladzimir"
+			name = "弗拉基米尔"
 			ruling_only = yes
 		}
 		OR = {
@@ -8419,7 +8438,7 @@ focus = {
 	}
 	available = {
 		has_country_leader = {
-			name = "Uladzimir"
+			name = "弗拉基米尔"
 			ruling_only = yes
 		}
 		OR = {
@@ -9203,7 +9222,7 @@ focus = {
 		cost = 5
 		available = {
 			has_country_leader = {
-				name = "Žyhimont"
+				name = "西吉斯蒙德"
 				ruling_only = yes
 			}
 		}
@@ -9464,7 +9483,7 @@ focus = {
 		}
 		bypass = {
 			has_country_leader = {
-				name = "Žyhimont"
+				name = "西吉斯蒙德"
 				ruling_only = yes
 			}
 		}
@@ -11695,7 +11714,10 @@ focus = {
 		}
 		cost = 5
 		available = {
-			WHR_bulak_balachowic_in_power = yes
+			has_country_leader = {
+        		name = "斯坦尼斯劳·布瓦克-巴瓦霍维茨"  # Stanisłaŭ Bułak-Bałachowič
+        		ruling_only = yes
+      		}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_nachalnik_dzyerzhavy"
@@ -11716,7 +11738,10 @@ focus = {
 		}
 		prerequisite = { focus = WHR_nachalnik_dzyerzhavy }
 		available = {
-			WHR_bulak_balachowic_in_power = yes
+			has_country_leader = {
+        		name = "斯坦尼斯劳·布瓦克-巴瓦霍维茨"  # Stanisłaŭ Bułak-Bałachowič
+        		ruling_only = yes
+      		}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_Cooperate_With_ZD"
@@ -11741,8 +11766,10 @@ focus = {
 			factor = 100
 		}
 		available = {
-			WHR_bulak_balachowic_in_power = yes
-	
+			has_country_leader = {
+        		name = "斯坦尼斯劳·布瓦克-巴瓦霍维茨"  # Stanisłaŭ Bułak-Bałachowič
+        		ruling_only = yes
+      		}
 		}
 		prerequisite = {
 			focus = WHR_labour_battalions
@@ -11780,7 +11807,10 @@ focus = {
 			factor = 100
 		}
 		available = {
-			WHR_bulak_balachowic_in_power = yes
+			has_country_leader = {
+        		name = "斯坦尼斯劳·布瓦克-巴瓦霍维茨"  # Stanisłaŭ Bułak-Bałachowič
+        		ruling_only = yes
+      		}
 			RUS = { is_ally_of_ROOT = yes }
 		}
 		completion_reward = {
@@ -11801,7 +11831,10 @@ focus = {
 			factor = 100
 		}
 		available = {
-			WHR_bulak_balachowic_in_power = yes
+			has_country_leader = {
+        		name = "斯坦尼斯劳·布瓦克-巴瓦霍维茨"  # Stanisłaŭ Bułak-Bałachowič
+        		ruling_only = yes
+      		}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_Initiate_Agrarian_Reforms"
@@ -11829,7 +11862,10 @@ focus = {
 			factor = 100
 		}
 		available = {
-			WHR_bulak_balachowic_in_power = yes
+			has_country_leader = {
+        		name = "斯坦尼斯劳·布瓦克-巴瓦霍维茨"  # Stanisłaŭ Bułak-Bałachowič
+        		ruling_only = yes
+      		}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_Bolster_Belarusian_Patriotism"
@@ -11854,7 +11890,10 @@ focus = {
 		}
 		cost = 5
 		available = {
-			WHR_bulak_balachowic_in_power = yes
+			has_country_leader = {
+        		name = "斯坦尼斯劳·布瓦克-巴瓦霍维茨"  # Stanisłaŭ Bułak-Bałachowič
+        		ruling_only = yes
+      		}
 			RUS = { is_ally_of_ROOT = yes }
 		}
 		completion_reward = {
@@ -11896,7 +11935,10 @@ focus = {
 			factor = 100
 		}
 		available = {
-			WHR_bulak_balachowic_in_power = yes
+			has_country_leader = {
+        		name = "斯坦尼斯劳·布瓦克-巴瓦霍维茨"  # Stanisłaŭ Bułak-Bałachowič
+        		ruling_only = yes
+      		}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_Nationalize_Industry"
@@ -11926,7 +11968,10 @@ focus = {
 			factor = 50
 		}
 		available = {
-			WHR_bulak_balachowic_in_power = yes
+			has_country_leader = {
+        		name = "斯坦尼斯劳·布瓦克-巴瓦霍维茨"  # Stanisłaŭ Bułak-Bałachowič
+        		ruling_only = yes
+      		}
 		}
 
 		completion_reward = {
@@ -11950,7 +11995,10 @@ focus = {
 			factor = 50
 		}
 		available = {
-			WHR_bulak_balachowic_in_power = yes
+			has_country_leader = {
+        		name = "斯坦尼斯劳·布瓦克-巴瓦霍维茨"  # Stanisłaŭ Bułak-Bałachowič
+        		ruling_only = yes
+      		}
 		}
 
 		completion_reward = {
@@ -11986,7 +12034,10 @@ focus = {
 			factor = 50
 		}
 		available = {
-			WHR_bulak_balachowic_in_power = yes
+			has_country_leader = {
+        		name = "斯坦尼斯劳·布瓦克-巴瓦霍维茨"  # Stanisłaŭ Bułak-Bałachowič
+        		ruling_only = yes
+      		}
 		}
 
 		completion_reward = {
@@ -12804,12 +12855,7 @@ focus = {
 				popularity = 0.2
 			}
 			add_authdem_to_coalition = yes
-			hidden_effect = {
-				country_event = {
-					id = belarus.58
-					days = 30
-				}
-			}
+			
 		}
 		search_filters = { FOCUS_FILTER_STABILITY }
 	}

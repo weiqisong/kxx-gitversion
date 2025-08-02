@@ -154,7 +154,10 @@ country_event = {
 				}
 			}
 		}
-		
+		country_event = {
+			id = belarus.6
+			days = 1
+		}
 		
 	}
 
@@ -215,7 +218,29 @@ country_event = {
 
 	option = {
 		name = belarus.6.a
-		set_country_flag = BLR_monarchypath
+		set_politics = {
+			ruling_party = syndicalist
+			elections_allowed = no
+		}
+		set_cosmetic_tag = WHR_christsoc
+		create_country_leader = {
+			name = "迪米特里·梅列日科夫斯基"
+			picture = "gfx/leaders/WHR/Portrait_WHR_Dmitry_Merezhkovsky.png"
+			expire = "1965.1.1"
+			ideology = christian_syndicalism_subtype
+		}
+		complete_national_focus = WHR_hands_of_gods
+		remove_all_ministers = yes
+		add_ideas = {
+			WHR_Ilya_Itskovich_Fundaminsky_hog_syn
+			WHR_Alexei_Dmitrievich_Scaldin_for_syn
+			WHR_Valentin_Aleksandrovich_Ternavtsev_eco_syn
+			WHR_Aleksandr_Arkadievich_Dikhoff_sec_syn
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.2
+		}
 
 		create_corps_commander = {
 			name = "Alexander Dolgorukov"
@@ -1606,41 +1631,7 @@ country_event = {
 	}
 	
 }
-country_event = {
-	id = belarus.58 #meli
-	title = belarus.58.t
-	desc = belarus.58.desc
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = belarus.58.a 
-		set_politics = {
-			ruling_party = syndicalist
-			elections_allowed = no
-		}
-		set_cosmetic_tag = WHR_christsoc
-		create_country_leader = {
-			name = "迪米特里·梅列日科夫斯基"
-			picture = "gfx/leaders/WHR/Portrait_WHR_Dmitry_Merezhkovsky.png"
-			expire = "1965.1.1"
-			ideology = christian_syndicalism_subtype
-		}
 
-		remove_all_ministers = yes
-		add_ideas = {
-
-		}
-		add_popularity = {
-			ideology = syndicalist
-			popularity = 0.2
-		}
-	}
-	option = {
-		name = belarus.58.b
-		add_stability = 0.2
-	}
-	
-}
 country_event = {
 	id = belarus.59 #meli poland
 	title = belarus.59.t

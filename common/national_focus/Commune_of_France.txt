@@ -23886,11 +23886,442 @@ focus = {
 				popularity = 0.2
 			}
 			country_event = { id = kxxfrance.31 } 
+			
 			hidden_effect = {
-				country_event = { id = comfranceeu.4 days = 30 } 
+				country_event = { id = comfranceeu.4 days = 40 } 
+				country_event = { id = kxxfrance.100 days = 30 } 
 			}
 		}
 	}
+	focus = {
+		id = FRA_possibilite_elections
+		icon = GFX_goal_POL_Hold_Free_Elections
+		allow_branch = {
+			has_country_flag = FRA_deat_supreme
+		}
+		available = {
+			always = no
+		}
+		relative_position_id = FRA_Possibiliste_win
+		x = 0
+		y = 9
+		cost = 3
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_uodl_victory
+		icon = GFX_goal_FRA_parti_socialiste_unifie
+		available = {
+			has_country_flag = FRA_CFDT_elected
+		}
+		relative_position_id = FRA_possibilite_elections
+		x = -3
+		y = 1
+		cost = 1
+		prerequisite = {
+			focus = FRA_possibilite_elections
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			increase_ruling_party_popularity_by_10 = yes
+		}
+	}
+	focus = {
+		id = FRA_socdem_under_god
+		icon = GFX_goal_CAN_christian_socialist_compromise
+		
+		relative_position_id = FRA_possibilite_elections
+		x = -4
+		y = 2
+		cost = 3
+		prerequisite = {
+			focus = FRA_uodl_victory
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_ideas = FRA_cfdt_pol
+		}
+	}
+	focus = {
+		id = FRA_legacy_of_jules
+		icon = GFX_goal_NIC_Victory_Social_Democracy
+		
+		relative_position_id = FRA_possibilite_elections
+		x = -2
+		y = 2
+		cost = 3
+		prerequisite = {
+			focus = FRA_uodl_victory
+			focus = FRA_ps_victory
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_ideas = FRA_legacy_of_jules
+		}
+	}
+	focus = {
+		id = FRA_buliding_welfare_state
+		icon = GFX_DKB_Welfare_All
+		
+		relative_position_id = FRA_possibilite_elections
+		x = -5
+		y = 3
+		cost = 3
+		prerequisite = {
+			focus = FRA_socdem_under_god
+		}
+		prerequisite = {
+			focus = FRA_legacy_of_jules
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			every_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				
+			}
+		}
+	}
+	focus = {
+		id = FRA_pcop_intergration
+		icon = GFX_goal_LPD_allign_radicals
+		
+		relative_position_id = FRA_possibilite_elections
+		x = -3
+		y = 3
+		cost = 3
+		prerequisite = {
+			focus = FRA_socdem_under_god
+		}
+		prerequisite = {
+			focus = FRA_legacy_of_jules
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			swap_ideas = {
+				remove_idea = FRA_cfdt_pol
+				add_idea = FRA_cfdt_pol2
+			}
+
+		}
+	}
+	focus = {
+		id = FRA_socialist_unity
+		icon = GFX_Socialist_Law
+		
+		relative_position_id = FRA_possibilite_elections
+		x = -4
+		y = 4
+		cost = 3
+		prerequisite = {
+			focus = FRA_buliding_welfare_state
+		}
+		prerequisite = {
+			focus = FRA_pcop_intergration
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			swap_ideas = {
+				remove_idea = FRA_cfdt_pol2
+				add_idea = FRA_cfdt_pol3
+			}
+		}
+	}
+	focus = {
+		id = FRA_all_national_government
+		icon = GFX_goal_FRA_rightist_socialist_appeals
+		
+		relative_position_id = FRA_possibilite_elections
+		x = 0
+		y = 2
+		cost = 3
+		prerequisite = {
+			focus = FRA_ps_victory
+		}
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_ideas = FRA_ps_pol
+		}
+	}
+	focus = {
+		id = FRA_planisme_plans
+		icon = GFX_goal_CSA_new_economic_planning
+		
+		relative_position_id = FRA_possibilite_elections
+		x = 2
+		y = 2
+		cost = 3
+		prerequisite = {
+			focus = FRA_ps_victory
+			focus = FRA_sm_victory
+		}
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_ideas = FRA_planisme_plans
+		}
+	}
+	focus = {
+		id = FRA_continue_municpal_reforms
+		icon = GFX_goal_NYC_City_Communes
+		
+		relative_position_id = FRA_possibilite_elections
+		x = 0
+		y = 3
+		cost = 3
+		prerequisite = {
+			focus = FRA_legacy_of_jules
+		}
+		prerequisite = {
+			focus = FRA_all_national_government
+		}
+		prerequisite = {
+			focus = FRA_planisme_plans
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			swap_ideas = {
+				remove_idea = FRA_ps_pol
+				add_idea = FRA_ps_pol2
+			}
+
+		}
+	}
+	focus = {
+		id = FRA_spit_in_radicalism
+		icon = GFX_goal_KIV_state_beyond_ideology
+		
+		relative_position_id = FRA_possibilite_elections
+		x = 0
+		y = 4
+		cost = 3
+		prerequisite = {
+			focus = FRA_continue_municpal_reforms
+		}
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_popularity = {
+				ideology = syndicalist
+				popularity = -0.15
+			}
+			increase_ruling_party_popularity_by_15 = yes
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = FRA_technocracy_with_a_smiling_face
+		icon = GFX_goal_CSA_Technocratic_Victory
+		
+		relative_position_id = FRA_possibilite_elections
+		x = 4
+		y = 2
+		cost = 3
+		prerequisite = {
+			focus = FRA_sm_victory
+		}
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_ideas = FRA_sm_pol
+		}
+	}
+	focus = {
+		id = FRA_localize_burnamism
+		icon = GFX_goal_BRI_burnam
+		
+		relative_position_id = FRA_possibilite_elections
+		x = 3
+		y = 3
+		cost = 3
+		prerequisite = {
+			focus = FRA_technocracy_with_a_smiling_face
+		}
+		prerequisite = {
+			focus = FRA_planisme_plans
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			swap_ideas = {
+				remove_idea = FRA_sm_pol
+				add_idea = FRA_sm_pol2
+			}
+		}
+	}
+	focus = {
+		id = FRA_sansimon_fourier_cabbett
+		icon = GFX_goal_GER_Vision_Saint_Simon
+		
+		relative_position_id = FRA_possibilite_elections
+		x = 5
+		y = 3
+		cost = 3
+		prerequisite = {
+			focus = FRA_technocracy_with_a_smiling_face
+		}
+		prerequisite = {
+			focus = FRA_planisme_plans
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			every_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				
+			}
+		}
+	}
+	focus = {
+		id = FRA_technology_change_life
+		icon = GFX_goal_CSA_Technocracy_Committee
+		
+		relative_position_id = FRA_possibilite_elections
+		x = 4
+		y = 4
+		cost = 3
+		prerequisite = {
+			focus = FRA_localize_burnamism
+		}
+		prerequisite = {
+			focus = FRA_sansimon_fourier_cabbett
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			swap_ideas = {
+				remove_idea = FRA_sm_pol2
+				add_idea = FRA_sm_pol3
+			}
+		}
+	}
+	focus = {
+		id = FRA_social_republic_comes_true
+		icon = GFX_VNC_model_of_dem_socialism
+		
+		relative_position_id = FRA_possibilite_elections
+		x = 0
+		y = 5
+		cost = 3
+		prerequisite = {
+			focus = FRA_socialist_unity
+			focus = FRA_spit_in_radicalism
+			focus = FRA_technology_change_life
+		}
+		available = {
+			NOT = {
+				has_country_flag = FRA_synarchist_victory
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+			add_stability = 0.1
+			increase_ruling_party_popularity_by_15 = yes
+		}
+	}
+	focus = {
+		id = FRA_ps_victory
+		icon = GFX_goal_URG_Partido_Socialista_de_Uruguay
+		
+		relative_position_id = FRA_possibilite_elections
+		x = 0
+		y = 1
+		cost = 1
+		available = {
+			has_country_flag = FRA_PS_elected
+		}
+		prerequisite = {
+			focus = FRA_possibilite_elections
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			increase_ruling_party_popularity_by_10 = yes
+		}
+	}
+	focus = {
+		id = FRA_sm_victory
+		icon = GFX_CSA_technocrat_logo
+		
+		relative_position_id = FRA_possibilite_elections
+		x = 3
+		y = 1
+		cost = 1
+		available = {
+			has_country_flag = FRA_SM_elected
+		}
+		prerequisite = {
+			focus = FRA_possibilite_elections
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			increase_ruling_party_popularity_by_10 = yes
+		}
+	}
+
+	
 	focus = {
 		id = FRA_millitant_godless
 		icon = GFX_goal_MEX_atheism

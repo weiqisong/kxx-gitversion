@@ -192,7 +192,7 @@ ideas = {
 			modifier = {
 				weekly_manpower = 1000
 				attrition = -0.1
-				conscription = 0.2
+				conscription = 0.02
 			}
 			targeted_modifier = {
 				tag = RUS

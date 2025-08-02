@@ -371,7 +371,7 @@ ideas = {
 				production_lack_of_resource_penalty_factor = -0.1
 				consumer_goods_expected_value = -0.1
 			}
-			
+			picture = CSA_technocratic_new_deal
 		
 		}
 		FRA_transhumanism5 = {
@@ -404,7 +404,9 @@ ideas = {
 				army_speed_factor = 0.2
 				max_dig_in_factor = 0.15
 				dig_in_speed_factor = 0.1
+				
 			}
+			picture = CSA_technocratic_new_deal
 		}
 		FRA_transhumanism4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
@@ -435,7 +437,7 @@ ideas = {
 				no_supply_grace = 96
 
 			}
-			picture = humanist_manifesto
+			picture = CSA_technocratic_new_deal
 		}
 		FRA_transhumanism3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
@@ -460,7 +462,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.2
 				equipment_capture_factor = 0.1
 			}
-			picture = humanist_manifesto
+			picture = CSA_technocratic_new_deal
 		}
 		FRA_transhumanism3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
@@ -481,7 +483,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.2
 				equipment_capture_factor = 0.1
 			}
-			picture = humanist_manifesto
+			picture = CSA_technocratic_new_deal
 		}
 		FRA_transhumanism2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
@@ -498,9 +500,9 @@ ideas = {
 				army_morale_factor = 0.15
 				org_loss_when_moving = -0.15
 			}
-			picture = humanist_manifesto
+			picture = CSA_technocratic_new_deal
 		}
-		FRA_transhumanism = {
+		FRA_transhumanism_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
 			modifier = {
 				military_leader_cost_factor = -0.50 
@@ -510,7 +512,7 @@ ideas = {
 				experience_gain_army = 0.05
 				experience_loss_factor = -0.1
 			}
-			picture = humanist_manifesto
+			picture = CSA_technocratic_new_deal
 		}
 		FRA_COST = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
@@ -520,7 +522,7 @@ ideas = {
 				war_support_weekly = 0.001
 				totalist_drift = 0.05
 			}
-			picture = Ross_Idea
+			picture = dialectical_science
 		}
 		FRA_era_of_prosper = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
@@ -1593,7 +1595,7 @@ ideas = {
 		FRA_caretaker_government = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_rural_religious_question"}
 			allowed = { always = no }
-			picture = generic_government
+			picture = american_guildism
 			modifier = {
 				political_power_cost = -0.1
 				command_power_gain = 0.1
@@ -4079,6 +4081,175 @@ ideas = {
 					instant = yes
 				}
 			}
+		}
+
+		FRA_sm_pol3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = NFL_technocratic_ministry
+			modifier = {
+				research_speed_factor = 0.25
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				global_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				local_resources_factor = 0.25
+				production_speed_supply_center_factor = 0.2
+			}
+			
+		}
+		FRA_sm_pol2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = NFL_technocratic_ministry
+			modifier = {
+				research_speed_factor = 0.15
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				global_building_slots_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+
+			}
+			
+		}
+		FRA_sm_pol = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = NFL_technocratic_ministry
+			modifier = {
+				research_speed_factor = 0.15
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
+				
+			}
+			
+		}
+		FRA_ps_pol2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = GUA_appease_socialists 
+			modifier = {
+				mobilization_speed = 0.2
+				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
+				global_building_slots = 2
+				production_speed_buildings_factor = 0.15
+				supply_consumption_factor = -0.1
+				no_supply_grace = 96
+				supply_node_range = 0.15
+				out_of_supply_factor = -0.2
+				org_loss_when_moving = -0.1
+			}
+			
+		}
+		FRA_ps_pol = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = GUA_appease_socialists 
+			modifier = {
+				mobilization_speed = 0.2
+				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
+				global_building_slots = 2
+				production_speed_buildings_factor = 0.15
+			}
+			
+		}
+		FRA_planisme_plans = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = NOR_planned_economy
+			modifier = {
+				global_building_slots_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+			
+		}
+		FRA_legacy_of_jules = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = TEX_blessed_are_peacebois
+			modifier = {
+				political_power_cost = -0.2
+				stability_weekly = 0.001
+				war_stability_factor = -0.2
+				war_support_factor = -0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+
+			}
+			
+		}
+		FRA_cfdt_pol3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = syndie_republic
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				conscription_factor = 0.2
+				conscription = 0.02
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				monthly_population = 0.5
+				industry_repair_factor = 0.5
+			}
+			
+		}
+		FRA_cfdt_pol2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = syndie_republic
+			modifier = {
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				conscription_factor = 0.2
+				conscription = 0.02
+
+			}
+			
+		}
+		FRA_cfdt_pol = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = syndie_republic
+			modifier = {
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+
+			}
+			
 		}
 	}
 }

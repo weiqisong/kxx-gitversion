@@ -842,9 +842,7 @@ country_event = { # The decision of Mendog
 		96 = { is_owned_and_controlled_by = ROOT }
 		POL = {
 			OR = {
-				has_country_flag = POL_fryderyk
-				has_country_flag = POL_augustyn
-				has_country_flag = POL_Pawel_Salwator
+				has_completed_focus = KX_PL_PG_KING_IN_POWER
 				has_country_leader = {
           			name = "卡罗尔·奥布拉希特二世"  # Heck Gandersoński
           			ruling_only = yes

@@ -5,7 +5,7 @@ unique_id = kxxflavourachievements_1936
 ################################################################
 
 
-xuetonglun = {
+FRA_hidden_path = {
     possible = {
         # classic triggers used in all vanilla achievements
         has_start_date < 1936.01.02
@@ -13,15 +13,76 @@ xuetonglun = {
         original_tag = FRA		
     }
     happened = {
-        secret_condition ={
+        
             FRA = {
-               has_country_leader_ideology = xue_tong_lun_subtype
+               has_country_flag = FRA_mod_jac_sup
             }
-        }
+        
        
     }
 }
-
-
-
+WHR_hidden_path = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        has_start_date < 1936.01.02
+		#achievment specific
+        original_tag = WHR		
+    }
+    happened = {
+        
+            WHR = {
+               has_country_flag = WHR_hidden_path_unlock
+            }
+        
+       
+    }
+}
+DEN_hidden_path = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        has_start_date < 1936.01.02
+		#achievment specific
+        original_tag = DEN	
+    }
+    happened = {
+        
+            DEN = {
+               has_country_flag = DEN_hidden_path_unlock
+            }
+        
+       
+    }
+}
+QIE_hidden_path = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        has_start_date < 1936.01.02
+		#achievment specific
+        original_tag = QIE
+    }
+    happened = {
+        
+            QIE = {
+               has_country_flag = QIE_hidden_path_unlock
+            }
+        
+       
+    }
+}
+GRE_hidden_path = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        has_start_date < 1936.01.02
+		#achievment specific
+        original_tag = GRE
+    }
+    happened = {
+        
+            GRE = {
+               has_country_flag = GRE_hidden_path_unlock
+            }
+        
+       
+    }
+}
 

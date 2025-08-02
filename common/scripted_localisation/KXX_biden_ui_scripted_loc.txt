@@ -788,7 +788,6 @@ defined_text = {
     	}
  		localization_key = FRA_OR_SIMONE_OCCULT2
  	}	
-
 	#丹麦
 	text = {
     	trigger = {
@@ -1574,7 +1573,6 @@ defined_text = {
  		}
     	localization_key =  FRA_or_Weil_occult
   	}	
-
 	#丹麦
 	text = {
     	trigger = {
@@ -1761,6 +1759,54 @@ defined_text = {
  		}
     	localization_key =  POL_or_Lechickie
   	}
+	text = { 
+		trigger = {
+			has_country_flag = GAL_Kazimierz_Puzak_VISIBLE
+		}
+		localization_key = GAL_or_Kazimierz_Puzak
+	}
+	text = { 
+		trigger = {
+			has_country_flag = POL_Roman_Rybarski_VISIBLE
+		}
+		localization_key = POL_or_Roman_Rybarski
+	}
+	text = { 
+		trigger = {
+			has_country_flag = GAL_Tomasz_Dabal_VISIBLE
+		}
+		localization_key = GAL_or_Tomasz_Dabal
+	}
+	text = { 
+		trigger = {
+			has_country_flag = POL_Zygmunt_Zulawski_VISIBLE
+		}
+		localization_key = POL_or_Zygmunt_Zulawski
+	}	
+	text = { 
+		trigger = {
+			has_country_flag = POL_Tomasz_Arciszewski_VISIBLE
+		}
+		localization_key = POL_or_Tomasz_Arciszewski
+	}
+	text = { 
+		trigger = {
+			has_country_flag = POL_Archbishop_A_Hlond_VISIBLE
+		}
+		localization_key = POL_or_Archbishop_A_Hlond
+	}
+	text = { 
+		trigger = {
+			has_country_flag = POL_Stanislaw_Gaszynski_VISIBLE
+		}
+		localization_key = POL_or_Stanislaw_Gaszynski
+	}
+	text = { 
+		trigger = {
+			has_country_flag = POL_Zdzislaw_Lubomirski_VISIBLE
+		}
+		localization_key = POL_or_Zdzislaw_Lubomirski
+	}	
 
 
 	#西俄革
@@ -2383,8 +2429,8 @@ defined_text = {
     	localization_key =  GFX_Portrait_FRA_Andre_Chaumet
   	}
 	text = {
-		trigger = {
-			or = {
+    	trigger = {
+			OR = {
 				has_country_flag = FRA_Simone_Weil_VISIBLE
 				has_country_flag = FRA_Simone_Weil_occult_VISIBLE
 			}
@@ -2583,6 +2629,54 @@ defined_text = {
  		}
     	localization_key =  GFX_Portrait_POL_Zgromadzenie_Lechickie
   	}
+	  text = { 
+		trigger = {
+			has_country_flag = GAL_Kazimierz_Puzak_VISIBLE
+		}
+		localization_key = GFX_Portrait_Kazimierz_Puzak
+	}
+	text = { 
+		trigger = {
+			has_country_flag = POL_Roman_Rybarski_VISIBLE
+		}
+		localization_key = GFX_Portrait_POL_Roman_Rybarski
+	}
+	text = { 
+		trigger = {
+			has_country_flag = GAL_Tomasz_Dabal_VISIBLE
+		}
+		localization_key = GFX_Portrait_GAL_Tomasz_Dabal
+	}
+	text = { 
+		trigger = {
+			has_country_flag = POL_Zygmunt_Zulawski_VISIBLE
+		}
+		localization_key = GFX_Portrait_PLX_Zygmunt_Zulawski
+	}	
+	text = { 
+		trigger = {
+			has_country_flag = POL_Tomasz_Arciszewski_VISIBLE
+		}
+		localization_key = GFX_Portrait_PLX_Tomasz_Arciszewski
+	}
+	text = { 
+		trigger = {
+			has_country_flag = POL_Archbishop_A_Hlond_VISIBLE
+		}
+		localization_key = GFX_Portrait_PLX_Augustyn_Hlond
+	}
+	text = { 
+		trigger = {
+			has_country_flag = POL_Stanislaw_Gaszynski_VISIBLE
+		}
+		localization_key = GFX_Portrait_PLX_Stanislaw_Gaszynski
+	}
+	text = { 
+		trigger = {
+			has_country_flag = POL_Zdzislaw_Lubomirski_VISIBLE
+		}
+		localization_key = GFX_Portrait_POL_Zdzislaw_Lubomirski
+	}
 
 	#西俄革
 	text = {

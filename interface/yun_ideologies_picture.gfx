@@ -1,5 +1,41 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_report_event_tot_yun_generic1"
+		texturefile = "gfx/event_pictures/KXSIP/tot_yun_generic1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_tot_yun_generic2"
+		texturefile = "gfx/event_pictures/KXSIP/tot_yun_generic2.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_tot_yun_generic3"
+		texturefile = "gfx/event_pictures/KXSIP/tot_yun_generic3.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_tot_yun_euro1"
+		texturefile = "gfx/event_pictures/KXSIP/tot_yun_euro1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_tot_yun_euro2"
+		texturefile = "gfx/event_pictures/KXSIP/tot_yun_euro2.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_tot_yun_fra1"
+		texturefile = "gfx/event_pictures/KXSIP/tot_yun_fra1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_tot_yun_fra2"
+		texturefile = "gfx/event_pictures/KXSIP/tot_yun_fra2.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_tot_yun_esa1"
+		texturefile = "gfx/event_pictures/KXSIP/tot_yun_esa1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_tot_yun_esa2"
+		texturefile = "gfx/event_pictures/KXSIP/tot_yun_esa2.png"
+	}		
+	spriteType = {
 		name = "GFX_ideology_left_occultism_bar"
 		textureFile = "gfx/interface/ideologies/ideology_bars/left_occultism.png"
 		legacy_lazy_load = no
@@ -115,6 +151,16 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_ideology_mao_zedong_thought_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/mao_zedong_thought.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_socialism_with_chinese_characteristics_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/socialism_with_chinese_characteristics.png"
+		legacy_lazy_load = no
+	}	
+	spriteType = {
 		name = "GFX_ideology_datong_shu_thought_bar"
 		textureFile = "gfx/interface/ideologies/ideology_bars/datong_shu.png"
 		legacy_lazy_load = no
@@ -149,5 +195,24 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideologies/ideology_bars/mosley_thought.png"
 		legacy_lazy_load = no
 	}
-		
+	spriteType = {
+		name = "GFX_ideology_dystopian_bar"
+		texturefile = "gfx/interface/ideologies/ideology_bars/technological_dystopian.png"
+		legacy_lazy_load = no
+	}			
+	spriteType = {
+		name = "GFX_ideology_left_leaning_legionarism_bar"
+		texturefile = "gfx/interface/ideologies/ideology_bars/left_leaning_legionarism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_esoteric_marxism_bar"
+		texturefile = "gfx/interface/ideologies/ideology_bars/esoteric_marxism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_nihonism_bar"
+		texturefile = "gfx/interface/ideologies/ideology_bars/nihonism.png"
+		legacy_lazy_load = no
+	}		
 }

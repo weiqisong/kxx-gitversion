@@ -160,5 +160,25 @@ spriteTypes = {
 		name = "GFX_idea_POL_Wladyslaw_Obrebski_sec_npo"
 		texturefile = "gfx/interface/ministers/PLX/blank_minister.png"
 	}
+	spriteType = {
+		name = "GFX_idea_POL_Boleslaw_Bierut_hog_tot"
+		texturefile = "gfx/interface/ministers/POL/POL_Boleslaw_Bierut.png"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_Aleksander_Wat_for_syn"
+		texturefile = "gfx/interface/ministers/POL/POL_Aleksander_Wat.png"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_Stanislaw_Tolwinski_eco_syn"
+		texturefile = "gfx/interface/ministers/POL/POL_Stanislaw_Tolwinski.png"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_Jan_Hempel_sec_syn"
+		texturefile = "gfx/interface/ministers/POL/POL_Jan_Hempel.png"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_Stanislaw_Gaszynski_hog_pau"
+		texturefile = "gfx/interface/ministers/POL/POL_Stanislaw_Gaszynski.png"
+	}
 	#SubIdeologies
 }

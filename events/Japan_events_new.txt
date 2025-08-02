@@ -944,7 +944,6 @@ country_event = { #Japanese Civil War
 		dismantle_faction = yes
 		release = KOR
 		end_puppet = TAI
-		end_puppet = JST
 		}
 		TRM = {
 		transfer_state = 537
@@ -967,6 +966,8 @@ country_event = { #Japanese Civil War
 					transfer_state = 533
 					transfer_state = 534
 					transfer_state = 555
+					transfer_state = 1351
+					transfer_state = 1356
 					inherit_technology = GER		
 					add_equipment_to_stockpile = {
 					type = infantry_equipment_2

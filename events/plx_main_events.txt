@@ -167,15 +167,7 @@ country_event = {
 				ruling_party = paternal_autocrat
 				elections_allowed = no
 			}
-			create_country_leader = {
-				name = "卡罗尔·奥布拉希特二世"
-				picture = "gfx/leaders/POL/Portrait_POL_Karol_Olbracht.png"
-				expire = "1965.1.1"
-				desc = "POLITICS_KAROL_OLBRACHT_HABSBURG_DESC"
-				traits = { charitable_emperor }
-				ideology = red_tinted_autocracy_subtype
-			}
-			set_country_flag = POL_Walery_Slawek_VISIBLE
+			clr_country_flag = KXX_LEADER_GUI_VISIBLE
 			clr_country_flag = POL_Jozef_Chacinski_VISIBLE
 			remove_all_ministers = yes
 			add_ideas = {
@@ -320,16 +312,7 @@ country_event = {
 				ideology = radical_socialist
 				popularity = 0.20
 			}	
-			create_country_leader = {
-				name = "卡罗尔·奥布拉希特二世"
-				picture = "gfx/leaders/POL/Portrait_POL_Karol_Olbracht.png"
-				expire = "1965.1.1"
-				desc = "POLITICS_KAROL_OLBRACHT_HABSBURG_DESC"
-				traits = { charitable_emperor }
-				ideology = moderate_socialist_subtype
-			}
-			set_country_flag = KXX_LEADER_GUI_VISIBLE
-			set_country_flag = POL_Stanislaw_Dubois_VISIBLE
+			clr_country_flag = KXX_LEADER_GUI_VISIBLE
 			clr_country_flag = POL_Jozef_Chacinski_VISIBLE
 			end_coalition = yes
 			complete_national_focus = KX_PL_AS_COMMON_COUP
@@ -2529,43 +2512,10 @@ country_event = {
 		name = plx.26.a
 		add_stability = 0.05
 		ai_chance = {
-			base = 0
-		}
-		if = {
-			limit = {
-				has_country_flag = plx_zlp_coup
-			}
-			create_country_leader = {
-				name = "瓦莱雷·斯瓦韦克"
-				#desc = "POLITICS_POL_RADA_REGENCYJNA_DESC"
-				picture = "gfx/leaders/POL/Portrait_POL_Walery_Slawek_kx.png"
-				expire = "1965.1.1"
-				ideology = red_tinted_autocracy_subtype
-			}
-			set_country_flag = plx_zlp_Slawek
-			clr_country_flag = POL_Walery_Slawek_VISIBLE
-			clr_country_flag = KXX_LEADER_GUI_VISIBLE
-		}
-		else = {
-			create_country_leader = {
-				name = "斯坦尼斯瓦夫·杜波依斯"
-				picture = "gfx/leaders/POL/Portrait_PLX_Stanislaw_Dubois.png"
-				expire = "1965.1.1"
-				ideology = moderate_socialist_subtype
-			}
-			set_country_flag = plx_rad_pps_Dubois
-			clr_country_flag = POL_Stanislaw_Dubois_VISIBLE
-			clr_country_flag = KXX_LEADER_GUI_VISIBLE
+			base = 100
 		}
 	}
 
-	option = {
-		ai_chance = {
-			base = 100
-		}
-		name = plx.26.b
-		add_stability = 0.05
-	}
 }
 
 country_event = {
@@ -6332,35 +6282,28 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = plxv2.008.a
-		if = {
-			limit = {
-				has_country_leader = {
-					name = "卡罗尔·奥布拉希特二世"  # Heck Gandersoński
-					ruling_only = yes
-				}
-			}
-			create_country_leader = {
-				name = "卡罗尔·奥布拉希特二世"
-				picture = "gfx/leaders/POL/Portrait_POL_Karol_Olbracht.png"
-				expire = "1965.1.1"
-				desc = "POLITICS_KAROL_OLBRACHT_HABSBURG_DESC"
-				traits = { charitable_emperor }
-				ideology = polish_natsynd
-			}
-			set_country_flag = KXX_LEADER_GUI_VISIBLE
-			set_country_flag = POL_Kazimierz_Zakrzewski_VISIBLE
-			clr_country_flag = POL_Jan_Hempel_VISIBLE
+		create_country_leader = {
+			name = "卡齐米日·扎克热夫斯基"
+			picture = "gfx/leaders/POL/Portrait_PLX_Kazimierz_Zakrzewski.png"
+			expire = "1965.1.1"
+			ideology = polish_natsynd
 		}
-		else = {
-			create_country_leader = {
-				name = "卡兹米尔兹·扎克耶夫斯基"
-				picture = "gfx/leaders/POL/Portrait_PLX_Kazimierz_Zakrzewski.png"
-				expire = "1965.1.1"
-				ideology = polish_natsynd
-			}
-		}
+		
 		add_stability = 0.05
-		set_country_flag = plx_byzantine
+		set_country_flag = plx_byzantine	
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = plxv2.008.b
+		add_political_power = 50
+		set_country_flag = plx_zsp_rules_true
+		#add_popularity = {
+		#	ideology = syndicalist
+		#	popularity = 0.05
+		#}
 		ai_chance = {
 			factor = 1
 		}
@@ -6369,10 +6312,12 @@ country_event = {
 		name = plxv2.008.b
 		add_political_power = 50
 		set_country_flag = plx_start
-		#add_popularity = {
-		#	ideology = syndicalist
-		#	popularity = 0.05
-		#}
+		create_country_leader = {
+			name = "莉娅·菲尔德曼"
+			picture = "gfx/leaders/POL/POL_leah_feldman.png"
+			expire = "1965.1.1"
+			ideology = anarcho_syndicalist_subtype
+		}
 		ai_chance = {
 			factor = 1
 		}
@@ -6754,7 +6699,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = { 
 		TAG = POL
-		has_country_leader = { name = "卡兹米尔兹·扎克耶夫斯基" ruling_only = yes } 
+		has_country_leader = { name = "卡齐米日·扎克热夫斯基" ruling_only = yes } 
 		343 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
 					49 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
 					342 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
@@ -6769,7 +6714,6 @@ country_event = {
 					183 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
 					187 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
 					164 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
-					1225 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
 					773 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
 					680 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
 					350 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
@@ -6839,7 +6783,7 @@ country_event = {
 		hidden_effect = { 
 			set_cosmetic_tag = POL_slav_fed_byzantine
 			create_country_leader = {
-				name = "卡兹米尔兹·扎克耶夫斯基 "
+				name = "卡齐米日·扎克热夫斯基"
 				picture = "gfx/leaders/POL/Portrait_PLX_Kazimierz_Zakrzewski_basileus.png"
 				expire = "1965.1.1"
 				ideology = polish_natsynd
@@ -6889,8 +6833,6 @@ country_event = {
 	 187 = { add_core_of = ROOT 
 			transfer_state_to = ROOT }
 	 164 = { add_core_of = ROOT 
-			transfer_state_to = ROOT }
-	 1225 = { add_core_of = ROOT 
 			transfer_state_to = ROOT }
 	 773 = { add_core_of = ROOT 
 			transfer_state_to = ROOT }
@@ -7650,4 +7592,1196 @@ country_event = {
 			factor = 1
 		}
 	}	
+}
+
+###Syndicalist Rework
+##Abolition of Constitution
+country_event = {
+	id = plxv2.074
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.074" }
+	title = plxv2.074.t
+	desc = plxv2.074.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = plxv2.074.a
+		add_stability = -0.10
+		add_political_power = 100
+		hidden_effect = {
+			country_event = {
+				id = plxv2.075 days = 3
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+##Slawek tries to remove Syndicalists
+country_event = {
+	id = plxv2.075
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.075" }
+	title = plxv2.075.t
+	desc = plxv2.075.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = plxv2.075.a
+		add_stability = -0.05
+		custom_effect_tooltip = PLX_rip_slawek_tooltip
+		hidden_effect = {
+			set_country_flag = plx_slawek_dead
+			if = {
+				limit = {
+					has_unit_leader = 2137
+				}
+				random_unit_leader = {
+					limit = { has_id = 2137 }
+					remove_unit_leader = yes
+				}
+			}
+			country_event = {
+				id = plxv2.079 days = 10
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+##Abolition of Parties
+country_event = {
+	id = plxv2.076
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.076" }
+	title = plxv2.076.t
+	desc = plxv2.076.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = plxv2.076.a
+		add_stability = 0.10
+		add_political_power = 100
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.10
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+###Bierut or Hempel
+country_event = {
+	id = plxv2.077
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.077" }
+	title = plxv2.077.t
+	desc = plxv2.077.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = plxv2.077.a
+		add_stability = 0.05
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.05
+		}
+		set_country_flag = plx_hempel_in_power
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = plxv2.077.b
+		add_political_power = 50
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.05
+		}
+		create_country_leader = {
+			name = "波莱斯瓦夫·贝鲁特"
+			picture = "gfx/leaders/POL/Portrait_PLX_Boleslaw_Bierut.png"
+			expire = "1965.1.1"
+			ideology = natdem_syndicalism_subtype
+		}
+		hidden_effect = {
+			remove_all_ministers = yes
+			add_ideas = {
+				POL_Boleslaw_Bierut_hog_tot
+				POL_Aleksander_Wat_for_syn
+				POL_Stanislaw_Tolwinski_eco_syn
+				POL_Jan_Hempel_sec_syn
+			}
+		}
+		set_country_flag = plx_bierut_in_power
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+###Paganic Revival
+country_event = {
+	id = plxv2.078
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.078" }
+	title = plxv2.078.t
+	desc = plxv2.078.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = plxv2.078.a
+		increase_ruling_party_popularity_by_5 = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+###Democratic Military or Purge
+country_event = {
+	id = plxv2.079
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.079" }
+	title = plxv2.079.t
+	desc = plxv2.079.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = plxv2.079.a
+		add_war_support = 0.10
+		add_ideas = PLX_synd_military_a
+		ai_chance = {
+			factor = 1
+		}
+	}	
+	option = {
+		name = plxv2.079.b
+		add_stability = 0.05
+		add_war_support = -0.05
+		add_ideas = PLX_synd_military_b
+		custom_effect_tooltip = PLX_synd_mil_purge_tooltip
+		hidden_effect = {
+			#if = {
+			#	limit = {
+			#		has_unit_leader = 19860
+			#	}
+			#	random_unit_leader = {
+			#		limit = { has_id = 19860 }
+			#		remove_unit_leader = yes
+			#	}
+			#}
+			if = {
+				limit = {
+					has_unit_leader = 19861
+				}
+				random_unit_leader = {
+					limit = { has_id = 19861 }
+					remove_unit_leader = yes
+				}
+			}
+			if = {
+				limit = {
+					has_unit_leader = 19862
+				}
+				random_unit_leader = {
+					limit = { has_id = 19862 }
+					remove_unit_leader = yes
+				}
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+###Monarchs to Choose!
+country_event = {
+	id = plxv2.043
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.043" }
+	title = plxv2.043.t
+	desc = plxv2.043.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+	immediate = {
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+	}
+	is_triggered_only = yes
+	option = {
+		name = plxv2.043.b
+		add_stability = -0.10
+		add_political_power = 100
+		hidden_effect = {
+			create_country_leader = {
+				name = "弗雷德里克二世·克里斯蒂安"
+				picture = "gfx/leaders/POL/Portrait_POL_Fryderyk_Krystian_Saski.png"
+				expire = "1965.1.1"
+				ideology = moderate_socialist_subtype
+			}
+			
+			create_country_leader = {
+				name = "弗雷德里克二世·克里斯蒂安"
+				picture = "gfx/leaders/POL/Portrait_POL_Fryderyk_Krystian_Saski.png"
+				expire = "1965.1.1"
+				ideology = socdem_democratic_socialism_subtype
+			}
+			
+			create_country_leader = {
+				name = "弗雷德里克二世·克里斯蒂安"
+				picture = "gfx/leaders/POL/Portrait_POL_Fryderyk_Krystian_Saski.png"
+				expire = "1965.1.1"
+				ideology = soclib_agrarianism_subtype
+			}
+			
+			create_country_leader = {
+				name = "弗雷德里克二世·克里斯蒂安"
+				picture = "gfx/leaders/POL/Portrait_POL_Fryderyk_Krystian_Saski.png"
+				expire = "1965.1.1"
+				ideology = marlib_national_liberalism_subtype
+			}
+			
+			create_country_leader = {
+				name = "弗雷德里克二世·克里斯蒂安"
+				picture = "gfx/leaders/POL/Portrait_POL_Fryderyk_Krystian_Saski.png"
+				expire = "1965.1.1"
+				ideology = christian_democracy_subtype
+			}
+			
+			create_country_leader = {
+				name = "弗雷德里克二世·克里斯蒂安"
+				picture = "gfx/leaders/POL/Portrait_POL_Fryderyk_Krystian_Saski.png"
+				expire = "1965.1.1"
+				ideology = national_democracy_subtype
+			}
+			
+			create_country_leader = {
+				name = "弗雷德里克二世·克里斯蒂安"
+				picture = "gfx/leaders/POL/Portrait_POL_Fryderyk_Krystian_Saski.png"
+				expire = "1965.1.1"
+				ideology = elective_monarchy_subtype
+			}
+			country_event = {
+				id = plxv2.083 days = 5
+			}
+			country_event = {
+				id = plxv2.095 days = 1
+			}			
+			country_event = {id = polsoc.15 }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = plxv2.043.c
+		add_stability = -0.10
+		add_political_power = 100
+		hidden_effect = {
+			create_country_leader = {
+				name = "奥古斯丁一世"
+				picture = "gfx/leaders/POL/Portrait_POL_Augustyn_Czartoryski.png"
+				expire = "1965.1.1"
+				ideology = moderate_socialist_subtype
+			}
+			
+			create_country_leader = {
+				name = "奥古斯丁一世"
+				picture = "gfx/leaders/POL/Portrait_POL_Augustyn_Czartoryski.png"
+				expire = "1965.1.1"
+				ideology = socdem_democratic_socialism_subtype
+			}
+			
+			create_country_leader = {
+				name = "奥古斯丁一世"
+				picture = "gfx/leaders/POL/Portrait_POL_Augustyn_Czartoryski.png"
+				expire = "1965.1.1"
+				ideology = soclib_agrarianism_subtype
+			}
+			
+			create_country_leader = {
+				name = "奥古斯丁一世"
+				picture = "gfx/leaders/POL/Portrait_POL_Augustyn_Czartoryski.png"
+				expire = "1965.1.1"
+				ideology = marlib_national_liberalism_subtype
+			}
+			
+			create_country_leader = {
+				name = "奥古斯丁一世"
+				picture = "gfx/leaders/POL/Portrait_POL_Augustyn_Czartoryski.png"
+				expire = "1965.1.1"
+				ideology = christian_democracy_subtype
+			}
+			
+			create_country_leader = {
+				name = "奥古斯丁一世"
+				picture = "gfx/leaders/POL/Portrait_POL_Augustyn_Czartoryski.png"
+				expire = "1965.1.1"
+				ideology = national_democracy_subtype
+			}
+			
+			create_country_leader = {
+				name = "奥古斯丁一世"
+				picture = "gfx/leaders/POL/Portrait_POL_Augustyn_Czartoryski.png"
+				expire = "1965.1.1"
+				ideology = elective_monarchy_subtype
+			}
+			country_event = {
+				id = plxv2.083 days = 5
+			}
+			country_event = {
+				id = plxv2.096 days = 1
+			}			
+			country_event = {id = polsoc.15 }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = plxv2.043.e
+		add_stability = -0.10
+		add_political_power = 100
+		hidden_effect = {
+			create_country_leader = {
+				name = "斯坦尼斯瓦夫三世"
+				picture = "gfx/leaders/POL/Portrait_PLX_Andre_Poniatowski.png"
+				expire = "1965.1.1"
+				ideology = moderate_socialist_subtype
+			}
+			
+			create_country_leader = {
+				name = "斯坦尼斯瓦夫三世"
+				picture = "gfx/leaders/POL/Portrait_PLX_Andre_Poniatowski.png"
+				expire = "1965.1.1"
+				ideology = socdem_democratic_socialism_subtype
+			}
+			
+			create_country_leader = {
+				name = "斯坦尼斯瓦夫三世"
+				picture = "gfx/leaders/POL/Portrait_PLX_Andre_Poniatowski.png"
+				expire = "1965.1.1"
+				ideology = soclib_agrarianism_subtype
+			}
+			
+			create_country_leader = {
+				name = "斯坦尼斯瓦夫三世"
+				picture = "gfx/leaders/POL/Portrait_PLX_Andre_Poniatowski.png"
+				expire = "1965.1.1"
+				ideology = marlib_national_liberalism_subtype
+			}
+			
+			create_country_leader = {
+				name = "斯坦尼斯瓦夫三世"
+				picture = "gfx/leaders/POL/Portrait_PLX_Andre_Poniatowski.png"
+				expire = "1965.1.1"
+				ideology = christian_democracy_subtype
+			}
+			
+			create_country_leader = {
+				name = "斯坦尼斯瓦夫三世"
+				picture = "gfx/leaders/POL/Portrait_PLX_Andre_Poniatowski.png"
+				expire = "1965.1.1"
+				ideology = national_democracy_subtype
+			}
+			
+			create_country_leader = {
+				name = "斯坦尼斯瓦夫三世"
+				picture = "gfx/leaders/POL/Portrait_PLX_Andre_Poniatowski.png"
+				expire = "1965.1.1"
+				ideology = elective_monarchy_subtype
+			}
+			country_event = {
+				id = plxv2.083 days = 5
+			}
+			country_event = {
+				id = plxv2.097 days = 1
+			}		
+			country_event = {id = polsoc.15 }	
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = plxv2.043.f
+		add_stability = -0.10
+		add_political_power = 100
+		hidden_effect = {
+			create_country_leader = {
+				name = "亚历山大五世"
+				picture = "gfx/leaders/POL/Portrait_POL_Vsevolod_I.png"
+				expire = "1965.1.1"
+				ideology = moderate_socialist_subtype
+			}
+			
+			create_country_leader = {
+				name = "亚历山大五世"
+				picture = "gfx/leaders/POL/Portrait_POL_Vsevolod_I.png"
+				expire = "1965.1.1"
+				ideology = socdem_democratic_socialism_subtype
+			}
+			
+			create_country_leader = {
+				name = "亚历山大五世"
+				picture = "gfx/leaders/POL/Portrait_POL_Vsevolod_I.png"
+				expire = "1965.1.1"
+				ideology = soclib_agrarianism_subtype
+			}
+			
+			create_country_leader = {
+				name = "亚历山大五世"
+				picture = "gfx/leaders/POL/Portrait_POL_Vsevolod_I.png"
+				expire = "1965.1.1"
+				ideology = marlib_national_liberalism_subtype
+			}
+			
+			create_country_leader = {
+				name = "亚历山大五世"
+				picture = "gfx/leaders/POL/Portrait_POL_Vsevolod_I.png"
+				expire = "1965.1.1"
+				ideology = christian_democracy_subtype
+			}
+			
+			create_country_leader = {
+				name = "亚历山大五世"
+				picture = "gfx/leaders/POL/Portrait_POL_Vsevolod_I.png"
+				expire = "1965.1.1"
+				ideology = national_democracy_subtype
+			}
+			
+			create_country_leader = {
+				name = "亚历山大五世"
+				picture = "gfx/leaders/POL/Portrait_POL_Vsevolod_I.png"
+				expire = "1965.1.1"
+				ideology = elective_monarchy_subtype
+			}
+			country_event = {
+				id = plxv2.083 days = 5
+			}
+			country_event = {
+				id = plxv2.098 days = 1
+			}		
+			country_event = {id = polsoc.15 }	
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = plxv2.043.g
+		add_stability = -0.10
+		add_political_power = 100
+		hidden_effect = {
+			create_country_leader = {
+				name = "齐格蒙特四世"
+				picture = "gfx/leaders/POL/Portrait_POL_Sergei_Trubetskoi.png"
+				expire = "1965.1.1"
+				ideology = moderate_socialist_subtype
+			}
+			
+			create_country_leader = {
+				name = "齐格蒙特四世"
+				picture = "gfx/leaders/POL/Portrait_POL_Sergei_Trubetskoi.png"
+				expire = "1965.1.1"
+				ideology = socdem_democratic_socialism_subtype
+			}
+			
+			create_country_leader = {
+				name = "齐格蒙特四世"
+				picture = "gfx/leaders/POL/Portrait_POL_Sergei_Trubetskoi.png"
+				expire = "1965.1.1"
+				ideology = soclib_agrarianism_subtype
+			}
+			
+			create_country_leader = {
+				name = "齐格蒙特四世"
+				picture = "gfx/leaders/POL/Portrait_POL_Sergei_Trubetskoi.png"
+				expire = "1965.1.1"
+				ideology = marlib_national_liberalism_subtype
+			}
+			
+			create_country_leader = {
+				name = "齐格蒙特四世"
+				picture = "gfx/leaders/POL/Portrait_POL_Sergei_Trubetskoi.png"
+				expire = "1965.1.1"
+				ideology = christian_democracy_subtype
+			}
+			
+			create_country_leader = {
+				name = "齐格蒙特四世"
+				picture = "gfx/leaders/POL/Portrait_POL_Sergei_Trubetskoi.png"
+				expire = "1965.1.1"
+				ideology = national_democracy_subtype
+			}
+			
+			create_country_leader = {
+				name = "齐格蒙特四世"
+				picture = "gfx/leaders/POL/Portrait_POL_Sergei_Trubetskoi.png"
+				expire = "1965.1.1"
+				ideology = elective_monarchy_subtype
+			}
+			country_event = {
+				id = plxv2.083 days = 5
+			}
+			country_event = {
+				id = plxv2.099 days = 1
+			}		
+			country_event = {id = polsoc.15 }	
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}	
+option = {
+    name = poland.20.c
+    ai_chance = {
+      factor = 20
+      	modifier = {
+        	factor = 0
+      	}
+    }
+    add_political_power = 20
+	create_country_leader = {
+		name = "瓦迪斯瓦夫五世"
+		desc = "POLITICS_MENDOG_III_DESC"
+		picture = "gfx/leaders/POL/Portrait_POL_Wladyslaw_Urach.png"
+		expire = "1.1.1"
+		ideology = moderate_socialist_subtype
+	}
+    create_country_leader = {
+		name = "瓦迪斯瓦夫五世"
+		desc = "POLITICS_MENDOG_III_DESC"
+		picture = "gfx/leaders/POL/Portrait_POL_Wladyslaw_Urach.png"
+		expire = "1.1.1"
+		ideology = socdem_democratic_socialism_subtype
+	}
+	create_country_leader = {
+		name = "瓦迪斯瓦夫五世"
+		desc = "POLITICS_MENDOG_III_DESC"
+		picture = "gfx/leaders/POL/Portrait_POL_Wladyslaw_Urach.png"
+		expire = "1.1.1"
+		ideology = soclib_agrarianism_subtype
+	}
+	create_country_leader = {
+		name = "瓦迪斯瓦夫五世"
+		desc = "POLITICS_MENDOG_III_DESC"
+		picture = "gfx/leaders/POL/Portrait_POL_Wladyslaw_Urach.png"
+		expire = "1.1.1"
+		ideology = marlib_national_liberalism_subtype
+	}
+	create_country_leader = {
+		name = "瓦迪斯瓦夫五世"
+		desc = "POLITICS_MENDOG_III_DESC"
+		picture = "gfx/leaders/POL/Portrait_POL_Wladyslaw_Urach.png"
+		expire = "1.1.1"
+		ideology = christian_democracy_subtype
+	}
+	create_country_leader = {
+		name = "瓦迪斯瓦夫五世"
+		desc = "POLITICS_MENDOG_III_DESC"
+		picture = "gfx/leaders/POL/Portrait_POL_Wladyslaw_Urach.png"
+		expire = "1.1.1"
+		ideology = national_democracy_subtype
+	}
+	create_country_leader = {
+		name = "瓦迪斯瓦夫五世"
+		desc = "POLITICS_MENDOG_III_DESC"
+		picture = "gfx/leaders/POL/Portrait_POL_Wladyslaw_Urach.png"
+		expire = "1.1.1"
+		ideology = elective_monarchy_subtype
+	}
+	country_event = {
+		id = plxv2.083 days = 5
+	}
+	country_event = {
+		id = plxv2.099 days = 1
+	}	
+	country_event = {id = polsoc.15 }
+  }
+  option = {
+    name = poland.20.f
+    ai_chance = {
+      factor = 10
+    }
+    add_political_power = -100
+   	create_country_leader = {
+		name = "帕维乌一世·萨尔瓦托"
+		desc = "POLITICS_POLISH_PAUL_SALVATOR_DESC"
+		picture = "gfx/leaders/POL/Portrait_POL_Pawel_Salwator.png"
+		expire = "1.1.1"
+		traits = {
+			mad_piast
+		}
+		ideology = moderate_socialist_subtype
+	}
+	create_country_leader = {
+		name = "帕维乌一世·萨尔瓦托"
+		desc = "POLITICS_POLISH_PAUL_SALVATOR_DESC"
+		picture = "gfx/leaders/POL/Portrait_POL_Pawel_Salwator.png"
+		expire = "1.1.1"
+		traits = {
+			mad_piast
+		}
+		ideology = socdem_democratic_socialism_subtype
+	}
+	create_country_leader = {
+		name = "帕维乌一世·萨尔瓦托"
+		desc = "POLITICS_POLISH_PAUL_SALVATOR_DESC"
+		picture = "gfx/leaders/POL/Portrait_POL_Pawel_Salwator.png"
+		expire = "1.1.1"
+		traits = {
+			mad_piast
+		}
+		ideology = soclib_agrarianism_subtype
+	}
+	create_country_leader = {
+		name = "帕维乌一世·萨尔瓦托"
+		desc = "POLITICS_POLISH_PAUL_SALVATOR_DESC"
+		picture = "gfx/leaders/POL/Portrait_POL_Pawel_Salwator.png"
+		expire = "1.1.1"
+		traits = {
+			mad_piast
+		}
+		ideology = marlib_national_liberalism_subtype
+	}
+	create_country_leader = {
+		name = "帕维乌一世·萨尔瓦托"
+		desc = "POLITICS_POLISH_PAUL_SALVATOR_DESC"
+		picture = "gfx/leaders/POL/Portrait_POL_Pawel_Salwator.png"
+		expire = "1.1.1"
+		traits = {
+			mad_piast
+		}
+		ideology = christian_democracy_subtype
+	}
+	create_country_leader = {
+		name = "帕维乌一世·萨尔瓦托"
+		desc = "POLITICS_POLISH_PAUL_SALVATOR_DESC"
+		picture = "gfx/leaders/POL/Portrait_POL_Pawel_Salwator.png"
+		expire = "1.1.1"
+		traits = {
+			mad_piast
+		}
+		ideology = national_democracy_subtype
+	}
+	create_country_leader = {
+		name = "帕维乌一世·萨尔瓦托"
+		desc = "POLITICS_POLISH_PAUL_SALVATOR_DESC"
+		picture = "gfx/leaders/POL/Portrait_POL_Pawel_Salwator.png"
+		expire = "1.1.1"
+		traits = {
+			mad_piast
+		}
+		ideology = elective_monarchy_subtype
+
+	}
+	set_country_flag = POL_Pawel_Salwator
+	country_event = {
+		id = plxv2.083 days = 5
+	}
+	country_event = {
+		id = plxv2.099 days = 1
+	}	
+	
+	
+  }
+}
+
+###Monarch or the Council
+country_event = {
+	id = plxv2.083
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.083" }
+	title = plxv2.083.t
+	desc = plxv2.083.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = plxv2.083.a
+		add_stability = 0.05
+		hidden_effect = {
+			set_country_flag = plx_monarch_in_power
+			complete_national_focus = KX_PL_PG_EXPAND_ROYAL_COMPETENCIES
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = plxv2.083.b
+		add_political_power = 50
+		hidden_effect = {
+			set_country_flag = plx_rc_reafirmed
+			complete_national_focus = KX_PL_PG_REAFFIRM_ROYAL_COUNCIL
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}	
+}
+
+##Synarchism
+country_event = {
+	id = plxv2.084
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.084" }
+	title = plxv2.084.t
+	desc = plxv2.084.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = plxv2.084.a
+		add_political_power = 25
+		set_country_flag = KXX_LEADER_GUI_VISIBLE
+		set_country_flag = POL_Stanislaw_Gaszynski_VISIBLE
+		hidden_effect = {
+			remove_ideas_with_trait = head_of_government
+			add_ideas = POL_Stanislaw_Gaszynski_hog_pau
+			set_country_leader_ideology = right_technocracy_subtype
+			country_event = {
+				id = plxv2.088 days = 16
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+##Oligarchy
+country_event = {
+	id = plxv2.085
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.085" }
+	title = plxv2.085.t
+	desc = plxv2.085.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = plxv2.085.a
+		add_political_power = 25
+		set_country_flag = KXX_LEADER_GUI_VISIBLE
+		set_country_flag = POL_Zdzislaw_Lubomirski_VISIBLE
+		
+		hidden_effect = {
+			set_country_leader_ideology = pataut_oligarchy_subtype
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+##Church
+country_event = {
+	id = plxv2.086
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.086" }
+	title = plxv2.086.t
+	desc = plxv2.086.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = plxv2.086.a
+		add_political_power = 25
+		set_country_flag = KXX_LEADER_GUI_VISIBLE
+		set_country_flag = POL_Archbishop_A_Hlond_VISIBLE
+		clr_country_flag = POL_Zdzislaw_Lubomirski_VISIBLE
+		hidden_effect = {
+			remove_ideas_with_trait = head_of_government
+			add_ideas = POL_Archbishop_A_Hlond_hog_pau
+			set_country_leader_ideology = pataut_christian_democracy_subtype
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+##About Synarchists
+country_event = {
+	id = plxv2.087
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.087" }
+	title = plxv2.087.t
+	desc = plxv2.087.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = plxv2.087.a
+		add_stability = 0.01
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = plxv2.088
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.088" }
+	title = plxv2.088.t
+	desc = plxv2.088.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = plxv2.088.a
+		add_stability = 0.05
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = plxv2.088.b
+		add_political_power = 50
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+##Ask Russia to unite
+country_event = {
+	id = plxv2.089
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.089" }
+	title = plxv2.089.t
+	desc = plxv2.089.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = plxv2.089.a
+		trigger = { POL = { is_ai = yes } }
+		RUS = { 
+			annex_country = {
+				target = POL
+			}
+		}
+		ai_chance = {
+			factor = 0.5
+		}
+	}
+	option = {
+		name = plxv2.089.b
+		trigger = { RUS = { is_ai = yes } }
+		POL = { 
+			annex_country = {
+				target = RUS
+			}
+			PLX_effect_soviet_2_cores = yes
+			set_cosmetic_tag = POL_rus_common
+			set_country_flag = plx_russia_formed
+			country_event = plxv2.090
+		}
+		ai_chance = {
+			factor = 0.5
+		}
+	}	
+	option = {
+		name = plxv2.089.c
+		#add_political_power = 50
+		country_event = plxv2.091
+		ai_chance = {
+			factor = 0.5
+		}
+	}
+}
+
+country_event = {
+	id = plxv2.090
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.090" }
+	title = plxv2.090.t
+	desc = plxv2.090.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = plxv2.090.a
+		add_stability = -0.10
+		add_political_power = 50
+		hidden_effect = {
+			complete_national_focus = KX_PLX_NEXT_STAGE
+			complete_national_focus = KX_PLX_INTERMARIUM_SUPERSTATE
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = plxv2.091
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.091" }
+	title = plxv2.091.t
+	desc = plxv2.091.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = plxv2.091.a
+		add_political_power = -50
+		set_cosmetic_tag = plx_rus_common_rejected
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = plxv2.092
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.092" }
+	title = plxv2.092.t
+	desc = plxv2.092.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = plxv2.092.a
+		add_stability = -0.50
+		hidden_effect = {
+			PLX_effect_soviet_2_cores = yes
+			set_cosmetic_tag = POL_rus_common
+			set_country_flag = plx_russia_formed	
+			complete_national_focus = KX_PLX_NEXT_STAGE
+			complete_national_focus = KX_PLX_INTERMARIUM_SUPERSTATE
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = plxv2.093
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.093" }
+	title = plxv2.093.t
+	desc = plxv2.093.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = plxv2.093.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = plxv2.093.b
+		add_stability = -0.02
+		hidden_effect = {
+			set_cosmetic_tag = POL_plc_kingdom
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = plxv2.093.c
+		add_stability = -0.01
+		hidden_effect = {
+			set_cosmetic_tag = POL_plc_three
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = plxv2.093.e
+		add_stability = -0.01
+		add_political_power = 10
+		hidden_effect = {
+			set_cosmetic_tag = POL_intermarian_empire
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}	
+}
+
+##Flavour for Monarchs
+country_event = {
+	id = plxv2.094
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.094" }
+	title = plxv2.094.t
+	desc = plxv2.094.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = plxv2.094.a
+		add_stability = 0.02
+		add_political_power = 20
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = plxv2.095
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.095" }
+	title = plxv2.095.t
+	desc = plxv2.095.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = plxv2.095.a
+		add_stability = 0.01
+		add_political_power = 10
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = plxv2.096
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.096" }
+	title = plxv2.096.t
+	desc = plxv2.096.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = plxv2.096.a
+		add_stability = 0.01
+		add_political_power = 10
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = plxv2.097
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.097" }
+	title = plxv2.097.t
+	desc = plxv2.097.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = plxv2.097.a
+		add_political_power = 10
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = plxv2.098
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.098" }
+	title = plxv2.098.t
+	desc = plxv2.098.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = plxv2.098.a
+		add_stability = -0.01
+		add_political_power = 10
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = plxv2.099
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.099" }
+	title = plxv2.099.t
+	desc = plxv2.099.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = plxv2.099.a
+		add_stability = -0.01
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = plxv2.100
+	#immediate = { log = "[GetDateText]: [Root.GetName]: event plxv2.100" }
+	title = plxv2.100.t
+	desc = plxv2.100.d
+	#picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = plxv2.100.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = plxv2.100.b
+		add_stability = -0.01
+		add_political_power = 10
+		hidden_effect = {
+			set_cosmetic_tag = POL_intermarian_empire
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
 }

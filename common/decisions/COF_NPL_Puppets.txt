@@ -1073,8 +1073,6 @@ COF_NPL_newrome = {
 						   transfer_state_to = GRE }
 					187 = { add_core_of = GRE 
 						   transfer_state_to = GRE }
-					1225 = { add_core_of = GRE 
-						   transfer_state_to = GRE }
 					340 = { add_core_of = GRE 
 						   transfer_state_to = GRE }
 					341 = { add_core_of = GRE 

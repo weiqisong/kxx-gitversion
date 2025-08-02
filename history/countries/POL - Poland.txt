@@ -165,7 +165,7 @@ create_country_leader = {
 	name = "扬·亨佩尔"
 	picture = "gfx/leaders/POL/Portrait_PLX_Jan_Hempel.png"
 	expire = "1965.1.1"
-	ideology = syn_natsynd_subtype
+	ideology = syn_left_occultism_subtype
 }
 
 create_country_leader = {

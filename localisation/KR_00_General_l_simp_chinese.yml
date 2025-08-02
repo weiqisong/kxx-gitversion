@@ -577,7 +577,7 @@
  tech_marine_bonus_2: "熟练陆战队"
  tech_marine_bonus_2_effect: "启用§H$tech_marine_bonus_2$\n$marine$§!：\n      $STAT_ARMY_SOFT_ATTACK$：§G+5%§!\n      $STAT_ARMY_HARD_ATTACK$：§G+5%§!\n§H两栖机步营§!：\n      $STAT_ARMY_SOFT_ATTACK$：§G+5%§!\n      $STAT_ARMY_HARD_ATTACK$：§G+5%§!\n§H两栖坦克营§!：\n      $STAT_ARMY_SOFT_ATTACK$：§G+5%§!\n      $STAT_ARMY_HARD_ATTACK$：§G+5%§!"
  subject_autonomy_mod_tt:0 "附庸的自治度：§G-0.5§!"
- RECENT_CHANGES_TEXT:0 "§B高§!卢§R鸡§!之骨 版本内容：\n\n-§R法兰西公社完全重置§!\n-§法国内战分裂势力骨架内容§!\n-§B法国复兴政府完全重置§!\n-§Y移植nr的苏伊士与耶路撒冷§!"
+ RECENT_CHANGES_TEXT:0 "八月风暴 版本内容：\n\n-§R法兰西公社可能派选举§!\n-波兰工团线与君主线扩展\n-§B希腊国家改革党/神权/民族国家主权组织线§!\n-§G白俄罗斯奇思妙想/崩得/基督教工团线§!\n-大清国策优化\n-§Rlkmt第三国际军事代表团线§!\n-§Y移植飘摇雪松§!"
  is_actual_major_tt:0 "被认为是主要国家"
  if_FROM_agrees:0 "如果§H[From.GetFlag][From.GetNameDef]§!同意："
  upon_selecting_focus:0 "§Y选择国策时：§!\n"

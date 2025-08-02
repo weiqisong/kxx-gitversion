@@ -7826,7 +7826,7 @@ country_event = { #future of italy
 			elections_allowed = no
 		}
 		set_cosmetic_tag = SIC_pio
-		set_country_flag = SRI_pio_gang
+		set_country_flag = SIC_pio_gang
 		set_party_name = {
 			ideology = national_populist
 			long_name = SIC_pio_party_long

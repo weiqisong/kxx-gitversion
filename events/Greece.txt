@@ -5774,26 +5774,6 @@ country_event = {
 			}
 			if = {
 				limit = {
-					owns_state = 1225
-					} #Bursa
-				set_temp_variable = {
-					temp1 = 1225.state_population
-				}
-				multiply_temp_variable = {
-					temp1 = 0.23
-				}
-				add_to_variable = {
-					ROOT.popmove = temp1
-				}
-				multiply_temp_variable = {
-					temp1 = -1
-				}
-				1225 = {
-					add_manpower = temp1
-				}
-			}
-			if = {
-				limit = {
 					owns_state = 339
 					} #Izmir
 				set_temp_variable = {
@@ -5995,26 +5975,6 @@ country_event = {
 					temp1 = 0.35
 				}
 				340 = {
-					add_manpower = temp1
-				}
-				multiply_temp_variable = {
-					temp1 = -1
-				}
-				add_to_temp_variable = {
-					leftover = temp1
-				}
-			}
-			if = {
-				limit = {
-					owns_state = 1225
-					} #Bursa
-				set_temp_variable = {
-					temp1 = ROOT.popmove
-				}
-				multiply_temp_variable = {
-					temp1 = 0.35
-				}
-				1225 = {
 					add_manpower = temp1
 				}
 				multiply_temp_variable = {
@@ -6488,7 +6448,7 @@ country_event = {
 						owns_state = 341 #Edirne
 						owns_state = 773 #Constantinople
 						owns_state = 340 #Bursa
-						owns_state = 1225 #Bursa
+						
 						owns_state = 339 #Izmir
 					}
 				}
@@ -6508,7 +6468,7 @@ country_event = {
 						owns_state = 341 #Edirne
 						owns_state = 773 #Constantinople
 						owns_state = 340 #Bursa
-						owns_state = 1225 #Bursa
+						
 						owns_state = 339 #Izmir
 					}
 				}
@@ -6521,7 +6481,7 @@ country_event = {
 						owns_state = 341 #Edirne
 						owns_state = 773 #Constantinople
 						owns_state = 340 #Bursa
-						owns_state = 1225 #Bursa
+						
 						owns_state = 339 #Izmir
 					}
 					OR = {
@@ -6559,7 +6519,7 @@ country_event = {
 							owns_state = 341 #Edirne
 							owns_state = 773 #Constantinople
 							owns_state = 340 #Bursa
-							owns_state = 1225 #Bursa
+							
 							owns_state = 339 #Izmir
 						}
 					}
@@ -6631,7 +6591,7 @@ country_event = {
 					state = 341 #Edirne
 					state = 773 #Constantinople
 					state = 340 #Bursa
-					state = 1225 #Bursa
+					
 					state = 339 #Izmir
 				}
 			}
@@ -6881,7 +6841,7 @@ country_event = {
 							state = 341 #Edirne
 							state = 773 #Constantinople
 							state = 340 #Bursa
-							state = 1225 #Bursa
+							
 							state = 339 #Izmir
 						}
 					}
@@ -7044,7 +7004,7 @@ country_event = {
 				NOT = { owns_state = 341 } #Edirne
 				NOT = { owns_state = 773 } #Constantinople
 				NOT = { owns_state = 340 } #Bursa
-				NOT = { owns_state = 1225 } #Bursa
+				
 				NOT = { owns_state = 339 } #Izmir
 			}
 		}
@@ -7063,7 +7023,7 @@ country_event = {
 						state = 341 #Edirne
 						state = 773 #Constantinople
 						state = 340 #Bursa
-						state = 1225 #Bursa
+						
 						state = 339 #Izmir
 						state = 766 #Northern Epirus
 						state = 164 #Dodecanese Islands
@@ -7084,7 +7044,7 @@ country_event = {
 					state = 341 #Edirne
 					state = 773 #Constantinople
 					state = 340 #Bursa
-					state = 1225 #Bursa
+					
 					state = 339 #Izmir
 					state = 766 #Northern Epirus
 					state = 164 #Dodecanese Islands
@@ -7108,7 +7068,7 @@ country_event = {
 							state = 341 #Edirne
 							state = 773 #Constantinople
 							state = 340 #Bursa
-							state = 1225 #Bursa
+							
 							state = 339 #Izmir
 							state = 766 #Northern Epirus
 							state = 164 #Dodecanese Islands
@@ -8434,7 +8394,7 @@ country_event = {
 		name = gre.444.a
 		GRE = { transfer_state = 341 }
 		GRE = { transfer_state = 773 }
-		GRE = { transfer_state = 1225 }
+		
 		GRE = { transfer_state = 340 }
 		GRE = { transfer_state = 187 }
 		GRE = { transfer_state = 339 }
@@ -8444,7 +8404,7 @@ country_event = {
 		GRE = {
 			add_state_claim = 341
 			add_state_claim = 773
-			add_state_claim = 1225
+			
 			add_state_claim = 340
 			add_state_claim = 187
 			add_state_claim = 339
@@ -8574,8 +8534,7 @@ option = { #larp
 	  }
 187 = { add_core_of = ROOT 
 	  }
-1225 = { add_core_of = ROOT 
-	  }
+
 341 = { add_core_of = ROOT 
 	  }
 773 = { add_core_of = ROOT 
@@ -8843,8 +8802,6 @@ option = { #larp
 1001 = { add_core_of = ROOT 
 	  }
 187 = { add_core_of = ROOT 
-	  }
-1225 = { add_core_of = ROOT 
 	  }
 341 = { add_core_of = ROOT 
 	  }
@@ -9381,6 +9338,115 @@ country_event = {
 		complete_national_focus = GRE_the_eclipse
 		remove_ideas = GRE_golden_dawn
 		remove_all_ministers = yes
+	}
+	
+}
+country_event = {
+	id = gre.509 #larp
+	title = gre.509.t
+	desc = gre.509.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gre.509.a
+		every_state = {
+			limit = {
+				
+				is_on_continent = central_america
+			}
+			add_core_of = GRE
+		}
+		every_state = {
+			limit = {
+				
+				is_on_continent = south_america
+			}
+			add_core_of = GRE
+		}
+		every_state = {
+			limit = {
+				
+				is_on_continent = north_america
+			}
+			add_core_of = GRE
+		}
+		every_state = {
+			limit = {
+				
+				is_on_continent = europe
+			}
+			add_core_of = GRE
+		}
+		every_state = {
+			limit = {
+				
+				is_core_of = RUS
+			}
+			add_core_of = GRE
+		}
+		every_state = {
+			limit = {
+				
+				is_core_of = TRM
+			}
+			add_core_of = GRE
+		}
+		every_state = {
+			limit = {
+				is_core_of = COG
+			}
+			add_core_of = GRE
+		}
+		every_state = {
+			limit = {
+				is_core_of = PHI
+			}
+			add_core_of = GRE
+		}
+		every_state = {
+			limit = {
+				is_core_of = AST
+			}
+			add_core_of = GRE
+		}
+		every_state = {
+			limit = {
+				is_core_of = NZL
+			}
+			add_core_of = GRE
+		}
+		every_state = {
+			limit = {
+				is_core_of = SAF
+			}
+			add_core_of = GRE
+		}
+		every_state = {
+			limit = {
+				is_core_of = ETH
+			}
+			add_core_of = GRE
+		}
+		every_state = {
+			limit = {
+				is_core_of = LIB
+			}
+			add_core_of = GRE
+		}
+		add_state_core = 454
+		add_state_core = 992
+		add_state_core = 773
+		set_cosmetic_tag = GRE_theocracy_larp
+		
+	}
+	option = {
+		name = gre.509.b
+		
+		
+		
 	}
 	
 }

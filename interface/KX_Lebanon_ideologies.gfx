@@ -209,4 +209,36 @@ spriteTypes = {
 	name = "GFX_ideology_tot_islamism_subtype"
 	texturefile = "gfx/interface/ideologies/subideologies/tot_islamism_group.png"
 	}
+	spriteType = {
+	name = "GFX_ideology_canaanist_subtype"
+	texturefile = "gfx/interface/ideologies/subideologies/canaanist_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_socdem_canaanist_subtype"
+	texturefile = "gfx/interface/ideologies/subideologies/socdem_canaanist_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_soclib_canaanist_subtype"
+	texturefile = "gfx/interface/ideologies/subideologies/soclib_canaanist_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_natpop_canaanist_subtype"
+	texturefile = "gfx/interface/ideologies/subideologies/natpop_canaanist_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_tot_arab_baathism_subtype"
+	texturefile = "gfx/interface/ideologies/subideologies/tot_arab_baathism_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_radsoc_arab_baathism_subtype"
+	texturefile = "gfx/interface/ideologies/subideologies/radsoc_arab_baathism_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_arab_baathism_subtype"
+	texturefile = "gfx/interface/ideologies/subideologies/arab_baathism_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_pataut_arab_baathism_subtype"
+	texturefile = "gfx/interface/ideologies/subideologies/pataut_arab_baathism_group.png"
+	}
 }

@@ -772,7 +772,6 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRE_megali_idea"
 			add_state_core = 341
 			add_state_core = 773
-			add_state_core = 1225
 			add_state_core = 340
 			add_state_core = 187
 			add_state_core = 339
@@ -4793,15 +4792,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = GRE_the_churches_integrated_once_more
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = GRE_PATRIARCH_ALLOWED
-				always = no
-			}
+			owns_state = 773
 		}
 		
 		completion_reward = {
-			
-
+			add_stability = 0.15
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.1
+			}
 		}
 	}
 focus = {
@@ -4814,11 +4813,11 @@ focus = {
 			focus = GRE_the_patriarch_in_power
 		}
 		relative_position_id = GRE_the_patriarch_in_power
-		available = {
-			has_country_flag = GRE_theocracy
-			has_government = authoritarian_democrat
+		
+		completion_reward = { 
+			add_political_power = 100
+			add_manpower = 100000
 		}
-		completion_reward = { }
 	}
 	focus = {
 		id = GRE_a_theocracy_ruled_by_god
@@ -4831,14 +4830,10 @@ focus = {
 			focus = GRE_the_question_of_ethinicity
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						has_idea = theocratic_dictatorship
-					}
-				}
-				add_ideas = theocratic_dictatorship
-			}
+			
+				
+			add_ideas = GRE_theocratic_dictatorship
+			
 		}
 	}
 
@@ -4853,9 +4848,8 @@ focus = {
 			focus = GRE_the_patriarch_in_power
 		}
 		completion_reward = {
-			GRE_Benjamin_I = {
-				add_country_leader_trait = His_Beautitude
-			}
+			add_country_leader_trait = His_Beautitude
+			add_country_leader_trait = His_All_Holiness
 		}
 	}
 
@@ -4885,10 +4879,20 @@ focus = {
 			focus = GRE_a_theocracy_ruled_by_god
 		}
 		completion_reward = {
-			# load_focus_tree = {
-				# 	keep_completed = yes
-				# 	tree = GRE_Rome_focus
-				# }
+			country_event = gre.509
+			every_state = {
+			limit = {
+				is_core_of = TUR
+			}
+			add_core_of = GRE
+			if = {
+				TUR = {
+					is_subject_of = GRE
+				}
+				annex_country = { target = TUR transfer_troops = yes }
+
+			}
+		}
 		}
 	}
 
@@ -10152,7 +10156,6 @@ focus = {
 					log = "[GetDateText]: [Root.GetName]: Focus GRE_retake"
 					add_state_core = 773
 					add_state_core = 341
-					add_state_core = 1225
 					add_state_claim = 340
 					add_state_claim = 339
 					add_state_claim = 342
@@ -10192,7 +10195,6 @@ focus = {
 					owns_state = 342
 					owns_state = 356
 					owns_state = 343
-										owns_state = 1225
 				}
 			available = {
 					NOT = {

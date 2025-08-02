@@ -9,8 +9,8 @@ focus_tree = {
   }
   default = no
   continuous_focus_position = {
-    x = 6700
-    y = 1900
+    x = 10000
+    y = 10000
   }
   focus = {
     id = BUL_rectify_economic_mistakes
@@ -5696,7 +5696,6 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus BUL_seize_thrace"
 			add_state_core = 341
       add_state_core = 773
-      add_state_core = 1225
 		}
 	}
 
@@ -6407,7 +6406,7 @@ focus_tree = {
 		ai_will_do = { factor = 0 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BUL_byzantine_legacy_claim"
-      set_cosmetic_tag = GRE_byzantium
+      set_cosmetic_tag = FORM_BYZ
 			swap_ideas = {
 				remove_idea = BUL_fourth_rome_1
 				add_idea = BUL_fourth_rome_2
@@ -6456,8 +6455,6 @@ focus_tree = {
 				187 = { add_core_of = ROOT 
 				         }
 				164 = { add_core_of = ROOT 
-				         }
-				1225 = { add_core_of = ROOT 
 				         }
 				773 = { add_core_of = ROOT 
 				         }
@@ -8461,7 +8458,6 @@ focus_tree = {
       add_war_support = 0.05
       add_state_core = 341
       add_state_core = 773
-      add_state_core = 1225
 		}
 	}
 
@@ -11713,7 +11709,6 @@ focus_tree = {
       add_state_claim = 1098
       add_state_claim = 341
       add_state_claim = 773
-      add_state_claim = 1225
       add_state_claim = 1270
       add_state_claim = 44
       add_state_claim = 1268
@@ -11825,7 +11820,6 @@ focus_tree = {
       add_war_support = 0.05
       add_state_core = 341
       add_state_core = 773
-      add_state_core = 1225
     }
   }
   focus = {

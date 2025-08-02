@@ -7680,7 +7680,11 @@ focus = {
 				limit = {
 					is_core_of = QIE
 				}
-				add_one_random_infrastructure = yes
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -7740,7 +7744,7 @@ focus = {
 		y = 1
 		
 		mutually_exclusive = {
-			focus = QIE_Negotiations_With_Communards
+			focus = QIE_Negotations_With_Soviet_Russia
 		}
 		prerequisite = {
 			focus = QIE_Fight_Hetmanist_Bureacracy
@@ -8710,7 +8714,7 @@ focus = {
 	
 	focus = {
 		id = QIE_control_parlament
-		icon = GFX_goal_BBR_black_national_syndicalism
+		icon = GFX_BBR_black_national_syndicalism
 		cost = 4
 		relative_position_id = QIE_alliance_of_unbelieviable	
 		x = 0
@@ -9884,7 +9888,7 @@ focus = {
 				factor = 1.25
 			}
 		}
-		available = { has_country_leader = { character = HNN_tang_xiangming } }
+		
 		prerequisite = {
 			focus = HNN_ensure_rural_loyalty
 		}
@@ -10016,7 +10020,6 @@ focus = {
 		y = 1
 
 		ai_will_do = { factor = 20 }
-		available = { has_country_leader = { character = HNN_tang_xiangming } }
 		mutually_exclusive = {
 			focus = HNN_maintain_martial_law
 		}

@@ -3,6 +3,13 @@
  #Achievements
   kxxflavourachievements_1936: "KXX成就"
   
-  xuetonglun_NAME: "红色江山代代传"
-  xuetonglun_DESC: "这里什么都没有。真的。"
-  
+  FRA_hidden_path_NAME: "从革命走向革命"
+  FRA_hidden_path_DESC: "发现法国隐藏路线。"
+  WHR_hidden_path_NAME: "第二次的魅力"
+  WHR_hidden_path_DESC: "发现白俄罗斯隐藏路线。"
+  DEN_hidden_path_NAME: "进步的幻象"
+  DEN_hidden_path_DESC: "发现丹麦隐藏路线。"
+  QIE_hidden_path_NAME: "红色将军的政权"
+  QIE_hidden_path_DESC: "发现大清隐藏路线。"
+  GRE_hidden_path_NAME: "俄耳甫斯之声"
+  GRE_hidden_path_DESC: "发现希腊隐藏路线。"

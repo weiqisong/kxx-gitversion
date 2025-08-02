@@ -1940,7 +1940,7 @@ focus_tree = {
 		#	focus = KX_PL_Early_Elections
 		#}			
 		relative_position_id = KX_PL_Early_Elections
-		x = -12
+		x = -20
 		y = 10
 		cost = 1
 		ai_will_do = {
@@ -3245,6 +3245,9 @@ focus_tree = {
 		prerequisite = {
 			focus = KX_PL_ZSP_TAKES_POWER
 		}	
+		mutually_exclusive = {
+			focus = KX_PL_esoterics_TAKES_POWER
+		}
 		relative_position_id = KX_PL_ZSP_TAKES_POWER
 		x = 0
 		y = 1
@@ -3430,7 +3433,7 @@ focus_tree = {
 			focus = KX_PL_ZSP_ELECTIVE_BUREAUCRACY
 		}	
 		relative_position_id = KX_PL_ZSP_ELECTIVE_BUREAUCRACY
-		x = 0
+		x = -1
 		y = 1
 		cost = 4 #?
 		ai_will_do = {
@@ -3529,7 +3532,7 @@ focus_tree = {
 			focus = KX_PL_ZSP_FED_LABOUR_GOV
 		}			
 		relative_position_id = KX_PL_ZSP_SATE_WIDE_SYNDICATES
-		x = 2
+		x = 1
 		y = 1
 		cost = 4 #?
 		ai_will_do = {
@@ -3557,7 +3560,7 @@ focus_tree = {
 			focus = KX_PL_ZSP_SATE_IS_SYNDICATE
 		}			
 		relative_position_id = KX_PL_ZSP_SATE_IS_SYNDICATE
-		x = 1
+		x = 3
 		y = 1
 		cost = 4 #?
 		ai_will_do = {
@@ -5719,7 +5722,7 @@ focus_tree = {
 		available = {
 			has_country_flag = plx_rc_in_power
 		}
-		x = 12
+		x = 25
 		y = 20
 		cost = 1
 		ai_will_do = {
@@ -5747,10 +5750,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 25	
-			country_event = {
-        		id = polsoc.14
-       		 	days = 3
-     		}	
+
 		}
 	}
 	focus = {
@@ -5772,7 +5772,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.10
 		}
-	}	
+	}
 	focus = {
 		id = KX_PL_PG_ROYAL_CABINET
 		icon = GFX_goal_HEJ_royal_house_hashemite
@@ -5790,8 +5790,736 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = plxv2.043
+		}
+	}
+	focus = {
+		id = KX_PL_PG_EXPAND_ROYAL_COMPETENCIES
+		icon = GFX_goal_CAN_royal_perogative
+		available = {
+			has_country_flag = plx_monarch_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_ROYAL_CABINET
+		}		
+		mutually_exclusive = {
+			focus = KX_PL_PG_REAFFIRM_ROYAL_COUNCIL
+		}		
+		relative_position_id = KX_PL_PG_ROYAL_CABINET
+		x = -6
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_stability = 0.10
+		}
+	}
+	focus = {
+		id = KX_PL_PG_RISE_OF_SYNARCHISM
+		icon = GFX_goal_COR_Attract_Wayward_Technocrats
+		available = {
+			#has_country_flag = plx_rc_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_EXPAND_ROYAL_COMPETENCIES
+		}	
+		mutually_exclusive = {
+			focus = KX_PL_PG_ROYAL_CABINET_continues
+		}		
+		relative_position_id = KX_PL_PG_EXPAND_ROYAL_COMPETENCIES
+		x = 4
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = PLX_mon_synarchism_1
+			country_event = plxv2.084
+		}
+	}
+	focus = {
+		id = KX_PL_PG_APPOINTABLE_SENATE
+		icon = GFX_PAP_roman_senate
+		available = {
+			#has_country_flag = plx_rc_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_RISE_OF_SYNARCHISM
+		}		
+		relative_position_id = KX_PL_PG_RISE_OF_SYNARCHISM
+		x = -2
+		y = 1
+		cost = 7
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			if = { 
+				limit = { has_idea = PLX_mon_parliament_1 }
+				swap_ideas = {
+					remove_idea = PLX_mon_parliament_1
+					add_idea = PLX_mon_parliament_2
+				}
+			}
+			else = {
+				add_ideas = PLX_mon_parliament_1
+			}
+		}
+	}
+	focus = {
+		id = KX_PL_PG_REFORM_ROYAL_COUNCIL
+		icon = GFX_goal_CSA_Technical_Alliance
+		available = {
+			#has_country_flag = plx_rc_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_RISE_OF_SYNARCHISM
+		}		
+		relative_position_id = KX_PL_PG_RISE_OF_SYNARCHISM
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PLX_mon_synarchism_1
+				add_idea = PLX_mon_synarchism_2
+			}
+		}
+	}	
+	focus = {
+		id = KX_PL_PG_CASCADE_PARLIAMENT
+		icon = GFX_RUS_Technical_Senate
+		available = {
+			#has_country_flag = plx_rc_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_RISE_OF_SYNARCHISM
+		}
+		relative_position_id = KX_PL_PG_RISE_OF_SYNARCHISM
+		x = 2
+		y = 1
+		cost = 7
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			if = { 
+				limit = { has_idea = PLX_mon_parliament_1 }
+				swap_ideas = {
+					remove_idea = PLX_mon_parliament_1
+					add_idea = PLX_mon_parliament_2
+				}
+			}
+			else = {
+				add_ideas = PLX_mon_parliament_1
+			}
+		}
+	}
+	focus = {
+		id = KX_PL_PG_REAFFIRM_ROYAL_COUNCIL
+		icon = GFX_UKR_Regency_Council
+		available = {
+			has_country_flag = plx_rc_reafirmed
+		}
+		prerequisite = {
+			focus = KX_PL_PG_ROYAL_CABINET
+		}
+		mutually_exclusive = {
+			focus = KX_PL_PG_EXPAND_ROYAL_COMPETENCIES
+		}		
+		relative_position_id = KX_PL_PG_ROYAL_CABINET
+		x = 5
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_stability = 0.10
+		}
+	}
+	focus = {
+		id = KX_PL_PG_RELY_ON_ARISTOCRACY
+		icon = GFX_goal_BRG_Aristocratic_Ally
+		available = {
+			#has_country_flag = plx_rc_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_REAFFIRM_ROYAL_COUNCIL
+		}		
+		relative_position_id = KX_PL_PG_REAFFIRM_ROYAL_COUNCIL
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = KX_mon_royal_council_1
+		}
+	}
+	focus = {
+		id = KX_PL_PG_POWER_TO_THE_SENAT
+		icon = GFX_RUS_Empower_Aristocratic_Senate
+		available = {
+			#has_country_flag = plx_rc_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_RELY_ON_ARISTOCRACY
+		}
+		relative_position_id = KX_PL_PG_RELY_ON_ARISTOCRACY
+		x = -1
+		y = 1
+		cost = 7
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			if = { 
+				limit = { has_idea = KX_mon_royal_council_2 }
+				swap_ideas = {
+					remove_idea = KX_mon_royal_council_2
+					add_idea = KX_mon_royal_council_3
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = KX_mon_royal_council_1
+					add_idea = KX_mon_royal_council_2
+				}
+			}
+		}
+	}
+	focus = {
+		id = KX_PL_PG_EXPAND_LOCAL_GOVERNANCE
+		icon = GFX_goal_COR_american_estates
+		available = {
+			#has_country_flag = plx_rc_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_RELY_ON_ARISTOCRACY
+		}
+		relative_position_id = KX_PL_PG_RELY_ON_ARISTOCRACY
+		x = 1
+		y = 1
+		cost = 7
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			if = { 
+				limit = { has_idea = KX_mon_royal_council_2 }
+				swap_ideas = {
+					remove_idea = KX_mon_royal_council_2
+					add_idea = KX_mon_royal_council_3
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = KX_mon_royal_council_1
+					add_idea = KX_mon_royal_council_2
+				}
+			}
+		}
+	}
+	focus = {
+		id = KX_PL_PG_APPEAL_TO_INDUSTRIALISTS
+		icon = GFX_goal_AST_drink_with_industrialists
+		available = {
+			#has_country_flag = plx_rc_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_EXPAND_LOCAL_GOVERNANCE
+		}
+		prerequisite = {
+			focus = KX_PL_PG_POWER_TO_THE_SENAT
+		}
+		mutually_exclusive = {
+			focus = KX_PL_PG_TOWARDS_CORPORATISM
+		}		
+		relative_position_id = KX_PL_PG_POWER_TO_THE_SENAT
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = KX_mon_royal_capitalism_1
+			country_event = plxv2.085
+		}
+	}
+	focus = {
+		id = KX_PL_PG_TAX_BREAKS
+		icon = GFX_RUS_Tax_Reform
+		available = {
+			#has_country_flag = plx_rc_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_APPEAL_TO_INDUSTRIALISTS
+		}
+		relative_position_id = KX_PL_PG_APPEAL_TO_INDUSTRIALISTS
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			if = { 
+				limit = { has_idea = KX_mon_royal_capitalism_2 }
+				swap_ideas = {
+					remove_idea = KX_mon_royal_capitalism_2
+					add_idea = KX_mon_royal_capitalism_3
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = KX_mon_royal_capitalism_1
+					add_idea = KX_mon_royal_capitalism_2
+				}
+			}
+		}
+	}
+	focus = {
+		id = KX_PL_PG_LOWER_REGULATIONS
+		icon = GFX_HUN_deregulation
+		available = {
+			#has_country_flag = plx_rc_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_APPEAL_TO_INDUSTRIALISTS
+		}
+		relative_position_id = KX_PL_PG_APPEAL_TO_INDUSTRIALISTS
+		x = -2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			if = { 
+				limit = { has_idea = KX_mon_royal_capitalism_2 }
+				swap_ideas = {
+					remove_idea = KX_mon_royal_capitalism_2
+					add_idea = KX_mon_royal_capitalism_3
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = KX_mon_royal_capitalism_1
+					add_idea = KX_mon_royal_capitalism_2
+				}
+			}
+		}
+	}
+	focus = {
+		id = KX_PL_PG_PROTECTIONISM
+		icon = GFX_USA_payment_protection
+		available = {
+			#has_country_flag = plx_rc_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_LOWER_REGULATIONS
+		}
+		prerequisite = {
+			focus = KX_PL_PG_TAX_BREAKS
+		}
+		relative_position_id = KX_PL_PG_LOWER_REGULATIONS
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KX_mon_royal_capitalism_3
+				add_idea = KX_mon_royal_capitalism_4
+			}
+		}
+	}	
+	focus = {
+		id = KX_PL_PG_CONTINUE_LAND_CONSOLIDATION
+		icon = GFX_goal_ZIM_land_husbandry_act
+		available = {
+			#has_country_flag = plx_rc_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_PROTECTIONISM
+		}
+		mutually_exclusive = {
+			focus = KX_PL_PG_LIMIT_LAND_SALE
+		}		
+		relative_position_id = KX_PL_PG_PROTECTIONISM
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = KX_PL_PG_agriculture_2b
+		}
+	}
+	focus = {
+		id = KX_PL_PG_LIMIT_LAND_SALE
+		icon = GFX_goal_SKM_Dire_Need_Land_Reforms
+		available = {
+			#has_country_flag = plx_rc_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_PROTECTIONISM
+		}
+		mutually_exclusive = {
+			focus = KX_PL_PG_CONTINUE_LAND_CONSOLIDATION
+		}
+		relative_position_id = KX_PL_PG_PROTECTIONISM
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = KX_PL_PG_agriculture_2a
+		}
+	}
+	focus = {
+		id = KX_PL_PG_TOWARDS_CORPORATISM
+		icon = GFX_goal_BRG_Distributist_Economy
+		available = {
+			#has_country_flag = plx_start
+		}	
+		prerequisite = {
+			focus = KX_PL_PG_EXPAND_LOCAL_GOVERNANCE
+		}
+		mutually_exclusive = {
+			focus = KX_PL_PG_APPEAL_TO_INDUSTRIALISTS
+		}		
+		relative_position_id = KX_PL_PG_EXPAND_LOCAL_GOVERNANCE
+		x = 0
+		y = 1
+		cost = 10 #?
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = SOC_POL_PZPR_corporatism_1
+			country_event = plxv2.086
+		}
+	}	
+	focus = {
+		id = KX_PL_PG_CLASS_BLIND_SYNDICATES
+		icon = GFX_RUS_Corporatist_Lean
+		available = {
+			#has_country_flag = plx_start
+		}	
+		prerequisite = {
+			focus = KX_PL_PG_TOWARDS_CORPORATISM
+		}
+		relative_position_id = KX_PL_PG_TOWARDS_CORPORATISM
+		x = 2
+		y = 1
+		cost = 10 #?
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = SOC_POL_PZPR_right_syndicates
+		}
+	}
+	focus = {
+		id = KX_PL_PG_COUNCIL_OF_WORKERS_AND_CAPITALISTS
+		icon = GFX_BBR_collective_management
+		available = {
+			#has_country_flag = plx_start
+		}	
+		prerequisite = {
+			focus = KX_PL_PG_TOWARDS_CORPORATISM
+		}
+		relative_position_id = KX_PL_PG_TOWARDS_CORPORATISM
+		x = 0
+		y = 1
+		cost = 10 #?
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOC_POL_PZPR_corporatism_1
+				add_idea = SOC_POL_PZPR_corporatism_2
+			}
+		}
+	}	
+	focus = {
+		id = KX_PL_PG_CLASS_COLABORATIONIST_AGRICULTURE
+		icon = GFX_goal_AUS_corporatocratic_democracy
+		available = {
+			#has_country_flag = plx_start
+		}	
+		prerequisite = {
+			focus = KX_PL_PG_COUNCIL_OF_WORKERS_AND_CAPITALISTS
+		}
+		prerequisite = {
+			focus = KX_PL_PG_CLASS_BLIND_SYNDICATES
+		}
+		relative_position_id = KX_PL_PG_COUNCIL_OF_WORKERS_AND_CAPITALISTS
+		x = 0
+		y = 1
+		cost = 10 #?
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = SOC_POL_colab_agri
+		}
+	}
+	focus = {
+		id = KX_PL_PG_COORDINATE_SMALL_BUSINESS
+		icon = GFX_goal_NFA_People_Corporatism
+		available = {
+			#has_country_flag = plx_start
+		}	
+		prerequisite = {
+			focus = KX_PL_PG_CLASS_BLIND_SYNDICATES
+		}
+		prerequisite = {
+			focus = KX_PL_PG_COUNCIL_OF_WORKERS_AND_CAPITALISTS
+		}
+		relative_position_id = KX_PL_PG_CLASS_BLIND_SYNDICATES
+		x = 0
+		y = 1
+		cost = 10 #?
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = SOC_POL_PZPR_business_coordination
+		}
+	}	
+	focus = {
+		id = KX_PL_PG_POLISH_SOLIDARISM
+		icon = GFX_focus_rus_organic_solidarity
+		available = {
+			#has_country_flag = plx_start
+		}	
+		prerequisite = {
+			focus = KX_PL_PG_CLASS_COLABORATIONIST_AGRICULTURE
+		}
+		prerequisite = {
+			focus = KX_PL_PG_COORDINATE_SMALL_BUSINESS
+		}		
+		relative_position_id = KX_PL_PG_COORDINATE_SMALL_BUSINESS
+		x = -1
+		y = 1
+		cost = 10 #?
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOC_POL_PZPR_corporatism_2
+				add_idea = SOC_POL_PZPR_corporatism_3
+			}
+		}
+	}	
+	focus = {
+		id = KX_PL_PG_SCIENTIFIC_ECONOMY
+		icon = GFX_goal_FRA_technocratic_ministry
+		available = {
+			#has_country_flag = plx_rc_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_APPOINTABLE_SENATE
+		}
+		prerequisite = {
+			focus = KX_PL_PG_CASCADE_PARLIAMENT
+		}		
+		prerequisite = {
+			focus = KX_PL_PG_REFORM_ROYAL_COUNCIL
+		}
+		relative_position_id = KX_PL_PG_REFORM_ROYAL_COUNCIL
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = PLX_mon_synarchist_economy_1
+		}
+	}
+	focus = {
+		id = KX_PL_PG_INSTITUTE_OF_GUIDANCE
+		icon = GFX_goal_VIN_guide_humanity_third_amnesty
+		available = {
+			#has_country_flag = plx_rc_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_SCIENTIFIC_ECONOMY
+		}
+		relative_position_id = KX_PL_PG_SCIENTIFIC_ECONOMY
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PLX_mon_synarchist_economy_1
+				add_idea = PLX_mon_synarchist_economy_2
+			}
+		}
+	}
+	focus = {
+		id = KX_PL_PG_NEW_KIND_OF_MONEY
+		icon = GFX_focus_ALO_russian_money
+		available = {
+			#has_country_flag = plx_rc_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_SCIENTIFIC_ECONOMY
+		}
+		relative_position_id = KX_PL_PG_SCIENTIFIC_ECONOMY
+		x = -2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = PLX_mon_syn_money_1
+		}
+	}
+	focus = {
+		id = KX_PL_PG_CALCULATE_TAXES
+		icon = GFX_goal_POL_Fund_Schools_Mathematics
+		available = {
+			#has_country_flag = plx_rc_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_NEW_KIND_OF_MONEY
+		}
+		prerequisite = {
+			focus = KX_PL_PG_INSTITUTE_OF_GUIDANCE
+		}		
+		relative_position_id = KX_PL_PG_NEW_KIND_OF_MONEY
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PLX_mon_syn_money_1
+				add_idea = PLX_mon_syn_money_2
+			}
+		}
+	}
+	focus = {
+		id = KX_PL_PG_EQUALITY_OF_LABOUR_AND_CAPITAL
+		icon = GFX_goal_CZE_class_equality
+		available = {
+			#has_country_flag = plx_rc_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_SCIENTIFIC_ECONOMY
+		}
+		relative_position_id = KX_PL_PG_SCIENTIFIC_ECONOMY
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = PLX_mon_labour_n_capital_1
+		}
+	}	
+	focus = {
+		id = KX_PL_PG_BALANCE_CONSUMPTION
+		icon = GFX_goal_AUS_Financial_Equalization
+		available = {
+			#has_country_flag = plx_rc_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_INSTITUTE_OF_GUIDANCE
+		}
+		prerequisite = {
+			focus = KX_PL_PG_EQUALITY_OF_LABOUR_AND_CAPITAL
+		}		
+		relative_position_id = KX_PL_PG_INSTITUTE_OF_GUIDANCE
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PLX_mon_labour_n_capital_1
+				add_idea = PLX_mon_labour_n_capital_2
+			}
+		}
+	}
+	focus = {
+		id = KX_PL_PG_HARMONY_ACHIEVED
+		icon = GFX_goal_CSA_Ascendancy_Technocracy
+		available = {
+			#has_country_flag = plx_rc_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_BALANCE_CONSUMPTION
+		}
+		prerequisite = {
+			focus = KX_PL_PG_CALCULATE_TAXES
+		}
+		relative_position_id = KX_PL_PG_BALANCE_CONSUMPTION
+		x = -1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PLX_mon_synarchism_2
+				add_idea = PLX_mon_synarchism_3
+			}
+		}
+	}	
+	focus = {
+		id = KX_PL_PG_ROYAL_CABINET_continues
+		icon = GFX_goal_HEJ_royal_house_hashemite
+		available = {
+			has_country_flag = plx_rc_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_PG_EXPAND_ROYAL_COMPETENCIES
+		}	
+		mutually_exclusive = {
+			focus = KX_PL_PG_RISE_OF_SYNARCHISM
+		}	
+		relative_position_id = KX_PL_PG_KING_IN_POWER
+		x = -10
+		y = 3
+		cost = 2
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.05
+			set_country_leader_ideology = absolute_monarchy_subtype
 		}
 	}		
 	focus = {
@@ -5801,12 +6529,12 @@ focus_tree = {
 			has_country_flag = plx_rc_in_power
 		}
 		prerequisite = {
-			focus = KX_PL_PG_ROYAL_CABINET
+			focus = KX_PL_PG_ROYAL_CABINET_continues
 		}	
 		mutually_exclusive = {
 			focus = KX_PL_PG_CHADECJA_ADVISORS
 		}		
-		relative_position_id = KX_PL_PG_ROYAL_CABINET
+		relative_position_id = KX_PL_PG_ROYAL_CABINET_continues
 		x = 1
 		y = 1
 		cost = 1
@@ -6200,12 +6928,12 @@ focus_tree = {
 			has_country_flag = plx_rc_in_power
 		}
 		prerequisite = {
-			focus = KX_PL_PG_ROYAL_CABINET
+			focus = KX_PL_PG_ROYAL_CABINET_continues
 		}		
 		mutually_exclusive = {
 			focus = KX_PL_PG_CLERGICAL_ADVISORS
 		}
-		relative_position_id = KX_PL_PG_ROYAL_CABINET
+		relative_position_id = KX_PL_PG_ROYAL_CABINET_continues
 		x = -1
 		y = 1
 		cost = 1
@@ -6274,7 +7002,7 @@ focus_tree = {
         #    focus = KX_PL_PG_KING_IN_POWER
 		#}		
 		relative_position_id = KX_PL_PG_KING_IN_POWER
-		x = 21
+		x = 50
 		y = 0
 		cost = 1
 		ai_will_do = {
@@ -6635,7 +7363,7 @@ focus_tree = {
 		cost = 4
 
 		x = 50
-		y = 20
+		y = 12
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_The_General_Inspectorate"
@@ -16609,7 +17337,7 @@ focus_tree = {
     	}
     }
     cancelable = no
-    x = 32
+    x = 60
     y = 30
     cost = 30
     ai_will_do = {
@@ -17539,12 +18267,640 @@ focus_tree = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
   }
   focus = {
+		id = KX_PL_esoterics_TAKES_POWER
+		icon = GFX_RUS_Trade_Unions_Discussion
+		available = {
+			has_country_flag = plx_zsp_rules_true
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_TAKES_POWER
+		}	
+		mutually_exclusive = {
+			focus = KX_PL_ZSP_FREE_GMINY_FED
+		}		
+		relative_position_id = KX_PL_ZSP_TAKES_POWER
+		x = 15
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 50
+			hidden_effect = {
+				country_event = {
+					id = plxv2.074
+					days = 7
+				}
+			}
+		}
+	}
+	focus = {
+		id = KX_PL_ZSP_DEPOLITICIZE_TRADE_UNIONS
+		icon = GFX_RUS_Let_The_Trade_Unions_Decide
+		available = {
+			#has_country_flag = plx_start
+		}
+		prerequisite = {
+			focus = KX_PL_esoterics_TAKES_POWER
+		}
+		relative_position_id = KX_PL_esoterics_TAKES_POWER
+		x = -2
+		y = 1
+		cost = 7 #?
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = PLX_synd_trade_unions
+		}
+	}
+	focus = {
+		id = KX_PL_ZSP_CREATE_CONSUMER_SYNDICATES
+		icon = GFX_UKR_Corn_Consumerism
+		available = {
+			#has_country_flag = plx_start
+		}
+		prerequisite = {
+			focus = KX_PL_esoterics_TAKES_POWER
+		}
+		relative_position_id = KX_PL_esoterics_TAKES_POWER
+		x = 2
+		y = 1
+		cost = 7 #?
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = PLX_synd_syndicates_1
+		}
+	}
+	focus = {
+		id = KX_PL_ZSP_ABOLISH_PRIVATE_PROPERTY
+		icon = GFX_goal_AST_abolish_wage_system
+		available = {
+			#has_country_flag = plx_start
+		}
+		prerequisite = {
+			focus = KX_PL_esoterics_TAKES_POWER
+		}
+		relative_position_id = KX_PL_esoterics_TAKES_POWER
+		x = 0
+		y = 1
+		cost = 7 #?
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = PLX_synd_no_private_property_1
+		}
+	}
+	focus = {
+		id = KX_PL_ZSP_FOUND_PRODUCTION_SYNDICATES
+		icon = GFX_RUS_Syndical_Cooperative_Federation
+		available = {
+			#has_country_flag = plx_start
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_ABOLISH_PRIVATE_PROPERTY
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_CREATE_CONSUMER_SYNDICATES
+		}
+		relative_position_id = KX_PL_ZSP_CREATE_CONSUMER_SYNDICATES
+		x = -1
+		y = 1
+		cost = 7 #?
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PLX_synd_syndicates_1
+				add_idea = PLX_synd_syndicates_2
+			}
+		}
+	}
+	focus = {
+		id = KX_PL_ZSP_AUTONOMISATION
+		icon = GFX_goal_CRO_autonomous_government
+		available = {
+			#has_country_flag = plx_start
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_ABOLISH_PRIVATE_PROPERTY
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_DEPOLITICIZE_TRADE_UNIONS
+		}
+		relative_position_id = KX_PL_ZSP_ABOLISH_PRIVATE_PROPERTY
+		x = -1
+		y = 1
+		cost = 7 #?
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			#add_stability = 0.10
+			add_ideas = PLX_synd_autonomous_society_1
+			hidden_effect = {
+				country_event = {
+					id = plxv2.076 days = 4
+				}
+			}
+		}
+	}	
+	focus = {
+		id = KX_PL_ZSP_BARGAIN_ECONOMY
+		icon = GFX_goal_ALB_Local_Syndicate_Development
+		available = {
+			#has_country_flag = plx_start
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_AUTONOMISATION
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_FOUND_PRODUCTION_SYNDICATES
+		}
+		relative_position_id = KX_PL_ZSP_AUTONOMISATION
+		x = 0
+		y = 1
+		cost = 7 #?
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PLX_synd_no_private_property_1
+				add_idea = PLX_synd_no_private_property_2
+			}
+		}
+	}	
+	focus = {
+		id = KX_PL_ZSP_COOPERATIVE_BANKING
+		icon = GFX_goal_FRA_peoples_banking
+		available = {
+			#has_country_flag = plx_start
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_AUTONOMISATION
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_FOUND_PRODUCTION_SYNDICATES
+		}
+		relative_position_id = KX_PL_ZSP_FOUND_PRODUCTION_SYNDICATES
+		x = 0
+		y = 1
+		cost = 7 #?
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PLX_synd_syndicates_2
+				add_idea = PLX_synd_syndicates_3
+			}
+		}
+	}	
+	focus = {
+		id = KX_PL_ZSP_A_TRULY_FREE_SYSTEM
+		icon = GFX_goal_NYC_Understand_Syndicalism
+		available = {
+			#has_country_flag = plx_start
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_BARGAIN_ECONOMY
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_COOPERATIVE_BANKING
+		}		
+		relative_position_id = KX_PL_ZSP_COOPERATIVE_BANKING
+		x = -1
+		y = 1
+		cost = 4 #?
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = plxv2.077
+			swap_ideas = {
+				remove_idea = PLX_synd_autonomous_society_1
+				add_idea = PLX_synd_autonomous_society_2
+			}
+		}
+	}	
+	focus = {
+		id = KX_PL_ZSP_HEMPELS_CENTER
+		icon = GFX_goal_FIU_syndicalize_unions
+		available = {
+			has_country_flag = plx_hempel_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_A_TRULY_FREE_SYSTEM
+		}	
+		mutually_exclusive = {
+			focus = KX_PL_ZSP_BIERUTS_NATIONALISM
+		}
+		relative_position_id = KX_PL_ZSP_A_TRULY_FREE_SYSTEM
+		x = -2
+		y = 1
+		cost = 1 #?
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = KX_PL_ZSP_GODLESS_RELIGION
+		icon = GFX_goal_RUS_paganism
+		available = {
+			#has_country_flag = plx_start
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_HEMPELS_CENTER
+			focus = KX_PL_ZSP_BIERUTS_NATIONALISM
+		}
+		relative_position_id = KX_PL_ZSP_HEMPELS_CENTER
+		x = 2
+		y = 1
+		cost = 5 #?
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = PLX_synd_godless_religion_1
+			hidden_effect = {
+				country_event = {
+					id = plxv2.078
+					days = 26
+				}		
+			}			
+		}
+	}
+	focus = {
+		id = KX_PL_ZSP_REVIVAL_OF_OUR_FOREFATHERS
+		icon = GFX_DKB_Christian_Unions
+		available = {
+			#has_country_flag = plx_start
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_GODLESS_RELIGION
+		}
+		relative_position_id = KX_PL_ZSP_GODLESS_RELIGION
+		x = -1
+		y = 1
+		cost = 5 #?
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PLX_synd_autonomous_society_2
+				add_idea = PLX_synd_autonomous_society_3
+			}
+		}
+	}
+	focus = {
+		id = KX_PL_ZSP_COMBAT_CHRISTIAN_MORALITY
+		icon = GFX_goal_COL_Esotericism
+		available = {
+			#has_country_flag = plx_start
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_GODLESS_RELIGION
+		}
+		relative_position_id = KX_PL_ZSP_GODLESS_RELIGION
+		x = 1
+		y = 1
+		cost = 5 #?
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PLX_synd_godless_religion_1
+				add_idea = PLX_synd_godless_religion_2
+			}
+		}
+	}	
+	focus = {
+		id = KX_PL_ZSP_LEFT_PANSLAVISM
+		icon = GFX_goal_AUS_south_slavs
+		available = {
+			#has_country_flag = plx_start
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_COMBAT_CHRISTIAN_MORALITY
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_REVIVAL_OF_OUR_FOREFATHERS
+		}		
+		relative_position_id = KX_PL_ZSP_REVIVAL_OF_OUR_FOREFATHERS
+		x = 1
+		y = 1
+		cost = 4 #?
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = plx.28
+		}
+	}	
+	#focus = {
+	#	id = KX_PL_ZSP_DEMOCRATIC_NATIONAL_SYNDICALISM
+	#	#icon = GFX_GRU_ANARCHO_HOUSE
+	#	available = {
+	#		#has_country_flag = plx_start
+	#	}
+	#	prerequisite = {
+	#		focus = KX_PL_ZSP_A_TRULY_FREE_SYSTEM
+	#	}	
+	#	relative_position_id = KX_PL_ZSP_A_TRULY_FREE_SYSTEM
+	#	x = -4
+	#	y = 1
+	#	cost = 6 #?
+	#	ai_will_do = {
+	#		factor = 100
+	#	}
+	#	completion_reward = {
+	#		#add_stability = 0.10
+	#	}
+	#}
+	focus = {
+		id = KX_PL_ZSP_GMINY_FEDERALISM
+		icon = GFX_GRU_ANARCHO_HOUSE
+		available = {
+			#has_country_flag = plx_start
+		}
+		prerequisite = {
+			#focus = KX_PL_ZSP_DEMOCRATIC_NATIONAL_SYNDICALISM
+			focus = KX_PL_ZSP_HEMPELS_CENTER
+		}
+		relative_position_id = KX_PL_ZSP_HEMPELS_CENTER
+		x = -2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			#add_stability = 0.10
+			add_ideas = PLX_synd_federation_1
+		}
+	}
+	focus = {
+		id = KX_PL_ZSP_ELECTIVE_BUREAUCRACY_2
+		icon = GFX_GRU_FREE_ELECTIONS
+		available = {
+			#has_country_flag = plx_start
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_GMINY_FEDERALISM
+		}
+		relative_position_id = KX_PL_ZSP_GMINY_FEDERALISM
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			if = { 
+				limit = { has_idea = PLX_synd_federation_2 }
+				swap_ideas = {
+					remove_idea = PLX_synd_federation_2
+					add_idea = PLX_synd_federation_3
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = PLX_synd_federation_1
+					add_idea = PLX_synd_federation_2
+				}
+			}
+		}
+	}
+	focus = {
+		id = KX_PL_ZSP_CONGRESS_OF_SYNDICATES
+		icon = GFX_goal_syndicalist_congress
+		available = {
+			#has_country_flag = plx_start
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_GMINY_FEDERALISM
+		}
+		relative_position_id = KX_PL_ZSP_GMINY_FEDERALISM
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			if = { 
+				limit = { has_idea = PLX_synd_federation_2 }
+				swap_ideas = {
+					remove_idea = PLX_synd_federation_2
+					add_idea = PLX_synd_federation_3
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = PLX_synd_federation_1
+					add_idea = PLX_synd_federation_2
+				}
+			}
+		}
+	}
+	focus = {
+		id = KX_PL_ZSP_NECESSITY_OF_GOVERNANCE
+		icon = GFX_RUS_Government_Of_Peoples_Trust
+		available = {
+			#has_country_flag = plx_start
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_ELECTIVE_BUREAUCRACY_2
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_CONGRESS_OF_SYNDICATES
+		}
+		relative_position_id = KX_PL_ZSP_ELECTIVE_BUREAUCRACY_2
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PLX_synd_federation_3
+				add_idea = PLX_synd_federation_4
+			}
+		}
+	}
+	#focus = {
+	#	id = KX_PL_ZSP_DEMOCRATIC_NATIONAL_SYNDICALISM
+	#	#icon = GFX_GRU_ANARCHO_HOUSE
+	#	available = {
+	#		#has_country_flag = plx_start
+	#	}
+	#	prerequisite = {
+	#		focus = KX_PL_ZSP_DEMOCRATIC_NATIONAL_SYNDICALISM
+	#	}
+	#	relative_position_id = KX_PL_ZSP_DEMOCRATIC_NATIONAL_SYNDICALISM
+	#	x = -1
+	#	y = 1
+	#	cost = 6 #?
+	#	ai_will_do = {
+	#		factor = 100
+	#	}
+	#	completion_reward = {
+	#		#add_stability = 0.10
+	#	}
+	#}
+	focus = {
+		id = KX_PL_ZSP_BIERUTS_NATIONALISM
+		#icon = GFX_BBR_black_national_syndicalism
+		icon = GFX_RUS_left_eurasians2
+		available = {
+			has_country_flag = plx_bierut_in_power
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_A_TRULY_FREE_SYSTEM
+		}
+		mutually_exclusive = {
+			focus = KX_PL_ZSP_HEMPELS_CENTER
+		}		
+		relative_position_id = KX_PL_ZSP_A_TRULY_FREE_SYSTEM
+		x = 2
+		y = 1
+		cost = 1 #?
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = KX_PL_ZSP_CENTRAL_SYNDICATE
+		icon = GFX_SOV_soviet_syndicalism
+		available = {
+			#has_country_flag = plx_start
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_BIERUTS_NATIONALISM
+		}
+		relative_position_id = KX_PL_ZSP_BIERUTS_NATIONALISM
+		x = 2
+		y = 1
+		cost = 9 #?
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = PLX_synd_centralisation_1
+		}
+	}
+	focus = {
+		id = KX_PL_ZSP_INTRODUCED_PLANNING_ELEMENTS
+		icon = GFX_GRU_PIECK_five_year_plan
+		available = {
+			#has_country_flag = plx_start
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_CENTRAL_SYNDICATE
+		}
+		relative_position_id = KX_PL_ZSP_CENTRAL_SYNDICATE
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			if = { 
+				limit = { has_idea = PLX_synd_centralisation_2 }
+				swap_ideas = {
+					remove_idea = PLX_synd_centralisation_2
+					add_idea = PLX_synd_centralisation_3
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = PLX_synd_centralisation_1
+					add_idea = PLX_synd_centralisation_2
+				}
+			}
+		}
+	}
+	focus = {
+		id = KX_PL_ZSP_NAIL_TO_SMALL_ENTRPRENEURSHIP
+		icon = GFX_GRU_Shatter_Trade_Unionists
+		available = {
+			#has_country_flag = plx_start
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_CENTRAL_SYNDICATE
+		}
+		relative_position_id = KX_PL_ZSP_CENTRAL_SYNDICATE
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			if = { 
+				limit = { has_idea = PLX_synd_centralisation_2 }
+				swap_ideas = {
+					remove_idea = PLX_synd_centralisation_2
+					add_idea = PLX_synd_centralisation_3
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = PLX_synd_centralisation_1
+					add_idea = PLX_synd_centralisation_2
+				}
+			}
+		}
+	}
+	focus = {
+		id = KX_PL_ZSP_SAFEGUARDING_SYNDICALIST_SYSTEM
+		icon = GFX_goal_GEO_Peoples_Guard_Dictatorship
+		available = {
+			#has_country_flag = plx_start
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_NAIL_TO_SMALL_ENTRPRENEURSHIP
+		}
+		prerequisite = {
+			focus = KX_PL_ZSP_INTRODUCED_PLANNING_ELEMENTS
+		}		
+		relative_position_id = KX_PL_ZSP_NAIL_TO_SMALL_ENTRPRENEURSHIP
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PLX_synd_centralisation_3
+				add_idea = PLX_synd_centralisation_4
+			}
+		}
+	}
+  focus = {
 	id = POL_In_Zakrzewskis_Light
 	icon = GFX_goal_ideology_totalist
 	cost = 7
 
 	relative_position_id = KX_PL_ZSP_TAKES_POWER
-	x = 8
+	x = 9
 	y = 2
 	available = {
 		has_country_flag = plx_byzantine

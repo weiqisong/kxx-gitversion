@@ -8211,37 +8211,7 @@ country_event = {
 		}
 		set_country_flag = FRA_nat_jac_sup
 	}
-	option = { 
-		name = comfrance.950.c
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = FRA_JACOBIN_SPLITX 
-						option = FRA_JACOBIN_SPLITX_REDS
-					}
-					has_game_rule = {
-						rule = FRA_JACOBIN_SPLITX 
-						option = FRA_JACOBIN_SPLITX_NATS
-					}
-				}
-			}
-		}
-		create_country_leader = {
-			name = "马塞尔·加香"
-			picture = "gfx/leaders/FRA/Portrait_France_Marcel_Cachin.png"
-			expire = "1.1.1"
-			ideology = broad_communism_subtype
-		}
-		set_party_name = {
-			ideology = totalist
-			long_name = FRA_parti_communiste_long
-			name = FRA_parti_communiste
-		}
-		set_country_flag = FRA_mod_jac_sup
-	}
+	
 }
 
 

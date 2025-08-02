@@ -84,7 +84,7 @@ add_ideas = {
 	PLS_Jamal_al_Husayni_for_npo
 	PLS_Sayyid_Qutb_sec_npo
 }
-
+country_event = { id = PLSguides.1 days = 1 }
 set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = "1941.6.15"
