@@ -20,7 +20,7 @@ focus_tree = {
 	focus = {
 		id = WHR_global_belarus
 		icon = GFX_goal_generic_globe
-		x = -10
+		x = -12
 		y = 14
 		cost = 3
 
@@ -519,7 +519,167 @@ focus_tree = {
 			}
 		}
 	}
-	
+	focus = {
+		id = WHR_great_ukrainian_federation
+		icon = GFX_UKR_Restore_Empires_Natural_Borders
+		relative_position_id = WHR_global_belarus
+		x = 12
+		y = 4
+		cost = 1
+		ai_will_do = {
+			base = 100
+		}
+		allow_branch = {
+			has_country_flag = WHR_hidden_path_unlock
+		}
+		prerequisite = { 
+
+			focus = WHR_secede_from_RP
+		 }
+		available = {
+			has_completed_focus = WHR_and_strike
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus WHR_lithuanian_claims"
+			add_ideas = WSU_Consequences_of_the_conquest_of_Ukraine_12
+			set_cosmetic_tag = WSU_OUN_ukraine
+			create_wargoal = { target = GAL type = annex_everything }
+			every_state = {
+				limit = { is_core_of = GAL }
+				add_core_of = WHR
+			}
+			1224 = { add_core_of = WHR }
+			217 = { add_core_of = WHR }
+			236 = { add_core_of = WHR }
+			every_state = {
+				limit = { is_core_of = ALO }
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = { is_core_of = KYR }
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = { is_core_of = UZB }
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = { is_core_of = TRK }
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = { is_core_of = KHI }
+				add_core_of = WHR
+			}
+			1088 = { add_core_of = WHR }
+			564 = { add_core_of = WHR }
+			574 = { add_core_of = WHR }
+			566 = { add_core_of = WHR }
+			587 = { add_core_of = WHR }
+			588 = { add_core_of = WHR }
+			589 = { add_core_of = WHR }
+			583 = { add_core_of = WHR }
+			40 = { add_core_of = WHR }
+			1292 = { add_core_of = WHR }
+			create_wargoal = { target = ALO type = annex_everything }
+			create_wargoal = { target = KYR type = annex_everything }
+			create_wargoal = { target = UZB type = annex_everything }
+			create_wargoal = { target = TRK type = annex_everything }
+			every_state = {
+				limit = { is_core_of = MON }
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = { is_core_of = TRM }
+				add_core_of = WHR
+			}
+			create_wargoal = { target = MON type = annex_everything }
+			create_wargoal = { target = TRM type = annex_everything }
+			821 = { add_core_of = WHR }
+			220 = { add_core_of = WHR }
+			240 = { add_core_of = WHR }
+			1229 = { add_core_of = WHR }
+			260 = { add_core_of = WHR }
+			265 = { add_core_of = WHR }
+			224 = { add_core_of = WHR }
+			567 = { add_core_of = WHR }
+			568 = { add_core_of = WHR }
+			569 = { add_core_of = WHR }
+			every_state = {
+				limit = {
+					is_core_of = DKB
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_core_of = KLY
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_core_of = KUB
+				}
+				add_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_core_of = MTR
+				}
+				add_core_of = WHR
+			}
+			create_wargoal={
+				type = annex_everything
+				target = DKB
+			}
+			create_wargoal={
+				type = annex_everything
+				target = KLY
+			}
+			create_wargoal={
+				type = annex_everything
+				target = KUB
+			}
+			create_wargoal={
+				type = annex_everything
+				target = MTR
+			}
+			80 = {
+				add_core_of = WHR
+			}
+			1320 = {
+				add_core_of = WHR
+			}
+			78 = {
+				add_core_of = WHR
+			}
+			1222 = {
+				add_core_of = WHR
+			}
+			create_wargoal = {
+				type= annex_everything
+				target = ROM
+			}
+			821 = { add_core_of = WHR }
+			220 = { add_core_of = WHR }
+			240 = { add_core_of = WHR }
+			1229 = { add_core_of = WHR }
+			260 = { add_core_of = WHR }
+			265 = { add_core_of = WHR }
+			224 = { add_core_of = WHR }
+			create_wargoal = {
+				type = annex_everything
+				target = RUS
+			}
+			73 = { add_core_of = WHR }
+			create_wargoal = {
+				type = annex_everything
+				target = HUN
+			}
+		}
+	}
 	focus = {
 		id = WHR_federation_of_free_man
 		icon = GFX_RUS_Raise_The_Red_Banners
@@ -1580,7 +1740,7 @@ focus_tree = {
 		id = WHR_schzios
 		icon = GFX_goal_COR_Champion_Womens_Three_Movements 
 
-		x = -10
+		x = -15
 		y = 20
 		cost = 1
 		ai_will_do = {
@@ -4174,7 +4334,7 @@ every_state = {
 	focus = {
 		id = WHR_revolution
 		icon = GFX_goal_WHR_Socialist
-		x = 20
+		x = 15
 		y = 18
 		cost = 5
 
@@ -10936,6 +11096,7 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_Belarus_Pure_And_True"
 			# event about poland
+			country_event = belarus.59
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -10963,6 +11124,7 @@ focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_Belarus_Pure_And_True"
 			# event about rus
 			add_ideas = WHR_kingdom_coming
+			country_event = belarus.60
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -14285,6 +14447,472 @@ focus = {
 				days = 1
 			}
 			custom_effect_tooltip = "We will be able to reach out to Sweden, Yugoslavia, Finland and Armenia (Will work only if they are reactionary)"
+		}
+	}
+	#hidden path - oun in exile
+	focus = {
+		id = WHR_oun_in_exile
+		icon = GFX_goal_UKR_nationalist_flag
+		allow_branch = {
+			has_country_flag = WHR_hidden_path_unlock
+		}
+		available = {
+			has_country_flag = WHR_hidden_path_unlock
+		}
+		x = 32
+		y = 14
+		cost = 3
+		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = WHR_the_remaints
+		icon = GFX_goal_UKR_48_Hour_Plan
+		available = {
+			has_country_flag = WHR_hidden_path_unlock
+		}
+		prerequisite = {
+			focus = WHR_oun_in_exile
+		}
+		relative_position_id = WHR_oun_in_exile
+		x = -1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_manpower = 100000
+			add_command_power = 50
+			army_experience = 50
+			
+		}
+	}
+	focus = {
+		id = WHR_reorganize_uvo
+		icon = GFX_UKR_Galician_UVO_Corps
+		available = {
+			has_country_flag = WHR_hidden_path_unlock
+		}
+		prerequisite = {
+			focus = WHR_the_remaints
+		}
+		relative_position_id = WHR_oun_in_exile
+		x = -1
+		y = 2
+		cost = 3
+		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = WSU_Ukrainian_Resistance_Army_9
+		}
+	}
+	
+	focus = {
+		id = WHR_coop_with_bel_nationalists
+		icon = GFX_goal_WHR_Belarussian_Identity
+		available = {
+			has_country_flag = WHR_hidden_path_unlock
+		}
+		prerequisite = {
+			focus = WHR_oun_in_exile
+		}
+		relative_position_id = WHR_oun_in_exile
+		x = 1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = WHR
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 2500
+				producer = WHR
+			}
+		}
+	}
+	focus = {
+		id = WHR_fire_of_resistence
+		icon = GFX_UKR_Entrench_Party
+		available = {
+			has_country_flag = WHR_hidden_path_unlock
+		}
+		prerequisite = {
+			focus = WHR_coop_with_bel_nationalists
+		}
+		relative_position_id = WHR_oun_in_exile
+		x = 1
+		y = 2
+		cost = 3
+		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = WSU_Sharp_struggle6
+		}
+	}
+	focus = {
+		id = WHR_end_the_chaos
+		icon = GFX_UKR_Rely_UVO
+		available = {
+			has_country_flag = WHR_hidden_path_unlock
+		}
+		prerequisite = {
+			focus = WHR_reorganize_uvo
+		}
+		prerequisite = {
+			focus = WHR_fire_of_resistence
+		}
+		relative_position_id = WHR_oun_in_exile
+		x = 0
+		y = 3
+		cost = 3
+		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			country_event = belarus.58
+			add_popularity = { 
+				ideology = totalist
+				popularity = 0.1
+			}
+			add_popularity = { 
+				ideology = paternal_autocrat
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = WHR_kuks_social_tendency
+		icon = GFX_goal_ideology_totalist
+		available = {
+			has_country_flag = WHR_hidden_path_unlock
+		}
+		prerequisite = {
+			focus = WHR_end_the_chaos
+		}
+		relative_position_id = WHR_oun_in_exile
+		x = -1
+		y = 4
+		cost = 3
+		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_popularity = { 
+				ideology = totalist
+				popularity = 0.1
+			}
+			add_political_power = 100
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = WHR_kurba_holds
+		icon = GFX_goal_ideology_paternal_autocrat
+		available = {
+			has_country_flag = WHR_hidden_path_unlock
+		}
+		prerequisite = {
+			focus = WHR_end_the_chaos
+		}
+		relative_position_id = WHR_oun_in_exile
+		x = 1
+		y = 4
+		cost = 3
+		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_popularity = { 
+				ideology = paternal_autocrat
+				popularity = 0.1
+			}
+			add_political_power = 100
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = WHR_legacy_of_national_revoltionaries
+		icon = GFX_UKR_Stsiborskyi
+		available = {
+			has_country_flag = WHR_hidden_path_unlock
+		}
+		prerequisite = {
+			focus = WHR_kuks_social_tendency
+			focus = WHR_kurba_holds
+		}
+		relative_position_id = WHR_oun_in_exile
+		x = -3
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = WSU_Eternal_Revolution_9
+			
+		}
+	}
+	focus = {
+		id = WHR_syndicalist_model
+		icon = GFX_goal_syndicalist_industry
+		available = {
+			has_country_flag = WHR_hidden_path_unlock
+		}
+		prerequisite = {
+			focus = WHR_kuks_social_tendency
+			focus = WHR_kurba_holds
+		}
+		relative_position_id = WHR_oun_in_exile
+		x = -1
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = WSU_Centralized_economy6
+			add_one_random_civilian_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_military_factory = yes
+		}
+	}
+	
+	focus = {
+		id = WHR_polissia_sich_and_black_cats
+		icon = GFX_UKR_Young_Officer
+		available = {
+			has_country_flag = WHR_hidden_path_unlock
+		}
+		prerequisite = {
+			focus = WHR_kuks_social_tendency
+			focus = WHR_kurba_holds
+		}
+		relative_position_id = WHR_oun_in_exile
+		x = 1
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = WSU_National_Guard_of_Ukraine_5
+			add_manpower = 100000
+		}
+	}
+	focus = {
+		id = WHR_thirst_for_vengence
+		icon = GFX_UKR_Slava
+		available = {
+			has_country_flag = WHR_hidden_path_unlock
+		}
+		prerequisite = {
+			focus = WHR_kuks_social_tendency
+			focus = WHR_kurba_holds
+		}
+		relative_position_id = WHR_oun_in_exile
+		x = 3
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = WSU_Hate_education
+		}
+	}
+	focus = {
+		id = WHR_socialism_for_people
+		icon = GFX_UKR_Remember_Federalist_Legacy
+		available = {
+			has_country_flag = WHR_hidden_path_unlock
+		}
+		prerequisite = {
+			focus = WHR_legacy_of_national_revoltionaries
+		}
+		prerequisite = {
+			focus = WHR_syndicalist_model
+		}
+		relative_position_id = WHR_oun_in_exile
+		x = -1
+		y = 6
+		cost = 3
+		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_popularity = { 
+				ideology = totalist
+				popularity = 0.1
+			}
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			
+		}
+	}
+	focus = {
+		id = WHR_nationalism_for_oppressors
+		icon = GFX_UKR_Strike_Former_Masters
+		available = {
+			has_country_flag = WHR_hidden_path_unlock
+		}
+		prerequisite = {
+			focus = WHR_polissia_sich_and_black_cats
+		}
+		prerequisite = {
+			focus = WHR_thirst_for_vengence
+		}
+		relative_position_id = WHR_oun_in_exile
+		x = 1
+		y = 6
+		cost = 3
+		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_popularity = { 
+				ideology = paternal_autocrat
+				popularity = 0.1
+			}
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+		}
+	}
+	focus = {
+		id = WHR_get_prepared
+		icon = GFX_UKR_Empower_Varta
+		available = {
+			has_country_flag = WHR_hidden_path_unlock
+		}
+		prerequisite = {
+			focus = WHR_nationalism_for_oppressors
+		}
+		prerequisite = {
+			focus = WHR_socialism_for_people
+		}
+		relative_position_id = WHR_oun_in_exile
+		x = 0
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = WSU_Unity_fanaticism1
+		}
+	}
+	focus = {
+		id = WHR_and_strike
+		icon = GFX_UKR_Assume_Vozhd_Title
+		available = {
+			has_country_flag = WHR_hidden_path_unlock
+		}
+		prerequisite = {
+			focus = WHR_get_prepared
+		}
+		relative_position_id = WHR_oun_in_exile
+		x = 0
+		y = 8
+		cost = 3
+		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_wargoal = { target = UKR type = annex_everything }
+			every_state = {
+				limit = { is_core_of = UKR }
+				add_core_of = WHR
+			}
 		}
 	}
 	focus = {

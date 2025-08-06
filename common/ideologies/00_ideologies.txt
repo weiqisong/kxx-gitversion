@@ -698,6 +698,7 @@ ideologies = {
 			socdem_social_confucianism_subtype = { can_be_randomly_selected = no } #儒家社会主义
 			socdem_canaanist_subtype = {can_be_randomly_selected = no} #迦南主义
 			arab_baathism_subtype = {can_be_randomly_selected = no} #阿拉伯复兴主义
+			socdem_left_conservatism_subtype = { can_be_randomly_selected = no } #左翼保守主义
 
 			#点
 			socdem_islamic_communism_subtype = {can_be_randomly_selected = no} #伊斯兰共产主义

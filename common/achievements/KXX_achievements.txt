@@ -13,12 +13,11 @@ FRA_hidden_path = {
         original_tag = FRA		
     }
     happened = {
-        
-            FRA = {
-               has_country_flag = FRA_mod_jac_sup
-            }
-        
-       
+        original_tag = FRA
+        custom_trigger_tooltip = {
+			tooltip = KXX_hidden_achievement_tt
+			has_country_flag = FRA_mod_jac_sup
+		}
     }
 }
 WHR_hidden_path = {
@@ -29,12 +28,11 @@ WHR_hidden_path = {
         original_tag = WHR		
     }
     happened = {
-        
-            WHR = {
-               has_country_flag = WHR_hidden_path_unlock
-            }
-        
-       
+        original_tag = WHR
+        custom_trigger_tooltip = {
+			tooltip = KXX_hidden_achievement_tt
+			has_country_flag = WHR_hidden_path_unlock
+		}
     }
 }
 DEN_hidden_path = {
@@ -45,12 +43,11 @@ DEN_hidden_path = {
         original_tag = DEN	
     }
     happened = {
-        
-            DEN = {
-               has_country_flag = DEN_hidden_path_unlock
-            }
-        
-       
+        original_tag = DEN
+        custom_trigger_tooltip = {
+			tooltip = KXX_hidden_achievement_tt
+			has_country_flag = DEN_hidden_path_unlock
+		}
     }
 }
 QIE_hidden_path = {
@@ -61,11 +58,11 @@ QIE_hidden_path = {
         original_tag = QIE
     }
     happened = {
-        
-            QIE = {
-               has_country_flag = QIE_hidden_path_unlock
-            }
-        
+       original_tag = QIE
+        custom_trigger_tooltip = {
+			tooltip = KXX_hidden_achievement_tt
+			has_country_flag = QIE_hidden_path_unlock
+		}
        
     }
 }
@@ -77,12 +74,11 @@ GRE_hidden_path = {
         original_tag = GRE
     }
     happened = {
-        
-            GRE = {
-               has_country_flag = GRE_hidden_path_unlock
-            }
-        
-       
+        original_tag = GRE
+        custom_trigger_tooltip = {
+			tooltip = KXX_hidden_achievement_tt
+			has_country_flag = GRE_hidden_path_unlock
+		}
     }
 }
 

@@ -3620,7 +3620,7 @@ country_event = { # Astrouski asks the Sojm for support
 		}
 		country_event = { id = whrpol.21 days = 3 }
 	}
-	option = { #
+	option = { #Sigismund
 		name = whrpol.8.c
 		trigger = {
 			NOT = {
@@ -5310,6 +5310,82 @@ country_event = { # Anti-German Revolution
 				id = whiteruthenia.47 days = 1
 			}
 		}
+		clear_all_relations = yes
+	}
+	option = { # 
+		name = whrpol.50.f
+		ai_chance = {
+			base = 0
+			
+		}
+		trigger = {
+			NOT = {
+				country_exists = WSU
+			}
+			UKR = {
+				NOT = {
+					has_completed_focus = UKR_Nationalists_Seize_Power
+				}
+			}
+		}
+		clear_all_relations = yes
+		set_cosmetic_tag = WSU_rev_gov
+		create_country_leader = {
+			name = "塔拉斯·博罗维茨"
+			picture = "gfx/leaders/WHR/Portrait_WHR_Taras_Borovets.png"
+			expire = "1.1.1"
+			ideology = red_tinted_autocracy_subtype
+		}
+		create_country_leader = {
+			name = "瓦西里·库克"
+			picture = "gfx/leaders/WSU/Portrait_Vasyl_Kuk.png"
+			expire = "1.1.1"
+			ideology = tot_eternal_revolution
+		}
+		set_party_name = {
+			ideology = totalist
+			name = "乌克兰民族主义者组织"
+			long_name = "乌克兰民族主义者组织"
+		}
+		set_party_name = {
+			ideology = paternal_autocrat
+			name = "乌克兰民族主义者组织"
+			long_name = "乌克兰民族主义者组织"
+		}
+		set_party_name = {
+			ideology = national_populist
+			name = "乌克兰民族主义者组织"
+			long_name = "乌克兰民族主义者组织"
+		}
+		set_party_name = {
+			ideology = radical_socialist
+			name = "乌克兰民族主义者组织"
+			long_name = "乌克兰民族主义者组织"
+		}
+		set_country_flag = WHR_hidden_path_unlock
+		mark_focus_tree_layout_dirty = yes
+		remove_all_ministers = yes
+		add_ideas = {
+			WSU_Vasyl_Kuk_hog_tot
+			WSU_Stetsko_Yaroslav_for_npo
+			WSU_Mishka_Yaponchik_eco_rso
+			WSU_Lev_Rebet_sec_pau
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.15
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.15
+		}
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+		add_tot_to_coalition = yes
+		add_radsoc_to_coalition = yes
+		add_natpop_to_coalition = yes
 		clear_all_relations = yes
 	}
 }

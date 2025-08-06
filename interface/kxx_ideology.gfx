@@ -422,6 +422,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/subideologies/left_conservatism_group.png"
 	}
 	spriteType = {
+		name = "GFX_ideology_socdem_left_conservatism_subtype" #社民-左翼保守主义
+		texturefile = "gfx/interface/ideologies/subideologies/socdem_left_conservatism_group.png"
+	}
+	spriteType = {
 		name = "GFX_ideology_bureaucratic_socialism_subtype" #极权-官僚化社会主义
 		texturefile = "gfx/interface/ideologies/subideologies/bureaucratic_socialism_group.png"
 	}

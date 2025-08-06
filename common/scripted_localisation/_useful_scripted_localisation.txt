@@ -8856,4 +8856,10 @@ text = {
 		}
 		localization_key = fredaism_subtype  
 	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_left_conservatism_subtype
+		}
+		localization_key = socdem_left_conservatism_subtype
+	}	
 }

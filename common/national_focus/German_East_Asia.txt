@@ -7440,7 +7440,18 @@ focus_tree = {
 			LEP = {add_timed_idea = {idea = GEA_fuck_kmt days = 180}}
 			ANQ = {add_timed_idea = {idea = GEA_fuck_kmt days = 180}}
 			GEA = {add_timed_idea = {idea = GEA_fuck_kmt days = 180}}
-			CHI = {add_timed_idea = {idea = GEA_fuck_kmt1 days = 90}}
+			if = {
+				limit = {
+					CHI = {
+						is_ai = yes
+					}
+				}
+				CHI = { add_ideas = GEA_fuck_kmt114514 }
+			}
+			else = {
+				CHI = {add_timed_idea = {idea = GEA_fuck_kmt1 days = 90}}
+			}
+			
 		}
 	}
 	focus = {
@@ -7528,7 +7539,7 @@ focus_tree = {
 		cost = 3
 		x = 0
 		y = 1
-		ai_will_do = {factor = 50}
+		ai_will_do = {factor = 0}
 		prerequisite = {focus = GEA_Make_sure_Guangzhou_obeys
 		focus = GEA_Dissolution_of_lec
 		focus = GEA_Capture_of_Macau}

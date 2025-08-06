@@ -6742,14 +6742,76 @@ country_event = {
     name = qiekmt.4.b
     ai_chance = {
       factor = 0
-        QIE = {
+      
+    }
+      QIE = {
           create_wargoal = {
             target = CHI
             type = annex_everything
           }
         }
+  }
+ 
+
+}
+country_event = {
+  id = qiekmt.5
+  immediate = {
+    log = "[GetDateText]: [Root.GetName]: event qiekmt.1"
+  }
+  title = qiekmt.5.t
+  desc = qiekmt.5.d
+  fire_only_once = yes
+ trigger = {
+    has_completed_focus = QIE_XHHSD 
+    has_completed_focus = HNN_utilising_changsha_unions
+    NOT = {
+      has_completed_focus = HNN_all_under_the_governor
+    }
+ }
+  option = {
+    name = qiekmt.5.a
+    ai_chance = {
+      factor = 100
     }
     
+  }
+  option = {
+    name = qiekmt.5.b
+    ai_chance = {
+      factor = 0       
+    } 
+    set_country_flag = QIE_hidden_path_unlock
+    mark_focus_tree_layout_dirty = yes
+     set_politics = {
+        ruling_party = radical_socialist
+        elections_allowed = no
+      }
+     set_party_name = {
+				ideology = social_democrat
+				long_name = "直系军阀"
+				name = "直系军阀"
+			}    
+      set_party_name = {
+				ideology = radical_socialist
+				long_name = "直系军阀"
+				name = "直系军阀"
+			}  
+     remove_ideas = QIE_fractured_empire
+       create_country_leader = {
+        name = "吴佩孚"  # Wu Peifu
+        desc = "POLITICS_WU_PEIFU_DESC"
+        picture = "gfx/leaders/QIE/Portrait_QIE_Wu_Peifu.png"
+        expire = "1.1.1"
+        ideology = radsoc_popular_patriotism_subtype
+      }  
+       create_country_leader = {
+        name = "吴佩孚"  # Wu Peifu
+        desc = "POLITICS_WU_PEIFU_DESC"
+        picture = "gfx/leaders/QIE/Portrait_QIE_Wu_Peifu.png"
+        expire = "1.1.1"
+        ideology = popular_patriotism_subtype
+      } 
   }
  
 

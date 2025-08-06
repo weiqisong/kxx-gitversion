@@ -35293,8 +35293,11 @@ focus = {
 		completion_reward = {
 			add_political_power = 100
 			hidden_effect = {
-				id = kxxfrance.26
-				days = 7
+				country_event = {
+					id = kxxfrance.26
+					days = 7
+				}
+				
 			}
 		}
 	}

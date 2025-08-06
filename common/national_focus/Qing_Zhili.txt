@@ -8386,7 +8386,11 @@ focus = {
 			add_popularity = { ideology = radical_socialist	popularity = 0.15 }
 			set_temp_variable = { coalition_partner_var = token:radical_socialist }
 			add_to_coalition = yes
-			
+			set_party_name = {
+				ideology = social_democrat
+				long_name = "国民党—临时行动委员会"
+				name = "临委会"
+			}  
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -8478,10 +8482,13 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_reconcile_world_society"
 			add_political_power = 100
-			add_popularity = { ideology = social_conservative popularity = 0.05 }
-			set_temp_variable = { coalition_partner_var = token:social_conservative }
-			add_to_coalition = yes
+			add_popularity = { ideology = radical_socialist popularity = 0.05 }
 			
+			set_party_name = {
+				ideology = radical_socialist
+				long_name = "世界社"
+				name = "世界社"
+			}  
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -8501,8 +8508,8 @@ focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_french_education_model"
 			add_popularity = { ideology = syndicalist popularity = 0.03 }
-			add_popularity = { ideology = social_conservative popularity = 0.03 }
-			add_research_slot_until_five = yes
+			add_popularity = { ideology = radical_socialist popularity = 0.03 }
+			add_research_slot = 1
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -8568,7 +8575,11 @@ focus = {
 		}
 		ai_will_do = { base = 100 }
 		completion_reward = {
-			
+			add_political_power = 100
+			add_synd_to_coalition = yes
+			add_socdem_to_coalition = yes
+			add_pataut_to_coalition = yes
+			remove_ideas = QIE_big_debt
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -8584,7 +8595,20 @@ focus = {
 		}
 		ai_will_do = { base = 100 }
 		completion_reward = {
-			
+			add_opinion_modifier = {
+				target = FRA
+				modifier = KR_approves_of_govt
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1000
+				producer = FRA
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -8600,7 +8624,8 @@ focus = {
 		}
 		ai_will_do = { base = 100 }
 		completion_reward = {
-			
+			add_ideas = QIE_based
+			add_war_support = 0.2
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -8616,7 +8641,21 @@ focus = {
 		}
 		ai_will_do = { base = 100 }
 		completion_reward = {
-			
+			add_popularity = {
+       			ideology = syndicalist
+        		popularity = 0.1
+      		}
+			add_popularity = {
+       			ideology = radical_socialist
+        		popularity = 0.1
+      		}
+			add_popularity = {
+       			ideology = social_democrat
+        		popularity = 0.1
+      		}
+			add_manpower = 100000
+			add_command_power = 50
+			army_experience = 50
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -8632,7 +8671,10 @@ focus = {
 		}
 		ai_will_do = { base = 100 }
 		completion_reward = {
-			
+			add_ideas = QIE_pro_labor_lesgation
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -8648,7 +8690,9 @@ focus = {
 		}
 		ai_will_do = { base = 100 }
 		completion_reward = {
-			
+			add_ideas = QIE_united_front
+			add_political_power = 100
+			add_stability = 0.1
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -8673,7 +8717,10 @@ focus = {
 		}
 		ai_will_do = { base = 100 }
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = QIE_based
+				add_idea = QIE_based2
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -8690,7 +8737,13 @@ focus = {
 		
 		ai_will_do = { base = 100 }
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = QIE_pro_labor_lesgation
+				add_idea = QIE_pro_labor_lesgation2
+			}
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -8707,7 +8760,26 @@ focus = {
 		
 		ai_will_do = { base = 100 }
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = QIE_based2
+				add_idea = QIE_based3
+			}
+			add_popularity = {
+       			ideology = syndicalist
+        		popularity = 0.1
+      		}
+			add_popularity = {
+       			ideology = radical_socialist
+        		popularity = 0.1
+      		}
+			add_popularity = {
+       			ideology = social_democrat
+        		popularity = 0.1
+      		}
+			add_popularity = {
+       			ideology = paternal_autocrat
+        		popularity = 0.1
+      		}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -8727,7 +8799,11 @@ focus = {
 		}
 		ai_will_do = { base = 100 }
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = QIE_based3
+				add_idea = QIE_based4
+			}
+			add_stability = 0.2
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -8744,7 +8820,12 @@ focus = {
 		
 		ai_will_do = { base = 100 }
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = QIE_pro_labor_lesgation2
+				add_idea = QIE_pro_labor_lesgation3
+			}
+			add_one_random_civilian_factory = yes
+			add_one_random_military_factory = yes
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -8761,7 +8842,16 @@ focus = {
 		
 		ai_will_do = { base = 100 }
 		completion_reward = {
+			add_ideas = QIE_military_socialism
+			every_army_leader = {
+				add_attack = 1
+				add_defense = 1
+				add_planning = 1
+				add_logistics = 1
+			}
+		
 			
+
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -8783,7 +8873,13 @@ focus = {
 		}
 		ai_will_do = { base = 100 }
 		completion_reward = {
-			
+			add_political_power = 100
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_popularity = {
+       			ideology = radical_socialist
+        		popularity = 0.1
+      		}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -8802,7 +8898,21 @@ focus = {
 		}
 		ai_will_do = { base = 100 }
 		completion_reward = {
-			
+			set_politics = {
+				ruling_party = social_democrat
+				elections_allowed = no
+			}
+			add_synd_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_pataut_to_coalition = yes
+			add_political_power = 100
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_popularity = {
+       			ideology = social_democrat
+        		popularity = 0.1
+      		}
+			set_country_flag = soc_dems_are_socialists
 		}
 		mutually_exclusive = {
 			focus = QIE_maintain_socialism
@@ -9375,7 +9485,11 @@ focus = {
 
 		ai_will_do = { factor = 20 }
 		available = {
-			
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = QIE_hidden_path_unlock
+				}
+			}
 		}
 		prerequisite = { focus = QIE_JSYX }
 		relative_position_id = QIE_JSYX

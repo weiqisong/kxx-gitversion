@@ -1631,7 +1631,35 @@ country_event = {
 	}
 	
 }
-
+country_event = {
+	id = belarus.58 #
+	title = belarus.58.t
+	desc = belarus.58.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = belarus.58.a	
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.15
+		}
+	}
+	option = {
+		name = belarus.58.b
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.15
+		}
+		add_pataut_to_coalition = yes
+		add_radsoc_to_coalition = yes
+		add_natpop_to_coalition = yes
+	}
+	
+}
 country_event = {
 	id = belarus.59 #meli poland
 	title = belarus.59.t

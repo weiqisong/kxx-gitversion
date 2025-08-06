@@ -4,9 +4,201 @@
 
 ideas = {
 	country = {
+		QIE_military_socialism  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea QIE_fractured_empire" }
+			picture = HOL_dutch_militia
+			name = "军事社会主义"
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_attack_speed_factor = 0.1
+				dig_in_speed_factor = 0.15
+				max_dig_in_factor = 0.15
+				army_strength_factor = 0.1
+
+			}
+		}
+		QIE_united_front  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea QIE_fractured_empire" }
+			picture = generic_leadership_via_unions
+			name = "统一战线"
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.15
+				party_popularity_stability_factor = 0.2
+				syndicalist_drift = 0.02
+				radical_socialist_drift = 0.05
+				social_democrat_drift = 0.05
+				paternal_autocrat_drift = 0.02
+			}
+		}
+		QIE_pro_labor_lesgation3  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea QIE_fractured_empire" }
+			picture = BBR_new_labor_standards
+			name = "亲劳工立法"
+			allowed = { always = no }
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				global_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+				supply_consumption_factor = -0.15
+				supply_node_range = 0.15
+			}
+		}
+		QIE_pro_labor_lesgation3  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea QIE_fractured_empire" }
+			picture = BBR_new_labor_standards
+			name = "亲劳工立法"
+			allowed = { always = no }
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				global_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+				supply_consumption_factor = -0.15
+				supply_node_range = 0.15
+			}
+		}
+		QIE_pro_labor_lesgation2  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea QIE_fractured_empire" }
+			picture = BBR_new_labor_standards
+			name = "亲劳工立法"
+			allowed = { always = no }
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				global_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+
+			}
+		}
+		QIE_pro_labor_lesgation  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea QIE_fractured_empire" }
+			picture = BBR_new_labor_standards
+			name = "亲劳工立法"
+			allowed = { always = no }
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		QIE_based4  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea QIE_fractured_empire" }
+			picture = QIE_carm_jade_marshall
+			name = "红色将军的政权"
+			allowed = { always = no }
+			modifier = {
+				political_power_cost = -0.1
+				stability_factor = 0.1
+				war_stability_factor = 0.2
+				war_support_factor = 0.1
+				totalist_acceptance = 20
+				syndicalist_acceptance = 30
+				radical_socialist_acceptance = 50
+				social_democrat_acceptance = 50
+				conscription = 0.01
+				conscription_factor = 0.1
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				compliance_starting_value = 0.1
+				compliance_growth = 0.15
+				command_power_gain = 0.15
+				max_command_power = 150
+				command_power_gain_mult = 0.15
+				max_command_power_mult = 0.15
+			}
+		}
+		QIE_based3  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea QIE_fractured_empire" }
+			picture = QIE_carm_jade_marshall
+			name = "红色将军的政权"
+			allowed = { always = no }
+			modifier = {
+				political_power_cost = -0.1
+				stability_factor = 0.1
+				war_stability_factor = 0.2
+				war_support_factor = 0.1
+				totalist_acceptance = 20
+				syndicalist_acceptance = 30
+				radical_socialist_acceptance = 50
+				social_democrat_acceptance = 50
+				conscription = 0.01
+				conscription_factor = 0.1
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		QIE_based2  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea QIE_fractured_empire" }
+			picture = QIE_carm_jade_marshall
+			name = "红色将军的政权"
+			allowed = { always = no }
+			modifier = {
+				political_power_cost = -0.1
+				stability_factor = 0.1
+				war_stability_factor = 0.2
+				war_support_factor = 0.1
+				totalist_acceptance = 20
+				syndicalist_acceptance = 30
+				radical_socialist_acceptance = 50
+				social_democrat_acceptance = 50
+				conscription = 0.01
+				conscription_factor = 0.1
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
+			}
+		}
+		QIE_based  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea QIE_fractured_empire" }
+			picture = QIE_carm_jade_marshall
+			name = "红色将军的政权"
+			allowed = { always = no }
+			modifier = {
+				political_power_cost = -0.1
+				stability_factor = 0.1
+				war_stability_factor = 0.2
+				war_support_factor = 0.1
+			}
+		}
 		QIE_Avantguarde_Proletariat  = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea QIE_fractured_empire" }
-			picture = SOV_proletarian_religion_idea
+			picture = HOL_totalist_military
 			name = "无产阶级先锋队"
 			allowed = { always = no }
 			modifier = {

@@ -2177,6 +2177,23 @@ ideas = {
 				min_export = -1
 			}
 		}
+		GEA_fuck_kmt114514 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GEA_fuck_kmt1"}
+			picture = fuck_kmt
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = -0.1
+				war_support_factor = -0.05
+				min_export = -1
+				attrition = 0.3
+				army_attack_factor = -1
+				army_defence_factor = -1
+				army_org_factor = -1
+				army_morale_factor = -1
+				army_speed_factor = -0.2
+			}
+		}
 		GEA_dui_ri_zhan_shi = {#对日战事
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GEA_dui_ri_zhan_shi" }
 			picture = FNG_expel_japanese_bandits
