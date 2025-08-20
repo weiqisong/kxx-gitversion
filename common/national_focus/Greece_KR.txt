@@ -4793,6 +4793,12 @@ focus_tree = {
 		relative_position_id = GRE_the_churches_integrated_once_more
 		available = {
 			owns_state = 773
+			has_completed_focus = GRE_an_alternative
+			hidden_trigger = { 
+				NOT = {
+					has_country_flag = GRE_hidden_path_unlock
+				}
+			}
 		}
 		
 		completion_reward = {
@@ -6860,6 +6866,13 @@ focus = {
 		prerequisite = {
 			focus = GRE_power_to_the_church
 		}
+		available = {
+			hidden_trigger = { 
+				NOT = {
+					has_country_flag = GRE_hidden_path_unlock
+				}
+			}
+		}
 		completion_reward = {
 			add_soccon_to_coalition = yes
 			add_authdem_to_coalition = yes
@@ -6889,6 +6902,13 @@ focus = {
 		prerequisite = {
 			focus = GRE_an_orthodox_nation
 		}
+		available = {
+			hidden_trigger = { 
+				NOT = {
+					has_country_flag = GRE_hidden_path_unlock
+				}
+			}
+		}
 		completion_reward = {
 			add_ideas = GRE_the_mount_athos
 		 }
@@ -6903,6 +6923,13 @@ focus = {
 		relative_position_id = GRE_an_orthodox_nation
 		prerequisite = {
 			focus = GRE_an_orthodox_nation
+		}
+		available = {
+			hidden_trigger = { 
+				NOT = {
+					has_country_flag = GRE_hidden_path_unlock
+				}
+			}
 		}
 		completion_reward = {
 			add_ideas = GRE_Gods_country
@@ -6920,8 +6947,16 @@ focus = {
 		prerequisite = {
 			focus = GRE_power_to_the_church
 		}
+		available = {
+			hidden_trigger = { 
+				NOT = {
+					has_country_flag = GRE_hidden_path_unlock
+				}
+			}
+		}
 		completion_reward = {
 			add_ideas = GRE_catholic1
+			set_country_flag = GRE_maybe_coup2
 		}
 	}
 
@@ -6936,11 +6971,19 @@ focus = {
 		prerequisite = {
 			focus = GRE_denounce_the_pope
 		}
+		available = {
+			hidden_trigger = { 
+				NOT = {
+					has_country_flag = GRE_hidden_path_unlock
+				}
+			}
+		}
 		completion_reward = { 
 			swap_ideas = {
 				remove_idea = GRE_catholic1
 				add_idea = GRE_catholic2
 			}
+			clr_country_flag = GRE_maybe_coup2
 		}
 	}
 
@@ -6954,8 +6997,16 @@ focus = {
 		prerequisite = {
 			focus = GRE_power_to_the_church
 		}
+		available = {
+			hidden_trigger = { 
+				NOT = {
+					has_country_flag = GRE_hidden_path_unlock
+				}
+			}
+		}
 		completion_reward = { 
 			add_ideas = GRE_protestant1
+			set_country_flag = GRE_maybe_coup1
 		}
 	}
 
@@ -6969,11 +7020,19 @@ focus = {
 		prerequisite = {
 			focus = GRE_denounce_protestantism
 		}
+		available = {
+			hidden_trigger = { 
+				NOT = {
+					has_country_flag = GRE_hidden_path_unlock
+				}
+			}
+		}
 		completion_reward = { 
 			swap_ideas = {
 				remove_idea = GRE_protestant1
 				add_idea = GRE_protestant2
 			}
+			clr_country_flag = GRE_maybe_coup1
 		}
 	}
 
@@ -6987,10 +7046,17 @@ focus = {
 		prerequisite = {
 			focus = GRE_Gods_country
 		}
+		
 		prerequisite = {
 			focus = GRE_the_mount_athos
 		}
-		
+		available = {
+			hidden_trigger = { 
+				NOT = {
+					has_country_flag = GRE_hidden_path_unlock
+				}
+			}
+		}
 		completion_reward = {
 			add_political_power = 100
 			add_stability = 0.1
@@ -13924,6 +13990,747 @@ focus = {
 		completion_reward = {
 		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
 		  country_event = gre.504
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	# hidden path - orphism
+	focus = {
+		id = GRE_orphism_revival
+		icon = GFX_goal_ATH_defend
+		cost = 3.00
+		allow_branch = {
+			has_country_flag = GRE_hidden_path_unlock
+		}
+		x = 53
+		y = 11
+		available = {
+			has_country_flag = GRE_hidden_path_unlock
+		}
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  add_political_power = 100
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_sing_socialist_democracy
+		icon = GFX_goal_KIV_socialist_democracy
+		cost = 3.00
+		
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = GRE_orphism_revival
+		}
+		relative_position_id = GRE_orphism_revival
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  add_ideas = GRE_sing_socialist_democracy
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.1
+		}
+		add_synd_to_coalition = yes
+		add_soclib_to_coalition = yes
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	
+	focus = {
+		id = GRE_together_with_unions
+		icon = GFX_goal_KIV_encourage_unionism
+		cost = 3.00
+		
+		x = -2
+		y = 2
+		prerequisite = {
+			focus = GRE_sing_socialist_democracy
+		}
+		relative_position_id = GRE_orphism_revival
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  add_one_random_civilian_factory = yes
+		  add_one_random_military_factory = yes
+		  add_one_random_civilian_factory = yes
+		  add_one_random_military_factory = yes
+		  add_one_random_civilian_factory = yes
+		  add_one_random_military_factory = yes
+		 add_popularity = {
+			ideology = syndicalist
+			popularity = 0.1
+		}
+
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_national_myths
+		icon = GFX_goal_NEE_Expand_Myth
+		cost = 3.00
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GRE_orphism_revival
+		}
+		relative_position_id = GRE_orphism_revival
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  add_ideas = GRE_national_myths
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_socialist_patriotism
+		icon = GFX_GRU_RED_PATRIOT
+		cost = 3.00
+		
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = GRE_national_myths
+		}
+		relative_position_id = GRE_orphism_revival
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  add_war_support = 0.2
+		  add_manpower = 100000
+		  add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 5000
+				producer = GRE
+			}
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_correct_bishop_error
+		icon = GFX_TRM_Ties_Church
+		cost = 3.00
+		
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = GRE_orphism_revival
+		}
+		relative_position_id = GRE_orphism_revival
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  remove_ideas = GRE_catholic1
+		  remove_ideas = GRE_protestant1
+		  add_political_power = 100
+		  add_stability = 0.2
+		  add_popularity = {
+			ideology = social_democrat
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.1
+		}
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_jesus_successor_hellenism
+		icon = GFX_ITA_christbol
+		cost = 3.00
+		
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = GRE_correct_bishop_error
+		}
+		relative_position_id = GRE_orphism_revival
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  add_ideas = GRE_jesus_successor_hellenism
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_delph
+		icon = GFX_goal_ATH_diplomats
+		cost = 3.00
+		
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = GRE_together_with_unions
+		}
+		prerequisite = {
+			focus = GRE_socialist_patriotism
+		}
+		prerequisite = {
+			focus = GRE_jesus_successor_hellenism
+		}
+		relative_position_id = GRE_orphism_revival
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  swap_ideas = {
+			remove_idea = GRE_national_myths
+			add_idea = GRE_national_myths2
+		  }
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	
+	focus = {
+		id = GRE_legalisize_orphism
+		icon = GFX_goal_ATH_o_principe
+		cost = 3.00
+		
+		x = -2
+		y = 4
+		prerequisite = {
+			focus = GRE_delph
+		}
+		
+		relative_position_id = GRE_orphism_revival
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  add_political_power = 100
+		  add_stability = 0.1
+		  add_war_support = 0.1
+		  add_popularity = {
+			ideology = social_democrat
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.1
+		}
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_new_university
+		icon = GFX_goal_generic_red_university
+		cost = 3.00
+		
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = GRE_delph
+		}
+		
+		relative_position_id = GRE_orphism_revival
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  add_research_slot = 1
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_holy_mountain_eucenmental
+		icon = GFX_goal_ATH_in_the_castle
+		cost = 3.00
+		
+		x = 2
+		y = 4
+		prerequisite = {
+			focus = GRE_delph
+		}
+		
+		relative_position_id = GRE_orphism_revival
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		 every_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_restore_hellenic_spirit
+		icon = GFX_goal_ATH_our_noble_blood
+		cost = 3.00
+		
+		x = -1
+		y = 5
+		prerequisite = {
+			focus = GRE_legalisize_orphism
+		}
+		prerequisite = {
+			focus = GRE_new_university
+		}
+		relative_position_id = GRE_orphism_revival
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  add_ideas = GRE_hellenic_spirit
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	
+	focus = {
+		id = GRE_heroic_epic
+		icon = GFX_goal_ATH_kapetanoi
+		cost = 3.00
+		
+		x = 1
+		y = 5
+		prerequisite = {
+			focus = GRE_holy_mountain_eucenmental
+		}
+		prerequisite = {
+			focus = GRE_new_university
+		}
+		relative_position_id = GRE_orphism_revival
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  add_ideas = GRE_heroic_epic
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_honor_true_gods
+		icon = GFX_goal_ATH_aristocracy_1
+		cost = 3.00
+		
+		x = -1
+		y = 6
+		prerequisite = {
+			focus = GRE_restore_hellenic_spirit
+		}
+		
+		relative_position_id = GRE_orphism_revival
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  add_ideas = GRE_honor_true_gods
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_legend_for_all_human
+		icon = GFX_goal_ATH_hoplites
+		cost = 3.00
+		
+		x = 1
+		y = 6
+		prerequisite = {
+			focus = GRE_heroic_epic
+		}
+		
+		relative_position_id = GRE_orphism_revival
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  add_ideas = GRE_legend_for_all_human
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_wrath_of_promitheus
+		icon = GFX_goal_AUS_Promote_OAW
+		cost = 3.00
+		
+		x = 0
+		y = 7
+		prerequisite = {
+			focus = GRE_honor_true_gods
+		}
+		prerequisite = {
+			focus = GRE_legend_for_all_human
+		}
+		relative_position_id = GRE_orphism_revival
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+			add_ideas = GRE_wrath_of_promitheus
+			add_war_support = 0.2
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_seal_pandora
+		icon = GFX_goal_COS_Promise_People_Liberation_Autocrats
+		cost = 3.00
+		
+		x = -2
+		y = 8
+		prerequisite = {
+			focus = GRE_wrath_of_promitheus
+		}
+		
+		relative_position_id = GRE_orphism_revival
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  add_ideas = GRE_seal_pandora
+		  add_popularity = {
+			ideology = totalism
+			popularity = -0.15
+		}
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_achalians_identity
+		icon = GFX_goal_generic_mediterranean
+		cost = 3.00
+		
+		x = 0
+		y = 8
+		prerequisite = {
+			focus = GRE_wrath_of_promitheus
+		}
+		
+		relative_position_id = GRE_orphism_revival
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  every_state = {
+			limit = {
+				is_core_of = SPR
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = SPR type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = CAR
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = CAR type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = CNT
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = CNT type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = FRA
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = FRA type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = SRI
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = SRI type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = ITA
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = ITA type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = SRD
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = SRD type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = SIC
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = SIC type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = PAP
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = PAP type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = CRO
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = CRO type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = SER
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = SER type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = ROM
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = ROM type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = BUL
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = BUL type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = TUR
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = TUR type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = SYR
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = SYR type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = LEB
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = LEB type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = EGY
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = EGY type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = PAL
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = PAL type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = LBA
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = LBA type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = TRP
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = TRP type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = MOR
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = MOR type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = ALG
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = ALG type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = POR
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = POR type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = ALB
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = ALB type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = TUN
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = TUN type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = GEO
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = GEO type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = KUB
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = KUB type = annex_everything }
+		every_state = {
+			limit = {
+				is_core_of = SLO
+			}
+			add_core_of = GRE
+		}
+		create_wargoal = { target = SLO type = annex_everything }
+		add_state_core = 736
+		add_state_core = 1100
+		add_state_core = 1144
+		add_state_core = 192
+		add_state_core = 1232
+		add_state_core = 197
+		add_state_core = 196
+		add_state_core = 1220
+		add_state_core = 137
+		add_state_core = 1221
+		}
+		search_filters = {
+		  FOCUS_FILTER_POLITICAL
+		  FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GRE_oppose_new_persians
+		icon = GFX_goal_MLT_fuck_germany
+		cost = 3.00
+		
+		x = 2
+		y = 8
+		prerequisite = {
+			focus = GRE_wrath_of_promitheus
+		}
+		
+		relative_position_id = GRE_orphism_revival
+		ai_will_do = {
+		  factor = 100
+		}
+		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+		  create_wargoal = { target = GER type = annex_everything }
+		  add_ideas = GRE_oppose_new_persians
 		}
 		search_filters = {
 		  FOCUS_FILTER_POLITICAL

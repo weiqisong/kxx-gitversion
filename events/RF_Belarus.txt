@@ -241,7 +241,11 @@ country_event = {
 			ideology = syndicalist
 			popularity = 0.2
 		}
-
+		set_party_name = {
+			ideology = syndicalist
+			long_name = "弥赛亚普世教会"
+			name = "弥赛亚普世教会"
+		}
 		create_corps_commander = {
 			name = "Alexander Dolgorukov"
 			picture = "Portrait_Dolgorukov.tga"
@@ -344,6 +348,11 @@ country_event = {
 			expire = "2000.1.1"
 			ideology = natpop_neo_feudalism_subtype
 			
+		}
+		set_party_name = {
+			ideology = national_populist
+			long_name = "国家人民党"
+			name = "国家人民党"
 		}
 		hidden_effect = {
 			country_event = {
@@ -1509,6 +1518,12 @@ country_event = {
 				expire = "1965.1.1"
 				ideology = austromarxism_subtype
 			}
+			create_country_leader = {
+				name = "米哈伊尔·利贝尔"
+				picture = "gfx/leaders/WHR/Portrait_WHR_Mihail_Liber.jpg"
+				expire = "1965.1.1"
+				ideology = radsoc_austromarxism_subtype
+			}
 			set_party_name = {
 				 ideology = social_democrat
 				 name = "崩得"
@@ -1532,6 +1547,12 @@ country_event = {
 				picture = "gfx/leaders/WHR/Portrait_WHR_Mihail_Liber.jpg"
 				expire = "1965.1.1"
 				ideology = radsoc_austromarxism_subtype
+			}
+			create_country_leader = {
+				name = "亨里克·埃里希"
+				picture = "gfx/leaders/WHR/Portrait_WHR_Henrik_Erlich.jpg"
+				expire = "1965.1.1"
+				ideology = austromarxism_subtype
 			}
 			add_popularity = {
 				ideology = social_democrat

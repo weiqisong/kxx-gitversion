@@ -42,7 +42,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = ZHU_realization_of_a_new_republican_dream  }
 		completion_reward = {
-		add_war_support = 0.1
+			add_war_support = 0.1
+			add_manpower = 100000
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
 		}
 	}
 
@@ -59,7 +62,7 @@ focus_tree = {
 		prerequisite = { focus = ZHU_realization_of_a_new_republican_dream  }
 		completion_reward = {
 		add_ideas = {
-		YUN_red_marshal
+			YUN_red_marshal
 		}
 		}
 	}
@@ -76,14 +79,20 @@ focus_tree = {
 		}
 		prerequisite = { focus = ZHU_glorification_of_a_new_china  } prerequisite = { focus = ZHU_fortheredmarshal  }
 		completion_reward = {
-		add_popularity = {
-		ideology = syndicalist
-		popularity = 0.5
-		}
-		add_popularity = {
-		ideology = radical_socialist
-		popularity = 0.5
-		}
+			add_popularity = {
+				ideology = syndicalist
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.15
+			}
+			add_political_power = 100
+			add_stability = 0.1
 		}
 	}
 
@@ -99,8 +108,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = ZHU_glorification_of_a_new_china  }
 		completion_reward = {
-		add_stability = 0.1
-		add_war_support = 0.05
+			political_power_gain = 0.1
+			add_stability = 0.1
+			add_war_support = 0.1
 		}
 	}
 
@@ -116,7 +126,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = ZHU_fortheredmarshal  }
 		completion_reward = {
-		add_political_power = 100
+			add_political_power = 100
+			add_ideas = YUN_worker_peasant_council
 		}
 	}
 
@@ -133,7 +144,7 @@ focus_tree = {
 		prerequisite = { focus = ZHU_opium_prohibition  }
 		completion_reward = {
 		add_ideas = {
-		YUN_health
+			YUN_health
 		}
 		}
 	}
@@ -151,9 +162,12 @@ focus_tree = {
 		prerequisite = { focus = ZHU_formation_of_the_coalition_government  }
 		completion_reward = {
 		add_popularity = {
-		ideology = radical_socialist 
-		popularity = 0.1
+			ideology = social_liberal
+			popularity = 0.1
 		}
+		add_soclib_to_coalition = yes
+		add_stability = 0.1
+		add_war_support = 0.1
 		}
 	}
 
@@ -172,10 +186,7 @@ focus_tree = {
 		prerequisite = { focus = ZHU_electionofworkersandpeasantscouncils  }
 		completion_reward = {
 		add_war_support = 0.1
-		add_popularity = {
-		ideology = radical_socialist
-		popularity = 0.05
-		}
+		add_ideas = YUN_social_nationalism
 		}
 	}
 
@@ -237,7 +248,6 @@ focus_tree = {
 		}
 		hidden_effect = {
 			YUN = {
-				H_to_china = yes
 				every_state = {		
 			limit = {
 			OR = {
@@ -321,7 +331,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = ZHU_start_the_national_reclamation_war  }
 		completion_reward = {
-		set_cosmetic_tag = ZHU_REP
+			add_political_power = 100
+			set_cosmetic_tag = ZHU_REP
 		}
 	}
 
@@ -337,7 +348,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = ZHU_a_proclamation_at_beijing  }
 		completion_reward = {
-		add_stability = 0.25
+			add_stability = 0.25
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
 		}
 	}
 
@@ -379,8 +393,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = ZHU_forming_an_autonomy_system  }
 		completion_reward = {
-		add_stability = 0.15
-		add_war_support = 0.15
+			add_stability = 0.15
+			add_war_support = 0.15
+			add_manpower = 100000
 		}
 	}
 
@@ -396,7 +411,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = ZHU_new_industrial_progress  }
 		completion_reward = {
-		add_research_slot = 1
+			add_research_slot = 1
 		}
 	}
 
@@ -513,7 +528,7 @@ focus_tree = {
 		id = ZHU_zhudewinsthenation
 		icon = GFX_ZHU_zhudewinsthenation-248360
 		x = 22
-		y = 12
+		y = 10
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -529,14 +544,14 @@ focus_tree = {
 		id = ZHU_growthepeopleslivelihood
 		icon = GFX_ZHU_growthepeopleslivelihood-248360
 		x = 21
-		y = 13
+		y = 11
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ZHU_zhudewinsthenation  }
 		completion_reward = {
-		add_war_support = 0.1
+		add_war_support = 0.2
 		}
 	}
 
@@ -545,7 +560,7 @@ focus_tree = {
 		id = ZHU_fostering_a_new_republican_identity
 		icon = GFX_ZHU_fostering_a_new_republican_identity-248360
 		x = 23
-		y = 13
+		y = 11
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -553,9 +568,10 @@ focus_tree = {
 		prerequisite = { focus = ZHU_zhudewinsthenation  }
 		completion_reward = {
 		add_popularity = {
-		ideology = radical_socialist
-		popularity = 0.1
+			ideology = social_democrat
+			popularity = 0.2
 		}
+		add_stability = 0.1
 		}
 	}
 
@@ -564,7 +580,7 @@ focus_tree = {
 		id = ZHU_continuing_the_ideas_of_democratic_socialism
 		icon = GFX_ZHU_continuing_the_ideas_of_democratic_socialism-248360
 		x = 24
-		y = 14
+		y = 12
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_STABILITY
@@ -572,6 +588,7 @@ focus_tree = {
 		prerequisite = { focus = ZHU_fostering_a_new_republican_identity  }
 		completion_reward = {
 		add_stability = 0.25
+		add_ideas = ZHU_continuing_the_ideas_of_democratic_socialism
 		}
 	}
 
@@ -580,7 +597,7 @@ focus_tree = {
 		id = ZHU_limit_nationalisation
 		icon = GFX_ZHU_limit_nationalisation-248360
 		x = 22
-		y = 14
+		y = 12
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -598,18 +615,14 @@ focus_tree = {
 		id = ZHU_expand_unionisation
 		icon = GFX_ZHU_expand_unionisation-248360
 		x = 20
-		y = 14
+		y = 12
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ZHU_growthepeopleslivelihood  }
 		completion_reward = {
-		add_stability = 0.1
-		add_popularity = {
-		ideology = syndicalist
-		popularity = 0.1
-		}
+		add_ideas = ZHU_expand_unionisation
 		}
 	}
 
@@ -618,14 +631,15 @@ focus_tree = {
 		id = ZHU_double_hundred_policy
 		icon = GFX_ZHU_double_hundred_policy-248360
 		x = 21
-		y = 15
+		y = 13
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_MANPOWER
 		}
 		prerequisite = { focus = ZHU_limit_nationalisation  } prerequisite = { focus = ZHU_expand_unionisation  }
 		completion_reward = {
-		add_manpower = -10383
+		add_manpower = 100000
+		add_stability = 0.2
 		}
 	}
 
@@ -634,7 +648,7 @@ focus_tree = {
 		id = ZHU_a_nation_isolated
 		icon = GFX_ZHU_a_nation_isolated-248360
 		x = 23
-		y = 15
+		y = 13
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -652,7 +666,7 @@ focus_tree = {
 		id = ZHU_join_our_international_comrades
 		icon = GFX_ZHU_join_our_international_comrades-248360
 		x = 25
-		y = 15
+		y = 13
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -669,7 +683,7 @@ focus_tree = {
 		id = ZHU_a_new_sun_tzu
 		icon = GFX_ZHU_a_new_sun_tzu-248360
 		x = 22
-		y = 16
+		y = 14
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -677,6 +691,7 @@ focus_tree = {
 		prerequisite = { focus = ZHU_double_hundred_policy  } prerequisite = { focus = ZHU_a_nation_isolated  focus = ZHU_double_hundred_policy  } prerequisite = { focus = ZHU_join_our_international_comrades  }
 		completion_reward = {
 		add_war_support = 0.1
+		add_ideas = ZHU_a_new_sun_tzu
 		}
 	}
 
@@ -684,8 +699,8 @@ focus_tree = {
 	focus = {
 		id = ZHU_syndicalist_victory
 		icon = GFX_ZHU_syndicalist_victory-248360
-		x = 30
-		y = 12
+		x = 28
+		y = 10
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -700,8 +715,8 @@ focus_tree = {
 	focus = {
 		id = ZHU_legacy_of_chinese_unionism
 		icon = GFX_ZHU_legacy_of_chinese_unionism-248360
-		x = 29
-		y = 13
+		x = 27
+		y = 11
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -709,6 +724,7 @@ focus_tree = {
 		prerequisite = { focus = ZHU_syndicalist_victory  }
 		completion_reward = {
 		add_political_power = 100
+		add_ideas = ZHU_legacy_of_chinese_unionism
 		}
 	}
 
@@ -716,15 +732,15 @@ focus_tree = {
 	focus = {
 		id = ZHU_an_expression_of_gender_equality
 		icon = GFX_ZHU_an_expression_of_gender_equality-248360
-		x = 31
-		y = 13
+		x = 29
+		y = 11
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_MANPOWER
 		}
 		prerequisite = { focus = ZHU_syndicalist_victory  }
 		completion_reward = {
-		add_manpower = 103343
+		add_ideas = ZHU_an_expression_of_gender_equality
 		}
 	}
 
@@ -732,8 +748,8 @@ focus_tree = {
 	focus = {
 		id = ZHU_split_from_the_csp
 		icon = GFX_ZHU_split_from_the_csp-248360
-		x = 29
-		y = 14
+		x = 27
+		y = 12
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -744,11 +760,7 @@ focus_tree = {
 		ideology = syndicalist 
 		popularity = 0.1
 		}
-		set_party_name = {
-			ideology = syndicalist
-			long_name = "Chinese Agrarian Syndicalist Party"
-			name = "CASP"
-		}
+		add_political_power = 100
 		}
 	}
 
@@ -756,8 +768,8 @@ focus_tree = {
 	focus = {
 		id = ZHU_communal_organisation
 		icon = GFX_ZHU_communal_organisation-248360
-		x = 31
-		y = 14
+		x = 29
+		y = 12
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -774,8 +786,8 @@ focus_tree = {
 	focus = {
 		id = ZHU_union_based_industrialism
 		icon = GFX_ZHU_union_based_industrialism-248360
-		x = 31
-		y = 15
+		x = 29
+		y = 13
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -799,15 +811,15 @@ focus_tree = {
 	focus = {
 		id = ZHU_join_the_internationale
 		icon = GFX_ZHU_join_the_internationale-248360
-		x = 29
-		y = 15
+		x = 27
+		y = 13
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ZHU_split_from_the_csp  }
 		completion_reward = {
-		FRA = { add_to_faction = CNH }
+		FRA = { add_to_faction = YUN }
 		}
 	}
 
@@ -815,8 +827,8 @@ focus_tree = {
 	focus = {
 		id = ZHU_red_stars_are_shining
 		icon = GFX_ZHU_red_stars_are_shining-248360
-		x = 30
-		y = 16
+		x = 28
+		y = 14
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -826,6 +838,7 @@ focus_tree = {
 		add_political_power = 200
 		add_stability = 0.5
 		add_war_support = 0.4
+		add_ideas = ZHU_red_stars_are_shining
 		}
 	}
 
@@ -834,7 +847,7 @@ focus_tree = {
 		id = ZHU_baigesproletarianvictory
 		icon = GFX_ZHU_baigesproletarianvictory-248360
 		x = 16
-		y = 12
+		y = 10
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -850,7 +863,7 @@ focus_tree = {
 		id = ZHU_help_from_the_league
 		icon = GFX_ZHU_help_from_the_league-248360
 		x = 15
-		y = 13
+		y = 11
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -866,7 +879,7 @@ focus_tree = {
 		id = ZHU_democratic_continuance
 		icon = GFX_ZHU_democratic_continuance-248360
 		x = 17
-		y = 13
+		y = 11
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_STABILITY
@@ -882,7 +895,7 @@ focus_tree = {
 		id = ZHU_crushing_old_culture
 		icon = GFX_ZHU_crushing_old_culture-248360
 		x = 14
-		y = 14
+		y = 12
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -900,7 +913,7 @@ focus_tree = {
 		id = ZHU_studyingluxunsideas
 		icon = GFX_ZHU_studyingluxunsideas-248360
 		x = 16
-		y = 14
+		y = 12
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -916,7 +929,7 @@ focus_tree = {
 		id = ZHU_encourage_farmer_self_sufficiency
 		icon = GFX_ZHU_encourage_farmer_self_sufficiency-248360
 		x = 18
-		y = 14
+		y = 12
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -934,7 +947,7 @@ focus_tree = {
 		id = ZHU_reworking_a_new_culture
 		icon = GFX_ZHU_reworking_a_new_culture-248360
 		x = 14
-		y = 15
+		y = 13
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -955,7 +968,7 @@ focus_tree = {
 		id = ZHU_unifying_the_masses
 		icon = GFX_ZHU_unifying_the_masses-248360
 		x = 16
-		y = 15
+		y = 13
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_WAR_SUPPORT
@@ -963,6 +976,8 @@ focus_tree = {
 		prerequisite = { focus = ZHU_studyingluxunsideas  }
 		completion_reward = {
 		add_war_support = 0.1
+		add_manpower = 100000
+		add_command_power = 50
 		}
 	}
 
@@ -971,14 +986,16 @@ focus_tree = {
 		id = ZHU_welfare_opportunities
 		icon = GFX_ZHU_welfare_opportunities-248360
 		x = 18
-		y = 15
+		y = 13
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_STABILITY
 		}
 		prerequisite = { focus = ZHU_encourage_farmer_self_sufficiency  }
 		completion_reward = {
-		add_stability = 0.1
+		add_one_random_civilian_factory = yes
+		add_one_random_civilian_factory = yes
+		add_one_random_civilian_factory = yes
 		}
 	}
 
@@ -987,7 +1004,7 @@ focus_tree = {
 		id = ZHU_aproletariansparadise
 		icon = GFX_ZHU_aproletariansparadise-248360
 		x = 14
-		y = 16
+		y = 14
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -995,9 +1012,11 @@ focus_tree = {
 		prerequisite = { focus = ZHU_reworking_a_new_culture  } prerequisite = { focus = ZHU_unifying_the_masses  }
 		completion_reward = {
 		add_popularity = {
-		ideology = radical_socialist
-		popularity = 0.1
+			ideology = radical_socialist
+			popularity = 0.1
 		}
+		add_political_power = 100
+		add_stability = 0.1
 		}
 	}
 
@@ -1006,14 +1025,20 @@ focus_tree = {
 		id = ZHU_support_the_youth_organisations
 		icon = GFX_ZHU_support_the_youth_organisations-248360
 		x = 18
-		y = 16
+		y = 14
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_MANPOWER
 		}
 		prerequisite = { focus = ZHU_unifying_the_masses  } prerequisite = { focus = ZHU_welfare_opportunities  }
 		completion_reward = {
-		add_manpower = 37423
+		add_manpower = 100000
+		add_doctrine_cost_reduction = {
+			name = FRA_integrate_the_corps_francs
+			cost_reduction = 0.75
+			uses = 3
+			category = land_doctrine
+		}
 		}
 	}
 
@@ -1022,7 +1047,7 @@ focus_tree = {
 		id = ZHU_a_new_proletarian_banner
 		icon = GFX_ZHU_a_new_proletarian_banner-248360
 		x = 16
-		y = 17
+		y = 15
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL

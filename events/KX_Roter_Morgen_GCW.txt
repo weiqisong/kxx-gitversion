@@ -657,7 +657,7 @@ country_event = {
 					logistics_skill = 2
 				}
 				create_field_marshal = {
-					name = "约瑟夫·戈培尔"
+					name = "保罗·约瑟夫·戈培尔"
 					portrait_path = "gfx/leaders/GRU/Portrait_Germany_Josef_Goebbels_13.png"
 					traits = { politically_connected Nazbol_rev_leaders }
 					skill = 4
@@ -1538,7 +1538,7 @@ country_event = {
 			name = GRU_NMDVP
 		}
 		create_country_leader = {
-			name = "约瑟夫·戈培尔"
+			name = "保罗·约瑟夫·戈培尔"
 			desc = "GRU_GOEBBELS_DESC"
 			picture = "gfx/leaders/GRU/Portrait_Germany_Josef_Goebbels_13.png"
 			expire = "1965.1.1"

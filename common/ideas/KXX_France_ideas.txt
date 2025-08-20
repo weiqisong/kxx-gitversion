@@ -4,6 +4,106 @@
 ideas = {
 
 	country = {
+		FRA_declare_national_unity_government = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				political_power_cost = -0.1
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				party_popularity_stability_factor = 0.15
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				global_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				army_speed_factor = 0.1
+				planning_speed = 0.25
+				max_planning = 0.25
+				dig_in_speed_factor = 0.1
+				max_dig_in_factor = 0.1
+				totalist_drift = 0.05
+				syndicalist_drift = 0.05
+				radical_socialist_drift = 0.05
+				social_democrat_drift = 0.05
+				social_liberal_drift = 0.02
+				market_liberal_drift = 0.02
+				social_conservative_drift = 0.02
+				authoritarian_democrat_drift = 0.01
+				paternal_autocrat_drift = 0.01
+				national_populist_drift = 0.01
+			}
+			
+			picture = NFA_unity_gov
+		}
+		FRA_social_national_liberal_revolution = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				research_speed_factor = 0.15
+				production_lack_of_resource_penalty_factor = -0.15
+			}
+			
+			picture = BRG_Republican_Spirit
+		}
+		FRA_support_from_church = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				conscription = 0.03
+				conscription_factor = 0.25
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
+				monthly_population = 0.5
+
+			}
+			
+			picture = BRG_Christian_Unity
+		}
+		FRA_expand_intellgence_bureau = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				stability_weekly = 0.002
+				intel_network_gain_factor = 0.15
+				operative_slot = 4
+				compliance_growth = 0.2
+				resistance_target = -0.2
+				attrition = -0.1
+			}
+			
+			picture = CAN_allied_intelligence_sharing
+		}
+		FRA_united_against_radicalism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				political_power_cost = -0.1
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				party_popularity_stability_factor = 0.15
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				totalist_drift = 0.05
+				syndicalist_drift = 0.05
+				radical_socialist_drift = 0.05
+				social_democrat_drift = 0.05
+			}
+			
+			picture = NFA_unity_gov
+		}
+		FRA_force_ouviere = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_speed_arms_factory_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
+			}
+			
+			picture = BBR_workers_market
+		}
 		FRA_moralism = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
 			modifier = {

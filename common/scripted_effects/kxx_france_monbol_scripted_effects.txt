@@ -504,10 +504,10 @@ FRA_neocolonialism_create_nouvelle_france = {
 FRA_transhumanism_idea_swap = {
 	if = {
 		limit = {
-			has_idea = FRA_transhumanism
+			has_idea = FRA_transhumanism_idea
 		}
 		swap_ideas = {
-			remove_idea = FRA_transhumanism
+			remove_idea = FRA_transhumanism_idea
 			add_idea = FRA_transhumanism2
 		}
 	}

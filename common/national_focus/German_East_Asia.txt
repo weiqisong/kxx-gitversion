@@ -7446,7 +7446,7 @@ focus_tree = {
 						is_ai = yes
 					}
 				}
-				CHI = { add_ideas = GEA_fuck_kmt114514 }
+				CHI = {add_timed_idea = {idea = GEA_fuck_kmt114514 days = 90}}
 			}
 			else = {
 				CHI = {add_timed_idea = {idea = GEA_fuck_kmt1 days = 90}}

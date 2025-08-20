@@ -7503,7 +7503,493 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_PRODUCTION FOCUS_FILTER_RESEARCH }
 	}
+	#hidden path - hybrid regime
+	focus = {
+		id = DEN_hybrid_regime
+		icon = GFX_goal_DEN_Socialists
+		cost = 4
 
+		relative_position_id = DEN_the_first_statsraad_congress
+		x = -22
+		y = 1
+
+		ai_will_do = { factor = 0 }
+		allow_branch = {
+			has_country_flag = DEN_hidden_path_unlock
+		}
+		prerequisite = {
+			focus = DEN_the_first_statsraad_congress
+		}
+		available = {
+			has_government = social_democrat
+			has_country_flag = DEN_hidden_path_unlock
+		}
+		
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEN_kommunarder_supremacy"
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.05
+			}
+			add_political_power = 50
+			remove_ideas = DEN_idea_reactionary_backlash2
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = DEN_in_defence_of_right
+		icon = GFX_goal_POL_Crush_Monarchists
+		cost = 4
+
+		relative_position_id = DEN_hybrid_regime
+		x = -1
+		y = 1
+
+		ai_will_do = { factor = 0 }
+		
+		prerequisite = {
+			focus = DEN_hybrid_regime
+		}
+		available = {
+			has_government = social_democrat
+			has_country_flag = DEN_hidden_path_unlock
+		}
+		
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEN_kommunarder_supremacy"
+			add_ideas = DEN_hybrid_regime
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = -0.2
+			}
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = -0.2
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = DEN_in_defence_of_left
+		icon = GFX_goal_NFA_strike_hidden_socialism
+		cost = 4
+
+		relative_position_id = DEN_hybrid_regime
+		x = -1
+		y = 2
+
+		ai_will_do = { factor = 0 }
+		
+		prerequisite = {
+			focus = DEN_in_defence_of_right
+		}
+		available = {
+			has_government = social_democrat
+			has_country_flag = DEN_hidden_path_unlock
+		}
+		
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEN_kommunarder_supremacy"
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = -0.2
+			}
+			add_popularity = {
+				ideology = syndicalist
+				popularity = -0.2
+			}
+			add_popularity = {
+				ideology = totalist
+				popularity = -0.2
+			}
+			swap_ideas = {
+				remove_idea = DEN_hybrid_regime
+				add_idea = DEN_hybrid_regime2
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = DEN_folksparti
+		icon = GFX_goal_LUX_agrarianism_conservative_reformism
+		cost = 4
+
+		relative_position_id = DEN_hybrid_regime
+		x = 1
+		y = 1
+
+		ai_will_do = { factor = 0 }
+		
+		prerequisite = {
+			focus = DEN_hybrid_regime
+		}
+		available = {
+			has_government = social_democrat
+			has_country_flag = DEN_hidden_path_unlock
+		}
+		
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEN_kommunarder_supremacy"
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.2
+			}
+			add_soclib_to_coalition = yes
+			add_marlib_to_coalition = yes
+			add_soccon_to_coalition = yes
+			add_natpop_to_coalition = yes
+			add_political_power = 200
+			add_stability = 0.2
+			add_war_support = 0.2
+			add_manpower = 1000000
+			set_party_name = { 
+				ideology = social_democrat
+				long_name = "丹麦人民党（Dansk Folksparti）"
+				name = "丹麦人民党"
+			}
+			set_party_name = { 
+				ideology = social_liberal
+				long_name = "丹麦人民党（Dansk Folksparti）"
+				name = "丹麦人民党"
+			}
+			set_party_name = { 
+				ideology = market_liberal
+				long_name = "丹麦人民党（Dansk Folksparti）"
+				name = "丹麦人民党"
+			}
+			set_party_name = { 
+				ideology = social_conservative
+				long_name = "丹麦人民党（Dansk Folksparti）"
+				name = "丹麦人民党"
+			}
+			set_party_name = { 
+				ideology = national_populist
+				long_name = "丹麦人民党（Dansk Folksparti）"
+				name = "丹麦人民党"
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = DEN_broad_coalition_of_patriots
+		icon = GFX_RUS_Free_Trade_Unions
+		cost = 4
+
+		relative_position_id = DEN_hybrid_regime
+		x = 1
+		y = 2
+
+		ai_will_do = { factor = 0 }
+		
+		prerequisite = {
+			focus = DEN_folksparti
+		}
+		available = {
+			has_government = social_democrat
+			has_country_flag = DEN_hidden_path_unlock
+		}
+		
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEN_kommunarder_supremacy"
+			add_ideas = DEN_broad_coalition_of_patriots
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.1
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = DEN_disband_statsraad
+		icon = GFX_goal_DEI_focus_disband_volksraad
+		cost = 4
+
+		relative_position_id = DEN_hybrid_regime
+		x = 0
+		y = 3
+
+		ai_will_do = { factor = 0 }
+		
+		prerequisite = {
+			focus = DEN_in_defence_of_left
+		}
+		prerequisite = {
+			focus = DEN_broad_coalition_of_patriots
+		}
+		available = {
+			has_government = social_democrat
+			has_country_flag = DEN_hidden_path_unlock
+		}
+		
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEN_kommunarder_supremacy"
+			swap_ideas = {
+				remove_idea = DEN_hybrid_regime2
+				add_idea = DEN_hybrid_regime3
+			}
+			load_oob = DEN
+			load_oob = DEN
+			load_oob = DEN
+			load_oob = DEN
+			load_oob = DEN
+			load_oob = DEN
+			load_oob = DEN
+			load_oob = DEN
+			load_oob = DEN
+			load_oob = DEN
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = DEN_mixed_economy
+		icon = GFX_NEE_Imperial_Economy
+		cost = 4
+
+		relative_position_id = DEN_hybrid_regime
+		x = -1
+		y = 4
+
+		ai_will_do = { factor = 0 }
+		
+		
+		prerequisite = {
+			focus = DEN_disband_statsraad
+		}
+		available = {
+			has_government = social_democrat
+			has_country_flag = DEN_hidden_path_unlock
+		}
+		
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEN_kommunarder_supremacy"
+			add_ideas = DEN_mixed_economy
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	
+	focus = {
+		id = DEN_left_corporatism
+		icon = GFX_goal_generic_corporatism
+		cost = 4
+
+		relative_position_id = DEN_hybrid_regime
+		x = -1
+		y = 5
+
+		ai_will_do = { factor = 0 }
+		
+		
+		prerequisite = {
+			focus = DEN_mixed_economy
+		}
+		available = {
+			has_government = social_democrat
+			has_country_flag = DEN_hidden_path_unlock
+		}
+		
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEN_kommunarder_supremacy"
+			swap_ideas = {
+				remove_idea = DEN_mixed_economy
+				add_idea = DEN_left_corporatism
+			}
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = DEN_no_progressivism
+		icon = GFX_goal_ideology_social_conservative
+		cost = 4
+
+		relative_position_id = DEN_hybrid_regime
+		x = 1
+		y = 4
+
+		ai_will_do = { factor = 0 }
+		
+		
+		prerequisite = {
+			focus = DEN_disband_statsraad
+		}
+		available = {
+			has_government = social_democrat
+			has_country_flag = DEN_hidden_path_unlock
+		}
+		
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEN_kommunarder_supremacy"
+			swap_ideas = {
+				remove_idea = DEN_broad_coalition_of_patriots
+				add_idea = DEN_broad_coalition_of_patriots2
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 100000
+				producer = DEN
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 100000
+				producer = DEN
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = DEN_conservative_socialism
+		icon = GFX_RUS_Trade_Unions_Without_Socialists
+		cost = 4
+
+		relative_position_id = DEN_hybrid_regime
+		x = 1
+		y = 5
+
+		ai_will_do = { factor = 0 }
+		
+		
+		prerequisite = {
+			focus = DEN_no_progressivism
+		}
+		available = {
+			has_government = social_democrat
+			has_country_flag = DEN_hidden_path_unlock
+		}
+		
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEN_kommunarder_supremacy"
+			swap_ideas = {
+				remove_idea = DEN_broad_coalition_of_patriots2
+				add_idea = DEN_broad_coalition_of_patriots3
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = DEN_danish_way_to_socialism
+		icon = GFX_RUS_Stronghold_Of_Social_Democracy
+		cost = 4
+
+		relative_position_id = DEN_hybrid_regime
+		x = 0
+		y = 6
+
+		ai_will_do = { factor = 0 }
+		
+		prerequisite = {
+			focus = DEN_conservative_socialism
+		}
+		prerequisite = {
+			focus = DEN_left_corporatism
+		}
+		available = {
+			has_government = social_democrat
+			has_country_flag = DEN_hidden_path_unlock
+		}
+		
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEN_kommunarder_supremacy"
+			swap_ideas = {
+				remove_idea = DEN_hybrid_regime3
+				add_idea = DEN_hybrid_regime4
+			}
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 100
+		every_state = {
+			limit = {
+				is_core_of = NOR
+			}
+			DEN = { 
+				add_state_core = PREV 
+			}
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = NOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = SWE
+			}
+			DEN = { 
+				add_state_core = PREV 
+			}
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = SWE
+		}
+		every_state = {
+			limit = {
+				is_core_of = FIN
+			}
+			DEN = { 
+				add_state_core = PREV 
+			}
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = FIN
+		}
+		set_cosmetic_tag = SCA
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
    ### Totalism ###
 	focus = {
 		id = DEN_kommunarder_supremacy
@@ -8233,6 +8719,7 @@ focus_tree = {
 			focus = DEN_true_danish_socialism
 			focus = DEN_staunings_denmark
 			focus = DEN_kommunarder_supremacy
+			focus = DEN_hybrid_regime
 		}
 
 		completion_reward = {
@@ -8310,6 +8797,7 @@ focus_tree = {
 			focus = DEN_true_danish_socialism
 			focus = DEN_staunings_denmark
 			focus = DEN_kommunarder_supremacy
+			focus = DEN_hybrid_regime
 		}
 
 		completion_reward = {

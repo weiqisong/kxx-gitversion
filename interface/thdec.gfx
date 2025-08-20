@@ -188,5 +188,49 @@ spriteTypes = {
 		name = "GFX_Canaanite_conspiracy"
 		texturefile = "gfx/interface/decision/Canaanite_conspiracy.png"
 	}
+	SpriteType = {
+		name = "GFX_sultan_atrash"
+		texturefile = "gfx/interface/decision/sultan_atrash.png"
+	}
+	SpriteType = {
+		name = "GFX_antun_saadeh"
+		texturefile = "gfx/interface/decision/antun_saadeh.png"
+	}
+	SpriteType = {
+		name = "GFX_adib_shishakli"
+		texturefile = "gfx/interface/decision/adib_shishakli.png"
+	}
+	SpriteType = {
+		name = "GFX_Greater_Syria_Uprising"
+		texturefile = "gfx/interface/decision/Greater_Syria_Uprising.png"
+	}
+	SpriteType = {
+		name = "GFX_Muslim_uprising"
+		texturefile = "gfx/interface/decision/Muslim_uprising.png"
+	}
+	SpriteType = {
+		name = "GFX_ssnp_journey"
+		texturefile = "gfx/interface/decision/ssnp_journey.png"
+	}
+	SpriteType = {
+		name = "GFX_Antoun_Sadeh_Portrait_1"
+		texturefile = "gfx/interface/decision/Antoun_Sadeh_Portrait_1.png"
+	}
+	SpriteType = {
+		name = "GFX_Antoun_Sadeh_Portrait_2"
+		texturefile = "gfx/interface/decision/Antoun_Sadeh_Portrait_2.png"
+	}
+	SpriteType = {
+		name = "GFX_Antoun_Sadeh_Portrait_3"
+		texturefile = "gfx/interface/decision/Antoun_Sadeh_Portrait_3.png"
+	}
+	SpriteType = {
+		name = "GFX_khalid_bakdash"
+		texturefile = "gfx/interface/decision/khalid_bakdash.png"
+	}
+	SpriteType = {
+		name = "GFX_syrian_dragoon_tactics"
+		texturefile = "gfx/interface/decision/syrian_dragoon_tactics.png"
+	}
 
 }

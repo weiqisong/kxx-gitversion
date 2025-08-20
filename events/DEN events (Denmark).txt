@@ -928,6 +928,9 @@ country_event = { #The king fires the cabinet Socdem Perspective
 
 	trigger = {
 		is_monarchy = yes
+		NOT = {
+			has_country_flag = DEN_hidden_path_unlock
+		}
 	}
 
 	is_triggered_only = yes
@@ -2201,6 +2204,7 @@ country_event = { # Stauninger Chooses Coalition
 		set_temp_variable = { coalition_partner_var = token:totalist }
 		remove_from_coalition = yes
 		activate_advisor = DEN_richard_jensen_sic
+		complete_national_focus = DEN_staunings_denmark
 		hidden_effect = {
 			set_party_name = {
 				ideology = radical_socialist
@@ -2218,6 +2222,7 @@ country_event = { # Stauninger Chooses Coalition
 		set_temp_variable = { coalition_partner_var = token:syndicalist }
 		remove_from_coalition = yes
 		activate_advisor = DEN_thoger_thogersen_sic
+		complete_national_focus = DEN_staunings_denmark
 		hidden_effect = {
 			set_party_name = {
 				ideology = radical_socialist
@@ -2225,6 +2230,30 @@ country_event = { # Stauninger Chooses Coalition
 				name = DEN_stauning_radsoc
 			}
 		}
+	}
+	option = { #
+		log = "[GetLogInfo]: event den.77 option den.77.b"
+		name = den.77.c
+		create_country_leader = {
+			name = "维克多·普尔舍尔"
+			picture = "gfx/leaders/DEN/DEN_victor_purschel.png"
+			expire = "1.1.1"
+			ideology = socdem_left_conservatism_subtype			
+		}
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = DEN_Vilhelm_Fibiger_hog_sco
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = DEN_Henrik_Hauch_for_mli
+		remove_ideas_with_trait = economy_minister
+		add_ideas = DEN_Niels_Bohr_eco_rso
+		remove_ideas_with_trait = security_minister
+		add_ideas = DEN_Anders_Malling_sec_npo 
+		set_country_flag = DEN_hidden_path_unlock
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 

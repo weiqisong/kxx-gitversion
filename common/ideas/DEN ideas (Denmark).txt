@@ -14,6 +14,211 @@ ideas = {
 	country = {
 
 		### Economic ###
+		DEN_hybrid_regime = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea DEN_idea_black_monday"
+			}
+			picture = social_capitalism_2
+			allowed = { always = no }
+			modifier = {
+				political_power_cost = -0.15
+				political_power_factor = 0.15
+				political_power_gain = 0.15
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+			}
+			
+		}
+		DEN_hybrid_regime = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea DEN_idea_black_monday"
+			}
+			picture = social_capitalism_2
+			allowed = { always = no }
+			modifier = {
+				political_power_cost = -0.15
+				political_power_factor = 0.15
+				political_power_gain = 0.15
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				consumer_goods_factor = -0.25
+				consumer_goods_expected_value = -0.25
+				min_export = 0
+			}
+			
+		}
+		DEN_hybrid_regime2 = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea DEN_idea_black_monday"
+			}
+			picture = social_capitalism_2
+			allowed = { always = no }
+			modifier = {
+				political_power_cost = -0.15
+				political_power_factor = 0.15
+				political_power_gain = 0.15
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				consumer_goods_factor = -0.25
+				consumer_goods_expected_value = -0.25
+				min_export = 0
+			}
+			
+		}
+		DEN_hybrid_regime3 = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea DEN_idea_black_monday"
+			}
+			picture = social_capitalism_2
+			allowed = { always = no }
+			modifier = {
+				political_power_cost = -0.15
+				political_power_factor = 0.15
+				political_power_gain = 0.15
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				consumer_goods_factor = -0.25
+				consumer_goods_expected_value = -0.25
+				min_export = 0
+				command_power_gain = 0.15
+				max_command_power = 150
+				command_power_gain_mult = 0.15
+				max_command_power_mult = 0.15
+				monthly_population = 0.75
+				weekly_manpower = 1000
+			}
+			
+		}
+		DEN_hybrid_regime4 = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea DEN_idea_black_monday"
+			}
+			picture = social_capitalism_2
+			allowed = { always = no }
+			modifier = {
+				political_power_cost = -0.15
+				political_power_factor = 0.15
+				political_power_gain = 0.15
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				consumer_goods_factor = -0.25
+				consumer_goods_expected_value = -0.25
+				min_export = 0
+				command_power_gain = 0.15
+				max_command_power = 150
+				command_power_gain_mult = 0.15
+				max_command_power_mult = 0.15
+				monthly_population = 0.75
+				weekly_manpower = 1000
+
+			}
+			
+		}
+		DEN_mixed_economy = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea DEN_idea_black_monday"
+			}
+			picture = GER_socdem_unions
+			allowed = { always = no }
+			modifier = {
+				global_building_slots_factor = 0.25
+				production_speed_buildings_factor = 0.25
+				production_speed_arms_factory_factor = 0.25
+				production_speed_industrial_complex_factor = 0.25
+				global_building_slots = 2
+				
+			}
+			
+		}
+		DEN_left_corporatism = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea DEN_idea_black_monday"
+			}
+			picture = GER_socdem_unions
+			allowed = { always = no }
+			modifier = {
+				global_building_slots_factor = 0.25
+				production_speed_buildings_factor = 0.25
+				production_speed_arms_factory_factor = 0.25
+				production_speed_industrial_complex_factor = 0.25
+				global_building_slots = 2
+				line_change_production_efficiency_factor = 0.25
+				industrial_capacity_factory = 0.25
+				industrial_capacity_dockyard = 0.25
+				production_factory_start_efficiency_factor = 0.25
+				production_factory_max_efficiency_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.25
+
+			}
+			
+		}
+		DEN_broad_coalition_of_patriots = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea DEN_idea_black_monday"
+			}
+			picture = GER_socdem_unions
+			allowed = { always = no }
+			modifier = {
+				social_democrat_drift = 0.05
+				social_conservative_drift = 0.05
+				social_liberal_drift = 0.02
+				market_liberal_drift = 0.01
+				national_populist_drift = 0.03
+				conscription = 0.1
+				conscription_factor = 0.2
+
+			}
+			
+		}
+		DEN_broad_coalition_of_patriots2 = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea DEN_idea_black_monday"
+			}
+			picture = GER_socdem_unions
+			allowed = { always = no }
+			modifier = {
+				social_democrat_drift = 0.05
+				social_conservative_drift = 0.05
+				social_liberal_drift = 0.02
+				market_liberal_drift = 0.01
+				national_populist_drift = 0.03
+				conscription = 0.1
+				conscription_factor = 0.2
+				army_attack_factor = 0.25
+				army_defence_factor = 0.25
+				supply_consumption_factor = -0.25
+				supply_node_range = 0.25
+				mobilization_speed = 0.5
+
+			}
+			
+		}
+		DEN_broad_coalition_of_patriots3 = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea DEN_idea_black_monday"
+			}
+			picture = GER_socdem_unions
+			allowed = { always = no }
+			modifier = {
+				social_democrat_drift = 0.05
+				social_conservative_drift = 0.05
+				social_liberal_drift = 0.02
+				market_liberal_drift = 0.01
+				national_populist_drift = 0.03
+				conscription = 0.1
+				conscription_factor = 0.2
+				army_attack_factor = 0.4
+				army_defence_factor = 0.4
+				supply_consumption_factor = -0.25
+				supply_node_range = 0.25
+				mobilization_speed = 0.5
+				planning_speed = 0.25
+				max_planning = 0.25
+				experience_loss_factor = -0.25
+				army_speed_factor = 0.2
+			}
+			
+		}
 		DEN_means_to_an_end = {
 			on_add = {
 				log = "[GetDateText]: [Root.GetName]: add idea DEN_idea_black_monday"

@@ -1000,4 +1000,40 @@ spriteTypes = {
 		name = "GFX_goal_FRA_dictator_of_social_democracy"
 		texturefile = "gfx/interface/goals/KXX_COF/FRA_dictator_of_social_democracy.png"
 	}
+	spriteType = {
+		name = "GFX_goals_FRA_albertini_power"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_albertini_power.png"
+	}
+	spriteType = {
+		name = "GFX_goals_FRA_ignite_jacobin_collapse"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_ignite_jacobin_collapse.png"
+	}
+	spriteType = {
+		name = "GFX_goals_FRA_force_ouviere_people_union"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_force_ouviere_people_union.png"
+	}
+	spriteType = {
+		name = "GFX_goals_FRA_social_national_liberal_revolution"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_social_national_liberal_revolution.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_trial_gouin"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_trial_gouin.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_cga_victory"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_cga_victory.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_paysan_party"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_paysan_party.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_fnsea"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_fnsea.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FRA_corporation_paysan"
+		texturefile = "gfx/interface/goals/KXX_COF/FRA_corporation_paysan.png"
+	}
 }

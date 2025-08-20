@@ -912,6 +912,9 @@ country_event = { #Victory in the Mashriq
 			factor = 100
 			modifier = {
 				factor = 0
+				SYR = {
+					is_ai = no
+				}
 				has_game_rule = {
 					rule = EGY_syria
 					option = EGY_SYR_Annexed
@@ -1011,15 +1014,13 @@ country_event = { #Victory in the Mashriq
 
 	option = {	#Annex Syria
 		name = cp.2.b
-		trigger = {
-			SYR = {
-				is_ai = no
-			}
-		}
 		ai_chance = {
 			factor = 0
 			modifier = {
 				add = 100
+				SYR = {
+					is_ai = yes
+				}
 				has_game_rule = {
 					rule = EGY_syria
 					option = EGY_SYR_Annexed
@@ -1161,15 +1162,13 @@ country_event = { #Future of Syria
 	}
 
 	option = {
-		trigger = {
-			SYR = {
-				is_ai = no
-			}
-		}
 		name = cp.4.a
 		ai_chance = {
 			factor = 50
 			modifier = {
+				SYR = {
+					is_ai = no
+				}
 				factor = 0
 				has_game_rule = {
 					rule = EGY_syria
@@ -1230,15 +1229,13 @@ country_event = { #Future of Syria
 	}
 
 	option = {
-		trigger = {
-			SYR = {
-				is_ai = no
-			}
-		}
 		name = cp.4.b
 		ai_chance = {
 			factor = 50
 			modifier = {
+				SYR = {
+					is_ai = no
+				}
 				factor = 0
 				has_game_rule = {
 					rule = EGY_syria
@@ -1254,11 +1251,11 @@ country_event = { #Future of Syria
 				desc = "POLITICS_ABDEL_MONEIM_DESC"
 				picture = "gfx/leaders/SYR/Portrait_SYR_Moneim.png"
 				expire = "1.1.1"
-				ideology = authoritarian_democrat_subtype
+				ideology = islamism_subtype
 			}
 			set_politics = {
 				ruling_party = authoritarian_democrat
-				last_election = "1935.6.15"
+				last_election = "1938.6.15"
 				election_frequency = 48
 				elections_allowed = yes
 			}
@@ -1335,13 +1332,8 @@ country_event = { #Future of Syria
 	}
 	option = {
 		name = cp.4.e
-		trigger = {
-			EGY = {
-				is_ai = yes
-			}
-		}
 		ai_chance = {
-			factor = 100
+			factor = 10000
 		}
 		hidden_effect = {
 			IRQ = {
@@ -1681,7 +1673,6 @@ country_event = { #Death of Abbas II Hilmi
 				ruling_only = yes
 			}
 		}
-		
 	}
 
 	is_triggered_only = yes

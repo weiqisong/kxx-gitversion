@@ -9450,3 +9450,127 @@ country_event = {
 	}
 	
 }
+country_event = {
+	id = gre.510 #
+	title = gre.510.t
+	desc = gre.510.d
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GRE
+		has_country_flag = {
+			flag = GRE_maybe_coup1
+			days > 150
+		}
+		has_country_flag = {
+			flag = GRE_maybe_coup2
+			days > 150
+		}
+	}
+	
+	option = {
+		name = gre.510.a 
+		create_country_leader = {
+			name = "伊娃·帕尔默-西克利亚诺斯"
+			picture = "gfx/leaders/GRE/Portrait_GRE_Evelina_Palmer.png"
+			expire = "1.1.1"
+			ideology = socdem_hellenism_subtype
+		}
+		create_country_leader = {
+			name = "安杰洛斯·西克利亚诺斯"
+			picture = "gfx/leaders/GRE/Portrait_GRE_Angelos_Sikelianos.png"
+			expire = "1.1.1"
+			ideology = radsoc_hellenism_subtype
+		}
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		}
+		add_socdem_to_coalition = yes
+		set_country_flag = soc_dems_are_socialists
+		set_party_name = {
+			ideology = social_democrat
+			long_name = "普罗米修斯社会党"
+			name = "普罗米修斯社会党"
+		}
+		set_party_name = {
+			ideology = radical_socialist
+			long_name = "普罗米修斯社会党"
+			name = "普罗米修斯社会党"
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.1
+		}
+		set_cosmetic_tag = GRE_revisionist_socialism
+		complete_national_focus = GRE_orphism_revival
+		remove_ideas = GRE_golden_dawn
+		remove_all_ministers = yes
+		add_ideas = {
+			GRE_Nicolas_Kitsikis_hog_tot
+			GRE_Angelos_Sikelianos_for_tot
+			GRE_Patroklos_Karantinos_eco_tot
+			GRE_Yanis_Kordatos_sec_tot
+		}
+		set_country_flag = GRE_hidden_path_unlock
+		remove_ideas = GRE_the_mount_athos
+		mark_focus_tree_layout_dirty = yes
+	}
+	option = {
+		name = gre.510.b
+		create_country_leader = {
+			name = "伊娃·帕尔默-西克利亚诺斯"
+			picture = "gfx/leaders/GRE/Portrait_GRE_Evelina_Palmer.png"
+			expire = "1.1.1"
+			ideology = socdem_hellenism_subtype
+		}
+		create_country_leader = {
+			name = "安杰洛斯·西克利亚诺斯"
+			picture = "gfx/leaders/GRE/Portrait_GRE_Angelos_Sikelianos.png"
+			expire = "1.1.1"
+			ideology = radsoc_hellenism_subtype
+		}
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+		}
+		add_radsoc_to_coalition = yes
+		set_country_flag = soc_dems_are_socialists
+		set_party_name = {
+			ideology = social_democrat
+			long_name = "普罗米修斯社会党"
+			name = "普罗米修斯社会党"
+		}
+		set_party_name = {
+			ideology = radical_socialist
+			long_name = "普罗米修斯社会党"
+			name = "普罗米修斯社会党"
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.1
+		}
+		set_cosmetic_tag = GRE_revisionist_socialism
+		complete_national_focus = GRE_the_eclipse
+		remove_ideas = GRE_golden_dawn
+		remove_all_ministers = yes
+		add_ideas = {
+			GRE_Nicolas_Kitsikis_hog_tot
+			GRE_Angelos_Sikelianos_for_tot
+			GRE_Patroklos_Karantinos_eco_tot
+			GRE_Yanis_Kordatos_sec_tot
+		}
+		remove_ideas = GRE_the_mount_athos
+		set_country_flag = GRE_hidden_path_unlock
+		mark_focus_tree_layout_dirty = yes
+	}
+}

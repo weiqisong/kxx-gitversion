@@ -2933,7 +2933,7 @@ focus_tree = {
         has_country_flag = GRU_GSVP_rule
         has_country_leader = {
           ruling_only = yes
-          name = "约瑟夫·戈培尔"
+          name = "保罗·约瑟夫·戈培尔"
         }
       }
       is_subject = no
@@ -3446,7 +3446,7 @@ focus_tree = {
 				limit = {
 					has_country_leader = {
             ruling_only = yes
-            name = "约瑟夫·戈培尔"
+            name = "保罗·约瑟夫·戈培尔"
           }
 				}
 				swap_ideas = {
@@ -6036,7 +6036,7 @@ focus_tree = {
     available = {
       has_country_leader = {
         ruling_only = yes
-        name = "约瑟夫·戈培尔"
+        name = "保罗·约瑟夫·戈培尔"
       }
     }
     prerequisite = {
@@ -6367,7 +6367,7 @@ focus_tree = {
 			has_country_flag = GRU_REBUILD
 			has_country_leader = {
        ruling_only = yes
-       name = "约瑟夫·戈培尔"
+       name = "保罗·约瑟夫·戈培尔"
       }
 		}
 		cost = 2

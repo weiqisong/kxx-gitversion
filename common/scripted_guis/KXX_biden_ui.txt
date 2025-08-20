@@ -815,6 +815,24 @@ scripted_gui = {
 			
 
 			#民族与革命
+			Ibrahim_Hananu_visible = {
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = SYR_Ibrahim_Hananu_hog_mli
+				}
+			}
+			Nazik_Abid_visible = {
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = SYR_Nazik_Abid_hog_sli
+				}
+			}
+			Sabri_Asali_visible = {
+				AND = {
+					has_country_flag = KXX_HOG_veiw
+					has_idea = SYR_Sabri_Asali_hog_sco
+				}
+			}
 			Ahmed_Hussein_visible = { #艾哈迈德·侯赛因
 				AND = {
 					has_country_flag = KXX_HOG_veiw

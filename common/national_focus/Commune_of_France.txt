@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	continuous_focus_position = {
     x = 50
-    y = 4000
+    y = 0
   }
   focus = {
 		id = FRA_grand_army_reform
@@ -6677,8 +6677,8 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_Host_the_Internationale
 		icon = GFX_goal_FRA_Internationale_Congress
 		cost = 4
-		x = 10
-		y = 20
+		x = 0
+		y = 18
 		available = {
 			hidden_trigger = {
 				always = no
@@ -7135,8 +7135,9 @@ focus = FRA_office_des_chemins_de_fer
 		prerequisite = {
 			focus = FRA_Host_the_Internationale
 		}
-		x = 10
-		y = 21
+		x = 0
+		y = 1
+		relative_position_id = FRA_Host_the_Internationale
 		ai_will_do = {
 			factor = 1000
 			modifier = {
@@ -11288,7 +11289,7 @@ focus = FRA_office_des_chemins_de_fer
 				tag = FRA
 			}
 		}
-		x = 59
+		x = 259
 		y = 7
 
 		ai_will_do = {
@@ -11525,7 +11526,7 @@ focus = FRA_office_des_chemins_de_fer
 		cost = 4
 		
 		
-		x = 116
+		x = 200
 		y = 1
 		allow_branch = {
 			NOT = {
@@ -16227,7 +16228,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_sorelians_rule_supreme
 		icon = GFX_goal_FRA_sorealians_alt
 		cost = 3.00
-		x = 100
+		x = 80
 		y = 0
 		available = {
 			has_global_flag = sorelian_majority_1936
@@ -20461,7 +20462,7 @@ focus = FRA_office_des_chemins_de_fer
 		id = FRA_counter
 		icon = GFX_goal_FRA_counter
 		cost = 3
-		x = 121
+		x = 100
 		y = 0
 		available = {
 			OR = {
@@ -21840,8 +21841,8 @@ focus = FRA_office_des_chemins_de_fer
 	allow_branch = {
 		has_country_flag = FRA_deat_supreme
 	}
-	x = 100
-	y = 30
+	x = 4
+	y = 32
 	cost = 2
 	ai_will_do = {
 		factor = 1000
@@ -25911,27 +25912,7 @@ focus = {
 			set_cosmetic_tag = FRA_herve_europe
 		}
 	}					
-	focus = {
-		id = FRA_peasant_front
-		icon = GFX_goals_FRA_dorgeres
-		prerequisite = {
-			focus = FRA_Paris_en_ordre
-		}
-		available = {
-			always = no
-		}
-		x = -6
-		y = 1
-		relative_position_id = FRA_Paris_en_ordre
-		cost = 4
-		ai_will_do = {
-			factor = 1000
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			add_political_power = 100
-		}
-	}	
+	
 	focus = {
 		id = FRA_return_to_past
 		icon = GFX_goals_FRA_return_to_past
@@ -26326,415 +26307,504 @@ focus = {
 		}
 	}
 	focus = {
-		id = FRA_down_with_anarchists
-		icon = GFX_BBR_crush_ultraradicals
-		
+		id = FRA_albertini_power
+		icon = GFX_goals_FRA_albertini_power
 		prerequisite = {
-			focus = FRA_peasant_front
+			focus = FRA_Paris_en_ordre
 		}
-		relative_position_id = FRA_peasant_front
+		
+		available = {
+			always = no
+		}
+		x = -6
+		y = 1
+		relative_position_id = FRA_Paris_en_ordre
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_ignite_jacobin_collapse
+		icon = GFX_goals_FRA_ignite_jacobin_collapse
+		prerequisite = {
+			focus = FRA_albertini_power
+		}
+		
 		x = -2
 		y = 1
-		cost = 2
+		relative_position_id = FRA_albertini_power
+		cost = 4
 		ai_will_do = {
 			factor = 1000
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			remove_ideas = FRA_black_guard_insurgency_idea
-			add_popularity = {
-				ideology = radical_socialist
-				popularity = -0.1
+			set_party_name = {
+				ideology = totalist
+				long_name = "法兰西社会党—统一战线派/雅各宾俱乐部"
+				name = "法兰西社会党—统一战线派/雅各宾俱乐部"
 			}
-			add_manpower = -300
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.1
+			}
+			add_stability = 0.2
 		}
-	}
+	}	
+
 	focus = {
-		id = FRA_anti_industial_slavery
-		icon = GFX_goal_RUS_crush_capitalists
-		
+		id = FRA_absorb_sorelian_remaints
+		icon = GFX_goal_FRA_absorb_sorelians
 		prerequisite = {
-			focus = FRA_peasant_front
+			focus = FRA_albertini_power
 		}
-		relative_position_id = FRA_peasant_front
+		
 		x = 0
 		y = 1
-		cost = 2
+		relative_position_id = FRA_albertini_power
+		cost = 4
 		ai_will_do = {
 			factor = 1000
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			remove_ideas = FRA_corporate_syndie_idea
+			add_political_power = 100
 			remove_ideas = FRA_Sorelian_Division
-			add_popularity = {
-				ideology = totalist
-				popularity = -0.1
-			}
-			add_manpower = -100
+			add_war_support = 0.1
+			add_manpower = 100000
 		}
-	}
+	}	
 	focus = {
-		id = FRA_ally_doriot
-		icon = GFX_goals_FRA_natjac_support
-		
+		id = FRA_erdicrate_anarchism
+		icon = GFX_goal_USA_antileftist_action
 		prerequisite = {
-			focus = FRA_peasant_front
+			focus = FRA_albertini_power
 		}
-		relative_position_id = FRA_peasant_front
+		
 		x = 2
 		y = 1
+		relative_position_id = FRA_albertini_power
 		cost = 4
 		ai_will_do = {
 			factor = 1000
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			swap_ideas = {
-				remove_idea = FRA_french_nationalism_idea
-				add_idea = FRA_natjac_support
+			add_political_power = 100
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.1
 			}
-			set_party_name = { 
-				ideology = totalist
-				long_name = FRA_jacobins_long
-				name = FRA_jacobins
+			set_party_name = {
+				ideology = radical_socialist
+				long_name = "法兰西社会党—统一战线派/社会历史研究所"
+				name = "法兰西社会党—统一战线派/社会历史研究所"
 			}
-			add_tot_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			remove_ideas = FRA_black_guard_insurgency_idea
+			hidden_effect = {
+				create_country_leader = {
+					name = "乔治·阿尔贝蒂尼"
+					picture = "gfx/leaders/FRA/Portrait_FRA_Georges_Albertini.jpg"
+					expire = "1.1.1"
+					traits = { the_oppotunist }
+					ideology = radsoc_united_front
+				}
+			}
 		}
 	}
 	focus = {
-		id = FRA_Comites_de_defense_paysanne
-		icon = GFX_goal_FRA_peasant_commitees
-		
+		id = FRA_force_ouviere_people_union
+		icon = GFX_goals_FRA_force_ouviere_people_union
 		prerequisite = {
-			focus = FRA_down_with_anarchists
+			focus = FRA_ignite_jacobin_collapse
 		}
 		prerequisite = {
-			focus = FRA_anti_industial_slavery
+			focus = FRA_absorb_sorelian_remaints
 		}
-		relative_position_id = FRA_peasant_front
 		x = -1
 		y = 2
+		relative_position_id = FRA_albertini_power
 		cost = 4
 		ai_will_do = {
 			factor = 1000
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			add_manpower = 100000
-			add_command_power = 50
-			army_experience = 50
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 1000
-				producer = FRA
+			add_popularity = {
+				ideology = syndicalist
+				popularity = 0.1
 			}
-		}
-	}
-	
-	focus = {
-		id = FRA_league_of_agrianists
-		icon = GFX_RUS_Peasant_Councils
-		
-		prerequisite = {
-			focus = FRA_down_with_anarchists
-		}
-		prerequisite = {
-			focus = FRA_anti_industial_slavery
-		}
-		prerequisite = {
-			focus = FRA_ally_doriot
-		}
-		relative_position_id = FRA_peasant_front
-		x = 1
-		y = 2
-		cost = 2
-		ai_will_do = {
-			factor = 1000
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
 			add_synd_to_coalition = yes
+			swap_ideas = {
+				remove_idea = FRA_corporate_syndie_idea
+				add_idea = FRA_force_ouviere
+			}
 			set_party_name = {
 				ideology = syndicalist
-				long_name = "全国农业工会联盟"				
-				name = "农工联"				
+				long_name = "法兰西社会党—统一战线派/总工会——工人力量"
+				name = "法兰西社会党—统一战线派/总工会——工人力量"
+			}
+			hidden_effect = {
+				create_country_leader = {
+					name = "乔治·阿尔贝蒂尼"
+					picture = "gfx/leaders/FRA/Portrait_FRA_Georges_Albertini.jpg"
+					expire = "1.1.1"
+					traits = { the_oppotunist }
+					ideology = syn_united_front
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_allies_in_sfio
+		icon = GFX_goal_FRA_sfio_leadership
+		prerequisite = {
+			focus = FRA_erdicrate_anarchism
+		}
+		prerequisite = {
+			focus = FRA_absorb_sorelian_remaints
+		}
+		x = 1
+		y = 2
+		relative_position_id = FRA_albertini_power
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+			add_one_random_civilian_factory = yes
+			add_one_random_civilian_factory = yes
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.1
+			}
+			add_socdem_to_coalition = yes
+			set_party_name = {
+				ideology = social_democrat
+				long_name = "法兰西社会党—统一战线派/工人国际法国支部"
+				name = "法兰西社会党—统一战线派/工人国际法国支部"
+			}
+			hidden_effect = {
+				create_country_leader = {
+					name = "乔治·阿尔贝蒂尼"
+					picture = "gfx/leaders/FRA/Portrait_FRA_Georges_Albertini.jpg"
+					expire = "1.1.1"
+					traits = { the_oppotunist }
+					ideology = socdem_united_front
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_united_against_radicalism
+		icon = GFX_goal_KIV_state_beyond_ideology
+		prerequisite = {
+			focus = FRA_force_ouviere_people_union
+		}
+		prerequisite = {
+			focus = FRA_allies_in_sfio
+		}
+		x = 0
+		y = 3
+		relative_position_id = FRA_albertini_power
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_ideas = FRA_united_against_radicalism
+		}
+	}
+	focus = {
+		id = FRA_expand_intellgence_bureau
+		icon = GFX_goal_secret_police
+		prerequisite = {
+			focus = FRA_united_against_radicalism
+		}
+		
+		x = -2
+		y = 4
+		relative_position_id = FRA_albertini_power
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			set_party_name = {
+				ideology = national_populist
+				long_name = "情报总局"
+				name = "情报总局"
+			}
+			add_natpop_to_coalition = yes
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.1
+			}
+			add_ideas = FRA_expand_intellgence_bureau
+			upgrade_intelligence_agency = upgrade_training_centers
+			upgrade_intelligence_agency = upgrade_anti_partisan
+			hidden_effect = {
+				create_country_leader = {
+					name = "乔治·阿尔贝蒂尼"
+					picture = "gfx/leaders/FRA/Portrait_FRA_Georges_Albertini.jpg"
+					expire = "1.1.1"
+					traits = { the_oppotunist }
+					ideology = national_security_state_subtype
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_anti_capital_jew_parlament
+		icon = GFX_goal_NFA_end_parliamentarism
+		prerequisite = {
+			focus = FRA_united_against_radicalism
+		}
+		
+		x = 0
+		y = 4
+		relative_position_id = FRA_albertini_power
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+			add_stability = 0.1
+			add_command_power = 50
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.1
 			}
 			add_popularity = {
 				ideology = syndicalist
 				popularity = 0.1
 			}
-		}
-	}
-	
-	focus = {
-		id = FRA_Haut_les_fourches
-		icon = GFX_goal_generic_peasant_strike
-		
-		prerequisite = {
-			focus = FRA_Comites_de_defense_paysanne
-		}
-		prerequisite = {
-			focus = FRA_league_of_agrianists
-		}
-		
-		relative_position_id = FRA_peasant_front
-		x = 0
-		y = 3
-		cost = 4
-		ai_will_do = {
-			factor = 1000
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			add_ideas = FRA_agrians
-		}
-	}
-	focus = {
-		id = FRA_peasant_control_agarian_groups
-		icon = GFX_RUS_Prosperity_For_Peasants
-		
-		prerequisite = {
-			focus = FRA_Haut_les_fourches
-		}
-		
-		relative_position_id = FRA_peasant_front
-		x = -2
-		y = 4
-		cost = 4
-		ai_will_do = {
-			factor = 1000
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			add_ideas = FRA_agrian_group
-			
-		}
-	}
-	focus = {
-		id = FRA_rural_develop_first
-		icon = GFX_goal_CSA_agricultural_revolution
-		
-		prerequisite = {
-			focus = FRA_Haut_les_fourches
-		}
-		
-		relative_position_id = FRA_peasant_front
-		x = 0
-		y = 4
-		cost = 4
-		ai_will_do = {
-			factor = 1000
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = FRA_green_shirts
-		icon = GFX_goal_RUS_Green_Legionaries
-		
-		prerequisite = {
-			focus = FRA_Haut_les_fourches
-		}
-		
-		relative_position_id = FRA_peasant_front
-		x = 2
-		y = 4
-		cost = 4
-		ai_will_do = {
-			factor = 1000
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			swap_ideas = {
-				remove_idea = FRA_french_nationalism_idea
-				add_idea = FRA_green_shirts
-			}
-			
-		}
-	}
-	focus = {
-		id = FRA_anti_lib_anti_dem
-		icon = GFX_goal_FRA_democratic_error
-		
-		prerequisite = {
-			focus = FRA_Haut_les_fourches
-		}
-		
-		relative_position_id = FRA_peasant_front
-		x = 1
-		y = 5
-		cost = 4
-		ai_will_do = {
-			factor = 1000
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			add_popularity = {
-				ideology = social_democrat
-				popularity = -0.1
-			}
 			add_popularity = {
 				ideology = radical_socialist
 				popularity = 0.1
 			}
-			add_research_slot = 1
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.1
+			}
 		}
 	}
 	focus = {
-		id = FRA_agrian_corportism
-		icon = GFX_RUS_gorgprosper
+		id = FRA_technocratic_economy
+		icon = GFX_goals_FRA_synarchist_government
+		prerequisite = {
+			focus = FRA_united_against_radicalism
+		}
 		
+		x = 2
+		y = 4
+		relative_position_id = FRA_albertini_power
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_research_slot = 1
+			add_ideas = command_economy
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_one_random_military_factory = yes
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.1
+			}
+			add_pataut_to_coalition = yes
+			set_party_name = {
+				ideology = paternal_autocrat
+				long_name = "共治帝国运动"
+				name = "共治帝国运动"
+			}
+			hidden_effect = {
+				create_country_leader = {
+					name = "乔治·阿尔贝蒂尼"
+					picture = "gfx/leaders/FRA/Portrait_FRA_Georges_Albertini.jpg"
+					expire = "1.1.1"
+					traits = { the_oppotunist }
+					ideology = right_technocracy_subtype
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_support_from_church
+		icon = GFX_goal_HON_Work_With_Church
 		prerequisite = {
-			focus = FRA_peasant_control_agarian_groups
+			focus = FRA_united_against_radicalism
+		}
+		
+		x = -1
+		y = 5
+		relative_position_id = FRA_albertini_power
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_ideas = FRA_support_from_church
+			set_party_name = {
+				ideology = social_conservative
+				long_name = "法兰西基督徒联盟"
+				name = "法兰西基督徒联盟"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = "法兰西基督徒联盟"
+				name = "法兰西基督徒联盟"
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.1
+			}
+			add_soccon_to_coalition = yes
+			add_authdem_to_coalition = yes
+			hidden_effect = {
+				create_country_leader = {
+					name = "乔治·阿尔贝蒂尼"
+					picture = "gfx/leaders/FRA/Portrait_FRA_Georges_Albertini.jpg"
+					expire = "1.1.1"
+					traits = { the_oppotunist }
+					ideology = christian_democracy_subtype
+				}
+				create_country_leader = {
+					name = "乔治·阿尔贝蒂尼"
+					picture = "gfx/leaders/FRA/Portrait_FRA_Georges_Albertini.jpg"
+					expire = "1.1.1"
+					traits = { the_oppotunist }
+					ideology = autdem_christian_democracy_subtype
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_social_national_liberal_revolution
+		icon = GFX_goals_FRA_social_national_liberal_revolution
+		prerequisite = {
+			focus = FRA_united_against_radicalism
+		}
+		
+		x = 1
+		y = 5
+		relative_position_id = FRA_albertini_power
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_ideas = FRA_social_national_liberal_revolution
+			set_party_name = {
+				ideology = social_liberal
+				long_name = "经济自由与社会进步协会"
+				name = "经济自由与社会进步协会"
+			}
+			set_party_name = {
+				ideology = market_liberal
+				long_name = "经济自由与社会进步协会"
+				name = "经济自由与社会进步协会"
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.1
+			}
+			add_soclib_to_coalition = yes
+			add_marlib_to_coalition = yes
+			hidden_effect = {
+				create_country_leader = {
+					name = "乔治·阿尔贝蒂尼"
+					picture = "gfx/leaders/FRA/Portrait_FRA_Georges_Albertini.jpg"
+					expire = "1.1.1"
+					traits = { the_oppotunist }
+					ideology = soclib_popular_patriotism_subtype
+				}
+				create_country_leader = {
+					name = "乔治·阿尔贝蒂尼"
+					picture = "gfx/leaders/FRA/Portrait_FRA_Georges_Albertini.jpg"
+					expire = "1.1.1"
+					traits = { the_oppotunist }
+					ideology = marlib_authoritarian_liberalism_subtype
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_declare_national_unity_government
+		icon = GFX_goal_NFA_Radical_Allies
+		prerequisite = {
+			focus = FRA_expand_intellgence_bureau
 		}
 		prerequisite = {
-			focus = FRA_economical_protectism
+			focus = FRA_support_from_church
 		}
 		prerequisite = {
-			focus = FRA_rural_develop_first
+			focus = FRA_anti_capital_jew_parlament
 		}
 		prerequisite = {
-			focus = FRA_anti_lib_anti_dem
+			focus = FRA_social_national_liberal_revolution
 		}
 		prerequisite = {
-			focus = FRA_green_shirts
+			focus = FRA_technocratic_economy
 		}
-		relative_position_id = FRA_peasant_front
 		x = 0
 		y = 6
-		cost = 4
+		relative_position_id = FRA_albertini_power
+		cost = 2
 		ai_will_do = {
 			factor = 1000
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
 			swap_ideas = {
-				remove_idea = FRA_agrians
-				add_idea = FRA_agrians2
+				remove_idea = FRA_united_against_radicalism
+				add_idea = FRA_declare_national_unity_government
 			}
+			country_event = kxxfrance.85
 		}
 	}
 	focus = {
-		id = FRA_economical_protectism
-		icon = GFX_goals_FRA_economical_protectism
-		
+		id = FRA_flag_of_atlanticism
+		icon = GFX_goal_USA_sphere_of_influence
 		prerequisite = {
-			focus = FRA_Haut_les_fourches
+			focus = FRA_declare_national_unity_government
 		}
 		
-		relative_position_id = FRA_peasant_front
-		x = -1
-		y = 5
-		cost = 4
+		x = 0
+		y = 7
+		relative_position_id = FRA_albertini_power
+		cost = 2
 		ai_will_do = {
 			factor = 1000
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			add_ideas = closed_economy
-			add_ideas = FRA_economical_protectism
-		}
-	}
-	focus = {
-		id = FRA_western_europe_agrian_country_union
-		icon = GFX_goals_FRA_west_europe
-		
-		prerequisite = {
-			focus = FRA_agrian_corportism
-		}
-		
-		relative_position_id = FRA_peasant_front
-		x = 0
-		y = 7
-		cost = 4
-		ai_will_do = {
-			factor = 0
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
-			every_state = {
-				limit = {
-					is_core_of = SPR
-				}
-				FRA = { 
-					add_state_core = PREV 
-				}
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = SPR
-			}
-			every_state = {
-				limit = {
-					is_core_of = CNT
-				}
-				FRA = { 
-					add_state_core = PREV 
-				}
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = CNT
-			}
-			every_state = {
-				limit = {
-					is_core_of = CAR
-				}
-				FRA = { 
-					add_state_core = PREV 
-				}
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = CAR
-			}
+			set_cosmetic_tag = FRA_atlantic_union
 			every_state = {
 				limit = {
 					is_core_of = SRI
@@ -26797,20 +26867,1959 @@ focus = {
 			}
 			every_state = {
 				limit = {
-					is_core_of = POR
+					is_core_of = ENG
 				}
 				FRA = { 
 					add_state_core = PREV 
 				}
 			}
-			create_wargoal = {
-				type = annex_everything
-				target = POR
+			every_state = {
+				limit = {
+					is_core_of = GER
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
 			}
-			set_cosmetic_tag = FRA_dorgeres_west_euro
+			every_state = {
+				limit = {
+					is_core_of = BEL
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = HOL
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = WLL
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = FLA
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = ENG
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			every_state = {
+				limit = {
+					is_on_continent = north_america
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_victory_of_fruit_farmer
+		icon = GFX_SRI_fascist_peasants
+		
+		
+		available = {
+			always = no
+		}
+		x = 80
+		y = 30
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}	
+	focus = {
+		id = FRA_Haut_les_fourches
+		icon = GFX_goal_generic_peasant_strike
+		
+		prerequisite = {
+			focus = FRA_victory_of_fruit_farmer
+		}
+		
+		relative_position_id = FRA_victory_of_fruit_farmer
+		x = -2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_ideas = FRA_agrians
+		}
+	}
+	focus = {
+		id = FRA_anti_industial_slavery
+		icon = GFX_goal_RUS_crush_capitalists
+		
+		prerequisite = {
+			focus = FRA_victory_of_fruit_farmer 
+		}
+		relative_position_id = FRA_victory_of_fruit_farmer
+		x = 0
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			remove_ideas = FRA_corporate_syndie_idea
+			remove_ideas = FRA_Sorelian_Division
+			add_popularity = {
+				ideology = totalist
+				popularity = -0.1
+			}
+			add_manpower = -100
+		}
+	}
+	focus = {
+		id = FRA_trial_gouin
+		icon = GFX_goal_FRA_trial_gouin
+		
+		prerequisite = {
+			focus = FRA_victory_of_fruit_farmer 
+		}
+		relative_position_id = FRA_victory_of_fruit_farmer
+		x = 2
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			remove_ideas = FRA_corporate_syndie_idea
+			remove_ideas = FRA_Sorelian_Division
+			add_popularity = {
+				ideology = totalist
+				popularity = -0.1
+			}
+			add_manpower = -100
+		}
+	}
+	focus = {
+		id = FRA_reorganize_all_parties
+		icon = GFX_RUS_National_Salvation_Committee
+		
+		prerequisite = {
+			focus = FRA_Haut_les_fourches
+		}
+		prerequisite = {
+			focus = FRA_anti_industial_slavery
+		}
+		relative_position_id = FRA_victory_of_fruit_farmer
+		x = -1
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			remove_ideas = FRA_corporate_syndie_idea
+			remove_ideas = FRA_Sorelian_Division
+			add_popularity = {
+				ideology = totalist
+				popularity = -0.1
+			}
+			add_manpower = -100
+		}
+	}
+	focus = {
+		id = FRA_demand_compensation
+		icon = GFX_goal_bag_of_money
+		
+		prerequisite = {
+			focus = FRA_trial_gouin
+		}
+		prerequisite = {
+			focus = FRA_anti_industial_slavery
+		}
+		relative_position_id = FRA_victory_of_fruit_farmer
+		x = 1
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			remove_ideas = FRA_corporate_syndie_idea
+			remove_ideas = FRA_Sorelian_Division
+			add_popularity = {
+				ideology = totalist
+				popularity = -0.1
+			}
+			add_manpower = -100
+		}
+	}
+	focus = {
+		id = FRA_choose_new_leader
+		icon = GFX_GRU_COUNCILISM
+		
+		prerequisite = {
+			focus = FRA_reorganize_all_parties
+		}
+		prerequisite = {
+			focus = FRA_demand_compensation
+		}
+		relative_position_id = FRA_victory_of_fruit_farmer
+		x = 0
+		y = 3
+		cost = 2
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			remove_ideas = FRA_corporate_syndie_idea
+			remove_ideas = FRA_Sorelian_Division
+			add_popularity = {
+				ideology = totalist
+				popularity = -0.1
+			}
+			add_manpower = -100
+		}
+	}
+	focus = {
+		id = FRA_cga_victory
+		icon = GFX_goal_FRA_cga_victory
+		prerequisite = {
+			focus = FRA_choose_new_leader
+		}
+		
+		available = {
+			always = no
+		}
+		x = -6
+		y = 1
+		relative_position_id = FRA_choose_new_leader
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}	
+	focus = {
+		id = FRA_moderate_supreme
+		icon = GFX_goal_ideology_radical_socialist
+		prerequisite = {
+			focus = FRA_cga_victory
+		}
+		mutually_exclusive = {
+			focus = FRA_syndicalism_revival
+		}
+		x = -1
+		y = 1
+		relative_position_id = FRA_cga_victory
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_syndicalism_revival
+		icon = GFX_goal_syndicalism
+		prerequisite = {
+			focus = FRA_cga_victory
+		}
+		mutually_exclusive = {
+			focus = FRA_moderate_supreme
+		}
+		x = 1
+		y = 1
+		relative_position_id = FRA_cga_victory
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_promote_autonomy
+		icon = GFX_SOV_decentralize_syndicates
+		prerequisite = {
+			focus = FRA_moderate_supreme
+			focus = FRA_syndicalism_revival
+		}
+		
+		x = -1
+		y = 2
+		relative_position_id = FRA_cga_victory
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_dechurchize
+		icon = GFX_goal_NOR_disband_the_state_church
+		prerequisite = {
+			focus = FRA_moderate_supreme
+			focus = FRA_syndicalism_revival
+		}
+		
+		x = 1
+		y = 2
+		relative_position_id = FRA_cga_victory
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_sfio_support
+		icon = GFX_goal_ICE_social_democrats
+		prerequisite = {
+			focus = FRA_promote_autonomy
+		}
+		prerequisite = {
+			focus = FRA_dechurchize
+		}
+		x = -2
+		y = 3
+		relative_position_id = FRA_cga_victory
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_enpower_cooperatives
+		icon = GFX_NEE_coop_management
+		prerequisite = {
+			focus = FRA_promote_autonomy
+		}
+		prerequisite = {
+			focus = FRA_dechurchize
+		}
+		x = 0
+		y = 3
+		relative_position_id = FRA_cga_victory
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_cgt_support
+		icon = GFX_goal_FRA_cgt_loyalty
+		prerequisite = {
+			focus = FRA_promote_autonomy
+		}
+		prerequisite = {
+			focus = FRA_dechurchize
+		}
+		x = 2
+		y = 3
+		relative_position_id = FRA_cga_victory
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_modernize_agriculture
+		icon = GFX_goal_ALB_Modernization
+		prerequisite = {
+			focus = FRA_enpower_cooperatives
+		}
+		prerequisite = {
+			focus = FRA_sfio_support
+		}
+		x = -1
+		y = 4
+		relative_position_id = FRA_cga_victory
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_revitalize_agrian_culture
+		icon = GFX_SOV_soc_culture
+		prerequisite = {
+			focus = FRA_enpower_cooperatives
+		}
+		prerequisite = {
+			focus = FRA_cgt_support
+		}
+		x = 1
+		y = 4
+		relative_position_id = FRA_cga_victory
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_ensure_autarky
+		icon = GFX_goal_generic_autarky
+		prerequisite = {
+			focus = FRA_revitalize_agrian_culture
+		}
+		prerequisite = {
+			focus = FRA_modernize_agriculture
+		}
+		x = 0
+		y = 5
+		relative_position_id = FRA_cga_victory
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = FRA_democratic_humanism
+		icon = GFX_goal_generic_democratic_socialism
+		prerequisite = {
+			focus = FRA_ensure_autarky
+		}
+		
+		x = 0
+		y = 6
+		relative_position_id = FRA_cga_victory
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_paysan_party
+		icon = GFX_goal_FRA_paysan_party
+		prerequisite = {
+			focus = FRA_choose_new_leader
+		}
+		
+		available = {
+			always = no
+		}
+		x = 6
+		y = 1
+		relative_position_id = FRA_choose_new_leader
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}	
+	focus = {
+		id = FRA_wisdom_of_old_republican
+		icon = GFX_VNC_model_of_modern_republicanism
+		prerequisite = {
+			focus = FRA_paysan_party
+		}
+		mutually_exclusive = {
+			focus = FRA_rise_of_old_aristocrat
+		}
+		x = -1
+		y = 1
+		relative_position_id = FRA_paysan_party
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}	
+	focus = {
+		id = FRA_legacy_of_proclamation_paysan
+		icon = GFX_goal_NFA_A_New_Constitution
+		prerequisite = {
+			focus = FRA_wisdom_of_old_republican
+			focus = FRA_rise_of_old_aristocrat
+		}
+		
+		x = -1
+		y = 2
+		relative_position_id = FRA_paysan_party
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_legalize_banned_party
+		icon = GFX_goal_TEX_Liberalize_Democratic_Party
+		prerequisite = {
+			focus = FRA_wisdom_of_old_republican
+			focus = FRA_rise_of_old_aristocrat
+		}
+		
+		x = 1
+		y = 2
+		relative_position_id = FRA_paysan_party
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_defend_church
+		icon = GFX_goal_NFA_Church_Position
+		prerequisite = {
+			focus = FRA_legacy_of_proclamation_paysan
+		}
+		prerequisite = {
+			focus = FRA_legalize_banned_party
+		}
+		x = -2
+		y = 3
+		relative_position_id = FRA_paysan_party
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_destroy_corruption
+		icon = GFX_goal_KIV_no_corruption
+		prerequisite = {
+			focus = FRA_legacy_of_proclamation_paysan
+		}
+		prerequisite = {
+			focus = FRA_legalize_banned_party
+		}
+		x = 0
+		y = 3
+		relative_position_id = FRA_paysan_party
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_legalize_chevaliers_du_Tastevin
+		icon = GFX_RUS_Knights_Of_Socialism
+		prerequisite = {
+			focus = FRA_legacy_of_proclamation_paysan
+		}
+		prerequisite = {
+			focus = FRA_legalize_banned_party
+		}
+		x = 2
+		y = 3
+		relative_position_id = FRA_paysan_party
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_revitalize_middle_class
+		icon = GFX_SOV_middle_class
+		prerequisite = {
+			focus = FRA_destroy_corruption
+		}
+		prerequisite = {
+			focus = FRA_defend_church
+		}
+		x = -1
+		y = 4
+		relative_position_id = FRA_paysan_party
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_defend_bargain_rights
+		icon = GFX_goal_HON_Debt_Money_Time
+		prerequisite = {
+			focus = FRA_destroy_corruption
+		}
+		prerequisite = {
+			focus = FRA_legalize_chevaliers_du_Tastevin
+		}
+		x = 1
+		y = 4
+		relative_position_id = FRA_paysan_party
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_traditional_values
+		icon = GFX_goal_COL_Traditional_Family_Roles
+		prerequisite = {
+			focus = FRA_revitalize_middle_class
+		}
+		prerequisite = {
+			focus = FRA_defend_bargain_rights
+		}
+		x = 0
+		y = 5
+		relative_position_id = FRA_paysan_party
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_revenage_vandean
+		icon = GFX_goal_authority
+		prerequisite = {
+			focus = FRA_traditional_values
+		}
+		
+		x = 0
+		y = 6
+		relative_position_id = FRA_paysan_party
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_rise_of_old_aristocrat
+		icon = GFX_goal_AUS_Fusion_Monarchy_Aristocracy_Democracy
+		prerequisite = {
+			focus = FRA_paysan_party
+		}
+		mutually_exclusive = {
+			focus = FRA_wisdom_of_old_republican
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = FRA_paysan_party
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}	
+	focus = {
+		id = FRA_pcf
+		icon = GFX_goal_MEX_Full_Communist_Orthodoxy
+		prerequisite = {
+			focus = FRA_choose_new_leader
+		}
+		
+		available = {
+			always = no
+		}
+		x = -12
+		y = 1
+		relative_position_id = FRA_choose_new_leader
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}	
+	focus = {
+		id = FRA_improve_party_unity
+		icon = GFX_goals_FRA_natjac_support
+		prerequisite = {
+			focus = FRA_pcf
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = FRA_pcf
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}	
+	focus = {
+		id = FRA_establish_demo_cent
+		icon = GFX_goal_FRA_red_politburo
+		prerequisite = {
+			focus = FRA_improve_party_unity
+		}
+		
+		x = -1
+		y = 2
+		relative_position_id = FRA_pcf
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}	
+	focus = {
+		id = FRA_enpower_jc
+		icon = GFX_goal_FRA_jeunesse_reliance
+		prerequisite = {
+			focus = FRA_improve_party_unity
+		}
+		
+		x = 1
+		y = 2
+		relative_position_id = FRA_pcf
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_encourage_collectivization
+		icon = GFX_RUS_Collective_Management
+		prerequisite = {
+			focus = FRA_establish_demo_cent
+		}
+		prerequisite = {
+			focus = FRA_enpower_jc
+		}
+		x = -2
+		y = 3
+		relative_position_id = FRA_pcf
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_eliminate_reactionism
+		icon = GFX_HOL_crackdown_natpop 
+		prerequisite = {
+			focus = FRA_establish_demo_cent
+		}
+		prerequisite = {
+			focus = FRA_enpower_jc
+		}
+		x = 0
+		y = 3
+		relative_position_id = FRA_pcf
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_comites_de_action_defence_paysan
+		icon = GFX_goal_NEE_farmers_into_soldiers
+		prerequisite = {
+			focus = FRA_establish_demo_cent
+		}
+		prerequisite = {
+			focus = FRA_enpower_jc
+		}
+		x = 2
+		y = 3
+		relative_position_id = FRA_pcf
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_local_communes
+		icon = GFX_goal_ALB_Albanian_Farmers
+		prerequisite = {
+			focus = FRA_encourage_collectivization
+		}
+		prerequisite = {
+			focus = FRA_eliminate_reactionism
+		}
+		x = -1
+		y = 4
+		relative_position_id = FRA_pcf
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_national_equal_development
+		icon = GFX_BBR_approach_local_socialists
+		prerequisite = {
+			focus = FRA_comites_de_action_defence_paysan
+		}
+		prerequisite = {
+			focus = FRA_eliminate_reactionism
+		}
+		x = 1
+		y = 4
+		relative_position_id = FRA_pcf
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_crush_the_clericals
+		icon = GFX_CAL_profits_of_the_church
+		prerequisite = {
+			focus = FRA_national_equal_development
+		}
+		prerequisite = {
+			focus = FRA_local_communes
+		}
+		x = 0
+		y = 5
+		relative_position_id = FRA_pcf
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_worker_peasant_republic
+		icon = GFX_goal_COR_Cooperate_Organized_Workers_Farmers
+		prerequisite = {
+			focus = FRA_crush_the_clericals
+		}
+		
+		x = 0
+		y = 6
+		relative_position_id = FRA_pcf
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_psdf
+		icon = GFX_goal_FRA_socialist_republican_party
+		prerequisite = {
+			focus = FRA_choose_new_leader
+		}
+		
+		available = {
+			always = no
+		}
+		x = -18
+		y = 1
+		relative_position_id = FRA_choose_new_leader
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}	
+	focus = {
+		id = FRA_agrian_cartel
+		icon = GFX_goal_FRA_agro_industrial_federation
+		prerequisite = {
+			focus = FRA_psdf
+		}
+		
+		
+		x = 0
+		y = 1
+		relative_position_id = FRA_psdf
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_agrian_technocracy
+		icon = GFX_goal_CSA_Technocracy_Committee
+		prerequisite = {
+			focus = FRA_agrian_cartel
+		}
+		
+		
+		x = -1
+		y = 2
+		relative_position_id = FRA_psdf
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_defender_of_wine
+		icon = GFX_goal_GEO_wine
+		prerequisite = {
+			focus = FRA_agrian_cartel
+		}
+		
+		
+		x = 1
+		y = 2
+		relative_position_id = FRA_psdf
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_renedel_and_decentralization
+		icon = GFX_RUS_Decentralize_Power
+		prerequisite = {
+			focus = FRA_agrian_technocracy
+		}
+		prerequisite = {
+			focus = FRA_defender_of_wine
+		}
+		
+		x = -2
+		y = 3
+		relative_position_id = FRA_psdf
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_deat_and_diringime
+		icon = GFX_goal_CSA_economy_of_scale
+		prerequisite = {
+			focus = FRA_agrian_technocracy
+		}
+		prerequisite = {
+			focus = FRA_defender_of_wine
+		}
+	
+		x = 0
+		y = 3
+		relative_position_id = FRA_psdf
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_albertini_united_front
+		icon = GFX_goal_CSA_popular_front
+		prerequisite = {
+			focus = FRA_agrian_technocracy
+		}
+		prerequisite = {
+			focus = FRA_defender_of_wine
+		}
+		available = {
+			always = no
+		}
+		x = 2
+		y = 3
+		relative_position_id = FRA_psdf
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_ensure_market_flows
+		icon = GFX_goal_NFA_French_Market
+		prerequisite = {
+			focus = FRA_renedel_and_decentralization
+		}
+		prerequisite = {
+			focus = FRA_deat_and_diringime
+		}
+		
+		x = -1
+		y = 4
+		relative_position_id = FRA_psdf
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_intergrate_millitias
+		icon = GFX_SOV_militia
+		prerequisite = {
+			focus = FRA_albertini_united_front
+		}
+		prerequisite = {
+			focus = FRA_deat_and_diringime
+		}
+		
+		x = 1
+		y = 4
+		relative_position_id = FRA_psdf
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_balanced_development
+		icon = GFX_UKR_Vague_Balance_Holds
+		prerequisite = {
+			focus = FRA_ensure_market_flows
+		}
+		prerequisite = {
+			focus = FRA_intergrate_millitias
+		}
+		
+		x = 0
+		y = 5
+		relative_position_id = FRA_psdf
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_finish_national_reconstrution
+		icon = GFX_goal_FRA_neosocialists
+		prerequisite = {
+			focus = FRA_balanced_development
+		}
+		
+		x = 0
+		y = 6
+		relative_position_id = FRA_psdf
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = FRA_fnsea
+		icon = GFX_goal_FRA_fnsea
+		prerequisite = {
+			focus = FRA_choose_new_leader
+		}
+		
+		available = {
+			always = no
+		}
+		x = 12
+		y = 1
+		relative_position_id = FRA_choose_new_leader
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}	
+	focus = {
+		id = FRA_league_of_agrianists
+		icon = GFX_goal_CZE_agrarian_internationale
+		prerequisite = {
+			focus = FRA_fnsea
+		}
+		x = 0
+		y = 1
+		relative_position_id = FRA_fnsea
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}	
+	focus = {
+		id = FRA_family_compensation
+		icon = GFX_goal_AUS_agrarian_means
+		prerequisite = {
+			focus = FRA_league_of_agrianists
+		}
+		x = -1
+		y = 2
+		relative_position_id = FRA_fnsea
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_eliminate_state_corps
+		icon = GFX_goal_NYC_Privatization
+		prerequisite = {
+			focus = FRA_league_of_agrianists
+		}
+		x = 1
+		y = 2
+		relative_position_id = FRA_fnsea
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+		
+	}	
+	focus = {
+		id = FRA_peasant_unity
+		icon = GFX_goal_AFG_Aid_Afghan_Agriculture_Anjumane_Zamidaran
+		prerequisite = {
+			focus = FRA_family_compensation
+		}
+		prerequisite = {
+			focus = FRA_eliminate_state_corps
+		}
+		x = -2
+		y = 3
+		relative_position_id = FRA_fnsea
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}	
+	focus = {
+		id = FRA_social_catholic_enlightment
+		icon = GFX_goal_SRD_enshrine_church_collaboration
+		prerequisite = {
+			focus = FRA_family_compensation
+		}
+		prerequisite = {
+			focus = FRA_eliminate_state_corps
+		}
+		x = 0
+		y = 3
+		relative_position_id = FRA_fnsea
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_ally_millitary
+		icon = GFX_goal_ARG_Secure_Military_Apparatus
+		prerequisite = {
+			focus = FRA_family_compensation
+		}
+		prerequisite = {
+			focus = FRA_eliminate_state_corps
+		}
+		x = 2
+		y = 3
+		relative_position_id = FRA_fnsea
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_national_liberal_market
+		icon = GFX_RUS_New_Liberal_Era
+		prerequisite = {
+			focus = FRA_social_catholic_enlightment
+		}
+		prerequisite = {
+			focus = FRA_peasant_unity
+		}
+		x = -1
+		y = 4
+		relative_position_id = FRA_fnsea
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_land_and_fatherland
+		icon = GFX_goal_SKM_Socialized_Land_Redistribution
+		prerequisite = {
+			focus = FRA_social_catholic_enlightment
+		}
+		prerequisite = {
+			focus = FRA_ally_millitary
+		}
+		x = 1
+		y = 4
+		relative_position_id = FRA_fnsea
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_for_commoner
+		icon = GFX_goal_CZE_common_man_politics
+		prerequisite = {
+			focus = FRA_land_and_fatherland
+		}
+		prerequisite = {
+			focus = FRA_national_liberal_market
+		}
+		x = 0
+		y = 5
+		relative_position_id = FRA_fnsea
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_victory_of_revisionism
+		icon = GFX_goal_HOL_thriving_socdem
+		prerequisite = {
+			focus = FRA_for_commoner
+		}
+		
+		x = 0
+		y = 6
+		relative_position_id = FRA_fnsea
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_Comites_de_defense_paysanne
+		icon = GFX_goal_FRA_peasant_commitees
+		
+		prerequisite = {
+			focus = FRA_anti_lib_anti_dem
+			focus = FRA_democracy_of_farmers
+		}
+		
+		relative_position_id = FRA_peasant_front
+		x = 1
+		y = 2
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_manpower = 100000
+			add_command_power = 50
+			army_experience = 50
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = FRA
+			}
+		}
+	}
+	focus = {
+		id = FRA_corporation_paysan
+		icon = GFX_goal_FRA_corporation_paysan
+		prerequisite = {
+			focus = FRA_choose_new_leader
+		}
+		
+		available = {
+			always = no
+		}
+		x = 18
+		y = 1
+		relative_position_id = FRA_choose_new_leader
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}	
+	focus = {
+		id = FRA_return_to_land
+		icon = GFX_goal_AUS_agrarian_icon
+		prerequisite = {
+			focus = FRA_corporation_paysan
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = FRA_corporation_paysan
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}	
+	focus = {
+		id = FRA_restore_handicraft_tradition
+		icon = GFX_goal_AUS_agrarian_populism
+		prerequisite = {
+			focus = FRA_return_to_land
+		}
+
+		x = -1
+		y = 2
+		relative_position_id = FRA_corporation_paysan
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_rural_develop_first
+		icon = GFX_UKR_Agrarian_Economy
+		prerequisite = {
+			focus = FRA_return_to_land
+		}
+
+		x = 1
+		y = 2
+		relative_position_id = FRA_corporation_paysan
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_rural_civil_service
+		icon = GFX_goal_NEE_Tame_American_Agrarian_Arcadia
+		prerequisite = {
+			focus = FRA_restore_handicraft_tradition
+		}
+		prerequisite = {
+			focus = FRA_rural_develop_first
+		}
+		x = -2
+		y = 3
+		relative_position_id = FRA_corporation_paysan
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_loyal_to_god
+		icon = GFX_goal_CZE_respective_church
+		prerequisite = {
+			focus = FRA_restore_handicraft_tradition
+		}
+		prerequisite = {
+			focus = FRA_rural_develop_first
+		}
+		x = 0
+		y = 3
+		relative_position_id = FRA_corporation_paysan
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_controlled_loans
+		icon = GFX_goal_FIU_loans_bailouts
+		prerequisite = {
+			focus = FRA_restore_handicraft_tradition
+		}
+		prerequisite = {
+			focus = FRA_rural_develop_first
+		}
+		x = 2
+		y = 3
+		relative_position_id = FRA_corporation_paysan
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_moderate_decentralize
+		icon = GFX_UKR_Decentralized_Planning
+		prerequisite = {
+			focus = FRA_controlled_loans
+		}
+		prerequisite = {
+			focus = FRA_loyal_to_god
+		}
+		x = 1
+		y = 4
+		relative_position_id = FRA_corporation_paysan
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_suppress_freedom
+		icon = GFX_goal_AUS_suppress_syndicalism
+		prerequisite = {
+			focus = FRA_rural_civil_service
+		}
+		prerequisite = {
+			focus = FRA_loyal_to_god
+		}
+		x = -1
+		y = 4
+		relative_position_id = FRA_corporation_paysan
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_class_collberation
+		icon = GFX_goal_CSA_class_fusion
+		prerequisite = {
+			focus = FRA_moderate_decentralize
+		}
+		prerequisite = {
+			focus = FRA_suppress_freedom
+		}
+		x = 0
+		y = 5
+		relative_position_id = FRA_corporation_paysan
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_land_will_not_cheat_you
+		icon = GFX_goal_NFA_Populist_Democracy
+		prerequisite = {
+			focus = FRA_class_collberation
+		}
+		
+		x = 0
+		y = 6
+		relative_position_id = FRA_corporation_paysan
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FRA_peasant_front
+		icon = GFX_goals_FRA_dorgeres
+		prerequisite = {
+			focus = FRA_choose_new_leader
+		}
+		
+		available = {
+			always = no
+		}
+		x = 0
+		y = 1
+		relative_position_id = FRA_choose_new_leader
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_political_power = 100
+		}
+	}	
+	
+	focus = {
+		id = FRA_green_shirts
+		icon = GFX_goal_RUS_Green_Legionaries
+		
+		prerequisite = {
+			focus = FRA_anti_lib_anti_dem
+			focus = FRA_democracy_of_farmers
+		}
+		
+		
+		relative_position_id = FRA_peasant_front
+		x = -1
+		y = 2
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			swap_ideas = {
+				remove_idea = FRA_french_nationalism_idea
+				add_idea = FRA_green_shirts
+			}
 			
 		}
 	}
+	focus = {
+		id = FRA_peace_prosperity
+		icon = GFX_goal_GUA_Peaceful_Revolution
+		
+		prerequisite = {
+			focus = FRA_green_shirts
+		}
+		relative_position_id = FRA_peasant_front
+		x = -2
+		y = 3
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			swap_ideas = {
+				remove_idea = FRA_french_nationalism_idea
+				add_idea = FRA_green_shirts
+			}
+			
+		}
+	}
+	focus = {
+		id = FRA_expel_intellicuals
+		icon = GFX_goal_WHR_Reject_Delusion_Intellectualism
+		
+		prerequisite = {
+			focus = FRA_green_shirts
+		}
+		prerequisite = {
+			focus = FRA_Comites_de_defense_paysanne
+		}
+		relative_position_id = FRA_peasant_front
+		x = 0
+		y = 3
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			swap_ideas = {
+				remove_idea = FRA_french_nationalism_idea
+				add_idea = FRA_green_shirts
+			}
+			
+		}
+	}
+	focus = {
+		id = FRA_reform_the_parlament
+		icon = GFX_goal_FRA_pure_order
+		
+		prerequisite = {
+			focus = FRA_Comites_de_defense_paysanne
+		}
+		relative_position_id = FRA_peasant_front
+		x = 2
+		y = 3
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			swap_ideas = {
+				remove_idea = FRA_french_nationalism_idea
+				add_idea = FRA_green_shirts
+			}
+			
+		}
+	}
+	focus = {
+		id = FRA_destroy_urbanism
+		icon = GFX_goal_AST_break_urban_rural_divide
+		
+		prerequisite = {
+			focus = FRA_peace_prosperity
+		}
+		prerequisite = {
+			focus = FRA_expel_intellicuals
+		}
+		relative_position_id = FRA_peasant_front
+		x = -1
+		y = 4
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			swap_ideas = {
+				remove_idea = FRA_french_nationalism_idea
+				add_idea = FRA_green_shirts
+			}
+			
+		}
+	}
+	focus = {
+		id = FRA_unity_and_displine
+		icon = GFX_RUS_gorgvill
+		
+		prerequisite = {
+			focus = FRA_reform_the_parlament
+		}
+		prerequisite = {
+			focus = FRA_expel_intellicuals
+		}
+		relative_position_id = FRA_peasant_front
+		x = 1
+		y = 4
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			swap_ideas = {
+				remove_idea = FRA_french_nationalism_idea
+				add_idea = FRA_green_shirts
+			}
+			
+		}
+	}
+	focus = {
+		id = FRA_anti_lib_anti_dem
+		icon = GFX_goal_FRA_democratic_error
+		
+		prerequisite = {
+			focus = FRA_peasant_front
+		}
+		mutually_exclusive = {
+			focus = FRA_democracy_of_farmers
+		}
+		relative_position_id = FRA_peasant_front
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_popularity = {
+				ideology = social_democrat
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.1
+			}
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = FRA_democracy_of_farmers
+		icon = GFX_goal_FRA_internal_democracy
+		
+		prerequisite = {
+			focus = FRA_peasant_front
+		}
+		mutually_exclusive = {
+			focus = FRA_anti_lib_anti_dem
+		}
+		relative_position_id = FRA_peasant_front
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_popularity = {
+				ideology = social_democrat
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.1
+			}
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = FRA_agrian_corportism
+		icon = GFX_goals_FRA_west_europe
+		
+		
+		prerequisite = {
+			focus = FRA_economical_protectism
+		}
+		
+		relative_position_id = FRA_peasant_front
+		x = 0
+		y = 6
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			swap_ideas = {
+				remove_idea = FRA_agrians
+				add_idea = FRA_agrians2
+			}
+		}
+	}
+	focus = {
+		id = FRA_economical_protectism
+		icon = GFX_goals_FRA_economical_protectism
+		
+		prerequisite = {
+			focus = FRA_destroy_urbanism
+		}
+		prerequisite = {
+			focus = FRA_unity_and_displine
+		}
+		relative_position_id = FRA_peasant_front
+		x = 0
+		y = 5
+		cost = 4
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_Pursue_European_Republicanism"
+			add_ideas = closed_economy
+			add_ideas = FRA_economical_protectism
+		}
+	}
+	
 	
 	focus = {
 		id = FRA_national_collectivists
@@ -27360,7 +29369,7 @@ focus = {
 		allow_branch = {
 			has_global_flag = FRA_no_majority_1936
 		}
-		x = 150
+		x = 130
 		y = 0
 		
 		ai_will_do = {
@@ -29345,7 +31354,7 @@ focus = {
 focus = {
 		id = FRA_radicalist_second
 		icon = GFX_goal_ideology_totalist
-		x = 158
+		x = 134
 		y = 17
 		cost = 1
 		 
@@ -29367,8 +31376,9 @@ focus = {
 	focus = {
 		id = FRA_neosocialism_in_effect
 		icon = GFX_goal_FRA_socialist_republican_party
-		x = 140
-		y = 18
+		x = -18
+		y = 1
+		relative_position_id = FRA_radicalist_second
 		cost = 1
 		 available = {
 			has_country_leader = {
@@ -29801,8 +31811,9 @@ focus = {
 	focus = {
 		id = FRA_second_1889
 		icon = GFX_goals_FRA_boulangerists
-		x = 147
-		y = 18
+		x = -11
+		y = 1
+		relative_position_id = FRA_radicalist_second
 	
 		cost = 1
 		available = {
@@ -30178,9 +32189,9 @@ focus = {
 	focus = {
 		id = FRA_sorelian_second
 		icon = GFX_goal_FRA_sorelians
-		x = 154
-		y = 18
-		
+		x = -4
+		y = 1
+		relative_position_id = FRA_radicalist_second
 		cost = 1
 		available = {
 			has_country_leader = {
@@ -30535,8 +32546,9 @@ focus = {
 	focus = {
 		id = FRA_revolution_begin
 		icon = GFX_goal_FRA_orthodox_jacobins
-		x = 162
-		y = 18
+		x = 4
+		y = 1
+		relative_position_id = FRA_radicalist_second
 		
 		cost = 1
 		available = {
@@ -30901,8 +32913,9 @@ focus = {
 	focus = {
 		id = FRA_1793_coming
 		icon = GFX_goal_FRA_national_jacobin
-		x = 171
-		y = 18
+		x = 13
+		y = 1
+		relative_position_id = FRA_radicalist_second
 		
 		cost = 1
 		available = {
@@ -31241,9 +33254,9 @@ focus = {
 	focus = {
 		id = FRA_third_way
 		icon = GFX_goal_ideology_libsoc
-		x = 179
-		y = 18
-		
+		x = 20
+		y = 1
+		relative_position_id = FRA_radicalist_second
 		cost = 1
 		available = {
 			has_country_leader = {
@@ -31603,9 +33616,9 @@ focus = {
 	focus = {
 		id = FRA_yellow_syndicalism
 		icon = GFX_goals_FRA_yellow_syndicalists
-		x = 183
-		y = 28
-		
+		x = 25
+		y = 1
+		relative_position_id = FRA_syndicalist_second
 		cost = 1
 		available = {
 			has_country_leader = {
@@ -32004,7 +34017,7 @@ focus = {
 	focus = {
 		id = FRA_syndicalist_second
 		icon = GFX_goal_FRA_cgt_mandate
-		x = 158
+		x = 134
 		y = 27
 	
 		cost = 1
@@ -33459,7 +35472,7 @@ focus = {
 	focus = {
 		id = FRA_anarchists_second
 		icon = GFX_SOV_towards_anarchy
-		x = 158
+		x = 134
 		y = 33
 		
 		cost = 4
@@ -34887,8 +36900,9 @@ focus = {
 	focus = {
 		id = FRA_surrealist_politics
 		icon = GFX_goal_AUS_Coalition_Splits
-		x = 183
-		y = 34
+		x = 25
+		y = 1
+		relative_position_id = FRA_anarchists_second
 
 		cost = 4
 		available = {
@@ -35276,7 +37290,7 @@ focus = {
 	focus = {
 		id = FRA_moderate_second
 		icon = GFX_goals_FRA_socdem_goverment
-		x = 158
+		x = 134
 		y = 39
 		
 		cost = 1
@@ -36920,8 +38934,9 @@ focus = {
 		id = FRA_johnny_comes_forth
 		icon = GFX_goal_FRA_johnny_comes_forth
 		
-		x = 183
-		y = 40
+		x = 25
+		y = 1
+		relative_position_id = FRA_moderate_second
 		available = {
 			has_country_leader = {
 				ruling_only = yes
@@ -37416,8 +39431,9 @@ focus = {
 			has_global_flag = FRA_no_majority_1936
 			has_country_flag = FRA_PDP_win
 		}
-		x = 136
+		x = -14
 		y = 1
+		relative_position_id = FRA_stalemate
 		prerequisite={
 			focus = FRA_stalemate
 		}
@@ -38922,7 +40938,7 @@ focus = {
 	focus = {
 		id = FRA_jacobin_cgt
 		icon = GFX_goal_FRA_jacobin_cgt
-		x = 70
+		x = 60
 		y = 0
 		cost = 1
 		ai_will_do = {
@@ -40137,7 +42153,7 @@ focus = {
 	focus = {
 		id = FRA_anarchist_cgt
 		icon = GFX_goal_anarcho_communism
-		x = 37
+		x = 27
 		y = 10
 		available = {
 			has_global_flag = anarchiste_majority_1936
@@ -41326,7 +43342,7 @@ focus = {
 		id = FRA_cgt_mandate
 		icon = GFX_goal_FRA_cgt_mandate
 		x = 10
-		y = 7
+		y = 6
 		cost = 5
 		available = {
 			has_global_flag = travailleur_majority_1936
@@ -43230,9 +45246,10 @@ focus = {
 	focus = {
 		id = FRA_socialist_cartel_victory
 		icon = GFX_goal_ideology_social_democrat
-		x = 163
+		x = 13
 		y = 1
 		cost = 1
+		relative_position_id = FRA_stalemate
 		prerequisite = {
 			focus = FRA_stalemate
 		}
@@ -44728,8 +46745,8 @@ focus = {
 	focus = {
 		id = FRA_revolt_of_the_masters
 		icon = GFX_goal_FRA_revolt_of_the_masters
-		x = 60
-		y = 15
+		x = 40
+		y = 10
 		available = {
 			always = no
 		}
@@ -45462,7 +47479,7 @@ focus = {
 	focus = {
 		id = FRA_synarchist_conpiracy
 		icon = GFX_goal_COR_eyes_of_the_lord
-		x = 190
+		x = 170
 		y = 1
 		cost = 4
 		ai_will_do = {
@@ -46268,7 +48285,8 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_heroic_cruelty"
-			add_ideas = FRA_transhumanism
+			add_ideas = FRA_transhumanism_idea
+			
 		}
 	}
 	focus = {

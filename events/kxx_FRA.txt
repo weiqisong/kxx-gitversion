@@ -805,48 +805,47 @@ option = {
 	}
 	complete_national_focus = FRA_Restoring_Socialist_Order
 }
-
 option = { 
 	name = kxxfrance.17.b #yay dorgeres
 	ai_chance = {
 		factor = 50
 	}
 	create_country_leader = {
-		name = "亨利·多尔热"
-
-		picture = "gfx/leaders/FRA/Portrait_FRA_Henri_Dorgeres.png"
+		name = "乔治·阿尔贝蒂尼"
+		picture = "gfx/leaders/FRA/Portrait_FRA_Georges_Albertini.jpg"
 		expire = "1.1.1"
-		traits = { protector_of_farmers }
-		ideology = agrarian_socialism_subtype
+		traits = { the_oppotunist }
+		ideology = tot_united_front
 	}
 	set_politics = {
-		ruling_party = radical_socialist
+		ruling_party = totalist
 	}
 	set_party_name = {
-		ideology = radical_socialist
-		long_name = FRA_dorgeres_party
-		name = FRA_dorgeres_party
+		ideology = totalist
+		long_name = "法兰西社会党—统一战线派"
+		name = "法兰西社会党—统一战线派"
 	}
-	set_cosmetic_tag = FRA_dorgeres
+	set_cosmetic_tag = FRA_albetini
 	hidden_effect = {	
 		remove_ideas_with_trait = head_of_government
-		add_ideas = FRA_Henri_Dorgeres_hog_rso
+		add_ideas = FRA_Guy_Mollet_hog_sde
 		remove_ideas_with_trait = foreign_minister
-		add_ideas = FRA_Jacques_Le_Roy_Ladurie_for_rso
+		add_ideas = FRA_Boris_Souvarine_hog_syn
 		remove_ideas_with_trait = economy_minister
-		add_ideas = FRA_Pierre_Caziot_eco_rso
+		add_ideas = FRA_Vincent_Auriol_eco_rso
 		remove_ideas_with_trait = security_minister
-		add_ideas = FRA_Pierre_Poujade_sec_rso
+		add_ideas = FRA_Henri_Barbe_sec_tot
 		add_popularity = {
-		  ideology = radical_socialist
+		  ideology = totalist
 		   popularity = 0.20
-		 }
-		complete_national_focus = FRA_peasant_front
+		}
+		complete_national_focus = FRA_albertini_power
 		remove_ideas = FRA_valois_dead_idea
 		remove_ideas = French_Revanchism_idea
 		 
 	}
 }
+
 option = { 
 	name = kxxfrance.17.c #yay herve
 	ai_chance = {
@@ -913,7 +912,7 @@ option = {
 		remove_ideas_with_trait = head_of_government
 		add_ideas = FRA_Andre_Chaumet_hog_rso
 		remove_ideas_with_trait = foreign_minister
-		add_ideas = FRA_Jean_FRAlais_for_rso
+		add_ideas = FRA_Jean_Turlais_for_rso
 		remove_ideas_with_trait = economy_minister
 		add_ideas = FRA_Paul_Cassagnac_eco_rso
 		remove_ideas_with_trait = security_minister
@@ -6578,7 +6577,336 @@ option = {
 }	
 	
 }
+country_event = {	
+	id = kxxfrance.85
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
+	title = kxxfrance.85.t
+	desc = kxxfrance.85.d
+	is_triggered_only = yes
 
+option = { 
+	name = kxxfrance.85.a
+
+}	
+option = { 
+	name = kxxfrance.85.b
+	set_politics = {
+		ruling_party = syndicalist
+		elections_allowed = no
+	}
+	add_tot_to_coalition = yes
+	add_radsoc_to_coalition = yes
+	add_socdem_to_coalition = yes
+	add_soclib_to_coalition = yes
+	add_marlib_to_coalition = yes
+	add_soccon_to_coalition = yes
+	add_authdem_to_coalition = yes
+	add_pataut_to_coalition = yes
+	add_natpop_to_coalition = yes
+}	
+option = { 
+	name = kxxfrance.85.c
+	set_politics = {
+		ruling_party = radical_socialist
+		elections_allowed = no
+	}
+	add_tot_to_coalition = yes
+	add_synd_to_coalition = yes
+	add_socdem_to_coalition = yes
+	add_soclib_to_coalition = yes
+	add_marlib_to_coalition = yes
+	add_soccon_to_coalition = yes
+	add_authdem_to_coalition = yes
+	add_pataut_to_coalition = yes
+	add_natpop_to_coalition = yes
+}
+option = { 
+	name = kxxfrance.85.e
+	set_politics = {
+		ruling_party = social_democrat
+		elections_allowed = no
+	}
+	add_tot_to_coalition = yes
+	add_synd_to_coalition = yes
+	add_radsoc_to_coalition = yes
+	add_soclib_to_coalition = yes
+	add_marlib_to_coalition = yes
+	add_soccon_to_coalition = yes
+	add_authdem_to_coalition = yes
+	add_pataut_to_coalition = yes
+	add_natpop_to_coalition = yes
+}
+}
+country_event = {	
+	id = kxxfrance.86
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
+	title = kxxfrance.86.t
+	desc = kxxfrance.86.d
+	is_triggered_only = yes
+	immediate = {
+	hidden_effect = {
+		set_cosmetic_tag = FRA_dorgeres
+	
+		remove_ideas_with_trait = head_of_government
+		add_ideas = FRA_Henri_Dorgeres_hog_rso
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = FRA_Jacques_Le_Roy_Ladurie_for_rso
+		remove_ideas_with_trait = economy_minister
+		add_ideas = FRA_Pierre_Caziot_eco_rso
+		remove_ideas_with_trait = security_minister
+		add_ideas = FRA_Pierre_Poujade_sec_rso
+		
+	
+	set_party_name = {
+		ideology = totalist
+		long_name = "法兰西共产党—农业派/法兰西社会党—农业派/农民阵线/农业农民党"
+		name = "法共/社会党/农民阵线/农业农民党"
+	}
+	set_party_name = {
+		ideology = syndicalist
+		long_name = "农业总联合会"
+		name = "农业总联合会"
+	}
+	set_party_name = {
+		ideology = radical_socialist
+		long_name = "农民阵线/农业集团/农业农民党/农业总联合会"
+		name = "农民阵线/农业集团/农业农民党/农业总联合会"
+	}
+	set_party_name = {
+		ideology = social_democrat
+		long_name = "全国农业工会联合会"
+		name = "全农工联"
+	}
+	set_party_name = {
+		ideology = social_liberal
+		long_name = "全国纳税人联合会"
+		name = "全国纳税人联合会"
+	}
+	set_party_name = {
+		ideology = market_liberal
+		long_name = "全国纳税人联合会"
+		name = "全国纳税人联合会"
+	}
+	set_party_name = {
+		ideology = social_conservative
+		long_name = "法国基督徒联盟"
+		name = "法国基督徒联盟"
+	}
+	set_party_name = {
+		ideology = authoritarian_democrat
+		long_name = "小商贩与手工业者保卫联盟"
+		name = "小商贩与手工业者保卫联盟"
+	}
+	set_party_name = {
+		ideology = paternal_autocrat
+		long_name = "小商贩与手工业者保卫联盟"
+		name = "小商贩与手工业者保卫联盟"
+	}
+	set_party_name = {
+		ideology = national_populist
+		long_name = "小银碟骑士团"
+		name = "小银碟骑士团"
+	}
+	}
+	
+}
+option = { 
+	name = kxxfrance.86.a
+	create_country_leader = {
+		name = "伯纳德·鲍米耶"
+		picture = "gfx/leaders/PDL/Portrait_CHP_Bernard_Paumier.png"
+		expire = "1.1.1"
+		ideology = broad_communism_subtype
+		traits = {  }
+	}
+	set_politics = {
+		ruling_party = totalist
+		elections_allowed = no
+	}
+	complete_national_focus = FRA_pcf
+}	
+option = { 
+	name = kxxfrance.86.b
+	country_event = kxxfrance.87
+	
+}	
+option = { 
+	name = kxxfrance.86.c
+	create_country_leader = {
+		name = "爱德华·巴特"
+		picture = "gfx/leaders/FRA/Portrait_FRA_Edouard_Barthe.png"
+		expire = "1.1.1"
+		ideology = neo_socialism_subtype
+		traits = {  }
+	}
+	set_politics = {
+		ruling_party = totalist
+		elections_allowed = no
+	}
+	complete_national_focus = FRA_psdf
+}
+option = { 
+	name = kxxfrance.86.e
+	country_event = kxxfrance.88
+}
+option = { 
+	name = kxxfrance.86.f
+	country_event = kxxfrance.89
+}
+option = { 
+	name = kxxfrance.86.g
+	create_country_leader = {
+		name = "保罗·安提尔"
+		picture = "gfx/leaders/PDL/Portrait_PDL_Paul_Antier.png"
+		expire = "1.1.1"
+		ideology = socdem_agrarianism_subtype
+		traits = {  }
+	}
+	set_politics = {
+		ruling_party = social_democrat
+		elections_allowed = no
+	}
+	complete_national_focus = FRA_fnsea
+}
+option = { 
+	name = kxxfrance.86.h
+	create_country_leader = {
+		name = "爱尔威·布德斯·德·盖布里昂"
+		picture = "gfx/leaders/FRA/Portrait_FRA_Herve_Budes_de_Guebriant.png"
+		expire = "1.1.1"
+		ideology = tot_revolution_nationale_subtype
+		traits = {  }
+	}
+	set_politics = {
+		ruling_party = totalist
+		elections_allowed = no
+	}
+	complete_national_focus = FRA_corporation_paysan
+}
+}
+country_event = {	
+	id = kxxfrance.87
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
+	title = kxxfrance.87.t
+	desc = kxxfrance.87.d
+	is_triggered_only = yes
+
+option = { 
+	name = kxxfrance.87.a
+	create_country_leader = {
+		name = "亨利·阿尔伯特·卡农热"
+		picture = "gfx/leaders/PDL/Portrait_DOB_Henri_Albert_Canonge.png"
+		expire = "1.1.1"
+		ideology = agrarian_syndicalism_subtype
+		traits = {  }
+	}
+	set_politics = {
+		ruling_party = syndicalist
+		elections_allowed = no
+	}
+	complete_national_focus = FRA_cga_victory
+}	
+option = { 
+	name = kxxfrance.87.b
+	create_country_leader = {
+		name = "弗朗索瓦·唐吉-普利金特"
+		picture = "gfx/leaders/FRA/Portrait_FRA_Francois_Tanguy_Prigent.png"
+		expire = "1.1.1"
+		ideology = agrarian_socialism_subtype
+		traits = {  }
+	}
+	set_politics = {
+		ruling_party = radical_socialist
+		elections_allowed = no
+	}
+	complete_national_focus = FRA_cga_victory
+}	
+
+}
+country_event = {	
+	id = kxxfrance.88
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
+	title = kxxfrance.88.t
+	desc = kxxfrance.88.d
+	is_triggered_only = yes
+
+option = { 
+	name = kxxfrance.88.a #yay dorgeres
+	 
+	create_country_leader = {
+		name = "亨利·多尔热"
+		picture = "gfx/leaders/FRP/Portrait_France_Henri_Dorgeres.png"
+		expire = "1.1.1"
+		traits = { protector_of_farmers }
+		ideology = tot_agrarian_socialism_subtype	
+	}
+
+	set_politics = {
+		ruling_party = totalist
+		elections_allowed = no
+	}
+	complete_national_focus = FRA_peasant_front
+
+}	
+option = { 
+	name = kxxfrance.88.b
+	create_country_leader = {
+		name = "雅克·罗伊-拉杜里"
+		picture = "gfx/leaders/FRP/Portrait_France_Jacques_Roy_Ladurie.png"
+		expire = "1.1.1"
+		ideology = fascism_subtype
+		traits = {  }
+	}
+	set_politics = {
+		ruling_party = radical_socialist
+		elections_allowed = no
+	}
+	complete_national_focus = FRA_peasant_front
+}	
+
+}
+country_event = {	
+	id = kxxfrance.89
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
+	title = kxxfrance.89.t
+	desc = kxxfrance.89.d
+	is_triggered_only = yes
+
+option = { 
+	name = kxxfrance.89.a #yay dorgeres
+	 
+	create_country_leader = {
+		name = "路易斯·吉隆"
+		picture = "gfx/leaders/PDL/Portrait_PRO_Louis_Guillon.png"
+		expire = "1.1.1"
+		ideology = radsoc_paternal_socialism_subtype
+		traits = {  }
+	}
+
+	set_politics = {
+		ruling_party = radical_socialist
+		elections_allowed = no
+	}
+	complete_national_focus = FRA_paysan_party
+
+}	
+option = { 
+	name = kxxfrance.89.b
+	create_country_leader = {
+		name = "弗朗索瓦·德·克莱蒙-托内尔"
+		picture = "gfx/leaders/FRA/Portrait_FRA_Francois_de_Clermont-Tonnerre.png"
+		expire = "1.1.1"
+		ideology = tot_left_conservatism_subtype
+		traits = {  }
+	}
+	set_politics = {
+		ruling_party = totalist
+		elections_allowed = no
+	}
+	complete_national_focus = FRA_paysan_party
+}	
+
+}
 country_event = { 
 	id = kxxfrance.100
 	title = kxxfrance.100.t

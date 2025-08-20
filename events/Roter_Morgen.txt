@@ -527,7 +527,7 @@ country_event = { #
 	hidden = yes
 	immediate = {
 		create_field_marshal = {
-			name = "约瑟夫·戈培尔 "
+			name = "保罗·约瑟夫·戈培尔"
 			portrait_path = "gfx/leaders/GRU/Portrait_Germany_Josef_Goebbels_14.png"
 			traits = { politically_connected RR_OFFICER Nazbol_rev_leaders }
 			skill = 4
@@ -3223,7 +3223,7 @@ country_event = { # portraitswapper
 	hidden = yes
 	immediate = {
 					create_country_leader = {
-							name = "约瑟夫·戈培尔"
+							name = "保罗·约瑟夫·戈培尔"
 							desc = "GRU_GOEBBELS_DESC"
 							picture = "gfx/leaders/GRU/Portrait_Germany_Josef_Goebbels_14.png"
 							expire = "1965.1.1"
@@ -3233,13 +3233,13 @@ country_event = { # portraitswapper
 							}
 					}
 					if = {	
-						limit = { has_country_leader = { name = "约瑟夫·戈培尔" ruling_only = yes } }
+						limit = { has_country_leader = { name = "保罗·约瑟夫·戈培尔" ruling_only = yes } }
 						set_country_leader_portrait = {
 							portrait = "gfx/leaders/GRU/Portrait_Germany_Josef_Goebbels_14.png"
 						}
 					}
 					create_country_leader = {
-							name = "约瑟夫·戈培尔"
+							name = "保罗·约瑟夫·戈培尔"
 							desc = "GRU_GOEBBELS_DESC"
 							picture = "gfx/leaders/GRU/Portrait_Germany_Josef_Goebbels_14.png"
 							expire = "1965.1.1"
@@ -5367,7 +5367,7 @@ country_event = { # Ideology Switch
 		name = rotermorgenmisc.1004.a
 		hidden_effect = {
 			create_country_leader = {
-				name = "约瑟夫·戈培尔"
+				name = "保罗·约瑟夫·戈培尔"
 				desc = "GRU_GOEBBELS_DESC"
 				picture = "gfx/leaders/GRU/Portrait_Germany_Josef_Goebbels_14.png"
 				expire = "1965.1.1"

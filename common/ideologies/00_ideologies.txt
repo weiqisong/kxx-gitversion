@@ -133,6 +133,7 @@ ideologies = {
 			zinovievism_subtype = {can_be_randomly_selected = no} #季诺维也夫主义
 			council_communism_subtype = {can_be_randomly_selected = no} #委员会共产主义
 			peasant_charterism_subtype = {can_be_randomly_selected = no color = { 39 97 47 } } #农民宪章主义
+			waisi_movement_subtype = {can_be_randomly_selected = no} #瓦伊西运动
 
 
 			ingsoc_subtype = { can_be_randomly_selected = no }  #英社（欧罗巴之国）
@@ -209,6 +210,7 @@ ideologies = {
 			esoteric_marxism_subtype = { can_be_randomly_selected = no color = { 91 9 9 } }  #深奥马克思主义	
 			right_totalism_subtype = { can_be_randomly_selected = no }  #亲右翼极权主义	
 			tot_arab_baathism_subtype = {can_be_randomly_selected = no} #阿拉伯复兴主义
+			tot_antoun_saadeh_thought_subtype = {can_be_randomly_selected = no} #革命·安东萨阿德思想
 
 			#点
 			tot_baishi_subtype = {can_be_randomly_selected = no} #百事思想
@@ -531,6 +533,7 @@ ideologies = {
 			left_conservatism_subtype = { can_be_randomly_selected = no } #左翼保守主义
 			radsoc_bureaucratic_socialism_subtype = { can_be_randomly_selected = no } #官僚社会主义
 			radsoc_arab_baathism_subtype = {can_be_randomly_selected = no} #阿拉伯复兴主义
+			radsoc_Grand_Thai_nationalism_subtype = {can_be_randomly_selected = no} #泰式社会主义
 
 
 			#点
@@ -672,6 +675,7 @@ ideologies = {
 			socdem_paneuropeanism_subtype = {can_be_randomly_selected = no} #广义泛欧主义
 			batllismo_subtype = {can_be_randomly_selected = no} #巴特列主义
 			socdem_venizelism_subtype = {can_be_randomly_selected = no} #韦尼泽洛斯主义
+			nordic_model_subtype = {can_be_randomly_selected = no} #北欧模式
 			
 			socdem_mao_zedong_thought_subtype = {can_be_randomly_selected = no} #温和农业主义
 			socdem_sangkum_subtype = { can_be_randomly_selected = no } #桑功主义
@@ -699,6 +703,9 @@ ideologies = {
 			socdem_canaanist_subtype = {can_be_randomly_selected = no} #迦南主义
 			arab_baathism_subtype = {can_be_randomly_selected = no} #阿拉伯复兴主义
 			socdem_left_conservatism_subtype = { can_be_randomly_selected = no } #左翼保守主义
+			socdem_vietnamese_republicanism_subtype = { can_be_randomly_selected = no } #越南共和主义
+			socdem_Grand_Thai_nationalism_subtype = { can_be_randomly_selected = no } #泰式社会主义
+			alawism_subtype = {can_be_randomly_selected = no} #阿拉维主义
 
 			#点
 			socdem_islamic_communism_subtype = {can_be_randomly_selected = no} #伊斯兰共产主义
@@ -753,8 +760,8 @@ ideologies = {
 
 	social_liberal = {
 		types = {
-		social_liberal_subtype = {} #社会自由主义(无子意识)
-		centrist_subtype = {can_be_randomly_selected = no} #中间路线
+			social_liberal_subtype = {} #社会自由主义(无子意识)
+			centrist_subtype = {can_be_randomly_selected = no} #中间路线
 			soclib_agrarianism_subtype = {can_be_randomly_selected = no} #农业主义
 			soclib_true_whigs_subtype = {can_be_randomly_selected = no} #真辉格主义
 			soclib_warlordism_subtype = {can_be_randomly_selected = no} #自由主义军阀
@@ -831,13 +838,14 @@ ideologies = {
 			soclib_national_mysticism_subtype = { can_be_randomly_selected = no } #民族神秘主义(云的补充)
 			hellenism_subtype = { can_be_randomly_selected = no } #希腊主义
 			soclib_canaanist_subtype = {can_be_randomly_selected = no} #迦南主义
+			druzeism_subtype = {can_be_randomly_selected = no} #德鲁兹主义
 
 			liberal_conservatism_vertinism_subtype = { can_be_randomly_selected = no } #基金会改良主义 （风雨欲来）
 
 			#点
 			soclib_new_legalism_subtype = {can_be_randomly_selected = no} #新法家
 			soclib_lianshengism_subtype = {can_be_randomly_selected = no} #联省主义
-			lu_xun_thought_subtype = {can_be_randomly_selected = no} #鲁迅思想
+			soclib_lu_xun_thought_subtype = {can_be_randomly_selected = no} #鲁迅思想
 
 			#制作组彩蛋
 
@@ -943,6 +951,7 @@ ideologies = {
 			marlib_clientelism_subtype = {can_be_randomly_selected = no} #庇护主义
 
 			marlib_zionism = {can_be_randomly_selected = no} #自由锡安主义
+			marlib_Grand_Thai_nationalism_subtype = {can_be_randomly_selected = no} #泛泰主义
 			marlib_national_mysticism_subtype = { can_be_randomly_selected = no } #民族神秘主义（云的补充）
 
 			#点
@@ -1055,6 +1064,7 @@ ideologies = {
 			herrerismo_subtype = {can_be_randomly_selected = no} #埃雷拉主义
 			conservative_feminism_subtype = {can_be_randomly_selected = no} #保守女权主义
 			soccon_chosid_nyi_subtype = {can_be_randomly_selected = no} #政教双运
+			soccon_ulmanism_subtype = {can_be_randomly_selected = no} #乌尔马尼斯主义
 
 			soccon_datong_shu_subtype = { can_be_randomly_selected = no } #大同术
 			soccon_new_legalism_subtype = {can_be_randomly_selected = no} #新法家
@@ -1113,7 +1123,6 @@ ideologies = {
 	authoritarian_democrat = {
 		types = {
 			authoritarian_democrat_subtype = {} #威权民主主义（无子意识）
-			
 			autdem_christian_democracy_subtype = {can_be_randomly_selected = no} #威权基督教民主
 			longism_subtype = {can_be_randomly_selected = no} #朗主义
 			authdem_junta_subtype = {can_be_randomly_selected = no} #军政府
@@ -1187,6 +1196,8 @@ ideologies = {
 			peronism_subtype = {can_be_randomly_selected = no} #庇隆主义
 			authdem_conservative_feminism_subtype = {can_be_randomly_selected = no} #保守女权主义
 			authdem_chosid_nyi_subtype = {can_be_randomly_selected = no} #政教双运
+			ulmanism_subtype = {can_be_randomly_selected = no} #乌尔马尼斯主义
+			marhaenism_subtype = {can_be_randomly_selected = no} #马哈恩主义
 			
 			pragmatic_syndicalism_subtype = {can_be_randomly_selected = no } #务实工团主义
 			authdem_anarchism_subtype = {can_be_randomly_selected = no} #无政府个人主义
@@ -1208,6 +1219,8 @@ ideologies = {
 			authdem_legionarism_subtype = { can_be_randomly_selected = no } #军团主义
 			authdem_social_confucianism_subtype = { can_be_randomly_selected = no } #新儒学
 			controlled_democracy_subtype = { can_be_randomly_selected = no } #指导式民主
+			authdem_Grand_Thai_nationalism_subtype = {can_be_randomly_selected = no} #泛泰主义
+			thaw_antoun_saadeh_thought_subtype = {can_be_randomly_selected = no} #解冻安东萨阿德思想
 			
 			#点
 			new_legalism_subtype = {can_be_randomly_selected = no} #新法家
@@ -1355,6 +1368,8 @@ ideologies = {
 			chosid_nyi_subtype = {can_be_randomly_selected = no} #政教双运
 			metaxism_subtype = {can_be_randomly_selected = no} #梅塔克萨斯主义
 			yan_xishan_thought_subtype = {can_be_randomly_selected = no} #阎锡山思想
+			vapsism_subtype = {can_be_randomly_selected = no} #瓦普斯主义
+			universism_subtype = {can_be_randomly_selected = no} #普世教
 			
 			socialism_with_chinese_characteristics = {can_be_randomly_selected = no} #中国特色社会主义
 			pataut_popular_patriotism_subtype = { can_be_randomly_selected = no } #大众爱国主义
@@ -1378,6 +1393,7 @@ ideologies = {
 			pataut_ethnic_hellenism_subtype = { can_be_randomly_selected = no } #民族希腊主义
 			pataut_social_confucianism_subtype = { can_be_randomly_selected = no } #新儒学
 			pataut_arab_baathism_subtype = {can_be_randomly_selected = no} #阿拉伯复兴主义
+			pataut_Grand_Thai_nationalism_subtype = {can_be_randomly_selected = no} #泛泰主义
 			
 			#点
 			absolute_monarchy_CN_subtype = {can_be_randomly_selected = no color = { 255 216 0 } } #绝对君主制
@@ -1541,6 +1557,15 @@ ideologies = {
 			natpop_tribal_councilism_subtype = {can_be_randomly_selected = no} #部落共和议会主义
 			shintaisei_subtype = {can_be_randomly_selected = no} #新体制
 			consistent_way_subtype = {can_be_randomly_selected = no} #一贯道
+			taarausk_subtype = {can_be_randomly_selected = no} #塔拉教
+			neo_rexurdimento_subtype = {can_be_randomly_selected = no} #新复兴运动
+			natpop_universism_subtype = {can_be_randomly_selected = no} #普世教
+			pan_iranism_subtype = {can_be_randomly_selected = no} #泛伊朗主义
+			phalangism_subtype = {can_be_randomly_selected = no} #长枪党主义
+			syrian_social_nationalism_subtype = {can_be_randomly_selected = no} #叙利亚社会民族主义
+			cultured_magic_subtype = {can_be_randomly_selected = no} #文教魔法
+			evolian_thought_subtype = {can_be_randomly_selected = no} #埃佛拉思想
+			kryvianism_subtype = {can_be_randomly_selected = no} #克里维亚主义
 
 			natpop_juche_subtype = {can_be_randomly_selected = no} #主体思想
 			natpop_survival_nationalism = {can_be_randomly_selected = no } #生存民族主义
@@ -1619,6 +1644,8 @@ ideologies = {
 			social_national_populism_subtype = { can_be_randomly_selected = no }  #亲左翼国家民粹主义
 			natpop_esoteric_marxism_subtype = { can_be_randomly_selected = no color = { 91 9 76 } }  #深奥马克思主义
 			natpop_canaanist_subtype = {can_be_randomly_selected = no} #迦南主义
+			natpop_viet_natsoc_subtype = {can_be_randomly_selected = no} #越南国社主义
+			revision_antoun_saadeh_thought_subtype = {can_be_randomly_selected = no} #修正安东萨阿德主义
 
 			
 

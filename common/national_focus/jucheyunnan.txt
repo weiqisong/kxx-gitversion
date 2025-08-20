@@ -371,8 +371,14 @@ focus_tree = {
 		}
 		add_command_power = 50
 		add_manpower = 10000
-		add_state_core = 527
-		add_state_core = 525
+		every_state = {
+			limit = {
+				is_core_of = KOR
+			}
+			YUN = {
+				add_state_core = PREV
+			}
+		}
 		if = {
 			limit = { KOR = {
 				has_country_leader = {

@@ -14635,7 +14635,7 @@ focus = {
 		cost = 3
 		available_if_capitulated = yes
 		available = {
-			is_subject = no
+			has_government = totalist
 		}
 		ai_will_do = {
 			factor = 10
@@ -14664,7 +14664,7 @@ focus = {
 		cost = 3
 		available_if_capitulated = yes
 		available = {
-			is_subject = no
+			has_government = paternal_autocrat
 		}
 		ai_will_do = {
 			factor = 10

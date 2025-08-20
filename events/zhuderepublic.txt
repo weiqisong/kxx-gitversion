@@ -19,13 +19,27 @@ country_event = {
 
 		name = "朱德护佑云南"
 		load_focus_tree = zhudetree
-		set_country_leader_ideology = red_junta_subtype
-		country_event = {
-		id = juche_china.1
-		days = 10
+		set_country_leader_ideology = socdem_junta_subtype
+		set_country_flag = soc_dems_are_socialists
+		hidden_effect = {
+			country_event = {
+				id = juche_china.1
+				days = 10
+			}
 		}
-
-
+		set_party_name = {
+			ideology = radical_socialist
+			long_name = YUN_social_democrat_party_long
+			name = YUN_social_democrat_party
+		}
+		set_party_name = {
+			ideology = syndicalist
+			long_name = YUN_social_democrat_party_long
+			name = YUN_social_democrat_party
+		}
+		add_radsoc_to_coalition = yes
+		add_synd_to_coalition = yes
+		
 		}
 		
 		
@@ -42,20 +56,14 @@ country_event = {
 		title = "云南选举"
 		desc = "选举结果出炉，领导人是....."
 		picture = "-"
-
 		fire_only_once = yes
-
 		is_triggered_only = yes
-
-
-		
 		option = {
 
 		name = "朱德胜利"
 		
 		complete_national_focus = ZHU_zhudewinsthenation
-		set_country_leader_ideology = moderate_socialist_subtype
-
+		set_country_leader_ideology = socdem_democratic_socialism_subtype
 
 		}
 		
@@ -64,18 +72,15 @@ country_event = {
 		name = "任白戈胜利"
 		complete_national_focus = ZHU_baigesproletarianvictory
 		set_politics = { ruling_party = radical_socialist }
-		
-		set_country_leader_ideology = lu_xun_thought_subtype
-		set_country_leader_name = {
-				ideology = radical_socialist
-				name = "任白戈"
-			}
-		set_country_leader_portrait = {
-			ideology = radical_socialist
-			portrait = "gfx/leaders/YUN/Portrait_YUN_Ren_baige.png"
+		create_country_leader = {
+			name = "任白戈"
+			picture = "gfx/leaders/YUN/Portrait_YUN_Ren_baige.png"
+			expire = "1.1.1"
+			ideology = lu_xun_thought_subtype
 		}
-
-
+		add_socdem_to_coalition = yes
+		add_synd_to_coalition = yes
+		add_soclib_to_coalition = yes
 		}
 		
 		
@@ -84,17 +89,15 @@ country_event = {
 		name = "康克清胜利"
 		complete_national_focus = ZHU_syndicalist_victory
 		set_politics = { ruling_party = syndicalist }
-		
-		set_country_leader_ideology = agrarian_socialism_subtype
-		set_country_leader_name = {
-				ideology = syndicalist
-				name = "康克清"
-			}
-		set_country_leader_portrait = {
-			ideology = syndicalist
-			portrait = "gfx/leaders/YUN/Portrait_YUN_Kang_Keqing.png"
+		create_country_leader = {
+			name = "康克清"
+			picture = "gfx/leaders/YUN/Portrait_YUN_Kang_Keqing.png"
+			expire = "1.1.1"
+			ideology = agrarian_syndicalism_subtype
 		}
-
+		add_socdem_to_coalition = yes
+		add_radsoc_to_coalition = yes
+		add_soclib_to_coalition = yes
 
 		}
 		

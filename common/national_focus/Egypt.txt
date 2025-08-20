@@ -1787,13 +1787,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EGY_absolute_monarchy"
 			country_event = egy.20
-			hidden_effect = {
-				country_event = {	
-					id = revegy.1
-					days = 6
-				}
-			}
-			
 		}
 	}
 
@@ -2969,7 +2962,7 @@ focus_tree = {
 		icon = GFX_EGY_Third_Arab_Congress
 
 		available = {
-			date > 1938.01.01
+			date > 1937.06.01
 			is_subject = no
 		}
 		
@@ -6438,7 +6431,7 @@ focus_tree = {
 		y=8
 		cost=0
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available = {
 			has_country_flag = Egyptian_Revolution_Flag
@@ -6459,7 +6452,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6477,7 +6470,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6498,7 +6491,7 @@ focus_tree = {
 		cost=2
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6516,7 +6509,7 @@ focus_tree = {
 		cost=0
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available = {
 			has_country_flag = FE_NOM
@@ -6537,7 +6530,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6555,7 +6548,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6576,7 +6569,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6594,7 +6587,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6617,7 +6610,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6639,7 +6632,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6657,7 +6650,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6678,7 +6671,7 @@ focus_tree = {
 		cost=0
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available = {
 			has_country_flag = FE_NOM
@@ -6699,7 +6692,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6717,7 +6710,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6738,7 +6731,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6756,7 +6749,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6779,7 +6772,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6800,7 +6793,7 @@ focus_tree = {
 		cost=0
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available = {
 			has_country_flag = FE_NOM
@@ -6821,7 +6814,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6839,7 +6832,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6860,7 +6853,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6878,7 +6871,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6901,7 +6894,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6922,7 +6915,7 @@ focus_tree = {
 		cost=0
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available = {
 			has_country_flag = FE_NOM
@@ -6943,7 +6936,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6961,7 +6954,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -6982,7 +6975,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7004,7 +6997,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7022,7 +7015,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7043,7 +7036,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7061,7 +7054,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7082,7 +7075,7 @@ focus_tree = {
 		cost=0
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available = {
 			has_country_flag = FE_NOM
@@ -7103,7 +7096,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7121,7 +7114,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7143,7 +7136,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7165,7 +7158,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7186,7 +7179,7 @@ focus_tree = {
 		cost=0
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available = {
 			has_country_flag = FE_NOM
@@ -7207,7 +7200,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7229,7 +7222,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7250,7 +7243,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7268,7 +7261,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7293,7 +7286,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7314,7 +7307,7 @@ focus_tree = {
 		cost=0
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available = {
 			has_country_flag = FE_NOM
@@ -7335,7 +7328,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7353,7 +7346,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7374,7 +7367,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7392,7 +7385,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7415,7 +7408,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7440,7 +7433,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7459,7 +7452,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7478,7 +7471,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7499,7 +7492,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -7517,7 +7510,7 @@ focus_tree = {
 		cost=5
 		relative_position_id = EGY_Egyptian_Revolution
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
