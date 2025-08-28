@@ -7018,7 +7018,7 @@ focus = {
 	name = "拉夫连季·贝利亚"
 	picture = "gfx/leaders/GEO/Portrait_GEO_Lavrentiy_Beria_supreme.png"
 	expire = "1965.1.1"
-	ideology = authcom_subtype
+	ideology = georgian_socialism_subtype
 	traits = {}
     }
 	swap_ideas = {
