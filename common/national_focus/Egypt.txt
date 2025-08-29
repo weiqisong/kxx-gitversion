@@ -7837,7 +7837,7 @@ focus_tree = {
 				create_country_leader = {
 					name = "贾迈勒·阿卜杜勒·纳赛尔"
 					desc = "POLITICS_NASSER_DESC"
-					picture = "gfx/leaders/EGY/Portrait_EGY_Gamel_Abdel_Nasser.png"
+					picture = "gfx/leaders/EGY/Portrait_Egypt_Gamal_Abdel_Nasser.png"
 					expire = "1965.1.1"
 					ideology = radsoc_nasserism
 					traits = {}
@@ -9473,3 +9473,4 @@ focus_tree = {
 		}
 	}
 }
+
