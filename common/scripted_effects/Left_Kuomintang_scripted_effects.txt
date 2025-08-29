@@ -1283,7 +1283,7 @@ get_YUN_unit_leader = {
 	}
 	create_corps_commander = {
 		name = "陈诚"
-		portrait_path = "gfx/leaders/Portrait_CHI_Chen_cheng.png"
+		portrait_path = "gfx/leaders/CHI/Portrait_CHI_Chen_cheng.png"
 		traits = {
 			CHI_left_kmt_officer
 			brilliant_strategist

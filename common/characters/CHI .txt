@@ -226,7 +226,7 @@ characters = {
 		name = CHI_Mao_runzhi
 		portraits = {
 			army = {
-				large = "gfx/leaders/Portrait_CHI_Mao_mao.png"
+				large = "gfx/leaders/CHI/Portrait_CHI_Mao_mao.png"
 				small = "gfx/texticons/txt_icon_KMT_Mao_zedong.png"
 			}
 		}

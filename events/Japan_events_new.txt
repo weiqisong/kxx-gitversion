@@ -3123,7 +3123,7 @@ country_event = { #leftist Election
 		complete_national_focus = JAPLEFTIRAA_tokohai_succession
 		create_country_leader = {
 			name = "中野正刚"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Seigo_Nakano_2.png"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Nakano_Seigo.png"
 			expire = "1965.1.1"
 			ideology = natsynd_subtype
 		}
