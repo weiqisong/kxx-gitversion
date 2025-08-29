@@ -361,7 +361,7 @@ if = {
 
 create_country_leader = {
 	name = "中野正刚"
-	picture = "gfx/leaders/JAP/Portrait_JAP_Seigo_Nakano_2.png"
+	picture = "gfx/leaders/JAP/Portrait_JAP_Nakano_Seigo.png"
 	expire = "1965.1.1"
 	ideology = natsynd_subtype
 }
@@ -415,7 +415,7 @@ create_country_leader = {
 }
 create_country_leader = {
 	name = "中野正刚"
-	picture = "gfx/leaders/JAP/Portrait_JAP_Seigo_Nakano_2.png"
+	picture = "gfx/leaders/JAP/Portrait_JAP_Nakano_Seigo.png"
 	expire = "1965.1.1"
 	ideology = right_syndicalism_subtype
 }
