@@ -41,9 +41,9 @@ ideas = {
 			modifier = {
 				stability_weekly = -0.1
 				political_power_cost = 0.15
-				totalist_drift = 0.1
-				syndicalist_drift = 0.1
-				radical_socialist_drift = 0.1
+				totalist_drift = 0.01
+				syndicalist_drift = 0.01
+				radical_socialist_drift = 0.01
 				army_org_factor = -0.1
 			}
 		}

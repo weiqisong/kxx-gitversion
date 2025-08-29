@@ -20,11 +20,8 @@ focus_tree = {
         always = no
       }
     }
-    mutually_exclusive = {
-      focus = SER_The_Vojvoda_Stands_Tall
-      focus = SER_The_Republican_Proclamation
-    }
-    x = 1
+  
+    x = -15
     y = 0
     cost = 0
     search_filters = {
@@ -185,10 +182,10 @@ focus_tree = {
       focus = SER_Begin_Land_Reform
     }
     prerequisite = {
-      focus = SER_Monument_To_The_Unknown_Soldier
+      focus = SER_Encourage_Yugoslavism
     }
     relative_position_id = SER_Return_Of_The_Crown_Prince
-    x = -4
+    x = 0
     y = 3
      cost = 3
     ai_will_do = {
@@ -397,18 +394,12 @@ focus_tree = {
 		 cost = 3
 
 		relative_position_id = SER_November_Sixth_Dictatorship
-		x = -4
+		x = 0
 		y = 5
 
-		prerequisite = {
-			focus = SER_royal_tours
-		}
 		 available = {
       NOT = {
-        
         has_government = national_populist
-        
-        
       }
     }
 		
@@ -454,8 +445,8 @@ focus_tree = {
 		 cost = 3
 
 		relative_position_id = SER_March_Conspiracy
-		x = -1
-		y = 3
+		x = -4
+		y = 2
 
 		prerequisite = {
 			focus = SER_democratic_party_petar
@@ -507,6 +498,9 @@ focus_tree = {
 
 		prerequisite = {
 			focus = SER_untangle_corporatism
+		}
+    prerequisite = {
+			focus = SER_integrate_radicals
 		}
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -852,12 +846,17 @@ focus_tree = {
 		 cost = 3
 
 		relative_position_id = SER_November_Sixth_Dictatorship
-		x = -3
+		x = 0
 		y = 4
 
 		prerequisite = {
 			focus = SER_militaristic_corporatism
+      focus = SER_god_king_fatherland
+      focus = SER_domacinstvo
+      focus = SER_white_eagles
+      focus = SER_royal_tours
 		}
+   
 		available = {
 			
 		}
@@ -877,10 +876,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SER_centralize_regent_power"
 			add_to_variable = { SER_zivkovic_foci = 1 }
 			add_stability = 0.1
-			add_popularity = {
-				ideology = paternal_autocrat
-				popularity = 0.2
-			}
+			increase_ruling_party_popularity_by_20 = yes
 		}
 	}
 
@@ -1041,8 +1037,8 @@ focus_tree = {
 		 cost = 3
 
 		relative_position_id = SER_November_Sixth_Dictatorship
-		x = 0
-		y = 4
+		x = 4
+		y = 3
 
 		prerequisite = {
 			focus = SER_zadruga_society
@@ -1079,14 +1075,13 @@ focus_tree = {
     id = SER_Maintain_Military_Dominance
     icon = GFX_goal_MNT_enemies_all_sides
     prerequisite = {
-      focus = SER_Return_Of_The_Crown_Prince
       focus = SER_The_Vojvoda_Stands_Tall
     }
     available = {
       NOT = { has_government= national_populist }
     }
-    relative_position_id = SER_Return_Of_The_Crown_Prince
-    x = 2
+    relative_position_id = SER_The_Vojvoda_Stands_Tall
+    x = -1
     y = 1
      cost = 3
     ai_will_do = {
@@ -1118,9 +1113,9 @@ focus_tree = {
     prerequisite = {
       focus = SER_Maintain_Military_Dominance
     }
-    relative_position_id = SER_Return_Of_The_Crown_Prince
-    x = 2
-    y = 3
+    relative_position_id = SER_The_Vojvoda_Stands_Tall
+    x = -1
+    y = 2
      cost = 3
     ai_will_do = {
       factor = 15
@@ -1155,12 +1150,7 @@ focus_tree = {
         always = no
       }
     }
-    mutually_exclusive = {
-      focus = SER_Return_Of_The_Crown_Prince
-      focus = SER_The_Republican_Proclamation
-    }
-    relative_position_id = SER_Return_Of_The_Crown_Prince
-    x = 4
+    x = -8
     y = 0
     cost = 0
     search_filters = {
@@ -1183,7 +1173,7 @@ focus_tree = {
       focus = SER_The_Vojvoda_Stands_Tall
     }
     relative_position_id = SER_The_Vojvoda_Stands_Tall
-    x = 0
+    x = 1
     y = 1
      cost = 3
     ai_will_do = {
@@ -1213,7 +1203,7 @@ focus_tree = {
       focus = SER_Organise_The_Radical_Union
     }
     relative_position_id = SER_The_Vojvoda_Stands_Tall
-    x = -1
+    x = 1
     y = 2
      cost = 3
     ai_will_do = {
@@ -1238,8 +1228,8 @@ focus_tree = {
       focus = SER_Mobilise_The_Greenshirts
     }
     relative_position_id = SER_The_Vojvoda_Stands_Tall
-    x = -2
-    y = 4
+    x = 0
+    y = 3
      cost = 3
     ai_will_do = {
       factor = 8
@@ -1262,13 +1252,13 @@ focus_tree = {
 		icon = GFX_goal_SER_NRS
 		 cost = 3
 
-		x = 1
+		x = 3
 		y = 1
     relative_position_id = SER_One_Vojvoda_One_Nation_One_State
 		
     prerequisite = {
 			focus = SER_One_Vojvoda_One_Nation_One_State
-      focus = SER_Implement_The_Pasic_Manifesto
+      focus = SER_A_Nascent_Balkan_Democracy
 		}
 		bypass = {
 			has_country_flag = SER_has_completed_1936_elc
@@ -1287,7 +1277,7 @@ focus_tree = {
 		 cost = 3
 
 		relative_position_id = SER_National_Vanguard
-		x = 0
+		x = -2
 		y = 1
 
 		prerequisite = {
@@ -1361,12 +1351,11 @@ focus_tree = {
 		 cost = 3
 
 		relative_position_id = SER_National_Vanguard
-		x = 1
-		y = 2
+		x = 0
+		y = 1
 
 		prerequisite = {
-			focus = SER_direct_the_economy
-			focus = SER_attachment_to_the_land
+			focus = SER_National_Vanguard
 		}
 		available = {
 			NOT = {
@@ -1459,7 +1448,7 @@ focus_tree = {
 		 cost = 3
 
 		relative_position_id = SER_National_Vanguard
-		x = -1
+		x = 2
 		y = 4
 
 		prerequisite = {
@@ -1813,7 +1802,7 @@ focus_tree = {
 		 cost = 3
 
 		relative_position_id = SER_National_Vanguard
-		x = -4
+		x = -2
 		y = 4
 
 		prerequisite = {
@@ -2016,12 +2005,9 @@ focus_tree = {
         always = no
       }
     }
-    mutually_exclusive = {
-      focus = SER_Return_Of_The_Crown_Prince
-      focus = SER_The_Vojvoda_Stands_Tall
-    }
-    relative_position_id = SER_Return_Of_The_Crown_Prince
-    x = 6
+   
+   
+    x = -3
     y = 0
     cost = 0
     search_filters = {
@@ -2061,6 +2047,7 @@ focus_tree = {
       log = "[GetDateText]: [Root.GetName]: Focus SER_Draft_A_Constitution"
       add_stability = 0.1
       add_political_power = 75
+      add_ideas = SER_balkan_democracy_1
     }
   }
   focus = {
@@ -2070,7 +2057,7 @@ focus_tree = {
       focus = SER_Draft_A_Constitution
     }
     relative_position_id = SER_The_Republican_Proclamation
-    x = 1
+    x = 0
     y = 2
     cost = 3
     ai_will_do = {
@@ -2080,7 +2067,7 @@ focus_tree = {
       FOCUS_FILTER_POLITICAL
     }
     completion_reward = {
-      country_event = montenegro.1
+      #country_event = montenegro.1
       log = "[GetDateText]: [Root.GetName]: Focus SER_Free_The_Vojvodas_Prisoners"
       add_stability = 0.05
       add_popularity = {
@@ -2113,8 +2100,8 @@ focus_tree = {
       focus = SER_Draft_A_Constitution
     }
     relative_position_id = SER_The_Republican_Proclamation
-    x = -1
-    y = 2
+    x = 0
+    y = 3
      cost = 3
     ai_will_do = {
       factor = 8
@@ -2124,7 +2111,7 @@ focus_tree = {
     }
     completion_reward = {
       log = "[GetDateText]: [Root.GetName]: Focus SER_A_Nascent_Balkan_Democracy"
-      add_ideas = SER_balkan_democracy_1
+      
       country_event = serbia.21
     }
   }
@@ -2132,11 +2119,11 @@ focus_tree = {
     id = SER_Restore_Local_Governance
     icon = GFX_RUS_Lower_Local_Parliaments
     prerequisite = {
-      focus = SER_A_Nascent_Balkan_Democracy
+      focus = SER_Open_The_Serbian_Economy
     }
-    relative_position_id = SER_The_Republican_Proclamation
-    x = 1
-    y = 4
+   relative_position_id = SER_Moralistic_Democracy
+    x = -2
+    y = 3
      cost = 3
     ai_will_do = {
       factor = 10
@@ -2182,9 +2169,9 @@ focus_tree = {
 		icon = GFX_goal_ideology_radical_socialist
 		 cost = 3
 
-		x = 9
-		y = 1
-    relative_position_id = SER_Restore_Local_Governance
+		x = 16
+		y = 5
+    
 		
 		available = {
 			has_government = radical_socialist
@@ -3384,11 +3371,11 @@ focus_tree = {
 		icon = GFX_goal_ideology_social_liberal
 		 cost = 3
 
-		x = 0
+		x = 3
 		y = 1
-    relative_position_id = SER_Restore_Local_Governance
+    relative_position_id = SER_A_Nascent_Balkan_Democracy
     prerequisite = {
-			focus = SER_Open_The_Serbian_Economy
+			focus = SER_A_Nascent_Balkan_Democracy
 		}
 		available = {
 			
@@ -3409,8 +3396,8 @@ focus_tree = {
 		icon = GFX_goal_generic_civilian_oversight
 		 cost = 3
 
-		relative_position_id = SER_Moralistic_Democracy
-		x = 7
+		relative_position_id = SER_Victory_for_the_People
+		x = -2
 		y = 1
 
 		prerequisite = {
@@ -3459,9 +3446,9 @@ focus_tree = {
 		icon = GFX_goal_SER_Republican_Guard
 		 cost = 3
 
-		relative_position_id = SER_Moralistic_Democracy
-		x = 6
-		y = 2
+		relative_position_id = SER_smoke_filled_room
+		x = -1
+		y = 1
 
 		prerequisite = {
 			focus = SER_smoke_filled_room
@@ -3485,9 +3472,9 @@ focus_tree = {
 		icon = GFX_goal_officers
 		 cost = 3
 
-		relative_position_id = SER_Moralistic_Democracy
-		x = 8
-		y = 2
+		relative_position_id = SER_smoke_filled_room
+		x = 1
+		y = 1
 
 		prerequisite = {
 			focus = SER_smoke_filled_room
@@ -3511,9 +3498,9 @@ focus_tree = {
 		icon = GFX_goal_HOL_ban_paramilitary
 		 cost = 3
 
-		relative_position_id = SER_Moralistic_Democracy
-		x = 7
-		y = 3
+	relative_position_id = SER_smoke_filled_room
+		x = 0
+		y = 2
 
 		prerequisite = {
 			focus = SER_form_republican_guard
@@ -3836,18 +3823,19 @@ focus_tree = {
   focus = {
     id = SER_Implement_The_Pasic_Manifesto
     icon = GFX_goal_SER_Pasic_Cult
-    available = {
-      has_government = social_conservative
+    
+    prerequisite = {
+      focus = SER_attachment_to_the_land
     }
     prerequisite = {
-      focus = SER_A_Nascent_Balkan_Democracy
+      focus = SER_unite_with_agrarians
     }
-    mutually_exclusive = {
-      focus = SER_Open_The_Serbian_Economy
+    prerequisite = {
+      focus = SER_direct_the_economy
     }
-    relative_position_id = SER_The_Republican_Proclamation
-    x = -2
-    y = 3
+    relative_position_id = SER_National_Vanguard
+    x = 0
+    y = 2
      cost = 3   
     ai_will_do = {
       factor = 5
@@ -3878,17 +3866,15 @@ focus_tree = {
     id = SER_Open_The_Serbian_Economy
     icon = GFX_goal_COR_Establish_Progressive_Capitalist_Economics
     available = {
-      has_government = market_liberal
+     
     }
     prerequisite = {
-      focus = SER_A_Nascent_Balkan_Democracy
+      focus = SER_Moralistic_Democracy
     }
-    mutually_exclusive = {
-      focus = SER_Implement_The_Pasic_Manifesto
-    }
-    relative_position_id = SER_The_Republican_Proclamation
-    x = 0
-    y = 3
+   
+    relative_position_id = SER_Moralistic_Democracy
+    x = -1
+    y = 2
      cost = 3
     ai_will_do = {
       factor = 5
