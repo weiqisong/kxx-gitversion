@@ -372,26 +372,26 @@ create_country_leader = {
 	ideology = democratic_syndicalism_subtype
 }
 create_country_leader = {
-	name = "荒畑寒村"
-	picture = "gfx/leaders/JAP/Portrait_JAP_Arahata_Kanson.png"
+	name = "麻生久"
+	picture = "gfx/leaders/JAP/Portrait_JAP_Aso_Hisashi.png"
 	expire = "1981.3.6"
-	ideology = radsoc_communism_subtype
+	ideology = radsoc_popular_patriotism_subtype
 }
 create_country_leader = {
 	name = "安部矶雄"
 	picture = "gfx/leaders/JAP/Portrait_JAP_Abe_Iso.png"
 	expire = "1965.1.1"
-	ideology = socdem_democratic_socialism_subtype
+	ideology = socdem_christian_democracy_subtype
 }
 create_country_leader = {
-	name = "裕仁"
-	picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+	name = "尾崎行雄"
+	picture = "gfx/leaders/JAP/Portrait_JAP_Yukio_Ozaki.png"
 	expire = "1965.1.1"
-	ideology = national_liberalism_subtype
+	ideology = classical_liberalism_subtype
 }
 create_country_leader = {
-	name = "町田忠志"
-	picture = "gfx/leaders/JAP/Portrait_JAP_Machida_Chuji.png"
+	name = "滨口雄幸"
+	picture = "gfx/leaders/JAP/Portrait_JAP_Hamaguchi_Osachi.png"
 	expire = "1965.1.1"
 	ideology = liberal_conservative_subtype
 }

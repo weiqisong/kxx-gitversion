@@ -596,7 +596,9 @@ JAP_welcome_colonial_exiles = {
 	
 		cost = 15		
 		
-		
+		ai_will_do = {
+			factor = 0
+		}		
 	
 		complete_effect = {		
 		set_country_flag = JCW_recruiting_process
@@ -667,6 +669,9 @@ JAP_welcome_colonial_exiles = {
 		cost = 15		
 		days_re_enable = 30
 		
+		ai_will_do = {
+			factor = 0
+		}				
 	
 		complete_effect = {		
 		set_country_flag = JCW_recruiting_process
@@ -737,7 +742,9 @@ JAP_welcome_colonial_exiles = {
 	
 		cost = 15		
 		days_re_enable = 30
-		
+		ai_will_do = {
+			factor = 0
+		}				
 	
 		complete_effect = {		
 		set_country_flag = JCW_recruiting_process
@@ -805,7 +812,9 @@ JAP_welcome_colonial_exiles = {
 	
 		cost = 15		
 		days_re_enable = 30
-		
+		ai_will_do = {
+			factor = 0
+		}				
 	
 		complete_effect = {		
 		set_country_flag = JCW_recruiting_process
@@ -874,7 +883,9 @@ JAP_welcome_colonial_exiles = {
 	
 		cost = 15		
 		days_re_enable = 30
-		
+		ai_will_do = {
+			factor = 0
+		}				
 	
 		complete_effect = {		
 		set_country_flag = JCW_recruiting_process
@@ -944,7 +955,9 @@ JAP_welcome_colonial_exiles = {
 	
 		cost = 15		
 		days_re_enable = 30
-		
+		ai_will_do = {
+			factor = 0
+		}				
 	
 		complete_effect = {		
 		set_country_flag = JCW_recruiting_process
@@ -1012,7 +1025,9 @@ JAP_welcome_colonial_exiles = {
 	
 		cost = 15		
 		days_re_enable = 30
-		
+		ai_will_do = {
+			factor = 0
+		}				
 	
 		complete_effect = {		
 		set_country_flag = JCW_recruiting_process
@@ -1080,7 +1095,9 @@ JAP_welcome_colonial_exiles = {
 	
 		cost = 15		
 		days_re_enable = 30
-		
+		ai_will_do = {
+			factor = 0
+		}				
 	
 		complete_effect = {
 			set_country_flag = JCW_recruiting_process
@@ -1150,7 +1167,9 @@ JAP_welcome_colonial_exiles = {
 	
 		cost = 15		
 		days_re_enable = 30
-		
+		ai_will_do = {
+			factor = 0
+		}				
 	
 		complete_effect = {
 			set_country_flag = JCW_recruiting_process
@@ -1218,7 +1237,10 @@ JAP_welcome_colonial_exiles = {
 	
 		cost = 15		
 		days_re_enable = 30
-		
+		ai_will_do = {
+			factor = 0
+		}		
+				
 		complete_effect = {
 			set_country_flag = JCW_recruiting_process
 		}
