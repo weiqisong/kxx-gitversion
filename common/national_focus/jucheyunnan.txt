@@ -396,7 +396,7 @@ focus_tree = {
 			else = { 
 				create_field_marshal = {
 					name = "金日成"
-					portrait_path = "gfx/leaders/KOR/Portrait_Kim_Il_Sung.png"
+					portrait_path = "gfx/leaders/YUN/Portrait_KOR_Kim_Il_Sung.png"
 					traits = {
 						organizer
 						inflexible_strategist

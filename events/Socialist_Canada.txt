@@ -1467,6 +1467,7 @@ country_event = {
 			has_country_flag = CAN_SDP_Victory
 			has_country_flag = CAN_RadSoc_CPC_Victory
 			has_country_flag = CAN_CCF_Victory
+			has_country_flag = CAN_REDSOCCRED_victory
 		}
 		OR = {
 			AND = {
