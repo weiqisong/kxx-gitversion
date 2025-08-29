@@ -16,30 +16,67 @@ operations = {
 		cancel_trigger = {
 			NOT = { country_exists = CHP }
 		}
-
+		
 		timeout_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision timeout PLX_surviving_german_invasion_ger"
+			remove_ideas = FRA_Fruit_Farmer_Revolution	
+			remove_ideas = FRA_The_supply_of_wine_is_obstructed_2
 			if = {
 				limit = {
-					NOT = {
-						country_exists = PRO
+					CHP = {
+						is_ai = no
 					}
 				}
-				white_peace = CHP
-				remove_ideas = FRA_Fruit_Farmer_Revolution	
-				remove_ideas = FRA_The_supply_of_wine_is_obstructed_2
-			}
-			if = {
-				limit = {
-					country_exists = PRO
+				CHP = {
+					country_event = kxxfrance.90
 				}
-				white_peace = CHP
-				PRO = { transfer_state = 762 }
-				PRO = { add_state_core = 762 }
-				remove_ideas = FRA_Fruit_Farmer_Revolution	
-				remove_ideas = FRA_The_supply_of_wine_is_obstructed_2
+				
 			}
-			
+			else_if = {
+				limit = {
+					DOB = {
+						is_ai = no
+					}
+				}
+				DOB = {
+					country_event = kxxfrance.90
+				}
+				
+				
+			}
+			else_if = {
+				limit = {
+					PRO = {
+						is_ai = no
+					}
+				}
+				PRO = {
+					country_event = kxxfrance.90
+				}
+				
+				
+				
+			}
+			else_if = {
+				limit = {
+					PDL = {
+						is_ai = no
+					}
+				}
+				PDL = {
+					country_event = kxxfrance.90
+				}
+				
+				
+			}
+			else = {
+				FRA = {
+					country_event = kxxfrance.90
+				}
+			}
+			add_political_power = -100
+			add_stability = -0.2
+			add_war_support = -0.2
 		}
 
 		complete_effect = {

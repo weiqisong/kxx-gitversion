@@ -1536,7 +1536,7 @@ FRA_liberate_europe_category = {
 		}
 	}
 
-	FRA_claim_deat_europe = {# 
+FRA_claim_deat_europe = {# 
 		icon = generic_form_nation
 		allowed = { original_tag = FRA }
 		visible = {
@@ -1592,7 +1592,7 @@ FRA_liberate_europe_category = {
 			factor = 0
 		}
     }
-	FRA_claim_europe_generic = {# 
+FRA_claim_europe_generic = {# 
 	icon = generic_form_nation
 	allowed = { original_tag = FRA }
 	visible = {
@@ -1628,6 +1628,15 @@ FRA_liberate_europe_category = {
 			limit = {
 				has_country_leader = {
 					ruling_only = yes
+					name = "爱德华·巴特"
+				}
+			}
+			set_cosmetic_tag = FRA_Deat_Europe
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
 					name = "皮埃尔·德里厄·拉罗谢尔"
 				}
 			}
@@ -1641,6 +1650,69 @@ FRA_liberate_europe_category = {
 				}
 			}
 			set_cosmetic_tag = FRA_eurocommie
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "皮埃尔·普丘"
+				}
+			}
+			set_cosmetic_tag = FRA_sansimon_europe
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "古斯塔夫·爱尔威"
+				}
+			}
+			set_cosmetic_tag = FRA_herve_europe
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "拿破仑六世"
+				}
+			}
+			set_cosmetic_tag = FRA_nap_europe
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "阿尔方斯·德·沙托布里昂"
+				}
+			}
+			set_cosmetic_tag = FRA_legionary_europe
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "亨利·阿尔伯特·卡农热"
+				}
+			}
+			set_cosmetic_tag = CZE_agrarian_europe
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "弗朗索瓦·唐吉-普利金特"
+				}
+			}
+			set_cosmetic_tag = CZE_agrarian_europe
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "埃德加·龙格"
+				}
+			}
+			set_cosmetic_tag = FRA_syndieeurope
 		}
 		every_country = {
 			limit = {
@@ -1729,6 +1801,30 @@ FRA_liberate_europe_category = {
 					add_state_core = PREV 
 			    }
 		    }
+			if = {				
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "阿尔方斯·德·沙托布里昂"
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = RUS
+				}
+				FRA = { 
+					add_state_core = PREV 
+			    }
+		    }
+			every_state = {
+				limit = {
+					is_core_of = TRM
+				}
+				FRA = { 
+					add_state_core = PREV 
+			    }
+		    }
+			}
 			every_other_country = {
 				limit = { 
 					AND = {
@@ -2466,6 +2562,25 @@ FRA_load_jacobin = {
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove FRA_Savoy_Hydroelectricity_decision"
 			set_country_flag = FRA_synarchist_victory
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	FRA_load_fruit_farmer = {
+		icon = generic_construction
+		visible = {
+			is_debug = yes
+		}
+
+		cost = 0
+		days_remove = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove FRA_Savoy_Hydroelectricity_decision"
+			set_country_flag = FRA_fruit_farmer_win
 			mark_focus_tree_layout_dirty = yes
 		}
 	}

@@ -4,6 +4,751 @@
 ideas = {
 
 	country = {
+		FRA_return_to_land5 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = UKR_polish_landowners
+			modifier = {
+				political_power_cost = -0.2
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				consumer_goods_expected_value = -0.2
+				consumer_goods_factor = -0.2
+				totalist_drift = 0.01
+				authoritarian_democrat_drift = 0.02
+				paternal_autocrat_drift = 0.05
+				national_populist_drift = 0.05
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				global_building_slots_factor = 0.2
+				global_building_slots = 2
+				production_speed_buildings_factor = 0.2
+				production_speed_infrastructure_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				supply_consumption_factor = -0.2
+				supply_node_range = 0.25
+				no_supply_grace = 48
+				out_of_supply_factor = -0.25
+			}
+		}
+		FRA_return_to_land4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = UKR_polish_landowners
+			modifier = {
+				political_power_cost = -0.2
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				consumer_goods_expected_value = -0.2
+				consumer_goods_factor = -0.2
+				totalist_drift = 0.01
+				authoritarian_democrat_drift = 0.02
+				paternal_autocrat_drift = 0.05
+				national_populist_drift = 0.05
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				global_building_slots_factor = 0.15
+				global_building_slots = 2
+				production_speed_buildings_factor = 0.2
+				production_speed_infrastructure_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				supply_consumption_factor = -0.15
+				supply_node_range = 0.15
+				no_supply_grace = 36
+				out_of_supply_factor = -0.2
+			}
+		}
+		FRA_return_to_land3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = UKR_polish_landowners
+			modifier = {
+				political_power_cost = -0.2
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				consumer_goods_expected_value = -0.2
+				consumer_goods_factor = -0.2
+				totalist_drift = 0.01
+				authoritarian_democrat_drift = 0.02
+				paternal_autocrat_drift = 0.05
+				national_populist_drift = 0.05
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				global_building_slots_factor = 0.15
+				global_building_slots = 2
+				production_speed_buildings_factor = 0.2
+				production_speed_infrastructure_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+
+			}
+		}
+		FRA_return_to_land2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = UKR_polish_landowners
+			modifier = {
+				political_power_cost = -0.2
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				consumer_goods_expected_value = -0.2
+				consumer_goods_factor = -0.2
+				totalist_drift = 0.01
+				authoritarian_democrat_drift = 0.02
+				paternal_autocrat_drift = 0.05
+				national_populist_drift = 0.05
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+
+			}
+		}
+		FRA_return_to_land = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = UKR_polish_landowners
+			modifier = {
+				political_power_cost = -0.2
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				consumer_goods_expected_value = -0.2
+				consumer_goods_factor = -0.2
+				totalist_drift = 0.01
+				authoritarian_democrat_drift = 0.02
+				paternal_autocrat_drift = 0.05
+				national_populist_drift = 0.05
+			}
+		}
+		FRA_loyal_to_god = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = BBR_interracial_churches
+			modifier = {
+				conscription = 0.04
+				conscription_factor = 0.4
+				consumer_goods_expected_value = -0.2
+				consumer_goods_factor = -0.2
+			}
+		}
+		FRA_defend_bargain_rights = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = corporatist_economy
+			modifier = {
+				consumer_goods_expected_value = -0.2
+				consumer_goods_factor = -0.2
+				min_export = 0
+				production_speed_arms_factory_factor = 0.25
+				production_speed_industrial_complex_factor = 0.25
+
+			}
+		}
+		FRA_defend_church2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = CAN_church_idea
+			modifier = {
+				political_power_cost = -0.1
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				weekly_manpower = 1000
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				planning_speed = 0.2
+				max_planning = 0.2
+				experience_loss_factor = -0.2
+				resistance_target = -0.2
+				totalist_drift = 0.02
+				radical_socialist_drift = 0.01
+				authoritarian_democrat_drift = 0.02
+				paternal_autocrat_drift = 0.02
+				social_conservative_drift = 0.05
+				national_populist_drift = 0.05
+			}
+		}
+		FRA_defend_church = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = CAN_church_idea
+			modifier = {
+				political_power_cost = -0.1
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				weekly_manpower = 1000
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				totalist_drift = 0.02
+				radical_socialist_drift = 0.01
+				authoritarian_democrat_drift = 0.02
+				paternal_autocrat_drift = 0.02
+				social_conservative = 0.05
+				national_populist_drift = 0.05
+			}
+		}
+		FRA_legacy_of_proclamation_paysan3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = hamiltonian_constitution
+			modifier = {
+				global_building_slots_factor = 0.25
+				production_factory_start_efficiency_factor = 0.25
+				production_factory_max_efficiency_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.25
+				line_change_production_efficiency_factor = 0.25
+				industrial_capacity_factory = 0.25
+				production_speed_buildings_factor = 0.25
+				local_resources_factor = 0.25
+			}
+		}
+		FRA_legacy_of_proclamation_paysan2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = hamiltonian_constitution
+			modifier = {
+				global_building_slots_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				line_change_production_efficiency_factor = 0.2
+				industrial_capacity_factory = 0.2
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		FRA_legacy_of_proclamation_paysan = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = hamiltonian_constitution
+			modifier = {
+				global_building_slots_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+
+			}
+		}
+		FRA_cgt_support = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = generic_syndicalist_revolution
+			modifier = {
+				political_power_cost = -0.1
+				war_support_factor = 0.1
+				planning_speed = 0.15
+				max_planning = 0.1
+				syndicalist_drift = 0.05
+				production_factory_start_efficiency_factor = 0.15
+				dig_in_speed_factor = 0.15
+				max_dig_in_factor = 0.15
+				army_attack_speed_factor = 0.1
+			}
+		}
+		FRA_sfio_support = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = MEX_mexican_labourism_idea
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.1
+				war_stability_factor = 0.1
+				party_popularity_stability_factor = 0.1
+				radical_socialist_drift = 0.05
+				social_democrat_drift = 0.05
+				production_factory_max_efficiency_factor = 0.15
+				conscription = 0.02
+				conscription_factor = 0.2
+				army_speed_factor = 0.1
+			}
+		}
+		FRA_revitalize_agrian_culture = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = CEA_synd_culture_idea
+			modifier = {
+				supply_consumption_factor = -0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				no_supply_grace = 24
+				supply_node_range = 0.15
+				research_speed_factor = 0.1
+			}
+		}
+		FRA_enpower_cooperatives3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = KUB_cooperatives
+			modifier = {
+				global_building_slots_factor = 0.2
+				global_building_slots = 2
+				production_speed_buildings_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				consumer_goods_expected_value = -0.15
+				consumer_goods_factor = -0.15
+				local_resources_factor = 0.2
+				monthly_population = 0.5
+			}
+		}
+		FRA_enpower_cooperatives2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = KUB_cooperatives
+			modifier = {
+				global_building_slots_factor = 0.1
+				global_building_slots = 1
+				production_speed_buildings_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+
+			}
+		}
+		FRA_enpower_cooperatives = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = KUB_cooperatives
+			modifier = {
+				global_building_slots_factor = 0.1
+				global_building_slots = 1
+				production_speed_buildings_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				
+			}
+		}
+		FRA_comites_de_action_defence_paysan = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = UKR_peasant_idea
+			modifier = {
+				conscription = 0.03
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				experience_loss_factor = -0.15
+				command_power_gain = 0.1
+				max_command_power = 200
+				command_power_gain_mult = 0.15
+				max_command_power_mult = 0.15
+				attrition = -0.1
+				army_strength_factor = 0.1
+			}
+		}
+		FRA_encourage_collectivization2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = SOV_workers
+			modifier = {
+				line_change_production_efficiency_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				global_building_slots = 2
+				production_speed_buildings_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+		FRA_encourage_collectivization = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = SOV_workers
+			modifier = {
+				line_change_production_efficiency_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				global_building_slots = 1
+				
+			}
+		}
+		FRA_establish_demo_cent = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = BBR_all_for_the_party_idea
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				party_popularity_stability_factor = 0.1
+				offensive_war_stability_factor = 0.1
+				defensive_war_stability_factor = 0.1
+				totalist_drift = 0.05
+				research_speed_factor = 0.1
+			}
+		}
+		FRA_balanced_development = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = NFL_balanced_budget_idea
+			modifier = {
+				conscription = 0.02
+				conscription_factor = 0.2
+				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.1
+				totalist_drift = 0.05
+				syndicalist = 0.01
+				radical_socialist_drift = 0.02
+				social_democrat_drift = 0.02
+			}
+		}
+		FRA_agrian_cartel3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = farmer_labor_alliance
+			modifier = {
+				monthly_population = 0.5
+				global_building_slots = 1
+				supply_consumption_factor = -0.1
+				local_resources_factor = 0.15
+				production_lack_of_resource_penalty_factor = -0.15
+				line_change_production_efficiency_factor = 0.12
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.12
+				production_factory_efficiency_gain_factor = 0.12
+			}
+		}
+		FRA_agrian_cartel2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = farmer_labor_alliance
+			modifier = {
+				monthly_population = 0.5
+				global_building_slots = 1
+				supply_consumption_factor = -0.1
+				local_resources_factor = 0.15
+				production_lack_of_resource_penalty_factor = -0.15
+				line_change_production_efficiency_factor = 0.12
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		FRA_agrian_cartel2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = farmer_labor_alliance
+			modifier = {
+				monthly_population = 0.5
+				global_building_slots = 1
+				supply_consumption_factor = -0.1
+				local_resources_factor = 0.15
+				production_lack_of_resource_penalty_factor = -0.15
+				line_change_production_efficiency_factor = 0.12
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		FRA_agrian_cartel = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_union_loyalty2"}
+			allowed = { always = yes }
+			picture = farmer_labor_alliance
+			modifier = {
+				monthly_population = 0.5
+				global_building_slots = 1
+				supply_consumption_factor = -0.1
+				local_resources_factor = 0.15
+				production_lack_of_resource_penalty_factor = -0.15
+			}
+		}
+		FRA_natjac_support2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = FRA_rev_idea
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.1
+				conscription_factor = 0.1
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				army_org_Factor = 0.1
+				no_supply_grace = 24
+				org_loss_when_moving = -0.1
+				breakthrough_factor = 0.1
+				combat_width_factor = -0.05
+			}
+		}
+		FRA_natjac_support = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = FRA_rev_idea
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.1
+				conscription_factor = 0.1
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+
+			}
+		}
+		FRA_compensation_farmer = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = give_money
+			modifier = {
+				political_power_cost = 0.1
+				consumer_goods_expected_value = 0.2
+				repair_speed_factor = 0.5
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+		FRA_no_experience = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = CMR_clueless_socialism_idea
+			modifier = {
+				stability_weekly = -0.007
+				war_support_weekly = -0.007
+				political_power_gain = -0.1
+			}
+		}
+		FRA_agrians = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = NFA_agrarian_paternalism
+			modifier = {
+				party_popularity_stability_factor = 0.15
+				political_power_gain = 0.1
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				global_building_slots_factor = 0.1
+			}
+		}
+		FRA_agrians2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = NFA_agrarian_paternalism
+			modifier = {
+				party_popularity_stability_factor = 0.15
+				political_power_gain = 0.1
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				global_building_slots_factor = 0.2
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				army_speed_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		FRA_social_catholic_enlightment = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = KIV_social_christian_capitalism_idea
+			modifier = {
+				conscription = 0.03
+				conscription_factor = 0.03
+				line_change_production_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				consumer_goods_expected_value = -0.15
+				consumer_goods_factor = -0.15
+				mobilization_speed = 0.3
+				social_conservative_drift = 0.02
+				social_democrat_drift = 0.05
+			}
+		}
+		FRA_ally_millitary = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = BAN_gray_army_mobilize
+			modifier = {
+				modifier_army_sub_unit_infantry_attack_factor = 0.1
+				modifier_army_sub_unit_infantry_defence_factor = 0.1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_speed_factor = 0.1
+			}
+		}
+		FRA_agrian_group3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = agricultural_committee
+			modifier = {
+				local_resources_factor = 0.2
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+				research_speed_factor = 0.1
+				industrial_capacity_factory = 0.15
+				global_building_slots_factor = 0.15
+				production_speed_buildings_factor = 0.2
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				monthly_population = 0.5
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+
+			}
+		}
+		FRA_agrian_group2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = agricultural_committee
+			modifier = {
+				local_resources_factor = 0.2
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				research_speed_factor = 0.1
+				industrial_capacity_factory = 0.1
+				global_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.15
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				monthly_population = 0.5
+
+			}
+		}
+		FRA_agrian_group = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = agricultural_committee
+			modifier = {
+				local_resources_factor = 0.2
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				research_speed_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		FRA_economical_protectism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = agricultural_collectivization
+			modifier = {
+				min_export = 0
+				consumer_goods_factor = -0.15
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				supply_consumption_factor = -0.1
+
+			}
+		}
+		FRA_destroy_urbanism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = GAL_rural_society
+			modifier = {
+				global_building_slots_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				global_building_slots = 2
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+				supply_consumption_factor = -0.15
+				no_supply_grace = 48
+				supply_node_range = 0.15
+			}
+		}
+		FRA_reform_the_parlament = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = KIV_constant_electoral_sucsess_idea
+			modifier = {
+				political_power_cost = -0.1
+				stability_factor = 0.1
+				radical_socialist_drift = 0.05
+				totalist_drift = 0.05
+				command_power_gain = 0.1
+				max_command_power = 100
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+				required_garrison_factor = -0.25
+				production_lack_of_resource_penalty_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+
+			}
+		}
+		FRA_peace_prosperity = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = TEX_blessed_are_peacebois
+			modifier = {
+				war_support_factor = -0.1
+				war_stability_factor = -0.1
+				defensive_war_stability_factor = 0.1
+				offensive_war_stability_factor = -0.1
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+
+			}
+		}
+		FRA_green_shirts2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = agro_industrial_army
+			modifier = {
+				monthly_population = 0.2
+				conscription = 0.02
+				mobilization_speed = 0.1
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				war_support_factor = 0.1
+				training_time_army_factor = -0.1
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				breakthrough_factor = 0.1
+				recon_factor = 0.1
+				land_reinforce_rate = 0.1
+				org_loss_at_low_org_factor = -0.1
+			}
+		}
+		FRA_green_shirts = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: internationale_support"}
+			allowed = { always = yes }
+			picture = agro_industrial_army
+			modifier = {
+				monthly_population = 0.2
+				conscription = 0.02
+				mobilization_speed = 0.1
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				war_support_factor = 0.1
+				training_time_army_factor = -0.1
+			}
+		}
 		FRA_declare_national_unity_government = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_sorelian_nationalism_1_idea"}
 			modifier = {

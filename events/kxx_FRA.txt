@@ -312,6 +312,7 @@ option = {
 	}
 	set_country_flag = FRA_cachin_bop_ends
 	set_country_flag = FRA_mod_jac_sup
+	set_country_flag = FRA_no_elections
 	complete_national_focus = FRA_towards_extreme_revolution
 	remove_power_balance_modifier = {
 		id = FRA_cachin_bop
@@ -1380,19 +1381,14 @@ option = {
 
 option = { 
 	name = kxxfrance.19.b
-	set_country_flag = FRA_nap_euro
-	set_cosmetic_tag = FRA_nap_europe
+	
 	ai_chance = {
 		factor = 50
 	}
-	every_state = {
-		limit = {
-			is_on_continent = europe
-		}
-		FRA = { 
-			add_state_core = PREV 
-		}
-	}
+	set_country_flag = FRA_nap_euro
+
+	unlock_decision_tooltip = FRA_core_deat_europe
+	set_country_flag = FRA_embraced_pan_europe
 }
 }
 country_event = {	
@@ -2209,7 +2205,7 @@ option = { #slavs too
 }
 }
 country_event = {	
-	id = kxxfrance.22 #lanoir reFRAn yellow syndie or not
+	id = kxxfrance.22 #lanoir return yellow syndie or not
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Frajocbin.war"}
 	title = kxxfrance.22.t
 	desc = kxxfrance.22.d
@@ -5717,7 +5713,7 @@ country_event = {
 option = { 
 	name = kxxfrance.76.a
 	add_stability = -0.50
-		
+	set_country_flag = FRA_no_elections	
 	set_politics = {
 		ruling_party = radical_socialist
 		elections_allowed = no
@@ -5738,7 +5734,6 @@ option = {
 		picture = "gfx/leaders/FRA/Portrait_FRA_Raymond_Pericat.png"
 		expire = "1.1.1"
 		ideology = anarcho_communism_subtype
-		
 	}
 	complete_national_focus = FRA_state_anarchy
 	set_cosmetic_tag = FRA_Makhno
@@ -6483,6 +6478,7 @@ country_event = {
 option = { 
 	name = kxxfrance.83.a
 	set_cosmetic_tag = FRA_technocracy
+	set_country_flag = FRA_no_elections
 	create_country_leader = {
 		name = "技官委员会"
 		picture = "gfx/leaders/CSA/Portrait_CSA_Techno_Council.png"
@@ -6645,8 +6641,8 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 	hidden_effect = {
-		set_cosmetic_tag = FRA_dorgeres
-	
+
+		set_country_flag = FRA_no_elections
 		remove_ideas_with_trait = head_of_government
 		add_ideas = FRA_Henri_Dorgeres_hog_rso
 		remove_ideas_with_trait = foreign_minister
@@ -6655,58 +6651,7 @@ country_event = {
 		add_ideas = FRA_Pierre_Caziot_eco_rso
 		remove_ideas_with_trait = security_minister
 		add_ideas = FRA_Pierre_Poujade_sec_rso
-		
 	
-	set_party_name = {
-		ideology = totalist
-		long_name = "法兰西共产党—农业派/法兰西社会党—农业派/农民阵线/农业农民党"
-		name = "法共/社会党/农民阵线/农业农民党"
-	}
-	set_party_name = {
-		ideology = syndicalist
-		long_name = "农业总联合会"
-		name = "农业总联合会"
-	}
-	set_party_name = {
-		ideology = radical_socialist
-		long_name = "农民阵线/农业集团/农业农民党/农业总联合会"
-		name = "农民阵线/农业集团/农业农民党/农业总联合会"
-	}
-	set_party_name = {
-		ideology = social_democrat
-		long_name = "全国农业工会联合会"
-		name = "全农工联"
-	}
-	set_party_name = {
-		ideology = social_liberal
-		long_name = "全国纳税人联合会"
-		name = "全国纳税人联合会"
-	}
-	set_party_name = {
-		ideology = market_liberal
-		long_name = "全国纳税人联合会"
-		name = "全国纳税人联合会"
-	}
-	set_party_name = {
-		ideology = social_conservative
-		long_name = "法国基督徒联盟"
-		name = "法国基督徒联盟"
-	}
-	set_party_name = {
-		ideology = authoritarian_democrat
-		long_name = "小商贩与手工业者保卫联盟"
-		name = "小商贩与手工业者保卫联盟"
-	}
-	set_party_name = {
-		ideology = paternal_autocrat
-		long_name = "小商贩与手工业者保卫联盟"
-		name = "小商贩与手工业者保卫联盟"
-	}
-	set_party_name = {
-		ideology = national_populist
-		long_name = "小银碟骑士团"
-		name = "小银碟骑士团"
-	}
 	}
 	
 }
@@ -6717,12 +6662,14 @@ option = {
 		picture = "gfx/leaders/PDL/Portrait_CHP_Bernard_Paumier.png"
 		expire = "1.1.1"
 		ideology = broad_communism_subtype
-		traits = {  }
+		traits = { protector_of_farmers }
 	}
+	set_cosmetic_tag = FRA_agrjac
 	set_politics = {
 		ruling_party = totalist
 		elections_allowed = no
 	}
+
 	complete_national_focus = FRA_pcf
 }	
 option = { 
@@ -6737,12 +6684,13 @@ option = {
 		picture = "gfx/leaders/FRA/Portrait_FRA_Edouard_Barthe.png"
 		expire = "1.1.1"
 		ideology = neo_socialism_subtype
-		traits = {  }
+		traits = { protector_of_farmers }
 	}
 	set_politics = {
 		ruling_party = totalist
 		elections_allowed = no
 	}
+	set_cosmetic_tag = FRA_Deat
 	complete_national_focus = FRA_psdf
 }
 option = { 
@@ -6760,7 +6708,7 @@ option = {
 		picture = "gfx/leaders/PDL/Portrait_PDL_Paul_Antier.png"
 		expire = "1.1.1"
 		ideology = socdem_agrarianism_subtype
-		traits = {  }
+		traits = { protector_of_farmers }
 	}
 	set_politics = {
 		ruling_party = social_democrat
@@ -6770,12 +6718,13 @@ option = {
 }
 option = { 
 	name = kxxfrance.86.h
+	set_cosmetic_tag = FRA_agarian_republic
 	create_country_leader = {
 		name = "爱尔威·布德斯·德·盖布里昂"
 		picture = "gfx/leaders/FRA/Portrait_FRA_Herve_Budes_de_Guebriant.png"
 		expire = "1.1.1"
 		ideology = tot_revolution_nationale_subtype
-		traits = {  }
+		traits = { protector_of_farmers }
 	}
 	set_politics = {
 		ruling_party = totalist
@@ -6798,7 +6747,7 @@ option = {
 		picture = "gfx/leaders/PDL/Portrait_DOB_Henri_Albert_Canonge.png"
 		expire = "1.1.1"
 		ideology = agrarian_syndicalism_subtype
-		traits = {  }
+		traits = { protector_of_farmers }
 	}
 	set_politics = {
 		ruling_party = syndicalist
@@ -6813,7 +6762,7 @@ option = {
 		picture = "gfx/leaders/FRA/Portrait_FRA_Francois_Tanguy_Prigent.png"
 		expire = "1.1.1"
 		ideology = agrarian_socialism_subtype
-		traits = {  }
+		traits = { protector_of_farmers }
 	}
 	set_politics = {
 		ruling_party = radical_socialist
@@ -6855,7 +6804,7 @@ option = {
 		picture = "gfx/leaders/FRP/Portrait_France_Jacques_Roy_Ladurie.png"
 		expire = "1.1.1"
 		ideology = fascism_subtype
-		traits = {  }
+		traits = { protector_of_farmers }
 	}
 	set_politics = {
 		ruling_party = radical_socialist
@@ -6874,13 +6823,13 @@ country_event = {
 
 option = { 
 	name = kxxfrance.89.a #yay dorgeres
-	 
+	set_cosmetic_tag = FRA_agarian_republic
 	create_country_leader = {
 		name = "路易斯·吉隆"
 		picture = "gfx/leaders/PDL/Portrait_PRO_Louis_Guillon.png"
 		expire = "1.1.1"
 		ideology = radsoc_paternal_socialism_subtype
-		traits = {  }
+		traits = { protector_of_farmers }
 	}
 
 	set_politics = {
@@ -6892,12 +6841,13 @@ option = {
 }	
 option = { 
 	name = kxxfrance.89.b
+	set_cosmetic_tag = FRA_agarian_republic
 	create_country_leader = {
 		name = "弗朗索瓦·德·克莱蒙-托内尔"
 		picture = "gfx/leaders/FRA/Portrait_FRA_Francois_de_Clermont-Tonnerre.png"
 		expire = "1.1.1"
 		ideology = tot_left_conservatism_subtype
-		traits = {  }
+		traits = { protector_of_farmers }
 	}
 	set_politics = {
 		ruling_party = totalist
@@ -6906,6 +6856,308 @@ option = {
 	complete_national_focus = FRA_paysan_party
 }	
 
+}
+country_event = { 
+	id = kxxfrance.90 #government collapse
+	title = kxxfrance.90.t
+	desc = kxxfrance.90.d
+	is_triggered_only = yes
+	option = { 
+		name = kxxfrance.90.a
+		trigger = {
+			tag = FRA
+		}
+		set_cosmetic_tag = FRA_dorgeres
+		create_country_leader = {
+			name = "临时政务会议"
+			picture = "gfx/leaders/FRA/Portrait_FRA_Emergency_Agarian_Council.png"
+			expire = "1.1.1"
+			ideology = syndicalist_subtype
+			traits = {  }
+		}
+		set_politics = {
+			ruling_party = syndicalist
+			elections_allowed = no
+		}
+		add_ideas = FRA_no_experience
+		complete_national_focus = FRA_victory_of_fruit_farmer
+		set_country_flag = FRA_fruit_farmer_win
+		mark_focus_tree_layout_dirty = yes
+		
+		annex_country = { target = CHP transfer_troops = yes }
+		annex_country = { target = DOB transfer_troops = yes }
+		annex_country = { target = PDL transfer_troops = yes }
+		annex_country = { target = PRO transfer_troops = yes }
+		remove_all_ministers = yes
+	}
+	option = { 
+		name = kxxfrance.90.b
+		trigger = {
+			NOT = {
+				tag = FRA
+			}
+			
+		}
+		FRA = {
+		set_cosmetic_tag = FRA_dorgeres
+		create_country_leader = {
+			name = "临时政务会议"
+			picture = "gfx/leaders/FRA/Portrait_FRA_Emergency_Agarian_Council.png"
+			expire = "1.1.1"
+			ideology = syndicalist_subtype
+			traits = {  }
+		}
+		set_politics = {
+			ruling_party = syndicalist
+			elections_allowed = no
+		}
+		add_ideas = FRA_no_experience
+		complete_national_focus = FRA_victory_of_fruit_farmer
+		set_country_flag = FRA_fruit_farmer_win
+		mark_focus_tree_layout_dirty = yes
+		
+		annex_country = { target = CHP transfer_troops = yes }
+		annex_country = { target = DOB transfer_troops = yes }
+		annex_country = { target = PDL transfer_troops = yes }
+		annex_country = { target = PRO transfer_troops = yes }
+		remove_all_ministers = yes
+		}
+		FRA = { change_tag_from = ROOT } 
+	}
+	
+
+}
+country_event = { 
+	id = kxxfrance.91
+	title = kxxfrance.91.t
+	desc = kxxfrance.91.d
+	trigger = {
+		tag = FRA
+		has_idea = FRA_Fruit_Farmer_Revolution	
+		NOT = {
+			controls_province = 11506
+		}
+	}
+	option = { 
+		name = kxxfrance.91.a
+		add_days_mission_timeout = {
+            mission = FRA_surviving_Farmer_Revolution
+            days = -150
+		}
+	}
+
+}
+country_event = { 
+	id = kxxfrance.92
+	title = kxxfrance.92.t
+	desc = kxxfrance.92.d
+	is_triggered_only = yes
+	option = { 
+		name = kxxfrance.92.a
+		
+	}
+	option = { 
+		name = kxxfrance.92.b
+		every_state = {
+				limit = {
+					is_core_of = SRI
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SRI
+			}
+			every_state = {
+				limit = {
+					is_core_of = ITA
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ITA
+			}
+			every_state = {
+				limit = {
+					is_core_of = PAP
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = PAP
+			}
+			every_state = {
+				limit = {
+					is_core_of = SIC
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SIC
+			}
+			every_state = {
+				limit = {
+					is_core_of = SRD
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SRD
+			}
+			every_state = {
+				limit = {
+					is_core_of = SPR
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SPR
+			}
+			every_state = {
+				limit = {
+					is_core_of = CNT
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = CNT
+			}
+			every_state = {
+				limit = {
+					is_core_of = CAR
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = CAR
+			}
+			every_state = {
+				limit = {
+					is_core_of = POR
+				}
+				FRA = { 
+					add_state_core = PREV 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = POR
+			}
+			set_cosmetic_tag = FRA_dorgeres_west_euro
+	}
+}
+country_event = { 
+	id = kxxfrance.93
+	title = kxxfrance.93.t
+	desc = kxxfrance.93.d
+	is_triggered_only = yes
+	option = { 
+		name = kxxfrance.93.a
+		ai_chance = {
+			factor = 100
+		}
+		FRA = {
+			annex_country = { target = NFA transfer_troops = yes }
+			country_event = {
+				id = kxxfrance.94
+				days = 7
+			}
+		}
+	}
+	option = { 
+		name = kxxfrance.93.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+country_event = { 
+	id = kxxfrance.94
+	title = kxxfrance.94.t
+	desc = kxxfrance.94.d
+	is_triggered_only = yes
+	option = { 
+		name = kxxfrance.94.a
+		
+	}
+	option = { 
+		name = kxxfrance.94.b
+		set_cosmetic_tag = FRA_confederation
+		every_state = {
+				limit = {
+					OR = {
+						is_core_of = NFA
+						is_claimed_by = NFA
+						is_core_of = ALG	
+						is_core_of = TUN
+						is_core_of = MRT
+						is_core_of = SEN
+						is_core_of = GNA
+						is_core_of = MAL
+						is_core_of = BFA
+						is_core_of = NER
+						is_core_of = WAD
+					}
+				}
+				FRA = { add_state_core = PREV }
+			}
+					add_state_core = 461
+					add_state_core = 462
+					add_state_core = 807
+					add_state_core = 963
+					add_state_core = 876
+					add_state_core = 975
+					add_state_core = 660
+					add_state_core = 971
+					add_state_core = 974
+					add_state_core = 953
+					add_state_core = 928
+					add_state_core = 539
+					add_state_core = 543
+					add_state_core = 268
+					add_state_core = 856
+					add_state_core = 826
+					add_state_core = 286
+					add_state_core = 268
+					add_state_core = 827
+					add_state_core = 670
+					add_state_core = 857
+					add_state_core = 728
+					add_state_core = 671
+					add_state_core = 750
+					add_state_core = 825
+					add_state_core = 1177
+					add_state_core = 1178
+					add_state_core = 1179
+					add_state_core = 708
+					add_state_core = 706
+					add_state_core = 1095
+					add_state_core = 635
+					add_state_core = 641
+	}
 }
 country_event = { 
 	id = kxxfrance.100

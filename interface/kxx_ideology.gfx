@@ -473,6 +473,109 @@ spriteTypes = {
 		name = "GFX_ideology_social_national_populism_subtype" #民粹-国家民粹主义（亲左翼）
 		texturefile = "gfx/interface/ideologies/subideologies/social_national_populism_group.png"
 	}	
+	SpriteType = {
+		name = "GFX_ideology_provisional_government_subtype" #家独-临时政府
+		texturefile = "gfx/interface/ideologies/subideologies/provisional_government_group.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_transitional_government_subtype" #威民-看守政府
+		texturefile = "gfx/interface/ideologies/subideologies/transitional_government_group.png"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ideology_radsoc_sssp_subtype" #鸡舍-科学特搜署
+		texturefile = "gfx/interface/ideologies/subideologies/radsoc_sssp_group.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_syn_sssp_subtype" #工团-科学特搜署
+		texturefile = "gfx/interface/ideologies/subideologies/radsoc_sssp_group.png"
+	}	
+	SpriteType = {
+		name = "GFX_ideology_tot_sssp_subtype" #极权-科学特搜署
+		texturefile = "gfx/interface/ideologies/subideologies/tot_sssp_group.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_generic_sssp_subtype" #家独-科学特搜署
+		texturefile = "gfx/interface/ideologies/subideologies/generic_sssp_group.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_buddhist_anarchism_subtype" #鸡舍-佛教无政府主义
+		texturefile = "gfx/interface/ideologies/subideologies/buddhist_anarchism_group.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_controlled_democracy_subtype" #威民-指导式民主
+		texturefile = "gfx/interface/ideologies/subideologies/controlled_democracy_group.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_pataut_controlled_democracy_subtype" #家独-指导式民主
+		texturefile = "gfx/interface/ideologies/subideologies/pataut_controlled_democracy_group.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_natpop_controlled_democracy_subtype" #民粹-指导式民主
+		texturefile = "gfx/interface/ideologies/subideologies/natpop_controlled_democracy_group.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_tot_controlled_democracy_subtype" #极权-指导式民主
+		texturefile = "gfx/interface/ideologies/subideologies/tot_controlled_democracy_group.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_jihad_legionarism_subtype" #民粹-伊斯兰军团主义
+		texturefile = "gfx/interface/ideologies/subideologies/jihad_legionarism_group.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_pataut_jihad_legionarism_subtype" #家独-伊斯兰军团主义
+		texturefile = "gfx/interface/ideologies/subideologies/pataut_jihad_legionarism_group.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_vedas_socialism_subtype" #鸡舍-吠陀社会主义
+		texturefile = "gfx/interface/ideologies/subideologies/vedas_socialism_group.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_zhanguoce_pai_subtype" #民粹-战国策派
+		texturefile = "gfx/interface/ideologies/subideologies/zhanguoce_pai_group.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_socdem_islamic_philosophy_subtype" #社民-伊斯兰哲学
+		texturefile = "gfx/interface/ideologies/subideologies/socdem_islamic_philosophy_group.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_soclib_islamic_philosophy_subtype" #社自-伊斯兰哲学
+		texturefile = "gfx/interface/ideologies/subideologies/soclib_islamic_philosophy_group.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_socdem_burnhamite_thought_subtype" #社民-温和伯纳姆思想
+		texturefile = "gfx/interface/ideologies/subideologies/socdem_burnhamite_thought_group.png"
+	}										
+
+	SpriteType = {
+		name = "GFX_ideology_radsoc_Grand_Thai_nationalism_subtype" #鸡舍-泰式社会主义
+		texturefile = "gfx/interface/ideologies/subideologies/radsoc_Grand_Thai_nationalism_group.png"
+	}	
+	SpriteType = {
+		name = "GFX_ideology_socdem_Grand_Thai_nationalism_subtype" #社民-泰式社会主义
+		texturefile = "gfx/interface/ideologies/subideologies/socdem_Grand_Thai_nationalism_group.png"
+	}	
+	SpriteType = {
+		name = "GFX_ideology_marlib_Grand_Thai_nationalism_subtype" #市自-泛泰主义
+		texturefile = "gfx/interface/ideologies/subideologies/marlib_Grand_Thai_nationalism_group.png"
+	}	
+	SpriteType = {
+		name = "GFX_ideology_authdem_Grand_Thai_nationalism_subtype" #威民-泛泰主义
+		texturefile = "gfx/interface/ideologies/subideologies/authdem_Grand_Thai_nationalism_group.png"
+	}	
+	SpriteType = {
+		name = "GFX_ideology_pataut_Grand_Thai_nationalism_subtype" #家独-泛泰主义
+		texturefile = "gfx/interface/ideologies/subideologies/pataut_Grand_Thai_nationalism_group.png"
+	}	
+
+	SpriteType = {
+		name = "GFX_ideology_socdem_vietnamese_republicanism_subtype" #社民-民权共和主义
+		texturefile = "gfx/interface/ideologies/subideologies/socdem_vietnamese_republicanism_group.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_natpop_viet_natsoc_subtype" #民粹-越南国社主义
+		texturefile = "gfx/interface/ideologies/subideologies/natpop_viet_natsoc_group.png"
+	}
 
 	frameAnimatedSpriteType = { #民粹-终末论
 		name = "GFX_ideology_Final_Theory_subtype"
@@ -484,8 +587,11 @@ spriteTypes = {
 	}
 
 
-
 	##毛主义衍生
+	spriteType = { #极权-极左毛泽东思想
+		name = "GFX_ideology_farleft_maoism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/farleft_maoism.png"
+	}
 	spriteType = {
 		name = "GFX_ideology_linism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/linism.png"
@@ -497,10 +603,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_buddhist_maoism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/buddhist_maoism.png"
-	}
-	spriteType = {
-		name = "GFX_ideology_farleft_maoism_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/farleft_maoism.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_maoism_feminism_subtype"
@@ -655,6 +757,15 @@ spriteTypes = {
 		name = "GFX_ideology_Euphoriaism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/Euphoria.png"
 	}	
+
+
+
+	
+	#原版删除恢复
+	spriteType = {
+		name = "GFX_ideology_radsoc_boer_nationalism_subtype" #鸡舍-布尔民族主义
+		texturefile = "gfx/interface/ideologies/subideologies/radsoc_boer_nationalism_group.png"
+	}
 
 	#赤潮
 	spriteType = {

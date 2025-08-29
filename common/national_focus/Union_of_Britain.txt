@@ -9,7 +9,7 @@ focus_tree = {
 	}
 	
 	default = no
-	continuous_focus_position = { x = 225 y = 2500 }
+	continuous_focus_position = { x = 500 y = 2600 }
 	focus = {
 		id = ENG_tuc
 		icon = GFX_goal_ENG_TUC
@@ -55,24 +55,37 @@ focus_tree = {
 				long_name = N_ENG_radical_socialist_party
 				ideology = radical_socialist
 			}
+			set_party_name = {
+				name = N_ENG_radical_socialist_party
+				long_name = N_ENG_radical_socialist_party
+				ideology = totalist
+			}
 			set_politics = {
-			ruling_party = radical_socialist
-			elections_allowed = no
+			    ruling_party = radical_socialist
+			    elections_allowed = no
 			}
 			create_country_leader = {
-	        name = "汤姆·曼恩"
-	        picture = "gfx/leaders/ENG/Portrait_England_Tom_Mann.png"
-	        traits = {}
-	        expire = "1965.1.1"
-	        ideology = radsoc_communism_subtype
+	            name = "汤姆·曼恩"
+	            picture = "gfx/leaders/ENG/Portrait_England_Tom_Mann.png"
+	            traits = {}
+	            expire = "1965.1.1"
+	            ideology = radsoc_communism_subtype
            }
-			add_ideas = CRM_lenin_2_0
+		   	create_country_leader = {
+	            name = "汤姆·曼恩"
+	            picture = "gfx/leaders/ENG/Portrait_England_Tom_Mann.png"
+	            traits = {}
+	            expire = "1965.1.1"
+	            ideology = authcom_subtype
+           }
+		    add_tot_to_coalition = yes
+			add_ideas = ENG_leninism
 			add_country_leader_trait = socialism_star
 		}
 	}
 	focus = {
-		id = ENG_GMSJ
-		icon = GFX_goal_SOV_navy
+		id = ENG_Revolutionary_Union
+		icon = GFX_SOV_homogeneous
 		cost = 5.00
 		prerequisite = {
           focus = ENG_LLZY
@@ -86,7 +99,13 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			add_ideas = CRM_legacy_of_black_sea_fleet
+		    add_synd_to_coalition = yes
+			add_socdem_to_coalition = yes
+			add_political_power = 100
+			swap_ideas = {
+			    remove_idea = ENG_leninism
+			    add_idea = ENG_leninism_1
+		    }
 		}
 	}
 	focus = {
@@ -105,7 +124,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			add_ideas = CRM_soviets_power
+			add_ideas = ENG_soviets_power
 		}
 	}
 	focus = {
@@ -124,7 +143,11 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			add_ideas = RUS_kirov_plan_2
+		    	add_popularity = {
+					ideology = radical_socialist
+					popularity = 0.1
+				}
+			add_ideas = ENG_democratic_centralism
 		}
 	}
 	focus = {
@@ -146,12 +169,9 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			add_ideas = RUS_centralist_2
-			add_ideas = RUS_forced_industrialization
-			 add_timed_idea = {
-			idea = SOV_mass_collectivization
-			days = 900
-		}
+		    add_political_power = -50
+			add_stability = -0.1
+			add_ideas = ENG_centralist
 		}
 	}
 	focus = {
@@ -171,13 +191,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-			remove_idea = RUS_centralist_2
-			add_idea = RUS_centralist_3
-		}
-			swap_ideas = {
-			remove_idea = RUS_forced_industrialization
-			add_idea = RUS_tkgosplan_1
-		}
+			remove_idea = ENG_centralist
+			add_idea = ENG_centralist_1
+		    }
 		}
 	}
 	focus = {
@@ -196,7 +212,111 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			add_ideas = SRI_gradual_industrialization2_idea
+			add_ideas = ENG_new_october
+		}
+	}
+	focus = {
+		id = ENG_restructure
+		icon = GFX_goal_commune_politics
+		cost = 3.00
+		prerequisite = {
+          focus = ENG_GMFC
+		}
+		prerequisite = {
+          focus = ENG_GXJHJJ
+		}
+		x = -1
+		y = 5
+		relative_position_id = ENG_LLZY
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+		    add_popularity = {
+			    ideology = radical_socialist
+				popularity = 0.15
+			}
+			add_popularity = {
+			    ideology = totalist
+				popularity = 0.15
+			}
+			swap_ideas = {
+			    remove_idea = ENG_leninism_1
+			    add_idea = ENG_leninism_2
+		    }
+		}
+	}
+	focus = {
+		id = ENG_workers_culture
+		icon = GFX_GRU_CULTURE_REV
+		cost = 3.00
+		prerequisite = {
+          focus = ENG_GMFC
+		}
+		prerequisite = {
+          focus = ENG_GXJHJJ
+		}
+		x = 1
+		y = 5
+		relative_position_id = ENG_LLZY
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+		    add_political_power = 100
+			add_ideas = ENG_worker_culture
+		}
+	}
+	focus = {
+		id = ENG_soviet_republic
+		icon = GFX_SOV_embrace_bolshevism
+		cost = 5.00
+		prerequisite = {
+          focus = ENG_workers_culture
+		}
+		prerequisite = {
+          focus = ENG_restructure
+		}
+		x = 0
+		y = 6
+		relative_position_id = ENG_LLZY
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+		    add_political_power = 100
+			swap_ideas = {
+			    remove_idea = ENG_leninism_2
+			    add_idea = ENG_leninism_3
+		    }
+			hidden_effect = {
+				set_party_name = {
+				    name = N_ENG_radical_socialist_party_T
+				    long_name = N_ENG_radical_socialist_party_T
+				    ideology = totalist
+			    }
+				set_party_name = {
+				    name = N_ENG_radical_socialist_party_S
+				    long_name = N_ENG_radical_socialist_party_S
+				    ideology = syndicalist
+			    }
+				set_party_name = {
+				    name = N_ENG_radical_socialist_party_R
+				    long_name = N_ENG_radical_socialist_party_R
+				    ideology = radical_socialist
+			    }
+				set_party_name = {
+				    name = N_ENG_radical_socialist_party_SD
+				    long_name = N_ENG_radical_socialist_party_SD
+				    ideology = social_democrat
+			    }
+			}
 		}
 	}
 	focus = {
@@ -204,13 +324,10 @@ focus_tree = {
 		icon = GFX_CRM_Russian_October
 		cost = 5.00
 		prerequisite = {
-          focus = ENG_GMFC
-		}
-		prerequisite = {
-          focus = ENG_GXJHJJ
+          focus = ENG_soviet_republic
 		}
 		x = 0
-		y = 5
+		y = 7
 		relative_position_id = ENG_LLZY
 		ai_will_do = {
 			factor = 10
@@ -226,10 +343,6 @@ focus_tree = {
 					type = annex_everything
 					target = RUS
 					expire = 0
-				}
-			swap_ideas = {
-					remove_idea = CRM_lenin_2_0
-					add_idea = CRM_lenin_2_1
 				}
 			RUS = {
 				add_timed_idea = {
@@ -251,7 +364,7 @@ focus_tree = {
 		icon = GFX_SOV_rev_commisars
 		cost = 5.00
 		prerequisite = {
-          focus = ENG_GMSJ
+          focus = ENG_Revolutionary_Union
 		}
 		x = -1
 		y = 2
@@ -262,9 +375,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			add_ideas = SRI_commisars_idea
-			add_ideas = FRA_red_guard_idea
-			add_ideas = RUS_Restored_Cheka
+			add_ideas = ENG_bolsheviks_rebirth
 			FRA = {
 			every_unit_leader = {
 				limit = {
@@ -275,6 +386,1062 @@ focus_tree = {
 		}
 		}
 	}
+	focus = {
+		id = ENG_social_democracy
+		icon = GFX_goal_ENG_moderate_socialism
+		cost = 5.00
+		
+		prerequisite = {
+			focus = ENG_tuc
+		}
+		x = -26
+		y = 1
+		relative_position_id = ENG_tuc
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		has_country_flag = labour_party_victory
+		has_government = social_democrat
+		}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_social_democracy"
+				set_country_flag = soc_dems_are_socialists
+				add_popularity = {
+					ideology = social_democrat
+					popularity = 0.1
+				}
+				add_ideas = ENG_social_democrat_idea
+			}
+	}
+	focus = {
+		id = ENG_against_mosley
+		icon = GFX_goal_BRG_Gut_Mosley
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_social_democracy
+		}
+		x = -1
+		y = 1
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		has_government = social_democrat
+		}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_against_mosley"
+				add_political_power = -50
+				add_stability = 0.1
+				add_popularity = {
+					ideology = totalist
+					popularity = -0.2
+				}
+			}
+	}
+	focus = {
+		id = ENG_fix_union
+		icon = GFX_goal_CSA_calm_moderates
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_social_democracy
+		}
+		x = 1
+		y = 1
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		has_government = social_democrat
+		}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_against_mosley"
+				add_political_power = 100
+				add_popularity = {
+					ideology = syndicalist
+					popularity = 0.1
+				}
+				add_popularity = {
+					ideology = radical_socialist
+					popularity = 0.1
+				}
+				add_popularity = {
+					ideology = social_democrat
+					popularity = 0.1
+				}
+				add_synd_to_coalition = yes
+				add_radsoc_to_coalition = yes
+			}
+	}
+	focus = {
+		id = ENG_moderated_tuc
+		icon = GFX_goal_NIC_Victory_Social_Democracy
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_fix_union
+		}
+		prerequisite = {
+			focus = ENG_against_mosley
+		}
+		x = 0
+		y = 2
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		has_government = social_democrat
+		}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_against_mosley"
+				add_political_power = 100
+				add_popularity = {
+					ideology = social_democrat
+					popularity = 0.1
+				}
+				swap_ideas = {
+				    remove_idea = ENG_social_democrat_idea
+					add_idea = ENG_social_democrat_idea_1
+					}
+			    }
+	}
+	focus = {
+		id = ENG_connection_with_army
+		icon = GFX_goal_generic_army_high_command
+		cost = 4.00
+		prerequisite = {
+			focus = ENG_moderated_tuc
+		}
+		x = 0
+		y = 3
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		has_government = social_democrat
+		}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_against_mosley"
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = 0.05
+				}
+				add_authdem_to_coalition = yes
+				add_manpower = 10000
+				add_ideas = ENG_army_support
+			}				
+	}
+	focus = {
+		id = ENG_recruit_liberals
+		icon = GFX_RUS_Coalition_With_Liberals
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_connection_with_army
+		}
+		x = 0
+		y = 5
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		has_government = social_democrat
+		}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_against_mosley"
+				add_popularity = {
+					ideology = social_liberal
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = market_liberal
+					popularity = 0.05
+				}
+				add_soclib_to_coalition = yes
+		        add_marlib_to_coalition = yes
+				add_political_power = 150
+			}				
+	}
+	focus = {
+		id = ENG_mix_economy
+		icon = GFX_talktotheisldadoo
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_moderated_tuc
+		}
+		x = -2
+		y = 3
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		has_government = social_democrat
+		}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_against_mosley"
+				random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+				add_ideas = ENG_socdem_economy
+			    }
+	}
+	focus = {
+		id = ENG_social_security
+		icon = GFX_collective_housing
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_mix_economy
+		}
+		x = -3
+		y = 4
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		has_government = social_democrat
+		}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_against_mosley"
+				add_popularity = {
+					ideology = social_democrat
+					popularity = 0.05
+				}
+				add_ideas = ENG_welfare
+			}				
+	}
+	focus = {
+		id = ENG_socdem_education
+		icon = GFX_GRU_antiauthoritarian_education-4046
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_mix_economy
+		}
+		x = -1
+		y = 4
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		has_government = social_democrat
+		}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_against_mosley"
+				add_research_slot = 1
+			}				
+	}
+	focus = {
+		id = ENG_welfare_state
+		icon = GFX_RUS_Welfare_State
+		cost = 4.00
+		prerequisite = {
+			focus = ENG_socdem_education
+		}
+		prerequisite = {
+			focus = ENG_social_security
+		}
+		x = -2
+		y = 5
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		has_government = social_democrat
+		}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_against_mosley"
+				swap_ideas = {
+				    remove_idea = ENG_socdem_economy
+					add_idea = ENG_socdem_economy_1
+					}
+			}				
+	}
+	focus = {
+		id = ENG_mitigate_contradictions
+		icon = GFX_goal_NFA_bridge_class_divide
+		cost = 4.00
+		prerequisite = {
+			focus = ENG_moderated_tuc
+		}
+		x = 2
+		y = 3
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		has_government = social_democrat
+		}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_against_mosley"
+				add_war_support = -0.05
+				add_political_power = -100
+				swap_ideas = {
+				    remove_idea = ENG_social_democrat_idea_1
+					add_idea = ENG_social_democrat_idea_2
+					}
+			}				
+	}
+	focus = {
+		id = ENG_appease_workers
+		icon = GFX_goal_generic_happy_workers
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_mitigate_contradictions
+		}
+		x = 1
+		y = 4
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		has_government = social_democrat
+		}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				add_stability = 0.1
+				add_political_power = 50
+				add_ideas = ENG_workers_right
+			}				
+	}
+	focus = {
+		id = ENG_fair_wage
+		icon = GFX_goal_CSA_fair_days_pay
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_mitigate_contradictions
+		}
+		x = 3
+		y = 4
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = social_democrat
+		    has_completed_focus = ENG_appease_workers
+		}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				add_stability = 0.1
+				add_political_power = 50
+				swap_ideas = {
+				    remove_idea = ENG_workers_right
+					add_idea = ENG_workers_right_2
+				}
+			}				
+	}
+	focus = {
+		id = ENG_moderated_union
+		icon = GFX_CAL_workers_compensation_act
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_fair_wage
+		}
+		prerequisite = {
+			focus = ENG_appease_workers
+		}
+		x = 2
+		y = 5
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = social_democrat
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				add_stability = 0.1
+				add_political_power = 50
+				swap_ideas = {
+				    remove_idea = ENG_workers_right_2
+					add_idea = ENG_workers_right_3
+				}
+				swap_ideas = {
+				    remove_idea = ENG_social_democrat_idea_2
+					add_idea = ENG_social_democrat_idea_3
+				}
+			}				
+	}
+	focus = {
+		id = ENG_united_society
+		icon = GFX_BBR_socialist_reformers
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_moderated_union
+		}
+		prerequisite = {
+			focus = ENG_welfare_state
+		}
+		x = 0
+		y = 6
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = social_democrat
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				increase_ruling_party_popularity_by_10 = yes
+				swap_ideas = {
+				    remove_idea = ENG_social_democrat_idea_3
+					add_idea = ENG_social_democrat_idea_4
+				}
+			}				
+	}
+	focus = {
+		id = ENG_true_democratic_socialism
+		icon = GFX_goal_generic_democratic_socialism
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_united_society
+		}
+		x = 0
+		y = 7
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = social_democrat
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				add_political_power = 150
+				increase_ruling_party_popularity_by_10 = yes
+				swap_ideas = {
+				    remove_idea = ENG_social_democrat_idea_4
+					add_idea = ENG_social_democrat_idea_5
+				}
+				country_event = uob.1004
+			}				
+	}
+	focus = {
+		id = ENG_reradicalization
+		icon = GFX_goal_FRA_commune_of_liberty
+		cost = 2
+		allow_branch = {
+			has_country_flag = ENG_radsoc_win
+		}
+		prerequisite = {
+			focus = ENG_true_democratic_socialism
+		}
+		x = 0
+		y = 8
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = radical_socialist
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				add_political_power = -50
+				increase_ruling_party_popularity_by_10 = yes
+			}				
+	}
+	focus = {
+		id = ENG_international_communication
+		icon = GFX_goal_CSA_inevitable_world_socialism
+		cost = 3
+		prerequisite = {
+			focus = ENG_reradicalization
+		}
+		x = 2
+		y = 9
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = radical_socialist
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				add_ideas = ENG_internationale
+			}				
+	}
+	focus = {
+		id = ENG_nationalization
+		icon = GFX_BBR_rapid_nationalisation
+		cost = 3
+		prerequisite = {
+			focus = ENG_reradicalization
+		}
+		x = -2
+		y = 9
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = radical_socialist
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				swap_ideas = {
+				    remove_idea = ENG_socdem_economy_1
+					add_idea = ENG_socdem_economy_2
+				}
+			}				
+	}
+	focus = {
+		id = ENG_vindicate_the_radicals
+		icon = GFX_CSA_racial_liberation
+		cost = 3
+		prerequisite = {
+			focus = ENG_reradicalization
+		}
+		x = 0
+		y = 9
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = radical_socialist
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				increase_ruling_party_popularity_by_5 = yes
+				swap_ideas = {
+				    remove_idea = ENG_social_democrat_idea_5
+					add_idea = ENG_social_democrat_radsoc
+				}
+			}				
+	}
+	focus = {
+		id = ENG_workers_democracy
+		icon = GFX_goal_CSA_socialist_liberation
+		cost = 3
+		prerequisite = {
+			focus = ENG_nationalization
+		}
+		prerequisite = {
+		    focus = ENG_vindicate_the_radicals
+		}
+		prerequisite = {
+		    focus = ENG_international_communication
+		}
+		x = -1
+		y = 10
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = radical_socialist
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				increase_ruling_party_popularity_by_2 = yes
+				add_political_power = 30
+				add_ideas = ENG_communal_syndicalism
+			}				
+	}
+	focus = {
+		id = ENG_peoples_front
+		icon = GFX_goal_FRA_popularfront
+		cost = 3
+		prerequisite = {
+			focus = ENG_nationalization
+		}
+		prerequisite = {
+		    focus = ENG_vindicate_the_radicals
+		}
+		prerequisite = {
+		    focus = ENG_international_communication
+		}
+		x = 1
+		y = 10
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = radical_socialist
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				increase_ruling_party_popularity_by_2 = yes
+				add_political_power = 30
+				add_synd_to_coalition = yes
+				add_tot_to_coalition = yes
+				add_ideas = FRA_broad2
+            hidden_effect = {
+			    set_party_name = {
+				name = N_ENG_radical_socialist_party
+				long_name = N_ENG_radical_socialist_party
+				ideology = totalist
+			}
+			    create_country_leader = {
+	            name = "汤姆·曼恩"
+	            picture = "gfx/leaders/ENG/Portrait_England_Tom_Mann.png"
+	            traits = {}
+	            expire = "1965.1.1"
+	            ideology = authcom_subtype
+            }
+		}
+		}
+	}
+	focus = {
+		id = ENG_revolutionary_democracy
+		icon = GFX_goal_FRA_workers_and_peasants_party
+		cost = 4
+		prerequisite = {
+			focus = ENG_peoples_front
+		}
+		prerequisite = {
+		    focus = ENG_workers_democracy
+		}
+		x = 0
+		y = 11
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = radical_socialist
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				swap_ideas = {
+				    remove_idea = ENG_social_democrat_radsoc
+					add_idea = ENG_social_democrat_radsoc_1
+				}
+			}
+    }
+	focus = {
+		id = ENG_utopia_coming
+		icon = GFX_goal_CSA_New_Financial_System_New_Age
+		cost = 3
+		allow_branch = {
+			has_country_flag = ENG_wells_win
+		}
+		prerequisite = {
+			focus = ENG_true_democratic_socialism
+		}
+		x = 0
+		y = 8
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = social_democrat
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				increase_ruling_party_popularity_by_5 = yes
+				add_tech_bonus = {
+		            name = ENG_utopia_coming	
+		            bonus = 0.5
+		            uses = 1
+		            category = armor
+	            }
+				add_tech_bonus = {
+		            name = ENG_utopia_coming	
+		            bonus = 0.5
+		            uses = 1
+		            category = air_equipment
+	            }
+				add_tech_bonus = {
+		            name = ENG_utopia_coming	
+		            bonus = 0.5
+		            uses = 1
+		            category = nuclear
+	            }
+			}				
+	}
+	focus = {
+		id = ENG_peaceful_revolution
+		icon = GFX_goal_CSA_peaceful_revolution
+		cost = 3
+		prerequisite = {
+			focus = ENG_utopia_coming
+		}
+		x = 2
+		y = 9
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = social_democrat
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				add_ideas = ENG_int_peace
+			}				
+	}
+	focus = {
+		id = ENG_scientific_industrial
+		icon = GFX_goal_CSA_Technocratic_Industry
+		cost = 3
+		prerequisite = {
+			focus = ENG_utopia_coming
+		}
+		x = -2
+		y = 9
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = social_democrat
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				swap_ideas = {
+				    remove_idea = ENG_socdem_economy_1
+					add_idea = ENG_socdem_economy_wells
+				}
+			}				
+	}
+	focus = {
+		id = ENG_communicate_with_futurist
+		icon = GFX_goal_FRA_liberatory_learning
+		cost = 3
+		prerequisite = {
+			focus = ENG_utopia_coming
+		}
+		x = 0
+		y = 9
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = social_democrat
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				increase_ruling_party_popularity_by_5 = yes
+				swap_ideas = {
+				    remove_idea = ENG_social_democrat_idea_5
+					add_idea = ENG_social_democrat_idea_wells
+				}
+			}				
+	}
+	focus = {
+		id = ENG_cult_of_rationality
+		icon = GFX_goal_BAN_rational_vanguard
+		cost = 3
+		prerequisite = {
+			focus = ENG_communicate_with_futurist
+		}
+		prerequisite = {
+		    focus = ENG_scientific_industrial
+		}
+		prerequisite = {
+		    focus = ENG_peaceful_revolution
+		}
+		x = -1
+		y = 10
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = social_democrat
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				increase_ruling_party_popularity_by_5 = yes
+				add_political_power = -50
+				add_ideas = ENG_rationality
+			}				
+	}
+	focus = {
+		id = ENG_human_right
+		icon = GFX_goal_CSA_equality
+		cost = 3
+		prerequisite = {
+			focus = ENG_communicate_with_futurist
+		}
+		prerequisite = {
+		    focus = ENG_scientific_industrial
+		}
+		prerequisite = {
+		    focus = ENG_peaceful_revolution
+		}
+		x = 1
+		y = 10
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = social_democrat
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				increase_ruling_party_popularity_by_10 = yes
+				add_political_power = 50
+				add_ideas = ENG_socialist_humanism
+		}
+	}
+	focus = {
+		id = ENG_towards_utopia
+		icon = GFX_goal_CSA_Yellowbrick_Road_Utopia
+		cost = 4
+		prerequisite = {
+			focus = ENG_cult_of_rationality
+		}
+		prerequisite = {
+		    focus = ENG_human_right
+		}
+		x = 0
+		y = 11
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = social_democrat
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				swap_ideas = {
+				    remove_idea = ENG_social_democrat_idea_wells
+					add_idea = ENG_social_democrat_idea_wells_2
+				}
+			}
+    }
+	focus = {
+		id = ENG_pragmatism
+		icon = GFX_goal_MEX_Pink_Roses
+		cost = 2
+		allow_branch = {
+			has_country_flag = ENG_attlee_win
+		}
+		prerequisite = {
+			focus = ENG_true_democratic_socialism
+		}
+		x = 0
+		y = 8
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = social_democrat
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				increase_ruling_party_popularity_by_10 = yes
+				add_stability = 5
+				add_political_power = 60
+			}				
+	}
+	focus = {
+		id = ENG_progressive
+		icon = GFX_UKR_Social_Democrats
+		cost = 3
+		prerequisite = {
+			focus = ENG_pragmatism
+		}
+		x = 2
+		y = 9
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = social_democrat
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				increase_ruling_party_popularity_by_10 = yes
+				add_political_power = 50
+				add_ideas = BBR_civil_rights_act_idea
+			}				
+	}
+	focus = {
+		id = ENG_moderate_industrial
+		icon = GFX_GRU_SPD_KEY_INDUSTRY
+		cost = 3
+		prerequisite = {
+			focus = ENG_pragmatism
+		}
+		x = -2
+		y = 9
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = social_democrat
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				add_ideas = ENG_key_nationalize
+			}				
+	}
+	focus = {
+		id = ENG_communicate_with_liberal
+		icon = GFX_goal_NIC_United_Liberalism
+		cost = 3
+		prerequisite = {
+			focus = ENG_pragmatism
+		}
+		x = 0
+		y = 9
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = social_democrat
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				increase_ruling_party_popularity_by_10 = yes
+				add_popularity = {
+			        ideology = radical_socialist
+				    popularity = 0.05
+			    }
+			    add_popularity = {
+			        ideology = social_liberal
+				    popularity = 0.05
+			    }
+				add_soclib_to_coalition = yes
+				add_synd_to_coalition = yes
+				add_radsoc_to_coalition = yes
+				
+				swap_ideas = {
+				    remove_idea = ENG_social_democrat_idea_5
+					add_idea = ENG_social_democrat_idea_attlee
+				}
+			}				
+	}
+	focus = {
+		id = ENG_poverty_eradication
+		icon = GFX_goal_NFA_Welfare
+		cost = 3
+		prerequisite = {
+			focus = ENG_progressive
+		}
+		prerequisite = {
+		    focus = ENG_communicate_with_liberal
+		}
+		prerequisite = {
+		    focus = ENG_moderate_industrial
+		}
+		x = -1
+		y = 10
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = social_democrat
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				increase_ruling_party_popularity_by_5 = yes
+				add_political_power = -50
+				swap_ideas = {
+				    remove_idea = ENG_welfare
+					add_idea = ENG_welfare_2
+				}
+			}				
+	}
+	focus = {
+		id = ENG_moral_socialism
+		icon = GFX_goal_NEE_Supremacy_Morality
+		cost = 3
+		prerequisite = {
+			focus = ENG_progressive
+		}
+		prerequisite = {
+		    focus = ENG_communicate_with_liberal
+		}
+		prerequisite = {
+		    focus = ENG_moderate_industrial
+		}
+		x = 1
+		y = 10
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = social_democrat
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				increase_ruling_party_popularity_by_10 = yes
+				add_stability = 0.05
+				add_political_power = 50
+				add_ideas = ENG_moral_socialism_idea
+		}
+	}
+	focus = {
+		id = ENG_shining_beacon
+		icon = GFX_VNC_model_of_dem_socialism
+		cost = 4
+		prerequisite = {
+			focus = ENG_poverty_eradication
+		}
+		prerequisite = {
+		    focus = ENG_moral_socialism
+		}
+		x = 0
+		y = 11
+		relative_position_id = ENG_social_democracy
+			ai_will_do = {
+				factor = 50
+			}
+		available = {
+		    has_government = social_democrat
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus ENG_appease_workers"
+				swap_ideas = {
+				    remove_idea = ENG_social_democrat_idea_attlee
+					add_idea = ENG_social_democrat_idea_attlee_2
+				}
+			}
+    }
 	focus = {
 		id = ENG_always_watching
 		text = ENG_always_watching
@@ -372,8 +1539,7 @@ focus_tree = {
 			completion_reward = {
 				log = "[GetDateText]: [Root.GetName]: Focus ENG_lives"
 				country_event = { id = uob.1000 days = 30 }
-				    add_ideas = FRA_rev2
-				    add_ideas = SOV_tuhk_cult
+				    add_ideas = ENG_cult
 					log = "[GetDateText]: [Root.GetName]: Focus ENG_lives"
 					set_cosmetic_tag = ENG_Mosley_totalist
 					swap_ideas = {
@@ -398,10 +1564,8 @@ focus_tree = {
 					factor = 50
 				}
 			completion_reward = {
-				add_ideas = SOV_Council_Of_Labour_And_Defence_2
-				add_ideas =  FRA_lenin2
-				add_ideas = GEO_class_warfare
-				}
+				add_ideas = ENG_contact_rus
+			}
 	}
 	focus = {
 		id = ENG_cjqk
@@ -419,8 +1583,11 @@ focus_tree = {
 					factor = 50
 				}
 			completion_reward = {
-				add_ideas = RUS_Restored_Cheka
-				}
+				swap_ideas = { 
+			    remove_idea =  ENG_political_commissars_idea_1
+			    add_idea = ENG_political_commissars_idea_2
+			    }
+			}
 	}
 	focus = {
 		id = ENG_brswg
@@ -439,14 +1606,10 @@ focus_tree = {
 				}
 			completion_reward = {
 				swap_ideas = {
-			    remove_idea = SOV_Council_Of_Labour_And_Defence_2
-			    add_idea = SOV_Council_Of_Labour_And_Defence_3
-		           }
-				add_ideas = FRA_red_guard_idea
-				add_ideas = SOV_politburo
-		        add_ideas = SOV_improved_supply
-				add_ideas = RUS_Russian_Nat_Synd
-				}
+							remove_idea = ENG_contact_rus
+							add_idea = ENG_contact_rus_1
+						}
+					}
 	}
 	focus = {
 		id = ENG_drzhsy
@@ -466,8 +1629,8 @@ focus_tree = {
 				}
 			completion_reward = {
 				swap_ideas = {
-			        remove_idea = SOV_Council_Of_Labour_And_Defence_3
-			        add_idea = SOV_Council_Of_Labour_And_Defence_4
+			        remove_idea = ENG_contact_rus_1
+			        add_idea = ENG_contact_rus_2
 		            }
 				every_state = {
 		limit = { is_core_of = RUS }
@@ -491,8 +1654,7 @@ focus_tree = {
 					factor = 50
 				}
 			completion_reward = {
-				add_ideas = FRA_ultranat
-				add_ideas = FRA_corporate_syndie_idea2
+				add_ideas = ENG_contact_fra
 				}
 	}
 	focus = {
@@ -511,7 +1673,10 @@ focus_tree = {
 					factor = 50
 				}
 			completion_reward = {
-				add_ideas = FRA_violence
+				swap_ideas = {
+				    remove_idea = ENG_contact_fra
+				    add_idea = ENG_contact_fra_1
+				    }
 				}
 	}
 	focus = {
@@ -530,8 +1695,7 @@ focus_tree = {
 					factor = 50
 				}
 			completion_reward = {
-				add_ideas = FRA_supremacy
-				add_ideas = FRA_society
+				add_ideas = ENG_society
 				}
 	}
 	focus = {
@@ -624,7 +1788,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			add_ideas = SRI_communal_syndicalism_idea
+			add_ideas = ENG_communal_syndicalism
 		}
 	}
 	focus = {
@@ -719,7 +1883,7 @@ focus_tree = {
 			focus = ENG_mzsdyw
 			focus = ENG_devolution
 		}
-		x = -10
+		x = -9
 
 		y = 4
 		relative_position_id = ENG_tuc
@@ -805,7 +1969,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-		add_ideas = SRI_very_high_peasant_idea
+		    add_ideas = ENG_cooperation_economy
 		}
 	}
 
@@ -816,7 +1980,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_qzxhgt
 		}
-		x = -10
+		x = -9
 		y = 5
 		relative_position_id = ENG_tuc
 		ai_will_do = {
@@ -1030,7 +2194,10 @@ focus_tree = {
 			factor = 50
 		}
 		completion_reward = {
-			add_ideas = SRI_squadrismo_idea
+			swap_ideas = { 
+			    remove_idea =  ENG_political_commissars_idea
+			    add_idea = ENG_political_commissars_idea_1
+			}
 		}
 	}
 	focus = {
@@ -1047,7 +2214,7 @@ focus_tree = {
 			factor = 50
 		}
 		completion_reward = {
-			add_ideas = SRI_futurism_idea
+			add_ideas = ENG_futurism_idea
 		}
 	}
 	focus = {
@@ -1210,6 +2377,11 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = ENG_tuc
+		}
+		allow_branch = { 
+			NOT = {
+                has_country_flag = BRG_new_britain
+		    }
 		}
 		available = {
 			has_socialist_government = yes
@@ -1773,7 +2945,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_devolution
 		}
-		x = -14
+		x = -13
 		y = 4
 		relative_position_id = ENG_tuc
 			ai_will_do = {
@@ -1799,6 +2971,7 @@ focus_tree = {
 								}
 						}
 					custom_effect_tooltip = ENG_three_armies_tp
+					add_ideas = ENG_decentralarmy
 				}
 
 	}
@@ -1846,14 +3019,14 @@ focus_tree = {
 			focus = ENG_CSGSYD
 			focus = ENG_GLDZYD
 		}
-		x = -14
+		x = -13
 		y = 6
 		relative_position_id = ENG_tuc
 			ai_will_do = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = FRA_new_worker_idea2
+					add_ideas = ENG_new_worker
 				}
 
 	}
@@ -2006,7 +3179,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_tuc2
 		}
-		x = 7
+		x = 5
 		y = 1
 		relative_position_id = ENG_tuc2
 			ai_will_do = {
@@ -2054,7 +3227,7 @@ focus_tree = {
 			completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus ENG_tuc2_demobilization"
 					remove_ideas = ENG_silence_idea
-					add_ideas = CSA_recruitemt_campaign_idea
+					add_ideas = ENG_demobilization
 				}
 
 	}
@@ -3322,7 +4495,7 @@ focus_tree = {
 				}
 			}
 			completion_reward = {
-					add_ideas = SOV_frunzes_reform_plan_2
+					add_ideas = ENG_officer_initiative
 				}
 
 	}
@@ -3364,7 +4537,7 @@ focus_tree = {
 				}
 			}
 			completion_reward = {
-					add_ideas = SOV_old_guard_reform_plan_2
+					add_ideas = ENG_human_wave
 				}
 
 	}
@@ -3406,7 +4579,7 @@ focus_tree = {
 				}
 			}
 			completion_reward = {
-					add_ideas = SOV_tukhachevskiys_reform_plan_4
+					add_ideas = ENG_depth_strategy
 				}
 
 	}
@@ -5653,6 +6826,1062 @@ focus_tree = {
 
 	}
 	## Hobart ##
+	focus = {
+		id = BRG_empire_reborn
+		icon = GFX_goal_CAN_new_empire
+		x = -35
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ENG_tuc
+		}
+		available = {
+			has_country_flag = BRG_new_britain
+		}
+		allow_branch = {
+			has_country_flag = BRG_new_britain
+		}
+		ai_will_do = {
+					factor = 100
+				}
+		completion_reward = {
+			add_ideas = BRG_revival
+			unlock_decision_category_tooltip = BRG_factionering
+		}
+	}
+	focus = {
+		id = BRG_show_of_force
+		icon = GFX_HUN_hungary_diplomat
+		cost = 5.00
+		prerequisite = {
+			focus = BRG_empire_reborn
+		}
+		available = {
+			has_socialist_government = no
+		}
+		x = -5
+		y = 1
+		relative_position_id = BRG_empire_reborn
+			available = {
+					is_subject = no
+				}
+			bypass = {
+					OR = {
+							has_war_with = GER
+							has_war_with = CAN
+						}
+				}
+			ai_will_do = {
+					factor = 5
+				}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus ENG_show_of_force"
+					country_event = uob.15
+				}
+
+	}
+	focus = {
+		id = BRG_show_of_force_dip
+		icon =  GFX_goal_IRE_hands_across_isle
+		cost = 5.00
+		relative_position_id = BRG_empire_reborn
+		x = -6
+		y = 2
+
+		available = {
+			can_declare_war_on = IRE
+			OR = {
+				AND = {
+					has_socialist_government = yes
+					IRE = {
+						has_socialist_government = no
+						is_in_faction = no
+						is_subject = no
+					}
+					OR = {
+						has_global_flag = ENG_CANIRE_protection
+						has_global_flag = ENG_CANIRE_support
+						has_global_flag = ENG_GERIRE_protection
+						has_global_flag = ENG_GERIRE_support
+						has_global_flag = ENG_IRE_alone
+					}
+				}
+				AND = {
+					has_socialist_government = no
+					IRE = {
+						has_socialist_government = no
+						is_in_faction = no
+						is_subject = no
+					}
+				}
+			}
+		}
+		mutually_exclusive = {
+			focus = BRG_show_of_force_mil
+		}
+		bypass = {
+			OR = {
+				NOT = { country_exists = IRE }
+				AND = {
+					has_socialist_government = yes
+					IRE = { has_socialist_government = yes }
+				}
+			}
+		}
+		prerequisite = {
+			focus = BRG_show_of_force
+		}
+		ai_will_do = { factor = 50 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ENG_show_of_force_dip"
+			if = {
+				limit = {
+					has_socialist_government = yes
+				}
+				country_event = uob.60
+				hidden_effect = {
+					IRE = {
+						news_event = {
+							id = uob.45
+						}
+					}
+					CAN = {
+						news_event = {
+							id = uob.45
+						}
+					}
+					GER = {
+						news_event = {
+							id = uob.45
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_socialist_government = no
+				}
+				unlock_decision_tooltip = BRG_renounce_claims
+				unlock_decision_tooltip = BRG_ireland_submission
+			}
+		}
+	}
+	focus = {
+		id = BRG_show_of_force_mil
+		icon = GFX_goal_IRE_strong_free
+		cost = 5.00
+		prerequisite = {
+			focus = BRG_show_of_force
+		}
+		mutually_exclusive = {
+			focus = BRG_show_of_force_dip
+		}
+		x = -4
+		y = 2
+		relative_position_id = BRG_empire_reborn
+		available = {
+			can_declare_war_on = IRE
+			OR = {
+				AND = {
+					has_socialist_government = yes
+					IRE = {
+						has_socialist_government = no
+					}
+					OR = {
+						has_global_flag = ENG_CANIRE_protection
+						has_global_flag = ENG_CANIRE_support
+						has_global_flag = ENG_GERIRE_protection
+						has_global_flag = ENG_GERIRE_support
+						has_global_flag = ENG_IRE_alone
+					}
+				}
+				has_socialist_government = no
+			}
+			hidden_trigger = {
+				NOT = {
+					is_ai = yes
+					IRE = {
+						OR = {
+							is_in_faction = yes
+							has_guarantor = yes
+						}
+					}
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = { can_declare_war_on = IRE }
+				AND = {
+					has_socialist_government = yes
+					IRE = { has_socialist_government = yes }
+				}
+			}
+		}
+		will_lead_to_war_with = IRE
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0
+				enemies_strength_ratio > 0.5
+			}
+			modifier = {
+				factor = 0
+				surrender_progress > 0
+			}
+			modifier = {
+				factor = 0
+				strength_ratio = { tag = IRE ratio < 2 }
+			}
+			modifier = {
+				factor = 0
+				IRE = {
+					is_subject = yes
+					overlord = {
+						strength_ratio = { tag = ROOT ratio > 0.5 }
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				IRE = {
+					is_in_faction = yes
+					any_allied_country = {
+						strength_ratio = { tag = ROOT ratio > 0.5 }
+					}
+				}
+			}
+			modifier = {
+				factor = 0.2
+				date < 1939.1.1
+				IRE = {
+					OR = {
+						is_in_faction_with = GER
+						is_in_faction_with = ENT
+						is_guaranteed_by = GER
+						is_guaranteed_by = ENT
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+				IRE = {
+					OR = {
+						is_in_faction_with = GER
+						is_in_faction_with = ENT
+						is_guaranteed_by = GER
+						is_guaranteed_by = ENT
+					}
+				}
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ENG_show_of_force_mil"
+			unlock_decision_tooltip = BRG_ireland_annexation
+			unlock_decision_tooltip = BRG_invade_ire
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+	focus = {
+		id = BRG_anglo_irish_friendship
+		icon = GFX_goal_IRE_nation_of_two_peoples
+		cost = 5.00
+		prerequisite = {
+			focus = BRG_show_of_force_dip
+			focus = BRG_show_of_force_mil
+		}
+		x = -5
+		y = 3
+		relative_position_id = BRG_empire_reborn
+		bypass = {
+			OR = {
+				IRE = { exists = no }
+				IRE = { is_subject_of = ENG }
+			}
+		}
+		available = {
+			country_exists = IRE
+			NOT = { has_war_with = IRE }
+			OR = {
+				AND = {
+					has_socialist_government = yes
+					IRE = { 
+						has_socialist_government = yes
+						is_in_faction = no
+						is_subject = no
+					}
+				}
+				AND = {
+					has_socialist_government = no
+					has_country_flag = BRG_irish_claims_renounced
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ENG_anglo_irish_friendship"
+			add_opinion_modifier = { target = IRE modifier = KR_approves_of_govt }
+				IRE = {
+					add_opinion_modifier = { target = ENG modifier = KR_approves_of_govt }
+					add_ideas = BRG_british_aid_idea
+				}
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = BRG_invite_ireland_tt
+		}
+	}
+	focus = {
+		id = BRG_faction_leader
+		icon = GFX_goal_BRG_Commonwealth_Nations
+		cost = 5.00
+
+		relative_position_id = BRG_empire_reborn
+		x = -2
+		y = 1
+
+		available = {
+			is_faction_leader = yes
+		}
+		available = {
+			has_socialist_government = no
+		}
+		prerequisite = {
+			focus = BRG_empire_reborn
+		}
+		ai_will_do = { factor = 15 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRG_faction_leader"
+			add_ideas = BRG_commonwealth_head_idea
+			every_other_country = { 
+				limit = {
+					is_in_faction_with = ENG
+				}
+				add_ideas = BRG_commonwealth_member_idea
+			}
+		}
+	}
+
+	focus = {
+		id = BRG_research_sharing
+		icon = GFX_goal_BRG_Commonwealth_Research_Industry_Council
+		cost = 5.00
+
+		relative_position_id = BRG_empire_reborn
+		x = -2
+		y = 2
+
+		available = {
+			is_faction_leader = yes
+		}
+		available = {
+			has_socialist_government = no
+		}
+		prerequisite = {
+			focus = BRG_faction_leader
+		}
+		ai_will_do = { factor = 15 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRG_research_sharing"
+			add_ideas = BRG_craic_idea
+			add_to_tech_sharing_group = commonwealth_research
+			set_global_flag = BRG_craic_created
+			add_tech_bonus = {
+				name = BRG_anglo_cooperation
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+	
+	focus = {
+		id = BRG_protect_fair_isle
+		icon = GFX_goal_BRG_Battle_Britain
+		cost = 5.00
+		
+		relative_position_id = BRG_empire_reborn
+		x = 6
+		y = 1
+
+		available = {
+			OR = {
+				has_war_with = CAN
+				has_war_with = FRA
+				has_war_with = GER
+				has_war_with = RUS
+				date > 1940.1.1
+			}
+		}
+		available = {
+			has_socialist_government = no
+		}
+		prerequisite = {
+			focus = BRG_empire_reborn
+		}
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRG_protect_fair_isle"
+			add_war_support = 0.05
+			add_ideas = BRG_defense_idea
+		}
+	}
+	focus = {
+		id = BRG_home_guard
+		icon = GFX_goal_BRG_Rally_Home_Guard
+		cost = 5.00
+
+		relative_position_id = BRG_protect_fair_isle
+		x = -2
+		y = 1
+
+		available = {
+			has_socialist_government = no
+		}
+		prerequisite = {
+			focus = BRG_protect_fair_isle
+		}
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRG_home_guard"
+			swap_ideas = {
+				remove_idea = BRG_defense_idea
+				add_idea = BRG_defense_idea_2
+			}
+			custom_effect_tooltip = ENG_summon_the_home_guard_tp
+			hidden_effect = {
+				load_oob = ENG_home_guard_defense
+			}
+		}
+	}
+
+	focus = {
+		id = BRG_home_fires
+		icon = GFX_goal_AUS_All_For_Family
+		cost = 5.00
+
+		relative_position_id = BRG_home_guard
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = BRG_home_guard
+		}
+		available = {
+			has_socialist_government = no
+		}
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRG_home_fires"
+			swap_ideas = {
+				remove_idea = BRG_defense_idea_2
+				add_idea = BRG_defense_idea_3
+			}
+		}
+	}
+
+	focus = {
+		id = BRG_little_ships
+		icon = GFX_goal_NFL_fishing_boats_with_six_inch_guns
+		cost = 5.00
+
+		relative_position_id = BRG_protect_fair_isle
+		x = -1
+		y = 2
+
+		available = {
+			has_socialist_government = no
+		}
+		prerequisite = {
+			focus = BRG_home_guard
+		}
+		prerequisite = {
+			focus = BRG_secure_the_skies
+		}
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRG_little_ships"
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 100
+				producer = ENG
+			}
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = ENG_conscript_vessels_tp
+			hidden_effect = {
+				ENG_DECISION_EC01_naval_variant = yes
+				load_oob = ENG_conscript_vessels
+			}
+		}
+	}
+
+	focus = {
+		id = BRG_secure_the_skies
+		icon = GFX_BBR_mass_anti_air_installations
+		cost = 5.00
+
+		relative_position_id = BRG_protect_fair_isle
+		x = 0
+		y = 1
+
+		available = {
+			has_socialist_government = no
+		}
+		prerequisite = {
+			focus = BRG_protect_fair_isle
+		}
+		ai_will_do = { factor = 100 }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRG_secure_the_skies"
+			if = {
+				limit = { 121 = { free_building_slots = { building = anti_air_building size > 1 } } }
+				121 = {
+					set_building_level = { type = anti_air_building level = 5 }
+				}
+			}
+			else = {
+				random_owned_controlled_state = {
+					prioritize = { 131 133 }
+					limit = {
+						is_in_home_area = yes
+						free_building_slots = { building = anti_air_building size > 1 }
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = { 130 = { free_building_slots = { building = anti_air_building size > 1 } } }
+				130 = {
+					set_building_level = { type = anti_air_building level = 5 }
+				}
+			}
+			else = {
+				random_owned_controlled_state = {
+					prioritize = { 132 122 1225 }
+					limit = {
+						is_in_home_area = yes
+						free_building_slots = { building = anti_air_building size > 1 }
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = { 127 = { free_building_slots = { building = anti_air_building size > 1 } } }
+				127 = {
+					set_building_level = { type = anti_air_building level = 5 }
+				}
+			}
+			else = {
+				random_owned_controlled_state = {
+					prioritize = { 128 129 338 }
+					limit = {
+						is_in_home_area = yes
+						free_building_slots = { building = anti_air_building size > 1 }
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 126 125 127 }
+				limit = {
+					impassable = no
+					is_core_of = ROOT
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRG_oxbridge
+		icon = GFX_goal_BRG_Recruit_Oxbridge
+		cost = 5.00
+
+		relative_position_id = BRG_protect_fair_isle
+		x = 2
+		y = 1
+
+		available = {
+			has_socialist_government = no
+		}
+		prerequisite = {
+			focus = BRG_protect_fair_isle
+		}
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRG_oxbridge"
+			add_ideas = BRG_oxbridge_idea
+		}
+	}
+
+	focus = {
+		id = BRG_westminster_project
+		icon = GFX_goal_UMN_scavenge_stores_of_shinkolowbe
+		cost = 5.00
+
+		relative_position_id = BRG_oxbridge
+		x = -1
+		y = 1
+
+		available = {
+			has_socialist_government = no
+		}
+		prerequisite = {
+			focus = BRG_oxbridge
+		}
+		prerequisite = {
+			focus = BRG_secure_the_skies
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 10
+				date > 1940.4.3
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRG_westminster_project"
+			if = {
+				limit = {
+					NOT = { has_tech = atomic_research }
+					NOT = { is_researching_technology = atomic_research }
+				}
+				add_tech_bonus = {
+					name = BRG_westminster_project
+					bonus = 0.5
+					uses = 1
+					technology = atomic_research
+				}
+			}
+			else = {
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.5
+				}
+			}
+			if = {
+				limit = {
+					controls_province = 11253 #South London
+					125 = { #East Anglia
+						is_owned_and_controlled_by = ROOT
+						can_construct_building = nuclear_facility
+					}
+				}
+				125 = { #East Anglia
+					add_building_construction = {
+						type = nuclear_facility
+						level = 1
+						province = 11253 #Cambridge
+						instant_build = yes
+					}
+				}
+			}
+			else = {
+				random_owned_controlled_state = {
+					prioritize = { 126 129 }
+					limit = {
+						is_core_of = ROOT
+						can_construct_building = nuclear_facility
+					}
+					construct_building_in_random_province = { nuclear_facility = 1 }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRG_mi6
+		icon = GFX_goal_CAN_Allied_Intelligence_Sharing
+		cost = 5.00
+
+		relative_position_id = BRG_oxbridge
+		x = 1
+		y = 1
+
+		available = {
+			has_socialist_government = no
+		}
+		prerequisite = {
+			focus = BRG_oxbridge
+		}
+		ai_will_do = { factor = 15 }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRG_mi6"
+			if = {
+				limit = { has_dlc = "La Resistance" }
+				swap_ideas = {
+					remove_idea = BRG_oxbridge_idea
+					add_idea = BRG_oxbridge_idea_2
+				}
+				if = {
+					limit = { has_intelligence_agency = yes }
+					if = {
+						limit = { NOT = { has_done_agency_upgrade = upgrade_crypto_strength } }
+						upgrade_intelligence_agency = upgrade_crypto_strength
+					}
+					if = {
+						limit = { NOT = { has_done_agency_upgrade = upgrade_decryption_boost } }
+						upgrade_intelligence_agency = upgrade_decryption_boost
+					}
+				}
+				else_if = {
+					limit = { has_intelligence_agency = no }
+					create_intelligence_agency = yes
+					upgrade_intelligence_agency = upgrade_crypto_strength
+					upgrade_intelligence_agency = upgrade_decryption_boost
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = BRG_oxbridge_idea
+					add_idea = BRG_oxbridge_idea_2_no_lar
+				}
+				add_tech_bonus = {
+					name = BRG_mi6
+					bonus = 1
+					uses = 1
+					category = electronics
+				}
+			}
+		}
+	}
+	focus = {
+		id = BRG_in_faction_focus
+		icon = GFX_TRM_Approach_Entente
+		cost = 5.00
+
+		relative_position_id = BRG_empire_reborn
+		x = 2
+		y = 1
+
+		available = {
+			is_faction_leader = no
+			is_in_faction = yes
+		}
+		available = {
+			has_socialist_government = no
+		}
+		prerequisite = {
+			focus = BRG_empire_reborn
+		}
+		ai_will_do = { factor = 15 }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRG_in_faction_focus"
+			every_other_country = { 
+				limit = {
+					is_in_faction_with = ENG
+				}
+				add_ideas = BRG_british_aid_idea
+			}
+		}
+	}
+
+	focus = {
+		id = BRG_anglo_cooperation
+		icon = GFX_goal_MEX_open_markets_for_entente
+		cost = 5.00
+
+		relative_position_id = BRG_empire_reborn
+		x = 2
+		y = 2
+
+		available = {
+			is_faction_leader = no
+			is_in_faction = yes
+		}
+		available = {
+			has_socialist_government = no
+		}
+		prerequisite = {
+			focus = BRG_in_faction_focus
+		}
+		ai_will_do = { factor = 15 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRG_anglo_cooperation"
+			add_ideas = BRG_free_trade_idea
+			add_tech_bonus = {
+				name = BRG_anglo_cooperation
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = BRG_rebuilding_the_empire
+		icon = GFX_goal_BRG_Rebuilding_Empire
+		cost = 5.00
+
+		relative_position_id = BRG_empire_reborn
+		x = 0
+		y = 1
+
+		available = {
+			OR = {
+				has_completed_focus = BRG_the_rebirth_of_merrie_england
+				has_completed_focus = BRG_survival_through_will
+				has_completed_focus = BRG_full_political_dominance
+				has_completed_focus = BRG_socialism_liberty
+			}
+		}
+		available = {
+			has_socialist_government = no
+		}
+		prerequisite = {
+			focus = BRG_empire_reborn
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ENG_red"
+			add_stability = 0.05
+			add_war_support = 0.1
+			if = {
+				if = {
+					limit = {
+						AUS = {
+							is_subject = no
+							exists = yes
+							owns_state = 1235
+						}
+						has_country_leader = { name = "Francis Joseph I" ruling_only = yes }
+					}
+					unlock_decision_tooltip = BRG_request_liechtenstein
+				}
+				limit = {
+					ENG = {
+						NOT = {
+						owns_state = 1235
+						}
+					}
+					AUS = {
+						NOT = {
+						owns_state = 1235
+						}
+					}
+					has_country_leader = { name = "Francis Joseph I" ruling_only = yes }
+				}
+				unlock_decision_tooltip = BRG_invade_lic
+			}
+		}
+	}
+	focus = {
+		id = BRG_to_new_world
+		icon = GFX_goal_BRG_Look_West
+		cost = 5.00
+		
+		relative_position_id = BRG_empire_reborn
+		x = -1
+		y = 3
+
+		available = {
+			has_socialist_government = no
+		}
+		prerequisite = {
+			focus = BRG_rebuilding_the_empire
+		}
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRG_to_new_world"
+			unlock_decision_tooltip = BRG_new_world_foothold
+			if = {
+				limit = { has_country_leader = { name = "Mataoka II" ruling_only = yes } }
+				unlock_decision_tooltip = BRG_reclaim_tsenacommacah
+			}
+			if = {
+				limit = {
+					TEX = {
+						has_country_leader = { name = "James III" ruling_only = yes }
+					}
+					OR = {
+						has_country_leader = { name = "Robert I" ruling_only = yes }
+						has_country_flag = BRG_jacobite_stuff
+					}
+				}
+				unlock_decision_tooltip = BRG_jacobite_interaction
+			}
+			if = {
+				limit = {
+					NOT = {
+						is_in_faction_with = ALA
+					}
+					ALA = {
+						exists = yes
+						is_ai = yes
+						is_in_faction_with = AUS
+						has_country_flag = ALA_purchase_liechtenstein
+					}
+					has_country_leader = { name = "Francis Joseph I" ruling_only = yes }
+				}
+				unlock_decision_tooltip = BRG_request_alaska
+			}
+		}
+	}
+
+	focus = {
+		id = BRG_african_claims
+		icon = GFX_goal_CAN_intervene_in_africa
+		cost = 5.00
+		
+		relative_position_id = BRG_empire_reborn
+		x = 0
+		y = 2
+
+		available = {
+			has_socialist_government = no
+		}
+		prerequisite = {
+			focus = BRG_rebuilding_the_empire
+		}
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRG_african_claims"
+			unlock_decision_tooltip = BRG_anglo_egypt
+			unlock_decision_tooltip = BRG_reclaim_east_africa
+			if = {
+				limit = {
+					MAF = {	exists = no }
+				}
+				unlock_decision_tooltip = BRG_fuck_around_in_afrika
+			}
+			if = {
+				limit = {
+					NGR = {
+						exists = yes
+						NOT = {
+							is_in_faction_with = ENG
+						}
+					}
+				}
+				unlock_decision_tooltip = BRG_reclaim_west_africa
+			}
+		}
+	}
+
+	focus = {
+		id = BRG_indian_claims
+		icon = GFX_goal_BRG_Look_East
+		cost = 5.00
+
+		relative_position_id = BRG_empire_reborn
+		x = 1
+		y = 3
+
+		prerequisite = {
+			focus = BRG_rebuilding_the_empire
+		}
+		available = {
+			has_socialist_government = no
+		}
+		ai_will_do = { factor = 15 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRG_indian_claims"
+			unlock_decision_tooltip = BRG_foothold_in_india
+			unlock_decision_tooltip = BRG_pacific_posessions
+		}
+	}
+	focus = {
+		id = BRG_end_french
+		icon = GFX_BAY_FRENCH_MENACE
+		cost = 5.00
+		prerequisite = {
+			focus = BRG_indian_claims
+			focus = BRG_african_claims
+			focus = BRG_to_new_world
+		}
+		prerequisite = {
+			focus = BRG_research_sharing
+			focus = BRG_anglo_cooperation
+			focus = BRG_anglo_irish_friendship
+		}
+		prerequisite = {
+			focus = BRG_home_fires
+		}
+		prerequisite = {
+			focus = BRG_little_ships
+		}
+		prerequisite = {
+			focus = BRG_mi6
+		}
+		prerequisite = {
+			focus = BRG_westminster_project
+		}
+		available = {
+			has_socialist_government = no
+		}
+		x = 0
+		y = 4
+		relative_position_id = BRG_empire_reborn
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRG_end_french"
+			unlock_decision_tooltip = BRG_end_france
+		}
+	}
+
+	focus = {
+		id = BRG_end_false_brits
+		icon = GFX_goal_BRG_Strike_Windsor_Traitors
+		cost = 5.00
+		prerequisite = {
+			focus = BRG_end_french
+		}
+		x = 0
+		y = 5
+		relative_position_id = BRG_empire_reborn
+		available = {
+			CAN = {
+				exists = yes
+				NOT = {
+					is_subject_of = ROOT
+				}
+				NOT = {
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = CAN
+				CAN = {
+					exists = no
+				}
+				CAN = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		will_lead_to_war_with = CAN
+		ai_will_do = {
+			factor = 50
+			modifier = {
+					factor = 0
+					has_war_with = FRA
+				}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRG_end_false_brits"
+			unlock_decision_tooltip = BRG_end_canada
+		}
+	}
 	focus = {
 		id = BRG_death_to_revoltuion
 		icon = GFX_goal_BRG_Kill_Revolution
@@ -8315,7 +10544,7 @@ focus_tree = {
 		id = ENG_leaving_antieuropeanists_behind
 		icon = GFX_goal_leaving_anti_europeanists
 		cost = 5
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = ENG_the_alternative
 		prerequisite = { focus = ENG_the_alternative }
@@ -8333,7 +10562,7 @@ focus_tree = {
 		id = ENG_establishing_the_identity
 		icon = GFX_goal_new_identity
 		cost = 5
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = ENG_the_alternative
 		prerequisite = { focus = ENG_the_alternative }
@@ -8348,7 +10577,7 @@ focus_tree = {
 		id = ENG_start_the_crusade
 		icon = GFX_goal_Start_The_Crusade
 		cost = 5
-		x = 1
+		x = 0
 		y = 2
 		relative_position_id = ENG_the_alternative
 		prerequisite = { focus = ENG_establishing_the_identity }
@@ -8366,7 +10595,7 @@ focus_tree = {
 		id = ENG_europa_secured
 		icon = GFX_goal_europe_secured
 		cost = 5
-		x = 2
+		x = 0
 		y = 3
 		relative_position_id = ENG_the_alternative
 		prerequisite = { focus = ENG_start_the_crusade }
@@ -8668,7 +10897,7 @@ focus_tree = {
 		icon = GFX_goal_FRA_cgt_mandate
 		cost = 2
 		relative_position_id = ENG_tuc
-		x = -4
+		x = -5
 		y = 4
 		
 		prerequisite = {
@@ -8978,7 +11207,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Union_Of_Communites"
 			add_stability = 0.05
 			increase_ruling_party_popularity_by_5 = yes
-			add_ideas = rus_federation_of_syndicates_1
+			add_ideas = ENG_federation_of_syndicates
 		}
 		search_filters = {
 			FOCUS_FILTER_STABILITY
@@ -10432,9 +12661,9 @@ focus = {
 			available = {
 			is_subject = no
 			}
-	
-			x = -26
-			y = 7
+	        relative_position_id = UOB_win
+			x = 0
+			y = 1
 			ai_will_do = {
 			factor = 2
 			}
@@ -11763,20 +13992,26 @@ prerequisite = {
 		id = UOB_win
 		icon = GFX_UKR_Hammer_And_Heart
 		cost = 5
-		prerequisite = {
-			focus = ENG_liberation_of_canada
-		}
 		
-		x = 0
-		y = 1
-		relative_position_id = ENG_liberation_of_canada
+		
+		x = 45
+		y = 12
 		available = {
 			CAN = {
 				or={
 					exists = no
 				is_subject_of = ENG
 				is_in_faction_with = ENG
+				has_completed_focus = ENG_liberation_of_canada
 			}
+		}
+		bypass = {
+			CAN = {
+				or = {
+					exists = no
+				    is_subject_of = ENG
+			    }
+		    }
 		}
 			is_subject = no
 			
@@ -11791,43 +14026,6 @@ prerequisite = {
 		}
 	}
 
-focus = {
-		id = UOB_legacy_of_weltkrieg
-		icon = GFX_goal_ENG_lessons_of_the_weltkrieg
-		cost = 4
-		prerequisite = {
-			focus = UOB_win
-		}
-		relative_position_id = UOB_win
-		x = 0
-		y = 1
-		
-
-		ai_will_do = {
-			factor = 20
-		}
-		completion_reward = {
-			
-			add_doctrine_cost_reduction = {
-				name = ENG_military_science
-				cost_reduction = 1
-				uses = 2
-				category = land_doctrine
-				category = air_doctrine
-				category = naval_doctrine
-			}
-			add_tech_bonus = {
-				name = FRA_military_science
-				bonus = 2
-				uses = 2
-				category = artillery
-				category = infantry_weapons
-				category = cat_mechanized_equipment
-				category = naval_equipment
-				category = air_equipment
-			}
-		}
-	}
 
 
 
