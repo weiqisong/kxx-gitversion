@@ -1920,7 +1920,7 @@ country_event = { # Second Issue: Economical Reform
 				}
 			}
 		}
-		add_to_variable = { DEN_congress_dvsp = 1 }
+		add_to_variable = { DEN_congress_stauninger = 1 }
 		add_popularity = { ideology = social_democrat popularity = 0.05 }
 		hidden_effect = {
 			country_event = { id = den.74 days = 8 }
@@ -1972,7 +1972,7 @@ country_event = { # Third Issue: Internal Affairs
 				}
 			}
 		}
-		add_to_variable = { DEN_congress_stauninger = 1 }
+		add_to_variable = { DEN_congress_dvsp = 1 }
 		add_popularity = { ideology = radical_socialist popularity = 0.05 }
 		hidden_effect = {
 			country_event = { id = den.75 days = 8 }

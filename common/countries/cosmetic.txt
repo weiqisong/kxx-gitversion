@@ -10299,12 +10299,12 @@ HRZ = {
 
 ###法公社重置5.0
 FRA_dorgeres = {
-	color = rgb { 152 251 152 }
-	color_ui = rgb { 152 251 152 }
+    color = rgb { 51 155 0 }
+    color_ui = rgb { 51 155 0 }
 }
 FRA_dorgeres_west_euro = {
-	color = rgb { 34 139 34 }
-	color_ui = rgb { 34 139 34 }
+    color = rgb { 34 139 34 }
+    color_ui = rgb { 34 139 34 }
 }
 FRA_herve = {
 	color = rgb { 139 0 0 }
@@ -10762,6 +10762,10 @@ SYR_revolutionary_republic = {
 CYP_vilayet = {
 	color = rgb { 140 0 0 }
 	color_ui = rgb { 140 0 0 }
+}
+IRQ_communist = {
+	color = rgb { 163 17 17 }
+	color_ui = rgb { 163 17 17 }
 }
 
 

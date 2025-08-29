@@ -5712,7 +5712,7 @@ focus_tree = {
 		}
 		relative_position_id = CHI_move_to_Nanjing
 		ai_will_do = {
-			factor = 2000
+			factor = 0
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_southeast_regional_programme"
@@ -6941,11 +6941,8 @@ focus_tree = {
 		}
 		relative_position_id = CHI_move_to_Nanjing
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 15
-				has_idea = CHI_discipline_corruption
-			}
+			factor = 0
+			
 		}
 
 		available = {
@@ -8482,10 +8479,7 @@ focus_tree = {
 		cost = 6
 		ai_will_do = {
 			factor = 100
-			modifier = {
-				factor = 0
-				has_idea = CHI_discipline_corruption
-			}
+			
 		}
 		prerequisite = {
 			focus = CHI_move_to_Nanjing

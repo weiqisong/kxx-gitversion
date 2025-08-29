@@ -134,6 +134,9 @@ ideologies = {
 			council_communism_subtype = {can_be_randomly_selected = no} #委员会共产主义
 			peasant_charterism_subtype = {can_be_randomly_selected = no color = { 39 97 47 } } #农民宪章主义
 			waisi_movement_subtype = {can_be_randomly_selected = no} #瓦伊西运动
+			evidentist_technocracy_subtype = {can_be_randomly_selected = no} #显证教技官主义
+			arab_ihya_subtype = {can_be_randomly_selected = no} #阿拉伯复兴运动
+			lindholmism_subtype = {can_be_randomly_selected = no} #林霍尔姆主义
 
 
 			ingsoc_subtype = { can_be_randomly_selected = no }  #英社（欧罗巴之国）
@@ -211,6 +214,9 @@ ideologies = {
 			right_totalism_subtype = { can_be_randomly_selected = no }  #亲右翼极权主义	
 			tot_arab_baathism_subtype = {can_be_randomly_selected = no} #阿拉伯复兴主义
 			tot_antoun_saadeh_thought_subtype = {can_be_randomly_selected = no} #革命·安东萨阿德思想
+			tot_sssp_subtype = { can_be_randomly_selected = no }  #科学特搜署
+			tot_controlled_democracy_subtype = { can_be_randomly_selected = no }  #指导式民主
+			tot_revolutionary_nationalism_subtype = {can_be_randomly_selected = no} #革命民族主义
 
 			#点
 			tot_baishi_subtype = {can_be_randomly_selected = no} #百事思想
@@ -308,15 +314,9 @@ ideologies = {
 			syn_teetotalism_subtype = {can_be_randomly_selected = no} #禁酒主义
 			yellow_syndicalism_subtype = {can_be_randomly_selected = no color = { 240 225 48 } } #黄色工团主义
 			syn_kotahitanga_subtype = {can_be_randomly_selected = no} #团结运动
-
-			syn_national_jacobinism_subtype = {can_be_randomly_selected = no} #民族雅各宾主义
-			syn_kaysone_thought_subtype = { can_be_randomly_selected = no } #凯山·丰威汉思想
-			syn_mayakovskyism_subtype = { can_be_randomly_selected = no } #马雅可夫斯基主义
-			syn_yamakawaism_subtype = { can_be_randomly_selected = no } #山川主义
-			syn_anarcho_communism_subtype = {can_be_randomly_selected = no} #无政府共产主义
-			polish_natsynd = {can_be_randomly_selected = no color = { 0 93 149 } } #蓝色工团主义
 			aboriginal_garveyism_subtype = {can_be_randomly_selected = no} #原住民加维主义
 			syn_gandhism_subtype = {can_be_randomly_selected = no} #甘地主义
+			syn_anarcho_communism_subtype = {can_be_randomly_selected = no} #无政府共产主义
 			libertarian_possibilism_subtype = {can_be_randomly_selected = no} #西式自由意志主义
 			anarcho_abertzalism_subtype = {can_be_randomly_selected = no} #无政府巴斯克民族主义
 			syn_sandinismo_subtype = {can_be_randomly_selected = no} #桑地诺主义
@@ -325,6 +325,16 @@ ideologies = {
 			syn_popcom_subtype = {can_be_randomly_selected = no} #大众共产主义
 			syn_council_communism_subtype = {can_be_randomly_selected = no} #委员会共产主义
 			syn_matswanism_subtype = {can_be_randomly_selected = no} #马茨瓦主义
+			syn_guild_socialism_subtype = {can_be_randomly_selected = no} #行会社会主义
+			anthropophagic_movement_subtype = {can_be_randomly_selected = no} #食人运动
+			syn_technocratic_socialism_subtype = {can_be_randomly_selected = no} #技官社会主义
+
+			syn_national_jacobinism_subtype = {can_be_randomly_selected = no} #民族雅各宾主义
+			syn_kaysone_thought_subtype = { can_be_randomly_selected = no } #凯山·丰威汉思想
+			syn_mayakovskyism_subtype = { can_be_randomly_selected = no } #马雅可夫斯基主义
+			syn_yamakawaism_subtype = { can_be_randomly_selected = no } #山川主义
+			polish_natsynd = {can_be_randomly_selected = no color = { 0 93 149 } } #蓝色工团主义
+
 	
 			despotism_vanguard_anarchism_subtype = {can_be_randomly_selected = no color = { 5 5 5 } } #先锋无政府主义（rm扩展）
 			syn_united_front = {can_be_randomly_selected = no} #统一阵线
@@ -340,6 +350,7 @@ ideologies = {
 			syn_left_occultism_subtype = { can_be_randomly_selected = no } #左翼密教
 			natdem_syndicalism_subtype = { can_be_randomly_selected = no } #民族民主工团主义
 			canaanist_subtype = {can_be_randomly_selected = no} #迦南主义
+			syn_sssp_subtype_subtype = { can_be_randomly_selected = no }  #科学特搜署
 
 			#点
 			syn_islamic_communism_subtype = {can_be_randomly_selected = no} #伊斯兰马克思主义
@@ -412,7 +423,6 @@ ideologies = {
 			eco_anarchism_subtype = {can_be_randomly_selected = no} #生态无政府主义
 			sandinismo_subtype = {can_be_randomly_selected = no} #桑地诺主义
 			left_nationalism_subtype = {can_be_randomly_selected = no} #左翼民族主义
-			radsoc_boer_nationalism_subtype = {can_be_randomly_selected = no} #布尔民族主义
 			radsoc_indigenous_communitarianism_subtype = {can_be_randomly_selected = no} #土著社群主义
 			developing_leftism_subtype = {can_be_randomly_selected = no} #发展中社会主义
 			mexicayotlism_subtype = {can_be_randomly_selected = no} #墨西哥本质主义
@@ -475,6 +485,8 @@ ideologies = {
 			radsoc_council_communism_subtype = {can_be_randomly_selected = no} #委员会共产主义
 			matswanism_subtype = {can_be_randomly_selected = no} #马茨瓦主义
 			francoism_subtype = {can_be_randomly_selected = no} #佛朗哥主义
+			radsoc_guild_socialism_subtype = {can_be_randomly_selected = no} #行会社会主义
+			saavedrista_republicanism_subtype = {can_be_randomly_selected = no} #萨韦德拉共和主义
 			
 			radsoc_socialist_confucianism_subtype = {can_be_randomly_selected = no} #社会主义儒学
 			radsoc_pan_asianism_subtype = {can_be_randomly_selected = no}
@@ -534,6 +546,10 @@ ideologies = {
 			radsoc_bureaucratic_socialism_subtype = { can_be_randomly_selected = no } #官僚社会主义
 			radsoc_arab_baathism_subtype = {can_be_randomly_selected = no} #阿拉伯复兴主义
 			radsoc_Grand_Thai_nationalism_subtype = {can_be_randomly_selected = no} #泰式社会主义
+			radsoc_boer_nationalism_subtype = {can_be_randomly_selected = no} #布尔民族主义
+			radsoc_sssp_subtype = { can_be_randomly_selected = no }  #科学特搜署
+			buddhist_anarchism_subtype = { can_be_randomly_selected = no }  #佛教无政府主义
+			vedas_socialism_subtype = { can_be_randomly_selected = no } #吠陀社会主义
 
 
 			#点
@@ -676,6 +692,13 @@ ideologies = {
 			batllismo_subtype = {can_be_randomly_selected = no} #巴特列主义
 			socdem_venizelism_subtype = {can_be_randomly_selected = no} #韦尼泽洛斯主义
 			nordic_model_subtype = {can_be_randomly_selected = no} #北欧模式
+			socdem_christian_democracy_subtype = {can_be_randomly_selected = no} #基督教民主主义
+			guild_socialism_subtype = {can_be_randomly_selected = no} #行会社会主义
+			calderonismo_subtype = {can_be_randomly_selected = no} #卡尔德龙主义
+			spiritual_socialism_subtype = {can_be_randomly_selected = no} #精神社会主义
+			socdem_waisi_movement_subtype = {can_be_randomly_selected = no} #瓦伊西运动
+			janismo_subtype = {can_be_randomly_selected = no} #雅尼奥主义
+			socdem_apartheid_socialism_subtype = {can_be_randomly_selected = no} #隔离社会主义
 			
 			socdem_mao_zedong_thought_subtype = {can_be_randomly_selected = no} #温和农业主义
 			socdem_sangkum_subtype = { can_be_randomly_selected = no } #桑功主义
@@ -706,6 +729,9 @@ ideologies = {
 			socdem_vietnamese_republicanism_subtype = { can_be_randomly_selected = no } #越南共和主义
 			socdem_Grand_Thai_nationalism_subtype = { can_be_randomly_selected = no } #泰式社会主义
 			alawism_subtype = {can_be_randomly_selected = no} #阿拉维主义
+			socdem_islamic_philosophy_subtype = { can_be_randomly_selected = no } #伊斯兰哲学
+			socdem_burnhamite_thought_subtype = { can_be_randomly_selected = no } #温和伯纳姆思想
+			socdem_revolutionary_nationalism_subtype = {can_be_randomly_selected = no} #革命民族主义
 
 			#点
 			socdem_islamic_communism_subtype = {can_be_randomly_selected = no} #伊斯兰共产主义
@@ -831,6 +857,7 @@ ideologies = {
 			laurentism_subtype = {can_be_randomly_selected = no} #洛朗主义
 			soclib_oligarchy_subtype = {can_be_randomly_selected = no} #寡头主义
 			venizelism_subtype = {can_be_randomly_selected = no} #韦尼泽洛斯主义
+			bernardismo_subtype = {can_be_randomly_selected = no} #贝纳德斯主义
 
 			byronism_subtype = {can_be_randomly_selected = no} #拜伦主义
 			classical_progressivism = {can_be_randomly_selected = no color = { 135 206 250 }} #古典进步主义
@@ -839,6 +866,7 @@ ideologies = {
 			hellenism_subtype = { can_be_randomly_selected = no } #希腊主义
 			soclib_canaanist_subtype = {can_be_randomly_selected = no} #迦南主义
 			druzeism_subtype = {can_be_randomly_selected = no} #德鲁兹主义
+			soclib_islamic_philosophy_subtype = { can_be_randomly_selected = no } #伊斯兰哲学
 
 			liberal_conservatism_vertinism_subtype = { can_be_randomly_selected = no } #基金会改良主义 （风雨欲来）
 
@@ -949,6 +977,7 @@ ideologies = {
 			marlib_radical_progressivism_subtype = {can_be_randomly_selected = no} #激进进步主义
 			marlib_venizelism_subtype = {can_be_randomly_selected = no} #韦尼泽洛斯主义
 			marlib_clientelism_subtype = {can_be_randomly_selected = no} #庇护主义
+			marlib_flemish_nationalism_subtype = {can_be_randomly_selected = no} #佛莱芒民族主义
 
 			marlib_zionism = {can_be_randomly_selected = no} #自由锡安主义
 			marlib_Grand_Thai_nationalism_subtype = {can_be_randomly_selected = no} #泛泰主义
@@ -1065,6 +1094,9 @@ ideologies = {
 			conservative_feminism_subtype = {can_be_randomly_selected = no} #保守女权主义
 			soccon_chosid_nyi_subtype = {can_be_randomly_selected = no} #政教双运
 			soccon_ulmanism_subtype = {can_be_randomly_selected = no} #乌尔马尼斯主义
+			castilhismo_subtype = {can_be_randomly_selected = no} #卡斯蒂略斯主义
+			soccon_progressive_democracy_subtype = {can_be_randomly_selected = no} #进步民主主义
+			sidonismo_subtype = {can_be_randomly_selected = no} #西多尼奥主义
 
 			soccon_datong_shu_subtype = { can_be_randomly_selected = no } #大同术
 			soccon_new_legalism_subtype = {can_be_randomly_selected = no} #新法家
@@ -1198,6 +1230,14 @@ ideologies = {
 			authdem_chosid_nyi_subtype = {can_be_randomly_selected = no} #政教双运
 			ulmanism_subtype = {can_be_randomly_selected = no} #乌尔马尼斯主义
 			marhaenism_subtype = {can_be_randomly_selected = no} #马哈恩主义
+			authdem_maurrassism_subtype = {can_be_randomly_selected = no} #莫拉斯主义
+			authdem_christian_crusade_subtype = {can_be_randomly_selected = no} #基督教圣战思想
+			authdem_kleptocracy_subtype = {can_be_randomly_selected = no} #窃国体制
+			authdem_right_syndicalism_subtype = {can_be_randomly_selected = no} #右翼工团主义
+			estado_novo_subtype = {can_be_randomly_selected = no} #新国家体制
+			antarctic_expedition_subtype = {can_be_randomly_selected = no} #南极探险队
+			gustavianism_subtype = {can_be_randomly_selected = no} #古斯塔夫主义
+			authdem_flemish_nationalism_subtype = {can_be_randomly_selected = no} #佛莱芒民族主义
 			
 			pragmatic_syndicalism_subtype = {can_be_randomly_selected = no } #务实工团主义
 			authdem_anarchism_subtype = {can_be_randomly_selected = no} #无政府个人主义
@@ -1221,6 +1261,9 @@ ideologies = {
 			controlled_democracy_subtype = { can_be_randomly_selected = no } #指导式民主
 			authdem_Grand_Thai_nationalism_subtype = {can_be_randomly_selected = no} #泛泰主义
 			thaw_antoun_saadeh_thought_subtype = {can_be_randomly_selected = no} #解冻安东萨阿德思想
+			transitional_government_subtype = { can_be_randomly_selected = no } #过渡内阁
+			controlled_democracy_subtype = { can_be_randomly_selected = no } #指导式民主
+			autdem_revolutionary_nationalism_subtype = {can_be_randomly_selected = no} #革命民族主义
 			
 			#点
 			new_legalism_subtype = {can_be_randomly_selected = no} #新法家
@@ -1370,6 +1413,13 @@ ideologies = {
 			yan_xishan_thought_subtype = {can_be_randomly_selected = no} #阎锡山思想
 			vapsism_subtype = {can_be_randomly_selected = no} #瓦普斯主义
 			universism_subtype = {can_be_randomly_selected = no} #普世教
+			getulismo_subtype = {can_be_randomly_selected = no} #热图利奥主义
+			christian_crusade_subtype = {can_be_randomly_selected = no} #基督教圣战思想
+			pataut_scandinavism_subtype = {can_be_randomly_selected = no} #斯堪的纳维亚主义
+			pataut_gustavianism_subtype = {can_be_randomly_selected = no} #古斯塔夫主义
+			pataut_police_state_subtype = {can_be_randomly_selected = no} #警察国家
+			socialismo_militar_subtype = {can_be_randomly_selected = no} #军事社会主义
+			pataut_trujillato_subtype = {can_be_randomly_selected = no} #特鲁希略主义
 			
 			socialism_with_chinese_characteristics = {can_be_randomly_selected = no} #中国特色社会主义
 			pataut_popular_patriotism_subtype = { can_be_randomly_selected = no } #大众爱国主义
@@ -1394,6 +1444,10 @@ ideologies = {
 			pataut_social_confucianism_subtype = { can_be_randomly_selected = no } #新儒学
 			pataut_arab_baathism_subtype = {can_be_randomly_selected = no} #阿拉伯复兴主义
 			pataut_Grand_Thai_nationalism_subtype = {can_be_randomly_selected = no} #泛泰主义
+			provisional_government_subtype = { can_be_randomly_selected = no } #临时政府
+			pataut_controlled_democracy_subtype = { can_be_randomly_selected = no } #指导式民主
+			pataut_jihad_legionarism_subtype = { can_be_randomly_selected = no } #伊斯兰军团主义
+			generic_sssp_subtype = { can_be_randomly_selected = no } #科学特搜署
 			
 			#点
 			absolute_monarchy_CN_subtype = {can_be_randomly_selected = no color = { 255 216 0 } } #绝对君主制
@@ -1566,6 +1620,16 @@ ideologies = {
 			cultured_magic_subtype = {can_be_randomly_selected = no} #文教魔法
 			evolian_thought_subtype = {can_be_randomly_selected = no} #埃佛拉思想
 			kryvianism_subtype = {can_be_randomly_selected = no} #克里维亚主义
+			natpop_oligarchy_subtype = {can_be_randomly_selected = no} #寡头主义
+			muertismo_subtype = {can_be_randomly_selected = no} #死亡圣神教
+			hindutva_subtype = {can_be_randomly_selected = no} #印度教民族主义
+			korpelaism_subtype = {can_be_randomly_selected = no} #科尔佩拉运动
+			natpop_scandinavism_subtype = {can_be_randomly_selected = no} #斯堪的纳维亚主义
+			socialist_falange_subtype = {can_be_randomly_selected = no} #长枪党社会主义
+			natpop_vapsism_subtype = {can_be_randomly_selected = no} #瓦普斯主义
+			trujillato_subtype = {can_be_randomly_selected = no} #特鲁希略主义
+			nacismo_subtype = {can_be_randomly_selected = no} #纳西主义
+			lapuanliike_subtype = {can_be_randomly_selected = no} #拉普阿运动
 
 			natpop_juche_subtype = {can_be_randomly_selected = no} #主体思想
 			natpop_survival_nationalism = {can_be_randomly_selected = no } #生存民族主义
@@ -1646,6 +1710,10 @@ ideologies = {
 			natpop_canaanist_subtype = {can_be_randomly_selected = no} #迦南主义
 			natpop_viet_natsoc_subtype = {can_be_randomly_selected = no} #越南国社主义
 			revision_antoun_saadeh_thought_subtype = {can_be_randomly_selected = no} #修正安东萨阿德主义
+			natpop_controlled_democracy_subtype = { can_be_randomly_selected = no }  #指导式民主
+			jihad_legionarism_subtype = { can_be_randomly_selected = no }  #伊斯兰军团主义
+			zhanguoce_pai_subtype = { can_be_randomly_selected = no }  #战国策派
+			revolutionary_nationalism_subtype = {can_be_randomly_selected = no} #革命民族主义
 
 			
 
