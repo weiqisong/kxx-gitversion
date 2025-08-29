@@ -1263,7 +1263,7 @@ focus_tree = {
 		bypass = {
 			has_country_flag = SER_has_completed_1936_elc
 		}
-    
+
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
