@@ -390,8 +390,8 @@ create_country_leader = {
 	ideology = classical_liberalism_subtype
 }
 create_country_leader = {
-	name = "滨口雄幸"
-	picture = "gfx/leaders/JAP/Portrait_JAP_Hamaguchi_Osachi.png"
+	name = "町田忠治"
+	picture = "gfx/leaders/JAP/Portrait_JAP_Machida_Chuji.png"
 	expire = "1965.1.1"
 	ideology = liberal_conservative_subtype
 }

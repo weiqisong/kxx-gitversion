@@ -171,7 +171,7 @@ country_event = { #1936 Elections
 			}
 		}
 		ai_chance = {
-			factor = 50
+			base = 20
 			modifier = {
 				factor = 100
 				OR = {
@@ -216,7 +216,7 @@ country_event = { #1936 Elections
 			}
 		}
 		ai_chance = {
-			factor = 50
+			base = 30
 			modifier = {
 				factor = 100
 				has_game_rule = { rule = JAP_path option = JAP_PATH_SEIYUKAI_1936 }
@@ -237,7 +237,7 @@ country_event = { #1936 Elections
 		}
 		
 		ai_chance = {
-			factor = 50
+			base = 30
 			modifier = {
 				factor = 100
 				has_game_rule = { rule = JAP_path option = RULE_OPTION_JAP_PATH_MINSEITO_1936 }
@@ -269,7 +269,7 @@ country_event = { #1936 Elections
 	option = { #Shakai-Taishuto
 		name = "社会大众党胜利"
 		ai_chance = {
-			factor = 50
+			base = 20
 			modifier = {
 				factor = 100
 				OR = {
@@ -307,7 +307,7 @@ country_event = { #1936 Elections
 			}
 		}
 		ai_chance = { 
-		factor = 50
+		base = 0
 		modifier = {
 				factor = 100
 				OR = {
@@ -1817,7 +1817,7 @@ country_event = { #League of Blood Incident
 	option = { #Seiyukai
 		name = japan_new_event.25.a
 		ai_chance = { 
-		factor = 50
+		base = 60
 		modifier = {
 				factor = 100
 				OR = {
@@ -1852,7 +1852,7 @@ country_event = { #League of Blood Incident
 	option = { #Minseito
 		name = japan_new_event.25.a
 		ai_chance = { 
-		factor = 50
+		base = 60
 		modifier = {
 				factor = 100
 				OR = {
@@ -1891,7 +1891,7 @@ country_event = { #League of Blood Incident
 	option = { #Shakai-Taishuto
 		name = japan_new_event.25.a
 		ai_chance = { 
-		factor = 50
+		base = 60
 		modifier = {
 				factor = 100
 				OR = {
@@ -1928,7 +1928,7 @@ country_event = { #League of Blood Incident
 	option = { #No Asassination
 		name = japan_new_event.25.b
 		ai_chance = { 
-		factor = 50
+		base = 40
 		modifier = {
 				factor = 100
 				OR = {
@@ -2430,7 +2430,7 @@ country_event = { #Siding With a Faction
 			name = "近卫文麿"
 			picture = "gfx/leaders/JAP/Portrait_JAP_Konoe_Fumimaro.png"
 			expire = "1965.1.1"
-			ideology = right_syndicalism_subtype
+			ideology = shintaisei_subtype
 		}
 		
 		remove_all_ministers = yes
@@ -2896,7 +2896,7 @@ country_event = { #Closing of the First Yokusan Elections
 			name = "近卫文麿"
 			picture = "gfx/leaders/JAP/Portrait_JAP_Konoe_Fumimaro.png"
 			expire = "1965.1.1"
-			ideology = natsynd_subtype
+			ideology = tot_shintaisei_subtype
 		}
 		add_ideas = JAP_Konoe_Controls_the_Center
 		set_politics = {
@@ -3335,7 +3335,7 @@ country_event = { #Araki Ideology Picker
 	
 	is_triggered_only = yes
 	option = { #stay same
-		name = 我们永远忠于皇帝
+		name = "我们永远忠于皇帝"
 		add_ideas = JAP_new_shogunate
 	}
 	option = { #Pan-Asianism
@@ -3581,15 +3581,14 @@ country_event = { #A Twist in the Coup
 	option = { #Nichirenists
 		name = japan_new_event.46.a
 		ai_chance = { 
-		factor = 50
-		modifier = {
+			base = 25
+			modifier = {
 				factor = 100
 				OR = {
-				has_game_rule = { rule = JAP_END_OF_DEMOCRACY option = JAP_NICHIREN_KANJI }
-				has_game_rule = { rule = JAP_END_OF_DEMOCRACY option = JAP_NICHIREN_INOUE }
-				has_game_rule = { rule = JAP_END_OF_DEMOCRACY option = JAP_NICHIREN_SENOO }
-				}
-				
+					has_game_rule = { rule = JAP_END_OF_DEMOCRACY option = JAP_NICHIREN_KANJI }
+					has_game_rule = { rule = JAP_END_OF_DEMOCRACY option = JAP_NICHIREN_INOUE }
+					has_game_rule = { rule = JAP_END_OF_DEMOCRACY option = JAP_NICHIREN_SENOO }
+				}	
 			}
 		}
 		country_event = rework_japan.12
@@ -3600,14 +3599,13 @@ country_event = { #A Twist in the Coup
 	option = { #Genyosha
 		name = japan_new_event.46.b
 		ai_chance = { 
-		factor = 50
-		modifier = {
+			base = 25
+			modifier = {
 				factor = 100
 				OR = {
-				has_game_rule = { rule = JAP_END_OF_DEMOCRACY option = JAP_BLACK_DRAGON_UCHIDA }
-				has_game_rule = { rule = JAP_END_OF_DEMOCRACY option = JAP_BLACK_DRAGON_DEGUCHI }
-				}
-				
+					has_game_rule = { rule = JAP_END_OF_DEMOCRACY option = JAP_BLACK_DRAGON_UCHIDA }
+					has_game_rule = { rule = JAP_END_OF_DEMOCRACY option = JAP_BLACK_DRAGON_DEGUCHI }
+				}	
 			}
 		}
 		set_cosmetic_tag = JAP_black_dragon
@@ -3659,11 +3657,10 @@ country_event = { #A Twist in the Coup
 	option = { #Kozaburo
 		name = japan_new_event.46.c
 		ai_chance = { 
-		factor = 50
-		modifier = {
+			base = 25
+			modifier = {
 				factor = 100
 				has_game_rule = { rule = JAP_END_OF_DEMOCRACY option = JAP_KOZABURO }
-				
 			}
 		}
 		set_party_name = {
@@ -6451,7 +6448,7 @@ country_event = { #The Japanese Reach Out
 	option = { #
 		name = japan_new_event.80.a
 		ai_chance = {
-			factor = 60
+			base = 60
 			modifier = {
 				factor = 1.5
 				has_war = yes
@@ -6509,7 +6506,7 @@ country_event = { #The Japanese Reach Out
 	option = { #Politely decline their support
 		name = japfor.45.b
 		ai_chance = {
-			factor = 40
+			base = 40
 			
 			
 			modifier = {
@@ -7658,63 +7655,14 @@ country_event = { #Our Lasting Legacy For the Empire
 	option = { #
 		name = japan_new_event.100.a
 		ai_chance = { 
-			base = 99
-		}
-		trigger = {
-		has_country_flag = JAP_puppet_asia
-		}
-		
+			base = 80
+		}	
 	}
 	
 	option = { #
 		name = japan_new_event.100.b
 		ai_chance = { 
-			base = 0
-		}
-		if = {
-			limit = {
-				has_country_flag = JAP_unify_asia
-			}
-			every_state = {
-			add_core_of = JAP
-			JAP = {
-			create_wargoal = {
-					type = puppet_wargoal_focus
-					target = PREV
-				}
-			
-			}
-			
-			}
-			
-			
-			set_cosmetic_tag = JAP_HASHIMOTO_WORLD
-			
-		}
-		
-		else_if = {
-			limit = {
-			has_country_flag = JAP_puppet_asia
-			}
-		every_country = {
-		JAP = {
-			create_wargoal = {
-					type = puppet_wargoal_focus
-					target = PREV
-				}
-			}
-		}
-		}
-		
-	}
-	
-	option = { #
-		name = japan_new_event.100.c
-		ai_chance = { 
-			base = 1
-		}
-		trigger = {
-		has_country_flag = JAP_unify_asia
+			base = 10
 		}
 		set_cosmetic_tag = JAP_HASHIMOTO_ASIA
 		every_state = {
@@ -7728,6 +7676,26 @@ country_event = { #Our Lasting Legacy For the Empire
 				add_state_core = PREV
 				create_wargoal = {
 					type = puppet_wargoal_focus
+					target = PREV
+				}
+			}
+		}			
+	}
+	
+	option = { #
+		name = japan_new_event.100.c
+		ai_chance = { 
+			base = 0
+		}
+		trigger = {
+			has_country_flag = JAP_unify_asia
+		}
+		set_cosmetic_tag = JAP_HASHIMOTO_WORLD
+		every_state = {	
+			JAP = {
+				add_state_core = PREV
+				create_wargoal = {
+					type = annex_everything
 					target = PREV
 				}
 			}
@@ -8935,7 +8903,7 @@ country_event = { #Revenge of the Zaibatsu
 	is_triggered_only = yes
 	option = { #
 		name = japan_new_event.136.a
-		ai_chance = { base = 100 }
+		ai_chance = { base = 40 }
 		set_politics = {
 			ruling_party = paternal_autocrat
 			election_frequency = 48
@@ -8995,6 +8963,17 @@ country_event = { #Revenge of the Zaibatsu
 		set_country_flag = factionalism_japan_no
 		set_country_leader_ideology = right_technocracy_subtype
 	}
+
+	option = { #
+		name = japan_new_event.136.b
+		trigger = {
+			is_ai = yes
+		}
+		ai_chance = { base = 60 }
+		add_stability = -0.8
+		add_war_support = -0.5
+	}
+
 }
 
 country_event = { #Taiwan Slips Through Our Fingers

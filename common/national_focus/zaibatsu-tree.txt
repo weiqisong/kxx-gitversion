@@ -11,7 +11,7 @@ focus_tree = {
 	
 	shared_focus = JAPARMY_jakuniku_kyoshoku
 	shared_focus = JAPFOR_japansplaceintheworld
-	shared_focus = JAPFOR_osaka_conference
+	shared_focus = JAPFOR_tokyo_conference
 	shared_focus = JAP_To_Sunder_the_Sunset
 	
 	#The Consolidation of Japanese Industry
@@ -108,6 +108,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = ZAIJAP_the_all_japan_industrial_alliance  }
 		completion_reward = {
+		country_event = KXXJAP.2
 		add_research_slot = 1
 		}
 	}
@@ -257,7 +258,6 @@ focus_tree = {
 		}
 		prerequisite = { focus = ZAIJAP_the_shinkansen_project  } prerequisite = { focus = ZAIJAP_emulating_the_idea_of_technocracy  }
 		completion_reward = {
-		country_event = KXXJAP.2
 		custom_effect_tooltip = technate_puppet_japan_tt
 		set_country_flag = jap_technate_asia
 		}

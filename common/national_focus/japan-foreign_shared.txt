@@ -753,7 +753,7 @@
 			}
 			modifier = {
 				factor = 0
-				NOT = { has_completed_focus = JAP_tokyo_conference }
+				NOT = { has_completed_focus = JAPFOR_tokyo_conference }
 			}
 			modifier = {
 				factor = 0
@@ -1364,10 +1364,10 @@
 			}
 		}
 	}
-	
-	shared_focus = { #Economic integration conference
-		id = JAPFOR_osaka_conference
-		icon = GFX_goal_JAP_yen
+
+	shared_focus = { # Host the Tokyo Conference
+		id = JAPFOR_tokyo_conference
+		icon = GFX_goal_JAP_tokyo_conf
 		cost = 5
 
 		x = 63
@@ -1377,12 +1377,28 @@
 			is_faction_leader = yes
 			date > 1938.5.1
 		}
-		ai_will_do = { factor = 20 }
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				has_completed_focus = JAP_nanshin_ron
+			}
+			modifier = {
+				factor = 5
+				has_completed_focus = JAP_protect_constitutional_government
+			}
+			modifier = {
+				factor = 20
+				date > 1940.1.1
+			}
+		}
+
 		select_effect = {
 			log = "[GetDateText]: [Root.GetName]: Select Focus JAP_tokyo_conference"
 			every_other_country = {
 				limit = {
 					is_co_prosperity_candidate = yes
+					has_socialist_government = no
 					NOT = {
 						AND = {
 							is_in_faction = yes
@@ -1392,11 +1408,9 @@
 				}
 				country_event = japfor.21
 			}
-		}		
+		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus JAP_osaka_conference"
-			set_country_flag = JAP_economic_sphere_member
-			custom_effect_tooltip = JAP_may_now_invite_sphere
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_tokyo_conference"
 			custom_effect_tooltip = JAP_tokyo_conference_tt
 			hidden_effect = {
 				country_event = japfor.24
@@ -1406,10 +1420,55 @@
 
 				log = "This scope = [THIS.GetName]"
 				PREV = { activate_targeted_decision = { target = PREV decision = JAP_invite_into_faction } }
-			}			
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}	
+	
+	shared_focus = { #Economic integration conference
+		id = JAPFOR_osaka_conference
+		icon = GFX_goal_JAP_yen
+		cost = 5
+		
+		relative_position_id = JAPFOR_tokyo_conference
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = JAPFOR_tokyo_conference
+		}
+
+		available = {
+			is_faction_leader = yes
+		}
+		ai_will_do = { factor = 20 }
+		select_effect = {
+			log = "[GetDateText]: [Root.GetName]: Select Focus JAPFOR_tokyo_conference"
+			every_other_country = {
+				limit = {
+					is_co_prosperity_candidate = yes
+					has_socialist_government = no
+					NOT = {
+						AND = {
+							is_in_faction = yes
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
+				}
+				country_event = japfor.21
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAPFOR_tokyo_conference"
+			custom_effect_tooltip = JAPFOR_tokyo_conference_tt
 			hidden_effect = {
-				country_event = japfor.400
-				JAP_open_JAP_co_prosperity_decisions_JAP_osaka_conference = yes
+				country_event = japfor.24
+			}
+			for_each_scope_loop = {
+				array = global.JAP_possible_allies_array
+
+				log = "This scope = [THIS.GetName]"
+				PREV = { activate_targeted_decision = { target = PREV decision = JAP_invite_into_faction } }
 			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1567,7 +1626,7 @@
 		}
 
 		x = 63
-		y = 6
+		y = 7
 		
 		bypass = {
 			336 = { is_owned_by_ROOT_or_ally = yes }
