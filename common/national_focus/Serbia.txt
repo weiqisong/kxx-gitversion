@@ -13962,6 +13962,8 @@ relative_position_id = SER_agrarian_coalition
 		x = 30
 		y = 13
 
+
+    
 		available = {
 			custom_override_tooltip = {
 				tooltip = SER_YUG_royal_federation_tt
