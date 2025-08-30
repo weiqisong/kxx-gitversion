@@ -11,6 +11,8 @@ focus_tree = {
 	
 	shared_focus = JAPARMY_jakuniku_kyoshoku
 	shared_focus = JAPFOR_japansplaceintheworld
+	shared_focus = JAPFOR_tokyo_conference
+	shared_focus = JAP_To_Sunder_the_Sunset
 	
 	#The Consolidation of Japanese Industry
 	focus = {
@@ -106,6 +108,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = ZAIJAP_the_all_japan_industrial_alliance  }
 		completion_reward = {
+		country_event = KXXJAP.2
 		add_research_slot = 1
 		}
 	}

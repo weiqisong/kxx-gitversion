@@ -217,6 +217,7 @@ ideologies = {
 			tot_sssp_subtype = { can_be_randomly_selected = no }  #科学特搜署
 			tot_controlled_democracy_subtype = { can_be_randomly_selected = no }  #指导式民主
 			tot_revolutionary_nationalism_subtype = {can_be_randomly_selected = no} #革命民族主义
+			tot_shintaisei_subtype = {can_be_randomly_selected = no} #革命新体制
 
 			#点
 			tot_baishi_subtype = {can_be_randomly_selected = no} #百事思想

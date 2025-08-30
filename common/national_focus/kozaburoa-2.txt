@@ -8,6 +8,9 @@ focus_tree = {
 			tag = JAPKOZA
 		}
 	}
+	shared_focus = JAPFOR_japansplaceintheworld
+	shared_focus = JAPFOR_tokyo_conference
+	shared_focus = JAP_To_Sunder_the_Sunset	
 	shared_focus = JAPARMY_jakuniku_kyoshoku
 	shared_focus = JAPECON_recovering_from_black_monday
 	#Learning From Tolstoy
@@ -115,10 +118,6 @@ focus_tree = {
 		prerequisite = { focus = JAPKOZA_undertheemperorswill  } prerequisite = { focus = JAPKOZA_strike_down_capitalism  } prerequisite = { focus = JAPKOZA_local_village_reliance  }
 		completion_reward = {
 		country_event = japan_new_event.43
-		country_event = {
-		id = japan_new_event.92
-		days = 3
-		}
 		}
 	}
 

@@ -7946,6 +7946,12 @@ text = {
 	}
 	text = {
 		trigger = {
+			has_country_leader_ideology = tot_shintaisei_subtype
+		}
+		localization_key = tot_shintaisei_subtype
+	}	
+	text = {
+		trigger = {
 			has_country_leader_ideology = tot_left_conservatism_subtype
 		}
 		localization_key = tot_left_conservatism_subtype

@@ -1076,6 +1076,7 @@ JAP_mongolia_empire_cores = {
 				is_owned_by = TAI
 				is_owned_by = SHX
 				is_core_of = KOR
+				is_core_of = KHI
 				}
 		}
 	add_core_of = JAP
@@ -1139,6 +1140,7 @@ JAP_shumei_caliphate_cores = {
 				is_core_of = CNT
 				is_core_of = CAR
 				is_core_of = MAD
+				is_core_of = KHI
 				}
 		}
 	add_core_of = JAP
@@ -1184,6 +1186,7 @@ JAP_pan_turania_cores = {
 			is_core_of = NOR
 			is_core_of = SWE
 			is_core_of = BUL
+			is_core_of = KHI
 			
 			}
 		}

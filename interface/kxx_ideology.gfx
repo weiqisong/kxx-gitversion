@@ -406,6 +406,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/subideologies/tot_revolution_nationale.png"
 	}
 	spriteType = {
+		name = "GFX_ideology_tot_shintaisei_subtype" #极权-新体制
+		texturefile = "gfx/interface/ideologies/subideologies/tot_shintaisei_group.png"
+	}	
+	spriteType = {
 		name = "GFX_ideology_anarcho_individualism_subtype" #鸡舍-无政府个人主义
 		texturefile = "gfx/interface/ideologies/subideologies/anarcho_individualism_group.png"
 	}	
