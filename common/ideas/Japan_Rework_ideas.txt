@@ -3,8 +3,28 @@
 ##############
 ideas = {
 	country = {
-		
-		
+		JAP_civilwar_lose = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea JAP_civilwar_lose"}
+			picture = chi_war_of_resistance
+			modifier = {
+				surrender_limit = -0.3
+				land_reinforce_rate = -0.05
+				army_org_factor = -0.05
+				army_morale_factor = -0.1
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				attrition = 0.15
+				experience_loss_factor = 0.08
+				training_time_factor = 0.5
+				global_building_slots_factor = -0.5
+				production_speed_buildings_factor = -0.5
+				industry_repair_factor = -0.5
+				repair_speed_factor = -0.5
+				industry_free_repair_factor = -0.5
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = -0.5
+			}
+		}
 		JAP_black_monday_0 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}
 			picture = HOL_black_monday

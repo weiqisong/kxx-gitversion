@@ -197,3 +197,100 @@ country_event = { #财阀集团选出代表人物
 	}     
 
 }
+
+country_event = { #日共占领东京
+	id = KXXJAP.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KXXJAP.3" }
+	title = KXXJAP.3.t
+	desc = KXXJAP.3.d
+
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		has_war_with = JSR
+		NOT = { controls_state = 282 }
+	}
+
+	option = { #这可不妙……
+		name = KXXJAP.1.a
+		ai_chance = {
+			base = 80
+		}		
+		set_country_flag = JSR_controlled_tokyo
+		add_timed_idea = {
+			idea = JAP_civilwar_lose
+			days = 30
+		}		     
+	}
+
+	option = { #必能再有转机！
+		name = KXXJAP.1.b
+		ai_chance = {
+			base = 20
+		}		
+		add_timed_idea = {
+			idea = yun_skullarmy
+			days = 30
+		}
+		JSR = {
+			add_timed_idea = {
+				idea = JAP_civilwar_lose
+				days = 14
+			}
+		}		
+	}
+}
+
+country_event = { #和平-日共胜利
+	id = KXXJAP.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KXXJAP.4" }
+	title = KXXJAP.4.t
+	desc = KXXJAP.4.d
+
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		has_country_flag = {
+			flag = JSR_controlled_tokyo
+			days > 120
+		}
+		NOT = { has_global_flag = JCP_JAP_WIN_CW }	
+	}
+
+	option = { #全完了
+		name = KXXJAP.4.a
+		clr_country_flag = JSR_controlled_tokyo
+		set_global_flag = JCP_JAP_WIN_CW
+		JSR = {
+			annex_country = {
+				target = JAP
+			}
+		}   
+	}
+}
+
+country_event = { #和平-日帝胜利
+	id = KXXJAP.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KXXJAP.5" }
+	title = KXXJAP.5.t
+	desc = KXXJAP.5.d
+
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		has_war_with = JSR
+		controls_state = 533
+		NOT = { has_global_flag = IJA_JAP_WIN_CW }		
+	}
+
+	option = { #已平定
+		name = KXXJAP.5.a
+		clr_country_flag = JSR_controlled_tokyo
+		set_global_flag = IJA_JAP_WIN_CW 
+		JAP = {
+			annex_country = {
+				target = JSR
+			}
+		}
+	}
+}
