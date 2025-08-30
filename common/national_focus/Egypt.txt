@@ -7848,7 +7848,7 @@ focus_tree = {
 					last_election = "1935.12.17"
 					election_frequency = 48
 				}
-				set_country_leader_portrait = { ideology = radical_socialist portrait = "gfx/leaders/CIV/Gamel_Abdel_Nasser.png" }
+				set_country_leader_portrait = { ideology = radical_socialist portrait = "gfx/leaders/CIV/Gamal_Abdel_Nasser.png" }
 			}
 			
 			if = {
@@ -9473,4 +9473,5 @@ focus_tree = {
 		}
 	}
 }
+
 
