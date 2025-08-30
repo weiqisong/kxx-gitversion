@@ -1,0 +1,199 @@
+add_namespace = KXXJAP
+
+country_event = { #橘孝三郎退休
+	id = KXXJAP.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KXXJAP.1" }
+	title = KXXJAP.1.t
+	desc = KXXJAP.1.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #权藤成卿
+		name = KXXJAP.1.a
+		ai_chance = {
+			base = 40
+		}
+        add_ideas = Tachibana_Ascension_idea_2
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.3 } 		
+		create_country_leader = {
+			name = "权藤成卿"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Gondou_Seikyou.png"
+			expire = "1965.1.1"
+			ideology = authdem_datong_shu_thought_subtype
+		}
+		country_event = {
+			id = japan_new_event.92
+			days = 7
+		}                
+	}
+
+	option = { #冈本利吉
+		name = KXXJAP.1.b
+		ai_chance = {
+			base = 20
+		}		
+        set_cosmetic_tag = JAP_KOZABURO
+        add_ideas = Tachibana_Ascension_idea_3
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+		}
+		add_popularity = { ideology = totalist popularity = 0.3 } 		
+		create_country_leader = {
+			name = "冈本利吉"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Rikichi_Okamoto.png"
+			expire = "1965.1.1"
+			ideology = tot_state_shintoism_subtype
+		}
+		country_event = {
+			id = japan_new_event.92
+			days = 7
+		}         
+	}
+
+	option = { #林路一
+		name = KXXJAP.1.c
+		ai_chance = {
+			base = 40
+		}		
+        set_cosmetic_tag = JAP_KOZABURO
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		add_popularity = { ideology = national_populist popularity = 0.3 }
+        add_ideas = Tachibana_Ascension_idea_3
+		create_country_leader = {
+			name = "林路一"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Roichi_Hayashi.png"
+			expire = "1965.1.1"
+			ideology = natpop_state_shintoism_subtype
+		} 
+		country_event = {
+			id = japan_new_event.92
+			days = 7
+		}                
+	}
+
+}
+
+country_event = { #财阀集团选出代表人物
+	id = KXXJAP.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KXXJAP.2" }
+	title = KXXJAP.2.t
+	desc = KXXJAP.2.d
+
+    immediate = {
+        hidden_effect  = {
+			country_event = {
+				id = KXXJAP.2
+				days = 730
+			}
+        }
+    }
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #久原房之助
+		name = KXXJAP.2.a
+		ai_chance = {
+			base = 25
+		}		
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = yes
+			election_frequency = 24
+		}
+		add_popularity = { ideology = social_conservative popularity = 0.3 }
+		create_country_leader = {
+			name = "久原房之助"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Fusanosuke_Kuhara.png"
+			expire = "1965.1.1"
+			ideology = soccon_popular_patriotism_subtype
+		}
+	}
+
+	option = { #鲇川义介
+		name = KXXJAP.2.b
+		ai_chance = {
+			base = 20
+		}		
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = yes
+			election_frequency = 24
+		}
+		add_popularity = { ideology = national_populist popularity = 0.3 }        
+		create_country_leader = {
+			name = "鲇川义介"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Yoshisuke_Aikawa.png"
+			expire = "1965.1.1"
+			ideology = reform_bureaucracy_subtype
+		}     
+	}
+
+	option = { #鹿岛守之助
+		name = KXXJAP.2.c
+		ai_chance = {
+			base = 20
+		}		
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+			election_frequency = 24
+		}
+		add_popularity = { ideology = social_liberal popularity = 0.3 }         
+		create_country_leader = {
+			name = "鹿岛守之助"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Morinosuke_Kajima.png"
+			expire = "1965.1.1"
+			ideology = paneuropeanism_subtype
+		}
+	}
+
+	option = { #池田成彬
+		name = KXXJAP.2.e
+		ai_chance = {
+			base = 25
+		}		
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = yes
+			election_frequency = 24
+		}
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.3 }         
+		create_country_leader = {
+			name = "池田成彬"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Ikeda_Shigeaki.png"
+			expire = "1965.1.1"
+			ideology = oligarchy_subtype
+		}
+	}  
+    
+	option = { #集体领导原则
+		name = KXXJAP.2.f
+		ai_chance = {
+			base = 10
+		}		
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = yes
+			election_frequency = 24
+		}
+		add_popularity = { ideology = paternal_autocrat popularity = 0.3 }         
+        add_stability = -0.15
+		create_country_leader = {
+			name = "财阀理事会"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Zaibatsu_council.png"
+			expire = "1.1.1"
+			ideology = corporatocracy_subtype
+		}        
+	}     
+
+}

@@ -1259,7 +1259,6 @@
 		custom_effect_tooltip = japan_take_india_tt
 		hidden_effect = {
 		unlock_decision_tooltip = JAP_into_india
-		unlock_decision_tooltip = 
 		}
 		}
 	}
@@ -1354,6 +1353,31 @@
 			608 = { is_owned_by_ROOT_or_ally = yes } #Beijing
 			743 = { is_owned_by_ROOT_or_ally = yes } #Shanghai
 		}
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = JAPFOR_fruits_of_loyalty  } prerequisite = { focus = JAPFOR_demand_tibetan_submission  focus = JAPFOR_planting_sakura_trees  } prerequisite = { focus = JAPFOR_demand_tibetan_submission  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_final_victory"
+			add_political_power = 200
+			swap_ideas = {
+				remove_idea = JAP_rising_sun_idea_4
+				add_idea = JAP_rising_sun_idea_5
+			}
+		}
+	}
+	
+	shared_focus = { #Economic integration conference
+		id = JAPFOR_osaka_conference
+		icon = GFX_goal_JAP_yen
+		cost = 5
+
+		x = 63
+		y = 0
+
+		available = {
+			is_faction_leader = yes
+			date > 1938.5.1
+		}
+		ai_will_do = { factor = 20 }
 		select_effect = {
 			log = "[GetDateText]: [Root.GetName]: Select Focus JAP_tokyo_conference"
 			every_other_country = {
@@ -1368,18 +1392,11 @@
 				}
 				country_event = japfor.21
 			}
-		}
-		ai_will_do = { factor = 40 }
-		prerequisite = { focus = JAPFOR_fruits_of_loyalty  } prerequisite = { focus = JAPFOR_demand_tibetan_submission  focus = JAPFOR_planting_sakura_trees  } prerequisite = { focus = JAPFOR_demand_tibetan_submission  }
+		}		
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus JAP_final_victory"
-			add_political_power = 200
-			swap_ideas = {
-				remove_idea = JAP_rising_sun_idea_4
-				add_idea = JAP_rising_sun_idea_5
-			}
-			
-			
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_osaka_conference"
+			set_country_flag = JAP_economic_sphere_member
+			custom_effect_tooltip = JAP_may_now_invite_sphere
 			custom_effect_tooltip = JAP_tokyo_conference_tt
 			hidden_effect = {
 				country_event = japfor.24
@@ -1389,30 +1406,7 @@
 
 				log = "This scope = [THIS.GetName]"
 				PREV = { activate_targeted_decision = { target = PREV decision = JAP_invite_into_faction } }
-			}
-		}
-	}
-	
-	shared_focus = { #Economic integration conference
-		id = JAPFOR_osaka_conference
-		icon = GFX_goal_JAP_yen
-		cost = 5
-
-		relative_position_id = JAPFOR_victoryovereuropeanimperialism
-		x = 0
-		y = 1
-
-		available = {
-			is_faction_leader = yes
-		}
-		ai_will_do = { factor = 20 }
-		prerequisite = {
-			focus = JAPFOR_victoryovereuropeanimperialism
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus JAP_osaka_conference"
-			set_country_flag = JAP_economic_sphere_member
-			custom_effect_tooltip = JAP_may_now_invite_sphere
+			}			
 			hidden_effect = {
 				country_event = japfor.400
 				JAP_open_JAP_co_prosperity_decisions_JAP_osaka_conference = yes
@@ -1559,5 +1553,395 @@
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_BONUS }
 	}
+
+	shared_focus = {
+		id = JAP_To_Sunder_the_Sunset
+		icon = GFX_goal_JAP_To_Sunder_Sunset
+		cost = 5
+		
+		available = {
+			OR = {
+				has_war_with = GER
+				has_war_with = GEA
+			}
+		}
+
+		x = 63
+		y = 6
+		
+		bypass = {
+			336 = { is_owned_by_ROOT_or_ally = yes }
+		}
+
+		ai_will_do = { factor = 15 }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_To_Sunder_the_Sunset"
+			add_ideas = JAP_State_Shinto_Idea2
+			activate_targeted_decision = { target = THIS decision = JAP_the_great_struggle }
+		}
+		
+		bypass_effect = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_To_Sunder_the_Sunset"
+			add_ideas = JAP_State_Shinto_Idea2
+			activate_targeted_decision = { target = THIS decision = JAP_the_great_struggle }
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+	
+	shared_focus = {
+		id = JAP_Western_Devil_Beheaded
+		icon = GFX_goal_JAP_Western_Devil_Beheaded
+		cost = 4
+		
+		available = { JAP_Won_Pacific_War = yes }
+
+		relative_position_id = JAP_To_Sunder_the_Sunset
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = JAP_To_Sunder_the_Sunset }
+
+		ai_will_do = { factor = 15 }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_Western_Devil_Beheaded"
+			add_war_support = 0.10
+			529 = {
+				increase_state_category_by_one_level = yes
+			}
+			532 = {
+				increase_state_category_by_one_level = yes
+			}
+			533 = {
+				increase_state_category_by_one_level = yes
+			}
+			1352 = {
+				increase_state_category_by_one_level = yes
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+	
+	shared_focus = {
+		id = JAP_New_Order_in_East_Asia
+		icon = GFX_goal_JAP_New_Order_East_Asia
+		cost = 4
+		
+		available = { JAP_Won_Pacific_War = yes }
+
+		relative_position_id = JAP_To_Sunder_the_Sunset
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = JAP_To_Sunder_the_Sunset }
+
+		ai_will_do = { factor = 15 }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_New_Order_in_East_Asia"
+			custom_effect_tooltip = JAP_New_Order_in_East_Asia_tt
+			if = {
+				limit = { owns_state = 743 }
+				743 = {
+					add_core_of = JAP
+					add_dynamic_modifier = { modifier = JAP_model_colony }
+				}
+			}
+			if = {
+				limit = { owns_state = 326 }
+				326 = {
+					add_core_of = JAP
+					add_dynamic_modifier = { modifier = JAP_model_colony }
+				}
+			}
+			if = {
+				limit = { owns_state = 336 }
+				336 = {
+					add_core_of = JAP
+					add_dynamic_modifier = { modifier = JAP_model_colony }
+				}
+			}
+			if = {
+				limit = { owns_state = 609 }
+				609 = {
+					add_core_of = JAP
+					add_dynamic_modifier = { modifier = JAP_model_colony }
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+	
+	shared_focus = {
+		id = JAP_Uplifting_Our_Brethren
+		icon = GFX_goal_JAP_Uplifting_Our_Brethren
+		cost = 5
+
+		relative_position_id = JAP_Western_Devil_Beheaded
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = JAP_Western_Devil_Beheaded }
+		prerequisite = { focus = JAP_New_Order_in_East_Asia }
+		mutually_exclusive = {
+			focus = JAP_Sphere_Freed_of_Discord
+			focus = JAP_Expand_the_Land_of_the_Gods
+		}
+
+		ai_will_do = { factor = 15 }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_Uplifting_Our_Brethren"
+			swap_ideas = {
+				remove_idea = JAP_Pan_Asianism_Idea1
+				add_idea = JAP_Pan_Asianism_Idea2A
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+	
+	shared_focus = {
+		id = JAP_Sphere_Freed_of_Discord
+		icon = GFX_goal_JAP_Sphere_Freed_Discord
+		cost = 5
+
+		relative_position_id = JAP_Western_Devil_Beheaded
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = JAP_Western_Devil_Beheaded }
+		prerequisite = { focus = JAP_New_Order_in_East_Asia }
+		mutually_exclusive = {
+			focus = JAP_Uplifting_Our_Brethren
+			focus = JAP_Expand_the_Land_of_the_Gods
+		}
+
+		ai_will_do = { factor = 15 }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_Sphere_Freed_of_Discord"
+			swap_ideas = {
+				remove_idea = JAP_Pan_Asianism_Idea1
+				add_idea = JAP_Pan_Asianism_Idea2B
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+	
+	shared_focus = {
+		id = JAP_Expand_the_Land_of_the_Gods
+		icon = GFX_goal_JAP_Expand_Land_Gods
+		cost = 5
+
+		relative_position_id = JAP_New_Order_in_East_Asia
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = JAP_Western_Devil_Beheaded }
+		prerequisite = { focus = JAP_New_Order_in_East_Asia }
+		mutually_exclusive = {
+			focus = JAP_Uplifting_Our_Brethren
+			focus = JAP_Sphere_Freed_of_Discord
+		}
+
+		ai_will_do = { factor = 15 }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_Expand_the_Land_of_the_Gods"
+			swap_ideas = {
+				remove_idea = JAP_Pan_Asianism_Idea1
+				add_idea = JAP_Pan_Asianism_Idea2C
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+	
+	shared_focus = {
+		id = JAP_Basking_on_the_Shores_of_Victory
+		icon = GFX_goal_JAP_Basking_Shores_Victory
+		cost = 6
+
+		relative_position_id = JAP_Sphere_Freed_of_Discord
+		x = -1
+		y = 1
+		
+		prerequisite = {
+			focus = JAP_Uplifting_Our_Brethren
+			focus = JAP_Sphere_Freed_of_Discord
+		}
+		mutually_exclusive = {
+			focus = JAP_Sword_Forever_Drawn
+		}
+
+		ai_will_do = { factor = 15 }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_Basking_on_the_Shores_of_Victory"
+			swap_ideas = {
+				remove_idea = JAP_Spiritual_Mobilization_Idea2
+				add_idea = JAP_Spiritual_Mobilization_Idea3A
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+	
+	shared_focus = {
+		id = JAP_Sword_Forever_Drawn
+		icon = GFX_goal_JAP_Sword_Forever_Drawn
+		cost = 6
+
+		relative_position_id = JAP_Sphere_Freed_of_Discord
+		x = 1
+		y = 1
+		
+		prerequisite = {
+			focus = JAP_Expand_the_Land_of_the_Gods
+			focus = JAP_Sphere_Freed_of_Discord
+		}
+		mutually_exclusive = {
+			focus = JAP_Basking_on_the_Shores_of_Victory
+		}
+
+		ai_will_do = { factor = 15 }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_Sword_Forever_Drawn"
+			swap_ideas = {
+				remove_idea = JAP_Spiritual_Mobilization_Idea2
+				add_idea = JAP_Spiritual_Mobilization_Idea3B
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+	
+	shared_focus = {
+		id = JAP_Monuments_of_Heaven_and_Earth
+		icon = GFX_goal_JAP_Monuments_Heaven_Earth
+		cost = 3
+		
+		available = { has_completed_focus = JAP_osaka_conference }
+
+		relative_position_id = JAP_Basking_on_the_Shores_of_Victory
+		x = 1
+		y = 1
+		
+		prerequisite = {
+			focus = JAP_Basking_on_the_Shores_of_Victory
+			focus = JAP_Sword_Forever_Drawn
+		}
+
+		ai_will_do = { factor = 15 }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_Monuments_of_Heaven_and_Earth"
+			custom_effect_tooltip = JAP_Monuments_of_Heaven_and_Earth_tt
+			add_political_power = 50
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+	
+	shared_focus = {
+		id = JAP_Rising_Sun_and_Crescent
+		icon = GFX_goal_JAP_Rising_Sun_Crescent
+		cost = 5
+
+		available = { 1020 = { is_controlled_by_ROOT_or_ally = yes } }
+
+		relative_position_id = JAP_Monuments_of_Heaven_and_Earth
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = JAP_Monuments_of_Heaven_and_Earth }
+
+		ai_will_do = { factor = 15 }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_Rising_Sun_and_Crescent"
+			if = {
+				limit = { owns_state = 1020 }
+				custom_effect_tooltip = JAP_Rising_Sun_and_Crescent_compliance
+				hidden_effect = {
+					1020 = { add_compliance = 40 }
+					335 = { add_compliance = 40 }
+					1019 = { add_compliance = 40 }
+					1021 = { add_compliance = 40 }
+					1022 = { add_compliance = 40 }
+					672 = { add_compliance = 40 }
+					1016 = { add_compliance = 40 }
+					334 = { add_compliance = 40 }
+				}
+			}
+			else_if = {
+				limit = {
+					INS = {
+						owns_state = 1020
+						is_in_faction_with = ROOT
+					}
+				}
+				custom_effect_tooltip = JAP_Rising_Sun_and_Crescent_slots
+				hidden_effect = {
+					1020 = { add_extra_state_shared_building_slots = 1 }
+					335 = { add_extra_state_shared_building_slots = 1 }
+					1019 = { add_extra_state_shared_building_slots = 1 }
+					1021 = { add_extra_state_shared_building_slots = 1 }
+					1022 = { add_extra_state_shared_building_slots = 1 }
+					672 = { add_extra_state_shared_building_slots = 1 }
+					1016 = { add_extra_state_shared_building_slots = 1 }
+					334 = { add_extra_state_shared_building_slots = 1 }
+				}
+			}
+			else = {
+				custom_effect_tooltip = JAP_Rising_Sun_and_Crescent_tt
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+	
+	shared_focus = {
+		id = JAP_Frontier_of_New_Japan
+		icon = GFX_goal_JAP_Frontier_New_Japan
+		cost = 5
+
+		relative_position_id = JAP_Monuments_of_Heaven_and_Earth
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = JAP_Monuments_of_Heaven_and_Earth }
+
+		ai_will_do = { factor = 15 }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_Frontier_of_New_Japan"
+			add_ideas = JAP_New_Japan_Idea1
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = JAP_Frontier_of_New_Japan_tt
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+	
+	shared_focus = {
+		id = JAP_Dawn_of_Eternal_Peace_and_Harmony
+		icon = GFX_goal_JAP_Dawn_Eternal_Peace_Harmony
+		cost = 5
+
+		relative_position_id = JAP_Rising_Sun_and_Crescent
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = JAP_Rising_Sun_and_Crescent }
+		prerequisite = { focus = JAP_Frontier_of_New_Japan }
+
+		ai_will_do = { factor = 15 }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_Dawn_of_Eternal_Peace_and_Harmony"
+			swap_ideas = {
+				remove_idea = JAP_Imperial_Family_Idea2
+				add_idea = JAP_Imperial_Family_Idea3
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}	
 
 

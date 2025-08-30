@@ -3219,6 +3219,9 @@ JAP_send_arms_to_zhili = {
 		
 		available = {
 			OR = {
+				FNG = {
+					is_subject_of = JAP
+				}				
 				HNN = {
 					is_subject_of = JAP
 				}
@@ -3282,6 +3285,9 @@ JAP_send_arms_to_zhili = {
 		
 		available = {
 			OR = {
+				FNG = {
+					is_subject_of = JAP
+				}				
 				HNN = {
 					is_subject_of = JAP
 				}

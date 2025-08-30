@@ -3403,129 +3403,133 @@ country_event = { #Kozaburo Ideology Picker
 	picture = "GFX_tachibana_image"
 	
 	is_triggered_only = yes
-	option = { #Natpop_Shinto
+	option = { #农业主义
 		name = japan_new_event.43.a
-		ai_chance = { base = 100 }
-		
-		
-		set_politics = {
-			ruling_party = national_populist
-			elections_allowed = no
+		ai_chance = { 
+			base = 25
 		}
 		
 		add_popularity = {
 			ideology = national_populist
 			popularity = 0.3
-		}
-		
-		
-		create_country_leader = {
-			name = "橘孝三郎"
-			picture = "gfx/leaders/JAP/Portrait_Two_Kozaburo_Tachibana.png"
-			expire = "1965.1.1"
-			ideology = natpop_state_shintoism_subtype
-		}
-		add_ideas = Tachibana_Ascension_idea_3
-	}
-	option = { #Gugolov
-		name = japan_new_event.43.b
-		ai_chance = { base = 100 }
-		
-		
-		set_politics = {
-			ruling_party = national_populist
-			elections_allowed = no
-		}
-		
-		add_popularity = {
-			ideology = national_populist
-			popularity = 0.3
-		}
-		
-		
-		create_country_leader = {
-			name = "橘孝三郎"
-			picture = "gfx/leaders/JAP/Portrait_Two_Kozaburo_Tachibana.png"
-			expire = "1965.1.1"
-			ideology = scythianism_subtype
 		}
 		add_ideas = Tachibana_Ascension_idea_1
+		country_event = {
+			id = japan_new_event.92
+			days = 7
+		}
+	}
+	option = { #托尔斯泰
+		name = japan_new_event.43.b
+		ai_chance = { 
+			base = 10
+		}
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.3
+		}
+		create_country_leader = {
+			name = "橘孝三郎"
+			picture = "gfx/leaders/JAP/Portrait_Two_Kozaburo_Tachibana.png"
+			expire = "1965.1.1"
+			ideology = Tolstoyism_subtype
+		}
+		add_ideas = Tachibana_Ascension_idea
+		country_event = {
+			id = japan_new_event.92
+			days = 7
+		}		
 	}
 	
-	option = { #Totalist Shinto
+	option = { #甘地主义
 		name = japan_new_event.43.c
-		ai_chance = { base = 100 }
-		
-		
+		ai_chance = { 
+			base = 10
+		}
 		set_politics = {
-			ruling_party = totalist
+			ruling_party = social_democrat
 			elections_allowed = no
 		}
-		
 		add_popularity = {
-			ideology = totalist
+			ideology = social_democrat
 			popularity = 0.3
 		}
-		
-		
 		create_country_leader = {
 			name = "橘孝三郎"
 			picture = "gfx/leaders/JAP/Portrait_Two_Kozaburo_Tachibana.png"
 			expire = "1965.1.1"
-			ideology = tot_state_shintoism_subtype
+			ideology = socdem_gandhism_subtype
 		}
-		add_ideas = Tachibana_Ascension_idea_3
+		add_ideas = Tachibana_Ascension_idea
+		country_event = {
+			id = japan_new_event.92
+			days = 7
+		}		
 	}
 	
 	
-	option = { #Totalist Kang Youwei
+	option = { #Kang Youwei
 		name = japan_new_event.43.d
-		ai_chance = { base = 100 }
-		
-		
+		ai_chance = { 
+			base = 25
+		}
 		set_politics = {
-			ruling_party = totalist
+			ruling_party = national_populist
 			elections_allowed = no
 		}
-		
 		add_popularity = {
-			ideology = totalist
+			ideology = national_populist
 			popularity = 0.3
 		}
-		
-		
 		create_country_leader = {
 			name = "橘孝三郎"
 			picture = "gfx/leaders/JAP/Portrait_Two_Kozaburo_Tachibana.png"
 			expire = "1965.1.1"
-			ideology = tot_datong_shu_subtype
+			ideology = natpop_datong_shu_subtype
 		}
 		add_ideas = Tachibana_Ascension_idea_2
+		country_event = {
+			id = japan_new_event.92
+			days = 7
+		}		
 	}
 	
 	option = { #Anarchism
 		name = japan_new_event.43.e
-		ai_chance = { base = 100 }
-		
-		
+		ai_chance = { 
+			base = 10
+		}
 		set_politics = {
-			ruling_party = totalist
+			ruling_party = radical_socialist
 			elections_allowed = no
 		}
-		
 		add_popularity = {
-			ideology = totalist
+			ideology = radical_socialist
 			popularity = 0.3
 		}
-		
-		
 		create_country_leader = {
 			name = "橘孝三郎"
 			picture = "gfx/leaders/JAP/Portrait_Two_Kozaburo_Tachibana.png"
 			expire = "1965.1.1"
-			ideology = tot_illegalism_subtype
+			ideology = radsoc_sanshiro_thought_subtype
 		}
 		add_ideas = Tachibana_Ascension_idea
+		country_event = {
+			id = japan_new_event.92
+			days = 7
+		}		
+	}
+
+	option = { #退休
+		name = japan_new_event.43.f
+		ai_chance = { 
+			base = 20
+		}
+		country_event = KXXJAP.1
 	}
 }
 
@@ -3689,9 +3693,9 @@ country_event = { #A Twist in the Coup
 			name = "橘孝三郎"
 			picture = "gfx/leaders/JAP/Portrait_Two_Kozaburo_Tachibana.png"
 			expire = "1965.1.1"
-			ideology = natpop_state_shintoism_subtype
+			ideology = natpop_agrarianism_subtype
 		}
-		set_cosmetic_tag = JAP_KOZABURO
+		set_cosmetic_tag = JAP_nouhonsyugi
 		remove_all_ministers = yes
 		add_ideas = {
 			JAP_Kozaburo_Tachibana_hog_npo
@@ -6959,7 +6963,9 @@ country_event = { #Establishment of a New Shogunate
 	is_triggered_only = yes
 	option = { #
 		name = japan_new_event.88.a
-		ai_chance = { base = 100 }
+		ai_chance = { 
+			base = 50
+		}
 		trigger = {
 			NOT = {
 				has_country_flag = JAP_Gokkai
@@ -6969,7 +6975,9 @@ country_event = { #Establishment of a New Shogunate
 	}
 	option = { #
 		name = japan_new_event.88.b
-		ai_chance = { base = 100 }
+		ai_chance = { 
+			base = 50
+		}
 		trigger = {
 			NOT = {
 				has_country_flag = JAP_Gokkai
@@ -6979,7 +6987,9 @@ country_event = { #Establishment of a New Shogunate
 	}
 	option = { #
 		name = japan_new_event.88.c
-		ai_chance = { base = 100 }
+		ai_chance = { 
+			base = 0
+		}
 		trigger = {
 			NOT = {
 				has_country_flag = JAP_Gokkai
@@ -6995,7 +7005,9 @@ country_event = { #Establishment of a New Shogunate
 	
 	option = { #
 		name = japan_new_event.88.d
-		ai_chance = { base = 100 }
+		ai_chance = { 
+			base = 0
+		}
 		trigger = {
 			NOT = {
 				has_country_flag = JAP_Gokkai
@@ -7010,7 +7022,9 @@ country_event = { #Establishment of a New Shogunate
 	
 	option = { #
 		name = japan_new_event.88.e
-		ai_chance = { base = 100 }
+		ai_chance = { 
+			base = 0
+		}
 		trigger = {
 		
 		has_country_flag = JAP_Gokkai
@@ -7147,14 +7161,18 @@ country_event = { #Our Outlook Onto the World
 	is_triggered_only = yes
 	option = { #We Shall Liberate the Peoples of Asia
 		name = japan_new_event.91.a
-		ai_chance = { base = 100 }
+		ai_chance = { 
+			base = 100
+		}
 		set_country_flag = JAP_liberate_nichiren_asia
 		dismantle_faction = yes
 		create_faction = JAP_PAN_THERA
 	}
 	option = { #The World Shall Bow Down to the Buddha and the Emperor!
 		name = japan_new_event.91.b
-		ai_chance = { base = 100 }
+		ai_chance = { 
+			base = 0
+		}
 		set_country_flag = JAP_uniting_world
 		every_country = {
 		JAP = {
@@ -7179,7 +7197,9 @@ country_event = { #Question of Our Future
 	is_triggered_only = yes
 	option = { #
 		name = japan_new_event.92.a
-		ai_chance = { base = 100 }
+		ai_chance = { 
+			base = 0
+		}
 		set_cosmetic_tag = JAP_Hakko_Ichui
 		
 		every_state = {
@@ -7199,7 +7219,9 @@ country_event = { #Question of Our Future
 	
 	option = { #
 		name = japan_new_event.92.b
-		ai_chance = { base = 100 }
+		ai_chance = { 
+			base = 10
+		}
 		set_cosmetic_tag = JAP_Tachi_Asia
 		every_state = {
 				limit = {
@@ -7224,7 +7246,9 @@ country_event = { #Question of Our Future
 	
 	option = { #
 		name = japan_new_event.92.c
-		ai_chance = { base = 100 }
+		ai_chance = { 
+			base = 90
+		}
 		
 	}
 }
@@ -7382,7 +7406,9 @@ country_event = { #Spreading The Red Sun to the Globe
 	is_triggered_only = yes
 	option = { #
 		name = japan_new_event.96.a
-		ai_chance = { base = 100 }
+		ai_chance = { 
+			base = 40
+		}
 		add_ideas = JAP_Kita_Ikki_idea
 		every_state = {
 			limit = {
@@ -7403,7 +7429,9 @@ country_event = { #Spreading The Red Sun to the Globe
 	
 	option = { #
 		name = japan_new_event.96.b
-		ai_chance = { base = 100 }
+		ai_chance = { 
+			base = 0
+		}
 		add_ideas = JAP_Kita_Ikki_idea
 		
 		set_cosmetic_tag = JAP_IKKI_KITA_WORLD
@@ -7419,6 +7447,15 @@ country_event = { #Spreading The Red Sun to the Globe
 		}
 		
 	}
+
+	option = { #
+		name = japan_new_event.96.c
+		ai_chance = { 
+			base = 60
+		}
+		add_ideas = JAP_Kita_Ikki_idea
+	}
+
 }
 
 country_event = { #Future of the Shumei Government
@@ -7431,14 +7468,18 @@ country_event = { #Future of the Shumei Government
 	is_triggered_only = yes
 	option = { #
 		name = japan_new_event.97.a
-		ai_chance = { base = 100 }
+		ai_chance = { 
+			base = 80
+		}
 		add_war_support = 0.1
 		add_political_power = 100
 	}
 	
 	option = { #
 		name = japan_new_event.97.b
-		ai_chance = { base = 100 }
+		ai_chance = { 
+			base = 20
+		}
 		set_cosmetic_tag = JAP_SHUMEI_ASIA
 		if = {
 			limit = {
@@ -7491,7 +7532,9 @@ country_event = { #Future of the Shumei Government
 	
 	option = { #
 		name = japan_new_event.97.c
-		ai_chance = { base = 100 }
+		ai_chance = { 
+			base = 0
+		}
 		set_cosmetic_tag = JAP_SHUMEI_MUSLIM
 		JAP_shumei_caliphate_cores = yes
 		add_ideas = JAP_are_ya_ready_war_1
@@ -7614,7 +7657,9 @@ country_event = { #Our Lasting Legacy For the Empire
 	is_triggered_only = yes
 	option = { #
 		name = japan_new_event.100.a
-		ai_chance = { base = 100 }
+		ai_chance = { 
+			base = 99
+		}
 		trigger = {
 		has_country_flag = JAP_puppet_asia
 		}
@@ -7623,7 +7668,9 @@ country_event = { #Our Lasting Legacy For the Empire
 	
 	option = { #
 		name = japan_new_event.100.b
-		ai_chance = { base = 100 }
+		ai_chance = { 
+			base = 0
+		}
 		if = {
 			limit = {
 				has_country_flag = JAP_unify_asia
@@ -7663,11 +7710,28 @@ country_event = { #Our Lasting Legacy For the Empire
 	
 	option = { #
 		name = japan_new_event.100.c
-		ai_chance = { base = 100 }
+		ai_chance = { 
+			base = 1
+		}
 		trigger = {
 		has_country_flag = JAP_unify_asia
 		}
 		set_cosmetic_tag = JAP_HASHIMOTO_ASIA
+		every_state = {
+			limit = {
+				OR = {
+					is_on_continent = asia
+					is_on_continent = india
+				}
+			}
+			JAP = {
+				add_state_core = PREV
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = PREV
+				}
+			}
+		}		
 	}
 }
 
@@ -7781,6 +7845,12 @@ country_event = { #Death of Aso Hisashi
 			expire = "1965.1.1"
 			ideology = tot_national_socialism_subtype
 		}
+		create_country_leader = {
+			name = "赤松克麿"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Katsumaro_Akamatsu.png"
+			expire = "1965.1.1"
+			ideology = paternalistic_reactionaryism_subtype
+		}		
 		
 	}
 	
@@ -7801,6 +7871,12 @@ country_event = { #Death of Aso Hisashi
 			expire = "1965.1.1"
 			ideology = massimalismo_subtype
 		}
+		create_country_leader = {
+			name = "浅沼稻次郎"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Katsumaro_Akamatsu.png"
+			expire = "1965.1.1"
+			ideology = radsoc_popular_patriotism_subtype
+		}		
 		
 	}
 	
@@ -7821,7 +7897,12 @@ country_event = { #Death of Aso Hisashi
 			expire = "1965.1.1"
 			ideology = tot_agrarian_socialism_subtype
 		}
-		
+		create_country_leader = {
+			name = "平野力三"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Katsumaro_Akamatsu.png"
+			expire = "1965.1.1"
+			ideology = radsoc_kleptocracy_subtype
+		}		
 	}
 	
 	option = { #Yamana
@@ -7841,6 +7922,12 @@ country_event = { #Death of Aso Hisashi
 			expire = "1965.1.1"
 			ideology = sorelianism_subtype
 		}
+		create_country_leader = {
+			name = "山名芳久"
+			picture = "gfx/leaders/JAP/Portrait_JAP_Yoshikuru_Yamana.png"
+			expire = "1965.1.1"
+			ideology = radsoc_popular_patriotism_subtype
+		}		
 	}
 }
 
@@ -8883,6 +8970,26 @@ country_event = { #Revenge of the Zaibatsu
 			long_name = JAP_party_zaibatsu_long
 			name = JAP_party_zaibatsu
 		}
+		set_party_name = {
+			ideology = market_liberal
+			long_name = JAP_party_zaibatsu_long
+			name = JAP_party_zaibatsu
+		}
+		set_party_name = {
+			ideology = social_liberal
+			long_name = JAP_party_zaibatsu_long
+			name = JAP_party_zaibatsu
+		}
+		set_party_name = {
+			ideology = social_conservative
+			long_name = JAP_party_zaibatsu_long
+			name = JAP_party_zaibatsu
+		}
+		set_party_name = {
+			ideology = authoritarian_democrat
+			long_name = JAP_party_zaibatsu_long
+			name = JAP_party_zaibatsu
+		}					
 		set_cosmetic_tag = JAP_ZAIBATSU
 		complete_national_focus = ZAIJAP_the_consolidation_of_japanese_industry
 		set_country_flag = factionalism_japan_no
