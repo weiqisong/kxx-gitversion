@@ -2451,7 +2451,7 @@ focus_tree = {
 		available = {
 		QIE = {
 		has_country_leader = {
-				name = "Hu Shih"
+				name = "胡适"
 				ruling_only = yes
 			}
 		}
@@ -3623,3 +3623,4 @@ focus_tree = {
 	}
 
 }
+
