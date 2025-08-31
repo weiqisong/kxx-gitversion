@@ -20,10 +20,9 @@ country_event = { # Introduction to Arab Socialist Baath Party
 				ruling_only = yes 
 			}
 		}
-		
+		mean_time_to_happen = { 5 days }	
 	}
 	
-	mean_time_to_happen = { days = 48 }
 	
 	fire_only_once = yes
 
@@ -38,7 +37,7 @@ country_event = { # Introduction to Arab Socialist Baath Party
 		hidden_effect = {
 			country_event = {
 				id = nasser.2
-				days = 14
+				days = 5
 			}
 		}
 	}
@@ -60,13 +59,13 @@ country_event = { # Ba'athists gather the support
 		name = "我们必须密切关注他们"
 		set_party_name = { 
  			   ideology = radical_socialist
- 			   long_name = "Free Officers" 
- 			   name = "Free Officers"
+ 			   long_name = "自由军官组织" 
+ 			   name = "自由军官组织"
 		}
 		set_party_name = { 
  			   ideology = paternal_autocrat
- 			   long_name = "Free Officers" 
- 			   name = "Free Officers"
+ 			   long_name = "自由军官组织" 
+ 			   name = "自由军官组织"
 		}
 		create_country_leader = {
 			name = "贾迈勒·阿卜杜勒·纳赛尔"
@@ -99,7 +98,7 @@ country_event = { # Ba'athists gather the support
 		hidden_effect = {
 			country_event = {
 				id = nasser.3
-				days = 14
+				days = 5
 			}
 		}
 	}
@@ -118,7 +117,7 @@ country_event = { # chaos
 		hidden_effect = {
 			country_event = {
 				id = nasser.4
-				days = 7
+				days = 2
 			}
 		}
 	}
@@ -138,8 +137,6 @@ country_event = { # watabi habiiibi
 		set_politics = {
 			ruling_party = paternal_autocrat
     		elections_allowed = no
-   			 last_election = "1935.12.17"
-   			 election_frequency = 48
 		}
 		set_cosmetic_tag = EGY_arabist
 		add_popularity = {
@@ -150,6 +147,15 @@ country_event = { # watabi habiiibi
 			ideology = paternal_autocrat
 			popularity = 0.2
 		}
+		remove_ideas = EGY_iqta
+		remove_ideas_with_trait = head_of_government
+		add_ideas = EGY_Gamal_Abdel_Nasser_hog_sde
+		remove_ideas_with_trait = economy_minister
+		add_ideas = EGY_Ali_Sabri_eco_tot
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = EGY_Salah_Salem_for_sde
+		remove_ideas_with_trait = security_minister
+		add_ideas = EGY_Kamal_el_Din_Hussein_sec_rso
 	}
 
 }
@@ -1117,6 +1123,5 @@ country_event = { # nasserist political party formage
 	
 
 }
-
 
 ###THE DEBATE END
