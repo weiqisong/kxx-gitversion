@@ -5271,7 +5271,7 @@ option = {
 	}
 	every_country = {
 		limit = {
-			is_in_faction_with = RUS
+			is_in_faction_with = CSA
 		}
 		add_to_faction = INT
 	}

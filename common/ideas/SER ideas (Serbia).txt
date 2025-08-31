@@ -6,6 +6,38 @@ ideas = {
 ##############
 	country = {
 		### New ideas ###
+		SER_national_central_committee = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SER_nationalist_fervor_idea" }
+			picture = KIV_officer_committee_idea
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = -0.1
+				production_factory_max_efficiency_factor = 0.1
+				research_speed_factor = 0.15
+			}
+		}
+		SER_might_makes_freedom = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SER_nationalist_fervor_idea" }
+			picture = SER_Unity_death
+			allowed = { always = no }
+			modifier = {
+				political_power_cost = -0.1
+				stability_factor = 0.05
+				army_org_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		SER_rule_of_SKK = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SER_nationalist_fervor_idea" }
+			picture = SER_Unity_death
+			allowed = { always = no }
+			modifier = {
+				political_power_cost = -0.1
+				stability_factor = 0.05
+				army_org_factor = 0.1
+			}
+		}
 		SER_treaty_of_wartholz = {
 			on_add = {
 				log = "[GetDateText]: [Root.GetName]: add idea SER_treaty_of_wartholz"
