@@ -4414,7 +4414,16 @@ country_event = {#
 				planning_skill = 4
 				logistics_skill = 2
 			}
-
+			create_corps_commander = {
+				name = "邓小平"
+				portrait_path = "gfx/leaders/SQI/Portrait_Deng_Xiaoping.png"
+				traits = { guerilla_fighter infantry_leader }
+				skill = 1
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
 
 		set_party_name = { 
 				ideology = totalist
@@ -4546,6 +4555,16 @@ country_event = {#
 				attack_skill = 4
 				defense_skill = 3
 				planning_skill = 4
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "邓小平"
+				portrait_path = "gfx/leaders/SQI/Portrait_Deng_Xiaoping.png"
+				traits = { guerilla_fighter infantry_leader }
+				skill = 1
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
 				logistics_skill = 2
 			}
 
