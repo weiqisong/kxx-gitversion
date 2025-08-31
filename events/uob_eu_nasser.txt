@@ -977,18 +977,18 @@ country_event = { # Naguib Front
 		}
 		set_party_name = {
 			ideology = national_populist
-			long_name = "Liberation Rally - Muslim Brotherhood"
-			name = "Liberation Rally"
+			long_name = "解放大会 - 穆兄会"
+			name = "解放大会"
 		}
 		set_party_name = {
 			ideology = paternal_autocrat
-			long_name = "Liberation Rally - Free Officers"
-			name = "Liberation Rally"
+			long_name = "解放大会 - 自由军官"
+			name = "解放大会"
 		}
 		set_party_name = {
 			ideology = authoritarian_democrat
-			long_name = "Liberation Rally - National Democrats"
-			name = "Liberation Rally"
+			long_name = "解放大会 - 民族党"
+			name = "解放大会"
 		}
 		set_country_leader_ideology = pataut_popular_patriotism_subtype
 	}
@@ -1007,13 +1007,6 @@ country_event = { # removal of Nasser
 	option = { #Nasser
 		name = "我们不再需要你了。"
 		kill_ideology_leader = radical_socialist
-	}
-	remove_all_ministers = yes
-	add_ideas = {
-		EGY_Sherif_Sabri_hog_pau
-		EGY_Ahmed_Hassanein_for_pau
-		EGY_Aziz_Ezzat_eco_pau
-		EGY_Ahmed_Hassanein_sec_pau
 	}	
 
 }
@@ -1071,13 +1064,11 @@ country_event = { # centrist political party formage
 			ideology = authoritarian_democrat
 			popularity = 0.15
 		}
-		remove_all_ministers = yes
-		add_ideas = {
-			EGY_Gamal_Abdel_Nasser_hog_sde
-			EGY_Salah_Salem_for_sde
-			EGY_Abdel_Latif_Boghdadi_eco_sde
-			EGY_Muhammad_Anwar_el_Sadat_sec_sde
-		}
+		add_radsoc_to_coalition = yes
+		add_socdem_to_coalition = yes
+		add_soclib_to_coalition = yes
+		add_soccon_to_coalition = yes
+		add_authdem_to_coalition = yes
 	}
 	
 }
@@ -1127,16 +1118,12 @@ country_event = { # nasserist political party formage
 			ideology = social_liberal
 			popularity = 0.15
 		}
-		remove_all_ministers = yes
-		add_ideas = {
-			EGY_Shuhdi_Atiya_ash_Shafi_hog_rso
-			EGY_Youssef_Siddiq_eco_syn
-			EGY_Hosni_al_Arabi_for_rso
-			EGY_Mustafa_Kamel_Murad_sec_tot
-		}
+	add_syn_to_coalition = yes
+	add_tot_to_coalition = yes
+	add_socdem_to_coalition = yes
+	add_soclib_to_coalition = yes
 	}
-	
-	
+
 
 }
 
