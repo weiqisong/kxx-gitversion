@@ -28209,9 +28209,7 @@ focus = {
 		prerequisite = {
 			focus = FRA_defender_of_wine
 		}
-		available = {
-			always = no
-		}
+		
 		x = 2
 		y = 3
 		relative_position_id = FRA_psdf

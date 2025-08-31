@@ -157,7 +157,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_FRG_medium_flag"
-		textureFile = "gfx/flags/medium/FRG_national_populist.tga"
+		textureFile = "gfx/flags/medium/FRG.tga"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 	spriteType = {
