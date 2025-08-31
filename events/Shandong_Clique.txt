@@ -3749,6 +3749,36 @@ country_event = {#
 			add_ideas = {
 			SQI_xiong_xiling_hog_ade
 			}
+			create_field_marshal = {
+				name = "熊希龄"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Xiong_Xiling.png"
+				trait = {}
+				skill = 1
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_field_marshal = {
+				name = "熊十力"
+				portrait_path = "gfx/leaders/SQI/Portrait_Xiong_Shili.png"
+				trait = {}
+				skill = 1
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_field_marshal = {
+				name = "毛彦文"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Mao_Yenwan.png"
+				trait = {}
+				skill = 1
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
 		}	
 	}
 	
@@ -3798,7 +3828,7 @@ country_event = {#
 	country_event = {#
 	id = shandong.471
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "Roerich's Ideas Reach Shili"
+	title = "Real Confucius's Ideas Reach Shili"
 	desc = shandong.471.desc
 	picture = 
 
@@ -3806,7 +3836,7 @@ country_event = {#
 	is_triggered_only = yes
 
 	option = {
-		name = shandong.471.a
+		name = "熊十力参悟儒家中的社会主义真谛"
 		set_politics = { ruling_party = radical_socialist }
 		set_country_leader_name = {
 				ideology = radical_socialist
@@ -3817,6 +3847,10 @@ country_event = {#
 				ideology = radical_socialist
 				portrait = "gfx/leaders/SQI/Portrait_Xiong_Shili.png"
 			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.7
+			}
 		
 			
 			set_party_name = { 
@@ -3826,7 +3860,7 @@ country_event = {#
 
 					
 			}
-			set_country_leader_ideology = radsoc_esoteric_leninism_subtype
+			set_country_leader_ideology = social_confucianism_subtype
 			add_authdem_to_coalition = yes
 		}
 		option = {
@@ -3933,8 +3967,7 @@ country_event = {#
 				name = "新月社"
 				long_name = "新月社"	
 			}
-			
-			
+
 			set_country_leader_name = {
 				ideology = social_liberal
 				name = "徐志摩"
@@ -3949,14 +3982,68 @@ country_event = {#
 				ideology = social_liberal
 				name = "新月社"
 				long_name = "新月社"
-
-					
 			}
-			
-			
-		}		
-		
-	
+			create_corps_commander = {
+				name = "闻一多"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Wen_Yiduo.png"
+				trait = {}
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "徐志摩"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Xu_Zhimo.png"
+				traits = {}
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_field_marshal = {
+				name = "赵九章"
+				portrait_path = "gfx/leaders/SQI/Portrait_CNH_Zhao_Jiuzhang.png"
+				traits = {}
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "陆定一"
+				portrait_path = "gfx/leaders/SQI/Portrait_LEC_Lu_Dingyi.png"
+				traits = {}
+				skill = 1
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "冯亦代"
+				portrait_path = "gfx/leaders/SQI/Portrait_CNH_Feng_Yidai.png"
+				traits = {}
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "陶行知"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Tao_Xingzhi.png"
+				traits = {}
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 1
+			}
+		}			
 	}
 	
 	country_event = {#
@@ -3974,6 +4061,13 @@ country_event = {#
 		name = "The Liberals Secure the Province"
 		set_politics = { ruling_party = social_liberal }
 		set_country_leader_ideology = national_liberalism_subtype
+		remove_all_ministers = yes
+		add_ideas = {
+			SQI_xu_zhimo_hog_sli
+			SQI_chen_mengjia_eco_sli
+			SQI_pan_guandan_for_sli
+			SQI_liang_shih_chiu_sec_sli
+		}
 		}
 		
 		option = {
@@ -3981,6 +4075,13 @@ country_event = {#
 		name = "Nationalists Proclaim Victory"
 		set_politics = { ruling_party = social_democrat }
 		set_country_leader_ideology = socdem_left_nationalism_subtype
+		remove_all_ministers = yes
+		add_ideas = {
+			SQI_wen_yiduo_hog_sde
+			SQI_shen_congwen_eco_sde
+			SQI_pan_guandan_for_sli
+			SQI_liang_shih_chiu_sec_sli
+		}
 		}
 
 		option = {
@@ -3999,6 +4100,13 @@ country_event = {#
 			}
 			
 			set_country_leader_ideology = socdem_mao_zedong_thought_subtype
+			remove_all_ministers = yes
+			add_ideas = {
+				SQI_tao_xingzhi_hog_sde
+				SQI_shen_congwen_eco_sde
+				SQI_pan_guandan_for_sli
+				SQI_liang_shih_chiu_sec_sli
+			}
 		}
 		
 	
@@ -4053,13 +4161,14 @@ country_event = {#
 		set_party_name = { 
 				ideology = radical_socialist
 				name = "新月社"
-				long_name = "新月社"
-
-					
+				long_name = "新月社"	
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.7
 			}
 		}
-		
-	
+
 	}
 	
 	country_event = {#
@@ -4148,7 +4257,7 @@ country_event = {#
 		set_cosmetic_tag = SQI_REVOLUTION
 		set_country_leader_name = {
 				ideology = totalist
-				name = "8th Route Army Council"
+				name = "军委八路军分会"
 			}
 			
 		set_country_leader_portrait = {
@@ -4167,8 +4276,8 @@ country_event = {#
 		
 		set_party_name = { 
 				ideology = totalist
-				name = "8RA/AJSF"
-				long_name = "8th Route Army/Shandong Revolutionary Society/Anti-Japanese Solidarity Front"
+				name = "八路军/抗日团结阵线"
+				long_name = "八路军/山东革命会/抗日团结阵线"
 					
 			}
 			
@@ -4195,7 +4304,7 @@ country_event = {#
 		
 		set_country_leader_name = {
 				ideology = totalist
-				name = "Xi Zhongxun"
+				name = "习仲勋"
 			}
 			
 		set_country_leader_portrait = {
@@ -4204,17 +4313,120 @@ country_event = {#
 			}
 			
 			set_country_leader_ideology = red_junta_subtype
-			
-			
-		
-		
+
+			create_field_marshal = {
+				name = "习仲勋"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Xi_Zhongxun.png"
+				traits = { thorough_planner  inspirational_leader }
+				skill = 2
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "邓恩铭"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Deng_Enming.png"
+				traits = { logistics_wizard  infantry_leader }
+				skill = 2
+				attack_skill = 4
+				defense_skill = 5
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "薄一波"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Bo_Yibo.png"
+				traits = { trait_cautious  int_logistics_specialist }
+				skill = 1
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 5
+			}
+			create_field_marshal = {
+				name = "军委八路军分会"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_8th_Route_Army.png"
+				traits = { incorporeal }
+				skill = 1
+				attack_skill = 5
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 5
+			}
+			create_corps_commander = {
+				name = "张春桥"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Zhang_Chunqiao.png"
+				traits = { militias_expert guerilla_fighter }
+				skill = 1
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "万里"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Wan_Li.png"
+				traits = { guerilla_fighter scavenger }
+				skill = 1
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "陈云"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Chen_Yun.png"
+				traits = { guerilla_fighter scavenger }
+				skill = 1
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "谢富治"
+				portrait_path = "gfx/leaders/SQI/Portrait_Xie_Fuzhi.png"
+				traits = { guerilla_fighter trickster adaptable }
+				skill = 1
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "凯丰"
+				portrait_path = "gfx/leaders/SQI/Portrait_Kai_feng.png"
+				traits = { guerilla_fighter career_officer }
+				skill = 1
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "陈伯达"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Chen_Boda.png"
+				traits = { bold trait_engineer }
+				skill = 1
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 2
+			}
+
+
 		set_party_name = { 
 				ideology = totalist
-				name = "8th Route Army"
-				long_name = "8th Route Army"
-
-				
-					
+				name = "八路军"
+				long_name = "八路军"
+			}
+			remove_all_ministers = yes
+			add_ideas = {
+				SQI_xi_zhongxun_hog_tot
+				SQI_bo_yibo_eco_rso
+				SQI_zhang_chunqiao_hog_tot
+				SQI_xu_haidong_sec_tot
 			}
 		}
 		
@@ -4226,25 +4438,128 @@ country_event = {#
 		
 		set_country_leader_name = {
 				ideology = totalist
-				name = "Deng Enming"
+				name = "邓恩铭"
 			}
 			
 		set_country_leader_portrait = {
 				ideology = totalist
 				portrait = "gfx/leaders/SQI/Portrait_SQI_Deng_Enming.png"
 			}
+
 			
 			set_country_leader_ideology = tot_anti_japaneseism_subtype
-			
-			
-		
-		
+			create_field_marshal = {
+				name = "邓恩铭"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Deng_Enming.png"
+				traits = { logistics_wizard  thorough_planner organizer }
+				skill = 2
+				attack_skill = 4
+				defense_skill = 5
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+			name = "习仲勋"
+			portrait_path = "gfx/leaders/SQI/Portrait_SQI_Xi_Zhongxun.png"
+			traits = { thorough_planner inspirational_leader }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "薄一波"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Bo_Yibo.png"
+				traits = { trait_cautious int_logistics_specialist }
+				skill = 1
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 5
+			}
+			create_corps_commander = {
+				name = "军委八路军分会"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_8th_Route_Army.png"
+				traits = { incorporeal }
+				skill = 1
+				attack_skill = 5
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 5
+			}
+			create_corps_commander = {
+				name = "张春桥"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Zhang_Chunqiao.png"
+				traits = { militias_expert guerilla_fighter }
+				skill = 1
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "万里"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Wan_Li.png"
+				traits = { guerilla_fighter scavenger }
+				skill = 1
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "陈云"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Chen_Yun.png"
+				traits = { guerilla_fighter trickster }
+				skill = 1
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "谢富治"
+				portrait_path = "gfx/leaders/SQI/Portrait_Xie_Fuzhi.png"
+				traits = { guerilla_fighter trickster adaptable }
+				skill = 1
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "凯丰"
+				portrait_path = "gfx/leaders/SQI/Portrait_Kai_feng.png"
+				traits = { guerilla_fighter career_officer }
+				skill = 1
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "陈伯达"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Chen_Boda.png"
+				traits = { bold trait_engineer }
+				skill = 1
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 2
+			}
+
 		set_party_name = { 
 				ideology = totalist
-				name = "Anti-Japanese Solidarity Front"
-								long_name = "Anti-Japanese Solidarity Front"
-
-					
+				name = "抗日团结阵线"
+		   long_name = "抗日团结阵线"
+			}
+			remove_all_ministers = yes
+			add_ideas = {
+				SQI_deng_enming_hog_tot
+				SQI_wang_li_eco_tot
+				SQI_chen_boda_for_tot
+				SQI_xu_haidong_sec_tot
 			}
 		}
 		
