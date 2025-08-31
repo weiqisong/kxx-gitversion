@@ -148,11 +148,12 @@ country_event = { # watabi habiiibi
 			popularity = 0.2
 		}
 		remove_all_ministers = yes
-		remove_ideas = EGY_iqta
-		add_ideas = EGY_Shuhdi_Atiya_ash_Shafi_hog_rso
-		add_ideas = EGY_Ali_Sabri_eco_tot
-		add_ideas = EGY_Salah_Salem_for_sde
-		add_ideas = EGY_Kamal_el_Din_Hussein_sec_rso
+		add_ideas = {
+		EGY_Shuhdi_Atiya_ash_Shafi_hog_rso
+		EGY_Ali_Sabri_eco_tot
+		EGY_Salah_Salem_for_sde
+		EGY_Kamal_el_Din_Hussein_sec_rso
+	}
 	}
 	    clr_country_flag = LEADER_GUI_VISIBLE
 }
@@ -1007,8 +1008,13 @@ country_event = { # removal of Nasser
 		name = "我们不再需要你了。"
 		kill_ideology_leader = radical_socialist
 	}
-	
-	
+	remove_all_ministers = yes
+	add_ideas = {
+		EGY_Sherif_Sabri_hog_pau
+		EGY_Ahmed_Hassanein_for_pau
+		EGY_Aziz_Ezzat_eco_pau
+		EGY_Ahmed_Hassanein_sec_pau
+	}	
 
 }
 country_event = { # centrist political party formage
@@ -1022,28 +1028,28 @@ country_event = { # centrist political party formage
 		name = "埃及终于实现了统一！"
 		set_party_name = {
 			ideology = radical_socialist
-			long_name = "National Union"
-			name = "National Union"
+			long_name = "国民联盟"
+			name = "国民联盟"
 		}
 		set_party_name = {
 			ideology = social_democrat
-			long_name = "National Union"
-			name = "National Union"
+			long_name = "国民联盟"
+			name = "国民联盟"
 		}
 		set_party_name = {
 			ideology = social_liberal
-			long_name = "National Union"
-			name = "National Union"
+			long_name = "国民联盟"
+			name = "国民联盟"
 		}
 		set_party_name = {
 			ideology = social_conservative
-			long_name = "National Union"
-			name = "National Union"
+			long_name = "国民联盟"
+			name = "国民联盟"
 		}
 		set_party_name = {
 			ideology = authoritarian_democrat
-			long_name = "National Union"
-			name = "National Union"
+			long_name = "国民联盟"
+			name = "国民联盟"
 		}
 		add_popularity = {
 			ideology = radical_socialist
@@ -1065,7 +1071,13 @@ country_event = { # centrist political party formage
 			ideology = authoritarian_democrat
 			popularity = 0.15
 		}
-		
+		remove_all_ministers = yes
+		add_ideas = {
+			EGY_Gamal_Abdel_Nasser_hog_sde
+			EGY_Salah_Salem_for_sde
+			EGY_Abdel_Latif_Boghdadi_eco_sde
+			EGY_Muhammad_Anwar_el_Sadat_sec_sde
+		}
 	}
 	
 }
@@ -1081,23 +1093,23 @@ country_event = { # nasserist political party formage
 		name = "米苏尔联队"
 		set_party_name = {
 			ideology = syndicalist
-			long_name = "Tagammu Organization"
-			name = "Tagammu Organization"
+			long_name = "民族进步统一集团"
+			name = "民族进步统一集团"
 		}
 		set_party_name = {
 			ideology = radical_socialist
-			long_name = "Arab Socialist Union"
-			name = "Arab Socialist Union"
+			long_name = "阿拉伯社会主义联盟"
+			name = "阿拉伯社会主义联盟"
 		}
 		set_party_name = {
 			ideology = social_democrat
-			long_name = "Liberal Socialist Organization"
-			name = "Liberal Socialist Organization"
+			long_name = "自由社会主义集团"
+			name = "自由社会主义集团"
 		}
 		set_party_name = {
 			ideology = social_liberal
-			long_name = "Arab Socialist Organization"
-			name = "Arab Socialist Organization"
+			long_name = "阿拉伯社会主义集团"
+			name = "阿拉伯社会主义集团"
 		}
 		add_popularity = {
 			ideology = syndicalist
@@ -1114,6 +1126,13 @@ country_event = { # nasserist political party formage
 		add_popularity = {
 			ideology = social_liberal
 			popularity = 0.15
+		}
+		remove_all_ministers = yes
+		add_ideas = {
+			EGY_Shuhdi_Atiya_ash_Shafi_hog_rso
+			EGY_Youssef_Siddiq_eco_syn
+			EGY_Hosni_al_Arabi_for_rso
+			EGY_Mustafa_Kamel_Murad_sec_tot
 		}
 	}
 	
