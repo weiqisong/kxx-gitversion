@@ -147,17 +147,14 @@ country_event = { # watabi habiiibi
 			ideology = paternal_autocrat
 			popularity = 0.2
 		}
+		remove_all_ministers = yes
 		remove_ideas = EGY_iqta
-		remove_ideas_with_trait = head_of_government
-		add_ideas = EGY_Gamal_Abdel_Nasser_hog_sde
-		remove_ideas_with_trait = economy_minister
+		add_ideas = EGY_Shuhdi_Atiya_ash_Shafi_hog_rso
 		add_ideas = EGY_Ali_Sabri_eco_tot
-		remove_ideas_with_trait = foreign_minister
 		add_ideas = EGY_Salah_Salem_for_sde
-		remove_ideas_with_trait = security_minister
 		add_ideas = EGY_Kamal_el_Din_Hussein_sec_rso
 	}
-
+	    clr_country_flag = LEADER_GUI_VISIBLE
 }
 
 country_event = { # aneksja event chain
