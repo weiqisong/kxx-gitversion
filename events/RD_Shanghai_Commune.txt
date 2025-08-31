@@ -209,7 +209,7 @@ country_event = { # Introduction
 			}
 			create_corps_commander = {
 				name = "王亚樵"
-				portrait_path = "gfx/leaders/LEC/Portrait_Wang_Yaqiao.png"
+				portrait_path = "gfx/leaders/LEC/Portrait_LEC_wang_yaqiao.png"
 				traits = { LEC_socialist_officer }
 				skill = 1
 				attack_skill = 1
@@ -294,8 +294,6 @@ country_event = { # Introduction
 
 	is_triggered_only = yes
 
-	
-
 	option = {
 		name = "为了革命！"
 		custom_effect_tooltip = shanghai_revolution_tt
@@ -307,7 +305,7 @@ country_event = { # Introduction
 		set_country_flag = RD_commies_love_each_other
 		country_event = {
 		id = lu_xun.2
-		days = 100
+		days = 130
 		}
 		remove_ideas = {
 		LEC_currency_6
@@ -320,6 +318,13 @@ country_event = { # Introduction
 		LEC_Huang_Jinrong_boss_sli
 		}
 		remove_all_ministers = yes
+		add_ideas = {
+		LEC_ruo_shi_hog_rso
+		LEC_yin_fu_eco_rso
+		LEC_chen_jue_for_rso
+		LEC_kang_sheng_sec_tot
+		}
+		clr_country_flag = LEADER_GUI_VISIBLE
 		set_politics = { ruling_party = radical_socialist }
 		create_country_leader = {
 			name = "鲁迅"
@@ -329,7 +334,6 @@ country_event = { # Introduction
 			ideology = lu_xun_thought_subtype
 			}
 		set_country_flag = shanghai_chaos
-		set_country_flag = LEC_Triad_Power
 		set_cosmetic_tag = LEC_LUXUN
 		every_other_country = { 
 		limit = { has_idea = unequal_treaties }
