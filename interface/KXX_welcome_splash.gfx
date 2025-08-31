@@ -187,7 +187,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ALG_medium_flag"
-		textureFile = "gfx/flags/medium/ALG_OTL.tga"
+		textureFile = "gfx/flags/medium/ALG_Temporary.tga"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 }

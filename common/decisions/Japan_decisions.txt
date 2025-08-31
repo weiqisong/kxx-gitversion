@@ -2663,7 +2663,7 @@ JAP_co_prosperity_decisions = {
 		target_array = subjects
 		target_array = faction_members
 		target_array = global.indian_tags_array
-		target_root_trigger = { has_completed_focus = JAP_osaka_conference }
+		target_root_trigger = { has_completed_focus = JAPFOR_osaka_conference }
 		target_trigger = {
 			is_faction_leader = yes
 			FROM = { japan_tag_can_be_invited_to_economic_sphere = yes }
