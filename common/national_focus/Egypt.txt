@@ -39,7 +39,13 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus EGY_modernization_program"
 			add_ideas = EGY_industrial_modernization_idea
 		}
-	}
+		bypass = {
+		has_country_leader = {
+		name = "Farouk I"
+		}
+		}
+		}
+
 	focus = {# Nile Dams
 		id = EGY_nile_dams
 		icon = GFX_goal_VNC_vajont_dam
@@ -53,6 +59,7 @@ focus_tree = {
 			}
 		}
 		bypass = {
+		
 			NOT = {
 				456 = {
 					is_owned_by = EGY
@@ -1370,6 +1377,9 @@ focus_tree = {
 		icon = GFX_goal_CAL_rule_by_decree
 		cost = 4.00
 		available = {
+		has_country_leader = {
+		name = "Farouk I"
+		}
 			AND = {
 				has_country_flag = EGY_black_monday_is_over
 				has_country_flag = EGY_farouk_is_now_sultan
@@ -7848,7 +7858,7 @@ focus_tree = {
 					last_election = "1935.12.17"
 					election_frequency = 48
 				}
-				set_country_leader_portrait = { ideology = radical_socialist portrait = "gfx/leaders/CIV/Gamal_Abdel_Nasser.png" }
+				set_country_leader_portrait = { ideology = radical_socialist portrait = "gfx/leaders/EGY/Portrait_Egypt_Gamal_Abdel_Nasser.png" }
 			}
 			
 			if = {
@@ -9473,5 +9483,3 @@ focus_tree = {
 		}
 	}
 }
-
-
