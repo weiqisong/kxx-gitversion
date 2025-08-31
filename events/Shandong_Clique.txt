@@ -3748,6 +3748,9 @@ country_event = {#
 			set_country_flag = not_china_republic
 			add_ideas = {
 			SQI_xiong_xiling_hog_ade
+			SQI_Ding_Shujing_for_ade
+			SQI_Han_Qichang_eco_ade
+			SQI_Wang_Xugao_sec_pau
 			}
 			create_field_marshal = {
 				name = "熊希龄"
@@ -3811,6 +3814,9 @@ country_event = {#
 			}
 			add_ideas = {
 			SQI_xiong_shili_hog_npo
+			SQI_Ren_Jiyu_for_ade
+			SQI_Cao_Fulin_eco_ade
+			SQI_Qu_Yingguang_sec_ade
 			}
 			set_country_leader_ideology = neo_confucianism_subtype
 		}
