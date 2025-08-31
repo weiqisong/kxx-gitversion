@@ -36,6 +36,9 @@ LEC_votes_category = {
 			}
 		}
 		visible = {
+			NOT = {
+				has_global_flag = shanghai_revolution
+			}
 			LEC = {
 				is_subject = no
 				exists = yes
@@ -293,6 +296,9 @@ LEC_votes_category = {
 			}
 		}
 		visible = {
+			NOT = {
+				has_global_flag = shanghai_revolution
+			}
 			LEC = {
 				is_subject = no
 				exists = yes
@@ -460,6 +466,9 @@ LEC_votes_category = {
 			}
 		}
 		visible = {
+			NOT = {
+				has_global_flag = shanghai_revolution
+			}
 			LEC = {
 				is_subject = no
 				exists = yes
@@ -527,6 +536,7 @@ LEC_votes_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -547,6 +557,7 @@ LEC_votes_category = {
 					OR = {
 						has_country_flag = LEC_Triad_Power
 					    has_country_flag = LEC_Shuntian_Power
+						has_global_flag = shanghai_revolution
 					}
 				}
 			}
@@ -579,6 +590,9 @@ LEC_votes_category = {
 			}
 		}
 		visible = {
+			NOT = {
+				has_global_flag = shanghai_revolution
+			}
 			LEC = {
 				is_subject = no
 				exists = yes
@@ -599,6 +613,7 @@ LEC_votes_category = {
 					OR = {
 						has_country_flag = LEC_Triad_Power
 					    has_country_flag = LEC_Shuntian_Power
+						has_global_flag = shanghai_revolution
 					}
 				}
 			}
@@ -646,6 +661,7 @@ LEC_votes_category = {
 					OR = {
 						has_country_flag = LEC_Triad_Power
 					    has_country_flag = LEC_Shuntian_Power
+						has_global_flag = shanghai_revolution
 					}
 				}
 			}
@@ -688,6 +704,7 @@ LEC_votes_category = {
 					OR = {
 						has_country_flag = LEC_Triad_Power
 					    has_country_flag = LEC_Shuntian_Power
+						has_global_flag = shanghai_revolution
 					}
 				}
 			}
@@ -736,6 +753,7 @@ LEC_votes_category = {
 					OR = {
 						has_country_flag = LEC_Triad_Power
 					    has_country_flag = LEC_Shuntian_Power
+						has_global_flag = shanghai_revolution
 					}
 				}
 			}
@@ -780,6 +798,7 @@ LEC_votes_category = {
 		available = {
 			NOT = {
 				has_global_flag = legation_vote_ongoing
+				has_global_flag = shanghai_revolution
 			}
 		}
 		selectable_mission = yes
@@ -832,6 +851,7 @@ LEC_votes_category = {
 		available = {
 			NOT = {
 				has_global_flag = legation_vote_ongoing
+				has_global_flag = shanghai_revolution
 			}
 		}
 		selectable_mission = yes
@@ -884,6 +904,7 @@ LEC_votes_category = {
 				has_global_flag = legation_vote_ongoing
 				has_country_flag = LEC_Triad_Power
 				has_country_flag = LEC_Shuntian_Power
+				has_global_flag = shanghai_revolution
 			}
 		}
 		selectable_mission = yes
@@ -899,6 +920,7 @@ LEC_votes_category = {
 					OR = {
 						has_country_flag = LEC_Triad_Power
 					    has_country_flag = LEC_Shuntian_Power
+						has_global_flag = shanghai_revolution
 					}
 				}
 			}
@@ -932,6 +954,7 @@ LEC_votes_category = {
 				has_global_flag = legation_vote_ongoing
 				has_country_flag = LEC_Triad_Power
 				has_country_flag = LEC_Shuntian_Power
+				has_global_flag = shanghai_revolution
 			}
 		}
 		selectable_mission = yes
@@ -947,6 +970,7 @@ LEC_votes_category = {
 					OR = {
 						has_country_flag = LEC_Triad_Power
 					    has_country_flag = LEC_Shuntian_Power
+						has_global_flag = shanghai_revolution
 					}
 				}
 			}
@@ -980,6 +1004,7 @@ LEC_votes_category = {
 				has_global_flag = legation_vote_ongoing
 				has_country_flag = LEC_Triad_Power
 				has_country_flag = LEC_Shuntian_Power
+				has_global_flag = shanghai_revolution
 			}
 		}
 		selectable_mission = yes
@@ -995,6 +1020,7 @@ LEC_votes_category = {
 					OR = {
 						has_country_flag = LEC_Triad_Power
 					    has_country_flag = LEC_Shuntian_Power
+						has_global_flag = shanghai_revolution
 					}
 				}
 			}
@@ -1032,6 +1058,7 @@ LEC_votes_category = {
 				has_global_flag = legation_vote_ongoing
 				has_country_flag = LEC_Triad_Power
 				has_country_flag = LEC_Shuntian_Power
+				has_global_flag = shanghai_revolution
 			}
 		}
 		available = {
@@ -1052,6 +1079,7 @@ LEC_votes_category = {
 					OR = {
 						has_country_flag = LEC_Triad_Power
 					    has_country_flag = LEC_Shuntian_Power
+						has_global_flag = shanghai_revolution
 					}
 				}
 			}
@@ -1124,9 +1152,13 @@ LEC_votes_category = {
 				has_global_flag = legation_vote_ongoing
 				has_country_flag = LEC_Triad_Power
 				has_country_flag = LEC_Shuntian_Power
+				has_global_flag = shanghai_revolution
 			}
 		}
 		visible = {
+			NOT = {
+				has_global_flag = shanghai_revolution
+			}
 			RUS = {
 				exists = yes
 				is_subject = no
@@ -1160,6 +1192,7 @@ LEC_votes_category = {
 			}
 			NOT = {
 				has_global_flag = legation_vote_ongoing
+				has_global_flag = shanghai_revolution
 			}
 		}
 		visible = {
@@ -1194,6 +1227,7 @@ LEC_military_aid_category = {
 			NOT = {
 				has_country_flag = LEC_Triad_Power
 				has_country_flag = LEC_Shuntian_Power
+				has_global_flag = shanghai_revolution
 			}
 		}
 		custom_cost_text = LEC_PP_100_CP_50
@@ -1236,6 +1270,7 @@ LEC_military_aid_category = {
 			NOT = {
 				has_country_flag = LEC_Triad_Power
 				has_country_flag = LEC_Shuntian_Power
+				has_global_flag = shanghai_revolution
 			}
 		}
 		custom_cost_text = LEC_PP_100_CP_50
@@ -1285,6 +1320,7 @@ LEC_military_aid_category = {
 			NOT = {
 				has_country_flag = LEC_Triad_Power
 				has_country_flag = LEC_Shuntian_Power
+				has_global_flag = shanghai_revolution
 			}
 		}
 		custom_cost_text = LEC_PP_100_CP_50
@@ -1301,6 +1337,7 @@ LEC_military_aid_category = {
 			NOT = {
 				has_country_flag = LEC_Triad_Power
 				has_country_flag = LEC_Shuntian_Power
+				has_global_flag = shanghai_revolution
 			}
 		}
 		complete_effect = {
@@ -1328,6 +1365,7 @@ LEC_military_aid_category = {
 			NOT = {
 				has_country_flag = LEC_Triad_Power
 				has_country_flag = LEC_Shuntian_Power
+				has_global_flag = shanghai_revolution
 			}
 		}
 		custom_cost_text = LEC_PP_100_CP_50
@@ -1394,6 +1432,7 @@ LEC_influence_category = {
 			NOT = {
 				has_country_flag = LEC_Triad_Power
 				has_country_flag = LEC_Shuntian_Power
+				has_global_flag = shanghai_revolution
 			}
 		}
 		visible = {
@@ -1434,6 +1473,7 @@ LEC_influence_category = {
 			NOT = {
 				has_country_flag = LEC_Triad_Power
 				has_country_flag = LEC_Shuntian_Power
+				has_global_flag = shanghai_revolution
 			}
 		}
 		visible = {
@@ -1449,6 +1489,7 @@ LEC_influence_category = {
 			NOT = {
 				has_country_flag = LEC_Triad_Power
 				has_country_flag = LEC_Shuntian_Power
+				has_global_flag = shanghai_revolution
 			}
 		}
 		fire_only_once = yes
@@ -1500,6 +1541,7 @@ LEC_influence_category = {
 				NOT = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -1655,6 +1697,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -1700,6 +1743,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -1745,6 +1789,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -1758,6 +1803,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -1803,6 +1849,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -1856,6 +1903,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -1919,6 +1967,7 @@ LEC_influence_category = {
 					LEC = {
 						has_country_flag = LEC_Triad_Power
 						has_country_flag = LEC_Shuntian_Power
+						has_global_flag = shanghai_revolution
 					}
 				}
 			}
@@ -1965,6 +2014,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -2012,6 +2062,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -2067,6 +2118,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 			is_subject = no
@@ -2126,6 +2178,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -2202,6 +2255,7 @@ LEC_influence_category = {
 					LEC = {
 						has_country_flag = LEC_Triad_Power
 						has_country_flag = LEC_Shuntian_Power
+						has_global_flag = shanghai_revolution
 					}
 				}
 			}
@@ -2265,6 +2319,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 			has_country_flag = AST_hong_kong
@@ -2355,6 +2410,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -2367,6 +2423,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -2441,6 +2498,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -2504,6 +2562,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -2581,6 +2640,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -2661,6 +2721,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -2706,6 +2767,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 			custom_trigger_tooltip = {
@@ -2762,6 +2824,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -2802,6 +2865,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -2850,6 +2914,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3093,6 +3158,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3130,6 +3196,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3169,6 +3236,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3214,6 +3282,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3251,6 +3320,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3287,6 +3357,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3329,6 +3400,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3369,6 +3441,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3404,6 +3477,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3439,6 +3513,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3475,6 +3550,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3511,6 +3587,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3547,6 +3624,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3582,6 +3660,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3617,6 +3696,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3652,6 +3732,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3685,6 +3766,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3713,6 +3795,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3744,6 +3827,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3780,6 +3864,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3813,6 +3898,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3841,6 +3927,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
@@ -3882,6 +3969,7 @@ LEC_influence_category = {
 				LEC = {
 					has_country_flag = LEC_Triad_Power
 					has_country_flag = LEC_Shuntian_Power
+					has_global_flag = shanghai_revolution
 				}
 			}
 		}
