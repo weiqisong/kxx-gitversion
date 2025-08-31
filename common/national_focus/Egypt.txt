@@ -7784,6 +7784,13 @@ focus_tree = {
 		ai_will_do = {}
 		
 		completion_reward = {
+			remove_all_ministers = yes
+			add_ideas = {
+			EGY_Gamal_Abdel_Nasser_hog_sde
+			EGY_Salah_Salem_for_sde
+			EGY_Abdel_Latif_Boghdadi_eco_sde
+			EGY_Muhammad_Anwar_el_Sadat_sec_sde
+			}
 			custom_effect_tooltip = nassser_bop_explanation_tt
 			if = {
 				limit = {
@@ -7802,6 +7809,11 @@ focus_tree = {
 					traits = {
 					}
 				}
+		        set_party_name = {
+			        ideology = social_democrat
+			        long_name = "国民联盟"
+			        name = "国民联盟"
+		        }
 				set_politics = {
 					ruling_party = social_democrat
 					elections_allowed = no
@@ -7827,6 +7839,11 @@ focus_tree = {
 					traits = {
 					}
 				}
+		        set_party_name = {
+			        ideology = radical_socialist
+			        long_name = "国民联盟"
+			        name = "国民联盟"
+		        }
 				set_politics = {
 					ruling_party = radical_socialist
 					elections_allowed = no
@@ -7878,6 +7895,11 @@ focus_tree = {
 					traits = {
 					}
 				}
+				set_party_name = {
+			        ideology = social_liberal
+			        long_name = "国民联盟"
+			        name = "国民联盟"
+		        }
 				set_politics = {
 					ruling_party = social_liberal
 					elections_allowed = no
@@ -7915,6 +7937,11 @@ focus_tree = {
 					traits = {
 					}
 				}
+				set_party_name = {
+			        ideology = social_conservative
+			        long_name = "国民联盟"
+			        name = "国民联盟"
+		        }
 				set_politics = {
 					ruling_party = social_conservative
 					elections_allowed = no
@@ -7941,6 +7968,11 @@ focus_tree = {
 					traits = {
 					}
 				}
+				set_party_name = {
+			        ideology = authoritarian_democrat
+			        long_name = "国民联盟"
+			        name = "国民联盟"
+		        }
 				set_politics = {
 					ruling_party = authoritarian_democrat
 					elections_allowed = no
@@ -7972,6 +8004,13 @@ focus_tree = {
 		ai_will_do = {}
 		
 		completion_reward = {
+		remove_all_ministers = yes
+		add_ideas = {
+			EGY_Shuhdi_Atiya_ash_Shafi_hog_rso
+			EGY_Youssef_Siddiq_eco_syn
+			EGY_Hosni_al_Arabi_for_rso
+			EGY_Mustafa_Kamel_Murad_sec_tot
+		}
 			add_political_power = 200
 		}
 	}
@@ -8443,8 +8482,15 @@ focus_tree = {
 		ai_will_do = {}
 		
 		completion_reward = {
-			
-		}
+			add_political_power = 200
+			remove_all_ministers = yes
+	        add_ideas = {
+		        EGY_Sherif_Sabri_hog_pau
+		        EGY_Ahmed_Hassanein_for_pau
+		        EGY_Aziz_Ezzat_eco_pau
+		        EGY_Ahmed_Hassanein_sec_pau
+	        }
+        }
 	}
 
 	
@@ -8457,9 +8503,6 @@ focus_tree = {
 			has_country_leader = {
 					name = "穆罕默德·纳吉布"
 					ruling_only = yes
-			}
-			NOT = {
-				has_government = paternal_autocrat
 			}
 			custom_trigger_tooltip = {
   				#  tooltip = arab_dream_egypt_tt		
@@ -8526,8 +8569,8 @@ focus_tree = {
 			}
 			set_party_name = {
 				ideology = national_populist
-				long_name = "Society of Muslim Brothers"
-				name = "Muslim Brotherhood"
+				long_name = "穆斯林兄弟会"
+				name = "穆兄会"
 			}
 			remove_ideas = EGY_illiterate_populace
 		}
