@@ -1460,7 +1460,7 @@
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAPFOR_tokyo_conference"
-			custom_effect_tooltip = JAPFOR_tokyo_conference_tt
+			custom_effect_tooltip = JAPFOR_tokyo_conference
 			hidden_effect = {
 				country_event = japfor.24
 			}
@@ -1879,7 +1879,7 @@
 		icon = GFX_goal_JAP_Monuments_Heaven_Earth
 		cost = 3
 		
-		available = { has_completed_focus = JAP_osaka_conference }
+		available = { has_completed_focus = JAPFOR_osaka_conference }
 
 		relative_position_id = JAP_Basking_on_the_Shores_of_Victory
 		x = 1
