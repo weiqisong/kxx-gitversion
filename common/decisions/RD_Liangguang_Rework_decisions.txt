@@ -48,7 +48,7 @@ GXC_internal_dvisions_decision_category = { #dont forget to add a category
 	
 	
 	GXC_qiongya_revolt = {
-		allowed = { always = yes } #activated by effect
+		allowed = { always = no } #activated by effect
 		available = {
 			
 			
