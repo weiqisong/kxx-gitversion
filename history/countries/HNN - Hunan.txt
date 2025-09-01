@@ -1,6 +1,6 @@
-capital = 602
+﻿capital = 602
 
-oob = "HNN_Collapse"
+oob = "HNN"
 
 if = {
 	limit = {
@@ -44,6 +44,12 @@ add_offsite_building = {
 
 add_opinion_modifier = { target = JAP modifier = embargo }
 add_opinion_modifier = { target = FNG modifier = embargo }
+LEP = {
+	set_autonomy = {
+		target = ROOT
+		autonomy_state = kr_default_puppet
+	}
+}
 
 set_research_slots = 2
 set_convoys = 10
@@ -70,7 +76,6 @@ set_popularities = {
 
 add_ideas = {
 	HNN_Bastion_of_Zhili
-	HNN_weak_military
 	HNN_socialist_resistance
 	HNN_debt_crisis
 	HNN_spirit_soldier_rebellion
@@ -106,42 +111,40 @@ create_country_leader = {
 
 
 create_country_leader = {
-	name = "唐生智"
+	name = "Tang Shengzhi"
 	desc = "POLITICS_HNN_TANG_SHENGZHI_DESC"
 	picture = "gfx/leaders/HNN/Portrait_Hunan_Tang_Shengzhi.png"
 	expire = "1965.1.1"
 	ideology = socdem_buddhist_socialism_subtype
 }
 create_country_leader = {
-	name = "程潜"
+	name = "Cheng Qian"
 	desc = "POLITICS_HNN_CHENG_QIAN_DESC"
 	picture = "gfx/leaders/CHI/Portrait_CHI_Cheng_Qian.png"
 	expire = "1965.1.1"
 	ideology = soclib_tridemism_subtype
 }
 create_country_leader = {
-	name = "刘廷芳"
+	name = "Liu Tingfang"
 	picture = "gfx/leaders/Generic/Portrait_Asia_Generic_new_1.png"
 	expire = "1965.1.1"
 	ideology = marlib_warlordism_subtype
 }
 create_country_leader = {
-	name = "赵恒惕"
-	desc = "POLITICS_HNN_ZHAO_HENGTI_DESC"
+	name = "Zhao Hengti"
 	picture = "gfx/leaders/HNN/Portrait_Hunan_Zhao_Hengti_Civilian.png"
 	expire = "1965.1.1"
 	ideology = soccon_warlordism_subtype
 }
 create_country_leader = {
-	name = "赵恒惕"
-	desc = "POLITICS_HNN_ZHAO_HENGTI_DESC"
+	name = "Zhao Hengti"
 	picture = "gfx/leaders/HNN/Portrait_Hunan_Zhao_Hengti_Civilian.png"
 	expire = "1965.1.1"
 	ideology = authdem_warlordism_subtype
 }
 
 create_country_leader = {
-	name = "吴光新"
+	name = "Wu Guangxin"
 	desc = "WU_GUANGXIN_LEADER_DESC"
 	picture = "gfx/leaders/HNN/Portrait_HNN_Wu_Guangxin.png"
 	expire = "1965.1.1"
@@ -149,7 +152,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "龙云飞"
+	name = "Long Yunfei"
 	desc = "POLITICS_HNN_ZHAO_HENGTI_DESC"
 	picture = "gfx/leaders/HNN/Portrait_Hunan_Zhao_Hengti_Civilian.png"
 	expire = "1965.1.1"
@@ -157,7 +160,7 @@ create_country_leader = {
 }
 
 create_field_marshal = {
-	name = "赵恒惕"
+	name = "Zhao Hengti"
 	desc = "POLITICS_HNN_ZHAO_HENGTI_ARMY_DESC"
 	portrait_path = "gfx/leaders/HNN/Portrait_Hunan_Zhao_Hengti.png"
 	traits = {
@@ -174,7 +177,7 @@ create_field_marshal = {
 }
 
 create_field_marshal = {
-	name = "吴光新"
+	name = "Wu Guangxin"
 	desc = "WU_GUANGXIN_LEADER_DESC"
 	portrait_path = "gfx/leaders/HNN/Portrait_HNN_Wu_Guangxin.png"
 	traits = {
@@ -192,7 +195,7 @@ create_field_marshal = {
 
 
 create_corps_commander = {
-	name = "唐生明"
+	name = "Tang Shengming"
 	desc = "POLITICS_HNN_TANG_SHENGMING_ARMY_DESC"
 	portrait_path = "gfx/leaders/HNN/Portrait_Hunan_Tang_Shengming.png"
 	traits = {
@@ -207,7 +210,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "贺耀祖"
+	name = "He Yaozu"
 	desc = "POLITICS_HNN_HE_YAOZU_ARMY_DESC"
 	portrait_path = "gfx/leaders/HNN/Portrait_Hunan_He_Yaozu.png"
 	traits = {
@@ -224,7 +227,7 @@ create_corps_commander = {
 
 
 create_corps_commander = {
-	name = "宋锡濂"
+	name = "Song Xilian"
 	desc = "POLITICS_HNN_SONG_XILIAN_ARMY_DESC"
 	portrait_path = "gfx/leaders/HNN/Portrait_Hunan_Song_Xilian.png"
 	traits = {
@@ -241,7 +244,7 @@ create_corps_commander = {
 
 
 create_corps_commander = {
-	name = "叶开鑫"
+	name = "Ye Kaixin"
 	desc = "-"
 	portrait_path = "gfx/leaders/HNN/Portrait_Hunan_Ye_Kaixin.png"
 	traits = {
@@ -262,7 +265,7 @@ random_unit_leader = {
 }
 NSW = {
 create_field_marshal = {
-	name = "唐生智"
+	name = "Tang Shengzhi"
 	portrait_path = "gfx/leaders/HNN/Portrait_Hunan_Tang_Shengzhi.png"
 	traits = {
 		defensive_doctrine 
@@ -276,7 +279,7 @@ create_field_marshal = {
 	id = 1409
 }
 create_corps_commander = {
-	name = "贺龙"
+	name = "He Long"
 	portrait_path = "gfx/leaders/HNN/Portrait_Hunan_He_Long.png"
 	traits = {
 		HNN_socialist_officer
@@ -292,7 +295,7 @@ create_corps_commander = {
 	id = 1416 #idk whether the id is unique
 }
 create_corps_commander = {
-	name = "李立三"
+	name = "Li Lisan"
 	portrait_path = "gfx/leaders/HNN/Portrait_HNN_Li_Lisan.png"
 	traits = {
 		offensive_doctrine
@@ -307,7 +310,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "彭德怀"
+	name = "Peng Dehuai"
 	desc = "POLITICS_HNN_PENG_DEHUAI_ARMY_DESC"
 	portrait_path = "gfx/leaders/HNN/Portrait_Hunan_Peng_Dehuai.png"
 	traits = {
@@ -324,7 +327,7 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 		create_corps_commander = {
-					name = "谭张"
+					name = "Tan Zhang"
 					portrait_path = "gfx/leaders/HNN/Portrait_HNN_Tan_Zhang.png"
 					traits = { HNN_socialist_officer }
 					skill = 3
@@ -335,7 +338,7 @@ create_corps_commander = {
 				}
 				
 		create_corps_commander = {
-					name = "黄公略"
+					name = "Huang Gonglue"
 					portrait_path = "gfx/leaders/HNN/Portrait_HNN_Huang_Gonglue.png"
 					traits = { HNN_socialist_officer }
 					skill = 2
@@ -345,7 +348,7 @@ create_corps_commander = {
 					logistics_skill = 3
 				}
 		create_corps_commander = {
-					name = "曹玉清"
+					name = "Cao Yuqing"
 					portrait_path = "gfx/leaders/HNN/Portrait_HNN_Cao_Yuqing.png"
 					traits = { HNN_socialist_officer }
 					skill = 2
@@ -355,7 +358,7 @@ create_corps_commander = {
 					logistics_skill = 2
 				}
 		create_corps_commander = {
-					name = "陈光"
+					name = "Chen Guang"
 					portrait_path = "gfx/leaders/HNN/Portrait_HNN_Chen_Guang.png"
 					traits = { HNN_socialist_officer }
 					skill = 4
@@ -365,7 +368,7 @@ create_corps_commander = {
 					logistics_skill = 3
 				}
 		create_corps_commander = {
-					name = "卢冬生"
+					name = "Lu Dongsheng"
 					portrait_path = "gfx/leaders/HNN/Portrait_HNN_Lu_Dongshang.png"
 					traits = { HNN_socialist_officer }
 					skill = 2
@@ -375,8 +378,9 @@ create_corps_commander = {
 					logistics_skill = 3
 				}
 		create_corps_commander = {
-					name = "杨幼麟"
+					name = "Yang Youlin"
 					portrait_path = "gfx/leaders/HNN/Portrait_HNN_Yang_Youlin.png"
+					desc = "POLITICS_HNN_YANG_YOULIN_ARMY_DESC"
 					traits = { HNN_socialist_officer }
 					skill = 2
 					attack_skill = 2
