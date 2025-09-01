@@ -118,23 +118,6 @@ ideas = {
 				social_liberal
 			}
 		}
-		SQI_zhang_chunqiao_hog_tot = {
-			allowed = { original_tag = SQI }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = head_of_gov_available
-					always = no
-				}
-			}
-			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
-			}
-			traits = {
-				head_of_government
-				totalist
-			}
-		}
 		SQI_deng_enming_hog_tot = {
 			allowed = { original_tag = SQI }
 			available = {
