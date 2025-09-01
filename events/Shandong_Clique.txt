@@ -306,6 +306,13 @@ country_event = { # Qing Magistrates Arrest Zongchang
 				desc = "POLITICS_SONG_ZHEYUAN_DESC"
 				picture = "gfx/leaders/SQI/Portrait_Shandong_Song_Zheyuan.png"
 				expire = "1965.1.1"
+				ideology = neo_confucianism_subtype
+			}
+			create_country_leader = {
+				name = "Song Zheyuan"
+				desc = "POLITICS_SONG_ZHEYUAN_DESC"
+				picture = "gfx/leaders/SQI/Portrait_Shandong_Song_Zheyuan.png"
+				expire = "1965.1.1"
 				ideology = pataut_warlordism_subtype
 			}
 			set_party_name = {
@@ -322,8 +329,12 @@ country_event = { # Qing Magistrates Arrest Zongchang
 		}
 		country_event = { id = shandong.992 days = 7 } # Zongchang and Yiguadao Riot
 		set_politics = {
-			ruling_party = authoritarian_democrat
+			ruling_party = social_conservative
 			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.15
 		}
 		set_country_flag = SQI_Zheyuan_beat_Zongchang
 		add_opinion_modifier = { target = FNG modifier = embargo }
@@ -3699,7 +3710,7 @@ country_event = {#
 country_event = {#
 	id = shandong.457
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "Coup of the Red Swastika Society"
+	title = "红万字会崛起"
 	desc = shandong.457.desc
 
 
@@ -3708,42 +3719,37 @@ country_event = {#
 
 	option = {
 		set_cosmetic_tag = SQI_RED
-		name = shandong.457.a
-		set_politics = { ruling_party = authoritarian_democrat }
-		
-		set_country_leader_name = {
-				ideology = authoritarian_democrat
-				name = "熊希龄"
-			}
-			
-		set_country_leader_portrait = {
-				ideology = authoritarian_democrat
-				portrait = "gfx/leaders/SQI/Portrait_SQI_Xiong_Xiling.png"
-			}
-			
+		name = "稳定复归。"
+		set_politics = { ruling_party = paternal_autocrat }
+		create_country_leader = {
+			name = "熊希龄"
+			picture = "gfx/leaders/SQI/Portrait_SQI_Xiong_Xiling.png"
+			expire = "1965.1.1"
+			ideology = pataut_social_confucianism_subtype
+		}	
 			set_party_name = { 
-				ideology = authoritarian_democrat
-				name = "红万字社"
-			long_name = "红万字社"
-
-					
+				ideology = paternal_autocrat
+				name = "红万字会"
+				long_name = "红万字会"			
 			}
-			
 			set_party_name = { 
 				ideology = national_populist
-				name = "红万字社"
-			long_name = "红万字社"
-
-					
+				name = "红万字会"
+				long_name = "红万字会"	
 			}
 			set_party_name = { 
 				ideology = social_democrat
-				name = "红万字社"
-			long_name = "红万字社"
-
-					
+				name = "红万字会"
+				long_name = "红万字会"	
 			}
-			set_country_leader_ideology = red_tinted_autocracy_subtype
+			set_party_name = { 
+				ideology = radical_socialist
+				name = "红万字会"
+				long_name = "红万字会"	
+			}
+			add_radsoc_to_coalition = yes
+			add_socdem_to_coalition = yes
+			add_natpop_to_coalition = yes
 			complete_national_focus = SQI_the_shandong_takeover
 			set_country_flag = not_china_republic
 			add_ideas = {
@@ -3788,7 +3794,7 @@ country_event = {#
 	country_event = {#
 	id = shandong.470
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "Fate of Two Dragons"
+	title = "二龙之争"
 	desc = shandong.470.desc
 
 
@@ -3797,34 +3803,39 @@ country_event = {#
 
 	option = {
 		
-		name = "Shili takes power!"
-		
-		set_country_leader_name = {
-				ideology = authoritarian_democrat
-				name = "熊十力"
-			}
-			
-		set_country_leader_portrait = {
-				ideology = authoritarian_democrat
-				portrait = "gfx/leaders/SQI/Portrait_Xiong_Shili.png"
-			}
-		
-			remove_ideas = {
-			SQI_xiong_xiling_hog_ade
-			}
+		name = "熊十力掌权!"
+		create_country_leader = {
+			name = "熊十力"
+			picture = "gfx/leaders/SQI/Portrait_Xiong_Shili.png"
+			expire = "1965.1.1"
+			ideology = socdem_social_confucianism_subtype
+		}	
+		set_politics = {
+			ruling_party = social_democrat
+		}
+		add_radsoc_to_coalition = yes
+		add_pataut_to_coalition = yes
+		add_natpop_to_coalition = yes
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.15
+		}
+			remove_all_ministers = yes
 			add_ideas = {
 			SQI_xiong_shili_hog_npo
 			SQI_Ren_Jiyu_for_ade
 			SQI_Cao_Fulin_eco_ade
 			SQI_Qu_Yingguang_sec_ade
 			}
-			set_country_leader_ideology = neo_confucianism_subtype
 		}
 		
 		
 		option = {
-		name = "The vote fails!"
-		
+		name = "投票失败!"
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.15
+		}
 		}
 	
 	}
@@ -3834,7 +3845,7 @@ country_event = {#
 	country_event = {#
 	id = shandong.471
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "Real Confucius's Ideas Reach Shili"
+	title = "真正的儒家思想？"
 	desc = shandong.471.desc
 
 
@@ -3842,42 +3853,31 @@ country_event = {#
 	is_triggered_only = yes
 
 	option = {
-		name = "熊十力参悟儒家中的社会主义真谛"
-		set_politics = { ruling_party = radical_socialist }
-		set_country_leader_name = {
-				ideology = radical_socialist
-				name = "熊十力"
-			}
-			
-		set_country_leader_portrait = {
-				ideology = radical_socialist
-				portrait = "gfx/leaders/SQI/Portrait_Xiong_Shili.png"
-			}
+		name = "熊十力参悟儒家中的社会主义真谛。"
+		create_country_leader = {
+			name = "熊十力"
+			picture = "gfx/leaders/SQI/Portrait_Xiong_Shili.png"
+			expire = "1965.1.1"
+			ideology = radsoc_social_confucianism_subtype
+		}	
+			set_politics = { ruling_party = radical_socialist }
 			add_popularity = {
 				ideology = radical_socialist
-				popularity = 0.7
+				popularity = 0.25
 			}
-		
-			
-			set_party_name = { 
-				ideology = radical_socialist
-				name = "红万字社"
-			long_name = "红万字社"
-
-					
-			}
-			set_country_leader_ideology = social_confucianism_subtype
-			add_authdem_to_coalition = yes
+			add_socdem_to_coalition = yes
+			add_pataut_to_coalition = yes
+			add_natpop_to_coalition = yes
 		}
 		option = {
-		name = "Ignore These Rants. Stay the Current Course"
+		name = "无视这些想法。"
 		}
 	
 	}
 	country_event = {#
 	id = shandong.472
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "Attempted Assassination on Xiong Xiling"
+	title = "熊希龄遇刺"
 	desc = shandong.472.d
 
 
@@ -3885,15 +3885,14 @@ country_event = {#
 	is_triggered_only = yes
 
 	option = {
-		name = shandong.472.a
-		set_party_name = { 
-				ideology = paternal_autocrat
-				name = "红万字社"
-			long_name = "红万字社"
-
-			}
-		add_authdem_to_coalition = yes
-		set_politics = { ruling_party = paternal_autocrat }
+		name = "熊希龄死了，毛彦文接任。"
+		
+		
+		set_politics = { ruling_party = national_populist }
+		add_radsoc_to_coalition = yes
+		add_socdem_to_coalition = yes
+		add_pataut_to_coalition = yes
+		remove_ideas = SQI_xiong_xiling_hog_ade
 		add_ideas = {
 		SQI_mao_yenwan_hog_npo
 		}
@@ -3901,23 +3900,13 @@ country_event = {#
 			name = "毛彦文"
 			picture = "gfx/leaders/SQI/Portrait_SQI_Mao_Yenwan.png"
 			expire = "1965.1.1"
-			ideology = pataut_occultism_subtype
+			ideology = natpop_social_confucianism_subtype
 		}
 		}
 		
 		option = {
-		name = shandong.472.b
-		set_politics = { ruling_party = social_democrat }
-		set_country_leader_name = {
-				ideology = social_democrat
-				name = "熊希龄"
-			}
-		set_country_leader_portrait = {
-				ideology = social_democrat
-				portrait = "gfx/leaders/SQI/Portrait_SQI_Xiong_Xiling.png"
-			}
-			set_country_leader_ideology = socdem_buddhist_socialism_subtype
-			add_authdem_to_coalition = yes
+		name = "熊希龄幸免于难。"
+		
 		}
 	
 	}
@@ -3926,7 +3915,7 @@ country_event = {#
 	country_event = {#
 	id = shandong.458
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "Protests From the Crescent Moon Society"
+	title = "新月社组织抗议"
 	desc = shandong.458.desc
 
 
@@ -3935,7 +3924,7 @@ country_event = {#
 
 	option = {
 		
-		name = "Keep an Eye On Them"
+		name = "盯紧点"
 		}
 		
 		
@@ -3945,7 +3934,7 @@ country_event = {#
 	country_event = {#
 	id = shandong.459
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "Protest to Revolution"
+	title = "从抗议到革命"
 	desc = shandong.459.desc
 
 
@@ -3954,38 +3943,39 @@ country_event = {#
 
 	option = {
 		
-		name = "The Protestors Storm the Government"
+		name = "中国民主自此开始。"
 		complete_national_focus = SQI_the_moon_shines_throughout_china
 		set_cosmetic_tag = SQI_REP
-		
-		set_country_leader_name = {
-				ideology = social_democrat
-				name = "闻一多"
-			}
-			
-		set_country_leader_portrait = {
-				ideology = social_democrat
-				portrait = "gfx/leaders/SQI/Portrait_SQI_Wen_Yiduo.png"
-			}
-			
+		create_country_leader = {
+			name = "闻一多"
+			picture = "gfx/leaders/SQI/Portrait_SQI_Wen_Yiduo.png"
+			expire = "1965.1.1"
+			ideology = soclib_liberal_conservative_subtype
+		}
+		create_country_leader = {
+			name = "徐志摩"
+			picture = "gfx/leaders/SQI/Portrait_SQI_Xu_Zhimo.png"
+			expire = "1965.1.1"
+			ideology = marlib_national_liberalism_subtype
+		}
+		create_country_leader = {
+			name = "陶行知"
+			picture = "gfx/leaders/SQI/Portrait_SQI_Tao_Xingzhi.png"
+			expire = "1965.1.1"
+			ideology = socdem_agrarianism_subtype
+		}
 			set_party_name = { 
 				ideology = social_democrat
 				name = "新月社"
 				long_name = "新月社"	
 			}
-
-			set_country_leader_name = {
-				ideology = social_liberal
-				name = "徐志摩"
-			}
-			
-		set_country_leader_portrait = {
-				ideology = social_liberal
-				portrait = "gfx/leaders/SQI/Portrait_SQI_Xu_Zhimo.png"
-			}
-			
 			set_party_name = { 
 				ideology = social_liberal
+				name = "新月社"
+				long_name = "新月社"
+			}
+			set_party_name = { 
+				ideology = market_liberal
 				name = "新月社"
 				long_name = "新月社"
 			}
@@ -4055,7 +4045,7 @@ country_event = {#
 	country_event = {#
 	id = shandong.460
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "Democracies Future"
+	title = "山东的第一次选举"
 	desc = shandong.460.desc
 
 
@@ -4064,7 +4054,7 @@ country_event = {#
 
 	option = {
 		
-		name = "The Liberals Secure the Province"
+		name = "徐志摩取胜"
 		set_politics = { ruling_party = social_liberal }
 		set_country_leader_ideology = national_liberalism_subtype
 		remove_all_ministers = yes
@@ -4078,9 +4068,8 @@ country_event = {#
 		
 		option = {
 		
-		name = "Nationalists Proclaim Victory"
+		name = "闻一多取胜"
 		set_politics = { ruling_party = social_democrat }
-		set_country_leader_ideology = socdem_left_nationalism_subtype
 		remove_all_ministers = yes
 		add_ideas = {
 			SQI_wen_yiduo_hog_sde
@@ -4092,20 +4081,10 @@ country_event = {#
 
 		option = {
 		
-		name = "Moderate Agrarians Reign Supreme"
+		name = "陶行知取胜"
 		set_politics = { ruling_party = social_democrat }
 		
-		set_country_leader_name = {
-				ideology = social_democrat
-				name = "陶行知"
-			}
-			
-		set_country_leader_portrait = {
-				ideology = social_democrat
-				portrait = "gfx/leaders/SQI/Portrait_SQI_Tao_Xingzhi.png"
-			}
-			
-			set_country_leader_ideology = socdem_mao_zedong_thought_subtype
+		
 			remove_all_ministers = yes
 			add_ideas = {
 				SQI_tao_xingzhi_hog_sde
