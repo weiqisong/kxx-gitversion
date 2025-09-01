@@ -4207,7 +4207,7 @@ country_event = {#
 	country_event = {#
 	id = shandong.464
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "The Red Bandit of Jinan"
+	title = "“山东红军”"
 	desc = shandong.464.desc
 
 
@@ -4216,7 +4216,7 @@ country_event = {#
 
 	option = {
 		
-		name = "Something Smells Fishy"
+		name = "不足为惧。"
 		}
 		
 		
@@ -4226,7 +4226,7 @@ country_event = {#
 	country_event = {#
 	id = shandong.465
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "The Battle of Jinan"
+	title = "济南之战"
 	desc = shandong.465.desc
 
 
@@ -4235,22 +4235,16 @@ country_event = {#
 
 	option = {
 		
-		name = "For the Revolution! We Have Now Secured Victory!"
-		custom_effect_tooltip = sqi_revolution_done_tt
+		name = "革命才刚刚开始!"
 		hidden_effect = {
 		set_politics = { ruling_party = totalist }
 		set_cosmetic_tag = SQI_REVOLUTION
-		set_country_leader_name = {
-				ideology = totalist
-				name = "军委八路军分会"
-			}
-			
-		set_country_leader_portrait = {
-				ideology = totalist
-				portrait = "gfx/leaders/SQI/Portrait_SQI_8th_Route_Army.png"
-			}
-			
-			set_country_leader_ideology = totalist_subtype
+		create_country_leader = {
+			name = "八路军军委"
+			picture = "gfx/leaders/SQI/Portrait_SQI_8th_Route_Army.png"
+			expire = "1965.1.1"
+			ideology = red_junta_subtype
+		}
 			country_event = {
 			id = shandong.466
 			days = 3
@@ -4260,11 +4254,10 @@ country_event = {#
 		}
 		
 		set_party_name = { 
-				ideology = totalist
-				name = "八路军/抗日团结阵线"
-				long_name = "八路军/山东革命会/抗日团结阵线"
-					
-			}
+			ideology = totalist
+			name = "八路军/抗日团结阵线"
+			long_name = "八路军/抗日团结阵线"			
+		}
 			
 		complete_national_focus = SQITWO_the_fire_of_revolution_shines_through_shandong
 		}		
@@ -4274,7 +4267,7 @@ country_event = {#
 	country_event = {#
 	id = shandong.466
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "Deciding the New Leadership"
+	title = "决定领导权"
 	desc = shandong.466.desc
 
 
@@ -4283,22 +4276,15 @@ country_event = {#
 
 	option = {
 		
-		name = "Long Live the True Anti Japanese Revolution!"
+		name = "习仲勋掌权。"
 		complete_national_focus = SQITWO_ultranationalist_victory
+		create_country_leader = {
+			name = "习仲勋"
+			picture = "gfx/leaders/SQI/Portrait_SQI_Xi_Zhongxun.png"
+			expire = "1965.1.1"
+			ideology = national_marxist_subtype
+		}
 		
-		
-		set_country_leader_name = {
-				ideology = totalist
-				name = "习仲勋"
-			}
-			
-		set_country_leader_portrait = {
-				ideology = totalist
-				portrait = "gfx/leaders/SQI/Portrait_SQI_Xi_Zhongxun.png"
-			}
-			
-			set_country_leader_ideology = red_junta_subtype
-
 			create_field_marshal = {
 				name = "习仲勋"
 				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Xi_Zhongxun.png"
@@ -4426,22 +4412,14 @@ country_event = {#
 		
 		option = {
 		
-		name = "Enming Secures The Army"
+		name = "邓恩铭确保了胜利。"
 		complete_national_focus = SQITWO_denouncing_the_japanese_menance
-		
-		
-		set_country_leader_name = {
-				ideology = totalist
-				name = "邓恩铭"
-			}
-			
-		set_country_leader_portrait = {
-				ideology = totalist
-				portrait = "gfx/leaders/SQI/Portrait_SQI_Deng_Enming.png"
-			}
-
-			
-			set_country_leader_ideology = tot_anti_japaneseism_subtype
+		create_country_leader = {
+			name = "邓恩铭"
+			picture = "gfx/leaders/SQI/Portrait_SQI_Deng_Enming.png"
+			expire = "1965.1.1"
+			ideology = tot_anti_japaneseism_subtype 
+		}
 			create_field_marshal = {
 				name = "邓恩铭"
 				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Deng_Enming.png"
@@ -4576,7 +4554,7 @@ country_event = {#
 	country_event = {#
 	id = shandong.467
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "Shandong Arrest Our Diplomats"
+	title = "山东逮捕了我国侨民"
 	desc = shandong.467.desc
 
 
@@ -4585,7 +4563,10 @@ country_event = {#
 
 	option = {
 		
-		name = "Demand Thier Release!"
+		name = "要求释放他们！"
+		ai_will_do = {
+			factor = 0
+		}
 		SQI = {
 		country_event = {
 		id = shandong.468
@@ -4594,12 +4575,21 @@ country_event = {#
 		}
 		}
 	
+	
+	option = {
+		
+		name = "算了吧!"
+		add_stability = -0.5
+		add_war_support = -0.3
+		add_political_power = -100
+		}
 	}
+	
 	
 	country_event = {#
 	id = shandong.468
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "Japan Demands That We Release the Diplomats"
+	title = "日本要求释放侨民"
 	desc = shandong.468.desc
 
 
@@ -4608,17 +4598,20 @@ country_event = {#
 
 	option = {
 		
-		name = "Say No!"
+		name = "不可能!"
+		ai_will_do = {
+			factor = 0
+		}
 		JAP = {
-		country_event = {
-		id = shandong.469
-		days = 3
+			country_event = {
+			id = shandong.469
+			days = 3
 		}
 		}
 		}
 		
 		option = {
-		name = "Let Them Go"
+		name = "放他们走。"
 		add_stability = -0.5
 		add_war_support = -0.3
 		add_political_power = -100
@@ -4630,7 +4623,7 @@ country_event = {#
 	country_event = {#
 	id = shandong.469
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "Shandong Says No"
+	title = "山东拒绝了"
 	desc = shandong.469.desc
 
 
@@ -4639,9 +4632,9 @@ country_event = {#
 
 	option = {
 		
-		name = "So that just happened"
-		add_stability = -0.05
-		add_war_support = -0.03
+		name = "那就这样吧"
+		add_stability = -0.5
+		add_war_support = -0.3
 		add_political_power = -100
 		
 		}

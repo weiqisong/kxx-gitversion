@@ -2178,7 +2178,7 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		available = {
-					has_country_leader = {
+			has_country_leader = {
 				name = "闻一多"
 				ruling_only = yes
 			}
@@ -3014,7 +3014,7 @@ focus_tree = {
 			FOCUS_FILTER_WAR_SUPPORT
 		}
 		prerequisite = { focus = SQITWO_denouncing_the_japanese_menance  focus = SQITWO_ultranationalist_victory  }
-		mutually_exclusive = { focus = SQITWO_denouncing_the_fake_ones  }
+		
 		completion_reward = {
 		add_ideas = {
 		SQI_pulling_bolt
@@ -3054,6 +3054,9 @@ focus_tree = {
 		}
 		available = {
 		always = no
+		}
+		completion_reward = {
+		add_political_power = 100
 		}
 	}
 
@@ -3107,7 +3110,7 @@ focus_tree = {
 		completion_reward = {
 		add_popularity = {
 		ideology = totalist
-		popularity = 0.6
+		popularity = 0.15
 		}
 		add_political_power = 150
 		}
@@ -3133,8 +3136,8 @@ focus_tree = {
 		completion_reward = {
 		add_political_power = 100
 		add_popularity = {
-		      ideology = totalist
-		    popularity = 0.7
+		    ideology = totalist
+		    popularity = 0.2
 		}
 		}
 	}
@@ -3168,7 +3171,7 @@ focus_tree = {
 			FOCUS_FILTER_MANPOWER
 		}
 		prerequisite = { focus = SQITWO_denouncing_the_japanese_menance  }
-		mutually_exclusive = { focus = SQITWO_pulling_the_bolt  }
+		prerequisite = { focus = SQITWO_ultranationalist_victory  }
 		completion_reward = {
 		add_manpower = -2000
 		}
@@ -3241,12 +3244,12 @@ focus_tree = {
 		prerequisite = { focus = SQITWO_pulling_the_bolt  }
 		completion_reward = {
 		JAP = {
-		country_event = {
-		id = shandong.467
-		days = 0
+			country_event = {
+			id = shandong.467
+			days = 0
+			}
 		}
-		
-		}
+		add_stability = 0.2
 		}
 	}
 
@@ -3262,7 +3265,6 @@ focus_tree = {
 		}
 		prerequisite = { focus = SQITWO_inspiration_from_deng_xiaoping_economics  }
 		completion_reward = {
-		set_country_leader_ideology = tot_market_socialist_subtype
 		597 = { 
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = { 
@@ -3322,6 +3324,11 @@ focus_tree = {
 		prerequisite = { focus = SQITWO_arrest_japanese_diplomats  }
 		completion_reward = {
 		add_political_power = 200
+		add_war_support = 0.25
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.15
+		}
 		}
 	}
 
@@ -3435,15 +3442,14 @@ focus_tree = {
 		prerequisite = { focus = SQITWO_zhongguomeng  }
 		completion_reward = {
 		add_popularity = {
-		ideology = radical_socialist
-		popularity = -1
-		
+			ideology = radical_socialist
+			popularity = -1
 		}
 		add_popularity = {
-		ideology = syndicalist
-		popularity = -1
-		
+			ideology = syndicalist
+			popularity = -1
 		}
+		add_ideas = SQI_only_true_socialism
 		}
 	}
 
@@ -3459,9 +3465,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = SQITWO_crush_the_anarchists  }
 		completion_reward = {
-		add_manpower = -1
-		add_stability = 0.01
-		add_war_support = 0.025
+		add_manpower = -1000
+		add_stability = 0.1
+		add_war_support = 0.1
 		}
 	}
 
@@ -3478,12 +3484,14 @@ focus_tree = {
 		prerequisite = { focus = SQITWO_crush_the_anarchists  }
 		completion_reward = {
 		add_popularity = {
-		ideology = totalist
-		popularity = 0.05
-		
+			ideology = totalist
+			popularity = 0.05
 		}
 		add_manpower = -1000
-		
+		swap_ideas = {
+			remove_idea = SQI_only_true_socialism
+			add_idea = SQI_only_true_socialism2
+		}
 		}
 	}
 
@@ -3499,7 +3507,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SQITWO_humiliate_hirohito  } prerequisite = { focus = SQITWO_the_red_sun_on_the_frontier  }
 		completion_reward = {
-		add_political_power = 100
+		add_ideas = SQI_our_national_duty
 		}
 	}
 
@@ -3611,13 +3619,12 @@ focus_tree = {
 		prerequisite = { focus = SQITWO_hunt_down_ishii  } prerequisite = { focus = SQITWO_deal_with_factionalism  }
 		completion_reward = {
 		custom_effect_tooltip = liberating_china_tt
-		hidden_effect = {
+		
 		create_wargoal = {
 				type = puppet_wargoal_focus
 				target = QIE
 			}
-		
-		}
+
 		}
 	}
 
@@ -3634,10 +3641,9 @@ focus_tree = {
 		prerequisite = { focus = SQITWO_jiefangquanzhongguo  }
 		completion_reward = {
 		custom_effect_tooltip = japan_invasion_tt
-		hidden_effect = {
-		unlock_decision_tooltip = SQI_denounce_the_warlords_2
 		
-		}
+		unlock_decision_tooltip = SQI_denounce_the_warlords_2
+
 		}
 	}
 

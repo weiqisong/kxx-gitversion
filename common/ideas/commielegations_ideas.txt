@@ -226,12 +226,12 @@ ideas = {
 		
 		CNH_iron_rice_bowl = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
-			picture = generic_radical_socialist_revolution
+			picture = SKM_white_rice
 			modifier = {
-				consumer_goods_factor = 0.35
+				consumer_goods_factor = -0.35
 				industrial_capacity_factory = 0.05
 				production_speed_industrial_complex_factor = 0.04
-				local_resources = 0.035
+				local_resources_factor = 0.35
 				global_building_slots_factor = 0.2
 				production_factory_max_efficiency_factor = 0.06
 				production_factory_efficiency_gain_factor = 0.06
@@ -1078,15 +1078,15 @@ ideas = {
 		
 		CNH_chinese_socialist_future = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
-			picture = "GFX_idea_a_divided_front_csp_kmt"
+			picture = popular_socialism
 			modifier = {
 				experience_gain_army = 0.05
 				war_support_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.15
 				stability_weekly = 0.001
 				totalist_drift = 0.01
-					
-					
+				monthly_population = 0.5	
+				industrial_capacity_factory = 0.15	
 			}
 		}
 		
@@ -1523,9 +1523,7 @@ ideas = {
 				army_attack_speed_factor = 0.05
 				army_defence_factor = 0.05
 				experience_gain_army = 0.02
-				
-					
-					
+				army_attack_factor = 0.05
 			}
 		}
 		
@@ -1545,16 +1543,46 @@ ideas = {
 		
 		SQI_local_pogroms = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
-			picture = "GFX_idea_a_divided_front_csp_kmt"
+			picture = KTG_Industrial_Crisis_Town
 			modifier = {
-				monthly_population = -0.05
-				stability_factor = -0.35
-				weekly_manpower = -50
-					
-					
+				global_building_slots_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.25
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_factory_max_efficiency_factor = 0.15
 			}
 		}
-		
+		SQI_only_true_socialism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
+			picture = CAN_shift_to_democratic_socialism_idea
+			name = "真正的社会主义"
+			modifier = {
+				political_power_cost = -0.15
+				stability_factor = 0.1
+				totalist_drift = 0.025
+				consumer_goods_expected_value = -0.2
+				production_factory_start_efficiency_factor = 0.1
+				syndicalist_acceptance = -100
+				radical_socialist_acceptance = -100
+			}
+		}
+		SQI_only_true_socialism2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
+			picture = CAN_shift_to_democratic_socialism_idea
+			name = "真正的社会主义"
+			modifier = {
+				political_power_cost = -0.15
+				stability_factor = 0.1
+				totalist_drift = 0.025
+				consumer_goods_expected_value = -0.2
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				syndicalist_acceptance = -100
+				radical_socialist_acceptance = -100
+			}
+		}
 		SQI_new_culute_movement_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
 			picture = generic_radical_socialist_revolution
@@ -1572,14 +1600,26 @@ ideas = {
 		
 		SQI_red_sun_on_the_front = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
-			picture = "GFX_idea_a_divided_front_csp_kmt"
+			picture = SKM_red_sun
 			modifier = {
 				army_defence_factor = 0.05
+				army_attack_factor = 0.05
 				weekly_manpower = 100
 				land_reinforce_rate = 0.3
 			}
 		}
-		
+		SQI_our_national_duty = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
+			picture = SKM_red_sun
+			name = "民族职责"
+			modifier = {
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+
+			}
+		}
 		SQI_rectification = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
 			picture = generic_radical_socialist_revolution
