@@ -1,0 +1,2244 @@
+focus_tree = {
+	id = anarchist-guangxi
+	continuous_focus_position = { x = -40 y = 5050 } 
+	country = {
+		factor = 0
+	}
+	#Organize a Communal Conference
+	focus = {
+		id = GXC_organize_a_communal_conference
+		icon = GFX_GXC_organize_a_communal_conference-248360
+		x = 11
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+		country_event = anarcho_china.5
+		add_ideas = {
+		GXC_power_struggle
+		}
+		}
+	}
+
+	#Rural Schooling Reform
+	focus = {
+		id = GXC_rural_schooling_reform
+		icon = GFX_GXC_rural_schooling_reform-248360
+		x = 7
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		ai_will_do = {
+   		factor = 50
+    		modifier = {
+     		 factor = 100
+				has_game_rule = { rule = GXC_path option = GXC_PATH_RADSOC_SHIZENG }
+    		}
+		}
+
+		prerequisite = { focus = GXC_organize_a_communal_conference  } 
+		mutually_exclusive = { focus = GXC_land_reform_attempts focus = GXC_reforming_guangzhou_university }
+		completion_reward = {
+		custom_effect_tooltip = SHI_ANA_tt
+		add_to_variable = { SHI_ANA = 2 }
+		add_timed_idea = {
+		idea = GXC_rural_school_reforms
+		days = 180
+		}
+		}
+	}
+
+	#University-Rural Networks
+	focus = {
+		id = GXC_universityrural_networks
+		icon = GFX_GXC_universityrural_networks-248360
+		x = 6
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = GXC_rural_schooling_reform  }
+		mutually_exclusive = { focus = GXC_communal_experiments  }
+		completion_reward = {
+		custom_effect_tooltip = JIN_ANA_tt
+		add_to_variable = { JIN_ANA = 2 }
+		add_timed_idea = {
+		idea = GXC_uni_rural_networks
+		days = 200
+		}
+		}
+	}
+
+	#Communal Experiments
+	focus = {
+		id = GXC_communal_experiments
+		icon = GFX_GXC_communal_experiments-248360
+		x = 8
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_USA_CONGRESS
+		}
+		ai_will_do = {
+   		factor = 50
+    		modifier = {
+     		 factor = 100
+				has_game_rule = { rule = GXC_path option = GXC_PATH_RADSOC_SHIZENG }
+    		}
+		}
+
+		prerequisite = { focus = GXC_rural_schooling_reform  }
+		mutually_exclusive = { focus = GXC_universityrural_networks  }
+		completion_reward = {
+		custom_effect_tooltip = SHI_ANA_tt
+		add_to_variable = { SHI_ANA = 1 }
+		custom_effect_tooltip = CAI_ANA_tt
+		add_to_variable = { CAI_ANA = 1 }
+		add_ideas = {
+		GXC_communal_experiments
+		}
+		}
+	}
+
+	#Reified Morality
+	focus = {
+		id = GXC_reified_morality
+		icon = GFX_GXC_reified_morality-248360
+		x = 6
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		ai_will_do = {
+   		factor = 50
+    		modifier = {
+     		 factor = 100
+				has_game_rule = { rule = GXC_path option = GXC_PATH_RADSOC_SHIZENG }
+    		}
+		}
+
+		prerequisite = { focus = GXC_universityrural_networks  focus = GXC_communal_experiments  }
+		mutually_exclusive = { focus = GXC_reinterpret_labour  }
+		completion_reward = {
+		custom_effect_tooltip = SHI_ANA_tt
+		add_to_variable = { SHI_ANA = 2 }
+		add_political_power = 80
+		}
+	}
+
+	#Reinterpret Labour
+	focus = {
+		id = GXC_reinterpret_labour
+		icon = GFX_GXC_reinterpret_labour-248360
+		x = 8
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GXC_communal_experiments  focus = GXC_universityrural_networks  }
+		mutually_exclusive = { focus = GXC_reified_morality  }
+		completion_reward = {
+		custom_effect_tooltip = JIN_ANA_tt
+		add_to_variable = { JIN_ANA = 1 }
+		custom_effect_tooltip = CAI_ANA_tt
+		add_to_variable = { CAI_ANA = 1 }
+		increase_ruling_party_popularity_by_10 = yes
+		}
+	}
+
+	#Revolutionary Inroads
+	focus = {
+		id = GXC_revolutionary_inroads
+		icon = GFX_GXC_revolutionary_inroads-248360
+		x = 7
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = GXC_reified_morality  focus = GXC_reinterpret_labour  }
+		completion_reward = {
+		add_ideas = {
+		GXC_revolutionary_inroads
+		}
+		}
+	}
+
+	#Land Reform Attempts
+	focus = {
+		id = GXC_land_reform_attempts
+		icon = GFX_GXC_land_reform_attempts-248360
+		x = 11
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		ai_will_do = {
+   		factor = 50
+    		modifier = {
+     		 factor = 100
+				has_game_rule = { rule = GXC_path option = GXC_PATH_RADSOC_JIN }
+    		}
+		}
+
+		prerequisite = { focus = GXC_organize_a_communal_conference  }
+		mutually_exclusive = { focus = GXC_rural_schooling_reform focus = GXC_reforming_guangzhou_university }
+		completion_reward = {
+		custom_effect_tooltip = JIN_ANA_tt
+		add_to_variable = { JIN_ANA = 1 }
+		add_timed_idea = {
+		idea = GXC_land_reform_attempt
+		days = 200
+		}
+		}
+	}
+
+	#Peasants At The Helm
+	focus = {
+		id = GXC_peasants_at_the_helm
+		icon = GFX_GXC_peasants_at_the_helm-248360
+		x = 10
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		ai_will_do = {
+   		factor = 50
+    		modifier = {
+     		 factor = 100
+				has_game_rule = { rule = GXC_path option = GXC_PATH_RADSOC_JIN }
+    		}
+		}
+		prerequisite = { focus = GXC_land_reform_attempts  }
+		mutually_exclusive = { focus = GXC_integrate_private_charities  }
+		completion_reward = {
+		custom_effect_tooltip = JIN_ANA_tt
+		add_to_variable = { JIN_ANA = 2 }		
+		add_ideas = {
+		GXC_peasant_at_helm
+		}
+		}
+	}
+
+	#Integrate Private Charities
+	focus = {
+		id = GXC_integrate_private_charities
+		icon = GFX_GXC_integrate_private_charities-248360
+		x = 12
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_land_reform_attempts  }
+		mutually_exclusive = { focus = GXC_peasants_at_the_helm  }
+		completion_reward = {
+		custom_effect_tooltip = SHI_ANA_tt
+		add_to_variable = { SHI_ANA = 2 }
+		custom_effect_tooltip = CAI_ANA_tt
+		add_to_variable = { CAI_ANA = 2 }
+		add_ideas = {
+		GXC_integrate_charities
+		}
+		}
+	}
+
+	#Direction from Guangzhou
+	focus = {
+		id = GXC_direction_from_guangzhou
+		icon = GFX_GXC_direction_from_guangzhou-248360
+		x = 10
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GXC_peasants_at_the_helm  focus = GXC_integrate_private_charities  }
+		mutually_exclusive = { focus = GXC_communal_independence  }
+		completion_reward = {
+		custom_effect_tooltip = CAI_ANA_tt
+		add_to_variable = { CAI_ANA = 3 }
+		add_stability = 0.05
+		}
+	}
+
+	#Communal Independence
+	focus = {
+		id = GXC_communal_independence
+		icon = GFX_GXC_communal_independence-248360
+		x = 12
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+   		factor = 50
+    		modifier = {
+     		 factor = 100
+				has_game_rule = { rule = GXC_path option = GXC_PATH_RADSOC_JIN }
+    		}
+		}
+
+		prerequisite = { focus = GXC_integrate_private_charities  focus = GXC_peasants_at_the_helm  }
+		mutually_exclusive = { focus = GXC_direction_from_guangzhou  }
+		completion_reward = {
+		custom_effect_tooltip = JIN_ANA_tt
+		add_to_variable = { JIN_ANA = 1 }
+		custom_effect_tooltip = SHI_ANA_tt
+		add_to_variable = { SHI_ANA = 1 }
+		add_war_support = 0.075
+		}
+	}
+
+	#Communal Consolidation
+	focus = {
+		id = GXC_communal_consolidation
+		icon = GFX_GXC_communal_consolidation-248360
+		x = 11
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_communal_independence  focus = GXC_direction_from_guangzhou  }
+		completion_reward = {
+		add_ideas = {
+		GXC_communal_consolidation
+		}
+		}
+	}
+
+	#Reforming Guangzhou University
+	focus = {
+		id = GXC_reforming_guangzhou_university
+		icon = GFX_GXC_reforming_guangzhou_university-248360
+		x = 15
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+   		factor = 50
+    		modifier = {
+     		 factor = 100
+				has_game_rule = { rule = GXC_path option = GXC_PATH_RADSOC_CAI }
+    		}
+		}
+
+		prerequisite = { focus = GXC_organize_a_communal_conference  }
+		mutually_exclusive = { focus = GXC_rural_schooling_reform focus = GXC_land_reform_attempts }
+		completion_reward = {
+		custom_effect_tooltip = CAI_ANA_tt
+		add_to_variable = { CAI_ANA = 1 }
+		add_timed_idea = {
+		idea = GXC_reform_guangzhou_uni
+		days = 180
+		}
+		}
+	}
+
+	#Study-Group Dominance
+	focus = {
+		id = GXC_studygroup_dominance
+		icon = GFX_GXC_studygroup_dominance-248360
+		x = 14
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = GXC_reforming_guangzhou_university  }
+		mutually_exclusive = { focus = GXC_utopian_professors  }
+		completion_reward = {
+		custom_effect_tooltip = JIN_ANA_tt
+		add_to_variable = { JIN_ANA = 1 }
+		custom_effect_tooltip = SHI_ANA_tt
+		add_to_variable = { SHI_ANA = 1 }
+		add_ideas = {
+		GXC_student_study_groups
+		}
+		}
+	}
+
+	#Utopian Professors
+	focus = {
+		id = GXC_utopian_professors
+		icon = GFX_GXC_utopian_professors-248360
+		x = 16
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+   		factor = 50
+    		modifier = {
+     		 factor = 100
+				has_game_rule = { rule = GXC_path option = GXC_PATH_RADSOC_CAI }
+    		}
+		}
+
+		prerequisite = { focus = GXC_reforming_guangzhou_university  }
+		mutually_exclusive = { focus = GXC_studygroup_dominance  }
+		completion_reward = {
+		custom_effect_tooltip = CAI_ANA_tt
+		add_to_variable = { CAI_ANA = 2 }
+		add_ideas = {
+		GXC_utopian_professors
+		}
+		}
+	}
+
+	#National Conditions
+	focus = {
+		id = GXC_national_conditions
+		icon = GFX_GXC_national_conditions-248360
+		x = 16
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+   		factor = 50
+    		modifier = {
+     		 factor = 100
+				has_game_rule = { rule = GXC_path option = GXC_PATH_RADSOC_CAI }
+    		}
+		}
+
+		prerequisite = { focus = GXC_studygroup_dominance  focus = GXC_utopian_professors  }
+		mutually_exclusive = { focus = GXC_international_connections  }
+		completion_reward = {
+		custom_effect_tooltip = CAI_ANA_tt
+		add_to_variable = { CAI_ANA = 1 }
+		custom_effect_tooltip = SHI_ANA_tt
+		add_to_variable = { SHI_ANA = 2 }
+		add_command_power = 40
+		army_experience = 20
+		}
+	}
+
+	#International Connections
+	focus = {
+		id = GXC_international_connections
+		icon = GFX_GXC_international_connections-248360
+		x = 14
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = GXC_studygroup_dominance  focus = GXC_utopian_professors  }
+		mutually_exclusive = { focus = GXC_national_conditions  }
+		completion_reward = {
+		custom_effect_tooltip = JIN_ANA_tt
+		add_to_variable = { JIN_ANA = 2 }
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = GXC
+		}
+		}
+	}
+
+	#Practical Education
+	focus = {
+		id = GXC_practical_education
+		icon = GFX_GXC_practical_education-248360
+		x = 15
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = GXC_national_conditions  focus = GXC_international_connections  }
+		completion_reward = {
+		add_ideas = {
+		GXC_practical_education
+		}
+		}
+	}
+
+	#Building of An Army
+	focus = {
+		id = GXC_building_of_an_army
+		icon = GFX_GXC_building_of_an_army-248360
+		
+		x = 11
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_founding_anarchist_army
+		days = 180
+		}
+		}
+	}
+
+	#Peasant Appeals
+	focus = {
+		id = GXC_peasant_appeals
+		icon = GFX_GXC_peasant_appeals-248360
+		x = 10
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = GXC_building_of_an_army  }
+		available = {
+		OR = {
+		has_completed_focus = GXC_shifushixinsmoralists
+		has_completed_focus = GXC_caiyuanpeislaborists  
+		}
+		}
+		mutually_exclusive = { focus = GXC_student_radicals  }
+		completion_reward = {
+		add_ideas = {
+		GXC_peasant_appeals
+		}
+		}
+	}
+
+	#Student Radicals
+	focus = {
+		id = GXC_student_radicals
+		icon = GFX_GXC_student_radicals-248360
+		x = 12
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = GXC_building_of_an_army  }
+		available = {
+		OR = {
+		has_completed_focus = GXC_bajinsindividualists
+		has_completed_focus = GXC_caiyuanpeislaborists  
+		}
+		}
+		mutually_exclusive = { focus = GXC_peasant_appeals  }
+		completion_reward = {
+		add_ideas = {
+		GXC_student_appeals
+		}
+		}
+	}
+
+	#An Army For The Datong
+	focus = {
+		id = GXC_an_army_for_the_datong
+		icon = GFX_GXC_an_army_for_the_datong-248360
+		x = 8
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = GXC_peasant_appeals  }
+		available = {
+		has_completed_focus = GXC_shifushixinsmoralists
+		}
+		mutually_exclusive = { focus = GXC_an_army_for_the_new_man  } mutually_exclusive = { focus = GXC_an_army_for_the_self  }
+		completion_reward = {
+		add_ideas = {
+		GXC_datong_army
+		}
+		}
+	}
+
+	#An Army For the New Man
+	focus = {
+		id = GXC_an_army_for_the_new_man
+		icon = GFX_GXC_an_army_for_the_new_man-248360
+		x = 11
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = GXC_peasant_appeals  focus = GXC_student_radicals  }
+		available = {
+		has_completed_focus = GXC_caiyuanpeislaborists 
+		}
+		mutually_exclusive = { focus = GXC_an_army_for_the_datong  } mutually_exclusive = { focus = GXC_an_army_for_the_self  }
+		completion_reward = {
+		add_ideas = {
+		GXC_new_army_of_men
+		}
+		}
+	}
+
+	#An Army For The Self
+	focus = {
+		id = GXC_an_army_for_the_self
+		icon = GFX_GXC_an_army_for_the_self-248360
+		x = 14
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = GXC_student_radicals  }
+		available = {
+		has_completed_focus = GXC_bajinsindividualists
+		}
+		mutually_exclusive = { focus = GXC_an_army_for_the_datong  } mutually_exclusive = { focus = GXC_an_army_for_the_new_man  }
+		completion_reward = {
+		add_ideas = {
+		GXC_new_army_of_self
+		}
+		}
+	}
+
+	#The Gun, The Pen, The Hoe
+	focus = {
+		id = GXC_thegunthepenthehoe
+		icon = GFX_GXC_thegunthepenthehoe-248360
+		x = 15
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = GXC_an_army_for_the_self  }
+		completion_reward = {
+		add_ideas = {
+		GXC_gun_pen_hoe
+		}
+		division_template = {
+				name = "Selfmade Army"
+				is_locked = no
+				division_names_group = GXC_INF_01
+				priority = 0
+				template_counter = 0
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+				}
+			}
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = strategic_destruction_tree
+		}	
+			
+		
+		}
+	}
+
+	#Revolutionary Pamphleteering
+	focus = {
+		id = GXC_revolutionary_pamphleteering
+		icon = GFX_GXC_revolutionary_pamphleteering-248360
+		x = 13
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_an_army_for_the_new_man  }
+		completion_reward = {
+		increase_ruling_party_popularity_by_5 = yes
+		add_stability = 0.02
+		}
+	}
+
+	#Communes Into Units
+	focus = {
+		id = GXC_communes_into_units
+		icon = GFX_GXC_communes_into_units-248360
+		x = 11
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_an_army_for_the_new_man  }
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_rd_local_communal_units
+		days = 180
+		}
+		}
+	}
+
+	#Traditionalist Overtures
+	focus = {
+		id = GXC_traditionalist_overtures
+		icon = GFX_GXC_traditionalist_overtures-248360
+		x = 9
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_an_army_for_the_new_man  }
+		completion_reward = {
+		add_stability = 0.07
+		}
+	}
+
+	#Draw on Kang's Ideas
+	focus = {
+		id = GXC_drawonkangsideas
+		icon = GFX_GXC_drawonkangsideas-248360
+		x = 7
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = GXC_an_army_for_the_datong  }
+		completion_reward = {
+		add_ideas = {
+		GXC_kangs_legacy
+		}
+		}
+	}
+
+	#Redefine Patriotism
+	focus = {
+		id = GXC_redefine_patriotism
+		icon = GFX_GXC_redefine_patriotism-248360
+		x = 6
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = GXC_drawonkangsideas  }
+		completion_reward = {
+		add_ideas = {
+		GXC_redefine_patriotism
+		}
+		}
+	}
+
+	#Emphasize Moralism
+	focus = {
+		id = GXC_emphasize_moralism
+		icon = GFX_GXC_emphasize_moralism-248360
+		x = 8
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = GXC_drawonkangsideas  focus = GXC_traditionalist_overtures  }
+		completion_reward = {
+		add_ideas = {
+		GXC_moralist_emphasis
+		}
+		}
+	}
+
+	#Work, Study, Fight!
+	focus = {
+		id = GXC_workstudyfight
+		icon = GFX_GXC_workstudyfight-248360
+		x = 11
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_communes_into_units  }
+		completion_reward = {
+		add_ideas = {
+		GXC_up_mount
+		}
+		}
+	}
+
+	#Propagandize Idealism
+	focus = {
+		id = GXC_propagandize_idealism
+		icon = GFX_GXC_propagandize_idealism-248360
+		x = 14
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = GXC_revolutionary_pamphleteering  focus = GXC_thegunthepenthehoe  }
+		completion_reward = {
+		add_ideas = {
+		GXC_idealist_army
+		}
+		}
+	}
+
+	#Civil-Military Societies
+	focus = {
+		id = GXC_civilmilitary_societies
+		icon = GFX_GXC_civilmilitary_societies-248360
+		x = 16
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GXC_thegunthepenthehoe  }
+		completion_reward = {
+		add_ideas = {
+		GXC_mili_civil
+		}
+		}
+	}
+
+	#Reconcile Federalist Militias
+	focus = {
+		id = GXC_reconcile_federalist_militias
+		icon = GFX_GXC_reconcile_federalist_militias-248360
+		x = 7
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GXC_redefine_patriotism  } prerequisite = { focus = GXC_emphasize_moralism  }
+		completion_reward = {
+		add_ideas = {
+		GXC_integrate_army
+		}
+		}
+	}
+
+	#Cultural Struggle Units
+	focus = {
+		id = GXC_cultural_struggle_units
+		icon = GFX_GXC_cultural_struggle_units-248360
+		x = 15
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = GXC_propagandize_idealism  } prerequisite = { focus = GXC_civilmilitary_societies  }
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_cultrev
+		days = 120
+		}
+		}
+	}
+
+	#The Power Struggle
+	focus = {
+		id = GXC_the_power_struggle
+		icon = GFX_GXC_the_power_struggle-248360
+		x = 11
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_revolutionary_inroads  focus = GXC_communal_consolidation  focus = GXC_practical_education  }
+		completion_reward = {
+		custom_effect_tooltip = GXC_anarcho_end_tt
+		remove_ideas = GXC_power_struggle
+		hidden_effect = {
+		add_ideas = GXC_power_turmoil
+		country_event = {
+		id = anarcho_china.6
+		days = 3
+		}
+		}	
+		}
+	}
+
+	
+
+	#Shifu-Shixin's Moralists
+	focus = {
+		id = GXC_shifushixinsmoralists
+		icon = GFX_GXC_shifushixinsmoralists-248360
+		x = 35
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		mutually_exclusive = { focus = GXC_caiyuanpeislaborists  } mutually_exclusive = { focus = GXC_bajinsindividualists  }
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+
+	#Cai Yuanpei's Laborists
+	focus = {
+		id = GXC_caiyuanpeislaborists
+		icon = GFX_GXC_caiyuanpeislaborists-248360
+		x = 45
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		mutually_exclusive = { focus = GXC_shifushixinsmoralists  } mutually_exclusive = { focus = GXC_bajinsindividualists  }
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+
+	#Ba Jin's Individualists
+	focus = {
+		id = GXC_bajinsindividualists
+		icon = GFX_GXC_bajinsindividualists-248360
+		x = 55
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		mutually_exclusive = { focus = GXC_shifushixinsmoralists  } mutually_exclusive = { focus = GXC_caiyuanpeislaborists  }
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+
+	#Evangelize Anarchism
+	focus = {
+		id = GXC_evangelize_anarchism
+		icon = GFX_GXC_evangelize_anarchism-248360
+		x = 35
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_shifushixinsmoralists  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_power_turmoil
+		add_idea = GXC_power_turmoil_1
+		}
+		}
+	}
+
+	#Promote the Zhangzhou Model
+	focus = {
+		id = GXC_promote_the_zhangzhou_model
+		icon = GFX_GXC_promote_the_zhangzhou_model-248360
+		x = 38
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GXC_shifushixinsmoralists  focus = GXC_caiyuanpeislaborists  focus = GXC_bajinsindividualists  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_economic_collapse
+		add_idea = GXC_economic_collapse_1
+		}
+		}
+	}
+
+	#Catalyse Student-Group Formation
+	focus = {
+		id = GXC_catalyse_studentgroup_formation
+		icon = GFX_GXC_catalyse_studentgroup_formation-248360
+		x = 44
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GXC_caiyuanpeislaborists  }
+		completion_reward = {
+		add_ideas = {
+		GXC_universal_education
+		}
+		}
+	}
+
+	#Every Commune A College
+	focus = {
+		id = GXC_every_commune_a_college
+		icon = GFX_GXC_every_commune_a_college-248360
+		x = 46
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GXC_caiyuanpeislaborists  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_power_turmoil
+		add_idea = GXC_power_turmoil_1
+		}
+		}
+	}
+
+	#Claim the May Fourth Mantle
+	focus = {
+		id = GXC_claim_the_may_fourth_mantle
+		icon = GFX_GXC_claim_the_may_fourth_mantle-248360
+		x = 52
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = GXC_bajinsindividualists  focus = GXC_caiyuanpeislaborists  focus = GXC_shifushixinsmoralists  }
+		completion_reward = {
+		remove_ideas = GXC_AOG_leftovers
+		}
+	}
+
+	#Prepare to Rewrite Culture
+	focus = {
+		id = GXC_prepare_to_rewrite_culture
+		icon = GFX_GXC_prepare_to_rewrite_culture-248360
+		x = 55
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = GXC_bajinsindividualists  }
+		completion_reward = {
+		add_war_support = 0.075
+		add_political_power = 50
+		}
+	}
+
+	#A Politics of Destruction
+	focus = {
+		id = GXC_a_politics_of_destruction
+		icon = GFX_GXC_a_politics_of_destruction-248360
+		x = 57
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_prepare_to_rewrite_culture  }
+		completion_reward = {
+		add_ideas = {
+		GXC_iconosatics
+		}
+		}
+	}
+
+	#Merging Propaganda and Literature
+	focus = {
+		id = GXC_merging_propaganda_and_literature
+		icon = GFX_GXC_merging_propaganda_and_literature-248360
+		x = 55
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = GXC_prepare_to_rewrite_culture  }
+		completion_reward = {
+		
+		swap_ideas = {
+		remove_idea = GXC_power_turmoil
+		add_idea = GXC_power_turmoil_1
+		}
+		}
+		
+	}
+
+	#push to the west
+	focus = {
+		id = GXC_push_into_the_north_and_east
+		icon = GFX_GXC_reenvision_the_west_frontiers-248360
+		x = 53
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = GXC_claim_the_may_fourth_mantle  }
+		completion_reward = {
+		if = {
+			limit = { can_declare_war_on = HNN }
+			activate_targeted_decision = { decision = china_demand_submission target = HNN }
+		}	
+		if = {
+			limit = { can_declare_war_on = YUN }
+			activate_targeted_decision = { decision = china_demand_submission target = YUN }
+		}
+		if = {
+			limit = { can_declare_war_on = SZC }
+			activate_targeted_decision = { decision = china_demand_submission target = SZC }
+		}	
+		}
+	}
+
+	#Radicalize the failure of the league
+	focus = {
+		id = GXC_radicalize_the_western_minorities
+		icon = GFX_GXC_radicalize_the_western_minorities-248360
+		x = 51
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = GXC_claim_the_may_fourth_mantle  }
+		completion_reward = {
+		if = {
+			limit = { can_declare_war_on = LEP }
+			activate_targeted_decision = { decision = china_demand_submission target = LEP }
+		}
+		if = {
+			limit = { can_declare_war_on = ANQ }
+			activate_targeted_decision = { decision = china_demand_submission target = ANQ }
+		}
+		if = {
+			limit = { can_declare_war_on = CHI }
+			activate_targeted_decision = { decision = china_demand_submission target = CHI }
+		}
+		if = {
+			limit = { can_declare_war_on = SQI }
+			activate_targeted_decision = { decision = china_demand_submission target = SQI }
+		}
+		if = {
+			limit = { can_declare_war_on = QIO }
+			activate_targeted_decision = { decision = china_demand_submission target = QIO }
+		}
+
+		}
+	}
+
+	#Rural People's Universities
+	focus = {
+		id = GXC_ruralpeoplesuniversities
+		icon = GFX_GXC_ruralpeoplesuniversities-248360
+		x = 47
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_every_commune_a_college  }
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_rural_univerisity_construction
+		days = 200
+		}
+		}
+	}
+
+	#Righteousness, Reciprocity, Humanity!
+	focus = {
+		id = GXC_righteousnessreciprocityhumanity
+		icon = GFX_GXC_righteousnessreciprocityhumanity-248360
+		x = 45
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_catalyse_studentgroup_formation  } prerequisite = { focus = GXC_every_commune_a_college  }
+		completion_reward = {
+		add_political_power = 30
+		add_war_support = 0.05
+		add_stability = 0.05
+		}
+	}
+
+	#Send Working Groups Into Society
+	focus = {
+		id = GXC_send_working_groups_into_society
+		icon = GFX_GXC_send_working_groups_into_society-248360
+		x = 43
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = GXC_catalyse_studentgroup_formation  }
+		completion_reward = {
+		add_popularity = {
+		ideology = ROOT
+		popularity = 0.1
+		}
+		}
+	}
+
+	#Enshrine Women's Rights
+	focus = {
+		id = GXC_enshrinewomensrights
+		icon = GFX_GXC_enshrinewomensrights-248360
+		x = 39
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = GXC_promote_the_zhangzhou_model  }
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+	#Suffrage For The Masses
+	focus = {
+		id = GXC_suffrage_for_the_masses
+		icon = GFX_GXC_suffrage_for_the_masses-248360
+		x = 37
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = GXC_promote_the_zhangzhou_model  }
+		completion_reward = {
+		add_war_support = 0.05
+		add_ideas = {
+		GXC_masses_sufferage
+		}
+		}
+	}
+
+	#Monasteries into Communes
+	focus = {
+		id = GXC_monasteries_into_communes
+		icon = GFX_GXC_monasteries_into_communes-248360
+		x = 35
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GXC_evangelize_anarchism  }
+		completion_reward = {
+		add_ideas = {
+		GXC_communal_state
+		}
+		}
+	}
+
+	#Old Ideals, New Science
+	focus = {
+		id = GXC_oldidealsnewscience
+		icon = GFX_GXC_oldidealsnewscience-248360
+		x = 33
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_evangelize_anarchism  }
+		completion_reward = {
+		add_stability = 0.05
+		add_ideas = {
+		GXC_new_science
+		}
+		}
+	}
+
+	#Borrow From Taixu's Buddhists
+	focus = {
+		id = GXC_borrowfromtaixusbuddhists
+		icon = GFX_GXC_borrowfromtaixusbuddhists-248360
+		x = 31
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_oldidealsnewscience  }
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_borrow_from_taixu
+		days = 180
+		}
+		add_political_power = -20
+		}
+	}
+
+	#Infuse Traditionalism with Kropotkin
+	focus = {
+		id = GXC_infuse_traditionalism_with_kropotkin
+		icon = GFX_GXC_infuse_traditionalism_with_kropotkin-248360
+		x = 33
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_oldidealsnewscience  }
+		completion_reward = {
+				increase_ruling_party_popularity_by_5 = yes
+		add_political_power = 120
+		}
+	}
+
+	#Mutual Aid Is Confucian!
+	focus = {
+		id = GXC_mutualaidisconfucian
+		icon = GFX_GXC_mutualaidisconfucian-248360
+		x = 35
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = GXC_oldidealsnewscience  } prerequisite = { focus = GXC_monasteries_into_communes  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_power_turmoil_1
+		add_idea = GXC_power_turmoil_2
+		}
+		}
+	}
+
+	#Commit to New Village Communes
+	focus = {
+		id = GXC_commit_to_new_village_communes
+		icon = GFX_GXC_commit_to_new_village_communes-248360
+		x = 38
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GXC_suffrage_for_the_masses  } prerequisite = { focus = GXC_enshrinewomensrights  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_economic_collapse_1
+		add_idea = GXC_economic_collapse_anarchist
+		}
+		}
+	}
+
+	#Large-Scale Communal Industries
+	focus = {
+		id = GXC_largescale_communal_industries
+		icon = GFX_GXC_largescale_communal_industries-248360
+		x = 40
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GXC_enshrinewomensrights  } prerequisite = { focus = GXC_suffrage_for_the_masses  }
+		completion_reward = {
+		remove_ideas = GXC_worker_peasant_resistance
+		}
+	}
+
+	#Enshrine Constant Evolution
+	focus = {
+		id = GXC_enshrine_constant_evolution
+		icon = GFX_GXC_enshrine_constant_evolution-248360
+		x = 44
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = GXC_send_working_groups_into_society  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_universal_education
+		add_idea = GXC_universal_education_1
+		}
+		}
+	}
+
+	#A Universal Education
+	focus = {
+		id = GXC_a_universal_education
+		icon = GFX_GXC_a_universal_education-248360
+		x = 46
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = GXC_ruralpeoplesuniversities  }
+		completion_reward = {
+		add_tech_bonus = {
+   		 bonus = 0.5
+   		 uses = 2
+   		 category = industry
+		}
+		}
+	}
+
+	#Attacking the governments of the north
+	focus = {
+		id = GXC_reenvision_the_west_frontiers
+		icon = GFX_GXC_push_into_the_north_and_east-248360
+		x = 52
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_radicalize_the_western_minorities  } prerequisite = { focus = GXC_push_into_the_north_and_east  }
+		completion_reward = {
+		if = {
+			limit = { can_declare_war_on = QIE }
+			activate_targeted_decision = { decision = china_demand_submission target = QIE }
+		}
+		if = {
+			limit = { can_declare_war_on = FNG }
+			activate_targeted_decision = { decision = china_demand_submission target = FNG }
+		}
+		}
+	}
+
+	#Break the Yoke of the Family
+	focus = {
+		id = GXC_break_the_yoke_of_the_family
+		icon = GFX_GXC_break_the_yoke_of_the_family-248360
+		x = 55
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = GXC_a_politics_of_destruction  } prerequisite = { focus = GXC_merging_propaganda_and_literature  } 
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_breaking_family_yoke
+		days = 100
+		}
+		}
+	}
+
+	#Our Goal Is To Love
+	focus = {
+		id = GXC_our_goal_is_to_love
+		icon = GFX_GXC_our_goal_is_to_love-248360
+		x = 57
+		y = 4
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_a_politics_of_destruction  }
+		completion_reward = {
+		add_political_power = 50
+		add_ideas = {
+		GXC_idea_of_love
+		}
+		}
+	}
+
+	#Encourage Labour Collectivism
+	focus = {
+		id = GXC_encourage_labour_collectivism
+		icon = GFX_GXC_encourage_labour_collectivism-248360
+		x = 59
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GXC_a_politics_of_destruction  }
+		completion_reward = {
+		add_ideas = {
+		GXC_labor_collective
+		}
+		}
+	}
+
+	#My Pen Alight, My Body Aflame!
+	focus = {
+		id = GXC_mypenalightmybodyaflame
+		icon = GFX_GXC_mypenalightmybodyaflame-248360
+		x = 57
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_break_the_yoke_of_the_family  } prerequisite = { focus = GXC_encourage_labour_collectivism  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_power_turmoil_1
+		add_idea = GXC_power_turmoil_6
+		}
+		}
+	}
+
+	#Decentralize NOW!
+	focus = {
+		id = GXC_decentralizenow
+		icon = GFX_GXC_decentralizenow-248360
+		x = 53
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_reenvision_the_west_frontiers  }
+		mutually_exclusive = { focus = GXC_govern_from_centre  }
+		completion_reward = {
+		add_ideas = {
+		GXC_decentralized_admin
+		}
+		}
+	}
+
+	#Govern from Centre
+	focus = {
+		id = GXC_govern_from_centre
+		icon = GFX_GXC_govern_from_centre-248360
+		x = 51
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_reenvision_the_west_frontiers  }
+		mutually_exclusive = { focus = GXC_decentralizenow  }
+		completion_reward = {
+		add_ideas = {
+		GXC_centralized_admin
+		}
+		}
+	}
+
+	#A Struggle With The Impure
+	focus = {
+		id = GXC_a_struggle_with_the_impure
+		icon = GFX_GXC_a_struggle_with_the_impure-248360
+		x = 47
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_a_universal_education  }
+		mutually_exclusive = { focus = GXC_anewyearsdream  }
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_struggle_against_impure
+		days = 120
+		}
+		}
+	}
+
+	#A New Year's Dream
+	focus = {
+		id = GXC_anewyearsdream
+		icon = GFX_GXC_anewyearsdream-248360
+		x = 45
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_a_universal_education  } prerequisite = { focus = GXC_enshrine_constant_evolution  }
+		mutually_exclusive = { focus = GXC_a_struggle_with_the_impure  }
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_new_years_dream
+		days = 120
+		}
+		}
+	}
+
+	#Independent Arms Development
+	focus = {
+		id = GXC_independent_arms_development
+		icon = GFX_GXC_independent_arms_development-248360
+		x = 41
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GXC_largescale_communal_industries  } prerequisite = { focus = GXC_commit_to_new_village_communes  }
+		completion_reward = {
+		add_tech_bonus = {
+   		 bonus = 0.5
+   		 uses = 2
+   		 category = infantry_tech
+		}
+		}
+	}
+
+	#Impose Practical Limits
+	focus = {
+		id = GXC_impose_practical_limits
+		icon = GFX_GXC_impose_practical_limits-248360
+		x = 39
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		
+		prerequisite = { focus = GXC_commit_to_new_village_communes  }
+		mutually_exclusive = { focus = GXC_enshrine_idealism  }
+		completion_reward = {
+		add_ideas = {
+		GXC_practical_limits
+		}
+		}
+	}
+
+	#Enshrine Idealism
+	focus = {
+		id = GXC_enshrine_idealism
+		icon = GFX_GXC_enshrine_idealism-248360
+		x = 37
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_commit_to_new_village_communes  }
+		mutually_exclusive = { focus = GXC_impose_practical_limits  }
+		completion_reward = {
+		add_ideas = {
+		GXC_idealism
+		}
+		}
+	}
+
+	#Build Communal Research Facilities
+	focus = {
+		id = GXC_build_communal_research_facilities
+		icon = GFX_GXC_build_communal_research_facilities-248360
+		x = 35
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = GXC_mutualaidisconfucian  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_communal_state
+		add_idea = GXC_communal_state_2
+		}
+		}
+	}
+
+	#Reach Unto Utopia
+	focus = {
+		id = GXC_reach_unto_utopia
+		icon = GFX_GXC_reach_unto_utopia-248360
+		x = 33
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_infuse_traditionalism_with_kropotkin  }
+		completion_reward = {
+	add_tech_bonus = {
+   	 bonus = 0.5
+    	uses = 2
+    	category = industry
+	}
+
+		}
+	}
+
+	
+
+	#A New, Old Anarchism
+	focus = {
+		id = GXC_anewoldanarchism
+		icon = GFX_GXC_anewoldanarchism-248360
+		x = 33
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_build_communal_research_facilities  } prerequisite = { focus = GXC_reach_unto_utopia  }
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_common_revolution
+		days = 200
+		}
+		}
+	}
+
+	#Valorise Water-Margin Militias
+	focus = {
+		id = GXC_valorise_watermargin_militias
+		icon = GFX_GXC_valorise_watermargin_militias-248360
+		x = 35
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = GXC_build_communal_research_facilities  } prerequisite = { focus = GXC_reach_unto_utopia  }
+		completion_reward = {
+		add_command_power = 20
+		army_experience = 30
+		add_war_support = 0.05
+		}
+	}
+
+	#A Peach Garden Outside the World
+	focus = {
+		id = GXC_a_peach_garden_outside_the_world
+		icon = GFX_GXC_a_peach_garden_outside_the_world-248360
+		x = 37
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_enshrine_idealism  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_economic_collapse_anarchist
+		add_idea = GXC_economic_collapse_anarchist_peach
+		}
+		}
+	}
+
+	#Incremental Movement To Communalism
+	focus = {
+		id = GXC_incremental_movement_to_communalism
+		icon = GFX_GXC_incremental_movement_to_communalism-248360
+		x = 39
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GXC_impose_practical_limits  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_economic_collapse_anarchist
+		add_idea = GXC_economic_collapse_anarchist_commune
+		}
+		}
+	}
+
+	#Experiments in Collective Discipline
+	focus = {
+		id = GXC_experiments_in_collective_discipline
+		icon = GFX_GXC_experiments_in_collective_discipline-248360
+		x = 41
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_independent_arms_development  }
+		completion_reward = {
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 2
+			category = land_doctrine
+		}			
+		}
+	}
+
+	#Prepare for the Datong...
+	focus = {
+		id = GXC_prepareforthedatong
+		icon = GFX_GXC_prepareforthedatong-248360
+		x = 46
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_anewyearsdream focus = GXC_a_struggle_with_the_impure  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_power_turmoil_1
+		add_idea = GXC_power_turmoil_4
+		}
+		}
+	}
+
+	
+
+	#Guided Development
+	focus = {
+		id = GXC_guided_development
+		icon = GFX_GXC_guided_development-248360
+		x = 51
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GXC_govern_from_centre  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_centralized_admin
+		add_idea = GXC_centralized_admin_2
+		}
+
+		}
+	}
+
+	#An Unfettered Freedom
+	focus = {
+		id = GXC_an_unfettered_freedom
+		icon = GFX_GXC_an_unfettered_freedom-248360
+		x = 53
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_decentralizenow  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_decentralized_admin
+		add_idea = GXC_decentralized_admin_2
+		}
+		}
+	}
+
+	#Intellectualize Collectives
+	focus = {
+		id = GXC_intellectualize_collectives
+		icon = GFX_GXC_intellectualize_collectives-248360
+		x = 55
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_mypenalightmybodyaflame  } 
+		completion_reward = {
+		add_ideas = {
+		GXC_intellectual_communes
+		}
+		}
+	}
+
+	#An Appeal to International Youth
+	focus = {
+		id = GXC_an_appeal_to_international_youth
+		icon = GFX_GXC_an_appeal_to_international_youth-248360
+		x = 57
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_mypenalightmybodyaflame  }
+		mutually_exclusive = { focus = GXC_go_it_alone  }
+		completion_reward = {
+		add_ideas = {
+		GXC_radical_republicanism
+		}
+		}
+	}
+
+	#Go It Alone
+	focus = {
+		id = GXC_go_it_alone
+		icon = GFX_GXC_go_it_alone-248360
+		x = 61
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_mypenalightmybodyaflame  } 
+		mutually_exclusive = { focus = GXC_an_appeal_to_international_youth  }
+		completion_reward = {
+		set_country_leader_ideology = anarcho_communism_subtype
+		add_ideas = {
+		GXC_go_it_alone
+		}
+		}
+	}
+
+	#Turn On All Tradition!
+	focus = {
+		id = GXC_turnonalltradition
+		icon = GFX_GXC_turnonalltradition-248360
+		x = 62
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_go_it_alone  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_power_turmoil_6
+		add_idea = GXC_power_turmoil_8
+		}
+		}
+	}
+
+	#Accelerate the Glorious Transition
+	focus = {
+		id = GXC_accelerate_the_glorious_transition
+		icon = GFX_GXC_accelerate_the_glorious_transition-248360
+		x = 60
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_go_it_alone  }
+		completion_reward = {
+		add_ideas = {
+		GXC_the_grand_acceleration
+		}
+		}
+	}
+
+	#Infiltrate Worldwide Literary Circles
+	focus = {
+		id = GXC_infiltrate_worldwide_literary_circles
+		icon = GFX_GXC_infiltrate_worldwide_literary_circles-248360
+		x = 58
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_go_it_alone  focus = GXC_an_appeal_to_international_youth  }
+		completion_reward = {
+		add_ideas = {
+		GXC_international_study_circle
+		}
+		}
+	}
+
+	#Begin The Universal Revolution
+	focus = {
+		id = GXC_begin_the_universal_revolution
+		icon = GFX_GXC_begin_the_universal_revolution-248360
+		x = 56
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_an_appeal_to_international_youth  } prerequisite = { focus = GXC_intellectualize_collectives  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_power_turmoil_6
+		add_idea = GXC_power_turmoil_7
+		}
+
+		}
+	}
+
+	#Integrate Art and Industry
+	focus = {
+		id = GXC_integrate_art_and_industry
+		icon = GFX_GXC_integrate_art_and_industry-248360
+		x = 54
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GXC_intellectualize_collectives  } prerequisite = { focus = GXC_an_appeal_to_international_youth }
+		completion_reward = {
+		add_ideas = {
+		GXC_art_integration
+		}
+		}
+	}
+
+	#China Stands Free!
+	focus = {
+		id = GXC_chinastandsfree
+		icon = GFX_GXC_chinastandsfree-248360
+		x = 55
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_integrate_art_and_industry } prerequisite = { focus = GXC_begin_the_universal_revolution }
+		available = { has_country_flag = has_united_china }
+		completion_reward = {
+		custom_effect_tooltip = CHI_focus_tree_will_change_tt
+		set_cosmetic_tag = GXC_JINANA 
+		hidden_effect = {
+		load_focus_tree = gxc-uni-anarch-tree
+		complete_national_focus = GXC_based_free
+		}
+		}
+	}
+
+	#A Great Hall For the People
+	focus = {
+		id = GXC_a_great_hall_for_the_people
+		icon = GFX_GXC_a_great_hall_for_the_people-248360
+		x = 49
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GXC_prepareforthedatong }
+		completion_reward = {
+		592 = {
+		add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}	
+		}
+		}
+	}
+
+	#Revamp Our Factories
+	focus = {
+		id = GXC_revamp_our_factories
+		icon = GFX_GXC_revamp_our_factories-248360
+		x = 46
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = {focus = GXC_prepareforthedatong  } 
+		completion_reward = {
+		add_ideas = {
+		GXC_factory_revamp
+		}
+		}
+	}
+
+	#Integrate University Structures
+	focus = {
+		id = GXC_integrate_university_structures
+		icon = GFX_GXC_integrate_university_structures-248360
+		x = 43
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GXC_anewyearsdream  focus = GXC_a_struggle_with_the_impure  } 
+		completion_reward = {
+		}
+	}
+
+	#Rebuild Cities For The Common
+	focus = {
+		id = GXC_rebuild_cities_for_the_common
+		icon = GFX_GXC_rebuild_cities_for_the_common-248360
+		x = 39
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GXC_incremental_movement_to_communalism  } 
+		completion_reward = {
+		random_owned_state = {
+		add_building_construction = {
+		type = industrial_complex 
+		level = 1
+		instant_build = yes
+			}
+		}
+		}
+	}
+
+	#Classical, Anarchist Military Cities
+	focus = {
+		id = GXC_classicalanarchistmilitarycities
+		icon = GFX_GXC_classicalanarchistmilitarycities-248360
+		x = 37
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_a_peach_garden_outside_the_world  } 
+		completion_reward = {
+		random_owned_state = {
+		add_building_construction = {
+		type = arms_factory
+		level = 2
+		instant_build = yes
+			}
+		}
+
+		}
+	}
+
+	#The People's Modernizations
+	focus = {
+		id = GXC_thepeoplesmodernizations
+		icon = GFX_GXC_thepeoplesmodernizations-248360
+		x = 35
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = GXC_anewoldanarchism  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_communal_state_2
+		add_idea = GXC_communal_state_3
+		}
+		}
+	}
+
+	#Create the Anarchist Gentry
+	focus = {
+		id = GXC_create_the_anarchist_gentry
+		icon = GFX_GXC_create_the_anarchist_gentry-248360
+		x = 33
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_anewoldanarchism  }
+		completion_reward = {
+		add_ideas = {
+		GXC_anarchist_gentry
+		}
+		}
+	}
+
+	#Reach to the Sinosphere
+	focus = {
+		id = GXC_reach_to_the_sinosphere
+		icon = GFX_GXC_reach_to_the_sinosphere-248360
+		x = 31
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_anewoldanarchism  }
+		available = { has_country_flag = has_united_china }
+		completion_reward = {
+		custom_effect_tooltip = CHI_focus_tree_will_change_tt
+		set_cosmetic_tag = GXC_SHIANA 
+		hidden_effect = {
+		load_focus_tree = gxc-uni-anarch-tree
+		}
+		}
+	}
+
+	#Anarchism with Classical Chinese Characteristics
+	focus = {
+		id = GXC_anarchism_with_classical_chinese_characteristics
+		icon = GFX_GXC_anarchism_with_classical_chinese_characteristics-248360
+		x = 34
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_thepeoplesmodernizations  } prerequisite = { focus = GXC_create_the_anarchist_gentry  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_power_turmoil_2
+		add_idea = GXC_power_turmoil_3
+		}
+		}
+	}
+
+	#Integrate Esperanto
+	focus = {
+		id = GXC_integrate_esperanto
+		icon = GFX_GXC_integrate_esperanto-248360
+		x = 44
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_integrate_university_structures  } prerequisite = { focus = GXC_revamp_our_factories  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_power_turmoil_4
+		add_idea = GXC_power_turmoil_5
+		}
+		}
+	}
+
+	#Fully Merge Students and Workers
+	focus = {
+		id = GXC_fully_merge_students_and_workers
+		icon = GFX_GXC_fully_merge_students_and_workers-248360
+		x = 47
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_revamp_our_factories  } prerequisite = { focus = GXC_a_great_hall_for_the_people  }
+		available = { has_country_flag = has_united_china }
+		completion_reward = {
+		custom_effect_tooltip = CHI_focus_tree_will_change_tt
+		set_cosmetic_tag = GXC_CAIANA
+		hidden_effect = {
+		load_focus_tree = gxc-uni-anarch-tree
+		}
+		}
+	}
+
+	#Chaos Under Heaven
+	focus = {
+		id = GXC_chaos_under_heaven
+		icon = GFX_GXC_chaos_under_heaven-248360
+		x = 60
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_accelerate_the_glorious_transition  } prerequisite = { focus = GXC_turnonalltradition  }
+		available = { has_country_flag = has_united_china }
+		completion_reward = {
+		custom_effect_tooltip = CHI_focus_tree_will_change_tt
+		set_cosmetic_tag = GXC_JINANA 
+		hidden_effect = {
+		load_focus_tree = gxc-uni-anarch-tree
+		complete_national_focus = GXC_based_free
+		}
+		}
+	}
+
+	
+
+}

@@ -1,0 +1,520 @@
+focus_tree = {
+	id = GXC-fed-tree
+	continuous_focus_position = { x = 0 y = 2040 } 
+	country = {
+		factor = 0
+	}
+
+	shared_focus = GXC_shared_edging_economy
+	shared_focus = GXC_shared_rifles
+	shared_focus = GXC_shared_unification
+
+	#jiongming raises banner triumph
+	focus = {
+		id = GXC_fed_jiongming_victory
+		icon = GFX_goal_china_federalism
+		x = 5
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#hand to peasants
+	focus = {
+		id = GXC_fed_peasants
+		icon = GFX_goal_MEX_Empower_Peasantry
+		x = 5
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		select_effect = {
+		country_event = liangguang_rd.40
+		add_to_variable = {
+				var = chen_federalist_power
+				value = 2
+				tooltip = federalist_power_expand_tt
+			}
+		}
+		prerequisite = { focus = GXC_fed_jiongming_victory }
+		mutually_exclusive = { focus = GXC_fed_anarchists }
+		mutually_exclusive = { focus = GXC_fed_merchants }
+		completion_reward = {
+		effect_tooltip = {
+		country_event = liangguang_rd.40
+		}
+		}
+	}
+	#merchants
+	focus = {
+		id = GXC_fed_merchants
+		icon = GFX_GXC_uni_merc_lianbo
+		x = 2
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		select_effect = {
+		country_event = liangguang_rd.42
+		add_to_variable = {
+				var = chen_merchant_power
+				value = 2
+				tooltip = merchant_power_expand_tt
+			}
+		}
+		prerequisite = { focus = GXC_fed_jiongming_victory }
+		mutually_exclusive = { focus = GXC_fed_anarchists }
+		mutually_exclusive = { focus = GXC_fed_peasants }
+		completion_reward = {
+		effect_tooltip = {
+		country_event = liangguang_rd.42
+		}
+		}
+	}
+	#anarchists
+	focus = {
+		id = GXC_fed_anarchists
+		icon = GFX_GXC_the_power_struggle-248360
+		x = 8
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		select_effect = {
+		country_event = liangguang_rd.43
+		add_to_variable = {
+				var = chen_anarchist_power
+				value = 2
+				tooltip = anarchist_power_expand_tt
+			}
+		}
+		prerequisite = { focus = GXC_fed_jiongming_victory }
+		mutually_exclusive = { focus = GXC_fed_merchants }
+		mutually_exclusive = { focus = GXC_fed_peasants }
+		completion_reward = {
+		effect_tooltip = {
+		country_event = liangguang_rd.43
+		}
+		}
+	}
+	#proclaim fed gover
+	focus = {
+		id = GXC_fed_proclaim_government
+		icon = GFX_goal_GXC_federalist_republic
+		x = 5
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		owns_state = 594
+		OR = {
+				has_country_flag = stopped_qiongya_revo
+				has_country_flag = failled_qiongya_revo
+			}
+		OR = {
+				has_country_flag = stopped_guangxi_revo
+				has_country_flag = failled_guangxi_revo
+			}
+
+		has_country_flag = GXC_fed_victory_struggle_over
+		}
+		prerequisite = { focus = GXC_fed_anarchists focus = GXC_fed_merchants focus = GXC_fed_peasants }
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GXC_Initiate_United_Provinces"
+create_field_marshal = { #Guangdong
+	name = "Chen Jiongming"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Chen_Jiongming.png"
+	traits = { old_guard trait_cautious war_hero organizer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 1116
+
+}
+		hidden_effect = {
+create_corps_commander = { #Guangdong federalist
+	name = "Yang Kunru"
+	desc = "-"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Yang_Kunru.png"
+	traits = {
+	trait_cautious
+	infantry_leader trickster
+	expert_improviser
+	}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+}
+
+		create_corps_commander = { #Guangdong federalist 
+	name = "Lin Hu"
+	desc = "-"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Lin_Hu.png"
+	traits = {
+	politically_connected
+	infantry_officer infantry_leader
+	}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+}
+
+create_corps_commander = { #Guangdong federalist 
+	name = "Hong Zhaolin"
+	desc = "-"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Hong_Zhaolin.png"
+	traits = {
+		
+		war_hero
+		career_officer
+		brilliant_strategist
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+
+}
+create_corps_commander = { #Guangdong Federalist
+	name = "Ye Ju"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Ye_Ju.png"
+	traits = { politically_connected }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+	id = 5026
+}
+
+		}
+		remove_ideas = GXC_AOG_leftovers
+		custom_effect_tooltip = tooltip_white_line
+		set_potential_national_government = yes
+		china_enable_non_government_demand_submission_decisions = yes
+		}
+	}
+	#fight internal enemies
+	focus = {
+		id = GXC_fed_internal_enemies
+		icon = GFX_GXC_fed_internal_enemies
+		x = 5
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_fed_proclaim_government }
+		completion_reward = {
+		remove_ideas = {
+		GXC_worker_peasant_resistance
+		}
+		}
+	}
+	#Enacting the Three Construction Principles
+	focus = {
+		id = GXC_fed_mofan_qixin
+		icon = GFX_goal_GXC_CZGP
+		x = 3
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_fed_internal_enemies }
+		completion_reward = {
+		add_ideas = {
+		GXC_three_construction_principles
+		}
+		}
+	}
+	#shake off yoke of old society
+	focus = {
+		id = GXC_fed_end_yoke
+		icon = GFX_GXC_prepare_to_rewrite_culture-248360
+		x = 7
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_fed_internal_enemies }
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_breaking_the_old_habits
+		days = 180
+		}
+		}
+	}
+	#education reforms question
+	focus = {
+		id = GXC_fed_education_reforms
+		icon = GFX_GXC_radicalize_the_western_minorities-248360
+		x = 2
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_fed_mofan_qixin }
+		completion_reward = {
+		add_ideas = GXC_education_reform
+		}
+	}
+	#little china model
+	focus = {
+		id = GXC_fed_little_china 
+		icon = GFX_goal_CHI_federalist_compromise
+		x = 5
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_fed_mofan_qixin } prerequisite = { focus = GXC_fed_end_yoke }
+		completion_reward = {
+		add_political_power = 30
+		add_popularity = {
+		ideology = ROOT
+		popularity = 0.1
+		}
+		}
+	}
+	#religious protections
+	focus = {
+		id = GXC_fed_religious_protections
+		icon = GFX_goal_MON_Syncretic_Red_Religion_Tengri
+		x = 8
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_fed_end_yoke }
+		completion_reward = {
+		add_ideas = {
+		GXC_religious_protections
+		}
+		}
+	}
+	#please workers guanzho
+	focus = {
+		id = GXC_fed_please_workers
+		icon = GFX_GXC_fully_merge_students_and_workers-248360
+		x = 6
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_fed_religious_protections }prerequisite = { focus = GXC_fed_little_china }
+		completion_reward = {
+		add_ideas = {
+		GXC_union_appeasement
+		}
+		}
+	}
+	#enforce pure morality
+	focus = {
+		id = GXC_fed_pure_morality
+		icon = GFX_GXC_fed_pure_morality
+		x = 9
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_fed_religious_protections }
+		completion_reward = {
+		add_ideas = {
+		GXC_moral_society
+		}
+		}
+	}
+	#mutual aid
+	focus = {
+		id = GXC_fed_mutual_aid
+		icon = GFX_HNN_UNIFICATION_MAO_expansion_upon_mutual_assistance_programs-248360
+		x = 6
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_fed_pure_morality }
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_mutual_aid
+		days = 180
+		}
+		}
+	}
+	#demarxify peasantry
+	focus = {
+		id = GXC_fed_demarxify_peasantry
+		icon = GFX_GXC_fed_demarxify_peasantry
+		x = 9
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_fed_please_workers }
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_pesant_demarxification
+		days = 100
+		}
+		}
+	}
+	#Recconcile 4 elders
+	focus = {
+		id = GXC_fed_four_elders
+		icon = GFX_GXC_utopian_professors-248360
+		x = 6
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_fed_mutual_aid } prerequisite = { focus = GXC_fed_demarxify_peasantry }
+		completion_reward = {
+		set_party_name = {
+			ideology = radical_socialist
+				long_name = GXC_anarchist_cuck_party_long
+				name = GXC_anarchist_cuck_party
+			}
+	create_country_leader = {
+				name = "Cai Yuanpai"
+				picture = "gfx/leaders/GXCA/Portrait_GXC_Li_Shizeng.png"
+				expire = "1.1.1"
+				ideology = anarchism_subtype
+			}
+
+		add_radsoc_to_coalition = yes
+		add_popularity = {
+		ideology = radical_socialist
+		popularity = 0.10
+		}
+		}
+	}
+
+	#equlaity freedom fraternal law
+	focus = {
+		id = GXC_fed_equality_freedom
+		icon = GFX_GXC_our_goal_is_to_love-248360
+		x = 3
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_fed_little_china } prerequisite = { focus = GXC_fed_education_reforms }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_three_construction_principles
+		add_idea = GXC_three_construction_principles_1
+		}
+		}
+	}
+	#struggle against opium
+	focus = {
+		id = GXC_fed_struggle_opium
+		icon = GFX_goal_SZC_opium_crackdown
+		x = 1
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_fed_education_reforms }
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_opium_cleansing
+		days = 180
+		}
+		}
+	}
+	#rural education reform
+	focus = {
+		id = GXC_fed_rural_education
+		icon = GFX_GXC_rural_schooling_reform-248360
+		x = 2
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_fed_struggle_opium }prerequisite = { focus = GXC_fed_equality_freedom }
+		completion_reward = {
+		add_ideas = {
+		GXC_rural_education_program
+		}
+		}
+	}
+	#new panasianism
+	focus = {
+		id = GXC_fed_new_panasianism
+		icon = GFX_GXC_fed_new_panasianism
+		x = 2
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_fed_rural_education }
+		completion_reward = {
+		add_ideas = {
+		GXC_new_panasianism
+		}
+		}
+	}
+	#south_china_rises
+	focus = {
+		id = GXC_fed_south_china_rises
+		icon = GFX_GXC_fed_south_china_rises
+		x = 5
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = { has_country_flag = has_united_china }
+		prerequisite = { focus = GXC_fed_four_elders } prerequisite = { focus = GXC_fed_new_panasianism }
+		completion_reward = {
+		custom_effect_tooltip = switch_focus_unification_federalist_china_tt
+		set_cosmetic_tag = UPC
+		hidden_effect = {
+		news_event = china_events.310
+		add_ideas = China_Unified_economic_recovery
+		RD_federalist_check_subjects_before_unification = yes
+		set_country_flag = UPC_Exists
+		clear_global_event_target = UPC_leader
+		save_global_event_target_as = UPC_leader
+		load_focus_tree = GXC-uni-fed-tree
+		complete_national_focus = GXC_uni_fed_flag
+		}
+		}
+	}
+
+
+}

@@ -1,0 +1,1012 @@
+GXC_internal_dvisions_decision_category = { #dont forget to add a category
+	GXC_guangxi_revolt = {
+		allowed = { always = no } #activated by effect
+
+		available = {
+			
+			
+			custom_trigger_tooltip = {
+				tooltip = guangxi_bellow_tt		
+				check_variable = { guangxi_strengthen < 20 }
+			}
+			
+		}
+		cancel_trigger = {
+			OR = {
+				has_country_flag = stopped_guangxi_revo
+				has_country_flag = failled_guangxi_revo
+			}
+		}
+		
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = no
+	   
+		days_mission_timeout = 100
+		fire_only_once = yes
+		complete_effect = {
+		set_country_flag = stopped_guangxi_revo
+		clr_country_flag = GXC_kmt_uprising
+		country_event = liangguang_rd.27
+		}
+		timeout_effect = {
+		set_country_flag = failled_guangxi_revo
+		clr_country_flag = GXC_kmt_uprising
+		if = {
+		limit = {
+			has_country_flag = RKMT_Victory_In_Guangxi
+		}
+		country_event = liangguang_rd.16
+		}
+		else_if = {
+		limit = {
+			has_country_flag = Peasant_Victory_In_Guangxi
+		}
+		country_event = liangguang_rd.17
+		}
+		}
+	}
+	
+	
+	GXC_qiongya_revolt = {
+		allowed = { always = yes } #activated by effect
+		available = {
+			
+			
+			custom_trigger_tooltip = {
+				tooltip = qiongya_bellow_tt		
+				check_variable = { qiongya_strengthen < 4 }
+			}
+			
+		}
+		cancel_trigger = {
+			OR = {
+				has_country_flag = stopped_qiongya_revo
+				has_country_flag = failled_qiongya_revo
+			}
+		}
+		
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = no
+	   
+		days_mission_timeout = 70
+		fire_only_once = yes
+		complete_effect = {
+		set_country_flag = stopped_qiongya_revo
+		clr_country_flag = GXC_qiongya_revolt
+		country_event = liangguang_rd.14
+		}
+		timeout_effect = {
+		set_country_flag = failled_qiongya_revo
+		clr_country_flag = GXC_qiongya_revolt
+		country_event = liangguang_rd.15
+		}
+	}
+	
+		
+	GXC_infiltrate_local_villages = {
+		icon = ger_military_buildup
+		
+		
+		
+		visible = {
+			tag = GXC
+			has_country_flag = GXC_kmt_uprising
+		}
+		cost = 100
+		
+		days_remove = 15
+		fire_only_once = yes
+		ai_will_do = {
+		factor = 10
+				modifier = {
+				factor = 0
+				OR = {
+				has_game_rule = { rule = PRC_path option = PRC_PATH_RKMT }
+				has_game_rule = { rule = PRC_path option = PRC_PATH_PENG }
+				has_game_rule = { rule = PRC_path option = PRC_PATH_LKMT }
+				}
+			}
+
+		}
+		complete_effect = {
+			add_ideas = {
+			GXC_village_infiltration
+			}
+		}
+		remove_effect = {
+			remove_ideas = {
+			GXC_village_infiltration
+			}
+			add_to_variable = {
+				var = guangxi_strengthen
+				value = -10
+				tooltip = guangxi_decrease_tt
+			}
+		}
+	}
+
+	
+	GXC_bribe_guangxi_officers = {
+		icon = ger_military_buildup
+		
+		
+		visible = {
+			tag = GXC
+			has_country_flag = GXC_kmt_uprising
+		}
+		available = { 
+		has_idea = GXC_village_infiltration 
+		}
+		cost = 75
+		
+		days_remove = 15
+		fire_only_once = yes
+		ai_will_do = {
+		factor = 10
+		}
+		complete_effect = {
+			add_ideas = {
+			GXC_bribe_guangxi_officers
+			}
+		}
+		remove_effect = {
+			remove_ideas = {
+			GXC_bribe_guangxi_officers
+			}
+			add_to_variable = {
+				var = guangxi_strengthen
+				value = -15
+				tooltip = guangxi_decrease_tt
+			}
+		}
+	}
+
+
+	GXC_end_factionalism = {
+		icon = ger_military_buildup
+		
+		visible = {
+			tag = GXC
+		}
+		available = { 
+		custom_trigger_tooltip = {
+   		tooltip = GXC_factionalism_done_tt	
+		
+		OR = {
+		has_country_flag = GXC_Zhang_Mingqi_Control_Guangdong
+		has_country_flag = GXC_fed_victory_struggle_over
+		has_country_flag = GXC_merchant_victory_struggle_over
+		has_country_flag = GXC_anarchist_victory_struggle_over
+		}
+		OR = {
+				AND = {
+				has_country_flag = stopped_qiongya_revo
+				has_subject = QIO
+				}
+				owns_state = 591
+			}
+		owns_state = 594
+		OR = {
+				has_country_flag = stopped_guangxi_revo
+				has_country_flag = failled_guangxi_revo
+			}
+		}
+
+		}
+		cost = 100
+		
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = {
+		base = 100
+		}
+
+		complete_effect = {
+
+		}
+		remove_effect = {
+			remove_ideas = {
+			GXC_factionalism
+			}
+
+		}
+	}
+
+
+
+
+
+
+
+
+
+}
+
+GXC_buy_foreign_weapons_decision_category = {
+GXC_buy_german_guns = {
+		icon = ger_military_buildup
+		
+		
+		visible = {
+			tag = GXC
+			
+		}
+		available = {
+		GER = {
+		exists = yes
+		is_subject = no
+		}
+		}
+		cost = 25
+		
+		days_remove = 50
+		days_re_enable = 15
+		fire_only_once = no
+		ai_will_do = {
+		base = 100
+		}
+		
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			GER = {
+			country_event = liangguang_rd.30
+			}
+		}
+	}
+	
+GXC_buy_german_artillery = {
+		icon = ger_military_buildup
+		
+		
+		visible = {
+			tag = GXC
+		check_variable = {
+   		germ_weapons_times < 15
+		}
+		}
+		available = {
+		GER = {
+		exists = yes
+		is_subject = no
+		}
+		}
+		cost = 25
+		
+		days_remove = 50
+		days_re_enable = 15
+		fire_only_once = no
+		ai_will_do = {
+		base = 100
+		}
+		
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			GER = {
+			country_event = liangguang_rd.33
+			}
+		}
+	}
+	
+	GXC_buy_german_tanks = {
+		icon = ger_military_buildup
+		
+		
+		visible = {
+			tag = GXC
+		check_variable = {
+   		germ_weapons_times < 15
+		}
+	
+		}
+		available = {
+		GER = {
+		exists = yes
+		is_subject = no
+		}
+		}
+		cost = 25
+		
+		days_remove = 50
+		days_re_enable = 15
+		fire_only_once = no
+		
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			GER = {
+			country_event = liangguang_rd.35
+			}
+		}
+	}
+	
+	GXC_buy_german_armoured_cars = {
+		icon = ger_military_buildup
+		
+		
+		visible = {
+			tag = GXC
+			check_variable = {
+   		germ_weapons_times < 15
+		}
+		}
+		available = {
+		GER = {
+		exists = yes
+		is_subject = no
+		}
+		}
+		cost = 25
+		
+		days_remove = 50
+		days_re_enable = 15
+		fire_only_once = no
+		
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			GER = {
+			country_event = liangguang_rd.37
+			}
+		}
+	}
+
+}
+GXC_japan_collab_category = {
+GXC_join_japan_attack_fengtian = {
+		icon = ger_military_buildup
+		allowed = { tag = GXC } #activated by effect
+		visible = {
+		tag = GXC
+		}
+		available = {
+		has_full_control_of_state = 608
+		OR = {
+		has_war_with = FNG 
+		can_declare_war_on = FNG
+		}
+		NOT = { has_war_with = JAP }
+		JAP = {
+		exists = yes
+		is_faction_leader = yes 
+		NOT = { is_in_faction_with = FNG }
+		NOT = { has_country_flag = JAP_Chose_A_Faction }
+		}
+		}
+		cost = 25
+		ai_will_do = {
+		base = 100
+		}
+
+		days_remove = 20
+		fire_only_once = yes
+		
+		complete_effect = {
+		
+		}
+		remove_effect = {
+			JAP = { add_to_faction = GXC }
+			set_global_flag = FNG_relations_JAP_broke
+			if = { limit = { NOT = { has_war_with = FNG } } 
+			declare_war_on = {   type = annex_everything	target = FNG }
+			}
+			hidden_effect = {
+			every_state = {
+				limit = {
+				is_manchuria = yes	
+				}
+				add_claim_by = ROOT
+				}
+			}
+		}
+	}
+}
+
+
+PRC_land_reform_decision_category = {
+
+PRC_land_reform_mission = {
+		allowed = { always = no } #activated by effect
+		available = {
+			
+			
+			custom_trigger_tooltip = {
+				tooltip = LEC_land_reform_at_100_tt		
+				check_variable = { legation_commie_land_reform > 99 }
+			}
+		}
+		
+		icon = GFX_decision_rev_agriculture     # For GFX_decision_mission_icon
+		is_good = no
+	   
+		days_mission_timeout = 150
+		selectable_mission = no
+		complete_effect = {
+			add_ideas = {
+			LEC_land_reform_success
+			}
+			set_country_flag = land_reform_complete
+		}
+		timeout_effect = {
+			add_ideas = {
+			LEC_land_reform_failiure
+			}
+			set_country_flag = land_reform_failed
+		}
+	}
+
+PRC_seizing_landlord_assets = {
+		icon = rev_agriculture
+		name = LEC_seizing_landlord_assets
+		available = {
+			
+		}
+		
+		visible = {
+			tag = PRC
+			
+		}
+		cost = 10
+		
+		days_remove = 15
+		days_re_enable = 10
+		fire_only_once = no
+		ai_will_do = {
+		base = 100
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			add_stability = 0.01
+			add_to_variable = {
+					var = legation_commie_land_reform
+					value = 10
+					tooltip = add_10_to_legation_commie_land_reform_tt
+				}
+		}
+	}
+	
+	PRC_compensate_the_landlords = {
+		icon = rev_agriculture
+		name = LEC_compensate_the_landlords
+		available = {
+			has_completed_focus = GXC_lkmt_till_soil
+		}
+		
+		visible = {
+			tag = PRC
+			
+		}
+		cost = 10
+		
+		days_remove = 15
+		days_re_enable = 10
+		fire_only_once = no
+		ai_will_do = {
+		base = 100
+		}
+		
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			add_stability = -0.1
+			add_popularity = { ideology = social_democrat popularity = 0.05 }
+			add_to_variable = {
+					var = legation_commie_land_reform
+					value = 5
+					tooltip = add_5_to_legation_commie_land_reform_tt
+				}
+		}
+	}
+	PRC_execute_the_landlords = {
+		icon = rev_agriculture
+		name = LEC_execute_the_landlords
+		available = {
+			has_completed_focus = GXC_lkmt_land_expropriation
+		}
+		
+		visible = {
+			tag = PRC
+			
+		}
+		cost = 10
+		
+		days_remove = 15
+		days_re_enable = 10
+		fire_only_once = no
+		ai_will_do = {
+		base = 100
+		}		
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			add_manpower = -10
+			add_popularity = { ideology = totalist popularity = 0.05 }
+			add_to_variable = {
+					var = legation_commie_land_reform
+					value = 3
+					tooltip = add_5_to_legation_commie_land_reform_tt
+				}
+		}
+	}
+	
+	PRC_redistrubtion_of_lands = {
+		icon = rev_agriculture
+		name = LEC_redistrubtion_of_lands
+		available = {
+			
+		}
+		
+		visible = {
+			tag = PRC
+			
+		}
+		cost = 10
+		
+		days_remove = 15
+		days_re_enable = 10
+		fire_only_once = no
+		ai_will_do = {
+		base = 100
+		}
+		
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			add_stability = 0.05
+			add_popularity = { ideology = ROOT popularity = 0.01 }
+			add_to_variable = {
+					var = legation_commie_land_reform
+					value = 10
+					tooltip = add_10_to_legation_commie_land_reform_tt
+				}
+		}
+	}
+
+	PRC_land_lord_trials = {
+		icon = rev_agriculture
+		name = LEC_land_lord_trials
+		available = {
+			has_completed_focus = GXC_lkmt_land_expropriation
+		}
+		
+		visible = {
+			tag = PRC
+			
+		}
+		cost = 10
+		
+		days_remove = 15
+		days_re_enable = 10
+		fire_only_once = no
+		ai_will_do = {
+		base = 100
+		}
+		
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			add_stability = 0.05
+			add_manpower = -1
+			add_to_variable = {
+					var = legation_commie_land_reform
+					value = 5
+					tooltip = add_5_to_legation_commie_land_reform_tt
+				}
+		}
+	}
+	
+	
+	PRC_construct_local_soviet = {
+		icon = rev_agriculture
+		
+		available = {
+			
+		}
+		
+		visible = {
+			tag = PRC
+			has_completed_focus = GXC_lkmt_local_soviets
+		}
+		cost = 10
+		
+		days_remove = 50
+		days_re_enable = 10
+		fire_only_once = no
+		ai_will_do = {
+		base = 100
+		}
+		
+		complete_effect = {
+			add_ideas = {
+			GXC_local_soviets
+			}
+		}
+		remove_effect = {
+			random_owned_state = { 
+			add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			remove_ideas = {
+			GXC_local_soviets
+			}
+			add_popularity = { ideology = ROOT popularity = 0.01 }
+			add_to_variable = {
+					var = legation_commie_land_reform
+					value = 10
+					tooltip = add_10_to_legation_commie_land_reform_tt
+				}
+		}
+	}
+	
+	PRC_construct_broad_reform = {
+		icon = rev_agriculture
+		
+		available = {
+			
+		}
+		
+		visible = {
+			tag = PRC
+			has_completed_focus = GXC_lkmt_broader_picture
+		}
+		cost = 10
+		
+		days_remove = 50
+		days_re_enable = 10
+		fire_only_once = no
+		ai_will_do = {
+		base = 100
+		}
+		
+		complete_effect = {
+			add_ideas = {
+			GXC_broad_reforms
+			}
+		}
+		remove_effect = {
+			random_owned_state = { 
+			add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			remove_ideas = {
+			GXC_broad_reforms
+			}
+			add_popularity = { ideology = ROOT popularity = 0.01 }
+			add_to_variable = {
+					var = legation_commie_land_reform
+					value = 10
+					tooltip = add_10_to_legation_commie_land_reform_tt
+				}
+		}
+	}
+}
+
+PRC_RKMT_Factionalism_decision_category = { 
+	PRC_open_officers = {
+		icon = rev_agriculture
+		
+		available = {
+			
+		}
+		
+		visible = {
+			tag = PRC
+			has_completed_focus = PRC_rkmt_open_officers
+		}
+		cost = 15
+		
+		days_remove = 40
+		days_re_enable = 60
+		fire_only_once = no
+		modifier = {
+			political_power_cost = 0.25
+			max_planning_factor = 0.05
+			war_support_factor = 0.1
+		}
+
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			PRC_increase_huangpu_faction_small = yes
+		}
+	}
+	
+	PRC_publish_minpiao = {
+		icon = rev_agriculture
+		
+		available = {
+			
+		}
+		
+		visible = {
+			tag = PRC
+			has_completed_focus = PRC_rkmt_min_piao
+		}
+		cost = 15
+		
+		days_remove = 40
+		days_re_enable = 60
+		fire_only_once = no
+		modifier = {
+			political_power_cost = 0.25
+			production_speed_industrial_complex_factor = 0.05
+		}
+
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			PRC_increase_wh_faction_small = yes
+		}
+	}
+	
+	PRC_promoting_christ = {
+		icon = rev_agriculture
+		
+		available = {
+			
+		}
+		
+		visible = {
+			tag = PRC
+			has_completed_focus = PRC_rkmt_new_life
+		}
+		cost = 15
+		
+		days_remove = 40
+		days_re_enable = 60
+		fire_only_once = no
+		modifier = {
+			political_power_cost = 0.25
+		}
+		complete_effect = {
+			add_stability = -0.05
+				add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+
+		}
+		remove_effect = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = -1
+			}
+			PRC_increase_cc_faction_small = yes
+		}
+	}
+	PRC_confucian_revival = {
+		icon = rev_agriculture
+		
+		available = {
+			
+		}
+		
+		visible = {
+			tag = PRC
+			has_completed_focus = PRC_rkmt_new_life
+		}
+		cost = 15
+		
+		days_remove = 40
+		days_re_enable = 60
+		fire_only_once = no
+		modifier = {
+			political_power_cost = 0.25
+			stability_weekly = 0.0025
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			PRC_increase_cc_faction_small = yes
+			PRC_radicalism_increase = yes
+		}
+	}
+	
+	PRC_denounce_anti_tridemists = {
+		icon = rev_agriculture
+		
+		available = {
+			
+		}
+		
+		visible = {
+			tag = PRC
+			has_completed_focus = PRC_rkmt_promise_three_principles
+		}
+		cost = 15
+		
+		days_remove = 40
+		days_re_enable = 60
+		fire_only_once = no
+		modifier = {
+			political_power_cost = 0.25
+			resistance_target = -0.10
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			PRC_increase_wh_faction_small = yes
+			PRC_radicalism_decrease = yes
+		}
+	}
+	
+	PRC_rural_education_campaign = {
+		icon = rev_agriculture
+		
+		available = {
+			
+		}
+		
+		visible = {
+			tag = PRC
+			has_completed_focus = PRC_rkmt_student_movement
+		}
+		cost = 20
+		
+		days_remove = 40
+		days_re_enable = 60
+		fire_only_once = no
+		modifier = {
+			political_power_cost = 0.25
+			research_speed_factor = 0.075
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			PRC_radicalism_decrease = yes
+		}
+	}
+	PRC_purging_the_students = {
+		icon = rev_agriculture
+		
+		available = {
+			
+		}
+		
+		visible = {
+			tag = PRC
+			has_completed_focus = PRC_rkmt_student_movement
+		}
+		cost = 20
+		
+		days_remove = 40
+		days_re_enable = 60
+		fire_only_once = no
+		modifier = {
+			political_power_cost = 0.25
+			army_attack_factor = 0.05
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			PRC_increase_huangpu_faction_small = yes
+			PRC_radicalism_increase = yes
+		}
+	}
+}
+
+
+
+PRC_new_live_movement_decision_category = {
+		PRC_enshrine_ethical_hierarchy = {
+		icon = rev_agriculture
+		
+		available = {
+			
+		}
+		
+		visible = {
+			tag = PRC
+		}
+		cost = 40
+		
+		days_remove = 40
+		days_re_enable = 60
+		fire_only_once = no
+		modifier = {
+			dig_in_speed_factor = 0.05
+			coordination_bonus = 0.05
+			army_morale_factor = 0.05
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			add_stability = -0.05
+			add_to_variable = {
+				var = new_life_popularity
+				value = 5
+				tooltip = add_new_life_popularity_tt
+			}
+		}
+	}
+	
+	PRC_national_spirit_rejuventation = {
+		icon = rev_agriculture
+		
+		available = {
+			
+		}
+		
+		visible = {
+			tag = PRC
+			has_completed_focus = GXC_cc_spirit
+		}
+		cost = 50
+		
+		days_remove = 180
+		days_re_enable = 60
+		fire_only_once = no
+		modifier = {
+			war_support_factor = 0.1
+			stability_factor = 0.05
+			army_attack_against_major_factor = 0.1
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = new_life_popularity
+				value = 3
+				tooltip = add_new_life_popularity_tt
+			}
+		}
+	}
+	
+	PRC_national_health_campaign = {
+		icon = rev_agriculture
+		
+		available = {
+			
+		}
+		
+		visible = {
+			tag = PRC
+			has_completed_focus = GXC_cc_spirit
+		}
+		cost = 40
+		
+		days_remove = 90
+		days_re_enable = 30
+		fire_only_once = no
+		modifier = {
+			political_power_cost = 0.1
+			research_speed_factor = 0.05
+			monthly_population = 0.05
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = new_life_popularity
+				value = 6
+				tooltip = add_new_life_popularity_tt
+			}
+		}
+	}
+}

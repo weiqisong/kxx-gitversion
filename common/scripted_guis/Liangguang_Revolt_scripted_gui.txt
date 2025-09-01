@@ -1,0 +1,230 @@
+scripted_gui = {
+  Liangguang_Revolt_gui = {
+    window_name = "Liangguang_Revolt_gui_window"
+    context_type = player_context
+	triggers = {
+		guangdong_zhili_visible = {
+		OR = {
+		has_country_flag = GXC_Zhili_Own_Guangdong
+		
+			GXC = {
+				has_country_leader = {
+					name = "Zhang Mingqi"
+					ruling_only = yes
+				}
+				owns_state = 593
+			}
+		}
+		}
+		
+		guangxi_zhili_visible = {
+		OR = {
+		has_country_flag = GXC_Zhili_Own_Guangxi
+		GXC = {
+			has_country_leader = {
+			name = "Zhang Mingqi"
+			ruling_only = yes
+			}
+			owns_state = 594
+		}
+		}
+		
+		}
+		
+		qiongya_zhili_visible = {
+		OR = {
+		has_country_flag = GXC_Zhili_Own_Qiongya
+		GXC = {
+			has_country_leader = {
+			name = "Zhang Mingqi"
+			ruling_only = yes
+			}
+			owns_state = 591
+		}
+		}
+		}
+		
+		guangdong_kmt_visible = {
+		OR = {
+		has_country_flag = GXC_kmt_Own_Guangdong
+		PRC = {
+		owns_state = 593
+		has_socialist_government = no
+		}
+		}
+		}
+		
+		guangxi_kmt_visible = {
+		OR = {
+		has_country_flag = GXC_kmt_Own_Guangxi
+		
+		PRC = {
+		owns_state = 594
+		has_socialist_government = no
+		}
+		}
+		NOT = {
+			GXC = {
+				has_country_flag = GXC_kmt_peasant_Own_Guangxi
+			}
+		}
+		}
+		
+		qiongya_kmt_visible = {
+		OR = {
+			has_country_flag = GXC_kmt_Own_Qiongya
+			PRC = {
+				owns_state = 591
+				has_socialist_government = no
+			}
+		}
+		}
+		
+		guangdong_peasant_visible = {
+		OR = {
+			has_country_flag = GXC_peasant_Own_Guangdong
+			PRC = {
+			owns_state = 593
+			has_socialist_government = yes
+			}	
+		}
+		
+		}
+		
+		guangxi_peasant_visible = {
+		OR = {
+		has_country_flag = GXC_peasant_Own_Guangxi
+		
+		PRC = {
+		owns_state = 594
+		has_socialist_government = yes
+		}
+		}
+		NOT = {
+			GXC = {
+				has_country_flag = GXC_kmt_peasant_Own_Guangxi
+			}
+		}
+		}
+		
+		qiongya_peasant_visible = {
+		OR = {
+		has_country_flag = GXC_peasant_Own_Qiongya
+		
+		QIO = {
+		owns_state = 591
+		has_socialist_government = yes
+		}
+		
+		PRC = {
+		owns_state = 591
+		has_socialist_government = yes
+		}
+		}
+		}
+		guangdong_federalist_visible = {
+		 OR = {
+			has_country_flag = GXC_federalist_Own_Guangdong
+			GXC = {
+				has_country_leader = {
+				name = "Chen Jiongming"
+				ruling_only = yes
+				}
+				owns_state = 593
+			}
+		 }
+		}
+		
+		guangxi_federalist_visible = {
+		OR = {
+		has_country_flag = GXC_federalist_Own_Guangxi
+		GXC = {
+				has_country_leader = {
+				name = "Chen Jiongming"
+				ruling_only = yes
+				}
+				owns_state = 594
+			}
+		}
+		}
+		
+		qiongya_federalist_visible = {
+		
+		OR = {
+		has_country_flag = GXC_federalist_Own_Qiongya
+		GXC = {
+				has_country_leader = {
+				name = "Chen Jiongming"
+				ruling_only = yes
+				}
+				owns_state = 591
+			}
+		}
+		}
+		guangdong_merchant_visible = {
+		
+		OR = {
+		has_country_flag = GXC_merchant_Own_Guangdong
+		GXC = {
+				has_country_leader = {
+				name = "Chen Lianbo"
+				ruling_only = yes
+				}
+				owns_state = 593
+			}
+		}
+		}
+		
+		guangxi_merchant_visible = {
+		
+		OR = {
+		has_country_flag = GXC_merchant_Own_Guangxi
+		GXC = {
+				has_country_leader = {
+				name = "Chen Lianbo"
+				ruling_only = yes
+				}
+				owns_state = 594
+			}
+		}
+		}
+		
+		
+		qiongya_merchant_visible = {
+		
+		OR = {
+		has_country_flag = GXC_merchant_Own_Qiongya
+		GXC = {
+				has_country_leader = {
+				name = "Chen Lianbo"
+				ruling_only = yes
+				}
+				owns_state = 591
+			}
+		}
+		}
+		
+		guangxi_kmt_peasant_visible = {
+		has_country_flag = GXC_kmt_peasant_Own_Guangxi
+		}
+	}
+    visible = {
+		always = no
+    }
+
+    effects = {
+    }
+
+   
+  }
+  
+  RKMT_Factions_gui = {
+    window_name = "RKMT_Factions_gui_window"
+    context_type = player_context
+	visible = {
+		always = no
+    }
+
+   
+  }
+}

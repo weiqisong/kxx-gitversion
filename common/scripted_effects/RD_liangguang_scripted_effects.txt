@@ -1,0 +1,441 @@
+RD_federalist_check_subjects_before_unification = { #for cases where there might not be direct focus annexation but you want to check for warlord leaders
+	if = { 
+	limit = {
+	HNN = {
+	is_subject_of = ROOT
+		has_country_leader = {
+				name = "Zhao Hengti"
+				ruling_only = yes
+	}
+	}
+	}
+	set_country_flag = hnn_zhao_real_political_force 
+	}
+
+	if = { 
+	limit = {
+	YUN = {
+	is_subject_of = ROOT
+		has_country_leader = {
+				name = "Tang Jiyao"
+				ruling_only = yes
+	}
+	}
+	}
+	set_country_flag = UPC_tang_is_a_good_boi
+	}
+
+	if = { 
+	limit = {
+	SZC = {
+	is_subject_of = ROOT
+		has_country_leader = {
+				name = "Xiong Kewu"
+				ruling_only = yes
+	}
+	}
+	}
+	set_country_flag = UPC_xiong_is_a_good_boi 
+	}
+
+}
+
+
+PRC_preleader_fuck_up = {
+	if = { 
+	limit = { 
+	has_country_leader = {
+				name = "Xu Chongzhi"
+				ruling_only = yes
+	}
+	}
+	PRC_decrease_huangpu_faction_small = yes
+	}
+	else_if = {
+	limit = { 
+	has_country_leader = {
+				name = "Lin Sen"
+				ruling_only = yes
+	}
+	}
+	PRC_decrease_wh_faction_small = yes
+	}
+	else_if = {
+	limit = { 
+	has_country_leader = {
+				name = "Gu Zhutong"
+				ruling_only = yes
+	}
+	}
+	PRC_decrease_cc_faction_small = yes
+	}
+
+
+
+}
+
+PRC_radicalism_increase = {
+		add_to_variable = {
+			var = rkmt_rightist_radicals
+			value = 5
+			tooltip = add_to_rkmt_rightist_radicals_faction_tt
+		}
+		clamp_variable = {
+   		var = rkmt_rightist_radicals
+		max = 100
+}
+}
+
+PRC_radicalism_decrease = {
+		add_to_variable = {
+			var = rkmt_rightist_radicals
+			value = -5
+			tooltip = less_to_rkmt_rightist_radicals_faction_tt
+
+		}
+		clamp_variable = {
+   		var = rkmt_rightist_radicals
+  		min = 0
+}
+}
+PRC_update_rkmt_factions = {
+	#Get the Total Strength Points of faction Mechanic
+	set_temp_variable = { PRC_RKMT_total_strength_temp_var = western_hills_faction_var }
+	add_to_temp_variable = { PRC_RKMT_total_strength_temp_var = huangpu_faction_var }
+	add_to_temp_variable = { PRC_RKMT_total_strength_temp_var = central_club_faction_var }
+	#Get the % wh
+	set_variable = { western_hills_group = western_hills_faction_var }
+	divide_variable = { western_hills_group = PRC_RKMT_total_strength_temp_var }
+	multiply_variable = { western_hills_group = 100 }
+	#Get the % wampoa
+	set_variable = { huangpu_faction = huangpu_faction_var }
+	divide_variable = { huangpu_faction = PRC_RKMT_total_strength_temp_var }
+	multiply_variable = { huangpu_faction = 100 }
+	#Get the % cc
+	set_variable = { central_club_clique = central_club_faction_var }
+	divide_variable = { central_club_clique = PRC_RKMT_total_strength_temp_var }
+	multiply_variable = { central_club_clique = 100 }
+}
+
+PRC_increase_wh_faction_small = { #could just do it on the event the specific amount just include update after adding
+		add_to_variable = {
+			var = western_hills_faction_var
+			value = 5
+			tooltip = add_to_western_hills_faction_tt
+		}
+PRC_update_rkmt_factions = yes
+}
+
+PRC_decrease_wh_faction_small = { 
+		add_to_variable = {
+			var = western_hills_faction_var
+			value = -5
+			tooltip = less_to_western_hills_faction_tt
+		}
+		clamp_variable = {
+   		var = western_hills_faction_var
+		min = 0
+		}
+PRC_update_rkmt_factions = yes
+}
+
+PRC_increase_huangpu_faction_small = { 
+		add_to_variable = {
+			var = huangpu_faction_var 
+			value = 5
+			tooltip = add_to_huangpu_faction_tt
+		}
+PRC_update_rkmt_factions = yes
+}
+PRC_decrease_huangpu_faction_small = { # use a mix of both increases and ddecreases otherwise it becomes impossible to change the numbs very much
+		add_to_variable = {
+			var = huangpu_faction_var 
+			value = -5
+			tooltip = less_to_huangpu_faction_tt
+		}
+		clamp_variable = {
+   		var = huangpu_faction_var 
+		min = 0
+		}
+PRC_update_rkmt_factions = yes
+}
+
+
+PRC_increase_cc_faction_small = { 
+		add_to_variable = {
+			var = central_club_faction_var 
+			value = 5
+			tooltip = add_to_cc_faction_tt
+		}
+PRC_update_rkmt_factions = yes
+}
+PRC_decrease_cc_faction_small = { 
+		add_to_variable = {
+			var = central_club_faction_var 
+			value = -5
+			tooltip = less_to_cc_faction_tt
+		}
+		clamp_variable = {
+   		var = central_club_faction_var
+		min = 0
+		}
+PRC_update_rkmt_factions = yes
+}
+
+QIO_yuguang_setup = {
+	remove_ideas = {
+	QIO_Wang_Wenming_hog_rso
+	QIO_Chen_Yuhou_eco_rso
+	QIO_Chen_Chuibin_for_tot
+	QIO_Feng_Baiju_sec_tot
+	QIO_isolated_upon_the_seas
+	QIO_local_militias
+	QIO_revolution_triumphant
+	QIO_a_baron_wasteland #this is something we can use for the economic tree but remove for now
+	}
+	add_ideas = {
+	QIO_Long_Yugang_hog_ade
+	QIO_Zhou_Hang_eco_ade
+	QIO_Deng_Hong_for_pau
+	QIO_Deng_Benyin_sec_pau
+	
+	}
+	load_focus_tree = generic_focus
+}
+
+PRC_socialist_setup = {
+PRC = {
+	remove_ideas = {
+	PRC_Hu_Hanmin_hog_sco
+	PRC_Deng_Zeru_for_sco
+	GXC_Zuo_Lu_eco_sco
+	GXC_Xu_Chongzhi_sec_ade
+	PRC_deal_with_peasants
+	PRC_divided_rays_under_the_sun
+	PRC_legacy_of_failure
+	}
+	add_ideas = {
+	PRC_peoples_militias
+	PRC_lands_in_need_of_reform
+	GXC_Peng_Pai_hog_rso
+	GXC_Peng_Hanyuan_eco_rso
+	GXC_Tan_Pingshan_for_rso
+	GXC_Huang_Jinhui_sec_rso
+	}
+	add_timed_idea = {
+	idea = PRC_success_for_the_peasants
+	days = 30
+	}
+	set_politics = {
+	ruling_party = radical_socialist
+	last_election = "1888.6.15"
+	election_frequency = 48
+	elections_allowed = no
+	}
+	set_popularities = {
+	totalist = 10
+	radical_socialist = 50
+	syndicalist = 20
+	social_democrat = 15
+	social_liberal = 5
+	market_liberal = 0
+	social_conservative = 0
+	authoritarian_democrat = 0
+	paternal_autocrat = 0
+	national_populist = 0
+	}
+	load_oob = "GXC_Gx"
+}
+		NSW = {
+		every_unit_leader = {
+			limit = {
+			has_trait = GXC_socialist_officer
+			}
+			set_nationality = PRC
+			}
+		}
+}
+
+PRC_rkmt_generals = {
+
+create_navy_leader = {
+	name = "Chen Ce"
+	desc = "POLITICS_GXC_CHEN_CE_NAVY_DESC"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Chen_Ce.png"
+	traits = {
+		 
+		navy_career_officer
+		navy_media_personality
+		inshore_fighter
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "Gui Yongqing"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Gui_Yongqing.png"
+	traits = {
+		navy_career_officer
+		bold
+		inshore_fighter
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+create_field_marshal = {
+	name = "Li Zongren"
+	desc = "POLITICS_YUNNAN_LI_ZONGREN_ARMY_DESC"
+	portrait_path = "gfx/leaders/YUN/Portrait_Yunnan_Li_Zongren.png"
+	id = 12000
+	traits = {   GXC_rkmt_officer war_hero offensive_doctrine politically_connected organizer logistics_wizard }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Xu Chongzhi"
+	desc = "-"
+	portrait_path = "gfx/leaders/GXC/Portrait_Yunnan_Li_Zongren.png"
+	id = 12001
+	traits = {   GXC_rkmt_officer war_hero offensive_doctrine politically_connected organizer logistics_wizard }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+###Corps Commander###
+create_corps_commander = {
+	name = "Li Hanhun"
+	desc = "-"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Li_Hanhun.png"
+	skill = 4
+	id = 12006
+	traits = { GXC_rkmt_officer infantry_officer politically_connected brilliant_strategist   }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = { #Guangdong
+	name = "Chen Jitang"
+	desc = "POLITICS_GXC_CHEN_JITANG_ARMY_DESC"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Chen_Jitang.png"
+	traits = { GXC_rkmt_officer brilliant_strategist career_officer war_hero   }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 12002
+}
+create_corps_commander = { #Guangdong
+	name = "Li Yangjing"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Li_Yangjing.png"
+	traits = { GXC_rkmt_officer artillery_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = { #Guangdong
+	name = "Cai Tingkai"
+	desc = "POLITICS_GXC_CAI_TINGKAI_ARMY_DESC"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Cai_Tingkai.png"
+	traits = { GXC_rkmt_officer career_officer infantry_officer   }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+	id = 12003
+}
+create_corps_commander = { 
+	name = "Bai Chongxi"
+	desc = "POLITICS_YUNNAN_BAI_CHONGXI_ARMY_DESC"
+	portrait_path = "gfx/leaders/YUN/Portrait_Yunnan_Bai_Chongxi.png"
+	skill = 3
+	id = 12004
+	traits = { GXC_rkmt_officer infantry_officer politically_connected brilliant_strategist   }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_navy_leader = { #idk if this navy will load
+	name = "Bai Chongxi"
+	desc = "POLITICS_YUNNAN_BAI_CHONGXI_ARMY_DESC"
+	portrait_path = "gfx/leaders/YUN/Portrait_Yunnan_Bai_Chongxi.png"
+	traits = {
+		 
+		navy_career_officer
+		navy_media_personality
+		inshore_fighter
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
+
+create_corps_commander = {
+	name = "Chen Cheng"
+	desc = "-"
+	portrait_path = "gfx/leaders/YUN/Portrait_Yunnan_Chen_Cheng.png"
+	skill = 3
+	id = 12005
+	traits = { GXC_rkmt_officer infantry_officer politically_connected brilliant_strategist   }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Huang Xuchu"
+	desc = "-"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Huang_Xuchu.png"
+	skill = 2
+	id = 12007
+	traits = { GXC_rkmt_officer infantry_officer politically_connected brilliant_strategist   }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+
+create_corps_commander = {
+	name = "Huang Shaohong"
+	desc = "-"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Huang_Shaohong.png"
+	skill = 2
+	id = 12008
+	traits = { GXC_rkmt_officer infantry_officer politically_connected brilliant_strategist   }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+}

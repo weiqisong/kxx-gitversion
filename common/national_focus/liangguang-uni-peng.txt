@@ -1,0 +1,306 @@
+focus_tree = {
+	id = GXC-uni-peng-tree
+	continuous_focus_position = { x = -41 y = 1800 } 
+	country = {
+		factor = 0
+	}
+	shared_focus = CHINA_FOREIGN_POLICY_beyond_the_walls_of_the_middle_kingdom
+
+
+	#peasnts have lifted chains
+	focus = {
+		id = GXC_uni_pai_peasants
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		x = 15
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#promote farmer self cultivation
+	focus = {
+		id = GXC_uni_pai_self_cultivation
+		icon = GFX_SOV_farmers
+		relative_position_id = GXC_uni_pai_peasants
+		x = 2
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_pai_peasants } 
+		completion_reward = {
+		add_ideas = {
+		PRC_farmer_self_cultivation
+		}
+		}
+	}
+	#further ending landlordism
+	focus = {
+		id = GXC_uni_pai_landlordism
+		icon = GFX_RUS_Land_Socialization_psr
+		relative_position_id = GXC_uni_pai_peasants
+		x = 1
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_pai_self_cultivation } 
+		completion_reward = {
+		china_generic_land_reform_setup = yes
+		add_timed_idea = {
+		idea = PRC_anti_landlord_campaigns
+		days = 180
+		}
+		}
+	}
+	#restoring vase of economic base
+	focus = {
+		id = GXC_uni_pai_economic_base
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		relative_position_id = GXC_uni_pai_peasants
+		
+		x = 3
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_pai_communialist } prerequisite = { focus = GXC_uni_pai_landlordism } 
+		
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = China_Unified_economic_recovery
+		add_idea = GXC_Peng_Pai_economic_recovery_1
+		}
+		}
+	}
+	#land confiscation case
+	focus = {
+		id = GXC_uni_pai_land_confiscation
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		relative_position_id = GXC_uni_pai_peasants
+		x = 1
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_pai_communialist } prerequisite = { focus = GXC_uni_pai_landlordism } 
+		completion_reward = {
+		add_timed_idea = {
+		idea = PRC_land_confiscation
+		days = 180
+		}
+		}
+	}
+	#communialist productivism
+	focus = {
+		id = GXC_uni_pai_communialist
+		icon = GFX_RUS_Village_Communes
+		relative_position_id = GXC_uni_pai_peasants
+		x = 3
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_pai_self_cultivation } 
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = PRC_farmer_self_cultivation
+		add_idea = PRC_communal_productivity
+		}
+		}
+	}
+	#enact relief law
+	focus = {
+		id = GXC_uni_pai_relief_law
+		icon = GFX_goal_AFG_Aid_Afghan_Agriculture_Anjumane_Zamidaran
+		relative_position_id = GXC_uni_pai_peasants
+		x = 2
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_pai_economic_base } prerequisite = { focus = GXC_uni_pai_land_confiscation } 
+		completion_reward = {
+			add_ideas = {
+			GXC_the_grain_relief
+			}
+		}
+	}
+	#moderated collectivism
+	focus = {
+		id = GXC_uni_pai_collectivism
+		icon = GFX_RUS_Labour_Collectives
+		relative_position_id = GXC_uni_pai_peasants
+		x = 4
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_pai_economic_base } 
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_Peng_Pai_economic_recovery_1
+		add_idea = GXC_Peng_Pai_economic_recovery_2
+		}
+		}
+	}
+
+	#end umbrella reactionism
+	focus = {
+		id = GXC_uni_pai_reactionism
+		icon = GFX_TIB_crush_the_reactionary_tribes-248360
+		relative_position_id = GXC_uni_pai_peasants
+		x = -2
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_pai_peasants } 
+		completion_reward = {
+		add_timed_idea = {
+		idea = PRC_anti_reactionary_streak
+		days = 180
+		}
+		}
+	}
+	#revive socialistresearch association
+	focus = {
+		id = GXC_uni_pai_research
+		icon = GFX_TAISOC_social_science_research_associations-248360
+		relative_position_id = GXC_uni_pai_peasants
+		x = -2
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_pai_reactionism } 
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+	#six points of unity and struggle
+	focus = {
+		id = GXC_uni_pai_unity_struggle
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		relative_position_id = GXC_uni_pai_peasants
+		x = -3
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_pai_research } 
+		completion_reward = {
+		add_war_support = 0.05
+		add_tot_to_coalition = yes
+		add_synd_to_coalition = yes
+		add_socdem_to_coalition = yes
+		add_popularity  = {
+		ideology = totalist
+		popularity = 0.02
+		}
+		add_popularity  = {
+		ideology = syndicalist
+		popularity = 0.02
+		}
+		add_popularity  = {
+		ideology = radical_socialist
+		popularity = 0.02
+		}
+		add_popularity  = {
+		ideology = social_democrat
+		popularity = 0.02
+		}
+		}
+	}
+	#understand guangxi cultural status
+	focus = {
+		id = GXC_uni_pai_guangxi_cultural
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		relative_position_id = GXC_uni_pai_peasants
+		x = -1
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_pai_research } 
+		completion_reward = {
+		add_stability = 0.05
+		add_timed_idea = {
+		idea = PRC_guangxi_cultural_status
+		days = 180
+		}
+		}
+	}
+	#revive sun society
+	focus = {
+		id = GXC_uni_pai_sun_society
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		relative_position_id = GXC_uni_pai_peasants
+		x = -2
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_pai_guangxi_cultural } prerequisite = { focus = GXC_uni_pai_unity_struggle } 
+		completion_reward = {
+		add_timed_idea = {
+		idea = PRC_sun_society
+		days = 180
+		}
+		}
+	}
+	#peasant lecture institute
+	focus = {
+		id = GXC_uni_pai_peasant_lecture
+		icon = GFX_JAPCOMMUNIST_increase_the_peasant_livelihood-248360
+		relative_position_id = GXC_uni_pai_peasants
+		x = 0
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_pai_guangxi_cultural } prerequisite = { focus = GXC_uni_pai_land_confiscation } 
+		completion_reward = {
+		add_ideas = {
+		PRC_peasant_lecture_institute
+		}
+		}
+	}
+	#socialism for the peasants
+	focus = {
+		id = GXC_uni_pai_socialism
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		relative_position_id = GXC_uni_pai_peasants
+		x = 0
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_pai_peasant_lecture } prerequisite = { focus = GXC_uni_pai_sun_society } prerequisite = { focus = GXC_uni_pai_relief_law } prerequisite = { focus = GXC_uni_pai_collectivism } 
+		completion_reward = {
+		country_event = liangguang_rd.72
+		}
+	}
+
+}

@@ -1,0 +1,113 @@
+
+
+GXC_internal_dvisions_decision_category = { 
+	icon = power_struggle
+	#picture = GFX_decision_cat_LIT_Palace   
+	allowed = {
+		tag = GXC
+	}
+	priority = 1000
+	visible_when_empty = no
+	scripted_gui = Liangguang_Revolt_gui
+}
+
+
+GXC_buy_foreign_weapons_decision_category = { 
+	icon = power_struggle
+	#picture = GFX_decision_cat_LIT_Palace   
+	allowed = {
+		tag = GXC
+	}
+	visible = {
+	OR = {
+	has_completed_focus = GXC_overtures_to_germany
+	has_completed_focus = GXC_lib_foreign_aid
+	}
+	}
+	priority = 999
+	
+}
+GXC_japan_collab_category = { 
+	icon = power_struggle
+	#picture = GFX_decision_cat_LIT_Palace   
+	allowed = {
+		tag = GXC
+	}
+	visible = {
+	OR = {
+	has_completed_focus = GXC_lib_foreign_aid
+	has_completed_focus = GXC_sun_hiding_in_darkness
+	}
+	}
+	priority = 999
+	
+}
+
+
+PRC_land_reform_decision_category = { 
+	icon = GFX_decision_revolution_agriculture
+	#picture = GFX_decision_cat_LIT_Palace   
+	allowed = {
+		tag = PRC
+	}
+
+	visible = {
+		AND = {
+		has_completed_focus = GXC_lkmt_land_reform
+		NOT = {
+		OR = {
+		has_country_flag = land_reform_complete
+		has_country_flag = land_reform_failed
+		}
+		}
+		}
+	}
+}
+
+
+PRC_RKMT_Factionalism_decision_category = { 
+	icon = power_struggle
+	#picture = GFX_decision_cat_LIT_Palace   
+	allowed = {
+		tag = PRC
+	}
+	visible = {
+	has_focus_tree = GXC-rkmt-tree
+	}
+	priority = 1000
+	visible_when_empty = yes
+	scripted_gui = RKMT_Factions_gui
+}
+
+
+GXC_liangguang_anarchist_conference_decision_category = { 
+	icon = power_struggle
+	#picture = GFX_decision_cat_LIT_Palace   
+	allowed = {
+		tag = GXC
+	}
+	visible = {
+		has_country_flag = GXC_anarchist_victory_struggle_over
+	}
+	priority = 1000
+	visible_when_empty = yes
+}
+
+PRC_new_live_movement_decision_category = { 
+	icon = power_struggle
+	#picture = GFX_decision_cat_LIT_Palace   
+	allowed = {
+		tag = PRC
+	}
+	visible = {
+		has_completed_focus = GXC_cc_nlm
+	}
+	priority = 1000
+	visible_when_empty = yes
+}
+
+
+
+
+
+

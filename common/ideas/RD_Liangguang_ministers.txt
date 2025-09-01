@@ -1,0 +1,1557 @@
+####Labels###
+## hog_tot ## eco_npo ## for_npo ## sec_npo ##
+## hog_syn ## eco_pau ## for_pau ## sec_pau ##
+## hog_rso ## eco_ade ## for_ade ## sec_ade ##
+## hog_sde ## eco_sco ## for_sco ## sec_sco ##
+## hog_sli ## eco_mli ## for_mli ## sec_mli ##
+## hog_mli ## eco_sli ## for_sli ## sec_sli ##
+## hog_sco ## eco_sde ## for_sde ## sec_sde ##
+## hog_ade ## eco_rso ## for_rso ## sec_rso ##
+## hog_pau ## eco_syn ## for_syn ## sec_syn ##
+## hog_npo ## eco_tot ## for_tot ## sec_tot ##
+## totalist ##
+## syndicalist ##
+## radical_socialist ##
+## social_democrat ##
+## social_liberal ##
+## market_liberal ##
+## social_conservative ##
+## authoritarian_democrat ##
+## paternal_autocrat ##
+## national_populist ##
+
+
+ideas = {
+
+		head_of_government = {
+		
+		GXC_Ye_Feiying_hog_rso = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_agrarian_activist
+			}
+		} 
+		
+		GXC_Ye_Peiji_hog_rso = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_popular_figurehead
+			}
+		} 
+		
+		GXC_Taixu_hog_rso = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_spiritual_leader
+			}
+		} 
+		GXC_Li_Shizeng_hog_rso = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_the_grand_old_man
+			}
+		}
+		GXC_Cai_Yuanpai_hog_rso = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				syndicalist
+				hog_the_grand_old_man
+			}
+		}
+		
+		GXC_Wu_Zhihui_hog_rso = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_the_grand_old_man
+			}
+		}
+		GXC_Ba_Jin_hog_ade = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_anti_establishment_maverick
+			}
+		}
+		
+		GXC_Peng_Pai_hog_rso = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_agrarian_activist
+			}
+		}
+		GXC_Zhou_Jianren_hog_rso = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_scholar
+			}
+		}
+		
+		
+		GXC_Tan_Pingshan_hog_rso = {
+		picture = GXC_Tan_Pingshan_for_rso
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_scholar
+			}
+		}
+		GXC_Y_C_James_Yen_hog_sde = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_agrarian_activist
+			}
+		}
+		GXC_Guo_Zechen_hog_sde = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_political_survivor
+			}
+		}
+		GXC_Peng_Zemin_hog_sde = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_political_survivor
+			}
+		}
+		GXC_Yan_Xinmin_hog_sde = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_political_survivor
+			}
+		}
+		
+		
+		GXC_Wu_Dizhou_hog_sde = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_political_survivor
+			}
+		}
+		GXC_Ma_Xulun_hog_sde = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_veteran_democrat
+			}
+		}
+		
+		GXC_Hu_Shih_hog_sli = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_naive_optimist
+			}
+		}
+		GXC_Situ_Meitang_hog_sli = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_the_grand_old_man
+			}
+		}
+		
+		GXC_Chen_Jiongming_hog_sli = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_old_general
+			}
+		}
+		GXC_Ma_Yingbiao_hog_mli = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_corporate_suit
+			}
+		}
+		
+		GXC_Ma_Maifan_hog_mli = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_corporate_suit
+			}
+		}
+		
+		GXC_Wen_Zongyao_hog_mli = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_corporate_suit
+			}
+		}
+		
+		GXC_Chen_Lianbo_hog_mli = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_corporate_suit
+			}
+		}
+		
+		GXC_Wang_Yitang_hog_sco = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_scholar
+			}
+		}
+		
+		GXC_Hu_Hanmin_hog_sco = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_scholar
+			}
+		}
+		
+		GXC_Lin_Sen_hog_sco = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_scholar
+			}
+		}
+		
+		GXC_Tang_Shaoyi_hog_ade = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_pragmatic_statesman
+			}
+		}
+		
+		
+		
+		GXC_Zhang_Mingqi_hog_pau = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_local_tyrant
+			}
+		}
+		
+	GXC_Wang_Kemin_hog_npo = {
+		
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_backroom_backstabber
+			}
+		}
+		
+		
+		}
+			
+			### Economic Minister ### 
+		
+		person_of_influence = {
+		
+		GXC_Wu_Zhihui_eco_rso = {
+		picture = GXC_Wu_Zhihui_hog_rso
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				economy_minister
+				radical_socialist
+				eco_agrarian_conservative
+			}
+		}
+		
+		GXC_Zhu_Qianzhi_eco_rso = {
+		picture = "GFX_idea_LEC_minister_yin_fu"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				economy_minister
+				radical_socialist
+				eco_unionist
+			}
+		}
+		GXC_Ye_Feiying_eco_rso = {
+		picture = GXC_Ye_Feiying_hog_rso
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				economy_minister
+				radical_socialist
+				eco_agricultural_economist
+			}
+		}
+		
+		GXC_Yuan_Zhenying_eco_rso = {
+		picture = "GFX_idea_LEC_minister_yin_fu"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				economy_minister
+				radical_socialist
+				eco_unionist
+			}
+		}
+		
+		GXC_Peng_Hanyuan_eco_rso = {
+		picture = "GFX_idea_LEC_minister_yin_fu"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				economy_minister
+				radical_socialist
+				eco_unionist
+			}
+		}
+		GXC_Chen_Sisheng_eco_rso = {
+		picture = "GFX_idea_LEC_minister_yin_fu"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				economy_minister
+				radical_socialist
+				eco_bank_president
+			}
+		}
+		
+		GXC_Cui_Mengbo_eco_sde = {
+		picture = "GFX_idea_LEC_minister_yin_fu"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				economy_minister
+				social_democrat
+				eco_balanced_budget_economy
+			}
+		}
+		
+		GXC_Yan_Xinmin_eco_sde = {
+		picture = GXC_Yan_Xinmin_hog_sde
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				economy_minister
+				social_democrat
+				eco_balanced_budget_economy
+			}
+		}
+		
+		GXC_Chen_Yibai_eco_sde = {
+		picture = "GFX_idea_LEC_minister_yin_fu"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				economy_minister
+				social_democrat
+				eco_balanced_budget_economy
+			}
+		}
+		
+		GXC_Chen_Yansheng_eco_sde = {
+		picture = GXC_Chen_Yansheng_hog_sde
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				economy_minister
+				social_democrat
+				eco_balanced_budget_economy
+			}
+		}
+		
+		GXC_Huang_Fukang_eco_sli = {
+		picture = "GFX_idea_LEC_minister_yin_fu"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_balanced_budget_economy
+			}
+		}
+		GXC_Sun_Wu_eco_sco = {
+		picture = "GFX_idea_LEC_minister_yin_fu"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_balanced_budget_economy
+			}
+		}
+		GXC_Tao_Xisheng_eco_sde = {
+		picture = "GFX_idea_LEC_minister_yin_fu"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				economy_minister
+				social_democrat
+				eco_balanced_budget_economy
+			}
+		}
+		
+		GXC_Zuo_Lu_eco_sco = {
+		picture = "GFX_idea_LEC_minister_yin_fu"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_bank_president
+			}
+		}
+		
+		GXC_Tang_Shaoyi_eco_ade = {
+		picture = "GFX_idea_LEC_minister_yin_fu"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_bank_president
+			}
+		}
+		
+		GXC_Wang_Shijing_eco_pau = {
+		picture = "GFX_idea_LEC_minister_yin_fu"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_bank_president
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		### Minister Foreign ###
+		
+		GXC_Liang_Xueyu_for_rso = {
+		picture = "GFX_idea_LEC_minister_chen_jue"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				foreign_minister
+				radical_socialist
+				for_ideological_crusader
+			}
+		}
+		
+		
+		GXC_Taixu_for_rso = {
+		picture = GXC_Taixu_hog_rso
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				foreign_minister
+				radical_socialist
+				for_biased_intellectual
+			}
+		}
+		
+		GXC_Lu_Jianbo_for_rso = {
+		picture = "GFX_idea_LEC_minister_chen_jue"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				foreign_minister
+				radical_socialist
+				for_ideological_crusader
+			}
+		}
+		
+		GXC_Zheng_Yuxiu_for_rso = {
+		picture = "GFX_idea_LEC_minister_chen_jue"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				foreign_minister
+				radical_socialist
+				for_ideological_crusader
+			}
+		}
+		
+		GXC_Tan_Pingshan_for_rso = {
+		picture = "GFX_idea_LEC_minister_chen_jue"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				foreign_minister
+				radical_socialist
+				for_ideological_crusader
+			}
+		}
+		GXC_Lin_Handa_for_rso = {
+		picture = "GFX_idea_LEC_minister_chen_jue"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				foreign_minister
+				radical_socialist
+				for_ideological_crusader
+			}
+		}
+		
+		GXC_Guo_Xiuyi_for_sde = {
+		picture = "GFX_idea_LEC_minister_chen_jue"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				foreign_minister
+				social_democrat
+				for_biased_intellectual
+			}
+		}
+		GXC_Qiu_Zhe_for_sde = {
+		picture = "GFX_idea_LEC_minister_chen_jue"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				foreign_minister
+				social_democrat
+				for_biased_intellectual
+			}
+		}
+		
+		GXC_Bing_Xin_for_sde = {
+		picture = "GFX_idea_LEC_minister_chen_jue"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				foreign_minister
+				social_democrat
+				for_biased_intellectual
+			}
+		}
+		
+		GXC_Xu_Zhimo_for_sli = {
+		picture = "GFX_idea_LEC_minister_chen_jue"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_biased_intellectual
+			}
+		}
+		
+		GXC_Guan_Wensen_for_sli = {
+		picture = "GFX_idea_LEC_minister_chen_jue"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_biased_intellectual
+			}
+		}
+		GXC_Sun_Hongyi_for_sco = {
+		picture = "GFX_idea_LEC_minister_chen_jue"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_apologetic_clerk
+			}
+		}
+		GXC_Deng_Zeru_for_sco = {
+		picture = "GFX_idea_LEC_minister_chen_jue"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_apologetic_clerk
+			}
+		}
+		GXC_Li_Guoyun_for_pau = {
+		picture = "GFX_idea_LEC_minister_chen_jue"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_the_cloak_n_dagger_schemer
+			}
+		}
+		
+		GXC_Wang_Chonghui_for_ade = {
+		picture = "GFX_idea_LEC_minister_chen_jue"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_general_staffer
+			}
+		}
+		GXC_Wang_Yintai_for_pau = {
+		picture = "GFX_idea_LEC_minister_chen_jue"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_general_staffer
+			}
+		}
+		
+		
+		
+		### Minister of Interior ###
+		GXC_Huang_Wenshan_sec_rso = {
+		picture = "GFX_idea_LEC_minister_kang_sheng"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				security_minister
+				radical_socialist
+				sec_socialist_novelist
+			}
+		}
+		GXC_Gao_Jianfu_sec_rso = {
+		picture = "GFX_idea_LEC_minister_kang_sheng"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				security_minister
+				radical_socialist
+				sec_socialist_novelist
+			}
+		}
+		
+		GXC_Xu_Boxin_sec_rso = {
+		picture = "GFX_idea_LEC_minister_kang_sheng"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				security_minister
+				radical_socialist
+				sec_socialist_novelist
+			}
+		}
+		
+		GXC_Huang_Jinhui_sec_rso = {
+		picture = "GFX_idea_LEC_minister_kang_sheng"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				security_minister
+				radical_socialist
+				sec_socialist_novelist
+			}
+		}
+		GXC_Deng_Haoming_sec_sde = {
+		picture = "GFX_idea_LEC_minister_kang_sheng"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_silent_lawyer
+			}
+		}
+		GXC_Zhang_Yunchuan_sec_sde = {
+		picture = "GFX_idea_LEC_minister_kang_sheng"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_silent_lawyer
+			}
+		}
+		GXC_Lei_Jieqiong_sec_sde = {
+		picture = "GFX_idea_LEC_minister_kang_sheng"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_silent_lawyer
+			}
+		}
+		GXC_Zhu_Jiahua_sec_sli = {
+		picture = "GFX_idea_LEC_minister_kang_sheng"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				security_minister
+				social_liberal
+				sec_brilliant_lawyer
+			}
+		}
+		GXC_Huang_Sande_sec_sli = {
+		picture = "GFX_idea_LEC_minister_kang_sheng"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				security_minister
+				social_liberal
+				sec_brilliant_lawyer
+			}
+		}
+		GXC_Yan_Xichun_sec_sli = {
+		picture = "GFX_idea_LEC_minister_kang_sheng"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				security_minister
+				social_liberal
+				sec_brilliant_lawyer
+			}
+		}
+		GXC_Liu_Chengyou_sec_sco = {
+		picture = "GFX_idea_LEC_minister_kang_sheng"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				security_minister
+				social_conservative
+				sec_brilliant_lawyer
+			}
+		}
+		GXC_Xu_Chongzhi_sec_ade = {
+		picture = "GFX_idea_LEC_minister_kang_sheng"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_efficient_sociopath
+			}
+		}
+		
+		
+		GXC_Tan_Haoming_sec_pau = {
+		picture = "GFX_idea_LEC_minister_kang_sheng"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_prince_of_terror
+			}
+		}
+		
+		GXC_Tang_Erhe_sec_npo = {
+		picture = "GFX_idea_LEC_minister_kang_sheng"
+			allowed = { original_tag = GXC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea OTT_hans_kannengiesser_eco_ade"
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_prince_of_terror
+			}
+		}
+		
+		
+		
+		
+		}
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

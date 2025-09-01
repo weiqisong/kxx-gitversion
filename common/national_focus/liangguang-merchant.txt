@@ -1,0 +1,401 @@
+focus_tree = {
+	id = GXC-merchant-tree
+	country = {
+		factor = 0
+	}
+	default = no
+	continuous_focus_position = { x = 0 y = 1050 }
+	shared_focus = GXC_shared_edging_economy
+	shared_focus = GXC_shared_rifles
+	shared_focus = GXC_shared_unification
+
+
+	#2nd canton_uprising
+	focus = {
+		id = GXC_lib_canton_uprising
+		icon = GFX_GXC_lib_canton_uprising
+		x = 6
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#requesting foreign aid
+	focus = {
+		id = GXC_lib_foreign_aid
+		icon = GFX_goal_SWI_international_aid
+		x = 4
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+   		factor = 50
+    		modifier = {
+     		 factor = 100
+		has_game_rule = { rule = GXC_path option = GXC_PATH_MARLIB_JAP }
+    		}
+		}
+
+		available = {
+
+		JAP_not_on_way_to_soc = yes
+		}
+		prerequisite = { focus = GXC_lib_canton_uprising }
+		mutually_exclusive = { focus = GXC_lib_forwards_alone }
+		completion_reward = {
+		custom_effect_tooltip = GXC_how_to_get_jap_side_tt
+		unlock_decision_category_tooltip = GXC_buy_foreign_weapons_decision_category
+		}
+	}
+	#going forwards alone
+	focus = {
+		id = GXC_lib_forwards_alone
+		icon = GFX_GXC_lib_forwards_alone
+		x = 8
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+   		factor = 50
+    		modifier = {
+     		 factor = 100
+		has_game_rule = { rule = GXC_path option = GXC_PATH_MARLIB }
+    		}
+		}
+		prerequisite = { focus = GXC_lib_canton_uprising }
+		mutually_exclusive = { focus = GXC_lib_foreign_aid }
+		completion_reward = {
+		add_ideas = {
+		GXC_going_alone
+		}
+		}
+	}
+	#suck japan markets
+	focus = {
+		id = GXC_lib_with_zaibatsu 
+		icon = GFX_goal_ANQ_Zaibatsu_Contracts
+		x = 6
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_lib_foreign_aid }
+		completion_reward = {
+		add_ideas = {
+		GXC_sun_hiding_in_darkness
+		}
+		add_opinion_modifier = {
+			target = JAP
+			modifier = JAP_japanese_comradery
+		}
+		}
+	}
+	#welcome tang shaoyi
+	focus = {
+		id = GXC_lib_welcome_shaoyi 
+		icon = GFX_GXC_lib_welcome_shaoyi
+		x = 5
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_lib_with_zaibatsu }
+		completion_reward = {
+		add_stability = 0.05
+		add_authdem_to_coalition = yes
+		swap_ideas = {
+		remove_idea = GXC_Li_Songshao_eco_mli
+		add_idea = GXC_Tang_Shaoyi_eco_ade
+		}
+		}
+	}
+
+	#denounce japan markets
+	focus = {
+		id = GXC_lib_denounce_japan 
+		icon = GFX_goal_USA_embargo_japan
+		x = 10
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_lib_forwards_alone }
+		completion_reward = {
+		if = { limit = { JAP = { exists = yes } }
+		add_opinion_modifier = {
+			target = JAP
+			modifier = faction_traitor
+		}
+		}
+		add_war_support = 0.10
+		add_political_power = 75
+		}
+	}
+	#support patriotic markets
+	focus = {
+		id = GXC_lib_patriotic_markets
+		icon = GFX_GXC_lib_patriotic_markets
+		x = 11
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_lib_denounce_japan }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_going_alone
+		add_idea = GXC_going_alone_1
+		}
+		}
+	}
+
+	#secure island ports
+	focus = {
+		id = GXC_lib_secure_islands
+		icon = GFX_goal_nested_fortifications
+		x = 8
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_lib_with_zaibatsu focus = GXC_lib_denounce_japan }
+		completion_reward = {
+		1012 = {
+		 add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 9978
+			}
+		 add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 7067
+			}
+			 add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 4050
+			}
+		 }
+		 
+		 593 = {
+		 add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 7108
+			}
+		 add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 1202
+			}
+			 add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 12095
+			}
+		add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 11941
+			}
+		add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 7152
+			}
+		add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 11938
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 9963
+			}
+		add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 7039
+			}
+		 }
+		
+		}
+	}
+	#deal with pan asianism
+	focus = {
+		id = GXC_lib_deal_panasianism
+		icon = GFX_goal_VIN_pan_asian_appeals
+		x = 8
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_lib_welcome_shaoyi focus = GXC_lib_patriotic_markets } prerequisite = { focus = GXC_lib_secure_islands }
+		completion_reward = {
+		country_event = liangguang_rd.46
+		}
+	}
+	#opium flow
+	focus = {
+		id = GXC_lib_opium_flow
+		icon = GFX_goal_YUN_opium_road
+		x = 8
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_lib_deal_panasianism }
+		completion_reward = {
+		add_ideas = {
+		GXC_opium_marketing
+		}
+		}
+	}
+
+	#securing legation contacts
+	focus = {
+		id = GXC_lib_legation_contacts
+		icon = GFX_focus_HKG_Upper_Echelon
+		x = 2
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_lib_foreign_aid focus = GXC_lib_forwards_alone }
+		bypass = {
+		has_global_flag = LEC_bankrupt
+		}
+		completion_reward = {
+		add_political_power = 100
+		add_opinion_modifier = {
+			target = LEC
+			modifier = KR_trade_agreement
+		}
+		}
+	}
+	#on the underground
+	focus = {
+		id = GXC_lib_underground
+		icon = GFX_LEC_Illegitimate_Economy
+		x = 1
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_lib_legation_contacts }
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_underground_markets
+		days = 360
+		}
+		}
+	}
+	#crush peasant revolts
+	focus = {
+		id = GXC_lib_crush_peasant
+		icon = GFX_goal_VIN_crush_vietcong
+		x = 0
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_lib_underground }
+		completion_reward = {
+		remove_ideas = {
+		GXC_worker_peasant_resistance
+		}
+		}
+	}
+	#remove trad eunions
+	focus = {
+		id = GXC_lib_remove_unions
+		icon = GFX_goal_USA_stop_southern_syndicalism
+		x = 2
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_lib_underground }
+		completion_reward = {
+		remove_ideas = GXC_AOG_leftovers
+		}
+	}
+	#encourage charity private acts
+	focus = {
+		id = GXC_lib_encourage_charity
+		icon = GFX_goal_HON_Humanist_Charity
+		x = 2
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_lib_remove_unions } prerequisite = { focus = GXC_lib_crush_peasant }
+		completion_reward = {
+		add_ideas = {
+		GXC_charity_orgs
+		}
+		}
+	}
+	#pearl_of_delta river
+	focus = {
+		id = GXC_lib_pearl_of_delta
+		icon = GFX_GXC_lib_pearl_of_delta
+		x = 6
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_lib_opium_flow } prerequisite = { focus = GXC_lib_encourage_charity }
+		available = { has_country_flag = has_united_china }
+		completion_reward = {
+		custom_effect_tooltip = CHI_focus_tree_will_change_tt
+		set_cosmetic_tag = GXC_MERCHANTS_UNIFICATION_flag
+		hidden_effect = {
+		load_focus_tree = GXC-uni-merc-tree
+		complete_national_focus = GXC_uni_merc_flag
+		add_ideas = China_Unified_economic_recovery
+		}
+		}
+	}
+
+
+
+
+}	

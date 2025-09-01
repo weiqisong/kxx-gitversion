@@ -1,0 +1,1268 @@
+focus_tree = {
+	id = GXC-uni-fed-tree
+	continuous_focus_position = { x = -41 y = 1800 } 
+	country = {
+		factor = 0
+	}
+	shared_focus = CHINA_FOREIGN_POLICY_beyond_the_walls_of_the_middle_kingdom
+
+
+	#reunification under the federal flag
+	focus = {
+		id = GXC_uni_fed_flag
+		icon = GFX_GXC_uni_fed_flag
+		x = 19
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#meeting of the united people's congress
+	focus = {
+		id = GXC_uni_fed_congress
+		icon = GFX_GXC_uni_fed_congress
+		relative_position_id = GXC_uni_fed_flag
+		x = -1
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		select_effect = {
+		country_event = liangguang_rd.58
+		}
+		prerequisite = { focus = GXC_uni_fed_flag } 
+		completion_reward = {
+		effect_tooltip = {
+		country_event = liangguang_rd.58
+		}
+		}
+	}
+	#question of the non han regions
+	focus = {
+		id = GXC_uni_fed_nonhan
+		icon = GFX_GXC_uni_fed_nonhan
+		relative_position_id = GXC_uni_fed_flag
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		custom_trigger_tooltip = {
+					tooltip = gxc_congress_result_depends_on_outcome_tt		
+						OR = {
+							has_country_flag = GXC_warlord_provinces
+							has_country_flag = GXC_democratic_provinces
+						}
+				}
+		}
+		prerequisite = { focus = GXC_uni_fed_flag } 
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = GXC_warlord_provinces
+				}
+				add_timed_idea = {
+				idea = GXC_integration_warlords
+				days = 120
+				}
+			}
+			else = {
+				add_timed_idea = {
+				idea = GXC_integration_democracy
+				days = 120
+				}
+			}
+		}
+	}
+	#first federal elections
+	focus = {
+		id = GXC_uni_fed_elections
+		icon = GFX_GXC_uni_fed_elections
+		relative_position_id = GXC_uni_fed_flag
+		x = 0
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_fed_nonhan } prerequisite = { focus = GXC_uni_fed_congress } 
+		available = { has_country_flag = UPC_fed_leader_chosen }
+		completion_reward = {
+			country_event = liangguang_rd.64
+		}
+	}
+
+#cadp tree
+	#cadp victory
+	focus = {
+		id = GXC_cadp_vict
+		icon = GFX_GXC_cadp_vict
+		x = 33
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		prerequisite = { focus = GXC_uni_fed_elections } 
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#xunlu holds the party leadership
+	focus = {
+		id = GXC_xulun_wins
+		icon = GFX_GXC_xulun_wins
+		relative_position_id = GXC_cadp_vict
+		x = -1
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		prerequisite = { focus = GXC_cadp_vict } 
+		mutually_exclusive = { focus = GXC_jianren_wins }
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#legacy of may 30
+	focus = {
+		id = GXC_cadp_may
+		icon = GFX_GXC_cadp_may
+		relative_position_id = GXC_cadp_vict
+		x = -3
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_xulun_wins } 
+		completion_reward = {
+			add_ideas = {
+				GXC_legacy_ofMay
+			}
+		}
+	}
+	#standing against foreign imperialists
+	focus = {
+		id = GXC_cadp_imperialists
+		icon = GFX_HNNUNIFIEDTANG_denouncing_the_foreign_imperialists-248360
+		relative_position_id = GXC_cadp_vict
+		x = -5
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_cadp_may } 
+		completion_reward = {
+			army_experience = 50
+			add_war_support = 0.1
+			add_command_power = 50
+		}
+	}
+	#intreagtion of cdl
+	focus = {
+		id = GXC_cadp_cdl
+		icon = GFX_HNNUNIFIEDTANG_victory_of_a_new_democratic_league-248360
+		relative_position_id = GXC_cadp_vict
+		x = -3
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_cadp_may } 
+		completion_reward = {
+			set_party_name = {
+					ideology = social_liberal
+					long_name = HNN_china_democratic_league_party_long
+					name = HNN_china_democratic_league_party
+				}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.075
+			}
+			add_soclib_to_coalition = yes
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+	#reforming the national language
+	focus = {
+		id = GXC_cadp_language
+		icon = GFX_LEC_CREATION_modernizing_the_chinese_language-248360
+		relative_position_id = GXC_cadp_vict
+		x = -5
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_cadp_cdl } prerequisite = { focus = GXC_cadp_imperialists } 
+		completion_reward = {
+			add_timed_idea = {
+			idea = GXC_langguange_reforms
+			days = 365
+			}
+		}
+	}
+	#alliances with the anarchists
+	focus = {
+		id = GXC_cadp_anarchists
+		icon = GFX_GXC_the_power_struggle-248360
+		relative_position_id = GXC_cadp_vict
+		x = -3
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_cadp_cdl } prerequisite = { focus = GXC_cadp_imperialists } 
+		completion_reward = {
+			set_party_name = {
+					ideology = radical_socialist
+					long_name = GXC_anarchist_cuck_party_long
+					name = GXC_anarchist_cuck_party
+				}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.05
+			}
+			add_radsoc_to_coalition = yes
+			add_timed_idea = {
+			idea = GXC_decentralized_admin_2
+			days = 100
+			}
+		}
+	}
+	#protecting the  old culutre
+	focus = {
+		id = GXC_cadp_old_culture
+		icon = GFX_GXC_traditionalist_overtures-248360
+		relative_position_id = GXC_cadp_vict
+		x = -3
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_cadp_anarchists } prerequisite = { focus = GXC_cadp_language } 
+		completion_reward = {
+			add_ideas = {
+			GXC_protecting_past
+			}
+		}
+	}
+
+	#jianren victory
+	focus = {
+		id = GXC_jianren_wins
+		icon = GFX_GXC_jianren_wins
+		relative_position_id = GXC_cadp_vict
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		prerequisite = { focus = GXC_cadp_vict }
+		mutually_exclusive = { focus = GXC_xulun_wins } 
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#legacy of the writer
+	focus = {
+		id = GXC_cadp_writer
+		icon = GFX_LEC_AGRARIAN_the_lu_xun_debate-248360
+		relative_position_id = GXC_cadp_vict
+		x = 3
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_jianren_wins }
+		completion_reward = {
+			add_ideas = {
+			GXC_lu_xun_legacy
+			}
+		}
+	}
+	#a pioneer of women's liberation
+	focus = {
+		id = GXC_cadp_women
+		icon = GFX_HNNMAO_allowing_women_to_hold_up_half_the_sky-248360
+		relative_position_id = GXC_cadp_vict
+		x = 3
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_cadp_writer }
+		completion_reward = {
+			add_ideas = {
+			GXC_women_empowerment
+			}
+		}
+	}
+	#continuing the national salvation movement
+	focus = {
+		id = GXC_cadp_national_salvation 
+		icon = GFX_GXC_strength_is_our_salvation-248360
+		relative_position_id = GXC_cadp_vict
+		x = 2
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_cadp_women }
+		completion_reward = {
+			add_timed_idea = {
+			idea = GXC_national_salvation_movement
+			days = 365
+			}
+		}
+	}
+	#siniciation of science
+	focus = {
+		id = GXC_cadp_chinese_science 
+		icon = GFX_GXC_communal_experiments-248360
+		relative_position_id = GXC_cadp_vict
+		x = 4
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_cadp_women }
+		completion_reward = {
+			add_timed_idea = {
+			idea = GXC_chinese_science		
+			days = 150
+			}
+		}
+	}
+	#scientification of china
+	focus = {
+		id = GXC_cadp_scientification
+		icon = GFX_GXC_a_sinitic_anarchist_theory-248360
+		relative_position_id = GXC_cadp_vict
+		x = 3
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_cadp_chinese_science } prerequisite = { focus = GXC_cadp_national_salvation }
+
+		completion_reward = {
+			add_ideas = {
+			GXC_chinese_science_great
+			}
+		}
+	}
+	#promoting social progress
+	focus = {
+		id = GXC_capd_progress
+		icon = GFX_GXC_anewyearsdream-248360
+		relative_position_id = GXC_cadp_vict
+		
+		x = 0
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		
+		prerequisite = { focus = GXC_capd_democracy } prerequisite = { focus = GXC_capd_science }
+		completion_reward = {
+			swap_ideas = {
+			remove_idea = China_Unified_economic_recovery
+			add_idea = GXC_sciencitification_economy
+			}
+		}
+	}
+	#populrize science and modernization
+	focus = {
+		id = GXC_capd_science
+		icon = GFX_GXC_awritersrepublic-248360
+		relative_position_id = GXC_cadp_vict
+		x = -1
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_capd_education_right }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	#upholding the truth of democracy
+	focus = {
+		id = GXC_capd_democracy
+		icon = GFX_GXC_claim_the_may_fourth_mantle-248360
+		relative_position_id = GXC_cadp_vict
+		x = 1
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_capd_education_right }
+		completion_reward = {
+			add_stability = 0.1
+			Increase_ruling_party_popularity_by_10 = yes
+		}
+	}
+	#education shall be a right
+	focus = {
+		id = GXC_capd_education_right
+		icon = GFX_GXC_integrate_university_structures-248360
+		relative_position_id = GXC_cadp_vict
+		x = 0
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_jianren_wins focus = GXC_xulun_wins }
+		completion_reward = {
+			add_ideas = {
+			GXC_light_of_education
+			}
+		}
+	}
+	#uphold right of democracy 
+	focus = {
+		id = GXC_capd_right_democracy
+		icon = GFX_GXC_capd_right_democracy
+		relative_position_id = GXC_cadp_vict
+		x = 0
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_capd_progress }
+		completion_reward = {
+			add_ideas = {
+			GXC_light_of_democracy
+			}
+		}
+	}
+	#revolution of freedom and democracy
+	focus = {
+		id = GXC_cadp_freedum
+		icon = GFX_GXC_cadp_freedum
+		relative_position_id = GXC_cadp_vict
+		x = -2
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_cadp_old_culture } prerequisite = { focus = GXC_capd_right_democracy } 
+		completion_reward = {
+			add_ideas = {
+			GXC_lighting_the_nation
+			}
+			country_event = liangguang_rd.67
+		}
+	}
+	#the fighting spirit of the martyr
+	focus = {
+		id = GXC_cadp_martyr
+		icon = GFX_GXC_cadp_martyr
+		relative_position_id = GXC_cadp_vict
+		x = 2
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_cadp_scientification } prerequisite = { focus = GXC_capd_right_democracy }
+		completion_reward = {
+			add_ideas = {
+			GXC_lu_xun_legacy_1
+			}
+		}
+	}
+
+
+#fed tree
+	#federalists hold on
+	focus = {
+		id = GXC_upc_victory
+		icon = GFX_goal_GXC_CZGP
+		relative_position_id = GXC_uni_fed_flag
+		x = 0
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		prerequisite = { focus = GXC_uni_fed_elections } 
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#a victory for the hongmen
+	focus = {
+		id = GXC_upc_hongmen
+		icon = GFX_GXC_upc_hongmen
+		relative_position_id = GXC_uni_fed_flag
+		x = -3
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		prerequisite = { focus = GXC_upc_victory } 
+		mutually_exclusive = { focus = GXC_upc_continued }
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		add_state_core = 258
+		add_state_core = 336
+		add_state_core = 797
+		add_state_core = 798
+		add_state_core = 999
+		}
+	}
+	#loyalty unity and mutual assistance
+	focus = {
+		id = GXC_upc_mutual_assistance
+		icon = GFX_HNN_UNIFICATION_MAO_expansion_upon_mutual_assistance_programs-248360
+		relative_position_id = GXC_uni_fed_flag
+		x = -5
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		
+		prerequisite = { focus = GXC_upc_declaration } 
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = China_Unified_economic_recovery
+		add_idea = GXC_mutual_assistance_loyalty
+		}
+		}
+	}
+	#the ten newspapers declaration
+	focus = {
+		id = GXC_upc_declaration
+		icon = GFX_HNN_UNIFICATION_YCP_creation_of_the_welfare_system-248360
+		relative_position_id = GXC_uni_fed_flag
+		x = -4
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_upc_overseas_ties } 
+		completion_reward = {
+			country_event = liangguang_rd.68
+		}
+	}
+	#returning power to the people
+	focus = {
+		id = GXC_upc_power_people
+		icon = GFX_HNNZHILI_support_a_new_form_of_democracy-248360
+		relative_position_id = GXC_uni_fed_flag
+		x = -3
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_upc_declaration } 
+		completion_reward = {
+			add_ideas = {
+			GXC_returning_power_to_the_people
+			}
+		}
+	}
+	#securing our overseas ties
+	focus = {
+		id = GXC_upc_overseas_ties
+		icon = GFX_GXC_upc_overseas_ties
+		relative_position_id = GXC_uni_fed_flag
+		x = -3
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_upc_hongmen } 
+		completion_reward = {
+			add_ideas = {
+			GXC_overseas_community_overtures
+			}
+		}
+	}
+	#supporting national integrity
+	focus = {
+		id = GXC_upc_national_integrity
+		icon = GFX_goal_china_federalism
+		relative_position_id = GXC_uni_fed_flag
+		x = -5
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_upc_mutual_assistance } prerequisite = { focus = GXC_upc_power_people } 
+		completion_reward = {
+			add_stability = 0.025
+			add_political_power = 100
+		}
+	}
+	#the fundraising beurau
+	focus = {
+		id = GXC_upc_fundraising
+		icon = GFX_DKB_Funding
+		relative_position_id = GXC_uni_fed_flag
+		x = -3
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_upc_mutual_assistance } prerequisite = { focus = GXC_upc_power_people } 
+		completion_reward = {
+			add_timed_idea = {
+			idea = GXC_fundraising_council
+			days = 365
+			}
+		}
+	}
+	#continued federal leadershup 
+	focus = {
+		id = GXC_upc_continued
+		icon = GFX_goal_GXC_federalist_republic
+		relative_position_id = GXC_uni_fed_flag
+		x = 3
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		prerequisite = { focus = GXC_upc_victory } 
+		mutually_exclusive = { focus = GXC_upc_hongmen }
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#starting ten years of great changes 
+	focus = {
+		id = GXC_upc_ten_years 
+		icon = GFX_GXC_upc_ten_years
+		relative_position_id = GXC_uni_fed_flag
+		x = 3
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_upc_continued } 
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = China_Unified_economic_recovery
+		add_idea = GXC_ten_year_plan
+		}
+		}
+	}
+	#in honor of our struggle 
+	focus = {
+		id = GXC_upc_struggle
+		icon = GFX_GXC_upc_struggle
+		relative_position_id = GXC_uni_fed_flag
+		x = 4
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_upc_ten_years } 
+		completion_reward = {
+			add_timed_idea = {
+			idea = GXC_honor_struggle
+			days = 180
+			}
+		}
+	}
+	#upholding the patriotic mantle 
+	focus = {
+		id = GXC_upc_mantle
+		icon = GFX_goal_china_federalist_deal
+		relative_position_id = GXC_uni_fed_flag
+		x = 4
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_upc_struggle } 
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+	#anti hunger anti persecution anti civil war 
+	focus = {
+		id = GXC_upc_three_antis
+		icon = GFX_HNNUNIFIEDTANG_an_agenda_of_peaceful_nation_building-248360
+		relative_position_id = GXC_uni_fed_flag
+		x = 6
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_upc_struggle } 
+		completion_reward = {
+			swap_ideas = {
+			remove_idea = GXC_ten_year_plan
+			add_idea = GXC_three_antis
+			}
+		}
+	}
+	#promoting love and public dedication 
+	focus = {
+		id = GXC_upc_love
+		icon = GFX_UKR_Love_Peasants
+		relative_position_id = GXC_uni_fed_flag
+		x = 4
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_upc_three_antis } prerequisite = { focus = GXC_upc_mantle } 
+		completion_reward = {
+			add_ideas = {
+			GXC_love_and_dedication
+			}
+		}
+	}
+	#question of warlordism 
+	focus = {
+		id = GXC_upc_warlordism
+		icon = GFX_HNNUNIFIEDTANG_organise_the_state_affairs_conference-248360
+		relative_position_id = GXC_uni_fed_flag
+		x = 6
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_upc_three_antis } prerequisite = { focus = GXC_upc_mantle } 
+		completion_reward = {
+			add_timed_idea = {
+			idea = GXC_handling_warlords_issue
+			days = 365
+			}
+		}
+	}
+	#handling the land reform 
+	focus = {
+		id = GXC_upc_land_reform
+		icon = GFX_RDHNNKMTUNI_commence_the_national_land_reform-248360
+		relative_position_id = GXC_uni_fed_flag
+		x = 0
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_upc_continued focus = GXC_upc_hongmen } 
+		completion_reward = {
+		china_generic_land_reform_setup = yes
+		}
+	}
+	#compensate landlords 
+	focus = {
+		id = GXC_upc_landlords
+		icon = GFX_HNNSHARED_strong_arm_of_the_land_owners-248360
+		relative_position_id = GXC_uni_fed_flag
+		x = 1
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_upc_land_reform } 
+		mutually_exclusive = { focus = GXC_upc_peasants }
+		completion_reward = {
+			add_timed_idea = {
+			idea = GXC_land_lords_federalists
+			days = 180
+			}
+		}
+	}
+	#a hand to the farmer unions
+	focus = {
+		id = GXC_upc_peasants
+		icon = GFX_HNNSHENGZHI_creation_of_the_land_reform_committee-248360
+		relative_position_id = GXC_uni_fed_flag
+		x = -1
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_upc_land_reform } 
+		mutually_exclusive = { focus = GXC_upc_landlords }
+		completion_reward = {
+			add_timed_idea = {
+			idea = GXC_land_peasant_federalists
+			days = 180
+			}
+		}
+	}
+	#maintain good business relations
+	focus = {
+		id = GXC_upc_business_relations
+		icon = GFX_HNNUNIFIEDTANG_maintain_some_relations_with_the_business_elite-248360
+		relative_position_id = GXC_uni_fed_flag
+		x = 1
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_upc_peasants focus = GXC_upc_landlords } 
+		mutually_exclusive = { focus = GXC_upc_unions }
+		completion_reward = {
+			add_popularity = {
+			ideology = market_liberal
+			popularity = 0.025
+			}
+			add_timed_idea = {
+			idea = GXC_works_with_corporate_suits
+			days = 180
+			}
+		}
+	}
+	#work with the trade unions
+	focus = {
+		id = GXC_upc_unions
+		icon = GFX_RUS_Free_Trade_Unions
+		relative_position_id = GXC_uni_fed_flag
+		x = -1
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_upc_peasants focus = GXC_upc_landlords } 
+		mutually_exclusive = { focus = GXC_upc_business_relations }
+		completion_reward = {
+			add_popularity = {
+			ideology = syndicalist
+			popularity = 0.025
+			}
+			add_timed_idea = {
+			idea = GXC_works_with_unions_feds
+			days = 180
+			}
+		}
+	}
+	#land to the tiller
+	focus = {
+		id = GXC_upc_tiller
+		icon = GFX_JAPRECOVERY_land_to_the_tiller-248360
+		relative_position_id = GXC_uni_fed_flag
+		x = 0
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_upc_unions focus = GXC_upc_business_relations } 
+		completion_reward = {
+			add_ideas = GXC_land_reforms_federalists_tiller
+		}
+	}
+	#forever federal and free end hangmen focus
+	focus = {
+		id = GXC_upc_federal_free
+		icon = GFX_GXC_upc_federal_free
+		relative_position_id = GXC_uni_fed_flag
+		x = -3
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_upc_fundraising } prerequisite = { focus = GXC_upc_tiller } prerequisite = { focus = GXC_upc_national_integrity } 
+		completion_reward = {
+		country_event = liangguang_rd.69
+		add_ideas = {
+		GXC_federalism_free_lover
+		}
+		}
+	}
+	#a party loyal to its people and the nation  end succession focus
+	focus = {
+		id = GXC_upc_loyalty
+		icon = GFX_GXC_upc_loyalty
+		relative_position_id = GXC_uni_fed_flag
+		x = 3
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_upc_love } prerequisite = { focus = GXC_upc_warlordism } prerequisite = { focus = GXC_upc_tiller } 
+		completion_reward = {
+		##Might want to add some ideology picker events down the line.##
+		if = { 
+		limit = {	
+		has_country_leader = {
+		name = "Chen Qiyou"
+		ruling_only = yes
+		}
+		}
+		country_event = liangguang_rd.71
+		}
+		add_ideas = {
+		GXC_federalism_loyalty
+		}
+		}
+	}
+
+#hu shih
+
+	#hu democratic constitutional victory
+	focus = {
+		id = GXC_hu_victory
+		icon = GFX_GXC_hu_victory
+		x = 8
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		prerequisite = { focus = GXC_uni_fed_elections } 
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#eradicate the 5 diseases
+	focus = {
+		id = GXC_hu_diseases
+		icon = GFX_HNN_UNIFICATION_MAO_the_patriotic_health_campaign-248360
+		relative_position_id = GXC_hu_victory
+		x = -3
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_hu_victory } 
+		completion_reward = {
+		add_ideas = {
+		GXC_eradicate_diseases
+		}
+		}
+	}
+	#confucian rectification
+	focus = {
+		id = GXC_hu_confucian
+		icon = GFX_HNNZHILI_reforming_confucian_ethics-248360
+		relative_position_id = GXC_hu_victory
+		x = -4
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_hu_diseases } 
+		completion_reward = {
+		add_ideas = {
+		GXC_confucian_rectification
+		}
+		}
+	}
+	#forever tolerant
+	focus = {
+		id = GXC_hu_tolerant
+		icon = GFX_GXC_hu_tolerant
+		relative_position_id = GXC_hu_victory
+		x = -2
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_hu_diseases } 
+		completion_reward = {
+		add_ideas = {
+		GXC_new_found_tolerance
+		}
+		}
+	}
+	#supporting westernization
+	focus = {
+		id = GXC_hu_westernization
+		icon = GFX_goal_EGY_Western_Ties
+		relative_position_id = GXC_hu_victory
+		x = -4
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_hu_tolerant } prerequisite = { focus = GXC_hu_confucian } 
+		completion_reward = {
+	add_tech_bonus = {
+   	 bonus = 0.5
+    	uses = 2
+    	category = electronics
+	}
+		add_political_power = 25
+		}
+	}	
+	#concious evolution
+	focus = {
+		id = GXC_hu_evolution
+		icon = GFX_GXC_hu_evolution
+		relative_position_id = GXC_hu_victory
+		x = -2
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_hu_tolerant } prerequisite = { focus = GXC_hu_confucian } 
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_new_evolution
+		days = 180
+		}
+		}
+	}
+	#ending the national humiliation
+	focus = {
+		id = GXC_hu_humiliation
+		icon = GFX_GXC_hu_humiliation
+		relative_position_id = GXC_hu_victory
+		x = -3
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_hu_evolution } prerequisite = { focus = GXC_hu_westernization } 
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_eradicate_diseases
+		add_idea = GXC_eradicate_diseases_1
+		}
+		}
+	}
+	#emphasis on academia sincia
+	focus = {
+		id = GXC_hu_academia
+		icon = GFX_GXC_hu_academia
+		relative_position_id = GXC_hu_victory
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_hu_victory } 
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+	#promoting pragmatism
+	focus = {
+		id = GXC_hu_pragmatism
+		icon = GFX_focus_HKG_Pragmatism
+		relative_position_id = GXC_hu_victory
+		x = 3
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_hu_study } prerequisite = { focus = GXC_hu_academia } 
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = China_Unified_economic_recovery
+		add_idea = GXC_pragmatic_reform
+		}
+		hidden_effect = { country_event = { id = liangguang_rd.112 days = 42 } }
+		}
+	}
+	#literature reform
+	focus = {
+		id = GXC_hu_literature
+		icon = GFX_goal_VIN_national_education_campaign
+		relative_position_id = GXC_hu_victory
+		x = 0
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_hu_pragmatism } prerequisite = { focus = GXC_hu_academia } 
+		completion_reward = {
+			add_timed_idea = {
+			idea = GXC_literary_reforms
+			days = 180
+			}
+		}
+	}
+	#study more talk less
+	focus = {
+		id = GXC_hu_study
+		icon = GFX_TAISOC_education_reforms-248360
+		relative_position_id = GXC_hu_victory
+		
+		x = 3
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_hu_victory }
+		
+		completion_reward = {
+			add_timed_idea = {
+			idea = GXC_study_more
+			days = 180
+			}
+		}
+	}
+	#understanding zen enlightenment
+	focus = {
+		id = GXC_hu_enlightenment
+		icon = GFX_SIA_declare_the_exalted_one-150699
+		relative_position_id = GXC_hu_victory
+		x = 0
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_hu_literature } prerequisite = { focus = GXC_hu_study } 
+		completion_reward = {
+			add_timed_idea = {
+			idea = GXC_zen_enlightenment
+			days = 200
+			}
+		}
+	}
+	#scientific mozism
+	focus = {
+		id = GXC_hu_mozism
+		icon = GFX_GXC_hu_mozism
+		relative_position_id = GXC_hu_victory
+		x = 3
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_hu_literature } prerequisite = { focus = GXC_hu_study } 
+		completion_reward = {
+		add_ideas = {
+		GXC_mozism
+		}
+		}
+	}
+	#ending the enlightened autocracy
+	focus = {
+		id = GXC_hu_autocracy
+		icon = GFX_goal_FNG_Anti_Shikai
+		relative_position_id = GXC_hu_victory
+		x = 2
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_hu_mozism } prerequisite = { focus = GXC_hu_enlightenment } 
+		completion_reward = {
+		add_ideas = {
+		GXC_stand_against_autocracy
+		}
+		}
+	}
+	#supporting federal autonomy
+	focus = {
+		id = GXC_hu_autonomy
+		icon = GFX_GXC_hu_autonomy
+		relative_position_id = GXC_hu_victory
+		x = 0
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_hu_enlightenment } 
+		completion_reward = {
+		add_ideas = {
+		GXC_new_autonomy
+		}
+		}
+	}
+	#a republic shining the light of liberalism
+	focus = {
+		id = GXC_hu_liberalism
+		icon = GFX_GXC_hu_liberalism
+		relative_position_id = GXC_hu_victory
+		x = 0
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_hu_autonomy } prerequisite = { focus = GXC_hu_autocracy } prerequisite = { focus = GXC_hu_humiliation } 
+		completion_reward = {
+		increase_ruling_party_popularity_by_10 = yes
+		country_event = liangguang_rd.70
+		}
+	}
+
+
+}
