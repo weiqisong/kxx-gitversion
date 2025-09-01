@@ -16,6 +16,7 @@ ideas = {
 			}
 			traits = {
 				head_of_government
+				hog_naive_optimist
 				authoritarian_democrat
 			}
 		}
@@ -34,6 +35,8 @@ ideas = {
 			}
 			traits = {
 				head_of_government
+				hog_the_grand_old_man
+				hog_scholar
 				national_populist
 				totalist
 			}
@@ -53,6 +56,7 @@ ideas = {
 			}
 			traits = {
 				head_of_government
+				hog_political_protege
 				national_populist
 			}
 		}
@@ -71,6 +75,7 @@ ideas = {
 			}
 			traits = {
 				head_of_government
+				hog_influential_intellectual
 				social_democrat
 			}
 		}
@@ -89,6 +94,8 @@ ideas = {
 			}
 			traits = {
 				head_of_government
+				hog_scholar
+				hog_the_peasant_marshal
 				social_democrat
 			}
 		}
@@ -107,24 +114,8 @@ ideas = {
 			}
 			traits = {
 				head_of_government
+				hog_gentleman_politician
 				social_liberal
-			}
-		}
-		SQI_zhang_chunqiao_hog_tot = {
-			allowed = { original_tag = SQI }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = head_of_gov_available
-					always = no
-				}
-			}
-			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
-			}
-			traits = {
-				head_of_government
-				totalist
 			}
 		}
 		SQI_deng_enming_hog_tot = {
@@ -141,6 +132,7 @@ ideas = {
 			}
 			traits = {
 				head_of_government
+				hog_ultranationalist_agitator
 				totalist
 			}
 		}
@@ -159,6 +151,7 @@ ideas = {
 			}
 			traits = {
 				head_of_government
+				hog_ultranationalist_agitator
 				totalist
 			}
 		}
@@ -203,6 +196,7 @@ ideas = {
 			}
 			traits = {
 				economy_minister
+				eco_teleological_planner
 				totalist
 			}
 		}
@@ -221,6 +215,7 @@ ideas = {
 			}
 			traits = {
 				economy_minister
+				eco_laissez_faire_capitalist
 				social_liberal
 			}
 		}
@@ -240,6 +235,7 @@ ideas = {
 			traits = {
 				economy_minister
 				social_democrat
+				eco_mixed_economy
 			}
 		}
 		
@@ -263,6 +259,7 @@ ideas = {
 				foreign_minister
 				social_democrat
 				social_liberal
+				for_committed_democrat
 			}
 		}
 		
@@ -280,12 +277,30 @@ ideas = {
 			}
 			traits = {
 				foreign_minister
+				lobe_nationalist_firebrand
 				totalist
 			}
 		}
-		
-		
-		
+
+		SQI_zhang_chunqiao_hog_tot = {
+			allowed = { original_tag = SQI }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea IQR_J_R_Stacey_hog_ade"
+			}
+			traits = {
+				foreign_minister
+				for_ideological_crusader
+				totalist
+			}
+		}
+
 		### Minister of Interior ###
 		
 		SQI_xu_haidong_sec_tot = {
@@ -302,6 +317,7 @@ ideas = {
 			}
 			traits = {
 				security_minister
+				sec_secret_police_chief
 				totalist
 			}
 		}
@@ -322,9 +338,9 @@ ideas = {
 				security_minister
 				social_democrat
 				social_liberal
+				sec_centrist_educator
 			}
 		}
-		
 		
 		
 		}

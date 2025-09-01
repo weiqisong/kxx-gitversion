@@ -21,7 +21,7 @@ focus_tree = {
       }
     }
   
-    x = -15
+    x = -32
     y = 0
     cost = 0
     search_filters = {
@@ -1150,7 +1150,7 @@ focus_tree = {
         always = no
       }
     }
-    x = -8
+    x = -12
     y = 0
     cost = 0
     search_filters = {
@@ -1252,7 +1252,7 @@ focus_tree = {
 		icon = GFX_goal_SER_NRS
 		 cost = 3
 
-		x = 3
+		x = -10
 		y = 1
     relative_position_id = SER_One_Vojvoda_One_Nation_One_State
 		
@@ -1458,12 +1458,7 @@ focus_tree = {
 		available = {
 			
 		}
-		bypass = {
-			OR = {
-				has_government = authoritarian_democrat
-				has_government = paternal_autocrat
-			}
-		}
+		
 		mutually_exclusive = {
 			focus = SER_retain_the_course_of_history
 		}
@@ -2048,7 +2043,7 @@ focus_tree = {
     id = SER_A_Nascent_Balkan_Democracy
     icon = GFX_goal_generic_elections
     prerequisite = {
-      focus = SER_Draft_A_Constitution
+      focus = SER_Free_The_Vojvodas_Prisoners
     }
     relative_position_id = SER_The_Republican_Proclamation
     x = 0
@@ -3322,7 +3317,7 @@ focus_tree = {
 		icon = GFX_goal_ideology_social_liberal
 		 cost = 3
 
-		x = 3
+		x = 2
 		y = 1
     relative_position_id = SER_A_Nascent_Balkan_Democracy
     prerequisite = {
@@ -3803,7 +3798,7 @@ focus_tree = {
 		 cost = 3
 
 		relative_position_id = SER_Moralistic_Democracy
-		x = 2
+		x = 3
 		y = 6
    mutually_exclusive = {
       focus = SER_our_commitment_to_democracy
@@ -3819,7 +3814,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SER_montenegro_experiment" #Montenegro
-			add_pataut_to_coalition = yes
+			add_authdem_to_coalition = yes
+      add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.1
+			}
+      add_pataut_to_coalition = yes
       add_popularity = {
 				ideology = paternal_autocrat
 				popularity = 0.1
@@ -9043,7 +9043,6 @@ if = {
       factor = 100
     }
     completion_reward = {
-      complete_national_focus = SER_November_Sixth_Dictatorship
       log = "[GetDateText]: [Root.GetName]: Focus SER_pacify_oposition"
       add_political_power = 100
       add_popularity = {
@@ -11923,10 +11922,12 @@ focus = {
 		id = SER_socialist_coalition
 		icon = GFX_goal_ideology_social_democrat
 		cost = 4
-
-		x = 1
-		y = 15
-
+    relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -5
+		y = 1
+    prerequisite = {
+      focus = SER_A_Nascent_Balkan_Democracy
+    }
 		
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -12033,10 +12034,12 @@ focus = {
 		id = SER_radical_coalition
 		icon = GFX_goal_ideology_market_liberal
 		cost = 4
-
-		x = 5
-		y = 15
-
+    relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -13
+		y = 1
+    prerequisite = {
+      focus = SER_A_Nascent_Balkan_Democracy
+    }
 	
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -12118,7 +12121,10 @@ focus = {
 		y = 2
 
 		prerequisite = {
-			focus = SER_radical_coalition
+			focus = SER_further_agricultural_mechanization
+		}
+    prerequisite = {
+			focus = SER_serbian_values_coalition
 		}
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -12159,12 +12165,14 @@ focus = {
 	}
 focus = {
 		id = SER_republican_coalition
-		icon = GFX_goal_ideology_social_liberal
+		icon = GFX_NEE_expand_civil_service
 		cost = 4
-
-		x = 1
-		y = 18
-
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -5
+		y = 4
+  prerequisite = {
+    focus = SER_national_labor_union_council
+  }
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -12177,17 +12185,270 @@ focus = {
 			}
 		}
 	}
-
+  focus = {
+		id = SER_suspend_elections
+		icon = GFX_goal_generic_suspend_constitution
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -4
+		y = 5
+  prerequisite = {
+    focus = SER_republican_coalition
+  }
+  mutually_exclusive = {
+    focus = SER_maintain_left_democracy
+  }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_republican_coalition"
+			custom_effect_tooltip = SER_democracy_is_fucked
+		}
+	}
+  focus = {
+		id = SER_general_union
+		icon = GFX_goal_KIV_encourage_unionism
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -5
+		y = 6
+  prerequisite = {
+    focus = SER_suspend_elections
+  }
+  
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_republican_coalition"
+			
+		}
+	}
+  focus = {
+		id = SER_broad_party_union
+		icon = GFX_RUS_Free_Trade_Unions
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -3
+		y = 6
+  prerequisite = {
+    focus = SER_suspend_elections
+  }
+  
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_republican_coalition"
+			
+		}
+	}
+  
+focus = {
+		id = SER_learn_english_mode
+		icon = GFX_goal_BRG_Liberty_Socialism
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -4
+		y = 7
+  prerequisite = {
+    focus = SER_general_union
+  }
+  prerequisite = {
+    focus = SER_broad_party_union
+  }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_republican_coalition"
+			
+		}
+	}
+  focus = {
+		id = SER_expand_police
+		icon = GFX_goal_NFA_Discipline_Police
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -1
+		y = 6
+  prerequisite = {
+    focus = SER_suspend_elections
+  }
+  
+	ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_republican_coalition"
+			
+		}
+	}
+  focus = {
+		id = SER_ensure_army_support
+		icon = GFX_goal_generic_army_junta
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -2
+		y = 7
+  prerequisite = {
+    focus = SER_expand_police
+  }
+  
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_republican_coalition"
+			
+		}
+	}
+  focus = {
+		id = SER_social_nationalism
+		icon = GFX_goal_HON_Socialist_Banner
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = 0
+		y = 7
+  prerequisite = {
+    focus = SER_expand_police
+  }
+  
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_republican_coalition"
+			
+		}
+	}
+  focus = {
+		id = SER_cooperate_with_capital
+		icon = GFX_goal_ALB_Cooperate_Chiefs_Capital
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -5
+		y = 8
+  prerequisite = {
+    focus = SER_learn_english_mode
+  }
+  
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_republican_coalition"
+			
+		}
+	}
+  focus = {
+		id = SER_serbian_social_democracy
+		icon = GFX_RUS_Stronghold_Of_Social_Democracy
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -3
+		y = 8
+  prerequisite = {
+    focus = SER_learn_english_mode
+  }
+  
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_republican_coalition"
+			
+		}
+	}
+  focus = {
+		id = SER_federalize_process
+		icon = GFX_goal_MNT_federalism
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -1
+		y = 8
+  prerequisite = {
+    focus = SER_learn_english_mode
+  }
+  prerequisite = {
+    focus = SER_social_nationalism
+  }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_republican_coalition"
+			
+		}
+	}
+  focus = {
+		id = SER_make_tukovic_proud
+		icon = GFX_goal_ideology_libsoc
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -4
+		y = 9
+  prerequisite = {
+    focus = SER_cooperate_with_capital
+  }
+   prerequisite = {
+    focus = SER_serbian_social_democracy
+  }
+  
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_republican_coalition"
+			
+		}
+	}
+   focus = {
+		id = SER_puppet_democracy
+		icon = GFX_TRM_Guided_Democracy
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -2
+		y = 10
+  prerequisite = {
+    focus = SER_make_tukovic_proud
+  }
+   prerequisite = {
+    focus = SER_federalize_process
+  }
+  
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_republican_coalition"
+			
+		}
+	}
+  focus = {
+		id = SER_maintain_left_democracy
+		icon = GFX_TRM_Democracy_Prevails
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -6
+		y = 5
+  prerequisite = {
+    focus = SER_republican_coalition
+  }
+  mutually_exclusive = {
+    focus = SER_suspend_elections
+  }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_republican_coalition"
+			add_political_power = 150
+			add_stability = 0.05
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.02
+			}
+		}
+	}
 	focus = {
 		id = SER_venere_revolutions
 		icon = GFX_goal_INS_focus_party_coalition
 		cost = 4
     relative_position_id = SER_republican_coalition
-		x = 1
-		y = 1
+		x = -1
+		y = 3
 
 		prerequisite = {
-			focus = SER_republican_coalition
+			focus = SER_maintain_left_democracy
 		}
 		available = {
 			has_elected_government = yes
@@ -12222,11 +12483,11 @@ focus = {
 		cost = 4
 
 		 relative_position_id = SER_republican_coalition
-		x = -1
-		y = 1
+		x = -2
+		y = 2
 
 		prerequisite = {
-			focus = SER_republican_coalition
+			focus = SER_maintain_left_democracy
 		}
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -12247,8 +12508,8 @@ focus = {
 		cost = 4
 
 		 relative_position_id = SER_republican_coalition
-		x = 0
-		y = 2
+		x = -2
+		y = 4
 
 		prerequisite = {
 			focus = SER_women_liberation_coalition
@@ -12296,10 +12557,12 @@ focus = {
 		id = SER_agrarian_coalition
 		icon = GFX_goal_CZE_agrarians
 		cost = 4
-
-		x = 5
-		y = 18
-
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -13
+		y = 4
+    prerequisite = {
+      focus = SER_free_serbian_economy
+    }
 		
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -12313,17 +12576,326 @@ focus = {
 			}
 		}
 	}
-
+focus = {
+		id = SER_protect_democracy
+		icon = GFX_VNC_model_of_modern_republicanism
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -14
+		y = 5
+  prerequisite = {
+    focus = SER_agrarian_coalition
+  }
+		mutually_exclusive = {
+      focus = SER_guide_of_orjuna
+    }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_agrarian_coalition"
+			add_political_power = 150
+			add_stability = 0.05
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.02
+			}
+		}
+	}
+  focus = {
+		id = SER_guide_of_orjuna
+		icon = GFX_goal_MNT_armanist_exceptionalism
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -12
+		y = 5
+  prerequisite = {
+    focus = SER_agrarian_coalition
+  }
+		mutually_exclusive = {
+      focus = SER_protect_democracy
+    }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_agrarian_coalition"
+		custom_effect_tooltip = SER_democracy_is_fucked
+		}
+	}
+  focus = {
+		id = SER_one_party_democracy
+		icon = GFX_goal_NFA_safe_elections
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -13
+		y = 6
+  prerequisite = {
+    focus = SER_guide_of_orjuna
+  }
+	
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_agrarian_coalition"
+			add_political_power = 150
+			add_stability = 0.05
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.02
+			}
+		}
+	}
+  focus = {
+		id = SER_people_support
+		icon = GFX_goal_TEX_people_yes
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -11
+		y = 6
+  prerequisite = {
+    focus = SER_guide_of_orjuna
+  }
+	
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_agrarian_coalition"
+			add_political_power = 150
+			add_stability = 0.05
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.02
+			}
+		}
+	}
+  focus = {
+		id = SER_improve_yugoslavism
+		icon = GFX_goal_BUL_Yugo_Dream
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -9
+		y = 6
+  prerequisite = {
+    focus = SER_guide_of_orjuna
+  }
+	
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_agrarian_coalition"
+			add_political_power = 150
+			add_stability = 0.05
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.02
+			}
+		}
+	}
+  focus = {
+		id = SER_economy_liberalize
+		icon = GFX_goal_NFA_Liberal_Economic_Boom
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -10
+		y = 7
+  prerequisite = {
+    focus = SER_one_party_democracy
+  }
+	prerequisite = {
+    focus = SER_people_support
+  }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_agrarian_coalition"
+			add_political_power = 150
+			add_stability = 0.05
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.02
+			}
+		}
+	}
+  focus = {
+		id = SER_infitrate_illiya
+		icon = GFX_goal_CRO_republican_yugoslavism
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -8
+		y = 7
+  prerequisite = {
+    focus = SER_improve_yugoslavism
+  }
+	
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_agrarian_coalition"
+			add_political_power = 150
+			add_stability = 0.05
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.02
+			}
+		}
+	}
+  focus = {
+		id = SER_destory_socialism
+		icon = GFX_goal_BEL_Crush_Socialist_Rabble
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -13
+		y = 8
+  prerequisite = {
+    focus = SER_national_bloc
+  }
+	
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_agrarian_coalition"
+			add_political_power = 150
+			add_stability = 0.05
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.02
+			}
+		}
+	}
+  focus = {
+		id = SER_Narodna_Odbrana
+		icon = GFX_goal_CZE_youth_service
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -11
+		y = 8
+  prerequisite = {
+    focus = SER_national_bloc
+  }
+	prerequisite = {
+    focus = SER_infitrate_illiya
+  }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_agrarian_coalition"
+			add_political_power = 150
+			add_stability = 0.05
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.02
+			}
+		}
+	}
+  focus = {
+		id = SER_montenegro_plans
+		icon = GFX_goal_CRO_yugoslav_unification
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -9
+		y = 8
+  prerequisite = {
+    focus = SER_national_bloc
+  }
+	prerequisite = {
+    focus = SER_infitrate_illiya
+  }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_agrarian_coalition"
+			add_political_power = 150
+			add_stability = 0.05
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.02
+			}
+		}
+	}
+  focus = {
+		id = SER_embrace_nationalism
+		icon = GFX_goal_MNT_armed_necessities
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -12
+		y = 9
+  prerequisite = {
+    focus = SER_destory_socialism
+  }
+	prerequisite = {
+    focus = SER_Narodna_Odbrana
+  }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_agrarian_coalition"
+			add_political_power = 150
+			add_stability = 0.05
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.02
+			}
+		}
+	}
+  focus = {
+		id = SER_new_republic
+		icon = GFX_goal_authority
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -10
+		y = 10
+  prerequisite = {
+    focus = SER_embrace_nationalism
+  }
+	prerequisite = {
+    focus = SER_montenegro_plans
+  }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_agrarian_coalition"
+			add_political_power = 150
+			add_stability = 0.05
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.02
+			}
+		}
+	}
+  focus = {
+		id = SER_national_bloc
+		icon = GFX_goal_NZL_conservative_outreach
+		cost = 4
+  relative_position_id = SER_A_Nascent_Balkan_Democracy
+		x = -12
+		y = 7
+  prerequisite = {
+    focus = SER_one_party_democracy
+  }
+	prerequisite = {
+    focus = SER_people_support
+  }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_agrarian_coalition"
+			add_political_power = 150
+			add_stability = 0.05
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.02
+			}
+		}
+	}
 	focus = {
 		id = SER_integrate_royalists
 		icon = GFX_focus_rom_royal_dictatorship
 		cost = 4
-    relative_position_id = SER_agrarian_coalition
-		x = 1
-		y = 1
+    relative_position_id = SER_protect_democracy
+		x = 0
+		y = 2
 
 		prerequisite = {
-			focus = SER_agrarian_coalition
+			focus = SER_protect_democracy
 		}
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -12350,12 +12922,12 @@ focus = {
 		icon = GFX_goal_OTT_Railroad
 		cost = 4
 
-		relative_position_id = SER_agrarian_coalition
+		relative_position_id = SER_protect_democracy
 		x = -1
 		y = 1
 
 		prerequisite = {
-			focus = SER_agrarian_coalition
+			focus = SER_protect_democracy
 		}
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -12388,14 +12960,16 @@ focus = {
 
 	focus = {
 		id = SER_further_agricultural_mechanization_radical
-		icon = GFX_goal_generic_mechanisation
+		icon = GFX_RUS_Agricultural_Mechanization
 		cost = 4
-relative_position_id = SER_agrarian_coalition
-		x = 0
-		y = 2
-
+relative_position_id = SER_protect_democracy
+		x = -1
+		y = 3
+  prerequisite = {
+			focus = SER_integrate_royalists
+		}
 		prerequisite = {
-			focus = SER_agrarian_coalition
+			focus = SER_protect_democracy
 		}
 		available = {
 			has_completed_focus = SER_Montenegrin_Opium

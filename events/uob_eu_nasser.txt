@@ -147,17 +147,15 @@ country_event = { # watabi habiiibi
 			ideology = paternal_autocrat
 			popularity = 0.2
 		}
-		remove_ideas = EGY_iqta
-		remove_ideas_with_trait = head_of_government
-		add_ideas = EGY_Gamal_Abdel_Nasser_hog_sde
-		remove_ideas_with_trait = economy_minister
-		add_ideas = EGY_Ali_Sabri_eco_tot
-		remove_ideas_with_trait = foreign_minister
-		add_ideas = EGY_Salah_Salem_for_sde
-		remove_ideas_with_trait = security_minister
-		add_ideas = EGY_Kamal_el_Din_Hussein_sec_rso
+		remove_all_ministers = yes
+		add_ideas = {
+		EGY_Shuhdi_Atiya_ash_Shafi_hog_rso
+		EGY_Ali_Sabri_eco_tot
+		EGY_Salah_Salem_for_sde
+		EGY_Kamal_el_Din_Hussein_sec_rso
 	}
-
+	}
+	    clr_country_flag = LEADER_GUI_VISIBLE
 }
 
 country_event = { # aneksja event chain
@@ -979,18 +977,18 @@ country_event = { # Naguib Front
 		}
 		set_party_name = {
 			ideology = national_populist
-			long_name = "Liberation Rally - Muslim Brotherhood"
-			name = "Liberation Rally"
+			long_name = "解放大会 - 穆兄会"
+			name = "解放大会"
 		}
 		set_party_name = {
 			ideology = paternal_autocrat
-			long_name = "Liberation Rally - Free Officers"
-			name = "Liberation Rally"
+			long_name = "解放大会 - 自由军官"
+			name = "解放大会"
 		}
 		set_party_name = {
 			ideology = authoritarian_democrat
-			long_name = "Liberation Rally - National Democrats"
-			name = "Liberation Rally"
+			long_name = "解放大会 - 民族党"
+			name = "解放大会"
 		}
 		set_country_leader_ideology = pataut_popular_patriotism_subtype
 	}
@@ -1009,9 +1007,7 @@ country_event = { # removal of Nasser
 	option = { #Nasser
 		name = "我们不再需要你了。"
 		kill_ideology_leader = radical_socialist
-	}
-	
-	
+	}	
 
 }
 country_event = { # centrist political party formage
@@ -1025,28 +1021,28 @@ country_event = { # centrist political party formage
 		name = "埃及终于实现了统一！"
 		set_party_name = {
 			ideology = radical_socialist
-			long_name = "National Union"
-			name = "National Union"
+			long_name = "国民联盟"
+			name = "国民联盟"
 		}
 		set_party_name = {
 			ideology = social_democrat
-			long_name = "National Union"
-			name = "National Union"
+			long_name = "国民联盟"
+			name = "国民联盟"
 		}
 		set_party_name = {
 			ideology = social_liberal
-			long_name = "National Union"
-			name = "National Union"
+			long_name = "国民联盟"
+			name = "国民联盟"
 		}
 		set_party_name = {
 			ideology = social_conservative
-			long_name = "National Union"
-			name = "National Union"
+			long_name = "国民联盟"
+			name = "国民联盟"
 		}
 		set_party_name = {
 			ideology = authoritarian_democrat
-			long_name = "National Union"
-			name = "National Union"
+			long_name = "国民联盟"
+			name = "国民联盟"
 		}
 		add_popularity = {
 			ideology = radical_socialist
@@ -1068,7 +1064,11 @@ country_event = { # centrist political party formage
 			ideology = authoritarian_democrat
 			popularity = 0.15
 		}
-		
+		add_radsoc_to_coalition = yes
+		add_socdem_to_coalition = yes
+		add_soclib_to_coalition = yes
+		add_soccon_to_coalition = yes
+		add_authdem_to_coalition = yes
 	}
 	
 }
@@ -1084,23 +1084,23 @@ country_event = { # nasserist political party formage
 		name = "米苏尔联队"
 		set_party_name = {
 			ideology = syndicalist
-			long_name = "Tagammu Organization"
-			name = "Tagammu Organization"
+			long_name = "民族进步统一集团"
+			name = "民族进步统一集团"
 		}
 		set_party_name = {
 			ideology = radical_socialist
-			long_name = "Arab Socialist Union"
-			name = "Arab Socialist Union"
+			long_name = "阿拉伯社会主义联盟"
+			name = "阿拉伯社会主义联盟"
 		}
 		set_party_name = {
 			ideology = social_democrat
-			long_name = "Liberal Socialist Organization"
-			name = "Liberal Socialist Organization"
+			long_name = "自由社会主义集团"
+			name = "自由社会主义集团"
 		}
 		set_party_name = {
 			ideology = social_liberal
-			long_name = "Arab Socialist Organization"
-			name = "Arab Socialist Organization"
+			long_name = "阿拉伯社会主义集团"
+			name = "阿拉伯社会主义集团"
 		}
 		add_popularity = {
 			ideology = syndicalist
@@ -1118,9 +1118,12 @@ country_event = { # nasserist political party formage
 			ideology = social_liberal
 			popularity = 0.15
 		}
+	add_syn_to_coalition = yes
+	add_tot_to_coalition = yes
+	add_socdem_to_coalition = yes
+	add_soclib_to_coalition = yes
 	}
-	
-	
+
 
 }
 

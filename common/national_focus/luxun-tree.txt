@@ -442,26 +442,13 @@ focus_tree = {
 					OR = {
 					AND = {
 					has_country_flag = tianjin_revolution_secured
-					has_country_flag = hongkong_revolution_secured
 					}
-					
 					AND = {
 					has_country_flag = tianjin_revolution_failled
-					has_country_flag = hongkong_revolution_failled
 					}
-					
-					AND = {
-					has_country_flag = tianjin_revolution_secured
-					has_country_flag = hongkong_revolution_failled
-					}
-					
-					AND = {
-					has_country_flag = tianjin_revolution_failled
-					has_country_flag = hongkong_revolution_secured
 					}
 					}
 				}
-		}
 		completion_reward = {
 		add_political_power = 50
 		add_stability = 0.05
@@ -4489,5 +4476,4 @@ focus_tree = {
 		country_event = shanghai_socialist_for.1
 		}
 	}
-
 }

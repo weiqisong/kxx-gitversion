@@ -306,6 +306,13 @@ country_event = { # Qing Magistrates Arrest Zongchang
 				desc = "POLITICS_SONG_ZHEYUAN_DESC"
 				picture = "gfx/leaders/SQI/Portrait_Shandong_Song_Zheyuan.png"
 				expire = "1965.1.1"
+				ideology = neo_confucianism_subtype
+			}
+			create_country_leader = {
+				name = "Song Zheyuan"
+				desc = "POLITICS_SONG_ZHEYUAN_DESC"
+				picture = "gfx/leaders/SQI/Portrait_Shandong_Song_Zheyuan.png"
+				expire = "1965.1.1"
 				ideology = pataut_warlordism_subtype
 			}
 			set_party_name = {
@@ -322,8 +329,12 @@ country_event = { # Qing Magistrates Arrest Zongchang
 		}
 		country_event = { id = shandong.992 days = 7 } # Zongchang and Yiguadao Riot
 		set_politics = {
-			ruling_party = authoritarian_democrat
+			ruling_party = social_conservative
 			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.15
 		}
 		set_country_flag = SQI_Zheyuan_beat_Zongchang
 		add_opinion_modifier = { target = FNG modifier = embargo }
@@ -409,7 +420,7 @@ country_event = {# Mount Tai Outraged at Zongchang
 		}
 	}	
 	option = { #burn them all
-		name = "Why not give fire a try?" 
+		name = "放把火，烧死他们！" 
 		add_political_power = -15
 		hidden_effect = {
 			country_event = {
@@ -3699,7 +3710,7 @@ country_event = {#
 country_event = {#
 	id = shandong.457
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "Coup of the Red Swastika Society"
+	title = "红万字会崛起"
 	desc = shandong.457.desc
 
 
@@ -3708,46 +3719,74 @@ country_event = {#
 
 	option = {
 		set_cosmetic_tag = SQI_RED
-		name = shandong.457.a
-		set_politics = { ruling_party = authoritarian_democrat }
-		
-		set_country_leader_name = {
-				ideology = authoritarian_democrat
-				name = "熊希龄"
-			}
-			
-		set_country_leader_portrait = {
-				ideology = authoritarian_democrat
-				portrait = "gfx/leaders/SQI/Portrait_SQI_Xiong_Xiling.png"
-			}
-			
+		name = "稳定复归。"
+		set_politics = { ruling_party = paternal_autocrat }
+		create_country_leader = {
+			name = "熊希龄"
+			picture = "gfx/leaders/SQI/Portrait_SQI_Xiong_Xiling.png"
+			expire = "1965.1.1"
+			ideology = pataut_social_confucianism_subtype
+		}	
 			set_party_name = { 
-				ideology = authoritarian_democrat
-				name = "红万字社"
-			long_name = "红万字社"
-
-					
+				ideology = paternal_autocrat
+				name = "红万字会"
+				long_name = "红万字会"			
 			}
-			
 			set_party_name = { 
 				ideology = national_populist
-				name = "红万字社"
-			long_name = "红万字社"
-
-					
+				name = "红万字会"
+				long_name = "红万字会"	
 			}
 			set_party_name = { 
 				ideology = social_democrat
-				name = "红万字社"
-			long_name = "红万字社"
-
-					
+				name = "红万字会"
+				long_name = "红万字会"	
 			}
-			set_country_leader_ideology = red_tinted_autocracy_subtype
+			set_party_name = { 
+				ideology = radical_socialist
+				name = "红万字会"
+				long_name = "红万字会"	
+			}
+			add_radsoc_to_coalition = yes
+			add_socdem_to_coalition = yes
+			add_natpop_to_coalition = yes
 			complete_national_focus = SQI_the_shandong_takeover
 			set_country_flag = not_china_republic
 			add_ideas = {
 			SQI_xiong_xiling_hog_ade
+			SQI_Ding_Shujing_for_ade
+			SQI_Han_Qichang_eco_ade
+			SQI_Wang_Xugao_sec_pau
+			}
+			create_field_marshal = {
+				name = "熊希龄"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Xiong_Xiling.png"
+				trait = {}
+				skill = 1
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_field_marshal = {
+				name = "熊十力"
+				portrait_path = "gfx/leaders/SQI/Portrait_Xiong_Shili.png"
+				trait = {}
+				skill = 1
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_field_marshal = {
+				name = "毛彦文"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Mao_Yenwan.png"
+				trait = {}
+				skill = 1
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
 			}
 		}	
 	}
@@ -3755,40 +3794,48 @@ country_event = {#
 	country_event = {#
 	id = shandong.470
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "Fate of Two Dragons"
+	title = "二龙之争"
 	desc = shandong.470.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
 		
-		name = "Shili takes power!"
-		
-		set_country_leader_name = {
-				ideology = authoritarian_democrat
-				name = "熊十力"
-			}
-			
-		set_country_leader_portrait = {
-				ideology = authoritarian_democrat
-				portrait = "gfx/leaders/SQI/Portrait_Xiong_Shili.png"
-			}
-		
-			remove_ideas = {
-			SQI_xiong_xiling_hog_ade
-			}
+		name = "熊十力掌权!"
+		create_country_leader = {
+			name = "熊十力"
+			picture = "gfx/leaders/SQI/Portrait_Xiong_Shili.png"
+			expire = "1965.1.1"
+			ideology = socdem_social_confucianism_subtype
+		}	
+		set_politics = {
+			ruling_party = social_democrat
+		}
+		add_radsoc_to_coalition = yes
+		add_pataut_to_coalition = yes
+		add_natpop_to_coalition = yes
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.15
+		}
+			remove_all_ministers = yes
 			add_ideas = {
 			SQI_xiong_shili_hog_npo
+			SQI_Ren_Jiyu_for_ade
+			SQI_Cao_Fulin_eco_ade
+			SQI_Qu_Yingguang_sec_ade
 			}
-			set_country_leader_ideology = neo_confucianism_subtype
 		}
 		
 		
 		option = {
-		name = "The vote fails!"
-		
+		name = "投票失败!"
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.15
+		}
 		}
 	
 	}
@@ -3798,62 +3845,54 @@ country_event = {#
 	country_event = {#
 	id = shandong.471
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "Roerich's Ideas Reach Shili"
+	title = "真正的儒家思想？"
 	desc = shandong.471.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = shandong.471.a
-		set_politics = { ruling_party = radical_socialist }
-		set_country_leader_name = {
+		name = "熊十力参悟儒家中的社会主义真谛。"
+		create_country_leader = {
+			name = "熊十力"
+			picture = "gfx/leaders/SQI/Portrait_Xiong_Shili.png"
+			expire = "1965.1.1"
+			ideology = radsoc_social_confucianism_subtype
+		}	
+			set_politics = { ruling_party = radical_socialist }
+			add_popularity = {
 				ideology = radical_socialist
-				name = "熊十力"
+				popularity = 0.25
 			}
-			
-		set_country_leader_portrait = {
-				ideology = radical_socialist
-				portrait = "gfx/leaders/SQI/Portrait_Xiong_Shili.png"
-			}
-		
-			
-			set_party_name = { 
-				ideology = radical_socialist
-				name = "红万字社"
-			long_name = "红万字社"
-
-					
-			}
-			set_country_leader_ideology = radsoc_esoteric_leninism_subtype
-			add_authdem_to_coalition = yes
+			add_socdem_to_coalition = yes
+			add_pataut_to_coalition = yes
+			add_natpop_to_coalition = yes
 		}
 		option = {
-		name = "Ignore These Rants. Stay the Current Course"
+		name = "无视这些想法。"
 		}
 	
 	}
 	country_event = {#
 	id = shandong.472
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "Attempted Assassination on Xiong Xiling"
+	title = "熊希龄遇刺"
 	desc = shandong.472.d
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = shandong.472.a
-		set_party_name = { 
-				ideology = paternal_autocrat
-				name = "红万字社"
-			long_name = "红万字社"
-
-			}
-		add_authdem_to_coalition = yes
-		set_politics = { ruling_party = paternal_autocrat }
+		name = "熊希龄死了，毛彦文接任。"
+		
+		
+		set_politics = { ruling_party = national_populist }
+		add_radsoc_to_coalition = yes
+		add_socdem_to_coalition = yes
+		add_pataut_to_coalition = yes
+		remove_ideas = SQI_xiong_xiling_hog_ade
 		add_ideas = {
 		SQI_mao_yenwan_hog_npo
 		}
@@ -3861,23 +3900,13 @@ country_event = {#
 			name = "毛彦文"
 			picture = "gfx/leaders/SQI/Portrait_SQI_Mao_Yenwan.png"
 			expire = "1965.1.1"
-			ideology = pataut_occultism_subtype
+			ideology = natpop_social_confucianism_subtype
 		}
 		}
 		
 		option = {
-		name = shandong.472.b
-		set_politics = { ruling_party = social_democrat }
-		set_country_leader_name = {
-				ideology = social_democrat
-				name = "熊希龄"
-			}
-		set_country_leader_portrait = {
-				ideology = social_democrat
-				portrait = "gfx/leaders/SQI/Portrait_SQI_Xiong_Xiling.png"
-			}
-			set_country_leader_ideology = socdem_buddhist_socialism_subtype
-			add_authdem_to_coalition = yes
+		name = "熊希龄幸免于难。"
+		
 		}
 	
 	}
@@ -3886,16 +3915,16 @@ country_event = {#
 	country_event = {#
 	id = shandong.458
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "Protests From the Crescent Moon Society"
+	title = "新月社组织抗议"
 	desc = shandong.458.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
 		
-		name = "Keep an Eye On Them"
+		name = "盯紧点"
 		}
 		
 		
@@ -3905,100 +3934,164 @@ country_event = {#
 	country_event = {#
 	id = shandong.459
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "Protest to Revolution"
+	title = "从抗议到革命"
 	desc = shandong.459.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
 		
-		name = "The Protestors Storm the Government"
+		name = "中国民主自此开始。"
 		complete_national_focus = SQI_the_moon_shines_throughout_china
 		set_cosmetic_tag = SQI_REP
-		
-		set_country_leader_name = {
-				ideology = social_democrat
-				name = "闻一多"
-			}
-			
-		set_country_leader_portrait = {
-				ideology = social_democrat
-				portrait = "gfx/leaders/SQI/Portrait_SQI_Wen_Yiduo.png"
-			}
-			
+		create_country_leader = {
+			name = "闻一多"
+			picture = "gfx/leaders/SQI/Portrait_SQI_Wen_Yiduo.png"
+			expire = "1965.1.1"
+			ideology = soclib_liberal_conservative_subtype
+		}
+		create_country_leader = {
+			name = "徐志摩"
+			picture = "gfx/leaders/SQI/Portrait_SQI_Xu_Zhimo.png"
+			expire = "1965.1.1"
+			ideology = marlib_national_liberalism_subtype
+		}
+		create_country_leader = {
+			name = "陶行知"
+			picture = "gfx/leaders/SQI/Portrait_SQI_Tao_Xingzhi.png"
+			expire = "1965.1.1"
+			ideology = socdem_agrarianism_subtype
+		}
 			set_party_name = { 
 				ideology = social_democrat
 				name = "新月社"
 				long_name = "新月社"	
 			}
-			
-			
-			set_country_leader_name = {
-				ideology = social_liberal
-				name = "徐志摩"
-			}
-			
-		set_country_leader_portrait = {
-				ideology = social_liberal
-				portrait = "gfx/leaders/SQI/Portrait_SQI_Xu_Zhimo.png"
-			}
-			
 			set_party_name = { 
 				ideology = social_liberal
 				name = "新月社"
 				long_name = "新月社"
-
-					
 			}
-			
-			
-		}		
-		
-	
+			set_party_name = { 
+				ideology = market_liberal
+				name = "新月社"
+				long_name = "新月社"
+			}
+			create_corps_commander = {
+				name = "闻一多"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Wen_Yiduo.png"
+				trait = {}
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "徐志摩"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Xu_Zhimo.png"
+				traits = {}
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_field_marshal = {
+				name = "赵九章"
+				portrait_path = "gfx/leaders/SQI/Portrait_CNH_Zhao_Jiuzhang.png"
+				traits = {}
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "陆定一"
+				portrait_path = "gfx/leaders/SQI/Portrait_LEC_Lu_Dingyi.png"
+				traits = {}
+				skill = 1
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "冯亦代"
+				portrait_path = "gfx/leaders/SQI/Portrait_CNH_Feng_Yidai.png"
+				traits = {}
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "陶行知"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Tao_Xingzhi.png"
+				traits = {}
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 1
+			}
+		}			
 	}
 	
 	country_event = {#
 	id = shandong.460
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "Democracies Future"
+	title = "山东的第一次选举"
 	desc = shandong.460.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
 		
-		name = "The Liberals Secure the Province"
+		name = "徐志摩取胜"
 		set_politics = { ruling_party = social_liberal }
 		set_country_leader_ideology = national_liberalism_subtype
+		remove_all_ministers = yes
+		add_ideas = {
+			SQI_xu_zhimo_hog_sli
+			SQI_chen_mengjia_eco_sli
+			SQI_pan_guandan_for_sli
+			SQI_liang_shih_chiu_sec_sli
+		}
 		}
 		
 		option = {
 		
-		name = "Nationalists Proclaim Victory"
+		name = "闻一多取胜"
 		set_politics = { ruling_party = social_democrat }
-		set_country_leader_ideology = socdem_left_nationalism_subtype
+		remove_all_ministers = yes
+		add_ideas = {
+			SQI_wen_yiduo_hog_sde
+			SQI_shen_congwen_eco_sde
+			SQI_pan_guandan_for_sli
+			SQI_liang_shih_chiu_sec_sli
+		}
 		}
 
 		option = {
 		
-		name = "Moderate Agrarians Reign Supreme"
+		name = "陶行知取胜"
 		set_politics = { ruling_party = social_democrat }
 		
-		set_country_leader_name = {
-				ideology = social_democrat
-				name = "陶行知"
+		
+			remove_all_ministers = yes
+			add_ideas = {
+				SQI_tao_xingzhi_hog_sde
+				SQI_shen_congwen_eco_sde
+				SQI_pan_guandan_for_sli
+				SQI_liang_shih_chiu_sec_sli
 			}
-			
-		set_country_leader_portrait = {
-				ideology = social_democrat
-				portrait = "gfx/leaders/SQI/Portrait_SQI_Tao_Xingzhi.png"
-			}
-			
-			set_country_leader_ideology = socdem_mao_zedong_thought_subtype
 		}
 		
 	
@@ -4009,7 +4102,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "Join the KMT?"
 	desc = shandong.461.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4053,13 +4146,14 @@ country_event = {#
 		set_party_name = { 
 				ideology = radical_socialist
 				name = "新月社"
-				long_name = "新月社"
-
-					
+				long_name = "新月社"	
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.7
 			}
 		}
-		
-	
+
 	}
 	
 	country_event = {#
@@ -4067,7 +4161,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "A Proposition To the Landlords"
 	desc = shandong.462.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4089,7 +4183,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "An Offer From Shandong"
 	desc = "News from shandong reaches Hu Shih, in which an offer is made. The offer is the peaceful reunification between Shandong and Zhili for a better republican future. Shih ponders and then accepts the offer."
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4115,7 +4209,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "The Red Bandit of Jinan"
 	desc = shandong.464.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4134,7 +4228,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "The Battle of Jinan"
 	desc = shandong.465.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4148,7 +4242,7 @@ country_event = {#
 		set_cosmetic_tag = SQI_REVOLUTION
 		set_country_leader_name = {
 				ideology = totalist
-				name = "8th Route Army Council"
+				name = "军委八路军分会"
 			}
 			
 		set_country_leader_portrait = {
@@ -4167,8 +4261,8 @@ country_event = {#
 		
 		set_party_name = { 
 				ideology = totalist
-				name = "8RA/AJSF"
-				long_name = "8th Route Army/Shandong Revolutionary Society/Anti-Japanese Solidarity Front"
+				name = "八路军/抗日团结阵线"
+				long_name = "八路军/山东革命会/抗日团结阵线"
 					
 			}
 			
@@ -4182,7 +4276,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "Deciding the New Leadership"
 	desc = shandong.466.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4195,7 +4289,7 @@ country_event = {#
 		
 		set_country_leader_name = {
 				ideology = totalist
-				name = "Xi Zhongxun"
+				name = "习仲勋"
 			}
 			
 		set_country_leader_portrait = {
@@ -4204,17 +4298,129 @@ country_event = {#
 			}
 			
 			set_country_leader_ideology = red_junta_subtype
-			
-			
-		
-		
+
+			create_field_marshal = {
+				name = "习仲勋"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Xi_Zhongxun.png"
+				traits = { thorough_planner  inspirational_leader }
+				skill = 2
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "邓恩铭"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Deng_Enming.png"
+				traits = { logistics_wizard  infantry_leader }
+				skill = 2
+				attack_skill = 4
+				defense_skill = 5
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "薄一波"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Bo_Yibo.png"
+				traits = { trait_cautious  int_logistics_specialist }
+				skill = 1
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 5
+			}
+			create_field_marshal = {
+				name = "军委八路军分会"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_8th_Route_Army.png"
+				traits = { incorporeal }
+				skill = 1
+				attack_skill = 5
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 5
+			}
+			create_corps_commander = {
+				name = "张春桥"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Zhang_Chunqiao.png"
+				traits = { militias_expert guerilla_fighter }
+				skill = 1
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "万里"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Wan_Li.png"
+				traits = { guerilla_fighter scavenger }
+				skill = 1
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "陈云"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Chen_Yun.png"
+				traits = { guerilla_fighter scavenger }
+				skill = 1
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "谢富治"
+				portrait_path = "gfx/leaders/SQI/Portrait_Xie_Fuzhi.png"
+				traits = { guerilla_fighter trickster adaptable }
+				skill = 1
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "凯丰"
+				portrait_path = "gfx/leaders/SQI/Portrait_Kai_feng.png"
+				traits = { guerilla_fighter career_officer }
+				skill = 1
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "陈伯达"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Chen_Boda.png"
+				traits = { bold trait_engineer }
+				skill = 1
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "邓小平"
+				portrait_path = "gfx/leaders/SQI/Portrait_Deng_Xiaoping.png"
+				traits = { guerilla_fighter infantry_leader }
+				skill = 1
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+
 		set_party_name = { 
 				ideology = totalist
-				name = "8th Route Army"
-				long_name = "8th Route Army"
-
-				
-					
+				name = "八路军"
+				long_name = "八路军"
+			}
+			remove_all_ministers = yes
+			add_ideas = {
+				SQI_xi_zhongxun_hog_tot
+				SQI_bo_yibo_eco_rso
+				SQI_zhang_chunqiao_hog_tot
+				SQI_xu_haidong_sec_tot
 			}
 		}
 		
@@ -4226,25 +4432,138 @@ country_event = {#
 		
 		set_country_leader_name = {
 				ideology = totalist
-				name = "Deng Enming"
+				name = "邓恩铭"
 			}
 			
 		set_country_leader_portrait = {
 				ideology = totalist
 				portrait = "gfx/leaders/SQI/Portrait_SQI_Deng_Enming.png"
 			}
+
 			
 			set_country_leader_ideology = tot_anti_japaneseism_subtype
-			
-			
-		
-		
+			create_field_marshal = {
+				name = "邓恩铭"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Deng_Enming.png"
+				traits = { logistics_wizard  thorough_planner organizer }
+				skill = 2
+				attack_skill = 4
+				defense_skill = 5
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+			name = "习仲勋"
+			portrait_path = "gfx/leaders/SQI/Portrait_SQI_Xi_Zhongxun.png"
+			traits = { thorough_planner inspirational_leader }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "薄一波"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Bo_Yibo.png"
+				traits = { trait_cautious int_logistics_specialist }
+				skill = 1
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 5
+			}
+			create_corps_commander = {
+				name = "军委八路军分会"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_8th_Route_Army.png"
+				traits = { incorporeal }
+				skill = 1
+				attack_skill = 5
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 5
+			}
+			create_corps_commander = {
+				name = "张春桥"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Zhang_Chunqiao.png"
+				traits = { militias_expert guerilla_fighter }
+				skill = 1
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "万里"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Wan_Li.png"
+				traits = { guerilla_fighter scavenger }
+				skill = 1
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "陈云"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Chen_Yun.png"
+				traits = { guerilla_fighter trickster }
+				skill = 1
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "谢富治"
+				portrait_path = "gfx/leaders/SQI/Portrait_Xie_Fuzhi.png"
+				traits = { guerilla_fighter trickster adaptable }
+				skill = 1
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "凯丰"
+				portrait_path = "gfx/leaders/SQI/Portrait_Kai_feng.png"
+				traits = { guerilla_fighter career_officer }
+				skill = 1
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "陈伯达"
+				portrait_path = "gfx/leaders/SQI/Portrait_SQI_Chen_Boda.png"
+				traits = { bold trait_engineer }
+				skill = 1
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "邓小平"
+				portrait_path = "gfx/leaders/SQI/Portrait_Deng_Xiaoping.png"
+				traits = { guerilla_fighter infantry_leader }
+				skill = 1
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+
 		set_party_name = { 
 				ideology = totalist
-				name = "Anti-Japanese Solidarity Front"
-								long_name = "Anti-Japanese Solidarity Front"
-
-					
+				name = "抗日团结阵线"
+		   long_name = "抗日团结阵线"
+			}
+			remove_all_ministers = yes
+			add_ideas = {
+				SQI_deng_enming_hog_tot
+				SQI_wang_li_eco_tot
+				SQI_chen_boda_for_tot
+				SQI_xu_haidong_sec_tot
 			}
 		}
 		
@@ -4259,7 +4578,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "Shandong Arrest Our Diplomats"
 	desc = shandong.467.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4282,7 +4601,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "Japan Demands That We Release the Diplomats"
 	desc = shandong.468.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4313,7 +4632,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "Shandong Says No"
 	desc = shandong.469.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4414,7 +4733,7 @@ country_event = {#
 
 country_event = {#
 	id = shandong.474
-	title = "Power Vacuum in Shandong"
+	title = "山东的权力真空"
 	desc = shandong.474.desc
 	picture = GFX_report_event_generic_riot
 	fire_only_once = yes
@@ -4454,7 +4773,7 @@ country_event = {#
 	}
 	}
 	option = {
-		name = "The people seek spiritual guidance in these troubling times."
+		name = "人民，在乱世当中寻求精神的指引。"
 		country_event = {
 		id = shandong.457 #Red Swastika Coup
 		days = 2
@@ -4462,7 +4781,7 @@ country_event = {#
 		}
 		
 		option = {
-		name = "The people, now free at last from tyranny, only want more liberty."
+		name = "人民，刚从暴政中解脱，寻求更多的自由。"
 		country_event = {
 		id = shandong.459 #Shandong Democracy
 		days = 2
@@ -4470,7 +4789,7 @@ country_event = {#
 		}
 
 	option = {
-		name = "The people, as always, wish for the end of foreign subjugation."
+		name = "人民，一如既往，寻求驱逐外国势力影响。"
 		country_event = {
 		id = shandong.465 #Red bandit
 		days = 2
