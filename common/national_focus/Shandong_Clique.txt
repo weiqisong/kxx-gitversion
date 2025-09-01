@@ -3189,8 +3189,11 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_MANPOWER
 		}
-		prerequisite = { focus = SQITWO_denouncing_the_japanese_menance  }
-		prerequisite = { focus = SQITWO_ultranationalist_victory  }
+		prerequisite = { 
+			focus = SQITWO_denouncing_the_japanese_menance  
+			focus = SQITWO_ultranationalist_victory
+		}
+		
 		completion_reward = {
 		add_manpower = -100
 		add_political_power = 100
@@ -3600,7 +3603,73 @@ focus_tree = {
 				type = puppet_wargoal_focus
 				target = QIE
 			}
-		
+		hidden_effect = {
+			SQI = {
+				every_state = {		
+			limit = {
+			OR = {
+	is_core_of = LEP
+	is_core_of = CHI
+	is_core_of = SQI
+	is_core_of = ANQ
+	is_core_of = QIE
+	is_core_of = FNG
+	is_core_of = GXC
+	is_core_of = YUN
+	is_core_of = XSM
+	is_core_of = Mon
+	is_core_of = HNN
+	is_core_of = shx
+	is_core_of = szc
+	is_core_of = lec
+	is_core_of = sik
+	is_core_of = tib
+	is_core_of = TAI
+	is_core_of = JST
+	}
+			}					
+	add_core_of = SQI
+							}
+	add_state_core = 537
+	add_state_core = 525
+	add_state_core = 527
+	add_state_core = 858
+	add_state_core = 745
+	add_state_core = 1246
+	add_state_core = 409
+	add_state_core = 561
+	add_state_core = 560
+	add_state_core = 657
+	add_state_core = 654
+	add_state_core = 1293
+	add_state_core = 811
+	add_state_core = 329
+	add_state_core = 729
+	add_state_core = 600
+	add_state_core = 1046
+	add_state_core = 802
+	add_state_core = 1066
+	add_state_core = 595
+	add_state_core = 1044
+	add_state_core = 1045
+	add_state_core = 1069
+	add_state_core = 803
+	add_state_core = 1068
+	add_state_core = 1067
+	add_state_core = 596
+	add_state_core = 613
+	add_state_core = 1014
+	add_state_core = 606
+	add_state_core = 1050
+	add_state_core = 598
+	add_state_core = 1047
+	add_state_core = 1064
+	add_state_core = 597
+	add_state_core = 1065
+	add_state_core = 996
+	add_state_core = 744
+		}
+		}
 		
 		}
 	}
@@ -3657,7 +3726,73 @@ focus_tree = {
 				type = puppet_wargoal_focus
 				target = QIE
 			}
-
+hidden_effect = {
+			SQI = {
+				every_state = {		
+			limit = {
+			OR = {
+	is_core_of = LEP
+	is_core_of = CHI
+	is_core_of = SQI
+	is_core_of = ANQ
+	is_core_of = QIE
+	is_core_of = FNG
+	is_core_of = GXC
+	is_core_of = YUN
+	is_core_of = XSM
+	is_core_of = Mon
+	is_core_of = HNN
+	is_core_of = shx
+	is_core_of = szc
+	is_core_of = lec
+	is_core_of = sik
+	is_core_of = tib
+	is_core_of = TAI
+	is_core_of = JST
+	}
+			}					
+	add_core_of = SQI
+							}
+	add_state_core = 537
+	add_state_core = 525
+	add_state_core = 527
+	add_state_core = 858
+	add_state_core = 745
+	add_state_core = 1246
+	add_state_core = 409
+	add_state_core = 561
+	add_state_core = 560
+	add_state_core = 657
+	add_state_core = 654
+	add_state_core = 1293
+	add_state_core = 811
+	add_state_core = 329
+	add_state_core = 729
+	add_state_core = 600
+	add_state_core = 1046
+	add_state_core = 802
+	add_state_core = 1066
+	add_state_core = 595
+	add_state_core = 1044
+	add_state_core = 1045
+	add_state_core = 1069
+	add_state_core = 803
+	add_state_core = 1068
+	add_state_core = 1067
+	add_state_core = 596
+	add_state_core = 613
+	add_state_core = 1014
+	add_state_core = 606
+	add_state_core = 1050
+	add_state_core = 598
+	add_state_core = 1047
+	add_state_core = 1064
+	add_state_core = 597
+	add_state_core = 1065
+	add_state_core = 996
+	add_state_core = 744
+		}
+		}
 		}
 	}
 

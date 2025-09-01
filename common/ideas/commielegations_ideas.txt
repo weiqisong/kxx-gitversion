@@ -1611,7 +1611,7 @@ ideas = {
 		}
 		SQI_our_national_duty = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
-			picture = SKM_red_sun
+			picture = NFA_medium_conscript
 			name = "民族职责"
 			modifier = {
 				army_infantry_attack_factor = 0.1
@@ -1634,7 +1634,7 @@ ideas = {
 				tag = JAP
 				attack_bonus_against = 0.15
 				defense_bonus_against = 0.15
-				breakthrough_factor = 0.15
+				breakthrough_bonus_against = 0.15
 			}
 		}
 		SQI_marxism = {
