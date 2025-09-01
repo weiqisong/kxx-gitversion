@@ -1,0 +1,647 @@
+focus_tree = {
+	id = QIO-soc-tree
+	country = {
+		factor = 0
+	modifier = {
+			add = 10
+			tag = QIO
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 0 y = 3050 }
+	shared_focus = GXC_shared_unification
+
+
+	#revolution trimuphant
+	focus = {
+		id = QIO_revolution
+		icon = GFX_goal_QIO_revolution
+		x = 8
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#enact revolutionary zone
+	focus = {
+		id = QIO_revolutionary_zone
+		icon = GFX_goal_QIO_revolutionary_zone
+		relative_position_id = QIO_revolution
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_revolution } 
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = QIO_isolated_upon_the_seas
+		add_idea = QIO_soviet_base_established
+		}
+		}
+	}
+	#new military plan
+	focus = {
+		id = QIO_military_plan
+		icon = GFX_goal_generic_socialist_revolution
+		relative_position_id = QIO_revolution
+		x = 5
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_military_plan } 
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = QIO_local_militias
+		add_idea = QIO_local_militias_1
+		}
+		}
+	}
+	#gurilla units raise
+	focus = {
+		id = QIO_gurilla_units
+		icon = GFX_goal_reform_socialist_army
+		relative_position_id = QIO_revolution
+		x = 5
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_revolutionary_zone } 
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = QIO_local_militias
+		add_idea = QIO_local_militias_1
+		}
+		hidden_effect = {
+		load_oob = QIO_raised_units
+		}
+		}
+	}
+	#international smuggling
+	focus = {
+		id = QIO_international_smuggling
+		icon = GFX_goal_generic_market_socialism
+		relative_position_id = QIO_revolution
+		x = 5
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_gurilla_units } 
+		completion_reward = {
+		unlock_decision_category_tooltip = QIO_smuggling_weapons_decision_category
+		}
+	}
+	#swimming south seas
+	focus = {
+		id = QIO_south_seas
+		icon = GFX_goal_CSA_Great_Red_Fleet
+		relative_position_id = QIO_revolution
+		x = 9
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_gurilla_units } 
+		completion_reward = {
+		add_ideas = {
+		QIO_sailing_south_china_seas
+		}
+		591 = {
+		add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+		}
+	}
+	#party school
+	focus = {
+		id = QIO_party_school
+		icon = GFX_goal_TEX_rural_schools
+		relative_position_id = QIO_revolution
+		x = 7
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_south_seas } prerequisite = { focus = QIO_international_smuggling } 
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+	#xiongdi gong
+	focus = {
+		id = QIO_xiongdi_gong
+		icon = GFX_goal_QIO_xiongdi_gong
+		relative_position_id = QIO_revolution
+		x = 9
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_south_seas } 
+		completion_reward = {
+		add_ideas = {
+		QIO_xiongdi_legacy
+		}
+		}
+	}
+	#wavees red horizon
+	focus = {
+		id = QIO_waves_red_horizon
+		icon = GFX_goal_FIU_secure_fleet
+		relative_position_id = QIO_revolution
+		x = 9
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_xiongdi_gong } 
+		completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = RUS_War_Under_The_Sea
+			cost_reduction = 0.5
+			uses = 2
+			category = naval_doctrine
+		}
+		add_tech_bonus = {
+			name = RUS_Battleship_Development
+			bonus = 0.5
+			uses = 2
+			category = bb_tech
+		}
+		if = {
+			limit = { has_dlc_mtg = yes }
+			add_tech_bonus = {
+				name = RUS_Battleship_Development
+				bonus = 0.5
+				uses = 2
+				category = cat_gunnery
+			}
+		}
+		}
+	}
+
+	#small to large fighting
+	focus = {
+		id = QIO_small_large
+		icon = GFX_goal_generic_socialist_army
+		relative_position_id = QIO_revolution
+		x = 5
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_international_smuggling } 
+		completion_reward = {
+		hidden_effect = { country_event = { id = liangguang_rd.110 days = 25 } }
+		swap_ideas = {
+		remove_idea = QIO_local_militias_1
+		add_idea = QIO_local_militias_2
+		}
+		}
+	}
+	#antimperilist defense corp
+	focus = {
+		id = QIO_antimperilist_defense
+		icon = GFX_SQI_protection_against_imperialism-248360
+		relative_position_id = QIO_revolution
+		x = 4
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_small_large } 
+		completion_reward = {
+		add_ideas = {
+		QIO_defence_corps
+		}
+		}
+	}
+	#protracted warfare
+	focus = {
+		id = QIO_protracted_warfare
+		icon = GFX_goal_FRA_Revolutionary_Guerilla_Tactics
+		relative_position_id = QIO_revolution
+		x = 6
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_small_large } 
+		completion_reward = {
+		add_ideas = {
+		QIO_protracted_war
+		}
+		}
+	}
+
+	#peasant revolution
+	focus = {
+		id = QIO_land_revolution
+		icon = GFX_GXC_peasants_at_the_helm-248360
+		relative_position_id = QIO_revolution
+		x = -5
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_revolutionary_zone } 
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = QIO_a_baron_wasteland
+		add_idea = QIO_a_baron_wasteland_1
+		}
+		}
+	}
+	#provinsional land law
+	focus = {
+		id = QIO_land_law
+		icon = GFX_RUS_Land_Quotas_Bill
+		relative_position_id = QIO_revolution
+		x = -4
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_land_revolution } 
+		completion_reward = {
+		add_ideas = {
+		GXC_broad_reforms
+		}
+		}
+	}
+	#taxes and regulations
+	focus = {
+		id = QIO_taxes_regulations
+		icon = GFX_RUS_State_Regulation_Act_nsp
+		relative_position_id = QIO_revolution
+		x = -7
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_land_revolution } 
+		completion_reward = {
+		add_timed_idea = {
+		idea = QIO_taxation_regulations
+		days = 360
+		}
+		591 = { 
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+
+		}
+		}
+	}
+	#land expropriation
+	focus = {
+		id = QIO_land_expropriation
+		icon = GFX_TWI_initiate_land_reforms-248360
+		relative_position_id = QIO_revolution
+		x = -4
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_land_law } 
+		completion_reward = {
+		add_ideas = {
+		GXC_agrarian_law
+		}
+		}
+	}
+	#labor protections
+	focus = {
+		id = QIO_labor_protections
+		icon = GFX_MAF_workplace_regulations
+		relative_position_id = QIO_revolution
+		x = -6
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_land_law } prerequisite = { focus = QIO_taxes_regulations } 
+		completion_reward = {	
+		add_timed_idea = {
+		idea = QIO_labour_regulations
+		days = 180
+		}
+		591 = {
+			add_extra_state_shared_building_slots  = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		}
+	}
+	#self help programs
+	focus = {
+		id = QIO_self_help
+		icon = GFX_goal_VIN_aid_our_farmers
+		relative_position_id = QIO_revolution
+		x = -6
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_labor_protections } prerequisite = { focus = QIO_land_expropriation } 
+		completion_reward = {
+		add_timed_idea = {
+		idea = QIO_self_help
+		days = 180
+		}
+		591 = {
+			add_extra_state_shared_building_slots  = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+
+	#wastlands production
+	focus = {
+		id = QIO_wastelands_production
+		icon = GFX_goal_socialist_infrastructure
+		relative_position_id = QIO_revolution
+		x = -8
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_taxes_regulations } 
+		completion_reward = {
+		591 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		}
+	}
+	#masters of farming
+	focus = {
+		id = QIO_masters_farming
+		icon = GFX_TAISOC_starting_national_land_reform-248360
+		relative_position_id = QIO_revolution
+		x = -8
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_wastelands_production } 
+		completion_reward = {
+		add_ideas = {
+		QIO_masters_of_farm
+		}
+		}
+	}
+	#industrial island
+	focus = {
+		id = QIO_industrial_island
+		icon = GFX_goal_AST_post_war_socialized_reconstruction
+		relative_position_id = QIO_revolution
+		x = -7
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_masters_farming } prerequisite = { focus = QIO_self_help } 
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = QIO_a_baron_wasteland_1
+		add_idea = QIO_a_baron_wasteland_2
+		}
+		}
+	}
+	#revolutionary base banner
+	focus = {
+		id = QIO_base_banners
+		icon = GFX_goal_QIO_base_banners
+		relative_position_id = QIO_revolution
+		x = 0
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_revolutionary_zone } 
+		
+		completion_reward = {
+		add_popularity = {
+		ideology = radical_socialist
+		popularity = 0.05
+		}
+		add_stability = 0.05
+		add_political_power = 50
+		}
+	}
+	#struggle foreign imperialistd
+	focus = {
+		id = QIO_foreign_imperialists
+		icon = GFX_SQITWO_introduce_antiimperialist_struggle_sessions-248360
+		relative_position_id = QIO_revolution
+		x = -1
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_base_banners } 
+		completion_reward = {
+		add_ideas = {
+		QIO_anti_imperialism
+		}
+		}
+	}
+	#recent work outline
+	focus = {
+		id = QIO_recent_work_outline
+		icon = GFX_socialist_constitution
+		relative_position_id = QIO_revolution
+		x = 1
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_base_banners } 
+		completion_reward = {
+		add_timed_idea = {
+		idea = QIO_work_catchup
+		days = 180
+		}
+		}
+	}	
+	#mop up remnants
+	focus = {
+		id = QIO_mop_remnants
+		icon = GFX_TIB_crush_the_reactionary_tribes-248360
+		relative_position_id = QIO_revolution
+		x = -2
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_foreign_imperialists } 
+		completion_reward = {
+		add_timed_idea = {
+		idea = QIO_mop_up
+		days = 180
+		}
+		}
+	}
+	#youth leagues grow
+	focus = {
+		id = QIO_youth_leagues
+		icon = GFX_GXC_infiltrate_worldwide_literary_circles-248360
+		relative_position_id = QIO_revolution
+		x = 2
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_recent_work_outline } 
+		completion_reward = {
+		add_timed_idea = {
+		idea = QIO_youth_leagues
+		days = 180
+		}
+		}
+	}
+	#three three principles
+	focus = {
+		id = QIO_three_three
+		icon = GFX_goal_QIO_three_three
+		relative_position_id = QIO_revolution
+		x = 0
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_recent_work_outline } prerequisite = { focus = QIO_foreign_imperialists } 
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = QIO_revolution_triumphant
+		add_idea = QIO_revolution_triumphant_1
+		}
+		}
+	}
+	#overseas community reach out
+	focus = {
+		id = QIO_overseas_community
+		icon = GFX_LEC_CREATION_work_with_overseas_chinese_communities-248360
+		relative_position_id = QIO_revolution
+		x = -1
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_three_three } prerequisite = { focus = QIO_mop_remnants } 
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = QIO_soviet_base_established
+		add_idea = QIO_fuck_you_bitch
+		}
+		}
+	}
+	#new culture legacy red detachment of women?????
+	focus = {
+		id = QIO_new_culture
+		icon = GFX_HNNMAO_allowing_women_to_hold_up_half_the_sky-248360
+		relative_position_id = QIO_revolution
+		x = 1
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_three_three } prerequisite = { focus = QIO_youth_leagues } 
+		completion_reward = {
+		add_ideas = {
+		QIO_Legacy_new_culture
+		}
+		}
+	}
+	
+	#focus for post unification shit
+	focus = {
+		id = QIO_unify 
+		icon = GFX_goal_QIO_unify
+		relative_position_id = QIO_revolution
+		x = 0
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = QIO_new_culture } prerequisite = { focus = QIO_overseas_community } 
+		available = { has_country_flag = has_united_china }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = QIO_revolution_triumphant_1
+		add_idea = QIO_revolution_triumphant_2
+		}
+		set_cosmetic_tag = qiongya_soc_flag_unification
+		custom_effect_tooltip = CHI_focus_tree_will_change_tt
+		hidden_effect = {
+		load_focus_tree = QIO-unification-soc-tree
+		}
+		}
+	}
+
+
+}	

@@ -1,0 +1,958 @@
+focus_tree = {
+	id = GXC-soc-tree
+	continuous_focus_position = { x = -41 y = 1800 } 
+	country = {
+		factor = 0
+	}
+	shared_focus = GXC_shared_edging_economy
+	shared_focus = GXC_shared_unification
+
+
+	#launch haifeng uprising
+	focus = {
+		id = GXC_soc_haifeng_uprising
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		x = 10
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#wlecome lkmt
+	focus = {
+		id = GXC_soc_lkmt_in
+		icon = GFX_focus_HKG_Salvation_China
+		x = 10
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		owns_state = 592
+		}
+		prerequisite = { focus = GXC_soc_haifeng_uprising }
+		completion_reward = {
+		country_event = liangguang_rd.47
+		if = { 
+		limit = {
+		QIO = {
+		exists = yes
+		has_socialist_government = yes
+		NOT = { has_war_with = PRC }
+		}
+		}
+		QIO = { country_event = liangguang_rd.48 }
+		effect_tooltip = {
+		annex_country = {
+    		target = QIO
+    		transfer_troops = yes
+		}
+		}
+		}
+		hidden_effect = {
+		add_ideas = {
+		GXC_reactionary_resistance
+		}
+		}
+		}
+	}
+	#peng pai leads
+	focus = {
+		id = GXC_pai_victory
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		x = 5
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_soc_lkmt_in }
+		available = {
+		always = no
+		}
+		mutually_exclusive = { focus = GXC_chen_victory }
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}	
+	#mingshu committee
+	focus = {
+		id = GXC_chen_victory
+		icon = GFX_goal_CHI_chen_mingshu_reconcile
+		x = 17
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		prerequisite = { focus = GXC_soc_lkmt_in }
+		mutually_exclusive = { focus = GXC_pai_victory }
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#pac align
+	focus = {
+		id = GXC_chen_align_pac
+		icon = GFX_goal_CHI_sun_legacy
+		x = 17
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_chen_victory }
+		completion_reward = {
+		add_popularity = {
+		ideology = social_democrat
+		popularity = 0.15
+		}
+		add_political_power = 20
+		}
+	}
+	#united front ties
+	focus = {
+		id = GXC_chen_united_front
+		icon = GFX_goal_CHI_united_front
+		x = 20
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_chen_victory }
+		completion_reward = {
+		add_popularity = {
+		ideology = syndicalist
+		popularity = 0.1
+		}
+		add_political_power = 30
+		add_stability = 0.05
+		add_synd_to_coalition = yes
+		}
+	}
+	#patriots arise internationally
+	focus = {
+		id = GXC_chen_patriots_arise
+		icon = GFX_goal_CHI_tigress_battalions
+		x = 16
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_chen_align_pac }
+		completion_reward = {
+		add_ideas = {
+		GXC_reach_out_to_the_world
+		}
+		}
+	}
+	#true democratic rev
+	focus = {
+		id = GXC_chen_true_demo
+		icon = GFX_goal_chi_republic
+		x = 18
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_chen_align_pac } prerequisite = { focus = GXC_chen_united_front }
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_true_democracy
+		days = 250
+		}
+		}
+	}
+	#denounce radicals
+	focus = {
+		id = GXC_chen_denounce_radicals
+		icon = GFX_goal_GER_Moderate_Unions
+		x = 21
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_chen_united_front }
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_anti_radicalism
+		days = 120
+		}
+		}
+	}
+	#national equality minority
+	focus = {
+		id = GXC_chen_national_equality
+		icon = GFX_GXC_anewyearsdream-248360
+		x = 16
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_chen_patriots_arise } prerequisite = { focus = GXC_chen_true_demo }
+		completion_reward = {
+		add_war_support = 0.1
+		add_political_power = 25
+		add_popularity = {
+		ideology = social_democrat
+		popularity = 0.1
+		}
+		}
+	}
+	#crush fuedal remnents
+	focus = {
+		id = GXC_chen_crush_fuedal 
+		icon = GFX_JAPANA_renounce_feudalism-248360
+		x = 20
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_chen_denounce_radicals } prerequisite = { focus = GXC_chen_true_demo }
+		completion_reward = {
+		remove_ideas = {
+		GXC_reactionary_resistance
+		}
+		}
+	}
+	#support world society
+	focus = {
+		id = GXC_chen_world_society
+		icon = GFX_GXC_the_power_struggle-248360
+		x = 16
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_chen_national_equality } prerequisite = { focus = GXC_chen_crush_fuedal }
+		mutually_exclusive = { focus = GXC_chen_against_elders }
+		completion_reward = {
+		set_party_name = {
+			ideology = radical_socialist
+				long_name = GXC_anarchist_cuck_party_long
+				name = GXC_anarchist_cuck_party
+			}
+	create_country_leader = {
+				name = "Cai Yuanpai"
+				picture = "gfx/leaders/GXCA/Portrait_GXC_Li_Shizeng.png"
+				expire = "1.1.1"
+				ideology = anarchism_subtype
+			}
+
+		add_radsoc_to_coalition = yes
+		add_popularity = {
+		ideology = radical_socialist
+		popularity = 0.10
+		}
+		}
+	}
+	#against elders
+	focus = {
+		id = GXC_chen_against_elders
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		x = 18
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_chen_national_equality } prerequisite = { focus = GXC_chen_crush_fuedal }
+		mutually_exclusive = { focus = GXC_chen_world_society }
+		completion_reward = {
+		add_popularity = {
+		ideology = radical_socialist
+		popularity = -0.10
+		}
+		add_timed_idea = {
+		idea = GXC_anti_anarchism
+		days = 100
+		}
+		}
+	}
+	#freedom for peopel
+	focus = {
+		id = GXC_chen_freedom
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		x = 20
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_chen_national_equality } prerequisite = { focus = GXC_chen_crush_fuedal }
+		completion_reward = {
+		add_ideas = {
+		GXC_production_of_freedom
+		}
+		}
+	}
+	#people's producutivity
+	focus = {
+		id = GXC_chen_productivity
+		icon = GFX_goal_MEX_Mexican_Democratic_Socialism
+		x = 18
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_chen_freedom } prerequisite = { focus = GXC_chen_against_elders focus = GXC_chen_world_society }
+		completion_reward = {
+		add_ideas = {
+		GXC_production_freedom
+		}
+		}
+	}
+
+	#start land reform
+	focus = {
+		id = GXC_lkmt_land_reform
+		icon = GFX_RUS_Land_Socialization
+		x = 10
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_pai_victory focus = GXC_chen_victory }
+		completion_reward = {
+		unlock_decision_category_tooltip = PRC_land_reform_decision_category
+		activate_mission = PRC_land_reform_mission
+		set_variable = {
+		var = legation_commie_land_reform
+		value = 25
+		}
+		}
+	}
+	#local soviets
+	focus = {
+		id = GXC_lkmt_local_soviets
+		icon = GFX_SOV_soviet_workers_peasants_system
+		x = 9
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_lkmt_land_reform }
+		mutually_exclusive = { focus = GXC_lkmt_broader_picture }
+		completion_reward = {
+		unlock_decision_tooltip = PRC_construct_local_soviet
+		}
+	}
+	#broader picture
+	focus = {
+		id = GXC_lkmt_broader_picture
+		icon = GFX_goal_generic_happy_workers
+		x = 11
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_lkmt_land_reform }
+		mutually_exclusive = { focus = GXC_lkmt_local_soviets }
+		completion_reward = {
+		unlock_decision_tooltip = PRC_construct_broad_reform
+		}
+	}
+	#peasant workshops
+	focus = {
+		id = GXC_lkmt_peasant_workshops
+		icon = GFX_RUS_Peasant_Councils
+		x = 8
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_lkmt_local_soviets }
+		completion_reward = {
+		add_to_variable = {
+					var = legation_commie_land_reform
+					value = 5
+					tooltip = add_5_to_legation_commie_land_reform_tt
+				}
+			add_timed_idea = {
+			idea = GXC_peasant_workshops
+			days = 500
+			}
+		}
+	}
+	#land expropriation
+	focus = {
+		id = GXC_lkmt_land_expropriation
+		icon = GFX_goal_SKM_Socialized_Land_Redistribution
+		x = 10
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_lkmt_local_soviets focus = GXC_lkmt_broader_picture }
+		completion_reward = {
+		unlock_decision_tooltip = PRC_execute_the_landlords
+		unlock_decision_tooltip = PRC_land_lord_trials
+		}
+	}
+
+	#agrarina laws rev
+	focus = {
+		id = GXC_lkmt_agrarian_laws
+		icon = GFX_goal_SKM_Dire_Need_Land_Reforms
+		x = 8
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_lkmt_peasant_workshops } prerequisite = { focus = GXC_lkmt_land_expropriation }
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_agrarian_law
+		days = 180
+		}
+		}
+	}
+	#peasant unions unify
+	focus = {
+		id = GXC_lkmt_peasant_unions
+		icon = GFX_HNN_UNIFICATION_MAO_under_the_central_authority_of_the_party-248360
+		x = 12
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_lkmt_broader_picture }
+		completion_reward = {
+		add_to_variable = {
+					var = legation_commie_land_reform
+					value = 5
+					tooltip = add_5_to_legation_commie_land_reform_tt
+				}
+		add_popularity = {
+		ideology = ROOT
+		popularity = 0.05
+		}
+		}
+	}
+	#focus on land tilling
+	focus = {
+		id = GXC_lkmt_till_soil
+		icon = GFX_HNN_UNIFICATION_MAO_the_agricultural_cooperative_movement-248360
+		x = 12
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_lkmt_peasant_unions } prerequisite = { focus = GXC_lkmt_land_expropriation }
+		completion_reward = {
+		unlock_decision_tooltip = PRC_compensate_the_landlords
+		add_timed_idea = {
+		idea = GXC_till_lands
+		days = 100
+		}
+		}
+	}
+	#star of peasant freedom
+	focus = {
+		id = GXC_lkmt_peasant_star
+		icon = GFX_HNN_UNIFICATION_MAO_patriotic_education_program-248360
+		x = 10
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+			OR = {
+				has_country_flag = land_reform_complete
+				has_country_flag = land_reform_failed
+			}
+		}
+		prerequisite = { focus = GXC_lkmt_till_soil focus = GXC_lkmt_agrarian_laws } 
+		completion_reward = {
+		remove_ideas = {
+		PRC_lands_in_need_of_reform
+		}
+		}
+	}
+
+	#alliance with workers
+	focus = {
+		id = GXC_pai_alliance_workers
+		icon = GFX_HNN_UNIFICATION_MAO_promotion_of_class_solidarity-248360
+		x = 3
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_pai_victory }
+		completion_reward = {
+		add_popularity = {
+		ideology = syndicalist
+		popularity = 0.1
+		}
+		add_political_power = 30
+		add_stability = 0.05
+		add_synd_to_coalition = yes
+		}
+	}
+	#denounce anarchist reaction
+	focus = {
+		id = GXC_pai_anarchist_reaction
+		icon = GFX_HNN_UNIFICATION_MAO_endingoldhabitscustoms-248360
+		x = 3
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_pai_alliance_workers }
+		completion_reward = {
+		add_popularity = {
+		ideology = radical_socialist
+		popularity = -0.10
+		}
+		add_timed_idea = {
+		idea = GXC_anti_anarchism
+		days = 100
+		}
+		}
+	}
+	#guangdong reorg committee
+	focus = {
+		id = GXC_pai_reorg_committee
+		icon = GFX_HNNMAO_takingupthetorchbeholdingthewhiteovertheblueskys-248360
+		x = 6
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_pai_victory }
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_re_org_committee
+		days = 180
+		}
+		}
+	}
+	#labor organization
+	focus = {
+		id = GXC_pai_labor_organization
+		icon = GFX_HNNMAO_nationalize_the_anyuan_railways-248360
+		x = 6
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_pai_reorg_committee }
+		completion_reward = {
+		add_ideas = {
+		GXC_production_expansion
+		}
+		}
+	}
+	#struggle against imperialism
+	focus = {
+		id = GXC_pai_struggle_imperialism
+		icon = GFX_HNNUNIFIEDTANG_denouncing_the_foreign_imperialists-248360
+		x = 5
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_pai_labor_organization } prerequisite = { focus = GXC_pai_anarchist_reaction }
+		completion_reward = {
+		add_political_power = 25
+		add_war_support = 0.15
+		}
+	}
+	#end cults
+	focus = {
+		id = GXC_pai_poison_cults
+		icon = GFX_HNNMAO_renounce_kuomintang_cooperation-248360
+		x = 5
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_pai_struggle_imperialism }
+		completion_reward = {
+		remove_ideas = {
+		GXC_reactionary_resistance
+		}
+		}
+	}
+
+	#enstrine agrarin
+	focus = {
+		id = GXC_pai_agrarian_revolution
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		x = 2
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_pai_anarchist_reaction } 
+		completion_reward = {
+		hidden_effect = { country_event = { id = liangguang_rd.111 days = 31 } }
+		add_ideas = {
+		GXC_agrarian_line
+		}
+		}
+	}
+	#on our own
+	focus = {
+		id = GXC_pai_own_path
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		x = 1
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_pai_agrarian_revolution } prerequisite = { focus = GXC_pai_struggle_imperialism }
+		mutually_exclusive = { focus = GXC_pai_changsha_friends }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_agrarian_line
+		add_idea = GXC_distinct_line
+		}
+		}
+	}
+	#mao changsha
+	focus = {
+		id = GXC_pai_changsha_friends
+		icon = GFX_HNNSHENGZHI_integrate_the_xinmin_society-248360
+		x = 3
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = { 
+		HNN = { 
+		has_country_leader = {
+				name = "Mao Zedong"
+				ruling_only = yes
+		}
+		exists = yes
+		OR = {
+		is_subject_of = PRC
+		is_subject = no
+		}
+		NOT = { has_war_with = PRC } 
+		}
+		}
+		prerequisite = { focus = GXC_pai_agrarian_revolution } prerequisite = { focus = GXC_pai_struggle_imperialism }
+		mutually_exclusive = { focus = GXC_pai_own_path }
+		completion_reward = {
+		#mao gui
+		HNN = { country_event = liangguang_rd.49 }
+		}
+	}
+	#king of all peasants
+	focus = {
+		id = GXC_pai_peasant_king
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		x = 3
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_pai_changsha_friends focus = GXC_pai_own_path } prerequisite = { focus = GXC_pai_poison_cults }
+		completion_reward = {
+		add_country_leader_trait = GXC_peasant_king
+		}
+	}
+	#new revolution
+	focus = {
+		id = GXC_lkmt_new_rev
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		x = 5
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = { has_country_flag = has_united_china }
+		prerequisite = { focus = GXC_lkmt_peasant_star } prerequisite = { focus = GXC_pai_peasant_king }
+		completion_reward = {
+		set_cosmetic_tag = PRC_peng_uni_flag 
+		custom_effect_tooltip = CHI_focus_tree_will_change_tt
+		hidden_effect = {
+		load_focus_tree = GXC-uni-peng-tree
+		complete_national_focus = GXC_uni_pai_peasants
+		add_ideas = China_Unified_economic_recovery
+		}
+		}
+	}
+	#doctor legacy
+	focus = {
+		id = GXC_lkmt_sun_legacy
+		icon = GFX_focus_HKG_Praise_Sun
+		x = 15
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = { has_country_flag = has_united_china }
+		prerequisite = { focus = GXC_lkmt_peasant_star } prerequisite = { focus = GXC_chen_productivity }
+		completion_reward = {
+		set_party_name = {
+		ideology = social_democrat
+		long_name = GXC_ppp_party_long
+		name = GXC_ppp_party
+		}
+		set_cosmetic_tag = PRC_ppp_flag 
+		custom_effect_tooltip = CHI_focus_tree_will_change_tt
+		hidden_effect = {
+		news_event = china_events.308
+		set_party_name = {
+		ideology = social_liberal
+		long_name = GXC_cdl_party_long
+		name = GXC_cdl_party
+		}
+		kill_ideology_leader = social_liberal
+		load_focus_tree = GXC-uni-lkmt-tree
+		}
+		}
+	}
+	#legacy of gurrilla
+	focus = {
+		id = GXC_soc_gurrilla
+		icon = GFX_goal_CHI_paramilitary_double
+		x = 35
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_MILITARY
+		}
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#form officer vanguard wtf does this mean
+	focus = {
+		id = GXC_soc_officer_vanguard 
+		icon = GFX_goal_CHI_military_affairs_cmsn
+		relative_position_id = GXC_soc_gurrilla
+		x = 0
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_MILITARY
+		}
+		prerequisite = { focus = GXC_soc_gurrilla }
+		completion_reward = {
+			add_ideas = {
+					PRC_guerilla_army_vanguard
+			}
+		}
+	}
+	#review foreign investments
+	focus = {
+		id = GXC_soc_foreign_investments
+		icon = GFX_goal_japanese_investment
+		relative_position_id = GXC_soc_gurrilla
+		x = 0
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_MILITARY
+		}
+		prerequisite = { focus = GXC_soc_officer_vanguard }
+		completion_reward = {
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+	#rely local supply weird title
+	focus = {
+		id = GXC_soc_local_supply
+		icon = GFX_goal_CHI_form_2nd_NRA
+		relative_position_id = GXC_soc_gurrilla
+		x = 2
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_MILITARY
+		}
+		prerequisite = { focus = GXC_soc_officer_vanguard }
+		completion_reward = {
+			add_ideas = {
+			PRC_local_supply_lines
+			}
+		}
+	}
+	#army discipline
+	focus = {
+		id = GXC_soc_army_discipline
+		icon = GFX_goal_NFA_Discipline_Police
+		relative_position_id = GXC_soc_gurrilla
+		x = -1
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_MILITARY
+		}
+		prerequisite = { focus = GXC_soc_foreign_investments }
+		completion_reward = {
+			swap_ideas = {
+			remove_idea = PRC_guerilla_army_vanguard
+			add_idea = PRC_guerilla_army_discipline
+			}
+		}
+	}
+	#qustion local milita
+	focus = {
+		id = GXC_soc_local_milita
+		icon = GFX_goal_integrate_the_militia
+		relative_position_id = GXC_soc_gurrilla
+		x = 1
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_MILITARY
+		}
+		prerequisite = { focus = GXC_soc_foreign_investments } prerequisite = { focus = GXC_soc_local_supply }
+		completion_reward = {
+			country_event = liangguang_rd.54
+		}
+	}
+	#form security battalions
+	focus = {
+		id = GXC_soc_security_battalions
+		icon = GFX_goal_secret_police
+		relative_position_id = GXC_soc_gurrilla
+		x = 3
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_MILITARY
+		}
+		prerequisite = { focus = GXC_soc_local_supply }
+		completion_reward = {
+			add_timed_idea = {
+			idea = PRC_security_battalions
+			days = 180
+			}
+		}
+	}
+	#reinvorate nanning arsenal
+	focus = {
+		id = GXC_soc_nanning_arsenal
+		icon = GFX_goal_GXC_Second_Guangdong_Arsenal
+		relative_position_id = GXC_soc_gurrilla
+		x = 0
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_MILITARY
+		}
+		prerequisite = { focus = GXC_soc_local_milita } prerequisite = { focus = GXC_soc_army_discipline }
+		completion_reward = {
+			592 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+	#peasant self defense forces
+	focus = {
+		id = GXC_soc_self_defense
+		icon = GFX_goal_GXC_soc_self_defense
+		relative_position_id = GXC_soc_gurrilla
+		x = 2
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_MILITARY
+		}
+		prerequisite = { focus = GXC_soc_local_milita } prerequisite = { focus = GXC_soc_security_battalions }
+		completion_reward = {
+			add_command_power = 25
+			division_template = {
+					name = "Peasant Self-Defence Corps"
+					division_cap = 3 
+					division_names_group = GXC_INF_01
+					priority = 0
+					template_counter = 0
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+					}
+					support = {
+						military_police = { x = 0 y = 0 }
+					}
+				}
+				army_experience = 50
+		}
+	}
+	#hammer strikes iron army
+	focus = {
+		id = GXC_soc_iron_army
+		icon = GFX_goal_GXC_soc_iron_army
+		relative_position_id = GXC_soc_gurrilla
+		x = 1
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_MILITARY
+		}
+		prerequisite = { focus = GXC_soc_nanning_arsenal } prerequisite = { focus = GXC_soc_self_defense }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PRC_guerilla_army_discipline
+				add_idea = PRC_guerilla_army_discipline_1
+			}
+		}
+	}
+
+}

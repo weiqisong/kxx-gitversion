@@ -1,0 +1,781 @@
+focus_tree = {
+	id = GXC-zhili-tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GXC
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 0 y = 3050 }
+	shared_focus = GXC_shared_edging_economy
+	shared_focus = GXC_shared_rifles
+	shared_focus = GXC_shared_unification
+
+
+	#Collapse of the League
+	focus = {
+		id = GXC_zhili_collapse_of_league
+		icon = GFX_goal_LEP_collapse
+		x = 10
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#A Problem With Insurgency
+	focus = {
+		id = GXC_deailing_with_the_insurgencies
+		icon = GFX_goal_LEP_kmt_encirclement
+		relative_position_id = GXC_zhili_collapse_of_league
+		x = 0
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_zhili_collapse_of_league }
+		completion_reward = {
+		add_war_support = 0.05
+		country_event = liangguang_rd.19
+		}
+	}
+	#Curtail the Gangs and Bandits
+	focus = {
+		id = GXC_curtail_gangs_and_bandits
+		icon = GFX_LEC_CREATION_seizing_gang_assets-248360
+		relative_position_id = GXC_zhili_collapse_of_league
+		x = 1
+		y = 2
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_deailing_with_the_insurgencies }
+		mutually_exclusive = { focus = GXC_dealing_with_union_problems }
+		completion_reward = {
+		add_stability = 0.025
+		add_to_variable = {
+				var = guangxi_strengthen
+				value = -8
+				tooltip = guangxi_decrease_tt
+			}
+		}
+	}
+	#Dealing With the Union Problem
+	focus = {
+		id = GXC_dealing_with_union_problems
+		icon = GFX_goal_TEX_outlaw_union
+		relative_position_id = GXC_zhili_collapse_of_league
+		x = -1
+		y = 2
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_deailing_with_the_insurgencies }
+		mutually_exclusive = { focus = GXC_curtail_gangs_and_bandits }
+		completion_reward = {
+		add_political_power = 30
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = -0.02
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = -0.02
+		}
+		add_to_variable = {
+				var = guangxi_strengthen
+				value = -8
+				tooltip = guangxi_decrease_tt
+			}
+		}
+	}
+	#The Capital Is Not Lost!
+	focus = {
+		id = GXC_capital_is_not_lost
+		icon = GFX_goal_QIE_zhili
+		relative_position_id = GXC_zhili_collapse_of_league
+		x = 0
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		has_country_flag = GXC_Zhang_Mingqi_Control_Guangdong
+		owns_state = 594
+		OR = {
+				has_country_flag = stopped_qiongya_revo
+				has_country_flag = failled_qiongya_revo
+			}
+		OR = {
+				has_country_flag = stopped_guangxi_revo
+				has_country_flag = failled_guangxi_revo
+			}
+		}
+		prerequisite = { focus = GXC_dealing_with_union_problems focus = GXC_curtail_gangs_and_bandits } 
+		completion_reward = {
+		add_stability = 0.05
+		army_experience = 30
+		country_event = liangguang_rd.25
+		}
+	}
+	
+	#Renewed Taxation Outlook
+	focus = {
+		id = GXC_Renewed_Taxation
+		icon = GFX_goal_generic_landowner_tax_cuts
+		relative_position_id = GXC_capital_is_not_lost
+		x = 0
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_capital_is_not_lost } 
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_Renewed_taxation
+		days = 180
+		}
+		}
+	}
+	
+	#Building Up the Chinese Kowloon Railway
+	focus = {
+		id = GXC_build_up_Kowloon_railway
+		icon = GFX_goal_generic_seize_railway
+		relative_position_id = GXC_capital_is_not_lost
+		x = -1
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_Renewed_Taxation } 
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_railway_kowloon
+		days = 365
+		}
+		}
+	}
+	
+	#Provincial Electrification
+	focus = {
+		id = GXC_Provincial_Electrification
+		icon = GFX_RUS_Rural_Electro
+		relative_position_id = GXC_capital_is_not_lost
+		x = 1
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_Renewed_Taxation } 
+		completion_reward = {
+		add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	
+	#Reclaiming the Control of Customs
+	focus = {
+		id = GXC_Reclaiming_the_Control_of_Customs
+		icon = GFX_goal_GXC_Reclaiming_the_Control_of_Customs
+		relative_position_id = GXC_capital_is_not_lost
+		x = 2
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_Provincial_Electrification } 
+		completion_reward = {
+		remove_ideas = GXC_AOG_leftovers
+		}
+	}
+	
+	#Dividing the Local & State Taxes
+	focus = {
+		id = GXC_Divide_Local_State_taxes
+		icon = GFX_RUS_Progressive_Tax
+		relative_position_id = GXC_capital_is_not_lost
+		x = 0
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_Provincial_Electrification } prerequisite = { focus = GXC_build_up_Kowloon_railway }
+		completion_reward = {
+		add_ideas = {
+		GXC_tax_divisions
+		}
+		}
+	}
+	
+	#Patriotic Bonds
+	focus = {
+		id = GXC_Patriotic_Bonds
+		icon = GFX_goal_GXC_Patriotic_Bonds
+		relative_position_id = GXC_capital_is_not_lost
+		x = -2
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_build_up_Kowloon_railway }
+		completion_reward = {
+		add_ideas = {
+		GXC_patriotic_bonds
+		}
+		}
+	}
+	
+	#The Guangdong Tax Haven
+	focus = {
+		id = GXC_guangdong_tax_heavan
+		icon = GFX_goal_MNT_decade_to_prosperity
+		relative_position_id = GXC_capital_is_not_lost
+		x = 0
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_Patriotic_Bonds } prerequisite = { focus = GXC_Divide_Local_State_taxes } prerequisite = { focus = GXC_Reclaiming_the_Control_of_Customs }
+		completion_reward = {
+		add_ideas = {
+		GXC_pearl_on_guangdong
+		}
+		}
+	}
+	
+	###Tang Shaoyi###
+	
+	#Shaoyi's Rise
+	focus = {
+		id = GXC_shaoyi_rise
+		icon = GFX_GXC_lib_welcome_shaoyi
+		relative_position_id = GXC_capital_is_not_lost
+		x = -6
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_capital_is_not_lost } 
+		available = {
+		always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#Legacy of the Enlightened Party
+	focus = {
+		id = GXC_legacy_of_enlightened_party
+		icon = GFX_goal_GXC_legacy_of_enlightened_party
+		relative_position_id = GXC_shaoyi_rise
+		x = 0
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_shaoyi_rise } 
+		completion_reward = {
+		
+		country_event = liangguang_rd.28
+		}
+	}
+	
+	#An Idea of a Revised Democracy
+	focus = {
+		id = GXC_revised_democracy
+		icon = GFX_goal_GXC_revised_democracy
+		relative_position_id = GXC_shaoyi_rise
+		x = 0
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		has_country_flag = GXC_five_races_unity
+		}
+		prerequisite = { focus = GXC_legacy_of_enlightened_party } 
+		mutually_exclusive = { focus = GXC_sun_hiding_in_darkness }
+		completion_reward = {
+		add_ideas = {
+		GXC_revised_democracy
+		}
+		}
+	}
+	
+	#A Sun Hiding Amongst the Darkness
+	focus = {
+		id = GXC_sun_hiding_in_darkness
+		icon = GFX_goal_GXC_sun_hiding_in_darkness
+		relative_position_id = GXC_shaoyi_rise
+		x = -4
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		has_country_flag = GXC_under_rays_of_the_sun
+		}
+		prerequisite = { focus = GXC_legacy_of_enlightened_party } 
+		mutually_exclusive = { focus = GXC_revised_democracy }
+		completion_reward = {
+		custom_effect_tooltip = GXC_how_to_get_jap_side_tt
+		add_ideas = {
+		GXC_sun_hiding_in_darkness
+		}
+		}
+	}
+	
+	#Enactment of Provisional Law
+	focus = {
+		id = GXC_enact_provisional_law
+		icon = GFX_goal_HON_Rewrite_Constitution
+		relative_position_id = GXC_sun_hiding_in_darkness
+		x = -1
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_sun_hiding_in_darkness } 
+		completion_reward = {
+		add_ideas = {
+		GXC_provisional_law
+		}
+		}
+	}
+	
+	#Value the New Over the Old
+	focus = {
+		id = GXC_value_new_over_old
+		icon = GFX_SQI_uphold_confucian_values-248360
+		relative_position_id = GXC_sun_hiding_in_darkness
+		x = 2
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_sun_hiding_in_darkness focus = GXC_revised_democracy } 
+		completion_reward = {
+		add_ideas = GXC_education_reform
+		}
+	}
+	
+	#Re-Emulation of the First Republic
+	focus = {
+		id = GXC_emulate_first_republic
+		icon = GFX_SQI_the_banner_above_beijing-248360
+		relative_position_id = GXC_revised_democracy
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_revised_democracy  } 
+		completion_reward = {
+		add_ideas = {
+		GXC_legacy_of_1913
+		}
+		}
+	}
+	
+	#Meet With the Zhili Intellectuals
+	focus = {
+		id = GXC_meet_with_zhili_intellectuals
+		icon = GFX_SQI_stick_with_xiling-248360
+		relative_position_id = GXC_revised_democracy
+		x = 2
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_emulate_first_republic  } 
+		completion_reward = {
+		add_ideas = {
+		GXC_zhili_intellectualism
+		}
+		}
+	}
+	
+	#Renounce the European Imperialists
+	focus = {
+		id = GXC_renounce_european_imperialists
+		icon = GFX_HNNSHENGZHI_support_anti_imperialist_movements-248360
+		relative_position_id = GXC_revised_democracy
+		x = -1
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_emulate_first_republic focus = GXC_enact_provisional_law  } prerequisite = { focus = GXC_value_new_over_old }
+		completion_reward = {
+		add_political_power = 25
+		add_war_support = 0.1
+		add_popularity = {
+		ideology = authoritarian_democrat
+		popularity = 0.1
+		}
+		}
+	}
+	
+	#Crushing the Peasant Rebels
+	focus = {
+		id = GXC_crusing_peasant_rebels
+		icon = GFX_SQI_purge_the_peasants_association-248360
+		relative_position_id = GXC_sun_hiding_in_darkness
+		x = 1
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_emulate_first_republic focus = GXC_enact_provisional_law  } prerequisite = { focus = GXC_value_new_over_old }
+		completion_reward = {
+		remove_ideas = GXC_worker_peasant_resistance
+		}
+	}
+	
+	#Meeting With Kenji Doihara
+	focus = {
+		id = GXC_meeting_kenji_dohara
+		icon = GFX_goal_GXC_meeting_kenji_dohara
+		relative_position_id = GXC_sun_hiding_in_darkness
+		x = -2
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_enact_provisional_law } 
+		completion_reward = {
+		country_event = liangguang_rd.29
+		}
+	}
+	
+	#Bathing In the Cherry Blossoms
+	focus = {
+		id = GXC_bathing_cherry_blossoms
+		icon = GFX_goal_GXC_bathing_cherry_blossoms
+		relative_position_id = GXC_sun_hiding_in_darkness
+		x = 0
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_meeting_kenji_dohara } prerequisite = { focus = GXC_crusing_peasant_rebels } prerequisite = { focus = GXC_renounce_european_imperialists } 
+		available = { has_country_flag = has_united_china }
+		completion_reward = {
+		set_cosmetic_tag = ROC
+		custom_effect_tooltip = CHI_focus_tree_will_change_tt
+		hidden_effect = {
+		load_focus_tree = GXC-tang-tree
+		add_ideas = China_Unified_economic_recovery
+		set_country_flag = GXC_bathing_cherry_blossoms_align_with_japan
+		}
+		}
+	}
+	
+	#A Republic of Enlightenment
+	focus = {
+		id = GXC_enlightened_republic
+		icon = GFX_SQI_negotiate_with_zhili_republicans-248360
+		relative_position_id = GXC_revised_democracy
+		x = 0
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_meet_with_zhili_intellectuals } prerequisite = { focus = GXC_crusing_peasant_rebels } prerequisite = { focus = GXC_renounce_european_imperialists } 
+		available = { has_country_flag = has_united_china }
+		completion_reward = {
+		set_cosmetic_tag = ROC
+		custom_effect_tooltip = CHI_focus_tree_will_change_tt
+		hidden_effect = {
+		load_focus_tree = GXC-tang-tree
+		add_ideas = China_Unified_economic_recovery
+		set_country_flag = GXC_enlightened_republic_independent
+		}
+		}
+	}
+	
+	###Zhang Mingqi###
+	
+	#Maintain Loyalty to the Azure Crown
+	focus = {
+		id = GXC_loyalty_azure_crown
+		icon = GFX_goal_GXC_loyalty_azure_crown
+		relative_position_id = GXC_capital_is_not_lost
+		x = 4
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		prerequisite = { focus = GXC_capital_is_not_lost } 
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+		
+	}
+	
+	#Overture to the German Eastern Colonies
+	focus = {
+		id = GXC_overtures_to_germany
+		icon = GFX_goal_AOG_Direct_German_Rule
+		relative_position_id = GXC_loyalty_azure_crown
+		x = -1
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_loyalty_azure_crown } 
+		completion_reward = {
+		unlock_decision_category_tooltip = GXC_buy_foreign_weapons_decision_category
+		set_variable = {
+			var = germ_weapons_times
+			value = 1			
+		}
+		}
+	}
+	
+	#Requesting A Seat With Peking
+	focus = {
+		id = GXC_requesting_seat_with_Peking
+		icon = GFX_goal_QIE_hail_to_the_qing
+		relative_position_id = GXC_loyalty_azure_crown
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_loyalty_azure_crown } 
+		completion_reward = {
+		add_political_power = 75
+		add_war_support = 0.05
+		}
+	}
+	
+	#Legacy of Prince Futing
+	focus = {
+		id = GXC_prince_futing_legacy
+		icon = GFX_goal_GXC_prince_futing_legacy
+		relative_position_id = GXC_loyalty_azure_crown
+		x = 2
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_requesting_seat_with_Peking } prerequisite = { focus = GXC_overtures_to_germany } 
+		completion_reward = {
+		add_stability = 0.05
+		add_ideas = {
+		GXC_fuqi_legacy
+		}
+		}
+	}
+	
+	#Intensify Guomindang Encirclement Campaigns
+	focus = {
+		id = GXC_Intensify_Guomindang_Encirclement_Campaigns
+		icon = GFX_YUN_Goal_Deal_with_the_Left_KMT
+		relative_position_id = GXC_loyalty_azure_crown
+		x = 0
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_requesting_seat_with_Peking } prerequisite = { focus = GXC_overtures_to_germany } 
+		completion_reward = {
+		remove_ideas = {
+		GXC_worker_peasant_resistance
+		}
+		}
+	}
+	
+	#Handling the Guangzhou Triads
+	focus = {
+		id = GXC_handling_triads
+		icon = GFX_goal_LEC_triads
+		relative_position_id = GXC_loyalty_azure_crown
+		x = 0
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		
+		prerequisite = { focus = GXC_Intensify_Guomindang_Encirclement_Campaigns } prerequisite = { focus = GXC_prince_futing_legacy } 
+		completion_reward = {
+		add_ideas = {
+		GXC_curtialing_gangs
+		}
+		}
+	}
+	
+	#Hong Kong Infiltration
+	focus = {
+		id = GXC_hk_infiltration
+		icon = GFX_goal_generic_spy_connections
+		relative_position_id = GXC_loyalty_azure_crown
+		x = 2
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		has_completed_focus = GXC_handling_triads
+		}
+		prerequisite = { focus = GXC_Intensify_Guomindang_Encirclement_Campaigns } prerequisite = { focus = GXC_prince_futing_legacy } 
+		completion_reward = {
+		
+		add_timed_idea = {
+		idea = GXC_curtialing_gangs_1
+		days = 120
+		}
+		}
+	}
+	
+	#Investigation of Chengen
+	focus = {
+		id = GXC_chengen_investiation
+		icon = GFX_goal_generic_investigate_corruption
+		relative_position_id = GXC_loyalty_azure_crown
+		x = 3
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_handling_triads } prerequisite = { focus = GXC_hk_infiltration } 
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_curtialing_gangs
+		add_idea = GXC_curtialing_gangs_2
+		}
+		###Insert event chain to find Chengen(It will end in failure)###
+		}
+	}
+	
+	#The Concessions Must Stop!
+	focus = {
+		id = GXC_concessions_stop
+		icon = GFX_goal_ANQ_use_anticoncessionists
+		relative_position_id = GXC_loyalty_azure_crown
+		x = 1
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_handling_triads } prerequisite = { focus = GXC_hk_infiltration } 
+		mutually_exclusive = { focus = GXC_concessions_more }
+		completion_reward = {
+		add_ideas = {
+		GXC_no_more_concessions
+		}
+		}
+	}
+	
+	#Allow Further German Concessions
+	focus = {
+		id = GXC_concessions_more
+		icon = GFX_goal_ANQ_undermine_anticoncessionists
+		relative_position_id = GXC_loyalty_azure_crown
+		x = -1
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_handling_triads } prerequisite = { focus = GXC_hk_infiltration } 
+		mutually_exclusive = { focus = GXC_concessions_stop }
+		completion_reward = {
+		add_ideas = {
+		GXC_more_concessions
+		}
+		}
+	}
+	
+	#A Dragon Riding Across the Guangzhou Skyline
+	focus = {
+		id = GXC_Dragon_Riding_Across_guangzhou_skyline
+		icon = GFX_goal_GXC_Dragon_Riding_Across_guangzhou_skyline
+		relative_position_id = GXC_loyalty_azure_crown
+		x = 1
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_chengen_investiation } prerequisite = { focus = GXC_concessions_more focus = GXC_concessions_stop } 
+		available = {
+		owns_state = 608
+		owns_state = 613
+		owns_state = 716
+		}
+		completion_reward = {
+		set_capital = { state = 608 }
+		set_country_flag = has_united_china
+		set_global_flag = china_united 
+		custom_effect_tooltip = CHI_focus_tree_will_change_tt
+		hidden_effect = {
+		create_country_leader = {
+			name = "Zhang Mingqi"
+			desc = "ZHANG_MINGQI_POLITICAL_DESC"
+			picture = "gfx/leaders/GXC/Portrait_GXC_Zhang_Mingqi.png"
+			expire = "1965.1.1"
+			ideology = prussian_constitutionalism_subtype
+		}
+		load_focus_tree = GXC-zhang-tree
+		complete_national_focus = GXC_zhang_crown
+		}
+		}
+	}
+	
+	
+	
+
+
+
+
+}	

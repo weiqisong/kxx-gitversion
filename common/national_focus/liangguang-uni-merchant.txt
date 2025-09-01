@@ -1,0 +1,370 @@
+focus_tree = {
+	id = GXC-uni-merc-tree
+	continuous_focus_position = { x = -41 y = 1800 } 
+	country = {
+		factor = 0
+	}
+	shared_focus = CHINA_FOREIGN_POLICY_beyond_the_walls_of_the_middle_kingdom
+
+
+	#united under merchant flag
+	focus = {
+		id = GXC_uni_merc_flag
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		x = 15
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#choosing a leader wtf does benefactor mean here ***public face*** would be better
+	focus = {
+		id = GXC_uni_merc_face
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		relative_position_id = GXC_uni_merc_flag
+		x = 0
+		y = 1
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_merc_flag } 
+		completion_reward = {
+		country_event = liangguang_rd.55
+		}
+	}
+	#A letter to peoples of east asia
+	focus = {
+		id = GXC_uni_merc_letter
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		relative_position_id = GXC_uni_merc_flag
+		x = -3
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		prerequisite = { focus = GXC_uni_merc_face } 
+		mutually_exclusive = { focus = GXC_uni_merc_national_business focus = GXC_uni_merc_lianbo }
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#lianbo remains at the helm
+	focus = {
+		id = GXC_uni_merc_lianbo
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		relative_position_id = GXC_uni_merc_flag
+		x = 0
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		prerequisite = { focus = GXC_uni_merc_face } 
+		mutually_exclusive = { focus = GXC_uni_merc_national_business focus = GXC_uni_merc_letter }
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#a nation of business
+	focus = {
+		id = GXC_uni_merc_national_business
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		relative_position_id = GXC_uni_merc_flag
+		x = 3
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		prerequisite = { focus = GXC_uni_merc_face } 
+		mutually_exclusive = { focus = GXC_uni_merc_lianbo focus = GXC_uni_merc_letter }
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#promote charities
+	focus = {
+		id = GXC_uni_merc_charities
+		icon = GFX_goal_COL_Acts_Charity
+		relative_position_id = GXC_uni_merc_flag
+		x = 0
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_merc_lianbo } 
+		completion_reward = {
+		add_ideas = {
+		GXC_charity_outreach
+		}
+		}
+	}
+	#secure shanghai elite support
+	focus = {
+		id = GXC_uni_merc_shanghai_elite 
+		icon = GFX_NEE_elite_contracts
+		relative_position_id = GXC_uni_merc_flag
+		x = 2
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_merc_national_business focus = GXC_uni_merc_lianbo } 
+		completion_reward = {
+		add_research_slot_until_four = yes
+		add_timed_idea = {
+		idea = HNN_shanghai_dealings
+		days = 60
+		}
+		}
+	}
+	#national grain relief association
+	focus = {
+		id = GXC_uni_merc_grain_relief 
+		icon = GFX_goal_VIN_land_to_tillers
+		relative_position_id = GXC_uni_merc_flag
+		x = 1
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_merc_shanghai_elite } prerequisite = { focus = GXC_uni_merc_charities } 
+		completion_reward = {
+		add_ideas = {
+		GXC_the_grain_relief
+		}
+		}
+	}
+	#breaking from the burning of the rising wtf does this mean
+	focus = {
+		id = GXC_uni_merc_rising
+		icon = GFX_goal_USA_embargo_japan
+		relative_position_id = GXC_uni_merc_flag
+		x = 4
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_merc_national_business } 
+		completion_reward = {
+			add_ideas = GXC_sun_hiding_in_darkness_2
+		}
+	}
+	#land of malls and casinos
+	focus = {
+		id = GXC_uni_merc_malls_casinos
+		icon = GFX_goal_TEX_Spread_Pendergasts_Gambling_Addiction
+		relative_position_id = GXC_uni_merc_flag
+		x = 3
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_merc_rising } prerequisite = { focus = GXC_uni_merc_shanghai_elite } 
+		completion_reward = {
+		add_ideas = {
+		GXC_the_casinos
+		}
+		}
+	}
+	#protect consumer
+	focus = {
+		id = GXC_uni_merc_protect_consumer
+		icon = GFX_goal_AUS_Reconstruct_Private_Business
+		relative_position_id = GXC_uni_merc_flag
+		x = 5
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_merc_rising } 
+		completion_reward = {
+		add_ideas = {
+		GXC_consumer_protections
+		}
+		}
+	}
+	#let the cash flow
+	focus = {
+		id = GXC_uni_merc_cash_flow
+		icon = GFX_USA_a_pile_of_fucking_cash
+		relative_position_id = GXC_uni_merc_flag
+		x = 4
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_merc_protect_consumer } prerequisite = { focus = GXC_uni_merc_malls_casinos } 
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = China_Unified_economic_recovery
+		add_idea = GXC_Merhcant_Yingbiao_economic_recovery
+		}
+		}
+	}
+	#comrades with zaibatsu
+	focus = {
+		id = GXC_uni_merc_zaibatsu
+		icon = GFX_goal_japanese_investment
+		relative_position_id = GXC_uni_merc_flag
+		x = -4
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_merc_letter } 
+		completion_reward = {
+			add_ideas = {
+			GXC_sun_hiding_in_darkness_3
+			}
+		}
+	}
+	#establish china representative council
+	focus = {
+		id = GXC_uni_merc_representative_council
+		icon = GFX_goal_CAL_council
+		relative_position_id = GXC_uni_merc_flag
+		x = -2
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_merc_letter focus = GXC_uni_merc_lianbo } 
+		completion_reward = {
+		add_research_slot_until_four = yes
+		add_stability = 0.05
+		add_political_power = 25
+		add_popularity = {
+		ideology = market_liberal
+		popularity = 0.05
+		}
+		}
+	}
+	#yuquan's law revisement
+	focus = {
+		id = GXC_uni_merc_revise_law
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		relative_position_id = GXC_uni_merc_flag
+		x = -5
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_merc_zaibatsu } 
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_yuquan_law_revisment
+		days = 180
+		}
+		}
+	}
+	#enact wtf relief deparment
+	focus = {
+		id = GXC_uni_merc_relief_depart
+		icon = GFX_goal_FSA_disaster_relief
+		relative_position_id = GXC_uni_merc_flag
+		x = -3
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_merc_zaibatsu } prerequisite = { focus = GXC_uni_merc_representative_council } 
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = China_Unified_economic_recovery
+		add_idea = GXC_Merhcant_zhongyao_economic_recovery
+		}
+		}
+	}
+	#two sisters united as one
+	focus = {
+		id = GXC_uni_merc_two_into_one
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		relative_position_id = GXC_uni_merc_flag
+		x = -4
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_merc_relief_depart } prerequisite = { focus = GXC_uni_merc_revise_law } 
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_sun_hiding_in_darkness_3
+		add_idea = GXC_sun_hiding_in_darkness_4
+		}
+		}
+	}
+	#sieze European assets
+	focus = {
+		id = GXC_uni_merc_euro_death
+		icon = GFX_BRY_Seize_Production
+		relative_position_id = GXC_uni_merc_flag
+		x = -1
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_merc_representative_council } prerequisite = { focus = GXC_uni_merc_charities } 
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_seize_euro_assets
+		days = 360
+		}
+		}
+	}
+	#wealth flowing down yangtze
+	focus = {
+		id = GXC_uni_merc_yangtze_wealth
+		icon = GFX_ZHU_realization_of_a_new_republican_dream-246383
+		relative_position_id = GXC_uni_merc_flag
+		x = 0
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_uni_merc_euro_death } prerequisite = { focus = GXC_uni_merc_grain_relief } 
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = China_Unified_economic_recovery
+		add_idea = GXC_Merhcant_lianbo_economic_recovery
+		}
+		if = { limit = { has_country_leader_ideology = marlib_hamiltonianism_subtype }
+		country_event = liangguang_rd.56
+		}
+		}
+	}
+
+
+}
