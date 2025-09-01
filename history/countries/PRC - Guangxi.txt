@@ -1,0 +1,289 @@
+﻿capital = 594
+OOB = "empty"
+set_research_slots = 2
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1888.6.15"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_country_flag = KX_no_naval_tech_decision_enable
+set_country_flag = china_integration_unlocked
+
+set_popularities = {
+	totalist = 0
+	radical_socialist = 0
+	syndicalist = 0
+	social_democrat = 0
+	social_liberal = 10
+	market_liberal = 10
+	social_conservative = 10
+	authoritarian_democrat = 30
+	paternal_autocrat = 30
+	national_populist = 10
+}
+
+add_ideas = {
+	PRC_Hu_Hanmin_hog_sco
+	PRC_Deng_Zeru_for_sco
+	GXC_Zuo_Lu_eco_sco
+	GXC_Xu_Chongzhi_sec_ade
+	GXC_economic_collapse
+	PRC_deal_with_peasants
+	PRC_divided_rays_under_the_sun
+	PRC_legacy_of_failure
+}
+create_country_leader = {
+	name = "Huang Rikui"
+	desc = "-"
+	picture = "gfx/leaders/GXC/Portrait_GXC_Huang_Rikui.png"
+	expire = "1965.1.1"
+	ideology = authcom_subtype
+}
+
+create_country_leader = {
+	name = "Wang Fanxi"
+	desc = "-"
+	picture = "gfx/leaders/GXC/Portrait_GXC_Wang_Fanxi.png"
+	expire = "1965.1.1"
+	ideology = syn_internationalism_subtype
+}
+
+create_country_leader = {
+	name = "Peng Pai"
+	desc = "PENG_PAI_POLITICS_DESC"
+	picture = "gfx/leaders/GXC/Portrait_GXC_Peng_Pai.png"
+	expire = "1965.1.1"
+	ideology = agrarian_socialism_subtype
+}
+create_country_leader = {
+				name = "Chen Mingshu"
+				desc = "POLITICS_GXC_CHEN_MINGSHU_DESC"
+				picture = "gfx/leaders/GXC/Portrait_GXC_Chen_Mingshu.png"
+				expire = "1.1.1"
+				ideology = socdem_tridemism_subtype
+			}
+create_country_leader = {
+	name = "Xiong Shihui"
+	desc = "-"
+	picture = "gfx/leaders/GXC/Portrait_GXC_Xiong_Shihui.png"
+	expire = "1.1.1"
+	ideology = soclib_tridemism_subtype
+}
+create_country_leader = {
+	name = "Xiong Shihui"
+	desc = "-"
+	picture = "gfx/leaders/GXC/Portrait_GXC_Xiong_Shihui.png"
+	expire = "1.1.1"
+	ideology = marlib_warlordism_subtype
+}
+create_country_leader = {
+	name = "Lin Sen"
+	desc = "-"
+	picture = "gfx/leaders/GXC/Portrait_GXC_Lin_Sen.png"
+	expire = "1.1.1"
+	ideology = soccon_tridemism_subtype
+}
+create_country_leader = {
+	name = "Xu Chongzhi"
+	desc = "POLITICS_PRC_XU_CHONGZHI_DESC"
+	picture = "gfx/leaders/GXC/Portrait_GXC_Xu_Chongzhi.png"
+	expire = "1.1.1"
+	ideology = authdem_tridemism_subtype
+}
+create_country_leader = {
+	name = "Chen Guofu"
+	desc = "-"
+	picture = "gfx/leaders/GXC/Portrait_GXC_Chen_Guofu.png"
+	expire = "1.1.1"
+	ideology = pataut_new_live_movement_subtype
+}
+create_country_leader = {
+	name = "Feng Ti"
+	picture = "gfx/leaders/GXC/Portrait_PRC_Feng_ti.png"
+	desc = "-"
+	expire = "1.1.1"
+	ideology = natpop_new_live_movement_subtype
+}
+
+
+
+
+##Admirals##
+
+NSW = {
+create_field_marshal = { #Guangdong
+	name = "Chen Mingshu"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Chen_Mingshu_Army.png"
+	traits = {
+		GXC_socialist_officer 
+		politically_connected
+		war_hero
+		infantry_officer
+		career_officer
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+
+}
+
+create_field_marshal = {
+	name = "Lei Jingtian"
+	desc = "-"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Lei_Jingtian.png"
+	id = 12020
+	traits = { GXC_socialist_officer war_hero politically_connected organizer logistics_wizard }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Zhang Yunyi"
+	desc = "-"
+	portrait_path = "gfx/leaders/CHI/CHI_zhang_yunyi.png"
+	traits = { GXC_socialist_officer politically_connected }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+	id = 12021
+}
+
+create_corps_commander = {
+	name = "He Chang"
+	desc = "-"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_He_Chang.png"
+	
+	id = 12022
+	traits = { GXC_socialist_officer infantry_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Wei Guoqing"
+	desc = "-"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Wei_Guoqing.png"
+	
+	id = 12023
+	traits = { GXC_socialist_officer infantry_officer  brilliant_strategist   }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Chen Manyuan"
+	desc = "-"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Chen_Manyuan.png"
+	
+	id = 12024
+	traits = { GXC_socialist_officer  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Szeto Wai Man"
+	desc = "-"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Szeto_Wai_Man.png"
+	
+	id = 12025
+	traits = { GXC_socialist_officer  politically_connected    }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Ye Jiangying"
+	desc = "-"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Ye_Jianying.png"
+	skill = 4
+	id = 12026
+	traits = { GXC_socialist_officer infantry_officer politically_connected brilliant_strategist   }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = { #Guangxi commie
+	name = "Liu Fei"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Liu_Fei.png"
+	traits = { GXC_socialist_officer career_officer organizer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+}
+create_corps_commander = { #lkmt dude
+	name = "Yu Zuobai"
+	portrait_path = "gfx/leaders/YUN/Portrait_Yunnan_Yu_Zuobai.png"
+	id = 1144
+	traits = { GXC_socialist_officer career_officer trait_mountaineer  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+create_corps_commander = { #Guangdong lkmt?
+	name = "Cai Tingkai"
+	desc = "POLITICS_GXC_CAI_TINGKAI_ARMY_DESC"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Cai_Tingkai.png"
+	traits = { GXC_socialist_officer career_officer infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+	id = 5058
+}
+create_corps_commander = { #Guangdong lkmt? 
+	name = "Jiang Guangnai"
+	desc = "POLITICS_GXC_JIANG_GUANGNAI_ARMY_DESC"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Jiang_Guangnai.png"
+	traits = { GXC_socialist_officer career_officer war_hero }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+	id = 5050
+}
+
+create_corps_commander = {
+	name = "Xie Hechou"
+	desc = "-"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Xie_Hechou.png"
+	
+	traits = { GXC_socialist_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	id = 12026
+}
+}
