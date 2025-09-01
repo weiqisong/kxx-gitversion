@@ -691,7 +691,7 @@ ideas = {
 		
 		CNH_agrarian__transformation = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
-			picture = generic_radical_socialist_revolution
+			picture = KIK_agrarianism_ghost_goat_idea
 			modifier = {
 				consumer_goods_factor = -0.15
 				production_factory_max_efficiency_factor = 0.2
@@ -1531,9 +1531,10 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
 			picture = "GFX_idea_a_divided_front_csp_kmt"
 			modifier = {
-				army_attack_speed_factor = 0.01
-				army_defence_factor = 0.01
-				experience_gain_army = 0.01
+				army_attack_speed_factor = 0.1
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
+				experience_gain_army = 0.1
 				war_support_weekly = 0.001
 				weekly_manpower = 1000
 					
@@ -1620,59 +1621,89 @@ ideas = {
 
 			}
 		}
+		SQI_anti_japanese_revanchism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
+			picture = FNG_expel_japanese_bandits
+			name = "反日复仇主义"
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_org_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+				breakthrough_factor = 0.15
+			}
+		}
+		SQI_marxism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
+			picture = GER_praise_marx
+			name = "学习马克思主义"
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				totalist_drift = 0.05
+				party_popularity_stability_factor = 0.3
+			}
+			
+		}
 		SQI_rectification = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
-			picture = generic_radical_socialist_revolution
+			picture = ALB_purge
 			modifier = {
 				
 					consumer_goods_factor = -0.1
 					political_power_gain = 0.1
-					stability_factor = -0.10
-					weekly_manpower = -10
-					totalist_drift = -0.05
+					stability_factor = 0.10
+					production_factory_start_efficiency_factor = 0.1
+					production_factory_max_efficiency_factor = 0.1
+					army_org_factor = 0.15
+					totalist_drift = 0.05
 					
 					
 			}
 		}
 		SQI_struggle_session = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
-			picture = generic_radical_socialist_revolution
+			picture = TEX_longist_purge
 			modifier = {
 				
 					political_power_gain = 0.15
-					stability_factor = -0.10
-					
-					
-					
+					stability_factor = 0.10
+					mobilization_speed = 0.1
+					consumer_goods_expected_value = -0.1
+					consumer_goods_factor = -0.1
 			}
 		}
 		#### Point
 		SQI_big_sword_society = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
-			picture = "GFX_idea_a_divided_front_csp_kmt"
+			picture = army_of_militias
 			modifier = {
-				army_attack_speed_factor = 0.025
-				army_defence_factor = 0.025
+				army_attack_speed_factor = 0.05
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
 				experience_gain_army = 0.05
-				
-					
-					
+	
 			}
 		}
 		SQI_on_our_great_road = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Socialist_Agitation"}
-			picture = generic_radical_socialist_revolution
+			picture = generic_totalist_revolution
 			modifier = {
 				army_attack_speed_factor = 0.1
 				army_defence_factor = 0.1
 				army_leader_start_planning_level = 1
 				experience_gain_army = 0.2
 				production_factory_efficiency_gain_factor = 0.25
-				stability_weekly = 0.1
-					totalist_drift = 0.25
-					conscription_factor = 0.35
-					weekly_manpower = 100231
-					conscription = 0.25
+				stability_weekly = 0. 1
+				totalist_drift = 0.25
+				conscription_factor = 0.35
+				weekly_manpower = 100
+				conscription = 0.025
 			}
 		}
 		

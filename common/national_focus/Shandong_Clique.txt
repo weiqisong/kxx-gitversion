@@ -3000,6 +3000,13 @@ focus_tree = {
 		prerequisite = { focus = SQITWO_denouncing_the_japanese_menance  }
 		completion_reward = {
 		add_political_power = 100
+		add_manpower = 10000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 5000
+			producer = JAP
+		}
+		
 		}
 	}
 
@@ -3072,7 +3079,12 @@ focus_tree = {
 		}
 		prerequisite = { focus = SQITWO_jiejidibuduijiejidiyingxiong  }
 		completion_reward = {
-		add_stability = 0.1
+		add_stability = 0.2
+		create_intelligence_agency = yes
+		upgrade_intelligence_agency = upgrade_commando_training
+		upgrade_intelligence_agency = upgrade_decryption_boost
+		upgrade_intelligence_agency = upgrade_form_department
+		add_ideas = SQI_big_sword_society
 		}
 	}
 
@@ -3088,7 +3100,14 @@ focus_tree = {
 		}
 		prerequisite = { focus = SQITWO_connecting_with_local_communist_cells  }
 		completion_reward = {
-		custom_effect_tooltip = support_korea_tt
+		every_state = {
+			limit = {
+				is_controlled_by = JAP
+				is_core_of = KOR
+			}
+			add_resistence = 50
+			add_compliance = -50
+		}
 		}
 	}
 
@@ -3173,7 +3192,9 @@ focus_tree = {
 		prerequisite = { focus = SQITWO_denouncing_the_japanese_menance  }
 		prerequisite = { focus = SQITWO_ultranationalist_victory  }
 		completion_reward = {
-		add_manpower = -2000
+		add_manpower = -100
+		add_political_power = 100
+		add_war_support = 0.1
 		}
 	}
 
@@ -3191,7 +3212,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SQITWO_denouncing_the_fake_ones  }
 		completion_reward = {
-		add_war_support = 0.1
+		add_ideas = SQI_anti_japanese_revanchism
 		}
 	}
 
@@ -3344,7 +3365,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SQITWO_anti_japanese_revanchism  }
 		completion_reward = {
-		add_political_power = 100
+		add_ideas = SQI_marxism
 		}
 	}
 
@@ -3374,7 +3395,9 @@ focus_tree = {
 		ideology = totalist
 		popularity = 0.2
 		}
-		
+		add_radsoc_to_coalition = yes
+		add_synd_to_coalition = yes
+		add_war_support = 0.2
 		}
 	}
 
@@ -3391,6 +3414,16 @@ focus_tree = {
 		prerequisite = { focus = SQITWO_hunt_down_suspected_spies  } prerequisite = { focus = SQITWO_support_the_korean_revolution  }
 		completion_reward = {
 		add_political_power = 200
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 10000
+			producer = JAP
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 5000
+			producer = JAP
+		}
 		}
 	}
 
@@ -3406,8 +3439,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = SQITWO_denounce_internationalist_theory  }
 		completion_reward = {
-		add_war_support = 0.01
-		add_stability = 0.01
+		add_war_support = 0.1
+		add_stability = 0.1
 		}
 	}
 
@@ -3562,13 +3595,13 @@ focus_tree = {
 		prerequisite = { focus = SQITWO_calling_the_first_rectification  }
 		completion_reward = {
 		custom_effect_tooltip = liberating_china_tt
-		hidden_effect = {
+		
 		create_wargoal = {
 				type = puppet_wargoal_focus
 				target = QIE
 			}
 		
-		}
+		
 		}
 	}
 
@@ -3659,8 +3692,13 @@ focus_tree = {
 		}
 		prerequisite = { focus = SQITWO_a_promise_to_the_peasants  }
 		completion_reward = {
-		add_manpower = 100000
-		
+		add_manpower = -1000
+		add_stability = 0.2
+		add_war_support = 0.2
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.1
+		}
 		}
 	}
 
@@ -3677,10 +3715,10 @@ focus_tree = {
 		prerequisite = { focus = SQITWO_melting_the_azure_dragon  } prerequisite = { focus = SQITWO_enmingseducationrevolution  }
 		completion_reward = {
 		custom_effect_tooltip = liberating_china_tt
-		hidden_effect = {
+		
 		unlock_decision_tooltip = SQI_denounce_the_warlords_2
 		
-		}
+		
 		}
 	
 	}
@@ -3720,6 +3758,7 @@ focus_tree = {
 		completion_reward = {
 		set_cosmetic_tag = SQI_REVREP
 		Outer_manchuria_cores = yes
+		add_ideas = SQI_on_our_great_road
 		}
 	}
 
@@ -3740,6 +3779,7 @@ focus_tree = {
 		completion_reward = {
 		set_cosmetic_tag = SQI_REVREP
 		Outer_manchuria_cores = yes
+		add_ideas = SQI_on_our_great_road
 		}
 	}
 
