@@ -1,0 +1,810 @@
+focus_tree = {
+	id = GXC-tang-tree
+	continuous_focus_position = { x = -41 y = 1800 } 
+	country = {
+		factor = 0
+	}
+	shared_focus = CHINA_FOREIGN_POLICY_beyond_the_walls_of_the_middle_kingdom
+
+
+	#five races rise again
+	focus = {
+		id = GXC_tang_five_races
+		icon = GFX_goal_beiyang_star
+		x = 8
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		has_country_flag = GXC_enlightened_republic_independent
+		}
+		completion_reward = {
+		country_event = liangguang_rd.84
+		}
+	}
+	#a new hope arises from the Asian domain
+	focus = {
+		id = GXC_tang_new_hope
+		icon = GFX_goal_VIN_uniting_asia_under_heaven
+		x = 14
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		has_country_flag = GXC_bathing_cherry_blossoms_align_with_japan
+		}
+		completion_reward = {
+		country_event = liangguang_rd.84
+		}
+	}
+	#legacy of xinhai
+	focus = {
+		id = GXC_tang_xinhai
+		icon = GFX_goal_beiyang_flags
+		x = 8
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		prerequisite = { focus = GXC_tang_five_races } 
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#the shaoyi cabinet
+	focus = {
+		id = GXC_tang_shaoyi_cabinet
+		icon = GFX_GXC_lib_welcome_shaoyi
+		x = 14
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		prerequisite = { focus = GXC_tang_new_hope } 
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#11 points of unity
+	focus = {
+		id = GXC_tang_unity
+		icon = GFX_goal_FNG_unification_conference
+		x = 11
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_shaoyi_cabinet focus = GXC_tang_xinhai } 
+		completion_reward = {
+		add_ideas = {
+		GXC_eleven_unity_points
+		}
+		}
+	}
+	#principles of unity
+	focus = {
+		id = GXC_tang_principles
+		icon = GFX_goal_QIE_zhili_unite_china 
+		relative_position_id = GXC_tang_unity
+		x = 4
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_unity } 
+		completion_reward = {
+		add_ideas = {
+		GXC_unity_principle
+		}
+		}
+	}
+	#unification of the harmonious cultures
+	focus = {
+		id = GXC_tang_harmonious_cultures
+		icon = GFX_GXC_hu_autonomy
+		relative_position_id = GXC_tang_unity
+		x = 3
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_principles } 
+		mutually_exclusive = { focus = GXC_tang_unitarian } 
+		completion_reward = {
+		add_ideas = {
+		GXC_unity_cultures
+		}
+		}
+	}
+	#strict unitarian adherance
+	focus = {
+		id = GXC_tang_unitarian
+		icon = GFX_goal_chinese_investment
+		relative_position_id = GXC_tang_unity
+		x = 5
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_principles } 
+		mutually_exclusive = { focus = GXC_tang_harmonious_cultures } 
+		completion_reward = {
+		add_ideas = {
+		GXC_unitarian_cultures
+		}
+		}
+	}
+	#immigration and reclamation
+	focus = {
+		id = GXC_tang_reclamation
+		icon = GFX_goal_GXC_tang_reclamation
+		relative_position_id = GXC_tang_unity
+		x = 2
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_harmonious_cultures } 
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_migration_reclamation
+		days = 180
+		}
+		}
+	}
+	#immigration and integration
+	focus = {
+		id = GXC_tang_integration
+		icon = GFX_goal_GXC_tang_integration
+		relative_position_id = GXC_tang_unity
+		x = 6
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_unitarian } 
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_migration_integration
+		days = 180
+		}
+		}
+	}
+	#overseeing new investors
+	focus = {
+		id = GXC_tang_new_investors
+		icon = GFX_goal_japanese_investment
+		relative_position_id = GXC_tang_unity
+		x = 4
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_unitarian focus = GXC_tang_harmonious_cultures } 
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_welcome_foreign_investments
+		days = 180
+		}
+		}
+	}
+	#promoting world peace and prosperity
+	focus = {
+		id = GXC_tang_world_peace 
+		icon = GFX_goal_FNG_Japanese_Culture
+		relative_position_id = GXC_tang_unity
+		x = 4
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_integration focus = GXC_tang_reclamation } prerequisite = { focus = GXC_tang_new_investors }
+		completion_reward = {
+		add_ideas = {
+		GXC_peace_global_prosperity
+		}
+		}
+	}
+	#finance reshuffling
+	focus = {
+		id = GXC_tang_reshuffling
+		icon = GFX_goal_generic_recovery
+		relative_position_id = GXC_tang_unity
+		x = -2
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_unity } 
+		completion_reward = {
+		swap_ideas = {
+			remove_idea = China_Unified_economic_recovery
+			add_idea = GXC_financial_reshuffling
+			}
+		}
+	}
+	#expanding livelihood of the people
+	focus = {
+		id = GXC_tang_livelihood
+		icon = GFX_goal_GXC_tang_livelihood
+		relative_position_id = GXC_tang_unity
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_unity } 
+		completion_reward = {
+		add_political_power = 50
+		add_stability = 0.1
+		add_popularity = {
+		ideology = ROOT
+		popularity = 0.1
+		}
+		}
+	}
+	#enactinc compulsory education
+	focus = {
+		id = GXC_tang_education
+		icon = GFX_goal_FNG_Japanese_Schooling
+		relative_position_id = GXC_tang_unity
+		x = -1
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_livelihood } prerequisite = { focus = GXC_tang_reshuffling } 
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+	#the trains will cross the nation
+	focus = {
+		id = GXC_tang_trains
+		icon = GFX_goal_FNG_Mantetsu_Coop
+		relative_position_id = GXC_tang_unity
+		x = -1
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_education } 
+		completion_reward = {
+		add_ideas = {
+		GXC_railways_crossing_the_lands
+		}
+		}
+	}
+	#retain Confucian loyalites
+	focus = {
+		id = GXC_tang_confucian
+		icon = GFX_goal_FNG_Defend_Confucius
+		relative_position_id = GXC_tang_unity
+		x = -1
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_trains } 
+		completion_reward = {
+		add_ideas = {
+		GXC_confucian_loyalty
+		}
+		}
+	}
+	#a republic yet to be rivalled
+	focus = {
+		id = GXC_tang_republic_rivalled 
+		icon = GFX_SQI_a_republic_worthy_under_heaven-248360
+		relative_position_id = GXC_tang_unity
+		x = 1
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_world_peace } prerequisite = { focus = GXC_tang_confucian }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_eleven_unity_points
+		add_idea = GXC_eleven_unity_points_1
+		}
+		}
+	}
+	#kemin's east Asian unity
+	focus = {
+		id = GXC_kemin_unity
+		icon = GFX_goal_GXC_kemin_unity
+		x = 21
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		prerequisite = { focus = GXC_tang_new_hope } 
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#dveelopment of people's livelihood
+	focus = {
+		id = GXC_kemin_livelihood
+		icon = GFX_goal_GXC_kemin_livelihood
+		relative_position_id = GXC_kemin_unity
+		x = -2
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_kemin_unity } 
+		completion_reward = {
+		add_ideas = {
+		GXC_kemin_peoples_livelihood
+		}
+		}
+	}
+	#keeping torch of panasianism alight
+	focus = {
+		id = GXC_kemin_panasianism
+		icon = GFX_goal_JAP_greater_asian_sphere
+		relative_position_id = GXC_kemin_unity
+		x = 2
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_kemin_unity } 
+		completion_reward = {
+		add_ideas = {
+		GXC_kemin_pan_asianism
+		}
+		}
+	}
+	#requesting Japanese advisors
+	focus = {
+		id = GXC_kemin_advisors
+		icon = GFX_goal_JAP_co_prosperity_sphere
+		relative_position_id = GXC_kemin_unity
+		x = 4
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_kemin_panasianism } 
+		completion_reward = {
+		if = {
+				limit = { has_country_flag = strengthen_army }
+				hidden_effect = { add_political_power = 50 }
+				custom_effect_tooltip = BONUS_PP_50
+			}
+			army_experience = 50
+			add_war_support = 0.05
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			JAP = {
+				add_intel = {
+					target = GXC
+					army_intel = 15
+				}
+			}
+		}
+	}
+	#enocrage zaibatsu investment
+	focus = {
+		id = GXC_kemin_zaibatsu
+		icon = GFX_goal_ANQ_Zaibatsu_Contracts
+		relative_position_id = GXC_kemin_unity
+		x = 3
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_kemin_advisors } 
+		completion_reward = {
+		swap_ideas = {
+			remove_idea = China_Unified_economic_recovery
+			add_idea = GXC_financial_reshuffling
+			}
+		
+		}
+	}
+	#north china security army
+	focus = {
+		id = GXC_kemin_north_china
+		icon = GFX_goal_FNG_Military_Man
+		relative_position_id = GXC_kemin_unity
+		x = 5
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_kemin_advisors } 
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_north_china_army_plan
+		days = 180
+		}
+		
+		}
+	}
+	#eliminate syndicalism promote morality
+	focus = {
+		id = GXC_kemin_morality
+		icon = GFX_HOL_crackdown_syndie
+		relative_position_id = GXC_kemin_unity
+		x = 5
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_kemin_north_china }  prerequisite = { focus = GXC_kemin_zaibatsu }  
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_strengthened_antisoc
+		days = 180
+		}
+		}
+	}
+	#united bank bonds
+	focus = {
+		id = GXC_kemin_bonds
+		icon = GFX_goal_TEX_banks_for_america
+		relative_position_id = GXC_kemin_unity
+		x = 3
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_kemin_north_china }  prerequisite = { focus = GXC_kemin_zaibatsu }  
+		completion_reward = {
+		add_ideas = {
+		GXC_united_bank_bonds
+		}
+		}
+	}
+	#rural youth training association
+	focus = {
+		id = GXC_kemin_youth_training 
+		icon = GFX_goal_GXC_kemin_youth_training
+		relative_position_id = GXC_kemin_unity
+		x = -2
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_kemin_livelihood } 
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+	#public security strengthening
+	focus = {
+		id = GXC_kemin_public_security
+		icon = GFX_goal_National_Security_Act
+		relative_position_id = GXC_kemin_unity
+		x = 0
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_kemin_livelihood } prerequisite = { focus = GXC_kemin_panasianism } 
+		completion_reward = {
+		add_ideas = {
+		GXC_increased_public_security
+		}
+		}
+	}
+	#anti syndicalist volunteer force
+	focus = {
+		id = GXC_kemin_antisyndie
+		icon = GFX_BRY_Anti_Socialist_Raids
+		relative_position_id = GXC_kemin_unity
+		x = -2
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_kemin_public_security } prerequisite = { focus = GXC_kemin_youth_training } 
+		completion_reward = {
+		add_ideas = {
+		GXC_anti_socialist_volunteers
+		}
+		}
+	}
+	#enacting the Baojia system
+	focus = {
+		id = GXC_kemin_baojia
+		icon = GFX_goal_GXC_kemin_baojia
+		relative_position_id = GXC_kemin_unity
+		x = 0
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_kemin_public_security } prerequisite = { focus = GXC_kemin_youth_training } 
+		completion_reward = {
+		add_stability = 0.05
+		add_popularity = {
+		ideology = ROOT
+		popularity = 0.05
+		}
+		add_political_power = 25
+		}
+	}
+	#freidns across the continent wtf do you mean ocean or around continent
+	focus = {
+		id = GXC_kemin_continent
+		icon = GFX_goal_GXC_kemin_continent
+		relative_position_id = GXC_kemin_unity
+		x = 0
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_kemin_baojia } prerequisite = { focus = GXC_kemin_antisyndie } 
+		completion_reward = {
+		add_ideas = {
+		GXC_friends_across_asia
+		}
+		}
+	}
+	#a republic loyal to its empire
+	focus = {
+		id = GXC_kemin_empire
+		icon = GFX_goal_GXC_kemin_empire
+		relative_position_id = GXC_kemin_unity
+		x = 3
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_kemin_continent }  prerequisite = { focus = GXC_kemin_bonds }  prerequisite = { focus = GXC_kemin_morality }  
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GXC_kemin_peoples_livelihood
+		add_idea = GXC_kemin_peoples_livelihood_1
+		}
+		}
+	}
+
+	#legacy of the progressive party
+	focus = {
+		id = GXC_tang_progressive
+		icon = GFX_goal_GXC_tang_progressive
+		x = 2
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		prerequisite = { focus = GXC_tang_five_races } 
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#create new safety regulations
+	focus = {
+		id = GXC_tang_regulations
+		icon = GFX_MAF_workplace_regulations
+		relative_position_id = GXC_tang_progressive
+		x = -1
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_progressive } 
+		completion_reward = {
+		add_stability = 0.1
+		add_political_power = 50
+		}
+	}
+	#pursue additional pensions
+	focus = {
+		id = GXC_tang_pensions
+		icon = GFX_goal_BUL_reorganize_pensions
+		relative_position_id = GXC_tang_progressive
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_progressive } 
+		completion_reward = {
+		add_ideas = {
+		GXC_pension_program
+		}
+		}
+	}
+	#rethink our stance on japan
+	focus = {
+		id = GXC_tang_japan_stance
+		icon = GFX_goal_japan
+		relative_position_id = GXC_tang_progressive
+		x = -2
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_regulations } 
+		completion_reward = {
+		add_opinion_modifier = {
+			target = GXC
+			modifier = GXC_frenemies
+		}
+		add_opinion_modifier = {
+			target = JAP
+			modifier = GXC_frenemies
+		}
+		add_research_slot = 1
+		}
+	}
+	#legacy of cao kun
+	focus = {
+		id = GXC_tang_caokun
+		icon = GFX_goal_GXC_tang_caokun
+		relative_position_id = GXC_tang_progressive
+		x = 2
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_pensions } 
+		completion_reward = {
+		add_ideas = {
+		GXC_cao_kun_legacy
+		}
+		}
+	}
+	#national economy committee
+	focus = {
+		id = GXC_tang_committee
+		icon = GFX_goal_state_economy
+		relative_position_id = GXC_tang_progressive
+		x = 0
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_pensions } prerequisite = { focus = GXC_tang_regulations } 
+		completion_reward = {
+		
+		swap_ideas = {
+			remove_idea = China_Unified_economic_recovery
+			add_idea = GXC_national_economic_committee
+			}
+		}
+	}
+	#dealing with the unions
+	focus = {
+		id = GXC_tang_unions
+		icon = GFX_goal_UK_ban_unions
+		relative_position_id = GXC_tang_progressive
+		x = 0
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_committee } prerequisite = { focus = GXC_tang_caokun } prerequisite = { focus = GXC_tang_japan_stance } 
+
+		completion_reward = {
+		add_timed_idea = {
+		idea = GXC_strengthened_antisoc
+		days = 180
+		}
+		}
+	}
+	#emphasizing practicality
+	focus = {
+		id = GXC_tang_practicality
+		icon = GFX_focus_HKG_Pragmatism
+		relative_position_id = GXC_tang_progressive
+		x = -1
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_unions } 
+
+		completion_reward = {
+		add_ideas = {
+		GXC_practicallity
+		}
+		}
+	}
+	#extending the hand of public support
+	focus = {
+		id = GXC_tang_public_support
+		icon = GFX_goal_GXC_tang_public_support
+		relative_position_id = GXC_tang_progressive
+		x = 1
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_unions } 
+
+		completion_reward = {
+		add_ideas = {
+		GXC_extending_public_support
+		}
+		}
+	}
+
+	#china under Anfu's Thumb
+	focus = {
+		id = GXC_tang_thumb
+		icon = GFX_goal_GXC_tang_thumb
+		relative_position_id = GXC_tang_progressive
+		x = 0
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_tang_public_support } prerequisite = { focus = GXC_tang_practicality } 
+		completion_reward = {
+		add_ideas = {
+		GXC_under_thumb_anfu
+		}
+		}
+	}
+
+
+
+}

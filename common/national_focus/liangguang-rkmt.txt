@@ -1,0 +1,840 @@
+focus_tree = {
+	id = GXC-rkmt-tree
+	country = {
+		factor = 0
+	modifier = {
+			add = 10
+			tag = PRC
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 0 y = 3050 }
+	shared_focus = GXC_shared_edging_economy
+
+	#forgotten faction
+	focus = {
+		id = PRC_rkmt_forgotten_faction
+		icon = GFX_goal_GXC_Welcoming_Back_the_Forgotten_Faction
+		x = 13
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		always = no
+		}
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+		}
+	}
+	#revive army national rev
+	focus = {
+		id = PRC_rkmt_army_national_rev
+		icon = GFX_goal_GXC_Reviving_army_of_national_revolution
+		x = 18
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_forgotten_faction } 
+		available = {
+		owns_state = 592
+		}
+		completion_reward = {
+		country_event = liangguang_rd.50
+		}
+	}
+	#reform mil council
+	focus = {
+		id = PRC_rkmt_reform_mil_council
+		icon = GFX_goal_GXC_Reforming_the_national_military_council
+		relative_position_id  = PRC_rkmt_army_national_rev
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		
+		prerequisite = { focus = PRC_rkmt_army_national_rev } 
+		completion_reward = {
+		add_ideas = {
+		PRC_reformed_military_council
+		}
+		}
+	}
+	#embrace modernization
+	focus = {
+		id = PRC_rkmt_embrace_modernization
+		icon = GFX_goal_GXC_Embracing_modernization
+		relative_position_id  = PRC_rkmt_army_national_rev
+		x = -3
+		y = 2
+		cost= 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+			has_idea = PRC_army_modernization
+		}
+		prerequisite = { focus = PRC_rkmt_reform_mil_council } 
+		mutually_exclusive = { focus = PRC_rkmt_legacy_gurillas }
+		completion_reward = {
+		add_ideas = {
+		PRC_military_modernization
+		}
+		}
+	}
+	#legacy gurillas
+	focus = {
+		id = PRC_rkmt_legacy_gurillas
+		icon = GFX_goal_GXC_Legacy_of_guerillas
+		relative_position_id  = PRC_rkmt_army_national_rev
+		x = 3
+		y = 2
+		cost= 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { focus = PRC_rkmt_embrace_modernization }
+		available = {
+			has_idea = PRC_geurilla_war
+		}
+		prerequisite = { focus = PRC_rkmt_reform_mil_council } 
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = PRC_geurilla_war
+		add_idea = PRC_geurilla_war_1
+		}
+		}
+	}
+	#prepare long war
+	focus = {
+		id = PRC_rkmt_long_war
+		icon = GFX_goal_GXC_Preparing_for_long_war
+		relative_position_id  = PRC_rkmt_army_national_rev
+		x = 4
+		y = 3
+		cost= 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_legacy_gurillas } 
+		completion_reward = {
+		add_ideas = {
+		PRC_long_war
+		}
+		}
+	}
+	#supply lines improve
+	focus = {
+		id = PRC_rkmt_supply_lines
+		icon = GFX_goal_GXC_Improving_supply_lines
+		relative_position_id  = PRC_rkmt_army_national_rev
+		x = 4
+		y = 4
+		cost= 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_long_war } 
+		completion_reward = {
+		add_timed_idea = {
+		idea = PRC_supply_improvements
+		days = 365
+		}
+		}
+	}
+	#proper displine 
+	focus = {
+		id = PRC_rkmt_proper_displine
+		icon = GFX_goal_GXC_Proper_discipline
+		relative_position_id  = PRC_rkmt_army_national_rev
+		x = 5
+		y = 5
+		cost= 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_supply_lines } 
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_military_academy"
+		hidden_effect = {
+		country_event = lngkmt.61
+		}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			add_ideas = PRC_discipline_of_troops
+		}
+	}
+	#essense national survival
+	focus = {
+		id = PRC_rkmt_national_survival
+		icon = GFX_goal_GXC_Essence_of_national_survival
+		relative_position_id  = PRC_rkmt_army_national_rev
+		x = 0
+		y = 3
+		cost= 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_legacy_gurillas focus = PRC_rkmt_embrace_modernization } 
+		completion_reward = {
+		PRC_radicalism_increase = yes
+		add_timed_idea = {
+		idea = PRC_national_survival
+		days = 365
+		}
+		}
+	}
+	#centralize mil industry
+	focus = {
+		id = PRC_rkmt_centralize_industry
+		icon = GFX_goal_GXC_Centralization_of_military_industry
+		relative_position_id  = PRC_rkmt_army_national_rev
+		x = 0
+		y = 4
+		cost= 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_national_survival } 
+		completion_reward = {
+		add_timed_idea = {
+		idea = PRC_military_centralization
+		days = 720
+		}
+		}
+	}
+	#mechanized warefare
+	focus = {
+		id = PRC_rkmt_mechanized_warefare
+		icon = GFX_goal_GXC_Questioning_mechanized_warfare
+		relative_position_id  = PRC_rkmt_army_national_rev
+		x = 2
+		y = 4
+		cost= 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_national_survival } 
+		completion_reward = {
+		country_event = liangguang_rd.51
+		}
+	}
+	#aggression self sacrifice 
+	focus = {
+		id = PRC_rkmt_self_sacrifice 
+		icon = GFX_goal_GXC_Aggression_and_self_sacrifice
+		relative_position_id  = PRC_rkmt_army_national_rev
+		x = 1
+		y = 5
+		cost= 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_centralize_industry } prerequisite = { focus = PRC_rkmt_mechanized_warefare } 
+		completion_reward = {
+		hidden_effect = {
+		country_event = lngkmt.66
+		}
+		add_war_support = 0.1
+		add_popularity = {
+		ideology = national_populist
+		popularity = 0.05
+		}
+		PRC_radicalism_increase = yes
+		set_technology = { tech_assault_battalion = 1 }
+			add_timed_idea = {
+				idea = CHI_dare_to_die_idea
+				days = 365
+			}
+		}
+		
+	}
+	#lessons from weltkrieg
+	focus = {
+		id = PRC_rkmt_weltkrieg_lessons
+		icon = GFX_goal_GXC_Lessons_from_weltkrieg
+		relative_position_id  = PRC_rkmt_army_national_rev
+		x = -4
+		y = 3
+		cost= 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_embrace_modernization } 
+		completion_reward = {
+		add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	#foreign arm sells
+	focus = {
+		id = PRC_rkmt_foreign_arm
+		icon = GFX_goal_GXC_Foreign_arms_sales
+		relative_position_id  = PRC_rkmt_army_national_rev
+		x = -2
+		y = 3
+		cost= 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_embrace_modernization } 
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BHC_aid_from_france"
+			army_experience = 25
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = JAP }
+			add_tech_bonus = {
+				name = BHC_aid_from_france
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	#weapon standerization
+	focus = {
+		id = PRC_rkmt_weapon_standerization
+		icon = GFX_goal_GXC_Weapon_standardization
+		relative_position_id  = PRC_rkmt_army_national_rev
+		x = -4
+		y = 4
+		cost= 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_foreign_arm } prerequisite = { focus = PRC_rkmt_weltkrieg_lessons } 
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_Equipment_Standardisation"
+		add_ideas = rus_better_infantry_production_focus			
+		}
+	}
+	#honor whampoa
+	focus = {
+		id = PRC_rkmt_honor_whampoa
+		icon = GFX_goal_GXC_Honoring_Whampoa
+		relative_position_id  = PRC_rkmt_army_national_rev
+		x = -2
+		y = 4
+		cost= 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_foreign_arm } prerequisite = { focus = PRC_rkmt_weltkrieg_lessons } 
+		completion_reward = {
+		hidden_effect = {
+		country_event = lngkmt.61
+		}
+		add_ideas = {
+		PRC_whampoa_legacy
+		}
+		PRC_increase_huangpu_faction_small = yes
+		}
+	}
+	#create flying tigers
+	focus = {
+		id = PRC_rkmt_flying_tigers
+		icon = GFX_goal_GXC_Flying_tigers
+		relative_position_id  = PRC_rkmt_army_national_rev
+		x = -2
+		y = 5
+		cost= 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_weapon_standerization } prerequisite = { focus = PRC_rkmt_honor_whampoa } prerequisite = { focus = PRC_rkmt_centralize_industry } 
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CHI_flying_tigers"
+			add_ideas = CHI_republic_of_china_air_force_idea2
+		}
+	}
+	#army of nation strength 
+	focus = {
+		id = PRC_rkmt_nation_strength
+		icon = GFX_goal_GXC_A_nations_army
+		relative_position_id  = PRC_rkmt_army_national_rev
+		x = 0
+		y = 6
+		cost= 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_self_sacrifice } prerequisite = { focus = PRC_rkmt_proper_displine focus = PRC_rkmt_flying_tigers } 
+		completion_reward = {
+		remove_ideas = {
+		PRC_legacy_of_failure
+		}
+		}
+	}
+
+	#struggle of politics
+	focus = {
+		id = PRC_rkmt_struggle_politics
+		icon = GFX_goal_GXC_The_Struggle_of_Politics
+		x = 6
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		owns_state = 592
+		}
+		prerequisite = { focus = PRC_rkmt_forgotten_faction } 
+		completion_reward = {
+		hidden_effect = {
+			country_event = { id = lngkmt.19 days = 53 } #Status of Temples in Guangdong
+			country_event = { id = lngkmt.20 days = 92 } #The Opium Dens of Guangzhou
+			country_event = { id = lngkmt.21 days = 144 } #Chinese High Tea
+			country_event = { id = lngkmt.22 days = 14 } #Remembering Martyrs
+		}
+
+		swap_ideas = {
+		remove_idea = PRC_divided_rays_under_the_sun
+		add_idea = PRC_divided_rays_under_the_sun_1
+		}
+		}
+	}
+	#open up to officers
+	focus = {
+		id = PRC_rkmt_open_officers
+		icon = GFX_goal_GXC_Opening_up_to_the_officers
+		relative_position_id  = PRC_rkmt_struggle_politics
+		x = -1
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_struggle_politics } 	
+		mutually_exclusive = { focus = PRC_rkmt_min_piao }
+		completion_reward = {
+        	army_experience = 75
+		unlock_decision_tooltip = PRC_open_officers
+		}
+	}
+	#legacy of min-piao
+	focus = {
+		id = PRC_rkmt_min_piao
+		icon = GFX_goal_GXC_Legacy_of_Min_Piao
+		relative_position_id  = PRC_rkmt_struggle_politics
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_struggle_politics } 	
+		mutually_exclusive = { focus = PRC_rkmt_open_officers }
+		completion_reward = {
+        	add_political_power = 50
+		unlock_decision_tooltip = PRC_publish_minpiao
+		}
+	}
+	#new life
+	focus = {
+		id = PRC_rkmt_new_life
+		icon = GFX_goal_GXC_Unleashing_the_movement_of_a_new_life
+		relative_position_id  = PRC_rkmt_struggle_politics
+		x = -2
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_min_piao focus = PRC_rkmt_open_officers } 
+		completion_reward = {
+		add_timed_idea = {
+		idea = PRC_nlm_new_temp
+		days = 180
+		}
+		unlock_decision_tooltip = PRC_promoting_christ
+		PRC_radicalism_increase = yes
+		hidden_effect = {
+		country_event = lngkmt.65
+		country_event = { id = liangguang_rd.52  days = 50 }
+		}
+		}
+	}
+	#new land reform
+	focus = {
+		id = PRC_rkmt_land_reform
+		icon = GFX_goal_GXC_Handling_the_new_land_reforms
+		relative_position_id  = PRC_rkmt_struggle_politics
+		x = 2
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_min_piao focus = PRC_rkmt_open_officers } 
+		completion_reward = {
+		remove_ideas = PRC_lands_in_need_of_reform
+		add_timed_idea = {
+		idea = PRC_land_reform_promises
+		days = 100
+		}
+		}
+	}
+	#liberate south
+	focus = {
+		id = PRC_rkmt_liberate_south
+		icon = GFX_goal_GXC_Liberation_of_the_south
+		relative_position_id  = PRC_rkmt_struggle_politics
+		x = -1
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_land_reform } prerequisite = { focus = PRC_rkmt_new_life } 
+		completion_reward = {
+			if = { 
+			limit = {
+			NOT = { has_global_flag = RKMT_leader_exists }
+			}
+		custom_effect_tooltip = GXC_KMT_take_over_tt
+		hidden_effect = {
+		country_event = lngkmt.4
+		set_global_flag = RKMT_leader_exists 
+		save_global_event_target_as = RKMT_leader
+			set_potential_national_government = yes
+			add_to_array = { china_possible_allies_array = YUN }
+			add_to_array = { china_possible_allies_array = SZC }
+			add_to_array = { china_possible_allies_array = HNN }
+			add_to_array = { china_possible_allies_array = SHX }
+			add_to_array = { china_possible_allies_array_northwest = XSM }
+		}
+		}
+		if = {
+			limit = { can_declare_war_on = YUN }
+			activate_targeted_decision = { decision = china_demand_submission target = YUN }
+		}
+		if = {
+			limit = { can_declare_war_on = HNN }
+			activate_targeted_decision = { decision = china_demand_submission target = HNN }
+		}
+		if = {
+			limit = { can_declare_war_on = SZC }
+			activate_targeted_decision = { decision = china_demand_submission target = SZC }
+		}
+
+		if = {
+			limit = { can_declare_war_on = QIO }
+			activate_targeted_decision = { decision = china_demand_submission target = QIO }
+		}
+
+		}
+	}
+	
+	#2nd eastern expedition
+	focus = {
+		id = PRC_rkmt_eastern_expedition
+		icon = GFX_goal_GXC_Second_eastern_expedition
+		relative_position_id  = PRC_rkmt_struggle_politics
+		x = -1
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_liberate_south } 
+		completion_reward = {
+		if = {
+			limit = { can_declare_war_on = LEP }
+			activate_targeted_decision = { decision = china_demand_submission target = LEP }
+		}
+		if = {
+			limit = { can_declare_war_on = ANQ }
+			activate_targeted_decision = { decision = china_demand_submission target = ANQ }
+		}
+		if = {
+			limit = { can_declare_war_on = CHI }
+			activate_targeted_decision = { decision = china_demand_submission target = CHI }
+		}
+		if = {
+			limit = { can_declare_war_on = SQI }
+			activate_targeted_decision = { decision = china_demand_submission target = SQI }
+		}
+		}
+	}
+	#foreign imperialists concern
+	focus = {
+		id = PRC_rkmt_foreign_imperialists
+		icon = GFX_goal_GXC_Concern_about_foreign_imperialists
+		relative_position_id  = PRC_rkmt_struggle_politics
+		x = 1
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		
+		prerequisite = { focus = PRC_rkmt_land_reform } prerequisite = { focus = PRC_rkmt_new_life } 
+		completion_reward = {
+		add_offsite_building = {
+					type = arms_factory
+					level = 1
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+				PRC_radicalism_increase = yes
+		}
+	}
+	#influence shanghai underworld
+	focus = {
+		id = PRC_rkmt_shanghai_underworld
+		icon = GFX_goal_GXC_Influencing_Shanghai_underworld
+		relative_position_id  = PRC_rkmt_struggle_politics
+		x = 1
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_foreign_imperialists } 
+		completion_reward = {
+		hidden_effect = {
+		country_event = lngkmt.60
+		}
+		add_ideas = {
+		PRC_in_shanghai_underworld
+		}
+		}
+	}
+	#avenge 1927
+	focus = {
+		id = PRC_rkmt_avenge_failures
+		icon = GFX_goal_GXC_Avenging_1927
+		relative_position_id  = PRC_rkmt_struggle_politics
+		x = 0
+		y = 5
+		cost= 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_shanghai_underworld } prerequisite = { focus = PRC_rkmt_eastern_expedition } 
+		completion_reward = {
+		if = {
+			limit = { can_declare_war_on = QIE }
+			activate_targeted_decision = { decision = china_demand_submission target = QIE }
+		}
+		if = {
+			limit = { can_declare_war_on = FNG }
+			activate_targeted_decision = { decision = china_demand_submission target = FNG }
+		}
+		}
+	}
+
+	#promise three principles follow
+	focus = {
+		id = PRC_rkmt_promise_three_principles
+		icon = GFX_goal_GXC_Forever_promising_truth_to_three_principles
+		relative_position_id  = PRC_rkmt_struggle_politics
+		x = 5
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_land_reform } 
+		completion_reward = {
+		unlock_decision_tooltip = PRC_denounce_anti_tridemists
+		add_political_power = 100
+		hidden_effect = {
+			country_event = { id = lngkmt.62 days = 5 }
+		}
+		}
+	}
+	#reject marx enforce
+	focus = {
+		id = PRC_rkmt_reject_marx 
+		icon = GFX_goal_GXC_Enforcing_rejection_of_Marx
+		relative_position_id  = PRC_rkmt_struggle_politics
+		x = 4
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_promise_three_principles } 
+		mutually_exclusive = { focus = PRC_rkmt_left_and_right }
+		completion_reward = {
+		PRC_increase_wh_faction_small = yes
+		remove_ideas = {
+		PRC_deal_with_peasants
+		}
+		add_command_power = 25
+		add_war_support = 0.05
+		}
+	}
+	#denounce left and right factions
+	focus = {
+		id = PRC_rkmt_left_and_right  
+		icon = GFX_goal_GXC_Denouncing_left_and_right_factions
+		relative_position_id  = PRC_rkmt_struggle_politics
+		x = 6
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_promise_three_principles } 
+		mutually_exclusive = { focus = PRC_rkmt_reject_marx }
+		completion_reward = {
+		PRC_decrease_wh_faction_small = yes
+		remove_ideas = {
+		PRC_deal_with_peasants
+		}
+		add_stability = 0.05
+		}
+	}
+	#nation not class
+	focus = {
+		id = PRC_rkmt_nation_not_class
+		icon = GFX_goal_GXC_A_nation_united_by_nationalism
+		relative_position_id  = PRC_rkmt_struggle_politics
+		x = 5
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_left_and_right focus = PRC_rkmt_reject_marx } 
+		completion_reward = {
+		add_ideas = {
+		PRC_forever_united
+		}
+		}
+	}
+	#nation of equals
+	focus = {
+		id = PRC_rkmt_nation_equals
+		icon = GFX_goal_GXC_Guiding_a_nation_of_equals_1
+		relative_position_id  = PRC_rkmt_struggle_politics
+		x = 5
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_nation_not_class } 
+		available = { has_country_flag = has_united_china }
+		completion_reward = { #endgame switch focus	
+		custom_effect_tooltip = CHI_focus_tree_will_change_tt
+		set_cosmetic_tag = GXC_united_china_kuomintang_guangxi
+		hidden_effect = {
+		news_event = china_events.309
+		country_event = { id = lngkmt.70 days = 3 }
+		load_focus_tree = GXC-rkmt-uni-tree
+		}
+		}
+	}
+
+	#student_movement control
+	focus = {
+		id = PRC_rkmt_student_movement
+		icon = GFX_goal_GXC_Controlling_student_movement
+		relative_position_id  = PRC_rkmt_struggle_politics
+		x = -3
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_new_life } 
+		completion_reward = {
+		unlock_decision_tooltip = PRC_rural_education_campaign
+		unlock_decision_tooltip = PRC_purging_the_students
+		}
+	}
+	#yuanchong 8 items
+	focus = {
+		id = PRC_rkmt_yuanchong_items
+		icon = GFX_goal_GXC_Yuanchong_eight_items
+		relative_position_id  = PRC_rkmt_struggle_politics
+		x = -5
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_new_life } 
+		completion_reward = {
+		add_ideas = {
+		PRC_yuanchongs_points
+		}
+		}
+	}
+	#hand upon workers
+	focus = {
+		id = PRC_rkmt_hand_upon_workers
+		icon = GFX_goal_GXC_Hand_upon_the_workers
+		relative_position_id  = PRC_rkmt_struggle_politics
+		x = -4
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_yuanchong_items } prerequisite = { focus = PRC_rkmt_student_movement } 
+		completion_reward = {
+		country_event = liangguang_rd.53
+		}
+	}
+	#national bourgeoisie
+	focus = {
+		id = PRC_rkmt_national_bourgeoisie
+		icon = GFX_goal_GXC_Propogation_from_national_bourgoise
+		relative_position_id  = PRC_rkmt_struggle_politics
+		x = -6
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_yuanchong_items } 
+		completion_reward = {
+		add_ideas = {
+		PRC_national_bourgeoisie
+		}
+		}
+	}
+	#democracy antisyndie antimperial
+	focus = {
+		id = PRC_rkmt_democracy_antisyndie_antimperial
+		icon = GFX_goal_GXC_Struggle_for_democracy_anti_imperialism_and_anti_syndicalism
+		relative_position_id  = PRC_rkmt_struggle_politics
+		x = -5
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_rkmt_national_bourgeoisie } prerequisite = { focus = PRC_rkmt_hand_upon_workers } 
+		completion_reward = {
+		add_war_support = 0.1
+		add_political_power = 50
+		PRC_radicalism_decrease = yes
+		}
+	}
+
+
+}	

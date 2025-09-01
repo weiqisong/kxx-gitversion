@@ -1,0 +1,393 @@
+﻿capital = 592
+OOB = "GXC"
+set_research_slots = 2
+starting_train_buffer = 0.5
+set_country_flag = china_integration_unlocked
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
+}
+set_technology = {
+	basic_train = 1
+	### Infantry ###
+	infantry_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	tech_recon = 1
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "GXC_air_bba"
+		set_technology = {
+			aa_lmg = 1
+			early_bombs = 1
+			engines_1 = 1
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+			iw_large_airframe = 1
+		}
+	else = {
+		set_air_oob = "GXC_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+		}
+	}
+}
+
+add_offsite_building = {
+	type = arms_factory
+	level = 2
+}
+
+add_offsite_building = {
+	type = industrial_complex
+	level = 4
+}
+LEP = {
+	set_autonomy = {
+		target = ROOT
+		autonomy_state = kr_default_puppet
+	}
+}
+
+### Navy - MtG ###
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		
+		basic_naval_mines = 1
+
+		## Modules##
+		basic_battery = 1
+		basic_light_battery = 1
+		smoke_generator = 1
+	}
+}
+
+### Navy - Non MtG ###
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+	}
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 5000
+	producer = GXC
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 175
+	producer = GXC
+}
+add_equipment_to_stockpile = {
+	type = fighter_equipment_0
+	amount = 20
+	producer = GER
+}
+591 = {
+add_state_modifier = {
+    modifier = {
+enemy_army_speed_factor = -0.5
+enemy_local_supplies = -0.5
+enemy_attrition = 0.5
+    }
+}
+}
+
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1888.6.15"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	totalist = 0
+	radical_socialist = 4
+	syndicalist = 2
+	social_democrat = 15
+	social_liberal = 32
+	market_liberal = 11
+	social_conservative = 6
+	authoritarian_democrat = 0
+	paternal_autocrat = 29
+	national_populist = 1
+}
+
+add_ideas = {
+	GXC_factionalism
+	GXC_AOG_leftovers
+	GXC_Bastion_of_Zhili
+	GXC_worker_peasant_resistance
+	unequal_treaties
+
+	### Ministers
+	GXC_Zhang_Mingqi_hog_pau
+	GXC_Li_Guoyun_for_pau
+	GXC_Tang_Shaoyi_eco_ade
+	GXC_Tan_Haoming_sec_pau
+}
+country_event = { id = liangguang_rd.0 days = 1 }
+
+set_country_flag = GXC_Zhili_Own_Guangdong
+set_country_flag = GXC_Zhili_Own_Guangxi
+set_country_flag = GXC_Zhili_Own_Qiongya
+
+create_country_leader = {
+	name = "Huang Rikui"
+	desc = "-"
+	picture = "gfx/leaders/GXC/Portrait_GXC_Huang_Rikui.png"
+	expire = "1965.1.1"
+	ideology = authcom_subtype
+}
+
+create_country_leader = {
+	name = "Wang Fanxi"
+	desc = "-"
+	picture = "gfx/leaders/GXC/Portrait_GXC_Wang_Fanxi.png"
+	expire = "1965.1.1"
+	ideology = syn_internationalism_subtype
+}
+
+create_country_leader = {
+	name = "Peng Pai"
+	desc = "-"
+	picture = "gfx/leaders/GXC/Portrait_GXC_Peng_Pai.png"
+	expire = "1965.1.1"
+	ideology = agrarian_socialism_subtype
+}
+
+create_country_leader = {
+	name = "Chen Jiongming"
+	desc = "POLITICS_GXC_CHEN_JIONGMING_DESC"
+	picture = "gfx/leaders/GXC/Portrait_GXC_Chen_Jiongming.png"
+	expire = "1965.1.1"
+	ideology = chinese_federalism_subtype
+}
+create_country_leader = {
+	name = "Chen Jiongming"
+	desc = "POLITICS_GXC_CHEN_JIONGMING_DESC"
+	picture = "gfx/leaders/GXC/Portrait_GXC_Chen_Jiongming.png"
+	expire = "1965.1.1"
+	ideology = soclib_chinese_federalism_subtype
+}
+create_country_leader = {
+	name = "Chen Lianbo"
+	desc = "POLITICS_GXC_CHEN_LIANBO_DESC"
+	picture = "gfx/leaders/GXC/Portrait_GXC_Chen_Lianbo_Army.png"
+	expire = "1965.1.1"
+	ideology = marlib_warlordism_subtype
+}
+create_country_leader = {
+	name = "Tang Shaoyi"
+	desc = "-"
+	picture = "gfx/leaders/GXC/Portrait_GXC_Tang_Shaoyi.png"
+	expire = "1965.1.1"
+	ideology = oligarchy_subtype
+}
+create_country_leader = {
+	name = "Zhang Mingqi"
+	desc = "ZHANG_MINGQI_POLITICAL_DESC"
+	picture = "gfx/leaders/GXC/Portrait_GXC_Zhang_Mingqi.png"
+	expire = "1965.1.1"
+	ideology = pataut_warlordism_subtype
+}
+
+### Field Marshals ###
+
+create_field_marshal = { #Guangdong basically already dead so kill him if feds take power
+	name = "Tan Haoming"
+	desc = "-"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Tan_Haoming.png"
+	traits = {
+		
+		old_guard
+		trait_cautious
+		war_hero
+		organizer
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	id = 5054
+
+}
+
+#create_field_marshal = { #dead lol
+	#name = "Lu Rongting"
+	#desc = "-"
+	#portrait_path = "gfx/leaders/GXC/Portrait_GXC_Lu_Rongting.png"
+	#traits = {
+		
+		#old_guard
+		#trait_cautious
+		#war_hero
+		#organizer
+	#}
+	#skill = 4
+	#attack_skill = 3
+	#defense_skill = 2
+	#planning_skill = 3
+	#logistics_skill = 3
+
+	#id = 1117
+#}
+
+
+
+### Corps Commanders ###
+create_corps_commander = { #Guangxi opportunist though so alright
+	name = "Zhang Gan"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Zhang_Gan.png"
+	traits = { old_guard career_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = { #Guangdong
+	name = "Guo Chunsen"
+	desc = "-"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Guo_Chunsen.png"
+	traits = {
+		
+		war_hero
+		career_officer
+		brilliant_strategist
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = { #Guangdong
+	name = "Ma Ji"
+	desc = "-"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Ma_Ji.png"
+	traits = { 
+	trait_reckless 
+	infantry_officer 
+	politically_connected
+	trickster
+	}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+	id = 1121
+}
+
+create_corps_commander = { #Guangdong
+	name = "Lu Yugang"
+	desc = "-"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Lu_Yugang.png"
+	traits = {
+	trait_reckless
+	politically_connected
+	infantry_officer
+	infantry_leader
+	}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+	id = 1117
+}
+
+create_corps_commander = { #Guangdong
+	name = "Shen Hongying"
+	desc = "-"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Shen_Hongying.png"
+	traits = {
+		
+		war_hero
+		career_officer
+		brilliant_strategist
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+
+
+
+
+
+### Admirals ###
+create_navy_leader = {
+	name = "Li Qingwen"
+	desc = "POLITICS_GXC_LI_QINGWEN_NAVY_DESC"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Li_Qingwen.png"
+	traits = {
+		
+		navy_career_officer
+		inshore_fighter
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = {
+	name = "Chen Ce"
+	desc = "POLITICS_GXC_CHEN_CE_NAVY_DESC"
+	portrait_path = "gfx/leaders/GXC/Portrait_GXC_Chen_Ce.png"
+	traits = {
+		
+		navy_career_officer
+		navy_media_personality
+		inshore_fighter
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
