@@ -9043,7 +9043,6 @@ if = {
       factor = 100
     }
     completion_reward = {
-      complete_national_focus = SER_November_Sixth_Dictatorship
       log = "[GetDateText]: [Root.GetName]: Focus SER_pacify_oposition"
       add_political_power = 100
       add_popularity = {

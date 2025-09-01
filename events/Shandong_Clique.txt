@@ -409,7 +409,7 @@ country_event = {# Mount Tai Outraged at Zongchang
 		}
 	}	
 	option = { #burn them all
-		name = "Why not give fire a try?" 
+		name = "放把火，烧死他们！" 
 		add_political_power = -15
 		hidden_effect = {
 			country_event = {
@@ -3790,7 +3790,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "Fate of Two Dragons"
 	desc = shandong.470.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -3836,7 +3836,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "Real Confucius's Ideas Reach Shili"
 	desc = shandong.471.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -3879,7 +3879,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "Attempted Assassination on Xiong Xiling"
 	desc = shandong.472.d
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -3928,7 +3928,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "Protests From the Crescent Moon Society"
 	desc = shandong.458.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -3947,7 +3947,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "Protest to Revolution"
 	desc = shandong.459.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4057,7 +4057,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "Democracies Future"
 	desc = shandong.460.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4123,7 +4123,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "Join the KMT?"
 	desc = shandong.461.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4182,7 +4182,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "A Proposition To the Landlords"
 	desc = shandong.462.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4204,7 +4204,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "An Offer From Shandong"
 	desc = "News from shandong reaches Hu Shih, in which an offer is made. The offer is the peaceful reunification between Shandong and Zhili for a better republican future. Shih ponders and then accepts the offer."
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4230,7 +4230,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "The Red Bandit of Jinan"
 	desc = shandong.464.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4249,7 +4249,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "The Battle of Jinan"
 	desc = shandong.465.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4297,7 +4297,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "Deciding the New Leadership"
 	desc = shandong.466.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4599,7 +4599,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "Shandong Arrest Our Diplomats"
 	desc = shandong.467.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4622,7 +4622,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "Japan Demands That We Release the Diplomats"
 	desc = shandong.468.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4653,7 +4653,7 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
 	title = "Shandong Says No"
 	desc = shandong.469.desc
-	picture = 
+
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4754,7 +4754,7 @@ country_event = {#
 
 country_event = {#
 	id = shandong.474
-	title = "Power Vacuum in Shandong"
+	title = "山东的权力真空"
 	desc = shandong.474.desc
 	picture = GFX_report_event_generic_riot
 	fire_only_once = yes
@@ -4794,7 +4794,7 @@ country_event = {#
 	}
 	}
 	option = {
-		name = "The people seek spiritual guidance in these troubling times."
+		name = "人民，在乱世当中寻求精神的指引。"
 		country_event = {
 		id = shandong.457 #Red Swastika Coup
 		days = 2
@@ -4802,7 +4802,7 @@ country_event = {#
 		}
 		
 		option = {
-		name = "The people, now free at last from tyranny, only want more liberty."
+		name = "人民，刚从暴政中解脱，寻求更多的自由。"
 		country_event = {
 		id = shandong.459 #Shandong Democracy
 		days = 2
@@ -4810,7 +4810,7 @@ country_event = {#
 		}
 
 	option = {
-		name = "The people, as always, wish for the end of foreign subjugation."
+		name = "人民，一如既往，寻求驱逐外国势力影响。"
 		country_event = {
 		id = shandong.465 #Red bandit
 		days = 2
