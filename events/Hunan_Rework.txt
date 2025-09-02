@@ -552,11 +552,6 @@ country_event = { #Struggle Between Democracy & Authoritarianism
 		ideology = paternal_autocrat
 		popularity = 0.1
 		}
-		set_party_name = {
-			ideology = paternal_autocrat
-			long_name = HNN_Xiangming_party_long
-			name = HNN_Xiangming_party
-		}
 	}
 		
 	option = { #The Third Way Is The Only Option For Unification
@@ -574,7 +569,7 @@ country_event = { #Struggle Between Democracy & Authoritarianism
 		}
 		add_popularity = {
 			ideology = social_democrat
-			popularity = 0.3
+			popularity = 0.5
 		}
 		hidden_effect = {
 			remove_all_ministers = yes
