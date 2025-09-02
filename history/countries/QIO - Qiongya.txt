@@ -1,5 +1,5 @@
 ﻿capital = 591
-OOB = "-"
+OOB = "QIO"
 set_research_slots = 2
 
 
