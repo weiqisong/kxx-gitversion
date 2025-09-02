@@ -970,3 +970,92 @@ guiTypes = {
 		}
 	}
 }
+#####崛起之龙两广
+		### Liangguang ###
+		
+		iconType = { #
+			name = "Mao_Zedong"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_PRC_Mao_Zedong"
+		}
+		iconType = { #
+			name = "Puyi"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GXC_Puyi"
+		}
+		iconType = { #
+			name = "Yuan_Keding"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GXC_Yuan_Keding"
+		}
+		iconType = { #
+			name = "Pujie"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GXC_Pujie"
+		}
+		
+		iconType = { #
+			name = "Weng_Wenhao"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GXC_Weng_Wenhao"
+		}
+		
+		iconType = { #
+			name = "Lin_Sen"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GXC_Lin_Sen"
+		}
+		
+		iconType = { #
+			name = "Hu_Hanmin"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GXC_Hu_Hanmin"
+		}
+		
+		iconType = { #
+			name = "Ju_Zheng"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GXC_Ju_Zheng"
+		}
+		
+		iconType = { #
+			name = "Zou_Lu"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GXC_Zou_Lu"
+		}
+		
+		iconType = { #
+			name = "Li_Zongren"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GXC_Li_Zongren"
+		}
+		
+		iconType = { #
+			name = "Bai_Chongxi"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GXC_Bai_Chongxi"
+		}
+		
+		iconType = { #
+			name = "Chen_Lifu"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GXC_Chen_Lifu"
+		}
+		
+		iconType = { #
+			name = "Chen_Guofu"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GXC_Chen_Guofu"
+		}
+		
+		iconType = { #
+			name = "Li_Pinxian"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GXC_Li_Pinxian"
+		}
+		
+		iconType = { #
+			name = "Teng_Jie"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GXC_Teng_Jie"
+		}
