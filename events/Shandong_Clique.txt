@@ -3720,6 +3720,7 @@ country_event = {#
 	option = {
 		set_cosmetic_tag = SQI_RED
 		name = "稳定复归。"
+		load_oob = SQI
 		set_politics = { ruling_party = paternal_autocrat }
 		create_country_leader = {
 			name = "熊希龄"
@@ -3945,6 +3946,7 @@ country_event = {#
 		
 		name = "中国民主自此开始。"
 		complete_national_focus = SQI_the_moon_shines_throughout_china
+		load_oob = SQI
 		set_cosmetic_tag = SQI_REP
 		create_country_leader = {
 			name = "闻一多"
@@ -4252,7 +4254,7 @@ country_event = {#
 			}
 			
 		}
-		
+		load_oob = SQI
 		set_party_name = { 
 			ideology = totalist
 			name = "八路军/抗日团结阵线"
