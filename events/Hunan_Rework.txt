@@ -122,13 +122,18 @@ country_event = { #Wu Guangxin Killed On A Hunting Trip
 		set_politics = {
 			ruling_party = paternal_autocrat
 		}
+		set_party_name = {
+			ideology = paternal_autocrat
+			long_name = HNN_Xiangming_party_long
+			name = HNN_Xiangming_party
+		}
 		add_popularity = {
 			ideology = paternal_autocrat
 			popularity = 0.10
 		}
 		create_country_leader = {
-			name = "Tang Xiangming"
-			desc = "WU_GUANGXIN_LEADER_DESC"
+			name = "汤乡茗"
+			desc = ""
 			picture = "gfx/leaders/HNN/Portrait_HNN_Tang_Xiangming.png"
 			expire = "1965.1.1"
 			ideology = pataut_warlordism_subtype
