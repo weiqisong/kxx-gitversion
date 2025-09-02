@@ -2186,7 +2186,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_popularity = {
-	    ideology = social_democrat
+	    ideology = social_liberal
 		popularity = 0.5
 		}
 		}
@@ -2228,7 +2228,7 @@ focus_tree = {
 		prerequisite = { focus = SQI_retaining_a_nationalist_outlook  }
 		completion_reward = {
 		add_political_power = 100
-		
+		add_ideas = SQI_the_red_poet
 		}
 	}
 
@@ -2244,7 +2244,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = SQI_retaining_a_nationalist_outlook  }
 		completion_reward = {
-		add_stability = 0.025
+		add_stability = 0.25
+		add_ideas = SQI_new_outlook_for_democracy
 		}
 	}
 
@@ -2261,8 +2262,13 @@ focus_tree = {
 		prerequisite = { focus = SQI_new_outlook_for_democracy  }
 		completion_reward = {
 		add_popularity = {
-		ideology = radical_socialist
-		popularity = 0.05
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+		add_radsoc_to_coalition = yes
+		swap_ideas = {
+			remove_idea = SQI_new_outlook_for_democracy
+			add_idea = SQI_legacy_of_the_doctor
 		}
 		}
 	}
@@ -2297,8 +2303,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = SQI_expanding_new_culture  }
 		completion_reward = {
-		add_war_support = 0.1
-		
+		swap_ideas = {
+			remove_idea = SQI_the_red_poet
+			add_idea = SQI_anti_monarchist_outlook
+		}
 		}
 	}
 
@@ -2349,18 +2357,99 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		available = {
-		always = no
-		}
+		
 		prerequisite = { focus = SQI_the_question_of_unification  }
 		mutually_exclusive = { focus = SQI_our_own_republic  }
 		completion_reward = {
-		CHI = {
+		if = {
+			limit = {
+				SQI = {
+					is_ai = no
+				}
+			}
+			SQI = {
+				annex_country = {
+					target = CHI
+					transfer_troops = yes
+				}
+			
+			}
+		}
+		else = {
+			CHI = {
 		annex_country = {
 				target = SQI
 				transfer_troops = yes
 			}
 		change_tag_from = SQI
+		}
+		}	
+		hidden_effect = {
+			SQI = {
+				every_state = {		
+			limit = {
+			OR = {
+	is_core_of = LEP
+	is_core_of = CHI
+	is_core_of = SQI
+	is_core_of = ANQ
+	is_core_of = QIE
+	is_core_of = FNG
+	is_core_of = GXC
+	is_core_of = YUN
+	is_core_of = XSM
+	is_core_of = Mon
+	is_core_of = HNN
+	is_core_of = shx
+	is_core_of = szc
+	is_core_of = lec
+	is_core_of = sik
+	is_core_of = tib
+	is_core_of = TAI
+	is_core_of = JST
+	}
+			}					
+	add_core_of = SQI
+							}
+	add_state_core = 537
+	add_state_core = 525
+	add_state_core = 527
+	add_state_core = 858
+	add_state_core = 745
+	add_state_core = 1246
+	add_state_core = 409
+	add_state_core = 561
+	add_state_core = 560
+	add_state_core = 657
+	add_state_core = 654
+	add_state_core = 1293
+	add_state_core = 811
+	add_state_core = 329
+	add_state_core = 729
+	add_state_core = 600
+	add_state_core = 1046
+	add_state_core = 802
+	add_state_core = 1066
+	add_state_core = 595
+	add_state_core = 1044
+	add_state_core = 1045
+	add_state_core = 1069
+	add_state_core = 803
+	add_state_core = 1068
+	add_state_core = 1067
+	add_state_core = 596
+	add_state_core = 613
+	add_state_core = 1014
+	add_state_core = 606
+	add_state_core = 1050
+	add_state_core = 598
+	add_state_core = 1047
+	add_state_core = 1064
+	add_state_core = 597
+	add_state_core = 1065
+	add_state_core = 996
+	add_state_core = 744
+		}
 		}
 		
 		}
@@ -2378,10 +2467,84 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		available = {
-		owns_state = 608
+		
 		}
 		prerequisite = { focus = SQI_the_question_of_unification  }
 		mutually_exclusive = { focus = SQI_align_with_the_kmt  }
+		completion_reward = {
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = QIE
+			}
+		hidden_effect = {
+			SQI = {
+				every_state = {		
+			limit = {
+			OR = {
+	is_core_of = LEP
+	is_core_of = CHI
+	is_core_of = SQI
+	is_core_of = ANQ
+	is_core_of = QIE
+	is_core_of = FNG
+	is_core_of = GXC
+	is_core_of = YUN
+	is_core_of = XSM
+	is_core_of = Mon
+	is_core_of = HNN
+	is_core_of = shx
+	is_core_of = szc
+	is_core_of = lec
+	is_core_of = sik
+	is_core_of = tib
+	is_core_of = TAI
+	is_core_of = JST
+	}
+			}					
+	add_core_of = SQI
+							}
+	add_state_core = 537
+	add_state_core = 525
+	add_state_core = 527
+	add_state_core = 858
+	add_state_core = 745
+	add_state_core = 1246
+	add_state_core = 409
+	add_state_core = 561
+	add_state_core = 560
+	add_state_core = 657
+	add_state_core = 654
+	add_state_core = 1293
+	add_state_core = 811
+	add_state_core = 329
+	add_state_core = 729
+	add_state_core = 600
+	add_state_core = 1046
+	add_state_core = 802
+	add_state_core = 1066
+	add_state_core = 595
+	add_state_core = 1044
+	add_state_core = 1045
+	add_state_core = 1069
+	add_state_core = 803
+	add_state_core = 1068
+	add_state_core = 1067
+	add_state_core = 596
+	add_state_core = 613
+	add_state_core = 1014
+	add_state_core = 606
+	add_state_core = 1050
+	add_state_core = 598
+	add_state_core = 1047
+	add_state_core = 1064
+	add_state_core = 597
+	add_state_core = 1065
+	add_state_core = 996
+	add_state_core = 744
+		}
+		}
+		
+		}
 	}
 
 	#Liberalism's Triumph
@@ -2395,15 +2558,15 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		available = {
-					has_country_leader = {
+			has_country_leader = {
 				name = "徐志摩"
 				ruling_only = yes
 			}
 		}
 		completion_reward = {
 		add_popularity = {
-		ideology = social_liberal
-		popularity = 0.5
+			ideology = market_liberal
+			popularity = 0.5
 		}
 		}
 		prerequisite = { focus = SQI_the_moon_shines_throughout_china  }
@@ -2421,7 +2584,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = SQI_liberalismstriumph  }
 		completion_reward = {
-		add_political_power = 100
+			add_political_power = 100
+			add_ideas = SQI_embracing_the_liberal_era
 		}
 	}
 
@@ -2475,6 +2639,10 @@ focus_tree = {
 		prerequisite = { focus = SQI_embracing_the_liberal_era  } prerequisite = { focus = SQI_foundations_of_may_4th  }
 		completion_reward = {
 		add_stability = 0.1
+		swap_ideas = {
+			remove_idea = SQI_embracing_the_liberal_era
+			add_idea = SQI_art_for_politics_sake
+		}
 		}
 	}
 
@@ -2516,6 +2684,7 @@ focus_tree = {
 		popularity = 0.1
 		}
 		add_stability = 0.05
+		add_ideas = SQI_on_new_democracy
 		}
 	}
 
@@ -2531,9 +2700,13 @@ focus_tree = {
 		}
 		prerequisite = { focus = SQI_embracing_the_liberal_era  } prerequisite = { focus = SQI_art_for_politics_sake  }
 		completion_reward = {
-		add_manpower = -100000
-		add_stability = 0.025
-		add_war_support = -0.1
+		add_manpower = -100
+		add_stability = 0.25
+		add_war_support = 0.1
+		swap_ideas = {
+			remove_idea = SQI_art_for_politics_sake
+			add_idea = SQI_purge_the_peasants_association
+		}
 		}
 	}
 
@@ -2550,6 +2723,12 @@ focus_tree = {
 		prerequisite = { focus = SQI_proposition_to_the_landlords  } prerequisite = { focus = SQI_purge_the_peasants_association  }
 		completion_reward = {
 		add_war_support = 0.1
+		add_political_power = 100
+		add_stability = 0.1
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.1
+		}
 		}
 	}
 
@@ -2565,21 +2744,82 @@ focus_tree = {
 		}
 		available = {
 		QIE = {
-		has_country_leader = {
-				name = "胡适"
-				ruling_only = yes
-			}
+			has_completed_focus = QIE_wu_constitution
 		}
 		}
 		prerequisite = { focus = SQI_the_issue_of_reunification  }
 		mutually_exclusive = { focus = SQI_topple_the_manchu_menace  }
 		completion_reward = {
-		country_event = {
-		id = shandong.463
-		days = 3
-		
+			QIE = {
+				country_event = shandong.463
+			}
+		hidden_effect = {
+			SQI = {
+				every_state = {		
+			limit = {
+			OR = {
+	is_core_of = LEP
+	is_core_of = CHI
+	is_core_of = SQI
+	is_core_of = ANQ
+	is_core_of = QIE
+	is_core_of = FNG
+	is_core_of = GXC
+	is_core_of = YUN
+	is_core_of = XSM
+	is_core_of = Mon
+	is_core_of = HNN
+	is_core_of = shx
+	is_core_of = szc
+	is_core_of = lec
+	is_core_of = sik
+	is_core_of = tib
+	is_core_of = TAI
+	is_core_of = JST
+	}
+			}					
+	add_core_of = SQI
+							}
+	add_state_core = 537
+	add_state_core = 525
+	add_state_core = 527
+	add_state_core = 858
+	add_state_core = 745
+	add_state_core = 1246
+	add_state_core = 409
+	add_state_core = 561
+	add_state_core = 560
+	add_state_core = 657
+	add_state_core = 654
+	add_state_core = 1293
+	add_state_core = 811
+	add_state_core = 329
+	add_state_core = 729
+	add_state_core = 600
+	add_state_core = 1046
+	add_state_core = 802
+	add_state_core = 1066
+	add_state_core = 595
+	add_state_core = 1044
+	add_state_core = 1045
+	add_state_core = 1069
+	add_state_core = 803
+	add_state_core = 1068
+	add_state_core = 1067
+	add_state_core = 596
+	add_state_core = 613
+	add_state_core = 1014
+	add_state_core = 606
+	add_state_core = 1050
+	add_state_core = 598
+	add_state_core = 1047
+	add_state_core = 1064
+	add_state_core = 597
+	add_state_core = 1065
+	add_state_core = 996
+	add_state_core = 744
 		}
-		
+		}
 		}
 		
 	}
@@ -2601,7 +2841,73 @@ focus_tree = {
 				type = puppet_wargoal_focus
 				target = QIE
 			}
-		
+		hidden_effect = {
+			SQI = {
+				every_state = {		
+			limit = {
+			OR = {
+	is_core_of = LEP
+	is_core_of = CHI
+	is_core_of = SQI
+	is_core_of = ANQ
+	is_core_of = QIE
+	is_core_of = FNG
+	is_core_of = GXC
+	is_core_of = YUN
+	is_core_of = XSM
+	is_core_of = Mon
+	is_core_of = HNN
+	is_core_of = shx
+	is_core_of = szc
+	is_core_of = lec
+	is_core_of = sik
+	is_core_of = tib
+	is_core_of = TAI
+	is_core_of = JST
+	}
+			}					
+	add_core_of = SQI
+							}
+	add_state_core = 537
+	add_state_core = 525
+	add_state_core = 527
+	add_state_core = 858
+	add_state_core = 745
+	add_state_core = 1246
+	add_state_core = 409
+	add_state_core = 561
+	add_state_core = 560
+	add_state_core = 657
+	add_state_core = 654
+	add_state_core = 1293
+	add_state_core = 811
+	add_state_core = 329
+	add_state_core = 729
+	add_state_core = 600
+	add_state_core = 1046
+	add_state_core = 802
+	add_state_core = 1066
+	add_state_core = 595
+	add_state_core = 1044
+	add_state_core = 1045
+	add_state_core = 1069
+	add_state_core = 803
+	add_state_core = 1068
+	add_state_core = 1067
+	add_state_core = 596
+	add_state_core = 613
+	add_state_core = 1014
+	add_state_core = 606
+	add_state_core = 1050
+	add_state_core = 598
+	add_state_core = 1047
+	add_state_core = 1064
+	add_state_core = 597
+	add_state_core = 1065
+	add_state_core = 996
+	add_state_core = 744
+		}
+		}
 		
 		}
 	}
@@ -2619,18 +2925,18 @@ focus_tree = {
 		prerequisite = { focus = SQI_retaining_a_nationalist_outlook  focus = SQI_liberalismstriumph  }
 		completion_reward = {
 		add_popularity = {
-		ideology = totalist
-		popularity = -1
+			ideology = totalist
+			popularity = -0.1
 		}
 		add_popularity = {
-		ideology = syndicalist
-		popularity = -1
+			ideology = syndicalist
+			popularity = -0.1
 		}
 		add_popularity = {
-		ideology = radical_socialist
-		popularity = -1
+			ideology = radical_socialist
+			popularity = -0.1
 		}
-		
+		add_stability = 0.2
 		}
 	}
 
@@ -2678,7 +2984,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SQI_control_the_concessions  }
 		completion_reward = {
-		add_stability = 0.1
+		add_ideas = SQI_national_rejuvination
 		}
 	}
 
@@ -2695,7 +3001,20 @@ focus_tree = {
 		available = {
 		has_country_flag = has_united_china
 		}
-		prerequisite = { focus = SQI_topple_the_manchu_menace  } prerequisite = { focus = SQI_national_rejuvination  }
+		prerequisite = { 
+			focus = SQI_topple_the_manchu_menace
+			focus = SQI_negotiate_with_zhili_republicans
+		} 
+		prerequisite = { 
+			focus = SQI_national_rejuvination  
+		}
+
+		completion_reward = {
+			add_stability = 0.2
+			add_political_power = 100
+			add_war_support = 0.2
+			set_cosmetic_tag = SQI_REP_uni
+		}
 	}
 
 	#A Victory For the Chinese People!
@@ -2711,7 +3030,20 @@ focus_tree = {
 		available = {
 		has_country_flag = has_united_china
 		}
-		prerequisite = { focus = SQI_our_own_republic  } prerequisite = { focus = SQI_national_rejuvination  }
+		prerequisite = { 
+			focus = SQI_our_own_republic  
+			focus = SQI_align_with_the_kmt
+		} 
+		
+		prerequisite = { 
+			focus = SQI_national_rejuvination  
+		}
+		completion_reward = {
+			add_stability = 0.2
+			add_political_power = 100
+			add_war_support = 0.2
+			set_cosmetic_tag = SQI_REP_uni
+		}
 	}
 
 	#A Left-wing Approach
@@ -2725,7 +3057,7 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		available = {
-					has_country_leader = {
+			has_country_leader = {
 				name = "陶行知"
 				ruling_only = yes
 			}
@@ -2734,7 +3066,7 @@ focus_tree = {
 		completion_reward = {
 		add_popularity = {
 		ideology = social_democrat
-		popularity = 0.6
+		popularity = 0.5
 		}
 		}
 		prerequisite = { focus = SQI_the_moon_shines_throughout_china  }
@@ -2791,7 +3123,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = SQI_teaching_moderate_agrarianism  }
 		completion_reward = {
-		add_war_support = 0.1
+		add_one_random_civilian_factory = yes
+		add_one_random_civilian_factory = yes
+		add_one_random_civilian_factory = yes
 		
 		}
 	}
@@ -2809,7 +3143,7 @@ focus_tree = {
 		prerequisite = { focus = SQI_a_country_in_need  }
 		completion_reward = {
 		add_manpower = 2000
-		
+		add_stability = 0.2
 		}
 	}
 
@@ -2829,6 +3163,10 @@ focus_tree = {
 		ideology = social_democrat
 		popularity = 0.1
 		}
+		swap_ideas = {
+			remove_idea = SQI_on_new_democracy
+			add_idea = SQI_reforming_nationalism
+		}
 		}
 	}
 
@@ -2845,6 +3183,10 @@ focus_tree = {
 		prerequisite = { focus = SQI_form_the_tao_study_society  } prerequisite = { focus = SQI_reforming_nationalism  }
 		completion_reward = {
 		add_war_support = 0.05
+		swap_ideas = {
+			remove_idea = SQI_reforming_nationalism
+			add_idea = SQI_continuation_of_secular_thinking
+		}
 		}
 	}
 
@@ -2860,7 +3202,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SQI_on_new_democracy  } prerequisite = { focus = SQI_saving_the_masses  }
 		completion_reward = {
-		add_stability = -0.01
+		add_stability = 0.1
 		add_political_power = 100
 		}
 	}
@@ -2877,8 +3219,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = SQI_saving_the_masses  }
 		completion_reward = {
-		add_stability = -0.01
+		add_stability = -0.1
 		add_political_power = 100
+		add_war_support = 0.1
+		add_manpower = 10000
 		}
 	}
 
@@ -2930,7 +3274,13 @@ focus_tree = {
 		}
 		prerequisite = { focus = SQI_separation_from_the_kmt  }
 		completion_reward = {
-		add_war_support = 0.05
+		add_war_support = 0.1
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 5000
+			producer = JAP
+		}
+		add_ideas = SQI_protection_against_imperialism
 		}
 	}
 
@@ -2950,7 +3300,73 @@ focus_tree = {
 				type = puppet_wargoal_focus
 				target = QIE
 			}
-		
+		hidden_effect = {
+			SQI = {
+				every_state = {		
+			limit = {
+			OR = {
+	is_core_of = LEP
+	is_core_of = CHI
+	is_core_of = SQI
+	is_core_of = ANQ
+	is_core_of = QIE
+	is_core_of = FNG
+	is_core_of = GXC
+	is_core_of = YUN
+	is_core_of = XSM
+	is_core_of = Mon
+	is_core_of = HNN
+	is_core_of = shx
+	is_core_of = szc
+	is_core_of = lec
+	is_core_of = sik
+	is_core_of = tib
+	is_core_of = TAI
+	is_core_of = JST
+	}
+			}					
+	add_core_of = SQI
+							}
+	add_state_core = 537
+	add_state_core = 525
+	add_state_core = 527
+	add_state_core = 858
+	add_state_core = 745
+	add_state_core = 1246
+	add_state_core = 409
+	add_state_core = 561
+	add_state_core = 560
+	add_state_core = 657
+	add_state_core = 654
+	add_state_core = 1293
+	add_state_core = 811
+	add_state_core = 329
+	add_state_core = 729
+	add_state_core = 600
+	add_state_core = 1046
+	add_state_core = 802
+	add_state_core = 1066
+	add_state_core = 595
+	add_state_core = 1044
+	add_state_core = 1045
+	add_state_core = 1069
+	add_state_core = 803
+	add_state_core = 1068
+	add_state_core = 1067
+	add_state_core = 596
+	add_state_core = 613
+	add_state_core = 1014
+	add_state_core = 606
+	add_state_core = 1050
+	add_state_core = 598
+	add_state_core = 1047
+	add_state_core = 1064
+	add_state_core = 597
+	add_state_core = 1065
+	add_state_core = 996
+	add_state_core = 744
+		}
+		}
 		}
 	}
 
@@ -2967,6 +3383,7 @@ focus_tree = {
 		prerequisite = { focus = SQI_continuation_of_secular_thinking  } prerequisite = { focus = SQI_putting_forward_progressive_education  }
 		completion_reward = {
 		add_manpower = 20000
+		add_ideas = SQI_ally_with_the_peasants
 		}
 		}
 
@@ -2984,6 +3401,12 @@ focus_tree = {
 		has_country_flag = has_united_china
 		}
 		prerequisite = { focus = SQI_advocating_for_a_new_republic  } prerequisite = { focus = SQI_ally_with_the_peasants  }
+		completion_reward = {
+			add_stability = 0.2
+			add_political_power = 100
+			add_war_support = 0.2
+			set_cosmetic_tag = SQI_REP_uni
+		}
 	}
 	
 	

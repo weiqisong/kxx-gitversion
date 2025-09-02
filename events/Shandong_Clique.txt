@@ -4057,8 +4057,7 @@ country_event = {#
 	option = {
 		
 		name = "徐志摩取胜"
-		set_politics = { ruling_party = social_liberal }
-		set_country_leader_ideology = national_liberalism_subtype
+		set_politics = { ruling_party = market_liberal }
 		remove_all_ministers = yes
 		add_ideas = {
 			SQI_xu_zhimo_hog_sli
@@ -4071,7 +4070,7 @@ country_event = {#
 		option = {
 		
 		name = "闻一多取胜"
-		set_politics = { ruling_party = social_democrat }
+		set_politics = { ruling_party = social_liberal }
 		remove_all_ministers = yes
 		add_ideas = {
 			SQI_wen_yiduo_hog_sde
@@ -4102,7 +4101,7 @@ country_event = {#
 	country_event = {#
 	id = shandong.461
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "Join the KMT?"
+	title = "加入国民党？"
 	desc = shandong.461.desc
 
 
@@ -4111,48 +4110,43 @@ country_event = {#
 
 	option = {
 		
-		name = "We shall State True to Our Own Cause"
+		name = "我们将与赤魔保持距离。"
 		}
 		option = {
 		
-		name = "Time to Join the KMT"
+		name = "团结就是力量。"
 		complete_national_focus = SQI_align_with_the_kmt
 		set_politics = { ruling_party = radical_socialist }
+		add_soclib_to_coalition = yes
 		set_cosmetic_tag = SQI_KMT
-		set_country_leader_name = {
+		create_country_leader = {
+			name = "闻一多"
+			picture = "gfx/leaders/SQI/Portrait_SQI_Wen_Yiduo.png"
+			expire = "1965.1.1"
+			ideology = radsoc_tridemism_subtype
+		}
+		add_popularity = {
 				ideology = radical_socialist
-				name = "闻一多"
+				popularity = 0.25
 			}
-			
-		set_country_leader_portrait = {
-				ideology = radical_socialist
-				portrait = "gfx/leaders/SQI/Portrait_SQI_Wen_Yiduo.png"
-			}
-			
-			set_country_leader_ideology = radsoc_tridemism_subtype
+		
 		}
 		option = {
-		name = "Incorporate the Mainline KMT Stance but Stay Independent"
-		add_socdem_to_coalition = yes
-		set_politics = { ruling_party = radical_socialist }
-		set_country_leader_name = {
-				ideology = radical_socialist
-				name = "闻一多"
-			}
-			
-		set_country_leader_portrait = {
-				ideology = radical_socialist
-				portrait = "gfx/leaders/SQI/Portrait_SQI_Wen_Yiduo.png"
-			}
-			set_country_leader_ideology = left_nationalism_subtype
-		set_party_name = { 
-				ideology = radical_socialist
-				name = "新月社"
-				long_name = "新月社"	
-			}
+		name = "温和化三民主义。"
+		complete_national_focus = SQI_align_with_the_kmt
+		set_politics = { ruling_party = social_democrat }
+		add_soclib_to_coalition = yes
+		set_cosmetic_tag = SQI_KMT
+		create_country_leader = {
+			name = "闻一多"
+			picture = "gfx/leaders/SQI/Portrait_SQI_Wen_Yiduo.png"
+			expire = "1965.1.1"
+			ideology = socdem_tridemism_subtype
+		}
+		
 			add_popularity = {
-				ideology = radical_socialist
-				popularity = 0.7
+				ideology = social_democrat
+				popularity = 0.25
 			}
 		}
 
@@ -4161,7 +4155,7 @@ country_event = {#
 	country_event = {#
 	id = shandong.462
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "A Proposition To the Landlords"
+	title = "对地主的提议"
 	desc = shandong.462.desc
 
 
@@ -4170,7 +4164,7 @@ country_event = {#
 
 	option = {
 		
-		name = "May Peasent and Lord Find Peace"
+		name = "各司其职。"
 		add_ideas = {
 		SQI_landlord_economics
 		}
@@ -4183,8 +4177,8 @@ country_event = {#
 	country_event = {#
 	id = shandong.463
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "An Offer From Shandong"
-	desc = "News from shandong reaches Hu Shih, in which an offer is made. The offer is the peaceful reunification between Shandong and Zhili for a better republican future. Shih ponders and then accepts the offer."
+	title = "山东提议统一"
+	desc = "山东提议统一"
 
 
 	fire_only_once = yes
@@ -4192,16 +4186,42 @@ country_event = {#
 
 	option = {
 		
-		name = "Tell Zhimo At Once"
+		name = "那是当然！"
+		if = {
+			limit = {
+				SQI = {
+					is_ai = no
+				}
+			}
+			SQI = {
+				annex_country = {
+					target = QIE
+					transfer_troops = yes
+				}
+			
+			}
+		}
+		else = {
 		QIE = {
 		annex_country = {
 				target = SQI
 				transfer_troops = yes
 			}
 		change_tag_from = SQI
-		}
+		}	
 		}
 		
+		}
+	option = {
+		
+		name = "你是？"
+		ai_will_do = {
+			factor = 0
+		}
+		SQI = {
+			declare_war_on = QIE
+		}
+		}	
 		
 	
 	}
@@ -4566,8 +4586,8 @@ country_event = {#
 	option = {
 		
 		name = "要求释放他们！"
-		ai_will_do = {
-			factor = 0
+		ai_chance = {
+			base = 0
 		}
 		SQI = {
 		country_event = {
@@ -4601,8 +4621,8 @@ country_event = {#
 	option = {
 		
 		name = "不可能!"
-		ai_will_do = {
-			factor = 0
+		ai_chance = {
+			base = 0
 		}
 		JAP = {
 			country_event = {
@@ -4647,7 +4667,7 @@ country_event = {#
 	country_event = {#
 	id = shandong.473
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shandong.455" }
-	title = "Future of Japan"
+	title = "日本的未来"
 	desc = shandong.473.desc
 
 	
@@ -4686,7 +4706,7 @@ country_event = {#
 	}
 	option = {
 		
-		name = "Annex Them"
+		name = "吞并日本"
 		annex_country = {
 			target = JAP
 			transfer_troops = yes
@@ -4706,7 +4726,7 @@ country_event = {#
 		}
 		
 		option = {
-		name = "Balkanize Them"
+		name = "肢解日本"
 		annex_country = {
 			target = JAP
 			transfer_troops = yes
