@@ -111,14 +111,14 @@ create_country_leader = {
 
 
 create_country_leader = {
-	name = "Tang Shengzhi"
+	name = "唐生智"
 	desc = "POLITICS_HNN_TANG_SHENGZHI_DESC"
 	picture = "gfx/leaders/HNN/Portrait_Hunan_Tang_Shengzhi.png"
 	expire = "1965.1.1"
 	ideology = socdem_buddhist_socialism_subtype
 }
 create_country_leader = {
-	name = "Cheng Qian"
+	name = "程潜"
 	desc = "POLITICS_HNN_CHENG_QIAN_DESC"
 	picture = "gfx/leaders/CHI/Portrait_CHI_Cheng_Qian.png"
 	expire = "1965.1.1"
@@ -131,20 +131,20 @@ create_country_leader = {
 	ideology = marlib_warlordism_subtype
 }
 create_country_leader = {
-	name = "Zhao Hengti"
+	name = "赵恒惕"
 	picture = "gfx/leaders/HNN/Portrait_Hunan_Zhao_Hengti_Civilian.png"
 	expire = "1965.1.1"
 	ideology = soccon_warlordism_subtype
 }
 create_country_leader = {
-	name = "Zhao Hengti"
+	name = "赵恒惕"
 	picture = "gfx/leaders/HNN/Portrait_Hunan_Zhao_Hengti_Civilian.png"
 	expire = "1965.1.1"
 	ideology = authdem_warlordism_subtype
 }
 
 create_country_leader = {
-	name = "Wu Guangxin"
+	name = "吴光新"
 	desc = "WU_GUANGXIN_LEADER_DESC"
 	picture = "gfx/leaders/HNN/Portrait_HNN_Wu_Guangxin.png"
 	expire = "1965.1.1"
@@ -152,7 +152,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Long Yunfei"
+	name = "赵恒惕"
 	desc = "POLITICS_HNN_ZHAO_HENGTI_DESC"
 	picture = "gfx/leaders/HNN/Portrait_Hunan_Zhao_Hengti_Civilian.png"
 	expire = "1965.1.1"
@@ -160,7 +160,7 @@ create_country_leader = {
 }
 
 create_field_marshal = {
-	name = "Zhao Hengti"
+	name = "赵恒惕"
 	desc = "POLITICS_HNN_ZHAO_HENGTI_ARMY_DESC"
 	portrait_path = "gfx/leaders/HNN/Portrait_Hunan_Zhao_Hengti.png"
 	traits = {
@@ -177,7 +177,7 @@ create_field_marshal = {
 }
 
 create_field_marshal = {
-	name = "Wu Guangxin"
+	name = "吴光新"
 	desc = "WU_GUANGXIN_LEADER_DESC"
 	portrait_path = "gfx/leaders/HNN/Portrait_HNN_Wu_Guangxin.png"
 	traits = {
@@ -195,7 +195,7 @@ create_field_marshal = {
 
 
 create_corps_commander = {
-	name = "Tang Shengming"
+	name = "唐生明"
 	desc = "POLITICS_HNN_TANG_SHENGMING_ARMY_DESC"
 	portrait_path = "gfx/leaders/HNN/Portrait_Hunan_Tang_Shengming.png"
 	traits = {
