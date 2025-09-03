@@ -76,7 +76,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Lu Yugang"
+	name = "陆裕光"
 	desc = "-"
 	picture = "gfx/leaders/GXC/Portrait_GXC_Lu_Yugang.png"
 	expire = "1965.1.1"
@@ -84,7 +84,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Lu Yugang"
+	name = "陆裕光"
 	desc = "-"
 	picture = "gfx/leaders/GXC/Portrait_GXC_Lu_Yugang.png"
 	expire = "1965.1.1"
@@ -92,7 +92,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Lu Yugang"
+	name = "陆裕光"
 	desc = "-"
 	picture = "gfx/leaders/GXC/Portrait_GXC_Lu_Yugang.png"
 	expire = "1965.1.1"
@@ -100,7 +100,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Lu Yugang"
+	name = "陆裕光"
 	desc = "-"
 	picture = "gfx/leaders/GXC/Portrait_GXC_Lu_Yugang.png"
 	expire = "1965.1.1"
