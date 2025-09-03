@@ -12859,6 +12859,7 @@ focus = {
 				ideology = social_conservative
 				popularity = 0.02
 			}
+      
 		}
 	}
   focus = {
