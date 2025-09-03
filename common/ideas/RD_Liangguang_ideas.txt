@@ -1227,8 +1227,8 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}			allowed = { always = no }                 
 			picture = PER_Corruption
 			modifier = {
-				consumer_goods_factor = 0.10
-				political_power_gain = 0.05
+				consumer_goods_factor = 0.05
+				political_power_gain = 0.10
 			}
 		}
 		
@@ -1322,7 +1322,7 @@ ideas = {
 				
 				war_support_factor = -0.1
 				political_power_cost = 0.2
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.10
 				stability_factor = -0.05
 				
 			}
@@ -1330,7 +1330,7 @@ ideas = {
 					tag = JAP
 					extra_trade_to_target_factor = 0.1
 					defense_bonus_against = -0.1
-					cic_to_target_factor = 0.025
+					cic_to_target_factor = 0.005
 				}
 		}
 		
