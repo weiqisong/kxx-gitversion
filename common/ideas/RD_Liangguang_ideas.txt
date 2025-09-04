@@ -8,11 +8,11 @@ ideas = {
 			allowed = { always = no }
 			
 			modifier = {
-				stability_factor = 0.1
-				war_support_factor = 0.1
-				political_power_gain = 0.05
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				political_power_gain = 0.1
 				authoritarian_democrat_drift = 0.05
-				army_morale_factor = 0.1
+				army_morale_factor = 0.15
 			}
 		}
 		
@@ -55,7 +55,7 @@ ideas = {
 				paternal_autocrat_drift = 0.05
 				national_populist_drift = 0.02
 				army_morale_factor = -0.05
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.10
 			}
 		}
 		
@@ -1250,10 +1250,10 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}			allowed = { always = no }                 
 			picture = new_taxes
 			modifier = {
-				political_power_cost = 0.3
-				consumer_goods_factor = -0.15
-				industry_repair_factor = 0.1
-				
+				political_power_cost = 0.01
+				consumer_goods_factor = -0.20
+				industry_repair_factor = 0.3
+				production_speed_buildings_factor = 0.3
 			}
 		}
 		
@@ -1272,9 +1272,9 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}			allowed = { always = no }                 
 			picture = new_taxes
 			modifier = {
-				consumer_goods_factor = 0.025
-				military_industrial_organization_research_bonus = 0.05
-				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = -0.05
+				military_industrial_organization_research_bonus = 0.15
+				production_factory_max_efficiency_factor = 0.1
 		
 			}
 		}
@@ -1283,11 +1283,11 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}			allowed = { always = no }                 
 			picture = generic_taxation
 			modifier = {
-				consumer_goods_factor = -0.05
-				political_power_cost = 0.3
-				military_industrial_organization_research_bonus = 0.05
-				military_industrial_organization_funds_gain = 0.03
-				war_support_factor = 0.05
+				consumer_goods_factor = -0.1
+				political_power_cost = 0.1
+				military_industrial_organization_research_bonus = 0.15
+				military_industrial_organization_funds_gain = 0.15
+				war_support_factor = 0.1
 				
 			}
 		}
@@ -1296,10 +1296,10 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}			allowed = { always = no }
 			picture = generic_taxation
 			modifier = {
-				consumer_goods_factor = -0.10
-				global_building_slots_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
-				stability_factor = 0.05
+				consumer_goods_factor = -0.15
+				global_building_slots_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				stability_factor = 0.1
 				
 			}
 		}
@@ -1429,8 +1429,8 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}			allowed = { always = no }
 			picture = QIE_banners
 			modifier = {
-				resistance_target = -0.1
-				foreign_subversive_activites = -0.1
+				resistance_target = -0.2
+				foreign_subversive_activites = -0.5
 			}
 		}
 		
@@ -1438,9 +1438,9 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}			allowed = { always = no }
 			picture = NYC_garbage_gangster
 			modifier = {
-				supply_node_range = 0.1
-				industry_free_repair_factor = 0.1
-				production_speed_infrastructure_factor = 0.05
+				supply_node_range = 0.2
+				industry_free_repair_factor = 0.5
+				production_speed_infrastructure_factor = 0.10
 			}
 			
 		}
@@ -1449,12 +1449,12 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}			allowed = { always = no }
 			picture = NYC_garbage_gangster
 			modifier = {
-				supply_node_range = 0.1
-				industry_free_repair_factor = 0.1
-				production_speed_infrastructure_factor = 0.10
+				supply_node_range = 0.2
+				industry_free_repair_factor = 0.3
+				production_speed_infrastructure_factor = 0.20
 				operative_slot = 1
-				political_power_gain = 0.03
-				stability_factor = 0.05
+				political_power_gain = 0.2
+				stability_factor = 0.1
 			}
 			
 		}
@@ -1476,12 +1476,12 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}			allowed = { always = no }
 			picture = CEA_anti_western_idea
 			modifier = {
-				stability_factor = 0.1
-				political_power_gain = 0.1
-				production_factory_efficiency_gain_factor = -0.05
-				production_factory_max_efficiency_factor = -0.05
-				global_building_slots_factor = 0.05
-				production_speed_industrial_complex_factor = 0.05 
+				stability_factor = 0.15
+				political_power_gain = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				global_building_slots_factor = -0.05
+				production_speed_industrial_complex_factor = 0.1
 
 			}
 			
@@ -1490,12 +1490,12 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}			allowed = { always = no }
 			picture = RUS_foreign_concessions
 			modifier = {
-				stability_factor = -0.1
-				political_power_gain = -0.1
-				production_factory_efficiency_gain_factor = 0.05
-				production_factory_max_efficiency_factor = 0.10
-				consumer_goods_factor = -0.05
-				min_export = 0.1
+				stability_factor = -0.15
+				political_power_gain = -0.05
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				consumer_goods_factor = -0.1
+				min_export = 0.2
 				
 			}
 			
@@ -1505,13 +1505,13 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}			allowed = { always = no }
 			picture = YUN_Federalist_idea
 			modifier = {
-				stability_factor = 0.05
+				stability_factor = 0.1
 				war_support_factor = -0.05
-				consumer_goods_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.025
-				production_factory_max_efficiency_factor = 0.025
-				army_morale_factor = 0.05
-				army_org_factor = -0.025
+				consumer_goods_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				army_morale_factor = 0.1
+				army_org_factor = -0.005
 				
 			}
 			
@@ -1521,11 +1521,11 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}			allowed = { always = no }
 			picture = YUN_Federalist_idea
 			modifier = {
-				stability_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.025
+				stability_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.3
 				consumer_goods_factor = 0.025
-				production_factory_max_efficiency_factor = 0.05
-				army_morale_factor = 0.005
+				production_factory_max_efficiency_factor = 0.3
+				army_morale_factor = 0.2
 				army_org_factor = 0.025
 				
 			}
@@ -1538,8 +1538,8 @@ ideas = {
 			modifier = {
 				political_power_gain = -0.15
 				stability_factor = -0.1
-				production_speed_industrial_complex_factor = 0.075 
-				research_speed_factor = 0.075
+				production_speed_industrial_complex_factor = 0.09 
+				research_speed_factor = 0.1
 				
 			}
 			
@@ -1549,8 +1549,8 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}			allowed = { always = no }
 			picture = GER_religious_freedom
 			modifier = {
-				stability_factor = 0.1
-				research_speed_factor = -0.05
+				stability_factor = 0.15
+				research_speed_factor = -0.075
 				acclimatization_hot_climate_gain_factor = 0.05
 				acclimatization_cold_climate_gain_factor = 0.05
 			}
@@ -1563,8 +1563,8 @@ ideas = {
 			modifier = {
 				line_change_production_efficiency_factor  = -0.075
 				conversion_cost_mil_to_civ_factor = -0.10
-				global_building_slots_factor = 0.05
-				industry_free_repair_factor = 0.075
+				global_building_slots_factor = 0.1
+				industry_free_repair_factor = 0.1
 
 			}
 			
@@ -1575,7 +1575,7 @@ ideas = {
 			modifier = {
 				production_factory_efficiency_gain_factor = -0.05
 				industrial_capacity_factory = -0.05
-				production_speed_buildings_factor = 0.075
+				production_speed_buildings_factor = 0.1
 				consumer_goods_factor = -0.10
 				
 			}
@@ -1586,9 +1586,9 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}			allowed = { always = no }
 			picture = generic_mutual_aid
 			modifier = {
-				consumer_goods_factor = -0.025
-				army_morale_factor = 0.1
-				army_org_factor = 0.05
+				consumer_goods_factor = -0.05
+				army_morale_factor = 0.15
+				army_org_factor = 0.1
 				
 			}
 			
@@ -1610,10 +1610,10 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}			allowed = { always = no }
 			picture = SZC_opium_spread
 			modifier = {
-				stability_factor = 0.1
-				conscription_factor = 0.1
+				stability_factor = 0.15
+				conscription_factor = 0.15
 				political_power_cost = 0.1
-				experience_gain_army_factor = 0.05
+				experience_gain_army_factor = 0.1
 				
 			}
 			
@@ -1623,8 +1623,8 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}			allowed = { always = no }
 			picture = generic_high_literacy
 			modifier = {
-				research_speed_factor = 0.05
-				military_industrial_organization_research_bonus = 0.1
+				research_speed_factor = 0.1
+				military_industrial_organization_research_bonus = 0.15
 			}
 			
 		}
@@ -1633,10 +1633,10 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}			allowed = { always = no }
 			picture = anti-japanese_sentiment
 			modifier = {
-				army_core_defence_factor = 0.1
-				army_core_attack_factor = 0.1
-				army_defence_against_major_factor = 0.05
-				dig_in_speed_factor = -0.05
+				army_core_defence_factor = 0.15
+				army_core_attack_factor = 0.15
+				army_defence_against_major_factor = 0.1
+				dig_in_speed_factor = -0.1
 				social_democrat_drift = 0.01
 				social_liberal_drift = 0.01
 			}
@@ -1647,12 +1647,12 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}			allowed = { always = no }
 			picture = anti-japanese_sentiment
 			modifier = {
-				army_morale_factor = 0.05
-				army_defence_against_major_factor = 0.05
-				production_factory_efficiency_gain_factor = -0.05
-				production_factory_max_efficiency_factor = 0.05
+				army_morale_factor = 0.1
+				army_defence_against_major_factor = 0.15
+				production_factory_efficiency_gain_factor = -0.025
+				production_factory_max_efficiency_factor = 0.025
 				production_speed_arms_factory_factor = -0.05
-				min_export = -0.025
+				min_export = -0.05
 				trade_opinion_factor = -0.1
 				embargo_cost_factor = -0.2
 			}
@@ -1664,11 +1664,11 @@ ideas = {
 			picture = anti-japanese_sentiment
 			modifier = {
 				political_power_cost = 0.1
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.15
 				production_factory_efficiency_gain_factor = -0.015
 				production_factory_max_efficiency_factor = 0.055
 				production_speed_arms_factory_factor = -0.015
-				military_industrial_organization_funds_gain = 0.05
+				military_industrial_organization_funds_gain = 0.1
 				min_export = -0.05
 				trade_opinion_factor = 0.2
 			}
@@ -1682,11 +1682,11 @@ ideas = {
 			modifier = {
 				political_power_cost = 0.1
 				consumer_goods_factor = -0.1
-				production_factory_efficiency_gain_factor = -0.015
-				production_factory_max_efficiency_factor = 0.055
-				production_speed_arms_factory_factor = -0.015
+				production_factory_efficiency_gain_factor = 0.03
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_arms_factory_factor = -0.05
 				military_industrial_organization_funds_gain = 0.05
-				min_export = -0.05
+				min_export = -0.1
 				trade_opinion_factor = 0.2
 			}
 			targeted_modifier = {
@@ -2002,13 +2002,13 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}			allowed = { always = no }
 			picture = state_economy
 			modifier = {
-				consumer_goods_factor = 0.1
-				industry_free_repair_factor  = -0.1
-				production_factory_efficiency_gain_factor  = 0.05
-				production_factory_max_efficiency_factor  = 0.05
-				production_factory_start_efficiency_factor = -0.05
-				line_change_production_efficiency_factor  = 0.075
-				production_lack_of_resource_penalty_factor = 0.05
+				consumer_goods_factor = -0.2
+				industry_free_repair_factor  = 0.1
+				production_factory_efficiency_gain_factor  = 0.1
+				production_factory_max_efficiency_factor  = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				line_change_production_efficiency_factor  = 0.025
+				production_lack_of_resource_penalty_factor = -0.05
 			}
 		}
 		
@@ -2058,10 +2058,10 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}			allowed = { always = no }
 			picture = army_cooperation
 			modifier = {
-				army_core_defence_factor = 0.025
-				army_org_factor = 0.025
-				supply_consumption_factor = -0.025
-				planning_speed = -0.05
+				army_core_defence_factor = 0.05
+				army_org_factor = 0.05
+				supply_consumption_factor = -0.05
+				planning_speed = -0.1
 			}
 		}
 		GXC_army_of_titanium = {
@@ -2079,9 +2079,9 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arm_ottoman_occupation"}			allowed = { always = no }
 			picture = army_cooperation
 			modifier = {
-				experience_gain_army_factor = 0.05
-				training_time_factor = -0.1
-				land_reinforce_rate = 0.03
+				experience_gain_army_factor = 0.1
+				training_time_factor = -0.05
+				land_reinforce_rate = 0.05
 			}
 		}
 		
