@@ -10,7 +10,7 @@ focus_tree = {
   default = no
   continuous_focus_position = {
     x = 880
-    y = 2100
+    y = 0
   }
   focus = {
     id = SER_Return_Of_The_Crown_Prince
@@ -8911,6 +8911,561 @@ if = {
     }
   }
   focus = {
+    id = SER_father_of_fire
+    icon = GFX_goal_FRA_Reign_Fire
+    cost = 2
+    x = 8
+    y = 1
+    relative_position_id = SER_black_hand
+    ai_will_do = {
+      factor = 100
+    }
+    prerequisite = {
+      focus = SER_black_hand
+    }
+    mutually_exclusive = {
+      focus = SER_SKK
+      focus = SER_legacy_of_young_bosnia
+      focus = SER_voice_of_god
+      focus = SER_black_general
+    }
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_black_hand"
+      add_ideas = SER_black_hand
+      add_popularity = {
+        ideology = national_populist
+        popularity = 0.17
+      }
+      add_political_power = 75
+      country_event = {
+        id = dhserbia.2
+        days = 14
+        random_days = 3
+      }
+      custom_effect_tooltip = unlock_focuses
+    }
+  }
+  focus = {
+    id = SER_christian_union
+    icon = GFX_DKB_Christian_Unions
+    cost = 4
+    x = -1
+    y = 1
+    relative_position_id = SER_father_of_fire
+    ai_will_do = {
+      factor = 100
+    }
+    prerequisite = {
+      focus = SER_father_of_fire
+    }
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_black_hand"
+      add_ideas = SER_black_hand
+      add_popularity = {
+        ideology = national_populist
+        popularity = 0.17
+      }
+      add_political_power = 75
+      country_event = {
+        id = dhserbia.2
+        days = 14
+        random_days = 3
+      }
+      custom_effect_tooltip = unlock_focuses
+    }
+  }
+  focus = {
+    id = SER_intergrate_chetniks
+    icon = GFX_goal_MNT_chetnik
+    cost = 4
+    x = 1
+    y = 1
+    relative_position_id = SER_father_of_fire
+    ai_will_do = {
+      factor = 100
+    }
+    prerequisite = {
+      focus = SER_father_of_fire
+    }
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_black_hand"
+      add_ideas = SER_black_hand
+      add_popularity = {
+        ideology = national_populist
+        popularity = 0.17
+      }
+      add_political_power = 75
+      country_event = {
+        id = dhserbia.2
+        days = 14
+        random_days = 3
+      }
+      custom_effect_tooltip = unlock_focuses
+    }
+  }
+  focus = {
+    id = SER_defend_people
+    icon = GFX_goal_GUA_People_Army
+    cost = 4
+    x = 0
+    y = 2
+    relative_position_id = SER_father_of_fire
+    ai_will_do = {
+      factor = 100
+    }
+    prerequisite = {
+      focus = SER_christian_union
+    }
+    prerequisite = {
+      focus = SER_intergrate_chetniks
+    }
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_black_hand"
+      add_ideas = SER_black_hand
+      add_popularity = {
+        ideology = national_populist
+        popularity = 0.17
+      }
+      add_political_power = 75
+      country_event = {
+        id = dhserbia.2
+        days = 14
+        random_days = 3
+      }
+      custom_effect_tooltip = unlock_focuses
+    }
+  }
+  focus = {
+    id = SER_progressive_chavinism
+    icon = GFX_goal_YUC_Adapting_Orthodoxies_Charters
+    cost = 4
+    x = -1
+    y = 3
+    relative_position_id = SER_father_of_fire
+    ai_will_do = {
+      factor = 100
+    }
+    prerequisite = {
+      focus = SER_defend_people
+    }
+   
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_black_hand"
+      add_ideas = SER_black_hand
+      add_popularity = {
+        ideology = national_populist
+        popularity = 0.17
+      }
+      add_political_power = 75
+      country_event = {
+        id = dhserbia.2
+        days = 14
+        random_days = 3
+      }
+      custom_effect_tooltip = unlock_focuses
+    }
+  }
+  focus = {
+    id = SER_national_social_revolution
+    icon = GFX_goal_SRI_Revolutionary_Commissars
+    cost = 4
+    x = 1
+    y = 3
+    relative_position_id = SER_father_of_fire
+    ai_will_do = {
+      factor = 100
+    }
+    prerequisite = {
+      focus = SER_defend_people
+    }
+   
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_black_hand"
+      add_ideas = SER_black_hand
+      add_popularity = {
+        ideology = national_populist
+        popularity = 0.17
+      }
+      add_political_power = 75
+      country_event = {
+        id = dhserbia.2
+        days = 14
+        random_days = 3
+      }
+      custom_effect_tooltip = unlock_focuses
+    }
+  }
+  focus = {
+    id = SER_voice_of_god
+    icon = GFX_TRM_Ties_Church
+    cost = 2.00
+    x = 0
+    y = 1
+    relative_position_id = SER_black_hand
+    ai_will_do = {
+      factor = 100
+    }
+    prerequisite = {
+      focus = SER_black_hand
+    }
+    mutually_exclusive = {
+      focus = SER_SKK
+      focus = SER_legacy_of_young_bosnia
+      focus = SER_black_general
+      focus = SER_father_of_fire
+    }
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_black_hand"
+      add_ideas = SER_black_hand
+      add_popularity = {
+        ideology = national_populist
+        popularity = 0.17
+      }
+      add_political_power = 75
+      country_event = {
+        id = dhserbia.2
+        days = 14
+        random_days = 3
+      }
+      custom_effect_tooltip = unlock_focuses
+    }
+  }
+  focus = {
+    id = SER_theocratic_state
+    icon = GFX_RUS_Orthodox_Church_Influence
+    cost = 4
+    x = -1
+    y = 1
+    relative_position_id = SER_voice_of_god
+    ai_will_do = {
+      factor = 100
+    }
+    prerequisite = {
+      focus = SER_voice_of_god
+    }
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_black_hand"
+      add_ideas = SER_black_hand
+      add_popularity = {
+        ideology = national_populist
+        popularity = 0.17
+      }
+      add_political_power = 75
+      country_event = {
+        id = dhserbia.2
+        days = 14
+        random_days = 3
+      }
+      custom_effect_tooltip = unlock_focuses
+    }
+  }
+  focus = {
+    id = SER_sansawa_legacy
+    icon = GFX_goal_ROM_Alliance_With_Church
+    cost = 4
+    x = 1
+    y = 1
+    relative_position_id = SER_voice_of_god
+    ai_will_do = {
+      factor = 100
+    }
+    prerequisite = {
+      focus = SER_voice_of_god
+    }
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_black_hand"
+      add_ideas = SER_black_hand
+      add_popularity = {
+        ideology = national_populist
+        popularity = 0.17
+      }
+      add_political_power = 75
+      country_event = {
+        id = dhserbia.2
+        days = 14
+        random_days = 3
+      }
+      custom_effect_tooltip = unlock_focuses
+    }
+  }
+  focus = {
+    id = SER_god_king_country
+    icon = GFX_goal_national_populism
+    cost = 4
+    x = 0
+    y = 2
+    relative_position_id = SER_voice_of_god
+    ai_will_do = {
+      factor = 100
+    }
+    prerequisite = {
+      focus = SER_theocratic_state
+    }
+    prerequisite = {
+      focus = SER_sansawa_legacy
+    }
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_black_hand"
+      add_ideas = SER_black_hand
+      add_popularity = {
+        ideology = national_populist
+        popularity = 0.17
+      }
+      add_political_power = 75
+      country_event = {
+        id = dhserbia.2
+        days = 14
+        random_days = 3
+      }
+      custom_effect_tooltip = unlock_focuses
+    }
+  }
+  focus = {
+    id = SER_orthodox_church_unity
+    icon = GFX_RUS_maximalist_church
+    cost = 4
+    x = -1
+    y = 3
+    relative_position_id = SER_voice_of_god
+    ai_will_do = {
+      factor = 100
+    }
+    prerequisite = {
+      focus = SER_god_king_country
+    }
+   
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_black_hand"
+      add_ideas = SER_black_hand
+      add_popularity = {
+        ideology = national_populist
+        popularity = 0.17
+      }
+      add_political_power = 75
+      country_event = {
+        id = dhserbia.2
+        days = 14
+        random_days = 3
+      }
+      custom_effect_tooltip = unlock_focuses
+    }
+  }
+   focus = {
+    id = SER_declare_war_on_national_traitors
+    icon = GFX_focus_HKG_Traitors
+    cost = 4
+    x = 1
+    y = 3
+    relative_position_id = SER_voice_of_god
+    ai_will_do = {
+      factor = 100
+    }
+    prerequisite = {
+      focus = SER_god_king_country
+    }
+   
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_black_hand"
+      add_ideas = SER_black_hand
+      add_popularity = {
+        ideology = national_populist
+        popularity = 0.17
+      }
+      add_political_power = 75
+      country_event = {
+        id = dhserbia.2
+        days = 14
+        random_days = 3
+      }
+      custom_effect_tooltip = unlock_focuses
+    }
+  }
+  focus = {
+    id = SER_legacy_of_young_bosnia
+    icon = GFX_goal_KR_ideology_totalist
+    cost = 2.00
+    x = -8
+    y = 1
+    relative_position_id = SER_black_hand
+    ai_will_do = {
+      factor = 100
+    }
+    mutually_exclusive = {
+      focus = SER_SKK
+      focus = SER_black_general
+      focus = SER_voice_of_god
+      focus = SER_father_of_fire
+    }
+    prerequisite = {
+      focus = SER_black_hand
+    }
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_black_hand"
+      add_ideas = SER_black_hand
+      add_popularity = {
+        ideology = national_populist
+        popularity = 0.17
+      }
+      add_political_power = 75
+      country_event = {
+        id = dhserbia.2
+        days = 14
+        random_days = 3
+      }
+      custom_effect_tooltip = unlock_focuses
+    }
+  }
+  focus = {
+    id = SER_national_atheism
+    icon = GFX_goal_MEX_atheism
+    cost = 4
+    x = -1
+    y = 1
+    relative_position_id = SER_legacy_of_young_bosnia
+    ai_will_do = {
+      factor = 100
+    }
+    prerequisite = {
+      focus = SER_legacy_of_young_bosnia
+    }
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_black_hand"
+      add_ideas = SER_black_hand
+      add_popularity = {
+        ideology = national_populist
+        popularity = 0.17
+      }
+      add_political_power = 75
+      country_event = {
+        id = dhserbia.2
+        days = 14
+        random_days = 3
+      }
+      custom_effect_tooltip = unlock_focuses
+    }
+  }
+  focus = {
+    id = SER_revitalize_agriculture
+    icon = GFX_goal_CZE_state_agriculture
+    cost = 4
+    x = 1
+    y = 1
+    relative_position_id = SER_legacy_of_young_bosnia
+    ai_will_do = {
+      factor = 100
+    }
+    prerequisite = {
+      focus = SER_legacy_of_young_bosnia
+    }
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_black_hand"
+      add_ideas = SER_black_hand
+      add_popularity = {
+        ideology = national_populist
+        popularity = 0.17
+      }
+      add_political_power = 75
+      country_event = {
+        id = dhserbia.2
+        days = 14
+        random_days = 3
+      }
+      custom_effect_tooltip = unlock_focuses
+    }
+  }
+  focus = {
+    id = SER_ally_syndicalists
+    icon = GFX_goal_FIU_syndicalize_unions
+    cost = 4
+    x = 0
+    y = 2
+    relative_position_id = SER_legacy_of_young_bosnia
+    ai_will_do = {
+      factor = 100
+    }
+    prerequisite = {
+      focus = SER_national_atheism
+    }
+    prerequisite = {
+      focus = SER_revitalize_agriculture
+    }
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_black_hand"
+      add_ideas = SER_black_hand
+      add_popularity = {
+        ideology = national_populist
+        popularity = 0.17
+      }
+      add_political_power = 75
+      country_event = {
+        id = dhserbia.2
+        days = 14
+        random_days = 3
+      }
+      custom_effect_tooltip = unlock_focuses
+    }
+  }
+  focus = {
+    id = SER_serbian_totalism
+    icon = GFX_HUN_total_recovery
+    cost = 4
+    x = -1
+    y = 3
+    relative_position_id = SER_legacy_of_young_bosnia
+    ai_will_do = {
+      factor = 100
+    }
+    prerequisite = {
+      focus = SER_ally_syndicalists
+    }
+    
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_black_hand"
+      add_ideas = SER_black_hand
+      add_popularity = {
+        ideology = national_populist
+        popularity = 0.17
+      }
+      add_political_power = 75
+      country_event = {
+        id = dhserbia.2
+        days = 14
+        random_days = 3
+      }
+      custom_effect_tooltip = unlock_focuses
+    }
+  }
+  focus = {
+    id = SER_forced_intergration
+    icon = GFX_HUN_total_collectivization
+    cost = 4
+    x = 1
+    y = 3
+    relative_position_id = SER_legacy_of_young_bosnia
+    ai_will_do = {
+      factor = 100
+    }
+    prerequisite = {
+      focus = SER_ally_syndicalists
+    }
+    
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_black_hand"
+      add_ideas = SER_black_hand
+      add_popularity = {
+        ideology = national_populist
+        popularity = 0.17
+      }
+      add_political_power = 75
+      country_event = {
+        id = dhserbia.2
+        days = 14
+        random_days = 3
+      }
+      custom_effect_tooltip = unlock_focuses
+    }
+  }
+  focus = {
     id = SER_SKK
     icon = GFX_goal_SER_SKK
     cost = 2.00
@@ -8919,6 +9474,12 @@ if = {
     }
     mutually_exclusive = {
       focus = SER_black_general
+    }
+    mutually_exclusive = {
+      focus = SER_black_general
+      focus = SER_legacy_of_young_bosnia
+      focus = SER_voice_of_god
+      focus = SER_father_of_fire
     }
     x = 4
     y = 1
@@ -8940,13 +9501,13 @@ if = {
   focus = {
     id = SER_loyalty_king
     icon = GFX_goal_SER_king_loyalty
-    cost = 8.00
+    cost = 4
     prerequisite = {
       focus = SER_SKK
     }
-    x = 5
-    y = 2
-    relative_position_id = SER_black_hand
+    x = 1
+    y = 1
+    relative_position_id = SER_SKK
     ai_will_do = {
       factor = 100
     }
@@ -9003,6 +9564,9 @@ if = {
     }
     mutually_exclusive = {
       focus = SER_SKK
+      focus = SER_legacy_of_young_bosnia
+      focus = SER_voice_of_god
+      focus = SER_father_of_fire
     }
     x = -4
     y = 1
@@ -9032,12 +9596,15 @@ if = {
     id = SER_pacify_oposition
     icon = GFX_goal_SER_pacify_oposition
     cost = 3.00
-    prerequisite = {
-      focus = SER_black_general
+   prerequisite = {
       focus = SER_SKK
+      focus = SER_legacy_of_young_bosnia
+      focus = SER_voice_of_god
+      focus = SER_father_of_fire
+      focus = SER_black_general
     }
     x = 0
-    y = 2
+    y = 5
     relative_position_id = SER_black_hand
     ai_will_do = {
       factor = 100
@@ -9062,13 +9629,13 @@ if = {
   focus = {
     id = SER_SKK_expansion
     icon = GFX_goal_SER_expand_the_skk
-    cost = 8.00
+    cost = 4
     prerequisite = {
       focus = SER_SKK
     }
-    x = 3
-    y = 2
-    relative_position_id = SER_black_hand
+    x = -1
+    y = 1
+    relative_position_id = SER_SKK
     ai_will_do = {
       factor = 100
     }
@@ -9087,16 +9654,66 @@ if = {
   focus = {
     id = SER_fund_king_men
     icon = GFX_goal_SER_fund_the_king_men
-    cost = 8.00
+    cost = 4
     prerequisite = {
       focus = SER_SKK_expansion
     }
     prerequisite = {
       focus = SER_loyalty_king
     }
-    x = 4
+    x = 0
+    y = 2
+    relative_position_id = SER_SKK
+    ai_will_do = {
+      factor = 100
+    }
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_fund_king_men"
+      add_political_power = -50
+      add_ideas = SER_king_men_big
+      country_event = {
+        id = dhserbia.9
+        days = 35
+        random_days = 2
+      }
+    }
+  }
+  focus = {
+    id = SER_decentralize
+    icon = GFX_RUS_Decentralize_Power
+    cost = 4
+    prerequisite = {
+      focus = SER_fund_king_men
+    }
+   
+    x = -1
     y = 3
-    relative_position_id = SER_black_hand
+    relative_position_id = SER_SKK
+    ai_will_do = {
+      factor = 100
+    }
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_fund_king_men"
+      add_political_power = -50
+      add_ideas = SER_king_men_big
+      country_event = {
+        id = dhserbia.9
+        days = 35
+        random_days = 2
+      }
+    }
+  }
+  focus = {
+    id = SER_return_to_tradition
+    icon = GFX_goal_ROM_Tradition_Eternal
+    cost = 4
+    prerequisite = {
+      focus = SER_fund_king_men
+    }
+   
+    x = 1
+    y = 3
+    relative_position_id = SER_SKK
     ai_will_do = {
       factor = 100
     }
@@ -9119,8 +9736,8 @@ if = {
       focus = SER_pacify_oposition
     }
     x = -1
-    y = 3
-    relative_position_id = SER_black_hand
+    y = 1
+    relative_position_id = SER_pacify_oposition
     ai_will_do = {
       factor = 100
     }
@@ -9139,8 +9756,8 @@ if = {
       focus = SER_pacify_oposition
     }
     x = 1
-    y = 3
-    relative_position_id = SER_black_hand
+    y = 1
+    relative_position_id = SER_pacify_oposition
     ai_will_do = {
       factor = 100
     }
@@ -9157,13 +9774,13 @@ if = {
   focus = {
     id = SER_black_legion
     icon = GFX_goal_SER_union_war_preparations
-    cost = 8.00
+    cost = 4
     prerequisite = {
       focus = SER_black_general
     }
-    x = -5
-    y = 2
-    relative_position_id = SER_black_hand
+    x = -1
+    y = 1
+    relative_position_id = SER_black_general
     ai_will_do = {
       factor = 100
     }
@@ -9222,13 +9839,13 @@ if = {
   focus = {
     id = SER_new_myth
     icon = GFX_goal_SER_new_myth
-    cost = 8.00
+    cost = 4
     prerequisite = {
       focus = SER_black_general
     }
-    x = -3
-    y = 2
-    relative_position_id = SER_black_hand
+    x = 1
+    y = 1
+    relative_position_id = SER_black_general
     ai_will_do = {
       factor = 100
     }
@@ -9246,16 +9863,64 @@ if = {
   focus = {
     id = SER_Loyal_population
     icon = GFX_goal_SER_loyal_population
-    cost = 8.00
+    cost = 4
     prerequisite = {
       focus = SER_black_legion
     }
     prerequisite = {
       focus = SER_new_myth
     }
-    x = -4
+    x = 0
+    y = 2
+    relative_position_id = SER_black_general
+    ai_will_do = {
+      factor = 100
+    }
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_new_myth"
+      add_manpower = 2000
+      add_ideas = SER_population
+      add_popularity = {
+        ideology = national_populist
+        popularity = 0.05
+      }
+    }
+  }
+  focus = {
+    id = SER_piemontism
+    icon = GFX_goal_generic_army_mass_assault
+    cost = 4
+    prerequisite = {
+      focus = SER_Loyal_population
+    }
+   
+    x = -1
     y = 3
-    relative_position_id = SER_black_hand
+    relative_position_id = SER_black_general
+    ai_will_do = {
+      factor = 100
+    }
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_new_myth"
+      add_manpower = 2000
+      add_ideas = SER_population
+      add_popularity = {
+        ideology = national_populist
+        popularity = 0.05
+      }
+    }
+  }
+  focus = {
+    id = SER_expand_intelligence
+    icon = GFX_goal_CAN_Allied_Intelligence_Sharing
+    cost = 4
+    prerequisite = {
+      focus = SER_Loyal_population
+    }
+   
+    x = 1
+    y = 3
+    relative_position_id = SER_black_general
     ai_will_do = {
       factor = 100
     }
@@ -9272,13 +9937,13 @@ if = {
   focus = {
     id = SER_unity_or_death
     icon = GFX_goal_SER_Unity_or_death
-    cost = 8.00
+    cost = 4
     prerequisite = {
       focus = SER_mobilize_population
     }
     x = 0
-    y = 5
-    relative_position_id = SER_black_hand
+    y = 3
+    relative_position_id = SER_pacify_oposition
     ai_will_do = {
       factor = 100
     }
@@ -9331,7 +9996,7 @@ if = {
   focus = {
     id = SER_mobilize_population
     icon = GFX_goal_SER_mobilize_the_che
-    cost = 8.00
+    cost = 4
     prerequisite = {
       focus = SER_aid_foreign
     }
@@ -9343,8 +10008,8 @@ if = {
       focus = SER_Loyal_population
     }
     x = 0
-    y = 4
-    relative_position_id = SER_black_hand
+    y = 2
+    relative_position_id = SER_pacify_oposition
     ai_will_do = {
       factor = 100
     }
@@ -9370,11 +10035,12 @@ if = {
     prerequisite = {
       focus = SER_unity_or_death
     }
-    x = 53
-    y = 6
+    x = -2
+    y = 4
     ai_will_do = {
       factor = 100
     }
+    relative_position_id = SER_pacify_oposition
     available = {
       owns_state = 163
     }
@@ -9395,11 +10061,13 @@ if = {
     prerequisite = {
       focus = SER_unity_or_death
     }
-    x = 55
-    y = 6
+    x = 0
+    y = 4
     ai_will_do = {
       factor = 100
     }
+    relative_position_id = SER_pacify_oposition
+    
     available = {
       owns_state = 104
     }
@@ -9420,11 +10088,13 @@ if = {
     prerequisite = {
       focus = SER_unity_or_death
     }
-    x = 57
-    y = 6
+    x = 2
+    y = 4
     ai_will_do = {
       factor = 100
     }
+    relative_position_id = SER_pacify_oposition
+    
     available = {
       owns_state = 105
     }
@@ -9451,11 +10121,33 @@ if = {
     prerequisite = {
       focus = SER_denial_serbs
     }
-    x = 55
-    y = 7
+    x = 0
+    y = 5
     ai_will_do = {
       factor = 100
     }
+    relative_position_id = SER_pacify_oposition
+    
+    completion_reward = {
+      log = "[GetDateText]: [Root.GetName]: Focus SER_friends_forever"
+      add_political_power = -50
+      add_ideas = SER_friends_4ever
+    }
+  }
+  focus = {
+    id = SER_great_serbia
+    icon = GFX_goal_KR_ideology_national_populist
+    cost = 3.00
+    prerequisite = {
+      focus = SER_friends_forever
+    }
+    x = 0
+    y = 6
+    ai_will_do = {
+      factor = 100
+    }
+    relative_position_id = SER_pacify_oposition
+    
     completion_reward = {
       log = "[GetDateText]: [Root.GetName]: Focus SER_friends_forever"
       add_political_power = -50
@@ -15117,6 +15809,784 @@ relative_position_id = SER_protect_democracy
 				custom_effect_tooltip = YUG_other_improve_relations_tt
 				YUG_update_ethnic_situation = yes
 			}
+		}
+	}
+  focus = {
+		id = SER_chetnik_coup
+		icon = GFX_goal_FIU_chetnik
+		cost = 3
+		x = -20
+		y = 15
+
+    available = {
+      always = no
+    }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_ally_skk
+		icon = GFX_goal_FIU_france_east
+		cost = 3
+		x = -3
+		y = 1
+    relative_position_id = SER_chetnik_coup
+    prerequisite = {
+      focus = SER_chetnik_coup
+    }
+    available = {
+      always = no
+    }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_power_of_orjuna
+		icon = GFX_goal_SER_ORJUNA
+		cost = 3
+		x = 3
+		y = 1
+    relative_position_id = SER_chetnik_coup
+    prerequisite = {
+      focus = SER_chetnik_coup
+    }
+    available = {
+      always = no
+    }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_deal_with_devil
+		icon = GFX_goal_SER_black_hand_takes_power
+		cost = 3
+		x = 9
+		y = 1
+    relative_position_id = SER_chetnik_coup
+    prerequisite = {
+      focus = SER_chetnik_coup
+    }
+    available = {
+      always = no
+    }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_unexpected_alliance
+		icon = GFX_goal_CRO_illyrian_yugoslavia
+		cost = 3
+		x = -9
+		y = 1
+    relative_position_id = SER_chetnik_coup
+    prerequisite = {
+      focus = SER_chetnik_coup
+    }
+    available = {
+      always = no
+    }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_befriend_internationle
+		icon = GFX_RUS_Internationalists
+		cost = 3
+		x = -1
+		y = 1
+    relative_position_id = SER_unexpected_alliance
+    prerequisite = {
+      focus = SER_unexpected_alliance
+    }
+   
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_liberate_proles
+		icon = GFX_goal_SKM_Talks_With_Internationale_alt
+		cost = 3
+		x = -1
+		y = 2
+    relative_position_id = SER_unexpected_alliance
+    prerequisite = {
+      focus = SER_befriend_internationle
+    }
+   
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_union_of_worker_peasants
+		icon = GFX_goal_MNT_north_agriculture
+		cost = 3
+		x = -1
+		y = 3
+    relative_position_id = SER_unexpected_alliance
+    prerequisite = {
+      focus = SER_liberate_proles
+    }
+   
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_socialism_for_nation
+		icon = GFX_SOV_army_socialism_restoration
+		cost = 3
+		x = 1
+		y = 1
+    relative_position_id = SER_unexpected_alliance
+    prerequisite = {
+      focus = SER_unexpected_alliance
+    }
+   
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_crush_capitalism
+		icon = GFX_goal_RUS_crush_capitalists
+		cost = 3
+		x = 1
+		y = 2
+    relative_position_id = SER_unexpected_alliance
+    prerequisite = {
+      focus = SER_socialism_for_nation
+    }
+   
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_mobilize_people
+		icon = GFX_goal_generic_mobilize_masses
+		cost = 3
+		x = 1
+		y = 3
+    relative_position_id = SER_unexpected_alliance
+    prerequisite = {
+      focus = SER_crush_capitalism
+    }
+   
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_revo_government
+		icon = GFX_goal_MNT_marxist_stitch
+		cost = 3
+		x = 0
+		y = 4
+    relative_position_id = SER_unexpected_alliance
+    prerequisite = {
+      focus = SER_union_of_worker_peasants
+    }
+    prerequisite = {
+      focus = SER_mobilize_people
+    }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_serbian_militarianism
+		icon = GFX_goal_GUA_Militarized_Society
+		cost = 3
+		x = -1
+		y = 1
+    relative_position_id = SER_deal_with_devil
+    prerequisite = {
+      focus = SER_deal_with_devil
+    }
+   
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_force_conscription
+		icon = GFX_TRM_Obligatory_Conscription
+		cost = 3
+		x = -1
+		y = 2
+    relative_position_id = SER_deal_with_devil
+    prerequisite = {
+      focus = SER_serbian_militarianism
+    }
+   
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_war_gears
+		icon = GFX_goal_JAP_Tuning_70_Million_Gears
+		cost = 3
+		x = -1
+		y = 3
+    relative_position_id = SER_deal_with_devil
+    prerequisite = {
+      focus = SER_force_conscription
+    }
+    
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_cloak_and_dagger
+		icon = GFX_goal_generic_spy_connections
+		cost = 3
+		x = 1
+		y = 1
+    relative_position_id = SER_deal_with_devil
+    prerequisite = {
+      focus = SER_deal_with_devil
+    }
+    
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_leader_worship
+		icon = GFX_goal_authoritarian
+		cost = 3
+		x = 1
+		y = 2
+    relative_position_id = SER_deal_with_devil
+    prerequisite = {
+      focus = SER_cloak_and_dagger
+    }
+   
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_obey_and_loyalty
+		icon = GFX_goal_MNT_loyalists
+		cost = 3
+		x = 1
+		y = 3
+    relative_position_id = SER_deal_with_devil
+    prerequisite = {
+      focus = SER_leader_worship
+    }
+   
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_revenge_government
+		icon = GFX_goal_national_populism
+		cost = 3
+		x = 0
+		y = 4
+    relative_position_id = SER_deal_with_devil
+    prerequisite = {
+      focus = SER_war_gears
+    }
+    prerequisite = {
+      focus = SER_obey_and_loyalty
+    }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_worship_violence
+		icon = GFX_goal_AUS_proletarian_violence
+		cost = 3
+		x = -1
+		y = 1
+    relative_position_id = SER_power_of_orjuna
+    prerequisite = {
+      focus = SER_power_of_orjuna
+    }
+    
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+
+  focus = {
+		id = SER_all_yugoslav_legion
+		icon = GFX_goal_ALB_Yugophilism
+		cost = 3
+		x = -1
+		y = 2
+    relative_position_id = SER_power_of_orjuna
+    prerequisite = {
+      focus = SER_worship_violence
+    }
+    
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_heroic_race
+		icon = GFX_goal_BUL_the_bulgarian_race
+		cost = 3
+		x = -1
+		y = 3
+    relative_position_id = SER_power_of_orjuna
+    prerequisite = {
+      focus = SER_worship_violence
+    }
+    available = {
+      always = no
+    }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_corporate_state
+		icon = GFX_goal_NFA_Republican_National_Corporatism
+		cost = 3
+		x = 1
+		y = 1
+    relative_position_id = SER_power_of_orjuna
+    prerequisite = {
+      focus = SER_power_of_orjuna
+    }
+    
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+   focus = {
+		id = SER_fervor_in_unify
+		icon = GFX_goal_generic_violent_oppression
+		cost = 3
+		x = 1
+		y = 2
+    relative_position_id = SER_power_of_orjuna
+    prerequisite = {
+      focus = SER_corporate_state
+    }
+   
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_for_nation_and_liberty
+		icon = GFX_RUS_Get_Along_With_Liberals
+		cost = 3
+		x = 1
+		y = 3
+    relative_position_id = SER_power_of_orjuna
+    prerequisite = {
+      focus = SER_fervor_in_unify
+    }
+    
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_unity_government
+		icon = GFX_goal_NGR_federalism
+		cost = 3
+		x = 0
+		y = 4
+    relative_position_id = SER_power_of_orjuna
+    prerequisite = {
+      focus = SER_heroic_race
+    }
+    prerequisite = {
+      focus = SER_for_nation_and_liberty
+    }
+   
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_maintain_democratic_beliefs
+		icon = GFX_VNC_defend_democracy
+		cost = 3
+		x = -1
+		y = 1
+    relative_position_id = SER_ally_skk
+    prerequisite = {
+      focus = SER_ally_skk
+    }
+  
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_national_party_union
+		icon = GFX_UKR_Entrench_Party
+		cost = 3
+		x = -1
+		y = 2
+    relative_position_id = SER_ally_skk
+    prerequisite = {
+      focus = SER_maintain_democratic_beliefs
+    }
+  
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_purge_the_useless
+		icon = GFX_goal_purge_opposition
+		cost = 3
+		x = 1
+		y = 1
+    relative_position_id = SER_ally_skk
+    prerequisite = {
+      focus = SER_ally_skk
+    }
+  
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_millitary_first
+		icon = GFX_goal_SWE_Military_Coup
+		cost = 3
+		x = 1
+		y = 2
+    relative_position_id = SER_ally_skk
+    prerequisite = {
+      focus = SER_purge_the_useless
+    }
+  
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_all_for_nation
+		icon = GFX_goal_LPD_allign_nationalists
+		cost = 3
+		x = 1
+		y = 3
+    relative_position_id = SER_ally_skk
+    prerequisite = {
+      focus = SER_millitary_first
+    }
+  
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_patroic_intellicuals
+		icon = GFX_goal_ROM_Intellectuals_Green_Banner
+		cost = 3
+		x = -1
+		y = 3
+    relative_position_id = SER_ally_skk
+    prerequisite = {
+      focus = SER_national_party_union
+    }
+  
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_milciv_government
+		icon = GFX_goal_MNT_serbization
+		cost = 3
+		x = 0
+		y = 4
+    relative_position_id = SER_ally_skk
+    prerequisite = {
+      focus = SER_patroic_intellicuals
+    }
+    prerequisite = {
+      focus = SER_all_for_nation
+    }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_arm_chetas
+		icon = GFX_goal_MNT_chetnik_vets
+		cost = 3
+		x = -6
+		y = 2
+    relative_position_id = SER_chetnik_coup
+    prerequisite = {
+      focus = SER_unexpected_alliance
+      focus = SER_ally_skk
+      focus = SER_power_of_orjuna
+      focus = SER_deal_with_devil
+    }
+    
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_rely_outer_serbs
+		icon = GFX_goal_SER_serb_unity
+		cost = 3
+		x = -6
+		y = 3
+    relative_position_id = SER_chetnik_coup
+    prerequisite = {
+      focus = SER_arm_chetas
+    }
+    
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_prepare_liberation
+		icon = GFX_goal_SER_mobilize_the_che
+		cost = 3
+		x = -6
+		y = 4
+    relative_position_id = SER_chetnik_coup
+    prerequisite = {
+      focus = SER_rely_outer_serbs
+    }
+    
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_rearmament
+		icon = GFX_goal_ALB_Liberation_Army
+		cost = 3
+		x = 0
+		y = 2
+    relative_position_id = SER_chetnik_coup
+   prerequisite = {
+      focus = SER_unexpected_alliance
+      focus = SER_ally_skk
+      focus = SER_power_of_orjuna
+      focus = SER_deal_with_devil
+    }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_memoirs_of_fallen
+		icon = GFX_goal_USA_city_on_a_hill
+		cost = 3
+		x = 0
+		y = 3
+    relative_position_id = SER_chetnik_coup
+    prerequisite = {
+      focus = SER_rearmament
+    }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_revenge_the_bulgarians
+		icon = GFX_goal_CZE_attack_bulgaria
+		cost = 3
+		x = 0
+		y = 4
+    relative_position_id = SER_chetnik_coup
+    prerequisite = {
+      focus = SER_memoirs_of_fallen
+    }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_homoengenous_nation
+		icon = GFX_goal_MNT_belgrade
+		cost = 3
+		x = 6
+		y = 2
+    relative_position_id = SER_chetnik_coup
+    prerequisite = {
+      focus = SER_unexpected_alliance
+      focus = SER_ally_skk
+      focus = SER_power_of_orjuna
+      focus = SER_deal_with_devil
+    }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_remove_jew
+		icon = GFX_goal_COR_jewish_segregation
+		cost = 3
+		x = 6
+		y = 3
+    relative_position_id = SER_chetnik_coup
+    prerequisite = {
+      focus = SER_homoengenous_nation
+    }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
+		}
+	}
+  focus = {
+		id = SER_remove_kebab_and_croats
+		icon = GFX_goal_generic_orthodoxy
+		cost = 3
+		x = 6
+		y = 4
+    relative_position_id = SER_chetnik_coup
+    prerequisite = {
+      focus = SER_remove_jew
+    }
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SER_YUG_royal_grace"
+			
 		}
 	}
 }
