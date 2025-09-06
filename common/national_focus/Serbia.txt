@@ -9188,6 +9188,7 @@ if = {
       custom_effect_tooltip = unlock_focuses
     }
   }
+  
   focus = {
     id = SER_god_king_country
     icon = GFX_goal_national_populism
